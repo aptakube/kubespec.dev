@@ -1,0 +1,57 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import "@fontsource-variable/inter";
+import "cal-sans";
+import "./global.css";
+
+const { title, description, og } = Astro.props;
+
+const openGraphUrl = og
+  ? og.startsWith("http")
+    ? og
+    : `https://kubespec.dev${og}`
+  : "https://kubespec.dev/og.png";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <link rel="canonical" href={Astro.url} />
+
+    <meta property="og:title" content={title} />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="kubespec.dev" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:image" content={openGraphUrl} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@aptakube" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={openGraphUrl} />
+
+    <script
+      is:inline
+      async
+      data-domain="kubespec.dev"
+      data-api="/e/"
+      src="/p.js"></script>
+    <ViewTransitions />
+  </head>
+  <body
+    class="min-h-screen bg-background text-foreground font-sans tracking-tight antialiased"
+  >
+    <div class="flex flex-col min-h-screen max-w-6xl mx-auto">
+      <slot />
+    </div>
+  </body>
+</html>
