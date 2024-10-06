@@ -4,6 +4,9 @@ import SiteLayout from "@layouts/SiteLayout.astro";
 import { LATEST_VERSION } from "@lib/swagger";
 ---
 
-<SiteLayout title="" description="">
+<SiteLayout
+  title={`Kubernetes Spec v${LATEST_VERSION}`}
+  description="Find the documentation for all builtin resources, properties, types and even some examples!"
+>
   <GVKGridList version={LATEST_VERSION} />
 </SiteLayout>

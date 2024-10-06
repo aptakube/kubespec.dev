@@ -12,6 +12,10 @@ export function getStaticPaths() {
 const { version } = Astro.params;
 ---
 
-<SiteLayout title="" description="" noIndex>
+<SiteLayout
+  title={`Kubernetes Spec v${version}`}
+  description="Find the documentation for all builtin resources, properties, types and even some examples!"
+  noIndex
+>
   <GVKGridList version={version} />
 </SiteLayout>
