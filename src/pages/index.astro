@@ -1,7 +1,9 @@
 ---
-import SiteLayout from "../layouts/SiteLayout.astro";
+import GVKGridList from "@components/GVKGridList.astro";
+import SiteLayout from "@layouts/SiteLayout.astro";
+import { LATEST_VERSION } from "@lib/swagger";
 ---
 
-<SiteLayout>
-  <h1 class="font-title">Astro</h1>
+<SiteLayout title="" description="">
+  <GVKGridList version={LATEST_VERSION} />
 </SiteLayout>

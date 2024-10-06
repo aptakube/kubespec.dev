@@ -1,0 +1,17 @@
+---
+import GVKGridList from "@components/GVKGridList.astro";
+import SiteLayout from "@layouts/SiteLayout.astro";
+import { LATEST_VERSION, VERSIONS } from "@lib/swagger";
+
+export function getStaticPaths() {
+  return VERSIONS.filter((x) => x !== LATEST_VERSION).map((version) => ({
+    params: { version },
+  }));
+}
+
+const { version } = Astro.params;
+---
+
+<SiteLayout title="" description="" noIndex>
+  <GVKGridList version={version} />
+</SiteLayout>

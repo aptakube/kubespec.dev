@@ -4,7 +4,14 @@ import "@fontsource-variable/inter";
 import "cal-sans";
 import "./global.css";
 
-const { title, description, og } = Astro.props;
+type Props = {
+  title: string;
+  description: string;
+  noIndex?: boolean;
+  og?: string;
+};
+
+const { title, description, og, noIndex } = Astro.props;
 
 const openGraphUrl = og
   ? og.startsWith("http")
@@ -24,6 +31,8 @@ const openGraphUrl = og
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <link rel="canonical" href={Astro.url} />
+
+    {noIndex && <meta name="robots" content="noindex, nofollow" />}
 
     <meta property="og:title" content={title} />
     <meta name="theme-color" content="#ffffff" />
