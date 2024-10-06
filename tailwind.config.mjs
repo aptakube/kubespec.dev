@@ -2,6 +2,7 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: ["class"],
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   plugins: [],
   theme: {
@@ -21,10 +22,6 @@ export default {
         sans: ["Inter Variable", ...fontFamily.sans],
       },
       colors: {
-        clicks: "hsl(var(--clicks))",
-        impressions: "hsl(var(--impressions))",
-        position: "hsl(var(--position))",
-        ctr: "hsl(var(--ctr))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -32,7 +29,6 @@ export default {
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

@@ -13,7 +13,7 @@ const categories = getAllGVK(spec);
 
 <main class="container mx-auto max-w-7xl px-4 py-10 sm:px-6">
   <div class="pb-10">
-    <h2 class="text-base font-semibold leading-7 text-blue-600">
+    <h2 class="text-base font-semibold leading-7 text-primary">
       Reference Guide
     </h2>
     <h1 class="mt-2 text-4xl font-bold tracking-tight">
@@ -46,7 +46,7 @@ const categories = getAllGVK(spec);
                   href={`/${[gvk.group, gvk.version, gvk.kind]
                     .filter(Boolean)
                     .join("/")}`}
-                  class="w-full font-medium border rounded hover:text-blue-600"
+                  class="w-full font-medium border rounded hover:text-primary"
                 >
                   <div class="flex flex-1 items-center justify-between truncate">
                     <div class="flex-1 truncate px-4 py-2">
