@@ -8,7 +8,13 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://kubespec.dev',
-  integrations: [tailwind({
-    applyBaseStyles: false
-  }), sitemap()]
+  trailingSlash: "never",
+  integrations: [
+    tailwind({
+      applyBaseStyles: false
+    }),
+    sitemap({
+      filter: (page) => !page.startsWith('https://kubespec.dev/v1.')
+    })
+  ]
 });
