@@ -1,4 +1,5 @@
 import type { GVK, SwaggerSpec } from "@lib/swagger";
+import pluralize from 'pluralize';
 
 export type GVKByCategory = { [category: string]: GVK[] };
 
@@ -75,8 +76,15 @@ export function categorySortFn(left: string, right: string): number {
   return categories.indexOf(left) - categories.indexOf(right);
 }
 
-export function getAllGVK(swagger: SwaggerSpec): GVKByCategory {
-  const gvk = Object.values(swagger.paths)
+export function parseGVKRef(ref: string): GVK {
+  const parts = ref.split("/");
+  return parts.length === 2
+      ? { group: "", version: parts[0], kind: parts[1] }
+      : { group: parts[0], version: parts[1], kind: parts[2] };
+}
+
+export function getAllGVK(spec: SwaggerSpec): GVKByCategory {
+  const gvk = Object.values(spec.paths)
     .flatMap((p) => Object.values(p))
     .filter((a) => a['x-kubernetes-action'] === 'list')
     .map((a) => a['x-kubernetes-group-version-kind'])
@@ -97,4 +105,86 @@ export function getAllGVK(swagger: SwaggerSpec): GVKByCategory {
       [category]: [...(acc[category] || []), item],
     };
   }, {} as GVKByCategory);
+}
+
+export type ResourceDefinition = {
+  description: string;
+  properties: {
+    [name: string]: {
+      description: string;
+      type: string;
+      isArray: boolean;
+      definition?: ResourceDefinition;
+    };
+  };
+};
+
+export function getGVKDefinition(spec: SwaggerSpec, gvk: GVK): ResourceDefinition & { scope: "Cluster" | "Namespaced" } {
+  const result = Object.entries(spec.definitions).find(
+    ([_, def]) =>
+      def["x-kubernetes-group-version-kind"] &&
+      def["x-kubernetes-group-version-kind"].find(
+        (x) =>
+          x.group === gvk.group &&
+          x.version === gvk.version &&
+          x.kind === gvk.kind
+      )
+  );
+
+  if (!result) {
+    throw new Error(
+      `No definition found for ${gvk.group}/${gvk.version}/${gvk.kind}`
+    );
+  }
+
+  const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
+
+  const namespacedPath = `/apis/${apiVersion}/namespaces/{namespace}/${pluralize(gvk.kind.toLowerCase())}`
+  const scope = namespacedPath in spec.paths ? "Namespaced" : "Cluster";
+
+  const def = getDefinitionByKey(spec, result[0]);
+  return { ...def, scope };
+}
+
+export function getDefinitionByKey(spec: SwaggerSpec, key: string): ResourceDefinition {
+  const root = spec.definitions[key];
+  if (!root) {
+    throw new Error(`No definition found for ${key}`);
+  }
+
+
+  const definition: ResourceDefinition = {
+    description: root.description ?? "",
+    properties: {},
+  };
+
+  for (const [name, property] of Object.entries(root.properties || {})) {
+    definition.properties[name] = {
+      description: property.description || "",
+      type: property.type || "",
+      isArray: property.type === "array",
+    };
+
+    if (definition.properties[name].isArray && property.items?.type) {
+      definition.properties[name].type = `${property.items.type}[]`;
+    }
+
+    if (property.$ref || property.items?.$ref) {
+      const refKey = (property.$ref || property.items?.$ref || "").replace(
+        "#/definitions/",
+        ""
+      );
+
+      const refType = refKey.split(".").pop() || "";
+      definition.properties[name].type = definition.properties[name].isArray
+        ? `${refType}[]`
+        : refType;
+
+      if (refType !== "Time") {
+        definition.properties[name].definition = getDefinitionByKey(spec, refKey);
+      }
+    }
+  }
+
+  return definition;
 }

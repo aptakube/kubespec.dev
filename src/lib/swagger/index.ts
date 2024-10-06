@@ -34,6 +34,7 @@ export type SwaggerSpec = {
           $ref?: string
         }
       }
+      'x-kubernetes-group-version-kind'?: GVK[]
     }
   }
 }
