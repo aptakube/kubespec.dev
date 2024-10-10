@@ -1,5 +1,5 @@
 ---
-import GVKGridList from "@components/GVKGridList.astro";
+import HomePage from "@components/HomePage.astro";
 import SiteLayout from "@layouts/SiteLayout.astro";
 import { LATEST_VERSION, VERSIONS } from "@lib/swagger";
 
@@ -17,5 +17,5 @@ const { version } = Astro.params;
   description="Find the documentation for all builtin resources, properties, types and even some examples!"
   noIndex
 >
-  <GVKGridList version={version} />
+  <HomePage version={version} />
 </SiteLayout>

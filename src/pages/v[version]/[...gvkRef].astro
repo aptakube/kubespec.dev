@@ -1,0 +1,36 @@
+---
+import SiteLayout from "@layouts/SiteLayout.astro";
+import DefinitionPage from "@components/DefinitionPage.astro";
+
+import { getAllGVK, parseGVKRef } from "@lib/kube";
+import { LATEST_VERSION, readSwaggerSpec, VERSIONS } from "@lib/swagger";
+
+export async function getStaticPaths() {
+  const tasks = VERSIONS.filter((x) => x !== LATEST_VERSION).map(
+    async (version) => {
+      const spec = await readSwaggerSpec(version);
+      const categories = getAllGVK(spec);
+      const gvk = Object.values(categories).flat();
+      return gvk.map((gvk) => ({
+        params: {
+          version,
+          gvkRef: [gvk.group, gvk.version, gvk.kind].join("/"),
+        },
+      }));
+    }
+  );
+  return (await Promise.all(tasks)).flat();
+}
+
+const { version, gvkRef } = Astro.params;
+
+const gvk = parseGVKRef(gvkRef);
+const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
+---
+
+<SiteLayout
+  title={`Kubernetes Spec: ${gvk.kind}`}
+  description={`Documentation, properties, types and examples for ${gvk.kind} ${apiVersion}`}
+>
+  <DefinitionPage version={version} gvkRef={gvkRef} />
+</SiteLayout>

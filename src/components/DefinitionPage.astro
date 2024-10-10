@@ -1,0 +1,38 @@
+---
+import { getGVKDefinition, parseGVKRef } from "@lib/kube";
+import { readSwaggerSpec } from "@lib/swagger";
+import { PropertyTree } from "./PropertyTree";
+
+type Props = {
+  version: string;
+  gvkRef: string;
+};
+
+const { gvkRef, version } = Astro.props;
+const spec = await readSwaggerSpec(version);
+
+const gvk = parseGVKRef(gvkRef);
+const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
+const definition = getGVKDefinition(spec, gvk);
+---
+
+<main class="container mx-auto max-w-7xl px-4 py-10 sm:px-6">
+  <nav class="order-first flex space-x-2 pb-10 text-sm font-semibold">
+    <a class="text-muted-foreground" href="/"> ← back to all kinds </a>
+  </nav>
+
+  <div class="flex flex-col pb-4">
+    <h2 class="text-base font-semibold text-primary"></h2>
+    <h2 class="text-base font-semibold text-primary">
+      {apiVersion} &middot; {definition.scope} Resource
+    </h2>
+    <h1 class="mt-2 text-3xl font-bold leading-8 tracking-tight sm:text-4xl">
+      {gvk.kind}
+    </h1>
+    <pre
+      class="mt-2 max-w-4xl whitespace-pre-line text-lg text-muted-foreground">
+        {definition.description}
+      </pre>
+  </div>
+  <PropertyTree definition={definition} level={0} client:load />
+</main>
