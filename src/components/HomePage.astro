@@ -1,6 +1,6 @@
 ---
 import { categorySortFn, getAllGVK, gvkSortFn } from "@lib/kube";
-import { readSwaggerSpec } from "@lib/swagger";
+import { LATEST_VERSION, readSwaggerSpec, type GVK } from "@lib/swagger";
 
 type Props = {
   version: string;
@@ -9,6 +9,14 @@ type Props = {
 const { version } = Astro.props;
 const spec = await readSwaggerSpec(version);
 const categories = getAllGVK(spec);
+
+const makeUrl = (gvk: GVK) => {
+  const path = `${[gvk.group, gvk.version, gvk.kind].filter(Boolean).join("/")}`;
+  if (version === LATEST_VERSION) {
+    return `/${path}`;
+  }
+  return `/v${version}/${path}`;
+};
 ---
 
 <div class="pb-10">
@@ -44,9 +52,7 @@ const categories = getAllGVK(spec);
           <ul class="mt-1 grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
             {categories[category].sort(gvkSortFn).map((gvk) => (
               <a
-                href={`/${[gvk.group, gvk.version, gvk.kind]
-                  .filter(Boolean)
-                  .join("/")}`}
+                href={makeUrl(gvk)}
                 class="w-full font-medium border rounded hover:text-primary"
               >
                 <div class="flex flex-1 items-center justify-between truncate">

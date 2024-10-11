@@ -1,12 +1,22 @@
 ---
+import { LATEST_VERSION } from "@lib/swagger";
 import GitHubStars from "./GitHubStars.astro";
 import { ThemeToggle } from "./ThemeToggle";
+import { VersionPicker } from "./VersionPicker";
+const { version } = Astro.params;
 ---
 
 <header class="border-b">
-  <div class="flex px-4 py-2 max-w-6xl mx-auto items-center justify-between">
-    <img src="/kubespec.png" alt="Kubespec Logo" class="size-10" />
-    <div class="flex items-center">
+  <div class="flex p-2 max-w-6xl mx-auto items-center justify-between">
+    <a
+      href={version === LATEST_VERSION ? "/" : `/v${version}`}
+      class="flex items-center gap-2 rounded-lg py-1 px-2 hover:bg-accent"
+    >
+      <img src="/kubespec.png" alt="Kubespec Logo" class="size-6" />
+      <span class="font-title">kubespec.dev</span>
+    </a>
+    <div class="flex items-center gap-1">
+      <VersionPicker client:load version={version ?? LATEST_VERSION} />
       <GitHubStars />
       <ThemeToggle client:load />
     </div>

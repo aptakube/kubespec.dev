@@ -1,8 +1,11 @@
 ---
-const response = await fetch(
-  `https://api.github.com/repos/aptakube/kubespec.dev`
-);
-const { stargazers_count } = await response.json();
+import { IconBrandGithub } from "@tabler/icons-react";
 ---
 
-<div>{stargazers_count}</div>
+<a
+  href="https://github.com/aptakube/kubespec.dev"
+  target="_blank"
+  class="text-sm flex items-center rounded-lg p-1.5 hover:bg-accent"
+>
+  <IconBrandGithub stroke={1.5} className="size-5" />
+</a>

@@ -1,4 +1,4 @@
-import { IconMoonStars, IconSunLow } from "@tabler/icons-react";
+import { IconMoon, IconSun } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 
 function getInitialTheme(): string {
@@ -36,9 +36,9 @@ export function ThemeToggle() {
       onClick={toggle}
     >
       {theme === "light" ? (
-        <IconMoonStars stroke={1.5} className="size-5" />
+        <IconSun className="size-4" />
       ) : (
-        <IconSunLow stroke={1.5} className="size-5" />
+        <IconMoon className="size-4" />
       )}
     </button>
   );
