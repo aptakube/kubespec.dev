@@ -7,9 +7,9 @@ const { version } = Astro.params;
 ---
 
 <header class="border-b">
-  <div class="flex p-2 max-w-6xl mx-auto items-center justify-between">
+  <div class="flex p-2 container items-center justify-between">
     <a
-      href={version === LATEST_VERSION ? "/" : `/v${version}`}
+      href={!version || version === LATEST_VERSION ? "/" : `/v${version}`}
       class="flex items-center gap-2 rounded-lg py-1 px-2 hover:bg-accent"
     >
       <img src="/kubespec.png" alt="Kubespec Logo" class="size-6" />
