@@ -11,6 +11,8 @@ export function VersionPicker(props: Props) {
 
     if (LATEST_VERSION === e.target.value) {
       window.location.href = path;
+    } else if (path === `/` || path === ``) {
+      window.location.href = `/v${e.target.value}`;
     } else {
       window.location.href = `/v${e.target.value}${path}`;
     }
