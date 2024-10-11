@@ -4,16 +4,20 @@ import { VERSIONS } from "@lib/swagger";
 ---
 
 <SiteLayout
-  title={`Download Kubernetes Swagger`}
+  title="Download Kubernetes Swagger"
   description="Easily download the latest version of the Kubernetes Swagger spec."
 >
-  <h1 class="mt-2 text-4xl font-title tracking-tight">
+  <h1 class="text-4xl font-title tracking-tight text-center mt-10 text-balance">
     Download Kubernetes Swagger
   </h1>
-  <p class="mt-2 max-w-4xl text-lg leading-7 text-muted-foreground">
-    Download any version of the Kubernetes Swagger spec to use in your projects.
+  <p
+    class="mt-2 text-lg leading-7 text-muted-foreground text-center text-balance"
+  >
+    Download any version of the Kubernetes Swagger spec to use in your projects
   </p>
-  <div class="space-y-1 mt-4">
+  <div
+    class="grid sm:grid-cols-2 md:grid-cols-3 gap-1 mt-4 text-center max-w-2xl mx-auto"
+  >
     {
       VERSIONS.map((version) => (
         <p>

@@ -1,0 +1,27 @@
+---
+import SiteLayout from "@layouts/SiteLayout.astro";
+import { LATEST_VERSION } from "@lib/swagger";
+const { version } = Astro.params;
+---
+
+<SiteLayout
+  title="Page Not Found"
+  description="The page you are looking for does not exist."
+>
+  <h1 class="text-4xl font-title tracking-tight text-center mt-10">
+    Page Not Found
+  </h1>
+
+  <p class="mt-2 text-lg leading-7 text-muted-foreground text-center">
+    The page you are looking for does not exist
+  </p>
+
+  <div class="text-center mt-4">
+    <a
+      class="text-link hover:underline inline"
+      href={!version || version === LATEST_VERSION ? "/" : `/v${version}`}
+    >
+      ← back home
+    </a>
+  </div>
+</SiteLayout>
