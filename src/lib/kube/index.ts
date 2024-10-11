@@ -135,7 +135,7 @@ export function getGVKDefinition(
         (x) =>
           x.group === gvk.group &&
           x.version === gvk.version &&
-          x.kind === gvk.kind
+          x.kind.toLowerCase() === gvk.kind
       )
   );
 
@@ -153,8 +153,6 @@ export function getGVKDefinition(
   const def = getDefinitionByKey(spec, result[0]);
   return { ...def, scope };
 }
-
-const cached: Record<string, ResourceDefinition> = {};
 
 export function getDefinitionByKey(
   spec: SwaggerSpec,

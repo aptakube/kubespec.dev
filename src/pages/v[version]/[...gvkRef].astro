@@ -14,7 +14,7 @@ export async function getStaticPaths() {
       return gvk.map((gvk) => ({
         params: {
           version,
-          gvkRef: [gvk.group, gvk.version, gvk.kind].join("/").toLowerCase(),
+          gvkRef: [gvk.group, gvk.version, gvk.kind].join("/"),
         },
       }));
     }
