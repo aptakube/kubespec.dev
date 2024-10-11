@@ -2,6 +2,8 @@
 import { getGVKDefinition, parseGVKRef } from "@lib/kube";
 import { LATEST_VERSION, readSwaggerSpec } from "@lib/swagger";
 import { PropertyTree } from "./PropertyTree";
+import { PropertyType } from "./PropertyType";
+import { IconBulb } from "@tabler/icons-react";
 
 type Props = {
   version: string;
@@ -38,4 +40,20 @@ const definition = getGVKDefinition(spec, gvk);
         {definition.description}
       </pre>
 </div>
+
 <PropertyTree definition={definition} level={0} client:load />
+
+<div
+  class="inline-flex items-center gap-1 p-2 border rounded text-muted-foreground font-medium text-sm mt-4"
+>
+  <IconBulb className="size-4" />
+  <p>
+    Click on <span class="font-mono font-bold text-foreground"
+      >Property Name</span
+    > to see the description, and <PropertyType
+      type="Pink Types"
+      hasChildren
+      className="font-semibold tracking-normal"
+    /> to expand schema.
+  </p>
+</div>
