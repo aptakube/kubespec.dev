@@ -1,0 +1,30 @@
+---
+import SiteLayout from "@layouts/SiteLayout.astro";
+import { VERSIONS } from "@lib/swagger";
+---
+
+<SiteLayout
+  title={`Download Kubernetes Swagger`}
+  description="Easily download the latest version of the Kubernetes Swagger spec."
+>
+  <h1 class="mt-2 text-4xl font-title tracking-tight">
+    Download Kubernetes Swagger
+  </h1>
+  <p class="mt-2 max-w-4xl text-lg leading-7 text-muted-foreground">
+    Download any version of the Kubernetes Swagger spec to use in your projects.
+  </p>
+  <div class="space-y-1 mt-4">
+    {
+      VERSIONS.map((version) => (
+        <p>
+          <a
+            class="text-link hover:underline"
+            href={`/swagger-${version}.json`}
+          >
+            swagger-{version}.json
+          </a>
+        </p>
+      ))
+    }
+  </div>
+</SiteLayout>

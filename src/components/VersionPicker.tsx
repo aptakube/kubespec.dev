@@ -18,16 +18,18 @@ export function VersionPicker(props: Props) {
   };
 
   return (
-    <select
-      value={props.version}
-      className="border text-sm p-1 rounded bg-background"
-      onChange={onVersionChanged}
-    >
-      {VERSIONS.map((version) => (
-        <option key={version} value={version}>
-          v{version}
-        </option>
-      ))}
-    </select>
+    <div className="relative border text-sm py-1 pl-2 pr-1 rounded">
+      <select
+        value={props.version}
+        onChange={onVersionChanged}
+        className="ring-0 bg-background outline-none border-r-2 border-transparent pr-1 font-medium"
+      >
+        {VERSIONS.map((version) => (
+          <option key={version} value={version}>
+            v{version}
+          </option>
+        ))}
+      </select>
+    </div>
   );
 }

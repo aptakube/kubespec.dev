@@ -3,6 +3,7 @@ import { LATEST_VERSION } from "@lib/swagger";
 import GitHubStars from "./GitHubStars.astro";
 import { ThemeToggle } from "./ThemeToggle";
 import { VersionPicker } from "./VersionPicker";
+import { IconBrandGithub, IconDownload } from "@tabler/icons-react";
 const { version } = Astro.params;
 ---
 
@@ -16,8 +17,23 @@ const { version } = Astro.params;
       <span class="font-title">kubespec.dev</span>
     </a>
     <div class="flex items-center gap-1">
+      <a
+        href="/download"
+        class="leading-none text-sm rounded-lg p-1.5 hover:bg-accent"
+      >
+        <IconDownload stroke={1.5} className="size-4" />
+      </a>
+
       <VersionPicker client:load version={version ?? LATEST_VERSION} />
-      <GitHubStars />
+
+      <a
+        href="https://github.com/aptakube/kubespec.dev"
+        target="_blank"
+        class="text-sm flex items-center rounded-lg p-1.5 hover:bg-accent"
+      >
+        <IconBrandGithub stroke={1.5} className="size-5" />
+      </a>
+
       <ThemeToggle client:load />
     </div>
   </div>
