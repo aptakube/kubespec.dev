@@ -1,6 +1,5 @@
 import type { ResourceDefinition } from "@lib/kube";
 import { PropertyRow } from "./PropertyRow";
-import { PropertyType } from "./PropertyType";
 
 type Props = {
   definition: ResourceDefinition;

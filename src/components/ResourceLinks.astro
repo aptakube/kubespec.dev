@@ -1,0 +1,47 @@
+---
+type Props = {
+  kind: string;
+  links: { name: string; href: string }[];
+};
+
+const { kind, links } = Astro.props;
+---
+
+{
+  links.length === 0 ? (
+    <div class="mt-20">
+      <div class="divide-y">
+        <div>
+          <h2 class="text-2xl font-bold leading-10 tracking-tight">
+            No links for {kind} yet
+          </h2>
+          <p class="text-sm leading-7 text-gray-600">
+            You can help us by adding useful links on{" "}
+            <a
+              href="https://github.com/aptakube/kubespec.dev"
+              target="_blank"
+              class="text-link hover:underline"
+            >
+              GitHub
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  ) : (
+    <div class="mt-20">
+      <h2 class="text-2xl font-bold leading-10 tracking-tight">
+        Other useful resources
+      </h2>
+      <ul class="ml-4 list-disc space-y-1">
+        {links.map((link) => (
+          <li>
+            <a class="text-link hover:underline" href={link.href}>
+              {link.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}

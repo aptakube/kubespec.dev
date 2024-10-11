@@ -1,0 +1,63 @@
+---
+import { Example } from "./Example";
+
+type Props = {
+  apiVersion: string;
+  kind: string;
+};
+
+const { apiVersion, kind } = Astro.props;
+
+const allExamples = await Astro.glob(`../lib/kube/metadata/**/*.md`);
+const examples = allExamples.filter((x) =>
+  x.file.includes(`/lib/kube/metadata/${apiVersion}/${kind.toLowerCase()}/`)
+);
+---
+
+{
+  examples.length === 0 ? (
+    <div class="mt-20">
+      <div class="divide-y">
+        <div>
+          <h2 class="text-2xl font-bold leading-10 tracking-tight">
+            We don&apos;t have any examples of {kind} yet 😕
+          </h2>
+          <p class="text-sm leading-7 text-gray-600">
+            But the good news is, you can help us by contributing examples on{" "}
+            <a
+              href="https://github.com/aptakube/kubespec.dev"
+              target="_blank"
+              class="text-link hover:underline"
+            >
+              GitHub
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  ) : (
+    <div class="mt-20">
+      <div class="divide-y">
+        <div>
+          <h2 class="text-2xl font-bold leading-10 tracking-tight">
+            Looking for some examples?
+          </h2>
+          <p class="text-sm leading-7 text-gray-600">
+            There are <strong>{examples.length}</strong> examples of{" "}
+            <strong>{kind}</strong> that you can use as a starting point to
+            create your own.
+          </p>
+        </div>
+        <dl class="flex flex-col mt-2 space-y-6 divide-y">
+          {examples.map((e, idx) => (
+            <div>
+              <Example index={idx} frontmatter={e.frontmatter} client:load>
+                <e.default />
+              </Example>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </div>
+  )
+}

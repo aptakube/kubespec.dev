@@ -1,9 +1,11 @@
 ---
-import { getGVKDefinition, parseGVKRef } from "@lib/kube";
+import { getGVKDefinition, parseGVKRef, readMetadata } from "@lib/kube";
 import { LATEST_VERSION, readSwaggerSpec } from "@lib/swagger";
 import { PropertyTree } from "./PropertyTree";
 import { PropertyType } from "./PropertyType";
 import { IconBulb } from "@tabler/icons-react";
+import ResourceLinks from "./ResourceLinks.astro";
+import ExampleList from "./ExampleList.astro";
 
 type Props = {
   version: string;
@@ -16,6 +18,8 @@ const spec = await readSwaggerSpec(version);
 const gvk = parseGVKRef(gvkRef);
 const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
 const definition = getGVKDefinition(spec, gvk);
+
+const metadata = await readMetadata(gvk);
 ---
 
 <nav class="order-first flex space-x-2 pb-10 text-sm font-semibold">
@@ -57,3 +61,6 @@ const definition = getGVKDefinition(spec, gvk);
     /> to expand schema.
   </p>
 </div>
+
+<ExampleList apiVersion={apiVersion} kind={gvk.kind} />
+<ResourceLinks links={metadata.links} kind={gvk.kind} />

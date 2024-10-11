@@ -203,3 +203,20 @@ export function getDefinitionByKey(
 
   return definition;
 }
+
+type GVKMetadata = {
+  links: Array<{ name: string; href: string }>;
+};
+
+export async function readMetadata(gvk: GVK): Promise<GVKMetadata> {
+  const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
+
+  try {
+    const { links } = await import(
+      `./metadata/${apiVersion}/${gvk.kind.toLowerCase()}/${gvk.kind.toLowerCase()}.json`
+    );
+    return { links: links ?? [] };
+  } catch (e) {
+    return { links: [] };
+  }
+}
