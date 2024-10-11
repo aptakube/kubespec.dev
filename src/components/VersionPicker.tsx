@@ -7,10 +7,9 @@ type Props = {
 export function VersionPicker(props: Props) {
   const onVersionChanged = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const path = window.location.pathname.replace(`/v${props.version}`, ``);
-    console.log(path);
 
     if (LATEST_VERSION === e.target.value) {
-      window.location.href = path;
+      window.location.href = path || "/";
     } else if (path === `/` || path === ``) {
       window.location.href = `/v${e.target.value}`;
     } else {
