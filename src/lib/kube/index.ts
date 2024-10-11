@@ -135,7 +135,7 @@ export function getGVKDefinition(
         (x) =>
           x.group === gvk.group &&
           x.version === gvk.version &&
-          x.kind.toLowerCase() === gvk.kind
+          x.kind === gvk.kind
       )
   );
 
