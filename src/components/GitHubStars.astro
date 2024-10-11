@@ -1,0 +1,8 @@
+---
+const response = await fetch(
+  `https://api.github.com/repos/aptakube/kubespec.dev`
+);
+const { stargazers_count } = await response.json();
+---
+
+<div>{stargazers_count}</div>

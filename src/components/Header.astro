@@ -1,0 +1,14 @@
+---
+import GitHubStars from "./GitHubStars.astro";
+import { ThemeToggle } from "./ThemeToggle";
+---
+
+<header class="border-b">
+  <div class="flex px-4 py-2 max-w-6xl mx-auto items-center justify-between">
+    <img src="/kubespec.png" alt="Kubespec Logo" class="size-10" />
+    <div class="flex items-center">
+      <GitHubStars />
+      <ThemeToggle client:load />
+    </div>
+  </div>
+</header>

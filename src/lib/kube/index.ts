@@ -1,60 +1,60 @@
 import type { GVK, SwaggerSpec } from "@lib/swagger";
-import pluralize from 'pluralize';
+import pluralize from "pluralize";
 
 export type GVKByCategory = { [category: string]: GVK[] };
 
 const kindToCategory: Record<string, string> = {
-  "Pod": "Workloads",
-  "Deployment": "Workloads",
-  "DaemonSet": "Workloads",
-  "StatefulSet": "Workloads",
-  "Job": "Workloads",
-  "CronJob": "Workloads",
-  "ReplicaSet": "Workloads",
-  "ReplicationController": "Workloads",
-  
-  "Node": "Cluster",
-  "Event": "Cluster",
-  "Namespace": "Cluster",
+  Pod: "Workloads",
+  Deployment: "Workloads",
+  DaemonSet: "Workloads",
+  StatefulSet: "Workloads",
+  Job: "Workloads",
+  CronJob: "Workloads",
+  ReplicaSet: "Workloads",
+  ReplicationController: "Workloads",
 
-  "Service": "Networking",
-  "Ingress": "Networking",
-  "Endpoint": "Networking",
-  "Endpoints": "Networking",
-  "NetworkPolicy": "Networking",
-  "EndpointSlice": "Networking",
-  "IngressClass": "Networking",
-  
-  "ConfigMap": "Configuration",
-  "LimitRange": "Configuration",
-  "Secret": "Configuration",
-  "Lease": "Configuration",
-  "ResourceQuota": "Configuration",
-  "HorizontalPodAutoscaler": "Configuration",
-  "VerticalPodAutoscaler": "Configuration",
-  "PodDisruptionBudget": "Configuration",
-  
-  "CSINode": "Storage",
-  "CSIDriver": "Storage",
-  "CSIStorageCapacity": "Storage",
-  "StorageClass": "Storage",
-  "VolumeAttachment": "Storage",
-  "PersistentVolume": "Storage",
-  "PersistentVolumeClaim": "Storage",
-  
-  "MutatingWebhookConfiguration": "Administration",
-  "ValidatingWebhookConfiguration": "Administration",
-  "ValidatingAdmissionPolicy": "Administration",
-  "ValidatingAdmissionPolicyBinding": "Administration",
-  "RuntimeClass": "Administration",
-  "PriorityClass": "Administration",
-  "ResourceClass": "Administration",
-  
-  "ServiceAccount": "Access Control",
-  "Role": "Access Control",
-  "RoleBinding": "Access Control",
-  "ClusterRole": "Access Control",
-  "ClusterRoleBinding": "Access Control",
+  Node: "Cluster",
+  Event: "Cluster",
+  Namespace: "Cluster",
+
+  Service: "Networking",
+  Ingress: "Networking",
+  Endpoint: "Networking",
+  Endpoints: "Networking",
+  NetworkPolicy: "Networking",
+  EndpointSlice: "Networking",
+  IngressClass: "Networking",
+
+  ConfigMap: "Configuration",
+  LimitRange: "Configuration",
+  Secret: "Configuration",
+  Lease: "Configuration",
+  ResourceQuota: "Configuration",
+  HorizontalPodAutoscaler: "Configuration",
+  VerticalPodAutoscaler: "Configuration",
+  PodDisruptionBudget: "Configuration",
+
+  CSINode: "Storage",
+  CSIDriver: "Storage",
+  CSIStorageCapacity: "Storage",
+  StorageClass: "Storage",
+  VolumeAttachment: "Storage",
+  PersistentVolume: "Storage",
+  PersistentVolumeClaim: "Storage",
+
+  MutatingWebhookConfiguration: "Administration",
+  ValidatingWebhookConfiguration: "Administration",
+  ValidatingAdmissionPolicy: "Administration",
+  ValidatingAdmissionPolicyBinding: "Administration",
+  RuntimeClass: "Administration",
+  PriorityClass: "Administration",
+  ResourceClass: "Administration",
+
+  ServiceAccount: "Access Control",
+  Role: "Access Control",
+  RoleBinding: "Access Control",
+  ClusterRole: "Access Control",
+  ClusterRoleBinding: "Access Control",
 };
 
 const categories = [
@@ -66,7 +66,7 @@ const categories = [
   "Administration",
   "Access Control",
   "Other",
-]
+];
 
 export function gvkSortFn(left: GVK, right: GVK): number {
   return left.kind.localeCompare(right.kind);
@@ -79,24 +79,29 @@ export function categorySortFn(left: string, right: string): number {
 export function parseGVKRef(ref: string): GVK {
   const parts = ref.split("/");
   return parts.length === 2
-      ? { group: "", version: parts[0], kind: parts[1] }
-      : { group: parts[0], version: parts[1], kind: parts[2] };
+    ? { group: "", version: parts[0], kind: parts[1] }
+    : { group: parts[0], version: parts[1], kind: parts[2] };
 }
 
 export function getAllGVK(spec: SwaggerSpec): GVKByCategory {
   const gvk = Object.values(spec.paths)
     .flatMap((p) => Object.values(p))
-    .filter((a) => a['x-kubernetes-action'] === 'list')
-    .map((a) => a['x-kubernetes-group-version-kind'])
+    .filter((a) => a["x-kubernetes-action"] === "list")
+    .map((a) => a["x-kubernetes-group-version-kind"])
+    .filter((a) => a.kind !== "CustomResourceDefinition"); // TODO: Handle CRDs later, they are not supported yet
 
-  const deduped = Object.values(gvk.reduce((acc, item) => {
-    const key = `${item.group}/${item.version}/${item.kind}`;
-    return {
-      ...acc,
-      [key]: item,
-    };
-  }, {} as Record<string, GVK>));
-
+  const deduped = Object.values(
+    gvk.reduce(
+      (acc, item) => {
+        const key = `${item.group}/${item.version}/${item.kind}`;
+        return {
+          ...acc,
+          [key]: item,
+        };
+      },
+      {} as Record<string, GVK>
+    )
+  );
 
   return deduped.reduce((acc, item) => {
     const category = kindToCategory[item.kind] || "Other";
@@ -119,7 +124,10 @@ export type ResourceDefinition = {
   };
 };
 
-export function getGVKDefinition(spec: SwaggerSpec, gvk: GVK): ResourceDefinition & { scope: "Cluster" | "Namespaced" } {
+export function getGVKDefinition(
+  spec: SwaggerSpec,
+  gvk: GVK
+): ResourceDefinition & { scope: "Cluster" | "Namespaced" } {
   const result = Object.entries(spec.definitions).find(
     ([_, def]) =>
       def["x-kubernetes-group-version-kind"] &&
@@ -139,19 +147,23 @@ export function getGVKDefinition(spec: SwaggerSpec, gvk: GVK): ResourceDefinitio
 
   const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
 
-  const namespacedPath = `/apis/${apiVersion}/namespaces/{namespace}/${pluralize(gvk.kind.toLowerCase())}`
+  const namespacedPath = `/apis/${apiVersion}/namespaces/{namespace}/${pluralize(gvk.kind.toLowerCase())}`;
   const scope = namespacedPath in spec.paths ? "Namespaced" : "Cluster";
 
   const def = getDefinitionByKey(spec, result[0]);
   return { ...def, scope };
 }
 
-export function getDefinitionByKey(spec: SwaggerSpec, key: string): ResourceDefinition {
+const cached: Record<string, ResourceDefinition> = {};
+
+export function getDefinitionByKey(
+  spec: SwaggerSpec,
+  key: string
+): ResourceDefinition {
   const root = spec.definitions[key];
   if (!root) {
     throw new Error(`No definition found for ${key}`);
   }
-
 
   const definition: ResourceDefinition = {
     description: root.description ?? "",
@@ -181,7 +193,10 @@ export function getDefinitionByKey(spec: SwaggerSpec, key: string): ResourceDefi
         : refType;
 
       if (refType !== "Time") {
-        definition.properties[name].definition = getDefinitionByKey(spec, refKey);
+        definition.properties[name].definition = getDefinitionByKey(
+          spec,
+          refKey
+        );
       }
     }
   }
