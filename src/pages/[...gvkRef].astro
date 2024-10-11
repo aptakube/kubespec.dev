@@ -10,7 +10,9 @@ export async function getStaticPaths() {
   const categories = getAllGVK(spec);
   const gvk = Object.values(categories).flat();
   return gvk.map((gvk) => ({
-    params: { gvkRef: [gvk.group, gvk.version, gvk.kind].join("/") },
+    params: {
+      gvkRef: [gvk.group, gvk.version, gvk.kind].join("/").toLowerCase(),
+    },
   }));
 }
 
