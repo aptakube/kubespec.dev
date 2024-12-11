@@ -6,6 +6,7 @@ import { PropertyType } from "./PropertyType";
 import { IconBulb } from "@tabler/icons-react";
 import ResourceLinks from "./ResourceLinks.astro";
 import ExampleList from "./ExampleList.astro";
+import ChangeHistory from "./ChangeHistory.astro";
 
 type Props = {
   version: string;
@@ -18,6 +19,10 @@ const spec = await readSwaggerSpec(version);
 const gvk = parseGVKRef(gvkRef);
 const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
 const definition = getGVKDefinition(spec, gvk);
+
+if (!definition) {
+  throw new Error(`No definition found for ${apiVersion}/${gvk.kind}`);
+}
 
 const metadata = await readMetadata(gvk);
 ---
@@ -32,7 +37,6 @@ const metadata = await readMetadata(gvk);
 </nav>
 
 <div class="flex flex-col pb-4">
-  <h2 class="text-base font-semibold text-primary"></h2>
   <h2 class="text-base font-semibold text-primary">
     {apiVersion} &middot; {definition.scope} Resource
   </h2>
@@ -62,5 +66,6 @@ const metadata = await readMetadata(gvk);
   </p>
 </div>
 
+<ChangeHistory version={version} gvk={gvk} />
 <ExampleList apiVersion={apiVersion} kind={gvk.kind} />
 <ResourceLinks links={metadata.links} kind={gvk.kind} />

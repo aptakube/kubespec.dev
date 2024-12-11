@@ -1,0 +1,30 @@
+---
+import { getPreviousVersions } from "@lib/swagger";
+import ChangeList from "./ChangeList.astro";
+import type { GVK } from "@lib/swagger";
+
+type Props = {
+  version: string;
+  gvk: GVK;
+};
+
+const { version, gvk } = Astro.props;
+
+const previous = getPreviousVersions(version);
+if (previous.length <= 1) {
+  return null;
+}
+---
+
+<div class="mt-20">
+  <div class="divide-y">
+    <div>
+      <h2 class="text-2xl font-bold leading-10 tracking-tight">
+        Change History
+      </h2>
+      <div>
+        {previous.map((v) => <ChangeList version={v} gvk={gvk} />)}
+      </div>
+    </div>
+  </div>
+</div>

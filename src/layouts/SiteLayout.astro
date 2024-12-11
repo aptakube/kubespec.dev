@@ -1,5 +1,5 @@
 ---
-import { ClientRouter } from "astro:transitions";
+import { ViewTransitions } from "astro:transitions";
 import "@fontsource-variable/inter";
 import "cal-sans";
 import "./global.css";
@@ -52,7 +52,7 @@ const openGraphUrl = og
 
     <script is:inline async data-domain="kubespec.dev" data-api="/e" src="/p.js"
     ></script>
-    <ClientRouter />
+    <ViewTransitions />
   </head>
   <body class="flex flex-col min-h-screen font-sans tracking-tight antialiased">
     <Header />

@@ -127,7 +127,7 @@ export type ResourceDefinition = {
 export function getGVKDefinition(
   spec: SwaggerSpec,
   gvk: GVK
-): ResourceDefinition & { scope: "Cluster" | "Namespaced" } {
+): (ResourceDefinition & { scope: "Cluster" | "Namespaced" }) | undefined {
   const result = Object.entries(spec.definitions).find(
     ([_, def]) =>
       def["x-kubernetes-group-version-kind"] &&
@@ -140,9 +140,7 @@ export function getGVKDefinition(
   );
 
   if (!result) {
-    throw new Error(
-      `No definition found for ${gvk.group}/${gvk.version}/${gvk.kind}`
-    );
+    return undefined;
   }
 
   const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;

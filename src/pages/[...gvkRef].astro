@@ -24,7 +24,7 @@ const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
 
 <SiteLayout
   title={`Kubernetes Spec: ${gvk.kind}`}
-  description={`Documentation, properties, types and examples for ${gvk.kind} ${apiVersion}`}
+  description={`Documentation, properties, change history, types and examples for ${gvk.kind} ${apiVersion}`}
 >
   <DefinitionPage version={LATEST_VERSION} gvkRef={gvkRef} />
 </SiteLayout>
