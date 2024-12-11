@@ -1,12 +1,14 @@
 ---
 import { compareVersions, getPreviousVersion, type GVK } from "@lib/swagger";
 import { DescriptionToggle } from "./DescriptionToggle";
+import { CollapsableItem } from "./CollapsableItem";
 
 type Props = {
   version: string;
   gvk: GVK;
+  defaultOpen: boolean;
 };
-const { version, gvk } = Astro.props;
+const { version, gvk, defaultOpen } = Astro.props;
 
 const previous = getPreviousVersion(version);
 if (!previous) {
@@ -22,91 +24,98 @@ const isNewGVK =
   changes.filter((change) => change.type === "new-gvk").length > 0;
 ---
 
-<h3 class="font-title text-lg mt-6">Kubernetes v{version}</h3>
+<CollapsableItem
+  client:load
+  defaultOpen={defaultOpen}
+  added={added.length}
+  removed={removed.length}
+  updated={updated.length}
+  title={`Kubernetes v${version}`}
+>
+  {
+    changes.length === 0 && (
+      <p class="text-muted-foreground text-sm">Nothing changed</p>
+    )
+  }
 
-{
-  changes.length === 0 && (
-    <p class="text-muted-foreground text-sm">Nothing changed</p>
-  )
-}
-
-{
-  isNewGVK && (
-    <p class="text-muted-foreground text-sm">
-      <span class="text-success">{gvk.kind}</span> was introduced on this
-      version of Kubernetes
-    </p>
-  )
-}
-
-{
-  added.length > 0 && (
-    <>
+  {
+    isNewGVK && (
       <p class="text-muted-foreground text-sm">
-        {added.length}
-        {added.length === 1 ? "property has" : "properties have"} been added on
-        this version
+        <span class="text-success">{gvk.kind}</span> was introduced on this
+        version of Kubernetes
       </p>
+    )
+  }
 
-      {
+  {
+    added.length > 0 && (
+      <>
+        <p class="text-muted-foreground text-sm">
+          {added.length}
+          {added.length === 1 ? "property has" : "properties have"} been added
+          on this version
+        </p>
+
+        {
+          <ul class="mb-2">
+            {added.map((change) => (
+              <DescriptionToggle
+                client:load
+                path={change.path}
+                description={change.description}
+                color="text-success"
+              />
+            ))}
+          </ul>
+        }
+      </>
+    )
+  }
+
+  {
+    removed.length > 0 && (
+      <>
+        <p class="text-muted-foreground text-sm">
+          {removed.length}
+          {removed.length === 1 ? "property has" : "properties have"} been
+          removed on this version
+        </p>
+
         <ul class="mb-2">
-          {added.map((change) => (
+          {removed.map((change) => (
             <DescriptionToggle
               client:load
               path={change.path}
               description={change.description}
-              color="text-success"
+              color="text-destructive"
             />
           ))}
         </ul>
-      }
-    </>
-  )
-}
+      </>
+    )
+  }
 
-{
-  removed.length > 0 && (
-    <>
-      <p class="text-muted-foreground text-sm">
-        {removed.length}
-        {removed.length === 1 ? "property has" : "properties have"} been removed
-        on this version
-      </p>
+  {
+    updated.length > 0 && (
+      <>
+        <p class="text-muted-foreground text-sm">
+          {updated.length}
+          {updated.length === 1 ? "property has" : "properties have"} changed
+          the description
+        </p>
 
-      <ul class="mb-2">
-        {removed.map((change) => (
-          <DescriptionToggle
-            client:load
-            path={change.path}
-            description={change.description}
-            color="text-destructive"
-          />
-        ))}
-      </ul>
-    </>
-  )
-}
-
-{
-  updated.length > 0 && (
-    <>
-      <p class="text-muted-foreground text-sm">
-        {updated.length}
-        {updated.length === 1 ? "property has" : "properties have"} changed the
-        description
-      </p>
-
-      <ul class="mb-2">
-        {updated.map((update) => (
-          <DescriptionToggle
-            client:load
-            path={update.path}
-            description={update.previous}
-            description2={update.next}
-            color="text-warning"
-          />
-        ))}
-      </ul>
-    </>
-  )
-}
+        <ul class="mb-2">
+          {updated.map((update) => (
+            <DescriptionToggle
+              client:load
+              path={update.path}
+              description={update.previous}
+              description2={update.next}
+              color="text-warning"
+            />
+          ))}
+        </ul>
+      </>
+    )
+  }
+</CollapsableItem>
