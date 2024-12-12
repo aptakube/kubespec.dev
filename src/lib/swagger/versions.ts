@@ -1,4 +1,8 @@
+// Swagger.json files are fetched from the following URL:
+// https://raw.githubusercontent.com/kubernetes/kubernetes/refs/heads/release-1.32/api/openapi-spec/swagger.json
+
 export const VERSIONS = [
+  "1.32",
   "1.31",
   "1.30",
   "1.29",
