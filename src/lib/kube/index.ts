@@ -206,11 +206,14 @@ type GVKMetadata = {
 
 export async function readMetadata(gvk: GVK): Promise<GVKMetadata> {
   const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
+  const fileName = `./metadata/${apiVersion}/${gvk.kind.toLowerCase()}/${gvk.kind.toLowerCase()}.json`;
+
+  const files = import.meta.glob<GVKMetadata>(`./metadata/**/*.json`, {
+    eager: true,
+  });
 
   try {
-    const { links } = await import(
-      `./metadata/${apiVersion}/${gvk.kind.toLowerCase()}/${gvk.kind.toLowerCase()}.json`
-    );
+    const { links } = files[fileName] || ({ links: [] } as GVKMetadata);
     return { links: links ?? [] };
   } catch (e) {
     return { links: [] };
