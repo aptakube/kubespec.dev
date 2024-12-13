@@ -1,6 +1,6 @@
 ---
-title: A basic DaemonSet that runs a pod on every node
-description: In this example the DaemonSet will schedule a pod on every node in the cluster, including the control plane
+title: A basic DaemonSet that runs a pod on every node (excluding nodes with a specific taints)
+description: In this example the DaemonSet will schedule a pod on every node in the cluster, including the control plane, but excluding nodes with a specific taints
 ---
 
 ```yaml
