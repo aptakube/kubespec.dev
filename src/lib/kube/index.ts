@@ -135,8 +135,13 @@ export function getBuiltinResource(
 
   const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
 
-  const namespacedPath = `/apis/${apiVersion}/namespaces/{namespace}/${pluralize(gvk.kind.toLowerCase())}`;
-  const scope = namespacedPath in spec.paths ? "Namespaced" : "Cluster";
+  const namespacedPath =
+    apiVersion === "v1"
+      ? `/api/${apiVersion}/namespaces/{namespace}/${pluralize(gvk.kind.toLowerCase())}`
+      : `/apis/${apiVersion}/namespaces/{namespace}/${pluralize(gvk.kind.toLowerCase())}`;
+  const scope = Object.keys(spec.paths).includes(namespacedPath)
+    ? "Namespaced"
+    : "Cluster";
 
   const def = getDefinitionByKey(spec, result[0]);
   return { definition: def, gvk, scope };

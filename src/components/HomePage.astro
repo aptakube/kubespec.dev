@@ -1,6 +1,14 @@
 ---
-import { categorySortFn, getAllGVK, gvkSortFn, type GVK } from "@lib/kube";
+import {
+  categorySortFn,
+  getAllGVK,
+  getBuiltinResource,
+  gvkSortFn,
+  type GVK,
+} from "@lib/kube";
 import { LATEST_VERSION, readSwaggerSpec } from "@lib/swagger";
+import * as Tooltip from "@radix-ui/react-tooltip";
+import { ScopeIcon } from "./ScopeIcon";
 
 type Props = {
   version: string;
@@ -50,21 +58,33 @@ const makeUrl = (gvk: GVK) => {
             {category}
           </h3>
           <ul class="mt-1 grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
-            {categories[category].sort(gvkSortFn).map((gvk) => (
-              <a
-                href={makeUrl(gvk)}
-                class="w-full font-medium border rounded hover:text-primary"
-              >
-                <div class="flex flex-1 items-center justify-between truncate">
-                  <div class="flex-1 truncate px-4 py-2">
-                    <p class="text-xs text-muted-foreground">
-                      {gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version}
-                    </p>
-                    {gvk.kind}
+            {categories[category].sort(gvkSortFn).map((gvk) => {
+              const resource = getBuiltinResource(spec, gvk);
+              return (
+                <a
+                  href={makeUrl(gvk)}
+                  class="w-full font-medium border rounded hover:text-primary relative"
+                >
+                  <div class="flex flex-1 items-center justify-between truncate">
+                    <div class="flex-1 truncate px-4 py-2">
+                      <p class="text-xs text-muted-foreground">
+                        {gvk.group
+                          ? `${gvk.group}/${gvk.version}`
+                          : gvk.version}
+                      </p>
+                      {gvk.kind}
+                    </div>
+                    {resource?.scope && (
+                      <ScopeIcon
+                        scope={resource.scope}
+                        className="h-4 w-4 absolute -top-1 -right-1 text-muted-foreground bg-background"
+                        client:load
+                      />
+                    )}
                   </div>
-                </div>
-              </a>
-            ))}
+                </a>
+              );
+            })}
           </ul>
         </div>
       ))

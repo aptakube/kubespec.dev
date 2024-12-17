@@ -1,6 +1,7 @@
 ---
 import { listCustomResources, type Project } from "@lib/crds";
 import { type GVK, type Resource } from "@lib/kube";
+import { ScopeIcon } from "./ScopeIcon";
 
 type Props = {
   project: Project;
@@ -55,7 +56,7 @@ const groups: Record<string, Resource[]> = resources.reduce(
           {resources.map((resource) => (
             <a
               href={makeUrl(resource.gvk)}
-              class="w-full font-medium border rounded hover:text-primary"
+              class="w-full font-medium border rounded hover:text-primary relative"
             >
               <div class="flex flex-1 items-center justify-between truncate">
                 <div class="flex-1 truncate px-4 py-2">
@@ -64,6 +65,13 @@ const groups: Record<string, Resource[]> = resources.reduce(
                   </p>
                   {resource.gvk.kind}
                 </div>
+                {resource?.scope && (
+                  <ScopeIcon
+                    scope={resource.scope}
+                    className="h-4 w-4 absolute -top-1 -right-1 text-muted-foreground bg-background"
+                    client:load
+                  />
+                )}
               </div>
             </a>
           ))}
