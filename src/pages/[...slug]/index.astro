@@ -18,6 +18,9 @@ const project = await findProject(slug);
 const tag = project.versions[0];
 ---
 
-<SiteLayout title={`AAA`} description="BBB">
+<SiteLayout
+  title={`${project.name} Spec ${tag}: Reference Guide and Documentation`}
+  description={`Find the documentation for all ${project.name} custom resources, properties, types and even some examples!`}
+>
   <ProjectHomePage project={project} tag={tag} />
 </SiteLayout>

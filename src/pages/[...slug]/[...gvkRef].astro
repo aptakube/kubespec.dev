@@ -42,7 +42,10 @@ const gvk = parseGVKRef(gvkRef);
 const resource = await findCustomResource(slug, tag, gvk);
 ---
 
-<SiteLayout title={`AAA`} description={`BBB`}>
+<SiteLayout
+  title={`${project.name} Spec ${tag}: ${gvk.kind}`}
+  description={`Documentation, properties, change history, types and examples for ${gvk.kind} ${gvk.group}/${gvk.version}`}
+>
   <CustomResourceDefinitionPage
     project={project}
     tag={tag}
