@@ -2,6 +2,8 @@ import type { ResourceDefinition } from "@lib/kube";
 import { PropertyRow } from "./PropertyRow";
 
 type Props = {
+  path?: string;
+  scope: string;
   definition: ResourceDefinition;
   level: number;
 };
@@ -16,6 +18,8 @@ export function PropertyTree(props: Props) {
         ([name, property]) => (
           <PropertyRow
             key={name}
+            scope={props.scope}
+            path={`${props.path ?? ""}.${name}`}
             name={name}
             {...property}
             level={props.level}

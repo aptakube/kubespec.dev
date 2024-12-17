@@ -17,6 +17,7 @@ export type ResourceDefinition = {
       description: string;
       type: string;
       isArray: boolean;
+      required: boolean;
       definition?: ResourceDefinition;
     };
   };

@@ -165,6 +165,7 @@ export function getDefinitionByKey(
     definition.properties[name] = {
       description: property.description || "",
       type: property.type || "",
+      required: (root.required || []).includes(name),
       isArray: property.type === "array",
     };
 

@@ -66,21 +66,32 @@ const metadata = await readMetadata(gvk);
       </pre>
 </div>
 
-<PropertyTree definition={resource.definition} level={0} client:load />
+<PropertyTree
+  scope={resource.scope}
+  definition={resource.definition}
+  level={0}
+  client:load
+/>
 
 <div
-  class="inline-flex items-center gap-1 p-2 border rounded text-muted-foreground font-medium text-sm mt-4"
+  class="inline-flex items-center gap-2 p-2 border rounded text-muted-foreground font-medium text-sm mt-4"
 >
   <IconBulb className="size-4" />
-  <p>
-    Click on <span class="font-mono font-bold text-foreground"
-      >Property Name</span
-    > to see the description, and <PropertyType
-      type="Pink Types"
-      hasChildren
-      className="font-semibold tracking-normal"
-    /> to expand schema.
-  </p>
+  <div>
+    <p>
+      Click on <span class="font-bold text-foreground tracking-tighter"
+        >Property Name</span
+      > to show the description, and <PropertyType
+        type="Pink Types"
+        hasChildren
+        className="font-semibold tracking-tighter"
+      /> to expand schema.
+    </p>
+    <p>
+      Required properties are marked with <span class="text-destructive">*</span
+      >
+    </p>
+  </div>
 </div>
 
 <ChangeHistory version={version} gvk={gvk} />
