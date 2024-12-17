@@ -19,7 +19,9 @@ const apiVersion = `${resource.gvk.group}/${resource.gvk.version}`;
 <nav class="order-first flex space-x-2 pb-10 text-sm font-semibold">
   <a
     class="text-muted-foreground hover:underline"
-    href={!tag || tag === project.versions[0] ? "/" : `/${tag}`}
+    href={!tag || tag === project.versions[0]
+      ? `/${project.slug}`
+      : `/${project.slug}/${tag}`}
   >
     ← back to all kinds
   </a>

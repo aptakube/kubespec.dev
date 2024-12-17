@@ -1,7 +1,7 @@
 import { readFile, readdir } from "fs/promises";
 import { parseAllDocuments } from "yaml";
 import semver from "semver";
-import type { GVK, Resource } from "@lib/kube";
+import type { GVK, Resource, ResourceDefinition } from "@lib/kube";
 import ALL_PROJECTS from "./projects";
 
 export type Project = {
@@ -54,7 +54,7 @@ export async function listCustomResources(
           kind: manifest.spec.names.kind,
         },
         scope: manifest.spec.scope,
-        definition: version.schema.openAPIV3Schema,
+        definition: toResourceDefinition(version.schema.openAPIV3Schema),
       } as Resource;
     });
   });
@@ -101,4 +101,50 @@ export async function findProject(slug: string): Promise<Project> {
     throw new Error(`Project not found: ${slug}`);
   }
   return project;
+}
+
+type OpenAPIV3Schema = {
+  description?: string;
+  properties?: {
+    [name: string]: OpenAPIV3Property;
+  };
+  required?: string[];
+};
+
+type OpenAPIV3Property = {
+  description?: string;
+  type?: string;
+  items?: {
+    type?: string;
+    properties?: {
+      [name: string]: OpenAPIV3Property;
+    };
+  };
+};
+
+function toResourceDefinition(schema: OpenAPIV3Schema): ResourceDefinition {
+  const definition: ResourceDefinition = {
+    description: schema.description ?? "",
+    properties: {},
+  };
+
+  for (const [name, property] of Object.entries(schema.properties || {})) {
+    definition.properties[name] = {
+      description: property.description || "",
+      type: property.type || "",
+      required: (schema.required || []).includes(name),
+      isArray: property.type === "array",
+    };
+
+    if (definition.properties[name].isArray && property.items?.type) {
+      definition.properties[name].type = `${property.items.type}[]`;
+      definition.properties[name].definition = toResourceDefinition(
+        property.items
+      );
+    } else {
+      definition.properties[name].definition = toResourceDefinition(property);
+    }
+  }
+
+  return definition;
 }
