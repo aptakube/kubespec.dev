@@ -1,7 +1,7 @@
 ---
 import { PropertyTree } from "./PropertyTree";
 import { PropertyType } from "./PropertyType";
-import { IconBulb } from "@tabler/icons-react";
+import { IconBulb, IconCube } from "@tabler/icons-react";
 import ChangeHistory from "./ChangeHistory.astro";
 import type { Project } from "@lib/crds";
 import type { Resource } from "@lib/kube";
@@ -26,9 +26,26 @@ const apiVersion = `${resource.gvk.group}/${resource.gvk.version}`;
 </nav>
 
 <div class="flex flex-col pb-4">
-  <h2 class="text-base font-semibold text-primary">
-    {apiVersion} &middot; {resource.scope} Resource
-  </h2>
+  <div class="flex gap-2 items-center text-base font-semibold text-primary">
+    <h2>{apiVersion}</h2>
+    <span>&middot;</span>
+    <div
+      class="inline-flex items-center gap-1 leading-none border px-2 py-1 text-muted-foreground text-sm rounded-lg"
+    >
+      {
+        resource.scope === "Namespaced" ? (
+          <IconCube className="size-4 inline" />
+        ) : (
+          <img src="/kubernetes.svg" class="size-4 inline" />
+        )
+      }
+      {
+        resource.scope === "Namespaced"
+          ? "Namespaced Resource"
+          : "Cluster-scoped Resource"
+      }
+    </div>
+  </div>
   <h1 class="mt-2 text-3xl font-bold leading-8 tracking-tight sm:text-4xl">
     {resource.gvk.kind}
   </h1>
@@ -36,37 +53,36 @@ const apiVersion = `${resource.gvk.group}/${resource.gvk.version}`;
     class="mt-2 max-w-4xl whitespace-pre-line text-lg text-muted-foreground">
         {resource.definition.description || <span class="italic">No Description</span>}
 </pre>
-
-  <PropertyTree
-    scope={resource.scope}
-    definition={resource.definition}
-    level={0}
-    client:load
-  />
-
-  <div
-    class="inline-flex items-center gap-2 p-2 border rounded text-muted-foreground font-medium text-sm mt-4"
-  >
-    <IconBulb className="size-4" />
-    <div>
-      <p>
-        Click on <span class="font-bold text-foreground tracking-tighter"
-          >Property Name</span
-        > to show the description, and <PropertyType
-          type="Pink Types"
-          hasChildren
-          className="font-semibold tracking-tighter"
-        /> to expand schema.
-      </p>
-      <p>
-        Required properties are marked with <span class="text-destructive"
-          >*</span
-        >
-      </p>
-    </div>
-  </div>
-
-  <ChangeHistory version={tag} gvk={resource.gvk} />
-  <!-- <ExampleList apiVersion={apiVersion} kind={resource.gvk.kind} /> -->
-  <!-- <ResourceLinks links={metadata.links} kind={resource.gvk.kind} /> -->
 </div>
+
+<PropertyTree
+  scope={resource.scope}
+  definition={resource.definition}
+  level={0}
+  client:load
+/>
+
+<div
+  class="inline-flex items-center gap-2 p-2 border rounded text-muted-foreground font-medium text-sm mt-4"
+>
+  <IconBulb className="size-4" />
+  <div>
+    <p>
+      Click on <span class="font-bold text-foreground tracking-tighter"
+        >Property Name</span
+      > to show the description, and <PropertyType
+        type="Pink Types"
+        hasChildren
+        className="font-semibold tracking-tighter"
+      /> to expand schema.
+    </p>
+    <p>
+      Required properties are marked with <span class="text-destructive">*</span
+      >
+    </p>
+  </div>
+</div>
+
+<ChangeHistory version={tag} gvk={resource.gvk} />
+<!-- <ExampleList apiVersion={apiVersion} kind={resource.gvk.kind} /> -->
+<!-- <ResourceLinks links={metadata.links} kind={resource.gvk.kind} /> -->
