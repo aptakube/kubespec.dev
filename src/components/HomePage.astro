@@ -7,8 +7,8 @@ import {
   type GVK,
 } from "@lib/kube";
 import { LATEST_VERSION, readSwaggerSpec } from "@lib/swagger";
-import * as Tooltip from "@radix-ui/react-tooltip";
 import { ScopeIcon } from "./ScopeIcon";
+import { listProjects } from "@lib/crds";
 
 type Props = {
   version: string;
@@ -17,6 +17,7 @@ type Props = {
 const { version } = Astro.props;
 const spec = await readSwaggerSpec(version);
 const categories = getAllGVK(spec);
+const projects = await listProjects();
 
 const makeUrl = (gvk: GVK) => {
   const path = `${[gvk.group, gvk.version, gvk.kind].filter(Boolean).join("/")}`;
@@ -90,3 +91,30 @@ const makeUrl = (gvk: GVK) => {
       ))
   }
 </div>
+
+<div class="pt-10 pb-4">
+  <h3 class="mt-2 text-4xl font-title tracking-tight">Custom Resources</h3>
+  <p class="mt-2 max-w-4xl text-lg leading-7">
+    We also have documentation for custom resources from various projects.
+  </p>
+</div>
+
+<ul
+  class="mt-1 grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4 mb-10"
+>
+  {
+    projects
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .map((p) => (
+        <a
+          href={`/${p.slug}`}
+          class="w-full font-medium border rounded hover:text-primary relative"
+        >
+          <div class="flex flex-1 gap-1 items-center justify-between truncate p-2">
+            <img src={p.logo} class="size-6 rounded" alt={p.name} />
+            <div class="flex-1 truncate">{p.name}</div>
+          </div>
+        </a>
+      ))
+  }
+</ul>

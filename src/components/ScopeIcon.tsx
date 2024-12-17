@@ -1,5 +1,4 @@
 import * as Tooltip from "@radix-ui/react-tooltip";
-import { IconCube } from "@tabler/icons-react";
 
 type Props = {
   scope: "Cluster" | "Namespaced";

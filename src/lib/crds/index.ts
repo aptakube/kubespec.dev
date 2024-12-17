@@ -6,6 +6,7 @@ import ALL_PROJECTS from "./projects";
 
 export type Project = {
   name: string;
+  logo: string;
   slug: string;
   versions: string[];
 };
@@ -88,6 +89,7 @@ export async function listProjects(): Promise<Project[]> {
     projects.push({
       name: project.name,
       slug: project.slug,
+      logo: project.logo,
       versions: semver.rsort(versions),
     });
   }

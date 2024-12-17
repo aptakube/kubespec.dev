@@ -12,42 +12,49 @@ export default [
   {
     name: "Gateway API",
     slug: "gateway-api",
+    logo: "https://avatars.githubusercontent.com/u/36015203?s=200&v=4",
     repo: "kubernetes-sigs/gateway-api",
     pathToManifests: "config/crd/standard",
   },
   {
     name: "Cluster API",
     slug: "cluster-api",
+    logo: "https://avatars.githubusercontent.com/u/36015203?s=200&v=4",
     repo: "kubernetes-sigs/cluster-api",
     pathToManifests: "config/crd/bases",
   },
   {
     name: "Istio",
     slug: "istio",
+    logo: "https://avatars.githubusercontent.com/u/23534644?s=200&v=4",
     repo: "istio/istio",
     pathToManifest: "manifests/charts/base/files/crd-all.gen.yaml",
   },
   {
     name: "Keda",
     slug: "keda",
+    logo: "https://avatars.githubusercontent.com/u/49917779?s=200&v=4",
     repo: "kedacore/keda",
     pathToManifests: "config/crd/bases",
   },
   {
     name: "Kyverno",
     slug: "kyverno",
+    logo: "https://avatars.githubusercontent.com/u/68448710?s=200&v=4",
     repo: "kyverno/kyverno",
     pathToManifests: "config/crds/kyverno",
   },
   {
     name: "CloudNativePG",
     slug: "cloudnative-pg",
+    logo: "https://avatars.githubusercontent.com/u/100373852?s=200&v=4",
     repo: "cloudnative-pg/cloudnative-pg",
     pathToManifests: "config/crd/bases",
   },
   {
     name: "cert-manager",
     slug: "cert-manager",
+    logo: "https://avatars.githubusercontent.com/u/39950598?s=200&v=4",
     repo: "cert-manager/cert-manager",
     releaseFileName: "cert-manager.yaml",
     filterTag: (tag: string) => !tag.startsWith("cmd/ctl"),
@@ -55,6 +62,7 @@ export default [
   {
     name: "Cilium",
     slug: "cilium",
+    logo: "https://avatars.githubusercontent.com/u/21054566?s=200&v=4",
     repo: "cilium/cilium",
     pathToManifests: "pkg/k8s/apis/cilium.io/client/crds",
     // For some reason, the cilium repo has duplicate tags like "v1.10.0" and "1.10.0"
