@@ -1,7 +1,8 @@
 ---
-import { compareVersions, getPreviousVersion, type GVK } from "@lib/swagger";
+import { compareVersions, getPreviousVersion } from "@lib/swagger";
 import { DescriptionToggle } from "./DescriptionToggle";
 import { CollapsableItem } from "./CollapsableItem";
+import type { GVK } from "@lib/kube";
 
 type Props = {
   version: string;

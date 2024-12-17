@@ -1,36 +1,25 @@
 ---
-import { getBuiltinResource, parseGVKRef, readMetadata } from "@lib/kube";
-import { LATEST_VERSION, readSwaggerSpec } from "@lib/swagger";
 import { PropertyTree } from "./PropertyTree";
 import { PropertyType } from "./PropertyType";
 import { IconBulb } from "@tabler/icons-react";
-import ResourceLinks from "./ResourceLinks.astro";
-import ExampleList from "./ExampleList.astro";
 import ChangeHistory from "./ChangeHistory.astro";
+import type { Project } from "@lib/crds";
+import type { Resource } from "@lib/kube";
 
 type Props = {
-  version: string;
-  gvkRef: string;
+  project: Project;
+  resource: Resource;
+  tag: string;
 };
 
-const { gvkRef, version } = Astro.props;
-const spec = await readSwaggerSpec(version);
-
-const gvk = parseGVKRef(gvkRef);
-const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
-const resource = getBuiltinResource(spec, gvk);
-
-if (!resource) {
-  throw new Error(`Resource not found for ${apiVersion}/${gvk.kind}`);
-}
-
-const metadata = await readMetadata(gvk);
+const { project, resource, tag } = Astro.props;
+const apiVersion = `${resource.gvk.group}/${resource.gvk.version}`;
 ---
 
 <nav class="order-first flex space-x-2 pb-10 text-sm font-semibold">
   <a
     class="text-muted-foreground hover:underline"
-    href={!version || version === LATEST_VERSION ? "/" : `/v${version}`}
+    href={!tag || tag === project.versions[0] ? "/" : `/${tag}`}
   >
     ← back to all kinds
   </a>
@@ -41,7 +30,7 @@ const metadata = await readMetadata(gvk);
     {apiVersion} &middot; {resource.scope} Resource
   </h2>
   <h1 class="mt-2 text-3xl font-bold leading-8 tracking-tight sm:text-4xl">
-    {gvk.kind}
+    {resource.gvk.kind}
   </h1>
   <pre
     class="mt-2 max-w-4xl whitespace-pre-line text-lg text-muted-foreground">
@@ -66,6 +55,6 @@ const metadata = await readMetadata(gvk);
   </p>
 </div>
 
-<ChangeHistory version={version} gvk={gvk} />
-<ExampleList apiVersion={apiVersion} kind={gvk.kind} />
-<ResourceLinks links={metadata.links} kind={gvk.kind} />
+<ChangeHistory version={tag} gvk={resource.gvk} />
+<!-- <ExampleList apiVersion={apiVersion} kind={resource.gvk.kind} /> -->
+<!-- <ResourceLinks links={metadata.links} kind={resource.gvk.kind} /> -->

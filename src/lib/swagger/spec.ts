@@ -1,12 +1,8 @@
+import type { GVK } from "@lib/kube";
+
 export function readSwaggerSpec(version: string): Promise<SwaggerSpec> {
   return import(`../../../public/swagger-${version}.json`);
 }
-
-export type GVK = {
-  group: string;
-  version: string;
-  kind: string;
-};
 
 export type SwaggerSpec = {
   paths: {

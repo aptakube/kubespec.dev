@@ -1,5 +1,7 @@
-import type { GVK, SwaggerSpec } from "@lib/swagger";
+import type { SwaggerSpec } from "@lib/swagger";
 import pluralize from "pluralize";
+import type { GVK, Resource, ResourceDefinition } from "./types";
+export type { GVK, Resource, ResourceDefinition };
 
 export type GVKByCategory = { [category: string]: GVK[] };
 
@@ -88,7 +90,7 @@ export function getAllGVK(spec: SwaggerSpec): GVKByCategory {
     .flatMap((p) => Object.values(p))
     .filter((a) => a["x-kubernetes-action"] === "list")
     .map((a) => a["x-kubernetes-group-version-kind"])
-    .filter((a) => a.kind !== "CustomResourceDefinition"); // TODO: Handle CRDs later, they are not supported yet
+    .filter((a) => a.kind !== "CustomResourceDefinition");
 
   const deduped = Object.values(
     gvk.reduce(
@@ -112,22 +114,10 @@ export function getAllGVK(spec: SwaggerSpec): GVKByCategory {
   }, {} as GVKByCategory);
 }
 
-export type ResourceDefinition = {
-  description: string;
-  properties: {
-    [name: string]: {
-      description: string;
-      type: string;
-      isArray: boolean;
-      definition?: ResourceDefinition;
-    };
-  };
-};
-
-export function getGVKDefinition(
+export function getBuiltinResource(
   spec: SwaggerSpec,
   gvk: GVK
-): (ResourceDefinition & { scope: "Cluster" | "Namespaced" }) | undefined {
+): Resource | undefined {
   const result = Object.entries(spec.definitions).find(
     ([_, def]) =>
       def["x-kubernetes-group-version-kind"] &&
@@ -149,7 +139,7 @@ export function getGVKDefinition(
   const scope = namespacedPath in spec.paths ? "Namespaced" : "Cluster";
 
   const def = getDefinitionByKey(spec, result[0]);
-  return { ...def, scope };
+  return { definition: def, gvk, scope };
 }
 
 export function getDefinitionByKey(

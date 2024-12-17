@@ -1,0 +1,51 @@
+---
+import SiteLayout from "@layouts/SiteLayout.astro";
+
+import { parseGVKRef } from "@lib/kube";
+import {
+  listProjects,
+  listCustomResources,
+  findCustomResource,
+  findProject,
+} from "@lib/crds";
+import CustomResourceDefinitionPage from "@components/CustomResourceDefinitionPage.astro";
+
+export async function getStaticPaths() {
+  const projects = await listProjects();
+
+  const tasks = projects.map(async (project) => {
+    const resources = await listCustomResources(
+      project.slug,
+      project.versions[0]
+    );
+    return resources.map((resource) => ({
+      params: {
+        slug: project.slug,
+        gvkRef: [
+          resource.gvk.group,
+          resource.gvk.version,
+          resource.gvk.kind,
+        ].join("/"),
+      },
+    }));
+  });
+
+  return (await Promise.all(tasks)).flat();
+}
+
+const { slug, gvkRef } = Astro.params;
+
+const project = await findProject(slug);
+const tag = project.versions[0];
+const gvk = parseGVKRef(gvkRef);
+
+const resource = await findCustomResource(slug, tag, gvk);
+---
+
+<SiteLayout title={`AAA`} description={`BBB`}>
+  <CustomResourceDefinitionPage
+    project={project}
+    tag={tag}
+    resource={resource}
+  />
+</SiteLayout>

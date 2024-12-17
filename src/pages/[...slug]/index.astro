@@ -1,0 +1,23 @@
+---
+import ProjectHomePage from "@components/ProjectHomePage.astro";
+import SiteLayout from "@layouts/SiteLayout.astro";
+import { listProjects, findProject } from "@lib/crds";
+
+export async function getStaticPaths() {
+  const projects = await listProjects();
+  return projects.map((project) => ({
+    params: {
+      slug: project.slug,
+    },
+  }));
+}
+
+const { slug } = Astro.params;
+
+const project = await findProject(slug);
+const tag = project.versions[0];
+---
+
+<SiteLayout title={`AAA`} description="BBB">
+  <ProjectHomePage project={project} tag={tag} />
+</SiteLayout>

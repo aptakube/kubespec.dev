@@ -1,0 +1,74 @@
+---
+import { listCustomResources, type Project } from "@lib/crds";
+import { type GVK, type Resource } from "@lib/kube";
+
+type Props = {
+  project: Project;
+  tag: string;
+};
+
+const { project, tag } = Astro.props;
+const resources = await listCustomResources(project.slug, tag);
+
+const makeUrl = (gvk: GVK) => {
+  const path = `${[gvk.group, gvk.version, gvk.kind].filter(Boolean).join("/")}`;
+  return `/${project.slug}/${path}`;
+};
+
+const groups: Record<string, Resource[]> = resources.reduce(
+  (acc, r) => {
+    acc[r.gvk.group] = acc[r.gvk.group] || [];
+    acc[r.gvk.group].push(r);
+    return acc;
+  },
+  {} as Record<string, Resource[]>
+);
+---
+
+<div class="pb-10">
+  <h2 class="text-base font-semibold leading-7 text-primary">
+    Reference Guide for {project.name}
+  </h2>
+  <h1 class="mt-2 text-4xl font-title tracking-tight">
+    {project.name} Spec Explorer{" "}
+    <span
+      class="text-xl font-sans font-semibold tracking-tighter text-muted-foreground"
+    >
+      {tag}
+    </span>
+  </h1>
+  <p class="mt-2 max-w-4xl text-lg leading-7">
+    Find the documentation for all builtin resources, properties, types, and
+    examples.
+  </p>
+  <p class="mt-2 max-w-4xl text-base leading-7 text-muted-foreground">
+    Select a kind from the list below to get started.
+  </p>
+</div>
+
+<div class="flex flex-col space-y-8">
+  {
+    Object.entries(groups).map(([group, resources]) => (
+      <div>
+        <h3 class="font-semibold uppercase text-muted-foreground">{group}</h3>
+        <ul class="mt-1 grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
+          {resources.map((resource) => (
+            <a
+              href={makeUrl(resource.gvk)}
+              class="w-full font-medium border rounded hover:text-primary"
+            >
+              <div class="flex flex-1 items-center justify-between truncate">
+                <div class="flex-1 truncate px-4 py-2">
+                  <p class="text-xs text-muted-foreground">
+                    {resource.gvk.group}/{resource.gvk.version}
+                  </p>
+                  {resource.gvk.kind}
+                </div>
+              </div>
+            </a>
+          ))}
+        </ul>
+      </div>
+    ))
+  }
+</div>

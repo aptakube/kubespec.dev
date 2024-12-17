@@ -1,5 +1,9 @@
-import { getGVKDefinition, type ResourceDefinition } from "@lib/kube";
-import { readSwaggerSpec, type GVK } from "./spec";
+import {
+  getBuiltinResource,
+  type GVK,
+  type ResourceDefinition,
+} from "@lib/kube";
+import { readSwaggerSpec } from "./spec";
 import { VERSIONS } from "./versions";
 
 export function getPreviousVersions(version: string): string[] {
@@ -119,17 +123,29 @@ export async function compareVersions(
   const specPrev = await readSwaggerSpec(vPrev);
   const specNext = await readSwaggerSpec(vNext);
 
-  let definitionNext = getGVKDefinition(specNext, gvk);
-  let definitionPrev = getGVKDefinition(specPrev, gvk);
+  let resourceNext = getBuiltinResource(specNext, gvk);
+  let resourcePrev = getBuiltinResource(specPrev, gvk);
 
-  if (!definitionPrev && !!definitionNext) {
+  if (!resourcePrev && !!resourceNext) {
     return [{ type: "new-gvk" }];
   }
 
   let changes = [
-    ...findNewProperties("", definitionPrev, definitionNext),
-    ...findRemovedProperties("", definitionPrev, definitionNext),
-    ...findModifiedDescription("", definitionPrev, definitionNext),
+    ...findNewProperties(
+      "",
+      resourcePrev?.definition,
+      resourceNext?.definition
+    ),
+    ...findRemovedProperties(
+      "",
+      resourcePrev?.definition,
+      resourceNext?.definition
+    ),
+    ...findModifiedDescription(
+      "",
+      resourcePrev?.definition,
+      resourceNext?.definition
+    ),
   ];
 
   return changes;
