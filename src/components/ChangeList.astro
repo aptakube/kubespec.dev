@@ -1,8 +1,12 @@
 ---
-import { compareVersions, getPreviousVersion } from "@lib/swagger";
+import {
+  compareVersions,
+  getPreviousVersion,
+  readSwaggerSpec,
+} from "@lib/swagger";
 import { DescriptionToggle } from "./DescriptionToggle";
 import { CollapsableItem } from "./CollapsableItem";
-import type { GVK } from "@lib/kube";
+import { getBuiltinResource, type GVK } from "@lib/kube";
 
 type Props = {
   version: string;
@@ -15,7 +19,12 @@ if (!previous) {
   return null;
 }
 
-const changes = await compareVersions(previous, version, gvk);
+const specPrev = await readSwaggerSpec(previous);
+const specNext = await readSwaggerSpec(version);
+
+let resourcePrev = getBuiltinResource(specPrev, gvk);
+let resourceNext = getBuiltinResource(specNext, gvk);
+const changes = await compareVersions(resourcePrev, resourceNext);
 
 const added = changes.filter((change) => change.type === "new");
 const removed = changes.filter((change) => change.type === "removed");

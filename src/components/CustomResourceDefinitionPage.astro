@@ -2,9 +2,9 @@
 import { PropertyTree } from "./PropertyTree";
 import { PropertyType } from "./PropertyType";
 import { IconBulb, IconCube } from "@tabler/icons-react";
-import ChangeHistory from "./ChangeHistory.astro";
 import type { Project } from "@lib/crds";
 import type { Resource } from "@lib/kube";
+import CustomChangeList from "./CustomChangeList.astro";
 
 type Props = {
   project: Project;
@@ -85,6 +85,26 @@ const apiVersion = `${resource.gvk.group}/${resource.gvk.version}`;
   </div>
 </div>
 
-<ChangeHistory version={tag} gvk={resource.gvk} />
+<div class="mt-20">
+  <div class="divide-y">
+    <div>
+      <h2 class="text-2xl font-bold leading-10 tracking-tight">
+        Change History
+      </h2>
+      <div>
+        {
+          project.versions.map((v) => (
+            <CustomChangeList
+              project={project}
+              version={v}
+              gvk={resource.gvk}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- <ExampleList apiVersion={apiVersion} kind={resource.gvk.kind} /> -->
 <!-- <ResourceLinks links={metadata.links} kind={resource.gvk.kind} /> -->

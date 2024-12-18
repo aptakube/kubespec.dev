@@ -2,54 +2,65 @@ export type ProjectDef = {
   name: string;
   slug: string;
   repo: string;
-  pathToManifest?: string;
-  pathToManifests?: string;
+  pathToManifests?: string[];
   releaseFileName?: string;
   filterTag?: (tag: string) => boolean;
 };
 
 export default [
+  // {
+  //   name: "Kubernetes",
+  //   slug: "kubernetes",
+  //   logo: "https://avatars.githubusercontent.com/u/13629408?s=48&v=4",
+  //   repo: "kubernetes/kubernetes",
+  //   pathToManifests: ["api/openapi-spec/swagger.json"],
+  //   // Ignore Kubernetes patch releases
+  //   filterTag: (tag: string) => !tag.startsWith("v0") && tag.endsWith(".0"),
+  // },
   {
     name: "Gateway API",
     slug: "gateway-api",
     logo: "https://avatars.githubusercontent.com/u/36015203?s=200&v=4",
     repo: "kubernetes-sigs/gateway-api",
-    pathToManifests: "config/crd/standard",
+    pathToManifests: ["config/crd/standard"],
   },
   {
     name: "Cluster API",
     slug: "cluster-api",
     logo: "https://avatars.githubusercontent.com/u/36015203?s=200&v=4",
     repo: "kubernetes-sigs/cluster-api",
-    pathToManifests: "config/crd/bases",
+    pathToManifests: ["config/crd/bases"],
   },
-  {
-    name: "Istio",
-    slug: "istio",
-    logo: "https://avatars.githubusercontent.com/u/23534644?s=200&v=4",
-    repo: "istio/istio",
-    pathToManifest: "manifests/charts/base/files/crd-all.gen.yaml",
-  },
+  // {
+  //   name: "Istio",
+  //   slug: "istio",
+  //   logo: "https://avatars.githubusercontent.com/u/23534644?s=200&v=4",
+  //   repo: "istio/istio",
+  //   pathToManifests: [
+  //     "manifests/charts/base/files/gen-istio-cluster.yaml",
+  //     "manifests/charts/base/files/crd-all.gen.yaml",
+  //   ],
+  // },
   {
     name: "Keda",
     slug: "keda",
     logo: "https://avatars.githubusercontent.com/u/49917779?s=200&v=4",
     repo: "kedacore/keda",
-    pathToManifests: "config/crd/bases",
+    pathToManifests: ["deploy/crds", "config/crd/bases"],
   },
   {
     name: "Kyverno",
     slug: "kyverno",
     logo: "https://avatars.githubusercontent.com/u/68448710?s=200&v=4",
     repo: "kyverno/kyverno",
-    pathToManifests: "config/crds/kyverno",
+    pathToManifests: ["definitions/crds", "config/crds"],
   },
   {
     name: "CloudNativePG",
     slug: "cloudnative-pg",
     logo: "https://avatars.githubusercontent.com/u/100373852?s=200&v=4",
     repo: "cloudnative-pg/cloudnative-pg",
-    pathToManifests: "config/crd/bases",
+    pathToManifests: ["config/crd/bases"],
   },
   {
     name: "cert-manager",
@@ -64,7 +75,7 @@ export default [
     slug: "cilium",
     logo: "https://avatars.githubusercontent.com/u/21054566?s=200&v=4",
     repo: "cilium/cilium",
-    pathToManifests: "pkg/k8s/apis/cilium.io/client/crds",
+    pathToManifests: ["examples/crds", "pkg/k8s/apis/cilium.io/client/crds"],
     // For some reason, the cilium repo has duplicate tags like "v1.10.0" and "1.10.0"
     filterTag: (tag: string) => !tag.startsWith("v"),
   },

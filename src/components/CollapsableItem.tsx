@@ -38,7 +38,7 @@ export function CollapsableItem(props: Props) {
           )}
         </div>
       </div>
-      {isOpen && <>{props.children}</>}
+      {isOpen && <div className="ml-7">{props.children}</div>}
     </div>
   );
 }

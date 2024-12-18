@@ -3,7 +3,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.16.5
+    controller-gen.kubebuilder.io/version: v0.16.4
   name: clusters.postgresql.cnpg.io
 spec:
   group: postgresql.cnpg.io
@@ -1495,12 +1495,6 @@ spec:
                   initdb:
                     description: Bootstrap the cluster via initdb
                     properties:
-                      builtinLocale:
-                        description: |-
-                          Specifies the locale name when the builtin provider is used.
-                          This option requires `localeProvider` to be set to `builtin`.
-                          Available from PostgreSQL 17.
-                        type: string
                       dataChecksums:
                         description: |-
                           Whether the `-k` option should be passed to initdb,
@@ -1514,18 +1508,6 @@ spec:
                         description: The value to be passed as option `--encoding`
                           for initdb (default:`UTF8`)
                         type: string
-                      icuLocale:
-                        description: |-
-                          Specifies the ICU locale when the ICU provider is used.
-                          This option requires `localeProvider` to be set to `icu`.
-                          Available from PostgreSQL 15.
-                        type: string
-                      icuRules:
-                        description: |-
-                          Specifies additional collation rules to customize the behavior of the default collation.
-                          This option requires `localeProvider` to be set to `icu`.
-                          Available from PostgreSQL 16.
-                        type: string
                       import:
                         description: |-
                           Bootstraps the new cluster by importing data from an existing PostgreSQL
@@ -1533,24 +1515,6 @@ spec:
                         properties:
                           databases:
                             description: The databases to import
-                            items:
-                              type: string
-                            type: array
-                          pgDumpExtraOptions:
-                            description: |-
-                              List of custom options to pass to the `pg_dump` command. IMPORTANT:
-                              Use these options with caution and at your own risk, as the operator
-                              does not validate their content. Be aware that certain options may
-                              conflict with the operator's intended functionality or design.
-                            items:
-                              type: string
-                            type: array
-                          pgRestoreExtraOptions:
-                            description: |-
-                              List of custom options to pass to the `pg_restore` command. IMPORTANT:
-                              Use these options with caution and at your own risk, as the operator
-                              does not validate their content. Be aware that certain options may
-                              conflict with the operator's intended functionality or design.
                             items:
                               type: string
                             type: array
@@ -1594,10 +1558,6 @@ spec:
                         - source
                         - type
                         type: object
-                      locale:
-                        description: Sets the default collation order and character
-                          classification in the new database.
-                        type: string
                       localeCType:
                         description: The value to be passed as option `--lc-ctype`
                           for initdb (default:`C`)
@@ -1605,11 +1565,6 @@ spec:
                       localeCollate:
                         description: The value to be passed as option `--lc-collate`
                           for initdb (default:`C`)
-                        type: string
-                      localeProvider:
-                        description: |-
-                          This option sets the locale provider for databases created in the new cluster.
-                          Available from PostgreSQL 16.
                         type: string
                       options:
                         description: |-
@@ -1816,16 +1771,6 @@ spec:
                         minimum: 1
                         type: integer
                     type: object
-                    x-kubernetes-validations:
-                    - message: builtinLocale is only available when localeProvider
-                        is set to `builtin`
-                      rule: '!has(self.builtinLocale) || self.localeProvider == ''builtin'''
-                    - message: icuLocale is only available when localeProvider is
-                        set to `icu`
-                      rule: '!has(self.icuLocale) || self.localeProvider == ''icu'''
-                    - message: icuRules is only available when localeProvider is set
-                        to `icu`
-                      rule: '!has(self.icuRules) || self.localeProvider == ''icu'''
                   pg_basebackup:
                     description: |-
                       Bootstrap the cluster taking a physical backup of another compatible
@@ -2933,26 +2878,6 @@ spec:
                       - key
                       type: object
                       x-kubernetes-map-type: atomic
-                    plugin:
-                      description: |-
-                        The configuration of the plugin that is taking care
-                        of WAL archiving and backups for this external cluster
-                      properties:
-                        enabled:
-                          default: true
-                          description: Enabled is true if this plugin will be used
-                          type: boolean
-                        name:
-                          description: Name is the plugin name
-                          type: string
-                        parameters:
-                          additionalProperties:
-                            type: string
-                          description: Parameters is the configuration of the plugin
-                          type: object
-                      required:
-                      - name
-                      type: object
                     sslCert:
                       description: |-
                         The reference to an SSL certificate to be used to connect to this
@@ -3269,13 +3194,18 @@ spec:
                             It includes the type of service and its associated template specification.
                           properties:
                             selectorType:
+                              allOf:
+                              - enum:
+                                - rw
+                                - r
+                                - ro
+                              - enum:
+                                - rw
+                                - r
+                                - ro
                               description: |-
                                 SelectorType specifies the type of selectors that the service will have.
                                 Valid values are "rw", "r", and "ro", representing read-write, read, and read-only services.
-                              enum:
-                              - rw
-                              - r
-                              - ro
                               type: string
                             serviceTemplate:
                               description: ServiceTemplate is the template specification
@@ -3964,10 +3894,6 @@ spec:
                     PluginConfiguration specifies a plugin that need to be loaded for this
                     cluster to be reconciled
                   properties:
-                    enabled:
-                      default: true
-                      description: Enabled is true if this plugin will be used
-                      type: boolean
                     name:
                       description: Name is the plugin name
                       type: string
@@ -4128,21 +4054,6 @@ spec:
                     description: Configuration of the PostgreSQL synchronous replication
                       feature
                     properties:
-                      dataDurability:
-                        default: required
-                        description: |-
-                          If set to "required", data durability is strictly enforced. Write operations
-                          with synchronous commit settings (`on`, `remote_write`, or `remote_apply`) will
-                          block if there are insufficient healthy replicas, ensuring data persistence.
-                          If set to "preferred", data durability is maintained when healthy replicas
-                          are available, but the required number of instances will adjust dynamically
-                          if replicas become unavailable. This setting relaxes strict durability enforcement
-                          to allow for operational continuity. This setting is only applicable if both
-                          `standbyNamesPre` and `standbyNamesPost` are unset (empty).
-                        enum:
-                        - required
-                        - preferred
-                        type: string
                       maxStandbyNamesFromCluster:
                         description: |-
                           Specifies the maximum number of local cluster pods that can be
@@ -4187,12 +4098,6 @@ spec:
                     - method
                     - number
                     type: object
-                    x-kubernetes-validations:
-                    - message: dataDurability set to 'preferred' requires empty 'standbyNamesPre'
-                        and empty 'standbyNamesPost'
-                      rule: self.dataDurability!='preferred' || ((!has(self.standbyNamesPre)
-                        || self.standbyNamesPre.size()==0) && (!has(self.standbyNamesPost)
-                        || self.standbyNamesPost.size()==0))
                 type: object
               primaryUpdateMethod:
                 default: restart
@@ -4221,159 +4126,6 @@ spec:
                   https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#priorityclass
                   for more information
                 type: string
-              probes:
-                description: |-
-                  The configuration of the probes to be injected
-                  in the PostgreSQL Pods.
-                properties:
-                  liveness:
-                    description: The liveness probe configuration
-                    properties:
-                      failureThreshold:
-                        description: |-
-                          Minimum consecutive failures for the probe to be considered failed after having succeeded.
-                          Defaults to 3. Minimum value is 1.
-                        format: int32
-                        type: integer
-                      initialDelaySeconds:
-                        description: |-
-                          Number of seconds after the container has started before liveness probes are initiated.
-                          More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
-                        format: int32
-                        type: integer
-                      periodSeconds:
-                        description: |-
-                          How often (in seconds) to perform the probe.
-                          Default to 10 seconds. Minimum value is 1.
-                        format: int32
-                        type: integer
-                      successThreshold:
-                        description: |-
-                          Minimum consecutive successes for the probe to be considered successful after having failed.
-                          Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.
-                        format: int32
-                        type: integer
-                      terminationGracePeriodSeconds:
-                        description: |-
-                          Optional duration in seconds the pod needs to terminate gracefully upon probe failure.
-                          The grace period is the duration in seconds after the processes running in the pod are sent
-                          a termination signal and the time when the processes are forcibly halted with a kill signal.
-                          Set this value longer than the expected cleanup time for your process.
-                          If this value is nil, the pod's terminationGracePeriodSeconds will be used. Otherwise, this
-                          value overrides the value provided by the pod spec.
-                          Value must be non-negative integer. The value zero indicates stop immediately via
-                          the kill signal (no opportunity to shut down).
-                          This is a beta field and requires enabling ProbeTerminationGracePeriod feature gate.
-                          Minimum value is 1. spec.terminationGracePeriodSeconds is used if unset.
-                        format: int64
-                        type: integer
-                      timeoutSeconds:
-                        description: |-
-                          Number of seconds after which the probe times out.
-                          Defaults to 1 second. Minimum value is 1.
-                          More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
-                        format: int32
-                        type: integer
-                    type: object
-                  readiness:
-                    description: The readiness probe configuration
-                    properties:
-                      failureThreshold:
-                        description: |-
-                          Minimum consecutive failures for the probe to be considered failed after having succeeded.
-                          Defaults to 3. Minimum value is 1.
-                        format: int32
-                        type: integer
-                      initialDelaySeconds:
-                        description: |-
-                          Number of seconds after the container has started before liveness probes are initiated.
-                          More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
-                        format: int32
-                        type: integer
-                      periodSeconds:
-                        description: |-
-                          How often (in seconds) to perform the probe.
-                          Default to 10 seconds. Minimum value is 1.
-                        format: int32
-                        type: integer
-                      successThreshold:
-                        description: |-
-                          Minimum consecutive successes for the probe to be considered successful after having failed.
-                          Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.
-                        format: int32
-                        type: integer
-                      terminationGracePeriodSeconds:
-                        description: |-
-                          Optional duration in seconds the pod needs to terminate gracefully upon probe failure.
-                          The grace period is the duration in seconds after the processes running in the pod are sent
-                          a termination signal and the time when the processes are forcibly halted with a kill signal.
-                          Set this value longer than the expected cleanup time for your process.
-                          If this value is nil, the pod's terminationGracePeriodSeconds will be used. Otherwise, this
-                          value overrides the value provided by the pod spec.
-                          Value must be non-negative integer. The value zero indicates stop immediately via
-                          the kill signal (no opportunity to shut down).
-                          This is a beta field and requires enabling ProbeTerminationGracePeriod feature gate.
-                          Minimum value is 1. spec.terminationGracePeriodSeconds is used if unset.
-                        format: int64
-                        type: integer
-                      timeoutSeconds:
-                        description: |-
-                          Number of seconds after which the probe times out.
-                          Defaults to 1 second. Minimum value is 1.
-                          More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
-                        format: int32
-                        type: integer
-                    type: object
-                  startup:
-                    description: The startup probe configuration
-                    properties:
-                      failureThreshold:
-                        description: |-
-                          Minimum consecutive failures for the probe to be considered failed after having succeeded.
-                          Defaults to 3. Minimum value is 1.
-                        format: int32
-                        type: integer
-                      initialDelaySeconds:
-                        description: |-
-                          Number of seconds after the container has started before liveness probes are initiated.
-                          More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
-                        format: int32
-                        type: integer
-                      periodSeconds:
-                        description: |-
-                          How often (in seconds) to perform the probe.
-                          Default to 10 seconds. Minimum value is 1.
-                        format: int32
-                        type: integer
-                      successThreshold:
-                        description: |-
-                          Minimum consecutive successes for the probe to be considered successful after having failed.
-                          Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.
-                        format: int32
-                        type: integer
-                      terminationGracePeriodSeconds:
-                        description: |-
-                          Optional duration in seconds the pod needs to terminate gracefully upon probe failure.
-                          The grace period is the duration in seconds after the processes running in the pod are sent
-                          a termination signal and the time when the processes are forcibly halted with a kill signal.
-                          Set this value longer than the expected cleanup time for your process.
-                          If this value is nil, the pod's terminationGracePeriodSeconds will be used. Otherwise, this
-                          value overrides the value provided by the pod spec.
-                          Value must be non-negative integer. The value zero indicates stop immediately via
-                          the kill signal (no opportunity to shut down).
-                          This is a beta field and requires enabling ProbeTerminationGracePeriod feature gate.
-                          Minimum value is 1. spec.terminationGracePeriodSeconds is used if unset.
-                        format: int64
-                        type: integer
-                      timeoutSeconds:
-                        description: |-
-                          Number of seconds after which the probe times out.
-                          Defaults to 1 second. Minimum value is 1.
-                          More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
-                        format: int32
-                        type: integer
-                    type: object
-                type: object
               projectedVolumeTemplate:
                 description: |-
                   Template to be used to define projected volumes, projected volumes will be mounted
@@ -6206,13 +5958,6 @@ spec:
                       description: |-
                         OperatorCapabilities are the list of capabilities of the
                         plugin regarding the reconciler
-                      items:
-                        type: string
-                      type: array
-                    restoreJobHookCapabilities:
-                      description: |-
-                        RestoreJobHookCapabilities are the list of capabilities of the
-                        plugin regarding the RestoreJobHook management
                       items:
                         type: string
                       type: array

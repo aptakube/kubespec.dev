@@ -3,7 +3,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.16.5
+    controller-gen.kubebuilder.io/version: v0.14.0
   name: backups.postgresql.cnpg.io
 spec:
   group: postgresql.cnpg.io
@@ -69,12 +69,11 @@ spec:
               method:
                 default: barmanObjectStore
                 description: |-
-                  The backup method to be used, possible options are `barmanObjectStore`,
-                  `volumeSnapshot` or `plugin`. Defaults to: `barmanObjectStore`.
+                  The backup method to be used, possible options are `barmanObjectStore`
+                  and `volumeSnapshot`. Defaults to: `barmanObjectStore`.
                 enum:
                 - barmanObjectStore
                 - volumeSnapshot
-                - plugin
                 type: string
               online:
                 description: |-
@@ -108,23 +107,6 @@ spec:
                       If write activity on the primary is low, it may be useful to run pg_switch_wal on the primary in order to trigger
                       an immediate segment switch.
                     type: boolean
-                type: object
-              pluginConfiguration:
-                description: Configuration parameters passed to the plugin managing
-                  this backup
-                properties:
-                  name:
-                    description: Name is the name of the plugin managing this backup
-                    type: string
-                  parameters:
-                    additionalProperties:
-                      type: string
-                    description: |-
-                      Parameters are the configuration parameters passed to the backup
-                      plugin for this backup
-                    type: object
-                required:
-                - name
                 type: object
               target:
                 description: |-
@@ -318,11 +300,6 @@ spec:
               phase:
                 description: The last backup status
                 type: string
-              pluginMetadata:
-                additionalProperties:
-                  type: string
-                description: A map containing the plugin metadata
-                type: object
               s3Credentials:
                 description: The credentials to use to upload data to S3
                 properties:
@@ -402,14 +379,9 @@ spec:
                         name:
                           description: Name is the snapshot resource name
                           type: string
-                        tablespaceName:
-                          description: |-
-                            TablespaceName is the name of the snapshotted tablespace. Only set
-                            when type is PG_TABLESPACE
-                          type: string
                         type:
                           description: Type is tho role of the snapshot in the cluster,
-                            such as PG_DATA, PG_WAL and PG_TABLESPACE
+                            such as PG_DATA and PG_WAL
                           type: string
                       required:
                       - name

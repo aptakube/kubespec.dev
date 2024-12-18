@@ -11,7 +11,14 @@ export type Project = {
   versions: string[];
 };
 
+const manifestsCache = new Map<string, any[]>();
+
 export async function listManifests(slug: string, tag: string): Promise<any[]> {
+  const cached = manifestsCache.get(`${slug}/${tag}`);
+  if (cached) {
+    return cached;
+  }
+
   const dir = `./public/projects/${slug}/${tag}`;
   const files = await readdir(dir);
   const manifests = [];
@@ -38,6 +45,7 @@ export async function listManifests(slug: string, tag: string): Promise<any[]> {
     }
   }
 
+  manifestsCache.set(`${slug}/${tag}`, manifests);
   return manifests;
 }
 
@@ -65,21 +73,15 @@ export async function findCustomResource(
   projectSlug: string,
   tag: string,
   gvk: GVK
-) {
+): Promise<Resource | undefined> {
   const resources = await listCustomResources(projectSlug, tag);
-  const resource = resources.find(
+
+  return resources.find(
     (resource) =>
       resource.gvk.group === gvk.group &&
       resource.gvk.version === gvk.version &&
       resource.gvk.kind === gvk.kind
   );
-  if (!resource) {
-    throw new Error(
-      `CustomResource not found: ${gvk.group}/${gvk.version}/${gvk.kind}`
-    );
-  }
-
-  return resource;
 }
 
 export async function listProjects(): Promise<Project[]> {

@@ -40,6 +40,9 @@ const tag = project.versions[0];
 const gvk = parseGVKRef(gvkRef);
 
 const resource = await findCustomResource(slug, tag, gvk);
+if (!resource) {
+  throw new Error(`Resource not found for ${gvkRef} at  ${slug}@${tag}`);
+}
 ---
 
 <SiteLayout

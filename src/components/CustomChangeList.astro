@@ -1,0 +1,125 @@
+---
+import { compareVersions } from "@lib/swagger";
+import { DescriptionToggle } from "./DescriptionToggle";
+import { CollapsableItem } from "./CollapsableItem";
+import { type GVK } from "@lib/kube";
+import { findCustomResource, type Project } from "@lib/crds";
+
+type Props = {
+  project: Project;
+  version: string;
+  gvk: GVK;
+};
+
+const { project, version, gvk } = Astro.props;
+
+const previous = project.versions[project.versions.indexOf(version) + 1];
+if (!previous) {
+  return;
+}
+
+let resourcePrev = await findCustomResource(project.slug, previous, gvk);
+let resourceNext = await findCustomResource(project.slug, version, gvk);
+const changes = await compareVersions(resourcePrev, resourceNext);
+
+const added = changes.filter((change) => change.type === "new");
+const removed = changes.filter((change) => change.type === "removed");
+const updated = changes.filter((change) => change.type === "description");
+const isNewGVK =
+  changes.filter((change) => change.type === "new-gvk").length > 0;
+---
+
+<CollapsableItem
+  client:load
+  added={added.length}
+  removed={removed.length}
+  updated={updated.length}
+  title={`${project.name} ${version}`}
+>
+  {
+    changes.length === 0 && (
+      <p class="text-muted-foreground text-sm">Nothing changed</p>
+    )
+  }
+
+  {
+    isNewGVK && (
+      <p class="text-muted-foreground text-sm">
+        <span class="text-success">{gvk.kind}</span> was introduced on this
+        version of {project.name}
+      </p>
+    )
+  }
+
+  {
+    added.length > 0 && (
+      <>
+        <p class="text-muted-foreground text-sm">
+          {added.length}
+          {added.length === 1 ? "property has" : "properties have"} been added
+          on this version
+        </p>
+
+        {
+          <ul class="mb-2">
+            {added.map((change) => (
+              <DescriptionToggle
+                client:load
+                path={change.path}
+                description={change.description}
+                color="text-success"
+              />
+            ))}
+          </ul>
+        }
+      </>
+    )
+  }
+
+  {
+    removed.length > 0 && (
+      <>
+        <p class="text-muted-foreground text-sm">
+          {removed.length}
+          {removed.length === 1 ? "property has" : "properties have"} been
+          removed on this version
+        </p>
+
+        <ul class="mb-2">
+          {removed.map((change) => (
+            <DescriptionToggle
+              client:load
+              path={change.path}
+              description={change.description}
+              color="text-destructive"
+            />
+          ))}
+        </ul>
+      </>
+    )
+  }
+
+  {
+    updated.length > 0 && (
+      <>
+        <p class="text-muted-foreground text-sm">
+          {updated.length}
+          {updated.length === 1 ? "property has" : "properties have"} changed
+          the description
+        </p>
+
+        <ul class="mb-2">
+          {updated.map((update) => (
+            <DescriptionToggle
+              client:load
+              path={update.path}
+              description={update.previous}
+              description2={update.next}
+              color="text-warning"
+            />
+          ))}
+        </ul>
+      </>
+    )
+  }
+</CollapsableItem>

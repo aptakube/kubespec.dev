@@ -3,7 +3,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.16.1
+    controller-gen.kubebuilder.io/version: v0.14.0
   name: machinesets.cluster.x-k8s.io
 spec:
   group: cluster.x-k8s.io
@@ -38,6 +38,7 @@ spec:
         description: |-
           MachineSet is the Schema for the machinesets API.
 
+
           Deprecated: This type will be removed in one of the next releases.
         properties:
           apiVersion:
@@ -61,13 +62,13 @@ spec:
             description: MachineSetSpec defines the desired state of MachineSet.
             properties:
               clusterName:
-                description: clusterName is the name of the Cluster this object belongs
+                description: ClusterName is the name of the Cluster this object belongs
                   to.
                 minLength: 1
                 type: string
               deletePolicy:
                 description: |-
-                  deletePolicy defines the policy used to identify nodes to delete when downscaling.
+                  DeletePolicy defines the policy used to identify nodes to delete when downscaling.
                   Defaults to "Random".  Valid values are "Random, "Newest", "Oldest"
                 enum:
                 - Random
@@ -76,20 +77,20 @@ spec:
                 type: string
               minReadySeconds:
                 description: |-
-                  minReadySeconds is the minimum number of seconds for which a newly created machine should be ready.
+                  MinReadySeconds is the minimum number of seconds for which a newly created machine should be ready.
                   Defaults to 0 (machine will be considered available as soon as it is ready)
                 format: int32
                 type: integer
               replicas:
                 description: |-
-                  replicas is the number of desired replicas.
+                  Replicas is the number of desired replicas.
                   This is a pointer to distinguish between explicit zero and unspecified.
                   Defaults to 1.
                 format: int32
                 type: integer
               selector:
                 description: |-
-                  selector is a label query over machines that should match the replica count.
+                  Selector is a label query over machines that should match the replica count.
                   Label keys and values that must match in order to be controlled by this MachineSet.
                   It must match the machine template's labels.
                   More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
@@ -120,13 +121,11 @@ spec:
                           items:
                             type: string
                           type: array
-                          x-kubernetes-list-type: atomic
                       required:
                       - key
                       - operator
                       type: object
                     type: array
-                    x-kubernetes-list-type: atomic
                   matchLabels:
                     additionalProperties:
                       type: string
@@ -139,7 +138,7 @@ spec:
                 x-kubernetes-map-type: atomic
               template:
                 description: |-
-                  template is the object that describes the machine that will be created if
+                  Template is the object that describes the machine that will be created if
                   insufficient replicas are detected.
                   Object references to custom resources are treated as templates.
                 properties:
@@ -152,14 +151,14 @@ spec:
                         additionalProperties:
                           type: string
                         description: |-
-                          annotations is an unstructured key value map stored with a resource that may be
+                          Annotations is an unstructured key value map stored with a resource that may be
                           set by external tools to store and retrieve arbitrary metadata. They are not
                           queryable and should be preserved when modifying objects.
                           More info: http://kubernetes.io/docs/user-guide/annotations
                         type: object
                       generateName:
                         description: |-
-                          generateName is an optional prefix, used by the server, to generate a unique
+                          GenerateName is an optional prefix, used by the server, to generate a unique
                           name ONLY IF the Name field has not been provided.
                           If this field is used, the name returned to the client will be different
                           than the name passed. This value will also be combined with a unique suffix.
@@ -167,13 +166,16 @@ spec:
                           and may be truncated by the length of the suffix required to make the value
                           unique on the server.
 
+
                           If this field is specified and the generated name exists, the server will
                           NOT return a 409 - instead, it will either return 201 Created or 500 with Reason
                           ServerTimeout indicating a unique name could not be found in the time allotted, and the client
                           should retry (optionally after the time indicated in the Retry-After header).
 
+
                           Applied only if Name is not specified.
                           More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency
+
 
                           Deprecated: This field has no function and is going to be removed in a next release.
                         type: string
@@ -188,25 +190,28 @@ spec:
                         type: object
                       name:
                         description: |-
-                          name must be unique within a namespace. Is required when creating resources, although
+                          Name must be unique within a namespace. Is required when creating resources, although
                           some resources may allow a client to request the generation of an appropriate name
                           automatically. Name is primarily intended for creation idempotence and configuration
                           definition.
                           Cannot be updated.
                           More info: http://kubernetes.io/docs/user-guide/identifiers#names
 
+
                           Deprecated: This field has no function and is going to be removed in a next release.
                         type: string
                       namespace:
                         description: |-
-                          namespace defines the space within each name must be unique. An empty namespace is
+                          Namespace defines the space within each name must be unique. An empty namespace is
                           equivalent to the "default" namespace, but "default" is the canonical representation.
                           Not all objects are required to be scoped to a namespace - the value of this field for
                           those objects will be empty.
 
+
                           Must be a DNS_LABEL.
                           Cannot be updated.
                           More info: http://kubernetes.io/docs/user-guide/namespaces
+
 
                           Deprecated: This field has no function and is going to be removed in a next release.
                         type: string
@@ -216,6 +221,7 @@ spec:
                           been deleted, this object will be garbage collected. If this object is managed by a controller,
                           then an entry in this list will point to this controller, with the controller field set to true.
                           There cannot be more than one managing controller.
+
 
                           Deprecated: This field has no function and is going to be removed in a next release.
                         items:
@@ -273,12 +279,12 @@ spec:
                     properties:
                       bootstrap:
                         description: |-
-                          bootstrap is a reference to a local struct which encapsulates
+                          Bootstrap is a reference to a local struct which encapsulates
                           fields to configure the Machine’s bootstrapping mechanism.
                         properties:
                           configRef:
                             description: |-
-                              configRef is a reference to a bootstrap provider-specific resource
+                              ConfigRef is a reference to a bootstrap provider-specific resource
                               that holds configuration details. The reference is optional to
                               allow users/operators to specify Bootstrap.Data without
                               the need of a controller.
@@ -295,6 +301,7 @@ spec:
                                   the event) or if no container name is specified "spec.containers[2]" (container with
                                   index 2 in this pod). This syntax is chosen only to have some well-defined way of
                                   referencing a part of an object.
+                                  TODO: this design is not final and this field is subject to change in the future.
                                 type: string
                               kind:
                                 description: |-
@@ -325,30 +332,31 @@ spec:
                             x-kubernetes-map-type: atomic
                           data:
                             description: |-
-                              data contains the bootstrap data, such as cloud-init details scripts.
+                              Data contains the bootstrap data, such as cloud-init details scripts.
                               If nil, the Machine should remain in the Pending state.
+
 
                               Deprecated: Switch to DataSecretName.
                             type: string
                           dataSecretName:
                             description: |-
-                              dataSecretName is the name of the secret that stores the bootstrap data script.
+                              DataSecretName is the name of the secret that stores the bootstrap data script.
                               If nil, the Machine should remain in the Pending state.
                             type: string
                         type: object
                       clusterName:
-                        description: clusterName is the name of the Cluster this object
+                        description: ClusterName is the name of the Cluster this object
                           belongs to.
                         minLength: 1
                         type: string
                       failureDomain:
                         description: |-
-                          failureDomain is the failure domain the machine will be created in.
+                          FailureDomain is the failure domain the machine will be created in.
                           Must match a key in the FailureDomains map stored on the cluster object.
                         type: string
                       infrastructureRef:
                         description: |-
-                          infrastructureRef is a required reference to a custom resource
+                          InfrastructureRef is a required reference to a custom resource
                           offered by an infrastructure provider.
                         properties:
                           apiVersion:
@@ -363,6 +371,7 @@ spec:
                               the event) or if no container name is specified "spec.containers[2]" (container with
                               index 2 in this pod). This syntax is chosen only to have some well-defined way of
                               referencing a part of an object.
+                              TODO: this design is not final and this field is subject to change in the future.
                             type: string
                           kind:
                             description: |-
@@ -393,13 +402,13 @@ spec:
                         x-kubernetes-map-type: atomic
                       nodeDrainTimeout:
                         description: |-
-                          nodeDrainTimeout is the total amount of time that the controller will spend on draining a node.
+                          NodeDrainTimeout is the total amount of time that the controller will spend on draining a node.
                           The default value is 0, meaning that the node can be drained without any time limitations.
                           NOTE: NodeDrainTimeout is different from `kubectl drain --timeout`
                         type: string
                       providerID:
                         description: |-
-                          providerID is the identification ID of the machine provided by the provider.
+                          ProviderID is the identification ID of the machine provided by the provider.
                           This field must match the provider ID as seen on the node object corresponding to this machine.
                           This field is required by higher level consumers of cluster-api. Example use case is cluster autoscaler
                           with cluster-api as provider. Clean-up logic in the autoscaler compares machines to nodes to find out
@@ -412,7 +421,7 @@ spec:
                         type: string
                       version:
                         description: |-
-                          version defines the desired Kubernetes version.
+                          Version defines the desired Kubernetes version.
                           This field is meant to be optionally used by bootstrap providers.
                         type: string
                     required:
@@ -443,6 +452,7 @@ spec:
                   interpretation, while FailureMessage will contain a more verbose
                   string suitable for logging and human consumption.
 
+
                   These fields should not be set for transitive errors that a
                   controller faces that are expected to be fixed automatically over
                   time (like service outages), but instead indicate that something is
@@ -451,6 +461,7 @@ spec:
                   of terminal errors would be invalid combinations of settings in the
                   spec, values that are unsupported by the machine controller, or the
                   responsible machine controller itself being critically misconfigured.
+
 
                   Any transient errors that occur during the reconciliation of Machines
                   can be added as events to the MachineSet object and/or logged in the
@@ -462,7 +473,7 @@ spec:
                 format: int32
                 type: integer
               observedGeneration:
-                description: observedGeneration reflects the generation of the most
+                description: ObservedGeneration reflects the generation of the most
                   recently observed MachineSet.
                 format: int64
                 type: integer
@@ -472,12 +483,12 @@ spec:
                 format: int32
                 type: integer
               replicas:
-                description: replicas is the most recently observed number of replicas.
+                description: Replicas is the most recently observed number of replicas.
                 format: int32
                 type: integer
               selector:
                 description: |-
-                  selector is the same as the label selector but in the string format to avoid introspection
+                  Selector is the same as the label selector but in the string format to avoid introspection
                   by clients. The string will be in the same format as the query-param syntax.
                   More info about label selectors: http://kubernetes.io/docs/user-guide/labels#label-selectors
                 type: string
@@ -519,6 +530,7 @@ spec:
         description: |-
           MachineSet is the Schema for the machinesets API.
 
+
           Deprecated: This type will be removed in one of the next releases.
         properties:
           apiVersion:
@@ -542,13 +554,13 @@ spec:
             description: MachineSetSpec defines the desired state of MachineSet.
             properties:
               clusterName:
-                description: clusterName is the name of the Cluster this object belongs
+                description: ClusterName is the name of the Cluster this object belongs
                   to.
                 minLength: 1
                 type: string
               deletePolicy:
                 description: |-
-                  deletePolicy defines the policy used to identify nodes to delete when downscaling.
+                  DeletePolicy defines the policy used to identify nodes to delete when downscaling.
                   Defaults to "Random".  Valid values are "Random, "Newest", "Oldest"
                 enum:
                 - Random
@@ -557,21 +569,21 @@ spec:
                 type: string
               minReadySeconds:
                 description: |-
-                  minReadySeconds is the minimum number of seconds for which a newly created machine should be ready.
+                  MinReadySeconds is the minimum number of seconds for which a newly created machine should be ready.
                   Defaults to 0 (machine will be considered available as soon as it is ready)
                 format: int32
                 type: integer
               replicas:
                 default: 1
                 description: |-
-                  replicas is the number of desired replicas.
+                  Replicas is the number of desired replicas.
                   This is a pointer to distinguish between explicit zero and unspecified.
                   Defaults to 1.
                 format: int32
                 type: integer
               selector:
                 description: |-
-                  selector is a label query over machines that should match the replica count.
+                  Selector is a label query over machines that should match the replica count.
                   Label keys and values that must match in order to be controlled by this MachineSet.
                   It must match the machine template's labels.
                   More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
@@ -602,13 +614,11 @@ spec:
                           items:
                             type: string
                           type: array
-                          x-kubernetes-list-type: atomic
                       required:
                       - key
                       - operator
                       type: object
                     type: array
-                    x-kubernetes-list-type: atomic
                   matchLabels:
                     additionalProperties:
                       type: string
@@ -621,7 +631,7 @@ spec:
                 x-kubernetes-map-type: atomic
               template:
                 description: |-
-                  template is the object that describes the machine that will be created if
+                  Template is the object that describes the machine that will be created if
                   insufficient replicas are detected.
                   Object references to custom resources are treated as templates.
                 properties:
@@ -634,7 +644,7 @@ spec:
                         additionalProperties:
                           type: string
                         description: |-
-                          annotations is an unstructured key value map stored with a resource that may be
+                          Annotations is an unstructured key value map stored with a resource that may be
                           set by external tools to store and retrieve arbitrary metadata. They are not
                           queryable and should be preserved when modifying objects.
                           More info: http://kubernetes.io/docs/user-guide/annotations
@@ -656,12 +666,12 @@ spec:
                     properties:
                       bootstrap:
                         description: |-
-                          bootstrap is a reference to a local struct which encapsulates
+                          Bootstrap is a reference to a local struct which encapsulates
                           fields to configure the Machine’s bootstrapping mechanism.
                         properties:
                           configRef:
                             description: |-
-                              configRef is a reference to a bootstrap provider-specific resource
+                              ConfigRef is a reference to a bootstrap provider-specific resource
                               that holds configuration details. The reference is optional to
                               allow users/operators to specify Bootstrap.DataSecretName without
                               the need of a controller.
@@ -678,6 +688,7 @@ spec:
                                   the event) or if no container name is specified "spec.containers[2]" (container with
                                   index 2 in this pod). This syntax is chosen only to have some well-defined way of
                                   referencing a part of an object.
+                                  TODO: this design is not final and this field is subject to change in the future.
                                 type: string
                               kind:
                                 description: |-
@@ -708,23 +719,23 @@ spec:
                             x-kubernetes-map-type: atomic
                           dataSecretName:
                             description: |-
-                              dataSecretName is the name of the secret that stores the bootstrap data script.
+                              DataSecretName is the name of the secret that stores the bootstrap data script.
                               If nil, the Machine should remain in the Pending state.
                             type: string
                         type: object
                       clusterName:
-                        description: clusterName is the name of the Cluster this object
+                        description: ClusterName is the name of the Cluster this object
                           belongs to.
                         minLength: 1
                         type: string
                       failureDomain:
                         description: |-
-                          failureDomain is the failure domain the machine will be created in.
+                          FailureDomain is the failure domain the machine will be created in.
                           Must match a key in the FailureDomains map stored on the cluster object.
                         type: string
                       infrastructureRef:
                         description: |-
-                          infrastructureRef is a required reference to a custom resource
+                          InfrastructureRef is a required reference to a custom resource
                           offered by an infrastructure provider.
                         properties:
                           apiVersion:
@@ -739,6 +750,7 @@ spec:
                               the event) or if no container name is specified "spec.containers[2]" (container with
                               index 2 in this pod). This syntax is chosen only to have some well-defined way of
                               referencing a part of an object.
+                              TODO: this design is not final and this field is subject to change in the future.
                             type: string
                           kind:
                             description: |-
@@ -769,13 +781,13 @@ spec:
                         x-kubernetes-map-type: atomic
                       nodeDrainTimeout:
                         description: |-
-                          nodeDrainTimeout is the total amount of time that the controller will spend on draining a node.
+                          NodeDrainTimeout is the total amount of time that the controller will spend on draining a node.
                           The default value is 0, meaning that the node can be drained without any time limitations.
                           NOTE: NodeDrainTimeout is different from `kubectl drain --timeout`
                         type: string
                       providerID:
                         description: |-
-                          providerID is the identification ID of the machine provided by the provider.
+                          ProviderID is the identification ID of the machine provided by the provider.
                           This field must match the provider ID as seen on the node object corresponding to this machine.
                           This field is required by higher level consumers of cluster-api. Example use case is cluster autoscaler
                           with cluster-api as provider. Clean-up logic in the autoscaler compares machines to nodes to find out
@@ -788,7 +800,7 @@ spec:
                         type: string
                       version:
                         description: |-
-                          version defines the desired Kubernetes version.
+                          Version defines the desired Kubernetes version.
                           This field is meant to be optionally used by bootstrap providers.
                         type: string
                     required:
@@ -810,7 +822,7 @@ spec:
                 format: int32
                 type: integer
               conditions:
-                description: conditions defines current service state of the MachineSet.
+                description: Conditions defines current service state of the MachineSet.
                 items:
                   description: Condition defines an observation of a Cluster API resource
                     operational state.
@@ -835,16 +847,16 @@ spec:
                       type: string
                     severity:
                       description: |-
-                        severity provides an explicit classification of Reason code, so the users or machines can immediately
+                        Severity provides an explicit classification of Reason code, so the users or machines can immediately
                         understand the current situation and act accordingly.
                         The Severity field MUST be set only when Status=False.
                       type: string
                     status:
-                      description: status of the condition, one of True, False, Unknown.
+                      description: Status of the condition, one of True, False, Unknown.
                       type: string
                     type:
                       description: |-
-                        type of condition in CamelCase or in foo.example.com/CamelCase.
+                        Type of condition in CamelCase or in foo.example.com/CamelCase.
                         Many .condition.type values are consistent across resources like Available, but because arbitrary conditions
                         can be useful (see .node.status.conditions), the ability to deconflict is important.
                       type: string
@@ -863,6 +875,7 @@ spec:
                   interpretation, while FailureMessage will contain a more verbose
                   string suitable for logging and human consumption.
 
+
                   These fields should not be set for transitive errors that a
                   controller faces that are expected to be fixed automatically over
                   time (like service outages), but instead indicate that something is
@@ -871,6 +884,7 @@ spec:
                   of terminal errors would be invalid combinations of settings in the
                   spec, values that are unsupported by the machine controller, or the
                   responsible machine controller itself being critically misconfigured.
+
 
                   Any transient errors that occur during the reconciliation of Machines
                   can be added as events to the MachineSet object and/or logged in the
@@ -882,7 +896,7 @@ spec:
                 format: int32
                 type: integer
               observedGeneration:
-                description: observedGeneration reflects the generation of the most
+                description: ObservedGeneration reflects the generation of the most
                   recently observed MachineSet.
                 format: int64
                 type: integer
@@ -892,12 +906,12 @@ spec:
                 format: int32
                 type: integer
               replicas:
-                description: replicas is the most recently observed number of replicas.
+                description: Replicas is the most recently observed number of replicas.
                 format: int32
                 type: integer
               selector:
                 description: |-
-                  selector is the same as the label selector but in the string format to avoid introspection
+                  Selector is the same as the label selector but in the string format to avoid introspection
                   by clients. The string will be in the same format as the query-param syntax.
                   More info about label selectors: http://kubernetes.io/docs/user-guide/labels#label-selectors
                 type: string
@@ -967,13 +981,13 @@ spec:
             description: MachineSetSpec defines the desired state of MachineSet.
             properties:
               clusterName:
-                description: clusterName is the name of the Cluster this object belongs
+                description: ClusterName is the name of the Cluster this object belongs
                   to.
                 minLength: 1
                 type: string
               deletePolicy:
                 description: |-
-                  deletePolicy defines the policy used to identify nodes to delete when downscaling.
+                  DeletePolicy defines the policy used to identify nodes to delete when downscaling.
                   Defaults to "Random".  Valid values are "Random, "Newest", "Oldest"
                 enum:
                 - Random
@@ -982,14 +996,15 @@ spec:
                 type: string
               minReadySeconds:
                 description: |-
-                  minReadySeconds is the minimum number of seconds for which a Node for a newly created machine should be ready before considering the replica available.
+                  MinReadySeconds is the minimum number of seconds for which a Node for a newly created machine should be ready before considering the replica available.
                   Defaults to 0 (machine will be considered available as soon as the Node is ready)
                 format: int32
                 type: integer
               replicas:
                 description: |-
-                  replicas is the number of desired replicas.
+                  Replicas is the number of desired replicas.
                   This is a pointer to distinguish between explicit zero and unspecified.
+
 
                   Defaults to:
                   * if the Kubernetes autoscaler min size and max size annotations are set:
@@ -1009,7 +1024,7 @@ spec:
                 type: integer
               selector:
                 description: |-
-                  selector is a label query over machines that should match the replica count.
+                  Selector is a label query over machines that should match the replica count.
                   Label keys and values that must match in order to be controlled by this MachineSet.
                   It must match the machine template's labels.
                   More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
@@ -1040,13 +1055,11 @@ spec:
                           items:
                             type: string
                           type: array
-                          x-kubernetes-list-type: atomic
                       required:
                       - key
                       - operator
                       type: object
                     type: array
-                    x-kubernetes-list-type: atomic
                   matchLabels:
                     additionalProperties:
                       type: string
@@ -1059,7 +1072,7 @@ spec:
                 x-kubernetes-map-type: atomic
               template:
                 description: |-
-                  template is the object that describes the machine that will be created if
+                  Template is the object that describes the machine that will be created if
                   insufficient replicas are detected.
                   Object references to custom resources are treated as templates.
                 properties:
@@ -1072,7 +1085,7 @@ spec:
                         additionalProperties:
                           type: string
                         description: |-
-                          annotations is an unstructured key value map stored with a resource that may be
+                          Annotations is an unstructured key value map stored with a resource that may be
                           set by external tools to store and retrieve arbitrary metadata. They are not
                           queryable and should be preserved when modifying objects.
                           More info: http://kubernetes.io/docs/user-guide/annotations
@@ -1094,12 +1107,12 @@ spec:
                     properties:
                       bootstrap:
                         description: |-
-                          bootstrap is a reference to a local struct which encapsulates
+                          Bootstrap is a reference to a local struct which encapsulates
                           fields to configure the Machine’s bootstrapping mechanism.
                         properties:
                           configRef:
                             description: |-
-                              configRef is a reference to a bootstrap provider-specific resource
+                              ConfigRef is a reference to a bootstrap provider-specific resource
                               that holds configuration details. The reference is optional to
                               allow users/operators to specify Bootstrap.DataSecretName without
                               the need of a controller.
@@ -1116,6 +1129,7 @@ spec:
                                   the event) or if no container name is specified "spec.containers[2]" (container with
                                   index 2 in this pod). This syntax is chosen only to have some well-defined way of
                                   referencing a part of an object.
+                                  TODO: this design is not final and this field is subject to change in the future.
                                 type: string
                               kind:
                                 description: |-
@@ -1146,23 +1160,23 @@ spec:
                             x-kubernetes-map-type: atomic
                           dataSecretName:
                             description: |-
-                              dataSecretName is the name of the secret that stores the bootstrap data script.
+                              DataSecretName is the name of the secret that stores the bootstrap data script.
                               If nil, the Machine should remain in the Pending state.
                             type: string
                         type: object
                       clusterName:
-                        description: clusterName is the name of the Cluster this object
+                        description: ClusterName is the name of the Cluster this object
                           belongs to.
                         minLength: 1
                         type: string
                       failureDomain:
                         description: |-
-                          failureDomain is the failure domain the machine will be created in.
+                          FailureDomain is the failure domain the machine will be created in.
                           Must match a key in the FailureDomains map stored on the cluster object.
                         type: string
                       infrastructureRef:
                         description: |-
-                          infrastructureRef is a required reference to a custom resource
+                          InfrastructureRef is a required reference to a custom resource
                           offered by an infrastructure provider.
                         properties:
                           apiVersion:
@@ -1177,6 +1191,7 @@ spec:
                               the event) or if no container name is specified "spec.containers[2]" (container with
                               index 2 in this pod). This syntax is chosen only to have some well-defined way of
                               referencing a part of an object.
+                              TODO: this design is not final and this field is subject to change in the future.
                             type: string
                           kind:
                             description: |-
@@ -1207,24 +1222,24 @@ spec:
                         x-kubernetes-map-type: atomic
                       nodeDeletionTimeout:
                         description: |-
-                          nodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine
+                          NodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine
                           hosts after the Machine is marked for deletion. A duration of 0 will retry deletion indefinitely.
                           Defaults to 10 seconds.
                         type: string
                       nodeDrainTimeout:
                         description: |-
-                          nodeDrainTimeout is the total amount of time that the controller will spend on draining a node.
+                          NodeDrainTimeout is the total amount of time that the controller will spend on draining a node.
                           The default value is 0, meaning that the node can be drained without any time limitations.
                           NOTE: NodeDrainTimeout is different from `kubectl drain --timeout`
                         type: string
                       nodeVolumeDetachTimeout:
                         description: |-
-                          nodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes
+                          NodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes
                           to be detached. The default value is 0, meaning that the volumes can be detached without any time limitations.
                         type: string
                       providerID:
                         description: |-
-                          providerID is the identification ID of the machine provided by the provider.
+                          ProviderID is the identification ID of the machine provided by the provider.
                           This field must match the provider ID as seen on the node object corresponding to this machine.
                           This field is required by higher level consumers of cluster-api. Example use case is cluster autoscaler
                           with cluster-api as provider. Clean-up logic in the autoscaler compares machines to nodes to find out
@@ -1235,46 +1250,9 @@ spec:
                           This field will be set by the actuators and consumed by higher level entities like autoscaler that will
                           be interfacing with cluster-api as generic provider.
                         type: string
-                      readinessGates:
-                        description: |-
-                          readinessGates specifies additional conditions to include when evaluating Machine Ready condition.
-
-                          This field can be used e.g. by Cluster API control plane providers to extend the semantic of the
-                          Ready condition for the Machine they control, like the kubeadm control provider adding ReadinessGates
-                          for the APIServerPodHealthy, SchedulerPodHealthy conditions, etc.
-
-                          Another example are external controllers, e.g. responsible to install special software/hardware on the Machines;
-                          they can include the status of those components with a new condition and add this condition to ReadinessGates.
-
-                          NOTE: This field is considered only for computing v1beta2 conditions.
-                          NOTE: In case readinessGates conditions start with the APIServer, ControllerManager, Scheduler prefix, and all those
-                          readiness gates condition are reporting the same message, when computing the Machine's Ready condition those
-                          readinessGates will be replaced by a single entry reporting "Control plane components: " + message.
-                          This helps to improve readability of conditions bubbling up to the Machine's owner resource / to the Cluster).
-                        items:
-                          description: MachineReadinessGate contains the type of a
-                            Machine condition to be used as a readiness gate.
-                          properties:
-                            conditionType:
-                              description: |-
-                                conditionType refers to a positive polarity condition (status true means good) with matching type in the Machine's condition list.
-                                If the conditions doesn't exist, it will be treated as unknown.
-                                Note: Both Cluster API conditions or conditions added by 3rd party controllers can be used as readiness gates.
-                              maxLength: 316
-                              minLength: 1
-                              pattern: ^([a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*/)?(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])$
-                              type: string
-                          required:
-                          - conditionType
-                          type: object
-                        maxItems: 32
-                        type: array
-                        x-kubernetes-list-map-keys:
-                        - conditionType
-                        x-kubernetes-list-type: map
                       version:
                         description: |-
-                          version defines the desired Kubernetes version.
+                          Version defines the desired Kubernetes version.
                           This field is meant to be optionally used by bootstrap providers.
                         type: string
                     required:
@@ -1296,7 +1274,7 @@ spec:
                 format: int32
                 type: integer
               conditions:
-                description: conditions defines current service state of the MachineSet.
+                description: Conditions defines current service state of the MachineSet.
                 items:
                   description: Condition defines an observation of a Cluster API resource
                     operational state.
@@ -1317,20 +1295,20 @@ spec:
                       description: |-
                         The reason for the condition's last transition in CamelCase.
                         The specific API may choose whether or not this field is considered a guaranteed API.
-                        This field may be empty.
+                        This field may not be empty.
                       type: string
                     severity:
                       description: |-
-                        severity provides an explicit classification of Reason code, so the users or machines can immediately
+                        Severity provides an explicit classification of Reason code, so the users or machines can immediately
                         understand the current situation and act accordingly.
                         The Severity field MUST be set only when Status=False.
                       type: string
                     status:
-                      description: status of the condition, one of True, False, Unknown.
+                      description: Status of the condition, one of True, False, Unknown.
                       type: string
                     type:
                       description: |-
-                        type of condition in CamelCase or in foo.example.com/CamelCase.
+                        Type of condition in CamelCase or in foo.example.com/CamelCase.
                         Many .condition.type values are consistent across resources like Available, but because arbitrary conditions
                         can be useful (see .node.status.conditions), the ability to deconflict is important.
                       type: string
@@ -1341,9 +1319,6 @@ spec:
                   type: object
                 type: array
               failureMessage:
-                description: 'Deprecated: This field is deprecated and is going to
-                  be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md
-                  for more details.'
                 type: string
               failureReason:
                 description: |-
@@ -1352,6 +1327,7 @@ spec:
                   will be populated with a succinct value suitable for machine
                   interpretation, while FailureMessage will contain a more verbose
                   string suitable for logging and human consumption.
+
 
                   These fields should not be set for transitive errors that a
                   controller faces that are expected to be fixed automatically over
@@ -1362,21 +1338,18 @@ spec:
                   spec, values that are unsupported by the machine controller, or the
                   responsible machine controller itself being critically misconfigured.
 
+
                   Any transient errors that occur during the reconciliation of Machines
                   can be added as events to the MachineSet object and/or logged in the
                   controller's output.
-
-                  Deprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md for more details.
                 type: string
               fullyLabeledReplicas:
-                description: |-
-                  The number of replicas that have labels matching the labels of the machine template of the MachineSet.
-
-                  Deprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md for more details.
+                description: The number of replicas that have labels matching the
+                  labels of the machine template of the MachineSet.
                 format: int32
                 type: integer
               observedGeneration:
-                description: observedGeneration reflects the generation of the most
+                description: ObservedGeneration reflects the generation of the most
                   recently observed MachineSet.
                 format: int64
                 type: integer
@@ -1386,102 +1359,15 @@ spec:
                 format: int32
                 type: integer
               replicas:
-                description: replicas is the most recently observed number of replicas.
+                description: Replicas is the most recently observed number of replicas.
                 format: int32
                 type: integer
               selector:
                 description: |-
-                  selector is the same as the label selector but in the string format to avoid introspection
+                  Selector is the same as the label selector but in the string format to avoid introspection
                   by clients. The string will be in the same format as the query-param syntax.
                   More info about label selectors: http://kubernetes.io/docs/user-guide/labels#label-selectors
                 type: string
-              v1beta2:
-                description: v1beta2 groups all the fields that will be added or modified
-                  in MachineSet's status with the V1Beta2 version.
-                properties:
-                  availableReplicas:
-                    description: availableReplicas is the number of available replicas
-                      for this MachineSet. A machine is considered available when
-                      Machine's Available condition is true.
-                    format: int32
-                    type: integer
-                  conditions:
-                    description: |-
-                      conditions represents the observations of a MachineSet's current state.
-                      Known condition types are MachinesReady, MachinesUpToDate, ScalingUp, ScalingDown, Remediating, Deleting, Paused.
-                    items:
-                      description: Condition contains details for one aspect of the
-                        current state of this API Resource.
-                      properties:
-                        lastTransitionTime:
-                          description: |-
-                            lastTransitionTime is the last time the condition transitioned from one status to another.
-                            This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.
-                          format: date-time
-                          type: string
-                        message:
-                          description: |-
-                            message is a human readable message indicating details about the transition.
-                            This may be an empty string.
-                          maxLength: 32768
-                          type: string
-                        observedGeneration:
-                          description: |-
-                            observedGeneration represents the .metadata.generation that the condition was set based upon.
-                            For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
-                            with respect to the current state of the instance.
-                          format: int64
-                          minimum: 0
-                          type: integer
-                        reason:
-                          description: |-
-                            reason contains a programmatic identifier indicating the reason for the condition's last transition.
-                            Producers of specific condition types may define expected values and meanings for this field,
-                            and whether the values are considered a guaranteed API.
-                            The value should be a CamelCase string.
-                            This field may not be empty.
-                          maxLength: 1024
-                          minLength: 1
-                          pattern: ^[A-Za-z]([A-Za-z0-9_,:]*[A-Za-z0-9_])?$
-                          type: string
-                        status:
-                          description: status of the condition, one of True, False,
-                            Unknown.
-                          enum:
-                          - "True"
-                          - "False"
-                          - Unknown
-                          type: string
-                        type:
-                          description: type of condition in CamelCase or in foo.example.com/CamelCase.
-                          maxLength: 316
-                          pattern: ^([a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*/)?(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])$
-                          type: string
-                      required:
-                      - lastTransitionTime
-                      - message
-                      - reason
-                      - status
-                      - type
-                      type: object
-                    maxItems: 32
-                    type: array
-                    x-kubernetes-list-map-keys:
-                    - type
-                    x-kubernetes-list-type: map
-                  readyReplicas:
-                    description: readyReplicas is the number of ready replicas for
-                      this MachineSet. A machine is considered ready when Machine's
-                      Ready condition is true.
-                    format: int32
-                    type: integer
-                  upToDateReplicas:
-                    description: upToDateReplicas is the number of up-to-date replicas
-                      for this MachineSet. A machine is considered up-to-date when
-                      Machine's UpToDate condition is true.
-                    format: int32
-                    type: integer
-                type: object
             type: object
         type: object
     served: true

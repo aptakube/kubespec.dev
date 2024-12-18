@@ -3,7 +3,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.16.1
+    controller-gen.kubebuilder.io/version: v0.15.0
   name: clusterresourcesetbindings.addons.cluster.x-k8s.io
 spec:
   group: addons.cluster.x-k8s.io
@@ -22,6 +22,7 @@ spec:
       openAPIV3Schema:
         description: |-
           ClusterResourceSetBinding lists all matching ClusterResourceSets with the cluster it belongs to.
+
 
           Deprecated: This type will be removed in one of the next releases.
         properties:
@@ -47,17 +48,17 @@ spec:
               ClusterResourceSetBinding.
             properties:
               bindings:
-                description: bindings is a list of ClusterResourceSets and their resources.
+                description: Bindings is a list of ClusterResourceSets and their resources.
                 items:
                   description: ResourceSetBinding keeps info on all of the resources
                     in a ClusterResourceSet.
                   properties:
                     clusterResourceSetName:
-                      description: clusterResourceSetName is the name of the ClusterResourceSet
+                      description: ClusterResourceSetName is the name of the ClusterResourceSet
                         that is applied to the owner cluster of the binding.
                       type: string
                     resources:
-                      description: resources is a list of resources that the ClusterResourceSet
+                      description: Resources is a list of resources that the ClusterResourceSet
                         has.
                       items:
                         description: ResourceBinding shows the status of a resource
@@ -65,28 +66,28 @@ spec:
                           cluster of the ClusterResourceSetBinding object.
                         properties:
                           applied:
-                            description: applied is to track if a resource is applied
+                            description: Applied is to track if a resource is applied
                               to the cluster or not.
                             type: boolean
                           hash:
                             description: |-
-                              hash is the hash of a resource's data. This can be used to decide if a resource is changed.
+                              Hash is the hash of a resource's data. This can be used to decide if a resource is changed.
                               For "ApplyOnce" ClusterResourceSet.spec.strategy, this is no-op as that strategy does not act on change.
                             type: string
                           kind:
-                            description: 'kind of the resource. Supported kinds are:
+                            description: 'Kind of the resource. Supported kinds are:
                               Secrets and ConfigMaps.'
                             enum:
                             - Secret
                             - ConfigMap
                             type: string
                           lastAppliedTime:
-                            description: lastAppliedTime identifies when this resource
+                            description: LastAppliedTime identifies when this resource
                               was last applied to the cluster.
                             format: date-time
                             type: string
                           name:
-                            description: name of the resource that is in the same
+                            description: Name of the resource that is in the same
                               namespace with ClusterResourceSet object.
                             minLength: 1
                             type: string
@@ -118,6 +119,7 @@ spec:
         description: |-
           ClusterResourceSetBinding lists all matching ClusterResourceSets with the cluster it belongs to.
 
+
           Deprecated: This type will be removed in one of the next releases.
         properties:
           apiVersion:
@@ -142,17 +144,17 @@ spec:
               ClusterResourceSetBinding.
             properties:
               bindings:
-                description: bindings is a list of ClusterResourceSets and their resources.
+                description: Bindings is a list of ClusterResourceSets and their resources.
                 items:
                   description: ResourceSetBinding keeps info on all of the resources
                     in a ClusterResourceSet.
                   properties:
                     clusterResourceSetName:
-                      description: clusterResourceSetName is the name of the ClusterResourceSet
+                      description: ClusterResourceSetName is the name of the ClusterResourceSet
                         that is applied to the owner cluster of the binding.
                       type: string
                     resources:
-                      description: resources is a list of resources that the ClusterResourceSet
+                      description: Resources is a list of resources that the ClusterResourceSet
                         has.
                       items:
                         description: ResourceBinding shows the status of a resource
@@ -160,28 +162,28 @@ spec:
                           cluster of the ClusterResourceSetBinding object.
                         properties:
                           applied:
-                            description: applied is to track if a resource is applied
+                            description: Applied is to track if a resource is applied
                               to the cluster or not.
                             type: boolean
                           hash:
                             description: |-
-                              hash is the hash of a resource's data. This can be used to decide if a resource is changed.
+                              Hash is the hash of a resource's data. This can be used to decide if a resource is changed.
                               For "ApplyOnce" ClusterResourceSet.spec.strategy, this is no-op as that strategy does not act on change.
                             type: string
                           kind:
-                            description: 'kind of the resource. Supported kinds are:
+                            description: 'Kind of the resource. Supported kinds are:
                               Secrets and ConfigMaps.'
                             enum:
                             - Secret
                             - ConfigMap
                             type: string
                           lastAppliedTime:
-                            description: lastAppliedTime identifies when this resource
+                            description: LastAppliedTime identifies when this resource
                               was last applied to the cluster.
                             format: date-time
                             type: string
                           name:
-                            description: name of the resource that is in the same
+                            description: Name of the resource that is in the same
                               namespace with ClusterResourceSet object.
                             minLength: 1
                             type: string
@@ -234,17 +236,17 @@ spec:
               ClusterResourceSetBinding.
             properties:
               bindings:
-                description: bindings is a list of ClusterResourceSets and their resources.
+                description: Bindings is a list of ClusterResourceSets and their resources.
                 items:
                   description: ResourceSetBinding keeps info on all of the resources
                     in a ClusterResourceSet.
                   properties:
                     clusterResourceSetName:
-                      description: clusterResourceSetName is the name of the ClusterResourceSet
+                      description: ClusterResourceSetName is the name of the ClusterResourceSet
                         that is applied to the owner cluster of the binding.
                       type: string
                     resources:
-                      description: resources is a list of resources that the ClusterResourceSet
+                      description: Resources is a list of resources that the ClusterResourceSet
                         has.
                       items:
                         description: ResourceBinding shows the status of a resource
@@ -252,28 +254,28 @@ spec:
                           cluster of the ClusterResourceSetBinding object.
                         properties:
                           applied:
-                            description: applied is to track if a resource is applied
+                            description: Applied is to track if a resource is applied
                               to the cluster or not.
                             type: boolean
                           hash:
                             description: |-
-                              hash is the hash of a resource's data. This can be used to decide if a resource is changed.
+                              Hash is the hash of a resource's data. This can be used to decide if a resource is changed.
                               For "ApplyOnce" ClusterResourceSet.spec.strategy, this is no-op as that strategy does not act on change.
                             type: string
                           kind:
-                            description: 'kind of the resource. Supported kinds are:
+                            description: 'Kind of the resource. Supported kinds are:
                               Secrets and ConfigMaps.'
                             enum:
                             - Secret
                             - ConfigMap
                             type: string
                           lastAppliedTime:
-                            description: lastAppliedTime identifies when this resource
+                            description: LastAppliedTime identifies when this resource
                               was last applied to the cluster.
                             format: date-time
                             type: string
                           name:
-                            description: name of the resource that is in the same
+                            description: Name of the resource that is in the same
                               namespace with ClusterResourceSet object.
                             minLength: 1
                             type: string
@@ -289,7 +291,7 @@ spec:
                 type: array
               clusterName:
                 description: |-
-                  clusterName is the name of the Cluster this binding applies to.
+                  ClusterName is the name of the Cluster this binding applies to.
                   Note: this field mandatory in v1beta2.
                 type: string
             type: object

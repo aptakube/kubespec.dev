@@ -45,12 +45,12 @@ async function downloadManifestsFromGit(
   outDir: string
 ) {
   let files = [];
-  let pathsToLook = [project.pathToManifest ?? project.pathToManifests];
+  let pathsToLook = project.pathToManifests ? [...project.pathToManifests] : [];
 
   while (pathsToLook.length > 0) {
     const path = pathsToLook.pop();
     const response = await fetch(
-      `https://api.github.com/repos/${project.repo}/contents/${path}`,
+      `https://api.github.com/repos/${project.repo}/contents/${path}?ref=${tag}`,
       {
         headers: {
           Authorization: `Bearer ${process.env.GH_TOKEN}`,
@@ -58,17 +58,19 @@ async function downloadManifestsFromGit(
       }
     );
 
-    let blobs = await response.json();
-    if (!Array.isArray(blobs)) {
-      blobs = [blobs];
-    }
+    if (response.ok) {
+      let blobs = await response.json();
+      if (!Array.isArray(blobs)) {
+        blobs = [blobs];
+      }
 
-    for (const blob of blobs) {
-      if (blob.type === "dir") {
-        pathsToLook.push(blob.path);
-        continue;
-      } else {
-        files.push(blob);
+      for (const blob of blobs) {
+        if (blob.type === "dir") {
+          pathsToLook.push(blob.path);
+          continue;
+        } else {
+          files.push(blob);
+        }
       }
     }
   }
