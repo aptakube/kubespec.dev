@@ -3,10 +3,10 @@
 👉 Live at https://kubespec.dev
 
 - Tree view of all Kubernetes resources
-- History changes since Kubernetes v1.25
+- History changes since Kubernetes v1.12
 - Examples that you can use copy and modify
 - Links to official Kubernetes documentation and useful resources
-- Support for popular CRDs (Soon!)
+- Support for popular CRDs
 
 ![](./screenshot.png)
 

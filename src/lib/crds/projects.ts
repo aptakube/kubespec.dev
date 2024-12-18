@@ -31,16 +31,18 @@ export default [
     repo: "kubernetes-sigs/cluster-api",
     pathToManifests: ["config/crd/bases"],
   },
-  // {
-  //   name: "Istio",
-  //   slug: "istio",
-  //   logo: "https://avatars.githubusercontent.com/u/23534644?s=200&v=4",
-  //   repo: "istio/istio",
-  //   pathToManifests: [
-  //     "manifests/charts/base/files/gen-istio-cluster.yaml",
-  //     "manifests/charts/base/files/crd-all.gen.yaml",
-  //   ],
-  // },
+  {
+    name: "Istio",
+    slug: "istio",
+    logo: "https://avatars.githubusercontent.com/u/23534644?s=200&v=4",
+    repo: "istio/istio",
+    pathToManifests: [
+      "install/kubernetes/helm/istio/templates/crds.yaml",
+      "manifests/charts/base/files/gen-istio-cluster.yaml",
+      "manifests/charts/base/crds/crd-all.gen.yaml",
+      "manifests/charts/base/files/crd-all.gen.yaml",
+    ],
+  },
   {
     name: "Keda",
     slug: "keda",
