@@ -6,7 +6,7 @@ type Props = {
   added: number;
   removed: number;
   updated: number;
-  children: ReactNode;=
+  children: ReactNode;
 };
 
 export function CollapsableItem(props: Props) {
