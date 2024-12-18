@@ -28,11 +28,13 @@ const apiVersion = `${resource.gvk.group}/${resource.gvk.version}`;
 </nav>
 
 <div class="flex flex-col pb-4">
-  <div class="flex gap-2 items-center text-base font-semibold text-primary">
+  <div
+    class="flex flex-col md:flex-row gap-2 md:items-center text-base font-semibold text-primary"
+  >
     <h2>{apiVersion}</h2>
-    <span>&middot;</span>
+    <span class="hidden md:block">&middot;</span>
     <div
-      class="inline-flex items-center gap-1 leading-none border px-2 py-1 text-muted-foreground text-sm rounded-lg"
+      class="inline-flex w-fit items-center gap-1 leading-none border px-2 py-1 text-muted-foreground text-sm rounded-lg"
     >
       {
         resource.scope === "Namespaced" ? (
@@ -53,8 +55,8 @@ const apiVersion = `${resource.gvk.group}/${resource.gvk.version}`;
   </h1>
   <pre
     class="mt-2 max-w-4xl whitespace-pre-line text-lg text-muted-foreground">
-        {resource.definition.description || <span class="italic">No Description</span>}
-</pre>
+    {resource.definition.description}
+      </pre>
 </div>
 
 <PropertyTree
