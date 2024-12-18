@@ -6,12 +6,11 @@ type Props = {
   added: number;
   removed: number;
   updated: number;
-  children: ReactNode;
-  defaultOpen?: boolean;
+  children: ReactNode;=
 };
 
 export function CollapsableItem(props: Props) {
-  const [isOpen, setIsOpen] = useState(props.defaultOpen ?? false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 

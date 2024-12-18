@@ -23,11 +23,7 @@ if (previous.length <= 1) {
         Change History
       </h2>
       <div>
-        {
-          previous.map((v) => (
-            <ChangeList version={v} gvk={gvk} defaultOpen={false} />
-          ))
-        }
+        {previous.map((v) => <ChangeList version={v} gvk={gvk} />)}
       </div>
     </div>
   </div>

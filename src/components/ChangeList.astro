@@ -7,9 +7,8 @@ import type { GVK } from "@lib/kube";
 type Props = {
   version: string;
   gvk: GVK;
-  defaultOpen: boolean;
 };
-const { version, gvk, defaultOpen } = Astro.props;
+const { version, gvk } = Astro.props;
 
 const previous = getPreviousVersion(version);
 if (!previous) {
@@ -27,7 +26,6 @@ const isNewGVK =
 
 <CollapsableItem
   client:load
-  defaultOpen={defaultOpen}
   added={added.length}
   removed={removed.length}
   updated={updated.length}
