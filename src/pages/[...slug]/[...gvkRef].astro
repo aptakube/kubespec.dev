@@ -1,34 +1,28 @@
 ---
 import SiteLayout from "@layouts/SiteLayout.astro";
+import DefinitionPage from "@components/DefinitionPage.astro";
 
 import { parseGVKRef } from "@lib/kube";
-import {
-  listProjects,
-  listCustomResources,
-  findCustomResource,
-  findProject,
-} from "@lib/crds";
-import CustomResourceDefinitionPage from "@components/CustomResourceDefinitionPage.astro";
+import { listProjects, findProject, listAllResources } from "@lib/kube";
 
 export async function getStaticPaths() {
   const projects = await listProjects();
 
-  const tasks = projects.map(async (project) => {
-    const resources = await listCustomResources(
-      project.slug,
-      project.versions[0]
-    );
-    return resources.map((resource) => ({
-      params: {
-        slug: project.slug,
-        gvkRef: [
-          resource.gvk.group,
-          resource.gvk.version,
-          resource.gvk.kind,
-        ].join("/"),
-      },
-    }));
-  });
+  const tasks = projects
+    .filter((x) => x.slug !== "kubernetes")
+    .map(async (project) => {
+      const resources = await listAllResources(project.slug, project.tags[0]);
+      return resources.map((resource) => ({
+        params: {
+          slug: project.slug,
+          gvkRef: [
+            resource.gvk.group,
+            resource.gvk.version,
+            resource.gvk.kind,
+          ].join("/"),
+        },
+      }));
+    });
 
   return (await Promise.all(tasks)).flat();
 }
@@ -36,22 +30,14 @@ export async function getStaticPaths() {
 const { slug, gvkRef } = Astro.params;
 
 const project = await findProject(slug);
-const tag = project.versions[0];
+const tag = project.tags[0];
 const gvk = parseGVKRef(gvkRef);
-
-const resource = await findCustomResource(slug, tag, gvk);
-if (!resource) {
-  throw new Error(`Resource not found for ${gvkRef} at  ${slug}@${tag}`);
-}
+const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
 ---
 
 <SiteLayout
-  title={`${project.name} Spec ${tag}: ${gvk.kind}`}
-  description={`Documentation, properties, change history, types and examples for ${gvk.kind} ${gvk.group}/${gvk.version}`}
+  title={`${project.name} Spec: ${gvk.kind}`}
+  description={`${project.name} documentation, properties, change history, types and examples for ${gvk.kind} ${apiVersion}`}
 >
-  <CustomResourceDefinitionPage
-    project={project}
-    tag={tag}
-    resource={resource}
-  />
+  <DefinitionPage project={project} tag={tag} gvk={gvk} />
 </SiteLayout>

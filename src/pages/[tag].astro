@@ -1,0 +1,23 @@
+---
+import HomePage from "@components/HomePage.astro";
+import SiteLayout from "@layouts/SiteLayout.astro";
+import { findProject } from "@lib/kube";
+
+export async function getStaticPaths() {
+  const project = await findProject("kubernetes");
+  return project.tags.slice(1).map((tag) => ({
+    params: { tag },
+  }));
+}
+
+const { tag } = Astro.params;
+const project = await findProject("kubernetes");
+---
+
+<SiteLayout
+  title={`Kubernetes Spec ${tag}`}
+  description="Find the documentation for all builtin resources, properties, types and even some examples!"
+  noIndex
+>
+  <HomePage project={project} tag={tag} latestTag={project.tags[0]} />
+</SiteLayout>

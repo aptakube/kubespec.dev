@@ -1,7 +1,5 @@
 ---
 import SiteLayout from "@layouts/SiteLayout.astro";
-import { LATEST_VERSION } from "@lib/swagger";
-const { version } = Astro.params;
 ---
 
 <SiteLayout
@@ -17,11 +15,6 @@ const { version } = Astro.params;
   </p>
 
   <div class="text-center mt-4">
-    <a
-      class="text-link hover:underline inline"
-      href={!version || version === LATEST_VERSION ? "/" : `/v${version}`}
-    >
-      ← back home
-    </a>
+    <a class="text-link hover:underline inline" href="/"> ← back home </a>
   </div>
 </SiteLayout>

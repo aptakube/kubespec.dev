@@ -1,29 +1,28 @@
 ---
-import {
-  compareVersions,
-  getPreviousVersion,
-  readSwaggerSpec,
-} from "@lib/swagger";
 import { DescriptionToggle } from "./DescriptionToggle";
 import { CollapsableItem } from "./CollapsableItem";
-import { getBuiltinResource, type GVK } from "@lib/kube";
+import {
+  compareVersions,
+  findResource,
+  type GVK,
+  type Project,
+} from "@lib/kube";
 
 type Props = {
-  version: string;
+  project: Project;
+  tag: string;
   gvk: GVK;
 };
-const { version, gvk } = Astro.props;
 
-const previous = getPreviousVersion(version);
+const { project, tag, gvk } = Astro.props;
+
+const previous = project.tags[project.tags.indexOf(tag) + 1];
 if (!previous) {
-  return null;
+  return;
 }
 
-const specPrev = await readSwaggerSpec(previous);
-const specNext = await readSwaggerSpec(version);
-
-let resourcePrev = getBuiltinResource(specPrev, gvk);
-let resourceNext = getBuiltinResource(specNext, gvk);
+let resourcePrev = await findResource(project.slug, previous, gvk);
+let resourceNext = await findResource(project.slug, tag, gvk);
 const changes = await compareVersions(resourcePrev, resourceNext);
 
 const added = changes.filter((change) => change.type === "new");
@@ -38,7 +37,7 @@ const isNewGVK =
   added={added.length}
   removed={removed.length}
   updated={updated.length}
-  title={`Kubernetes v${version}`}
+  title={`${project.name} ${tag}`}
 >
   {
     changes.length === 0 && (
@@ -50,7 +49,7 @@ const isNewGVK =
     isNewGVK && (
       <p class="text-muted-foreground text-sm">
         <span class="text-success">{gvk.kind}</span> was introduced on this
-        version of Kubernetes
+        version of {project.name}
       </p>
     )
   }

@@ -2,14 +2,13 @@
 import SiteLayout from "@layouts/SiteLayout.astro";
 import DefinitionPage from "@components/DefinitionPage.astro";
 
-import { getAllGVK, parseGVKRef } from "@lib/kube";
-import { LATEST_VERSION, readSwaggerSpec } from "@lib/swagger";
+import { parseGVKRef, findProject, listAllResources } from "@lib/kube";
 
 export async function getStaticPaths() {
-  const spec = await readSwaggerSpec(LATEST_VERSION);
-  const categories = getAllGVK(spec);
-  const gvk = Object.values(categories).flat();
-  return gvk.map((gvk) => ({
+  const project = await findProject("kubernetes");
+  const tag = project.tags[0];
+  const resources = await listAllResources("kubernetes", tag);
+  return resources.map(({ gvk }) => ({
     params: {
       gvkRef: [gvk.group, gvk.version, gvk.kind].join("/"),
     },
@@ -18,13 +17,15 @@ export async function getStaticPaths() {
 
 const { gvkRef } = Astro.params;
 
+const project = await findProject("kubernetes");
+const tag = project.tags[0];
 const gvk = parseGVKRef(gvkRef);
 const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
 ---
 
 <SiteLayout
   title={`Kubernetes Spec: ${gvk.kind}`}
-  description={`Documentation, properties, change history, types and examples for ${gvk.kind} ${apiVersion}`}
+  description={`Kubernetes documentation, properties, change history, types and examples for ${gvk.kind} ${apiVersion}`}
 >
-  <DefinitionPage version={LATEST_VERSION} gvkRef={gvkRef} />
+  <DefinitionPage project={project} tag={tag} gvk={gvk} />
 </SiteLayout>

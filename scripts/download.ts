@@ -1,5 +1,5 @@
 import { writeFile, mkdir, access, constants } from "node:fs/promises";
-import ALL_PROJECTS, { type ProjectDef } from "@lib/crds/projects";
+import { default as ALL_PROJECTS, type ProjectDef } from "@lib/kube/projects";
 
 const tagsToIgnore = [
   "rc",
@@ -113,7 +113,8 @@ for (const project of ALL_PROJECTS) {
 
   const tags = await findTags(project);
   for (const tag of tags) {
-    const outDir = `./public/projects/${project.slug}/${tag}`;
+    const tagFolder = project.mapTag ? project.mapTag(tag) : tag;
+    const outDir = `./content/projects/${project.slug}/${tagFolder}`;
     if (await fsExists(outDir)) {
       continue;
     }

@@ -1,31 +1,44 @@
 ---
+import { ScopeIcon } from "./ScopeIcon";
 import {
-  categorySortFn,
-  getAllGVK,
-  getBuiltinResource,
-  gvkSortFn,
+  type Project,
+  listAllResources,
+  listProjects,
   type GVK,
 } from "@lib/kube";
-import { LATEST_VERSION, readSwaggerSpec } from "@lib/swagger";
-import { ScopeIcon } from "./ScopeIcon";
-import { listProjects } from "@lib/crds";
 
 type Props = {
-  version: string;
+  project: Project;
+  tag: string;
+  latestTag: string;
 };
 
-const { version } = Astro.props;
-const spec = await readSwaggerSpec(version);
-const categories = getAllGVK(spec);
+const { project, tag, latestTag } = Astro.props;
 const projects = await listProjects();
+const resources = await listAllResources(project.slug, tag);
+const basePath = project.slug === "kubernetes" ? "" : `/${project.slug}`;
 
 const makeUrl = (gvk: GVK) => {
   const path = `${[gvk.group, gvk.version, gvk.kind].filter(Boolean).join("/")}`;
-  if (version === LATEST_VERSION) {
-    return `/${path}`;
+  if (tag === latestTag) {
+    return `${basePath}/${path}`;
   }
-  return `/v${version}/${path}`;
+  return `${basePath}/${tag}/${path}`;
 };
+
+const categories =
+  project.slug === "kubernetes"
+    ? [
+        "Workloads",
+        "Cluster",
+        "Networking",
+        "Configuration",
+        "Storage",
+        "Administration",
+        "Access Control",
+        "Other",
+      ]
+    : [...new Set([...resources.map((x) => x.category)])].sort();
 ---
 
 <div class="pb-10">
@@ -33,15 +46,15 @@ const makeUrl = (gvk: GVK) => {
     Reference Guide
   </h2>
   <h1 class="mt-2 text-4xl font-title tracking-tight">
-    Kubernetes Spec Explorer{" "}
+    {project.name} Spec Explorer{" "}
     <span
       class="text-xl font-sans font-semibold tracking-tighter text-muted-foreground"
     >
-      v{version}
+      {tag}
     </span>
   </h1>
   <p class="mt-2 max-w-4xl text-lg leading-7">
-    Find the documentation for all builtin resources, properties, types, and
+    Find the documentation for all {project.name} resources, properties, types, and
     examples.
   </p>
   <p class="mt-2 max-w-4xl text-base leading-7 text-muted-foreground">
@@ -51,51 +64,49 @@ const makeUrl = (gvk: GVK) => {
 
 <div class="flex flex-col space-y-8">
   {
-    Object.keys(categories)
-      .sort(categorySortFn)
-      .map((category) => (
-        <div>
-          <h3 class="font-semibold uppercase text-muted-foreground">
-            {category}
-          </h3>
-          <ul class="mt-1 grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
-            {categories[category].sort(gvkSortFn).map((gvk) => {
-              const resource = getBuiltinResource(spec, gvk);
-              return (
-                <a
-                  href={makeUrl(gvk)}
-                  class="w-full font-medium border rounded hover:text-primary relative"
-                >
-                  <div class="flex flex-1 items-center justify-between truncate">
-                    <div class="flex-1 truncate px-4 py-2">
-                      <p class="text-xs text-muted-foreground">
-                        {gvk.group
-                          ? `${gvk.group}/${gvk.version}`
-                          : gvk.version}
-                      </p>
-                      {gvk.kind}
-                    </div>
-                    {resource?.scope && (
-                      <ScopeIcon
-                        scope={resource.scope}
-                        className="h-4 w-4 absolute -top-1 -right-1 text-muted-foreground bg-background"
-                        client:load
-                      />
-                    )}
+    categories.map((category) => (
+      <div>
+        <h3 class="font-semibold uppercase text-muted-foreground">
+          {category}
+        </h3>
+        <ul class="mt-1 grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
+          {resources
+            .filter((x) => x.category === category)
+            .sort((left, right) => left.gvk.kind.localeCompare(right.gvk.kind))
+            .map((resource) => (
+              <a
+                href={makeUrl(resource.gvk)}
+                class="w-full font-medium border rounded hover:text-primary relative"
+              >
+                <div class="flex flex-1 items-center justify-between truncate">
+                  <div class="flex-1 truncate px-4 py-2">
+                    <p class="text-xs text-muted-foreground">
+                      {resource.gvk.group
+                        ? `${resource.gvk.group}/${resource.gvk.version}`
+                        : resource.gvk.version}
+                    </p>
+                    {resource.gvk.kind}
                   </div>
-                </a>
-              );
-            })}
-          </ul>
-        </div>
-      ))
+                  {resource?.scope && (
+                    <ScopeIcon
+                      scope={resource.scope}
+                      className="h-4 w-4 absolute -top-1 -right-1 text-muted-foreground bg-background"
+                      client:load
+                    />
+                  )}
+                </div>
+              </a>
+            ))}
+        </ul>
+      </div>
+    ))
   }
 </div>
 
 <div class="pt-10 pb-4">
-  <h2 class="mt-2 text-4xl font-title tracking-tight">Custom Resources</h2>
+  <h2 class="mt-2 text-4xl font-title tracking-tight">Other Resources</h2>
   <p class="mt-2 max-w-4xl text-lg leading-7">
-    We also have documentation for custom resources from various projects.
+    We also have documentation for various other projects.
   </p>
 </div>
 
@@ -105,9 +116,10 @@ const makeUrl = (gvk: GVK) => {
   {
     projects
       .sort((a, b) => a.name.localeCompare(b.name))
+      .filter((p) => p.slug !== project.slug)
       .map((p) => (
         <a
-          href={`/${p.slug}`}
+          href={p.slug === "kubernetes" ? "/" : `/${p.slug}`}
           class="w-full font-medium border rounded hover:text-primary relative"
         >
           <div class="flex flex-1 gap-1 items-center justify-between truncate p-2">

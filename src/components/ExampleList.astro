@@ -2,19 +2,11 @@
 import { Example } from "./Example";
 
 type Props = {
-  apiVersion: string;
+  examples: any[];
   kind: string;
 };
 
-const { apiVersion, kind } = Astro.props;
-
-const allExamples = Object.values(
-  import.meta.glob(`../lib/kube/metadata/**/*.md`, { eager: true })
-);
-
-const examples = allExamples.filter((x: any) =>
-  x.file.includes(`/lib/kube/metadata/${apiVersion}/${kind.toLowerCase()}/`)
-);
+const { examples, kind } = Astro.props;
 ---
 
 {

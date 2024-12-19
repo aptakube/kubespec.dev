@@ -1,36 +1,36 @@
 ---
-import { getBuiltinResource, parseGVKRef, readMetadata } from "@lib/kube";
-import { LATEST_VERSION, readSwaggerSpec } from "@lib/swagger";
+import { readMetadata, type Project, type GVK, findResource } from "@lib/kube";
 import { PropertyTree } from "./PropertyTree";
 import { PropertyType } from "./PropertyType";
 import { IconBulb, IconCube } from "@tabler/icons-react";
+import ChangeHistory from "./ChangeHistory.astro";
 import ResourceLinks from "./ResourceLinks.astro";
 import ExampleList from "./ExampleList.astro";
-import ChangeHistory from "./ChangeHistory.astro";
 
 type Props = {
-  version: string;
-  gvkRef: string;
+  project: Project;
+  tag: string;
+  gvk: GVK;
 };
 
-const { gvkRef, version } = Astro.props;
-const spec = await readSwaggerSpec(version);
-
-const gvk = parseGVKRef(gvkRef);
+const { project, gvk, tag } = Astro.props;
 const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
-const resource = getBuiltinResource(spec, gvk);
+const resource = await findResource(project.slug, tag, gvk);
+const basePath = project.slug === "kubernetes" ? "/" : `/${project.slug}`;
 
 if (!resource) {
-  throw new Error(`Resource not found for ${apiVersion}/${gvk.kind}`);
+  throw new Error(
+    `Resource not found in ${project.slug}: ${apiVersion}/${gvk.kind}`
+  );
 }
 
-const metadata = await readMetadata(gvk);
+const metadata = await readMetadata(project, gvk);
 ---
 
 <nav class="order-first flex space-x-2 pb-10 text-sm font-semibold">
   <a
     class="text-muted-foreground hover:underline"
-    href={!version || version === LATEST_VERSION ? "/" : `/v${version}`}
+    href={!tag || tag === project.tags[0] ? `${basePath}` : `${basePath}${tag}`}
   >
     ← back to all kinds
   </a>
@@ -96,6 +96,6 @@ const metadata = await readMetadata(gvk);
   </div>
 </div>
 
-<ChangeHistory version={version} gvk={gvk} />
-<ExampleList apiVersion={apiVersion} kind={gvk.kind} />
+<ChangeHistory project={project} tag={tag} gvk={gvk} />
+<ExampleList examples={metadata.examples} kind={gvk.kind} />
 <ResourceLinks links={metadata.links} kind={gvk.kind} />

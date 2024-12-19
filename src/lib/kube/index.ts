@@ -1,81 +1,97 @@
-import type { SwaggerSpec } from "@lib/swagger";
-import pluralize from "pluralize";
-import type { GVK, Resource, ResourceDefinition } from "./types";
-export type { GVK, Resource, ResourceDefinition };
+import { readdir } from "fs/promises";
+import type { GVK, Project, Resource } from "./types";
+import ALL_PROJECTS from "./projects";
+import semver from "semver";
+import { listAllCRDs } from "./crds";
+import { compareVersions, listAllBuiltInResources } from "./kubernetes";
+import { compareCRDVersion } from "./compare";
+export * from "./compare";
+export * from "./metadata";
 
-export type GVKByCategory = { [category: string]: GVK[] };
+export * from "./types";
 
-const kindToCategory: Record<string, string> = {
-  Pod: "Workloads",
-  Deployment: "Workloads",
-  DaemonSet: "Workloads",
-  StatefulSet: "Workloads",
-  Job: "Workloads",
-  CronJob: "Workloads",
-  ReplicaSet: "Workloads",
-  ReplicationController: "Workloads",
+export async function listProjects(): Promise<Project[]> {
+  const projects: Project[] = [];
+  for (const project of ALL_PROJECTS) {
+    const tags = new Set<string>();
+    const baseDir = `./content/projects/${project.slug}`;
+    for (const file of await readdir(baseDir, { recursive: true })) {
+      const tag = file.substring(0, file.indexOf("/"));
+      if (tag) {
+        tags.add(tag);
+      }
+    }
 
-  Node: "Cluster",
-  Event: "Cluster",
-  Namespace: "Cluster",
-
-  Service: "Networking",
-  Ingress: "Networking",
-  Endpoint: "Networking",
-  Endpoints: "Networking",
-  NetworkPolicy: "Networking",
-  EndpointSlice: "Networking",
-  IngressClass: "Networking",
-
-  ConfigMap: "Configuration",
-  LimitRange: "Configuration",
-  Secret: "Configuration",
-  Lease: "Configuration",
-  ResourceQuota: "Configuration",
-  HorizontalPodAutoscaler: "Configuration",
-  VerticalPodAutoscaler: "Configuration",
-  PodDisruptionBudget: "Configuration",
-
-  CSINode: "Storage",
-  CSIDriver: "Storage",
-  CSIStorageCapacity: "Storage",
-  StorageClass: "Storage",
-  VolumeAttachment: "Storage",
-  PersistentVolume: "Storage",
-  PersistentVolumeClaim: "Storage",
-
-  MutatingWebhookConfiguration: "Administration",
-  ValidatingWebhookConfiguration: "Administration",
-  ValidatingAdmissionPolicy: "Administration",
-  ValidatingAdmissionPolicyBinding: "Administration",
-  RuntimeClass: "Administration",
-  PriorityClass: "Administration",
-  ResourceClass: "Administration",
-
-  ServiceAccount: "Access Control",
-  Role: "Access Control",
-  RoleBinding: "Access Control",
-  ClusterRole: "Access Control",
-  ClusterRoleBinding: "Access Control",
-};
-
-const categories = [
-  "Workloads",
-  "Cluster",
-  "Networking",
-  "Configuration",
-  "Storage",
-  "Administration",
-  "Access Control",
-  "Other",
-];
-
-export function gvkSortFn(left: GVK, right: GVK): number {
-  return left.kind.localeCompare(right.kind);
+    projects.push({
+      name: project.name,
+      slug: project.slug,
+      logo: project.logo,
+      tags:
+        project.slug === "kubernetes"
+          ? [...tags].sort(compareVersions).reverse()
+          : semver.rsort([...tags]),
+    });
+  }
+  return projects;
 }
 
-export function categorySortFn(left: string, right: string): number {
-  return categories.indexOf(left) - categories.indexOf(right);
+const resourcesCache = new Map<string, Resource[]>();
+
+export async function findProject(slug: string): Promise<Project> {
+  const projects = await listProjects();
+  const project = projects.find((p) => p.slug === slug);
+  if (!project) {
+    throw new Error(`Project not found: ${slug}`);
+  }
+  return project;
+}
+
+export async function listAllResources(
+  slug: string,
+  tag: string
+): Promise<Resource[]> {
+  const cacheKey = `${slug}/${tag}`;
+  const cached = resourcesCache.get(cacheKey);
+  if (cached) {
+    return cached;
+  }
+  // Kubernetes is a special case with Swagger files instead of CRD Manifests
+  const resources =
+    slug === "kubernetes"
+      ? await listAllBuiltInResources(tag)
+      : await listAllCRDs(slug, tag);
+
+  const latestByKind = new Map<string, Resource>();
+  for (const resource of resources) {
+    const key = `${resource.gvk.group}/${resource.gvk.kind}`;
+    const existing = latestByKind.get(key);
+    if (existing) {
+      if (compareCRDVersion(resource.gvk.version, existing.gvk.version) > 0) {
+        latestByKind.set(key, resource);
+      }
+    } else {
+      latestByKind.set(key, resource);
+    }
+  }
+
+  const latestResources = Array.from(latestByKind.values());
+
+  resourcesCache.set(cacheKey, latestResources);
+  return latestResources;
+}
+
+export async function findResource(
+  slug: string,
+  tag: string,
+  gvk: GVK
+): Promise<Resource | undefined> {
+  const resources = await listAllResources(slug, tag);
+  return resources.find(
+    (r) =>
+      r.gvk.group === gvk.group &&
+      r.gvk.version === gvk.version &&
+      r.gvk.kind === gvk.kind
+  );
 }
 
 export function parseGVKRef(ref: string): GVK {
@@ -83,135 +99,4 @@ export function parseGVKRef(ref: string): GVK {
   return parts.length === 2
     ? { group: "", version: parts[0], kind: parts[1] }
     : { group: parts[0], version: parts[1], kind: parts[2] };
-}
-
-export function getAllGVK(spec: SwaggerSpec): GVKByCategory {
-  const gvk = Object.values(spec.paths)
-    .flatMap((p) => Object.values(p))
-    .filter((a) => a["x-kubernetes-action"] === "list")
-    .map((a) => a["x-kubernetes-group-version-kind"])
-    .filter((a) => a.kind !== "CustomResourceDefinition");
-
-  const deduped = Object.values(
-    gvk.reduce(
-      (acc, item) => {
-        const key = `${item.group}/${item.version}/${item.kind}`;
-        return {
-          ...acc,
-          [key]: item,
-        };
-      },
-      {} as Record<string, GVK>
-    )
-  );
-
-  return deduped.reduce((acc, item) => {
-    const category = kindToCategory[item.kind] || "Other";
-    return {
-      ...acc,
-      [category]: [...(acc[category] || []), item],
-    };
-  }, {} as GVKByCategory);
-}
-
-export function getBuiltinResource(
-  spec: SwaggerSpec,
-  gvk: GVK
-): Resource | undefined {
-  const result = Object.entries(spec.definitions).find(
-    ([_, def]) =>
-      def["x-kubernetes-group-version-kind"] &&
-      def["x-kubernetes-group-version-kind"].find(
-        (x) =>
-          x.group === gvk.group &&
-          x.version === gvk.version &&
-          x.kind === gvk.kind
-      )
-  );
-
-  if (!result) {
-    return undefined;
-  }
-
-  const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
-
-  const namespacedPath =
-    apiVersion === "v1"
-      ? `/api/${apiVersion}/namespaces/{namespace}/${pluralize(gvk.kind.toLowerCase())}`
-      : `/apis/${apiVersion}/namespaces/{namespace}/${pluralize(gvk.kind.toLowerCase())}`;
-  const scope = Object.keys(spec.paths).includes(namespacedPath)
-    ? "Namespaced"
-    : "Cluster";
-
-  const def = getDefinitionByKey(spec, result[0]);
-  return { definition: def, gvk, scope };
-}
-
-export function getDefinitionByKey(
-  spec: SwaggerSpec,
-  key: string
-): ResourceDefinition {
-  const root = spec.definitions[key];
-  if (!root) {
-    throw new Error(`No definition found for ${key}`);
-  }
-
-  const definition: ResourceDefinition = {
-    description: root.description ?? "",
-    properties: {},
-  };
-
-  for (const [name, property] of Object.entries(root.properties || {})) {
-    definition.properties[name] = {
-      description: property.description || "",
-      type: property.type || "",
-      required: (root.required || []).includes(name),
-      isArray: property.type === "array",
-    };
-
-    if (definition.properties[name].isArray && property.items?.type) {
-      definition.properties[name].type = `${property.items.type}[]`;
-    }
-
-    if (property.$ref || property.items?.$ref) {
-      const refKey = (property.$ref || property.items?.$ref || "").replace(
-        "#/definitions/",
-        ""
-      );
-
-      const refType = refKey.split(".").pop() || "";
-      definition.properties[name].type = definition.properties[name].isArray
-        ? `${refType}[]`
-        : refType;
-
-      if (refType !== "Time") {
-        definition.properties[name].definition = getDefinitionByKey(
-          spec,
-          refKey
-        );
-      }
-    }
-  }
-
-  return definition;
-}
-
-type GVKMetadata = {
-  links: Array<{ name: string; href: string }>;
-};
-
-export async function readMetadata(gvk: GVK): Promise<GVKMetadata> {
-  const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
-  const fileName = `./metadata/${apiVersion}/${gvk.kind.toLowerCase()}/${gvk.kind.toLowerCase()}.json`;
-
-  const files = import.meta.glob<GVKMetadata>(`./metadata/**/*.json`, {
-    eager: true,
-  });
-
-  try {
-    const { links } = files[fileName] || ({ links: [] } as GVKMetadata);
-    return { links: links ?? [] };
-  } catch (e) {
-    return { links: [] };
-  }
 }

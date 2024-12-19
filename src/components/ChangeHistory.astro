@@ -1,16 +1,17 @@
 ---
-import { getPreviousVersions } from "@lib/swagger";
 import ChangeList from "./ChangeList.astro";
 import type { GVK } from "@lib/kube";
+import type { Project } from "@lib/kube";
 
 type Props = {
-  version: string;
+  project: Project;
+  tag: string;
   gvk: GVK;
 };
 
-const { version, gvk } = Astro.props;
+const { project, tag, gvk } = Astro.props;
 
-const previous = getPreviousVersions(version);
+const previous = project.tags.slice(project.tags.indexOf(tag) + 1);
 if (previous.length <= 1) {
   return null;
 }
@@ -23,7 +24,11 @@ if (previous.length <= 1) {
         Change History
       </h2>
       <div>
-        {previous.map((v) => <ChangeList version={v} gvk={gvk} />)}
+        {
+          previous.map((v) => (
+            <ChangeList project={project} tag={v} gvk={gvk} />
+          ))
+        }
       </div>
     </div>
   </div>
