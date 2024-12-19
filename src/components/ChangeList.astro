@@ -32,97 +32,89 @@ const isNewGVK =
   changes.filter((change) => change.type === "new-gvk").length > 0;
 ---
 
-<CollapsableItem
-  client:load
-  added={added.length}
-  removed={removed.length}
-  updated={updated.length}
-  title={`${project.name} ${tag}`}
->
-  {
-    changes.length === 0 && (
-      <p class="text-muted-foreground text-sm">Nothing changed</p>
-    )
-  }
-
-  {
-    isNewGVK && (
-      <p class="text-muted-foreground text-sm">
-        <span class="text-success">{gvk.kind}</span> was introduced on this
-        version of {project.name}
-      </p>
-    )
-  }
-
-  {
-    added.length > 0 && (
-      <>
+{
+  changes.length === 0 ? (
+    <p class="text-muted-foreground ml-7">{`${project.name} ${tag}`}</p>
+  ) : (
+    <CollapsableItem
+      client:load
+      added={added.length}
+      removed={removed.length}
+      updated={updated.length}
+      title={`${project.name} ${tag}`}
+    >
+      {isNewGVK && (
         <p class="text-muted-foreground text-sm">
-          {added.length}
-          {added.length === 1 ? "property has" : "properties have"} been added
-          on this version
+          <span class="text-success">{gvk.kind}</span> was first seen on this
+          version of {project.name}
         </p>
+      )}
 
-        {
+      {added.length > 0 && (
+        <>
+          <p class="text-muted-foreground text-sm">
+            {added.length}
+            {added.length === 1 ? "property has" : "properties have"} been added
+            on this version
+          </p>
+
+          {
+            <ul class="mb-2">
+              {added.map((change) => (
+                <DescriptionToggle
+                  client:load
+                  path={change.path}
+                  description={change.description}
+                  color="text-success"
+                />
+              ))}
+            </ul>
+          }
+        </>
+      )}
+
+      {removed.length > 0 && (
+        <>
+          <p class="text-muted-foreground text-sm">
+            {removed.length}
+            {removed.length === 1 ? "property has" : "properties have"} been
+            removed on this version
+          </p>
+
           <ul class="mb-2">
-            {added.map((change) => (
+            {removed.map((change) => (
               <DescriptionToggle
                 client:load
                 path={change.path}
                 description={change.description}
-                color="text-success"
+                color="text-destructive"
               />
             ))}
           </ul>
-        }
-      </>
-    )
-  }
+        </>
+      )}
 
-  {
-    removed.length > 0 && (
-      <>
-        <p class="text-muted-foreground text-sm">
-          {removed.length}
-          {removed.length === 1 ? "property has" : "properties have"} been
-          removed on this version
-        </p>
+      {updated.length > 0 && (
+        <>
+          <p class="text-muted-foreground text-sm">
+            {updated.length}
+            {updated.length === 1 ? "property has" : "properties have"} changed
+            the description
+          </p>
 
-        <ul class="mb-2">
-          {removed.map((change) => (
-            <DescriptionToggle
-              client:load
-              path={change.path}
-              description={change.description}
-              color="text-destructive"
-            />
-          ))}
-        </ul>
-      </>
-    )
-  }
-
-  {
-    updated.length > 0 && (
-      <>
-        <p class="text-muted-foreground text-sm">
-          {updated.length}
-          {updated.length === 1 ? "property has" : "properties have"} changed
-          the description
-        </p>
-
-        <ul class="mb-2">
-          {updated.map((update) => (
-            <DescriptionToggle
-              client:load
-              path={update.path}
-              description={update.previous}
-              description2={update.next}
-              color="text-warning"
-            />
-          ))}
-        </ul>
-      </>
-    )
-  }
-</CollapsableItem>
+          <ul class="mb-2">
+            {updated.map((update) => (
+              <DescriptionToggle
+                client:load
+                path={update.path}
+                description={update.previous}
+                description2={update.next}
+                color="text-warning"
+              />
+            ))}
+          </ul>
+        </>
+      )}
+    </CollapsableItem>
+  )
+}

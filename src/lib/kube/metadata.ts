@@ -32,12 +32,13 @@ export async function readMetadata(
     .filter(([path]) => path.includes(baseDir))
     .map(([, value]) => value);
 
-  const exists = await fsExists(baseDir);
+  const path = `${baseDir}/${gvk.kind.toLowerCase()}.json`;
+  const exists = await fsExists(path);
   if (!exists) {
     return { examples, links: [] };
   }
 
-  const content = await readFile(`${baseDir}/${gvk.kind}.json`, "utf-8");
+  const content = await readFile(path, "utf-8");
   const { links } = JSON.parse(content);
   return { examples, links };
 }
