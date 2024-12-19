@@ -63,7 +63,7 @@ export async function listAllResources(
 
   const latestByKind = new Map<string, Resource>();
   for (const resource of resources) {
-    const key = `${resource.gvk.group}/${resource.gvk.kind}`;
+    const key = `${resource.gvk.group}/${resource.gvk.version.substring(0, 2)}/${resource.gvk.kind}`;
     const existing = latestByKind.get(key);
     if (existing) {
       if (compareCRDVersion(resource.gvk.version, existing.gvk.version) > 0) {
