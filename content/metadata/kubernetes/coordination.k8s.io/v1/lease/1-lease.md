@@ -8,7 +8,7 @@ apiVersion: coordination.k8s.io/v1
 kind: Lease
 metadata:
   name: some-component-deployment-lock
-  namespace: default # Lease is namespaced resource
+  namespace: default # Lease is a namespaced resource
 spec:
   holderIdentity: locking-person-name
 ```

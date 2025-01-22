@@ -8,7 +8,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: fullstack-deployment
-  namespace: shopping-cart # Deployment is namespaced resource
+  namespace: shopping-cart # Deployment is a namespaced resource
   labels:
     app: fullstack
 spec:

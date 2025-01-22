@@ -8,7 +8,7 @@ apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: complex-cron-job
-  namespace: checkout # CronJob is namespaced resource
+  namespace: checkout # CronJob is a namespaced resource
 spec:
   schedule: '*/15 * * * 1-5' # run every 15 minutes on weekdays (Mon-Fri)
   jobTemplate:
