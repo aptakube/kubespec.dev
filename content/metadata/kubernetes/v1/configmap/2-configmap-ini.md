@@ -8,7 +8,7 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: inifile-configmap
-  namespace: payments # ConfigMap is namespaced resource
+  namespace: payments # ConfigMap is a namespaced resource
 data:
   # It's handy to have multiline content here and mount them as files in your containers
   config.ini: |

@@ -8,7 +8,7 @@ apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: hello-kube
-  namespace: checkout # CronJob is namespaced resource
+  namespace: checkout # CronJob is a namespaced resource
 spec:
   schedule: '0 0 * * *' # run every day at midnight
   jobTemplate:

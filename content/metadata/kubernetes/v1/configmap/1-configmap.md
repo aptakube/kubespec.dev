@@ -8,7 +8,7 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: example-configmap
-  namespace: payments # ConfigMap is namespaced resource
+  namespace: payments # ConfigMap is a namespaced resource
 data:
   database_max_conn: 20
   log_level: DEBUG

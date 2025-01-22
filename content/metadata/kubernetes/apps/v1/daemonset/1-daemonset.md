@@ -8,7 +8,7 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: fluentd-elasticsearch
-  namespace: monitoring # DaemonSet is namespaced resource
+  namespace: monitoring # DaemonSet is a namespaced resource
 spec:
   selector:
     matchLabels:

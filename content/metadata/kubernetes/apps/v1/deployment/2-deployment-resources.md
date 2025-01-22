@@ -8,7 +8,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  namespace: shopping-cart # Deployment is namespaced resource
+  namespace: shopping-cart # Deployment is a namespaced resource
   labels:
     app: nginx
 spec:
