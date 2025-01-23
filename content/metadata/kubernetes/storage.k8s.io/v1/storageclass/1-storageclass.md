@@ -16,4 +16,3 @@ parameters:
   replication-type: none # zonal, regional-pd for regional replication
 reclaimPolicy: Retain # Retain, Delete, or Recycle
 ```
-

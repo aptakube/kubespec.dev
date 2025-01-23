@@ -16,3 +16,4 @@ spec:
   resources:
     requests:
       storage: 10Gi # Unit in Ti, Gi, Mi, etc.
+```
