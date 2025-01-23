@@ -10,7 +10,7 @@ export function PropertyType(props: Props) {
   const color = props.hasChildren
     ? "text-pink-600 dark:text-pink-400"
     : props.type === "string"
-      ? "text-orange-600 dark:text-pink-400"
+      ? "text-orange-600 dark:text-orange-400"
       : props.type === "boolean"
         ? "text-blue-600 dark:text-blue-400"
         : props.type === "integer"
