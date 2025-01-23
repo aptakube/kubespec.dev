@@ -36,8 +36,9 @@ const { examples, kind } = Astro.props;
         <div>
           <h2 class="text-2xl font-bold leading-10 tracking-tight">Examples</h2>
           <p class="text-sm leading-7 text-muted-foreground">
-            There are <strong>{examples.length}</strong> examples of{" "}
-            <strong>{kind}</strong> that you can use as a starting point to
+            There {examples.length === 1 ? 'is' : 'are'}{" "}
+            <strong>{examples.length}</strong> example{examples.length === 1 ? '' : 's'}{" "}
+            of <strong>{kind}</strong> that you can use as a starting point to
             create your own.
           </p>
         </div>
