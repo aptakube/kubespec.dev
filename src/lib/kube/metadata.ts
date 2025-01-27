@@ -29,7 +29,7 @@ export async function readMetadata(
   const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
   const baseDir = `./content/metadata/${project.slug}/${apiVersion}/${gvk.kind.toLowerCase()}`;
   const examples = Object.entries(All_EXAMPLES)
-    .filter(([path]) => path.includes(baseDir))
+    .filter(([path]) => path.includes(baseDir + '/'))
     .map(([, value]) => value);
 
   const path = `${baseDir}/${gvk.kind.toLowerCase()}.json`;
