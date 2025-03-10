@@ -1,5 +1,5 @@
 ---
-title: Create a simple Cluster Role named 'pod-reader-role-alice'
+title: Create a simple Cluster Role named 'secret-reader'
 description: A simple ClusterRole that gives `read` access to secrets across the cluster. Refer to the associated role bindings `read-secrets-global` and/or `restricted-secret-reader` for the configuration to be complete
 ---
 
