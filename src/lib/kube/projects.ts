@@ -10,6 +10,13 @@ export type ProjectDef = {
 
 export default [
   {
+    name: "Prometheus Operator",
+    slug: "prometheus-operator",
+    logo: "https://avatars.githubusercontent.com/u/66682517?s=200&v=4",
+    repo: "prometheus-operator/prometheus-operator",
+    pathToManifests: ["example/prometheus-operator-crd", "bundle.yaml"],
+  },
+  {
     name: "Kubernetes",
     slug: "kubernetes",
     logo: "https://avatars.githubusercontent.com/u/13629408?s=48&v=4",
