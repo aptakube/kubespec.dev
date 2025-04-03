@@ -91,4 +91,12 @@ export default [
     // For some reason, the cilium repo has duplicate tags like "v1.10.0" and "1.10.0"
     filterTag: (tag: string) => !tag.startsWith("v"),
   },
+  {
+    name: "Karpenter",
+    slug: "karpenter",
+    logo: "https://avatars.githubusercontent.com/u/2232217?s=200&v=4",
+    repo: "aws/karpenter-provider-aws",
+    pathToManifests: ["pkg/apis/crds"],
+    filterTag: (tag: string) => !tag.startsWith("v0."),
+  },
 ];
