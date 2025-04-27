@@ -99,4 +99,11 @@ export default [
     pathToManifests: ["pkg/apis/crds"],
     filterTag: (tag: string) => !tag.startsWith("v0."),
   },
+  {
+    name: "eck-operator",
+    slug: "eck-operator",
+    logo: "https://avatars.githubusercontent.com/u/6764390?s=48&v=4",
+    repo: "elastic/cloud-on-k8s",
+    pathToManifests: ["config/crds"],
+  },
 ];
