@@ -1,3 +1,5 @@
+import semver from "semver";
+
 export type ProjectDef = {
   name: string;
   slug: string;
@@ -15,6 +17,9 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/66682517?s=200&v=4",
     repo: "prometheus-operator/prometheus-operator",
     pathToManifests: ["example/prometheus-operator-crd", "bundle.yaml"],
+    filterTag: (tag: string) =>
+      tag.startsWith("v") && // there are tag prefixes by pkg/(api|client)...
+      semver.gte(tag.substring(1), "0.81.0"), // first committed version; https://github.com/aptakube/kubespec.dev/pull/25
   },
   {
     name: "Kubernetes",
@@ -66,6 +71,8 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/68448710?s=200&v=4",
     repo: "kyverno/kyverno",
     pathToManifests: ["definitions/crds", "config/crds"],
+    filterTag: (tag: string) =>
+      tag.startsWith("v") && semver.gte(tag.substring(1), "1.1.7"), // no files before 1.1.7
   },
   {
     name: "CloudNativePG",
@@ -89,7 +96,8 @@ export default [
     repo: "cilium/cilium",
     pathToManifests: ["examples/crds", "pkg/k8s/apis/cilium.io/client/crds"],
     // For some reason, the cilium repo has duplicate tags like "v1.10.0" and "1.10.0"
-    filterTag: (tag: string) => !tag.startsWith("v"),
+    filterTag: (tag: string) =>
+      !tag.startsWith("v") && semver.gte(tag, "1.6.0"), // no files before 1.6.0
   },
   {
     name: "Karpenter",
@@ -105,6 +113,9 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/6764390?s=48&v=4",
     repo: "elastic/cloud-on-k8s",
     pathToManifests: ["config/crds"],
+    filterTag: (tag: string) =>
+      semver.gte(tag.substring(1), "1.0.0") || // no files before 1.0.0
+      tag.startsWith("v"), // "v" prefixed tags are from 2.0.0
   },
   {
     name: "Agones",
