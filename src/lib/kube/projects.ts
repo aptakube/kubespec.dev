@@ -106,4 +106,12 @@ export default [
     repo: "elastic/cloud-on-k8s",
     pathToManifests: ["config/crds"],
   },
+  {
+    name: "Agones",
+    slug: "agones",
+    logo: "https://github.com/googleforgames/agones/raw/main/docs/agones.png",
+    repo: "googleforgames/agones",
+    pathToManifests: ["install/yaml/install.yaml"],
+    filterTag: (tag: string) => !tag.startsWith("v0."),
+  },
 ];
