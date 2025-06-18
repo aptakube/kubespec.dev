@@ -106,4 +106,12 @@ export default [
     repo: "elastic/cloud-on-k8s",
     pathToManifests: ["config/crds"],
   },
+  {
+    name: "k6 Operator",
+    slug: "k6-operator",
+    logo: "https://avatars.githubusercontent.com/u/7195757?s=48&v=4",
+    repo: "grafana/k6-operator",
+    pathToManifests: ["config/crd/bases"],
+    filterTag: (tag: string) => tag.startsWith("v0."),
+  }
 ];
