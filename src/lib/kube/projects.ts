@@ -113,5 +113,12 @@ export default [
     repo: "grafana/k6-operator",
     pathToManifests: ["config/crd/bases"],
     filterTag: (tag: string) => tag.startsWith("v0."),
+  },
+  {
+    name: "Couchbase Operator",
+    slug: "couchbase-operator",
+    logo: "https://avatars.githubusercontent.com/u/636956?s=48&v=4",
+    repo: "couchbase/couchbase-operator",
+    pathToManifests: ["example/crd.yaml"]
   }
 ];
