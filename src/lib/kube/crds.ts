@@ -25,7 +25,7 @@ export async function listManifests(
 
   for (const file of files) {
     const content = await readFile(`${dir}/${file}`, "utf-8");
-    const docs = parseAllDocuments(content);
+    const docs = parseAllDocuments(content, { uniqueKeys: false });
     for (const doc of docs) {
       if (doc.errors.length > 0) {
         throw new Error(
