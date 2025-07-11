@@ -120,5 +120,14 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/636956?s=48&v=4",
     repo: "couchbase/couchbase-operator",
     pathToManifests: ["example/crd.yaml"]
+  },
+  {
+    name: "Kgateway",
+    slug: "kgateway",
+    logo: "https://avatars.githubusercontent.com/u/186092512?s=48&v=4",
+    repo: "kgateway-dev/kgateway",
+    pathToManifests: ["install/helm/kgateway-crds/templates"],
+    // Start at v2.0, ignore -main tag
+    filterTag: (tag: string) => tag.startsWith("v2.") && !tag.includes("-main")
   }
 ];
