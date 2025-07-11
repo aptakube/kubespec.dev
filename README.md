@@ -18,6 +18,23 @@ Contributions are welcome!
 - run `npm install`
 - run `npm run dev`
 
+### Adding/Updating projects
+
+- add the project to the [`src/lib/kube/projects.ts`](src/lib/kube/projects.ts) file(skip for just updating)
+
+```ts
+{
+  name: "New Project",
+  slug: "new-project",
+  logo: "https://example.com/logo.png",
+  repo: "new-org/new-project",
+  pathToManifests: ["path/to/manifests"],
+}
+```
+
+- run `GH_TOKEN=... npm run download` to download the manifests
+- run `npm run dev` to check
+
 ## 📃 License
 
 MIT
