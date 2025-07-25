@@ -1,0 +1,54 @@
+---
+export const prerender = false;
+
+import SiteLayout from "@layouts/SiteLayout.astro";
+import DefinitionPage from "@components/DefinitionPage.astro";
+import { findProject, parseGVKRef } from "@lib/kube";
+import HomePage from "@components/HomePage.astro";
+
+const { slug, args } = Astro.params;
+
+if (!slug || !args) {
+  return new Response("Not found", { status: 404 });
+}
+
+const project = await findProject(slug);
+if (!project) {
+  return new Response("Not found", { status: 404 });
+}
+
+const argsArray = args.split("/");
+const hasTagArg = project.tags.includes(argsArray[0]);
+
+const tag = hasTagArg ? argsArray[0] : project.tags[0];
+const gvkRef = hasTagArg ? argsArray.slice(1).join("/") : argsArray.join("/");
+
+const gvk = parseGVKRef(gvkRef);
+const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
+---
+
+{
+  apiVersion ? (
+    <SiteLayout
+      title={`${project.name} ${tag} Spec: ${gvk.kind}`}
+      description={`Documentation, properties, change history, types, and examples for ${gvk.kind} ${apiVersion}`}
+      noIndex={tag !== project.tags[0]}
+      slug={slug}
+      tag={tag}
+      gvkRef={gvkRef}
+    >
+      <DefinitionPage project={project} tag={tag} gvk={gvk} />
+    </SiteLayout>
+  ) : (
+    <SiteLayout
+      title={`${project.name} ${tag} Spec: Reference Guide and Documentation`}
+      description={`Find the documentation for all ${project.name} custom resources, properties, types and even some examples!`}
+      noIndex={tag !== project.tags[0]}
+      slug={slug}
+      tag={tag}
+      gvkRef={gvkRef}
+    >
+      <HomePage project={project} tag={tag} />
+    </SiteLayout>
+  )
+}

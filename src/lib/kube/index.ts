@@ -37,13 +37,17 @@ export async function listProjects(): Promise<Project[]> {
 
 const resourcesCache = new Map<string, Resource[]>();
 
-export async function findProject(slug: string): Promise<Project> {
-  const projects = await listProjects();
-  const project = projects.find((p) => p.slug === slug);
+export async function getProject(slug: string): Promise<Project> {
+  const project = await findProject(slug);
   if (!project) {
-    throw new Error(`Project not found: ${slug}`);
+    throw new Error(`Project with slug "${slug}" not found`);
   }
   return project;
+}
+
+export async function findProject(slug: string): Promise<Project | undefined> {
+  const projects = await listProjects();
+  return projects.find((p) => p.slug === slug);
 }
 
 export async function listAllResources(

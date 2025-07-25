@@ -1,0 +1,28 @@
+---
+export const prerender = false;
+
+import HomePage from "@components/HomePage.astro";
+import SiteLayout from "@layouts/SiteLayout.astro";
+import { findProject } from "@lib/kube";
+
+const { slug } = Astro.params;
+if (!slug) {
+  return new Response("Not found", { status: 404 });
+}
+
+const project = await findProject(slug);
+if (!project) {
+  return new Response("Not found", { status: 404 });
+}
+
+const tag = project.tags[0];
+---
+
+<SiteLayout
+  title={`${project.name} ${tag} Spec: Reference Guide and Documentation`}
+  description={`Find the documentation for all ${project.name} custom resources, properties, types and even some examples!`}
+  slug={slug}
+  tag={tag}
+>
+  <HomePage project={project} tag={tag} />
+</SiteLayout>

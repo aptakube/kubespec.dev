@@ -1,9 +1,9 @@
 ---
 import HomePage from "@components/HomePage.astro";
 import SiteLayout from "@layouts/SiteLayout.astro";
-import { findProject } from "@lib/kube";
+import { getProject } from "@lib/kube";
 
-const project = await findProject("kubernetes");
+const project = await getProject("kubernetes");
 const tag = project.tags[0];
 ---
 
@@ -11,5 +11,5 @@ const tag = project.tags[0];
   title={`Kubernetes Spec ${tag}: Reference Guide and Documentation`}
   description="Find the documentation for all builtin resources, properties, types and even some examples!"
 >
-  <HomePage project={project} tag={tag} latestTag={tag} />
+  <HomePage project={project} tag={tag} />
 </SiteLayout>

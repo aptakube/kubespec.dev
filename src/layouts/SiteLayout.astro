@@ -11,10 +11,15 @@ type Props = {
   description: string;
   noIndex?: boolean;
   og?: string;
+
+  slug?: string;
+  tag?: string;
+  gvkRef?: string;
 };
 
 const { title, description, og, noIndex } = Astro.props;
 
+const isProduction = import.meta.env.PROD;
 const openGraphUrl = og
   ? og.startsWith("http")
     ? og
@@ -50,12 +55,25 @@ const openGraphUrl = og
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={openGraphUrl} />
 
-    <script is:inline async data-domain="kubespec.dev" data-api="/e" src="/p.js"
-    ></script>
+    {
+      isProduction && (
+        <script
+          is:inline
+          async
+          data-domain="kubespec.dev"
+          data-api="/e"
+          src="/p.js"
+        />
+      )
+    }
     <ClientRouter />
   </head>
   <body class="flex flex-col min-h-screen font-sans tracking-tight antialiased">
-    <Header />
+    <Header
+      slug={Astro.props.slug}
+      tag={Astro.props.tag}
+      gvkRef={Astro.props.gvkRef}
+    />
     <main class="container flex-1 p-4">
       <slot />
     </main>

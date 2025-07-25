@@ -10,20 +10,18 @@ import {
 type Props = {
   project: Project;
   tag: string;
-  latestTag: string;
 };
 
-const { project, tag, latestTag } = Astro.props;
+const { project, tag } = Astro.props;
 const projects = await listProjects();
 const resources = await listAllResources(project.slug, tag);
-const basePath = project.slug === "kubernetes" ? "" : `/${project.slug}`;
 
 const makeUrl = (gvk: GVK) => {
   const path = `${[gvk.group, gvk.version, gvk.kind].filter(Boolean).join("/")}`;
-  if (tag === latestTag) {
-    return `${basePath}/${path}`;
+  if (tag === project.tags[0]) {
+    return `/${project.slug}/${path}`;
   }
-  return `${basePath}/${tag}/${path}`;
+  return `/${project.slug}/${tag}/${path}`;
 };
 
 const categories =
@@ -104,9 +102,13 @@ const categories =
 </div>
 
 <div class="pt-10 pb-4">
-  <h2 class="mt-2 text-4xl font-title tracking-tight">Other Resources</h2>
-  <p class="mt-2 max-w-4xl text-lg leading-7">
-    We also have documentation for various other projects.
+  <h2 class="mt-2 text-4xl font-title tracking-tight">
+    Popular Kubernetes CRDs
+  </h2>
+  <p
+    class="mt-2 max-w-4xl text-lg tracking-tighter leading-7 text-muted-foreground"
+  >
+    Documentation for some of the most popular Kubernetes CRDs.
   </p>
 </div>
 
@@ -120,7 +122,7 @@ const categories =
       .map((p) => (
         <a
           href={p.slug === "kubernetes" ? "/" : `/${p.slug}`}
-          class="w-full font-medium border rounded hover:text-primary relative"
+          class="w-full font-medium border rounded bg-card hover:text-primary relative"
         >
           <div class="flex flex-1 gap-1 items-center justify-between truncate p-2">
             <img src={p.logo} class="size-6 rounded" alt={p.name} />
