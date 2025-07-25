@@ -1,24 +1,27 @@
+---
+import Aptakube from "./Aptakube.astro";
+---
+
 <footer class="border-t">
   <div
-    class="px-2 py-4 container items-center justify-between text-center text-xs text-muted-foreground space-y-1"
+    class="px-2 py-4 container items-center justify-between text-center text-sm text-muted-foreground space-y-1"
   >
     <p>
+      <a
+        href="https://aptakube.com"
+        target="_blank"
+        class="flex justify-center mt-1"
+      >
+        <Aptakube />
+      </a>
+    </p>
+    <p class="mt-4">
+      kubespec.dev is
       <a
         href="https://github.com/aptakube/kubespec.dev"
         target="_blank"
         class="text-link hover:underline">Open Source</a
-      > and accepting contributions
-    </p>
-    <p>
-      Built by <a
-        href="https://x.com/goenning"
-        target="_blank"
-        class="text-link hover:underline">Guilherme Oenning</a
-      > &middot; Sponsored by <a
-        href="https://aptakube.com"
-        target="_blank"
-        class="text-link hover:underline">Aptakube</a
-      >
+      > and open to contributions.
     </p>
   </div>
 </footer>

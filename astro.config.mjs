@@ -1,6 +1,6 @@
 // @ts-check
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 import react from "@astrojs/react";
 
@@ -9,12 +9,12 @@ export default defineConfig({
   site: "https://kubespec.dev",
   trailingSlash: "never",
   integrations: [
-    tailwind({
-      applyBaseStyles: false,
-    }),
     sitemap({
       filter: (page) => !page.startsWith("https://kubespec.dev/v1."),
     }),
     react(),
   ],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
