@@ -16,7 +16,6 @@ type Props = {
 const { project, gvk, tag } = Astro.props;
 const apiVersion = gvk.group ? `${gvk.group}/${gvk.version}` : gvk.version;
 const resource = await findResource(project.slug, tag, gvk);
-const basePath = project.slug === "kubernetes" ? "/" : `/${project.slug}`;
 
 if (!resource) {
   throw new Error(
