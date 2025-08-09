@@ -10,7 +10,13 @@ export * from "./metadata";
 
 export * from "./types";
 
+let cachedProjects: Project[] | undefined = undefined;
+
 export async function listProjects(): Promise<Project[]> {
+  if (cachedProjects) {
+    return cachedProjects;
+  }
+
   const projects: Project[] = [];
   for (const project of ALL_PROJECTS) {
     const tags = new Set<string>();
@@ -32,6 +38,7 @@ export async function listProjects(): Promise<Project[]> {
           : semver.rsort([...tags]),
     });
   }
+  cachedProjects = projects;
   return projects;
 }
 

@@ -1,8 +1,45 @@
 ---
 import SiteLayout from "@layouts/SiteLayout.astro";
 import DefinitionPage from "@components/DefinitionPage.astro";
-import { findProject, parseGVKRef } from "@lib/kube";
+import {
+  findProject,
+  listAllResources,
+  listProjects,
+  parseGVKRef,
+} from "@lib/kube";
 import HomePage from "@components/HomePage.astro";
+
+export async function getStaticPaths() {
+  const paths: Array<{ params: { slug: string; args: string } }> = [];
+
+  const projects = await listProjects();
+  for (const project of projects) {
+    if (!project.tags || project.tags.length === 0) {
+      continue;
+    }
+
+    // For each tag, list all resources and create paths
+    for (const tag of project.tags) {
+      const resources = await listAllResources(project.slug, tag);
+      for (const resource of resources) {
+        const gvkRef = [
+          resource.gvk.group,
+          resource.gvk.version,
+          resource.gvk.kind,
+        ].join("/");
+
+        paths.push({
+          params: {
+            slug: project.slug,
+            args: [tag, gvkRef].join("/"),
+          },
+        });
+      }
+    }
+  }
+
+  return paths;
+}
 
 const { slug, args } = Astro.params;
 
