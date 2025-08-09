@@ -37,7 +37,9 @@ export async function getStaticPaths() {
           resource.gvk.group,
           resource.gvk.version,
           resource.gvk.kind,
-        ].join("/");
+        ]
+          .filter(Boolean)
+          .join("/");
 
         const args = isLatest ? [gvkRef] : [tag, gvkRef];
 
