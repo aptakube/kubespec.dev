@@ -30,7 +30,9 @@ const metadata = await readMetadata(project, gvk);
 <nav class="order-first flex space-x-2 pb-10 text-sm font-semibold">
   <a
     class="text-muted-foreground hover:underline"
-    href={!tag || tag === project.tags[0] ? `${basePath}` : `${basePath}${tag}`}
+    href={!tag || tag === project.tags[0]
+      ? `/${project.slug}`
+      : `/${project.slug}/${tag}`}
   >
     ← back to all kinds
   </a>

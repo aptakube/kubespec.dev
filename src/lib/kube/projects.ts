@@ -10,13 +10,6 @@ export type ProjectDef = {
 
 export default [
   {
-    name: "Prometheus Operator",
-    slug: "prometheus-operator",
-    logo: "https://avatars.githubusercontent.com/u/66682517?s=200&v=4",
-    repo: "prometheus-operator/prometheus-operator",
-    pathToManifests: ["example/prometheus-operator-crd", "bundle.yaml"],
-  },
-  {
     name: "Kubernetes",
     slug: "kubernetes",
     logo: "https://avatars.githubusercontent.com/u/13629408?s=48&v=4",
@@ -26,6 +19,13 @@ export default [
     filterTag: (tag: string) =>
       tag.length >= 7 && tag.endsWith(".0") && !tag.startsWith("v0."),
     mapTag: (tag: string) => tag.substring(0, tag.length - 2),
+  },
+  {
+    name: "Prometheus Operator",
+    slug: "prometheus-operator",
+    logo: "https://avatars.githubusercontent.com/u/66682517?s=200&v=4",
+    repo: "prometheus-operator/prometheus-operator",
+    pathToManifests: ["example/prometheus-operator-crd", "bundle.yaml"],
   },
   {
     name: "Gateway API",
@@ -119,7 +119,7 @@ export default [
     slug: "couchbase-operator",
     logo: "https://avatars.githubusercontent.com/u/636956?s=48&v=4",
     repo: "couchbase/couchbase-operator",
-    pathToManifests: ["example/crd.yaml"]
+    pathToManifests: ["example/crd.yaml"],
   },
   {
     name: "Kgateway",
@@ -128,6 +128,6 @@ export default [
     repo: "kgateway-dev/kgateway",
     pathToManifests: ["install/helm/kgateway-crds/templates"],
     // Start at v2.0, ignore -main tag
-    filterTag: (tag: string) => tag.startsWith("v2.") && !tag.includes("-main")
-  }
+    filterTag: (tag: string) => tag.startsWith("v2.") && !tag.includes("-main"),
+  },
 ];
