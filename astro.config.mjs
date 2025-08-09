@@ -10,6 +10,7 @@ import node from "@astrojs/node";
 export default defineConfig({
   site: "https://kubespec.dev",
   trailingSlash: "never",
+  output: "server",
 
   integrations: [
     sitemap({
