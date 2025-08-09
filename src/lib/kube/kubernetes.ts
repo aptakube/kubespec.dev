@@ -183,6 +183,8 @@ const kindToCategory: Record<string, string> = {
   PersistentVolumeClaim: "Storage",
 
   MutatingWebhookConfiguration: "Administration",
+  MutatingAdmissionPolicy: "Administration",
+  MutatingAdmissionPolicyBinding: "Administration",
   ValidatingWebhookConfiguration: "Administration",
   ValidatingAdmissionPolicy: "Administration",
   ValidatingAdmissionPolicyBinding: "Administration",
