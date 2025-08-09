@@ -5,6 +5,7 @@ import sitemap from "@astrojs/sitemap";
 import react from "@astrojs/react";
 
 import vercel from "@astrojs/vercel";
+import { valid } from "semver";
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,7 +14,15 @@ export default defineConfig({
 
   integrations: [
     sitemap({
-      filter: (page) => !page.startsWith("https://kubespec.dev/v1."),
+      filter: (page) => {
+        const path = new URL(page).pathname;
+        const parts = path.split("/").filter(Boolean);
+        if (valid(parts[1])) {
+          return false; // Skip versioned pages, only include latest (which doesn't have a version in the path)
+        }
+
+        return true;
+      },
     }),
     react(),
   ],
