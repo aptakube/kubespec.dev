@@ -17,7 +17,7 @@ export default defineConfig({
       filter: (page) => {
         const path = new URL(page).pathname;
         const parts = path.split("/").filter(Boolean);
-        if (valid(parts[1])) {
+        if (parts[1].startsWith("v1.") || valid(parts[1])) {
           return false; // Skip versioned pages, only include latest (which doesn't have a version in the path)
         }
 
