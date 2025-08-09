@@ -18,12 +18,13 @@ export default defineConfig({
     react(),
   ],
 
-  vite: {
-    plugins: [tailwindcss()],
+  server: {
+    port: 4321,
+    host: true,
   },
 
-  server: {
-    host: "0.0.0.0",
+  vite: {
+    plugins: [tailwindcss()],
   },
 
   adapter: node({
