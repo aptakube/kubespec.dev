@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "node ./dist/server/entry.mjs",
     "download": "tsx ./scripts/download",
     "build": "astro check && astro build",
     "preview": "astro preview",
@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "@astrojs/check": "0.9.4",
+    "@astrojs/node": "^9.4.0",
     "@astrojs/react": "4.3.0",
     "@astrojs/sitemap": "3.4.1",
-    "@astrojs/vercel": "^8.2.3",
     "@fontsource-variable/inter": "5.2.6",
     "@radix-ui/react-tooltip": "1.2.7",
     "@tabler/icons-react": "3.34.1",
