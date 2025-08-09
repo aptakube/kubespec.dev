@@ -4,6 +4,7 @@ import "cal-sans";
 import "./global.css";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
+import { ClientRouter } from "astro:transitions";
 
 type Props = {
   title: string;
@@ -65,6 +66,7 @@ const openGraphUrl = og
         />
       )
     }
+    <ClientRouter />
   </head>
   <body class="flex flex-col min-h-screen font-sans tracking-tight antialiased">
     <Header

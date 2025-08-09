@@ -20,6 +20,17 @@ export async function getStaticPaths() {
 
     // For each tag, list all resources and create paths
     for (const tag of project.tags) {
+      const isLatest = tag === project.tags[0];
+
+      if (!isLatest) {
+        paths.push({
+          params: {
+            slug: project.slug,
+            args: tag,
+          },
+        });
+      }
+
       const resources = await listAllResources(project.slug, tag);
       for (const resource of resources) {
         const gvkRef = [
@@ -28,10 +39,12 @@ export async function getStaticPaths() {
           resource.gvk.kind,
         ].join("/");
 
+        const args = isLatest ? [gvkRef] : [tag, gvkRef];
+
         paths.push({
           params: {
             slug: project.slug,
-            args: [tag, gvkRef].join("/"),
+            args: args.join("/"),
           },
         });
       }
