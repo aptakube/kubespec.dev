@@ -1,0 +1,36 @@
+version: '3'
+
+env:
+  ## container
+  REGISTRY_PREFIX: eu.gcr.io/ceiba-platform-cicd/
+  CONTAINER_NAME: kubespec-cicd
+
+
+tasks:
+
+  build:
+    desc: Build container image
+    requires:
+      vars: [ REGISTRY_PREFIX, CONTAINER_NAME, CONTAINER_TAG, GITLAB_USERNAME, GITLAB_TOKEN ]
+    cmds:
+      - |
+        docker build . \
+        -t $(REGISTRY_PREFIX)$(CONTAINER_NAME):$(CONTAINER_TAG) \
+        --build-arg GITLAB_USERNAME=$(GITLAB_USERNAME) \
+        --build-arg GITLAB_TOKEN=$(GITLAB_TOKEN)
+
+  run:
+    desc: Push container image to Container Registry
+    requires:
+      vars: [ REGISTRY_PREFIX, CONTAINER_NAME, CONTAINER_TAG ]
+    cmds:
+      - |
+        docker run -ti --rm --name kubespec-cicd \
+        $(REGISTRY_PREFIX)$(CONTAINER_NAME):$(CONTAINER_TAG)
+
+  push:
+    desc: Push container image to Container Registry
+    requires:
+      vars: [ REGISTRY_PREFIX, CONTAINER_NAME, CONTAINER_TAG ]
+    cmds:
+      - docker push $(REGISTRY_PREFIX)$(CONTAINER_NAME):$(CONTAINER_TAG)

@@ -3,6 +3,7 @@ import type { GVK, Project, Resource } from "./types";
 import ALL_PROJECTS from "./projects";
 import semver from "semver";
 import { listAllCRDs } from "./crds";
+import { valid, rsort } from "semver";
 import { compareVersions, listAllBuiltInResources } from "./kubernetes";
 import { compareCRDVersion } from "./compare";
 export * from "./compare";
@@ -35,7 +36,7 @@ export async function listProjects(): Promise<Project[]> {
       tags:
         project.slug === "kubernetes"
           ? [...tags].sort(compareVersions).reverse()
-          : semver.rsort([...tags]),
+          : rsort([...tags].filter(t => valid(t))),
     });
   }
   cachedProjects = projects;

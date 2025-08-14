@@ -9,7 +9,7 @@ import { valid } from "semver";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://kubespec.dev",
+  site: "https://kubespec.cicd.swissblock.tech",
   trailingSlash: "never",
 
   integrations: [
