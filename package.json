@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "astro dev",
-    "start": "node ./dist/server/entry.mjs",
     "download": "tsx ./scripts/download",
     "build": "astro check && astro build",
-    "preview": "astro preview",
+    "preview": "astro preview --host --port 4321",
+    "start": "astro preview --host --port 4321",
     "astro": "astro"
   },
   "dependencies": {

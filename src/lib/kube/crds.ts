@@ -20,10 +20,13 @@ export async function listManifests(
   }
 
   const dir = `./content/projects/${cacheKey}`;
-  const files = await readdir(dir);
-  const manifests = [];
+  const entries = await readdir(dir, { withFileTypes: true });
+  const manifests: CustomResourceDefinition[] = [];
 
-  for (const file of files) {
+  for (const entry of entries) {
+    if (!entry.isFile()) continue; // ✅ skip directories
+    const file = entry.name;
+
     const content = await readFile(`${dir}/${file}`, "utf-8");
     const docs = parseAllDocuments(content);
     for (const doc of docs) {

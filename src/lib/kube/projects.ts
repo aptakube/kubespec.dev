@@ -3,7 +3,6 @@ export type ProjectDef = {
   slug: string;
   repo: string;
   pathToManifests?: string[];
-  releaseFileName?: string;
   filterTag?: (tag: string) => boolean;
   mapTag?: (tag: string) => string;
 };
@@ -21,13 +20,6 @@ export default [
     // mapTag: (tag: string) => tag.substring(0, tag.length - 2),
   },
   {
-    name: "Prometheus Operator",
-    slug: "prometheus-operator",
-    logo: "https://avatars.githubusercontent.com/u/66682517?s=200&v=4",
-    repo: "prometheus-operator/prometheus-operator",
-    pathToManifests: ["example/prometheus-operator-crd", "bundle.yaml"],
-  },
-  {
     name: "Gateway API",
     slug: "gateway-api",
     logo: "https://avatars.githubusercontent.com/u/36015203?s=200&v=4",
@@ -41,8 +33,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/30269780?s=200&v=4",
     repo: "argoproj/argo-cd",
     pathToManifests: ["manifests/crds"],
-    filterTag: (tag: string) => 
-      (tag.startsWith("v2.11.2") || tag.startsWith("v2.13") || tag.startsWith("v2.14"))&& !tag.includes("hf") && !tag.includes("stable") && !tag.includes("rc"),
+    filterTag: (tag: string) => tag === "v2.11.2",
   },
   {
     name: "Argo Workflows", // https://github.com/argoproj/argo-workflows
@@ -50,17 +41,16 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/30269780?s=200&v=4",
     repo: "argoproj/argo-workflows",
     pathToManifests: ["manifests/base/crds/full"],
-    filterTag: (tag: string) => 
-      (tag == "v3.5.1" || tag.startsWith("v3.6") )&& !tag.includes("stable") && !tag.includes("rc"),
+    filterTag: (tag: string) => tag === "v3.6.10",
   },
+  
   {
     name: "Argo Events", // https://github.com/argoproj/argo-events
     slug: "argo-events",
     logo: "https://avatars.githubusercontent.com/u/30269780?s=200&v=4",
     repo: "argoproj/argo-events",
     pathToManifests: ["manifests/base/crds"],
-    filterTag: (tag: string) => 
-      (tag.startsWith("v1.7.5") || tag.startsWith("v1.9") ) && !tag.includes("stable") && !tag.includes("rc"),
+    filterTag: (tag: string) => tag === "v1.9.6",
   },
   // {
   //   name: "Argo Rollouts", // https://github.com/argoproj/argo-rollouts
@@ -92,8 +82,7 @@ export default [
     // filterTag: (tag: string) => 
     //   tag.startsWith("v0.7") && tag.length >= 7,
     // kube-prometheus
-    filterTag: (tag: string) => 
-      tag.startsWith("v0.") && tag.length >= 7,
+    filterTag: (tag: string) => tag === "0.72.0",
   },
   {
     name: "Logging Operator", // https://github.com/kube-logging/logging-operator
@@ -101,8 +90,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/124196698?s=48&v=4",
     repo: "kube-logging/logging-operator",
     pathToManifests: ["charts/logging-operator/crds"],
-    filterTag: (tag: string) => 
-      (tag.startsWith("4.5.1") || tag.startsWith("5.")) && !tag.includes("syslog-ng") && !tag.includes("scc-permissions"),
+    filterTag: (tag: string) => tag === "4.5.1",
   },
   {
     name: "GCP Config Connector", // https://github.com/GoogleCloudPlatform/k8s-config-connector
@@ -110,8 +98,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/2810941?s=48&v=4",
     repo: "GoogleCloudPlatform/k8s-config-connector",
     pathToManifests: ["crds"],
-    filterTag: (tag: string) => 
-      tag.startsWith("v1.127") && tag.length >= 8 && !tag.includes("rc"),
+    filterTag: (tag: string) => tag === "v1.128.0",
   },
   {
     name: "Strimzi Kafka Operator", // https://github.com/strimzi/strimzi-kafka-operator
@@ -119,8 +106,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/34767428?s=48&v=4",
     repo: "strimzi/strimzi-kafka-operator",
     pathToManifests: ["helm-charts/helm3/strimzi-kafka-operator/crds"],
-    filterTag: (tag: string) => 
-      (tag.startsWith("0.36.1") || tag.startsWith("0.4")) && tag.length >= 6,
+    filterTag: (tag: string) => tag === "v0.36.1"
   },
   {
     name: "rbac manager", // https://github.com/FairwindsOps/rbac-manager
@@ -128,7 +114,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/8583528?s=48&v=4",
     repo: "FairwindsOps/rbac-manager",
     pathToManifests: ["deploy/2_crd.yaml"],
-    filterTag: (tag: string) => tag.startsWith("v1.9"),
+    filterTag: (tag: string) => tag === "v1.9.0",
   },
   {
     name: "Vertical Pod Autoscaler", // https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler
@@ -136,7 +122,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/13629408?s=48&v=4",
     repo: "kubernetes/autoscaler",
     pathToManifests: ["vertical-pod-autoscaler/deploy/vpa-v1-crd.yaml"],
-    filterTag: (tag: string) => tag.startsWith("vertical-pod-autoscaler-1.2"),
+    filterTag: (tag: string) => tag === "v1.2.1",
     mapTag: (tag: string) => tag.substring(tag.length - 5, tag.length),
   },
   {
@@ -149,7 +135,7 @@ export default [
     // filterTag: (tag: string) => 
     //   !tag.startsWith("v0.") && !tag.startsWith("v1.") && !tag.startsWith("v2."),
     // traefik helm chart
-    filterTag: (tag: string) => tag.startsWith("v34."),
+    filterTag: (tag: string) => tag === "v34.0.0",
   },
   {
     name: "Keycloak Operator", // https://github.com/keycloak/keycloak + https://github.com/keycloak/keycloak-k8s-resources
@@ -157,7 +143,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/4921466?s=48&v=4",
     repo: "keycloak/keycloak-k8s-resources",
     pathToManifests: ["kubernetes/keycloaks.k8s.keycloak.org-v1.yml", "kubernetes/keycloakrealmimports.k8s.keycloak.org-v1.yml"],
-    filterTag: (tag: string) => tag.startsWith("26.1"),
+    filterTag: (tag: string) => tag === "v26.0.5",
   },
   // {
   //   name: "Grafana Operator", // https://github.com/grafana/grafana-operator
@@ -217,7 +203,7 @@ export default [
   //   slug: "cert-manager",
   //   logo: "https://avatars.githubusercontent.com/u/39950598?s=200&v=4",
   //   repo: "cert-manager/cert-manager",
-  //   releaseFileName: "cert-manager.yaml",
+  //   pathToManifests: "cert-manager.yaml",
   //   filterTag: (tag: string) =>
   //     !tag.startsWith("cmd/ctl") && tag.startsWith("v1.16"),
   // },

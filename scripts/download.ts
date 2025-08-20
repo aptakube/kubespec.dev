@@ -13,20 +13,28 @@ const tagsToIgnore = [
   "helm",
 ];
 
+function isYamlFile(name: string) {
+  const n = name.toLowerCase();
+  // only accept .yaml/.yml and skip common non-CRD files like kustomization.yaml
+  return (n.endsWith(".yaml") || n.endsWith(".yml")) && !n.includes("kustomization");
+}
+
 async function findTags(project: ProjectDef) {
   const response = await fetch(
     `https://api.github.com/repos/${project.repo}/git/refs/tags`,
     {
-      headers: {
-        Authorization: `Bearer ${process.env.GH_TOKEN}`,
-      },
+      headers: { Authorization: `Bearer ${process.env.GH_TOKEN}` },
     }
   );
 
+  if (!response.ok) {
+    throw new Error(`Failed to list tags for ${project.repo}: ${response.status} ${response.statusText}`);
+  }
+
   const body = await response.json();
   return body
-    .map((t: any) => t.ref.replace("refs/tags/", ""))
-    .filter((t: string) => !tagsToIgnore.some((p) => t.includes(p)))
+    .map((t: any) => String(t.ref || "").replace("refs/tags/", ""))
+    .filter((t: string) => t && !tagsToIgnore.some((p) => t.includes(p)))
     .filter(project.filterTag ?? (() => true));
 }
 
@@ -44,66 +52,54 @@ async function downloadManifestsFromGit(
   tag: string,
   outDir: string
 ) {
-  let files = [];
-  let pathsToLook = project.pathToManifests ? [...project.pathToManifests] : [];
+  const files: Array<{ name: string; download_url: string }> = [];
+  const pathsToLook = project.pathToManifests ? [...project.pathToManifests] : [];
 
   while (pathsToLook.length > 0) {
-    const path = pathsToLook.pop();
-    const response = await fetch(
-      `https://api.github.com/repos/${project.repo}/contents/${path}?ref=${tag}`,
+    const path = pathsToLook.pop()!;
+    const resp = await fetch(
+      `https://api.github.com/repos/${project.repo}/contents/${encodeURIComponent(path)}?ref=${encodeURIComponent(tag)}`,
       {
-        headers: {
-          Authorization: `Bearer ${process.env.GH_TOKEN}`,
-        },
+        headers: { Authorization: `Bearer ${process.env.GH_TOKEN}` },
       }
     );
 
-    if (response.ok) {
-      let blobs = await response.json();
-      if (!Array.isArray(blobs)) {
-        blobs = [blobs];
-      }
+    if (!resp.ok) {
+      // ignore missing paths in some versions; just continue
+      continue;
+    }
 
-      for (const blob of blobs) {
-        if (blob.type === "dir") {
-          pathsToLook.push(blob.path);
-          continue;
-        } else {
-          files.push(blob);
-        }
+    let blobs = await resp.json();
+    if (!Array.isArray(blobs)) {
+      blobs = [blobs];
+    }
+
+    for (const blob of blobs) {
+      // blob: { type: "file" | "dir", path, name, download_url? }
+      if (blob.type === "dir") {
+        // dive deeper
+        pathsToLook.push(blob.path);
+        continue;
       }
+      if (blob.type === "file" && blob.download_url && isYamlFile(blob.name)) {
+        files.push({ name: blob.name, download_url: blob.download_url });
+      }
+      // otherwise: skip non-yaml/unsupported items
     }
   }
 
-  for (const file of files) {
-    const response = await fetch(file.download_url);
-    const body = await response.text();
-    await writeFile(`${outDir}/${file.name}`, body);
+  // write files
+  for (const f of files) {
+    const r = await fetch(f.download_url);
+    if (!r.ok) continue;
+    const body = await r.text();
+    await writeFile(`${outDir}/${f.name}`, body);
   }
 
   console.log(`- Downloaded ${project.slug}@${tag} (${files.length} files)`);
 }
 
-async function downloadManifestFromRelease(
-  project: ProjectDef,
-  tag: string,
-  outDir: string
-) {
-  const response = await fetch(
-    `https://github.com/${project.repo}/releases/download/${tag}/${project.releaseFileName}`,
-    {
-      headers: {
-        Authorization: `Bearer ${process.env.GH_TOKEN}`,
-      },
-    }
-  );
-
-  const body = await response.text();
-  await writeFile(`${outDir}/${project.releaseFileName}`, body);
-  console.log(`- Downloaded ${project.slug}@${tag} (1 file)`);
-}
-
-// Main
+// ---- Main ----
 if (!process.env.GH_TOKEN) {
   throw new Error("GH_TOKEN environment variable is required");
 }
@@ -115,15 +111,11 @@ for (const project of ALL_PROJECTS) {
   for (const tag of tags) {
     const tagFolder = project.mapTag ? project.mapTag(tag) : tag;
     const outDir = `./content/projects/${project.slug}/${tagFolder}`;
-    if (await fsExists(outDir)) {
-      continue;
-    }
+    if (await fsExists(outDir)) continue;
 
     await mkdir(outDir, { recursive: true });
-    if (project.releaseFileName) {
-      await downloadManifestFromRelease(project, tag, outDir);
-    } else {
-      await downloadManifestsFromGit(project, tag, outDir);
-    }
+    await downloadManifestsFromGit(project, tag, outDir);
   }
 }
+
+
