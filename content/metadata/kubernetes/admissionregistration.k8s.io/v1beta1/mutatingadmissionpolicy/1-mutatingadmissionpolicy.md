@@ -4,7 +4,7 @@ description: Configures a policy to automatically modify Pod specifications duri
 ---
 
 ```yaml
-apiVersion: admissionregistration.k8s.io/v1alpha1
+apiVersion: admissionregistration.k8s.io/v1beta1
 kind: MutatingAdmissionPolicy
 metadata:
   name: simple-mutating-policy

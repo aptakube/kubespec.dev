@@ -4,7 +4,7 @@ description: Binds a policy to namespaces with a specific label.
 ---
 
 ```yaml
-apiVersion: admissionregistration.k8s.io/v1alpha1
+apiVersion: admissionregistration.k8s.io/v1beta1
 kind: MutatingAdmissionPolicyBinding
 metadata:
   name: simple-mutating-policy-binding
