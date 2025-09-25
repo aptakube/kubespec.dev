@@ -130,4 +130,12 @@ export default [
     // Start at v2.0, ignore -main tag
     filterTag: (tag: string) => tag.startsWith("v2.") && !tag.includes("-main"),
   },
+  {
+    name: "ArgoCD",
+    slug: "argo-cd",
+    logo: "https://avatars.githubusercontent.com/u/30269780?s=48&v=4",
+    repo: "argoproj/argo-cd",
+    pathToManifests: ["manifests/crds"],
+    filterTag: (tag: string) => tag.startsWith("v3."),
+  }
 ];
