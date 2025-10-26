@@ -137,5 +137,13 @@ export default [
     repo: "argoproj/argo-cd",
     pathToManifests: ["manifests/crds"],
     filterTag: (tag: string) => tag.startsWith("v3."),
+  },
+  {
+    name: "Kuberay",
+    slug: "kuberay",
+    logo: "https://avatars.githubusercontent.com/u/22125274?s=48&v=4",
+    repo: "ray-project/kuberay",
+    pathToManifests: ["ray-operator/config/crd/bases"],
+    filterTag: (tag: string) => tag.startsWith("v1.") && !tag.includes("-rc"),
   }
 ];
