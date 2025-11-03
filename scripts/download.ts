@@ -24,6 +24,10 @@ async function findTags(project: ProjectDef) {
   );
 
   const body = await response.json();
+  if (body.status == 401) {
+      throw new Error(`GH_TOKEN is invalid. ${body.message}.`);
+  }
+  
   return body
     .map((t: any) => t.ref.replace("refs/tags/", ""))
     .filter((t: string) => !tagsToIgnore.some((p) => t.includes(p)))
