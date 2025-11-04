@@ -20,10 +20,14 @@ async function findTags(project: ProjectDef) {
       headers: {
         Authorization: `Bearer ${process.env.GH_TOKEN}`,
       },
-    }
+    },
   );
 
   const body = await response.json();
+  if (body.status == 401) {
+    throw new Error(`GH_TOKEN is invalid. ${body.message}.`);
+  }
+
   return body
     .map((t: any) => t.ref.replace("refs/tags/", ""))
     .filter((t: string) => !tagsToIgnore.some((p) => t.includes(p)))
@@ -42,7 +46,7 @@ async function fsExists(path: string) {
 async function downloadManifestsFromGit(
   project: ProjectDef,
   tag: string,
-  outDir: string
+  outDir: string,
 ) {
   let files = [];
   let pathsToLook = project.pathToManifests ? [...project.pathToManifests] : [];
@@ -55,7 +59,7 @@ async function downloadManifestsFromGit(
         headers: {
           Authorization: `Bearer ${process.env.GH_TOKEN}`,
         },
-      }
+      },
     );
 
     if (response.ok) {
@@ -87,7 +91,7 @@ async function downloadManifestsFromGit(
 async function downloadManifestFromRelease(
   project: ProjectDef,
   tag: string,
-  outDir: string
+  outDir: string,
 ) {
   const response = await fetch(
     `https://github.com/${project.repo}/releases/download/${tag}/${project.releaseFileName}`,
@@ -95,7 +99,7 @@ async function downloadManifestFromRelease(
       headers: {
         Authorization: `Bearer ${process.env.GH_TOKEN}`,
       },
-    }
+    },
   );
 
   const body = await response.text();
