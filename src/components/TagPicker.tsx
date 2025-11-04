@@ -9,10 +9,18 @@ type Props = {
 
 export function TagPicker(props: Props) {
   const onChanged = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const path = props.gvkRef
-      ? `/${props.project}/${e.target.value}/${props.gvkRef}`
-      : `/${props.project}/${e.target.value}`;
+    const selectedValue = e.target.value;
+    const pathSegments = [props.project];
 
+    if (selectedValue !== props.latestTag) {
+      pathSegments.push(selectedValue);
+    }
+
+    if (props.gvkRef) {
+      pathSegments.push(props.gvkRef);
+    }
+
+    const path = `/${pathSegments.join("/")}`;
     window.location.href = path;
   };
 
