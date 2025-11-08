@@ -145,5 +145,13 @@ export default [
     repo: "ray-project/kuberay",
     pathToManifests: ["ray-operator/config/crd/bases"],
     filterTag: (tag: string) => tag.startsWith("v1.") && !tag.includes("-rc"),
+  },
+  {
+    name: "External Secrets Operator",
+    slug: "external-secrets-operator",
+    logo: "https://avatars.githubusercontent.com/u/68335991?s=48&v=4",
+    repo: "external-secrets/external-secrets",
+    pathToManifests: ["deploy/crds"],
+    filterTag: (tag: string) => /^v\d+\.\d+\.\d+$/.test(tag),
   }
 ];
