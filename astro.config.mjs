@@ -6,6 +6,7 @@ import react from "@astrojs/react";
 
 import vercel from "@astrojs/vercel";
 import { valid } from "semver";
+import { astroExpressiveCode } from "astro-expressive-code";
 
 // https://astro.build/config
 export default defineConfig({
@@ -27,6 +28,11 @@ export default defineConfig({
       },
     }),
     react(),
+    astroExpressiveCode({
+      themes: ["github-light", "github-dark"],
+      useDarkModeMediaQuery: false,
+      themeCssSelector: (theme) => `.${theme.type}`,
+    }),
   ],
 
   vite: {
