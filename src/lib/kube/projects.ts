@@ -153,5 +153,17 @@ export default [
     repo: "external-secrets/external-secrets",
     pathToManifests: ["deploy/crds"],
     filterTag: (tag: string) => /^v\d+\.\d+\.\d+$/.test(tag),
+  },
+  {
+    name: "OpenTelemetry Operator",
+    slug: "opentelemetry-operator",
+    logo: "https://avatars.githubusercontent.com/u/49998002?s=48&v=4",
+    repo: "open-telemetry/opentelemetry-operator",
+    pathToManifests: [
+      "deploy/crds/opentelemetry_v1alpha1_opentelemetryservice_crd.yaml",
+      "deploy/crds/opentelemetry_v1alpha1_opentelemetrycollector_crd.yaml",
+      "deploy/crds/opentelemetry.io_opentelemetrycollectors_crd.yaml",
+      "config/crd/bases",
+    ],
   }
 ];
