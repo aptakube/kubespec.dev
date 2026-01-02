@@ -1,3 +1,5 @@
+import semver from "semver";
+
 export type ProjectDef = {
   name: string;
   slug: string;
@@ -159,11 +161,7 @@ export default [
     slug: "opentelemetry-operator",
     logo: "https://avatars.githubusercontent.com/u/49998002?s=48&v=4",
     repo: "open-telemetry/opentelemetry-operator",
-    pathToManifests: [
-      "deploy/crds/opentelemetry_v1alpha1_opentelemetryservice_crd.yaml",
-      "deploy/crds/opentelemetry_v1alpha1_opentelemetrycollector_crd.yaml",
-      "deploy/crds/opentelemetry.io_opentelemetrycollectors_crd.yaml",
-      "config/crd/bases",
-    ],
+    pathToManifests: ["config/crd/bases"],
+    filterTag: (tag: string) => semver.gte(tag, "0.117.0"),
   }
 ];
