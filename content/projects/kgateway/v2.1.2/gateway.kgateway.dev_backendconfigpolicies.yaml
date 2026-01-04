@@ -1,0 +1,657 @@
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    controller-gen.kubebuilder.io/version: v0.19.0
+  labels:
+    app: kgateway
+    app.kubernetes.io/name: kgateway
+    gateway.networking.k8s.io/policy: Direct
+  name: backendconfigpolicies.gateway.kgateway.dev
+spec:
+  group: gateway.kgateway.dev
+  names:
+    categories:
+    - kgateway
+    kind: BackendConfigPolicy
+    listKind: BackendConfigPolicyList
+    plural: backendconfigpolicies
+    singular: backendconfigpolicy
+  scope: Namespaced
+  versions:
+  - additionalPrinterColumns:
+    - description: Backend config policy acceptance status
+      jsonPath: .status.ancestors[*].conditions[?(@.type=='Accepted')].status
+      name: Accepted
+      type: string
+    - description: Backend config policy attachment status
+      jsonPath: .status.ancestors[*].conditions[?(@.type=='Attached')].status
+      name: Attached
+      type: string
+    name: v1alpha1
+    schema:
+      openAPIV3Schema:
+        properties:
+          apiVersion:
+            type: string
+          kind:
+            type: string
+          metadata:
+            type: object
+          spec:
+            properties:
+              commonHttpProtocolOptions:
+                properties:
+                  idleTimeout:
+                    type: string
+                    x-kubernetes-validations:
+                    - message: invalid duration value
+                      rule: matches(self, '^([0-9]{1,5}(h|m|s|ms)){1,4}$')
+                  maxHeadersCount:
+                    format: int32
+                    minimum: 0
+                    type: integer
+                  maxRequestsPerConnection:
+                    format: int32
+                    minimum: 0
+                    type: integer
+                  maxStreamDuration:
+                    type: string
+                    x-kubernetes-validations:
+                    - message: invalid duration value
+                      rule: matches(self, '^([0-9]{1,5}(h|m|s|ms)){1,4}$')
+                type: object
+              connectTimeout:
+                type: string
+                x-kubernetes-validations:
+                - message: invalid duration value
+                  rule: matches(self, '^([0-9]{1,5}(h|m|s|ms)){1,4}$')
+              healthCheck:
+                properties:
+                  grpc:
+                    properties:
+                      authority:
+                        type: string
+                      serviceName:
+                        type: string
+                    type: object
+                  healthyThreshold:
+                    format: int32
+                    minimum: 0
+                    type: integer
+                  http:
+                    properties:
+                      host:
+                        type: string
+                      method:
+                        enum:
+                        - GET
+                        - HEAD
+                        - POST
+                        - PUT
+                        - DELETE
+                        - OPTIONS
+                        - TRACE
+                        - PATCH
+                        type: string
+                      path:
+                        type: string
+                    required:
+                    - path
+                    type: object
+                  interval:
+                    type: string
+                    x-kubernetes-validations:
+                    - message: invalid duration value
+                      rule: matches(self, '^([0-9]{1,5}(h|m|s|ms)){1,4}$')
+                  timeout:
+                    type: string
+                    x-kubernetes-validations:
+                    - message: invalid duration value
+                      rule: matches(self, '^([0-9]{1,5}(h|m|s|ms)){1,4}$')
+                  unhealthyThreshold:
+                    format: int32
+                    minimum: 0
+                    type: integer
+                required:
+                - healthyThreshold
+                - interval
+                - timeout
+                - unhealthyThreshold
+                type: object
+                x-kubernetes-validations:
+                - message: exactly one of http or grpc must be set
+                  rule: has(self.http) != has(self.grpc)
+              http1ProtocolOptions:
+                properties:
+                  enableTrailers:
+                    type: boolean
+                  overrideStreamErrorOnInvalidHttpMessage:
+                    type: boolean
+                  preserveHttp1HeaderCase:
+                    type: boolean
+                type: object
+              http2ProtocolOptions:
+                properties:
+                  initialConnectionWindowSize:
+                    anyOf:
+                    - type: integer
+                    - type: string
+                    pattern: ^(\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))(([KMGTPE]i)|[numkMGTPE]|([eE](\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))))?$
+                    x-kubernetes-int-or-string: true
+                    x-kubernetes-validations:
+                    - message: InitialConnectionWindowSize must be between 65535 and
+                        2147483647 bytes (inclusive)
+                      rule: (type(self) == int && int(self) >= 65535 && int(self)
+                        <= 2147483647) || (type(self) == string && quantity(self).isGreaterThan(quantity('65534'))
+                        && quantity(self).isLessThan(quantity('2147483648')))
+                  initialStreamWindowSize:
+                    anyOf:
+                    - type: integer
+                    - type: string
+                    pattern: ^(\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))(([KMGTPE]i)|[numkMGTPE]|([eE](\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))))?$
+                    x-kubernetes-int-or-string: true
+                    x-kubernetes-validations:
+                    - message: InitialStreamWindowSize must be between 65535 and 2147483647
+                        bytes (inclusive)
+                      rule: (type(self) == int && int(self) >= 65535 && int(self)
+                        <= 2147483647) || (type(self) == string && quantity(self).isGreaterThan(quantity('65534'))
+                        && quantity(self).isLessThan(quantity('2147483648')))
+                  maxConcurrentStreams:
+                    format: int32
+                    minimum: 0
+                    type: integer
+                  overrideStreamErrorOnInvalidHttpMessage:
+                    type: boolean
+                type: object
+              loadBalancer:
+                properties:
+                  closeConnectionsOnHostSetChange:
+                    type: boolean
+                  healthyPanicThreshold:
+                    format: int32
+                    maximum: 100
+                    minimum: 0
+                    type: integer
+                  leastRequest:
+                    properties:
+                      choiceCount:
+                        default: 2
+                        format: int32
+                        type: integer
+                      slowStart:
+                        properties:
+                          aggression:
+                            type: string
+                            x-kubernetes-validations:
+                            - message: Aggression, if specified, must be a string
+                                representing a number greater than 0.0
+                              rule: (self.matches('^-?(?:[0-9]+(?:\\.[0-9]*)?|\\.[0-9]+)$')
+                                && double(self) > 0.0)
+                          minWeightPercent:
+                            format: int32
+                            maximum: 100
+                            minimum: 0
+                            type: integer
+                          window:
+                            type: string
+                            x-kubernetes-validations:
+                            - message: invalid duration value
+                              rule: matches(self, '^([0-9]{1,5}(h|m|s|ms)){1,4}$')
+                        type: object
+                    type: object
+                  localityType:
+                    enum:
+                    - WeightedLb
+                    type: string
+                  maglev:
+                    properties:
+                      hashPolicies:
+                        items:
+                          properties:
+                            cookie:
+                              properties:
+                                httpOnly:
+                                  type: boolean
+                                name:
+                                  minLength: 1
+                                  type: string
+                                path:
+                                  type: string
+                                sameSite:
+                                  enum:
+                                  - Strict
+                                  - Lax
+                                  - None
+                                  type: string
+                                secure:
+                                  type: boolean
+                                ttl:
+                                  type: string
+                                  x-kubernetes-validations:
+                                  - message: invalid duration value
+                                    rule: matches(self, '^([0-9]{1,5}(h|m|s|ms)){1,4}$')
+                              required:
+                              - name
+                              type: object
+                            header:
+                              properties:
+                                name:
+                                  minLength: 1
+                                  type: string
+                              required:
+                              - name
+                              type: object
+                            sourceIP:
+                              type: object
+                            terminal:
+                              type: boolean
+                          type: object
+                          x-kubernetes-validations:
+                          - message: exactly one of the fields in [header cookie sourceIP]
+                              must be set
+                            rule: '[has(self.header),has(self.cookie),has(self.sourceIP)].filter(x,x==true).size()
+                              == 1'
+                        maxItems: 16
+                        minItems: 1
+                        type: array
+                      useHostnameForHashing:
+                        type: boolean
+                    type: object
+                  random:
+                    type: object
+                  ringHash:
+                    properties:
+                      hashPolicies:
+                        items:
+                          properties:
+                            cookie:
+                              properties:
+                                httpOnly:
+                                  type: boolean
+                                name:
+                                  minLength: 1
+                                  type: string
+                                path:
+                                  type: string
+                                sameSite:
+                                  enum:
+                                  - Strict
+                                  - Lax
+                                  - None
+                                  type: string
+                                secure:
+                                  type: boolean
+                                ttl:
+                                  type: string
+                                  x-kubernetes-validations:
+                                  - message: invalid duration value
+                                    rule: matches(self, '^([0-9]{1,5}(h|m|s|ms)){1,4}$')
+                              required:
+                              - name
+                              type: object
+                            header:
+                              properties:
+                                name:
+                                  minLength: 1
+                                  type: string
+                              required:
+                              - name
+                              type: object
+                            sourceIP:
+                              type: object
+                            terminal:
+                              type: boolean
+                          type: object
+                          x-kubernetes-validations:
+                          - message: exactly one of the fields in [header cookie sourceIP]
+                              must be set
+                            rule: '[has(self.header),has(self.cookie),has(self.sourceIP)].filter(x,x==true).size()
+                              == 1'
+                        maxItems: 16
+                        minItems: 1
+                        type: array
+                      maximumRingSize:
+                        format: int64
+                        minimum: 0
+                        type: integer
+                      minimumRingSize:
+                        format: int64
+                        minimum: 0
+                        type: integer
+                      useHostnameForHashing:
+                        type: boolean
+                    type: object
+                  roundRobin:
+                    properties:
+                      slowStart:
+                        properties:
+                          aggression:
+                            type: string
+                            x-kubernetes-validations:
+                            - message: Aggression, if specified, must be a string
+                                representing a number greater than 0.0
+                              rule: (self.matches('^-?(?:[0-9]+(?:\\.[0-9]*)?|\\.[0-9]+)$')
+                                && double(self) > 0.0)
+                          minWeightPercent:
+                            format: int32
+                            maximum: 100
+                            minimum: 0
+                            type: integer
+                          window:
+                            type: string
+                            x-kubernetes-validations:
+                            - message: invalid duration value
+                              rule: matches(self, '^([0-9]{1,5}(h|m|s|ms)){1,4}$')
+                        type: object
+                    type: object
+                  updateMergeWindow:
+                    type: string
+                    x-kubernetes-validations:
+                    - message: invalid duration value
+                      rule: matches(self, '^([0-9]{1,5}(h|m|s|ms)){1,4}$')
+                type: object
+                x-kubernetes-validations:
+                - message: exactly one of the fields in [leastRequest roundRobin ringHash
+                    maglev random] must be set
+                  rule: '[has(self.leastRequest),has(self.roundRobin),has(self.ringHash),has(self.maglev),has(self.random)].filter(x,x==true).size()
+                    == 1'
+              outlierDetection:
+                properties:
+                  baseEjectionTime:
+                    default: 30s
+                    type: string
+                    x-kubernetes-validations:
+                    - message: invalid duration value
+                      rule: matches(self, '^([0-9]{1,5}(h|m|s|ms)){1,4}$')
+                    - message: baseEjectionTime must be at least 1ms
+                      rule: duration(self) >= duration('1ms')
+                  consecutive5xx:
+                    default: 5
+                    format: int32
+                    minimum: 0
+                    type: integer
+                  interval:
+                    default: 10s
+                    type: string
+                    x-kubernetes-validations:
+                    - message: invalid duration value
+                      rule: matches(self, '^([0-9]{1,5}(h|m|s|ms)){1,4}$')
+                    - message: interval must be at least 1ms
+                      rule: duration(self) >= duration('1ms')
+                  maxEjectionPercent:
+                    default: 10
+                    format: int32
+                    maximum: 100
+                    minimum: 0
+                    type: integer
+                type: object
+              perConnectionBufferLimitBytes:
+                format: int32
+                minimum: 0
+                type: integer
+              targetRefs:
+                items:
+                  properties:
+                    group:
+                      maxLength: 253
+                      pattern: ^$|^[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*$
+                      type: string
+                    kind:
+                      maxLength: 63
+                      minLength: 1
+                      pattern: ^[a-zA-Z]([-a-zA-Z0-9]*[a-zA-Z0-9])?$
+                      type: string
+                    name:
+                      maxLength: 253
+                      minLength: 1
+                      type: string
+                  required:
+                  - group
+                  - kind
+                  - name
+                  type: object
+                maxItems: 16
+                minItems: 1
+                type: array
+                x-kubernetes-validations:
+                - message: TargetRefs must reference either a Kubernetes Service or
+                    a Backend API
+                  rule: self.all(r, (r.group == '' && r.kind == 'Service') || (r.group
+                    == 'gateway.kgateway.dev' && r.kind == 'Backend'))
+              targetSelectors:
+                items:
+                  properties:
+                    group:
+                      maxLength: 253
+                      pattern: ^$|^[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*$
+                      type: string
+                    kind:
+                      maxLength: 63
+                      minLength: 1
+                      pattern: ^[a-zA-Z]([-a-zA-Z0-9]*[a-zA-Z0-9])?$
+                      type: string
+                    matchLabels:
+                      additionalProperties:
+                        type: string
+                      type: object
+                  required:
+                  - group
+                  - kind
+                  - matchLabels
+                  type: object
+                type: array
+                x-kubernetes-validations:
+                - message: TargetSelectors must reference either a Kubernetes Service
+                    or a Backend API
+                  rule: self.all(r, (r.group == '' && r.kind == 'Service') || (r.group
+                    == 'gateway.kgateway.dev' && r.kind == 'Backend'))
+              tcpKeepalive:
+                properties:
+                  keepAliveInterval:
+                    type: string
+                    x-kubernetes-validations:
+                    - message: invalid duration value
+                      rule: matches(self, '^([0-9]{1,5}(h|m|s|ms)){1,4}$')
+                    - message: keepAliveInterval must be at least 1 second
+                      rule: duration(self) >= duration('1s')
+                  keepAliveProbes:
+                    format: int32
+                    minimum: 0
+                    type: integer
+                  keepAliveTime:
+                    type: string
+                    x-kubernetes-validations:
+                    - message: invalid duration value
+                      rule: matches(self, '^([0-9]{1,5}(h|m|s|ms)){1,4}$')
+                    - message: keepAliveTime must be at least 1 second
+                      rule: duration(self) >= duration('1s')
+                type: object
+              tls:
+                properties:
+                  allowRenegotiation:
+                    type: boolean
+                  alpnProtocols:
+                    items:
+                      type: string
+                    type: array
+                  files:
+                    properties:
+                      rootCA:
+                        minLength: 1
+                        type: string
+                      tlsCertificate:
+                        minLength: 1
+                        type: string
+                      tlsKey:
+                        minLength: 1
+                        type: string
+                    type: object
+                    x-kubernetes-validations:
+                    - message: At least one of tlsCertificate, tlsKey, or rootCA must
+                        be set in TLSFiles
+                      rule: has(self.tlsCertificate) || has(self.tlsKey) || has(self.rootCA)
+                  insecureSkipVerify:
+                    type: boolean
+                  parameters:
+                    properties:
+                      cipherSuites:
+                        items:
+                          type: string
+                        type: array
+                      ecdhCurves:
+                        items:
+                          type: string
+                        type: array
+                      maxVersion:
+                        enum:
+                        - AUTO
+                        - "1.0"
+                        - "1.1"
+                        - "1.2"
+                        - "1.3"
+                        type: string
+                      minVersion:
+                        enum:
+                        - AUTO
+                        - "1.0"
+                        - "1.1"
+                        - "1.2"
+                        - "1.3"
+                        type: string
+                    type: object
+                  secretRef:
+                    properties:
+                      name:
+                        default: ""
+                        type: string
+                    type: object
+                    x-kubernetes-map-type: atomic
+                  simpleTLS:
+                    type: boolean
+                  sni:
+                    minLength: 1
+                    type: string
+                  verifySubjectAltNames:
+                    items:
+                      type: string
+                    type: array
+                  wellKnownCACertificates:
+                    enum:
+                    - System
+                    type: string
+                type: object
+                x-kubernetes-validations:
+                - message: exactly one of the fields in [secretRef files insecureSkipVerify
+                    wellKnownCACertificates] must be set
+                  rule: '[has(self.secretRef),has(self.files),has(self.insecureSkipVerify),has(self.wellKnownCACertificates)].filter(x,x==true).size()
+                    == 1'
+            type: object
+            x-kubernetes-validations:
+            - message: at most one of the fields in [http1ProtocolOptions http2ProtocolOptions]
+                may be set
+              rule: '[has(self.http1ProtocolOptions),has(self.http2ProtocolOptions)].filter(x,x==true).size()
+                <= 1'
+          status:
+            properties:
+              ancestors:
+                items:
+                  properties:
+                    ancestorRef:
+                      properties:
+                        group:
+                          default: gateway.networking.k8s.io
+                          maxLength: 253
+                          pattern: ^$|^[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*$
+                          type: string
+                        kind:
+                          default: Gateway
+                          maxLength: 63
+                          minLength: 1
+                          pattern: ^[a-zA-Z]([-a-zA-Z0-9]*[a-zA-Z0-9])?$
+                          type: string
+                        name:
+                          maxLength: 253
+                          minLength: 1
+                          type: string
+                        namespace:
+                          maxLength: 63
+                          minLength: 1
+                          pattern: ^[a-z0-9]([-a-z0-9]*[a-z0-9])?$
+                          type: string
+                        port:
+                          format: int32
+                          maximum: 65535
+                          minimum: 1
+                          type: integer
+                        sectionName:
+                          maxLength: 253
+                          minLength: 1
+                          pattern: ^[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*$
+                          type: string
+                      required:
+                      - name
+                      type: object
+                    conditions:
+                      items:
+                        properties:
+                          lastTransitionTime:
+                            format: date-time
+                            type: string
+                          message:
+                            maxLength: 32768
+                            type: string
+                          observedGeneration:
+                            format: int64
+                            minimum: 0
+                            type: integer
+                          reason:
+                            maxLength: 1024
+                            minLength: 1
+                            pattern: ^[A-Za-z]([A-Za-z0-9_,:]*[A-Za-z0-9_])?$
+                            type: string
+                          status:
+                            enum:
+                            - "True"
+                            - "False"
+                            - Unknown
+                            type: string
+                          type:
+                            maxLength: 316
+                            pattern: ^([a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*/)?(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])$
+                            type: string
+                        required:
+                        - lastTransitionTime
+                        - message
+                        - reason
+                        - status
+                        - type
+                        type: object
+                      maxItems: 8
+                      minItems: 1
+                      type: array
+                      x-kubernetes-list-map-keys:
+                      - type
+                      x-kubernetes-list-type: map
+                    controllerName:
+                      maxLength: 253
+                      minLength: 1
+                      pattern: ^[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*\/[A-Za-z0-9\/\-._~%!$&'()*+,;=:]+$
+                      type: string
+                  required:
+                  - ancestorRef
+                  - conditions
+                  - controllerName
+                  type: object
+                maxItems: 16
+                type: array
+                x-kubernetes-list-type: atomic
+            required:
+            - ancestors
+            type: object
+        type: object
+    served: true
+    storage: true
+    subresources:
+      status: {}
