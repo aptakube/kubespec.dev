@@ -163,5 +163,13 @@ export default [
     repo: "open-telemetry/opentelemetry-operator",
     pathToManifests: ["config/crd/bases"],
     filterTag: (tag: string) => semver.gte(tag, "0.117.0"),
-  }
+  },
+  {
+    name: "Envoy Gateway",
+    slug: "envoy-gateway",
+    logo: "https://avatars.githubusercontent.com/u/30125649?s=48&v=4",
+    repo: "envoyproxy/gateway",
+    pathToManifests: ["charts/gateway-helm/crds/generated"],
+    filterTag: (tag: string) => semver.gte(tag, "v1.4.0"),
+  },
 ];
