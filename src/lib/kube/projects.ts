@@ -172,4 +172,12 @@ export default [
     pathToManifests: ["charts/gateway-helm/crds/generated"],
     filterTag: (tag: string) => semver.gte(tag, "v1.4.0"),
   },
+  {
+    name: "Tailscale Operator",
+    slug: "tailscale-operator",
+    logo: "https://avatars.githubusercontent.com/u/48932923?s=48&v=4",
+    repo: "tailscale/tailscale",
+    pathToManifests: ["cmd/k8s-operator/deploy/crds"],
+    filterTag: (tag: string) => semver.gte(tag, "v1.88.2"),
+  },
 ];
