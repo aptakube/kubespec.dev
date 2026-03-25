@@ -180,4 +180,12 @@ export default [
     pathToManifests: ["cmd/k8s-operator/deploy/crds"],
     filterTag: (tag: string) => semver.gte(tag, "v1.88.2"),
   },
+  {
+    name: "Agentgateway",
+    slug: "agentgateway",
+    logo: "https://avatars.githubusercontent.com/u/208695296?s=48&v=4",
+    repo: "agentgateway/agentgateway",
+    pathToManifests: ["controller/install/helm/agentgateway-crds/templates/"],
+    filterTag: (tag: string) => semver.gte(tag, "v1.0.0"),
+  },
 ];

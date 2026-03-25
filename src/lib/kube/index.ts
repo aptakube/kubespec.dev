@@ -19,14 +19,14 @@ export async function listProjects(): Promise<Project[]> {
 
   const projects: Project[] = [];
   for (const project of ALL_PROJECTS) {
-    const tags = new Set<string>();
     const baseDir = `./content/projects/${project.slug}`;
-    for (const file of await readdir(baseDir, { recursive: true })) {
-      const tag = file.substring(0, file.indexOf("/"));
-      if (tag) {
-        tags.add(tag);
-      }
-    }
+    const entries = await readdir(baseDir, { withFileTypes: true });
+    const tags = entries
+      .filter((entry) => entry.isDirectory())
+      .map((entry) => entry.name)
+      .filter((tag) =>
+        project.slug === "kubernetes" ? true : semver.valid(tag) !== null
+      );
 
     projects.push({
       name: project.name,
@@ -34,8 +34,8 @@ export async function listProjects(): Promise<Project[]> {
       logo: project.logo,
       tags:
         project.slug === "kubernetes"
-          ? [...tags].sort(compareVersions).reverse()
-          : semver.rsort([...tags]),
+          ? tags.sort(compareVersions).reverse()
+          : semver.rsort(tags),
     });
   }
   cachedProjects = projects;
