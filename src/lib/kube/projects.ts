@@ -188,4 +188,12 @@ export default [
     pathToManifests: ["controller/install/helm/agentgateway-crds/templates/"],
     filterTag: (tag: string) => semver.gte(tag, "v1.0.0"),
   },
+  {
+    name: "Longhorn",
+    slug: "longhorn",
+    logo: "https://avatars.githubusercontent.com/u/51335366?s=200&v=4",
+    repo: "longhorn/longhorn",
+    pathToManifests: ["deploy/longhorn.yaml"],
+    filterTag: (tag: string) => semver.gte(tag, "v1.11.0"),
+  },
 ];
