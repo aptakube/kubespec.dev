@@ -188,4 +188,12 @@ export default [
     pathToManifests: ["controller/install/helm/agentgateway-crds/templates/"],
     filterTag: (tag: string) => semver.gte(tag, "v1.0.0"),
   },
+  {
+    name: "Kargo",
+    slug: "kargo",
+    logo: "https://avatars.githubusercontent.com/u/84434210?s=48&v=4",
+    repo: "akuity/kargo",
+    pathToManifests: ["charts/kargo/resources/crds/"],
+    filterTag: (tag: string) => semver.gte(tag, "v1.10.2"),
+  },
 ];
