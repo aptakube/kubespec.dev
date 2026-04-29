@@ -24,7 +24,7 @@ Contributions are welcome!
 - run `npm run download -- --project-slug="<slug>"` to download the defined CRD spec's for that project
 - create a pull request
 
-### Update all project or a specific project
+### Update all projects or one specific project
 
 - run either of the following
   - `npm run download` to update all projects
