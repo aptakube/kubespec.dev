@@ -129,8 +129,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/186092512?s=48&v=4",
     repo: "kgateway-dev/kgateway",
     pathToManifests: ["install/helm/kgateway-crds/templates"],
-    // Start at v2.0, ignore -main tag
-    filterTag: (tag: string) => tag.startsWith("v2.") && !tag.includes("-main"),
+    filterTag: (tag: string) => !tag.includes("-") && semver.valid(tag) && semver.gte(tag, "v2.0.0"),
   },
   {
     name: "ArgoCD",
