@@ -204,4 +204,12 @@ export default [
     pathToManifests: ["deploy/helm/grafana-operator/files/crds"],
     filterTag: (tag: string) => tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v1.0.0"),
   },
+  {
+    name: "Loki Operator",
+    slug: "loki",
+    logo: "https://avatars.githubusercontent.com/u/7195757?s=48&v=4",
+    repo: "grafana/loki",
+    pathToManifests: ["operator/bundle/community/manifests"],
+    filterTag: (tag: string) => tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v0.1.0"),
+  },
 ];
