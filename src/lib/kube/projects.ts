@@ -129,8 +129,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/186092512?s=48&v=4",
     repo: "kgateway-dev/kgateway",
     pathToManifests: ["install/helm/kgateway-crds/templates"],
-    // Start at v2.0, ignore -main tag
-    filterTag: (tag: string) => tag.startsWith("v2.") && !tag.includes("-main"),
+    filterTag: (tag: string) => !tag.includes("-") && semver.valid(tag) && semver.gte(tag, "v2.0.0"),
   },
   {
     name: "ArgoCD",
@@ -162,7 +161,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/49998002?s=48&v=4",
     repo: "open-telemetry/opentelemetry-operator",
     pathToManifests: ["config/crd/bases"],
-    filterTag: (tag: string) => semver.gte(tag, "0.117.0"),
+    filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "0.117.0"),
   },
   {
     name: "Envoy Gateway",
@@ -170,7 +169,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/30125649?s=48&v=4",
     repo: "envoyproxy/gateway",
     pathToManifests: ["charts/gateway-helm/crds/generated"],
-    filterTag: (tag: string) => semver.gte(tag, "v1.4.0"),
+    filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "v1.4.0"),
   },
   {
     name: "Tailscale Operator",
@@ -178,7 +177,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/48932923?s=48&v=4",
     repo: "tailscale/tailscale",
     pathToManifests: ["cmd/k8s-operator/deploy/crds"],
-    filterTag: (tag: string) => semver.gte(tag, "v1.88.2"),
+    filterTag: (tag: string) => tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v1.58.0"),
   },
   {
     name: "Agentgateway",
@@ -186,7 +185,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/208695296?s=48&v=4",
     repo: "agentgateway/agentgateway",
     pathToManifests: ["controller/install/helm/agentgateway-crds/templates/"],
-    filterTag: (tag: string) => semver.gte(tag, "v1.0.0"),
+    filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "v1.0.0"),
   },
   {
     name: "Kargo",
@@ -194,7 +193,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/84434210?s=48&v=4",
     repo: "akuity/kargo",
     pathToManifests: ["charts/kargo/resources/crds/"],
-    filterTag: (tag: string) => semver.gte(tag, "v1.10.2"),
+    filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "v1.10.2"),
   },
   {
     name: "Grafana Operator",
