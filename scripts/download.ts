@@ -1,5 +1,6 @@
 import { writeFile, mkdir, access, constants } from "node:fs/promises";
 import { default as ALL_PROJECTS, type ProjectDef } from "@lib/kube/projects";
+import minimist from "minimist";
 
 const tagsToIgnore = [
   "rc",
@@ -107,12 +108,15 @@ async function downloadManifestFromRelease(
   console.log(`- Downloaded ${project.slug}@${tag} (1 file)`);
 }
 
-// Main
-if (!process.env.GH_TOKEN) {
-  throw new Error("GH_TOKEN environment variable is required");
+function findProjectBySlug(projectSlug: string): ProjectDef {
+  const project : ProjectDef | undefined = ALL_PROJECTS.find(p => p.slug === projectSlug);
+  if (!project) {
+    throw new Error(`Project with slug '${projectSlug}' not found`);
+  }
+  return project;
 }
 
-for (const project of ALL_PROJECTS) {
+async function processProject(project: ProjectDef) {
   console.log(`Processing ${project.slug}...`);
 
   const tags = await findTags(project);
@@ -129,5 +133,25 @@ for (const project of ALL_PROJECTS) {
     } else {
       await downloadManifestsFromGit(project, tag, outDir);
     }
+  }
+}
+
+// Main
+if (!process.env.GH_TOKEN) {
+  throw new Error("GH_TOKEN environment variable is required");
+}
+
+// args can be passed to the npm run command 'npm run <command> -- <args>'
+// optional: --project-slug="<slug>"
+// e.g.: 'npm run download -- --project-slug="<slug>"'
+const args = minimist(process.argv.slice(2));
+const argProjectSlug = args["project-slug"] || null;
+
+if (argProjectSlug !== null) {
+  const project = findProjectBySlug(argProjectSlug);
+  await processProject(project);
+} else {
+  for (const project of ALL_PROJECTS) {
+    await processProject(project);
   }
 }
