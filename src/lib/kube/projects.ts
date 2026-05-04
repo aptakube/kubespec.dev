@@ -4,6 +4,7 @@ export type ProjectDef = {
   name: string;
   slug: string;
   repo: string;
+  logo: string;
   pathToManifests?: string[];
   releaseFileName?: string;
   filterTag?: (tag: string) => boolean;
@@ -129,7 +130,8 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/186092512?s=48&v=4",
     repo: "kgateway-dev/kgateway",
     pathToManifests: ["install/helm/kgateway-crds/templates"],
-    filterTag: (tag: string) => !tag.includes("-") && semver.valid(tag) && semver.gte(tag, "v2.0.0"),
+    filterTag: (tag: string) =>
+      !tag.includes("-") && semver.valid(tag) && semver.gte(tag, "v2.0.0"),
   },
   {
     name: "ArgoCD",
@@ -177,7 +179,8 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/48932923?s=48&v=4",
     repo: "tailscale/tailscale",
     pathToManifests: ["cmd/k8s-operator/deploy/crds"],
-    filterTag: (tag: string) => tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v1.58.0"),
+    filterTag: (tag: string) =>
+      tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v1.58.0"),
   },
   {
     name: "Agentgateway",
@@ -201,7 +204,8 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/7195757?s=48&v=4",
     repo: "grafana/grafana-operator",
     pathToManifests: ["deploy/helm/grafana-operator/files/crds"],
-    filterTag: (tag: string) => tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v1.0.0"),
+    filterTag: (tag: string) =>
+      tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v1.0.0"),
   },
   {
     name: "Loki Operator",
@@ -209,6 +213,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/7195757?s=48&v=4",
     repo: "grafana/loki",
     pathToManifests: ["operator/bundle/community/manifests"],
-    filterTag: (tag: string) => tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v0.1.0"),
+    filterTag: (tag: string) =>
+      tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v0.1.0"),
   },
-];
+] as ProjectDef[];
