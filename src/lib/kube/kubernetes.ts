@@ -75,8 +75,7 @@ function getAllGVK(spec: SwaggerDocument): GVK[] {
   const gvk = Object.values(spec.paths)
     .flatMap((p) => Object.values(p))
     .filter((a) => a["x-kubernetes-action"] === "list")
-    .map((a) => a["x-kubernetes-group-version-kind"])
-    .filter((a) => a.kind !== "CustomResourceDefinition");
+    .map((a) => a["x-kubernetes-group-version-kind"]);
 
   const deduped = Object.values(
     gvk.reduce(
@@ -188,6 +187,7 @@ const kindToCategory: Record<string, string> = {
   ValidatingWebhookConfiguration: "Administration",
   ValidatingAdmissionPolicy: "Administration",
   ValidatingAdmissionPolicyBinding: "Administration",
+  CustomResourceDefinition: "Administration",
   RuntimeClass: "Administration",
   PriorityClass: "Administration",
   ResourceClass: "Administration",
