@@ -75,8 +75,7 @@ function getAllGVK(spec: SwaggerDocument): GVK[] {
   const gvk = Object.values(spec.paths)
     .flatMap((p) => Object.values(p))
     .filter((a) => a["x-kubernetes-action"] === "list")
-    .map((a) => a["x-kubernetes-group-version-kind"])
-    .filter((a) => a.kind !== "CustomResourceDefinition");
+    .map((a) => a["x-kubernetes-group-version-kind"]);
 
   const deduped = Object.values(
     gvk.reduce(
@@ -96,12 +95,15 @@ function getAllGVK(spec: SwaggerDocument): GVK[] {
 
 function getDefinitionByKey(
   swagger: SwaggerDocument,
-  key: string
+  key: string,
+  visited: Set<string> = new Set()
 ): ResourceDefinition {
   const root = swagger.definitions[key];
   if (!root) {
     throw new Error(`No definition found for ${key}`);
   }
+
+  visited.add(key);
 
   const definition: ResourceDefinition = {
     description: root.description ?? "",
@@ -131,15 +133,17 @@ function getDefinitionByKey(
         ? `${refType}[]`
         : refType;
 
-      if (refType !== "Time") {
+      if (refType !== "Time" && !visited.has(refKey)) {
         definition.properties[name].definition = getDefinitionByKey(
           swagger,
-          refKey
+          refKey,
+          visited
         );
       }
     }
   }
 
+  visited.delete(key);
   return definition;
 }
 
@@ -188,6 +192,7 @@ const kindToCategory: Record<string, string> = {
   ValidatingWebhookConfiguration: "Administration",
   ValidatingAdmissionPolicy: "Administration",
   ValidatingAdmissionPolicyBinding: "Administration",
+  CustomResourceDefinition: "Administration",
   RuntimeClass: "Administration",
   PriorityClass: "Administration",
   ResourceClass: "Administration",
