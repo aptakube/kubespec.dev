@@ -95,12 +95,15 @@ function getAllGVK(spec: SwaggerDocument): GVK[] {
 
 function getDefinitionByKey(
   swagger: SwaggerDocument,
-  key: string
+  key: string,
+  visited: Set<string> = new Set()
 ): ResourceDefinition {
   const root = swagger.definitions[key];
   if (!root) {
     throw new Error(`No definition found for ${key}`);
   }
+
+  visited.add(key);
 
   const definition: ResourceDefinition = {
     description: root.description ?? "",
@@ -130,15 +133,17 @@ function getDefinitionByKey(
         ? `${refType}[]`
         : refType;
 
-      if (refType !== "Time") {
+      if (refType !== "Time" && !visited.has(refKey)) {
         definition.properties[name].definition = getDefinitionByKey(
           swagger,
-          refKey
+          refKey,
+          visited
         );
       }
     }
   }
 
+  visited.delete(key);
   return definition;
 }
 
