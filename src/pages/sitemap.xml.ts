@@ -15,7 +15,11 @@ export const GET: APIRoute = async () => {
 
     const resources = await listAllResources(project.slug, latestTag);
     for (const resource of resources) {
-      const gvkRef = [resource.gvk.group, resource.gvk.version, resource.gvk.kind]
+      const gvkRef = [
+        resource.gvk.group,
+        resource.gvk.version,
+        resource.gvk.kind,
+      ]
         .filter(Boolean)
         .join("/");
       urls.push(`${site}/${project.slug}/${gvkRef}`);
