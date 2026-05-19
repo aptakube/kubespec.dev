@@ -170,8 +170,8 @@ export default [
     slug: "envoy-gateway",
     logo: "https://avatars.githubusercontent.com/u/30125649?s=48&v=4",
     repo: "envoyproxy/gateway",
-    pathToManifests: ["charts/gateway-helm/crds/generated"],
-    filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "v1.4.0"),
+    pathToManifests: ["charts/gateway-crds-helm/templates/generated"],
+    filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "v1.8.0"),
   },
   {
     name: "Tailscale Operator",
