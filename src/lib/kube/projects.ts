@@ -170,7 +170,7 @@ export default [
     slug: "envoy-gateway",
     logo: "https://avatars.githubusercontent.com/u/30125649?s=48&v=4",
     repo: "envoyproxy/gateway",
-    pathToManifests: ["charts/gateway-crds-helm/templates/generated"],
+    pathToManifests: ["charts/gateway-helm/charts/crds/crds/generated"],
     filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "v1.8.0"),
   },
   {
