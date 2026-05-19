@@ -1,20 +1,7 @@
 ---
 import HomePage from "@components/HomePage.astro";
 import SiteLayout from "@layouts/SiteLayout.astro";
-import { findProject, listProjects } from "@lib/kube";
-
-export async function getStaticPaths() {
-  const paths: Array<{ params: { slug: string } }> = [];
-
-  const projects = await listProjects();
-  for (const project of projects) {
-    paths.push({
-      params: { slug: project.slug },
-    });
-  }
-
-  return paths;
-}
+import { findProject } from "@lib/kube";
 
 const { slug } = Astro.params;
 if (!slug) {
