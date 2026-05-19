@@ -2,6 +2,7 @@
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@astrojs/react";
+import { sync as globSync } from "fast-glob";
 
 import vercel from "@astrojs/vercel";
 import { astroExpressiveCode } from "astro-expressive-code";
@@ -26,6 +27,6 @@ export default defineConfig({
   },
 
   adapter: vercel({
-    includeFiles: ["./content/**"],
+    includeFiles: globSync("./content/**/*"),
   }),
 });
