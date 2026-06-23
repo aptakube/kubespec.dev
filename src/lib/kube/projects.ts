@@ -142,6 +142,19 @@ export default [
     filterTag: (tag: string) => tag.startsWith("v3."),
   },
   {
+    name: "Vertical Pod Autoscaler",
+    slug: "vertical-pod-autoscaler",
+    logo: "https://avatars.githubusercontent.com/u/13629408?s=48&v=4",
+    repo: "kubernetes/autoscaler",
+    pathToManifests: [
+      "vertical-pod-autoscaler/charts/vertical-pod-autoscaler/crds",
+    ],
+    filterTag: (tag: string) =>
+      tag.startsWith("vertical-pod-autoscaler-chart-") &&
+      semver.valid(tag.replace("vertical-pod-autoscaler-chart-", "")),
+    mapTag: (tag: string) => tag.replace("vertical-pod-autoscaler-chart-", ""),
+  },
+  {
     name: "Kuberay",
     slug: "kuberay",
     logo: "https://avatars.githubusercontent.com/u/22125274?s=48&v=4",
