@@ -175,7 +175,6 @@ const kindToCategory: Record<string, string> = {
   Lease: "Configuration",
   ResourceQuota: "Configuration",
   HorizontalPodAutoscaler: "Configuration",
-  VerticalPodAutoscaler: "Configuration",
   PodDisruptionBudget: "Configuration",
 
   CSINode: "Storage",
