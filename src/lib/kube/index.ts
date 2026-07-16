@@ -17,27 +17,35 @@ export async function listProjects(): Promise<Project[]> {
     return cachedProjects;
   }
 
-  const projects: Project[] = [];
-  for (const project of ALL_PROJECTS) {
-    const baseDir = `./content/projects/${project.slug}`;
-    const entries = await readdir(baseDir, { withFileTypes: true });
-    const tags = entries
-      .filter((entry) => entry.isDirectory())
-      .map((entry) => entry.name)
-      .filter((tag) =>
-        project.slug === "kubernetes" ? true : semver.valid(tag) !== null
-      );
+  // Parallelize directory reads and tag extraction
+  const projects: Project[] = await Promise.all(
+    ALL_PROJECTS.map(async (project) => {
+      const baseDir = `./content/projects/${project.slug}`;
+      let entries: Awaited<ReturnType<typeof readdir>> = [];
+      try {
+        entries = await readdir(baseDir, { withFileTypes: true });
+      } catch (e) {
+        // Directory may not exist, skip
+        entries = [];
+      }
+      const tags = entries
+        .filter((entry) => entry.isDirectory())
+        .map((entry) => entry.name)
+        .filter((tag) =>
+          project.slug === "kubernetes" ? true : semver.valid(tag) !== null
+        );
 
-    projects.push({
-      name: project.name,
-      slug: project.slug,
-      logo: project.logo,
-      tags:
-        project.slug === "kubernetes"
-          ? tags.sort(compareVersions).reverse()
-          : semver.rsort(tags),
-    });
-  }
+      return {
+        name: project.name,
+        slug: project.slug,
+        logo: project.logo,
+        tags:
+          project.slug === "kubernetes"
+            ? tags.sort(compareVersions).reverse()
+            : semver.rsort(tags),
+      };
+    })
+  );
   cachedProjects = projects;
   return projects;
 }
@@ -74,7 +82,10 @@ export async function listAllResources(
 
   const latestByKind = new Map<string, Resource>();
   for (const resource of resources) {
-    const key = `${resource.gvk.group}/${resource.gvk.version.substring(0, 2)}/${resource.gvk.kind}`;
+    const key = `${resource.gvk.group}/${resource.gvk.version.substring(
+      0,
+      2
+    )}/${resource.gvk.kind}`;
     const existing = latestByKind.get(key);
     if (existing) {
       if (compareCRDVersion(resource.gvk.version, existing.gvk.version) > 0) {
