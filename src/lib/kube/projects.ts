@@ -29,6 +29,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/66682517?s=200&v=4",
     repo: "prometheus-operator/prometheus-operator",
     pathToManifests: ["example/prometheus-operator-crd", "bundle.yaml"],
+    filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "v0.93.1"),
   },
   {
     name: "Gateway API",
@@ -36,6 +37,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/36015203?s=200&v=4",
     repo: "kubernetes-sigs/gateway-api",
     pathToManifests: ["config/crd/standard"],
+    filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "v1.6.1"),
   },
   {
     name: "Cluster API",
@@ -43,6 +45,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/36015203?s=200&v=4",
     repo: "kubernetes-sigs/cluster-api",
     pathToManifests: ["config/crd/bases"],
+    filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "v1.14.0"),
   },
   {
     name: "Istio",
@@ -55,6 +58,7 @@ export default [
       "manifests/charts/base/crds/crd-all.gen.yaml",
       "manifests/charts/base/files/crd-all.gen.yaml",
     ],
+    filterTag: (tag: string) => semver.gte(tag, "v1.30.3"),
   },
   {
     name: "Keda",
@@ -62,6 +66,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/49917779?s=200&v=4",
     repo: "kedacore/keda",
     pathToManifests: ["deploy/crds", "config/crd/bases"],
+    filterTag: (tag: string) => semver.gte(tag, "v1.20.2"),
   },
   {
     name: "Kyverno",
@@ -69,6 +74,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/68448710?s=200&v=4",
     repo: "kyverno/kyverno",
     pathToManifests: ["definitions/crds", "config/crds"],
+    filterTag: (tag: string) => semver.gte(tag, "v1.19.0"),
   },
   {
     name: "CloudNativePG",
@@ -76,6 +82,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/100373852?s=200&v=4",
     repo: "cloudnative-pg/cloudnative-pg",
     pathToManifests: ["config/crd/bases"],
+    filterTag: (tag: string) => semver.gte(tag, "v1.30.0"),
   },
   {
     name: "cert-manager",
@@ -83,7 +90,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/39950598?s=200&v=4",
     repo: "cert-manager/cert-manager",
     releaseFileName: "cert-manager.yaml",
-    filterTag: (tag: string) => !tag.startsWith("cmd/ctl"),
+    filterTag: (tag: string) => !tag.startsWith("cmd/ctl") && semver.gte(tag, "v1.21.1"),
   },
   {
     name: "Cilium",
@@ -92,7 +99,7 @@ export default [
     repo: "cilium/cilium",
     pathToManifests: ["examples/crds", "pkg/k8s/apis/cilium.io/client/crds"],
     // For some reason, the cilium repo has duplicate tags like "v1.10.0" and "1.10.0"
-    filterTag: (tag: string) => !tag.startsWith("v"),
+    filterTag: (tag: string) => !tag.startsWith("v") && semver.gte(tag, "v1.20.1"),
   },
   {
     name: "Karpenter",
@@ -100,7 +107,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/2232217?s=200&v=4",
     repo: "aws/karpenter-provider-aws",
     pathToManifests: ["pkg/apis/crds"],
-    filterTag: (tag: string) => !tag.startsWith("v0."),
+    filterTag: (tag: string) => semver.gte(tag, "v1.14.0"),
   },
   {
     name: "eck-operator",
@@ -108,6 +115,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/6764390?s=48&v=4",
     repo: "elastic/cloud-on-k8s",
     pathToManifests: ["config/crds"],
+    filterTag: (tag: string) => !tag.includes("-bc") && semver.gte(tag, "v3.5.0"),
   },
   {
     name: "k6 Operator",
@@ -115,7 +123,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/7195757?s=48&v=4",
     repo: "grafana/k6-operator",
     pathToManifests: ["config/crd/bases"],
-    filterTag: (tag: string) => tag.startsWith("v0."),
+    filterTag: (tag: string) => semver.gte(tag, "v1.6.0"),
   },
   {
     name: "Couchbase Operator",
@@ -123,6 +131,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/636956?s=48&v=4",
     repo: "couchbase/couchbase-operator",
     pathToManifests: ["example/crd.yaml"],
+    filterTag: (tag: string) => semver.gte(tag, "v2.9.2"),
   },
   {
     name: "Kgateway",
@@ -131,7 +140,7 @@ export default [
     repo: "kgateway-dev/kgateway",
     pathToManifests: ["install/helm/kgateway-crds/templates"],
     filterTag: (tag: string) =>
-      !tag.includes("-") && semver.valid(tag) && semver.gte(tag, "v2.0.0"),
+      semver.valid(tag) && !semver.prerelease(tag) && semver.gte(tag, "v2.4.3"),
   },
   {
     name: "ArgoCD",
@@ -139,7 +148,8 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/30269780?s=48&v=4",
     repo: "argoproj/argo-cd",
     pathToManifests: ["manifests/crds"],
-    filterTag: (tag: string) => tag.startsWith("v3."),
+    filterTag: (tag: string) => 
+      semver.valid(tag) && !semver.prerelease(tag) && semver.gte(tag, "v3.5.1"),
   },
   {
     name: "Vertical Pod Autoscaler",
@@ -160,7 +170,8 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/22125274?s=48&v=4",
     repo: "ray-project/kuberay",
     pathToManifests: ["ray-operator/config/crd/bases"],
-    filterTag: (tag: string) => tag.startsWith("v1.") && !tag.includes("-rc"),
+    filterTag: (tag: string) =>
+      semver.valid(tag) && !semver.prerelease(tag) && semver.gte(tag, "v1.7.0"),
   },
   {
     name: "External Secrets Operator",
@@ -184,7 +195,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/30125649?s=48&v=4",
     repo: "envoyproxy/gateway",
     pathToManifests: ["charts/gateway-helm/charts/crds/crds/generated"],
-    filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "v1.8.0"),
+    filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "v1.9.0"),
   },
   {
     name: "Tailscale Operator",
@@ -193,7 +204,7 @@ export default [
     repo: "tailscale/tailscale",
     pathToManifests: ["cmd/k8s-operator/deploy/crds"],
     filterTag: (tag: string) =>
-      tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v1.58.0"),
+      tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v1.102.3"),
   },
   {
     name: "Agentgateway",
@@ -201,7 +212,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/208695296?s=48&v=4",
     repo: "agentgateway/agentgateway",
     pathToManifests: ["controller/install/helm/agentgateway-crds/templates/"],
-    filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "v1.0.0"),
+    filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "v1.4.1"),
   },
   {
     name: "Kargo",
@@ -209,7 +220,7 @@ export default [
     logo: "https://avatars.githubusercontent.com/u/84434210?s=48&v=4",
     repo: "akuity/kargo",
     pathToManifests: ["charts/kargo/resources/crds/"],
-    filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "v1.10.2"),
+    filterTag: (tag: string) => semver.valid(tag) && semver.gte(tag, "v1.10.10"),
   },
   {
     name: "Grafana Operator",
@@ -218,7 +229,7 @@ export default [
     repo: "grafana/grafana-operator",
     pathToManifests: ["deploy/helm/grafana-operator/files/crds"],
     filterTag: (tag: string) =>
-      tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v1.0.0"),
+      tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v3.10.4"),
   },
   {
     name: "Loki Operator",
@@ -227,6 +238,6 @@ export default [
     repo: "grafana/loki",
     pathToManifests: ["operator/bundle/community/manifests"],
     filterTag: (tag: string) =>
-      tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v0.1.0"),
+      tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v3.7.6"),
   },
 ] as ProjectDef[];
