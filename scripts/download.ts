@@ -35,6 +35,13 @@ async function findTags(project: ProjectDef) {
     .filter(project.filterTag ?? (() => true));
 }
 
+// non-manifest files that some projects ship alongside their CRDs
+const filesToIgnore = [/^NOTES\.txt$/i, /^kustomization\.ya?ml$/i, /\.go$/i];
+
+function isIgnoredFile(name: string) {
+  return filesToIgnore.some((p) => p.test(name));
+}
+
 async function fsExists(path: string) {
   try {
     await access(path, constants.R_OK);
@@ -72,6 +79,8 @@ async function downloadManifestsFromGit(
       for (const blob of blobs) {
         if (blob.type === "dir") {
           pathsToLook.push(blob.path);
+          continue;
+        } else if (isIgnoredFile(blob.name)) {
           continue;
         } else {
           files.push(blob);
