@@ -1,0 +1,491 @@
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    controller-gen.kubebuilder.io/version: v0.20.1
+  labels:
+    app: kgateway
+    app.kubernetes.io/name: kgateway
+  name: backends.gateway.kgateway.dev
+spec:
+  group: gateway.kgateway.dev
+  names:
+    categories:
+    - kgateway
+    kind: Backend
+    listKind: BackendList
+    plural: backends
+    singular: backend
+  scope: Namespaced
+  versions:
+  - additionalPrinterColumns:
+    - description: Which backend type?
+      jsonPath: .spec.type
+      name: Type
+      type: string
+    - description: Backend configuration acceptance status
+      jsonPath: .status.conditions[?(@.type=='Accepted')].status
+      name: Accepted
+      type: string
+    - description: The age of the backend.
+      jsonPath: .metadata.creationTimestamp
+      name: Age
+      type: date
+    name: v1alpha1
+    schema:
+      openAPIV3Schema:
+        properties:
+          apiVersion:
+            description: |-
+              APIVersion defines the versioned schema of this representation of an object.
+              Servers should convert recognized schemas to the latest internal value, and
+              may reject unrecognized values.
+              More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
+            type: string
+          kind:
+            description: |-
+              Kind is a string value representing the REST resource this object represents.
+              Servers may infer this from the endpoint the client submits requests to.
+              Cannot be updated.
+              In CamelCase.
+              More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+            type: string
+          metadata:
+            type: object
+          spec:
+            description: BackendSpec defines the desired state of Backend.
+            properties:
+              aws:
+                description: Aws is the AWS backend configuration.
+                properties:
+                  accountId:
+                    description: |-
+                      AccountId is the AWS account ID to use for the backend.
+                      Deprecated: Set accountId on spec.aws.lambda instead. This field is kept for backward compatibility.
+                      When both fields are set, spec.aws.lambda.accountId takes precedence.
+                    maxLength: 12
+                    minLength: 1
+                    pattern: ^[0-9]{12}$
+                    type: string
+                  auth:
+                    description: |-
+                      Auth specifies an explicit AWS authentication method for the backend.
+                      When omitted, the following credential providers are tried in order, stopping when one
+                      of them returns an access key ID and a secret access key (the session token is optional):
+                      1. Environment variables: when the environment variables AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_SESSION_TOKEN are set.
+                      2. AssumeRoleWithWebIdentity API call: when the environment variables AWS_WEB_IDENTITY_TOKEN_FILE and AWS_ROLE_ARN are set.
+                      3. EKS Pod Identity: when the environment variable AWS_CONTAINER_AUTHORIZATION_TOKEN_FILE is set.
+
+                      See the Envoy docs for more info:
+                      https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/aws_request_signing_filter#credentials
+                    properties:
+                      assumeRole:
+                        description: |-
+                          AssumeRole configures STS role chaining. The backend's ambient credentials
+                          (the gateway ServiceAccount's IRSA identity for Lambda request signing, or the
+                          controller's identity for EC2 discovery; more generally any credential resolved
+                          by the default provider chain) are used to assume the target role. The resulting
+                          temporary credentials are then used to sign requests to the backend (Lambda) or
+                          to list instances (EC2). This enables per-backend, least-privilege roles without
+                          granting the gateway/controller role direct access to every target.
+                          Required when type is 'AssumeRole'.
+                        properties:
+                          roleArn:
+                            description: |-
+                              RoleArn is the ARN of the IAM role to assume, e.g.
+                              "arn:aws:iam::123456789012:role/my-invoke-role".
+                            maxLength: 2048
+                            minLength: 1
+                            pattern: ^arn:aws[a-z-]*:iam::[0-9]{12}:role/.+$
+                            type: string
+                        required:
+                        - roleArn
+                        type: object
+                      secretRef:
+                        description: |-
+                          SecretRef references a Kubernetes Secret containing the AWS credentials.
+                          The Secret must have keys "accessKey", "secretKey", and optionally "sessionToken".
+                          Required when type is 'Secret'.
+                        properties:
+                          name:
+                            default: ""
+                            description: |-
+                              Name of the referent.
+                              This field is effectively required, but due to backwards compatibility is
+                              allowed to be empty. Instances of this type with an empty value here are
+                              almost certainly wrong.
+                              More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+                            type: string
+                        type: object
+                        x-kubernetes-map-type: atomic
+                      type:
+                        description: Type specifies the authentication method to use
+                          for the backend.
+                        enum:
+                        - Secret
+                        - AssumeRole
+                        type: string
+                    required:
+                    - type
+                    type: object
+                    x-kubernetes-validations:
+                    - message: secretRef must be nil if the type is not 'Secret'
+                      rule: '!(has(self.secretRef) && self.type != ''Secret'')'
+                    - message: secretRef must be specified when type is 'Secret'
+                      rule: '!(!has(self.secretRef) && self.type == ''Secret'')'
+                    - message: assumeRole must be nil if the type is not 'AssumeRole'
+                      rule: '!(has(self.assumeRole) && self.type != ''AssumeRole'')'
+                    - message: assumeRole must be specified when type is 'AssumeRole'
+                      rule: '!(!has(self.assumeRole) && self.type == ''AssumeRole'')'
+                  ec2:
+                    description: Ec2 configures dynamic discovery of AWS EC2 instances.
+                    properties:
+                      addressType:
+                        default: PrivateIP
+                        description: |-
+                          AddressType selects whether to route to the instance private or public IP.
+                          Defaults to PrivateIP.
+                        enum:
+                        - PrivateIP
+                        - PublicIP
+                        type: string
+                      filters:
+                        description: |-
+                          Filters select which instances should be associated with this backend.
+                          When multiple filters are provided, an instance must match all of them.
+                          If this list is omitted or empty, all running instances in the configured
+                          region are selected. Be careful: an accidentally empty filter list broadens
+                          the backend to the whole regional fleet rather than matching nothing.
+                        items:
+                          description: AwsTagFilter matches EC2 instances by tag.
+                          properties:
+                            key:
+                              description: Key matches instances that contain the
+                                given tag key, regardless of value.
+                              maxLength: 128
+                              minLength: 1
+                              type: string
+                            keyValue:
+                              description: KeyValue matches instances that contain
+                                the given tag key/value pair.
+                              properties:
+                                key:
+                                  description: Key is the tag key to match.
+                                  maxLength: 128
+                                  minLength: 1
+                                  type: string
+                                value:
+                                  description: Value is the tag value to match.
+                                  maxLength: 256
+                                  minLength: 1
+                                  type: string
+                              required:
+                              - key
+                              - value
+                              type: object
+                          type: object
+                          x-kubernetes-validations:
+                          - message: exactly one of the fields in [key keyValue] must
+                              be set
+                            rule: '[has(self.key),has(self.keyValue)].filter(x,x==true).size()
+                              == 1'
+                        maxItems: 16
+                        type: array
+                      port:
+                        default: 80
+                        description: |-
+                          Port is the port to use for discovered instances.
+                          Defaults to 80.
+                        format: int32
+                        type: integer
+                    type: object
+                  lambda:
+                    description: Lambda configures the AWS Lambda service.
+                    properties:
+                      accountId:
+                        description: |-
+                          AccountId is the AWS account ID to use for the backend.
+                          This is the preferred location for Lambda backends.
+                        maxLength: 12
+                        minLength: 1
+                        pattern: ^[0-9]{12}$
+                        type: string
+                      endpointURL:
+                        description: |-
+                          EndpointURL is the URL or domain for the Lambda service. This is primarily
+                          useful for testing and development purposes. When omitted, the default
+                          lambda hostname will be used.
+                        maxLength: 2048
+                        pattern: ^https?://[-a-zA-Z0-9@:%.+~#?&/=]+$
+                        type: string
+                      functionName:
+                        description: FunctionName is the name of the Lambda function
+                          to invoke.
+                        pattern: ^[A-Za-z0-9-_]{1,140}$
+                        type: string
+                      invocationMode:
+                        default: Sync
+                        description: |-
+                          InvocationMode defines how to invoke the Lambda function.
+                          Defaults to Sync.
+                        enum:
+                        - Sync
+                        - Async
+                        type: string
+                      payloadTransformMode:
+                        default: Envoy
+                        description: |-
+                          PayloadTransformation specifies payload transformation mode before it is sent to the Lambda function.
+                          Defaults to Envoy.
+                        enum:
+                        - None
+                        - Envoy
+                        type: string
+                      qualifier:
+                        default: $LATEST
+                        description: |-
+                          Qualifier is the alias or version for the Lambda function.
+                          Valid values include a numeric version (e.g. "1"), an alias name
+                          (alphanumeric plus "-" or "_"), or the special literal "$LATEST".
+                        pattern: ^(\$LATEST|[0-9]+|[A-Za-z0-9-_]{1,128})$
+                        type: string
+                    required:
+                    - functionName
+                    type: object
+                  region:
+                    default: us-east-1
+                    description: |-
+                      Region is the AWS region to use for the backend.
+                      Defaults to us-east-1 if not specified.
+                    maxLength: 63
+                    minLength: 1
+                    pattern: ^[a-z0-9-]+$
+                    type: string
+                type: object
+                x-kubernetes-validations:
+                - message: accountId must be specified on aws or aws.lambda for lambda
+                    backends
+                  rule: '!has(self.lambda) || has(self.accountId) || has(self.lambda.accountId)'
+                - message: exactly one of the fields in [lambda ec2] must be set
+                  rule: '[has(self.lambda),has(self.ec2)].filter(x,x==true).size()
+                    == 1'
+              dynamicForwardProxy:
+                description: DynamicForwardProxy is the dynamic forward proxy backend
+                  configuration.
+                properties:
+                  enableTls:
+                    description: |-
+                      EnableTls enables TLS. When true, the backend will be configured to use TLS. System CA will be used for validation.
+                      The hostname will be used for SNI and auto SAN validation.
+                    type: boolean
+                type: object
+              gcp:
+                description: Gcp is the GCP backend configuration.
+                properties:
+                  audience:
+                    description: |-
+                      Audience is the GCP service account audience URL.
+                      When omitted, defaults to "https://{host}".
+                      This is used by the GCP authn filter to request the appropriate token.
+                    minLength: 1
+                    type: string
+                  host:
+                    description: |-
+                      Host is the hostname of the GCP service to connect to.
+                      This will be used for SNI and as the target address.
+                    minLength: 1
+                    type: string
+                required:
+                - host
+                type: object
+              priorityGroups:
+                description: |-
+                  PriorityGroups is an ordered list of backend groups used for failover.
+                  Traffic is sent to the backends of the first group; each subsequent
+                  group is only used when the backends of all preceding groups are
+                  unhealthy. The health check can be configured via the BackendConfigPolicy
+                  that targets this Backend
+
+                  Note: This field is part of an experimental API and subject to breaking changes in future releases.
+                items:
+                  description: |-
+                    PriorityGroup defines one failover priority level of a priority groups backend.
+
+                    Note: This struct is part of an experimental API and subject to breaking changes in future releases.
+                  properties:
+                    backendRefs:
+                      description: |-
+                        BackendRefs references the Backends that make up this priority group.
+                        Referenced Backends must be in the same namespace and must not be
+                        priority groups backends themselves.
+                      items:
+                        description: |-
+                          LocalObjectReference contains enough information to let you locate the
+                          referenced object inside the same namespace.
+                        properties:
+                          name:
+                            default: ""
+                            description: |-
+                              Name of the referent.
+                              This field is effectively required, but due to backwards compatibility is
+                              allowed to be empty. Instances of this type with an empty value here are
+                              almost certainly wrong.
+                              More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+                            type: string
+                        type: object
+                        x-kubernetes-map-type: atomic
+                      maxItems: 16
+                      minItems: 1
+                      type: array
+                      x-kubernetes-list-map-keys:
+                      - name
+                      x-kubernetes-list-type: map
+                      x-kubernetes-validations:
+                      - message: backend reference name must not be empty
+                        rule: self.all(r, size(r.name) > 0)
+                  required:
+                  - backendRefs
+                  type: object
+                maxItems: 16
+                minItems: 1
+                type: array
+              static:
+                description: Static is the static backend configuration.
+                properties:
+                  appProtocol:
+                    description: AppProtocol is the application protocol to use when
+                      communicating with the backend.
+                    enum:
+                    - http2
+                    - grpc
+                    - grpc-web
+                    - kubernetes.io/h2c
+                    - kubernetes.io/ws
+                    type: string
+                  hosts:
+                    description: Hosts is a list of hosts to use for the backend.
+                    items:
+                      description: Host defines a static backend host.
+                      properties:
+                        host:
+                          description: Host is the host name to use for the backend.
+                          minLength: 1
+                          type: string
+                        port:
+                          description: Port is the port to use for the backend.
+                          format: int32
+                          type: integer
+                      required:
+                      - host
+                      - port
+                      type: object
+                    minItems: 1
+                    type: array
+                required:
+                - hosts
+                type: object
+              type:
+                description: |-
+                  Type indicates the type of the backend to be used.
+                  Deprecated: The Type field is deprecated and will be removed in a future release.
+                  The backend type is inferred from the configuration.
+                enum:
+                - AWS
+                - Static
+                - DynamicForwardProxy
+                - GCP
+                - PriorityGroups
+                type: string
+            type: object
+            x-kubernetes-validations:
+            - message: aws backend must be specified when type is 'AWS'
+              rule: '!has(self.type) || (self.type == ''AWS'' ? has(self.aws) : true)'
+            - message: static backend must be specified when type is 'Static'
+              rule: '!has(self.type) || (self.type == ''Static'' ? has(self.static)
+                : true)'
+            - message: dynamicForwardProxy backend must be specified when type is
+                'DynamicForwardProxy'
+              rule: '!has(self.type) || (self.type == ''DynamicForwardProxy'' ? has(self.dynamicForwardProxy)
+                : true)'
+            - message: gcp backend must be specified when type is 'GCP'
+              rule: '!has(self.type) || (self.type == ''GCP'' ? has(self.gcp) : true)'
+            - message: priorityGroups backend must be specified when type is 'PriorityGroups'
+              rule: '!has(self.type) || (self.type == ''PriorityGroups'' ? has(self.priorityGroups)
+                : true)'
+            - message: exactly one of the fields in [aws static dynamicForwardProxy
+                gcp priorityGroups] must be set
+              rule: '[has(self.aws),has(self.static),has(self.dynamicForwardProxy),has(self.gcp),has(self.priorityGroups)].filter(x,x==true).size()
+                == 1'
+          status:
+            description: BackendStatus defines the observed state of Backend.
+            properties:
+              conditions:
+                description: Conditions is the list of conditions for the backend.
+                items:
+                  description: Condition contains details for one aspect of the current
+                    state of this API Resource.
+                  properties:
+                    lastTransitionTime:
+                      description: |-
+                        lastTransitionTime is the last time the condition transitioned from one status to another.
+                        This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.
+                      format: date-time
+                      type: string
+                    message:
+                      description: |-
+                        message is a human readable message indicating details about the transition.
+                        This may be an empty string.
+                      maxLength: 32768
+                      type: string
+                    observedGeneration:
+                      description: |-
+                        observedGeneration represents the .metadata.generation that the condition was set based upon.
+                        For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
+                        with respect to the current state of the instance.
+                      format: int64
+                      minimum: 0
+                      type: integer
+                    reason:
+                      description: |-
+                        reason contains a programmatic identifier indicating the reason for the condition's last transition.
+                        Producers of specific condition types may define expected values and meanings for this field,
+                        and whether the values are considered a guaranteed API.
+                        The value should be a CamelCase string.
+                        This field may not be empty.
+                      maxLength: 1024
+                      minLength: 1
+                      pattern: ^[A-Za-z]([A-Za-z0-9_,:]*[A-Za-z0-9_])?$
+                      type: string
+                    status:
+                      description: status of the condition, one of True, False, Unknown.
+                      enum:
+                      - "True"
+                      - "False"
+                      - Unknown
+                      type: string
+                    type:
+                      description: type of condition in CamelCase or in foo.example.com/CamelCase.
+                      maxLength: 316
+                      pattern: ^([a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*/)?(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])$
+                      type: string
+                  required:
+                  - lastTransitionTime
+                  - message
+                  - reason
+                  - status
+                  - type
+                  type: object
+                maxItems: 8
+                type: array
+                x-kubernetes-list-map-keys:
+                - type
+                x-kubernetes-list-type: map
+            type: object
+        required:
+        - spec
+        type: object
+    served: true
+    storage: true
+    subresources:
+      status: {}
