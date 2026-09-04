@@ -36,7 +36,13 @@ async function findTags(project: ProjectDef) {
 }
 
 // non-manifest files that some projects ship alongside their CRDs
-const filesToIgnore = [/^NOTES\.txt$/i, /^kustomization\.ya?ml$/i, /\.go$/i];
+const filesToIgnore = [
+  /^NOTES\.txt$/i,
+  /^kustomization\.ya?ml$/i,
+  /\.go$/i,
+  /\.sh$/i,
+  /^Dockerfile$/i,
+];
 
 function isIgnoredFile(name: string) {
   return filesToIgnore.some((p) => p.test(name));

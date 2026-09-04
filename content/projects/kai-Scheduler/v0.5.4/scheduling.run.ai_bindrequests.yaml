@@ -1,0 +1,320 @@
+# Copyright 2025 NVIDIA CORPORATION
+# SPDX-License-Identifier: Apache-2.0
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    controller-gen.kubebuilder.io/version: v0.16.1
+  name: bindrequests.scheduling.run.ai
+spec:
+  group: scheduling.run.ai
+  names:
+    kind: BindRequest
+    listKind: BindRequestList
+    plural: bindrequests
+    singular: bindrequest
+  scope: Namespaced
+  versions:
+  - name: v1alpha2
+    schema:
+      openAPIV3Schema:
+        description: BindRequest is the Schema for the bindrequests API
+        properties:
+          apiVersion:
+            description: |-
+              APIVersion defines the versioned schema of this representation of an object.
+              Servers should convert recognized schemas to the latest internal value, and
+              may reject unrecognized values.
+              More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
+            type: string
+          kind:
+            description: |-
+              Kind is a string value representing the REST resource this object represents.
+              Servers may infer this from the endpoint the client submits requests to.
+              Cannot be updated.
+              In CamelCase.
+              More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+            type: string
+          metadata:
+            type: object
+          spec:
+            description: BindRequestSpec defines the desired state of BindRequest
+            properties:
+              backoffLimit:
+                description: BackoffLimit is the number of retries before giving up
+                format: int32
+                type: integer
+              podName:
+                description: PodName is the name of the pod to bind
+                type: string
+              receivedGPU:
+                description: ReceivedGPU is the amount of GPUs that were received
+                properties:
+                  count:
+                    description: Count is the amount of GPUs devices that were received
+                    type: integer
+                  portion:
+                    description: |-
+                      This is the portion size that the pod will receive from each connected gpu device
+                      This is a serialized float that should be written as a decimal point number.
+                    type: string
+                type: object
+              receivedResourceType:
+                description: ReceivedResourceType is the type of the resource that
+                  was received [Regular/Fraction]
+                type: string
+              resourceClaimAllocations:
+                description: ResourceClaims is the list of resource claims that need
+                  to be bound for this pod
+                items:
+                  properties:
+                    allocation:
+                      description: Allocation is the desired allocation of the resource
+                        claim
+                      properties:
+                        devices:
+                          description: Devices is the result of allocating devices.
+                          properties:
+                            config:
+                              description: |-
+                                This field is a combination of all the claim and class configuration parameters.
+                                Drivers can distinguish between those based on a flag.
+
+                                This includes configuration parameters for drivers which have no allocated
+                                devices in the result because it is up to the drivers which configuration
+                                parameters they support. They can silently ignore unknown configuration
+                                parameters.
+                              items:
+                                description: DeviceAllocationConfiguration gets embedded
+                                  in an AllocationResult.
+                                properties:
+                                  opaque:
+                                    description: Opaque provides driver-specific configuration
+                                      parameters.
+                                    properties:
+                                      driver:
+                                        description: |-
+                                          Driver is used to determine which kubelet plugin needs
+                                          to be passed these configuration parameters.
+
+                                          An admission policy provided by the driver developer could use this
+                                          to decide whether it needs to validate them.
+
+                                          Must be a DNS subdomain and should end with a DNS domain owned by the
+                                          vendor of the driver.
+                                        type: string
+                                      parameters:
+                                        description: |-
+                                          Parameters can contain arbitrary data. It is the responsibility of
+                                          the driver developer to handle validation and versioning. Typically this
+                                          includes self-identification and a version ("kind" + "apiVersion" for
+                                          Kubernetes types), with conversion between different versions.
+
+                                          The length of the raw data must be smaller or equal to 10 Ki.
+                                        type: object
+                                        x-kubernetes-preserve-unknown-fields: true
+                                    required:
+                                    - driver
+                                    - parameters
+                                    type: object
+                                  requests:
+                                    description: |-
+                                      Requests lists the names of requests where the configuration applies.
+                                      If empty, its applies to all requests.
+                                    items:
+                                      type: string
+                                    type: array
+                                    x-kubernetes-list-type: atomic
+                                  source:
+                                    description: |-
+                                      Source records whether the configuration comes from a class and thus
+                                      is not something that a normal user would have been able to set
+                                      or from a claim.
+                                    type: string
+                                required:
+                                - source
+                                type: object
+                              type: array
+                              x-kubernetes-list-type: atomic
+                            results:
+                              description: Results lists all allocated devices.
+                              items:
+                                description: DeviceRequestAllocationResult contains
+                                  the allocation result for one request.
+                                properties:
+                                  adminAccess:
+                                    description: |-
+                                      AdminAccess indicates that this device was allocated for
+                                      administrative access. See the corresponding request field
+                                      for a definition of mode.
+
+                                      This is an alpha field and requires enabling the DRAAdminAccess
+                                      feature gate. Admin access is disabled if this field is unset or
+                                      set to false, otherwise it is enabled.
+                                    type: boolean
+                                  device:
+                                    description: |-
+                                      Device references one device instance via its name in the driver's
+                                      resource pool. It must be a DNS label.
+                                    type: string
+                                  driver:
+                                    description: |-
+                                      Driver specifies the name of the DRA driver whose kubelet
+                                      plugin should be invoked to process the allocation once the claim is
+                                      needed on a node.
+
+                                      Must be a DNS subdomain and should end with a DNS domain owned by the
+                                      vendor of the driver.
+                                    type: string
+                                  pool:
+                                    description: |-
+                                      This name together with the driver name and the device name field
+                                      identify which device was allocated (`<driver name>/<pool name>/<device name>`).
+
+                                      Must not be longer than 253 characters and may contain one or more
+                                      DNS sub-domains separated by slashes.
+                                    type: string
+                                  request:
+                                    description: |-
+                                      Request is the name of the request in the claim which caused this
+                                      device to be allocated. Multiple devices may have been allocated
+                                      per request.
+                                    type: string
+                                required:
+                                - device
+                                - driver
+                                - pool
+                                - request
+                                type: object
+                              type: array
+                              x-kubernetes-list-type: atomic
+                          type: object
+                        nodeSelector:
+                          description: |-
+                            NodeSelector defines where the allocated resources are available. If
+                            unset, they are available everywhere.
+                          properties:
+                            nodeSelectorTerms:
+                              description: Required. A list of node selector terms.
+                                The terms are ORed.
+                              items:
+                                description: |-
+                                  A null or empty node selector term matches no objects. The requirements of
+                                  them are ANDed.
+                                  The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
+                                properties:
+                                  matchExpressions:
+                                    description: A list of node selector requirements
+                                      by node's labels.
+                                    items:
+                                      description: |-
+                                        A node selector requirement is a selector that contains values, a key, and an operator
+                                        that relates the key and values.
+                                      properties:
+                                        key:
+                                          description: The label key that the selector
+                                            applies to.
+                                          type: string
+                                        operator:
+                                          description: |-
+                                            Represents a key's relationship to a set of values.
+                                            Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
+                                          type: string
+                                        values:
+                                          description: |-
+                                            An array of string values. If the operator is In or NotIn,
+                                            the values array must be non-empty. If the operator is Exists or DoesNotExist,
+                                            the values array must be empty. If the operator is Gt or Lt, the values
+                                            array must have a single element, which will be interpreted as an integer.
+                                            This array is replaced during a strategic merge patch.
+                                          items:
+                                            type: string
+                                          type: array
+                                          x-kubernetes-list-type: atomic
+                                      required:
+                                      - key
+                                      - operator
+                                      type: object
+                                    type: array
+                                    x-kubernetes-list-type: atomic
+                                  matchFields:
+                                    description: A list of node selector requirements
+                                      by node's fields.
+                                    items:
+                                      description: |-
+                                        A node selector requirement is a selector that contains values, a key, and an operator
+                                        that relates the key and values.
+                                      properties:
+                                        key:
+                                          description: The label key that the selector
+                                            applies to.
+                                          type: string
+                                        operator:
+                                          description: |-
+                                            Represents a key's relationship to a set of values.
+                                            Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
+                                          type: string
+                                        values:
+                                          description: |-
+                                            An array of string values. If the operator is In or NotIn,
+                                            the values array must be non-empty. If the operator is Exists or DoesNotExist,
+                                            the values array must be empty. If the operator is Gt or Lt, the values
+                                            array must have a single element, which will be interpreted as an integer.
+                                            This array is replaced during a strategic merge patch.
+                                          items:
+                                            type: string
+                                          type: array
+                                          x-kubernetes-list-type: atomic
+                                      required:
+                                      - key
+                                      - operator
+                                      type: object
+                                    type: array
+                                    x-kubernetes-list-type: atomic
+                                type: object
+                                x-kubernetes-map-type: atomic
+                              type: array
+                              x-kubernetes-list-type: atomic
+                          required:
+                          - nodeSelectorTerms
+                          type: object
+                          x-kubernetes-map-type: atomic
+                      type: object
+                    name:
+                      description: Name corresponds to the podResourceClaim.Name from
+                        the pod spec
+                      type: string
+                  type: object
+                type: array
+              selectedGPUGroups:
+                description: |-
+                  SelectedGPUGroups is the name of the selected GPU groups for fractional GPU resources.
+                  Only if the RecievedResourceType is "Fraction"
+                items:
+                  type: string
+                type: array
+              selectedNode:
+                description: SelectedNode is the name of the selected node the pod
+                  should be bound to
+                type: string
+            type: object
+          status:
+            description: BindRequestStatus defines the observed state of BindRequest
+            properties:
+              failedAttempts:
+                description: FailedAttempts is the number of failed attempts
+                format: int32
+                type: integer
+              phase:
+                description: Phase is the current phase of the bindrequest. [Pending/Succeeded/Failed]
+                type: string
+              reason:
+                description: Reason is the reason for the current phase
+                type: string
+            type: object
+        type: object
+    served: true
+    storage: true
+    subresources:
+      status: {}
