@@ -240,4 +240,56 @@ export default [
     filterTag: (tag: string) =>
       tag.startsWith("v") && semver.valid(tag) && semver.gte(tag, "v3.7.6"),
   },
+  {
+    name: "Flux Operator",
+    slug: "flux-operator",
+    logo: "https://avatars.githubusercontent.com/u/158298505?s=60&v=4",
+    repo: "controlplaneio-fluxcd/flux-operator",
+    pathToManifests: ["config/crd/bases"],
+    filterTag: (tag: string) => semver.valid(tag),
+  },
+  {
+    name: "Velero",
+    slug: "velero",
+    logo: "https://avatars.githubusercontent.com/u/259300585?s=60&v=4",
+    repo: "velero-io/velero",
+    pathToManifests: ["config/crd", "pkg/generated/crds/manifests"],
+    filterTag: (tag: string) => semver.valid(tag) && !semver.prerelease(tag),
+  },
+  {
+    name: "Kserve",
+    slug: "kserve",
+    logo: "https://avatars.githubusercontent.com/u/83512434?s=60&v=4",
+    repo: "kserve/kserve",
+    releaseFileName: "kserve-crds.yaml",
+    filterTag: (tag: string) =>
+      semver.valid(tag) && !semver.prerelease(tag),
+  },
+  {
+    name: "KAI Scheduler",
+    slug: "kai-Scheduler",
+    logo: "https://avatars.githubusercontent.com/u/263359973?s=60&v=4",
+    repo: "kai-scheduler/KAI-Scheduler",
+    pathToManifests: ["deployments/crds", "deployments/kai-scheduler/crds"],
+    filterTag: (tag: string) =>
+      semver.valid(tag) && !semver.prerelease(tag),
+  },
+  {
+    name: "NVIDIA GPU Operator",
+    slug: "nvidia-gpu-operator",
+    logo: "https://avatars.githubusercontent.com/u/1728152?s=60&v=4",
+    repo: "NVIDIA/gpu-operator",
+    pathToManifests: ["manifests/cr", "deployments/gpu-operator/crds"],
+    filterTag: (tag: string) =>
+      semver.valid(tag) && !semver.prerelease(tag),
+  },
+  {
+    name: "Node Feature Discover",
+    slug: "node-feature-discovery",
+    logo: "https://avatars.githubusercontent.com/u/36015203?s=60&v=4",
+    repo: "kubernetes-sigs/node-feature-discovery",
+    pathToManifests: ["deployment/base/noderesourcetopologies-crd", "deployment/base/nfd-crds"],
+    filterTag: (tag: string) =>
+      semver.valid(tag) && !semver.prerelease(tag),
+  },
 ] as ProjectDef[];
