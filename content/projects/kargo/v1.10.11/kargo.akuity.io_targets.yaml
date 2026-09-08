@@ -1,0 +1,70 @@
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    controller-gen.kubebuilder.io/version: v0.19.0
+  name: targets.kargo.akuity.io
+spec:
+  group: kargo.akuity.io
+  names:
+    kind: Target
+    listKind: TargetList
+    plural: targets
+    singular: target
+  scope: Namespaced
+  versions:
+  - additionalPrinterColumns:
+    - jsonPath: .metadata.creationTimestamp
+      name: Age
+      type: date
+    name: v1alpha1
+    schema:
+      openAPIV3Schema:
+        description: |-
+          Target represents a single destination -- a cluster, for instance -- that
+          Stages promote Freight to. A Target is purely descriptive: it holds
+          target-specific values consumed by the promotion steps of Stages that
+          govern it and records which Stages those are. It defines no promotion
+          steps and no Freight sources of its own and therefore cannot effect any
+          promotion itself.
+        properties:
+          apiVersion:
+            description: |-
+              APIVersion defines the versioned schema of this representation of an object.
+              Servers should convert recognized schemas to the latest internal value, and
+              may reject unrecognized values.
+              More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
+            type: string
+          kind:
+            description: |-
+              Kind is a string value representing the REST resource this object represents.
+              Servers may infer this from the endpoint the client submits requests to.
+              Cannot be updated.
+              In CamelCase.
+              More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+            type: string
+          metadata:
+            type: object
+          spec:
+            description: Spec describes the Target.
+            properties:
+              params:
+                additionalProperties:
+                  x-kubernetes-preserve-unknown-fields: true
+                description: |-
+                  Params is a map of arbitrary, target-specific values. Values may be any
+                  valid JSON -- including nested objects and arrays -- so promotion steps
+                  can reference deeply nested data. Promotion steps of Stages that govern
+                  this Target may reference these values by key in their expressions (for
+                  example, target.params.branch or target.params.cluster.region).
+                type: object
+            type: object
+          status:
+            description: Status describes the current status of the Target.
+            type: object
+        type: object
+    served: true
+    storage: true
+    subresources:
+      status: {}
