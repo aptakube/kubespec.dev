@@ -1,0 +1,381 @@
+{
+  "versions": {
+    "1.30.0": {
+      "added": {
+        "spec.tracing.disableContextPropagation": "boolean"
+      },
+      "descriptions": {
+        "spec.tracing.disableContextPropagation": [
+          null,
+          0
+        ]
+      }
+    },
+    "1.29.0": {
+      "added": {
+        "spec.tracing.customTags.formatter": "object"
+      },
+      "descriptions": {
+        "spec.tracing.customTags.formatter": [
+          null,
+          1
+        ]
+      }
+    },
+    "1.25.0": {
+      "added": {
+        "spec.tracing.enableIstioTags": "boolean",
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "spec.tracing.enableIstioTags": [
+          null,
+          2
+        ],
+        "status.conditions.observedGeneration": [
+          null,
+          3
+        ],
+        "status.observedGeneration": [
+          4,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "status.conditions": [
+          null,
+          5
+        ],
+        "status.observedGeneration": [
+          null,
+          4
+        ],
+        "status.validationMessages": [
+          null,
+          6
+        ]
+      }
+    },
+    "1.23.0": {
+      "required": [
+        "spec.targetRef.kind",
+        "spec.targetRef.name",
+        "spec.targetRefs.kind",
+        "spec.targetRefs.name"
+      ],
+      "descriptions": {
+        "spec.targetRef.kind": [
+          null,
+          7
+        ],
+        "spec.targetRef.name": [
+          null,
+          8
+        ],
+        "spec.targetRefs.kind": [
+          null,
+          7
+        ],
+        "spec.targetRefs.name": [
+          null,
+          8
+        ]
+      }
+    },
+    "1.22.0": {
+      "descriptionChanged": [
+        "spec.accessLogging.match.mode",
+        "spec.metrics.overrides.match.metric",
+        "spec.metrics.overrides.match.mode",
+        "spec.metrics.overrides.tagOverrides.operation",
+        "spec.targetRef",
+        "spec.tracing.match.mode"
+      ],
+      "added": {
+        "spec.targetRefs": "object[]"
+      },
+      "descriptions": {
+        "spec.accessLogging.match.mode": [
+          9,
+          10
+        ],
+        "spec.metrics.overrides.match.metric": [
+          11,
+          12
+        ],
+        "spec.metrics.overrides.match.mode": [
+          13,
+          14
+        ],
+        "spec.metrics.overrides.tagOverrides.operation": [
+          15,
+          16
+        ],
+        "spec.targetRef": [
+          17,
+          null
+        ],
+        "spec.targetRefs": [
+          null,
+          17
+        ],
+        "spec.tracing.match.mode": [
+          18,
+          19
+        ]
+      }
+    },
+    "1.21.0": {
+      "descriptionChanged": [
+        "spec.metrics.overrides.match",
+        "spec.metrics.overrides.match.metric",
+        "spec.metrics.overrides.match.mode"
+      ],
+      "required": [
+        "spec.tracing.customTags.environment.name",
+        "spec.tracing.customTags.header.name",
+        "spec.tracing.customTags.literal.value"
+      ],
+      "descriptions": {
+        "spec.metrics.overrides.match": [
+          20,
+          21
+        ],
+        "spec.metrics.overrides.match.metric": [
+          22,
+          11
+        ],
+        "spec.metrics.overrides.match.mode": [
+          23,
+          13
+        ],
+        "spec.tracing.customTags.environment.name": [
+          null,
+          24
+        ],
+        "spec.tracing.customTags.header.name": [
+          null,
+          25
+        ],
+        "spec.tracing.customTags.literal.value": [
+          null,
+          26
+        ]
+      }
+    },
+    "1.20.1": {
+      "descriptionChanged": [
+        "spec.targetRef",
+        "spec.targetRef.group",
+        "spec.targetRef.kind",
+        "spec.targetRef.name",
+        "spec.targetRef.namespace"
+      ],
+      "descriptions": {
+        "spec.targetRef": [
+          null,
+          17
+        ],
+        "spec.targetRef.group": [
+          null,
+          27
+        ],
+        "spec.targetRef.kind": [
+          null,
+          7
+        ],
+        "spec.targetRef.name": [
+          null,
+          8
+        ],
+        "spec.targetRef.namespace": [
+          null,
+          28
+        ]
+      }
+    },
+    "1.20.0": {
+      "descriptionChanged": [
+        "spec.accessLogging.match.mode",
+        "spec.metrics.overrides.match.mode",
+        "spec.selector.matchLabels",
+        "spec.tracing.customTags.header",
+        "spec.tracing.match.mode",
+        "spec.tracing.randomSamplingPercentage"
+      ],
+      "required": [
+        "spec.accessLogging.providers.name",
+        "spec.metrics.providers.name",
+        "spec.tracing.providers.name"
+      ],
+      "added": {
+        "spec.targetRef": "object"
+      },
+      "descriptions": {
+        "spec.accessLogging.match.mode": [
+          null,
+          9
+        ],
+        "spec.accessLogging.providers.name": [
+          null,
+          29
+        ],
+        "spec.metrics.overrides.match.mode": [
+          null,
+          23
+        ],
+        "spec.metrics.providers.name": [
+          null,
+          29
+        ],
+        "spec.selector.matchLabels": [
+          null,
+          30
+        ],
+        "spec.tracing.customTags.header": [
+          null,
+          31
+        ],
+        "spec.tracing.match.mode": [
+          null,
+          18
+        ],
+        "spec.tracing.providers.name": [
+          null,
+          29
+        ],
+        "spec.tracing.randomSamplingPercentage": [
+          null,
+          32
+        ]
+      }
+    },
+    "1.17.0": {
+      "added": {
+        "spec.metrics.reportingInterval": "string"
+      },
+      "descriptions": {
+        "spec.metrics.reportingInterval": [
+          null,
+          17
+        ]
+      }
+    },
+    "1.14.0": {
+      "added": {
+        "spec.accessLogging.match": "object",
+        "spec.tracing.match": "object"
+      },
+      "descriptionChanged": [
+        "spec.metrics.overrides.match.mode",
+        "spec.tracing.customTags.header"
+      ],
+      "descriptions": {
+        "spec.accessLogging.match": [
+          null,
+          33
+        ],
+        "spec.metrics.overrides.match.mode": [
+          23,
+          null
+        ],
+        "spec.tracing.customTags.header": [
+          31,
+          null
+        ],
+        "spec.tracing.match": [
+          null,
+          34
+        ]
+      }
+    },
+    "1.13.0": {
+      "added": {
+        "spec.accessLogging.filter": "object",
+        "spec.tracing.useRequestIdForTraceSampling": "boolean"
+      },
+      "descriptions": {
+        "spec.accessLogging.filter": [
+          null,
+          17
+        ]
+      }
+    },
+    "1.12.0": {
+      "descriptionChanged": [
+        "spec"
+      ],
+      "descriptions": {
+        "spec": [
+          35,
+          36
+        ]
+      }
+    },
+    "1.11.0": {
+      "added": {
+        "spec.accessLogging": "object[]",
+        "spec.metrics": "object[]"
+      },
+      "descriptions": {
+        "spec.accessLogging": [
+          null,
+          17
+        ],
+        "spec.metrics": [
+          null,
+          17
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Controls whether trace context headers (e.g., `traceparent`/`tracestate` for W3C, `X-B3-*` for Zipkin) are propagated in forwarded requests.",
+    "Formatter adds the value of access logging substitution formatter.",
+    "Determines whether or not trace spans generated by Envoy will include Istio specific tags.",
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers.",
+    "kind is kind of the target resource.",
+    "name is the name of the target resource.",
+    "This determines whether or not to apply the access logging configuration based on the direction of traffic relative to the proxied workload.",
+    "This determines whether or not to apply the access logging configuration based on the direction of traffic relative to the proxied workload.\n\nValid Options: CLIENT_AND_SERVER, CLIENT, SERVER",
+    "One of the well-known [Istio Standard Metrics](https://istio.io/latest/docs/reference/config/metrics/).",
+    "One of the well-known [Istio Standard Metrics](https://istio.io/latest/docs/reference/config/metrics/).\n\nValid Options: ALL_METRICS, REQUEST_COUNT, REQUEST_DURATION, REQUEST_SIZE, RESPONSE_SIZE, TCP_OPENED_CONNECTIONS, TCP_CLOSED_CONNECTIONS, TCP_SENT_BYTES, TCP_RECEIVED_BYTES, GRPC_REQUEST_MESSAGES, GRPC_RESPONSE_MESSAGES",
+    "Controls which mode of metrics generation is selected: `CLIENT`, `SERVER`, or `CLIENT_AND_SERVER`.",
+    "Controls which mode of metrics generation is selected: `CLIENT`, `SERVER`, or `CLIENT_AND_SERVER`.\n\nValid Options: CLIENT_AND_SERVER, CLIENT, SERVER",
+    "Operation controls whether or not to update/add a tag, or to remove it.",
+    "Operation controls whether or not to update/add a tag, or to remove it.\n\nValid Options: UPSERT, REMOVE",
+    "Optional.",
+    "This determines whether or not to apply the tracing configuration based on the direction of traffic relative to the proxied workload.",
+    "This determines whether or not to apply the tracing configuration based on the direction of traffic relative to the proxied workload.\n\nValid Options: CLIENT_AND_SERVER, CLIENT, SERVER",
+    "Match allows provides the scope of the override.",
+    "Match allows providing the scope of the override.",
+    "One of the well-known Istio Standard Metrics.",
+    "Controls which mode of metrics generation is selected: CLIENT and/or SERVER.",
+    "Name of the environment variable from which to extract the tag value.",
+    "Name of the header from which to extract the tag value.",
+    "The tag value to use.",
+    "group is the group of the target resource.",
+    "namespace is the namespace of the referent.",
+    "Required.",
+    "One or more labels that indicate a specific set of pods/VMs on which a policy should be applied.",
+    "RequestHeader adds the value of an header from the request to each span.",
+    "Controls the rate at which traffic will be selected for tracing if no prior sampling decision has been made.",
+    "Allows tailoring of logging behavior to specific conditions.",
+    "Allows tailoring of behavior to specific conditions.",
+    "Telemetry defines how the telemetry is generated for workloads within a mesh.",
+    "Telemetry configuration for workloads. See more details at: https://istio.io/docs/reference/config/telemetry.html"
+  ]
+}

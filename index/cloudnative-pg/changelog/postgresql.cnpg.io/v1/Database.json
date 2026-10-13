@@ -1,0 +1,92 @@
+{
+  "versions": {
+    "v1.28.0": {
+      "descriptionChanged": [
+        "spec.extensions.ensure",
+        "spec.extensions.name",
+        "spec.schemas.ensure",
+        "spec.schemas.name"
+      ],
+      "added": {
+        "spec.fdws": "object[]",
+        "spec.servers": "object[]",
+        "status.fdws": "object[]",
+        "status.servers": "object[]"
+      },
+      "descriptions": {
+        "spec.extensions.ensure": [
+          0,
+          1
+        ],
+        "spec.extensions.name": [
+          2,
+          3
+        ],
+        "spec.fdws": [
+          null,
+          4
+        ],
+        "spec.schemas.ensure": [
+          0,
+          1
+        ],
+        "spec.schemas.name": [
+          2,
+          3
+        ],
+        "spec.servers": [
+          null,
+          5
+        ],
+        "status.fdws": [
+          null,
+          6
+        ],
+        "status.servers": [
+          null,
+          7
+        ]
+      }
+    },
+    "v1.26.0": {
+      "added": {
+        "spec.extensions": "object[]",
+        "spec.schemas": "object[]",
+        "status.extensions": "object[]",
+        "status.schemas": "object[]"
+      },
+      "descriptions": {
+        "spec.extensions": [
+          null,
+          8
+        ],
+        "spec.schemas": [
+          null,
+          9
+        ],
+        "status.extensions": [
+          null,
+          10
+        ],
+        "status.schemas": [
+          null,
+          11
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Specifies whether an extension/schema should be present or absent in\nthe database. If set to `present`, the extension/schema will be\ncreated if it does not exist. If set to `absent`, the\nextension/schema will be removed if it exists.",
+    "Specifies whether an object (e.g schema) should be present or absent\nin the database. If set to `present`, the object will be created if\nit does not exist. If set to `absent`, the extension/schema will be\nremoved if it exists.",
+    "Name of the extension/schema",
+    "Name of the object (extension, schema, FDW, server)",
+    "The list of foreign data wrappers to be managed in the database",
+    "The list of foreign servers to be managed in the database",
+    "FDWs is the status of the managed FDWs",
+    "Servers is the status of the managed servers",
+    "The list of extensions to be managed in the database",
+    "The list of schemas to be managed in the database",
+    "Extensions is the status of the managed extensions",
+    "Schemas is the status of the managed schemas"
+  ]
+}

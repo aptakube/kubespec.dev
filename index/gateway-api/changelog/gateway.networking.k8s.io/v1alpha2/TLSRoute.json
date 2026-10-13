@@ -1,0 +1,19 @@
+{
+  "versions": {
+    "v1.6.0": {
+      "descriptionChanged": [
+        "spec.rules.backendRefs"
+      ],
+      "descriptions": {
+        "spec.rules.backendRefs": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "texts": [
+    "BackendRefs defines the backend(s) where matching requests should be\nsent. If unspecified or invalid (refers to a nonexistent resource or\na Service with no endpoints), the rule performs no forwarding; if no\nfilters are specified that would result in a response being sent, the\nunderlying implementation must actively reject request attempts to this\nbackend, by rejecting the connection. Request rejections must respect\nweight; if an invalid backend is requested to have 80% of requests, then\n80% of requests must be rejected instead.\n\nSupport: Core for Kubernetes Service\n\nSupport: Extended for Kubernetes ServiceImport\n\nSupport: Implementation-specific for any other resource\n\nSupport for weight: Extended",
+    "BackendRefs defines the backend(s) where matching requests should be\nsent. If unspecified or invalid (refers to a nonexistent resource or\na Service with no endpoints), the rule performs no forwarding; if no\nfilters are specified that would result in a response being sent, the\nunderlying implementation must actively reject request attempts to this\nbackend, by rejecting the connection. Request rejections must respect\nweight; if an invalid backend is requested to have 80% of requests, then\n80% of requests must be rejected instead.\n\nWhen a TLSRoute is attached to a listener in Terminate mode, a BackendTLSPolicy\ncan be used to enable re-encryption of the traffic to the backends.\n\nSupport: Core for Kubernetes Service\n\nSupport: Extended for Kubernetes ServiceImport\n\nSupport: Implementation-specific for any other resource\n\nSupport for weight: Extended\n\nSupport for BackendTLSPolicy: Extended"
+  ]
+}

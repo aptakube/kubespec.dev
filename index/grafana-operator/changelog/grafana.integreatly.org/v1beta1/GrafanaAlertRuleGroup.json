@@ -1,0 +1,82 @@
+{
+  "versions": {
+    "v5.22.0": {
+      "added": {
+        "spec.rules.dashboardUid": "string",
+        "spec.rules.notificationSettings.active_time_intervals": "string[]",
+        "spec.rules.panelId": "integer",
+        "spec.rules.record.targetDatasourceUid": "string"
+      },
+      "descriptionChanged": [
+        "spec.rules.notificationSettings.group_by",
+        "spec.rules.notificationSettings.group_interval",
+        "spec.rules.notificationSettings.group_wait",
+        "spec.rules.notificationSettings.mute_time_intervals",
+        "spec.rules.notificationSettings.receiver",
+        "spec.rules.notificationSettings.repeat_interval"
+      ],
+      "descriptions": {
+        "spec.rules.dashboardUid": [
+          null,
+          0
+        ],
+        "spec.rules.notificationSettings.active_time_intervals": [
+          null,
+          1
+        ],
+        "spec.rules.notificationSettings.group_by": [
+          null,
+          2
+        ],
+        "spec.rules.notificationSettings.group_interval": [
+          null,
+          3
+        ],
+        "spec.rules.notificationSettings.group_wait": [
+          null,
+          4
+        ],
+        "spec.rules.notificationSettings.mute_time_intervals": [
+          null,
+          5
+        ],
+        "spec.rules.notificationSettings.receiver": [
+          null,
+          6
+        ],
+        "spec.rules.notificationSettings.repeat_interval": [
+          null,
+          7
+        ],
+        "spec.rules.panelId": [
+          null,
+          8
+        ]
+      }
+    },
+    "v5.21.4": {
+      "descriptionChanged": [
+        "status.conditions"
+      ],
+      "descriptions": {
+        "status.conditions": [
+          9,
+          10
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Deprecated: The field is not used, use rules[].annotations.__dashboardUid__",
+    "ActiveTimeIntervals defines the time intervals during which notifications should NOT be muted.",
+    "GroupBy defines the labels by which incoming alerts are grouped together.",
+    "GroupInterval defines how long to wait before sending a notification about new alerts added\nto a group for which an initial notification has already been sent. (e.g. 5m)",
+    "GroupWait defines how long to initially wait to send a notification for a group of alerts. (e.g. 30s)",
+    "MuteTimeIntervals defines the time intervals during which notifications should be muted.\nThese must match the name of a mute time interval defined in the Alertmanager configuration.",
+    "Receiver is the name of the receiver to send notifications to.",
+    "RepeatInterval defines how long to wait before sending a notification again if it has already\nbeen sent successfully for an alert. (e.g. 4h)\nShould not be less than GroupInterval.",
+    "Deprecated: The field is not used, use rules[].annotations.__panelId__",
+    "Results when synchonizing resource with Grafana instances",
+    "Results when synchronizing resource with Grafana instances"
+  ]
+}

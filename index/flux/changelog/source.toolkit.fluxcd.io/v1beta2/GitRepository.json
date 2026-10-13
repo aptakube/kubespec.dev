@@ -1,0 +1,555 @@
+{
+  "versions": {
+    "v2.7.0": {
+      "required": [
+        "status.artifact.digest",
+        "status.includedArtifacts.digest"
+      ],
+      "descriptions": {
+        "status.artifact.digest": [
+          null,
+          0
+        ],
+        "status.includedArtifacts.digest": [
+          null,
+          0
+        ]
+      }
+    },
+    "v2.4.0": {
+      "descriptionChanged": [
+        "spec.ref.commit",
+        "spec.ref.name",
+        "status.conditions.type",
+        "status.contentConfigChecksum"
+      ],
+      "descriptions": {
+        "spec.ref.commit": [
+          1,
+          2
+        ],
+        "spec.ref.name": [
+          3,
+          4
+        ],
+        "status.conditions.type": [
+          5,
+          6
+        ],
+        "status.contentConfigChecksum": [
+          7,
+          8
+        ]
+      }
+    },
+    "v2.3.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.accessFrom",
+        "spec.accessFrom.namespaceSelectors",
+        "spec.accessFrom.namespaceSelectors.matchLabels",
+        "spec.gitImplementation",
+        "spec.ignore",
+        "spec.include",
+        "spec.include.fromPath",
+        "spec.include.repository",
+        "spec.include.toPath",
+        "spec.recurseSubmodules",
+        "spec.ref",
+        "spec.ref.commit",
+        "spec.ref.name",
+        "spec.secretRef",
+        "spec.suspend",
+        "spec.verify",
+        "spec.verify.secretRef",
+        "status.artifact.lastUpdateTime",
+        "status.artifact.path",
+        "status.artifact.revision",
+        "status.artifact.url",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type",
+        "status.contentConfigChecksum",
+        "status.includedArtifacts",
+        "status.includedArtifacts.lastUpdateTime",
+        "status.includedArtifacts.path",
+        "status.includedArtifacts.revision",
+        "status.includedArtifacts.url",
+        "status.lastHandledReconcileAt",
+        "status.observedGeneration",
+        "status.observedIgnore",
+        "status.observedInclude",
+        "status.observedInclude.fromPath",
+        "status.observedInclude.repository",
+        "status.observedInclude.toPath",
+        "status.observedRecurseSubmodules",
+        "status.url"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          9,
+          10
+        ],
+        "kind": [
+          11,
+          12
+        ],
+        "spec": [
+          13,
+          14
+        ],
+        "spec.accessFrom": [
+          15,
+          16
+        ],
+        "spec.accessFrom.namespaceSelectors": [
+          17,
+          18
+        ],
+        "spec.accessFrom.namespaceSelectors.matchLabels": [
+          19,
+          20
+        ],
+        "spec.gitImplementation": [
+          21,
+          22
+        ],
+        "spec.ignore": [
+          23,
+          24
+        ],
+        "spec.include": [
+          25,
+          26
+        ],
+        "spec.include.fromPath": [
+          27,
+          28
+        ],
+        "spec.include.repository": [
+          29,
+          30
+        ],
+        "spec.include.toPath": [
+          31,
+          32
+        ],
+        "spec.recurseSubmodules": [
+          33,
+          34
+        ],
+        "spec.ref": [
+          35,
+          36
+        ],
+        "spec.ref.commit": [
+          37,
+          1
+        ],
+        "spec.ref.name": [
+          38,
+          3
+        ],
+        "spec.secretRef": [
+          39,
+          40
+        ],
+        "spec.suspend": [
+          41,
+          42
+        ],
+        "spec.verify": [
+          43,
+          44
+        ],
+        "spec.verify.secretRef": [
+          45,
+          46
+        ],
+        "status.artifact.lastUpdateTime": [
+          47,
+          48
+        ],
+        "status.artifact.path": [
+          49,
+          50
+        ],
+        "status.artifact.revision": [
+          51,
+          52
+        ],
+        "status.artifact.url": [
+          53,
+          54
+        ],
+        "status.conditions.lastTransitionTime": [
+          55,
+          56
+        ],
+        "status.conditions.message": [
+          57,
+          58
+        ],
+        "status.conditions.observedGeneration": [
+          59,
+          60
+        ],
+        "status.conditions.reason": [
+          61,
+          62
+        ],
+        "status.conditions.type": [
+          63,
+          5
+        ],
+        "status.contentConfigChecksum": [
+          64,
+          7
+        ],
+        "status.includedArtifacts": [
+          65,
+          66
+        ],
+        "status.includedArtifacts.lastUpdateTime": [
+          47,
+          48
+        ],
+        "status.includedArtifacts.path": [
+          49,
+          50
+        ],
+        "status.includedArtifacts.revision": [
+          51,
+          52
+        ],
+        "status.includedArtifacts.url": [
+          53,
+          54
+        ],
+        "status.lastHandledReconcileAt": [
+          67,
+          68
+        ],
+        "status.observedGeneration": [
+          69,
+          70
+        ],
+        "status.observedIgnore": [
+          71,
+          72
+        ],
+        "status.observedInclude": [
+          73,
+          74
+        ],
+        "status.observedInclude.fromPath": [
+          27,
+          28
+        ],
+        "status.observedInclude.repository": [
+          29,
+          30
+        ],
+        "status.observedInclude.toPath": [
+          31,
+          32
+        ],
+        "status.observedRecurseSubmodules": [
+          75,
+          76
+        ],
+        "status.url": [
+          77,
+          78
+        ]
+      }
+    },
+    "v2.0.0": {
+      "required": [
+        "spec.verify.secretRef",
+        "status.artifact.lastUpdateTime",
+        "status.artifact.revision",
+        "status.includedArtifacts.lastUpdateTime",
+        "status.includedArtifacts.revision"
+      ],
+      "removed": {
+        "status.artifact.checksum": "string",
+        "status.includedArtifacts.checksum": "string"
+      },
+      "descriptions": {
+        "spec.verify.secretRef": [
+          null,
+          45
+        ],
+        "status.artifact.lastUpdateTime": [
+          null,
+          47
+        ],
+        "status.artifact.revision": [
+          null,
+          51
+        ],
+        "status.includedArtifacts.lastUpdateTime": [
+          null,
+          47
+        ],
+        "status.includedArtifacts.revision": [
+          null,
+          51
+        ],
+        "status.artifact.checksum": [
+          79,
+          null
+        ],
+        "status.includedArtifacts.checksum": [
+          79,
+          null
+        ]
+      }
+    },
+    "v0.40.0": {
+      "descriptionChanged": [
+        "spec.recurseSubmodules",
+        "spec.ref.branch",
+        "spec.ref.commit",
+        "status.artifact.checksum",
+        "status.includedArtifacts.checksum"
+      ],
+      "added": {
+        "spec.ref.name": "string",
+        "status.artifact.digest": "string",
+        "status.includedArtifacts.digest": "string"
+      },
+      "descriptions": {
+        "spec.recurseSubmodules": [
+          80,
+          33
+        ],
+        "spec.ref.branch": [
+          81,
+          82
+        ],
+        "spec.ref.commit": [
+          83,
+          37
+        ],
+        "spec.ref.name": [
+          null,
+          38
+        ],
+        "status.artifact.checksum": [
+          84,
+          79
+        ],
+        "status.artifact.digest": [
+          null,
+          0
+        ],
+        "status.includedArtifacts.checksum": [
+          84,
+          79
+        ],
+        "status.includedArtifacts.digest": [
+          null,
+          0
+        ]
+      }
+    },
+    "v0.39.0": {
+      "descriptionChanged": [
+        "spec.secretRef"
+      ],
+      "descriptions": {
+        "spec.secretRef": [
+          85,
+          39
+        ]
+      }
+    },
+    "v0.38.0": {
+      "descriptionChanged": [
+        "spec.gitImplementation"
+      ],
+      "descriptions": {
+        "spec.gitImplementation": [
+          86,
+          21
+        ]
+      }
+    },
+    "v0.36.0": {
+      "descriptionChanged": [
+        "status.contentConfigChecksum"
+      ],
+      "added": {
+        "status.observedIgnore": "string",
+        "status.observedInclude": "object[]",
+        "status.observedRecurseSubmodules": "boolean"
+      },
+      "descriptions": {
+        "status.contentConfigChecksum": [
+          87,
+          64
+        ],
+        "status.observedIgnore": [
+          null,
+          71
+        ],
+        "status.observedInclude": [
+          null,
+          73
+        ],
+        "status.observedRecurseSubmodules": [
+          null,
+          75
+        ]
+      }
+    },
+    "v0.35.0": {
+      "descriptionChanged": [
+        "status.contentConfigChecksum"
+      ],
+      "descriptions": {
+        "status.contentConfigChecksum": [
+          88,
+          87
+        ]
+      }
+    },
+    "v0.32.0": {
+      "added": {
+        "status.artifact.metadata": "map[string]string",
+        "status.includedArtifacts.metadata": "map[string]string"
+      },
+      "descriptions": {
+        "status.artifact.metadata": [
+          null,
+          89
+        ],
+        "status.includedArtifacts.metadata": [
+          null,
+          89
+        ]
+      }
+    },
+    "v0.31.0": {
+      "added": {
+        "status.contentConfigChecksum": "string"
+      },
+      "descriptions": {
+        "status.contentConfigChecksum": [
+          null,
+          88
+        ]
+      }
+    },
+    "v0.30.0": {
+      "descriptionChanged": [
+        "spec.secretRef"
+      ],
+      "descriptions": {
+        "spec.secretRef": [
+          90,
+          85
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Digest is the digest of the file in the form of '<algorithm>:<checksum>'.",
+    "Commit SHA to check out, takes precedence over all reference fields.\n\n\nThis can be combined with Branch to shallow clone the branch, in which\nthe commit is expected to exist.",
+    "Commit SHA to check out, takes precedence over all reference fields.\n\nThis can be combined with Branch to shallow clone the branch, in which\nthe commit is expected to exist.",
+    "Name of the reference to check out; takes precedence over Branch, Tag and SemVer.\n\n\nIt must be a valid Git reference: https://git-scm.com/docs/git-check-ref-format#_description\nExamples: \"refs/heads/main\", \"refs/tags/v0.1.0\", \"refs/pull/420/head\", \"refs/merge-requests/1/head\"",
+    "Name of the reference to check out; takes precedence over Branch, Tag and SemVer.\n\nIt must be a valid Git reference: https://git-scm.com/docs/git-check-ref-format#_description\nExamples: \"refs/heads/main\", \"refs/tags/v0.1.0\", \"refs/pull/420/head\", \"refs/merge-requests/1/head\"",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "ContentConfigChecksum is a checksum of all the configurations related to\nthe content of the source artifact:\n - .spec.ignore\n - .spec.recurseSubmodules\n - .spec.included and the checksum of the included artifacts\nobserved in .status.observedGeneration version of the object. This can\nbe used to determine if the content of the included repository has\nchanged.\nIt has the format of `<algo>:<checksum>`, for example: `sha256:<checksum>`.\n\n\nDeprecated: Replaced with explicit fields for observed artifact content\nconfig in the status.",
+    "ContentConfigChecksum is a checksum of all the configurations related to\nthe content of the source artifact:\n - .spec.ignore\n - .spec.recurseSubmodules\n - .spec.included and the checksum of the included artifacts\nobserved in .status.observedGeneration version of the object. This can\nbe used to determine if the content of the included repository has\nchanged.\nIt has the format of `<algo>:<checksum>`, for example: `sha256:<checksum>`.\n\nDeprecated: Replaced with explicit fields for observed artifact content\nconfig in the status.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "GitRepositorySpec specifies the required configuration to produce an Artifact for a Git repository.",
+    "GitRepositorySpec specifies the required configuration to produce an\nArtifact for a Git repository.",
+    "AccessFrom specifies an Access Control List for allowing cross-namespace references to this object. NOTE: Not implemented, provisional as of https://github.com/fluxcd/flux2/pull/2092",
+    "AccessFrom specifies an Access Control List for allowing cross-namespace\nreferences to this object.\nNOTE: Not implemented, provisional as of https://github.com/fluxcd/flux2/pull/2092",
+    "NamespaceSelectors is the list of namespace selectors to which this ACL applies. Items in this list are evaluated using a logical OR operation.",
+    "NamespaceSelectors is the list of namespace selectors to which this ACL applies.\nItems in this list are evaluated using a logical OR operation.",
+    "MatchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "MatchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "GitImplementation specifies which Git client library implementation to use. Defaults to 'go-git', valid values are ('go-git', 'libgit2'). Deprecated: gitImplementation is deprecated now that 'go-git' is the only supported implementation.",
+    "GitImplementation specifies which Git client library implementation to\nuse. Defaults to 'go-git', valid values are ('go-git', 'libgit2').\nDeprecated: gitImplementation is deprecated now that 'go-git' is the\nonly supported implementation.",
+    "Ignore overrides the set of excluded patterns in the .sourceignore format (which is the same as .gitignore). If not provided, a default will be used, consult the documentation for your version to find out what those are.",
+    "Ignore overrides the set of excluded patterns in the .sourceignore format\n(which is the same as .gitignore). If not provided, a default will be used,\nconsult the documentation for your version to find out what those are.",
+    "Include specifies a list of GitRepository resources which Artifacts should be included in the Artifact produced for this GitRepository.",
+    "Include specifies a list of GitRepository resources which Artifacts\nshould be included in the Artifact produced for this GitRepository.",
+    "FromPath specifies the path to copy contents from, defaults to the root of the Artifact.",
+    "FromPath specifies the path to copy contents from, defaults to the root\nof the Artifact.",
+    "GitRepositoryRef specifies the GitRepository which Artifact contents must be included.",
+    "GitRepositoryRef specifies the GitRepository which Artifact contents\nmust be included.",
+    "ToPath specifies the path to copy contents to, defaults to the name of the GitRepositoryRef.",
+    "ToPath specifies the path to copy contents to, defaults to the name of\nthe GitRepositoryRef.",
+    "RecurseSubmodules enables the initialization of all submodules within the GitRepository as cloned from the URL, using their default settings.",
+    "RecurseSubmodules enables the initialization of all submodules within\nthe GitRepository as cloned from the URL, using their default settings.",
+    "Reference specifies the Git reference to resolve and monitor for changes, defaults to the 'master' branch.",
+    "Reference specifies the Git reference to resolve and monitor for\nchanges, defaults to the 'master' branch.",
+    "Commit SHA to check out, takes precedence over all reference fields. \n This can be combined with Branch to shallow clone the branch, in which the commit is expected to exist.",
+    "Name of the reference to check out; takes precedence over Branch, Tag and SemVer. \n It must be a valid Git reference: https://git-scm.com/docs/git-check-ref-format#_description Examples: \"refs/heads/main\", \"refs/tags/v0.1.0\", \"refs/pull/420/head\", \"refs/merge-requests/1/head\"",
+    "SecretRef specifies the Secret containing authentication credentials for the GitRepository. For HTTPS repositories the Secret must contain 'username' and 'password' fields for basic auth or 'bearerToken' field for token auth. For SSH repositories the Secret must contain 'identity' and 'known_hosts' fields.",
+    "SecretRef specifies the Secret containing authentication credentials for\nthe GitRepository.\nFor HTTPS repositories the Secret must contain 'username' and 'password'\nfields for basic auth or 'bearerToken' field for token auth.\nFor SSH repositories the Secret must contain 'identity'\nand 'known_hosts' fields.",
+    "Suspend tells the controller to suspend the reconciliation of this GitRepository.",
+    "Suspend tells the controller to suspend the reconciliation of this\nGitRepository.",
+    "Verification specifies the configuration to verify the Git commit signature(s).",
+    "Verification specifies the configuration to verify the Git commit\nsignature(s).",
+    "SecretRef specifies the Secret containing the public keys of trusted Git authors.",
+    "SecretRef specifies the Secret containing the public keys of trusted Git\nauthors.",
+    "LastUpdateTime is the timestamp corresponding to the last update of the Artifact.",
+    "LastUpdateTime is the timestamp corresponding to the last update of the\nArtifact.",
+    "Path is the relative file path of the Artifact. It can be used to locate the file in the root of the Artifact storage on the local file system of the controller managing the Source.",
+    "Path is the relative file path of the Artifact. It can be used to locate\nthe file in the root of the Artifact storage on the local file system of\nthe controller managing the Source.",
+    "Revision is a human-readable identifier traceable in the origin source system. It can be a Git commit SHA, Git tag, a Helm chart version, etc.",
+    "Revision is a human-readable identifier traceable in the origin source\nsystem. It can be a Git commit SHA, Git tag, a Helm chart version, etc.",
+    "URL is the HTTP address of the Artifact as exposed by the controller managing the Source. It can be used to retrieve the Artifact for consumption, e.g. by another controller applying the Artifact contents.",
+    "URL is the HTTP address of the Artifact as exposed by the controller\nmanaging the Source. It can be used to retrieve the Artifact for\nconsumption, e.g. by another controller applying the Artifact contents.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "ContentConfigChecksum is a checksum of all the configurations related to the content of the source artifact: - .spec.ignore - .spec.recurseSubmodules - .spec.included and the checksum of the included artifacts observed in .status.observedGeneration version of the object. This can be used to determine if the content of the included repository has changed. It has the format of `<algo>:<checksum>`, for example: `sha256:<checksum>`. \n Deprecated: Replaced with explicit fields for observed artifact content config in the status.",
+    "IncludedArtifacts contains a list of the last successfully included Artifacts as instructed by GitRepositorySpec.Include.",
+    "IncludedArtifacts contains a list of the last successfully included\nArtifacts as instructed by GitRepositorySpec.Include.",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change of the annotation value can be detected.",
+    "LastHandledReconcileAt holds the value of the most recent\nreconcile request value, so a change of the annotation value\ncan be detected.",
+    "ObservedGeneration is the last observed generation of the GitRepository object.",
+    "ObservedGeneration is the last observed generation of the GitRepository\nobject.",
+    "ObservedIgnore is the observed exclusion patterns used for constructing the source artifact.",
+    "ObservedIgnore is the observed exclusion patterns used for constructing\nthe source artifact.",
+    "ObservedInclude is the observed list of GitRepository resources used to to produce the current Artifact.",
+    "ObservedInclude is the observed list of GitRepository resources used to\nto produce the current Artifact.",
+    "ObservedRecurseSubmodules is the observed resource submodules configuration used to produce the current Artifact.",
+    "ObservedRecurseSubmodules is the observed resource submodules\nconfiguration used to produce the current Artifact.",
+    "URL is the dynamic fetch link for the latest Artifact. It is provided on a \"best effort\" basis, and using the precise GitRepositoryStatus.Artifact data is recommended.",
+    "URL is the dynamic fetch link for the latest Artifact.\nIt is provided on a \"best effort\" basis, and using the precise\nGitRepositoryStatus.Artifact data is recommended.",
+    "Checksum is the SHA256 checksum of the Artifact file. Deprecated: use Artifact.Digest instead.",
+    "RecurseSubmodules enables the initialization of all submodules within the GitRepository as cloned from the URL, using their default settings. This option is available only when using the 'go-git' GitImplementation.",
+    "Branch to check out, defaults to 'master' if no other field is defined. \n When GitRepositorySpec.GitImplementation is set to 'go-git', a shallow clone of the specified branch is performed.",
+    "Branch to check out, defaults to 'master' if no other field is defined.",
+    "Commit SHA to check out, takes precedence over all reference fields. \n When GitRepositorySpec.GitImplementation is set to 'go-git', this can be combined with Branch to shallow clone the branch, in which the commit is expected to exist.",
+    "Checksum is the SHA256 checksum of the Artifact file.",
+    "SecretRef specifies the Secret containing authentication credentials for the GitRepository. For HTTPS repositories the Secret must contain 'username' and 'password' fields. For SSH repositories the Secret must contain 'identity' and 'known_hosts' fields.",
+    "GitImplementation specifies which Git client library implementation to use. Defaults to 'go-git', valid values are ('go-git', 'libgit2').",
+    "ContentConfigChecksum is a checksum of all the configurations related to the content of the source artifact: - .spec.ignore - .spec.recurseSubmodules - .spec.included and the checksum of the included artifacts observed in .status.observedGeneration version of the object. This can be used to determine if the content of the included repository has changed. It has the format of `<algo>:<checksum>`, for example: `sha256:<checksum>`.",
+    "ContentConfigChecksum is a checksum of all the configurations related to the content of the source artifact:  - .spec.ignore  - .spec.recurseSubmodules  - .spec.included and the checksum of the included artifacts observed in .status.observedGeneration version of the object. This can be used to determine if the content of the included repository has changed. It has the format of `<algo>:<checksum>`, for example: `sha256:<checksum>`.",
+    "Metadata holds upstream information such as OCI annotations.",
+    "SecretRef specifies the Secret containing authentication credentials for the GitRepository. For HTTPS repositories the Secret must contain 'username' and 'password' fields. For SSH repositories the Secret must contain 'identity', 'identity.pub' and 'known_hosts' fields."
+  ]
+}

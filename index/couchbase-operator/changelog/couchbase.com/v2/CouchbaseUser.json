@@ -1,0 +1,65 @@
+{
+  "versions": {
+    "couchbase-operator-2.90.0": {
+      "descriptionChanged": [
+        "spec.authSecret"
+      ],
+      "added": {
+        "spec.locked": "boolean",
+        "spec.password": "object"
+      },
+      "descriptions": {
+        "spec.authSecret": [
+          0,
+          1
+        ],
+        "spec.locked": [
+          null,
+          2
+        ],
+        "spec.password": [
+          null,
+          3
+        ]
+      }
+    },
+    "couchbase-operator-2.80.0": {
+      "added": {
+        "spec.name": "string"
+      },
+      "descriptions": {
+        "spec.name": [
+          null,
+          4
+        ]
+      }
+    },
+    "couchbase-operator-2.70.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          5,
+          6
+        ],
+        "kind": [
+          7,
+          8
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Name of Kubernetes secret with password for Couchbase domain.",
+    "Name of the Kubernetes Secret that provides the user's initial password for the Couchbase domain.\nOnce the user is created, changes to this field will be ignored.\nThe initial password must comply with all password policies defined for Couchbase clusters\nthat have RBAC management enabled and for which the user matches the RBAC resource selector.",
+    "Locked defines whether the user is locked and can only be used when a using the internal auth domain for the user.\nThis field is only available for Couchbase Server 8.0.0+.",
+    "Password allows user specific password settings to be set.\nThis field is only available for Couchbase Server 8.0.0+.",
+    "Username of the couchbase user.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+  ]
+}

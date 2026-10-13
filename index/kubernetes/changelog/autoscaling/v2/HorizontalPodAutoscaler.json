@@ -1,0 +1,406 @@
+{
+  "versions": {
+    "v1.37.0": {
+      "descriptionChanged": [
+        "spec.behavior.scaleDown.tolerance",
+        "spec.behavior.scaleUp.tolerance",
+        "status.currentMetrics.containerResource",
+        "status.currentMetrics.containerResource.current.averageUtilization",
+        "status.currentMetrics.external.current.averageUtilization",
+        "status.currentMetrics.object.current.averageUtilization",
+        "status.currentMetrics.object.describedObject",
+        "status.currentMetrics.pods.current.averageUtilization",
+        "status.currentMetrics.resource.current.averageUtilization"
+      ],
+      "added": {
+        "status.conditions.observedGeneration": "integer"
+      },
+      "descriptions": {
+        "spec.behavior.scaleDown.tolerance": [
+          0,
+          1
+        ],
+        "spec.behavior.scaleUp.tolerance": [
+          0,
+          1
+        ],
+        "status.conditions.observedGeneration": [
+          null,
+          2
+        ],
+        "status.currentMetrics.containerResource": [
+          3,
+          4
+        ],
+        "status.currentMetrics.containerResource.current.averageUtilization": [
+          5,
+          6
+        ],
+        "status.currentMetrics.external.current.averageUtilization": [
+          5,
+          6
+        ],
+        "status.currentMetrics.object.current.averageUtilization": [
+          5,
+          6
+        ],
+        "status.currentMetrics.object.describedObject": [
+          7,
+          8
+        ],
+        "status.currentMetrics.pods.current.averageUtilization": [
+          5,
+          6
+        ],
+        "status.currentMetrics.resource.current.averageUtilization": [
+          5,
+          6
+        ]
+      }
+    },
+    "v1.36.0": {
+      "required": [
+        "spec"
+      ],
+      "descriptions": {
+        "spec": [
+          null,
+          9
+        ]
+      }
+    },
+    "v1.35.0": {
+      "descriptionChanged": [
+        "spec.behavior.scaleDown.tolerance",
+        "spec.behavior.scaleUp.tolerance"
+      ],
+      "descriptions": {
+        "spec.behavior.scaleDown.tolerance": [
+          10,
+          0
+        ],
+        "spec.behavior.scaleUp.tolerance": [
+          10,
+          0
+        ]
+      }
+    },
+    "v1.33.0": {
+      "descriptionChanged": [
+        "spec.behavior.scaleDown.policies",
+        "spec.behavior.scaleUp.policies"
+      ],
+      "added": {
+        "spec.behavior.scaleDown.tolerance": "Quantity",
+        "spec.behavior.scaleUp.tolerance": "Quantity"
+      },
+      "descriptions": {
+        "spec.behavior.scaleDown.policies": [
+          11,
+          12
+        ],
+        "spec.behavior.scaleDown.tolerance": [
+          null,
+          10
+        ],
+        "spec.behavior.scaleUp.policies": [
+          11,
+          12
+        ],
+        "spec.behavior.scaleUp.tolerance": [
+          null,
+          10
+        ]
+      }
+    },
+    "v1.32.0": {
+      "descriptionChanged": [
+        "spec.metrics.containerResource",
+        "spec.metrics.type",
+        "status.currentMetrics.type"
+      ],
+      "descriptions": {
+        "spec.metrics.containerResource": [
+          13,
+          14
+        ],
+        "spec.metrics.type": [
+          15,
+          16
+        ],
+        "status.currentMetrics.type": [
+          17,
+          18
+        ]
+      }
+    },
+    "v1.27.0": {
+      "descriptionChanged": [
+        "metadata.annotations",
+        "metadata.labels",
+        "metadata.name",
+        "metadata.namespace",
+        "metadata.ownerReferences.name",
+        "metadata.ownerReferences.uid",
+        "metadata.uid",
+        "spec.behavior.scaleDown.policies.periodSeconds",
+        "spec.behavior.scaleDown.policies.type",
+        "spec.behavior.scaleDown.policies.value",
+        "spec.behavior.scaleDown.stabilizationWindowSeconds",
+        "spec.behavior.scaleUp.policies.periodSeconds",
+        "spec.behavior.scaleUp.policies.type",
+        "spec.behavior.scaleUp.policies.value",
+        "spec.behavior.scaleUp.stabilizationWindowSeconds",
+        "spec.metrics.object.describedObject.apiVersion",
+        "spec.metrics.object.describedObject.kind",
+        "spec.metrics.object.describedObject.name",
+        "spec.scaleTargetRef.apiVersion",
+        "spec.scaleTargetRef.kind",
+        "spec.scaleTargetRef.name",
+        "status.currentMetrics.containerResource.container",
+        "status.currentMetrics.containerResource.name",
+        "status.currentMetrics.object.describedObject.apiVersion",
+        "status.currentMetrics.object.describedObject.kind",
+        "status.currentMetrics.object.describedObject.name",
+        "status.currentMetrics.resource.name"
+      ],
+      "descriptions": {
+        "metadata.annotations": [
+          19,
+          20
+        ],
+        "metadata.labels": [
+          21,
+          22
+        ],
+        "metadata.name": [
+          23,
+          24
+        ],
+        "metadata.namespace": [
+          25,
+          26
+        ],
+        "metadata.ownerReferences.name": [
+          27,
+          28
+        ],
+        "metadata.ownerReferences.uid": [
+          29,
+          30
+        ],
+        "metadata.uid": [
+          31,
+          32
+        ],
+        "spec.behavior.scaleDown.policies.periodSeconds": [
+          33,
+          34
+        ],
+        "spec.behavior.scaleDown.policies.type": [
+          35,
+          36
+        ],
+        "spec.behavior.scaleDown.policies.value": [
+          37,
+          38
+        ],
+        "spec.behavior.scaleDown.stabilizationWindowSeconds": [
+          39,
+          40
+        ],
+        "spec.behavior.scaleUp.policies.periodSeconds": [
+          33,
+          34
+        ],
+        "spec.behavior.scaleUp.policies.type": [
+          35,
+          36
+        ],
+        "spec.behavior.scaleUp.policies.value": [
+          37,
+          38
+        ],
+        "spec.behavior.scaleUp.stabilizationWindowSeconds": [
+          39,
+          40
+        ],
+        "spec.metrics.object.describedObject.apiVersion": [
+          41,
+          42
+        ],
+        "spec.metrics.object.describedObject.kind": [
+          43,
+          44
+        ],
+        "spec.metrics.object.describedObject.name": [
+          45,
+          46
+        ],
+        "spec.scaleTargetRef.apiVersion": [
+          41,
+          42
+        ],
+        "spec.scaleTargetRef.kind": [
+          43,
+          44
+        ],
+        "spec.scaleTargetRef.name": [
+          45,
+          46
+        ],
+        "status.currentMetrics.containerResource.container": [
+          47,
+          48
+        ],
+        "status.currentMetrics.containerResource.name": [
+          49,
+          50
+        ],
+        "status.currentMetrics.object.describedObject.apiVersion": [
+          41,
+          42
+        ],
+        "status.currentMetrics.object.describedObject.kind": [
+          43,
+          44
+        ],
+        "status.currentMetrics.object.describedObject.name": [
+          45,
+          46
+        ],
+        "status.currentMetrics.resource.name": [
+          49,
+          50
+        ]
+      }
+    },
+    "v1.26.0": {
+      "descriptionChanged": [
+        "spec.metrics.object.describedObject.kind",
+        "spec.scaleTargetRef.kind",
+        "status.currentMetrics.object.describedObject.kind"
+      ],
+      "descriptions": {
+        "spec.metrics.object.describedObject.kind": [
+          51,
+          43
+        ],
+        "spec.scaleTargetRef.kind": [
+          51,
+          43
+        ],
+        "status.currentMetrics.object.describedObject.kind": [
+          51,
+          43
+        ]
+      }
+    },
+    "v1.25.0": {
+      "removed": {
+        "metadata.clusterName": "string"
+      },
+      "descriptions": {
+        "metadata.clusterName": [
+          52,
+          null
+        ]
+      }
+    },
+    "v1.24.0": {
+      "descriptionChanged": [
+        "metadata.clusterName",
+        "metadata.generateName",
+        "metadata.managedFields.time",
+        "metadata.ownerReferences.blockOwnerDeletion",
+        "metadata.selfLink"
+      ],
+      "descriptions": {
+        "metadata.clusterName": [
+          53,
+          52
+        ],
+        "metadata.generateName": [
+          54,
+          55
+        ],
+        "metadata.managedFields.time": [
+          56,
+          57
+        ],
+        "metadata.ownerReferences.blockOwnerDeletion": [
+          58,
+          59
+        ],
+        "metadata.selfLink": [
+          60,
+          61
+        ]
+      }
+    }
+  },
+  "texts": [
+    "tolerance is the tolerance on the ratio between the current and desired metric value under which no updates are made to the desired number of replicas (e.g. 0.01 for 1%). Must be greater than or equal to zero. If not set, the default cluster-wide tolerance is applied (by default 10%).\n\nFor example, if autoscaling is configured with a memory consumption target of 100Mi, and scale-down and scale-up tolerances of 5% and 1% respectively, scaling will be triggered when the actual consumption falls below 95Mi or exceeds 101Mi.\n\nThis is an beta field and requires the HPAConfigurableTolerance feature gate to be enabled.",
+    "tolerance is the tolerance on the ratio between the current and desired metric value under which no updates are made to the desired number of replicas (e.g. 0.01 for 1%). Must be greater than or equal to zero. If not set, the default cluster-wide tolerance is applied (by default 10%).\n\nFor example, if autoscaling is configured with a memory consumption target of 100Mi, and scale-down and scale-up tolerances of 5% and 1% respectively, scaling will be triggered when the actual consumption falls below 95Mi or exceeds 101Mi.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "container resource refers to a resource metric (such as those specified in requests and limits) known to Kubernetes describing a single container in each pod in the current scale target (e.g. CPU or memory). Such metrics are built in to Kubernetes, and have special scaling options on top of those available to normal per-pod metrics using the \"pods\" source.",
+    "containerResource refers to a resource metric (such as those specified in requests and limits) known to Kubernetes describing a single container in each pod in the current scale target (e.g. CPU or memory). Such metrics are built in to Kubernetes, and have special scaling options on top of those available to normal per-pod metrics using the \"pods\" source.",
+    "currentAverageUtilization is the current value of the average of the resource metric across all relevant pods, represented as a percentage of the requested value of the resource for the pods.",
+    "averageUtilization is the current value of the average of the resource metric across all relevant pods, represented as a percentage of the requested value of the resource for the pods.",
+    "DescribedObject specifies the descriptions of a object,such as kind,name apiVersion",
+    "describedObject specifies the descriptions of a object,such as kind,name apiVersion",
+    "spec is the specification for the behaviour of the autoscaler. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.",
+    "tolerance is the tolerance on the ratio between the current and desired metric value under which no updates are made to the desired number of replicas (e.g. 0.01 for 1%). Must be greater than or equal to zero. If not set, the default cluster-wide tolerance is applied (by default 10%).\n\nFor example, if autoscaling is configured with a memory consumption target of 100Mi, and scale-down and scale-up tolerances of 5% and 1% respectively, scaling will be triggered when the actual consumption falls below 95Mi or exceeds 101Mi.\n\nThis is an alpha field and requires enabling the HPAConfigurableTolerance feature gate.",
+    "policies is a list of potential scaling polices which can be used during scaling. At least one policy must be specified, otherwise the HPAScalingRules will be discarded as invalid",
+    "policies is a list of potential scaling polices which can be used during scaling. If not set, use the default values: - For scale up: allow doubling the number of pods, or an absolute change of 4 pods in a 15s window. - For scale down: allow all pods to be removed in a 15s window.",
+    "containerResource refers to a resource metric (such as those specified in requests and limits) known to Kubernetes describing a single container in each pod of the current scale target (e.g. CPU or memory). Such metrics are built in to Kubernetes, and have special scaling options on top of those available to normal per-pod metrics using the \"pods\" source. This is an alpha feature and can be enabled by the HPAContainerMetrics feature flag.",
+    "containerResource refers to a resource metric (such as those specified in requests and limits) known to Kubernetes describing a single container in each pod of the current scale target (e.g. CPU or memory). Such metrics are built in to Kubernetes, and have special scaling options on top of those available to normal per-pod metrics using the \"pods\" source.",
+    "type is the type of metric source.  It should be one of \"ContainerResource\", \"External\", \"Object\", \"Pods\" or \"Resource\", each mapping to a matching field in the object. Note: \"ContainerResource\" type is available on when the feature-gate HPAContainerMetrics is enabled",
+    "type is the type of metric source.  It should be one of \"ContainerResource\", \"External\", \"Object\", \"Pods\" or \"Resource\", each mapping to a matching field in the object.",
+    "type is the type of metric source.  It will be one of \"ContainerResource\", \"External\", \"Object\", \"Pods\" or \"Resource\", each corresponds to a matching field in the object. Note: \"ContainerResource\" type is available on when the feature-gate HPAContainerMetrics is enabled",
+    "type is the type of metric source.  It will be one of \"ContainerResource\", \"External\", \"Object\", \"Pods\" or \"Resource\", each corresponds to a matching field in the object.",
+    "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations",
+    "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels",
+    "Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names",
+    "Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names",
+    "Namespace defines the space within which each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces",
+    "Namespace defines the space within which each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces",
+    "Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names",
+    "UID of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#uids",
+    "UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids",
+    "UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.\n\nPopulated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids",
+    "UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.\n\nPopulated by the system. Read-only. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids",
+    "PeriodSeconds specifies the window of time for which the policy should hold true. PeriodSeconds must be greater than zero and less than or equal to 1800 (30 min).",
+    "periodSeconds specifies the window of time for which the policy should hold true. PeriodSeconds must be greater than zero and less than or equal to 1800 (30 min).",
+    "Type is used to specify the scaling policy.",
+    "type is used to specify the scaling policy.",
+    "Value contains the amount of change which is permitted by the policy. It must be greater than zero",
+    "value contains the amount of change which is permitted by the policy. It must be greater than zero",
+    "StabilizationWindowSeconds is the number of seconds for which past recommendations should be considered while scaling up or scaling down. StabilizationWindowSeconds must be greater than or equal to zero and less than or equal to 3600 (one hour). If not set, use the default values: - For scale up: 0 (i.e. no stabilization is done). - For scale down: 300 (i.e. the stabilization window is 300 seconds long).",
+    "stabilizationWindowSeconds is the number of seconds for which past recommendations should be considered while scaling up or scaling down. StabilizationWindowSeconds must be greater than or equal to zero and less than or equal to 3600 (one hour). If not set, use the default values: - For scale up: 0 (i.e. no stabilization is done). - For scale down: 300 (i.e. the stabilization window is 300 seconds long).",
+    "API version of the referent",
+    "apiVersion is the API version of the referent",
+    "Kind of the referent; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "kind is the kind of the referent; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names",
+    "name is the name of the referent; More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Container is the name of the container in the pods of the scaling target",
+    "container is the name of the container in the pods of the scaling target",
+    "Name is the name of the resource in question.",
+    "name is the name of the resource in question.",
+    "Kind of the referent; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\"",
+    "Deprecated: ClusterName is a legacy field that was always cleared by the system and never used; it will be removed completely in 1.25.\n\nThe name in the go struct is changed to help clients detect accidental use.",
+    "The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request.",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will return a 409.\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency",
+    "Time is timestamp of when these fields were set. It should always be empty if Operation is 'Apply'",
+    "Time is the timestamp of when the ManagedFields entry was added. The timestamp will also be updated if a field is added, the manager changes any of the owned fields value or removes a field. The timestamp does not update when a field is removed from the entry because another manager took it over.",
+    "If true, AND if the owner has the \"foregroundDeletion\" finalizer, then the owner cannot be deleted from the key-value store until this reference is removed. Defaults to false. To set this field, a user needs \"delete\" permission of the owner, otherwise 422 (Unprocessable Entity) will be returned.",
+    "If true, AND if the owner has the \"foregroundDeletion\" finalizer, then the owner cannot be deleted from the key-value store until this reference is removed. See https://kubernetes.io/docs/concepts/architecture/garbage-collection/#foreground-deletion for how the garbage collector interacts with this field and enforces the foreground deletion. Defaults to false. To set this field, a user needs \"delete\" permission of the owner, otherwise 422 (Unprocessable Entity) will be returned.",
+    "SelfLink is a URL representing this object. Populated by the system. Read-only.\n\nDEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is planned to be removed in 1.21 release.",
+    "Deprecated: selfLink is a legacy read-only field that is no longer populated by the system."
+  ]
+}

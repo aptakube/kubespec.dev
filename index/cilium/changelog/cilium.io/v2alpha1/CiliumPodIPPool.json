@@ -1,0 +1,69 @@
+{
+  "versions": {
+    "1.20.0": {
+      "added": {
+        "spec.allowFirstIP": "boolean",
+        "spec.allowLastIP": "boolean"
+      },
+      "descriptions": {
+        "spec.allowFirstIP": [
+          null,
+          0
+        ],
+        "spec.allowLastIP": [
+          null,
+          1
+        ]
+      }
+    },
+    "1.19.0": {
+      "added": {
+        "spec.namespaceSelector": "object",
+        "spec.podSelector": "object"
+      },
+      "descriptions": {
+        "spec.namespaceSelector": [
+          null,
+          2
+        ],
+        "spec.podSelector": [
+          null,
+          3
+        ]
+      }
+    },
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          4,
+          5
+        ],
+        "kind": [
+          6,
+          7
+        ],
+        "": [
+          8,
+          9
+        ]
+      }
+    }
+  },
+  "texts": [
+    "AllowFirstIP allows the first IP of each allocated CIDR to be used. If\nunset or false, this IP is reserved. This field is ignored for /{31,32}\nand /{127,128} CIDRs since reserving the first and last IPs would make\nthe CIDRs unusable. This field is immutable.",
+    "AllowLastIP allows the last IP of each allocated CIDR to be used. If\nunset or false, this IP is reserved. This field is ignored for /{31,32}\nand /{127,128} CIDRs since reserving the first and last IPs would make\nthe CIDRs unusable. This field is immutable.",
+    "NamespaceSelector selects the set of Namespaces that are eligible to use\nthis pool. If both PodSelector and NamespaceSelector are specified, a Pod\nmust match both selectors to be eligible for IP allocation from this pool.\n\nIf NamespaceSelector is empty, the pool can be used by Pods in any namespace\n(subject to PodSelector constraints).",
+    "PodSelector selects the set of Pods that are eligible to receive IPs from\nthis pool when neither the Pod nor its Namespace specify an explicit\n`ipam.cilium.io/*` annotation.\n\nThe selector can match on regular Pod labels and on the following synthetic\nlabels that Cilium adds for convenience:\n\nio.kubernetes.pod.namespace – the Pod's namespace\nio.kubernetes.pod.name      – the Pod's name\n\nA single Pod must not match more than one pool for the same IP family.\nIf multiple pools match, IP allocation fails for that Pod and a warning event\nis emitted in the namespace of the Pod.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "CiliumPodIPPool defines an IP pool that can be used for pooled IPAM (i.e. the multi-pool IPAM mode).",
+    "CiliumPodIPPool defines an IP pool that can be used for pooled IPAM (i.e. the multi-pool IPAM\nmode)."
+  ]
+}

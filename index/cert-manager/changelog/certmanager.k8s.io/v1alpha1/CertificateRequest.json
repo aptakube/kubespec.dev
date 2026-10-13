@@ -1,0 +1,51 @@
+{
+  "versions": {
+    "v0.10.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.isCA",
+        "status"
+      ],
+      "added": {
+        "spec.usages": "string[]",
+        "status.failureTime": "string"
+      },
+      "description": true,
+      "descriptions": {
+        "spec": [
+          null,
+          0
+        ],
+        "spec.isCA": [
+          1,
+          2
+        ],
+        "spec.usages": [
+          null,
+          3
+        ],
+        "status": [
+          null,
+          4
+        ],
+        "status.failureTime": [
+          null,
+          5
+        ],
+        "": [
+          null,
+          6
+        ]
+      }
+    }
+  },
+  "texts": [
+    "CertificateRequestSpec defines the desired state of CertificateRequest",
+    "IsCA will mark the resulting certificate as valid for signing. This implies that the 'signing' usage is set",
+    "IsCA will mark the resulting certificate as valid for signing. This implies that the 'cert sign' usage is set",
+    "Usages is the set of x509 actions that are enabled for a given key. Defaults are ('digital signature', 'key encipherment') if empty",
+    "CertificateStatus defines the observed state of CertificateRequest and resulting signed certificate.",
+    "FailureTime stores the time that this CertificateRequest failed. This is used to influence garbage collection and back-off.",
+    "CertificateRequest is a type to represent a Certificate Signing Request"
+  ]
+}

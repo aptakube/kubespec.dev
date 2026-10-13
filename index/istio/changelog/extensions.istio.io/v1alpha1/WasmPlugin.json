@@ -1,0 +1,333 @@
+{
+  "versions": {
+    "1.27.0": {
+      "descriptionChanged": [
+        "spec.failStrategy"
+      ],
+      "descriptions": {
+        "spec.failStrategy": [
+          0,
+          1
+        ]
+      }
+    },
+    "1.25.0": {
+      "added": {
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "status.conditions.observedGeneration": [
+          null,
+          2
+        ],
+        "status.observedGeneration": [
+          3,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "status.conditions": [
+          null,
+          4
+        ],
+        "status.observedGeneration": [
+          null,
+          3
+        ],
+        "status.validationMessages": [
+          null,
+          5
+        ]
+      }
+    },
+    "1.23.0": {
+      "required": [
+        "spec.targetRef.kind",
+        "spec.targetRef.name",
+        "spec.targetRefs.kind",
+        "spec.targetRefs.name"
+      ],
+      "descriptions": {
+        "spec.targetRef.kind": [
+          null,
+          6
+        ],
+        "spec.targetRef.name": [
+          null,
+          7
+        ],
+        "spec.targetRefs.kind": [
+          null,
+          6
+        ],
+        "spec.targetRefs.name": [
+          null,
+          7
+        ]
+      }
+    },
+    "1.22.0": {
+      "descriptionChanged": [
+        "spec.failStrategy",
+        "spec.imagePullPolicy",
+        "spec.match.mode",
+        "spec.phase",
+        "spec.targetRef",
+        "spec.type",
+        "spec.vmConfig.env.valueFrom"
+      ],
+      "added": {
+        "spec.targetRefs": "object[]"
+      },
+      "descriptions": {
+        "spec.failStrategy": [
+          8,
+          0
+        ],
+        "spec.imagePullPolicy": [
+          9,
+          10
+        ],
+        "spec.match.mode": [
+          11,
+          12
+        ],
+        "spec.phase": [
+          13,
+          14
+        ],
+        "spec.targetRef": [
+          15,
+          null
+        ],
+        "spec.targetRefs": [
+          null,
+          15
+        ],
+        "spec.type": [
+          16,
+          17
+        ],
+        "spec.vmConfig.env.valueFrom": [
+          18,
+          19
+        ]
+      }
+    },
+    "1.21.0": {
+      "descriptionChanged": [
+        "spec.imagePullPolicy"
+      ],
+      "descriptions": {
+        "spec.imagePullPolicy": [
+          20,
+          9
+        ]
+      }
+    },
+    "1.20.1": {
+      "descriptionChanged": [
+        "spec.targetRef",
+        "spec.targetRef.group",
+        "spec.targetRef.kind",
+        "spec.targetRef.name",
+        "spec.targetRef.namespace"
+      ],
+      "descriptions": {
+        "spec.targetRef": [
+          null,
+          15
+        ],
+        "spec.targetRef.group": [
+          null,
+          21
+        ],
+        "spec.targetRef.kind": [
+          null,
+          6
+        ],
+        "spec.targetRef.name": [
+          null,
+          7
+        ],
+        "spec.targetRef.namespace": [
+          null,
+          22
+        ]
+      }
+    },
+    "1.20.0": {
+      "required": [
+        "spec",
+        "spec.match.ports.number",
+        "spec.url",
+        "spec.vmConfig.env.name"
+      ],
+      "descriptionChanged": [
+        "spec.imagePullPolicy",
+        "spec.pluginName",
+        "spec.selector",
+        "spec.selector.matchLabels",
+        "spec.vmConfig.env.name",
+        "spec.vmConfig.env.valueFrom"
+      ],
+      "added": {
+        "spec.targetRef": "object",
+        "spec.type": "string"
+      },
+      "descriptions": {
+        "spec": [
+          null,
+          23
+        ],
+        "spec.imagePullPolicy": [
+          null,
+          20
+        ],
+        "spec.pluginName": [
+          null,
+          24
+        ],
+        "spec.selector": [
+          null,
+          25
+        ],
+        "spec.selector.matchLabels": [
+          null,
+          26
+        ],
+        "spec.type": [
+          null,
+          16
+        ],
+        "spec.url": [
+          null,
+          27
+        ],
+        "spec.vmConfig.env.name": [
+          null,
+          28
+        ],
+        "spec.vmConfig.env.valueFrom": [
+          null,
+          18
+        ]
+      }
+    },
+    "1.19.0": {
+      "added": {
+        "spec.failStrategy": "string"
+      },
+      "descriptions": {
+        "spec.failStrategy": [
+          null,
+          8
+        ]
+      }
+    },
+    "1.16.1": {
+      "descriptionChanged": [
+        "spec.match",
+        "spec.match.mode",
+        "spec.match.ports"
+      ],
+      "descriptions": {
+        "spec.match": [
+          null,
+          29
+        ],
+        "spec.match.mode": [
+          null,
+          11
+        ],
+        "spec.match.ports": [
+          null,
+          30
+        ]
+      }
+    },
+    "1.16.0": {
+      "added": {
+        "spec.match": "object[]"
+      }
+    },
+    "1.15.0": {
+      "descriptionChanged": [
+        "spec.imagePullPolicy"
+      ],
+      "descriptions": {
+        "spec.imagePullPolicy": [
+          31,
+          null
+        ]
+      }
+    },
+    "1.14.0": {
+      "added": {
+        "spec.vmConfig": "object"
+      },
+      "descriptions": {
+        "spec.vmConfig": [
+          null,
+          32
+        ]
+      }
+    },
+    "1.12.1": {
+      "descriptionChanged": [
+        "spec"
+      ],
+      "descriptions": {
+        "spec": [
+          null,
+          23
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Specifies the failure behavior for the plugin due to fatal errors.\n\nValid Options: FAIL_CLOSE, FAIL_OPEN",
+    "Specifies the failure behavior for the plugin due to fatal errors.\n\nValid Options: FAIL_CLOSE, FAIL_OPEN, FAIL_RELOAD",
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers.",
+    "kind is kind of the target resource.",
+    "name is the name of the target resource.",
+    "Specifies the failure behavior for the plugin due to fatal errors.",
+    "The pull behaviour to be applied when fetching Wasm module by either OCI image or `http/https`.",
+    "The pull behaviour to be applied when fetching Wasm module by either OCI image or `http/https`.\n\nValid Options: IfNotPresent, Always",
+    "Criteria for selecting traffic by their direction.",
+    "Criteria for selecting traffic by their direction.\n\nValid Options: CLIENT, SERVER, CLIENT_AND_SERVER",
+    "Determines where in the filter chain this `WasmPlugin` is to be injected.",
+    "Determines where in the filter chain this `WasmPlugin` is to be injected.\n\nValid Options: AUTHN, AUTHZ, STATS",
+    "Optional.",
+    "Specifies the type of Wasm Extension to be used.",
+    "Specifies the type of Wasm Extension to be used.\n\nValid Options: HTTP, NETWORK",
+    "Source for the environment variable's value.",
+    "Source for the environment variable's value.\n\nValid Options: INLINE, HOST",
+    "The pull behaviour to be applied when fetching Wasm module by either OCI image or http/https.",
+    "group is the group of the target resource.",
+    "namespace is the namespace of the referent.",
+    "Extend the functionality provided by the Istio proxy through WebAssembly filters. See more details at: https://istio.io/docs/reference/config/proxy_extensions/wasm-plugin.html",
+    "The plugin name to be used in the Envoy configuration (used to be called `rootID`).",
+    "Criteria used to select the specific set of pods/VMs on which this plugin configuration should be applied.",
+    "One or more labels that indicate a specific set of pods/VMs on which a policy should be applied.",
+    "URL of a Wasm module or OCI container.",
+    "Name of the environment variable.",
+    "Specifies the criteria to determine which traffic is passed to WasmPlugin.",
+    "Criteria for selecting traffic by their destination port.",
+    "The pull behaviour to be applied when fetching an OCI image.",
+    "Configuration for a Wasm VM."
+  ]
+}

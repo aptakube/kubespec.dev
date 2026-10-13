@@ -1,0 +1,232 @@
+{
+  "versions": {
+    "v1.104.0": {
+      "descriptionChanged": [
+        "spec.statefulSet.pod.container.securityContext.procMount",
+        "spec.statefulSet.pod.securityContext.seLinuxChangePolicy",
+        "spec.statefulSet.pod.tolerations.operator"
+      ],
+      "descriptions": {
+        "spec.statefulSet.pod.container.securityContext.procMount": [
+          0,
+          1
+        ],
+        "spec.statefulSet.pod.securityContext.seLinuxChangePolicy": [
+          2,
+          3
+        ],
+        "spec.statefulSet.pod.tolerations.operator": [
+          4,
+          5
+        ]
+      }
+    },
+    "v1.96.0": {
+      "added": {
+        "spec.tailnet": "string"
+      },
+      "descriptions": {
+        "spec.tailnet": [
+          null,
+          6
+        ]
+      }
+    },
+    "v1.94.0": {
+      "descriptionChanged": [
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys",
+        "spec.statefulSet.pod.container.resources.claims"
+      ],
+      "descriptions": {
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": [
+          7,
+          8
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": [
+          9,
+          10
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": [
+          7,
+          8
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": [
+          9,
+          10
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
+          11,
+          12
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": [
+          7,
+          8
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": [
+          9,
+          10
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": [
+          7,
+          8
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": [
+          9,
+          10
+        ],
+        "spec.statefulSet.pod.container.resources.claims": [
+          13,
+          14
+        ]
+      }
+    },
+    "v1.92.0": {
+      "added": {
+        "spec.replicas": "integer"
+      },
+      "descriptions": {
+        "spec.replicas": [
+          null,
+          15
+        ]
+      }
+    },
+    "v1.84.0": {
+      "added": {
+        "spec.statefulSet.pod.serviceAccount": "object"
+      },
+      "descriptions": {
+        "spec.statefulSet.pod.serviceAccount": [
+          null,
+          16
+        ]
+      }
+    },
+    "v1.80.0": {
+      "descriptionChanged": [
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys",
+        "spec.statefulSet.pod.container.securityContext.procMount",
+        "spec.statefulSet.pod.securityContext.supplementalGroups"
+      ],
+      "added": {
+        "spec.statefulSet.pod.container.resources.claims.request": "string",
+        "spec.statefulSet.pod.securityContext.seLinuxChangePolicy": "string",
+        "spec.statefulSet.pod.securityContext.supplementalGroupsPolicy": "string"
+      },
+      "description": true,
+      "descriptions": {
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": [
+          17,
+          7
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": [
+          18,
+          9
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": [
+          17,
+          7
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": [
+          18,
+          9
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": [
+          17,
+          7
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": [
+          18,
+          9
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": [
+          17,
+          7
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": [
+          18,
+          9
+        ],
+        "spec.statefulSet.pod.container.resources.claims.request": [
+          null,
+          19
+        ],
+        "spec.statefulSet.pod.container.securityContext.procMount": [
+          20,
+          0
+        ],
+        "spec.statefulSet.pod.securityContext.seLinuxChangePolicy": [
+          null,
+          2
+        ],
+        "spec.statefulSet.pod.securityContext.supplementalGroups": [
+          21,
+          22
+        ],
+        "spec.statefulSet.pod.securityContext.supplementalGroupsPolicy": [
+          null,
+          23
+        ],
+        "": [
+          null,
+          24
+        ]
+      }
+    },
+    "v1.76.0": {
+      "descriptionChanged": [
+        "status.devices"
+      ],
+      "descriptions": {
+        "status.devices": [
+          25,
+          26
+        ]
+      }
+    }
+  },
+  "texts": [
+    "procMount denotes the type of proc mount to use for the containers.\nThe default value is Default which uses the container runtime defaults for\nreadonly paths and masked paths.\nThis requires the ProcMountType feature flag to be enabled.\nNote that this field cannot be set when spec.os.name is windows.",
+    "procMount denotes the type of proc mount to use for the containers.\nThe default value is Default which uses the container runtime defaults for\nreadonly paths and masked paths.\nNote that this field cannot be set when spec.os.name is windows.",
+    "seLinuxChangePolicy defines how the container's SELinux label is applied to all volumes used by the Pod.\nIt has no effect on nodes that do not support SELinux or to volumes does not support SELinux.\nValid values are \"MountOption\" and \"Recursive\".\n\n\"Recursive\" means relabeling of all files on all Pod volumes by the container runtime.\nThis may be slow for large volumes, but allows mixing privileged and unprivileged Pods sharing the same volume on the same node.\n\n\"MountOption\" mounts all eligible Pod volumes with `-o context` mount option.\nThis requires all Pods that share the same volume to use the same SELinux label.\nIt is not possible to share the same volume among privileged and unprivileged Pods.\nEligible volumes are in-tree FibreChannel and iSCSI volumes, and all CSI volumes\nwhose CSI driver announces SELinux support by setting spec.seLinuxMount: true in their\nCSIDriver instance. Other volumes are always re-labelled recursively.\n\"MountOption\" value is allowed only when SELinuxMount feature gate is enabled.\n\nIf not specified and SELinuxMount feature gate is enabled, \"MountOption\" is used.\nIf not specified and SELinuxMount feature gate is disabled, \"MountOption\" is used for ReadWriteOncePod volumes\nand \"Recursive\" for all other volumes.\n\nThis field affects only Pods that have SELinux label set, either in PodSecurityContext or in SecurityContext of all containers.\n\nAll Pods that use the same volume should use the same seLinuxChangePolicy, otherwise some pods can get stuck in ContainerCreating state.\nNote that this field cannot be set when spec.os.name is windows.",
+    "seLinuxChangePolicy defines how the container's SELinux label is applied to all volumes used by the Pod.\nIt has no effect on nodes that do not support SELinux or to volumes does not support SELinux.\nValid values are \"MountOption\" and \"Recursive\".\n\n\"Recursive\" means relabeling of all files on all Pod volumes by the container runtime.\nThis may be slow for large volumes, but allows mixing privileged and unprivileged Pods sharing the same volume on the same node.\n\n\"MountOption\" mounts all eligible Pod volumes with `-o context` mount option.\nThis requires all Pods that share the same volume to use the same SELinux label.\nIt is not possible to share the same volume among privileged and unprivileged Pods.\nEligible volumes are in-tree FibreChannel and iSCSI volumes, and all CSI volumes\nwhose CSI driver announces SELinux support by setting spec.seLinuxMount: true in their\nCSIDriver instance. Other volumes are always re-labelled recursively.\n\nIf not specified, \"MountOption\" is used.\n\nThis field affects only Pods that have SELinux label set, either in PodSecurityContext or in SecurityContext of all containers.\n\nAll Pods that use the same volume should use the same seLinuxChangePolicy, otherwise some pods can get stuck in ContainerCreating state.\nNote that this field cannot be set when spec.os.name is windows.",
+    "Operator represents a key's relationship to the value.\nValid operators are Exists and Equal. Defaults to Equal.\nExists is equivalent to wildcard for value, so that a pod can\ntolerate all taints of a particular category.",
+    "Operator represents a key's relationship to the value.\nValid operators are Exists, Equal, Lt, and Gt. Defaults to Equal.\nExists is equivalent to wildcard for value, so that a pod can\ntolerate all taints of a particular category.\nLt and Gt perform numeric comparisons (requires feature gate TaintTolerationComparisonOperators).",
+    "Tailnet specifies the tailnet this Recorder should join. If blank, the default tailnet is used. When set, this\nname must match that of a valid Tailnet resource. This field is immutable and cannot be changed once set.",
+    "MatchLabelKeys is a set of pod label keys to select which pods will\nbe taken into consideration. The keys are used to lookup values from the\nincoming pod labels, those key-value labels are merged with `labelSelector` as `key in (value)`\nto select the group of existing pods which pods will be taken into consideration\nfor the incoming pod's pod (anti) affinity. Keys that don't exist in the incoming\npod labels will be ignored. The default value is empty.\nThe same key is forbidden to exist in both matchLabelKeys and labelSelector.\nAlso, matchLabelKeys cannot be set when labelSelector isn't set.\nThis is a beta field and requires enabling MatchLabelKeysInPodAffinity feature gate (enabled by default).",
+    "MatchLabelKeys is a set of pod label keys to select which pods will\nbe taken into consideration. The keys are used to lookup values from the\nincoming pod labels, those key-value labels are merged with `labelSelector` as `key in (value)`\nto select the group of existing pods which pods will be taken into consideration\nfor the incoming pod's pod (anti) affinity. Keys that don't exist in the incoming\npod labels will be ignored. The default value is empty.\nThe same key is forbidden to exist in both matchLabelKeys and labelSelector.\nAlso, matchLabelKeys cannot be set when labelSelector isn't set.",
+    "MismatchLabelKeys is a set of pod label keys to select which pods will\nbe taken into consideration. The keys are used to lookup values from the\nincoming pod labels, those key-value labels are merged with `labelSelector` as `key notin (value)`\nto select the group of existing pods which pods will be taken into consideration\nfor the incoming pod's pod (anti) affinity. Keys that don't exist in the incoming\npod labels will be ignored. The default value is empty.\nThe same key is forbidden to exist in both mismatchLabelKeys and labelSelector.\nAlso, mismatchLabelKeys cannot be set when labelSelector isn't set.\nThis is a beta field and requires enabling MatchLabelKeysInPodAffinity feature gate (enabled by default).",
+    "MismatchLabelKeys is a set of pod label keys to select which pods will\nbe taken into consideration. The keys are used to lookup values from the\nincoming pod labels, those key-value labels are merged with `labelSelector` as `key notin (value)`\nto select the group of existing pods which pods will be taken into consideration\nfor the incoming pod's pod (anti) affinity. Keys that don't exist in the incoming\npod labels will be ignored. The default value is empty.\nThe same key is forbidden to exist in both mismatchLabelKeys and labelSelector.\nAlso, mismatchLabelKeys cannot be set when labelSelector isn't set.",
+    "The scheduler will prefer to schedule pods to nodes that satisfy\nthe anti-affinity expressions specified by this field, but it may choose\na node that violates one or more of the expressions. The node that is\nmost preferred is the one with the greatest sum of weights, i.e.\nfor each node that meets all of the scheduling requirements (resource\nrequest, requiredDuringScheduling anti-affinity expressions, etc.),\ncompute a sum by iterating through the elements of this field and adding\n\"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the\nnode(s) with the highest sum are the most preferred.",
+    "The scheduler will prefer to schedule pods to nodes that satisfy\nthe anti-affinity expressions specified by this field, but it may choose\na node that violates one or more of the expressions. The node that is\nmost preferred is the one with the greatest sum of weights, i.e.\nfor each node that meets all of the scheduling requirements (resource\nrequest, requiredDuringScheduling anti-affinity expressions, etc.),\ncompute a sum by iterating through the elements of this field and subtracting\n\"weight\" from the sum if the node has pods which matches the corresponding podAffinityTerm; the\nnode(s) with the highest sum are the most preferred.",
+    "Claims lists the names of resources, defined in spec.resourceClaims,\nthat are used by this container.\n\nThis is an alpha field and requires enabling the\nDynamicResourceAllocation feature gate.\n\nThis field is immutable. It can only be set for containers.",
+    "Claims lists the names of resources, defined in spec.resourceClaims,\nthat are used by this container.\n\nThis field depends on the\nDynamicResourceAllocation feature gate.\n\nThis field is immutable. It can only be set for containers.",
+    "Replicas specifies how many instances of tsrecorder to run. Defaults to 1.",
+    "Config for the ServiceAccount to create for the Recorder's StatefulSet.\nBy default, the operator will create a ServiceAccount with the same\nname as the Recorder resource.\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#service-account",
+    "MatchLabelKeys is a set of pod label keys to select which pods will\nbe taken into consideration. The keys are used to lookup values from the\nincoming pod labels, those key-value labels are merged with `labelSelector` as `key in (value)`\nto select the group of existing pods which pods will be taken into consideration\nfor the incoming pod's pod (anti) affinity. Keys that don't exist in the incoming\npod labels will be ignored. The default value is empty.\nThe same key is forbidden to exist in both matchLabelKeys and labelSelector.\nAlso, matchLabelKeys cannot be set when labelSelector isn't set.\nThis is an alpha field and requires enabling MatchLabelKeysInPodAffinity feature gate.",
+    "MismatchLabelKeys is a set of pod label keys to select which pods will\nbe taken into consideration. The keys are used to lookup values from the\nincoming pod labels, those key-value labels are merged with `labelSelector` as `key notin (value)`\nto select the group of existing pods which pods will be taken into consideration\nfor the incoming pod's pod (anti) affinity. Keys that don't exist in the incoming\npod labels will be ignored. The default value is empty.\nThe same key is forbidden to exist in both mismatchLabelKeys and labelSelector.\nAlso, mismatchLabelKeys cannot be set when labelSelector isn't set.\nThis is an alpha field and requires enabling MatchLabelKeysInPodAffinity feature gate.",
+    "Request is the name chosen for a request in the referenced claim.\nIf empty, everything from the claim is made available, otherwise\nonly the result of this request.",
+    "procMount denotes the type of proc mount to use for the containers.\nThe default is DefaultProcMount which uses the container runtime defaults for\nreadonly paths and masked paths.\nThis requires the ProcMountType feature flag to be enabled.\nNote that this field cannot be set when spec.os.name is windows.",
+    "A list of groups applied to the first process run in each container, in addition\nto the container's primary GID, the fsGroup (if specified), and group memberships\ndefined in the container image for the uid of the container process. If unspecified,\nno additional groups are added to any container. Note that group memberships\ndefined in the container image for the uid of the container process are still effective,\neven if they are not included in this list.\nNote that this field cannot be set when spec.os.name is windows.",
+    "A list of groups applied to the first process run in each container, in\naddition to the container's primary GID and fsGroup (if specified).  If\nthe SupplementalGroupsPolicy feature is enabled, the\nsupplementalGroupsPolicy field determines whether these are in addition\nto or instead of any group memberships defined in the container image.\nIf unspecified, no additional groups are added, though group memberships\ndefined in the container image may still be used, depending on the\nsupplementalGroupsPolicy field.\nNote that this field cannot be set when spec.os.name is windows.",
+    "Defines how supplemental groups of the first container processes are calculated.\nValid values are \"Merge\" and \"Strict\". If not specified, \"Merge\" is used.\n(Alpha) Using the field requires the SupplementalGroupsPolicy feature gate to be enabled\nand the container runtime must implement support for this feature.\nNote that this field cannot be set when spec.os.name is windows.",
+    "Recorder defines a tsrecorder device for recording SSH sessions. By default,\nit will store recordings in a local ephemeral volume. If you want to persist\nrecordings, you can configure an S3-compatible API for storage.\n\nMore info: https://tailscale.com/kb/1484/kubernetes-operator-deploying-tsrecorder",
+    "List of tailnet devices associated with the Recorder statefulset.",
+    "List of tailnet devices associated with the Recorder StatefulSet."
+  ]
+}

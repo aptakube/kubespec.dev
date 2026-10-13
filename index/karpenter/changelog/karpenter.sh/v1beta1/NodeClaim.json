@@ -1,0 +1,323 @@
+{
+  "versions": {
+    "v1.0.2": {
+      "descriptionChanged": [
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "status.conditions.type": [
+          0,
+          1
+        ]
+      }
+    },
+    "v1.0.0": {
+      "descriptionChanged": [
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "status.conditions.type": [
+          1,
+          0
+        ]
+      }
+    },
+    "v0.37.3": {
+      "descriptionChanged": [
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "status.conditions.type": [
+          0,
+          1
+        ]
+      }
+    },
+    "v0.37.0": {
+      "required": [
+        "status.conditions.lastTransitionTime"
+      ],
+      "descriptionChanged": [
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason",
+        "status.conditions.status",
+        "status.conditions.type"
+      ],
+      "added": {
+        "status.conditions.observedGeneration": "integer"
+      },
+      "removed": {
+        "status.conditions.severity": "string"
+      },
+      "descriptions": {
+        "status.conditions.lastTransitionTime": [
+          2,
+          3
+        ],
+        "status.conditions.message": [
+          4,
+          5
+        ],
+        "status.conditions.observedGeneration": [
+          null,
+          6
+        ],
+        "status.conditions.reason": [
+          7,
+          8
+        ],
+        "status.conditions.status": [
+          9,
+          10
+        ],
+        "status.conditions.type": [
+          11,
+          0
+        ],
+        "status.conditions.severity": [
+          12,
+          null
+        ]
+      }
+    },
+    "v0.36.0": {
+      "typeChanged": {
+        "spec.kubelet.kubeReserved": [
+          "map[string]int | string",
+          "map[string]string"
+        ],
+        "spec.kubelet.systemReserved": [
+          "map[string]int | string",
+          "map[string]string"
+        ]
+      },
+      "descriptions": {
+        "spec.kubelet.kubeReserved": [
+          null,
+          13
+        ],
+        "spec.kubelet.systemReserved": [
+          null,
+          14
+        ]
+      }
+    },
+    "v0.35.0": {
+      "required": [
+        "spec"
+      ],
+      "added": {
+        "spec.requirements.minValues": "integer"
+      },
+      "descriptions": {
+        "spec": [
+          null,
+          15
+        ],
+        "spec.requirements.minValues": [
+          null,
+          16
+        ]
+      }
+    },
+    "v0.33.6": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.kubelet",
+        "spec.kubelet.clusterDNS",
+        "spec.kubelet.evictionMaxPodGracePeriod",
+        "spec.kubelet.imageGCHighThresholdPercent",
+        "spec.kubelet.imageGCLowThresholdPercent",
+        "spec.kubelet.maxPods",
+        "spec.kubelet.podsPerCore",
+        "spec.requirements.operator",
+        "spec.requirements.values",
+        "spec.startupTaints",
+        "spec.startupTaints.effect",
+        "spec.startupTaints.timeAdded",
+        "spec.taints.effect",
+        "spec.taints.timeAdded",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.severity"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          17,
+          18
+        ],
+        "kind": [
+          19,
+          20
+        ],
+        "spec.kubelet": [
+          21,
+          22
+        ],
+        "spec.kubelet.clusterDNS": [
+          23,
+          24
+        ],
+        "spec.kubelet.evictionMaxPodGracePeriod": [
+          25,
+          26
+        ],
+        "spec.kubelet.imageGCHighThresholdPercent": [
+          27,
+          28
+        ],
+        "spec.kubelet.imageGCLowThresholdPercent": [
+          29,
+          30
+        ],
+        "spec.kubelet.maxPods": [
+          31,
+          32
+        ],
+        "spec.kubelet.podsPerCore": [
+          33,
+          34
+        ],
+        "spec.requirements.operator": [
+          35,
+          36
+        ],
+        "spec.requirements.values": [
+          37,
+          38
+        ],
+        "spec.startupTaints": [
+          39,
+          40
+        ],
+        "spec.startupTaints.effect": [
+          41,
+          42
+        ],
+        "spec.startupTaints.timeAdded": [
+          43,
+          44
+        ],
+        "spec.taints.effect": [
+          41,
+          42
+        ],
+        "spec.taints.timeAdded": [
+          43,
+          44
+        ],
+        "status.conditions.lastTransitionTime": [
+          45,
+          2
+        ],
+        "status.conditions.severity": [
+          46,
+          12
+        ]
+      }
+    },
+    "v0.32.0": {
+      "added": {
+        "spec.nodeClassRef": "object",
+        "status.imageID": "string"
+      },
+      "removed": {
+        "spec.nodeClass": "object"
+      },
+      "descriptions": {
+        "spec.nodeClassRef": [
+          null,
+          47
+        ],
+        "status.imageID": [
+          null,
+          48
+        ],
+        "spec.nodeClass": [
+          49,
+          null
+        ]
+      }
+    },
+    "v0.31.0": {
+      "added": {
+        "spec.kubelet": "object"
+      },
+      "required": [
+        "spec.requirements"
+      ],
+      "removed": {
+        "spec.kubeletConfiguration": "object"
+      },
+      "descriptions": {
+        "spec.kubelet": [
+          null,
+          21
+        ],
+        "spec.requirements": [
+          null,
+          50
+        ],
+        "spec.kubeletConfiguration": [
+          51,
+          null
+        ]
+      }
+    }
+  },
+  "texts": [
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "LastTransitionTime is the last time the condition transitioned from one status to another.\nWe use VolatileTime in place of metav1.Time to exclude this from creating equality.Semantic\ndifferences (all other things held constant).",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "A human readable message indicating details about the transition.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "The reason for the condition's last transition.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "Status of the condition, one of True, False, Unknown.",
+    "status of the condition, one of True, False, Unknown.",
+    "Type of condition.",
+    "Severity with which to treat failures of this type of condition.\nWhen this is not specified, it defaults to Error.",
+    "KubeReserved contains resources reserved for Kubernetes system components.",
+    "SystemReserved contains resources reserved for OS system daemons and kernel memory.",
+    "NodeClaimSpec describes the desired state of the NodeClaim",
+    "This field is ALPHA and can be dropped or replaced at any time\nMinValues is the minimum number of unique values required to define the flexibility of the specific requirement.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kubelet defines args to be used when configuring kubelet on provisioned nodes. They are a subset of the upstream types, recognizing not all options may be supported. Wherever possible, the types and names should reflect the upstream kubelet types.",
+    "Kubelet defines args to be used when configuring kubelet on provisioned nodes.\nThey are a subset of the upstream types, recognizing not all options may be supported.\nWherever possible, the types and names should reflect the upstream kubelet types.",
+    "clusterDNS is a list of IP addresses for the cluster DNS server. Note that not all providers may use all addresses.",
+    "clusterDNS is a list of IP addresses for the cluster DNS server.\nNote that not all providers may use all addresses.",
+    "EvictionMaxPodGracePeriod is the maximum allowed grace period (in seconds) to use when terminating pods in response to soft eviction thresholds being met.",
+    "EvictionMaxPodGracePeriod is the maximum allowed grace period (in seconds) to use when terminating pods in\nresponse to soft eviction thresholds being met.",
+    "ImageGCHighThresholdPercent is the percent of disk usage after which image garbage collection is always run. The percent is calculated by dividing this field value by 100, so this field must be between 0 and 100, inclusive. When specified, the value must be greater than ImageGCLowThresholdPercent.",
+    "ImageGCHighThresholdPercent is the percent of disk usage after which image\ngarbage collection is always run. The percent is calculated by dividing this\nfield value by 100, so this field must be between 0 and 100, inclusive.\nWhen specified, the value must be greater than ImageGCLowThresholdPercent.",
+    "ImageGCLowThresholdPercent is the percent of disk usage before which image garbage collection is never run. Lowest disk usage to garbage collect to. The percent is calculated by dividing this field value by 100, so the field value must be between 0 and 100, inclusive. When specified, the value must be less than imageGCHighThresholdPercent",
+    "ImageGCLowThresholdPercent is the percent of disk usage before which image\ngarbage collection is never run. Lowest disk usage to garbage collect to.\nThe percent is calculated by dividing this field value by 100,\nso the field value must be between 0 and 100, inclusive.\nWhen specified, the value must be less than imageGCHighThresholdPercent",
+    "MaxPods is an override for the maximum number of pods that can run on a worker node instance.",
+    "MaxPods is an override for the maximum number of pods that can run on\na worker node instance.",
+    "PodsPerCore is an override for the number of pods that can run on a worker node instance based on the number of cpu cores. This value cannot exceed MaxPods, so, if MaxPods is a lower value, that value will be used.",
+    "PodsPerCore is an override for the number of pods that can run on a worker node\ninstance based on the number of cpu cores. This value cannot exceed MaxPods, so, if\nMaxPods is a lower value, that value will be used.",
+    "Represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.",
+    "Represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.",
+    "An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.",
+    "An array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. If the operator is Gt or Lt, the values\narray must have a single element, which will be interpreted as an integer.\nThis array is replaced during a strategic merge patch.",
+    "StartupTaints are taints that are applied to nodes upon startup which are expected to be removed automatically within a short period of time, typically by a DaemonSet that tolerates the taint. These are commonly used by daemonsets to allow initialization and enforce startup ordering.  StartupTaints are ignored for provisioning purposes in that pods are not required to tolerate a StartupTaint in order to have nodes provisioned for them.",
+    "StartupTaints are taints that are applied to nodes upon startup which are expected to be removed automatically\nwithin a short period of time, typically by a DaemonSet that tolerates the taint. These are commonly used by\ndaemonsets to allow initialization and enforce startup ordering.  StartupTaints are ignored for provisioning\npurposes in that pods are not required to tolerate a StartupTaint in order to have nodes provisioned for them.",
+    "Required. The effect of the taint on pods that do not tolerate the taint. Valid effects are NoSchedule, PreferNoSchedule and NoExecute.",
+    "Required. The effect of the taint on pods\nthat do not tolerate the taint.\nValid effects are NoSchedule, PreferNoSchedule and NoExecute.",
+    "TimeAdded represents the time at which the taint was added. It is only written for NoExecute taints.",
+    "TimeAdded represents the time at which the taint was added.\nIt is only written for NoExecute taints.",
+    "LastTransitionTime is the last time the condition transitioned from one status to another. We use VolatileTime in place of metav1.Time to exclude this from creating equality.Semantic differences (all other things held constant).",
+    "Severity with which to treat failures of this type of condition. When this is not specified, it defaults to Error.",
+    "NodeClassRef is a reference to an object that defines provider specific configuration",
+    "ImageID is an identifier for the image that runs on the node",
+    "NodeClass is a reference to an object that defines provider specific configuration",
+    "Requirements are layered with GetLabels and applied to every node.",
+    "KubeletConfiguration are options passed to the kubelet when provisioning nodes"
+  ]
+}

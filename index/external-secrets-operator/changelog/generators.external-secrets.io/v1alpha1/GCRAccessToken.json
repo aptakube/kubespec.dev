@@ -1,0 +1,237 @@
+{
+  "versions": {
+    "v2.10.0": {
+      "descriptionChanged": [
+        "spec.auth.workloadIdentity.serviceAccountRef.audiences",
+        "spec.auth.workloadIdentityFederation.serviceAccountRef.audiences"
+      ],
+      "descriptions": {
+        "spec.auth.workloadIdentity.serviceAccountRef.audiences": [
+          0,
+          1
+        ],
+        "spec.auth.workloadIdentityFederation.serviceAccountRef.audiences": [
+          0,
+          1
+        ]
+      }
+    },
+    "v2.5.0": {
+      "added": {
+        "spec.auth.workloadIdentityFederation.gcpServiceAccountEmail": "string"
+      },
+      "descriptions": {
+        "spec.auth.workloadIdentityFederation.gcpServiceAccountEmail": [
+          null,
+          2
+        ]
+      }
+    },
+    "v0.20.4": {
+      "descriptionChanged": [
+        "spec",
+        "spec.auth.secretRef",
+        "spec.auth.workloadIdentity",
+        "spec.auth.workloadIdentity.serviceAccountRef"
+      ],
+      "descriptions": {
+        "spec": [
+          null,
+          3
+        ],
+        "spec.auth.secretRef": [
+          null,
+          4
+        ],
+        "spec.auth.workloadIdentity": [
+          null,
+          5
+        ],
+        "spec.auth.workloadIdentity.serviceAccountRef": [
+          6,
+          7
+        ]
+      }
+    },
+    "v0.20.0": {
+      "added": {
+        "spec.auth.workloadIdentityFederation": "object"
+      },
+      "descriptions": {
+        "spec.auth.workloadIdentityFederation": [
+          null,
+          8
+        ]
+      }
+    },
+    "v0.11.0": {
+      "descriptionChanged": [
+        "spec.auth.secretRef.secretAccessKeySecretRef.key",
+        "spec.auth.secretRef.secretAccessKeySecretRef.namespace",
+        "spec.auth.workloadIdentity.serviceAccountRef.namespace"
+      ],
+      "descriptions": {
+        "spec.auth.secretRef.secretAccessKeySecretRef.key": [
+          9,
+          10
+        ],
+        "spec.auth.secretRef.secretAccessKeySecretRef.namespace": [
+          11,
+          12
+        ],
+        "spec.auth.workloadIdentity.serviceAccountRef.namespace": [
+          11,
+          13
+        ]
+      }
+    },
+    "v0.9.12": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.auth.secretRef.secretAccessKeySecretRef.key",
+        "spec.auth.secretRef.secretAccessKeySecretRef.namespace",
+        "spec.auth.workloadIdentity.serviceAccountRef.audiences",
+        "spec.auth.workloadIdentity.serviceAccountRef.namespace"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          14,
+          15
+        ],
+        "kind": [
+          16,
+          17
+        ],
+        "spec.auth.secretRef.secretAccessKeySecretRef.key": [
+          18,
+          9
+        ],
+        "spec.auth.secretRef.secretAccessKeySecretRef.namespace": [
+          19,
+          11
+        ],
+        "spec.auth.workloadIdentity.serviceAccountRef.audiences": [
+          20,
+          0
+        ],
+        "spec.auth.workloadIdentity.serviceAccountRef.namespace": [
+          19,
+          11
+        ],
+        "": [
+          21,
+          22
+        ]
+      }
+    },
+    "v0.9.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.auth.secretRef.secretAccessKeySecretRef.key",
+        "spec.auth.secretRef.secretAccessKeySecretRef.namespace",
+        "spec.auth.workloadIdentity.serviceAccountRef.audiences",
+        "spec.auth.workloadIdentity.serviceAccountRef.namespace"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          15,
+          14
+        ],
+        "kind": [
+          17,
+          16
+        ],
+        "spec.auth.secretRef.secretAccessKeySecretRef.key": [
+          9,
+          18
+        ],
+        "spec.auth.secretRef.secretAccessKeySecretRef.namespace": [
+          11,
+          19
+        ],
+        "spec.auth.workloadIdentity.serviceAccountRef.audiences": [
+          0,
+          20
+        ],
+        "spec.auth.workloadIdentity.serviceAccountRef.namespace": [
+          11,
+          19
+        ],
+        "": [
+          22,
+          21
+        ]
+      }
+    },
+    "v0.8.12": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.auth.secretRef.secretAccessKeySecretRef.key",
+        "spec.auth.secretRef.secretAccessKeySecretRef.namespace",
+        "spec.auth.workloadIdentity.serviceAccountRef.audiences",
+        "spec.auth.workloadIdentity.serviceAccountRef.namespace"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          14,
+          15
+        ],
+        "kind": [
+          16,
+          17
+        ],
+        "spec.auth.secretRef.secretAccessKeySecretRef.key": [
+          18,
+          9
+        ],
+        "spec.auth.secretRef.secretAccessKeySecretRef.namespace": [
+          19,
+          11
+        ],
+        "spec.auth.workloadIdentity.serviceAccountRef.audiences": [
+          20,
+          0
+        ],
+        "spec.auth.workloadIdentity.serviceAccountRef.namespace": [
+          19,
+          11
+        ],
+        "": [
+          21,
+          22
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Audience specifies the `aud` claim for the service account token\nIf the service account uses a well-known annotation for e.g. IRSA or GCP Workload Identity\nthen this audiences will be appended to the list",
+    "Audience specifies the `aud` claim for the service account token\nSome providers automatically extend the audience field based on well-known annotations for workload\nidentity (e.g. IRSA or GCP Workload Identity)",
+    "GCPServiceAccountEmail is the email of the Google Cloud service account to impersonate\nafter Workload Identity Federation. Use this to grant access through the service account's\nIAM bindings (for example roles/secretmanager.secretAccessor). When set, it overrides\nservice_account_impersonation_url in the external account JSON from credConfig;\nwhen serviceAccountRef is set, it also overrides the \"iam.gke.io/gcp-service-account\" annotation\non that ServiceAccount.",
+    "GCRAccessTokenSpec defines the desired state to generate a Google Container Registry access token.",
+    "GCPSMAuthSecretRef defines the reference to a secret containing Google Cloud Platform credentials.",
+    "GCPWorkloadIdentity defines the configuration for using GCP Workload Identity authentication.",
+    "A reference to a ServiceAccount resource.",
+    "ServiceAccountSelector is a reference to a ServiceAccount resource.",
+    "GCPWorkloadIdentityFederation holds the configurations required for generating federated access tokens.",
+    "The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be\ndefaulted, in others it may be required.",
+    "A key in the referenced Secret.\nSome instances of this field may be defaulted, in others it may be required.",
+    "Namespace of the resource being referred to. Ignored if referent is not cluster-scoped. cluster-scoped defaults\nto the namespace of the referent.",
+    "The namespace of the Secret resource being referred to.\nIgnored if referent is not cluster-scoped, otherwise defaults to the namespace of the referent.",
+    "Namespace of the resource being referred to.\nIgnored if referent is not cluster-scoped, otherwise defaults to the namespace of the referent.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required.",
+    "Namespace of the resource being referred to. Ignored if referent is not cluster-scoped. cluster-scoped defaults to the namespace of the referent.",
+    "Audience specifies the `aud` claim for the service account token If the service account uses a well-known annotation for e.g. IRSA or GCP Workload Identity then this audiences will be appended to the list",
+    "GCRAccessToken generates an GCP access token that can be used to authenticate with GCR.",
+    "GCRAccessToken generates an GCP access token\nthat can be used to authenticate with GCR."
+  ]
+}

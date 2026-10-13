@@ -1,0 +1,667 @@
+{
+  "versions": {
+    "v1.13.0": {
+      "added": {
+        "spec.taints": "object[]"
+      },
+      "descriptions": {
+        "spec.taints": [
+          null,
+          0
+        ]
+      }
+    },
+    "v1.11.0": {
+      "descriptionChanged": [
+        "status.failureMessage",
+        "status.failureReason"
+      ],
+      "added": {
+        "status.nodeInfo.swap": "object"
+      },
+      "descriptions": {
+        "status.failureMessage": [
+          1,
+          2
+        ],
+        "status.failureReason": [
+          3,
+          4
+        ],
+        "status.nodeInfo.swap": [
+          null,
+          5
+        ]
+      }
+    },
+    "v1.10.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.readinessGates.conditionType",
+        "status",
+        "status.addresses.address",
+        "status.addresses.type",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason",
+        "status.phase"
+      ],
+      "added": {
+        "spec.readinessGates.polarity": "string"
+      },
+      "descriptions": {
+        "spec": [
+          6,
+          7
+        ],
+        "spec.readinessGates.conditionType": [
+          8,
+          9
+        ],
+        "spec.readinessGates.polarity": [
+          null,
+          10
+        ],
+        "status": [
+          11,
+          12
+        ],
+        "status.addresses.address": [
+          13,
+          14
+        ],
+        "status.addresses.type": [
+          15,
+          16
+        ],
+        "status.conditions.lastTransitionTime": [
+          17,
+          18
+        ],
+        "status.conditions.message": [
+          19,
+          20
+        ],
+        "status.conditions.reason": [
+          21,
+          22
+        ],
+        "status.phase": [
+          23,
+          24
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.bootstrap",
+        "spec.bootstrap.configRef",
+        "spec.bootstrap.configRef.fieldPath",
+        "spec.bootstrap.dataSecretName",
+        "spec.clusterName",
+        "spec.failureDomain",
+        "spec.infrastructureRef",
+        "spec.infrastructureRef.fieldPath",
+        "spec.nodeDeletionTimeout",
+        "spec.nodeDrainTimeout",
+        "spec.nodeVolumeDetachTimeout",
+        "spec.providerID",
+        "spec.version",
+        "status.addresses",
+        "status.bootstrapReady",
+        "status.certificatesExpiryDate",
+        "status.conditions",
+        "status.conditions.reason",
+        "status.conditions.severity",
+        "status.conditions.status",
+        "status.conditions.type",
+        "status.failureMessage",
+        "status.failureReason",
+        "status.infrastructureReady",
+        "status.lastUpdated",
+        "status.nodeInfo",
+        "status.nodeInfo.kubeProxyVersion",
+        "status.nodeRef",
+        "status.nodeRef.fieldPath",
+        "status.observedGeneration",
+        "status.phase"
+      ],
+      "added": {
+        "spec.readinessGates": "object[]",
+        "status.deletion": "object",
+        "status.v1beta2": "object"
+      },
+      "descriptions": {
+        "spec.bootstrap": [
+          25,
+          26
+        ],
+        "spec.bootstrap.configRef": [
+          27,
+          28
+        ],
+        "spec.bootstrap.configRef.fieldPath": [
+          29,
+          30
+        ],
+        "spec.bootstrap.dataSecretName": [
+          31,
+          32
+        ],
+        "spec.clusterName": [
+          33,
+          34
+        ],
+        "spec.failureDomain": [
+          35,
+          36
+        ],
+        "spec.infrastructureRef": [
+          37,
+          38
+        ],
+        "spec.infrastructureRef.fieldPath": [
+          29,
+          30
+        ],
+        "spec.nodeDeletionTimeout": [
+          39,
+          40
+        ],
+        "spec.nodeDrainTimeout": [
+          41,
+          42
+        ],
+        "spec.nodeVolumeDetachTimeout": [
+          43,
+          44
+        ],
+        "spec.providerID": [
+          45,
+          46
+        ],
+        "spec.readinessGates": [
+          null,
+          47
+        ],
+        "spec.version": [
+          48,
+          49
+        ],
+        "status.addresses": [
+          50,
+          51
+        ],
+        "status.bootstrapReady": [
+          52,
+          53
+        ],
+        "status.certificatesExpiryDate": [
+          54,
+          55
+        ],
+        "status.conditions": [
+          56,
+          57
+        ],
+        "status.conditions.reason": [
+          58,
+          21
+        ],
+        "status.conditions.severity": [
+          59,
+          60
+        ],
+        "status.conditions.status": [
+          61,
+          62
+        ],
+        "status.conditions.type": [
+          63,
+          64
+        ],
+        "status.deletion": [
+          null,
+          65
+        ],
+        "status.failureMessage": [
+          66,
+          1
+        ],
+        "status.failureReason": [
+          67,
+          3
+        ],
+        "status.infrastructureReady": [
+          68,
+          69
+        ],
+        "status.lastUpdated": [
+          70,
+          71
+        ],
+        "status.nodeInfo": [
+          72,
+          73
+        ],
+        "status.nodeInfo.kubeProxyVersion": [
+          74,
+          75
+        ],
+        "status.nodeRef": [
+          76,
+          77
+        ],
+        "status.nodeRef.fieldPath": [
+          29,
+          30
+        ],
+        "status.observedGeneration": [
+          78,
+          79
+        ],
+        "status.phase": [
+          80,
+          23
+        ],
+        "status.v1beta2": [
+          null,
+          81
+        ]
+      }
+    },
+    "v1.7.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.bootstrap",
+        "spec.bootstrap.configRef",
+        "spec.bootstrap.configRef.fieldPath",
+        "spec.bootstrap.configRef.kind",
+        "spec.bootstrap.configRef.name",
+        "spec.bootstrap.configRef.namespace",
+        "spec.bootstrap.configRef.resourceVersion",
+        "spec.bootstrap.configRef.uid",
+        "spec.bootstrap.dataSecretName",
+        "spec.failureDomain",
+        "spec.infrastructureRef",
+        "spec.infrastructureRef.fieldPath",
+        "spec.infrastructureRef.kind",
+        "spec.infrastructureRef.name",
+        "spec.infrastructureRef.namespace",
+        "spec.infrastructureRef.resourceVersion",
+        "spec.infrastructureRef.uid",
+        "spec.nodeDeletionTimeout",
+        "spec.nodeDrainTimeout",
+        "spec.nodeVolumeDetachTimeout",
+        "spec.providerID",
+        "spec.version",
+        "status.addresses",
+        "status.certificatesExpiryDate",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason",
+        "status.conditions.severity",
+        "status.conditions.type",
+        "status.failureMessage",
+        "status.failureReason",
+        "status.nodeInfo",
+        "status.nodeInfo.machineID",
+        "status.nodeInfo.systemUUID",
+        "status.nodeRef.fieldPath",
+        "status.nodeRef.kind",
+        "status.nodeRef.name",
+        "status.nodeRef.namespace",
+        "status.nodeRef.resourceVersion",
+        "status.nodeRef.uid",
+        "status.phase"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          82,
+          83
+        ],
+        "kind": [
+          84,
+          85
+        ],
+        "spec.bootstrap": [
+          86,
+          25
+        ],
+        "spec.bootstrap.configRef": [
+          87,
+          27
+        ],
+        "spec.bootstrap.configRef.fieldPath": [
+          88,
+          29
+        ],
+        "spec.bootstrap.configRef.kind": [
+          89,
+          90
+        ],
+        "spec.bootstrap.configRef.name": [
+          91,
+          92
+        ],
+        "spec.bootstrap.configRef.namespace": [
+          93,
+          94
+        ],
+        "spec.bootstrap.configRef.resourceVersion": [
+          95,
+          96
+        ],
+        "spec.bootstrap.configRef.uid": [
+          97,
+          98
+        ],
+        "spec.bootstrap.dataSecretName": [
+          99,
+          31
+        ],
+        "spec.failureDomain": [
+          100,
+          35
+        ],
+        "spec.infrastructureRef": [
+          101,
+          37
+        ],
+        "spec.infrastructureRef.fieldPath": [
+          88,
+          29
+        ],
+        "spec.infrastructureRef.kind": [
+          89,
+          90
+        ],
+        "spec.infrastructureRef.name": [
+          91,
+          92
+        ],
+        "spec.infrastructureRef.namespace": [
+          93,
+          94
+        ],
+        "spec.infrastructureRef.resourceVersion": [
+          95,
+          96
+        ],
+        "spec.infrastructureRef.uid": [
+          97,
+          98
+        ],
+        "spec.nodeDeletionTimeout": [
+          102,
+          39
+        ],
+        "spec.nodeDrainTimeout": [
+          103,
+          41
+        ],
+        "spec.nodeVolumeDetachTimeout": [
+          104,
+          43
+        ],
+        "spec.providerID": [
+          105,
+          45
+        ],
+        "spec.version": [
+          106,
+          48
+        ],
+        "status.addresses": [
+          107,
+          50
+        ],
+        "status.certificatesExpiryDate": [
+          108,
+          54
+        ],
+        "status.conditions.lastTransitionTime": [
+          109,
+          17
+        ],
+        "status.conditions.message": [
+          110,
+          19
+        ],
+        "status.conditions.reason": [
+          111,
+          58
+        ],
+        "status.conditions.severity": [
+          112,
+          59
+        ],
+        "status.conditions.type": [
+          113,
+          63
+        ],
+        "status.failureMessage": [
+          114,
+          66
+        ],
+        "status.failureReason": [
+          115,
+          67
+        ],
+        "status.nodeInfo": [
+          116,
+          72
+        ],
+        "status.nodeInfo.machineID": [
+          117,
+          118
+        ],
+        "status.nodeInfo.systemUUID": [
+          119,
+          120
+        ],
+        "status.nodeRef.fieldPath": [
+          88,
+          29
+        ],
+        "status.nodeRef.kind": [
+          89,
+          90
+        ],
+        "status.nodeRef.name": [
+          91,
+          92
+        ],
+        "status.nodeRef.namespace": [
+          93,
+          94
+        ],
+        "status.nodeRef.resourceVersion": [
+          95,
+          96
+        ],
+        "status.nodeRef.uid": [
+          97,
+          98
+        ],
+        "status.phase": [
+          121,
+          80
+        ]
+      }
+    },
+    "v1.4.0": {
+      "descriptionChanged": [
+        "status.addresses.type"
+      ],
+      "descriptions": {
+        "status.addresses.type": [
+          122,
+          15
+        ]
+      }
+    },
+    "v1.3.0": {
+      "added": {
+        "spec.nodeVolumeDetachTimeout": "string",
+        "status.certificatesExpiryDate": "string"
+      },
+      "descriptions": {
+        "spec.nodeVolumeDetachTimeout": [
+          null,
+          104
+        ],
+        "status.certificatesExpiryDate": [
+          null,
+          108
+        ]
+      }
+    },
+    "v1.2.0": {
+      "added": {
+        "spec.nodeDeletionTimeout": "string"
+      },
+      "descriptionChanged": [
+        "status.nodeInfo.containerRuntimeVersion"
+      ],
+      "descriptions": {
+        "spec.nodeDeletionTimeout": [
+          null,
+          102
+        ],
+        "status.nodeInfo.containerRuntimeVersion": [
+          123,
+          124
+        ]
+      }
+    }
+  },
+  "texts": [
+    "taints are the node taints that Cluster API will manage.\nThis list is not necessarily complete: other Kubernetes components may add or remove other taints from nodes,\ne.g. the node controller might add the node.kubernetes.io/not-ready taint.\nOnly those taints defined in this list will be added or removed by core Cluster API controllers.\n\nThere can be at most 64 taints.\nA pod would have to tolerate all existing taints to run on the corresponding node.\n\nNOTE: This list is implemented as a \"map\" type, meaning that individual elements can be managed by different owners.",
+    "failureMessage will be set in the event that there is a terminal problem\nreconciling the Machine and will contain a more verbose string suitable\nfor logging and human consumption.\n\nThis field should not be set for transitive errors that a controller\nfaces that are expected to be fixed automatically over\ntime (like service outages), but instead indicate that something is\nfundamentally wrong with the Machine's spec or the configuration of\nthe controller, and that manual intervention is required. Examples\nof terminal errors would be invalid combinations of settings in the\nspec, values that are unsupported by the controller, or the\nresponsible controller itself being critically misconfigured.\n\nAny transient errors that occur during the reconciliation of Machines\ncan be added as events to the Machine object and/or logged in the\ncontroller's output.\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md for more details.",
+    "failureMessage will be set in the event that there is a terminal problem\nreconciling the Machine and will contain a more verbose string suitable\nfor logging and human consumption.\n\nThis field should not be set for transitive errors that a controller\nfaces that are expected to be fixed automatically over\ntime (like service outages), but instead indicate that something is\nfundamentally wrong with the Machine's spec or the configuration of\nthe controller, and that manual intervention is required. Examples\nof terminal errors would be invalid combinations of settings in the\nspec, values that are unsupported by the controller, or the\nresponsible controller itself being critically misconfigured.\n\nAny transient errors that occur during the reconciliation of Machines\ncan be added as events to the Machine object and/or logged in the\ncontroller's output.\n\nDeprecated: This field is deprecated and is going to be removed when support for v1beta1 will be dropped. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md for more details.",
+    "failureReason will be set in the event that there is a terminal problem\nreconciling the Machine and will contain a succinct value suitable\nfor machine interpretation.\n\nThis field should not be set for transitive errors that a controller\nfaces that are expected to be fixed automatically over\ntime (like service outages), but instead indicate that something is\nfundamentally wrong with the Machine's spec or the configuration of\nthe controller, and that manual intervention is required. Examples\nof terminal errors would be invalid combinations of settings in the\nspec, values that are unsupported by the controller, or the\nresponsible controller itself being critically misconfigured.\n\nAny transient errors that occur during the reconciliation of Machines\ncan be added as events to the Machine object and/or logged in the\ncontroller's output.\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md for more details.",
+    "failureReason will be set in the event that there is a terminal problem\nreconciling the Machine and will contain a succinct value suitable\nfor machine interpretation.\n\nThis field should not be set for transitive errors that a controller\nfaces that are expected to be fixed automatically over\ntime (like service outages), but instead indicate that something is\nfundamentally wrong with the Machine's spec or the configuration of\nthe controller, and that manual intervention is required. Examples\nof terminal errors would be invalid combinations of settings in the\nspec, values that are unsupported by the controller, or the\nresponsible controller itself being critically misconfigured.\n\nAny transient errors that occur during the reconciliation of Machines\ncan be added as events to the Machine object and/or logged in the\ncontroller's output.\n\nDeprecated: This field is deprecated and is going to be removed when support for v1beta1 will be dropped. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md for more details.",
+    "Swap Info reported by the node.",
+    "MachineSpec defines the desired state of Machine.",
+    "spec is the desired state of Machine.",
+    "conditionType refers to a positive polarity condition (status true means good) with matching type in the Machine's condition list.\nIf the conditions doesn't exist, it will be treated as unknown.\nNote: Both Cluster API conditions or conditions added by 3rd party controllers can be used as readiness gates.",
+    "conditionType refers to a condition with matching type in the Machine's condition list.\nIf the conditions doesn't exist, it will be treated as unknown.\nNote: Both Cluster API conditions or conditions added by 3rd party controllers can be used as readiness gates.",
+    "polarity of the conditionType specified in this readinessGate.\nValid values are Positive, Negative and omitted.\nWhen omitted, the default behaviour will be Positive.\nA positive polarity means that the condition should report a true status under normal conditions.\nA negative polarity means that the condition should report a false status under normal conditions.",
+    "MachineStatus defines the observed state of Machine.",
+    "status is the observed state of Machine.",
+    "The machine address.",
+    "address is the machine address.",
+    "Machine address type, one of Hostname, ExternalIP, InternalIP, ExternalDNS or InternalDNS.",
+    "type is the machine address type, one of Hostname, ExternalIP, InternalIP, ExternalDNS or InternalDNS.",
+    "Last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed. If that is not known, then using the time when\nthe API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed. If that is not known, then using the time when\nthe API field changed is acceptable.",
+    "A human readable message indicating details about the transition.\nThis field may be empty.",
+    "message is a human readable message indicating details about the transition.\nThis field may be empty.",
+    "The reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may be empty.",
+    "reason is the reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may be empty.",
+    "phase represents the current phase of machine actuation.\nE.g. Pending, Running, Terminating, Failed etc.",
+    "phase represents the current phase of machine actuation.",
+    "Bootstrap is a reference to a local struct which encapsulates\nfields to configure the Machine’s bootstrapping mechanism.",
+    "bootstrap is a reference to a local struct which encapsulates\nfields to configure the Machine’s bootstrapping mechanism.",
+    "ConfigRef is a reference to a bootstrap provider-specific resource\nthat holds configuration details. The reference is optional to\nallow users/operators to specify Bootstrap.DataSecretName without\nthe need of a controller.",
+    "configRef is a reference to a bootstrap provider-specific resource\nthat holds configuration details. The reference is optional to\nallow users/operators to specify Bootstrap.DataSecretName without\nthe need of a controller.",
+    "If referring to a piece of an object instead of an entire object, this string\nshould contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2].\nFor example, if the object reference is to a container within a pod, this would take on a value like:\n\"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered\nthe event) or if no container name is specified \"spec.containers[2]\" (container with\nindex 2 in this pod). This syntax is chosen only to have some well-defined way of\nreferencing a part of an object.\nTODO: this design is not final and this field is subject to change in the future.",
+    "If referring to a piece of an object instead of an entire object, this string\nshould contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2].\nFor example, if the object reference is to a container within a pod, this would take on a value like:\n\"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered\nthe event) or if no container name is specified \"spec.containers[2]\" (container with\nindex 2 in this pod). This syntax is chosen only to have some well-defined way of\nreferencing a part of an object.",
+    "DataSecretName is the name of the secret that stores the bootstrap data script.\nIf nil, the Machine should remain in the Pending state.",
+    "dataSecretName is the name of the secret that stores the bootstrap data script.\nIf nil, the Machine should remain in the Pending state.",
+    "ClusterName is the name of the Cluster this object belongs to.",
+    "clusterName is the name of the Cluster this object belongs to.",
+    "FailureDomain is the failure domain the machine will be created in.\nMust match a key in the FailureDomains map stored on the cluster object.",
+    "failureDomain is the failure domain the machine will be created in.\nMust match a key in the FailureDomains map stored on the cluster object.",
+    "InfrastructureRef is a required reference to a custom resource\noffered by an infrastructure provider.",
+    "infrastructureRef is a required reference to a custom resource\noffered by an infrastructure provider.",
+    "NodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine\nhosts after the Machine is marked for deletion. A duration of 0 will retry deletion indefinitely.\nDefaults to 10 seconds.",
+    "nodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine\nhosts after the Machine is marked for deletion. A duration of 0 will retry deletion indefinitely.\nDefaults to 10 seconds.",
+    "NodeDrainTimeout is the total amount of time that the controller will spend on draining a node.\nThe default value is 0, meaning that the node can be drained without any time limitations.\nNOTE: NodeDrainTimeout is different from `kubectl drain --timeout`",
+    "nodeDrainTimeout is the total amount of time that the controller will spend on draining a node.\nThe default value is 0, meaning that the node can be drained without any time limitations.\nNOTE: NodeDrainTimeout is different from `kubectl drain --timeout`",
+    "NodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes\nto be detached. The default value is 0, meaning that the volumes can be detached without any time limitations.",
+    "nodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes\nto be detached. The default value is 0, meaning that the volumes can be detached without any time limitations.",
+    "ProviderID is the identification ID of the machine provided by the provider.\nThis field must match the provider ID as seen on the node object corresponding to this machine.\nThis field is required by higher level consumers of cluster-api. Example use case is cluster autoscaler\nwith cluster-api as provider. Clean-up logic in the autoscaler compares machines to nodes to find out\nmachines at provider which could not get registered as Kubernetes nodes. With cluster-api as a\ngeneric out-of-tree provider for autoscaler, this field is required by autoscaler to be\nable to have a provider view of the list of machines. Another list of nodes is queried from the k8s apiserver\nand then a comparison is done to find out unregistered machines and are marked for delete.\nThis field will be set by the actuators and consumed by higher level entities like autoscaler that will\nbe interfacing with cluster-api as generic provider.",
+    "providerID is the identification ID of the machine provided by the provider.\nThis field must match the provider ID as seen on the node object corresponding to this machine.\nThis field is required by higher level consumers of cluster-api. Example use case is cluster autoscaler\nwith cluster-api as provider. Clean-up logic in the autoscaler compares machines to nodes to find out\nmachines at provider which could not get registered as Kubernetes nodes. With cluster-api as a\ngeneric out-of-tree provider for autoscaler, this field is required by autoscaler to be\nable to have a provider view of the list of machines. Another list of nodes is queried from the k8s apiserver\nand then a comparison is done to find out unregistered machines and are marked for delete.\nThis field will be set by the actuators and consumed by higher level entities like autoscaler that will\nbe interfacing with cluster-api as generic provider.",
+    "readinessGates specifies additional conditions to include when evaluating Machine Ready condition.\n\nThis field can be used e.g. by Cluster API control plane providers to extend the semantic of the\nReady condition for the Machine they control, like the kubeadm control provider adding ReadinessGates\nfor the APIServerPodHealthy, SchedulerPodHealthy conditions, etc.\n\nAnother example are external controllers, e.g. responsible to install special software/hardware on the Machines;\nthey can include the status of those components with a new condition and add this condition to ReadinessGates.\n\nNOTE: This field is considered only for computing v1beta2 conditions.\nNOTE: In case readinessGates conditions start with the APIServer, ControllerManager, Scheduler prefix, and all those\nreadiness gates condition are reporting the same message, when computing the Machine's Ready condition those\nreadinessGates will be replaced by a single entry reporting \"Control plane components: \" + message.\nThis helps to improve readability of conditions bubbling up to the Machine's owner resource / to the Cluster).",
+    "Version defines the desired Kubernetes version.\nThis field is meant to be optionally used by bootstrap providers.",
+    "version defines the desired Kubernetes version.\nThis field is meant to be optionally used by bootstrap providers.",
+    "Addresses is a list of addresses assigned to the machine.\nThis field is copied from the infrastructure provider reference.",
+    "addresses is a list of addresses assigned to the machine.\nThis field is copied from the infrastructure provider reference.",
+    "BootstrapReady is the state of the bootstrap provider.",
+    "bootstrapReady is the state of the bootstrap provider.",
+    "CertificatesExpiryDate is the expiry date of the machine certificates.\nThis value is only set for control plane machines.",
+    "certificatesExpiryDate is the expiry date of the machine certificates.\nThis value is only set for control plane machines.",
+    "Conditions defines current service state of the Machine.",
+    "conditions defines current service state of the Machine.",
+    "The reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may not be empty.",
+    "Severity provides an explicit classification of Reason code, so the users or machines can immediately\nunderstand the current situation and act accordingly.\nThe Severity field MUST be set only when Status=False.",
+    "severity provides an explicit classification of Reason code, so the users or machines can immediately\nunderstand the current situation and act accordingly.\nThe Severity field MUST be set only when Status=False.",
+    "Status of the condition, one of True, False, Unknown.",
+    "status of the condition, one of True, False, Unknown.",
+    "Type of condition in CamelCase or in foo.example.com/CamelCase.\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions\ncan be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions\ncan be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "deletion contains information relating to removal of the Machine.\nOnly present when the Machine has a deletionTimestamp and drain or wait for volume detach started.",
+    "FailureMessage will be set in the event that there is a terminal problem\nreconciling the Machine and will contain a more verbose string suitable\nfor logging and human consumption.\n\n\nThis field should not be set for transitive errors that a controller\nfaces that are expected to be fixed automatically over\ntime (like service outages), but instead indicate that something is\nfundamentally wrong with the Machine's spec or the configuration of\nthe controller, and that manual intervention is required. Examples\nof terminal errors would be invalid combinations of settings in the\nspec, values that are unsupported by the controller, or the\nresponsible controller itself being critically misconfigured.\n\n\nAny transient errors that occur during the reconciliation of Machines\ncan be added as events to the Machine object and/or logged in the\ncontroller's output.",
+    "FailureReason will be set in the event that there is a terminal problem\nreconciling the Machine and will contain a succinct value suitable\nfor machine interpretation.\n\n\nThis field should not be set for transitive errors that a controller\nfaces that are expected to be fixed automatically over\ntime (like service outages), but instead indicate that something is\nfundamentally wrong with the Machine's spec or the configuration of\nthe controller, and that manual intervention is required. Examples\nof terminal errors would be invalid combinations of settings in the\nspec, values that are unsupported by the controller, or the\nresponsible controller itself being critically misconfigured.\n\n\nAny transient errors that occur during the reconciliation of Machines\ncan be added as events to the Machine object and/or logged in the\ncontroller's output.",
+    "InfrastructureReady is the state of the infrastructure provider.",
+    "infrastructureReady is the state of the infrastructure provider.",
+    "LastUpdated identifies when the phase of the Machine last transitioned.",
+    "lastUpdated identifies when the phase of the Machine last transitioned.",
+    "NodeInfo is a set of ids/uuids to uniquely identify the node.\nMore info: https://kubernetes.io/docs/concepts/nodes/node/#info",
+    "nodeInfo is a set of ids/uuids to uniquely identify the node.\nMore info: https://kubernetes.io/docs/concepts/nodes/node/#info",
+    "KubeProxy Version reported by the node.",
+    "Deprecated: KubeProxy Version reported by the node.",
+    "NodeRef will point to the corresponding Node if it exists.",
+    "nodeRef will point to the corresponding Node if it exists.",
+    "ObservedGeneration is the latest generation observed by the controller.",
+    "observedGeneration is the latest generation observed by the controller.",
+    "Phase represents the current phase of machine actuation.\nE.g. Pending, Running, Terminating, Failed etc.",
+    "v1beta2 groups all the fields that will be added or modified in Machine's status with the V1Beta2 version.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Bootstrap is a reference to a local struct which encapsulates fields to configure the Machine’s bootstrapping mechanism.",
+    "ConfigRef is a reference to a bootstrap provider-specific resource that holds configuration details. The reference is optional to allow users/operators to specify Bootstrap.DataSecretName without the need of a controller.",
+    "If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future.",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind of the referent.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Name of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
+    "Namespace of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
+    "Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "Specific resourceVersion to which this reference is made, if any.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids",
+    "UID of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids",
+    "DataSecretName is the name of the secret that stores the bootstrap data script. If nil, the Machine should remain in the Pending state.",
+    "FailureDomain is the failure domain the machine will be created in. Must match a key in the FailureDomains map stored on the cluster object.",
+    "InfrastructureRef is a required reference to a custom resource offered by an infrastructure provider.",
+    "NodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine hosts after the Machine is marked for deletion. A duration of 0 will retry deletion indefinitely. Defaults to 10 seconds.",
+    "NodeDrainTimeout is the total amount of time that the controller will spend on draining a node. The default value is 0, meaning that the node can be drained without any time limitations. NOTE: NodeDrainTimeout is different from `kubectl drain --timeout`",
+    "NodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes to be detached. The default value is 0, meaning that the volumes can be detached without any time limitations.",
+    "ProviderID is the identification ID of the machine provided by the provider. This field must match the provider ID as seen on the node object corresponding to this machine. This field is required by higher level consumers of cluster-api. Example use case is cluster autoscaler with cluster-api as provider. Clean-up logic in the autoscaler compares machines to nodes to find out machines at provider which could not get registered as Kubernetes nodes. With cluster-api as a generic out-of-tree provider for autoscaler, this field is required by autoscaler to be able to have a provider view of the list of machines. Another list of nodes is queried from the k8s apiserver and then a comparison is done to find out unregistered machines and are marked for delete. This field will be set by the actuators and consumed by higher level entities like autoscaler that will be interfacing with cluster-api as generic provider.",
+    "Version defines the desired Kubernetes version. This field is meant to be optionally used by bootstrap providers.",
+    "Addresses is a list of addresses assigned to the machine. This field is copied from the infrastructure provider reference.",
+    "CertificatesExpiryDate is the expiry date of the machine certificates. This value is only set for control plane machines.",
+    "Last time the condition transitioned from one status to another. This should be when the underlying condition changed. If that is not known, then using the time when the API field changed is acceptable.",
+    "A human readable message indicating details about the transition. This field may be empty.",
+    "The reason for the condition's last transition in CamelCase. The specific API may choose whether or not this field is considered a guaranteed API. This field may not be empty.",
+    "Severity provides an explicit classification of Reason code, so the users or machines can immediately understand the current situation and act accordingly. The Severity field MUST be set only when Status=False.",
+    "Type of condition in CamelCase or in foo.example.com/CamelCase. Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "FailureMessage will be set in the event that there is a terminal problem reconciling the Machine and will contain a more verbose string suitable for logging and human consumption. \n This field should not be set for transitive errors that a controller faces that are expected to be fixed automatically over time (like service outages), but instead indicate that something is fundamentally wrong with the Machine's spec or the configuration of the controller, and that manual intervention is required. Examples of terminal errors would be invalid combinations of settings in the spec, values that are unsupported by the controller, or the responsible controller itself being critically misconfigured. \n Any transient errors that occur during the reconciliation of Machines can be added as events to the Machine object and/or logged in the controller's output.",
+    "FailureReason will be set in the event that there is a terminal problem reconciling the Machine and will contain a succinct value suitable for machine interpretation. \n This field should not be set for transitive errors that a controller faces that are expected to be fixed automatically over time (like service outages), but instead indicate that something is fundamentally wrong with the Machine's spec or the configuration of the controller, and that manual intervention is required. Examples of terminal errors would be invalid combinations of settings in the spec, values that are unsupported by the controller, or the responsible controller itself being critically misconfigured. \n Any transient errors that occur during the reconciliation of Machines can be added as events to the Machine object and/or logged in the controller's output.",
+    "NodeInfo is a set of ids/uuids to uniquely identify the node. More info: https://kubernetes.io/docs/concepts/nodes/node/#info",
+    "MachineID reported by the node. For unique machine identification in the cluster this field is preferred. Learn more from man(5) machine-id: http://man7.org/linux/man-pages/man5/machine-id.5.html",
+    "MachineID reported by the node. For unique machine identification\nin the cluster this field is preferred. Learn more from man(5)\nmachine-id: http://man7.org/linux/man-pages/man5/machine-id.5.html",
+    "SystemUUID reported by the node. For unique machine identification MachineID is preferred. This field is specific to Red Hat hosts https://access.redhat.com/documentation/en-us/red_hat_subscription_management/1/html/rhsm/uuid",
+    "SystemUUID reported by the node. For unique machine identification\nMachineID is preferred. This field is specific to Red Hat hosts\nhttps://access.redhat.com/documentation/en-us/red_hat_subscription_management/1/html/rhsm/uuid",
+    "Phase represents the current phase of machine actuation. E.g. Pending, Running, Terminating, Failed etc.",
+    "Machine address type, one of Hostname, ExternalIP or InternalIP.",
+    "ContainerRuntime Version reported by the node through runtime remote API (e.g. docker://1.5.0).",
+    "ContainerRuntime Version reported by the node through runtime remote API (e.g. containerd://1.4.2)."
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "versions": {
+    "vertical-pod-autoscaler-chart-0.11.0": {
+      "descriptionChanged": [
+        "spec.resourcePolicy.containerPolicies.controlledResources"
+      ],
+      "descriptions": {
+        "spec.resourcePolicy.containerPolicies.controlledResources": [
+          0,
+          1
+        ]
+      }
+    },
+    "vertical-pod-autoscaler-chart-0.10.0": {
+      "added": {
+        "spec.resourcePolicy.containerPolicies.memoryAggregationIntervalCount": "integer",
+        "spec.resourcePolicy.containerPolicies.memoryAggregationIntervalSeconds": "integer",
+        "status.conditions.observedGeneration": "integer",
+        "status.observedGeneration": "integer"
+      },
+      "descriptions": {
+        "spec.resourcePolicy.containerPolicies.memoryAggregationIntervalCount": [
+          null,
+          2
+        ],
+        "spec.resourcePolicy.containerPolicies.memoryAggregationIntervalSeconds": [
+          null,
+          3
+        ],
+        "status.conditions.observedGeneration": [
+          null,
+          4
+        ],
+        "status.observedGeneration": [
+          null,
+          5
+        ]
+      }
+    },
+    "vertical-pod-autoscaler-chart-0.8.1": {
+      "added": {
+        "spec.resourcePolicy.containerPolicies.startupBoost": "object",
+        "spec.startupBoost": "object",
+        "spec.updatePolicy.evictAfterOOMSeconds": "integer"
+      },
+      "descriptions": {
+        "spec.resourcePolicy.containerPolicies.startupBoost": [
+          null,
+          6
+        ],
+        "spec.startupBoost": [
+          null,
+          7
+        ],
+        "spec.updatePolicy.evictAfterOOMSeconds": [
+          null,
+          8
+        ]
+      }
+    },
+    "vertical-pod-autoscaler-chart-0.7.0": {
+      "descriptionChanged": [
+        "spec.updatePolicy.updateMode"
+      ],
+      "descriptions": {
+        "spec.updatePolicy.updateMode": [
+          9,
+          10
+        ]
+      }
+    },
+    "vertical-pod-autoscaler-chart-0.6.0": {
+      "added": {
+        "spec.resourcePolicy.containerPolicies.oomBumpUpRatio": "int | string",
+        "spec.resourcePolicy.containerPolicies.oomMinBumpUp": "int | string"
+      },
+      "descriptions": {
+        "spec.resourcePolicy.containerPolicies.oomBumpUpRatio": [
+          null,
+          11
+        ],
+        "spec.resourcePolicy.containerPolicies.oomMinBumpUp": [
+          null,
+          12
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Specifies the type of recommendations that will be computed\n(and possibly applied) by VPA.\nIf not specified, the default of [ResourceCPU, ResourceMemory] will be used.",
+    "Specifies the type of recommendations that will be computed\n(and possibly applied) by VPA.\nIf not specified, the default of [cpu, memory] will be used.",
+    "memoryAggregationIntervalCount is the number of consecutive\nmemoryAggregationIntervals which make up the memory aggregation window.\nThe total window length is:\nMemoryAggregationIntervalSeconds * MemoryAggregationIntervalCount.",
+    "memoryAggregationIntervalSeconds is the length of a single interval\n(in seconds) for which the peak memory usage is computed.\nMemory usage peaks are aggregated in multiples of this interval.\nIn other words, there is one memory usage sample per interval\n(the maximum usage over that interval).",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "observedGeneration is the most recent generation observed by this autoscaler.",
+    "startupBoost specifies the startup boost policy for the container.\nThis overrides any pod-level startup boost policy.\nThe startup boost policy takes precedence over the rest of the fields in\nthis struct, except for ContainerName and ControlledValues.",
+    "startupBoost specifies the startup boost policy for the pod.",
+    "evictAfterOOMSeconds specifies the time in seconds to wait after an OOM event before\nconsidering the pod for eviction. Pods that have OOMed in less than this time\nsince start will be evicted.",
+    "Controls when autoscaler applies changes to the pod resources.\nThe default is 'Auto'.",
+    "Controls when autoscaler applies changes to the pod resources.\nThe default is 'Recreate'.",
+    "oomBumpUpRatio is the ratio to increase memory when OOM is detected.",
+    "oomMinBumpUp is the minimum increase in memory when OOM is detected."
+  ]
+}

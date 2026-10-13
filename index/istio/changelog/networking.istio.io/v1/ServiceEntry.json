@@ -1,0 +1,70 @@
+{
+  "versions": {
+    "1.28.0": {
+      "descriptionChanged": [
+        "spec.resolution"
+      ],
+      "descriptions": {
+        "spec.resolution": [
+          0,
+          1
+        ]
+      }
+    },
+    "1.25.0": {
+      "added": {
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "status.conditions.observedGeneration": [
+          null,
+          2
+        ],
+        "status.observedGeneration": [
+          3,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "required": [
+        "spec"
+      ],
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "spec": [
+          null,
+          4
+        ],
+        "status.conditions": [
+          null,
+          5
+        ],
+        "status.observedGeneration": [
+          null,
+          3
+        ],
+        "status.validationMessages": [
+          null,
+          6
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Service resolution mode for the hosts.\n\nValid Options: NONE, STATIC, DNS, DNS_ROUND_ROBIN",
+    "Service resolution mode for the hosts.\n\nValid Options: NONE, STATIC, DNS, DNS_ROUND_ROBIN, DYNAMIC_DNS",
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Configuration affecting service registry. See more details at: https://istio.io/docs/reference/config/networking/service-entry.html",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers."
+  ]
+}

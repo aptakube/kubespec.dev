@@ -1,0 +1,177 @@
+{
+  "versions": {
+    "1.18.0": {
+      "added": {
+        "status.conditions": "object[]"
+      },
+      "descriptions": {
+        "status.conditions": [
+          null,
+          0
+        ]
+      }
+    },
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.bgpInstances.localASN",
+        "spec.bgpInstances.localPort",
+        "spec.bgpInstances.peers.localAddress",
+        "spec.bgpInstances.peers.peerASN",
+        "spec.bgpInstances.peers.peerAddress",
+        "spec.bgpInstances.peers.peerConfigRef",
+        "spec.bgpInstances.peers.peerConfigRef.group",
+        "spec.bgpInstances.peers.peerConfigRef.kind",
+        "spec.bgpInstances.peers.peerConfigRef.name",
+        "spec.bgpInstances.routerID",
+        "status.bgpInstances.peers.establishedTime"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          1,
+          2
+        ],
+        "kind": [
+          3,
+          4
+        ],
+        "spec.bgpInstances.localASN": [
+          5,
+          6
+        ],
+        "spec.bgpInstances.localPort": [
+          7,
+          8
+        ],
+        "spec.bgpInstances.peers.localAddress": [
+          9,
+          10
+        ],
+        "spec.bgpInstances.peers.peerASN": [
+          11,
+          12
+        ],
+        "spec.bgpInstances.peers.peerAddress": [
+          13,
+          14
+        ],
+        "spec.bgpInstances.peers.peerConfigRef": [
+          15,
+          16
+        ],
+        "spec.bgpInstances.peers.peerConfigRef.group": [
+          17,
+          18
+        ],
+        "spec.bgpInstances.peers.peerConfigRef.kind": [
+          19,
+          20
+        ],
+        "spec.bgpInstances.peers.peerConfigRef.name": [
+          21,
+          22
+        ],
+        "spec.bgpInstances.routerID": [
+          23,
+          24
+        ],
+        "status.bgpInstances.peers.establishedTime": [
+          25,
+          26
+        ],
+        "": [
+          27,
+          28
+        ]
+      }
+    },
+    "1.16.2": {
+      "added": {
+        "status.bgpInstances.peers.establishedTime": "string",
+        "status.bgpInstances.peers.routeCount": "object[]"
+      },
+      "removed": {
+        "status.bgpInstances.peers.routesAdvertised": "integer",
+        "status.bgpInstances.peers.routesReceived": "integer",
+        "status.bgpInstances.peers.uptime": "string"
+      },
+      "descriptions": {
+        "status.bgpInstances.peers.establishedTime": [
+          null,
+          25
+        ],
+        "status.bgpInstances.peers.routeCount": [
+          null,
+          29
+        ],
+        "status.bgpInstances.peers.routesAdvertised": [
+          30,
+          null
+        ],
+        "status.bgpInstances.peers.routesReceived": [
+          31,
+          null
+        ],
+        "status.bgpInstances.peers.uptime": [
+          32,
+          null
+        ]
+      }
+    },
+    "1.16.0": {
+      "optional": [
+        "status",
+        "status.bgpInstances"
+      ],
+      "descriptions": {
+        "status": [
+          null,
+          33
+        ],
+        "status.bgpInstances": [
+          null,
+          34
+        ]
+      }
+    }
+  },
+  "texts": [
+    "The current conditions of the CiliumBGPNodeConfig",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "LocalASN is the ASN of this virtual router. Supports extended 32bit ASNs.",
+    "LocalASN is the ASN of this virtual router.\nSupports extended 32bit ASNs.",
+    "LocalPort is the port on which the BGP daemon listens for incoming connections. \n If not specified, BGP instance will not listen for incoming connections.",
+    "LocalPort is the port on which the BGP daemon listens for incoming connections.\n\nIf not specified, BGP instance will not listen for incoming connections.",
+    "LocalAddress is the IP address of the local interface to use for the peering session. This configuration is derived from CiliumBGPNodeConfigOverride resource. If not specified, the local address will be used for setting up peering.",
+    "LocalAddress is the IP address of the local interface to use for the peering session.\nThis configuration is derived from CiliumBGPNodeConfigOverride resource. If not specified, the local address will be used for setting up peering.",
+    "PeerASN is the ASN of the peer BGP router. Supports extended 32bit ASNs",
+    "PeerASN is the ASN of the peer BGP router.\nSupports extended 32bit ASNs",
+    "PeerAddress is the IP address of the neighbor. Supports IPv4 and IPv6 addresses.",
+    "PeerAddress is the IP address of the neighbor.\nSupports IPv4 and IPv6 addresses.",
+    "PeerConfigRef is a reference to a peer configuration resource. If not specified, the default BGP configuration is used for this peer.",
+    "PeerConfigRef is a reference to a peer configuration resource.\nIf not specified, the default BGP configuration is used for this peer.",
+    "Group is the group of the peer config resource. If not specified, the default of \"cilium.io\" is used.",
+    "Group is the group of the peer config resource.\nIf not specified, the default of \"cilium.io\" is used.",
+    "Kind is the kind of the peer config resource. If not specified, the default of \"CiliumBGPPeerConfig\" is used.",
+    "Kind is the kind of the peer config resource.\nIf not specified, the default of \"CiliumBGPPeerConfig\" is used.",
+    "Name is the name of the peer config resource. Name refers to the name of a Kubernetes object (typically a CiliumBGPPeerConfig).",
+    "Name is the name of the peer config resource.\nName refers to the name of a Kubernetes object (typically a CiliumBGPPeerConfig).",
+    "RouterID is the BGP router ID of this virtual router. This configuration is derived from CiliumBGPNodeConfigOverride resource. \n If not specified, the router ID will be derived from the node local address.",
+    "RouterID is the BGP router ID of this virtual router.\nThis configuration is derived from CiliumBGPNodeConfigOverride resource.\n\nIf not specified, the router ID will be derived from the node local address.",
+    "EstablishedTime is the time when the peering session was established. It is represented in RFC3339 form and is in UTC.",
+    "EstablishedTime is the time when the peering session was established.\nIt is represented in RFC3339 form and is in UTC.",
+    "CiliumBGPNodeConfig is node local configuration for BGP agent. Name of the object should be node name. This resource will be created by Cilium operator and is read-only for the users.",
+    "CiliumBGPNodeConfig is node local configuration for BGP agent. Name of the object should be node name.\nThis resource will be created by Cilium operator and is read-only for the users.",
+    "RouteCount is the number of routes exchanged with this peer per AFI/SAFI.",
+    "RoutesAdvertised is the number of routes advertised to this peer.",
+    "RoutesReceived is the number of routes received from this peer.",
+    "Uptime is the time since the last peering session was established.",
+    "Status is the most recently observed status of the CiliumBGPNodeConfig.",
+    "BGPInstances is the status of the BGP instances on the node."
+  ]
+}

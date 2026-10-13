@@ -1,0 +1,381 @@
+{
+  "versions": {
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.nodeSelector",
+        "spec.nodeSelector.matchExpressions.operator",
+        "spec.nodeSelector.matchExpressions.values",
+        "spec.nodeSelector.matchLabels",
+        "spec.virtualRouters",
+        "spec.virtualRouters.exportPodCIDR",
+        "spec.virtualRouters.localASN",
+        "spec.virtualRouters.neighbors.advertisedPathAttributes",
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.communities",
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.communities.wellKnown",
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.localPreference",
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.selector",
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.selector.matchExpressions.operator",
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.selector.matchExpressions.values",
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.selector.matchLabels",
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.selectorType",
+        "spec.virtualRouters.neighbors.authSecretRef",
+        "spec.virtualRouters.neighbors.eBGPMultihopTTL",
+        "spec.virtualRouters.neighbors.families",
+        "spec.virtualRouters.neighbors.gracefulRestart",
+        "spec.virtualRouters.neighbors.gracefulRestart.restartTimeSeconds",
+        "spec.virtualRouters.neighbors.holdTimeSeconds",
+        "spec.virtualRouters.neighbors.keepAliveTimeSeconds",
+        "spec.virtualRouters.neighbors.peerASN",
+        "spec.virtualRouters.neighbors.peerAddress",
+        "spec.virtualRouters.neighbors.peerPort",
+        "spec.virtualRouters.podIPPoolSelector",
+        "spec.virtualRouters.podIPPoolSelector.matchExpressions.operator",
+        "spec.virtualRouters.podIPPoolSelector.matchExpressions.values",
+        "spec.virtualRouters.podIPPoolSelector.matchLabels",
+        "spec.virtualRouters.serviceAdvertisements",
+        "spec.virtualRouters.serviceSelector",
+        "spec.virtualRouters.serviceSelector.matchExpressions.operator",
+        "spec.virtualRouters.serviceSelector.matchExpressions.values",
+        "spec.virtualRouters.serviceSelector.matchLabels"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          0,
+          1
+        ],
+        "kind": [
+          2,
+          3
+        ],
+        "spec.nodeSelector": [
+          4,
+          5
+        ],
+        "spec.nodeSelector.matchExpressions.operator": [
+          6,
+          7
+        ],
+        "spec.nodeSelector.matchExpressions.values": [
+          8,
+          9
+        ],
+        "spec.nodeSelector.matchLabels": [
+          10,
+          11
+        ],
+        "spec.virtualRouters": [
+          12,
+          13
+        ],
+        "spec.virtualRouters.exportPodCIDR": [
+          14,
+          15
+        ],
+        "spec.virtualRouters.localASN": [
+          16,
+          17
+        ],
+        "spec.virtualRouters.neighbors.advertisedPathAttributes": [
+          18,
+          19
+        ],
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.communities": [
+          20,
+          21
+        ],
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.communities.wellKnown": [
+          22,
+          23
+        ],
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.localPreference": [
+          24,
+          25
+        ],
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.selector": [
+          26,
+          27
+        ],
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.selector.matchExpressions.operator": [
+          6,
+          7
+        ],
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.selector.matchExpressions.values": [
+          8,
+          9
+        ],
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.selector.matchLabels": [
+          10,
+          11
+        ],
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.selectorType": [
+          28,
+          29
+        ],
+        "spec.virtualRouters.neighbors.authSecretRef": [
+          30,
+          31
+        ],
+        "spec.virtualRouters.neighbors.eBGPMultihopTTL": [
+          32,
+          33
+        ],
+        "spec.virtualRouters.neighbors.families": [
+          34,
+          35
+        ],
+        "spec.virtualRouters.neighbors.gracefulRestart": [
+          36,
+          37
+        ],
+        "spec.virtualRouters.neighbors.gracefulRestart.restartTimeSeconds": [
+          38,
+          39
+        ],
+        "spec.virtualRouters.neighbors.holdTimeSeconds": [
+          40,
+          41
+        ],
+        "spec.virtualRouters.neighbors.keepAliveTimeSeconds": [
+          42,
+          43
+        ],
+        "spec.virtualRouters.neighbors.peerASN": [
+          44,
+          45
+        ],
+        "spec.virtualRouters.neighbors.peerAddress": [
+          46,
+          47
+        ],
+        "spec.virtualRouters.neighbors.peerPort": [
+          48,
+          49
+        ],
+        "spec.virtualRouters.podIPPoolSelector": [
+          50,
+          51
+        ],
+        "spec.virtualRouters.podIPPoolSelector.matchExpressions.operator": [
+          6,
+          7
+        ],
+        "spec.virtualRouters.podIPPoolSelector.matchExpressions.values": [
+          8,
+          9
+        ],
+        "spec.virtualRouters.podIPPoolSelector.matchLabels": [
+          10,
+          11
+        ],
+        "spec.virtualRouters.serviceAdvertisements": [
+          52,
+          53
+        ],
+        "spec.virtualRouters.serviceSelector": [
+          54,
+          55
+        ],
+        "spec.virtualRouters.serviceSelector.matchExpressions.operator": [
+          6,
+          7
+        ],
+        "spec.virtualRouters.serviceSelector.matchExpressions.values": [
+          8,
+          9
+        ],
+        "spec.virtualRouters.serviceSelector.matchLabels": [
+          10,
+          11
+        ],
+        "": [
+          56,
+          57
+        ]
+      }
+    },
+    "1.16.0": {
+      "descriptionChanged": [
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.communities.standard"
+      ],
+      "added": {
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.communities.wellKnown": "string[]",
+        "spec.virtualRouters.serviceAdvertisements": "string[]"
+      },
+      "descriptions": {
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.communities.standard": [
+          58,
+          59
+        ],
+        "spec.virtualRouters.neighbors.advertisedPathAttributes.communities.wellKnown": [
+          null,
+          22
+        ],
+        "spec.virtualRouters.serviceAdvertisements": [
+          null,
+          52
+        ]
+      }
+    },
+    "1.15.0": {
+      "added": {
+        "spec.virtualRouters.neighbors.advertisedPathAttributes": "object[]",
+        "spec.virtualRouters.neighbors.authSecretRef": "string",
+        "spec.virtualRouters.neighbors.families": "object[]",
+        "spec.virtualRouters.podIPPoolSelector": "object"
+      },
+      "descriptionChanged": [
+        "spec.virtualRouters.serviceSelector"
+      ],
+      "descriptions": {
+        "spec.virtualRouters.neighbors.advertisedPathAttributes": [
+          null,
+          18
+        ],
+        "spec.virtualRouters.neighbors.authSecretRef": [
+          null,
+          30
+        ],
+        "spec.virtualRouters.neighbors.families": [
+          null,
+          34
+        ],
+        "spec.virtualRouters.podIPPoolSelector": [
+          null,
+          50
+        ],
+        "spec.virtualRouters.serviceSelector": [
+          60,
+          54
+        ]
+      }
+    },
+    "1.14.0": {
+      "descriptionChanged": [
+        "spec.nodeSelector",
+        "spec.virtualRouters.serviceSelector"
+      ],
+      "added": {
+        "spec.virtualRouters.neighbors.connectRetryTimeSeconds": "integer",
+        "spec.virtualRouters.neighbors.eBGPMultihopTTL": "integer",
+        "spec.virtualRouters.neighbors.gracefulRestart": "object",
+        "spec.virtualRouters.neighbors.holdTimeSeconds": "integer",
+        "spec.virtualRouters.neighbors.keepAliveTimeSeconds": "integer",
+        "spec.virtualRouters.neighbors.peerPort": "integer"
+      },
+      "descriptions": {
+        "spec.nodeSelector": [
+          61,
+          4
+        ],
+        "spec.virtualRouters.neighbors.connectRetryTimeSeconds": [
+          null,
+          62
+        ],
+        "spec.virtualRouters.neighbors.eBGPMultihopTTL": [
+          null,
+          32
+        ],
+        "spec.virtualRouters.neighbors.gracefulRestart": [
+          null,
+          36
+        ],
+        "spec.virtualRouters.neighbors.holdTimeSeconds": [
+          null,
+          40
+        ],
+        "spec.virtualRouters.neighbors.keepAliveTimeSeconds": [
+          null,
+          42
+        ],
+        "spec.virtualRouters.neighbors.peerPort": [
+          null,
+          48
+        ],
+        "spec.virtualRouters.serviceSelector": [
+          63,
+          60
+        ]
+      }
+    },
+    "1.13.0": {
+      "added": {
+        "spec.virtualRouters.serviceSelector": "object"
+      },
+      "descriptions": {
+        "spec.virtualRouters.serviceSelector": [
+          null,
+          63
+        ]
+      }
+    }
+  },
+  "texts": [
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "NodeSelector selects a group of nodes where this BGP Peering Policy applies. \n If empty / nil this policy applies to all nodes.",
+    "NodeSelector selects a group of nodes where this BGP Peering\nPolicy applies.\n\nIf empty / nil this policy applies to all nodes.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "A list of CiliumBGPVirtualRouter(s) which instructs the BGP control plane how to instantiate virtual BGP routers.",
+    "A list of CiliumBGPVirtualRouter(s) which instructs\nthe BGP control plane how to instantiate virtual BGP routers.",
+    "ExportPodCIDR determines whether to export the Node's private CIDR block to the configured neighbors.",
+    "ExportPodCIDR determines whether to export the Node's private CIDR block\nto the configured neighbors.",
+    "LocalASN is the ASN of this virtual router. Supports extended 32bit ASNs",
+    "LocalASN is the ASN of this virtual router.\nSupports extended 32bit ASNs",
+    "AdvertisedPathAttributes can be used to apply additional path attributes to selected routes when advertising them to the peer. If empty / nil, no additional path attributes are advertised.",
+    "AdvertisedPathAttributes can be used to apply additional path attributes\nto selected routes when advertising them to the peer.\nIf empty / nil, no additional path attributes are advertised.",
+    "Communities defines a set of community values advertised in the supported BGP Communities path attributes. If nil / not set, no BGP Communities path attribute will be advertised.",
+    "Communities defines a set of community values advertised in the supported BGP Communities path attributes.\nIf nil / not set, no BGP Communities path attribute will be advertised.",
+    "WellKnown holds a list \"standard\" 32-bit BGP Communities Attribute (RFC 1997) values defined as well-known string aliases to their numeric values.",
+    "WellKnown holds a list \"standard\" 32-bit BGP Communities Attribute (RFC 1997) values defined as\nwell-known string aliases to their numeric values.",
+    "LocalPreference defines the preference value advertised in the BGP Local Preference path attribute. As Local Preference is only valid for iBGP peers, this value will be ignored for eBGP peers (no Local Preference path attribute will be advertised). If nil / not set, the default Local Preference of 100 will be advertised in the Local Preference path attribute for iBGP peers.",
+    "LocalPreference defines the preference value advertised in the BGP Local Preference path attribute.\nAs Local Preference is only valid for iBGP peers, this value will be ignored for eBGP peers\n(no Local Preference path attribute will be advertised).\nIf nil / not set, the default Local Preference of 100 will be advertised in\nthe Local Preference path attribute for iBGP peers.",
+    "Selector selects a group of objects of the SelectorType resulting into routes that will be announced with the configured Attributes. If nil / not set, all objects of the SelectorType are selected.",
+    "Selector selects a group of objects of the SelectorType\nresulting into routes that will be announced with the configured Attributes.\nIf nil / not set, all objects of the SelectorType are selected.",
+    "SelectorType defines the object type on which the Selector applies: - For \"PodCIDR\" the Selector matches k8s CiliumNode resources (path attributes apply to routes announced for PodCIDRs of selected CiliumNodes. Only affects routes of cluster scope / Kubernetes IPAM CIDRs, not Multi-Pool IPAM CIDRs. - For \"CiliumLoadBalancerIPPool\" the Selector matches CiliumLoadBalancerIPPool custom resources (path attributes apply to routes announced for selected CiliumLoadBalancerIPPools). - For \"CiliumPodIPPool\" the Selector matches CiliumPodIPPool custom resources (path attributes apply to routes announced for allocated CIDRs of selected CiliumPodIPPools).",
+    "SelectorType defines the object type on which the Selector applies:\n- For \"PodCIDR\" the Selector matches k8s CiliumNode resources\n  (path attributes apply to routes announced for PodCIDRs of selected CiliumNodes.\n  Only affects routes of cluster scope / Kubernetes IPAM CIDRs, not Multi-Pool IPAM CIDRs.\n- For \"CiliumLoadBalancerIPPool\" the Selector matches CiliumLoadBalancerIPPool custom resources\n  (path attributes apply to routes announced for selected CiliumLoadBalancerIPPools).\n- For \"CiliumPodIPPool\" the Selector matches CiliumPodIPPool custom resources\n  (path attributes apply to routes announced for allocated CIDRs of selected CiliumPodIPPools).",
+    "AuthSecretRef is the name of the secret to use to fetch a TCP authentication password for this peer.",
+    "AuthSecretRef is the name of the secret to use to fetch a TCP\nauthentication password for this peer.",
+    "EBGPMultihopTTL controls the multi-hop feature for eBGP peers. Its value defines the Time To Live (TTL) value used in BGP packets sent to the neighbor. The value 1 implies that eBGP multi-hop feature is disabled (only a single hop is allowed). This field is ignored for iBGP peers.",
+    "EBGPMultihopTTL controls the multi-hop feature for eBGP peers.\nIts value defines the Time To Live (TTL) value used in BGP packets sent to the neighbor.\nThe value 1 implies that eBGP multi-hop feature is disabled (only a single hop is allowed).\nThis field is ignored for iBGP peers.",
+    "Families, if provided, defines a set of AFI/SAFIs the speaker will negotiate with it's peer. \n If this slice is not provided the default families of IPv6 and IPv4 will be provided.",
+    "Families, if provided, defines a set of AFI/SAFIs the speaker will\nnegotiate with it's peer.\n\nIf this slice is not provided the default families of IPv6 and IPv4 will\nbe provided.",
+    "GracefulRestart defines graceful restart parameters which are negotiated with this neighbor. If empty / nil, the graceful restart capability is disabled.",
+    "GracefulRestart defines graceful restart parameters which are negotiated\nwith this neighbor. If empty / nil, the graceful restart capability is disabled.",
+    "RestartTimeSeconds is the estimated time it will take for the BGP session to be re-established with peer after a restart. After this period, peer will remove stale routes. This is described RFC 4724 section 4.2.",
+    "RestartTimeSeconds is the estimated time it will take for the BGP\nsession to be re-established with peer after a restart.\nAfter this period, peer will remove stale routes. This is\ndescribed RFC 4724 section 4.2.",
+    "HoldTimeSeconds defines the initial value for the BGP HoldTimer (RFC 4271, Section 4.2). Updating this value will cause a session reset.",
+    "HoldTimeSeconds defines the initial value for the BGP HoldTimer (RFC 4271, Section 4.2).\nUpdating this value will cause a session reset.",
+    "KeepaliveTimeSeconds defines the initial value for the BGP KeepaliveTimer (RFC 4271, Section 8). It can not be larger than HoldTimeSeconds. Updating this value will cause a session reset.",
+    "KeepaliveTimeSeconds defines the initial value for the BGP KeepaliveTimer (RFC 4271, Section 8).\nIt can not be larger than HoldTimeSeconds. Updating this value will cause a session reset.",
+    "PeerASN is the ASN of the peer BGP router. Supports extended 32bit ASNs",
+    "PeerASN is the ASN of the peer BGP router.\nSupports extended 32bit ASNs",
+    "PeerAddress is the IP address of the peer. This must be in CIDR notation and use a /32 to express a single host.",
+    "PeerAddress is the IP address of the peer.\nThis must be in CIDR notation and use a /32 to express\na single host.",
+    "PeerPort is the TCP port of the peer. 1-65535 is the range of valid port numbers that can be specified. If unset, defaults to 179.",
+    "PeerPort is the TCP port of the peer. 1-65535 is the range of\nvalid port numbers that can be specified. If unset, defaults to 179.",
+    "PodIPPoolSelector selects CiliumPodIPPools based on labels. The virtual router will announce allocated CIDRs of matching CiliumPodIPPools. \n If empty / nil no CiliumPodIPPools will be announced.",
+    "PodIPPoolSelector selects CiliumPodIPPools based on labels. The virtual\nrouter will announce allocated CIDRs of matching CiliumPodIPPools.\n\nIf empty / nil no CiliumPodIPPools will be announced.",
+    "ServiceAdvertisements selects a group of BGP Advertisement(s) to advertise for the selected services.",
+    "ServiceAdvertisements selects a group of BGP Advertisement(s) to advertise\nfor the selected services.",
+    "ServiceSelector selects a group of load balancer services which this virtual router will announce. The loadBalancerClass for a service must be nil or specify a class supported by Cilium, e.g. \"io.cilium/bgp-control-plane\". Refer to the following document for additional details regarding load balancer classes: \n https://kubernetes.io/docs/concepts/services-networking/service/#load-balancer-class \n If empty / nil no services will be announced.",
+    "ServiceSelector selects a group of load balancer services which this\nvirtual router will announce. The loadBalancerClass for a service must\nbe nil or specify a class supported by Cilium, e.g. \"io.cilium/bgp-control-plane\".\nRefer to the following document for additional details regarding load balancer\nclasses:\n\n  https://kubernetes.io/docs/concepts/services-networking/service/#load-balancer-class\n\nIf empty / nil no services will be announced.",
+    "CiliumBGPPeeringPolicy is a Kubernetes third-party resource for instructing Cilium's BGP control plane to create virtual BGP routers.",
+    "CiliumBGPPeeringPolicy is a Kubernetes third-party resource for instructing\nCilium's BGP control plane to create virtual BGP routers.",
+    "Standard holds a list of \"standard\" 32-bit BGP Communities Attribute (RFC 1997) values.",
+    "Standard holds a list of \"standard\" 32-bit BGP Communities Attribute (RFC 1997) values defined as numeric values.",
+    "ServiceSelector selects a group of load balancer services which this virtual router will announce. \n If empty / nil no services will be announced.",
+    "NodeSelector selects a group of nodes where this BGP Peering Policy applies. \n If nil this policy applies to all nodes.",
+    "ConnectRetryTimeSeconds defines the initial value for the BGP ConnectRetryTimer (RFC 4271, Section 8).",
+    "ServiceSelector selects a group of load balancer services which this virtual router will announce. \n If nil no services will be announced."
+  ]
+}

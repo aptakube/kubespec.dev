@@ -1,0 +1,442 @@
+{
+  "versions": {
+    "v2.9.0": {
+      "descriptionChanged": [
+        "spec.provider",
+        "spec.serviceAccountName",
+        "spec.verify.secretRef"
+      ],
+      "descriptions": {
+        "spec.provider": [
+          0,
+          1
+        ],
+        "spec.serviceAccountName": [
+          2,
+          3
+        ],
+        "spec.verify.secretRef": [
+          4,
+          5
+        ]
+      }
+    },
+    "v2.7.0": {
+      "added": {
+        "spec.serviceAccountName": "string"
+      },
+      "required": [
+        "status.artifact.digest",
+        "status.includedArtifacts.digest"
+      ],
+      "descriptions": {
+        "spec.serviceAccountName": [
+          null,
+          2
+        ],
+        "status.artifact.digest": [
+          null,
+          6
+        ],
+        "status.includedArtifacts.digest": [
+          null,
+          6
+        ]
+      }
+    },
+    "v2.6.0": {
+      "added": {
+        "spec.sparseCheckout": "string[]",
+        "status.observedSparseCheckout": "string[]"
+      },
+      "descriptions": {
+        "spec.sparseCheckout": [
+          null,
+          7
+        ],
+        "status.observedSparseCheckout": [
+          null,
+          8
+        ]
+      }
+    },
+    "v2.5.0": {
+      "descriptionChanged": [
+        "spec.provider"
+      ],
+      "descriptions": {
+        "spec.provider": [
+          9,
+          0
+        ]
+      }
+    },
+    "v2.4.0": {
+      "added": {
+        "spec.provider": "string"
+      },
+      "descriptionChanged": [
+        "spec.ref.commit",
+        "spec.ref.name",
+        "spec.verify.mode",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.provider": [
+          null,
+          9
+        ],
+        "spec.ref.commit": [
+          10,
+          11
+        ],
+        "spec.ref.name": [
+          12,
+          13
+        ],
+        "spec.verify.mode": [
+          14,
+          15
+        ],
+        "status.conditions.type": [
+          16,
+          17
+        ]
+      }
+    },
+    "v2.3.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.ignore",
+        "spec.include",
+        "spec.include.fromPath",
+        "spec.include.repository",
+        "spec.include.toPath",
+        "spec.interval",
+        "spec.proxySecretRef",
+        "spec.recurseSubmodules",
+        "spec.ref",
+        "spec.ref.commit",
+        "spec.ref.name",
+        "spec.secretRef",
+        "spec.suspend",
+        "spec.verify",
+        "spec.verify.mode",
+        "spec.verify.secretRef",
+        "status.artifact.lastUpdateTime",
+        "status.artifact.path",
+        "status.artifact.revision",
+        "status.artifact.url",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type",
+        "status.includedArtifacts",
+        "status.includedArtifacts.lastUpdateTime",
+        "status.includedArtifacts.path",
+        "status.includedArtifacts.revision",
+        "status.includedArtifacts.url",
+        "status.lastHandledReconcileAt",
+        "status.observedGeneration",
+        "status.observedIgnore",
+        "status.observedInclude",
+        "status.observedInclude.fromPath",
+        "status.observedInclude.repository",
+        "status.observedInclude.toPath",
+        "status.observedRecurseSubmodules",
+        "status.sourceVerificationMode"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          18,
+          19
+        ],
+        "kind": [
+          20,
+          21
+        ],
+        "spec": [
+          22,
+          23
+        ],
+        "spec.ignore": [
+          24,
+          25
+        ],
+        "spec.include": [
+          26,
+          27
+        ],
+        "spec.include.fromPath": [
+          28,
+          29
+        ],
+        "spec.include.repository": [
+          30,
+          31
+        ],
+        "spec.include.toPath": [
+          32,
+          33
+        ],
+        "spec.interval": [
+          34,
+          35
+        ],
+        "spec.proxySecretRef": [
+          36,
+          37
+        ],
+        "spec.recurseSubmodules": [
+          38,
+          39
+        ],
+        "spec.ref": [
+          40,
+          41
+        ],
+        "spec.ref.commit": [
+          42,
+          10
+        ],
+        "spec.ref.name": [
+          43,
+          12
+        ],
+        "spec.secretRef": [
+          44,
+          45
+        ],
+        "spec.suspend": [
+          46,
+          47
+        ],
+        "spec.verify": [
+          48,
+          49
+        ],
+        "spec.verify.mode": [
+          50,
+          14
+        ],
+        "spec.verify.secretRef": [
+          51,
+          4
+        ],
+        "status.artifact.lastUpdateTime": [
+          52,
+          53
+        ],
+        "status.artifact.path": [
+          54,
+          55
+        ],
+        "status.artifact.revision": [
+          56,
+          57
+        ],
+        "status.artifact.url": [
+          58,
+          59
+        ],
+        "status.conditions.lastTransitionTime": [
+          60,
+          61
+        ],
+        "status.conditions.message": [
+          62,
+          63
+        ],
+        "status.conditions.observedGeneration": [
+          64,
+          65
+        ],
+        "status.conditions.reason": [
+          66,
+          67
+        ],
+        "status.conditions.type": [
+          68,
+          16
+        ],
+        "status.includedArtifacts": [
+          69,
+          70
+        ],
+        "status.includedArtifacts.lastUpdateTime": [
+          52,
+          53
+        ],
+        "status.includedArtifacts.path": [
+          54,
+          55
+        ],
+        "status.includedArtifacts.revision": [
+          56,
+          57
+        ],
+        "status.includedArtifacts.url": [
+          58,
+          59
+        ],
+        "status.lastHandledReconcileAt": [
+          71,
+          72
+        ],
+        "status.observedGeneration": [
+          73,
+          74
+        ],
+        "status.observedIgnore": [
+          75,
+          76
+        ],
+        "status.observedInclude": [
+          77,
+          78
+        ],
+        "status.observedInclude.fromPath": [
+          28,
+          29
+        ],
+        "status.observedInclude.repository": [
+          30,
+          31
+        ],
+        "status.observedInclude.toPath": [
+          32,
+          33
+        ],
+        "status.observedRecurseSubmodules": [
+          79,
+          80
+        ],
+        "status.sourceVerificationMode": [
+          81,
+          82
+        ]
+      }
+    },
+    "v2.1.0": {
+      "descriptionChanged": [
+        "spec.interval",
+        "spec.verify.mode"
+      ],
+      "added": {
+        "spec.proxySecretRef": "object",
+        "status.sourceVerificationMode": "string"
+      },
+      "optional": [
+        "spec.verify.mode"
+      ],
+      "descriptions": {
+        "spec.interval": [
+          83,
+          34
+        ],
+        "spec.proxySecretRef": [
+          null,
+          36
+        ],
+        "spec.verify.mode": [
+          84,
+          50
+        ],
+        "status.sourceVerificationMode": [
+          null,
+          81
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Provider used for authentication, can be 'azure', 'github', 'generic'.\nWhen not specified, defaults to 'generic'.",
+    "Provider used for authentication, can be 'aws', 'azure', 'github', 'generic'.\nWhen not specified, defaults to 'generic'.",
+    "ServiceAccountName is the name of the Kubernetes ServiceAccount used to\nauthenticate to the GitRepository. This field is only supported for 'azure' provider.",
+    "ServiceAccountName is the name of the Kubernetes ServiceAccount used to\nauthenticate to the GitRepository. This field is only supported for 'azure' and 'aws' providers.",
+    "SecretRef specifies the Secret containing the public keys of trusted Git\nauthors.",
+    "SecretRef specifies the Secret containing the public keys of trusted Git\nauthors. PGP public keys must be stored under keys with the .asc suffix,\nand SSH public keys must be stored under keys with the .sshpub suffix.",
+    "Digest is the digest of the file in the form of '<algorithm>:<checksum>'.",
+    "SparseCheckout specifies a list of directories to checkout when cloning\nthe repository. If specified, only these directories are included in the\nArtifact produced for this GitRepository.",
+    "ObservedSparseCheckout is the observed list of directories used to\nproduce the current Artifact.",
+    "Provider used for authentication, can be 'azure', 'generic'.\nWhen not specified, defaults to 'generic'.",
+    "Commit SHA to check out, takes precedence over all reference fields.\n\n\nThis can be combined with Branch to shallow clone the branch, in which\nthe commit is expected to exist.",
+    "Commit SHA to check out, takes precedence over all reference fields.\n\nThis can be combined with Branch to shallow clone the branch, in which\nthe commit is expected to exist.",
+    "Name of the reference to check out; takes precedence over Branch, Tag and SemVer.\n\n\nIt must be a valid Git reference: https://git-scm.com/docs/git-check-ref-format#_description\nExamples: \"refs/heads/main\", \"refs/tags/v0.1.0\", \"refs/pull/420/head\", \"refs/merge-requests/1/head\"",
+    "Name of the reference to check out; takes precedence over Branch, Tag and SemVer.\n\nIt must be a valid Git reference: https://git-scm.com/docs/git-check-ref-format#_description\nExamples: \"refs/heads/main\", \"refs/tags/v0.1.0\", \"refs/pull/420/head\", \"refs/merge-requests/1/head\"",
+    "Mode specifies which Git object(s) should be verified.\n\n\nThe variants \"head\" and \"HEAD\" both imply the same thing, i.e. verify\nthe commit that the HEAD of the Git repository points to. The variant\n\"head\" solely exists to ensure backwards compatibility.",
+    "Mode specifies which Git object(s) should be verified.\n\nThe variants \"head\" and \"HEAD\" both imply the same thing, i.e. verify\nthe commit that the HEAD of the Git repository points to. The variant\n\"head\" solely exists to ensure backwards compatibility.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "GitRepositorySpec specifies the required configuration to produce an Artifact for a Git repository.",
+    "GitRepositorySpec specifies the required configuration to produce an\nArtifact for a Git repository.",
+    "Ignore overrides the set of excluded patterns in the .sourceignore format (which is the same as .gitignore). If not provided, a default will be used, consult the documentation for your version to find out what those are.",
+    "Ignore overrides the set of excluded patterns in the .sourceignore format\n(which is the same as .gitignore). If not provided, a default will be used,\nconsult the documentation for your version to find out what those are.",
+    "Include specifies a list of GitRepository resources which Artifacts should be included in the Artifact produced for this GitRepository.",
+    "Include specifies a list of GitRepository resources which Artifacts\nshould be included in the Artifact produced for this GitRepository.",
+    "FromPath specifies the path to copy contents from, defaults to the root of the Artifact.",
+    "FromPath specifies the path to copy contents from, defaults to the root\nof the Artifact.",
+    "GitRepositoryRef specifies the GitRepository which Artifact contents must be included.",
+    "GitRepositoryRef specifies the GitRepository which Artifact contents\nmust be included.",
+    "ToPath specifies the path to copy contents to, defaults to the name of the GitRepositoryRef.",
+    "ToPath specifies the path to copy contents to, defaults to the name of\nthe GitRepositoryRef.",
+    "Interval at which the GitRepository URL is checked for updates. This interval is approximate and may be subject to jitter to ensure efficient use of resources.",
+    "Interval at which the GitRepository URL is checked for updates.\nThis interval is approximate and may be subject to jitter to ensure\nefficient use of resources.",
+    "ProxySecretRef specifies the Secret containing the proxy configuration to use while communicating with the Git server.",
+    "ProxySecretRef specifies the Secret containing the proxy configuration\nto use while communicating with the Git server.",
+    "RecurseSubmodules enables the initialization of all submodules within the GitRepository as cloned from the URL, using their default settings.",
+    "RecurseSubmodules enables the initialization of all submodules within\nthe GitRepository as cloned from the URL, using their default settings.",
+    "Reference specifies the Git reference to resolve and monitor for changes, defaults to the 'master' branch.",
+    "Reference specifies the Git reference to resolve and monitor for\nchanges, defaults to the 'master' branch.",
+    "Commit SHA to check out, takes precedence over all reference fields. \n This can be combined with Branch to shallow clone the branch, in which the commit is expected to exist.",
+    "Name of the reference to check out; takes precedence over Branch, Tag and SemVer. \n It must be a valid Git reference: https://git-scm.com/docs/git-check-ref-format#_description Examples: \"refs/heads/main\", \"refs/tags/v0.1.0\", \"refs/pull/420/head\", \"refs/merge-requests/1/head\"",
+    "SecretRef specifies the Secret containing authentication credentials for the GitRepository. For HTTPS repositories the Secret must contain 'username' and 'password' fields for basic auth or 'bearerToken' field for token auth. For SSH repositories the Secret must contain 'identity' and 'known_hosts' fields.",
+    "SecretRef specifies the Secret containing authentication credentials for\nthe GitRepository.\nFor HTTPS repositories the Secret must contain 'username' and 'password'\nfields for basic auth or 'bearerToken' field for token auth.\nFor SSH repositories the Secret must contain 'identity'\nand 'known_hosts' fields.",
+    "Suspend tells the controller to suspend the reconciliation of this GitRepository.",
+    "Suspend tells the controller to suspend the reconciliation of this\nGitRepository.",
+    "Verification specifies the configuration to verify the Git commit signature(s).",
+    "Verification specifies the configuration to verify the Git commit\nsignature(s).",
+    "Mode specifies which Git object(s) should be verified. \n The variants \"head\" and \"HEAD\" both imply the same thing, i.e. verify the commit that the HEAD of the Git repository points to. The variant \"head\" solely exists to ensure backwards compatibility.",
+    "SecretRef specifies the Secret containing the public keys of trusted Git authors.",
+    "LastUpdateTime is the timestamp corresponding to the last update of the Artifact.",
+    "LastUpdateTime is the timestamp corresponding to the last update of the\nArtifact.",
+    "Path is the relative file path of the Artifact. It can be used to locate the file in the root of the Artifact storage on the local file system of the controller managing the Source.",
+    "Path is the relative file path of the Artifact. It can be used to locate\nthe file in the root of the Artifact storage on the local file system of\nthe controller managing the Source.",
+    "Revision is a human-readable identifier traceable in the origin source system. It can be a Git commit SHA, Git tag, a Helm chart version, etc.",
+    "Revision is a human-readable identifier traceable in the origin source\nsystem. It can be a Git commit SHA, Git tag, a Helm chart version, etc.",
+    "URL is the HTTP address of the Artifact as exposed by the controller managing the Source. It can be used to retrieve the Artifact for consumption, e.g. by another controller applying the Artifact contents.",
+    "URL is the HTTP address of the Artifact as exposed by the controller\nmanaging the Source. It can be used to retrieve the Artifact for\nconsumption, e.g. by another controller applying the Artifact contents.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "IncludedArtifacts contains a list of the last successfully included Artifacts as instructed by GitRepositorySpec.Include.",
+    "IncludedArtifacts contains a list of the last successfully included\nArtifacts as instructed by GitRepositorySpec.Include.",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change of the annotation value can be detected.",
+    "LastHandledReconcileAt holds the value of the most recent\nreconcile request value, so a change of the annotation value\ncan be detected.",
+    "ObservedGeneration is the last observed generation of the GitRepository object.",
+    "ObservedGeneration is the last observed generation of the GitRepository\nobject.",
+    "ObservedIgnore is the observed exclusion patterns used for constructing the source artifact.",
+    "ObservedIgnore is the observed exclusion patterns used for constructing\nthe source artifact.",
+    "ObservedInclude is the observed list of GitRepository resources used to produce the current Artifact.",
+    "ObservedInclude is the observed list of GitRepository resources used to\nproduce the current Artifact.",
+    "ObservedRecurseSubmodules is the observed resource submodules configuration used to produce the current Artifact.",
+    "ObservedRecurseSubmodules is the observed resource submodules\nconfiguration used to produce the current Artifact.",
+    "SourceVerificationMode is the last used verification mode indicating which Git object(s) have been verified.",
+    "SourceVerificationMode is the last used verification mode indicating\nwhich Git object(s) have been verified.",
+    "Interval at which to check the GitRepository for updates.",
+    "Mode specifies what Git object should be verified, currently ('head')."
+  ]
+}

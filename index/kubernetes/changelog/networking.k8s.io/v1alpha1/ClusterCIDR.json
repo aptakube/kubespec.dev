@@ -1,0 +1,120 @@
+{
+  "versions": {
+    "v1.27.0": {
+      "descriptionChanged": [
+        "metadata.annotations",
+        "metadata.labels",
+        "metadata.name",
+        "metadata.namespace",
+        "metadata.ownerReferences.name",
+        "metadata.ownerReferences.uid",
+        "metadata.uid",
+        "spec",
+        "spec.ipv4",
+        "spec.ipv6",
+        "spec.nodeSelector",
+        "spec.nodeSelector.nodeSelectorTerms.matchExpressions.operator",
+        "spec.nodeSelector.nodeSelectorTerms.matchFields.operator",
+        "spec.perNodeHostBits"
+      ],
+      "descriptions": {
+        "metadata.annotations": [
+          0,
+          1
+        ],
+        "metadata.labels": [
+          2,
+          3
+        ],
+        "metadata.name": [
+          4,
+          5
+        ],
+        "metadata.namespace": [
+          6,
+          7
+        ],
+        "metadata.ownerReferences.name": [
+          8,
+          9
+        ],
+        "metadata.ownerReferences.uid": [
+          10,
+          11
+        ],
+        "metadata.uid": [
+          12,
+          13
+        ],
+        "spec": [
+          14,
+          15
+        ],
+        "spec.ipv4": [
+          16,
+          17
+        ],
+        "spec.ipv6": [
+          18,
+          19
+        ],
+        "spec.nodeSelector": [
+          20,
+          21
+        ],
+        "spec.nodeSelector.nodeSelectorTerms.matchExpressions.operator": [
+          22,
+          23
+        ],
+        "spec.nodeSelector.nodeSelectorTerms.matchFields.operator": [
+          22,
+          23
+        ],
+        "spec.perNodeHostBits": [
+          24,
+          25
+        ]
+      }
+    },
+    "v1.26.0": {
+      "descriptionChanged": [
+        "spec.ipv6"
+      ],
+      "descriptions": {
+        "spec.ipv6": [
+          26,
+          18
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations",
+    "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels",
+    "Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names",
+    "Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names",
+    "Namespace defines the space within which each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces",
+    "Namespace defines the space within which each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces",
+    "Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names",
+    "UID of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#uids",
+    "UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids",
+    "UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.\n\nPopulated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids",
+    "UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.\n\nPopulated by the system. Read-only. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids",
+    "Spec is the desired state of the ClusterCIDR. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "spec is the desired state of the ClusterCIDR. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "IPv4 defines an IPv4 IP block in CIDR notation(e.g. \"10.0.0.0/8\"). At least one of IPv4 and IPv6 must be specified. This field is immutable.",
+    "ipv4 defines an IPv4 IP block in CIDR notation(e.g. \"10.0.0.0/8\"). At least one of ipv4 and ipv6 must be specified. This field is immutable.",
+    "IPv6 defines an IPv6 IP block in CIDR notation(e.g. \"2001:db8::/64\"). At least one of IPv4 and IPv6 must be specified. This field is immutable.",
+    "ipv6 defines an IPv6 IP block in CIDR notation(e.g. \"2001:db8::/64\"). At least one of ipv4 and ipv6 must be specified. This field is immutable.",
+    "NodeSelector defines which nodes the config is applicable to. An empty or nil NodeSelector selects all nodes. This field is immutable.",
+    "nodeSelector defines which nodes the config is applicable to. An empty or nil nodeSelector selects all nodes. This field is immutable.",
+    "Represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.\n\n",
+    "Represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.",
+    "PerNodeHostBits defines the number of host bits to be configured per node. A subnet mask determines how much of the address is used for network bits and host bits. For example an IPv4 address of 192.168.0.0/24, splits the address into 24 bits for the network portion and 8 bits for the host portion. To allocate 256 IPs, set this field to 8 (a /24 mask for IPv4 or a /120 for IPv6). Minimum value is 4 (16 IPs). This field is immutable.",
+    "perNodeHostBits defines the number of host bits to be configured per node. A subnet mask determines how much of the address is used for network bits and host bits. For example an IPv4 address of 192.168.0.0/24, splits the address into 24 bits for the network portion and 8 bits for the host portion. To allocate 256 IPs, set this field to 8 (a /24 mask for IPv4 or a /120 for IPv6). Minimum value is 4 (16 IPs). This field is immutable.",
+    "IPv6 defines an IPv6 IP block in CIDR notation(e.g. \"fd12:3456:789a:1::/64\"). At least one of IPv4 and IPv6 must be specified. This field is immutable."
+  ]
+}

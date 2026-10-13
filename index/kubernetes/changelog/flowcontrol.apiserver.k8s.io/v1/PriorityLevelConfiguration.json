@@ -1,0 +1,39 @@
+{
+  "versions": {
+    "v1.37.0": {
+      "required": [
+        "spec",
+        "spec.limited.limitResponse",
+        "status.conditions.type"
+      ],
+      "descriptionChanged": [
+        "status.conditions.status"
+      ],
+      "descriptions": {
+        "spec": [
+          null,
+          0
+        ],
+        "spec.limited.limitResponse": [
+          null,
+          1
+        ],
+        "status.conditions.status": [
+          2,
+          3
+        ],
+        "status.conditions.type": [
+          null,
+          4
+        ]
+      }
+    }
+  },
+  "texts": [
+    "`spec` is the specification of the desired behavior of a \"request-priority\". More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "`limitResponse` indicates what to do with requests that can not be executed right now",
+    "`status` is the status of the condition. Can be True, False, Unknown. Required.",
+    "`status` is the status of the condition. Should be specified and set to one of True, False, Unknown.",
+    "`type` is the type of the condition. Required."
+  ]
+}

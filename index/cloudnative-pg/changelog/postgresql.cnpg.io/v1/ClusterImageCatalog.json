@@ -1,0 +1,83 @@
+{
+  "versions": {
+    "v1.29.2": {
+      "added": {
+        "spec.componentImages": "object[]"
+      },
+      "descriptionChanged": [
+        "spec.images.extensions.name"
+      ],
+      "descriptions": {
+        "spec.componentImages": [
+          null,
+          0
+        ],
+        "spec.images.extensions.name": [
+          1,
+          2
+        ]
+      }
+    },
+    "v1.29.0": {
+      "removed": {
+        "spec.componentImages": "object[]"
+      },
+      "descriptions": {
+        "spec.componentImages": [
+          0,
+          null
+        ]
+      }
+    },
+    "v1.28.4": {
+      "added": {
+        "spec.componentImages": "object[]"
+      },
+      "descriptions": {
+        "spec.componentImages": [
+          null,
+          0
+        ]
+      }
+    },
+    "v1.28.2": {
+      "added": {
+        "spec.images.extensions": "object[]"
+      },
+      "descriptions": {
+        "spec.images.extensions": [
+          null,
+          3
+        ]
+      }
+    },
+    "v1.28.0": {
+      "removed": {
+        "spec.images.extensions": "object[]"
+      },
+      "descriptions": {
+        "spec.images.extensions": [
+          3,
+          null
+        ]
+      }
+    },
+    "v1.27.4": {
+      "added": {
+        "spec.images.extensions": "object[]"
+      },
+      "descriptions": {
+        "spec.images.extensions": [
+          null,
+          3
+        ]
+      }
+    }
+  },
+  "texts": [
+    "ComponentImages is a list of named images for components other than PostgreSQL\n(e.g. pgbouncer). Keys must be unique within a catalog.",
+    "The name of the extension, required",
+    "The name of the extension, required. The limit of 59 characters\nleaves room for the prefix the operator adds when deriving the\nextension's Kubernetes Volume name (capped at 63 characters).",
+    "The configuration of the extensions to be added"
+  ]
+}

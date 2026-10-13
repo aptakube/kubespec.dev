@@ -1,0 +1,521 @@
+{
+  "versions": {
+    "v1.10.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.controlPlane.machineInfrastructure",
+        "spec.controlPlane.metadata.labels",
+        "spec.workers.machineDeployments.template.metadata.labels"
+      ],
+      "descriptions": {
+        "spec": [
+          0,
+          1
+        ],
+        "spec.controlPlane.machineInfrastructure": [
+          2,
+          3
+        ],
+        "spec.controlPlane.metadata.labels": [
+          4,
+          5
+        ],
+        "spec.workers.machineDeployments.template.metadata.labels": [
+          4,
+          5
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.controlPlane",
+        "spec.controlPlane.machineInfrastructure",
+        "spec.controlPlane.machineInfrastructure.ref",
+        "spec.controlPlane.machineInfrastructure.ref.fieldPath",
+        "spec.controlPlane.metadata",
+        "spec.controlPlane.metadata.annotations",
+        "spec.controlPlane.ref",
+        "spec.controlPlane.ref.fieldPath",
+        "spec.infrastructure",
+        "spec.infrastructure.ref",
+        "spec.infrastructure.ref.fieldPath",
+        "spec.workers",
+        "spec.workers.machineDeployments",
+        "spec.workers.machineDeployments.class",
+        "spec.workers.machineDeployments.template",
+        "spec.workers.machineDeployments.template.bootstrap",
+        "spec.workers.machineDeployments.template.bootstrap.ref",
+        "spec.workers.machineDeployments.template.bootstrap.ref.fieldPath",
+        "spec.workers.machineDeployments.template.infrastructure",
+        "spec.workers.machineDeployments.template.infrastructure.ref",
+        "spec.workers.machineDeployments.template.infrastructure.ref.fieldPath",
+        "spec.workers.machineDeployments.template.metadata",
+        "spec.workers.machineDeployments.template.metadata.annotations"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec.controlPlane": [
+          6,
+          7
+        ],
+        "spec.controlPlane.machineInfrastructure": [
+          8,
+          2
+        ],
+        "spec.controlPlane.machineInfrastructure.ref": [
+          9,
+          10
+        ],
+        "spec.controlPlane.machineInfrastructure.ref.fieldPath": [
+          11,
+          12
+        ],
+        "spec.controlPlane.metadata": [
+          13,
+          14
+        ],
+        "spec.controlPlane.metadata.annotations": [
+          15,
+          16
+        ],
+        "spec.controlPlane.ref": [
+          9,
+          10
+        ],
+        "spec.controlPlane.ref.fieldPath": [
+          11,
+          12
+        ],
+        "spec.infrastructure": [
+          17,
+          18
+        ],
+        "spec.infrastructure.ref": [
+          9,
+          10
+        ],
+        "spec.infrastructure.ref.fieldPath": [
+          11,
+          12
+        ],
+        "spec.workers": [
+          19,
+          20
+        ],
+        "spec.workers.machineDeployments": [
+          21,
+          22
+        ],
+        "spec.workers.machineDeployments.class": [
+          23,
+          24
+        ],
+        "spec.workers.machineDeployments.template": [
+          25,
+          26
+        ],
+        "spec.workers.machineDeployments.template.bootstrap": [
+          27,
+          28
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref": [
+          9,
+          10
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref.fieldPath": [
+          11,
+          12
+        ],
+        "spec.workers.machineDeployments.template.infrastructure": [
+          29,
+          30
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref": [
+          9,
+          10
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref.fieldPath": [
+          11,
+          12
+        ],
+        "spec.workers.machineDeployments.template.metadata": [
+          31,
+          32
+        ],
+        "spec.workers.machineDeployments.template.metadata.annotations": [
+          15,
+          16
+        ],
+        "": [
+          33,
+          34
+        ]
+      }
+    },
+    "v1.7.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.controlPlane",
+        "spec.controlPlane.machineInfrastructure",
+        "spec.controlPlane.machineInfrastructure.ref",
+        "spec.controlPlane.machineInfrastructure.ref.fieldPath",
+        "spec.controlPlane.machineInfrastructure.ref.kind",
+        "spec.controlPlane.machineInfrastructure.ref.name",
+        "spec.controlPlane.machineInfrastructure.ref.namespace",
+        "spec.controlPlane.machineInfrastructure.ref.resourceVersion",
+        "spec.controlPlane.machineInfrastructure.ref.uid",
+        "spec.controlPlane.metadata",
+        "spec.controlPlane.metadata.annotations",
+        "spec.controlPlane.metadata.labels",
+        "spec.controlPlane.ref",
+        "spec.controlPlane.ref.fieldPath",
+        "spec.controlPlane.ref.kind",
+        "spec.controlPlane.ref.name",
+        "spec.controlPlane.ref.namespace",
+        "spec.controlPlane.ref.resourceVersion",
+        "spec.controlPlane.ref.uid",
+        "spec.infrastructure",
+        "spec.infrastructure.ref",
+        "spec.infrastructure.ref.fieldPath",
+        "spec.infrastructure.ref.kind",
+        "spec.infrastructure.ref.name",
+        "spec.infrastructure.ref.namespace",
+        "spec.infrastructure.ref.resourceVersion",
+        "spec.infrastructure.ref.uid",
+        "spec.workers",
+        "spec.workers.machineDeployments",
+        "spec.workers.machineDeployments.class",
+        "spec.workers.machineDeployments.template",
+        "spec.workers.machineDeployments.template.bootstrap",
+        "spec.workers.machineDeployments.template.bootstrap.ref",
+        "spec.workers.machineDeployments.template.bootstrap.ref.fieldPath",
+        "spec.workers.machineDeployments.template.bootstrap.ref.kind",
+        "spec.workers.machineDeployments.template.bootstrap.ref.name",
+        "spec.workers.machineDeployments.template.bootstrap.ref.namespace",
+        "spec.workers.machineDeployments.template.bootstrap.ref.resourceVersion",
+        "spec.workers.machineDeployments.template.bootstrap.ref.uid",
+        "spec.workers.machineDeployments.template.infrastructure",
+        "spec.workers.machineDeployments.template.infrastructure.ref",
+        "spec.workers.machineDeployments.template.infrastructure.ref.fieldPath",
+        "spec.workers.machineDeployments.template.infrastructure.ref.kind",
+        "spec.workers.machineDeployments.template.infrastructure.ref.name",
+        "spec.workers.machineDeployments.template.infrastructure.ref.namespace",
+        "spec.workers.machineDeployments.template.infrastructure.ref.resourceVersion",
+        "spec.workers.machineDeployments.template.infrastructure.ref.uid",
+        "spec.workers.machineDeployments.template.metadata",
+        "spec.workers.machineDeployments.template.metadata.annotations",
+        "spec.workers.machineDeployments.template.metadata.labels"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          35,
+          36
+        ],
+        "kind": [
+          37,
+          38
+        ],
+        "spec.controlPlane": [
+          39,
+          6
+        ],
+        "spec.controlPlane.machineInfrastructure": [
+          40,
+          8
+        ],
+        "spec.controlPlane.machineInfrastructure.ref": [
+          41,
+          9
+        ],
+        "spec.controlPlane.machineInfrastructure.ref.fieldPath": [
+          42,
+          11
+        ],
+        "spec.controlPlane.machineInfrastructure.ref.kind": [
+          43,
+          44
+        ],
+        "spec.controlPlane.machineInfrastructure.ref.name": [
+          45,
+          46
+        ],
+        "spec.controlPlane.machineInfrastructure.ref.namespace": [
+          47,
+          48
+        ],
+        "spec.controlPlane.machineInfrastructure.ref.resourceVersion": [
+          49,
+          50
+        ],
+        "spec.controlPlane.machineInfrastructure.ref.uid": [
+          51,
+          52
+        ],
+        "spec.controlPlane.metadata": [
+          53,
+          13
+        ],
+        "spec.controlPlane.metadata.annotations": [
+          54,
+          15
+        ],
+        "spec.controlPlane.metadata.labels": [
+          55,
+          4
+        ],
+        "spec.controlPlane.ref": [
+          41,
+          9
+        ],
+        "spec.controlPlane.ref.fieldPath": [
+          42,
+          11
+        ],
+        "spec.controlPlane.ref.kind": [
+          43,
+          44
+        ],
+        "spec.controlPlane.ref.name": [
+          45,
+          46
+        ],
+        "spec.controlPlane.ref.namespace": [
+          47,
+          48
+        ],
+        "spec.controlPlane.ref.resourceVersion": [
+          49,
+          50
+        ],
+        "spec.controlPlane.ref.uid": [
+          51,
+          52
+        ],
+        "spec.infrastructure": [
+          56,
+          17
+        ],
+        "spec.infrastructure.ref": [
+          41,
+          9
+        ],
+        "spec.infrastructure.ref.fieldPath": [
+          42,
+          11
+        ],
+        "spec.infrastructure.ref.kind": [
+          43,
+          44
+        ],
+        "spec.infrastructure.ref.name": [
+          45,
+          46
+        ],
+        "spec.infrastructure.ref.namespace": [
+          47,
+          48
+        ],
+        "spec.infrastructure.ref.resourceVersion": [
+          49,
+          50
+        ],
+        "spec.infrastructure.ref.uid": [
+          51,
+          52
+        ],
+        "spec.workers": [
+          57,
+          19
+        ],
+        "spec.workers.machineDeployments": [
+          58,
+          21
+        ],
+        "spec.workers.machineDeployments.class": [
+          59,
+          23
+        ],
+        "spec.workers.machineDeployments.template": [
+          60,
+          25
+        ],
+        "spec.workers.machineDeployments.template.bootstrap": [
+          61,
+          27
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref": [
+          41,
+          9
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref.fieldPath": [
+          42,
+          11
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref.kind": [
+          43,
+          44
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref.name": [
+          45,
+          46
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref.namespace": [
+          47,
+          48
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref.resourceVersion": [
+          49,
+          50
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref.uid": [
+          51,
+          52
+        ],
+        "spec.workers.machineDeployments.template.infrastructure": [
+          62,
+          29
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref": [
+          41,
+          9
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref.fieldPath": [
+          42,
+          11
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref.kind": [
+          43,
+          44
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref.name": [
+          45,
+          46
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref.namespace": [
+          47,
+          48
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref.resourceVersion": [
+          49,
+          50
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref.uid": [
+          51,
+          52
+        ],
+        "spec.workers.machineDeployments.template.metadata": [
+          63,
+          31
+        ],
+        "spec.workers.machineDeployments.template.metadata.annotations": [
+          54,
+          15
+        ],
+        "spec.workers.machineDeployments.template.metadata.labels": [
+          55,
+          4
+        ],
+        "": [
+          64,
+          33
+        ]
+      }
+    },
+    "v1.4.0": {
+      "description": true,
+      "descriptions": {
+        "": [
+          65,
+          64
+        ]
+      }
+    },
+    "v0.4.3": {
+      "descriptionChanged": [
+        "spec.controlPlane.metadata",
+        "spec.workers.machineDeployments.template.metadata"
+      ],
+      "descriptions": {
+        "spec.controlPlane.metadata": [
+          66,
+          53
+        ],
+        "spec.workers.machineDeployments.template.metadata": [
+          66,
+          63
+        ]
+      }
+    }
+  },
+  "texts": [
+    "ClusterClassSpec describes the desired state of the ClusterClass.",
+    "spec is the desired state of ClusterClass.",
+    "MachineTemplate defines the metadata and infrastructure information\nfor control plane machines.\n\nThis field is supported if and only if the control plane provider template\nreferenced above is Machine based and supports setting replicas.",
+    "machineInfrastructure defines the metadata and infrastructure information\nfor control plane machines.\n\nThis field is supported if and only if the control plane provider template\nreferenced above is Machine based and supports setting replicas.",
+    "Map of string keys and values that can be used to organize and categorize\n(scope and select) objects. May match selectors of replication controllers\nand services.\nMore info: http://kubernetes.io/docs/user-guide/labels",
+    "labels is a map of string keys and values that can be used to organize and categorize\n(scope and select) objects. May match selectors of replication controllers\nand services.\nMore info: http://kubernetes.io/docs/user-guide/labels",
+    "ControlPlane is a reference to a local struct that holds the details\nfor provisioning the Control Plane for the Cluster.",
+    "controlPlane is a reference to a local struct that holds the details\nfor provisioning the Control Plane for the Cluster.",
+    "MachineTemplate defines the metadata and infrastructure information\nfor control plane machines.\n\n\nThis field is supported if and only if the control plane provider template\nreferenced above is Machine based and supports setting replicas.",
+    "Ref is a required reference to a custom resource\noffered by a provider.",
+    "ref is a required reference to a custom resource\noffered by a provider.",
+    "If referring to a piece of an object instead of an entire object, this string\nshould contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2].\nFor example, if the object reference is to a container within a pod, this would take on a value like:\n\"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered\nthe event) or if no container name is specified \"spec.containers[2]\" (container with\nindex 2 in this pod). This syntax is chosen only to have some well-defined way of\nreferencing a part of an object.\nTODO: this design is not final and this field is subject to change in the future.",
+    "If referring to a piece of an object instead of an entire object, this string\nshould contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2].\nFor example, if the object reference is to a container within a pod, this would take on a value like:\n\"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered\nthe event) or if no container name is specified \"spec.containers[2]\" (container with\nindex 2 in this pod). This syntax is chosen only to have some well-defined way of\nreferencing a part of an object.",
+    "Metadata is the metadata applied to the machines of the ControlPlane.\nAt runtime this metadata is merged with the corresponding metadata from the topology.\n\n\nThis field is supported if and only if the control plane provider template\nreferenced is Machine based.",
+    "metadata is the metadata applied to the machines of the ControlPlane.\nAt runtime this metadata is merged with the corresponding metadata from the topology.\n\nThis field is supported if and only if the control plane provider template\nreferenced is Machine based.",
+    "Annotations is an unstructured key value map stored with a resource that may be\nset by external tools to store and retrieve arbitrary metadata. They are not\nqueryable and should be preserved when modifying objects.\nMore info: http://kubernetes.io/docs/user-guide/annotations",
+    "annotations is an unstructured key value map stored with a resource that may be\nset by external tools to store and retrieve arbitrary metadata. They are not\nqueryable and should be preserved when modifying objects.\nMore info: http://kubernetes.io/docs/user-guide/annotations",
+    "Infrastructure is a reference to a provider-specific template that holds\nthe details for provisioning infrastructure specific cluster\nfor the underlying provider.\nThe underlying provider is responsible for the implementation\nof the template to an infrastructure cluster.",
+    "infrastructure is a reference to a provider-specific template that holds\nthe details for provisioning infrastructure specific cluster\nfor the underlying provider.\nThe underlying provider is responsible for the implementation\nof the template to an infrastructure cluster.",
+    "Workers describes the worker nodes for the cluster.\nIt is a collection of node types which can be used to create\nthe worker nodes of the cluster.",
+    "workers describes the worker nodes for the cluster.\nIt is a collection of node types which can be used to create\nthe worker nodes of the cluster.",
+    "MachineDeployments is a list of machine deployment classes that can be used to create\na set of worker nodes.",
+    "machineDeployments is a list of machine deployment classes that can be used to create\na set of worker nodes.",
+    "Class denotes a type of worker node present in the cluster,\nthis name MUST be unique within a ClusterClass and can be referenced\nin the Cluster to create a managed MachineDeployment.",
+    "class denotes a type of worker node present in the cluster,\nthis name MUST be unique within a ClusterClass and can be referenced\nin the Cluster to create a managed MachineDeployment.",
+    "Template is a local struct containing a collection of templates for creation of\nMachineDeployment objects representing a set of worker nodes.",
+    "template is a local struct containing a collection of templates for creation of\nMachineDeployment objects representing a set of worker nodes.",
+    "Bootstrap contains the bootstrap template reference to be used\nfor the creation of worker Machines.",
+    "bootstrap contains the bootstrap template reference to be used\nfor the creation of worker Machines.",
+    "Infrastructure contains the infrastructure template reference to be used\nfor the creation of worker Machines.",
+    "infrastructure contains the infrastructure template reference to be used\nfor the creation of worker Machines.",
+    "Metadata is the metadata applied to the machines of the MachineDeployment.\nAt runtime this metadata is merged with the corresponding metadata from the topology.",
+    "metadata is the metadata applied to the machines of the MachineDeployment.\nAt runtime this metadata is merged with the corresponding metadata from the topology.",
+    "ClusterClass is a template which can be used to create managed topologies.\n\n\nDeprecated: This type will be removed in one of the next releases.",
+    "ClusterClass is a template which can be used to create managed topologies.\n\nDeprecated: This type will be removed in one of the next releases.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "ControlPlane is a reference to a local struct that holds the details for provisioning the Control Plane for the Cluster.",
+    "MachineTemplate defines the metadata and infrastructure information for control plane machines. \n This field is supported if and only if the control plane provider template referenced above is Machine based and supports setting replicas.",
+    "Ref is a required reference to a custom resource offered by a provider.",
+    "If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future.",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind of the referent.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Name of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
+    "Namespace of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
+    "Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "Specific resourceVersion to which this reference is made, if any.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids",
+    "UID of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids",
+    "Metadata is the metadata applied to the machines of the ControlPlane. At runtime this metadata is merged with the corresponding metadata from the topology. \n This field is supported if and only if the control plane provider template referenced is Machine based.",
+    "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels",
+    "Infrastructure is a reference to a provider-specific template that holds the details for provisioning infrastructure specific cluster for the underlying provider. The underlying provider is responsible for the implementation of the template to an infrastructure cluster.",
+    "Workers describes the worker nodes for the cluster. It is a collection of node types which can be used to create the worker nodes of the cluster.",
+    "MachineDeployments is a list of machine deployment classes that can be used to create a set of worker nodes.",
+    "Class denotes a type of worker node present in the cluster, this name MUST be unique within a ClusterClass and can be referenced in the Cluster to create a managed MachineDeployment.",
+    "Template is a local struct containing a collection of templates for creation of MachineDeployment objects representing a set of worker nodes.",
+    "Bootstrap contains the bootstrap template reference to be used for the creation of worker Machines.",
+    "Infrastructure contains the infrastructure template reference to be used for the creation of worker Machines.",
+    "Metadata is the metadata applied to the machines of the MachineDeployment. At runtime this metadata is merged with the corresponding metadata from the topology.",
+    "ClusterClass is a template which can be used to create managed topologies. \n Deprecated: This type will be removed in one of the next releases.",
+    "ClusterClass is a template which can be used to create managed topologies.",
+    "ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create. This is a copy of customizable fields from metav1.ObjectMeta. \n ObjectMeta is embedded in `Machine.Spec`, `MachineDeployment.Template` and `MachineSet.Template`, which are not top-level Kubernetes objects. Given that metav1.ObjectMeta has lots of special cases and read-only fields which end up in the generated CRD validation, having it as a subset simplifies the API and some issues that can impact user experience. \n During the [upgrade to controller-tools@v2](https://github.com/kubernetes-sigs/cluster-api/pull/1054) for v1alpha2, we noticed a failure would occur running Cluster API test suite against the new CRDs, specifically `spec.metadata.creationTimestamp in body must be of type string: \"null\"`. The investigation showed that `controller-tools@v2` behaves differently than its previous version when handling types from [metav1](k8s.io/apimachinery/pkg/apis/meta/v1) package. \n In more details, we found that embedded (non-top level) types that embedded `metav1.ObjectMeta` had validation properties, including for `creationTimestamp` (metav1.Time). The `metav1.Time` type specifies a custom json marshaller that, when IsZero() is true, returns `null` which breaks validation because the field isn't marked as nullable. \n In future versions, controller-tools@v2 might allow overriding the type and validation for embedded types. When that happens, this hack should be revisited."
+  ]
+}

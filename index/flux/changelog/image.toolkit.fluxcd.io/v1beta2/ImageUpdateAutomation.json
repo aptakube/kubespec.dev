@@ -1,0 +1,86 @@
+{
+  "versions": {
+    "v2.7.0": {
+      "descriptionChanged": [
+        "spec.git.commit.messageTemplate"
+      ],
+      "optional": [
+        "spec.update.strategy"
+      ],
+      "descriptions": {
+        "spec.git.commit.messageTemplate": [
+          0,
+          1
+        ],
+        "spec.update.strategy": [
+          null,
+          2
+        ]
+      }
+    },
+    "v2.6.0": {
+      "added": {
+        "status.observedPolicies.digest": "string"
+      },
+      "descriptions": {
+        "status.observedPolicies.digest": [
+          null,
+          3
+        ]
+      }
+    },
+    "v2.5.0": {
+      "added": {
+        "spec.git.commit.messageTemplateValues": "map[string]string"
+      },
+      "descriptions": {
+        "spec.git.commit.messageTemplateValues": [
+          null,
+          4
+        ]
+      }
+    },
+    "v2.4.0": {
+      "descriptionChanged": [
+        "spec.git.checkout.ref.commit",
+        "spec.git.checkout.ref.name",
+        "status.conditions.type"
+      ],
+      "required": [
+        "spec.git.commit.signingKey.secretRef"
+      ],
+      "descriptions": {
+        "spec.git.checkout.ref.commit": [
+          5,
+          6
+        ],
+        "spec.git.checkout.ref.name": [
+          7,
+          8
+        ],
+        "spec.git.commit.signingKey.secretRef": [
+          null,
+          9
+        ],
+        "status.conditions.type": [
+          10,
+          11
+        ]
+      }
+    }
+  },
+  "texts": [
+    "MessageTemplate provides a template for the commit message,\ninto which will be interpolated the details of the change made.",
+    "MessageTemplate provides a template for the commit message,\ninto which will be interpolated the details of the change made.\nNote: The `Updated` template field has been removed. Use `Changed` instead.",
+    "Strategy names the strategy to be used.",
+    "Digest is the image's digest.",
+    "MessageTemplateValues provides additional values to be available to the\ntemplating rendering.",
+    "Commit SHA to check out, takes precedence over all reference fields.\n\n\nThis can be combined with Branch to shallow clone the branch, in which\nthe commit is expected to exist.",
+    "Commit SHA to check out, takes precedence over all reference fields.\n\nThis can be combined with Branch to shallow clone the branch, in which\nthe commit is expected to exist.",
+    "Name of the reference to check out; takes precedence over Branch, Tag and SemVer.\n\n\nIt must be a valid Git reference: https://git-scm.com/docs/git-check-ref-format#_description\nExamples: \"refs/heads/main\", \"refs/tags/v0.1.0\", \"refs/pull/420/head\", \"refs/merge-requests/1/head\"",
+    "Name of the reference to check out; takes precedence over Branch, Tag and SemVer.\n\nIt must be a valid Git reference: https://git-scm.com/docs/git-check-ref-format#_description\nExamples: \"refs/heads/main\", \"refs/tags/v0.1.0\", \"refs/pull/420/head\", \"refs/merge-requests/1/head\"",
+    "SecretRef holds the name to a secret that contains a 'git.asc' key\ncorresponding to the ASCII Armored file containing the GPG signing\nkeypair as the value. It must be in the same namespace as the\nImageUpdateAutomation.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase."
+  ]
+}

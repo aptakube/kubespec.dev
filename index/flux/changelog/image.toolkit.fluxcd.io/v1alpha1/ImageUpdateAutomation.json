@@ -1,0 +1,147 @@
+{
+  "versions": {
+    "v0.28.0": {
+      "descriptionChanged": [
+        "spec.checkout.gitRepositoryRef.name",
+        "spec.commit.signingKey.secretRef.name",
+        "status.lastHandledReconcileAt"
+      ],
+      "descriptions": {
+        "spec.checkout.gitRepositoryRef.name": [
+          0,
+          1
+        ],
+        "spec.commit.signingKey.secretRef.name": [
+          0,
+          1
+        ],
+        "status.lastHandledReconcileAt": [
+          2,
+          3
+        ]
+      }
+    },
+    "v0.12.0": {
+      "added": {
+        "spec.commit.signingKey": "object"
+      },
+      "descriptions": {
+        "spec.commit.signingKey": [
+          null,
+          4
+        ]
+      }
+    },
+    "v0.10.0": {
+      "descriptionChanged": [
+        "spec.checkout.branch",
+        "spec.commit"
+      ],
+      "added": {
+        "spec.push": "object",
+        "spec.update.path": "string"
+      },
+      "descriptions": {
+        "spec.checkout.branch": [
+          5,
+          6
+        ],
+        "spec.commit": [
+          7,
+          8
+        ],
+        "spec.push": [
+          null,
+          9
+        ],
+        "spec.update.path": [
+          null,
+          10
+        ]
+      }
+    },
+    "v0.7.0": {
+      "required": [
+        "spec.checkout.gitRepositoryRef.name"
+      ],
+      "descriptionChanged": [
+        "spec.checkout.gitRepositoryRef.name",
+        "spec.update"
+      ],
+      "optional": [
+        "spec.update"
+      ],
+      "added": {
+        "spec.update.strategy": "string"
+      },
+      "removed": {
+        "spec.update.setters": "object"
+      },
+      "descriptions": {
+        "spec.checkout.gitRepositoryRef.name": [
+          11,
+          0
+        ],
+        "spec.update": [
+          12,
+          13
+        ],
+        "spec.update.strategy": [
+          null,
+          14
+        ],
+        "spec.update.setters": [
+          15,
+          null
+        ]
+      }
+    },
+    "v0.5.8": {
+      "required": [
+        "spec.checkout.branch"
+      ],
+      "descriptionChanged": [
+        "spec.checkout.branch"
+      ],
+      "added": {
+        "status.lastPushCommit": "string",
+        "status.lastPushTime": "string"
+      },
+      "descriptions": {
+        "spec.checkout.branch": [
+          16,
+          5
+        ],
+        "status.lastPushCommit": [
+          null,
+          17
+        ],
+        "status.lastPushTime": [
+          null,
+          18
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Name of the referent",
+    "Name of the referent.",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change can be detected.",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change of the annotation value can be detected.",
+    "SigningKey provides the option to sign commits with a GPG key",
+    "Branch gives the branch to clone from the git repository.",
+    "Branch gives the branch to clone from the git repository. If `.spec.push` is not supplied, commits will also be pushed to this branch.",
+    "Commit specifies how to commit to the git repo",
+    "Commit specifies how to commit to the git repository.",
+    "Push specifies how and where to push commits made by the automation. If missing, commits are pushed (back) to `.spec.checkout.branch`.",
+    "Path to the directory containing the manifests to be updated. Defaults to 'None', which translates to the root path of the GitRepositoryRef.",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "Update gives the specification for how to update the files in the repository",
+    "Update gives the specification for how to update the files in the repository. This can be left empty, to use the default value.",
+    "Strategy names the strategy to be used.",
+    "Setters if present means update workloads using setters, via fields marked in the files themselves.",
+    "Branch gives the branch to clone from the git repository. If missing, it will be left to default; be aware this may give indeterminate results.",
+    "LastPushCommit records the SHA1 of the last commit made by the controller, for this automation object",
+    "LastPushTime records the time of the last pushed change."
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "versions": {
+    "1.20.0": {
+      "description": true,
+      "descriptions": {
+        "": [
+          0,
+          1
+        ]
+      }
+    },
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.allowFirstLastIPs",
+        "spec.disabled",
+        "spec.serviceSelector.matchExpressions.operator",
+        "spec.serviceSelector.matchExpressions.values",
+        "spec.serviceSelector.matchLabels",
+        "status",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type"
+      ],
+      "required": [
+        "spec"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          2,
+          3
+        ],
+        "kind": [
+          4,
+          5
+        ],
+        "spec": [
+          6,
+          7
+        ],
+        "spec.allowFirstLastIPs": [
+          8,
+          9
+        ],
+        "spec.disabled": [
+          10,
+          11
+        ],
+        "spec.serviceSelector.matchExpressions.operator": [
+          12,
+          13
+        ],
+        "spec.serviceSelector.matchExpressions.values": [
+          14,
+          15
+        ],
+        "spec.serviceSelector.matchLabels": [
+          16,
+          17
+        ],
+        "status": [
+          18,
+          19
+        ],
+        "status.conditions.lastTransitionTime": [
+          20,
+          21
+        ],
+        "status.conditions.message": [
+          22,
+          23
+        ],
+        "status.conditions.observedGeneration": [
+          24,
+          25
+        ],
+        "status.conditions.reason": [
+          26,
+          27
+        ],
+        "status.conditions.type": [
+          28,
+          29
+        ],
+        "": [
+          30,
+          0
+        ]
+      }
+    },
+    "1.16.2": {
+      "descriptionChanged": [
+        "spec.allowFirstLastIPs"
+      ],
+      "descriptions": {
+        "spec.allowFirstLastIPs": [
+          31,
+          8
+        ]
+      }
+    },
+    "1.16.0": {
+      "removed": {
+        "spec.cidrs": "object[]"
+      },
+      "descriptions": {
+        "spec.cidrs": [
+          32,
+          null
+        ]
+      }
+    },
+    "1.15.0": {
+      "added": {
+        "spec.allowFirstLastIPs": "string",
+        "spec.blocks": "object[]",
+        "spec.cidrs.start": "string",
+        "spec.cidrs.stop": "string"
+      },
+      "optional": [
+        "spec.cidrs",
+        "spec.cidrs.cidr"
+      ],
+      "descriptionChanged": [
+        "spec.cidrs"
+      ],
+      "descriptions": {
+        "spec.allowFirstLastIPs": [
+          null,
+          31
+        ],
+        "spec.blocks": [
+          null,
+          33
+        ],
+        "spec.cidrs": [
+          34,
+          32
+        ]
+      }
+    }
+  },
+  "texts": [
+    "CiliumLoadBalancerIPPool is a Kubernetes third-party resource which\nis used to defined pools of IPs which the operator can use to to allocate\nand advertise IPs for Services of type LoadBalancer.",
+    "CiliumLoadBalancerIPPool is a Kubernetes third-party resource which\nis used to defined pools of IPs which the operator can use to allocate\nand advertise IPs for Services of type LoadBalancer.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Spec is a human readable description for a BGP load balancer ip pool.",
+    "Spec is a human readable description for a BGP load balancer\nip pool.",
+    "AllowFirstLastIPs, if set to `Yes` or undefined means that the first and last IPs of each CIDR will be allocatable. If `No`, these IPs will be reserved. This field is ignored for /{31,32} and /{127,128} CIDRs since reserving the first and last IPs would make the CIDRs unusable.",
+    "AllowFirstLastIPs, if set to `Yes` or undefined means that the first and last IPs of each CIDR will be allocatable.\nIf `No`, these IPs will be reserved. This field is ignored for /{31,32} and /{127,128} CIDRs since\nreserving the first and last IPs would make the CIDRs unusable.",
+    "Disabled, if set to true means that no new IPs will be allocated from this pool. Existing allocations will not be removed from services.",
+    "Disabled, if set to true means that no new IPs will be allocated from this pool.\nExisting allocations will not be removed from services.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "Status is the status of the IP Pool. \n It might be possible for users to define overlapping IP Pools, we can't validate or enforce non-overlapping pools during object creation. The Cilium operator will do this validation and update the status to reflect the ability to allocate IPs from this pool.",
+    "Status is the status of the IP Pool.\n\nIt might be possible for users to define overlapping IP Pools, we can't validate or enforce non-overlapping pools\nduring object creation. The Cilium operator will do this validation and update the status to reflect the ability\nto allocate IPs from this pool.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "CiliumLoadBalancerIPPool is a Kubernetes third-party resource which is used to defined pools of IPs which the operator can use to to allocate and advertise IPs for Services of type LoadBalancer.",
+    "AllowFirstLastIPs, if set to `yes` means that the first and last IPs of each CIDR will be allocatable. If `no` or undefined, these IPs will be reserved. This field is ignored for /{31,32} and /{127,128} CIDRs since reserving the first and last IPs would make the CIDRs unusable.",
+    "Cidrs is a list of CIDRs comprising this IP Pool Deprecated: please use the `blocks` field instead. This field will be removed in a future release. https://github.com/cilium/cilium/issues/28590",
+    "Blocks is a list of CIDRs comprising this IP Pool",
+    "CiliumLoadBalancerIPPoolCIDRBlock is a list of CIDRs comprising this IP Pool"
+  ]
+}

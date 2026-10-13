@@ -1,0 +1,77 @@
+{
+  "versions": {
+    "v1.33.0": {
+      "descriptionChanged": [
+        "spec.allNodes",
+        "spec.nodeName",
+        "spec.nodeSelector"
+      ],
+      "added": {
+        "spec.devices.basic.allNodes": "boolean",
+        "spec.devices.basic.consumesCounters": "DeviceCounterConsumption[]",
+        "spec.devices.basic.nodeName": "string",
+        "spec.devices.basic.nodeSelector": "NodeSelector",
+        "spec.devices.basic.taints": "DeviceTaint[]",
+        "spec.perDeviceNodeSelection": "boolean",
+        "spec.sharedCounters": "CounterSet[]"
+      },
+      "descriptions": {
+        "spec.allNodes": [
+          0,
+          1
+        ],
+        "spec.devices.basic.allNodes": [
+          null,
+          2
+        ],
+        "spec.devices.basic.consumesCounters": [
+          null,
+          3
+        ],
+        "spec.devices.basic.nodeName": [
+          null,
+          4
+        ],
+        "spec.devices.basic.nodeSelector": [
+          null,
+          5
+        ],
+        "spec.devices.basic.taints": [
+          null,
+          6
+        ],
+        "spec.nodeName": [
+          7,
+          8
+        ],
+        "spec.nodeSelector": [
+          9,
+          10
+        ],
+        "spec.perDeviceNodeSelection": [
+          null,
+          11
+        ],
+        "spec.sharedCounters": [
+          null,
+          12
+        ]
+      }
+    }
+  },
+  "texts": [
+    "AllNodes indicates that all nodes have access to the resources in the pool.\n\nExactly one of NodeName, NodeSelector and AllNodes must be set.",
+    "AllNodes indicates that all nodes have access to the resources in the pool.\n\nExactly one of NodeName, NodeSelector, AllNodes, and PerDeviceNodeSelection must be set.",
+    "AllNodes indicates that all nodes have access to the device.\n\nMust only be set if Spec.PerDeviceNodeSelection is set to true. At most one of NodeName, NodeSelector and AllNodes can be set.",
+    "ConsumesCounters defines a list of references to sharedCounters and the set of counters that the device will consume from those counter sets.\n\nThere can only be a single entry per counterSet.\n\nThe total number of device counter consumption entries must be <= 32. In addition, the total number in the entire ResourceSlice must be <= 1024 (for example, 64 devices with 16 counters each).",
+    "NodeName identifies the node where the device is available.\n\nMust only be set if Spec.PerDeviceNodeSelection is set to true. At most one of NodeName, NodeSelector and AllNodes can be set.",
+    "NodeSelector defines the nodes where the device is available.\n\nMust only be set if Spec.PerDeviceNodeSelection is set to true. At most one of NodeName, NodeSelector and AllNodes can be set.",
+    "If specified, these are the driver-defined taints.\n\nThe maximum number of taints is 4.\n\nThis is an alpha field and requires enabling the DRADeviceTaints feature gate.",
+    "NodeName identifies the node which provides the resources in this pool. A field selector can be used to list only ResourceSlice objects belonging to a certain node.\n\nThis field can be used to limit access from nodes to ResourceSlices with the same node name. It also indicates to autoscalers that adding new nodes of the same type as some old node might also make new resources available.\n\nExactly one of NodeName, NodeSelector and AllNodes must be set. This field is immutable.",
+    "NodeName identifies the node which provides the resources in this pool. A field selector can be used to list only ResourceSlice objects belonging to a certain node.\n\nThis field can be used to limit access from nodes to ResourceSlices with the same node name. It also indicates to autoscalers that adding new nodes of the same type as some old node might also make new resources available.\n\nExactly one of NodeName, NodeSelector, AllNodes, and PerDeviceNodeSelection must be set. This field is immutable.",
+    "NodeSelector defines which nodes have access to the resources in the pool, when that pool is not limited to a single node.\n\nMust use exactly one term.\n\nExactly one of NodeName, NodeSelector and AllNodes must be set.",
+    "NodeSelector defines which nodes have access to the resources in the pool, when that pool is not limited to a single node.\n\nMust use exactly one term.\n\nExactly one of NodeName, NodeSelector, AllNodes, and PerDeviceNodeSelection must be set.",
+    "PerDeviceNodeSelection defines whether the access from nodes to resources in the pool is set on the ResourceSlice level or on each device. If it is set to true, every device defined the ResourceSlice must specify this individually.\n\nExactly one of NodeName, NodeSelector, AllNodes, and PerDeviceNodeSelection must be set.",
+    "SharedCounters defines a list of counter sets, each of which has a name and a list of counters available.\n\nThe names of the SharedCounters must be unique in the ResourceSlice.\n\nThe maximum number of SharedCounters is 32."
+  ]
+}

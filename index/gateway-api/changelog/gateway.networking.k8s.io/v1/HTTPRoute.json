@@ -1,0 +1,1510 @@
+{
+  "versions": {
+    "v1.6.2": {
+      "descriptionChanged": [
+        "spec.rules.backendRefs.filters.requestRedirect.statusCode",
+        "spec.rules.filters.requestRedirect.statusCode"
+      ],
+      "descriptions": {
+        "spec.rules.backendRefs.filters.requestRedirect.statusCode": [
+          0,
+          1
+        ],
+        "spec.rules.filters.requestRedirect.statusCode": [
+          0,
+          1
+        ]
+      }
+    },
+    "v1.6.0": {
+      "descriptionChanged": [
+        "spec.rules.backendRefs.filters.cors.allowHeaders",
+        "spec.rules.backendRefs.filters.cors.allowMethods",
+        "spec.rules.backendRefs.filters.cors.allowOrigins",
+        "spec.rules.backendRefs.filters.cors.exposeHeaders",
+        "spec.rules.backendRefs.filters.requestMirror.backendRef",
+        "spec.rules.filters.cors.allowHeaders",
+        "spec.rules.filters.cors.allowMethods",
+        "spec.rules.filters.cors.allowOrigins",
+        "spec.rules.filters.cors.exposeHeaders",
+        "spec.rules.filters.requestMirror.backendRef"
+      ],
+      "descriptions": {
+        "spec.rules.backendRefs.filters.cors.allowHeaders": [
+          2,
+          3
+        ],
+        "spec.rules.backendRefs.filters.cors.allowMethods": [
+          4,
+          5
+        ],
+        "spec.rules.backendRefs.filters.cors.allowOrigins": [
+          6,
+          7
+        ],
+        "spec.rules.backendRefs.filters.cors.exposeHeaders": [
+          8,
+          9
+        ],
+        "spec.rules.backendRefs.filters.requestMirror.backendRef": [
+          10,
+          11
+        ],
+        "spec.rules.filters.cors.allowHeaders": [
+          2,
+          3
+        ],
+        "spec.rules.filters.cors.allowMethods": [
+          4,
+          5
+        ],
+        "spec.rules.filters.cors.allowOrigins": [
+          6,
+          7
+        ],
+        "spec.rules.filters.cors.exposeHeaders": [
+          8,
+          9
+        ],
+        "spec.rules.filters.requestMirror.backendRef": [
+          10,
+          11
+        ]
+      }
+    },
+    "v1.5.0": {
+      "added": {
+        "spec.rules.backendRefs.filters.cors": "object",
+        "spec.rules.filters.cors": "object"
+      },
+      "descriptionChanged": [
+        "status.parents.conditions"
+      ],
+      "descriptions": {
+        "spec.rules.backendRefs.filters.cors": [
+          null,
+          12
+        ],
+        "spec.rules.filters.cors": [
+          null,
+          12
+        ],
+        "status.parents.conditions": [
+          13,
+          14
+        ]
+      }
+    },
+    "v1.4.0": {
+      "added": {
+        "spec.rules.name": "string"
+      },
+      "required": [
+        "status.parents.conditions"
+      ],
+      "descriptions": {
+        "spec.rules.name": [
+          null,
+          15
+        ],
+        "status.parents.conditions": [
+          null,
+          13
+        ]
+      }
+    },
+    "v1.3.0": {
+      "descriptionChanged": [
+        "spec.parentRefs",
+        "spec.parentRefs.namespace",
+        "spec.parentRefs.port",
+        "spec.rules",
+        "spec.rules.backendRefs.filters.requestHeaderModifier.add.name",
+        "spec.rules.backendRefs.filters.requestHeaderModifier.set.name",
+        "spec.rules.backendRefs.filters.requestMirror",
+        "spec.rules.backendRefs.filters.responseHeaderModifier.add.name",
+        "spec.rules.backendRefs.filters.responseHeaderModifier.set.name",
+        "spec.rules.filters",
+        "spec.rules.filters.requestHeaderModifier.add.name",
+        "spec.rules.filters.requestHeaderModifier.set.name",
+        "spec.rules.filters.requestMirror",
+        "spec.rules.filters.responseHeaderModifier.add.name",
+        "spec.rules.filters.responseHeaderModifier.set.name",
+        "spec.rules.matches.headers.name",
+        "status.parents.conditions",
+        "status.parents.parentRef.namespace",
+        "status.parents.parentRef.port"
+      ],
+      "added": {
+        "spec.rules.backendRefs.filters.requestMirror.fraction": "object",
+        "spec.rules.backendRefs.filters.requestMirror.percent": "integer",
+        "spec.rules.filters.requestMirror.fraction": "object",
+        "spec.rules.filters.requestMirror.percent": "integer"
+      },
+      "descriptions": {
+        "spec.parentRefs": [
+          16,
+          17
+        ],
+        "spec.parentRefs.namespace": [
+          18,
+          19
+        ],
+        "spec.parentRefs.port": [
+          20,
+          21
+        ],
+        "spec.rules": [
+          22,
+          23
+        ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier.add.name": [
+          24,
+          25
+        ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier.set.name": [
+          24,
+          25
+        ],
+        "spec.rules.backendRefs.filters.requestMirror": [
+          26,
+          27
+        ],
+        "spec.rules.backendRefs.filters.requestMirror.fraction": [
+          null,
+          28
+        ],
+        "spec.rules.backendRefs.filters.requestMirror.percent": [
+          null,
+          29
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.add.name": [
+          24,
+          25
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.set.name": [
+          24,
+          25
+        ],
+        "spec.rules.filters": [
+          30,
+          31
+        ],
+        "spec.rules.filters.requestHeaderModifier.add.name": [
+          24,
+          25
+        ],
+        "spec.rules.filters.requestHeaderModifier.set.name": [
+          24,
+          25
+        ],
+        "spec.rules.filters.requestMirror": [
+          26,
+          27
+        ],
+        "spec.rules.filters.requestMirror.fraction": [
+          null,
+          28
+        ],
+        "spec.rules.filters.requestMirror.percent": [
+          null,
+          29
+        ],
+        "spec.rules.filters.responseHeaderModifier.add.name": [
+          24,
+          25
+        ],
+        "spec.rules.filters.responseHeaderModifier.set.name": [
+          24,
+          25
+        ],
+        "spec.rules.matches.headers.name": [
+          32,
+          33
+        ],
+        "status.parents.conditions": [
+          34,
+          13
+        ],
+        "status.parents.parentRef.namespace": [
+          18,
+          19
+        ],
+        "status.parents.parentRef.port": [
+          20,
+          21
+        ]
+      }
+    },
+    "v1.2.0": {
+      "descriptionChanged": [
+        "spec.hostnames",
+        "spec.parentRefs",
+        "spec.parentRefs.group",
+        "spec.parentRefs.kind",
+        "spec.parentRefs.name",
+        "spec.parentRefs.namespace",
+        "spec.parentRefs.port",
+        "spec.parentRefs.sectionName",
+        "spec.rules",
+        "spec.rules.backendRefs",
+        "spec.rules.backendRefs.filters",
+        "spec.rules.backendRefs.filters.extensionRef",
+        "spec.rules.backendRefs.filters.requestHeaderModifier",
+        "spec.rules.backendRefs.filters.requestHeaderModifier.add",
+        "spec.rules.backendRefs.filters.requestHeaderModifier.add.name",
+        "spec.rules.backendRefs.filters.requestHeaderModifier.remove",
+        "spec.rules.backendRefs.filters.requestHeaderModifier.set",
+        "spec.rules.backendRefs.filters.requestHeaderModifier.set.name",
+        "spec.rules.backendRefs.filters.requestMirror",
+        "spec.rules.backendRefs.filters.requestMirror.backendRef",
+        "spec.rules.backendRefs.filters.requestMirror.backendRef.kind",
+        "spec.rules.backendRefs.filters.requestMirror.backendRef.namespace",
+        "spec.rules.backendRefs.filters.requestRedirect",
+        "spec.rules.backendRefs.filters.requestRedirect.hostname",
+        "spec.rules.backendRefs.filters.requestRedirect.path",
+        "spec.rules.backendRefs.filters.requestRedirect.path.replacePrefixMatch",
+        "spec.rules.backendRefs.filters.requestRedirect.path.type",
+        "spec.rules.backendRefs.filters.requestRedirect.port",
+        "spec.rules.backendRefs.filters.requestRedirect.scheme",
+        "spec.rules.backendRefs.filters.requestRedirect.statusCode",
+        "spec.rules.backendRefs.filters.responseHeaderModifier",
+        "spec.rules.backendRefs.filters.responseHeaderModifier.add",
+        "spec.rules.backendRefs.filters.responseHeaderModifier.add.name",
+        "spec.rules.backendRefs.filters.responseHeaderModifier.remove",
+        "spec.rules.backendRefs.filters.responseHeaderModifier.set",
+        "spec.rules.backendRefs.filters.responseHeaderModifier.set.name",
+        "spec.rules.backendRefs.filters.type",
+        "spec.rules.backendRefs.filters.urlRewrite",
+        "spec.rules.backendRefs.filters.urlRewrite.hostname",
+        "spec.rules.backendRefs.filters.urlRewrite.path",
+        "spec.rules.backendRefs.filters.urlRewrite.path.replacePrefixMatch",
+        "spec.rules.backendRefs.filters.urlRewrite.path.type",
+        "spec.rules.backendRefs.kind",
+        "spec.rules.backendRefs.namespace",
+        "spec.rules.backendRefs.weight",
+        "spec.rules.filters",
+        "spec.rules.filters.extensionRef",
+        "spec.rules.filters.requestHeaderModifier",
+        "spec.rules.filters.requestHeaderModifier.add",
+        "spec.rules.filters.requestHeaderModifier.add.name",
+        "spec.rules.filters.requestHeaderModifier.remove",
+        "spec.rules.filters.requestHeaderModifier.set",
+        "spec.rules.filters.requestHeaderModifier.set.name",
+        "spec.rules.filters.requestMirror",
+        "spec.rules.filters.requestMirror.backendRef",
+        "spec.rules.filters.requestMirror.backendRef.kind",
+        "spec.rules.filters.requestMirror.backendRef.namespace",
+        "spec.rules.filters.requestRedirect",
+        "spec.rules.filters.requestRedirect.hostname",
+        "spec.rules.filters.requestRedirect.path",
+        "spec.rules.filters.requestRedirect.path.replacePrefixMatch",
+        "spec.rules.filters.requestRedirect.path.type",
+        "spec.rules.filters.requestRedirect.port",
+        "spec.rules.filters.requestRedirect.scheme",
+        "spec.rules.filters.requestRedirect.statusCode",
+        "spec.rules.filters.responseHeaderModifier",
+        "spec.rules.filters.responseHeaderModifier.add",
+        "spec.rules.filters.responseHeaderModifier.add.name",
+        "spec.rules.filters.responseHeaderModifier.remove",
+        "spec.rules.filters.responseHeaderModifier.set",
+        "spec.rules.filters.responseHeaderModifier.set.name",
+        "spec.rules.filters.type",
+        "spec.rules.filters.urlRewrite",
+        "spec.rules.filters.urlRewrite.hostname",
+        "spec.rules.filters.urlRewrite.path",
+        "spec.rules.filters.urlRewrite.path.replacePrefixMatch",
+        "spec.rules.filters.urlRewrite.path.type",
+        "spec.rules.matches",
+        "spec.rules.matches.headers.name",
+        "spec.rules.matches.headers.type",
+        "spec.rules.matches.method",
+        "spec.rules.matches.path.type",
+        "spec.rules.matches.queryParams",
+        "spec.rules.matches.queryParams.name",
+        "spec.rules.matches.queryParams.type",
+        "status.parents",
+        "status.parents.conditions",
+        "status.parents.conditions.type",
+        "status.parents.controllerName",
+        "status.parents.parentRef.group",
+        "status.parents.parentRef.kind",
+        "status.parents.parentRef.name",
+        "status.parents.parentRef.namespace",
+        "status.parents.parentRef.port",
+        "status.parents.parentRef.sectionName"
+      ],
+      "added": {
+        "spec.rules.timeouts": "object"
+      },
+      "descriptions": {
+        "spec.hostnames": [
+          35,
+          36
+        ],
+        "spec.parentRefs": [
+          37,
+          16
+        ],
+        "spec.parentRefs.group": [
+          38,
+          39
+        ],
+        "spec.parentRefs.kind": [
+          40,
+          41
+        ],
+        "spec.parentRefs.name": [
+          42,
+          43
+        ],
+        "spec.parentRefs.namespace": [
+          44,
+          18
+        ],
+        "spec.parentRefs.port": [
+          45,
+          20
+        ],
+        "spec.parentRefs.sectionName": [
+          46,
+          47
+        ],
+        "spec.rules": [
+          23,
+          22
+        ],
+        "spec.rules.backendRefs": [
+          48,
+          49
+        ],
+        "spec.rules.backendRefs.filters": [
+          50,
+          51
+        ],
+        "spec.rules.backendRefs.filters.extensionRef": [
+          52,
+          53
+        ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier": [
+          54,
+          55
+        ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier.add": [
+          56,
+          57
+        ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier.add.name": [
+          58,
+          24
+        ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier.remove": [
+          59,
+          60
+        ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier.set": [
+          61,
+          62
+        ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier.set.name": [
+          58,
+          24
+        ],
+        "spec.rules.backendRefs.filters.requestMirror": [
+          63,
+          26
+        ],
+        "spec.rules.backendRefs.filters.requestMirror.backendRef": [
+          64,
+          10
+        ],
+        "spec.rules.backendRefs.filters.requestMirror.backendRef.kind": [
+          65,
+          66
+        ],
+        "spec.rules.backendRefs.filters.requestMirror.backendRef.namespace": [
+          67,
+          68
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect": [
+          69,
+          70
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.hostname": [
+          71,
+          72
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.path": [
+          73,
+          74
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.path.replacePrefixMatch": [
+          75,
+          76
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.path.type": [
+          77,
+          78
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.port": [
+          79,
+          80
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.scheme": [
+          81,
+          82
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.statusCode": [
+          83,
+          0
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier": [
+          84,
+          85
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.add": [
+          56,
+          57
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.add.name": [
+          58,
+          24
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.remove": [
+          59,
+          60
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.set": [
+          61,
+          62
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.set.name": [
+          58,
+          24
+        ],
+        "spec.rules.backendRefs.filters.type": [
+          86,
+          87
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite": [
+          88,
+          89
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite.hostname": [
+          90,
+          91
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite.path": [
+          92,
+          93
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite.path.replacePrefixMatch": [
+          75,
+          76
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite.path.type": [
+          77,
+          78
+        ],
+        "spec.rules.backendRefs.kind": [
+          65,
+          66
+        ],
+        "spec.rules.backendRefs.namespace": [
+          67,
+          68
+        ],
+        "spec.rules.backendRefs.weight": [
+          94,
+          95
+        ],
+        "spec.rules.filters": [
+          96,
+          30
+        ],
+        "spec.rules.filters.extensionRef": [
+          52,
+          53
+        ],
+        "spec.rules.filters.requestHeaderModifier": [
+          54,
+          55
+        ],
+        "spec.rules.filters.requestHeaderModifier.add": [
+          56,
+          57
+        ],
+        "spec.rules.filters.requestHeaderModifier.add.name": [
+          58,
+          24
+        ],
+        "spec.rules.filters.requestHeaderModifier.remove": [
+          59,
+          60
+        ],
+        "spec.rules.filters.requestHeaderModifier.set": [
+          61,
+          62
+        ],
+        "spec.rules.filters.requestHeaderModifier.set.name": [
+          58,
+          24
+        ],
+        "spec.rules.filters.requestMirror": [
+          63,
+          26
+        ],
+        "spec.rules.filters.requestMirror.backendRef": [
+          64,
+          10
+        ],
+        "spec.rules.filters.requestMirror.backendRef.kind": [
+          65,
+          66
+        ],
+        "spec.rules.filters.requestMirror.backendRef.namespace": [
+          67,
+          68
+        ],
+        "spec.rules.filters.requestRedirect": [
+          69,
+          70
+        ],
+        "spec.rules.filters.requestRedirect.hostname": [
+          71,
+          72
+        ],
+        "spec.rules.filters.requestRedirect.path": [
+          73,
+          74
+        ],
+        "spec.rules.filters.requestRedirect.path.replacePrefixMatch": [
+          75,
+          76
+        ],
+        "spec.rules.filters.requestRedirect.path.type": [
+          77,
+          78
+        ],
+        "spec.rules.filters.requestRedirect.port": [
+          79,
+          80
+        ],
+        "spec.rules.filters.requestRedirect.scheme": [
+          81,
+          82
+        ],
+        "spec.rules.filters.requestRedirect.statusCode": [
+          83,
+          0
+        ],
+        "spec.rules.filters.responseHeaderModifier": [
+          84,
+          85
+        ],
+        "spec.rules.filters.responseHeaderModifier.add": [
+          56,
+          57
+        ],
+        "spec.rules.filters.responseHeaderModifier.add.name": [
+          58,
+          24
+        ],
+        "spec.rules.filters.responseHeaderModifier.remove": [
+          59,
+          60
+        ],
+        "spec.rules.filters.responseHeaderModifier.set": [
+          61,
+          62
+        ],
+        "spec.rules.filters.responseHeaderModifier.set.name": [
+          58,
+          24
+        ],
+        "spec.rules.filters.type": [
+          86,
+          87
+        ],
+        "spec.rules.filters.urlRewrite": [
+          88,
+          89
+        ],
+        "spec.rules.filters.urlRewrite.hostname": [
+          90,
+          91
+        ],
+        "spec.rules.filters.urlRewrite.path": [
+          92,
+          93
+        ],
+        "spec.rules.filters.urlRewrite.path.replacePrefixMatch": [
+          75,
+          76
+        ],
+        "spec.rules.filters.urlRewrite.path.type": [
+          77,
+          78
+        ],
+        "spec.rules.matches": [
+          97,
+          98
+        ],
+        "spec.rules.matches.headers.name": [
+          99,
+          32
+        ],
+        "spec.rules.matches.headers.type": [
+          100,
+          101
+        ],
+        "spec.rules.matches.method": [
+          102,
+          103
+        ],
+        "spec.rules.matches.path.type": [
+          104,
+          105
+        ],
+        "spec.rules.matches.queryParams": [
+          106,
+          107
+        ],
+        "spec.rules.matches.queryParams.name": [
+          108,
+          109
+        ],
+        "spec.rules.matches.queryParams.type": [
+          110,
+          111
+        ],
+        "spec.rules.timeouts": [
+          null,
+          112
+        ],
+        "status.parents": [
+          113,
+          114
+        ],
+        "status.parents.conditions": [
+          115,
+          34
+        ],
+        "status.parents.conditions.type": [
+          116,
+          117
+        ],
+        "status.parents.controllerName": [
+          118,
+          119
+        ],
+        "status.parents.parentRef.group": [
+          38,
+          39
+        ],
+        "status.parents.parentRef.kind": [
+          40,
+          41
+        ],
+        "status.parents.parentRef.name": [
+          42,
+          43
+        ],
+        "status.parents.parentRef.namespace": [
+          44,
+          18
+        ],
+        "status.parents.parentRef.port": [
+          45,
+          20
+        ],
+        "status.parents.parentRef.sectionName": [
+          46,
+          47
+        ]
+      }
+    },
+    "v1.1.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.hostnames",
+        "spec.parentRefs",
+        "spec.parentRefs.group",
+        "spec.parentRefs.kind",
+        "spec.parentRefs.name",
+        "spec.parentRefs.namespace",
+        "spec.parentRefs.sectionName",
+        "spec.rules.backendRefs",
+        "spec.rules.backendRefs.filters",
+        "spec.rules.backendRefs.filters.extensionRef",
+        "spec.rules.backendRefs.filters.extensionRef.group",
+        "spec.rules.backendRefs.filters.requestHeaderModifier",
+        "spec.rules.backendRefs.filters.requestHeaderModifier.add",
+        "spec.rules.backendRefs.filters.requestHeaderModifier.add.name",
+        "spec.rules.backendRefs.filters.requestHeaderModifier.remove",
+        "spec.rules.backendRefs.filters.requestHeaderModifier.set",
+        "spec.rules.backendRefs.filters.requestHeaderModifier.set.name",
+        "spec.rules.backendRefs.filters.requestMirror",
+        "spec.rules.backendRefs.filters.requestMirror.backendRef",
+        "spec.rules.backendRefs.filters.requestMirror.backendRef.group",
+        "spec.rules.backendRefs.filters.requestMirror.backendRef.kind",
+        "spec.rules.backendRefs.filters.requestMirror.backendRef.namespace",
+        "spec.rules.backendRefs.filters.requestMirror.backendRef.port",
+        "spec.rules.backendRefs.filters.requestRedirect",
+        "spec.rules.backendRefs.filters.requestRedirect.hostname",
+        "spec.rules.backendRefs.filters.requestRedirect.path",
+        "spec.rules.backendRefs.filters.requestRedirect.path.replaceFullPath",
+        "spec.rules.backendRefs.filters.requestRedirect.path.replacePrefixMatch",
+        "spec.rules.backendRefs.filters.requestRedirect.path.type",
+        "spec.rules.backendRefs.filters.requestRedirect.port",
+        "spec.rules.backendRefs.filters.requestRedirect.scheme",
+        "spec.rules.backendRefs.filters.requestRedirect.statusCode",
+        "spec.rules.backendRefs.filters.responseHeaderModifier",
+        "spec.rules.backendRefs.filters.responseHeaderModifier.add",
+        "spec.rules.backendRefs.filters.responseHeaderModifier.add.name",
+        "spec.rules.backendRefs.filters.responseHeaderModifier.remove",
+        "spec.rules.backendRefs.filters.responseHeaderModifier.set",
+        "spec.rules.backendRefs.filters.responseHeaderModifier.set.name",
+        "spec.rules.backendRefs.filters.type",
+        "spec.rules.backendRefs.filters.urlRewrite",
+        "spec.rules.backendRefs.filters.urlRewrite.hostname",
+        "spec.rules.backendRefs.filters.urlRewrite.path",
+        "spec.rules.backendRefs.filters.urlRewrite.path.replaceFullPath",
+        "spec.rules.backendRefs.filters.urlRewrite.path.replacePrefixMatch",
+        "spec.rules.backendRefs.filters.urlRewrite.path.type",
+        "spec.rules.backendRefs.group",
+        "spec.rules.backendRefs.kind",
+        "spec.rules.backendRefs.namespace",
+        "spec.rules.backendRefs.port",
+        "spec.rules.backendRefs.weight",
+        "spec.rules.filters",
+        "spec.rules.filters.extensionRef",
+        "spec.rules.filters.extensionRef.group",
+        "spec.rules.filters.requestHeaderModifier",
+        "spec.rules.filters.requestHeaderModifier.add",
+        "spec.rules.filters.requestHeaderModifier.add.name",
+        "spec.rules.filters.requestHeaderModifier.remove",
+        "spec.rules.filters.requestHeaderModifier.set",
+        "spec.rules.filters.requestHeaderModifier.set.name",
+        "spec.rules.filters.requestMirror",
+        "spec.rules.filters.requestMirror.backendRef",
+        "spec.rules.filters.requestMirror.backendRef.group",
+        "spec.rules.filters.requestMirror.backendRef.kind",
+        "spec.rules.filters.requestMirror.backendRef.namespace",
+        "spec.rules.filters.requestMirror.backendRef.port",
+        "spec.rules.filters.requestRedirect",
+        "spec.rules.filters.requestRedirect.hostname",
+        "spec.rules.filters.requestRedirect.path",
+        "spec.rules.filters.requestRedirect.path.replaceFullPath",
+        "spec.rules.filters.requestRedirect.path.replacePrefixMatch",
+        "spec.rules.filters.requestRedirect.path.type",
+        "spec.rules.filters.requestRedirect.port",
+        "spec.rules.filters.requestRedirect.scheme",
+        "spec.rules.filters.requestRedirect.statusCode",
+        "spec.rules.filters.responseHeaderModifier",
+        "spec.rules.filters.responseHeaderModifier.add",
+        "spec.rules.filters.responseHeaderModifier.add.name",
+        "spec.rules.filters.responseHeaderModifier.remove",
+        "spec.rules.filters.responseHeaderModifier.set",
+        "spec.rules.filters.responseHeaderModifier.set.name",
+        "spec.rules.filters.type",
+        "spec.rules.filters.urlRewrite",
+        "spec.rules.filters.urlRewrite.hostname",
+        "spec.rules.filters.urlRewrite.path",
+        "spec.rules.filters.urlRewrite.path.replaceFullPath",
+        "spec.rules.filters.urlRewrite.path.replacePrefixMatch",
+        "spec.rules.filters.urlRewrite.path.type",
+        "spec.rules.matches",
+        "spec.rules.matches.headers",
+        "spec.rules.matches.headers.name",
+        "spec.rules.matches.headers.type",
+        "spec.rules.matches.method",
+        "spec.rules.matches.path",
+        "spec.rules.matches.path.type",
+        "spec.rules.matches.queryParams",
+        "spec.rules.matches.queryParams.name",
+        "spec.rules.matches.queryParams.type",
+        "status.parents",
+        "status.parents.conditions",
+        "status.parents.conditions.lastTransitionTime",
+        "status.parents.conditions.message",
+        "status.parents.conditions.observedGeneration",
+        "status.parents.conditions.reason",
+        "status.parents.conditions.type",
+        "status.parents.controllerName",
+        "status.parents.parentRef",
+        "status.parents.parentRef.group",
+        "status.parents.parentRef.kind",
+        "status.parents.parentRef.name",
+        "status.parents.parentRef.namespace",
+        "status.parents.parentRef.sectionName"
+      ],
+      "added": {
+        "spec.parentRefs.port": "integer",
+        "status.parents.parentRef.port": "integer"
+      },
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          120,
+          121
+        ],
+        "kind": [
+          122,
+          123
+        ],
+        "spec.hostnames": [
+          124,
+          35
+        ],
+        "spec.parentRefs": [
+          125,
+          37
+        ],
+        "spec.parentRefs.group": [
+          126,
+          38
+        ],
+        "spec.parentRefs.kind": [
+          127,
+          40
+        ],
+        "spec.parentRefs.name": [
+          128,
+          42
+        ],
+        "spec.parentRefs.namespace": [
+          129,
+          44
+        ],
+        "spec.parentRefs.port": [
+          null,
+          45
+        ],
+        "spec.parentRefs.sectionName": [
+          130,
+          46
+        ],
+        "spec.rules.backendRefs": [
+          131,
+          48
+        ],
+        "spec.rules.backendRefs.filters": [
+          132,
+          50
+        ],
+        "spec.rules.backendRefs.filters.extensionRef": [
+          133,
+          52
+        ],
+        "spec.rules.backendRefs.filters.extensionRef.group": [
+          134,
+          135
+        ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier": [
+          136,
+          54
+        ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier.add": [
+          137,
+          56
+        ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier.add.name": [
+          138,
+          58
+        ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier.remove": [
+          139,
+          59
+        ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier.set": [
+          140,
+          61
+        ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier.set.name": [
+          138,
+          58
+        ],
+        "spec.rules.backendRefs.filters.requestMirror": [
+          141,
+          63
+        ],
+        "spec.rules.backendRefs.filters.requestMirror.backendRef": [
+          142,
+          64
+        ],
+        "spec.rules.backendRefs.filters.requestMirror.backendRef.group": [
+          134,
+          135
+        ],
+        "spec.rules.backendRefs.filters.requestMirror.backendRef.kind": [
+          143,
+          65
+        ],
+        "spec.rules.backendRefs.filters.requestMirror.backendRef.namespace": [
+          144,
+          67
+        ],
+        "spec.rules.backendRefs.filters.requestMirror.backendRef.port": [
+          145,
+          146
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect": [
+          147,
+          69
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.hostname": [
+          148,
+          71
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.path": [
+          149,
+          73
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.path.replaceFullPath": [
+          150,
+          151
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.path.replacePrefixMatch": [
+          152,
+          75
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.path.type": [
+          153,
+          77
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.port": [
+          154,
+          79
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.scheme": [
+          155,
+          81
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.statusCode": [
+          156,
+          83
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier": [
+          157,
+          84
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.add": [
+          137,
+          56
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.add.name": [
+          138,
+          58
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.remove": [
+          139,
+          59
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.set": [
+          140,
+          61
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.set.name": [
+          138,
+          58
+        ],
+        "spec.rules.backendRefs.filters.type": [
+          158,
+          86
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite": [
+          159,
+          88
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite.hostname": [
+          160,
+          90
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite.path": [
+          161,
+          92
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite.path.replaceFullPath": [
+          150,
+          151
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite.path.replacePrefixMatch": [
+          152,
+          75
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite.path.type": [
+          153,
+          77
+        ],
+        "spec.rules.backendRefs.group": [
+          134,
+          135
+        ],
+        "spec.rules.backendRefs.kind": [
+          143,
+          65
+        ],
+        "spec.rules.backendRefs.namespace": [
+          144,
+          67
+        ],
+        "spec.rules.backendRefs.port": [
+          145,
+          146
+        ],
+        "spec.rules.backendRefs.weight": [
+          162,
+          94
+        ],
+        "spec.rules.filters": [
+          163,
+          96
+        ],
+        "spec.rules.filters.extensionRef": [
+          133,
+          52
+        ],
+        "spec.rules.filters.extensionRef.group": [
+          134,
+          135
+        ],
+        "spec.rules.filters.requestHeaderModifier": [
+          136,
+          54
+        ],
+        "spec.rules.filters.requestHeaderModifier.add": [
+          137,
+          56
+        ],
+        "spec.rules.filters.requestHeaderModifier.add.name": [
+          138,
+          58
+        ],
+        "spec.rules.filters.requestHeaderModifier.remove": [
+          139,
+          59
+        ],
+        "spec.rules.filters.requestHeaderModifier.set": [
+          140,
+          61
+        ],
+        "spec.rules.filters.requestHeaderModifier.set.name": [
+          138,
+          58
+        ],
+        "spec.rules.filters.requestMirror": [
+          141,
+          63
+        ],
+        "spec.rules.filters.requestMirror.backendRef": [
+          142,
+          64
+        ],
+        "spec.rules.filters.requestMirror.backendRef.group": [
+          134,
+          135
+        ],
+        "spec.rules.filters.requestMirror.backendRef.kind": [
+          143,
+          65
+        ],
+        "spec.rules.filters.requestMirror.backendRef.namespace": [
+          144,
+          67
+        ],
+        "spec.rules.filters.requestMirror.backendRef.port": [
+          145,
+          146
+        ],
+        "spec.rules.filters.requestRedirect": [
+          147,
+          69
+        ],
+        "spec.rules.filters.requestRedirect.hostname": [
+          148,
+          71
+        ],
+        "spec.rules.filters.requestRedirect.path": [
+          149,
+          73
+        ],
+        "spec.rules.filters.requestRedirect.path.replaceFullPath": [
+          150,
+          151
+        ],
+        "spec.rules.filters.requestRedirect.path.replacePrefixMatch": [
+          152,
+          75
+        ],
+        "spec.rules.filters.requestRedirect.path.type": [
+          153,
+          77
+        ],
+        "spec.rules.filters.requestRedirect.port": [
+          154,
+          79
+        ],
+        "spec.rules.filters.requestRedirect.scheme": [
+          155,
+          81
+        ],
+        "spec.rules.filters.requestRedirect.statusCode": [
+          156,
+          83
+        ],
+        "spec.rules.filters.responseHeaderModifier": [
+          157,
+          84
+        ],
+        "spec.rules.filters.responseHeaderModifier.add": [
+          137,
+          56
+        ],
+        "spec.rules.filters.responseHeaderModifier.add.name": [
+          138,
+          58
+        ],
+        "spec.rules.filters.responseHeaderModifier.remove": [
+          139,
+          59
+        ],
+        "spec.rules.filters.responseHeaderModifier.set": [
+          140,
+          61
+        ],
+        "spec.rules.filters.responseHeaderModifier.set.name": [
+          138,
+          58
+        ],
+        "spec.rules.filters.type": [
+          158,
+          86
+        ],
+        "spec.rules.filters.urlRewrite": [
+          159,
+          88
+        ],
+        "spec.rules.filters.urlRewrite.hostname": [
+          160,
+          90
+        ],
+        "spec.rules.filters.urlRewrite.path": [
+          161,
+          92
+        ],
+        "spec.rules.filters.urlRewrite.path.replaceFullPath": [
+          150,
+          151
+        ],
+        "spec.rules.filters.urlRewrite.path.replacePrefixMatch": [
+          152,
+          75
+        ],
+        "spec.rules.filters.urlRewrite.path.type": [
+          153,
+          77
+        ],
+        "spec.rules.matches": [
+          164,
+          97
+        ],
+        "spec.rules.matches.headers": [
+          165,
+          166
+        ],
+        "spec.rules.matches.headers.name": [
+          167,
+          99
+        ],
+        "spec.rules.matches.headers.type": [
+          168,
+          100
+        ],
+        "spec.rules.matches.method": [
+          169,
+          102
+        ],
+        "spec.rules.matches.path": [
+          170,
+          171
+        ],
+        "spec.rules.matches.path.type": [
+          172,
+          104
+        ],
+        "spec.rules.matches.queryParams": [
+          173,
+          106
+        ],
+        "spec.rules.matches.queryParams.name": [
+          174,
+          108
+        ],
+        "spec.rules.matches.queryParams.type": [
+          175,
+          110
+        ],
+        "status.parents": [
+          176,
+          113
+        ],
+        "status.parents.conditions": [
+          177,
+          115
+        ],
+        "status.parents.conditions.lastTransitionTime": [
+          178,
+          179
+        ],
+        "status.parents.conditions.message": [
+          180,
+          181
+        ],
+        "status.parents.conditions.observedGeneration": [
+          182,
+          183
+        ],
+        "status.parents.conditions.reason": [
+          184,
+          185
+        ],
+        "status.parents.conditions.type": [
+          186,
+          116
+        ],
+        "status.parents.controllerName": [
+          187,
+          118
+        ],
+        "status.parents.parentRef": [
+          188,
+          189
+        ],
+        "status.parents.parentRef.group": [
+          126,
+          38
+        ],
+        "status.parents.parentRef.kind": [
+          127,
+          40
+        ],
+        "status.parents.parentRef.name": [
+          128,
+          42
+        ],
+        "status.parents.parentRef.namespace": [
+          129,
+          44
+        ],
+        "status.parents.parentRef.port": [
+          null,
+          45
+        ],
+        "status.parents.parentRef.sectionName": [
+          130,
+          46
+        ],
+        "": [
+          190,
+          191
+        ]
+      }
+    }
+  },
+  "texts": [
+    "StatusCode is the HTTP status code to be used in response.\n\nNote that values may be added to this enum, implementations\nmust ensure that unknown values will not cause a crash.\n\nUnknown values here must result in the implementation setting the\nAccepted Condition for the Route to `status: False`, with a\nReason of `UnsupportedValue`.\n\nSupport: Core",
+    "StatusCode is the HTTP status code to be used in response.\n\nNote that values may be added to this enum, implementations\nmust ensure that unknown values will not cause a crash.\n\nUnknown values here must result in the implementation setting the\nAccepted Condition for the Route to `status: False`, with a\nReason of `UnsupportedValue`.\n\nSupport: statusCode 301 and 302 are Core; all others are Extended.",
+    "AllowHeaders indicates which HTTP request headers are supported for\naccessing the requested resource.\n\nHeader names are not case-sensitive.\n\nMultiple header names in the value of the `Access-Control-Allow-Headers`\nresponse header are separated by a comma (\",\").\n\nWhen the `AllowHeaders` field is configured with one or more headers, the\ngateway must return the `Access-Control-Allow-Headers` response header\nwhich value is present in the `AllowHeaders` field.\n\nIf any header name in the `Access-Control-Request-Headers` request header\nis not included in the list of header names specified by the response\nheader `Access-Control-Allow-Headers`, it will present an error on the\nclient side.\n\nIf any header name in the `Access-Control-Allow-Headers` response header\ndoes not recognize by the client, it will also occur an error on the\nclient side.\n\nA wildcard indicates that the requests with all HTTP headers are allowed.\nIf config contains the wildcard \"*\" in allowHeaders and the request is\nnot credentialed, the `Access-Control-Allow-Headers` response header\ncan either use the `*` wildcard or the value of\nAccess-Control-Request-Headers from the request.\n\nWhen the request is credentialed, the gateway must not specify the `*`\nwildcard in the `Access-Control-Allow-Headers` response header. When\nalso the `AllowCredentials` field is true and `AllowHeaders` field\nis specified with the `*` wildcard, the gateway must specify one or more\nHTTP headers in the value of the `Access-Control-Allow-Headers` response\nheader. The value of the header `Access-Control-Allow-Headers` is same as\nthe `Access-Control-Request-Headers` header provided by the client. If\nthe header `Access-Control-Request-Headers` is not included in the\nrequest, the gateway will omit the `Access-Control-Allow-Headers`\nresponse header, instead of specifying the `*` wildcard.\n\nSupport: Extended",
+    "AllowHeaders indicates which HTTP request headers are supported for\naccessing the requested resource.\n\nHeader names are not case-sensitive.\n\nMultiple header names in the value of the `Access-Control-Allow-Headers`\nresponse header are separated by a comma (\",\").\n\nWhen the `allowHeaders` field is configured with one or more headers, the\ngateway must return the `Access-Control-Allow-Headers` response header\nwhich value is present in the `allowHeaders` field.\n\nIf any header name in the `Access-Control-Request-Headers` request header\nis not included in the list of header names specified by the response\nheader `Access-Control-Allow-Headers`, it will present an error on the\nclient side.\n\nIf any header name in the `Access-Control-Allow-Headers` response header\ndoes not recognize by the client, it will also occur an error on the\nclient side.\n\nA wildcard indicates that the requests with all HTTP headers are allowed.\n\nIf the configuration contains the wildcard `*` in `allowHeaders` and\n`allowCredentials` is set to `false`, the `Access-Control-Allow-Headers`\nresponse header may either contain the wildcard `*` or echo the value\nof the `Access-Control-Request-Headers` request header.\n\nIf the configuration contains the wildcard `*` in `allowHeaders` and\n`allowCredentials` is set to `true`, the gateway must not return `*`\nin the `Access-Control-Allow-Headers` response header. Instead, it must\nreturn one or more header names matching the value of the\n`Access-Control-Request-Headers` request header.\nIf the `Access-Control-Request-Headers` header is not present in the\nrequest, the gateway must omit the `Access-Control-Allow-Headers`\nresponse header.\n\nSupport: Extended",
+    "AllowMethods indicates which HTTP methods are supported for accessing the\nrequested resource.\n\nValid values are any method defined by RFC9110, along with the special\nvalue `*`, which represents all HTTP methods are allowed.\n\nMethod names are case-sensitive, so these values are also case-sensitive.\n(See https://www.rfc-editor.org/rfc/rfc2616#section-5.1.1)\n\nMultiple method names in the value of the `Access-Control-Allow-Methods`\nresponse header are separated by a comma (\",\").\n\nA CORS-safelisted method is a method that is `GET`, `HEAD`, or `POST`.\n(See https://fetch.spec.whatwg.org/#cors-safelisted-method) The\nCORS-safelisted methods are always allowed, regardless of whether they\nare specified in the `AllowMethods` field.\n\nWhen the `AllowMethods` field is configured with one or more methods, the\ngateway must return the `Access-Control-Allow-Methods` response header\nwhich value is present in the `AllowMethods` field.\n\nIf the HTTP method of the `Access-Control-Request-Method` request header\nis not included in the list of methods specified by the response header\n`Access-Control-Allow-Methods`, it will present an error on the client\nside.\n\nIf config contains the wildcard \"*\" in allowMethods and the request is\nnot credentialed, the `Access-Control-Allow-Methods` response header\ncan either use the `*` wildcard or the value of\nAccess-Control-Request-Method from the request.\n\nWhen the request is credentialed, the gateway must not specify the `*`\nwildcard in the `Access-Control-Allow-Methods` response header. When\nalso the `AllowCredentials` field is true and `AllowMethods` field\nspecified with the `*` wildcard, the gateway must specify one HTTP method\nin the value of the Access-Control-Allow-Methods response header. The\nvalue of the header `Access-Control-Allow-Methods` is same as the\n`Access-Control-Request-Method` header provided by the client. If the\nheader `Access-Control-Request-Method` is not included in the request,\nthe gateway will omit the `Access-Control-Allow-Methods` response header,\ninstead of specifying the `*` wildcard.\n\nSupport: Extended",
+    "AllowMethods indicates which HTTP methods are supported for accessing the\nrequested resource.\n\nValid values are any method defined by RFC9110, along with the special\nvalue `*`, which represents all HTTP methods are allowed.\n\nMethod names are case-sensitive, so these values are also case-sensitive.\n(See https://www.rfc-editor.org/rfc/rfc2616#section-5.1.1)\n\nMultiple method names in the value of the `Access-Control-Allow-Methods`\nresponse header are separated by a comma (\",\").\n\nA CORS-safelisted method is a method that is `GET`, `HEAD`, or `POST`.\n(See https://fetch.spec.whatwg.org/#cors-safelisted-method) The\nCORS-safelisted methods are always allowed, regardless of whether they\nare specified in the `allowMethods` field.\n\nWhen the `allowMethods` field is configured with one or more methods, the\ngateway must return the `Access-Control-Allow-Methods` response header\nwhich value is present in the `allowMethods` field.\n\nIf the HTTP method of the `Access-Control-Request-Method` request header\nis not included in the list of methods specified by the response header\n`Access-Control-Allow-Methods`, it will present an error on the client\nside.\n\nIf the configuration contains the wildcard `*` in `allowMethods` and\n`allowCredentials` is set to `false`, the `Access-Control-Allow-Methods`\nresponse header may either contain the wildcard `*` or echo the value\nof the `Access-Control-Request-Method` request header.\n\nIf the configuration contains the wildcard `*` in `allowMethods` and\n`allowCredentials` is set to `true`, the gateway must not return `*`\nin the `Access-Control-Allow-Methods` response header. Instead, it must\nreturn a single HTTP method matching the value of the\n`Access-Control-Request-Method` request header.\nIf the `Access-Control-Request-Method` header is not present in the request,\nthe gateway must omit the `Access-Control-Allow-Methods` response header.\n\nSupport: Extended",
+    "AllowOrigins indicates whether the response can be shared with requested\nresource from the given `Origin`.\n\nThe `Origin` consists of a scheme and a host, with an optional port, and\ntakes the form `<scheme>://<host>(:<port>)`.\n\nValid values for scheme are: `http` and `https`.\n\nValid values for port are any integer between 1 and 65535 (the list of\navailable TCP/UDP ports). Note that, if not included, port `80` is\nassumed for `http` scheme origins, and port `443` is assumed for `https`\norigins. This may affect origin matching.\n\nThe host part of the origin may contain the wildcard character `*`. These\nwildcard characters behave as follows:\n\n* `*` is a greedy match to the _left_, including any number of\n  DNS labels to the left of its position. This also means that\n  `*` will include any number of period `.` characters to the\n  left of its position.\n* A wildcard by itself matches all hosts.\n\nAn origin value that includes _only_ the `*` character indicates requests\nfrom all `Origin`s are allowed.\n\nWhen the `AllowOrigins` field is configured with multiple origins, it\nmeans the server supports clients from multiple origins. If the request\n`Origin` matches the configured allowed origins, the gateway must return\nthe given `Origin` and sets value of the header\n`Access-Control-Allow-Origin` same as the `Origin` header provided by the\nclient.\n\nThe status code of a successful response to a \"preflight\" request is\nalways an OK status (i.e., 204 or 200).\n\nIf the request `Origin` does not match the configured allowed origins,\nthe gateway returns 204/200 response but doesn't set the relevant\ncross-origin response headers. Alternatively, the gateway responds with\n403 status to the \"preflight\" request is denied, coupled with omitting\nthe CORS headers. The cross-origin request fails on the client side.\nTherefore, the client doesn't attempt the actual cross-origin request.\n\nConversely, if the request `Origin` matches one of the configured\nallowed origins, the gateway sets the response header\n`Access-Control-Allow-Origin` to the same value as the `Origin`\nheader provided by the client.\n\nWhen config has the wildcard (\"*\") in allowOrigins, and the request\nis not credentialed (e.g., it is a preflight request), the\n`Access-Control-Allow-Origin` response header either contains the\nwildcard as well or the Origin from the request.\n\nWhen the request is credentialed, the gateway must not specify the `*`\nwildcard in the `Access-Control-Allow-Origin` response header. When\nalso the `AllowCredentials` field is true and `AllowOrigins` field\nspecified with the `*` wildcard, the gateway must return a single origin\nin the value of the `Access-Control-Allow-Origin` response header,\ninstead of specifying the `*` wildcard. The value of the header\n`Access-Control-Allow-Origin` is same as the `Origin` header provided by\nthe client.\n\nSupport: Extended",
+    "AllowOrigins indicates whether the response can be shared with requested\nresource from the given `Origin`.\n\nThe `Origin` consists of a scheme and a host, with an optional port, and\ntakes the form `<scheme>://<host>(:<port>)`.\n\nValid values for scheme are: `http` and `https`.\n\nValid values for port are any integer between 1 and 65535 (the list of\navailable TCP/UDP ports). Note that, if not included, port `80` is\nassumed for `http` scheme origins, and port `443` is assumed for `https`\norigins. This may affect origin matching.\n\nThe host part of the origin may contain the wildcard character `*`. These\nwildcard characters behave as follows:\n\n* `*` is a greedy match to the _left_, including any number of\n  DNS labels to the left of its position. This also means that\n  `*` will include any number of period `.` characters to the\n  left of its position.\n* A wildcard by itself matches all hosts.\n\nAn origin value that includes _only_ the `*` character indicates requests\nfrom all `Origin`s are allowed.\n\nWhen the `allowOrigins` field is configured with multiple origins, it\nmeans the server supports clients from multiple origins. If the request\n`Origin` matches the configured allowed origins, the gateway must return\nthe given `Origin` and sets value of the header\n`Access-Control-Allow-Origin` same as the `Origin` header provided by the\nclient.\n\nThe status code of a successful response to a \"preflight\" request is\nalways an OK status (i.e., 204 or 200).\n\nIf the request `Origin` does not match the configured allowed origins,\nthe gateway returns 204/200 response but doesn't set the relevant\ncross-origin response headers. Alternatively, the gateway responds with\n403 status to the \"preflight\" request is denied, coupled with omitting\nthe CORS headers. The cross-origin request fails on the client side.\nTherefore, the client doesn't attempt the actual cross-origin request.\n\nConversely, if the request `Origin` matches one of the configured\nallowed origins, the gateway sets the response header\n`Access-Control-Allow-Origin` to the same value as the `Origin`\nheader provided by the client.\n\nIf the configuration contains the wildcard `*` in `allowOrigins` and\n`allowCredentials` is set to `false`, the `Access-Control-Allow-Origin`\nresponse header may either contain the wildcard `*` or echo the value\nof the `Origin` request header.\n\nIf the configuration contains the wildcard `*` in `allowOrigins` and\n`allowCredentials` is set to `true`, the gateway must not return `*`\nin the `Access-Control-Allow-Origin` response header. Instead, it must\nreturn a single origin matching the value of the `Origin` request header.\n\nSupport: Extended",
+    "ExposeHeaders indicates which HTTP response headers can be exposed\nto client-side scripts in response to a cross-origin request.\n\nA CORS-safelisted response header is an HTTP header in a CORS response\nthat it is considered safe to expose to the client scripts.\nThe CORS-safelisted response headers include the following headers:\n`Cache-Control`\n`Content-Language`\n`Content-Length`\n`Content-Type`\n`Expires`\n`Last-Modified`\n`Pragma`\n(See https://fetch.spec.whatwg.org/#cors-safelisted-response-header-name)\nThe CORS-safelisted response headers are exposed to client by default.\n\nWhen an HTTP header name is specified using the `ExposeHeaders` field,\nthis additional header will be exposed as part of the response to the\nclient.\n\nHeader names are not case-sensitive.\n\nMultiple header names in the value of the `Access-Control-Expose-Headers`\nresponse header are separated by a comma (\",\").\n\nA wildcard indicates that the responses with all HTTP headers are exposed\nto clients. The `Access-Control-Expose-Headers` response header can only\nuse `*` wildcard as value when the request is not credentialed.\n\nWhen the `exposeHeaders` config field contains the \"*\" wildcard and\nthe request is credentialed, the gateway cannot use the `*` wildcard in\nthe `Access-Control-Expose-Headers` response header.\n\nSupport: Extended",
+    "ExposeHeaders indicates which HTTP response headers can be exposed\nto client-side scripts in response to a cross-origin request.\n\nA CORS-safelisted response header is an HTTP header in a CORS response\nthat it is considered safe to expose to the client scripts.\nThe CORS-safelisted response headers include the following headers:\n`Cache-Control`\n`Content-Language`\n`Content-Length`\n`Content-Type`\n`Expires`\n`Last-Modified`\n`Pragma`\n(See https://fetch.spec.whatwg.org/#cors-safelisted-response-header-name)\nThe CORS-safelisted response headers are exposed to client by default.\n\nWhen an HTTP header name is specified using the `exposeHeaders` field,\nthis additional header will be exposed as part of the response to the\nclient.\n\nHeader names are not case-sensitive.\n\nMultiple header names in the value of the `Access-Control-Expose-Headers`\nresponse header are separated by a comma (\",\").\n\nA wildcard indicates that the responses with all HTTP headers are exposed\nto clients.\n\nIf the configuration contains the wildcard `*` in `exposeHeaders` and\n`allowCredentials` is set to `false`, the `Access-Control-Expose-Headers`\nresponse header can contain the wildcard `*`.\n\nIf the configuration contains the wildcard `*` in `exposeHeaders` and\n`allowCredentials` is set to `true`, the gateway cannot use the `*`\nin the `Access-Control-Expose-Headers` response header.\n\nSupport: Extended",
+    "BackendRef references a resource where mirrored requests are sent.\n\nMirrored requests must be sent only to a single destination endpoint\nwithin this BackendRef, irrespective of how many endpoints are present\nwithin this BackendRef.\n\nIf the referent cannot be found, this BackendRef is invalid and must be\ndropped from the Gateway. The controller must ensure the \"ResolvedRefs\"\ncondition on the Route status is set to `status: False` and not configure\nthis backend in the underlying implementation.\n\nIf there is a cross-namespace reference to an *existing* object\nthat is not allowed by a ReferenceGrant, the controller must ensure the\n\"ResolvedRefs\"  condition on the Route is set to `status: False`,\nwith the \"RefNotPermitted\" reason and not configure this backend in the\nunderlying implementation.\n\nIn either error case, the Message of the `ResolvedRefs` Condition\nshould be used to provide more detail about the problem.\n\nSupport: Extended for Kubernetes Service\n\nSupport: Implementation-specific for any other resource",
+    "BackendRef references a resource where mirrored requests are sent.\n\nMirrored requests must be sent only to a single destination endpoint\nwithin this BackendRef, irrespective of how many endpoints are present\nwithin this BackendRef.\n\nIf the referent cannot be found, this BackendRef is invalid and must be\ndropped from the Gateway. The controller must ensure the \"ResolvedRefs\"\ncondition on the Route status is set to `status: False` and not configure\nthis backend in the underlying implementation.\n\nIf there is a cross-namespace reference to an *existing* object\nthat is not allowed by a ReferenceGrant, the controller must ensure the\n\"ResolvedRefs\"  condition on the Route is set to `status: False`,\nwith the \"RefNotPermitted\" reason and not configure this backend in the\nunderlying implementation.\n\nIn either error case, the Message of the `ResolvedRefs` Condition\nshould be used to provide more detail about the problem.\n\nSupport: Extended for Kubernetes Service\n\nSupport: Implementation-specific for any other resource\n\nIf the backend service requires TLS, use BackendTLSPolicy to tell the\nimplementation to supply the TLS details to be used to connect to that\nbackend.",
+    "CORS defines a schema for a filter that responds to the\ncross-origin request based on HTTP response header.\n\nSupport: Extended",
+    "Conditions describes the status of the route with respect to the Gateway.\nNote that the route's availability is also subject to the Gateway's own\nstatus conditions and listener status.\n\nIf the Route's ParentRef specifies an existing Gateway that supports\nRoutes of this kind AND that Gateway's controller has sufficient access,\nthen that Gateway's controller MUST set the \"Accepted\" condition on the\nRoute, to indicate whether the route has been accepted or rejected by the\nGateway, and why.\n\nA Route MUST be considered \"Accepted\" if at least one of the Route's\nrules is implemented by the Gateway.\n\nThere are a number of cases where the \"Accepted\" condition may not be set\ndue to lack of controller visibility, that includes when:\n\n* The Route refers to a nonexistent parent.\n* The Route is of a type that the controller does not support.\n* The Route is in a namespace the controller does not have access to.",
+    "Conditions describes the status of the route with respect to the Gateway.\nNote that the route's availability is also subject to the Gateway's own\nstatus conditions and listener status.\n\nIf the Route's ParentRef specifies an existing Gateway that supports\nRoutes of this kind AND that Gateway's controller has sufficient access,\nthen that Gateway's controller MUST set the \"Accepted\" condition on the\nRoute, to indicate whether the route has been accepted or rejected by the\nGateway, and why.\n\nA Route MUST be considered \"Accepted\" if at least one of the Route's\nrules is implemented by the Gateway.\n\nThere are a number of cases where the \"Accepted\" condition may not be set\ndue to lack of controller visibility, that includes when:\n\n* The Route refers to a nonexistent parent.\n* The Route is of a type that the controller does not support.\n* The Route is in a namespace to which the controller does not have access.",
+    "Name is the name of the route rule. This name MUST be unique within a Route if it is set.\n\nSupport: Extended",
+    "ParentRefs references the resources (usually Gateways) that a Route wants\nto be attached to. Note that the referenced parent resource needs to\nallow this for the attachment to be complete. For Gateways, that means\nthe Gateway needs to allow attachment from Routes of this kind and\nnamespace. For Services, that means the Service must either be in the same\nnamespace for a \"producer\" route, or the mesh implementation must support\nand allow \"consumer\" routes for the referenced Service. ReferenceGrant is\nnot applicable for governing ParentRefs to Services - it is not possible to\ncreate a \"producer\" route for a Service in a different namespace from the\nRoute.\n\nThere are two kinds of parent resources with \"Core\" support:\n\n* Gateway (Gateway conformance profile)\n* Service (Mesh conformance profile, ClusterIP Services only)\n\nThis API may be extended in the future to support additional kinds of parent\nresources.\n\nParentRefs must be _distinct_. This means either that:\n\n* They select different objects.  If this is the case, then parentRef\n  entries are distinct. In terms of fields, this means that the\n  multi-part key defined by `group`, `kind`, `namespace`, and `name` must\n  be unique across all parentRef entries in the Route.\n* They do not select different objects, but for each optional field used,\n  each ParentRef that selects the same object must set the same set of\n  optional fields to different values. If one ParentRef sets a\n  combination of optional fields, all must set the same combination.\n\nSome examples:\n\n* If one ParentRef sets `sectionName`, all ParentRefs referencing the\n  same object must also set `sectionName`.\n* If one ParentRef sets `port`, all ParentRefs referencing the same\n  object must also set `port`.\n* If one ParentRef sets `sectionName` and `port`, all ParentRefs\n  referencing the same object must also set `sectionName` and `port`.\n\nIt is possible to separately reference multiple distinct objects that may\nbe collapsed by an implementation. For example, some implementations may\nchoose to merge compatible Gateway Listeners together. If that is the\ncase, the list of routes attached to those resources should also be\nmerged.\n\nNote that for ParentRefs that cross namespace boundaries, there are specific\nrules. Cross-namespace references are only valid if they are explicitly\nallowed by something in the namespace they are referring to. For example,\nGateway has the AllowedRoutes field, and ReferenceGrant provides a\ngeneric way to enable other kinds of cross-namespace reference.\n\n\n\n\n\n\n",
+    "ParentRefs references the resources (usually Gateways) that a Route wants\nto be attached to. Note that the referenced parent resource needs to\nallow this for the attachment to be complete. For Gateways, that means\nthe Gateway needs to allow attachment from Routes of this kind and\nnamespace. For Services, that means the Service must either be in the same\nnamespace for a \"producer\" route, or the mesh implementation must support\nand allow \"consumer\" routes for the referenced Service. ReferenceGrant is\nnot applicable for governing ParentRefs to Services - it is not possible to\ncreate a \"producer\" route for a Service in a different namespace from the\nRoute.\n\nThere are two kinds of parent resources with \"Core\" support:\n\n* Gateway (Gateway conformance profile)\n* Service (Mesh conformance profile, ClusterIP Services only)\n\nThis API may be extended in the future to support additional kinds of parent\nresources.\n\nParentRefs must be _distinct_. This means either that:\n\n* They select different objects.  If this is the case, then parentRef\n  entries are distinct. In terms of fields, this means that the\n  multi-part key defined by `group`, `kind`, `namespace`, and `name` must\n  be unique across all parentRef entries in the Route.\n* They do not select different objects, but for each optional field used,\n  each ParentRef that selects the same object must set the same set of\n  optional fields to different values. If one ParentRef sets a\n  combination of optional fields, all must set the same combination.\n\nSome examples:\n\n* If one ParentRef sets `sectionName`, all ParentRefs referencing the\n  same object must also set `sectionName`.\n* If one ParentRef sets `port`, all ParentRefs referencing the same\n  object must also set `port`.\n* If one ParentRef sets `sectionName` and `port`, all ParentRefs\n  referencing the same object must also set `sectionName` and `port`.\n\nIt is possible to separately reference multiple distinct objects that may\nbe collapsed by an implementation. For example, some implementations may\nchoose to merge compatible Gateway Listeners together. If that is the\ncase, the list of routes attached to those resources should also be\nmerged.\n\nNote that for ParentRefs that cross namespace boundaries, there are specific\nrules. Cross-namespace references are only valid if they are explicitly\nallowed by something in the namespace they are referring to. For example,\nGateway has the AllowedRoutes field, and ReferenceGrant provides a\ngeneric way to enable other kinds of cross-namespace reference.",
+    "Namespace is the namespace of the referent. When unspecified, this refers\nto the local namespace of the Route.\n\nNote that there are specific rules for ParentRefs which cross namespace\nboundaries. Cross-namespace references are only valid if they are explicitly\nallowed by something in the namespace they are referring to. For example:\nGateway has the AllowedRoutes field, and ReferenceGrant provides a\ngeneric way to enable any other kind of cross-namespace reference.\n\n\n\nSupport: Core",
+    "Namespace is the namespace of the referent. When unspecified, this refers\nto the local namespace of the Route.\n\nNote that there are specific rules for ParentRefs which cross namespace\nboundaries. Cross-namespace references are only valid if they are explicitly\nallowed by something in the namespace they are referring to. For example:\nGateway has the AllowedRoutes field, and ReferenceGrant provides a\ngeneric way to enable any other kind of cross-namespace reference.\n\nSupport: Core",
+    "Port is the network port this Route targets. It can be interpreted\ndifferently based on the type of parent resource.\n\nWhen the parent resource is a Gateway, this targets all listeners\nlistening on the specified port that also support this kind of Route(and\nselect this Route). It's not recommended to set `Port` unless the\nnetworking behaviors specified in a Route must apply to a specific port\nas opposed to a listener(s) whose port(s) may be changed. When both Port\nand SectionName are specified, the name and port of the selected listener\nmust match both specified values.\n\n\n\nImplementations MAY choose to support other parent resources.\nImplementations supporting other types of parent resources MUST clearly\ndocument how/if Port is interpreted.\n\nFor the purpose of status, an attachment is considered successful as\nlong as the parent resource accepts it partially. For example, Gateway\nlisteners can restrict which Routes can attach to them by Route kind,\nnamespace, or hostname. If 1 of 2 Gateway listeners accept attachment\nfrom the referencing Route, the Route MUST be considered successfully\nattached. If no Gateway listeners accept attachment from this Route,\nthe Route MUST be considered detached from the Gateway.\n\nSupport: Extended",
+    "Port is the network port this Route targets. It can be interpreted\ndifferently based on the type of parent resource.\n\nWhen the parent resource is a Gateway, this targets all listeners\nlistening on the specified port that also support this kind of Route(and\nselect this Route). It's not recommended to set `Port` unless the\nnetworking behaviors specified in a Route must apply to a specific port\nas opposed to a listener(s) whose port(s) may be changed. When both Port\nand SectionName are specified, the name and port of the selected listener\nmust match both specified values.\n\nImplementations MAY choose to support other parent resources.\nImplementations supporting other types of parent resources MUST clearly\ndocument how/if Port is interpreted.\n\nFor the purpose of status, an attachment is considered successful as\nlong as the parent resource accepts it partially. For example, Gateway\nlisteners can restrict which Routes can attach to them by Route kind,\nnamespace, or hostname. If 1 of 2 Gateway listeners accept attachment\nfrom the referencing Route, the Route MUST be considered successfully\nattached. If no Gateway listeners accept attachment from this Route,\nthe Route MUST be considered detached from the Gateway.\n\nSupport: Extended",
+    "Rules are a list of HTTP matchers, filters and actions.\n\n",
+    "Rules are a list of HTTP matchers, filters and actions.",
+    "Name is the name of the HTTP Header to be matched. Name matching MUST be\ncase insensitive. (See https://tools.ietf.org/html/rfc7230#section-3.2).\n\nIf multiple entries specify equivalent header names, the first entry with\nan equivalent name MUST be considered for a match. Subsequent entries\nwith an equivalent header name MUST be ignored. Due to the\ncase-insensitivity of header names, \"foo\" and \"Foo\" are considered\nequivalent.",
+    "Name is the name of the HTTP Header to be matched. Name matching MUST be\ncase-insensitive. (See https://tools.ietf.org/html/rfc7230#section-3.2).\n\nIf multiple entries specify equivalent header names, the first entry with\nan equivalent name MUST be considered for a match. Subsequent entries\nwith an equivalent header name MUST be ignored. Due to the\ncase-insensitivity of header names, \"foo\" and \"Foo\" are considered\nequivalent.",
+    "RequestMirror defines a schema for a filter that mirrors requests.\nRequests are sent to the specified destination, but responses from\nthat destination are ignored.\n\nThis filter can be used multiple times within the same rule. Note that\nnot all implementations will be able to support mirroring to multiple\nbackends.\n\nSupport: Extended\n\n",
+    "RequestMirror defines a schema for a filter that mirrors requests.\nRequests are sent to the specified destination, but responses from\nthat destination are ignored.\n\nThis filter can be used multiple times within the same rule. Note that\nnot all implementations will be able to support mirroring to multiple\nbackends.\n\nSupport: Extended",
+    "Fraction represents the fraction of requests that should be\nmirrored to BackendRef.\n\nOnly one of Fraction or Percent may be specified. If neither field\nis specified, 100% of requests will be mirrored.",
+    "Percent represents the percentage of requests that should be\nmirrored to BackendRef. Its minimum value is 0 (indicating 0% of\nrequests) and its maximum value is 100 (indicating 100% of requests).\n\nOnly one of Fraction or Percent may be specified. If neither field\nis specified, 100% of requests will be mirrored.",
+    "Filters define the filters that are applied to requests that match\nthis rule.\n\nWherever possible, implementations SHOULD implement filters in the order\nthey are specified.\n\nImplementations MAY choose to implement this ordering strictly, rejecting\nany combination or order of filters that can not be supported. If implementations\nchoose a strict interpretation of filter ordering, they MUST clearly document\nthat behavior.\n\nTo reject an invalid combination or order of filters, implementations SHOULD\nconsider the Route Rules with this configuration invalid. If all Route Rules\nin a Route are invalid, the entire Route would be considered invalid. If only\na portion of Route Rules are invalid, implementations MUST set the\n\"PartiallyInvalid\" condition for the Route.\n\nConformance-levels at this level are defined based on the type of filter:\n\n- ALL core filters MUST be supported by all implementations.\n- Implementers are encouraged to support extended filters.\n- Implementation-specific custom filters have no API guarantees across\n  implementations.\n\nSpecifying the same filter multiple times is not supported unless explicitly\nindicated in the filter.\n\nAll filters are expected to be compatible with each other except for the\nURLRewrite and RequestRedirect filters, which may not be combined. If an\nimplementation can not support other combinations of filters, they must clearly\ndocument that limitation. In cases where incompatible or unsupported\nfilters are specified and cause the `Accepted` condition to be set to status\n`False`, implementations may use the `IncompatibleFilters` reason to specify\nthis configuration error.\n\nSupport: Core",
+    "Filters define the filters that are applied to requests that match\nthis rule.\n\nWherever possible, implementations SHOULD implement filters in the order\nthey are specified.\n\nImplementations MAY choose to implement this ordering strictly, rejecting\nany combination or order of filters that cannot be supported. If implementations\nchoose a strict interpretation of filter ordering, they MUST clearly document\nthat behavior.\n\nTo reject an invalid combination or order of filters, implementations SHOULD\nconsider the Route Rules with this configuration invalid. If all Route Rules\nin a Route are invalid, the entire Route would be considered invalid. If only\na portion of Route Rules are invalid, implementations MUST set the\n\"PartiallyInvalid\" condition for the Route.\n\nConformance-levels at this level are defined based on the type of filter:\n\n- ALL core filters MUST be supported by all implementations.\n- Implementers are encouraged to support extended filters.\n- Implementation-specific custom filters have no API guarantees across\n  implementations.\n\nSpecifying the same filter multiple times is not supported unless explicitly\nindicated in the filter.\n\nAll filters are expected to be compatible with each other except for the\nURLRewrite and RequestRedirect filters, which may not be combined. If an\nimplementation cannot support other combinations of filters, they must clearly\ndocument that limitation. In cases where incompatible or unsupported\nfilters are specified and cause the `Accepted` condition to be set to status\n`False`, implementations may use the `IncompatibleFilters` reason to specify\nthis configuration error.\n\nSupport: Core",
+    "Name is the name of the HTTP Header to be matched. Name matching MUST be\ncase insensitive. (See https://tools.ietf.org/html/rfc7230#section-3.2).\n\nIf multiple entries specify equivalent header names, only the first\nentry with an equivalent name MUST be considered for a match. Subsequent\nentries with an equivalent header name MUST be ignored. Due to the\ncase-insensitivity of header names, \"foo\" and \"Foo\" are considered\nequivalent.\n\nWhen a header is repeated in an HTTP request, it is\nimplementation-specific behavior as to how this is represented.\nGenerally, proxies should follow the guidance from the RFC:\nhttps://www.rfc-editor.org/rfc/rfc7230.html#section-3.2.2 regarding\nprocessing a repeated header, with special handling for \"Set-Cookie\".",
+    "Name is the name of the HTTP Header to be matched. Name matching MUST be\ncase-insensitive. (See https://tools.ietf.org/html/rfc7230#section-3.2).\n\nIf multiple entries specify equivalent header names, only the first\nentry with an equivalent name MUST be considered for a match. Subsequent\nentries with an equivalent header name MUST be ignored. Due to the\ncase-insensitivity of header names, \"foo\" and \"Foo\" are considered\nequivalent.\n\nWhen a header is repeated in an HTTP request, it is\nimplementation-specific behavior as to how this is represented.\nGenerally, proxies should follow the guidance from the RFC:\nhttps://www.rfc-editor.org/rfc/rfc7230.html#section-3.2.2 regarding\nprocessing a repeated header, with special handling for \"Set-Cookie\".",
+    "Conditions describes the status of the route with respect to the Gateway.\nNote that the route's availability is also subject to the Gateway's own\nstatus conditions and listener status.\n\nIf the Route's ParentRef specifies an existing Gateway that supports\nRoutes of this kind AND that Gateway's controller has sufficient access,\nthen that Gateway's controller MUST set the \"Accepted\" condition on the\nRoute, to indicate whether the route has been accepted or rejected by the\nGateway, and why.\n\nA Route MUST be considered \"Accepted\" if at least one of the Route's\nrules is implemented by the Gateway.\n\nThere are a number of cases where the \"Accepted\" condition may not be set\ndue to lack of controller visibility, that includes when:\n\n* The Route refers to a non-existent parent.\n* The Route is of a type that the controller does not support.\n* The Route is in a namespace the controller does not have access to.",
+    "Hostnames defines a set of hostnames that should match against the HTTP Host\nheader to select a HTTPRoute used to process the request. Implementations\nMUST ignore any port value specified in the HTTP Host header while\nperforming a match and (absent of any applicable header modification\nconfiguration) MUST forward this header unmodified to the backend.\n\n\nValid values for Hostnames are determined by RFC 1123 definition of a\nhostname with 2 notable exceptions:\n\n\n1. IPs are not allowed.\n2. A hostname may be prefixed with a wildcard label (`*.`). The wildcard\n   label must appear by itself as the first label.\n\n\nIf a hostname is specified by both the Listener and HTTPRoute, there\nmust be at least one intersecting hostname for the HTTPRoute to be\nattached to the Listener. For example:\n\n\n* A Listener with `test.example.com` as the hostname matches HTTPRoutes\n  that have either not specified any hostnames, or have specified at\n  least one of `test.example.com` or `*.example.com`.\n* A Listener with `*.example.com` as the hostname matches HTTPRoutes\n  that have either not specified any hostnames or have specified at least\n  one hostname that matches the Listener hostname. For example,\n  `*.example.com`, `test.example.com`, and `foo.test.example.com` would\n  all match. On the other hand, `example.com` and `test.example.net` would\n  not match.\n\n\nHostnames that are prefixed with a wildcard label (`*.`) are interpreted\nas a suffix match. That means that a match for `*.example.com` would match\nboth `test.example.com`, and `foo.test.example.com`, but not `example.com`.\n\n\nIf both the Listener and HTTPRoute have specified hostnames, any\nHTTPRoute hostnames that do not match the Listener hostname MUST be\nignored. For example, if a Listener specified `*.example.com`, and the\nHTTPRoute specified `test.example.com` and `test.example.net`,\n`test.example.net` must not be considered for a match.\n\n\nIf both the Listener and HTTPRoute have specified hostnames, and none\nmatch with the criteria above, then the HTTPRoute is not accepted. The\nimplementation must raise an 'Accepted' Condition with a status of\n`False` in the corresponding RouteParentStatus.\n\n\nIn the event that multiple HTTPRoutes specify intersecting hostnames (e.g.\noverlapping wildcard matching and exact matching hostnames), precedence must\nbe given to rules from the HTTPRoute with the largest number of:\n\n\n* Characters in a matching non-wildcard hostname.\n* Characters in a matching hostname.\n\n\nIf ties exist across multiple Routes, the matching precedence rules for\nHTTPRouteMatches takes over.\n\n\nSupport: Core",
+    "Hostnames defines a set of hostnames that should match against the HTTP Host\nheader to select a HTTPRoute used to process the request. Implementations\nMUST ignore any port value specified in the HTTP Host header while\nperforming a match and (absent of any applicable header modification\nconfiguration) MUST forward this header unmodified to the backend.\n\nValid values for Hostnames are determined by RFC 1123 definition of a\nhostname with 2 notable exceptions:\n\n1. IPs are not allowed.\n2. A hostname may be prefixed with a wildcard label (`*.`). The wildcard\n   label must appear by itself as the first label.\n\nIf a hostname is specified by both the Listener and HTTPRoute, there\nmust be at least one intersecting hostname for the HTTPRoute to be\nattached to the Listener. For example:\n\n* A Listener with `test.example.com` as the hostname matches HTTPRoutes\n  that have either not specified any hostnames, or have specified at\n  least one of `test.example.com` or `*.example.com`.\n* A Listener with `*.example.com` as the hostname matches HTTPRoutes\n  that have either not specified any hostnames or have specified at least\n  one hostname that matches the Listener hostname. For example,\n  `*.example.com`, `test.example.com`, and `foo.test.example.com` would\n  all match. On the other hand, `example.com` and `test.example.net` would\n  not match.\n\nHostnames that are prefixed with a wildcard label (`*.`) are interpreted\nas a suffix match. That means that a match for `*.example.com` would match\nboth `test.example.com`, and `foo.test.example.com`, but not `example.com`.\n\nIf both the Listener and HTTPRoute have specified hostnames, any\nHTTPRoute hostnames that do not match the Listener hostname MUST be\nignored. For example, if a Listener specified `*.example.com`, and the\nHTTPRoute specified `test.example.com` and `test.example.net`,\n`test.example.net` must not be considered for a match.\n\nIf both the Listener and HTTPRoute have specified hostnames, and none\nmatch with the criteria above, then the HTTPRoute is not accepted. The\nimplementation must raise an 'Accepted' Condition with a status of\n`False` in the corresponding RouteParentStatus.\n\nIn the event that multiple HTTPRoutes specify intersecting hostnames (e.g.\noverlapping wildcard matching and exact matching hostnames), precedence must\nbe given to rules from the HTTPRoute with the largest number of:\n\n* Characters in a matching non-wildcard hostname.\n* Characters in a matching hostname.\n\nIf ties exist across multiple Routes, the matching precedence rules for\nHTTPRouteMatches takes over.\n\nSupport: Core",
+    "ParentRefs references the resources (usually Gateways) that a Route wants\nto be attached to. Note that the referenced parent resource needs to\nallow this for the attachment to be complete. For Gateways, that means\nthe Gateway needs to allow attachment from Routes of this kind and\nnamespace. For Services, that means the Service must either be in the same\nnamespace for a \"producer\" route, or the mesh implementation must support\nand allow \"consumer\" routes for the referenced Service. ReferenceGrant is\nnot applicable for governing ParentRefs to Services - it is not possible to\ncreate a \"producer\" route for a Service in a different namespace from the\nRoute.\n\n\nThere are two kinds of parent resources with \"Core\" support:\n\n\n* Gateway (Gateway conformance profile)\n* Service (Mesh conformance profile, ClusterIP Services only)\n\n\nThis API may be extended in the future to support additional kinds of parent\nresources.\n\n\nParentRefs must be _distinct_. This means either that:\n\n\n* They select different objects.  If this is the case, then parentRef\n  entries are distinct. In terms of fields, this means that the\n  multi-part key defined by `group`, `kind`, `namespace`, and `name` must\n  be unique across all parentRef entries in the Route.\n* They do not select different objects, but for each optional field used,\n  each ParentRef that selects the same object must set the same set of\n  optional fields to different values. If one ParentRef sets a\n  combination of optional fields, all must set the same combination.\n\n\nSome examples:\n\n\n* If one ParentRef sets `sectionName`, all ParentRefs referencing the\n  same object must also set `sectionName`.\n* If one ParentRef sets `port`, all ParentRefs referencing the same\n  object must also set `port`.\n* If one ParentRef sets `sectionName` and `port`, all ParentRefs\n  referencing the same object must also set `sectionName` and `port`.\n\n\nIt is possible to separately reference multiple distinct objects that may\nbe collapsed by an implementation. For example, some implementations may\nchoose to merge compatible Gateway Listeners together. If that is the\ncase, the list of routes attached to those resources should also be\nmerged.\n\n\nNote that for ParentRefs that cross namespace boundaries, there are specific\nrules. Cross-namespace references are only valid if they are explicitly\nallowed by something in the namespace they are referring to. For example,\nGateway has the AllowedRoutes field, and ReferenceGrant provides a\ngeneric way to enable other kinds of cross-namespace reference.\n\n\n\n\n\n\n\n\n",
+    "Group is the group of the referent.\nWhen unspecified, \"gateway.networking.k8s.io\" is inferred.\nTo set the core API group (such as for a \"Service\" kind referent),\nGroup must be explicitly set to \"\" (empty string).\n\n\nSupport: Core",
+    "Group is the group of the referent.\nWhen unspecified, \"gateway.networking.k8s.io\" is inferred.\nTo set the core API group (such as for a \"Service\" kind referent),\nGroup must be explicitly set to \"\" (empty string).\n\nSupport: Core",
+    "Kind is kind of the referent.\n\n\nThere are two kinds of parent resources with \"Core\" support:\n\n\n* Gateway (Gateway conformance profile)\n* Service (Mesh conformance profile, ClusterIP Services only)\n\n\nSupport for other resources is Implementation-Specific.",
+    "Kind is kind of the referent.\n\nThere are two kinds of parent resources with \"Core\" support:\n\n* Gateway (Gateway conformance profile)\n* Service (Mesh conformance profile, ClusterIP Services only)\n\nSupport for other resources is Implementation-Specific.",
+    "Name is the name of the referent.\n\n\nSupport: Core",
+    "Name is the name of the referent.\n\nSupport: Core",
+    "Namespace is the namespace of the referent. When unspecified, this refers\nto the local namespace of the Route.\n\n\nNote that there are specific rules for ParentRefs which cross namespace\nboundaries. Cross-namespace references are only valid if they are explicitly\nallowed by something in the namespace they are referring to. For example:\nGateway has the AllowedRoutes field, and ReferenceGrant provides a\ngeneric way to enable any other kind of cross-namespace reference.\n\n\n\n\n\nSupport: Core",
+    "Port is the network port this Route targets. It can be interpreted\ndifferently based on the type of parent resource.\n\n\nWhen the parent resource is a Gateway, this targets all listeners\nlistening on the specified port that also support this kind of Route(and\nselect this Route). It's not recommended to set `Port` unless the\nnetworking behaviors specified in a Route must apply to a specific port\nas opposed to a listener(s) whose port(s) may be changed. When both Port\nand SectionName are specified, the name and port of the selected listener\nmust match both specified values.\n\n\n\n\n\nImplementations MAY choose to support other parent resources.\nImplementations supporting other types of parent resources MUST clearly\ndocument how/if Port is interpreted.\n\n\nFor the purpose of status, an attachment is considered successful as\nlong as the parent resource accepts it partially. For example, Gateway\nlisteners can restrict which Routes can attach to them by Route kind,\nnamespace, or hostname. If 1 of 2 Gateway listeners accept attachment\nfrom the referencing Route, the Route MUST be considered successfully\nattached. If no Gateway listeners accept attachment from this Route,\nthe Route MUST be considered detached from the Gateway.\n\n\nSupport: Extended",
+    "SectionName is the name of a section within the target resource. In the\nfollowing resources, SectionName is interpreted as the following:\n\n\n* Gateway: Listener name. When both Port (experimental) and SectionName\nare specified, the name and port of the selected listener must match\nboth specified values.\n* Service: Port name. When both Port (experimental) and SectionName\nare specified, the name and port of the selected listener must match\nboth specified values.\n\n\nImplementations MAY choose to support attaching Routes to other resources.\nIf that is the case, they MUST clearly document how SectionName is\ninterpreted.\n\n\nWhen unspecified (empty string), this will reference the entire resource.\nFor the purpose of status, an attachment is considered successful if at\nleast one section in the parent resource accepts it. For example, Gateway\nlisteners can restrict which Routes can attach to them by Route kind,\nnamespace, or hostname. If 1 of 2 Gateway listeners accept attachment from\nthe referencing Route, the Route MUST be considered successfully\nattached. If no Gateway listeners accept attachment from this Route, the\nRoute MUST be considered detached from the Gateway.\n\n\nSupport: Core",
+    "SectionName is the name of a section within the target resource. In the\nfollowing resources, SectionName is interpreted as the following:\n\n* Gateway: Listener name. When both Port (experimental) and SectionName\nare specified, the name and port of the selected listener must match\nboth specified values.\n* Service: Port name. When both Port (experimental) and SectionName\nare specified, the name and port of the selected listener must match\nboth specified values.\n\nImplementations MAY choose to support attaching Routes to other resources.\nIf that is the case, they MUST clearly document how SectionName is\ninterpreted.\n\nWhen unspecified (empty string), this will reference the entire resource.\nFor the purpose of status, an attachment is considered successful if at\nleast one section in the parent resource accepts it. For example, Gateway\nlisteners can restrict which Routes can attach to them by Route kind,\nnamespace, or hostname. If 1 of 2 Gateway listeners accept attachment from\nthe referencing Route, the Route MUST be considered successfully\nattached. If no Gateway listeners accept attachment from this Route, the\nRoute MUST be considered detached from the Gateway.\n\nSupport: Core",
+    "BackendRefs defines the backend(s) where matching requests should be\nsent.\n\n\nFailure behavior here depends on how many BackendRefs are specified and\nhow many are invalid.\n\n\nIf *all* entries in BackendRefs are invalid, and there are also no filters\nspecified in this route rule, *all* traffic which matches this rule MUST\nreceive a 500 status code.\n\n\nSee the HTTPBackendRef definition for the rules about what makes a single\nHTTPBackendRef invalid.\n\n\nWhen a HTTPBackendRef is invalid, 500 status codes MUST be returned for\nrequests that would have otherwise been routed to an invalid backend. If\nmultiple backends are specified, and some are invalid, the proportion of\nrequests that would otherwise have been routed to an invalid backend\nMUST receive a 500 status code.\n\n\nFor example, if two backends are specified with equal weights, and one is\ninvalid, 50 percent of traffic must receive a 500. Implementations may\nchoose how that 50 percent is determined.\n\n\nSupport: Core for Kubernetes Service\n\n\nSupport: Extended for Kubernetes ServiceImport\n\n\nSupport: Implementation-specific for any other resource\n\n\nSupport for weight: Core",
+    "BackendRefs defines the backend(s) where matching requests should be\nsent.\n\nFailure behavior here depends on how many BackendRefs are specified and\nhow many are invalid.\n\nIf *all* entries in BackendRefs are invalid, and there are also no filters\nspecified in this route rule, *all* traffic which matches this rule MUST\nreceive a 500 status code.\n\nSee the HTTPBackendRef definition for the rules about what makes a single\nHTTPBackendRef invalid.\n\nWhen a HTTPBackendRef is invalid, 500 status codes MUST be returned for\nrequests that would have otherwise been routed to an invalid backend. If\nmultiple backends are specified, and some are invalid, the proportion of\nrequests that would otherwise have been routed to an invalid backend\nMUST receive a 500 status code.\n\nFor example, if two backends are specified with equal weights, and one is\ninvalid, 50 percent of traffic must receive a 500. Implementations may\nchoose how that 50 percent is determined.\n\nWhen a HTTPBackendRef refers to a Service that has no ready endpoints,\nimplementations SHOULD return a 503 for requests to that backend instead.\nIf an implementation chooses to do this, all of the above rules for 500 responses\nMUST also apply for responses that return a 503.\n\nSupport: Core for Kubernetes Service\n\nSupport: Extended for Kubernetes ServiceImport\n\nSupport: Implementation-specific for any other resource\n\nSupport for weight: Core",
+    "Filters defined at this level should be executed if and only if the\nrequest is being forwarded to the backend defined here.\n\n\nSupport: Implementation-specific (For broader support of filters, use the\nFilters field in HTTPRouteRule.)",
+    "Filters defined at this level should be executed if and only if the\nrequest is being forwarded to the backend defined here.\n\nSupport: Implementation-specific (For broader support of filters, use the\nFilters field in HTTPRouteRule.)",
+    "ExtensionRef is an optional, implementation-specific extension to the\n\"filter\" behavior.  For example, resource \"myroutefilter\" in group\n\"networking.example.net\"). ExtensionRef MUST NOT be used for core and\nextended filters.\n\n\nThis filter can be used multiple times within the same rule.\n\n\nSupport: Implementation-specific",
+    "ExtensionRef is an optional, implementation-specific extension to the\n\"filter\" behavior.  For example, resource \"myroutefilter\" in group\n\"networking.example.net\"). ExtensionRef MUST NOT be used for core and\nextended filters.\n\nThis filter can be used multiple times within the same rule.\n\nSupport: Implementation-specific",
+    "RequestHeaderModifier defines a schema for a filter that modifies request\nheaders.\n\n\nSupport: Core",
+    "RequestHeaderModifier defines a schema for a filter that modifies request\nheaders.\n\nSupport: Core",
+    "Add adds the given header(s) (name, value) to the request\nbefore the action. It appends to any existing values associated\nwith the header name.\n\n\nInput:\n  GET /foo HTTP/1.1\n  my-header: foo\n\n\nConfig:\n  add:\n  - name: \"my-header\"\n    value: \"bar,baz\"\n\n\nOutput:\n  GET /foo HTTP/1.1\n  my-header: foo,bar,baz",
+    "Add adds the given header(s) (name, value) to the request\nbefore the action. It appends to any existing values associated\nwith the header name.\n\nInput:\n  GET /foo HTTP/1.1\n  my-header: foo\n\nConfig:\n  add:\n  - name: \"my-header\"\n    value: \"bar,baz\"\n\nOutput:\n  GET /foo HTTP/1.1\n  my-header: foo,bar,baz",
+    "Name is the name of the HTTP Header to be matched. Name matching MUST be\ncase insensitive. (See https://tools.ietf.org/html/rfc7230#section-3.2).\n\n\nIf multiple entries specify equivalent header names, the first entry with\nan equivalent name MUST be considered for a match. Subsequent entries\nwith an equivalent header name MUST be ignored. Due to the\ncase-insensitivity of header names, \"foo\" and \"Foo\" are considered\nequivalent.",
+    "Remove the given header(s) from the HTTP request before the action. The\nvalue of Remove is a list of HTTP header names. Note that the header\nnames are case-insensitive (see\nhttps://datatracker.ietf.org/doc/html/rfc2616#section-4.2).\n\n\nInput:\n  GET /foo HTTP/1.1\n  my-header1: foo\n  my-header2: bar\n  my-header3: baz\n\n\nConfig:\n  remove: [\"my-header1\", \"my-header3\"]\n\n\nOutput:\n  GET /foo HTTP/1.1\n  my-header2: bar",
+    "Remove the given header(s) from the HTTP request before the action. The\nvalue of Remove is a list of HTTP header names. Note that the header\nnames are case-insensitive (see\nhttps://datatracker.ietf.org/doc/html/rfc2616#section-4.2).\n\nInput:\n  GET /foo HTTP/1.1\n  my-header1: foo\n  my-header2: bar\n  my-header3: baz\n\nConfig:\n  remove: [\"my-header1\", \"my-header3\"]\n\nOutput:\n  GET /foo HTTP/1.1\n  my-header2: bar",
+    "Set overwrites the request with the given header (name, value)\nbefore the action.\n\n\nInput:\n  GET /foo HTTP/1.1\n  my-header: foo\n\n\nConfig:\n  set:\n  - name: \"my-header\"\n    value: \"bar\"\n\n\nOutput:\n  GET /foo HTTP/1.1\n  my-header: bar",
+    "Set overwrites the request with the given header (name, value)\nbefore the action.\n\nInput:\n  GET /foo HTTP/1.1\n  my-header: foo\n\nConfig:\n  set:\n  - name: \"my-header\"\n    value: \"bar\"\n\nOutput:\n  GET /foo HTTP/1.1\n  my-header: bar",
+    "RequestMirror defines a schema for a filter that mirrors requests.\nRequests are sent to the specified destination, but responses from\nthat destination are ignored.\n\n\nThis filter can be used multiple times within the same rule. Note that\nnot all implementations will be able to support mirroring to multiple\nbackends.\n\n\nSupport: Extended",
+    "BackendRef references a resource where mirrored requests are sent.\n\n\nMirrored requests must be sent only to a single destination endpoint\nwithin this BackendRef, irrespective of how many endpoints are present\nwithin this BackendRef.\n\n\nIf the referent cannot be found, this BackendRef is invalid and must be\ndropped from the Gateway. The controller must ensure the \"ResolvedRefs\"\ncondition on the Route status is set to `status: False` and not configure\nthis backend in the underlying implementation.\n\n\nIf there is a cross-namespace reference to an *existing* object\nthat is not allowed by a ReferenceGrant, the controller must ensure the\n\"ResolvedRefs\"  condition on the Route is set to `status: False`,\nwith the \"RefNotPermitted\" reason and not configure this backend in the\nunderlying implementation.\n\n\nIn either error case, the Message of the `ResolvedRefs` Condition\nshould be used to provide more detail about the problem.\n\n\nSupport: Extended for Kubernetes Service\n\n\nSupport: Implementation-specific for any other resource",
+    "Kind is the Kubernetes resource kind of the referent. For example\n\"Service\".\n\n\nDefaults to \"Service\" when not specified.\n\n\nExternalName services can refer to CNAME DNS records that may live\noutside of the cluster and as such are difficult to reason about in\nterms of conformance. They also may not be safe to forward to (see\nCVE-2021-25740 for more information). Implementations SHOULD NOT\nsupport ExternalName Services.\n\n\nSupport: Core (Services with a type other than ExternalName)\n\n\nSupport: Implementation-specific (Services with type ExternalName)",
+    "Kind is the Kubernetes resource kind of the referent. For example\n\"Service\".\n\nDefaults to \"Service\" when not specified.\n\nExternalName services can refer to CNAME DNS records that may live\noutside of the cluster and as such are difficult to reason about in\nterms of conformance. They also may not be safe to forward to (see\nCVE-2021-25740 for more information). Implementations SHOULD NOT\nsupport ExternalName Services.\n\nSupport: Core (Services with a type other than ExternalName)\n\nSupport: Implementation-specific (Services with type ExternalName)",
+    "Namespace is the namespace of the backend. When unspecified, the local\nnamespace is inferred.\n\n\nNote that when a namespace different than the local namespace is specified,\na ReferenceGrant object is required in the referent namespace to allow that\nnamespace's owner to accept the reference. See the ReferenceGrant\ndocumentation for details.\n\n\nSupport: Core",
+    "Namespace is the namespace of the backend. When unspecified, the local\nnamespace is inferred.\n\nNote that when a namespace different than the local namespace is specified,\na ReferenceGrant object is required in the referent namespace to allow that\nnamespace's owner to accept the reference. See the ReferenceGrant\ndocumentation for details.\n\nSupport: Core",
+    "RequestRedirect defines a schema for a filter that responds to the\nrequest with an HTTP redirection.\n\n\nSupport: Core",
+    "RequestRedirect defines a schema for a filter that responds to the\nrequest with an HTTP redirection.\n\nSupport: Core",
+    "Hostname is the hostname to be used in the value of the `Location`\nheader in the response.\nWhen empty, the hostname in the `Host` header of the request is used.\n\n\nSupport: Core",
+    "Hostname is the hostname to be used in the value of the `Location`\nheader in the response.\nWhen empty, the hostname in the `Host` header of the request is used.\n\nSupport: Core",
+    "Path defines parameters used to modify the path of the incoming request.\nThe modified path is then used to construct the `Location` header. When\nempty, the request path is used as-is.\n\n\nSupport: Extended",
+    "Path defines parameters used to modify the path of the incoming request.\nThe modified path is then used to construct the `Location` header. When\nempty, the request path is used as-is.\n\nSupport: Extended",
+    "ReplacePrefixMatch specifies the value with which to replace the prefix\nmatch of a request during a rewrite or redirect. For example, a request\nto \"/foo/bar\" with a prefix match of \"/foo\" and a ReplacePrefixMatch\nof \"/xyz\" would be modified to \"/xyz/bar\".\n\n\nNote that this matches the behavior of the PathPrefix match type. This\nmatches full path elements. A path element refers to the list of labels\nin the path split by the `/` separator. When specified, a trailing `/` is\nignored. For example, the paths `/abc`, `/abc/`, and `/abc/def` would all\nmatch the prefix `/abc`, but the path `/abcd` would not.\n\n\nReplacePrefixMatch is only compatible with a `PathPrefix` HTTPRouteMatch.\nUsing any other HTTPRouteMatch type on the same HTTPRouteRule will result in\nthe implementation setting the Accepted Condition for the Route to `status: False`.\n\n\nRequest Path | Prefix Match | Replace Prefix | Modified Path\n-------------|--------------|----------------|----------\n/foo/bar     | /foo         | /xyz           | /xyz/bar\n/foo/bar     | /foo         | /xyz/          | /xyz/bar\n/foo/bar     | /foo/        | /xyz           | /xyz/bar\n/foo/bar     | /foo/        | /xyz/          | /xyz/bar\n/foo         | /foo         | /xyz           | /xyz\n/foo/        | /foo         | /xyz           | /xyz/\n/foo/bar     | /foo         | <empty string> | /bar\n/foo/        | /foo         | <empty string> | /\n/foo         | /foo         | <empty string> | /\n/foo/        | /foo         | /              | /\n/foo         | /foo         | /              | /",
+    "ReplacePrefixMatch specifies the value with which to replace the prefix\nmatch of a request during a rewrite or redirect. For example, a request\nto \"/foo/bar\" with a prefix match of \"/foo\" and a ReplacePrefixMatch\nof \"/xyz\" would be modified to \"/xyz/bar\".\n\nNote that this matches the behavior of the PathPrefix match type. This\nmatches full path elements. A path element refers to the list of labels\nin the path split by the `/` separator. When specified, a trailing `/` is\nignored. For example, the paths `/abc`, `/abc/`, and `/abc/def` would all\nmatch the prefix `/abc`, but the path `/abcd` would not.\n\nReplacePrefixMatch is only compatible with a `PathPrefix` HTTPRouteMatch.\nUsing any other HTTPRouteMatch type on the same HTTPRouteRule will result in\nthe implementation setting the Accepted Condition for the Route to `status: False`.\n\nRequest Path | Prefix Match | Replace Prefix | Modified Path",
+    "Type defines the type of path modifier. Additional types may be\nadded in a future release of the API.\n\n\nNote that values may be added to this enum, implementations\nmust ensure that unknown values will not cause a crash.\n\n\nUnknown values here must result in the implementation setting the\nAccepted Condition for the Route to `status: False`, with a\nReason of `UnsupportedValue`.",
+    "Type defines the type of path modifier. Additional types may be\nadded in a future release of the API.\n\nNote that values may be added to this enum, implementations\nmust ensure that unknown values will not cause a crash.\n\nUnknown values here must result in the implementation setting the\nAccepted Condition for the Route to `status: False`, with a\nReason of `UnsupportedValue`.",
+    "Port is the port to be used in the value of the `Location`\nheader in the response.\n\n\nIf no port is specified, the redirect port MUST be derived using the\nfollowing rules:\n\n\n* If redirect scheme is not-empty, the redirect port MUST be the well-known\n  port associated with the redirect scheme. Specifically \"http\" to port 80\n  and \"https\" to port 443. If the redirect scheme does not have a\n  well-known port, the listener port of the Gateway SHOULD be used.\n* If redirect scheme is empty, the redirect port MUST be the Gateway\n  Listener port.\n\n\nImplementations SHOULD NOT add the port number in the 'Location'\nheader in the following cases:\n\n\n* A Location header that will use HTTP (whether that is determined via\n  the Listener protocol or the Scheme field) _and_ use port 80.\n* A Location header that will use HTTPS (whether that is determined via\n  the Listener protocol or the Scheme field) _and_ use port 443.\n\n\nSupport: Extended",
+    "Port is the port to be used in the value of the `Location`\nheader in the response.\n\nIf no port is specified, the redirect port MUST be derived using the\nfollowing rules:\n\n* If redirect scheme is not-empty, the redirect port MUST be the well-known\n  port associated with the redirect scheme. Specifically \"http\" to port 80\n  and \"https\" to port 443. If the redirect scheme does not have a\n  well-known port, the listener port of the Gateway SHOULD be used.\n* If redirect scheme is empty, the redirect port MUST be the Gateway\n  Listener port.\n\nImplementations SHOULD NOT add the port number in the 'Location'\nheader in the following cases:\n\n* A Location header that will use HTTP (whether that is determined via\n  the Listener protocol or the Scheme field) _and_ use port 80.\n* A Location header that will use HTTPS (whether that is determined via\n  the Listener protocol or the Scheme field) _and_ use port 443.\n\nSupport: Extended",
+    "Scheme is the scheme to be used in the value of the `Location` header in\nthe response. When empty, the scheme of the request is used.\n\n\nScheme redirects can affect the port of the redirect, for more information,\nrefer to the documentation for the port field of this filter.\n\n\nNote that values may be added to this enum, implementations\nmust ensure that unknown values will not cause a crash.\n\n\nUnknown values here must result in the implementation setting the\nAccepted Condition for the Route to `status: False`, with a\nReason of `UnsupportedValue`.\n\n\nSupport: Extended",
+    "Scheme is the scheme to be used in the value of the `Location` header in\nthe response. When empty, the scheme of the request is used.\n\nScheme redirects can affect the port of the redirect, for more information,\nrefer to the documentation for the port field of this filter.\n\nNote that values may be added to this enum, implementations\nmust ensure that unknown values will not cause a crash.\n\nUnknown values here must result in the implementation setting the\nAccepted Condition for the Route to `status: False`, with a\nReason of `UnsupportedValue`.\n\nSupport: Extended",
+    "StatusCode is the HTTP status code to be used in response.\n\n\nNote that values may be added to this enum, implementations\nmust ensure that unknown values will not cause a crash.\n\n\nUnknown values here must result in the implementation setting the\nAccepted Condition for the Route to `status: False`, with a\nReason of `UnsupportedValue`.\n\n\nSupport: Core",
+    "ResponseHeaderModifier defines a schema for a filter that modifies response\nheaders.\n\n\nSupport: Extended",
+    "ResponseHeaderModifier defines a schema for a filter that modifies response\nheaders.\n\nSupport: Extended",
+    "Type identifies the type of filter to apply. As with other API fields,\ntypes are classified into three conformance levels:\n\n\n- Core: Filter types and their corresponding configuration defined by\n  \"Support: Core\" in this package, e.g. \"RequestHeaderModifier\". All\n  implementations must support core filters.\n\n\n- Extended: Filter types and their corresponding configuration defined by\n  \"Support: Extended\" in this package, e.g. \"RequestMirror\". Implementers\n  are encouraged to support extended filters.\n\n\n- Implementation-specific: Filters that are defined and supported by\n  specific vendors.\n  In the future, filters showing convergence in behavior across multiple\n  implementations will be considered for inclusion in extended or core\n  conformance levels. Filter-specific configuration for such filters\n  is specified using the ExtensionRef field. `Type` should be set to\n  \"ExtensionRef\" for custom filters.\n\n\nImplementers are encouraged to define custom implementation types to\nextend the core API with implementation-specific behavior.\n\n\nIf a reference to a custom filter type cannot be resolved, the filter\nMUST NOT be skipped. Instead, requests that would have been processed by\nthat filter MUST receive a HTTP error response.\n\n\nNote that values may be added to this enum, implementations\nmust ensure that unknown values will not cause a crash.\n\n\nUnknown values here must result in the implementation setting the\nAccepted Condition for the Route to `status: False`, with a\nReason of `UnsupportedValue`.",
+    "Type identifies the type of filter to apply. As with other API fields,\ntypes are classified into three conformance levels:\n\n- Core: Filter types and their corresponding configuration defined by\n  \"Support: Core\" in this package, e.g. \"RequestHeaderModifier\". All\n  implementations must support core filters.\n\n- Extended: Filter types and their corresponding configuration defined by\n  \"Support: Extended\" in this package, e.g. \"RequestMirror\". Implementers\n  are encouraged to support extended filters.\n\n- Implementation-specific: Filters that are defined and supported by\n  specific vendors.\n  In the future, filters showing convergence in behavior across multiple\n  implementations will be considered for inclusion in extended or core\n  conformance levels. Filter-specific configuration for such filters\n  is specified using the ExtensionRef field. `Type` should be set to\n  \"ExtensionRef\" for custom filters.\n\nImplementers are encouraged to define custom implementation types to\nextend the core API with implementation-specific behavior.\n\nIf a reference to a custom filter type cannot be resolved, the filter\nMUST NOT be skipped. Instead, requests that would have been processed by\nthat filter MUST receive a HTTP error response.\n\nNote that values may be added to this enum, implementations\nmust ensure that unknown values will not cause a crash.\n\nUnknown values here must result in the implementation setting the\nAccepted Condition for the Route to `status: False`, with a\nReason of `UnsupportedValue`.",
+    "URLRewrite defines a schema for a filter that modifies a request during forwarding.\n\n\nSupport: Extended",
+    "URLRewrite defines a schema for a filter that modifies a request during forwarding.\n\nSupport: Extended",
+    "Hostname is the value to be used to replace the Host header value during\nforwarding.\n\n\nSupport: Extended",
+    "Hostname is the value to be used to replace the Host header value during\nforwarding.\n\nSupport: Extended",
+    "Path defines a path rewrite.\n\n\nSupport: Extended",
+    "Path defines a path rewrite.\n\nSupport: Extended",
+    "Weight specifies the proportion of requests forwarded to the referenced\nbackend. This is computed as weight/(sum of all weights in this\nBackendRefs list). For non-zero values, there may be some epsilon from\nthe exact proportion defined here depending on the precision an\nimplementation supports. Weight is not a percentage and the sum of\nweights does not need to equal 100.\n\n\nIf only one backend is specified and it has a weight greater than 0, 100%\nof the traffic is forwarded to that backend. If weight is set to 0, no\ntraffic should be forwarded for this entry. If unspecified, weight\ndefaults to 1.\n\n\nSupport for this field varies based on the context where used.",
+    "Weight specifies the proportion of requests forwarded to the referenced\nbackend. This is computed as weight/(sum of all weights in this\nBackendRefs list). For non-zero values, there may be some epsilon from\nthe exact proportion defined here depending on the precision an\nimplementation supports. Weight is not a percentage and the sum of\nweights does not need to equal 100.\n\nIf only one backend is specified and it has a weight greater than 0, 100%\nof the traffic is forwarded to that backend. If weight is set to 0, no\ntraffic should be forwarded for this entry. If unspecified, weight\ndefaults to 1.\n\nSupport for this field varies based on the context where used.",
+    "Filters define the filters that are applied to requests that match\nthis rule.\n\n\nWherever possible, implementations SHOULD implement filters in the order\nthey are specified.\n\n\nImplementations MAY choose to implement this ordering strictly, rejecting\nany combination or order of filters that can not be supported. If implementations\nchoose a strict interpretation of filter ordering, they MUST clearly document\nthat behavior.\n\n\nTo reject an invalid combination or order of filters, implementations SHOULD\nconsider the Route Rules with this configuration invalid. If all Route Rules\nin a Route are invalid, the entire Route would be considered invalid. If only\na portion of Route Rules are invalid, implementations MUST set the\n\"PartiallyInvalid\" condition for the Route.\n\n\nConformance-levels at this level are defined based on the type of filter:\n\n\n- ALL core filters MUST be supported by all implementations.\n- Implementers are encouraged to support extended filters.\n- Implementation-specific custom filters have no API guarantees across\n  implementations.\n\n\nSpecifying the same filter multiple times is not supported unless explicitly\nindicated in the filter.\n\n\nAll filters are expected to be compatible with each other except for the\nURLRewrite and RequestRedirect filters, which may not be combined. If an\nimplementation can not support other combinations of filters, they must clearly\ndocument that limitation. In cases where incompatible or unsupported\nfilters are specified and cause the `Accepted` condition to be set to status\n`False`, implementations may use the `IncompatibleFilters` reason to specify\nthis configuration error.\n\n\nSupport: Core",
+    "Matches define conditions used for matching the rule against incoming\nHTTP requests. Each match is independent, i.e. this rule will be matched\nif **any** one of the matches is satisfied.\n\n\nFor example, take the following matches configuration:\n\n\n```\nmatches:\n- path:\n    value: \"/foo\"\n  headers:\n  - name: \"version\"\n    value: \"v2\"\n- path:\n    value: \"/v2/foo\"\n```\n\n\nFor a request to match against this rule, a request must satisfy\nEITHER of the two conditions:\n\n\n- path prefixed with `/foo` AND contains the header `version: v2`\n- path prefix of `/v2/foo`\n\n\nSee the documentation for HTTPRouteMatch on how to specify multiple\nmatch conditions that should be ANDed together.\n\n\nIf no matches are specified, the default is a prefix\npath match on \"/\", which has the effect of matching every\nHTTP request.\n\n\nProxy or Load Balancer routing configuration generated from HTTPRoutes\nMUST prioritize matches based on the following criteria, continuing on\nties. Across all rules specified on applicable Routes, precedence must be\ngiven to the match having:\n\n\n* \"Exact\" path match.\n* \"Prefix\" path match with largest number of characters.\n* Method match.\n* Largest number of header matches.\n* Largest number of query param matches.\n\n\nNote: The precedence of RegularExpression path matches are implementation-specific.\n\n\nIf ties still exist across multiple Routes, matching precedence MUST be\ndetermined in order of the following criteria, continuing on ties:\n\n\n* The oldest Route based on creation timestamp.\n* The Route appearing first in alphabetical order by\n  \"{namespace}/{name}\".\n\n\nIf ties still exist within an HTTPRoute, matching precedence MUST be granted\nto the FIRST matching rule (in list order) with a match meeting the above\ncriteria.\n\n\nWhen no rules matching a request have been successfully attached to the\nparent a request is coming from, a HTTP 404 status code MUST be returned.",
+    "Matches define conditions used for matching the rule against incoming\nHTTP requests. Each match is independent, i.e. this rule will be matched\nif **any** one of the matches is satisfied.\n\nFor example, take the following matches configuration:\n\n```\nmatches:\n- path:\n    value: \"/foo\"\n  headers:\n  - name: \"version\"\n    value: \"v2\"\n- path:\n    value: \"/v2/foo\"\n```\n\nFor a request to match against this rule, a request must satisfy\nEITHER of the two conditions:\n\n- path prefixed with `/foo` AND contains the header `version: v2`\n- path prefix of `/v2/foo`\n\nSee the documentation for HTTPRouteMatch on how to specify multiple\nmatch conditions that should be ANDed together.\n\nIf no matches are specified, the default is a prefix\npath match on \"/\", which has the effect of matching every\nHTTP request.\n\nProxy or Load Balancer routing configuration generated from HTTPRoutes\nMUST prioritize matches based on the following criteria, continuing on\nties. Across all rules specified on applicable Routes, precedence must be\ngiven to the match having:\n\n* \"Exact\" path match.\n* \"Prefix\" path match with largest number of characters.\n* Method match.\n* Largest number of header matches.\n* Largest number of query param matches.\n\nNote: The precedence of RegularExpression path matches are implementation-specific.\n\nIf ties still exist across multiple Routes, matching precedence MUST be\ndetermined in order of the following criteria, continuing on ties:\n\n* The oldest Route based on creation timestamp.\n* The Route appearing first in alphabetical order by\n  \"{namespace}/{name}\".\n\nIf ties still exist within an HTTPRoute, matching precedence MUST be granted\nto the FIRST matching rule (in list order) with a match meeting the above\ncriteria.\n\nWhen no rules matching a request have been successfully attached to the\nparent a request is coming from, a HTTP 404 status code MUST be returned.",
+    "Name is the name of the HTTP Header to be matched. Name matching MUST be\ncase insensitive. (See https://tools.ietf.org/html/rfc7230#section-3.2).\n\n\nIf multiple entries specify equivalent header names, only the first\nentry with an equivalent name MUST be considered for a match. Subsequent\nentries with an equivalent header name MUST be ignored. Due to the\ncase-insensitivity of header names, \"foo\" and \"Foo\" are considered\nequivalent.\n\n\nWhen a header is repeated in an HTTP request, it is\nimplementation-specific behavior as to how this is represented.\nGenerally, proxies should follow the guidance from the RFC:\nhttps://www.rfc-editor.org/rfc/rfc7230.html#section-3.2.2 regarding\nprocessing a repeated header, with special handling for \"Set-Cookie\".",
+    "Type specifies how to match against the value of the header.\n\n\nSupport: Core (Exact)\n\n\nSupport: Implementation-specific (RegularExpression)\n\n\nSince RegularExpression HeaderMatchType has implementation-specific\nconformance, implementations can support POSIX, PCRE or any other dialects\nof regular expressions. Please read the implementation's documentation to\ndetermine the supported dialect.",
+    "Type specifies how to match against the value of the header.\n\nSupport: Core (Exact)\n\nSupport: Implementation-specific (RegularExpression)\n\nSince RegularExpression HeaderMatchType has implementation-specific\nconformance, implementations can support POSIX, PCRE or any other dialects\nof regular expressions. Please read the implementation's documentation to\ndetermine the supported dialect.",
+    "Method specifies HTTP method matcher.\nWhen specified, this route will be matched only if the request has the\nspecified method.\n\n\nSupport: Extended",
+    "Method specifies HTTP method matcher.\nWhen specified, this route will be matched only if the request has the\nspecified method.\n\nSupport: Extended",
+    "Type specifies how to match against the path Value.\n\n\nSupport: Core (Exact, PathPrefix)\n\n\nSupport: Implementation-specific (RegularExpression)",
+    "Type specifies how to match against the path Value.\n\nSupport: Core (Exact, PathPrefix)\n\nSupport: Implementation-specific (RegularExpression)",
+    "QueryParams specifies HTTP query parameter matchers. Multiple match\nvalues are ANDed together, meaning, a request must match all the\nspecified query parameters to select the route.\n\n\nSupport: Extended",
+    "QueryParams specifies HTTP query parameter matchers. Multiple match\nvalues are ANDed together, meaning, a request must match all the\nspecified query parameters to select the route.\n\nSupport: Extended",
+    "Name is the name of the HTTP query param to be matched. This must be an\nexact string match. (See\nhttps://tools.ietf.org/html/rfc7230#section-2.7.3).\n\n\nIf multiple entries specify equivalent query param names, only the first\nentry with an equivalent name MUST be considered for a match. Subsequent\nentries with an equivalent query param name MUST be ignored.\n\n\nIf a query param is repeated in an HTTP request, the behavior is\npurposely left undefined, since different data planes have different\ncapabilities. However, it is *recommended* that implementations should\nmatch against the first value of the param if the data plane supports it,\nas this behavior is expected in other load balancing contexts outside of\nthe Gateway API.\n\n\nUsers SHOULD NOT route traffic based on repeated query params to guard\nthemselves against potential differences in the implementations.",
+    "Name is the name of the HTTP query param to be matched. This must be an\nexact string match. (See\nhttps://tools.ietf.org/html/rfc7230#section-2.7.3).\n\nIf multiple entries specify equivalent query param names, only the first\nentry with an equivalent name MUST be considered for a match. Subsequent\nentries with an equivalent query param name MUST be ignored.\n\nIf a query param is repeated in an HTTP request, the behavior is\npurposely left undefined, since different data planes have different\ncapabilities. However, it is *recommended* that implementations should\nmatch against the first value of the param if the data plane supports it,\nas this behavior is expected in other load balancing contexts outside of\nthe Gateway API.\n\nUsers SHOULD NOT route traffic based on repeated query params to guard\nthemselves against potential differences in the implementations.",
+    "Type specifies how to match against the value of the query parameter.\n\n\nSupport: Extended (Exact)\n\n\nSupport: Implementation-specific (RegularExpression)\n\n\nSince RegularExpression QueryParamMatchType has Implementation-specific\nconformance, implementations can support POSIX, PCRE or any other\ndialects of regular expressions. Please read the implementation's\ndocumentation to determine the supported dialect.",
+    "Type specifies how to match against the value of the query parameter.\n\nSupport: Extended (Exact)\n\nSupport: Implementation-specific (RegularExpression)\n\nSince RegularExpression QueryParamMatchType has Implementation-specific\nconformance, implementations can support POSIX, PCRE or any other\ndialects of regular expressions. Please read the implementation's\ndocumentation to determine the supported dialect.",
+    "Timeouts defines the timeouts that can be configured for an HTTP request.\n\nSupport: Extended",
+    "Parents is a list of parent resources (usually Gateways) that are\nassociated with the route, and the status of the route with respect to\neach parent. When this route attaches to a parent, the controller that\nmanages the parent must add an entry to this list when the controller\nfirst sees the route and should update the entry as appropriate when the\nroute or gateway is modified.\n\n\nNote that parent references that cannot be resolved by an implementation\nof this API will not be added to this list. Implementations of this API\ncan only populate Route status for the Gateways/parent resources they are\nresponsible for.\n\n\nA maximum of 32 Gateways will be represented in this list. An empty list\nmeans the route has not been attached to any Gateway.",
+    "Parents is a list of parent resources (usually Gateways) that are\nassociated with the route, and the status of the route with respect to\neach parent. When this route attaches to a parent, the controller that\nmanages the parent must add an entry to this list when the controller\nfirst sees the route and should update the entry as appropriate when the\nroute or gateway is modified.\n\nNote that parent references that cannot be resolved by an implementation\nof this API will not be added to this list. Implementations of this API\ncan only populate Route status for the Gateways/parent resources they are\nresponsible for.\n\nA maximum of 32 Gateways will be represented in this list. An empty list\nmeans the route has not been attached to any Gateway.",
+    "Conditions describes the status of the route with respect to the Gateway.\nNote that the route's availability is also subject to the Gateway's own\nstatus conditions and listener status.\n\n\nIf the Route's ParentRef specifies an existing Gateway that supports\nRoutes of this kind AND that Gateway's controller has sufficient access,\nthen that Gateway's controller MUST set the \"Accepted\" condition on the\nRoute, to indicate whether the route has been accepted or rejected by the\nGateway, and why.\n\n\nA Route MUST be considered \"Accepted\" if at least one of the Route's\nrules is implemented by the Gateway.\n\n\nThere are a number of cases where the \"Accepted\" condition may not be set\ndue to lack of controller visibility, that includes when:\n\n\n* The Route refers to a non-existent parent.\n* The Route is of a type that the controller does not support.\n* The Route is in a namespace the controller does not have access to.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "ControllerName is a domain/path string that indicates the name of the\ncontroller that wrote this status. This corresponds with the\ncontrollerName field on GatewayClass.\n\n\nExample: \"example.net/gateway-controller\".\n\n\nThe format of this field is DOMAIN \"/\" PATH, where DOMAIN and PATH are\nvalid Kubernetes names\n(https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names).\n\n\nControllers MUST populate this field when writing status. Controllers should ensure that\nentries to status populated with their ControllerName are cleaned up when they are no\nlonger necessary.",
+    "ControllerName is a domain/path string that indicates the name of the\ncontroller that wrote this status. This corresponds with the\ncontrollerName field on GatewayClass.\n\nExample: \"example.net/gateway-controller\".\n\nThe format of this field is DOMAIN \"/\" PATH, where DOMAIN and PATH are\nvalid Kubernetes names\n(https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names).\n\nControllers MUST populate this field when writing status. Controllers should ensure that\nentries to status populated with their ControllerName are cleaned up when they are no\nlonger necessary.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Hostnames defines a set of hostnames that should match against the HTTP Host header to select a HTTPRoute used to process the request. Implementations MUST ignore any port value specified in the HTTP Host header while performing a match and (absent of any applicable header modification configuration) MUST forward this header unmodified to the backend. \n Valid values for Hostnames are determined by RFC 1123 definition of a hostname with 2 notable exceptions: \n 1. IPs are not allowed. 2. A hostname may be prefixed with a wildcard label (`*.`). The wildcard label must appear by itself as the first label. \n If a hostname is specified by both the Listener and HTTPRoute, there must be at least one intersecting hostname for the HTTPRoute to be attached to the Listener. For example: \n * A Listener with `test.example.com` as the hostname matches HTTPRoutes that have either not specified any hostnames, or have specified at least one of `test.example.com` or `*.example.com`. * A Listener with `*.example.com` as the hostname matches HTTPRoutes that have either not specified any hostnames or have specified at least one hostname that matches the Listener hostname. For example, `*.example.com`, `test.example.com`, and `foo.test.example.com` would all match. On the other hand, `example.com` and `test.example.net` would not match. \n Hostnames that are prefixed with a wildcard label (`*.`) are interpreted as a suffix match. That means that a match for `*.example.com` would match both `test.example.com`, and `foo.test.example.com`, but not `example.com`. \n If both the Listener and HTTPRoute have specified hostnames, any HTTPRoute hostnames that do not match the Listener hostname MUST be ignored. For example, if a Listener specified `*.example.com`, and the HTTPRoute specified `test.example.com` and `test.example.net`, `test.example.net` must not be considered for a match. \n If both the Listener and HTTPRoute have specified hostnames, and none match with the criteria above, then the HTTPRoute is not accepted. The implementation must raise an 'Accepted' Condition with a status of `False` in the corresponding RouteParentStatus. \n In the event that multiple HTTPRoutes specify intersecting hostnames (e.g. overlapping wildcard matching and exact matching hostnames), precedence must be given to rules from the HTTPRoute with the largest number of: \n * Characters in a matching non-wildcard hostname. * Characters in a matching hostname. \n If ties exist across multiple Routes, the matching precedence rules for HTTPRouteMatches takes over. \n Support: Core",
+    "ParentRefs references the resources (usually Gateways) that a Route wants to be attached to. Note that the referenced parent resource needs to allow this for the attachment to be complete. For Gateways, that means the Gateway needs to allow attachment from Routes of this kind and namespace. For Services, that means the Service must either be in the same namespace for a \"producer\" route, or the mesh implementation must support and allow \"consumer\" routes for the referenced Service. ReferenceGrant is not applicable for governing ParentRefs to Services - it is not possible to create a \"producer\" route for a Service in a different namespace from the Route. \n There are two kinds of parent resources with \"Core\" support: \n * Gateway (Gateway conformance profile)  This API may be extended in the future to support additional kinds of parent resources. \n ParentRefs must be _distinct_. This means either that: \n * They select different objects.  If this is the case, then parentRef entries are distinct. In terms of fields, this means that the multi-part key defined by `group`, `kind`, `namespace`, and `name` must be unique across all parentRef entries in the Route. * They do not select different objects, but for each optional field used, each ParentRef that selects the same object must set the same set of optional fields to different values. If one ParentRef sets a combination of optional fields, all must set the same combination. \n Some examples: \n * If one ParentRef sets `sectionName`, all ParentRefs referencing the same object must also set `sectionName`. * If one ParentRef sets `port`, all ParentRefs referencing the same object must also set `port`. * If one ParentRef sets `sectionName` and `port`, all ParentRefs referencing the same object must also set `sectionName` and `port`. \n It is possible to separately reference multiple distinct objects that may be collapsed by an implementation. For example, some implementations may choose to merge compatible Gateway Listeners together. If that is the case, the list of routes attached to those resources should also be merged. \n Note that for ParentRefs that cross namespace boundaries, there are specific rules. Cross-namespace references are only valid if they are explicitly allowed by something in the namespace they are referring to. For example, Gateway has the AllowedRoutes field, and ReferenceGrant provides a generic way to enable other kinds of cross-namespace reference. \n  \n ",
+    "Group is the group of the referent. When unspecified, \"gateway.networking.k8s.io\" is inferred. To set the core API group (such as for a \"Service\" kind referent), Group must be explicitly set to \"\" (empty string). \n Support: Core",
+    "Kind is kind of the referent. \n There are two kinds of parent resources with \"Core\" support: \n * Gateway (Gateway conformance profile) * Service (Mesh conformance profile, experimental, ClusterIP Services only) \n Support for other resources is Implementation-Specific.",
+    "Name is the name of the referent. \n Support: Core",
+    "Namespace is the namespace of the referent. When unspecified, this refers to the local namespace of the Route. \n Note that there are specific rules for ParentRefs which cross namespace boundaries. Cross-namespace references are only valid if they are explicitly allowed by something in the namespace they are referring to. For example: Gateway has the AllowedRoutes field, and ReferenceGrant provides a generic way to enable any other kind of cross-namespace reference. \n  \n Support: Core",
+    "SectionName is the name of a section within the target resource. In the following resources, SectionName is interpreted as the following: \n * Gateway: Listener Name. When both Port (experimental) and SectionName are specified, the name and port of the selected listener must match both specified values. * Service: Port Name. When both Port (experimental) and SectionName are specified, the name and port of the selected listener must match both specified values. Note that attaching Routes to Services as Parents is part of experimental Mesh support and is not supported for any other purpose. \n Implementations MAY choose to support attaching Routes to other resources. If that is the case, they MUST clearly document how SectionName is interpreted. \n When unspecified (empty string), this will reference the entire resource. For the purpose of status, an attachment is considered successful if at least one section in the parent resource accepts it. For example, Gateway listeners can restrict which Routes can attach to them by Route kind, namespace, or hostname. If 1 of 2 Gateway listeners accept attachment from the referencing Route, the Route MUST be considered successfully attached. If no Gateway listeners accept attachment from this Route, the Route MUST be considered detached from the Gateway. \n Support: Core",
+    "BackendRefs defines the backend(s) where matching requests should be sent. \n Failure behavior here depends on how many BackendRefs are specified and how many are invalid. \n If *all* entries in BackendRefs are invalid, and there are also no filters specified in this route rule, *all* traffic which matches this rule MUST receive a 500 status code. \n See the HTTPBackendRef definition for the rules about what makes a single HTTPBackendRef invalid. \n When a HTTPBackendRef is invalid, 500 status codes MUST be returned for requests that would have otherwise been routed to an invalid backend. If multiple backends are specified, and some are invalid, the proportion of requests that would otherwise have been routed to an invalid backend MUST receive a 500 status code. \n For example, if two backends are specified with equal weights, and one is invalid, 50 percent of traffic must receive a 500. Implementations may choose how that 50 percent is determined. \n Support: Core for Kubernetes Service \n Support: Extended for Kubernetes ServiceImport \n Support: Implementation-specific for any other resource \n Support for weight: Core",
+    "Filters defined at this level should be executed if and only if the request is being forwarded to the backend defined here. \n Support: Implementation-specific (For broader support of filters, use the Filters field in HTTPRouteRule.)",
+    "ExtensionRef is an optional, implementation-specific extension to the \"filter\" behavior.  For example, resource \"myroutefilter\" in group \"networking.example.net\"). ExtensionRef MUST NOT be used for core and extended filters. \n This filter can be used multiple times within the same rule. \n Support: Implementation-specific",
+    "Group is the group of the referent. For example, \"gateway.networking.k8s.io\". When unspecified or empty string, core API group is inferred.",
+    "Group is the group of the referent. For example, \"gateway.networking.k8s.io\".\nWhen unspecified or empty string, core API group is inferred.",
+    "RequestHeaderModifier defines a schema for a filter that modifies request headers. \n Support: Core",
+    "Add adds the given header(s) (name, value) to the request before the action. It appends to any existing values associated with the header name. \n Input: GET /foo HTTP/1.1 my-header: foo \n Config: add: - name: \"my-header\" value: \"bar,baz\" \n Output: GET /foo HTTP/1.1 my-header: foo,bar,baz",
+    "Name is the name of the HTTP Header to be matched. Name matching MUST be case insensitive. (See https://tools.ietf.org/html/rfc7230#section-3.2). \n If multiple entries specify equivalent header names, the first entry with an equivalent name MUST be considered for a match. Subsequent entries with an equivalent header name MUST be ignored. Due to the case-insensitivity of header names, \"foo\" and \"Foo\" are considered equivalent.",
+    "Remove the given header(s) from the HTTP request before the action. The value of Remove is a list of HTTP header names. Note that the header names are case-insensitive (see https://datatracker.ietf.org/doc/html/rfc2616#section-4.2). \n Input: GET /foo HTTP/1.1 my-header1: foo my-header2: bar my-header3: baz \n Config: remove: [\"my-header1\", \"my-header3\"] \n Output: GET /foo HTTP/1.1 my-header2: bar",
+    "Set overwrites the request with the given header (name, value) before the action. \n Input: GET /foo HTTP/1.1 my-header: foo \n Config: set: - name: \"my-header\" value: \"bar\" \n Output: GET /foo HTTP/1.1 my-header: bar",
+    "RequestMirror defines a schema for a filter that mirrors requests. Requests are sent to the specified destination, but responses from that destination are ignored. \n This filter can be used multiple times within the same rule. Note that not all implementations will be able to support mirroring to multiple backends. \n Support: Extended",
+    "BackendRef references a resource where mirrored requests are sent. \n Mirrored requests must be sent only to a single destination endpoint within this BackendRef, irrespective of how many endpoints are present within this BackendRef. \n If the referent cannot be found, this BackendRef is invalid and must be dropped from the Gateway. The controller must ensure the \"ResolvedRefs\" condition on the Route status is set to `status: False` and not configure this backend in the underlying implementation. \n If there is a cross-namespace reference to an *existing* object that is not allowed by a ReferenceGrant, the controller must ensure the \"ResolvedRefs\"  condition on the Route is set to `status: False`, with the \"RefNotPermitted\" reason and not configure this backend in the underlying implementation. \n In either error case, the Message of the `ResolvedRefs` Condition should be used to provide more detail about the problem. \n Support: Extended for Kubernetes Service \n Support: Implementation-specific for any other resource",
+    "Kind is the Kubernetes resource kind of the referent. For example \"Service\". \n Defaults to \"Service\" when not specified. \n ExternalName services can refer to CNAME DNS records that may live outside of the cluster and as such are difficult to reason about in terms of conformance. They also may not be safe to forward to (see CVE-2021-25740 for more information). Implementations SHOULD NOT support ExternalName Services. \n Support: Core (Services with a type other than ExternalName) \n Support: Implementation-specific (Services with type ExternalName)",
+    "Namespace is the namespace of the backend. When unspecified, the local namespace is inferred. \n Note that when a namespace different than the local namespace is specified, a ReferenceGrant object is required in the referent namespace to allow that namespace's owner to accept the reference. See the ReferenceGrant documentation for details. \n Support: Core",
+    "Port specifies the destination port number to use for this resource. Port is required when the referent is a Kubernetes Service. In this case, the port number is the service port number, not the target port. For other resources, destination port might be derived from the referent resource or this field.",
+    "Port specifies the destination port number to use for this resource.\nPort is required when the referent is a Kubernetes Service. In this\ncase, the port number is the service port number, not the target port.\nFor other resources, destination port might be derived from the referent\nresource or this field.",
+    "RequestRedirect defines a schema for a filter that responds to the request with an HTTP redirection. \n Support: Core",
+    "Hostname is the hostname to be used in the value of the `Location` header in the response. When empty, the hostname in the `Host` header of the request is used. \n Support: Core",
+    "Path defines parameters used to modify the path of the incoming request. The modified path is then used to construct the `Location` header. When empty, the request path is used as-is. \n Support: Extended",
+    "ReplaceFullPath specifies the value with which to replace the full path of a request during a rewrite or redirect.",
+    "ReplaceFullPath specifies the value with which to replace the full path\nof a request during a rewrite or redirect.",
+    "ReplacePrefixMatch specifies the value with which to replace the prefix match of a request during a rewrite or redirect. For example, a request to \"/foo/bar\" with a prefix match of \"/foo\" and a ReplacePrefixMatch of \"/xyz\" would be modified to \"/xyz/bar\". \n Note that this matches the behavior of the PathPrefix match type. This matches full path elements. A path element refers to the list of labels in the path split by the `/` separator. When specified, a trailing `/` is ignored. For example, the paths `/abc`, `/abc/`, and `/abc/def` would all match the prefix `/abc`, but the path `/abcd` would not. \n ReplacePrefixMatch is only compatible with a `PathPrefix` HTTPRouteMatch. Using any other HTTPRouteMatch type on the same HTTPRouteRule will result in the implementation setting the Accepted Condition for the Route to `status: False`. \n Request Path | Prefix Match | Replace Prefix | Modified Path -------------|--------------|----------------|---------- /foo/bar     | /foo         | /xyz           | /xyz/bar /foo/bar     | /foo         | /xyz/          | /xyz/bar /foo/bar     | /foo/        | /xyz           | /xyz/bar /foo/bar     | /foo/        | /xyz/          | /xyz/bar /foo         | /foo         | /xyz           | /xyz /foo/        | /foo         | /xyz           | /xyz/ /foo/bar     | /foo         | <empty string> | /bar /foo/        | /foo         | <empty string> | / /foo         | /foo         | <empty string> | / /foo/        | /foo         | /              | / /foo         | /foo         | /              | /",
+    "Type defines the type of path modifier. Additional types may be added in a future release of the API. \n Note that values may be added to this enum, implementations must ensure that unknown values will not cause a crash. \n Unknown values here must result in the implementation setting the Accepted Condition for the Route to `status: False`, with a Reason of `UnsupportedValue`.",
+    "Port is the port to be used in the value of the `Location` header in the response. \n If no port is specified, the redirect port MUST be derived using the following rules: \n * If redirect scheme is not-empty, the redirect port MUST be the well-known port associated with the redirect scheme. Specifically \"http\" to port 80 and \"https\" to port 443. If the redirect scheme does not have a well-known port, the listener port of the Gateway SHOULD be used. * If redirect scheme is empty, the redirect port MUST be the Gateway Listener port. \n Implementations SHOULD NOT add the port number in the 'Location' header in the following cases: \n * A Location header that will use HTTP (whether that is determined via the Listener protocol or the Scheme field) _and_ use port 80. * A Location header that will use HTTPS (whether that is determined via the Listener protocol or the Scheme field) _and_ use port 443. \n Support: Extended",
+    "Scheme is the scheme to be used in the value of the `Location` header in the response. When empty, the scheme of the request is used. \n Scheme redirects can affect the port of the redirect, for more information, refer to the documentation for the port field of this filter. \n Note that values may be added to this enum, implementations must ensure that unknown values will not cause a crash. \n Unknown values here must result in the implementation setting the Accepted Condition for the Route to `status: False`, with a Reason of `UnsupportedValue`. \n Support: Extended",
+    "StatusCode is the HTTP status code to be used in response. \n Note that values may be added to this enum, implementations must ensure that unknown values will not cause a crash. \n Unknown values here must result in the implementation setting the Accepted Condition for the Route to `status: False`, with a Reason of `UnsupportedValue`. \n Support: Core",
+    "ResponseHeaderModifier defines a schema for a filter that modifies response headers. \n Support: Extended",
+    "Type identifies the type of filter to apply. As with other API fields, types are classified into three conformance levels: \n - Core: Filter types and their corresponding configuration defined by \"Support: Core\" in this package, e.g. \"RequestHeaderModifier\". All implementations must support core filters. \n - Extended: Filter types and their corresponding configuration defined by \"Support: Extended\" in this package, e.g. \"RequestMirror\". Implementers are encouraged to support extended filters. \n - Implementation-specific: Filters that are defined and supported by specific vendors. In the future, filters showing convergence in behavior across multiple implementations will be considered for inclusion in extended or core conformance levels. Filter-specific configuration for such filters is specified using the ExtensionRef field. `Type` should be set to \"ExtensionRef\" for custom filters. \n Implementers are encouraged to define custom implementation types to extend the core API with implementation-specific behavior. \n If a reference to a custom filter type cannot be resolved, the filter MUST NOT be skipped. Instead, requests that would have been processed by that filter MUST receive a HTTP error response. \n Note that values may be added to this enum, implementations must ensure that unknown values will not cause a crash. \n Unknown values here must result in the implementation setting the Accepted Condition for the Route to `status: False`, with a Reason of `UnsupportedValue`.",
+    "URLRewrite defines a schema for a filter that modifies a request during forwarding. \n Support: Extended",
+    "Hostname is the value to be used to replace the Host header value during forwarding. \n Support: Extended",
+    "Path defines a path rewrite. \n Support: Extended",
+    "Weight specifies the proportion of requests forwarded to the referenced backend. This is computed as weight/(sum of all weights in this BackendRefs list). For non-zero values, there may be some epsilon from the exact proportion defined here depending on the precision an implementation supports. Weight is not a percentage and the sum of weights does not need to equal 100. \n If only one backend is specified and it has a weight greater than 0, 100% of the traffic is forwarded to that backend. If weight is set to 0, no traffic should be forwarded for this entry. If unspecified, weight defaults to 1. \n Support for this field varies based on the context where used.",
+    "Filters define the filters that are applied to requests that match this rule. \n The effects of ordering of multiple behaviors are currently unspecified. This can change in the future based on feedback during the alpha stage. \n Conformance-levels at this level are defined based on the type of filter: \n - ALL core filters MUST be supported by all implementations. - Implementers are encouraged to support extended filters. - Implementation-specific custom filters have no API guarantees across implementations. \n Specifying the same filter multiple times is not supported unless explicitly indicated in the filter. \n All filters are expected to be compatible with each other except for the URLRewrite and RequestRedirect filters, which may not be combined. If an implementation can not support other combinations of filters, they must clearly document that limitation. In cases where incompatible or unsupported filters are specified and cause the `Accepted` condition to be set to status `False`, implementations may use the `IncompatibleFilters` reason to specify this configuration error. \n Support: Core",
+    "Matches define conditions used for matching the rule against incoming HTTP requests. Each match is independent, i.e. this rule will be matched if **any** one of the matches is satisfied. \n For example, take the following matches configuration: \n ``` matches: - path: value: \"/foo\" headers: - name: \"version\" value: \"v2\" - path: value: \"/v2/foo\" ``` \n For a request to match against this rule, a request must satisfy EITHER of the two conditions: \n - path prefixed with `/foo` AND contains the header `version: v2` - path prefix of `/v2/foo` \n See the documentation for HTTPRouteMatch on how to specify multiple match conditions that should be ANDed together. \n If no matches are specified, the default is a prefix path match on \"/\", which has the effect of matching every HTTP request. \n Proxy or Load Balancer routing configuration generated from HTTPRoutes MUST prioritize matches based on the following criteria, continuing on ties. Across all rules specified on applicable Routes, precedence must be given to the match having: \n * \"Exact\" path match. * \"Prefix\" path match with largest number of characters. * Method match. * Largest number of header matches. * Largest number of query param matches. \n Note: The precedence of RegularExpression path matches are implementation-specific. \n If ties still exist across multiple Routes, matching precedence MUST be determined in order of the following criteria, continuing on ties: \n * The oldest Route based on creation timestamp. * The Route appearing first in alphabetical order by \"{namespace}/{name}\". \n If ties still exist within an HTTPRoute, matching precedence MUST be granted to the FIRST matching rule (in list order) with a match meeting the above criteria. \n When no rules matching a request have been successfully attached to the parent a request is coming from, a HTTP 404 status code MUST be returned.",
+    "Headers specifies HTTP request header matchers. Multiple match values are ANDed together, meaning, a request must match all the specified headers to select the route.",
+    "Headers specifies HTTP request header matchers. Multiple match values are\nANDed together, meaning, a request must match all the specified headers\nto select the route.",
+    "Name is the name of the HTTP Header to be matched. Name matching MUST be case insensitive. (See https://tools.ietf.org/html/rfc7230#section-3.2). \n If multiple entries specify equivalent header names, only the first entry with an equivalent name MUST be considered for a match. Subsequent entries with an equivalent header name MUST be ignored. Due to the case-insensitivity of header names, \"foo\" and \"Foo\" are considered equivalent. \n When a header is repeated in an HTTP request, it is implementation-specific behavior as to how this is represented. Generally, proxies should follow the guidance from the RFC: https://www.rfc-editor.org/rfc/rfc7230.html#section-3.2.2 regarding processing a repeated header, with special handling for \"Set-Cookie\".",
+    "Type specifies how to match against the value of the header. \n Support: Core (Exact) \n Support: Implementation-specific (RegularExpression) \n Since RegularExpression HeaderMatchType has implementation-specific conformance, implementations can support POSIX, PCRE or any other dialects of regular expressions. Please read the implementation's documentation to determine the supported dialect.",
+    "Method specifies HTTP method matcher. When specified, this route will be matched only if the request has the specified method. \n Support: Extended",
+    "Path specifies a HTTP request path matcher. If this field is not specified, a default prefix match on the \"/\" path is provided.",
+    "Path specifies a HTTP request path matcher. If this field is not\nspecified, a default prefix match on the \"/\" path is provided.",
+    "Type specifies how to match against the path Value. \n Support: Core (Exact, PathPrefix) \n Support: Implementation-specific (RegularExpression)",
+    "QueryParams specifies HTTP query parameter matchers. Multiple match values are ANDed together, meaning, a request must match all the specified query parameters to select the route. \n Support: Extended",
+    "Name is the name of the HTTP query param to be matched. This must be an exact string match. (See https://tools.ietf.org/html/rfc7230#section-2.7.3). \n If multiple entries specify equivalent query param names, only the first entry with an equivalent name MUST be considered for a match. Subsequent entries with an equivalent query param name MUST be ignored. \n If a query param is repeated in an HTTP request, the behavior is purposely left undefined, since different data planes have different capabilities. However, it is *recommended* that implementations should match against the first value of the param if the data plane supports it, as this behavior is expected in other load balancing contexts outside of the Gateway API. \n Users SHOULD NOT route traffic based on repeated query params to guard themselves against potential differences in the implementations.",
+    "Type specifies how to match against the value of the query parameter. \n Support: Extended (Exact) \n Support: Implementation-specific (RegularExpression) \n Since RegularExpression QueryParamMatchType has Implementation-specific conformance, implementations can support POSIX, PCRE or any other dialects of regular expressions. Please read the implementation's documentation to determine the supported dialect.",
+    "Parents is a list of parent resources (usually Gateways) that are associated with the route, and the status of the route with respect to each parent. When this route attaches to a parent, the controller that manages the parent must add an entry to this list when the controller first sees the route and should update the entry as appropriate when the route or gateway is modified. \n Note that parent references that cannot be resolved by an implementation of this API will not be added to this list. Implementations of this API can only populate Route status for the Gateways/parent resources they are responsible for. \n A maximum of 32 Gateways will be represented in this list. An empty list means the route has not been attached to any Gateway.",
+    "Conditions describes the status of the route with respect to the Gateway. Note that the route's availability is also subject to the Gateway's own status conditions and listener status. \n If the Route's ParentRef specifies an existing Gateway that supports Routes of this kind AND that Gateway's controller has sufficient access, then that Gateway's controller MUST set the \"Accepted\" condition on the Route, to indicate whether the route has been accepted or rejected by the Gateway, and why. \n A Route MUST be considered \"Accepted\" if at least one of the Route's rules is implemented by the Gateway. \n There are a number of cases where the \"Accepted\" condition may not be set due to lack of controller visibility, that includes when: \n * The Route refers to a non-existent parent. * The Route is of a type that the controller does not support. * The Route is in a namespace the controller does not have access to.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "ControllerName is a domain/path string that indicates the name of the controller that wrote this status. This corresponds with the controllerName field on GatewayClass. \n Example: \"example.net/gateway-controller\". \n The format of this field is DOMAIN \"/\" PATH, where DOMAIN and PATH are valid Kubernetes names (https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names). \n Controllers MUST populate this field when writing status. Controllers should ensure that entries to status populated with their ControllerName are cleaned up when they are no longer necessary.",
+    "ParentRef corresponds with a ParentRef in the spec that this RouteParentStatus struct describes the status of.",
+    "ParentRef corresponds with a ParentRef in the spec that this\nRouteParentStatus struct describes the status of.",
+    "HTTPRoute provides a way to route HTTP requests. This includes the capability to match requests by hostname, path, header, or query param. Filters can be used to specify additional processing steps. Backends specify where matching requests should be routed.",
+    "HTTPRoute provides a way to route HTTP requests. This includes the capability\nto match requests by hostname, path, header, or query param. Filters can be\nused to specify additional processing steps. Backends specify where matching\nrequests should be routed."
+  ]
+}

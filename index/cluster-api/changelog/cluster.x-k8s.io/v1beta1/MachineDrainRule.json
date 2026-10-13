@@ -1,0 +1,19 @@
+{
+  "versions": {
+    "v1.9.5": {
+      "descriptionChanged": [
+        "spec.drain.behavior"
+      ],
+      "descriptions": {
+        "spec.drain.behavior": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "texts": [
+    "behavior defines the drain behavior.\nCan be either \"Drain\" or \"Skip\".\n\"Drain\" means that the Pods to which this MachineDrainRule applies will be drained.\nIf behavior is set to \"Drain\" the order in which Pods are drained can be configured\nwith the order field. When draining Pods of a Node the Pods will be grouped by order\nand one group after another will be drained (by increasing order). Cluster API will\nwait until all Pods of a group are terminated / removed from the Node before starting\nwith the next group.\n\"Skip\" means that the Pods to which this MachineDrainRule applies will be skipped during drain.",
+    "behavior defines the drain behavior.\nCan be either \"Drain\", \"Skip\", or \"WaitCompleted\".\n\"Drain\" means that the Pods to which this MachineDrainRule applies will be drained.\nIf behavior is set to \"Drain\" the order in which Pods are drained can be configured\nwith the order field. When draining Pods of a Node the Pods will be grouped by order\nand one group after another will be drained (by increasing order). Cluster API will\nwait until all Pods of a group are terminated / removed from the Node before starting\nwith the next group.\n\"Skip\" means that the Pods to which this MachineDrainRule applies will be skipped during drain.\n\"WaitCompleted\" means that the pods to which this MachineDrainRule applies will never be evicted\nand we wait for them to be completed, it is enforced that pods marked with this behavior always have Order=0."
+  ]
+}

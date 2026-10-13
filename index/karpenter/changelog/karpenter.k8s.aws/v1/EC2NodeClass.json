@@ -1,0 +1,488 @@
+{
+  "versions": {
+    "v1.13.0": {
+      "added": {
+        "spec.connectionTracking": "object",
+        "spec.cpuOptions": "object"
+      },
+      "descriptions": {
+        "spec.connectionTracking": [
+          null,
+          0
+        ],
+        "spec.cpuOptions": [
+          null,
+          1
+        ]
+      }
+    },
+    "v1.11.0": {
+      "added": {
+        "spec.networkInterfaces": "object[]",
+        "spec.placementGroupSelector": "object"
+      },
+      "descriptions": {
+        "spec.networkInterfaces": [
+          null,
+          2
+        ],
+        "spec.placementGroupSelector": [
+          null,
+          3
+        ]
+      }
+    },
+    "v1.10.0": {
+      "added": {
+        "status.capacityReservations.interruptible": "boolean"
+      },
+      "descriptions": {
+        "status.capacityReservations.interruptible": [
+          null,
+          4
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.amiSelectorTerms.alias"
+      ],
+      "descriptions": {
+        "spec.amiSelectorTerms.alias": [
+          5,
+          6
+        ]
+      }
+    },
+    "v1.8.0": {
+      "added": {
+        "spec.capacityReservationSelectorTerms.instanceMatchCriteria": "string",
+        "spec.ipPrefixCount": "integer"
+      },
+      "descriptions": {
+        "spec.capacityReservationSelectorTerms.instanceMatchCriteria": [
+          null,
+          7
+        ],
+        "spec.ipPrefixCount": [
+          null,
+          8
+        ]
+      }
+    },
+    "v1.7.0": {
+      "descriptionChanged": [
+        "spec.role"
+      ],
+      "descriptions": {
+        "spec.role": [
+          9,
+          10
+        ]
+      }
+    },
+    "v1.6.0": {
+      "added": {
+        "status.capacityReservations.reservationType": "string",
+        "status.capacityReservations.state": "string"
+      },
+      "descriptions": {
+        "status.capacityReservations.reservationType": [
+          null,
+          11
+        ],
+        "status.capacityReservations.state": [
+          null,
+          12
+        ]
+      }
+    },
+    "v1.5.0": {
+      "added": {
+        "spec.blockDeviceMappings.ebs.volumeInitializationRate": "integer"
+      },
+      "descriptions": {
+        "spec.blockDeviceMappings.ebs.volumeInitializationRate": [
+          null,
+          13
+        ]
+      }
+    },
+    "v1.4.0": {
+      "added": {
+        "spec.amiSelectorTerms.ssmParameter": "string"
+      },
+      "descriptionChanged": [
+        "spec.blockDeviceMappings.ebs.kmsKeyID"
+      ],
+      "descriptions": {
+        "spec.amiSelectorTerms.ssmParameter": [
+          null,
+          14
+        ],
+        "spec.blockDeviceMappings.ebs.kmsKeyID": [
+          15,
+          16
+        ]
+      }
+    },
+    "v1.3.0": {
+      "added": {
+        "spec.capacityReservationSelectorTerms": "object[]",
+        "status.capacityReservations": "object[]"
+      },
+      "descriptionChanged": [
+        "spec.securityGroupSelectorTerms",
+        "spec.subnetSelectorTerms"
+      ],
+      "descriptions": {
+        "spec.capacityReservationSelectorTerms": [
+          null,
+          17
+        ],
+        "spec.securityGroupSelectorTerms": [
+          18,
+          19
+        ],
+        "spec.subnetSelectorTerms": [
+          20,
+          21
+        ],
+        "status.capacityReservations": [
+          null,
+          22
+        ]
+      }
+    },
+    "v1.1.1": {
+      "descriptionChanged": [
+        "spec.amiSelectorTerms.tags",
+        "spec.securityGroupSelectorTerms.tags",
+        "status.securityGroups",
+        "status.subnets"
+      ],
+      "added": {
+        "status.amis.deprecated": "boolean"
+      },
+      "descriptions": {
+        "spec.amiSelectorTerms.tags": [
+          23,
+          24
+        ],
+        "spec.securityGroupSelectorTerms.tags": [
+          23,
+          25
+        ],
+        "status.amis.deprecated": [
+          null,
+          26
+        ],
+        "status.securityGroups": [
+          27,
+          28
+        ],
+        "status.subnets": [
+          29,
+          30
+        ]
+      }
+    },
+    "v1.0.2": {
+      "descriptionChanged": [
+        "spec.blockDeviceMappings.ebs.iops",
+        "spec.blockDeviceMappings.ebs.volumeSize",
+        "spec.metadataOptions",
+        "spec.metadataOptions.httpEndpoint",
+        "spec.metadataOptions.httpTokens",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.blockDeviceMappings.ebs.iops": [
+          31,
+          32
+        ],
+        "spec.blockDeviceMappings.ebs.volumeSize": [
+          33,
+          34
+        ],
+        "spec.metadataOptions": [
+          35,
+          36
+        ],
+        "spec.metadataOptions.httpEndpoint": [
+          37,
+          38
+        ],
+        "spec.metadataOptions.httpTokens": [
+          39,
+          40
+        ],
+        "status.conditions.type": [
+          41,
+          42
+        ]
+      }
+    },
+    "v1.0.0": {
+      "descriptionChanged": [
+        "spec.blockDeviceMappings.ebs.iops",
+        "spec.blockDeviceMappings.ebs.volumeSize",
+        "spec.metadataOptions",
+        "spec.metadataOptions.httpEndpoint",
+        "spec.metadataOptions.httpTokens",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.blockDeviceMappings.ebs.iops": [
+          32,
+          31
+        ],
+        "spec.blockDeviceMappings.ebs.volumeSize": [
+          34,
+          33
+        ],
+        "spec.metadataOptions": [
+          36,
+          35
+        ],
+        "spec.metadataOptions.httpEndpoint": [
+          38,
+          37
+        ],
+        "spec.metadataOptions.httpTokens": [
+          40,
+          39
+        ],
+        "status.conditions.type": [
+          42,
+          41
+        ]
+      }
+    },
+    "v0.37.3": {
+      "descriptionChanged": [
+        "spec.blockDeviceMappings.ebs.iops",
+        "spec.blockDeviceMappings.ebs.volumeSize",
+        "spec.metadataOptions",
+        "spec.metadataOptions.httpEndpoint",
+        "spec.metadataOptions.httpTokens",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.blockDeviceMappings.ebs.iops": [
+          31,
+          32
+        ],
+        "spec.blockDeviceMappings.ebs.volumeSize": [
+          33,
+          34
+        ],
+        "spec.metadataOptions": [
+          35,
+          36
+        ],
+        "spec.metadataOptions.httpEndpoint": [
+          37,
+          38
+        ],
+        "spec.metadataOptions.httpTokens": [
+          39,
+          40
+        ],
+        "status.conditions.type": [
+          41,
+          42
+        ]
+      }
+    },
+    "v0.36.6": {
+      "descriptionChanged": [
+        "spec.blockDeviceMappings.ebs.iops",
+        "spec.blockDeviceMappings.ebs.volumeSize",
+        "spec.metadataOptions",
+        "spec.metadataOptions.httpEndpoint",
+        "spec.metadataOptions.httpTokens",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.blockDeviceMappings.ebs.iops": [
+          31,
+          32
+        ],
+        "spec.blockDeviceMappings.ebs.volumeSize": [
+          33,
+          34
+        ],
+        "spec.metadataOptions": [
+          35,
+          36
+        ],
+        "spec.metadataOptions.httpEndpoint": [
+          37,
+          38
+        ],
+        "spec.metadataOptions.httpTokens": [
+          39,
+          40
+        ],
+        "status.conditions.type": [
+          41,
+          42
+        ]
+      }
+    },
+    "v0.35.9": {
+      "descriptionChanged": [
+        "spec.blockDeviceMappings.ebs.iops",
+        "spec.blockDeviceMappings.ebs.volumeSize",
+        "spec.metadataOptions",
+        "spec.metadataOptions.httpEndpoint",
+        "spec.metadataOptions.httpTokens",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.blockDeviceMappings.ebs.iops": [
+          31,
+          32
+        ],
+        "spec.blockDeviceMappings.ebs.volumeSize": [
+          33,
+          34
+        ],
+        "spec.metadataOptions": [
+          35,
+          36
+        ],
+        "spec.metadataOptions.httpEndpoint": [
+          37,
+          38
+        ],
+        "spec.metadataOptions.httpTokens": [
+          39,
+          40
+        ],
+        "status.conditions.type": [
+          41,
+          42
+        ]
+      }
+    },
+    "v0.34.10": {
+      "descriptionChanged": [
+        "spec.blockDeviceMappings.ebs.iops",
+        "spec.blockDeviceMappings.ebs.volumeSize",
+        "spec.metadataOptions",
+        "spec.metadataOptions.httpEndpoint",
+        "spec.metadataOptions.httpTokens",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.blockDeviceMappings.ebs.iops": [
+          31,
+          32
+        ],
+        "spec.blockDeviceMappings.ebs.volumeSize": [
+          33,
+          34
+        ],
+        "spec.metadataOptions": [
+          35,
+          36
+        ],
+        "spec.metadataOptions.httpEndpoint": [
+          37,
+          38
+        ],
+        "spec.metadataOptions.httpTokens": [
+          39,
+          40
+        ],
+        "status.conditions.type": [
+          41,
+          42
+        ]
+      }
+    },
+    "v0.33.9": {
+      "descriptionChanged": [
+        "spec.blockDeviceMappings.ebs.iops",
+        "spec.blockDeviceMappings.ebs.volumeSize",
+        "spec.metadataOptions",
+        "spec.metadataOptions.httpEndpoint",
+        "spec.metadataOptions.httpTokens",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.blockDeviceMappings.ebs.iops": [
+          31,
+          32
+        ],
+        "spec.blockDeviceMappings.ebs.volumeSize": [
+          33,
+          34
+        ],
+        "spec.metadataOptions": [
+          35,
+          36
+        ],
+        "spec.metadataOptions.httpEndpoint": [
+          37,
+          38
+        ],
+        "spec.metadataOptions.httpTokens": [
+          39,
+          40
+        ],
+        "status.conditions.type": [
+          41,
+          42
+        ]
+      }
+    }
+  },
+  "texts": [
+    "ConnectionTracking configures idle connection tracking timeouts for\nENIs Karpenter provisions in the launch template. EFA-only interfaces\nare excluded. See ConnectionTracking.",
+    "CPUOptions defines the CPU options for the instance.",
+    "NetworkInterfaces specifies the network interface configurations to be attached to provisioned instances.",
+    "PlacementGroupSelector defines the name or the id of the placement to resolve with the nodeclass.",
+    "Indicates whether this capacity reservation is interruptible",
+    "Alias specifies which EKS optimized AMI to select.\nEach alias consists of a family and an AMI version, specified as \"family@version\".\nValid families include: al2, al2023, bottlerocket, windows2019, and windows2022.\nThe version can either be pinned to a specific AMI release, with that AMIs version format (ex: \"al2023@v20240625\" or \"bottlerocket@v1.10.0\").\nThe version can also be set to \"latest\" for any family. Setting the version to latest will result in drift when a new AMI is released. This is **not** recommended for production environments.\nNote: The Windows families do **not** support version pinning, and only latest may be used.",
+    "Alias specifies which EKS optimized AMI to select.\nEach alias consists of a family and an AMI version, specified as \"family@version\".\nValid families include: al2, al2023, bottlerocket, windows2019, windows2022, windows2025.\nThe version can either be pinned to a specific AMI release, with that AMIs version format (ex: \"al2023@v20240625\" or \"bottlerocket@v1.10.0\").\nThe version can also be set to \"latest\" for any family. Setting the version to latest will result in drift when a new AMI is released. This is **not** recommended for production environments.\nNote: The Windows families do **not** support version pinning, and only latest may be used.",
+    "InstanceMatchCriteria specifies how instances are matched to capacity reservations.",
+    "IPPrefixCount sets the number of IPv4 prefixes to be automatically assigned to the network interface.",
+    "Role is the AWS identity that nodes use. This field is immutable.\nThis field is mutually exclusive from instanceProfile.\nMarking this field as immutable avoids concerns around terminating managed instance profiles from running instances.\nThis field may be made mutable in the future, assuming the correct garbage collection and drift handling is implemented\nfor the old instance profiles on an update.",
+    "Role is the AWS identity that nodes use.\nThis field is mutually exclusive from instanceProfile.",
+    "The type of capacity reservation.",
+    "The state of the capacity reservation. A capacity reservation is considered to be expiring if it is within the EC2\nreclaimation window. Only capacity-block reservations may be in this state.",
+    "VolumeInitializationRate specifies the Amazon EBS Provisioned Rate for Volume Initialization,\nin MiB/s, at which to download the snapshot blocks from Amazon S3 to the volume. This is also known as volume\ninitialization. Specifying a volume initialization rate ensures that the volume is initialized at a\npredictable and consistent rate after creation. Only allowed if SnapshotID is set.\nValid Range: Minimum value of 100. Maximum value of 300.",
+    "SSMParameter is the name (or ARN) of the SSM parameter containing the Image ID.",
+    "KMSKeyID (ARN) of the symmetric Key Management Service (KMS) CMK used for encryption.",
+    "Identifier (key ID, key alias, key ARN, or alias ARN) of the customer managed KMS key to use for EBS encryption.",
+    "CapacityReservationSelectorTerms is a list of capacity reservation selector terms. Each term is ORed together to\ndetermine the set of eligible capacity reservations.",
+    "SecurityGroupSelectorTerms is a list of or security group selector terms. The terms are ORed.",
+    "SecurityGroupSelectorTerms is a list of security group selector terms. The terms are ORed.",
+    "SubnetSelectorTerms is a list of or subnet selector terms. The terms are ORed.",
+    "SubnetSelectorTerms is a list of subnet selector terms. The terms are ORed.",
+    "CapacityReservations contains the current capacity reservation values that are available to this NodeClass under the\nCapacityReservation selectors.",
+    "Tags is a map of key/value tags used to select subnets\nSpecifying '*' for a value selects all values for a given tag key.",
+    "Tags is a map of key/value tags used to select amis.\nSpecifying '*' for a value selects all values for a given tag key.",
+    "Tags is a map of key/value tags used to select security groups.\nSpecifying '*' for a value selects all values for a given tag key.",
+    "Deprecation status of the AMI",
+    "SecurityGroups contains the current Security Groups values that are available to the\ncluster under the SecurityGroups selectors.",
+    "SecurityGroups contains the current security group values that are available to the\ncluster under the SecurityGroups selectors.",
+    "Subnets contains the current Subnet values that are available to the\ncluster under the subnet selectors.",
+    "Subnets contains the current subnet values that are available to the\ncluster under the subnet selectors.",
+    "IOPS is the number of I/O operations per second (IOPS). For gp3, io1, and io2 volumes,\nthis represents the number of IOPS that are provisioned for the volume. For\ngp2 volumes, this represents the baseline performance of the volume and the\nrate at which the volume accumulates I/O credits for bursting.\n\n\nThe following are the supported values for each volume type:\n\n\n   * gp3: 3,000-16,000 IOPS\n\n\n   * io1: 100-64,000 IOPS\n\n\n   * io2: 100-64,000 IOPS\n\n\nFor io1 and io2 volumes, we guarantee 64,000 IOPS only for Instances built\non the Nitro System (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#ec2-nitro-instances).\nOther instance families guarantee performance up to 32,000 IOPS.\n\n\nThis parameter is supported for io1, io2, and gp3 volumes only. This parameter\nis not supported for gp2, st1, sc1, or standard volumes.",
+    "IOPS is the number of I/O operations per second (IOPS). For gp3, io1, and io2 volumes,\nthis represents the number of IOPS that are provisioned for the volume. For\ngp2 volumes, this represents the baseline performance of the volume and the\nrate at which the volume accumulates I/O credits for bursting.\n\nThe following are the supported values for each volume type:\n\n   * gp3: 3,000-16,000 IOPS\n\n   * io1: 100-64,000 IOPS\n\n   * io2: 100-64,000 IOPS\n\nFor io1 and io2 volumes, we guarantee 64,000 IOPS only for Instances built\non the Nitro System (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#ec2-nitro-instances).\nOther instance families guarantee performance up to 32,000 IOPS.\n\nThis parameter is supported for io1, io2, and gp3 volumes only. This parameter\nis not supported for gp2, st1, sc1, or standard volumes.",
+    "VolumeSize in `Gi`, `G`, `Ti`, or `T`. You must specify either a snapshot ID or\na volume size. The following are the supported volumes sizes for each volume\ntype:\n\n\n   * gp2 and gp3: 1-16,384\n\n\n   * io1 and io2: 4-16,384\n\n\n   * st1 and sc1: 125-16,384\n\n\n   * standard: 1-1,024",
+    "VolumeSize in `Gi`, `G`, `Ti`, or `T`. You must specify either a snapshot ID or\na volume size. The following are the supported volumes sizes for each volume\ntype:\n\n   * gp2 and gp3: 1-16,384\n\n   * io1 and io2: 4-16,384\n\n   * st1 and sc1: 125-16,384\n\n   * standard: 1-1,024",
+    "MetadataOptions for the generated launch template of provisioned nodes.\n\n\nThis specifies the exposure of the Instance Metadata Service to\nprovisioned EC2 nodes. For more information,\nsee Instance Metadata and User Data\n(https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html)\nin the Amazon Elastic Compute Cloud User Guide.\n\n\nRefer to recommended, security best practices\n(https://aws.github.io/aws-eks-best-practices/security/docs/iam/#restrict-access-to-the-instance-profile-assigned-to-the-worker-node)\nfor limiting exposure of Instance Metadata and User Data to pods.\nIf omitted, defaults to httpEndpoint enabled, with httpProtocolIPv6\ndisabled, with httpPutResponseLimit of 1, and with httpTokens\nrequired.",
+    "MetadataOptions for the generated launch template of provisioned nodes.\n\nThis specifies the exposure of the Instance Metadata Service to\nprovisioned EC2 nodes. For more information,\nsee Instance Metadata and User Data\n(https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html)\nin the Amazon Elastic Compute Cloud User Guide.\n\nRefer to recommended, security best practices\n(https://aws.github.io/aws-eks-best-practices/security/docs/iam/#restrict-access-to-the-instance-profile-assigned-to-the-worker-node)\nfor limiting exposure of Instance Metadata and User Data to pods.\nIf omitted, defaults to httpEndpoint enabled, with httpProtocolIPv6\ndisabled, with httpPutResponseLimit of 1, and with httpTokens\nrequired.",
+    "HTTPEndpoint enables or disables the HTTP metadata endpoint on provisioned\nnodes. If metadata options is non-nil, but this parameter is not specified,\nthe default state is \"enabled\".\n\n\nIf you specify a value of \"disabled\", instance metadata will not be accessible\non the node.",
+    "HTTPEndpoint enables or disables the HTTP metadata endpoint on provisioned\nnodes. If metadata options is non-nil, but this parameter is not specified,\nthe default state is \"enabled\".\n\nIf you specify a value of \"disabled\", instance metadata will not be accessible\non the node.",
+    "HTTPTokens determines the state of token usage for instance metadata\nrequests. If metadata options is non-nil, but this parameter is not\nspecified, the default state is \"required\".\n\n\nIf the state is optional, one can choose to retrieve instance metadata with\nor without a signed token header on the request. If one retrieves the IAM\nrole credentials without a token, the version 1.0 role credentials are\nreturned. If one retrieves the IAM role credentials using a valid signed\ntoken, the version 2.0 role credentials are returned.\n\n\nIf the state is \"required\", one must send a signed token header with any\ninstance metadata retrieval requests. In this state, retrieving the IAM\nrole credentials always returns the version 2.0 credentials; the version\n1.0 credentials are not available.",
+    "HTTPTokens determines the state of token usage for instance metadata\nrequests. If metadata options is non-nil, but this parameter is not\nspecified, the default state is \"required\".\n\nIf the state is optional, one can choose to retrieve instance metadata with\nor without a signed token header on the request. If one retrieves the IAM\nrole credentials without a token, the version 1.0 role credentials are\nreturned. If one retrieves the IAM role credentials using a valid signed\ntoken, the version 2.0 role credentials are returned.\n\nIf the state is \"required\", one must send a signed token header with any\ninstance metadata retrieval requests. In this state, retrieving the IAM\nrole credentials always returns the version 2.0 credentials; the version\n1.0 credentials are not available.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase."
+  ]
+}

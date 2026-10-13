@@ -1,0 +1,111 @@
+{
+  "versions": {
+    "v1.6.0": {
+      "descriptionChanged": [
+        "spec.context.admissionRequestInfo"
+      ],
+      "descriptions": {
+        "spec.context.admissionRequestInfo": [
+          null,
+          0
+        ]
+      }
+    },
+    "v1.5.0": {
+      "added": {
+        "spec.context.admissionRequestInfo": "object"
+      }
+    },
+    "v1.3.0": {
+      "added": {
+        "apiVersion": "string",
+        "kind": "string",
+        "metadata": "object",
+        "spec.context": "object",
+        "spec.resource.apiVersion": "string",
+        "status": "object"
+      },
+      "required": [
+        "spec"
+      ],
+      "descriptionChanged": [
+        "spec",
+        "spec.policy",
+        "spec.resource",
+        "spec.resource.kind",
+        "spec.resource.name",
+        "spec.resource.namespace"
+      ],
+      "optional": [
+        "spec.resource.kind",
+        "spec.resource.name"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          null,
+          1
+        ],
+        "kind": [
+          null,
+          2
+        ],
+        "spec": [
+          null,
+          3
+        ],
+        "spec.context": [
+          null,
+          4
+        ],
+        "spec.policy": [
+          null,
+          5
+        ],
+        "spec.resource": [
+          null,
+          6
+        ],
+        "spec.resource.apiVersion": [
+          null,
+          7
+        ],
+        "spec.resource.kind": [
+          null,
+          8
+        ],
+        "spec.resource.name": [
+          null,
+          9
+        ],
+        "spec.resource.namespace": [
+          null,
+          10
+        ],
+        "status": [
+          null,
+          11
+        ],
+        "": [
+          null,
+          12
+        ]
+      }
+    }
+  },
+  "texts": [
+    "AdmissionRequestInfoObject stores the admission request and operation details",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Spec is the information to identify the generate request.",
+    "Context ...",
+    "Specifies the name of the policy.",
+    "ResourceSpec is the information to identify the generate request.",
+    "APIVersion specifies resource apiVersion.",
+    "Kind specifies resource kind.",
+    "Name specifies the resource name.",
+    "Namespace specifies resource namespace.",
+    "Status contains statistics related to generate request.",
+    "GenerateRequest is a request to process generate rule."
+  ]
+}

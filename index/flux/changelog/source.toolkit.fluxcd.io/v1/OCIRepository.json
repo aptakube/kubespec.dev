@@ -1,0 +1,30 @@
+{
+  "versions": {
+    "v2.9.0": {
+      "added": {
+        "spec.verify.trustedRootSecretRef": "object"
+      },
+      "descriptions": {
+        "spec.verify.trustedRootSecretRef": [
+          null,
+          0
+        ]
+      }
+    },
+    "v2.7.0": {
+      "required": [
+        "status.artifact.digest"
+      ],
+      "descriptions": {
+        "status.artifact.digest": [
+          null,
+          1
+        ]
+      }
+    }
+  },
+  "texts": [
+    "TrustedRootSecretRef specifies the Kubernetes Secret containing a\nSigstore trusted_root.json file. This enables verification against\nself-hosted Sigstore infrastructure (custom Fulcio CA, self-hosted\nRekor instance). The Secret must contain a key named \"trusted_root.json\".",
+    "Digest is the digest of the file in the form of '<algorithm>:<checksum>'."
+  ]
+}

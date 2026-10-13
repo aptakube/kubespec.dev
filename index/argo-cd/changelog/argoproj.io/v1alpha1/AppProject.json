@@ -1,0 +1,535 @@
+{
+  "versions": {
+    "v3.5.0": {
+      "descriptionChanged": [
+        "spec.signatureKeys"
+      ],
+      "added": {
+        "spec.sourceIntegrity": "object",
+        "spec.syncWindows.syncOverrun": "boolean"
+      },
+      "descriptions": {
+        "spec.signatureKeys": [
+          0,
+          1
+        ],
+        "spec.sourceIntegrity": [
+          null,
+          2
+        ],
+        "spec.syncWindows.syncOverrun": [
+          null,
+          3
+        ]
+      }
+    },
+    "v3.3.0": {
+      "added": {
+        "spec.clusterResourceBlacklist.name": "string",
+        "spec.clusterResourceWhitelist.name": "string"
+      },
+      "descriptions": {
+        "spec.clusterResourceBlacklist.name": [
+          null,
+          4
+        ],
+        "spec.clusterResourceWhitelist.name": [
+          null,
+          4
+        ]
+      }
+    },
+    "v3.1.0": {
+      "added": {
+        "spec.syncWindows.description": "string"
+      },
+      "descriptions": {
+        "spec.syncWindows.description": [
+          null,
+          5
+        ]
+      }
+    },
+    "v3.0.0": {
+      "added": {
+        "spec.syncWindows.andOperator": "boolean"
+      },
+      "descriptions": {
+        "spec.syncWindows.andOperator": [
+          null,
+          6
+        ]
+      }
+    },
+    "v2.13.0": {
+      "added": {
+        "spec.destinationServiceAccounts": "object[]"
+      },
+      "descriptions": {
+        "spec.destinationServiceAccounts": [
+          null,
+          7
+        ]
+      }
+    },
+    "v2.12.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.destinations.namespace"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          8,
+          9
+        ],
+        "kind": [
+          10,
+          11
+        ],
+        "spec.destinations.namespace": [
+          12,
+          13
+        ],
+        "": [
+          14,
+          15
+        ]
+      }
+    },
+    "v2.9.0": {
+      "descriptionChanged": [
+        "spec.destinations.name",
+        "spec.destinations.server"
+      ],
+      "descriptions": {
+        "spec.destinations.name": [
+          16,
+          17
+        ],
+        "spec.destinations.server": [
+          18,
+          19
+        ]
+      }
+    },
+    "v2.5.0": {
+      "added": {
+        "spec.permitOnlyProjectScopedClusters": "boolean",
+        "spec.sourceNamespaces": "string[]"
+      },
+      "descriptions": {
+        "spec.permitOnlyProjectScopedClusters": [
+          null,
+          20
+        ],
+        "spec.sourceNamespaces": [
+          null,
+          21
+        ]
+      }
+    },
+    "v2.2.0": {
+      "added": {
+        "spec.syncWindows.timeZone": "string"
+      },
+      "descriptions": {
+        "spec.syncWindows.timeZone": [
+          null,
+          22
+        ]
+      }
+    },
+    "v2.1.0": {
+      "descriptionChanged": [
+        "spec.roles.policies"
+      ],
+      "descriptions": {
+        "spec.roles.policies": [
+          23,
+          24
+        ]
+      }
+    },
+    "v2.0.0": {
+      "descriptionChanged": [
+        "spec.destinations.name",
+        "spec.destinations.namespace",
+        "spec.destinations.server",
+        "spec.orphanedResources.ignore",
+        "spec.signatureKeys"
+      ],
+      "added": {
+        "status": "object"
+      },
+      "descriptions": {
+        "spec.destinations.name": [
+          25,
+          16
+        ],
+        "spec.destinations.namespace": [
+          26,
+          12
+        ],
+        "spec.destinations.server": [
+          27,
+          18
+        ],
+        "spec.orphanedResources.ignore": [
+          null,
+          28
+        ],
+        "spec.signatureKeys": [
+          29,
+          0
+        ],
+        "status": [
+          null,
+          30
+        ]
+      }
+    },
+    "v1.7.1": {
+      "removed": {
+        "status": "object"
+      },
+      "descriptions": {
+        "status": [
+          31,
+          null
+        ]
+      }
+    },
+    "v1.7.0": {
+      "added": {
+        "spec.clusterResourceBlacklist": "object[]",
+        "spec.destinations.name": "string",
+        "spec.orphanedResources.ignore": "object[]",
+        "spec.signatureKeys": "object[]",
+        "status": "object"
+      },
+      "descriptions": {
+        "spec.clusterResourceBlacklist": [
+          null,
+          32
+        ],
+        "spec.destinations.name": [
+          null,
+          25
+        ],
+        "spec.signatureKeys": [
+          null,
+          29
+        ],
+        "status": [
+          null,
+          31
+        ]
+      }
+    },
+    "v1.5.3": {
+      "added": {
+        "spec.namespaceResourceWhitelist": "object[]",
+        "spec.roles.jwtTokens.id": "string"
+      },
+      "descriptions": {
+        "spec.namespaceResourceWhitelist": [
+          null,
+          33
+        ]
+      }
+    },
+    "v1.4.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec"
+      ],
+      "removed": {
+        "metadata.annotations": "map[string]string",
+        "metadata.clusterName": "string",
+        "metadata.deletionGracePeriodSeconds": "integer",
+        "metadata.deletionTimestamp": "string",
+        "metadata.finalizers": "string[]",
+        "metadata.generateName": "string",
+        "metadata.generation": "integer",
+        "metadata.initializers": "object",
+        "metadata.labels": "map[string]string",
+        "metadata.managedFields": "object[]",
+        "metadata.name": "string",
+        "metadata.namespace": "string",
+        "metadata.ownerReferences": "object[]",
+        "metadata.resourceVersion": "string",
+        "metadata.selfLink": "string",
+        "metadata.uid": "string"
+      },
+      "descriptions": {
+        "apiVersion": [
+          34,
+          8
+        ],
+        "kind": [
+          35,
+          10
+        ],
+        "spec": [
+          null,
+          36
+        ],
+        "metadata.annotations": [
+          37,
+          null
+        ],
+        "metadata.clusterName": [
+          38,
+          null
+        ],
+        "metadata.deletionGracePeriodSeconds": [
+          39,
+          null
+        ],
+        "metadata.deletionTimestamp": [
+          40,
+          null
+        ],
+        "metadata.finalizers": [
+          41,
+          null
+        ],
+        "metadata.generateName": [
+          42,
+          null
+        ],
+        "metadata.generation": [
+          43,
+          null
+        ],
+        "metadata.initializers": [
+          44,
+          null
+        ],
+        "metadata.labels": [
+          45,
+          null
+        ],
+        "metadata.managedFields": [
+          46,
+          null
+        ],
+        "metadata.name": [
+          47,
+          null
+        ],
+        "metadata.namespace": [
+          48,
+          null
+        ],
+        "metadata.ownerReferences": [
+          49,
+          null
+        ],
+        "metadata.resourceVersion": [
+          50,
+          null
+        ],
+        "metadata.selfLink": [
+          51,
+          null
+        ],
+        "metadata.uid": [
+          52,
+          null
+        ]
+      }
+    },
+    "v1.3.0": {
+      "added": {
+        "spec.orphanedResources": "object",
+        "spec.syncWindows": "object[]"
+      },
+      "descriptionChanged": [
+        "spec.sourceRepos"
+      ],
+      "descriptions": {
+        "spec.orphanedResources": [
+          null,
+          53
+        ],
+        "spec.sourceRepos": [
+          54,
+          55
+        ],
+        "spec.syncWindows": [
+          null,
+          56
+        ]
+      }
+    },
+    "v1.2.0": {
+      "required": [
+        "metadata",
+        "spec"
+      ],
+      "added": {
+        "metadata.annotations": "map[string]string",
+        "metadata.clusterName": "string",
+        "metadata.deletionGracePeriodSeconds": "integer",
+        "metadata.deletionTimestamp": "string",
+        "metadata.finalizers": "string[]",
+        "metadata.generateName": "string",
+        "metadata.generation": "integer",
+        "metadata.initializers": "object",
+        "metadata.labels": "map[string]string",
+        "metadata.managedFields": "object[]",
+        "metadata.name": "string",
+        "metadata.namespace": "string",
+        "metadata.ownerReferences": "object[]",
+        "metadata.resourceVersion": "string",
+        "metadata.selfLink": "string",
+        "metadata.uid": "string",
+        "spec.clusterResourceWhitelist.group": "string",
+        "spec.clusterResourceWhitelist.kind": "string",
+        "spec.namespaceResourceBlacklist.group": "string",
+        "spec.namespaceResourceBlacklist.kind": "string"
+      },
+      "descriptionChanged": [
+        "spec"
+      ],
+      "description": true,
+      "descriptions": {
+        "metadata.annotations": [
+          null,
+          37
+        ],
+        "metadata.clusterName": [
+          null,
+          38
+        ],
+        "metadata.deletionGracePeriodSeconds": [
+          null,
+          39
+        ],
+        "metadata.deletionTimestamp": [
+          null,
+          40
+        ],
+        "metadata.finalizers": [
+          null,
+          41
+        ],
+        "metadata.generateName": [
+          null,
+          42
+        ],
+        "metadata.generation": [
+          null,
+          43
+        ],
+        "metadata.initializers": [
+          null,
+          44
+        ],
+        "metadata.labels": [
+          null,
+          45
+        ],
+        "metadata.managedFields": [
+          null,
+          46
+        ],
+        "metadata.name": [
+          null,
+          47
+        ],
+        "metadata.namespace": [
+          null,
+          48
+        ],
+        "metadata.ownerReferences": [
+          null,
+          49
+        ],
+        "metadata.resourceVersion": [
+          null,
+          50
+        ],
+        "metadata.selfLink": [
+          null,
+          51
+        ],
+        "metadata.uid": [
+          null,
+          52
+        ],
+        "spec": [
+          36,
+          null
+        ],
+        "": [
+          null,
+          14
+        ]
+      }
+    }
+  },
+  "texts": [
+    "SignatureKeys contains a list of PGP key IDs that commits in Git must be signed with in order to be allowed for sync",
+    "SignatureKeys contains a list of PGP key IDs that commits in Git must be signed with in order to be allowed for sync\n\nDeprecated: Use SourceIntegrity instead. SignatureKeys will be removed with the next major version.",
+    "SourceIntegrity represents a constraint on manifest sources integrity to be met before they can be used.\nDo not access directly, use EffectiveSourceIntegrity() for correct backwards compatibility handling.",
+    "SyncOverrun allows ongoing syncs to continue in two scenarios:\nFor deny windows: allows syncs that started before the deny window became active to continue running\nFor allow windows: allows syncs that started during the allow window to continue after the window ends",
+    "Name is the name of the restricted resource. Glob patterns using Go's filepath.Match syntax are supported.\nUnlike the group and kind fields, if no name is specified, all resources of the specified group/kind are matched.",
+    "Description of the sync that will be applied to the schedule, can be used to add any information such as a ticket number for example",
+    "UseAndOperator use AND operator for matching applications, namespaces and clusters instead of the default OR operator",
+    "DestinationServiceAccounts holds information about the service accounts to be impersonated for the application sync operation for each destination.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Namespace specifies the target namespace for the application's resources. The namespace will only be set for namespace-scoped resources that have not set a value for .metadata.namespace",
+    "Namespace specifies the target namespace for the application's resources.\nThe namespace will only be set for namespace-scoped resources that have not set a value for .metadata.namespace",
+    "AppProject provides a logical grouping of applications, providing controls for: * where the apps may deploy to (cluster whitelist) * what may be deployed (repository whitelist, resource whitelist/blacklist) * who can access these applications (roles, OIDC group claims bindings) * and what they can do (RBAC policies) * automation access to these roles (JWT tokens)",
+    "AppProject provides a logical grouping of applications, providing controls for:\n* where the apps may deploy to (cluster whitelist)\n* what may be deployed (repository whitelist, resource whitelist/blacklist)\n* who can access these applications (roles, OIDC group claims bindings)\n* and what they can do (RBAC policies)\n* automation access to these roles (JWT tokens)",
+    "Name is an alternate way of specifying the target cluster by its symbolic name",
+    "Name is an alternate way of specifying the target cluster by its symbolic name. This must be set if Server is not set.",
+    "Server specifies the URL of the target cluster and must be set to the Kubernetes control plane API",
+    "Server specifies the URL of the target cluster's Kubernetes control plane API. This must be set if Name is not set.",
+    "PermitOnlyProjectScopedClusters determines whether destinations can only reference clusters which are project-scoped",
+    "SourceNamespaces defines the namespaces application resources are allowed to be created in",
+    "TimeZone of the sync that will be applied to the schedule",
+    "Policies Stores a list of casbin formated strings that define access policies for the role in the project",
+    "Policies Stores a list of casbin formatted strings that define access policies for the role in the project",
+    "Name of the destination cluster which can be used instead of server (url) field",
+    "Namespace overrides the environment namespace value in the ksonnet app.yaml",
+    "Server overrides the environment server value in the ksonnet app.yaml",
+    "Ignore contains a list of resources that are to be excluded from orphaned resources monitoring",
+    "List of PGP key IDs that commits to be synced to must be signed with",
+    "AppProjectStatus contains status information for AppProject CRs",
+    "AppProjectStatus contains information about appproj",
+    "ClusterResourceBlacklist contains list of blacklisted cluster level resources",
+    "NamespaceResourceWhitelist contains list of whitelisted namespace level resources",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "AppProjectSpec is the specification of an AppProject",
+    "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations",
+    "The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request.",
+    "Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only.",
+    "DeletionTimestamp is RFC 3339 date and time at which this resource will be deleted. This field is set by the server when a graceful deletion is requested by the user, and is not directly settable by a client. The resource is expected to be deleted (no longer visible from resource lists, and not reachable by name) after the time in this field, once the finalizers list is empty. As long as the finalizers list contains items, deletion is blocked. Once the deletionTimestamp is set, this value may not be unset or be set further into the future, although it may be shortened or the resource may be deleted prior to this time. For example, a user may request that a pod is deleted in 30 seconds. The Kubelet will react by sending a graceful termination signal to the containers in the pod. After that 30 seconds, the Kubelet will send a hard termination signal (SIGKILL) to the container and after cleanup, remove the pod from the API. In the presence of network partitions, this object may still exist after this timestamp, until an administrator or automated process can determine the resource is fully terminated. If not set, graceful deletion of the object has not been requested. \n Populated by the system when a graceful deletion is requested. Read-only. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+    "Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed.",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server. \n If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header). \n Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency",
+    "A sequence number representing a specific generation of the desired state. Populated by the system. Read-only.",
+    "An initializer is a controller which enforces some system invariant at object creation time. This field is a list of initializers that have not yet acted on this object. If nil or empty, this object has been completely initialized. Otherwise, the object is considered uninitialized and is hidden (in list/watch and get calls) from clients that haven't explicitly asked to observe uninitialized objects. \n When an object is created, the system will populate this list with the current set of initializers. Only privileged users may set or modify this list. Once it is empty, it may not be modified further by any user. \n DEPRECATED - initializers are an alpha field and will be removed in v1.15.",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels",
+    "ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object. \n This field is alpha and can be changed or removed without notice.",
+    "Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names",
+    "Namespace defines the space within each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty. \n Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces",
+    "List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.",
+    "An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources. \n Populated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency",
+    "SelfLink is a URL representing this object. Populated by the system. Read-only.",
+    "UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations. \n Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids",
+    "OrphanedResources specifies if controller should monitor orphaned resources of apps in this project",
+    "SourceRepos contains list of git repository URLs which can be used for deployment",
+    "SourceRepos contains list of repository URLs which can be used for deployment",
+    "SyncWindows controls when syncs can be run for apps in this project"
+  ]
+}

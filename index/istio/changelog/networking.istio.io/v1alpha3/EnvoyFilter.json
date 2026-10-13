@@ -1,0 +1,294 @@
+{
+  "versions": {
+    "1.31.0": {
+      "descriptionChanged": [
+        "spec.configPatches.patch.operation"
+      ],
+      "descriptions": {
+        "spec.configPatches.patch.operation": [
+          0,
+          1
+        ]
+      }
+    },
+    "1.29.0": {
+      "descriptionChanged": [
+        "spec.configPatches.match.context"
+      ],
+      "added": {
+        "spec.configPatches.match.waypoint": "object"
+      },
+      "descriptions": {
+        "spec.configPatches.match.context": [
+          2,
+          3
+        ]
+      }
+    },
+    "1.25.0": {
+      "added": {
+        "spec.configPatches.match.routeConfiguration.vhost.domainName": "string",
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "spec.configPatches.match.routeConfiguration.vhost.domainName": [
+          null,
+          4
+        ],
+        "status.conditions.observedGeneration": [
+          null,
+          5
+        ],
+        "status.observedGeneration": [
+          6,
+          null
+        ]
+      }
+    },
+    "1.24.3": {
+      "descriptionChanged": [
+        "spec.configPatches.match.proxy.metadata"
+      ],
+      "descriptions": {
+        "spec.configPatches.match.proxy.metadata": [
+          7,
+          8
+        ]
+      }
+    },
+    "1.24.0": {
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "status.conditions": [
+          null,
+          9
+        ],
+        "status.observedGeneration": [
+          null,
+          6
+        ],
+        "status.validationMessages": [
+          null,
+          10
+        ]
+      }
+    },
+    "1.23.0": {
+      "required": [
+        "spec.targetRefs.kind",
+        "spec.targetRefs.name"
+      ],
+      "descriptions": {
+        "spec.targetRefs.kind": [
+          null,
+          11
+        ],
+        "spec.targetRefs.name": [
+          null,
+          12
+        ]
+      }
+    },
+    "1.22.0": {
+      "descriptionChanged": [
+        "spec.configPatches.applyTo",
+        "spec.configPatches.match.context",
+        "spec.configPatches.match.routeConfiguration.vhost.route.action",
+        "spec.configPatches.patch.filterClass",
+        "spec.configPatches.patch.operation"
+      ],
+      "added": {
+        "spec.targetRefs": "object[]"
+      },
+      "descriptions": {
+        "spec.configPatches.applyTo": [
+          13,
+          14
+        ],
+        "spec.configPatches.match.context": [
+          15,
+          2
+        ],
+        "spec.configPatches.match.routeConfiguration.vhost.route.action": [
+          16,
+          17
+        ],
+        "spec.configPatches.patch.filterClass": [
+          18,
+          19
+        ],
+        "spec.configPatches.patch.operation": [
+          20,
+          0
+        ],
+        "spec.targetRefs": [
+          null,
+          21
+        ]
+      }
+    },
+    "1.20.0": {
+      "descriptionChanged": [
+        "spec.configPatches.applyTo",
+        "spec.configPatches.match.listener.filterChain.filter.subFilter",
+        "spec.configPatches.match.listener.portNumber",
+        "spec.configPatches.match.proxy.metadata",
+        "spec.configPatches.match.proxy.proxyVersion",
+        "spec.configPatches.match.routeConfiguration.gateway",
+        "spec.configPatches.match.routeConfiguration.portNumber",
+        "spec.configPatches.match.routeConfiguration.vhost",
+        "spec.configPatches.match.routeConfiguration.vhost.name",
+        "spec.configPatches.match.routeConfiguration.vhost.route.name",
+        "spec.workloadSelector",
+        "spec.workloadSelector.labels"
+      ],
+      "descriptions": {
+        "spec.configPatches.applyTo": [
+          null,
+          13
+        ],
+        "spec.configPatches.match.listener.filterChain.filter.subFilter": [
+          null,
+          22
+        ],
+        "spec.configPatches.match.listener.portNumber": [
+          null,
+          23
+        ],
+        "spec.configPatches.match.proxy.metadata": [
+          null,
+          7
+        ],
+        "spec.configPatches.match.proxy.proxyVersion": [
+          null,
+          24
+        ],
+        "spec.configPatches.match.routeConfiguration.gateway": [
+          null,
+          25
+        ],
+        "spec.configPatches.match.routeConfiguration.portNumber": [
+          null,
+          26
+        ],
+        "spec.configPatches.match.routeConfiguration.vhost": [
+          null,
+          27
+        ],
+        "spec.configPatches.match.routeConfiguration.vhost.name": [
+          null,
+          28
+        ],
+        "spec.configPatches.match.routeConfiguration.vhost.route.name": [
+          null,
+          29
+        ],
+        "spec.workloadSelector": [
+          null,
+          30
+        ],
+        "spec.workloadSelector.labels": [
+          null,
+          31
+        ]
+      }
+    },
+    "1.17.0": {
+      "added": {
+        "spec.configPatches.match.listener.listenerFilter": "string"
+      },
+      "descriptions": {
+        "spec.configPatches.match.listener.listenerFilter": [
+          null,
+          32
+        ]
+      }
+    },
+    "1.11.0": {
+      "added": {
+        "spec.priority": "integer"
+      },
+      "descriptions": {
+        "spec.priority": [
+          null,
+          33
+        ]
+      }
+    },
+    "1.9.0": {
+      "added": {
+        "spec.configPatches.match.listener.filterChain.destinationPort": "integer"
+      },
+      "descriptions": {
+        "spec.configPatches.match.listener.filterChain.destinationPort": [
+          null,
+          34
+        ]
+      }
+    },
+    "1.8.0": {
+      "descriptionChanged": [
+        "spec.configPatches.match.listener.filterChain.transportProtocol"
+      ],
+      "added": {
+        "spec.configPatches.patch.filterClass": "string"
+      },
+      "descriptions": {
+        "spec.configPatches.match.listener.filterChain.transportProtocol": [
+          35,
+          36
+        ],
+        "spec.configPatches.patch.filterClass": [
+          null,
+          18
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Determines how the patch should be applied.\n\nValid Options: MERGE, ADD, REMOVE, INSERT_BEFORE, INSERT_AFTER, INSERT_FIRST, REPLACE",
+    "Determines how the patch should be applied.\n\nValid Options: MERGE, ADD, REMOVE, INSERT_BEFORE, INSERT_AFTER, INSERT_FIRST, REPLACE, MERGE_AND_REPLACE_LIST",
+    "The specific config generation context to match on.\n\nValid Options: ANY, SIDECAR_INBOUND, SIDECAR_OUTBOUND, GATEWAY",
+    "The specific config generation context to match on.\n\nValid Options: ANY, SIDECAR_INBOUND, SIDECAR_OUTBOUND, GATEWAY, WAYPOINT",
+    "Match a domain name in a virtual host.",
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Match on the node metadata supplied by a proxy when connecting to Istio Pilot.",
+    "Match on the node metadata supplied by a proxy when connecting to istiod.",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers.",
+    "kind is kind of the target resource.",
+    "name is the name of the target resource.",
+    "Specifies where in the Envoy configuration, the patch should be applied.",
+    "Specifies where in the Envoy configuration, the patch should be applied.\n\nValid Options: LISTENER, FILTER_CHAIN, NETWORK_FILTER, HTTP_FILTER, ROUTE_CONFIGURATION, VIRTUAL_HOST, HTTP_ROUTE, CLUSTER, EXTENSION_CONFIG, BOOTSTRAP, LISTENER_FILTER",
+    "The specific config generation context to match on.",
+    "Match a route with specific action type.",
+    "Match a route with specific action type.\n\nValid Options: ANY, ROUTE, REDIRECT, DIRECT_RESPONSE",
+    "Determines the filter insertion order.",
+    "Determines the filter insertion order.\n\nValid Options: AUTHN, AUTHZ, STATS",
+    "Determines how the patch should be applied.",
+    "Optional.",
+    "The next level filter within this filter to match upon.",
+    "The service port/gateway port to which traffic is being sent/received.",
+    "A regular expression in golang regex format (RE2) that can be used to select proxies using a specific version of istio proxy.",
+    "The Istio gateway config's namespace/name for which this route configuration was generated.",
+    "The service port number or gateway server port number for which this route configuration was generated.",
+    "Match a specific virtual host in a route configuration and apply the patch to the virtual host.",
+    "The VirtualHosts objects generated by Istio are named as host:port, where the host typically corresponds to the VirtualService's host field or the hostname of a service in the registry.",
+    "The Route objects generated by default are named as default.",
+    "Criteria used to select the specific set of pods/VMs on which this patch configuration should be applied.",
+    "One or more labels that indicate a specific set of pods/VMs on which the configuration should be applied.",
+    "Match a specific listener filter.",
+    "Priority defines the order in which patch sets are applied within a context.",
+    "The destination_port value used by a filter chain's match condition.",
+    "Applies only to SIDECAR_INBOUND context.",
+    "Applies only to `SIDECAR_INBOUND` context."
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "versions": {
+    "couchbase-operator-2.90.0": {
+      "added": {
+        "spec.defaultRecoveryMethod": "string",
+        "spec.env": "object[]",
+        "spec.preserveRestoreRecord": "boolean",
+        "status.completed": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.end"
+      ],
+      "descriptions": {
+        "spec.defaultRecoveryMethod": [
+          null,
+          0
+        ],
+        "spec.end": [
+          1,
+          2
+        ],
+        "spec.env": [
+          null,
+          3
+        ],
+        "spec.preserveRestoreRecord": [
+          null,
+          4
+        ],
+        "status.completed": [
+          null,
+          5
+        ]
+      }
+    },
+    "couchbase-operator-2.70.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.backup",
+        "spec.buckets",
+        "spec.data",
+        "spec.data.exclude",
+        "spec.data.include",
+        "spec.data.map",
+        "spec.data.map.source",
+        "spec.data.map.target",
+        "spec.end",
+        "spec.forceUpdates",
+        "spec.logRetention",
+        "spec.objectStore.endpoint",
+        "spec.objectStore.endpoint.secret",
+        "spec.objectStore.endpoint.useVirtualPath",
+        "spec.objectStore.secret",
+        "spec.objectStore.uri",
+        "spec.objectStore.useIAM",
+        "spec.repo",
+        "spec.s3bucket",
+        "spec.services.analytics",
+        "spec.services.bucketConfig",
+        "spec.services.bucketQuery",
+        "spec.services.clusterAnalytics",
+        "spec.services.clusterQuery",
+        "spec.services.data",
+        "spec.services.eventing",
+        "spec.services.ftAlias",
+        "spec.services.ftIndex",
+        "spec.services.gsiIndex",
+        "spec.stagingVolume",
+        "spec.stagingVolume.size",
+        "spec.start",
+        "status",
+        "status.backups",
+        "status.duration",
+        "status.job",
+        "status.output",
+        "status.pod"
+      ],
+      "added": {
+        "spec.overwriteUsers": "boolean",
+        "spec.services.users": "boolean"
+      },
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          6,
+          7
+        ],
+        "kind": [
+          8,
+          9
+        ],
+        "spec": [
+          10,
+          11
+        ],
+        "spec.backup": [
+          12,
+          13
+        ],
+        "spec.buckets": [
+          14,
+          15
+        ],
+        "spec.data": [
+          16,
+          17
+        ],
+        "spec.data.exclude": [
+          18,
+          19
+        ],
+        "spec.data.include": [
+          20,
+          21
+        ],
+        "spec.data.map": [
+          22,
+          23
+        ],
+        "spec.data.map.source": [
+          24,
+          25
+        ],
+        "spec.data.map.target": [
+          26,
+          27
+        ],
+        "spec.end": [
+          28,
+          1
+        ],
+        "spec.forceUpdates": [
+          29,
+          30
+        ],
+        "spec.logRetention": [
+          31,
+          32
+        ],
+        "spec.objectStore.endpoint": [
+          33,
+          34
+        ],
+        "spec.objectStore.endpoint.secret": [
+          35,
+          36
+        ],
+        "spec.objectStore.endpoint.useVirtualPath": [
+          37,
+          38
+        ],
+        "spec.objectStore.secret": [
+          39,
+          40
+        ],
+        "spec.objectStore.uri": [
+          41,
+          42
+        ],
+        "spec.objectStore.useIAM": [
+          43,
+          44
+        ],
+        "spec.overwriteUsers": [
+          null,
+          45
+        ],
+        "spec.repo": [
+          46,
+          47
+        ],
+        "spec.s3bucket": [
+          48,
+          49
+        ],
+        "spec.services.analytics": [
+          50,
+          51
+        ],
+        "spec.services.bucketConfig": [
+          52,
+          53
+        ],
+        "spec.services.bucketQuery": [
+          54,
+          55
+        ],
+        "spec.services.clusterAnalytics": [
+          56,
+          57
+        ],
+        "spec.services.clusterQuery": [
+          58,
+          59
+        ],
+        "spec.services.data": [
+          60,
+          61
+        ],
+        "spec.services.eventing": [
+          62,
+          63
+        ],
+        "spec.services.ftAlias": [
+          64,
+          65
+        ],
+        "spec.services.ftIndex": [
+          66,
+          67
+        ],
+        "spec.services.gsiIndex": [
+          68,
+          69
+        ],
+        "spec.services.users": [
+          null,
+          70
+        ],
+        "spec.stagingVolume": [
+          71,
+          72
+        ],
+        "spec.stagingVolume.size": [
+          73,
+          74
+        ],
+        "spec.start": [
+          75,
+          76
+        ],
+        "status": [
+          77,
+          78
+        ],
+        "status.backups": [
+          79,
+          80
+        ],
+        "status.duration": [
+          81,
+          82
+        ],
+        "status.job": [
+          83,
+          84
+        ],
+        "status.output": [
+          85,
+          86
+        ],
+        "status.pod": [
+          87,
+          88
+        ],
+        "": [
+          89,
+          90
+        ]
+      }
+    },
+    "couchbase-operator-2.60.0": {
+      "optional": [
+        "spec.backup"
+      ],
+      "descriptions": {
+        "spec.backup": [
+          null,
+          12
+        ]
+      }
+    },
+    "couchbase-operator-2.40.0": {
+      "added": {
+        "spec.objectStore": "object",
+        "spec.stagingVolume": "object",
+        "spec.ttlSecondsAfterFinished": "integer"
+      },
+      "descriptionChanged": [
+        "spec.s3bucket"
+      ],
+      "descriptions": {
+        "spec.objectStore": [
+          null,
+          91
+        ],
+        "spec.s3bucket": [
+          92,
+          48
+        ],
+        "spec.stagingVolume": [
+          null,
+          71
+        ],
+        "spec.ttlSecondsAfterFinished": [
+          null,
+          93
+        ]
+      }
+    }
+  },
+  "texts": [
+    "DefaultRecoveryMethod specifies how cbbackupmgr should\nrecover from broken backup/restore attempts.",
+    "End denotes the last backup to restore from.  Omitting this field will only\nrestore the backup referenced by start.  This may be specified as\nan integer index (starting from 1), a string specifying a short date\nDD-MM-YYYY, the backup name, or one of either `start` or `oldest` keywords.",
+    "End denotes the last backup to restore from.  Omitting this field will only\nrestore the backup referenced by start.  This may be specified as\nan integer index (starting from 1), a string specifying a short date\nDD-MM-YYYY, the backup name, or one of either `end` or `latest` keywords.",
+    "Env defines environment variables to be set on the restore container.\nThese can be used to configure cbbackupmgr behavior via environment variables.",
+    "PreserveRestoreRecord indicates whether the restore record should be preserved\nafter the restore job has completed.",
+    "Completed indicates whether the restore has been successfully completed.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "CouchbaseBackupRestoreSpec allows the specification of data restoration to be configured.  This includes the backup and repository to restore data from, and the time range of data to be restored.",
+    "CouchbaseBackupRestoreSpec allows the specification of data restoration to be\nconfigured.  This includes the backup and repository to restore data from, and\nthe time range of data to be restored.",
+    "The backup resource name associated with this restore, or the backup PVC name to restore from.",
+    "The backup resource name associated with this restore, or the backup PVC\nname to restore from.",
+    "DEPRECATED - by spec.data. Specific buckets can be explicitly included or excluded in the restore, as well as bucket mappings.  This field is now ignored.",
+    "DEPRECATED - by spec.data.\nSpecific buckets can be explicitly included or excluded in the restore,\nas well as bucket mappings.  This field is now ignored.",
+    "Data allows control over what key-value/document data is included in the restore.  By default, all data is included.",
+    "Data allows control over what key-value/document data is included in the\nrestore.  By default, all data is included.",
+    "Exclude defines the buckets, scopes or collections that are excluded from the backup. When this field is set, it implies that by default everything will be backed up, and data items can be explicitly excluded.  You may define an exclusion as a bucket -- `my-bucket`, a scope -- `my-bucket.my-scope`, or a collection -- `my-bucket.my-scope.my-collection`. Buckets may contain periods, and therefore must be escaped -- `my\\.bucket.my-scope`, as period is the separator used to delimit scopes and collections.  Excluded data cannot overlap e.g. specifying `my-bucket` and `my-bucket.my-scope` is illegal.  This field cannot be used at the same time as included items.",
+    "Exclude defines the buckets, scopes or collections that are excluded from the backup.\nWhen this field is set, it implies that by default everything will be backed up,\nand data items can be explicitly excluded.  You may define an exclusion as a bucket\n-- `my-bucket`, a scope -- `my-bucket.my-scope`, or a collection -- `my-bucket.my-scope.my-collection`.\nBuckets may contain periods, and therefore must be escaped -- `my\\.bucket.my-scope`, as\nperiod is the separator used to delimit scopes and collections.  Excluded data cannot overlap\ne.g. specifying `my-bucket` and `my-bucket.my-scope` is illegal.  This field cannot\nbe used at the same time as included items.",
+    "Include defines the buckets, scopes or collections that are included in the restore. When this field is set, it implies that by default nothing will be restored, and data items must be explicitly included.  You may define an inclusion as a bucket -- `my-bucket`, a scope -- `my-bucket.my-scope`, or a collection -- `my-bucket.my-scope.my-collection`. Buckets may contain periods, and therefore must be escaped -- `my\\.bucket.my-scope`, as period is the separator used to delimit scopes and collections.  Included data cannot overlap e.g. specifying `my-bucket` and `my-bucket.my-scope` is illegal.  This field cannot be used at the same time as excluded items.",
+    "Include defines the buckets, scopes or collections that are included in the restore.\nWhen this field is set, it implies that by default nothing will be restored,\nand data items must be explicitly included.  You may define an inclusion as a bucket\n-- `my-bucket`, a scope -- `my-bucket.my-scope`, or a collection -- `my-bucket.my-scope.my-collection`.\nBuckets may contain periods, and therefore must be escaped -- `my\\.bucket.my-scope`, as\nperiod is the separator used to delimit scopes and collections.  Included data cannot overlap\ne.g. specifying `my-bucket` and `my-bucket.my-scope` is illegal.  This field cannot\nbe used at the same time as excluded items.",
+    "Map allows data items in the restore to be remapped to a different named container. Buckets can be remapped to other buckets e.g. \"source=target\", scopes and collections can be remapped to other scopes and collections within the same bucket only e.g. \"bucket.scope=bucket.other\" or \"bucket.scope.collection=bucket.scope.other\".  Map sources may only be specified once, and may not overlap.",
+    "Map allows data items in the restore to be remapped to a different named container.\nBuckets can be remapped to other buckets e.g. \"source=target\", scopes and collections\ncan be remapped to other scopes and collections within the same bucket only e.g.\n\"bucket.scope=bucket.other\" or \"bucket.scope.collection=bucket.scope.other\".  Map\nsources may only be specified once, and may not overlap.",
+    "Source defines the data source of the mapping, this may be either a bucket, scope or collection.",
+    "Source defines the data source of the mapping, this may be either\na bucket, scope or collection.",
+    "Target defines the data target of the mapping, this may be either a bucket, scope or collection, and must refer to the same type as the restore source.",
+    "Target defines the data target of the mapping, this may be either\na bucket, scope or collection, and must refer to the same type\nas the restore source.",
+    "End denotes the last backup to restore from.  Omitting this field will only restore the backup referenced by start.  This may be specified as an integer index (starting from 1), a string specifying a short date DD-MM-YYYY, the backup name, or one of either `start` or `oldest` keywords.",
+    "Forces data in the Couchbase cluster to be overwritten even if the data in the cluster is newer than the restore",
+    "Forces data in the Couchbase cluster to be overwritten even if the data in the cluster is newer.\nBy default, the system does not force updates,\nand all updates use Couchbase's conflict resolution mechanism to ensure\nthat if newer data exists on the cluster,\nolder restored data does not overwrite it.\nHowever, if `couchbasebackuprestores.spec.forceUpdates` is true,\nthen the backup record will _always_ overwrite the cluster record,\nregardless of Couchbase's conflict resolution.",
+    "Number of hours to hold restore script logs for, everything older will be deleted. More info: https://golang.org/pkg/time/#ParseDuration",
+    "Number of hours to hold restore script logs for, everything older will be deleted.\nMore info:\nhttps://golang.org/pkg/time/#ParseDuration",
+    "Endpoint contains the configuration for connecting to a custom Azure/S3/GCP compliant object store. If set will override `CouchbaseCluster.spec.backup.objectEndpoint` See https://docs.couchbase.com/server/current/backup-restore/cbbackupmgr-cloud.html#compatible-object-stores",
+    "Endpoint contains the configuration for connecting to a custom Azure/S3/GCP compliant object store.\nIf set will override `CouchbaseCluster.spec.backup.objectEndpoint`\nSee https://docs.couchbase.com/server/current/backup-restore/cbbackupmgr-cloud.html#compatible-object-stores",
+    "The name of the secret, in this namespace, that contains the CA certificate for verification of a TLS endpoint The secret must have the key with the name \"tls.crt\"",
+    "The name of the secret, in this namespace, that contains the CA certificate for verification of a TLS endpoint\nThe secret must have the key with the name \"tls.crt\"",
+    "UseVirtualPath will force the AWS SDK to use the new virtual style paths which are often required by S3 compatible object stores.",
+    "UseVirtualPath will force the AWS SDK to use the new virtual style paths\nwhich are often required by S3 compatible object stores.",
+    "ObjStoreSecret must contain two fields, access-key-id, secret-access-key and optionally either region or refresh-token. These correspond to the fields used by cbbackupmgr https://docs.couchbase.com/server/current/backup-restore/cbbackupmgr-backup.html#optional-2",
+    "ObjStoreSecret must contain two fields, access-key-id, secret-access-key and optionally either region or refresh-token.\nThese correspond to the fields used by cbbackupmgr\nhttps://docs.couchbase.com/server/current/backup-restore/cbbackupmgr-backup.html#optional-2",
+    "URI is a reference to a remote object store. This is the prefix of the object store and the bucket name. i.e s3://bucket, az://bucket or gs://bucket.",
+    "URI is a reference to a remote object store.\nThis is the prefix of the object store and the bucket name.\ni.e s3://bucket, az://bucket or gs://bucket.",
+    "Whether to allow the backup SDK to attempt to authenticate using the instance metadata api. If set, will override `CouchbaseCluster.spec.backup.useIAM`.",
+    "Whether to allow the backup SDK to attempt to authenticate\nusing the instance metadata api.\nIf set, will override `CouchbaseCluster.spec.backup.useIAM`.",
+    "Overwrites the already existing users in the cluster when  user restoration is enabled (spec.services.users).\nThe default behavior of backup/restore of users is to skip already existing users.\nThis is only available for Couchbase Server 7.6 and later.\nThis field defaults to `false`.",
+    "Repo is the backup folder to restore from.  If no repository is specified, the backup container will choose the latest.",
+    "Repo is the backup folder to restore from.  If no repository is specified,\nthe backup container will choose the latest.",
+    "DEPRECATED - by spec.objectStore.uri Name of S3 bucket to restore from. If non-empty this overrides local backup.",
+    "DEPRECATED - by spec.objectStore.uri\nName of S3 bucket to restore from. If non-empty this overrides local backup.",
+    "Analytics restores analytics datasets from the backup.  This field defaults to true.",
+    "Analytics restores analytics datasets from the backup.  This field\ndefaults to true.",
+    "BucketConfig restores all bucket configuration settings. If you are restoring to cluster with managed buckets, then this option may conflict with existing bucket settings, and the results are undefined, so avoid use.  This option is intended for use with unmanaged buckets.  Note that bucket durability settings are not restored in versions less than and equal to 1.1.0, and will need to be manually applied.  This field defaults to false.",
+    "BucketConfig restores all bucket configuration settings.\nIf you are restoring to cluster with managed buckets, then this\noption may conflict with existing bucket settings, and the results\nare undefined, so avoid use.  This option is intended for use\nwith unmanaged buckets.  Note that bucket durability settings are\nnot restored in versions less than and equal to 1.1.0, and will\nneed to be manually applied.  This field defaults to false.",
+    "BucketQuery enables the backup of query metadata for all buckets. This field defaults to `true`.",
+    "BucketQuery enables the backup of query metadata for all buckets.\nThis field defaults to `true`.",
+    "ClusterAnalytics enables the backup of cluster-wide analytics data, for example synonyms. This field defaults to `true`.",
+    "ClusterAnalytics enables the backup of cluster-wide analytics data, for example synonyms.\nThis field defaults to `true`.",
+    "ClusterQuery enables the backup of cluster level query metadata. This field defaults to `true`.",
+    "ClusterQuery enables the backup of cluster level query metadata.\nThis field defaults to `true`.",
+    "Data restores document data from the backup.  This field defaults to true.",
+    "Data restores document data from the backup.  This field defaults\nto true.",
+    "Eventing restores eventing functions from the backup.  This field defaults to true.",
+    "Eventing restores eventing functions from the backup.  This field\ndefaults to true.",
+    "FTAlias restores full-text search aliases from the backup.  This field defaults to true.",
+    "FTAlias restores full-text search aliases from the backup.  This\nfield defaults to true.",
+    "FTIndex restores full-text search indexes from the backup.  This field defaults to true.",
+    "FTIndex restores full-text search indexes from the backup.  This\nfield defaults to true.",
+    "GSIIndex restores document indexes from the backup.  This field defaults to true.",
+    "GSIIndex restores document indexes from the backup.  This field\ndefaults to true.",
+    "Users restores cluster level users, including their roles and permissions. This is\nonly available for Couchbase Server 7.6 and later. This field defaults to `false`.",
+    "StagingVolume contains configuration related to the ephemeral volume used as staging when restoring from a cloud backup.",
+    "StagingVolume contains configuration related to the\nephemeral volume used as staging when restoring from a cloud backup.",
+    "Size allows the specification of a staging volume. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#resource-units-in-kubernetes The ephemeral volume will only be used when restoring from a cloud provider, if the backup job was created using ephemeral storage. Otherwise the restore job will share a staging volume with the backup job.",
+    "Size allows the specification of a staging volume. More info:\nhttps://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#resource-units-in-kubernetes\nThe ephemeral volume will only be used when restoring from a cloud provider,\nif the backup job was created using ephemeral storage.\nOtherwise the restore job will share a staging volume with the backup job.",
+    "Start denotes the first backup to restore from.  This may be specified as an integer index (starting from 1), a string specifying a short date DD-MM-YYYY, the backup name, or one of either `start` or `oldest` keywords.",
+    "Start denotes the first backup to restore from.  This may be specified as\nan integer index (starting from 1), a string specifying a short date\nDD-MM-YYYY, the backup name, or one of either `start` or `oldest` keywords.",
+    "CouchbaseBackupRestoreStatus provides status indications of a restore from backup.  This includes whether or not the restore is running, whether the restore succeed or not, and the duration the restore took.",
+    "CouchbaseBackupRestoreStatus provides status indications of a restore from\nbackup.  This includes whether or not the restore is running, whether the\nrestore succeed or not, and the duration the restore took.",
+    "Backups gives us a full list of all backups and their respective repository locations.",
+    "Backups gives us a full list of all backups\nand their respective repository locations.",
+    "Duration tells us how long the last restore took.  More info: https://golang.org/pkg/time/#ParseDuration",
+    "Duration tells us how long the last restore took.  More info:\nhttps://golang.org/pkg/time/#ParseDuration",
+    "DEPRECATED - field may no longer be populated. Job tells us which job is running/ran last.",
+    "DEPRECATED - field may no longer be populated.\nJob tells us which job is running/ran last.",
+    "DEPRECATED - field may no longer be populated. Output reports useful information from the backup process.",
+    "DEPRECATED - field may no longer be populated.\nOutput reports useful information from the backup process.",
+    "DEPRECATED - field may no longer be populated. Pod tells us which pod is running/ran last.",
+    "DEPRECATED - field may no longer be populated.\nPod tells us which pod is running/ran last.",
+    "CouchbaseBackupRestore allows the restoration of all Couchbase cluster data from a CouchbaseBackup resource.",
+    "CouchbaseBackupRestore allows the restoration of all Couchbase cluster data from\na CouchbaseBackup resource.",
+    "The remote destination for backup.",
+    "Name of S3 bucket to restore from. If non-empty this overrides local backup.",
+    "Number of seconds to elapse before a completed job is deleted."
+  ]
+}

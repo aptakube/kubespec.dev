@@ -1,0 +1,486 @@
+{
+  "versions": {
+    "couchbase-operator-2.90.0": {
+      "descriptionChanged": [
+        "spec.backoffLimit",
+        "spec.data.exclude",
+        "spec.data.include",
+        "spec.strategy"
+      ],
+      "added": {
+        "spec.env": "object[]",
+        "spec.merge": "object"
+      },
+      "descriptions": {
+        "spec.backoffLimit": [
+          0,
+          1
+        ],
+        "spec.data.exclude": [
+          2,
+          3
+        ],
+        "spec.data.include": [
+          4,
+          5
+        ],
+        "spec.env": [
+          null,
+          6
+        ],
+        "spec.merge": [
+          null,
+          7
+        ],
+        "spec.strategy": [
+          8,
+          9
+        ]
+      }
+    },
+    "couchbase-operator-2.80.0": {
+      "descriptionChanged": [
+        "spec.defaultRecoveryMethod"
+      ],
+      "descriptions": {
+        "spec.defaultRecoveryMethod": [
+          10,
+          11
+        ]
+      }
+    },
+    "couchbase-operator-2.71.0": {
+      "descriptionChanged": [
+        "spec.defaultRecoveryMethod"
+      ],
+      "descriptions": {
+        "spec.defaultRecoveryMethod": [
+          11,
+          10
+        ]
+      }
+    },
+    "couchbase-operator-2.70.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.autoScaling",
+        "spec.autoScaling.incrementPercent",
+        "spec.autoScaling.limit",
+        "spec.autoScaling.thresholdPercent",
+        "spec.backoffLimit",
+        "spec.backupRetention",
+        "spec.data",
+        "spec.data.exclude",
+        "spec.data.include",
+        "spec.defaultRecoveryMethod",
+        "spec.ephemeralVolume",
+        "spec.full",
+        "spec.incremental",
+        "spec.logRetention",
+        "spec.objectStore.endpoint",
+        "spec.objectStore.endpoint.secret",
+        "spec.objectStore.endpoint.useVirtualPath",
+        "spec.objectStore.secret",
+        "spec.objectStore.uri",
+        "spec.objectStore.useIAM",
+        "spec.s3bucket",
+        "spec.services",
+        "spec.services.analytics",
+        "spec.services.bucketConfig",
+        "spec.services.bucketQuery",
+        "spec.services.clusterAnalytics",
+        "spec.services.clusterQuery",
+        "spec.services.data",
+        "spec.services.eventing",
+        "spec.services.ftsAliases",
+        "spec.services.ftsIndexes",
+        "spec.services.gsIndexes",
+        "spec.services.views",
+        "spec.size",
+        "spec.strategy",
+        "status",
+        "status.backups",
+        "status.capacityUsed",
+        "status.cronjob",
+        "status.duration",
+        "status.job",
+        "status.output",
+        "status.pod"
+      ],
+      "added": {
+        "spec.services.users": "boolean"
+      },
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          12,
+          13
+        ],
+        "kind": [
+          14,
+          15
+        ],
+        "spec": [
+          16,
+          17
+        ],
+        "spec.autoScaling": [
+          18,
+          19
+        ],
+        "spec.autoScaling.incrementPercent": [
+          20,
+          21
+        ],
+        "spec.autoScaling.limit": [
+          22,
+          23
+        ],
+        "spec.autoScaling.thresholdPercent": [
+          24,
+          25
+        ],
+        "spec.backoffLimit": [
+          26,
+          0
+        ],
+        "spec.backupRetention": [
+          27,
+          28
+        ],
+        "spec.data": [
+          29,
+          30
+        ],
+        "spec.data.exclude": [
+          31,
+          2
+        ],
+        "spec.data.include": [
+          32,
+          4
+        ],
+        "spec.defaultRecoveryMethod": [
+          33,
+          11
+        ],
+        "spec.ephemeralVolume": [
+          34,
+          35
+        ],
+        "spec.full": [
+          36,
+          37
+        ],
+        "spec.incremental": [
+          38,
+          39
+        ],
+        "spec.logRetention": [
+          40,
+          41
+        ],
+        "spec.objectStore.endpoint": [
+          42,
+          43
+        ],
+        "spec.objectStore.endpoint.secret": [
+          44,
+          45
+        ],
+        "spec.objectStore.endpoint.useVirtualPath": [
+          46,
+          47
+        ],
+        "spec.objectStore.secret": [
+          48,
+          49
+        ],
+        "spec.objectStore.uri": [
+          50,
+          51
+        ],
+        "spec.objectStore.useIAM": [
+          52,
+          53
+        ],
+        "spec.s3bucket": [
+          54,
+          55
+        ],
+        "spec.services": [
+          56,
+          57
+        ],
+        "spec.services.analytics": [
+          58,
+          59
+        ],
+        "spec.services.bucketConfig": [
+          60,
+          61
+        ],
+        "spec.services.bucketQuery": [
+          62,
+          63
+        ],
+        "spec.services.clusterAnalytics": [
+          64,
+          65
+        ],
+        "spec.services.clusterQuery": [
+          66,
+          67
+        ],
+        "spec.services.data": [
+          68,
+          69
+        ],
+        "spec.services.eventing": [
+          70,
+          71
+        ],
+        "spec.services.ftsAliases": [
+          72,
+          73
+        ],
+        "spec.services.ftsIndexes": [
+          74,
+          75
+        ],
+        "spec.services.gsIndexes": [
+          76,
+          77
+        ],
+        "spec.services.users": [
+          null,
+          78
+        ],
+        "spec.services.views": [
+          79,
+          80
+        ],
+        "spec.size": [
+          81,
+          82
+        ],
+        "spec.strategy": [
+          83,
+          8
+        ],
+        "status": [
+          84,
+          85
+        ],
+        "status.backups": [
+          86,
+          87
+        ],
+        "status.capacityUsed": [
+          88,
+          89
+        ],
+        "status.cronjob": [
+          90,
+          91
+        ],
+        "status.duration": [
+          92,
+          93
+        ],
+        "status.job": [
+          94,
+          95
+        ],
+        "status.output": [
+          96,
+          97
+        ],
+        "status.pod": [
+          98,
+          99
+        ],
+        "": [
+          100,
+          101
+        ]
+      }
+    },
+    "couchbase-operator-2.60.0": {
+      "descriptionChanged": [
+        "spec.strategy"
+      ],
+      "descriptions": {
+        "spec.strategy": [
+          102,
+          83
+        ]
+      }
+    },
+    "couchbase-operator-2.52.0": {
+      "added": {
+        "spec.defaultRecoveryMethod": "string"
+      },
+      "descriptions": {
+        "spec.defaultRecoveryMethod": [
+          null,
+          33
+        ]
+      }
+    },
+    "couchbase-operator-2.42.0": {
+      "optional": [
+        "spec.ephemeralVolume",
+        "spec.strategy"
+      ],
+      "descriptions": {
+        "spec.ephemeralVolume": [
+          null,
+          34
+        ],
+        "spec.strategy": [
+          null,
+          102
+        ]
+      }
+    },
+    "couchbase-operator-2.40.0": {
+      "added": {
+        "spec.ephemeralVolume": "boolean",
+        "spec.objectStore": "object",
+        "spec.ttlSecondsAfterFinished": "integer"
+      },
+      "descriptionChanged": [
+        "spec.s3bucket"
+      ],
+      "descriptions": {
+        "spec.ephemeralVolume": [
+          null,
+          34
+        ],
+        "spec.objectStore": [
+          null,
+          103
+        ],
+        "spec.s3bucket": [
+          104,
+          54
+        ],
+        "spec.ttlSecondsAfterFinished": [
+          null,
+          105
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Number of times a backup job should try to execute.\nOnce it hits the BackoffLimit it will not run until the next scheduled job.",
+    "Number of times a backup job should try to execute. The time between each\nattempt increases exponentially starting at 10s doubling each time and caps\nout at 6 minutes.\nOnce it hits the BackoffLimit it will not run until the next scheduled job.",
+    "Exclude defines the buckets, scopes or collections that are excluded from the backup.\nWhen this field is set, it implies that by default everything will be backed up,\nand data items can be explicitly excluded.  You may define an exclusion as a bucket\n-- `my-bucket`, a scope -- `my-bucket.my-scope`, or a collection -- `my-bucket.my-scope.my-collection`.\nBuckets may contain periods, and therefore must be escaped -- `my\\.bucket.my-scope`, as\nperiod is the separator used to delimit scopes and collections.  Excluded data cannot overlap\ne.g. specifying `my-bucket` and `my-bucket.my-scope` is illegal.  This field cannot\nbe used at the same time as included items.",
+    "Exclude defines the buckets, scopes or collections that are excluded from the backup.\nWhen this field is set, it implies that by default everything will be backed up,\nand data items can be explicitly excluded.  You may define an exclusion as a bucket\n-- `my-bucket`, a scope -- `my-bucket.my-scope`, or a collection -- `my-bucket.my-scope.my-collection`.\nBuckets may contain periods, and therefore must be escaped -- `my\\.bucket.my-scope`, as\nperiod is the separator used to delimit scopes and collections.  Excluded data cannot overlap\ne.g. specifying `my-bucket` and `my-bucket.my-scope` is illegal.  This field cannot\nbe used at the same time as included items.\nChanges from this field will only takes effect on a full backup.",
+    "Include defines the buckets, scopes or collections that are included in the backup.\nWhen this field is set, it implies that by default nothing will be backed up,\nand data items must be explicitly included.  You may define an inclusion as a bucket\n-- `my-bucket`, a scope -- `my-bucket.my-scope`, or a collection -- `my-bucket.my-scope.my-collection`.\nBuckets may contain periods, and therefore must be escaped -- `my\\.bucket.my-scope`, as\nperiod is the separator used to delimit scopes and collections.  Included data cannot overlap\ne.g. specifying `my-bucket` and `my-bucket.my-scope` is illegal.  This field cannot\nbe used at the same time as excluded items.",
+    "Include defines the buckets, scopes or collections that are included in the backup.\nWhen this field is set, it implies that by default nothing will be backed up,\nand data items must be explicitly included.  You may define an inclusion as a bucket\n-- `my-bucket`, a scope -- `my-bucket.my-scope`, or a collection -- `my-bucket.my-scope.my-collection`.\nBuckets may contain periods, and therefore must be escaped -- `my\\.bucket.my-scope`, as\nperiod is the separator used to delimit scopes and collections.  Included data cannot overlap\ne.g. specifying `my-bucket` and `my-bucket.my-scope` is illegal.  This field cannot\nbe used at the same time as excluded items.\nChanges from this field will only takes effect on a full backup.",
+    "Env defines environment variables to be set on the backup container.\nThese can be used to configure cbbackupmgr behavior via environment variables.",
+    "Merge is the schedule on when to merge incremental backups.\nUsed in PeriodicMerge backup strategy.",
+    "Strategy defines how to perform backups.  `full_only` will only perform full\nbackups, and you must define a schedule in the `spec.full` field.  `full_incremental`\nwill perform periodic full backups, and incremental backups in between.  You must\ndefine full and incremental schedules in the `spec.full` and `spec.incremental` fields\nrespectively.  Care should be taken to ensure full and incremental schedules do not\noverlap, taking into account the backup time, as this will cause failures as the jobs\nattempt to mount the same backup volume. To cause a backup to occur immediately use `immediate_incremental`\nor `immediate_full` for incremental or full backups respectively.\nThis field default to `full_incremental`.\nInfo: https://docs.couchbase.com/server/current/backup-restore/cbbackupmgr-strategies.html",
+    "Strategy defines how to perform backups.  `full_only` will only perform full\nbackups, and you must define a schedule in the `spec.full` field.  `full_incremental`\nwill perform periodic full backups, and incremental backups in between.  You must\ndefine full and incremental schedules in the `spec.full` and `spec.incremental` fields\nrespectively. `periodic_merge` will first create an immediate full backup, after that,\nit will only take incremental backups and then merge them. You must define incremental and merge\nschedules in the `spec.incremental` and `spec.merge` fields respectively. The initial full backup\nwill be retried based on spec.backoffLimit, if it reaches this limit without success, then the\nincremental, merge cycles won't run. Care should be taken to ensure full, incremental and merge\nschedules do not overlap, taking into account the backup time, as this will cause failures as the\njobs attempt to mount the same backup volume. To cause a backup to occur immediately use\n`immediate_incremental` or `immediate_full` for incremental or full backups respectively.\nrespectively. This field default to `full_incremental`.\nInfo: https://docs.couchbase.com/server/current/backup-restore/cbbackupmgr-strategies.html",
+    "DefaultRecoveryMethod specifies how cbbackupmgr should\nrecover from broken backup/restore attempts.\n\n\nNOTE: To use the `resume` or `purge` parameters, you will need to install\n`couchbasebackup` version `1.3.5` or greater.\n\n\nFor `couchbasebackup` versions earlier than `1.3.5` only the `none` parameter\nis supported.",
+    "DefaultRecoveryMethod specifies how cbbackupmgr should\nrecover from broken backup/restore attempts.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "CouchbaseBackupSpec is allows the specification of how a Couchbase backup is configured, including when backups are performed, how long they are retained for, and where they are backed up to.",
+    "CouchbaseBackupSpec is allows the specification of how a Couchbase backup is\nconfigured, including when backups are performed, how long they are retained\nfor, and where they are backed up to.",
+    "AutoScaling allows the volume size to be dynamically increased. When specified, the backup volume will start with an initial size as defined by `spec.size`, and increase as required.",
+    "AutoScaling allows the volume size to be dynamically increased.\nWhen specified, the backup volume will start with an initial size\nas defined by `spec.size`, and increase as required.",
+    "IncrementPercent controls how much the volume is increased each time the threshold is exceeded, upto a maximum as defined by the limit. This field defaults to 20 if not specified.",
+    "IncrementPercent controls how much the volume is increased each time the\nthreshold is exceeded, upto a maximum as defined by the limit.\nThis field defaults to 20 if not specified.",
+    "Limit imposes a hard limit on the size we can autoscale to.  When not specified no bounds are imposed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#resource-units-in-kubernetes",
+    "Limit imposes a hard limit on the size we can autoscale to.  When not\nspecified no bounds are imposed. More info:\nhttps://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#resource-units-in-kubernetes",
+    "ThresholdPercent determines the point at which a volume is autoscaled. This represents the percentage of free space remaining on the volume, when less than this threshold, it will trigger a volume expansion. For example, if the volume is 100Gi, and the threshold 20%, then a resize will be triggered when the used capacity exceeds 80Gi, and free space is less than 20Gi.  This field defaults to 20 if not specified.",
+    "ThresholdPercent determines the point at which a volume is autoscaled.\nThis represents the percentage of free space remaining on the volume,\nwhen less than this threshold, it will trigger a volume expansion.\nFor example, if the volume is 100Gi, and the threshold 20%, then a resize\nwill be triggered when the used capacity exceeds 80Gi, and free space is\nless than 20Gi.  This field defaults to 20 if not specified.",
+    "Number of times a backup job should try to execute. Once it hits the BackoffLimit it will not run until the next scheduled job.",
+    "Number of hours to hold backups for, everything older will be deleted.  More info: https://golang.org/pkg/time/#ParseDuration",
+    "Number of hours to hold backups for, everything older will be deleted.  More info:\nhttps://golang.org/pkg/time/#ParseDuration",
+    "Data allows control over what key-value/document data is included in the backup.  By default, all data is included.  Modifications to this field will only take effect on the next full backup.",
+    "Data allows control over what key-value/document data is included in the\nbackup.  By default, all data is included.  Modifications\nto this field will only take effect on the next full backup.",
+    "Exclude defines the buckets, scopes or collections that are excluded from the backup. When this field is set, it implies that by default everything will be backed up, and data items can be explicitly excluded.  You may define an exclusion as a bucket -- `my-bucket`, a scope -- `my-bucket.my-scope`, or a collection -- `my-bucket.my-scope.my-collection`. Buckets may contain periods, and therefore must be escaped -- `my\\.bucket.my-scope`, as period is the separator used to delimit scopes and collections.  Excluded data cannot overlap e.g. specifying `my-bucket` and `my-bucket.my-scope` is illegal.  This field cannot be used at the same time as included items.",
+    "Include defines the buckets, scopes or collections that are included in the backup. When this field is set, it implies that by default nothing will be backed up, and data items must be explicitly included.  You may define an inclusion as a bucket -- `my-bucket`, a scope -- `my-bucket.my-scope`, or a collection -- `my-bucket.my-scope.my-collection`. Buckets may contain periods, and therefore must be escaped -- `my\\.bucket.my-scope`, as period is the separator used to delimit scopes and collections.  Included data cannot overlap e.g. specifying `my-bucket` and `my-bucket.my-scope` is illegal.  This field cannot be used at the same time as excluded items.",
+    "DefaultRecoveryMethod specifies how cbbackupmgr should recover from broken backup/restore attempts.",
+    "EphemeralVolume sets backup to use an ephemeral volume instead of a persistent volume. This is used when backing up to a remote cloud provider, where a persistent volume is not needed.",
+    "EphemeralVolume sets backup to use an ephemeral volume instead\nof a persistent volume. This is used when backing up to a remote\ncloud provider, where a persistent volume is not needed.",
+    "Full is the schedule on when to take full backups. Used in Full/Incremental and FullOnly backup strategies.",
+    "Full is the schedule on when to take full backups.\nUsed in Full/Incremental and FullOnly backup strategies.",
+    "Incremental is the schedule on when to take incremental backups. Used in Full/Incremental backup strategies.",
+    "Incremental is the schedule on when to take incremental backups.\nUsed in Full/Incremental backup strategies.",
+    "Number of hours to hold script logs for, everything older will be deleted.  More info: https://golang.org/pkg/time/#ParseDuration",
+    "Number of hours to hold script logs for, everything older will be deleted.  More info:\nhttps://golang.org/pkg/time/#ParseDuration",
+    "Endpoint contains the configuration for connecting to a custom Azure/S3/GCP compliant object store. If set will override `CouchbaseCluster.spec.backup.objectEndpoint` See https://docs.couchbase.com/server/current/backup-restore/cbbackupmgr-cloud.html#compatible-object-stores",
+    "Endpoint contains the configuration for connecting to a custom Azure/S3/GCP compliant object store.\nIf set will override `CouchbaseCluster.spec.backup.objectEndpoint`\nSee https://docs.couchbase.com/server/current/backup-restore/cbbackupmgr-cloud.html#compatible-object-stores",
+    "The name of the secret, in this namespace, that contains the CA certificate for verification of a TLS endpoint The secret must have the key with the name \"tls.crt\"",
+    "The name of the secret, in this namespace, that contains the CA certificate for verification of a TLS endpoint\nThe secret must have the key with the name \"tls.crt\"",
+    "UseVirtualPath will force the AWS SDK to use the new virtual style paths which are often required by S3 compatible object stores.",
+    "UseVirtualPath will force the AWS SDK to use the new virtual style paths\nwhich are often required by S3 compatible object stores.",
+    "ObjStoreSecret must contain two fields, access-key-id, secret-access-key and optionally either region or refresh-token. These correspond to the fields used by cbbackupmgr https://docs.couchbase.com/server/current/backup-restore/cbbackupmgr-backup.html#optional-2",
+    "ObjStoreSecret must contain two fields, access-key-id, secret-access-key and optionally either region or refresh-token.\nThese correspond to the fields used by cbbackupmgr\nhttps://docs.couchbase.com/server/current/backup-restore/cbbackupmgr-backup.html#optional-2",
+    "URI is a reference to a remote object store. This is the prefix of the object store and the bucket name. i.e s3://bucket, az://bucket or gs://bucket.",
+    "URI is a reference to a remote object store.\nThis is the prefix of the object store and the bucket name.\ni.e s3://bucket, az://bucket or gs://bucket.",
+    "Whether to allow the backup SDK to attempt to authenticate using the instance metadata api. If set, will override `CouchbaseCluster.spec.backup.useIAM`.",
+    "Whether to allow the backup SDK to attempt to authenticate\nusing the instance metadata api.\nIf set, will override `CouchbaseCluster.spec.backup.useIAM`.",
+    "DEPRECATED - by spec.objectStore.uri Name of S3 bucket to backup to. If non-empty this overrides local backup.",
+    "DEPRECATED - by spec.objectStore.uri\nName of S3 bucket to backup to. If non-empty this overrides local backup.",
+    "Services allows control over what services are included in the backup. By default, all service data and metadata are included.  Modifications to this field will only take effect on the next full backup.",
+    "Services allows control over what services are included in the backup.\nBy default, all service data and metadata are included apart from users.\nModifications to this field will only take effect on the next full backup.",
+    "Analytics enables the backup of analytics data. This field defaults to `true`.",
+    "Analytics enables the backup of analytics data.\nThis field defaults to `true`.",
+    "BucketConfig enables the backup of bucket configuration. This field defaults to `true`.",
+    "BucketConfig enables the backup of bucket configuration.\nThis field defaults to `true`.",
+    "BucketQuery enables the backup of query metadata for all buckets. This field defaults to `true`.",
+    "BucketQuery enables the backup of query metadata for all buckets.\nThis field defaults to `true`.",
+    "ClusterAnalytics enables the backup of cluster-wide analytics data, for example synonyms. This field defaults to `true`.",
+    "ClusterAnalytics enables the backup of cluster-wide analytics data, for example synonyms.\nThis field defaults to `true`.",
+    "ClusterQuery enables the backup of cluster level query metadata. This field defaults to `true`.",
+    "ClusterQuery enables the backup of cluster level query metadata.\nThis field defaults to `true`.",
+    "Data enables the backup of key-value data/documents for all buckets. This can be further refined with the couchbasebackups.spec.data configuration. This field defaults to `true`.",
+    "Data enables the backup of key-value data/documents for all buckets.\nThis can be further refined with the couchbasebackups.spec.data configuration.\nThis field defaults to `true`.",
+    "Eventing enables the backup of eventing service metadata. This field defaults to `true`.",
+    "Eventing enables the backup of eventing service metadata.\nThis field defaults to `true`.",
+    "FTSAliases enables the backup of full-text search alias definitions. This field defaults to `true`.",
+    "FTSAliases enables the backup of full-text search alias definitions.\nThis field defaults to `true`.",
+    "FTSIndexes enables the backup of full-text search index definitions for all buckets. This field defaults to `true`.",
+    "FTSIndexes enables the backup of full-text search index definitions for all buckets.\nThis field defaults to `true`.",
+    "GSIndexes enables the backup of global secondary index definitions for all buckets. This field defaults to `true`.",
+    "GSIndexes enables the backup of global secondary index definitions for all buckets.\nThis field defaults to `true`.",
+    "Users enables the backup of users including their roles and permissions. This is\nonly available for Couchbase Server 7.6 and later. This field defaults to `false`.",
+    "Views enables the backup of view definitions for all buckets. This field defaults to `true`.",
+    "Views enables the backup of view definitions for all buckets.\nThis field defaults to `true`.",
+    "Size allows the specification of a backup persistent volume, when using volume based backup. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#resource-units-in-kubernetes",
+    "Size allows the specification of a backup persistent volume, when using\nvolume based backup. More info:\nhttps://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#resource-units-in-kubernetes",
+    "Strategy defines how to perform backups.  `full_only` will only perform full backups, and you must define a schedule in the `spec.full` field.  `full_incremental` will perform periodic full backups, and incremental backups in between.  You must define full and incremental schedules in the `spec.full` and `spec.incremental` fields respectively.  Care should be taken to ensure full and incremental schedules do not overlap, taking into account the backup time, as this will cause failures as the jobs attempt to mount the same backup volume. To cause a backup to occur immediately use `immediate_incremental` or `immediate_full` for incremental or full backups respectively. This field default to `full_incremental`. Info: https://docs.couchbase.com/server/current/backup-restore/cbbackupmgr-strategies.html",
+    "CouchbaseBackupStatus provides status notifications about the Couchbase backup including when the last backup occurred, whether is succeeded or not, the run time of the backup and the size of the backup.",
+    "CouchbaseBackupStatus provides status notifications about the Couchbase backup\nincluding when the last backup occurred, whether is succeeded or not, the run\ntime of the backup and the size of the backup.",
+    "Backups gives us a full list of all backups and their respective repository locations.",
+    "Backups gives us a full list of all backups\nand their respective repository locations.",
+    "CapacityUsed tells us how much of the PVC we are using. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#resource-units-in-kubernetes",
+    "CapacityUsed tells us how much of the PVC we are using. More info:\nhttps://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#resource-units-in-kubernetes",
+    "DEPRECATED - field may no longer be populated. Cronjob tells us which Cronjob the job belongs to.",
+    "DEPRECATED - field may no longer be populated.\nCronjob tells us which Cronjob the job belongs to.",
+    "Duration tells us how long the last backup took.  More info: https://golang.org/pkg/time/#ParseDuration",
+    "Duration tells us how long the last backup took.  More info:\nhttps://golang.org/pkg/time/#ParseDuration",
+    "DEPRECATED - field may no longer be populated. Job tells us which job is running/ran last.",
+    "DEPRECATED - field may no longer be populated.\nJob tells us which job is running/ran last.",
+    "DEPRECATED - field may no longer be populated. Output reports useful information from the backup_script.",
+    "DEPRECATED - field may no longer be populated.\nOutput reports useful information from the backup_script.",
+    "DEPRECATED - field may no longer be populated. Pod tells us which pod is running/ran last.",
+    "DEPRECATED - field may no longer be populated.\nPod tells us which pod is running/ran last.",
+    "CouchbaseBackup allows automatic backup of all data from a Couchbase cluster into persistent storage.",
+    "CouchbaseBackup allows automatic backup of all data from a Couchbase cluster\ninto persistent storage.",
+    "Strategy defines how to perform backups.  `full_only` will only perform full backups, and you must define a schedule in the `spec.full` field.  `full_incremental` will perform periodic full backups, and incremental backups in between.  You must define full and incremental schedules in the `spec.full` and `spec.incremental` fields respectively.  Care should be taken to ensure full and incremental schedules do not overlap, taking into account the backup time, as this will cause failures as the jobs attempt to mount the same backup volume. This field default to `full_incremental`. Info: https://docs.couchbase.com/server/current/backup-restore/cbbackupmgr-strategies.html",
+    "ObjectStore allows for backing up to a remote cloud storage.",
+    "Name of S3 bucket to backup to. If non-empty this overrides local backup.",
+    "Amount of time to elapse before a completed job is deleted."
+  ]
+}

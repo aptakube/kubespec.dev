@@ -1,0 +1,30 @@
+{
+  "versions": {
+    "v1.37.0": {
+      "added": {
+        "spec.defaultPartitionTypeAttribute": "string",
+        "status.pools.partitionSummary": "PartitionTypeStatus[]",
+        "status.pools.shareableSummary": "ShareableSummaryStatus"
+      },
+      "descriptions": {
+        "spec.defaultPartitionTypeAttribute": [
+          null,
+          0
+        ],
+        "status.pools.partitionSummary": [
+          null,
+          1
+        ],
+        "status.pools.shareableSummary": [
+          null,
+          2
+        ]
+      }
+    }
+  },
+  "texts": [
+    "DefaultPartitionTypeAttribute optionally names a device attribute (by its fully qualified name, e.g. \"gpu.example.com/profile\") to use as the default grouping attribute for partitionable devices whose slice has not declared one themselves.\n\nA slice's own PartitionTypeAttribute always takes precedence. This default applies only to devices whose slice does not declare one, so that a request can still get an accurate partitionSummary from a driver that has not been updated to declare it. When neither the slice nor this default names an attribute, a partitionable pool reports no partitionSummary.\n\nMust include the domain qualifier.",
+    "PartitionSummary reports allocatability per (attribute, partition type) for a partitionable pool that publishes SharedCounters. Each entry names the grouping attribute it was resolved from: the PartitionTypeAttribute declared by a device's own slice, or for devices whose slice declares none, the default named in the request. A pool that mixes partitions declared under different attributes reports each independently. When no slice declares an attribute and the request names no default, the pool reports no partition summary.",
+    "ShareableSummary reports aggregate capacity for a pool that contains devices with AllowMultipleAllocations. It is populated only when at least one device in the pool is shareable."
+  ]
+}

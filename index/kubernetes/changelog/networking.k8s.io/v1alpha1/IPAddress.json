@@ -1,0 +1,42 @@
+{
+  "versions": {
+    "v1.30.0": {
+      "required": [
+        "spec.parentRef",
+        "spec.parentRef.name",
+        "spec.parentRef.resource"
+      ],
+      "descriptions": {
+        "spec.parentRef": [
+          null,
+          0
+        ],
+        "spec.parentRef.name": [
+          null,
+          1
+        ],
+        "spec.parentRef.resource": [
+          null,
+          2
+        ]
+      }
+    },
+    "v1.29.0": {
+      "removed": {
+        "spec.parentRef.uid": "string"
+      },
+      "descriptions": {
+        "spec.parentRef.uid": [
+          3,
+          null
+        ]
+      }
+    }
+  },
+  "texts": [
+    "ParentRef references the resource that an IPAddress is attached to. An IPAddress must reference a parent object.",
+    "Name is the name of the object being referenced.",
+    "Resource is the resource of the object being referenced.",
+    "UID is the uid of the object being referenced."
+  ]
+}

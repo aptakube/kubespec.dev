@@ -1,0 +1,190 @@
+{
+  "versions": {
+    "1.30.0": {
+      "added": {
+        "spec.rules.from.source.notTrustDomains": "string[]",
+        "spec.rules.from.source.trustDomains": "string[]"
+      },
+      "descriptions": {
+        "spec.rules.from.source.notTrustDomains": [
+          null,
+          0
+        ],
+        "spec.rules.from.source.trustDomains": [
+          null,
+          0
+        ]
+      }
+    },
+    "1.25.0": {
+      "added": {
+        "spec.rules.from.source.notServiceAccounts": "string[]",
+        "spec.rules.from.source.serviceAccounts": "string[]",
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "spec.rules.from.source.notServiceAccounts": [
+          null,
+          0
+        ],
+        "spec.rules.from.source.serviceAccounts": [
+          null,
+          0
+        ],
+        "status.conditions.observedGeneration": [
+          null,
+          1
+        ],
+        "status.observedGeneration": [
+          2,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "status.conditions": [
+          null,
+          3
+        ],
+        "status.observedGeneration": [
+          null,
+          2
+        ],
+        "status.validationMessages": [
+          null,
+          4
+        ]
+      }
+    },
+    "1.23.0": {
+      "required": [
+        "spec.targetRef.kind",
+        "spec.targetRef.name",
+        "spec.targetRefs.kind",
+        "spec.targetRefs.name"
+      ],
+      "descriptions": {
+        "spec.targetRef.kind": [
+          null,
+          5
+        ],
+        "spec.targetRef.name": [
+          null,
+          6
+        ],
+        "spec.targetRefs.kind": [
+          null,
+          5
+        ],
+        "spec.targetRefs.name": [
+          null,
+          6
+        ]
+      }
+    },
+    "1.22.0": {
+      "descriptionChanged": [
+        "spec.action",
+        "spec.targetRef"
+      ],
+      "added": {
+        "spec.targetRefs": "object[]"
+      },
+      "descriptions": {
+        "spec.action": [
+          0,
+          7
+        ],
+        "spec.targetRef": [
+          0,
+          null
+        ],
+        "spec.targetRefs": [
+          null,
+          0
+        ]
+      }
+    },
+    "1.20.2": {
+      "descriptionChanged": [
+        "spec.targetRef"
+      ],
+      "descriptions": {
+        "spec.targetRef": [
+          null,
+          0
+        ]
+      }
+    },
+    "1.20.1": {
+      "descriptionChanged": [
+        "spec.targetRef.group",
+        "spec.targetRef.kind",
+        "spec.targetRef.name",
+        "spec.targetRef.namespace"
+      ],
+      "descriptions": {
+        "spec.targetRef.group": [
+          null,
+          8
+        ],
+        "spec.targetRef.kind": [
+          null,
+          5
+        ],
+        "spec.targetRef.name": [
+          null,
+          6
+        ],
+        "spec.targetRef.namespace": [
+          null,
+          9
+        ]
+      }
+    },
+    "1.20.0": {
+      "required": [
+        "spec.rules.when.key"
+      ],
+      "descriptionChanged": [
+        "spec.selector.matchLabels"
+      ],
+      "added": {
+        "spec.targetRef": "object"
+      },
+      "descriptions": {
+        "spec.rules.when.key": [
+          null,
+          10
+        ],
+        "spec.selector.matchLabels": [
+          null,
+          11
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Optional.",
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers.",
+    "kind is kind of the target resource.",
+    "name is the name of the target resource.",
+    "Optional.\n\nValid Options: ALLOW, DENY, AUDIT, CUSTOM",
+    "group is the group of the target resource.",
+    "namespace is the namespace of the referent.",
+    "The name of an Istio attribute.",
+    "One or more labels that indicate a specific set of pods/VMs on which a policy should be applied."
+  ]
+}

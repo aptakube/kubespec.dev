@@ -1,0 +1,48 @@
+{
+  "versions": {
+    "v2.8.0": {
+      "added": {
+        "spec.serviceAccount.secondsToLive": "integer"
+      },
+      "descriptions": {
+        "spec.serviceAccount.secondsToLive": [
+          null,
+          0
+        ]
+      }
+    },
+    "v0.20.4": {
+      "description": true,
+      "descriptions": {
+        "": [
+          null,
+          1
+        ]
+      }
+    },
+    "v0.15.0": {
+      "added": {
+        "spec.auth.basic": "object"
+      },
+      "optional": [
+        "spec.auth.token"
+      ],
+      "descriptions": {
+        "spec.auth.basic": [
+          null,
+          2
+        ],
+        "spec.auth.token": [
+          null,
+          3
+        ]
+      }
+    }
+  },
+  "texts": [
+    "SecondsToLive is the number of seconds before the generated service account token will expire.\nSome Grafana deployments (e.g. AWS Managed Grafana) require this value to be set.",
+    "Grafana represents a generator for Grafana service account tokens.",
+    "Basic auth credentials used to authenticate against the Grafana instance.\nNote: you need a token which has elevated permissions to create service accounts.\nSee here for the documentation on basic roles offered by Grafana:\nhttps://grafana.com/docs/grafana/latest/administration/roles-and-permissions/access-control/rbac-fixed-basic-role-definitions/",
+    "A service account token used to authenticate against the Grafana instance.\nNote: you need a token which has elevated permissions to create service accounts.\nSee here for the documentation on basic roles offered by Grafana:\nhttps://grafana.com/docs/grafana/latest/administration/roles-and-permissions/access-control/rbac-fixed-basic-role-definitions/"
+  ]
+}

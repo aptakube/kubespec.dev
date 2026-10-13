@@ -1,0 +1,525 @@
+{
+  "versions": {
+    "v1.19.0": {
+      "descriptionChanged": [
+        "metadata.namespace",
+        "spec.env.valueFrom.fieldRef",
+        "spec.volumes.configMap.defaultMode",
+        "spec.volumes.configMap.items.mode",
+        "spec.volumes.csi",
+        "spec.volumes.downwardAPI.defaultMode",
+        "spec.volumes.downwardAPI.items.mode",
+        "spec.volumes.projected.defaultMode",
+        "spec.volumes.projected.sources.configMap.items.mode",
+        "spec.volumes.projected.sources.downwardAPI.items.mode",
+        "spec.volumes.projected.sources.secret.items.mode",
+        "spec.volumes.secret.defaultMode",
+        "spec.volumes.secret.items.mode"
+      ],
+      "added": {
+        "spec.volumes.ephemeral": "EphemeralVolumeSource"
+      },
+      "descriptions": {
+        "metadata.namespace": [
+          0,
+          1
+        ],
+        "spec.env.valueFrom.fieldRef": [
+          2,
+          3
+        ],
+        "spec.volumes.configMap.defaultMode": [
+          4,
+          5
+        ],
+        "spec.volumes.configMap.items.mode": [
+          6,
+          7
+        ],
+        "spec.volumes.csi": [
+          8,
+          9
+        ],
+        "spec.volumes.downwardAPI.defaultMode": [
+          4,
+          10
+        ],
+        "spec.volumes.downwardAPI.items.mode": [
+          6,
+          11
+        ],
+        "spec.volumes.ephemeral": [
+          null,
+          12
+        ],
+        "spec.volumes.projected.defaultMode": [
+          13,
+          14
+        ],
+        "spec.volumes.projected.sources.configMap.items.mode": [
+          6,
+          7
+        ],
+        "spec.volumes.projected.sources.downwardAPI.items.mode": [
+          6,
+          11
+        ],
+        "spec.volumes.projected.sources.secret.items.mode": [
+          6,
+          7
+        ],
+        "spec.volumes.secret.defaultMode": [
+          4,
+          5
+        ],
+        "spec.volumes.secret.items.mode": [
+          6,
+          7
+        ]
+      }
+    },
+    "v1.17.0": {
+      "descriptionChanged": [
+        "metadata.finalizers",
+        "spec.env.valueFrom.fieldRef",
+        "spec.volumeMounts.subPathExpr"
+      ],
+      "descriptions": {
+        "metadata.finalizers": [
+          15,
+          16
+        ],
+        "spec.env.valueFrom.fieldRef": [
+          17,
+          2
+        ],
+        "spec.volumeMounts.subPathExpr": [
+          18,
+          19
+        ]
+      }
+    },
+    "v1.16.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "metadata.creationTimestamp",
+        "metadata.deletionTimestamp",
+        "metadata.generateName",
+        "metadata.managedFields",
+        "metadata.ownerReferences.kind",
+        "metadata.resourceVersion",
+        "metadata.selfLink",
+        "spec.volumes.cephfs.monitors",
+        "spec.volumes.cephfs.readOnly",
+        "spec.volumes.cephfs.secretFile",
+        "spec.volumes.cephfs.secretRef",
+        "spec.volumes.cephfs.user",
+        "spec.volumes.cinder",
+        "spec.volumes.cinder.fsType",
+        "spec.volumes.cinder.readOnly",
+        "spec.volumes.cinder.volumeID",
+        "spec.volumes.glusterfs",
+        "spec.volumes.glusterfs.endpoints",
+        "spec.volumes.glusterfs.path",
+        "spec.volumes.glusterfs.readOnly",
+        "spec.volumes.iscsi",
+        "spec.volumes.rbd",
+        "spec.volumes.rbd.image",
+        "spec.volumes.rbd.keyring",
+        "spec.volumes.rbd.monitors",
+        "spec.volumes.rbd.pool",
+        "spec.volumes.rbd.readOnly",
+        "spec.volumes.rbd.secretRef",
+        "spec.volumes.rbd.user"
+      ],
+      "added": {
+        "metadata.managedFields.fieldsType": "string",
+        "metadata.managedFields.fieldsV1": "FieldsV1"
+      },
+      "removed": {
+        "metadata.initializers": "Initializers",
+        "metadata.managedFields.fields": "Fields"
+      },
+      "descriptions": {
+        "apiVersion": [
+          20,
+          21
+        ],
+        "kind": [
+          22,
+          23
+        ],
+        "metadata.creationTimestamp": [
+          24,
+          25
+        ],
+        "metadata.deletionTimestamp": [
+          26,
+          27
+        ],
+        "metadata.generateName": [
+          28,
+          29
+        ],
+        "metadata.managedFields": [
+          30,
+          31
+        ],
+        "metadata.managedFields.fieldsType": [
+          null,
+          32
+        ],
+        "metadata.managedFields.fieldsV1": [
+          null,
+          33
+        ],
+        "metadata.ownerReferences.kind": [
+          34,
+          35
+        ],
+        "metadata.resourceVersion": [
+          36,
+          37
+        ],
+        "metadata.selfLink": [
+          38,
+          39
+        ],
+        "spec.volumes.cephfs.monitors": [
+          40,
+          41
+        ],
+        "spec.volumes.cephfs.readOnly": [
+          42,
+          43
+        ],
+        "spec.volumes.cephfs.secretFile": [
+          44,
+          45
+        ],
+        "spec.volumes.cephfs.secretRef": [
+          46,
+          47
+        ],
+        "spec.volumes.cephfs.user": [
+          48,
+          49
+        ],
+        "spec.volumes.cinder": [
+          50,
+          51
+        ],
+        "spec.volumes.cinder.fsType": [
+          52,
+          53
+        ],
+        "spec.volumes.cinder.readOnly": [
+          54,
+          55
+        ],
+        "spec.volumes.cinder.volumeID": [
+          56,
+          57
+        ],
+        "spec.volumes.glusterfs": [
+          58,
+          59
+        ],
+        "spec.volumes.glusterfs.endpoints": [
+          60,
+          61
+        ],
+        "spec.volumes.glusterfs.path": [
+          62,
+          63
+        ],
+        "spec.volumes.glusterfs.readOnly": [
+          64,
+          65
+        ],
+        "spec.volumes.iscsi": [
+          66,
+          67
+        ],
+        "spec.volumes.rbd": [
+          68,
+          69
+        ],
+        "spec.volumes.rbd.image": [
+          70,
+          71
+        ],
+        "spec.volumes.rbd.keyring": [
+          72,
+          73
+        ],
+        "spec.volumes.rbd.monitors": [
+          74,
+          75
+        ],
+        "spec.volumes.rbd.pool": [
+          76,
+          77
+        ],
+        "spec.volumes.rbd.readOnly": [
+          78,
+          79
+        ],
+        "spec.volumes.rbd.secretRef": [
+          80,
+          81
+        ],
+        "spec.volumes.rbd.user": [
+          82,
+          83
+        ],
+        "metadata.initializers": [
+          84,
+          null
+        ],
+        "metadata.managedFields.fields": [
+          85,
+          null
+        ]
+      }
+    },
+    "v1.15.0": {
+      "added": {
+        "metadata.initializers.result.metadata.remainingItemCount": "integer"
+      },
+      "descriptionChanged": [
+        "spec.env.valueFrom.configMapKeyRef.optional",
+        "spec.env.valueFrom.secretKeyRef.optional",
+        "spec.volumeMounts.subPathExpr",
+        "spec.volumes.configMap.optional",
+        "spec.volumes.projected.sources.configMap.optional",
+        "spec.volumes.secret.optional"
+      ],
+      "descriptions": {
+        "metadata.initializers.result.metadata.remainingItemCount": [
+          null,
+          86
+        ],
+        "spec.env.valueFrom.configMapKeyRef.optional": [
+          87,
+          88
+        ],
+        "spec.env.valueFrom.secretKeyRef.optional": [
+          89,
+          90
+        ],
+        "spec.volumeMounts.subPathExpr": [
+          91,
+          18
+        ],
+        "spec.volumes.configMap.optional": [
+          92,
+          93
+        ],
+        "spec.volumes.projected.sources.configMap.optional": [
+          92,
+          93
+        ],
+        "spec.volumes.secret.optional": [
+          94,
+          95
+        ]
+      }
+    },
+    "v1.14.0": {
+      "descriptionChanged": [
+        "metadata.initializers"
+      ],
+      "added": {
+        "metadata.managedFields": "ManagedFieldsEntry[]",
+        "spec.volumeMounts.subPathExpr": "string",
+        "spec.volumes.csi": "CSIVolumeSource",
+        "spec.volumes.quobyte.tenant": "string"
+      },
+      "descriptions": {
+        "metadata.initializers": [
+          96,
+          84
+        ],
+        "metadata.managedFields": [
+          null,
+          30
+        ],
+        "spec.volumeMounts.subPathExpr": [
+          null,
+          91
+        ],
+        "spec.volumes.csi": [
+          null,
+          8
+        ],
+        "spec.volumes.quobyte.tenant": [
+          null,
+          97
+        ]
+      }
+    },
+    "v1.12.0": {
+      "descriptionChanged": [
+        "metadata.initializers.result.metadata.continue",
+        "spec.volumeMounts.mountPropagation",
+        "spec.volumes.scaleIO.fsType",
+        "spec.volumes.scaleIO.storageMode"
+      ],
+      "descriptions": {
+        "metadata.initializers.result.metadata.continue": [
+          98,
+          99
+        ],
+        "spec.volumeMounts.mountPropagation": [
+          100,
+          101
+        ],
+        "spec.volumes.scaleIO.fsType": [
+          102,
+          103
+        ],
+        "spec.volumes.scaleIO.storageMode": [
+          104,
+          105
+        ]
+      }
+    },
+    "v1.11.0": {
+      "added": {
+        "spec.volumes.cinder.secretRef": "LocalObjectReference",
+        "spec.volumes.projected.sources.serviceAccountToken": "ServiceAccountTokenProjection"
+      },
+      "descriptionChanged": [
+        "spec.volumes.gitRepo"
+      ],
+      "descriptions": {
+        "spec.volumes.cinder.secretRef": [
+          null,
+          106
+        ],
+        "spec.volumes.gitRepo": [
+          107,
+          108
+        ],
+        "spec.volumes.projected.sources.serviceAccountToken": [
+          null,
+          109
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Namespace defines the space within each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces",
+    "Namespace defines the space within which each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces",
+    "Selects a field of the pod: supports metadata.name, metadata.namespace, metadata.labels, metadata.annotations, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.",
+    "Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.",
+    "Optional: mode bits to use on created files by default. Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.",
+    "Optional: mode bits used to set permissions on created files by default. Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.",
+    "Optional: mode bits to use on this file, must be a value between 0 and 0777. If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.",
+    "Optional: mode bits used to set permissions on this file. Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.",
+    "CSI (Container Storage Interface) represents storage that is handled by an external CSI driver (Alpha feature).",
+    "CSI (Container Storage Interface) represents ephemeral storage that is handled by certain external CSI drivers (Beta feature).",
+    "Optional: mode bits to use on created files by default. Must be a Optional: mode bits used to set permissions on created files by default. Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.",
+    "Optional: mode bits used to set permissions on this file, must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.",
+    "Ephemeral represents a volume that is handled by a cluster storage driver (Alpha feature). The volume's lifecycle is tied to the pod that defines it - it will be created before the pod starts, and deleted when the pod is removed.\n\nUse this if: a) the volume is only needed while the pod runs, b) features of normal volumes like restoring from snapshot or capacity\n   tracking are needed,\nc) the storage driver is specified through a storage class, and d) the storage driver supports dynamic volume provisioning through\n   a PersistentVolumeClaim (see EphemeralVolumeSource for more\n   information on the connection between this volume type\n   and PersistentVolumeClaim).\n\nUse PersistentVolumeClaim or one of the vendor-specific APIs for volumes that persist for longer than the lifecycle of an individual pod.\n\nUse CSI for light-weight local ephemeral volumes if the CSI driver is meant to be used that way - see the documentation of the driver for more information.\n\nA pod can use both types of ephemeral volumes and persistent volumes at the same time.",
+    "Mode bits to use on created files by default. Must be a value between 0 and 0777. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.",
+    "Mode bits used to set permissions on created files by default. Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.",
+    "Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed.",
+    "Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list.",
+    "Selects a field of the pod: supports metadata.name, metadata.namespace, metadata.labels, metadata.annotations, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP.",
+    "Expanded path within the volume from which the container's volume should be mounted. Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded using the container's environment. Defaults to \"\" (volume's root). SubPathExpr and SubPath are mutually exclusive. This field is beta in 1.15.",
+    "Expanded path within the volume from which the container's volume should be mounted. Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded using the container's environment. Defaults to \"\" (volume's root). SubPathExpr and SubPath are mutually exclusive.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "CreationTimestamp is a timestamp representing the server time when this object was created. It is not guaranteed to be set in happens-before order across separate operations. Clients may not set this value. It is represented in RFC3339 form and is in UTC.\n\nPopulated by the system. Read-only. Null for lists. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+    "CreationTimestamp is a timestamp representing the server time when this object was created. It is not guaranteed to be set in happens-before order across separate operations. Clients may not set this value. It is represented in RFC3339 form and is in UTC.\n\nPopulated by the system. Read-only. Null for lists. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "DeletionTimestamp is RFC 3339 date and time at which this resource will be deleted. This field is set by the server when a graceful deletion is requested by the user, and is not directly settable by a client. The resource is expected to be deleted (no longer visible from resource lists, and not reachable by name) after the time in this field, once the finalizers list is empty. As long as the finalizers list contains items, deletion is blocked. Once the deletionTimestamp is set, this value may not be unset or be set further into the future, although it may be shortened or the resource may be deleted prior to this time. For example, a user may request that a pod is deleted in 30 seconds. The Kubelet will react by sending a graceful termination signal to the containers in the pod. After that 30 seconds, the Kubelet will send a hard termination signal (SIGKILL) to the container and after cleanup, remove the pod from the API. In the presence of network partitions, this object may still exist after this timestamp, until an administrator or automated process can determine the resource is fully terminated. If not set, graceful deletion of the object has not been requested.\n\nPopulated by the system when a graceful deletion is requested. Read-only. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+    "DeletionTimestamp is RFC 3339 date and time at which this resource will be deleted. This field is set by the server when a graceful deletion is requested by the user, and is not directly settable by a client. The resource is expected to be deleted (no longer visible from resource lists, and not reachable by name) after the time in this field, once the finalizers list is empty. As long as the finalizers list contains items, deletion is blocked. Once the deletionTimestamp is set, this value may not be unset or be set further into the future, although it may be shortened or the resource may be deleted prior to this time. For example, a user may request that a pod is deleted in 30 seconds. The Kubelet will react by sending a graceful termination signal to the containers in the pod. After that 30 seconds, the Kubelet will send a hard termination signal (SIGKILL) to the container and after cleanup, remove the pod from the API. In the presence of network partitions, this object may still exist after this timestamp, until an administrator or automated process can determine the resource is fully terminated. If not set, graceful deletion of the object has not been requested.\n\nPopulated by the system when a graceful deletion is requested. Read-only. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency",
+    "ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.\n\nThis field is alpha and can be changed or removed without notice.",
+    "ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.",
+    "FieldsType is the discriminator for the different fields format and version. There is currently only one possible value: \"FieldsV1\"",
+    "FieldsV1 holds the first JSON version format as described in the \"FieldsV1\" type.",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency",
+    "An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "SelfLink is a URL representing this object. Populated by the system. Read-only.",
+    "SelfLink is a URL representing this object. Populated by the system. Read-only.\n\nDEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is planned to be removed in 1.21 release.",
+    "Required: Monitors is a collection of Ceph monitors More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it",
+    "Required: Monitors is a collection of Ceph monitors More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: SecretRef is reference to the authentication secret for User, default is empty. More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: SecretRef is reference to the authentication secret for User, default is empty. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: User is the rados user name, default is admin More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: User is the rados user name, default is admin More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it",
+    "Cinder represents a cinder volume attached and mounted on kubelets host machine More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md",
+    "Cinder represents a cinder volume attached and mounted on kubelets host machine. More info: https://examples.k8s.io/mysql-cinder-pd/README.md",
+    "Filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md",
+    "Filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md",
+    "Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md",
+    "Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/mysql-cinder-pd/README.md",
+    "volume id used to identify the volume in cinder More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md",
+    "volume id used to identify the volume in cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md",
+    "Glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md",
+    "Glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime. More info: https://examples.k8s.io/volumes/glusterfs/README.md",
+    "EndpointsName is the endpoint name that details Glusterfs topology. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod",
+    "EndpointsName is the endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod",
+    "Path is the Glusterfs volume path. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod",
+    "Path is the Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod",
+    "ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod",
+    "ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod",
+    "ISCSI represents an ISCSI Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://releases.k8s.io/HEAD/examples/volumes/iscsi/README.md",
+    "ISCSI represents an ISCSI Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://examples.k8s.io/volumes/iscsi/README.md",
+    "RBD represents a Rados Block Device mount on the host that shares a pod's lifetime. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md",
+    "RBD represents a Rados Block Device mount on the host that shares a pod's lifetime. More info: https://examples.k8s.io/volumes/rbd/README.md",
+    "The rados image name. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it",
+    "The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
+    "Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it",
+    "Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
+    "A collection of Ceph monitors. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it",
+    "A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
+    "The rados pool name. Default is rbd. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it",
+    "The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
+    "ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it",
+    "ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
+    "SecretRef is name of the authentication secret for RBDUser. If provided overrides keyring. Default is nil. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it",
+    "SecretRef is name of the authentication secret for RBDUser. If provided overrides keyring. Default is nil. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
+    "The rados user name. Default is admin. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it",
+    "The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
+    "An initializer is a controller which enforces some system invariant at object creation time. This field is a list of initializers that have not yet acted on this object. If nil or empty, this object has been completely initialized. Otherwise, the object is considered uninitialized and is hidden (in list/watch and get calls) from clients that haven't explicitly asked to observe uninitialized objects.\n\nWhen an object is created, the system will populate this list with the current set of initializers. Only privileged users may set or modify this list. Once it is empty, it may not be modified further by any user.\n\nDEPRECATED - initializers are an alpha field and will be removed in v1.15.",
+    "Fields identifies a set of fields.",
+    "remainingItemCount is the number of subsequent items in the list which are not included in this list response. If the list request contained label or field selectors, then the number of remaining items is unknown and the field will be left unset and omitted during serialization. If the list is complete (either because it is not chunking or because this is the last chunk), then there are no more remaining items and this field will be left unset and omitted during serialization. Servers older than v1.15 do not set this field. The intended use of the remainingItemCount is *estimating* the size of a collection. Clients should not rely on the remainingItemCount to be set or to be exact.\n\nThis field is alpha and can be changed or removed without notice.",
+    "Specify whether the ConfigMap or it's key must be defined",
+    "Specify whether the ConfigMap or its key must be defined",
+    "Specify whether the Secret or it's key must be defined",
+    "Specify whether the Secret or its key must be defined",
+    "Expanded path within the volume from which the container's volume should be mounted. Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded using the container's environment. Defaults to \"\" (volume's root). SubPathExpr and SubPath are mutually exclusive. This field is alpha in 1.14.",
+    "Specify whether the ConfigMap or it's keys must be defined",
+    "Specify whether the ConfigMap or its keys must be defined",
+    "Specify whether the Secret or it's keys must be defined",
+    "Specify whether the Secret or its keys must be defined",
+    "An initializer is a controller which enforces some system invariant at object creation time. This field is a list of initializers that have not yet acted on this object. If nil or empty, this object has been completely initialized. Otherwise, the object is considered uninitialized and is hidden (in list/watch and get calls) from clients that haven't explicitly asked to observe uninitialized objects.\n\nWhen an object is created, the system will populate this list with the current set of initializers. Only privileged users may set or modify this list. Once it is empty, it may not be modified further by any user.",
+    "Tenant owning the given Quobyte volume in the Backend Used with dynamically provisioned Quobyte volumes, value is set by the plugin",
+    "continue may be set if the user set a limit on the number of items returned, and indicates that the server has more data available. The value is opaque and may be used to issue another request to the endpoint that served this list to retrieve the next set of available objects. Continuing a list may not be possible if the server configuration has changed or more than a few minutes have passed. The resourceVersion field returned when using this continue value will be identical to the value in the first response.",
+    "continue may be set if the user set a limit on the number of items returned, and indicates that the server has more data available. The value is opaque and may be used to issue another request to the endpoint that served this list to retrieve the next set of available objects. Continuing a consistent list may not be possible if the server configuration has changed or more than a few minutes have passed. The resourceVersion field returned when using this continue value will be identical to the value in the first response, unless you have received this token from an error message.",
+    "mountPropagation determines how mounts are propagated from the host to container and the other way around. When not set, MountPropagationHostToContainer is used. This field is beta in 1.10.",
+    "mountPropagation determines how mounts are propagated from the host to container and the other way around. When not set, MountPropagationNone is used. This field is beta in 1.10.",
+    "Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified.",
+    "Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Default is \"xfs\".",
+    "Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned.",
+    "Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned. Default is ThinProvisioned.",
+    "Optional: points to a secret object containing parameters used to connect to OpenStack.",
+    "GitRepo represents a git repository at a particular revision.",
+    "GitRepo represents a git repository at a particular revision. DEPRECATED: GitRepo is deprecated. To provision a container with a git repo, mount an EmptyDir into an InitContainer that clones the repo using git, then mount the EmptyDir into the Pod's container.",
+    "information about the serviceAccountToken data to project"
+  ]
+}

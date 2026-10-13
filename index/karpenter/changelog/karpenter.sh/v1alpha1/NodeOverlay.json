@@ -1,0 +1,46 @@
+{
+  "versions": {
+    "v1.13.0": {
+      "descriptionChanged": [
+        "spec.requirements"
+      ],
+      "descriptions": {
+        "spec.requirements": [
+          0,
+          1
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.priceAdjustment",
+        "spec.requirements.operator",
+        "spec.requirements.values"
+      ],
+      "descriptions": {
+        "spec.priceAdjustment": [
+          2,
+          3
+        ],
+        "spec.requirements.operator": [
+          4,
+          5
+        ],
+        "spec.requirements.values": [
+          6,
+          7
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Requirements constrain when this NodeOverlay is applied during scheduling simulations.\nThese requirements can match:\n- Well-known labels (e.g., node.kubernetes.io/instance-type, karpenter.sh/nodepool)\n- Custom labels from NodePool's spec.template.labels",
+    "requirements constrain when this NodeOverlay is applied during scheduling simulations.\nThese requirements can match:\n- Well-known labels (e.g., node.kubernetes.io/instance-type, karpenter.sh/nodepool)\n- Custom labels from NodePool's spec.template.labels",
+    "PriceAdjustment specifies the price change for matching instance types. Accepts either:\n- A fixed price modifier (e.g., -0.5, 1.2)\n- A percentage modifier (e.g., +10% for increase, -15% for decrees)",
+    "PriceAdjustment specifies the price change for matching instance types. Accepts either:\n- A fixed price modifier (e.g., -0.5, 1.2)\n- A percentage modifier (e.g., +10% for increase, -15% for decrease)",
+    "Represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.",
+    "Represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists, DoesNotExist. Gt, Lt, Gte, and Lte.",
+    "An array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. If the operator is Gt or Lt, the values\narray must have a single element, which will be interpreted as an integer.\nThis array is replaced during a strategic merge patch.",
+    "An array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. If the operator is Gt, Lt, Gte, or Lte, the values\narray must have a single element, which will be interpreted as an integer."
+  ]
+}

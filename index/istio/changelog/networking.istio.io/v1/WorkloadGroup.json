@@ -1,0 +1,81 @@
+{
+  "versions": {
+    "1.25.0": {
+      "added": {
+        "spec.probe.grpc": "object",
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "spec.probe.grpc": [
+          null,
+          0
+        ],
+        "status.conditions.observedGeneration": [
+          null,
+          1
+        ],
+        "status.observedGeneration": [
+          2,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "required": [
+        "spec",
+        "spec.probe.exec.command"
+      ],
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "spec": [
+          null,
+          3
+        ],
+        "spec.probe.exec.command": [
+          null,
+          4
+        ],
+        "status.conditions": [
+          null,
+          5
+        ],
+        "status.observedGeneration": [
+          null,
+          2
+        ],
+        "status.validationMessages": [
+          null,
+          6
+        ]
+      }
+    },
+    "1.23.0": {
+      "descriptionChanged": [
+        "spec"
+      ],
+      "descriptions": {
+        "spec": [
+          7,
+          3
+        ]
+      }
+    }
+  },
+  "texts": [
+    "GRPC call is made and response/error is used to determine health.",
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Describes a collection of workload instances. See more details at: https://istio.io/docs/reference/config/networking/workload-group.html",
+    "Command to run.",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers.",
+    "`WorkloadGroup` enables specifying the properties of a single workload for bootstrap and provides a template for `WorkloadEntry`, similar to how `Deployment` specifies properties of workloads via `Pod` templates."
+  ]
+}

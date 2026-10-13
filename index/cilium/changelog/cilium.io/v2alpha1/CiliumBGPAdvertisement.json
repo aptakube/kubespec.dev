@@ -1,0 +1,149 @@
+{
+  "versions": {
+    "1.18.0": {
+      "descriptionChanged": [
+        "spec.advertisements.selector"
+      ],
+      "added": {
+        "spec.advertisements.service.aggregationLengthIPv4": "integer",
+        "spec.advertisements.service.aggregationLengthIPv6": "integer"
+      },
+      "descriptions": {
+        "spec.advertisements.selector": [
+          0,
+          1
+        ],
+        "spec.advertisements.service.aggregationLengthIPv4": [
+          null,
+          2
+        ],
+        "spec.advertisements.service.aggregationLengthIPv6": [
+          null,
+          3
+        ]
+      }
+    },
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.advertisements.attributes",
+        "spec.advertisements.attributes.communities",
+        "spec.advertisements.attributes.communities.wellKnown",
+        "spec.advertisements.attributes.localPreference",
+        "spec.advertisements.selector",
+        "spec.advertisements.selector.matchExpressions.operator",
+        "spec.advertisements.selector.matchExpressions.values",
+        "spec.advertisements.selector.matchLabels"
+      ],
+      "required": [
+        "spec.advertisements.service.addresses"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          4,
+          5
+        ],
+        "kind": [
+          6,
+          7
+        ],
+        "spec.advertisements.attributes": [
+          8,
+          9
+        ],
+        "spec.advertisements.attributes.communities": [
+          10,
+          11
+        ],
+        "spec.advertisements.attributes.communities.wellKnown": [
+          12,
+          13
+        ],
+        "spec.advertisements.attributes.localPreference": [
+          14,
+          15
+        ],
+        "spec.advertisements.selector": [
+          16,
+          0
+        ],
+        "spec.advertisements.selector.matchExpressions.operator": [
+          17,
+          18
+        ],
+        "spec.advertisements.selector.matchExpressions.values": [
+          19,
+          20
+        ],
+        "spec.advertisements.selector.matchLabels": [
+          21,
+          22
+        ],
+        "spec.advertisements.service.addresses": [
+          null,
+          23
+        ]
+      }
+    },
+    "1.16.0": {
+      "added": {
+        "spec.advertisements.attributes.communities": "object",
+        "spec.advertisements.service": "object"
+      },
+      "descriptionChanged": [
+        "spec.advertisements.selector"
+      ],
+      "removed": {
+        "spec.advertisements.attributes.community": "object"
+      },
+      "descriptions": {
+        "spec.advertisements.attributes.communities": [
+          null,
+          10
+        ],
+        "spec.advertisements.selector": [
+          24,
+          16
+        ],
+        "spec.advertisements.service": [
+          null,
+          25
+        ],
+        "spec.advertisements.attributes.community": [
+          26,
+          null
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Selector is a label selector to select objects of the type specified by AdvertisementType.\nIf not specified, no objects of the type specified by AdvertisementType are selected for advertisement.",
+    "Selector is a label selector to select objects of the type specified by AdvertisementType.\nFor the PodCIDR AdvertisementType it is not applicable. For other advertisement types,\nif not specified, no objects of the type specified by AdvertisementType are selected for advertisement.",
+    "IPv4 mask to aggregate BGP route advertisements of service",
+    "IPv6 mask to aggregate BGP route advertisements of service",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Attributes defines additional attributes to set to the advertised routes. If not specified, no additional attributes are set.",
+    "Attributes defines additional attributes to set to the advertised routes.\nIf not specified, no additional attributes are set.",
+    "Communities sets the community attributes in the route. If not specified, no community attribute is set.",
+    "Communities sets the community attributes in the route.\nIf not specified, no community attribute is set.",
+    "WellKnown holds a list \"standard\" 32-bit BGP Communities Attribute (RFC 1997) values defined as well-known string aliases to their numeric values.",
+    "WellKnown holds a list \"standard\" 32-bit BGP Communities Attribute (RFC 1997) values defined as\nwell-known string aliases to their numeric values.",
+    "LocalPreference sets the local preference attribute in the route. If not specified, no local preference attribute is set.",
+    "LocalPreference sets the local preference attribute in the route.\nIf not specified, no local preference attribute is set.",
+    "Selector is a label selector to select objects of the type specified by AdvertisementType. If not specified, no objects of the type specified by AdvertisementType are selected for advertisement.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "Addresses is a list of service address types which needs to be advertised via BGP.",
+    "Selector is a label selector to select objects of the type specified by AdvertisementType. If not specified, all objects of the type specified by AdvertisementType are selected for advertisement.",
+    "Service defines configuration options for advertisementType service.",
+    "Community sets the community attribute in the route. If not specified, no community attribute is set."
+  ]
+}

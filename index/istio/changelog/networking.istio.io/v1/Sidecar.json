@@ -1,0 +1,129 @@
+{
+  "versions": {
+    "1.31.0": {
+      "added": {
+        "spec.inboundConnectionPool.http.http2KeepAlive": "object",
+        "spec.ingress.connectionPool.http.http2KeepAlive": "object",
+        "spec.ingress.tls.insecureSkipVerify": "boolean"
+      },
+      "descriptions": {
+        "spec.inboundConnectionPool.http.http2KeepAlive": [
+          null,
+          0
+        ],
+        "spec.ingress.connectionPool.http.http2KeepAlive": [
+          null,
+          0
+        ],
+        "spec.ingress.tls.insecureSkipVerify": [
+          null,
+          1
+        ]
+      }
+    },
+    "1.28.0": {
+      "added": {
+        "spec.ingress.tls.caCertCredentialName": "string"
+      },
+      "descriptions": {
+        "spec.ingress.tls.caCertCredentialName": [
+          null,
+          2
+        ]
+      }
+    },
+    "1.27.0": {
+      "descriptionChanged": [
+        "spec.ingress.tls.tlsCertificates",
+        "spec.ingress.tls.tlsCertificates.caCertificates"
+      ],
+      "descriptions": {
+        "spec.ingress.tls.tlsCertificates": [
+          3,
+          4
+        ],
+        "spec.ingress.tls.tlsCertificates.caCertificates": [
+          5,
+          null
+        ]
+      }
+    },
+    "1.26.0": {
+      "added": {
+        "spec.ingress.tls.credentialNames": "string[]",
+        "spec.ingress.tls.tlsCertificates": "object[]"
+      },
+      "descriptions": {
+        "spec.ingress.tls.credentialNames": [
+          null,
+          6
+        ],
+        "spec.ingress.tls.tlsCertificates": [
+          null,
+          3
+        ]
+      }
+    },
+    "1.25.0": {
+      "added": {
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "status.conditions.observedGeneration": [
+          null,
+          7
+        ],
+        "status.observedGeneration": [
+          8,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "descriptionChanged": [
+        "spec.outboundTrafficPolicy"
+      ],
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "spec.outboundTrafficPolicy": [
+          9,
+          10
+        ],
+        "status.conditions": [
+          null,
+          11
+        ],
+        "status.observedGeneration": [
+          null,
+          8
+        ],
+        "status.validationMessages": [
+          null,
+          12
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Configure HTTP/2 PING frames for upstream connections.",
+    "Optional: If set to true, the proxy will try to validate the certificate, but even if the validation fails, it will allow the connection through.",
+    "For mutual TLS, the name of the secret or the configmap that holds CA certificates.",
+    "Only one of `server_certificate`, `private_key`, `ca_certificates` or `credential_name` or `credential_names` or `tls_certificates` should be specified.",
+    "Only one of `server_certificate`, `private_key` or `credential_name` or `credential_names` or `tls_certificates` should be specified.",
+    "REQUIRED if mode is `MUTUAL` or `OPTIONAL_MUTUAL`.",
+    "Same as CredentialName but for multiple certificates.",
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Configuration for the outbound traffic policy.",
+    "Set the default behavior of the sidecar for handling outbound traffic from the application.",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers."
+  ]
+}

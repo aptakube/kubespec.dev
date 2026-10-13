@@ -1,0 +1,363 @@
+{
+  "versions": {
+    "v2.7.0": {
+      "required": [
+        "status.artifact.digest"
+      ],
+      "descriptions": {
+        "status.artifact.digest": [
+          null,
+          0
+        ]
+      }
+    },
+    "v2.4.0": {
+      "descriptionChanged": [
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "status.conditions.type": [
+          1,
+          2
+        ]
+      }
+    },
+    "v2.3.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.accessFrom",
+        "spec.accessFrom.namespaceSelectors",
+        "spec.accessFrom.namespaceSelectors.matchLabels",
+        "spec.chart",
+        "spec.interval",
+        "spec.reconcileStrategy",
+        "spec.sourceRef.kind",
+        "spec.suspend",
+        "spec.valuesFile",
+        "spec.valuesFiles",
+        "spec.verify",
+        "spec.verify.matchOIDCIdentity",
+        "spec.verify.matchOIDCIdentity.issuer",
+        "spec.verify.matchOIDCIdentity.subject",
+        "spec.verify.secretRef",
+        "spec.version",
+        "status.artifact.lastUpdateTime",
+        "status.artifact.path",
+        "status.artifact.revision",
+        "status.artifact.url",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type",
+        "status.lastHandledReconcileAt",
+        "status.observedChartName",
+        "status.observedGeneration",
+        "status.observedSourceArtifactRevision",
+        "status.url"
+      ],
+      "added": {
+        "spec.ignoreMissingValuesFiles": "boolean",
+        "status.observedValuesFiles": "string[]"
+      },
+      "descriptions": {
+        "apiVersion": [
+          3,
+          4
+        ],
+        "kind": [
+          5,
+          6
+        ],
+        "spec.accessFrom": [
+          7,
+          8
+        ],
+        "spec.accessFrom.namespaceSelectors": [
+          9,
+          10
+        ],
+        "spec.accessFrom.namespaceSelectors.matchLabels": [
+          11,
+          12
+        ],
+        "spec.chart": [
+          13,
+          14
+        ],
+        "spec.ignoreMissingValuesFiles": [
+          null,
+          15
+        ],
+        "spec.interval": [
+          16,
+          17
+        ],
+        "spec.reconcileStrategy": [
+          18,
+          19
+        ],
+        "spec.sourceRef.kind": [
+          20,
+          21
+        ],
+        "spec.suspend": [
+          22,
+          23
+        ],
+        "spec.valuesFile": [
+          24,
+          25
+        ],
+        "spec.valuesFiles": [
+          26,
+          27
+        ],
+        "spec.verify": [
+          28,
+          29
+        ],
+        "spec.verify.matchOIDCIdentity": [
+          30,
+          31
+        ],
+        "spec.verify.matchOIDCIdentity.issuer": [
+          32,
+          33
+        ],
+        "spec.verify.matchOIDCIdentity.subject": [
+          34,
+          35
+        ],
+        "spec.verify.secretRef": [
+          36,
+          37
+        ],
+        "spec.version": [
+          38,
+          39
+        ],
+        "status.artifact.lastUpdateTime": [
+          40,
+          41
+        ],
+        "status.artifact.path": [
+          42,
+          43
+        ],
+        "status.artifact.revision": [
+          44,
+          45
+        ],
+        "status.artifact.url": [
+          46,
+          47
+        ],
+        "status.conditions.lastTransitionTime": [
+          48,
+          49
+        ],
+        "status.conditions.message": [
+          50,
+          51
+        ],
+        "status.conditions.observedGeneration": [
+          52,
+          53
+        ],
+        "status.conditions.reason": [
+          54,
+          55
+        ],
+        "status.conditions.type": [
+          56,
+          1
+        ],
+        "status.lastHandledReconcileAt": [
+          57,
+          58
+        ],
+        "status.observedChartName": [
+          59,
+          60
+        ],
+        "status.observedGeneration": [
+          61,
+          62
+        ],
+        "status.observedSourceArtifactRevision": [
+          63,
+          64
+        ],
+        "status.observedValuesFiles": [
+          null,
+          65
+        ],
+        "status.url": [
+          66,
+          67
+        ]
+      }
+    },
+    "v2.2.0": {
+      "added": {
+        "spec.verify.matchOIDCIdentity": "object[]"
+      },
+      "descriptions": {
+        "spec.verify.matchOIDCIdentity": [
+          null,
+          30
+        ]
+      }
+    },
+    "v2.1.0": {
+      "descriptionChanged": [
+        "spec.interval"
+      ],
+      "descriptions": {
+        "spec.interval": [
+          68,
+          16
+        ]
+      }
+    },
+    "v2.0.0": {
+      "required": [
+        "status.artifact.lastUpdateTime",
+        "status.artifact.revision"
+      ],
+      "removed": {
+        "status.artifact.checksum": "string"
+      },
+      "descriptions": {
+        "status.artifact.lastUpdateTime": [
+          null,
+          40
+        ],
+        "status.artifact.revision": [
+          null,
+          44
+        ],
+        "status.artifact.checksum": [
+          69,
+          null
+        ]
+      }
+    },
+    "v0.40.0": {
+      "descriptionChanged": [
+        "status.artifact.checksum"
+      ],
+      "added": {
+        "status.artifact.digest": "string"
+      },
+      "descriptions": {
+        "status.artifact.checksum": [
+          70,
+          69
+        ],
+        "status.artifact.digest": [
+          null,
+          0
+        ]
+      }
+    },
+    "v0.36.0": {
+      "added": {
+        "spec.verify": "object"
+      },
+      "descriptions": {
+        "spec.verify": [
+          null,
+          28
+        ]
+      }
+    },
+    "v0.32.0": {
+      "added": {
+        "status.artifact.metadata": "map[string]string"
+      },
+      "descriptions": {
+        "status.artifact.metadata": [
+          null,
+          71
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Digest is the digest of the file in the form of '<algorithm>:<checksum>'.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "AccessFrom specifies an Access Control List for allowing cross-namespace references to this object. NOTE: Not implemented, provisional as of https://github.com/fluxcd/flux2/pull/2092",
+    "AccessFrom specifies an Access Control List for allowing cross-namespace\nreferences to this object.\nNOTE: Not implemented, provisional as of https://github.com/fluxcd/flux2/pull/2092",
+    "NamespaceSelectors is the list of namespace selectors to which this ACL applies. Items in this list are evaluated using a logical OR operation.",
+    "NamespaceSelectors is the list of namespace selectors to which this ACL applies.\nItems in this list are evaluated using a logical OR operation.",
+    "MatchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "MatchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "Chart is the name or path the Helm chart is available at in the SourceRef.",
+    "Chart is the name or path the Helm chart is available at in the\nSourceRef.",
+    "IgnoreMissingValuesFiles controls whether to silently ignore missing values\nfiles rather than failing.",
+    "Interval at which the HelmChart SourceRef is checked for updates. This interval is approximate and may be subject to jitter to ensure efficient use of resources.",
+    "Interval at which the HelmChart SourceRef is checked for updates.\nThis interval is approximate and may be subject to jitter to ensure\nefficient use of resources.",
+    "ReconcileStrategy determines what enables the creation of a new artifact. Valid values are ('ChartVersion', 'Revision'). See the documentation of the values for an explanation on their behavior. Defaults to ChartVersion when omitted.",
+    "ReconcileStrategy determines what enables the creation of a new artifact.\nValid values are ('ChartVersion', 'Revision').\nSee the documentation of the values for an explanation on their behavior.\nDefaults to ChartVersion when omitted.",
+    "Kind of the referent, valid values are ('HelmRepository', 'GitRepository', 'Bucket').",
+    "Kind of the referent, valid values are ('HelmRepository', 'GitRepository',\n'Bucket').",
+    "Suspend tells the controller to suspend the reconciliation of this source.",
+    "Suspend tells the controller to suspend the reconciliation of this\nsource.",
+    "ValuesFile is an alternative values file to use as the default chart values, expected to be a relative path in the SourceRef. Deprecated in favor of ValuesFiles, for backwards compatibility the file specified here is merged before the ValuesFiles items. Ignored when omitted.",
+    "ValuesFile is an alternative values file to use as the default chart\nvalues, expected to be a relative path in the SourceRef. Deprecated in\nfavor of ValuesFiles, for backwards compatibility the file specified here\nis merged before the ValuesFiles items. Ignored when omitted.",
+    "ValuesFiles is an alternative list of values files to use as the chart values (values.yaml is not included by default), expected to be a relative path in the SourceRef. Values files are merged in the order of this list with the last file overriding the first. Ignored when omitted.",
+    "ValuesFiles is an alternative list of values files to use as the chart\nvalues (values.yaml is not included by default), expected to be a\nrelative path in the SourceRef.\nValues files are merged in the order of this list with the last file\noverriding the first. Ignored when omitted.",
+    "Verify contains the secret name containing the trusted public keys used to verify the signature and specifies which provider to use to check whether OCI image is authentic. This field is only supported when using HelmRepository source with spec.type 'oci'. Chart dependencies, which are not bundled in the umbrella chart artifact, are not verified.",
+    "Verify contains the secret name containing the trusted public keys\nused to verify the signature and specifies which provider to use to check\nwhether OCI image is authentic.\nThis field is only supported when using HelmRepository source with spec.type 'oci'.\nChart dependencies, which are not bundled in the umbrella chart artifact, are not verified.",
+    "MatchOIDCIdentity specifies the identity matching criteria to use while verifying an OCI artifact which was signed using Cosign keyless signing. The artifact's identity is deemed to be verified if any of the specified matchers match against the identity.",
+    "MatchOIDCIdentity specifies the identity matching criteria to use\nwhile verifying an OCI artifact which was signed using Cosign keyless\nsigning. The artifact's identity is deemed to be verified if any of the\nspecified matchers match against the identity.",
+    "Issuer specifies the regex pattern to match against to verify the OIDC issuer in the Fulcio certificate. The pattern must be a valid Go regular expression.",
+    "Issuer specifies the regex pattern to match against to verify\nthe OIDC issuer in the Fulcio certificate. The pattern must be a\nvalid Go regular expression.",
+    "Subject specifies the regex pattern to match against to verify the identity subject in the Fulcio certificate. The pattern must be a valid Go regular expression.",
+    "Subject specifies the regex pattern to match against to verify\nthe identity subject in the Fulcio certificate. The pattern must\nbe a valid Go regular expression.",
+    "SecretRef specifies the Kubernetes Secret containing the trusted public keys.",
+    "SecretRef specifies the Kubernetes Secret containing the\ntrusted public keys.",
+    "Version is the chart version semver expression, ignored for charts from GitRepository and Bucket sources. Defaults to latest when omitted.",
+    "Version is the chart version semver expression, ignored for charts from\nGitRepository and Bucket sources. Defaults to latest when omitted.",
+    "LastUpdateTime is the timestamp corresponding to the last update of the Artifact.",
+    "LastUpdateTime is the timestamp corresponding to the last update of the\nArtifact.",
+    "Path is the relative file path of the Artifact. It can be used to locate the file in the root of the Artifact storage on the local file system of the controller managing the Source.",
+    "Path is the relative file path of the Artifact. It can be used to locate\nthe file in the root of the Artifact storage on the local file system of\nthe controller managing the Source.",
+    "Revision is a human-readable identifier traceable in the origin source system. It can be a Git commit SHA, Git tag, a Helm chart version, etc.",
+    "Revision is a human-readable identifier traceable in the origin source\nsystem. It can be a Git commit SHA, Git tag, a Helm chart version, etc.",
+    "URL is the HTTP address of the Artifact as exposed by the controller managing the Source. It can be used to retrieve the Artifact for consumption, e.g. by another controller applying the Artifact contents.",
+    "URL is the HTTP address of the Artifact as exposed by the controller\nmanaging the Source. It can be used to retrieve the Artifact for\nconsumption, e.g. by another controller applying the Artifact contents.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change of the annotation value can be detected.",
+    "LastHandledReconcileAt holds the value of the most recent\nreconcile request value, so a change of the annotation value\ncan be detected.",
+    "ObservedChartName is the last observed chart name as specified by the resolved chart reference.",
+    "ObservedChartName is the last observed chart name as specified by the\nresolved chart reference.",
+    "ObservedGeneration is the last observed generation of the HelmChart object.",
+    "ObservedGeneration is the last observed generation of the HelmChart\nobject.",
+    "ObservedSourceArtifactRevision is the last observed Artifact.Revision of the HelmChartSpec.SourceRef.",
+    "ObservedSourceArtifactRevision is the last observed Artifact.Revision\nof the HelmChartSpec.SourceRef.",
+    "ObservedValuesFiles are the observed value files of the last successful\nreconciliation.\nIt matches the chart in the last successfully reconciled artifact.",
+    "URL is the dynamic fetch link for the latest Artifact. It is provided on a \"best effort\" basis, and using the precise BucketStatus.Artifact data is recommended.",
+    "URL is the dynamic fetch link for the latest Artifact.\nIt is provided on a \"best effort\" basis, and using the precise\nBucketStatus.Artifact data is recommended.",
+    "Interval is the interval at which to check the Source for updates.",
+    "Checksum is the SHA256 checksum of the Artifact file. Deprecated: use Artifact.Digest instead.",
+    "Checksum is the SHA256 checksum of the Artifact file.",
+    "Metadata holds upstream information such as OCI annotations."
+  ]
+}

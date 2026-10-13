@@ -1,0 +1,412 @@
+{
+  "versions": {
+    "v1.13.0": {
+      "added": {
+        "spec.unhealthyMachineConditions": "object[]"
+      },
+      "descriptions": {
+        "spec.unhealthyMachineConditions": [
+          null,
+          0
+        ]
+      }
+    },
+    "v1.10.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.maxUnhealthy",
+        "spec.selector",
+        "spec.unhealthyConditions.status",
+        "spec.unhealthyConditions.timeout",
+        "spec.unhealthyConditions.type",
+        "spec.unhealthyRange",
+        "status",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason",
+        "status.currentHealthy",
+        "status.expectedMachines"
+      ],
+      "descriptions": {
+        "spec": [
+          1,
+          2
+        ],
+        "spec.maxUnhealthy": [
+          3,
+          4
+        ],
+        "spec.selector": [
+          5,
+          6
+        ],
+        "spec.unhealthyConditions.status": [
+          null,
+          7
+        ],
+        "spec.unhealthyConditions.timeout": [
+          null,
+          8
+        ],
+        "spec.unhealthyConditions.type": [
+          null,
+          9
+        ],
+        "spec.unhealthyRange": [
+          10,
+          11
+        ],
+        "status": [
+          12,
+          13
+        ],
+        "status.conditions.lastTransitionTime": [
+          14,
+          15
+        ],
+        "status.conditions.message": [
+          16,
+          17
+        ],
+        "status.conditions.reason": [
+          18,
+          19
+        ],
+        "status.currentHealthy": [
+          20,
+          21
+        ],
+        "status.expectedMachines": [
+          22,
+          23
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.clusterName",
+        "spec.maxUnhealthy",
+        "spec.nodeStartupTimeout",
+        "spec.remediationTemplate",
+        "spec.remediationTemplate.fieldPath",
+        "spec.unhealthyConditions",
+        "spec.unhealthyRange",
+        "status.conditions",
+        "status.conditions.reason",
+        "status.conditions.severity",
+        "status.conditions.status",
+        "status.conditions.type",
+        "status.observedGeneration",
+        "status.remediationsAllowed",
+        "status.targets"
+      ],
+      "added": {
+        "status.v1beta2": "object"
+      },
+      "descriptions": {
+        "spec.clusterName": [
+          24,
+          25
+        ],
+        "spec.maxUnhealthy": [
+          26,
+          3
+        ],
+        "spec.nodeStartupTimeout": [
+          27,
+          28
+        ],
+        "spec.remediationTemplate": [
+          29,
+          30
+        ],
+        "spec.remediationTemplate.fieldPath": [
+          31,
+          32
+        ],
+        "spec.unhealthyConditions": [
+          33,
+          34
+        ],
+        "spec.unhealthyRange": [
+          35,
+          10
+        ],
+        "status.conditions": [
+          36,
+          37
+        ],
+        "status.conditions.reason": [
+          38,
+          18
+        ],
+        "status.conditions.severity": [
+          39,
+          40
+        ],
+        "status.conditions.status": [
+          41,
+          7
+        ],
+        "status.conditions.type": [
+          42,
+          43
+        ],
+        "status.observedGeneration": [
+          44,
+          45
+        ],
+        "status.remediationsAllowed": [
+          46,
+          47
+        ],
+        "status.targets": [
+          48,
+          49
+        ],
+        "status.v1beta2": [
+          null,
+          50
+        ]
+      }
+    },
+    "v1.8.0": {
+      "descriptionChanged": [
+        "spec.maxUnhealthy",
+        "spec.unhealthyRange"
+      ],
+      "optional": [
+        "spec.unhealthyConditions"
+      ],
+      "descriptions": {
+        "spec.maxUnhealthy": [
+          51,
+          26
+        ],
+        "spec.unhealthyConditions": [
+          null,
+          33
+        ],
+        "spec.unhealthyRange": [
+          52,
+          35
+        ]
+      }
+    },
+    "v1.7.4": {
+      "descriptionChanged": [
+        "spec.nodeStartupTimeout"
+      ],
+      "descriptions": {
+        "spec.nodeStartupTimeout": [
+          53,
+          27
+        ]
+      }
+    },
+    "v1.7.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.maxUnhealthy",
+        "spec.nodeStartupTimeout",
+        "spec.remediationTemplate",
+        "spec.remediationTemplate.fieldPath",
+        "spec.remediationTemplate.kind",
+        "spec.remediationTemplate.name",
+        "spec.remediationTemplate.namespace",
+        "spec.remediationTemplate.resourceVersion",
+        "spec.remediationTemplate.uid",
+        "spec.selector.matchExpressions.operator",
+        "spec.selector.matchExpressions.values",
+        "spec.selector.matchLabels",
+        "spec.unhealthyConditions",
+        "spec.unhealthyRange",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason",
+        "status.conditions.severity",
+        "status.conditions.type",
+        "status.remediationsAllowed"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          54,
+          55
+        ],
+        "kind": [
+          56,
+          57
+        ],
+        "spec.maxUnhealthy": [
+          58,
+          51
+        ],
+        "spec.nodeStartupTimeout": [
+          59,
+          53
+        ],
+        "spec.remediationTemplate": [
+          60,
+          29
+        ],
+        "spec.remediationTemplate.fieldPath": [
+          61,
+          31
+        ],
+        "spec.remediationTemplate.kind": [
+          62,
+          63
+        ],
+        "spec.remediationTemplate.name": [
+          64,
+          65
+        ],
+        "spec.remediationTemplate.namespace": [
+          66,
+          67
+        ],
+        "spec.remediationTemplate.resourceVersion": [
+          68,
+          69
+        ],
+        "spec.remediationTemplate.uid": [
+          70,
+          71
+        ],
+        "spec.selector.matchExpressions.operator": [
+          72,
+          73
+        ],
+        "spec.selector.matchExpressions.values": [
+          74,
+          75
+        ],
+        "spec.selector.matchLabels": [
+          76,
+          77
+        ],
+        "spec.unhealthyConditions": [
+          78,
+          33
+        ],
+        "spec.unhealthyRange": [
+          79,
+          52
+        ],
+        "status.conditions.lastTransitionTime": [
+          80,
+          14
+        ],
+        "status.conditions.message": [
+          81,
+          16
+        ],
+        "status.conditions.reason": [
+          82,
+          38
+        ],
+        "status.conditions.severity": [
+          83,
+          39
+        ],
+        "status.conditions.type": [
+          84,
+          42
+        ],
+        "status.remediationsAllowed": [
+          85,
+          46
+        ]
+      }
+    }
+  },
+  "texts": [
+    "unhealthyMachineConditions contains a list of the machine conditions that determine\nwhether a machine is considered unhealthy.  The conditions are combined in a\nlogical OR, i.e. if any of the conditions is met, the machine is unhealthy.",
+    "Specification of machine health check policy",
+    "spec is the specification of machine health check policy",
+    "Any further remediation is only allowed if at most \"MaxUnhealthy\" machines selected by\n\"selector\" are not healthy.\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/issues/10722 for more details.",
+    "maxUnhealthy specifies the maximum number of unhealthy machines allowed.\nAny further remediation is only allowed if at most \"maxUnhealthy\" machines selected by\n\"selector\" are not healthy.\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/issues/10722 for more details.",
+    "Label selector to match machines whose health will be exercised",
+    "selector is a label selector to match machines whose health will be exercised",
+    "status of the condition, one of True, False, Unknown.",
+    "timeout is the duration that a node must be in a given status for,\nafter which the node is considered unhealthy.\nFor example, with a value of \"1h\", the node must match the status\nfor at least 1 hour before being considered unhealthy.",
+    "type of Node condition",
+    "Any further remediation is only allowed if the number of machines selected by \"selector\" as not healthy\nis within the range of \"UnhealthyRange\". Takes precedence over MaxUnhealthy.\nEg. \"[3-5]\" - This means that remediation will be allowed only when:\n(a) there are at least 3 unhealthy machines (and)\n(b) there are at most 5 unhealthy machines\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/issues/10722 for more details.",
+    "unhealthyRange specifies the range of unhealthy machines allowed.\nAny further remediation is only allowed if the number of machines selected by \"selector\" as not healthy\nis within the range of \"unhealthyRange\". Takes precedence over maxUnhealthy.\nEg. \"[3-5]\" - This means that remediation will be allowed only when:\n(a) there are at least 3 unhealthy machines (and)\n(b) there are at most 5 unhealthy machines\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/issues/10722 for more details.",
+    "Most recently observed status of MachineHealthCheck resource",
+    "status is the most recently observed status of MachineHealthCheck resource",
+    "Last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed. If that is not known, then using the time when\nthe API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed. If that is not known, then using the time when\nthe API field changed is acceptable.",
+    "A human readable message indicating details about the transition.\nThis field may be empty.",
+    "message is a human readable message indicating details about the transition.\nThis field may be empty.",
+    "The reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may be empty.",
+    "reason is the reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may be empty.",
+    "total number of healthy machines counted by this machine health check",
+    "currentHealthy is the total number of healthy machines counted by this machine health check",
+    "total number of machines counted by this machine health check",
+    "expectedMachines is the total number of machines counted by this machine health check",
+    "ClusterName is the name of the Cluster this object belongs to.",
+    "clusterName is the name of the Cluster this object belongs to.",
+    "Any further remediation is only allowed if at most \"MaxUnhealthy\" machines selected by\n\"selector\" are not healthy.\n\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/issues/10722 for more details.",
+    "NodeStartupTimeout allows to set the maximum time for MachineHealthCheck\nto consider a Machine unhealthy if a corresponding Node isn't associated\nthrough a `Spec.ProviderID` field.\n\n\nThe duration set in this field is compared to the greatest of:\n- Cluster's infrastructure ready condition timestamp (if and when available)\n- Control Plane's initialized condition timestamp (if and when available)\n- Machine's infrastructure ready condition timestamp (if and when available)\n- Machine's metadata creation timestamp\n\n\nDefaults to 10 minutes.\nIf you wish to disable this feature, set the value explicitly to 0.",
+    "nodeStartupTimeout allows to set the maximum time for MachineHealthCheck\nto consider a Machine unhealthy if a corresponding Node isn't associated\nthrough a `Spec.ProviderID` field.\n\nThe duration set in this field is compared to the greatest of:\n- Cluster's infrastructure ready condition timestamp (if and when available)\n- Control Plane's initialized condition timestamp (if and when available)\n- Machine's infrastructure ready condition timestamp (if and when available)\n- Machine's metadata creation timestamp\n\nDefaults to 10 minutes.\nIf you wish to disable this feature, set the value explicitly to 0.",
+    "RemediationTemplate is a reference to a remediation template\nprovided by an infrastructure provider.\n\n\nThis field is completely optional, when filled, the MachineHealthCheck controller\ncreates a new object from the template referenced and hands off remediation of the machine to\na controller that lives outside of Cluster API.",
+    "remediationTemplate is a reference to a remediation template\nprovided by an infrastructure provider.\n\nThis field is completely optional, when filled, the MachineHealthCheck controller\ncreates a new object from the template referenced and hands off remediation of the machine to\na controller that lives outside of Cluster API.",
+    "If referring to a piece of an object instead of an entire object, this string\nshould contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2].\nFor example, if the object reference is to a container within a pod, this would take on a value like:\n\"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered\nthe event) or if no container name is specified \"spec.containers[2]\" (container with\nindex 2 in this pod). This syntax is chosen only to have some well-defined way of\nreferencing a part of an object.\nTODO: this design is not final and this field is subject to change in the future.",
+    "If referring to a piece of an object instead of an entire object, this string\nshould contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2].\nFor example, if the object reference is to a container within a pod, this would take on a value like:\n\"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered\nthe event) or if no container name is specified \"spec.containers[2]\" (container with\nindex 2 in this pod). This syntax is chosen only to have some well-defined way of\nreferencing a part of an object.",
+    "UnhealthyConditions contains a list of the conditions that determine\nwhether a node is considered unhealthy.  The conditions are combined in a\nlogical OR, i.e. if any of the conditions is met, the node is unhealthy.",
+    "unhealthyConditions contains a list of the conditions that determine\nwhether a node is considered unhealthy.  The conditions are combined in a\nlogical OR, i.e. if any of the conditions is met, the node is unhealthy.",
+    "Any further remediation is only allowed if the number of machines selected by \"selector\" as not healthy\nis within the range of \"UnhealthyRange\". Takes precedence over MaxUnhealthy.\nEg. \"[3-5]\" - This means that remediation will be allowed only when:\n(a) there are at least 3 unhealthy machines (and)\n(b) there are at most 5 unhealthy machines\n\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/issues/10722 for more details.",
+    "Conditions defines current service state of the MachineHealthCheck.",
+    "conditions defines current service state of the MachineHealthCheck.",
+    "The reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may not be empty.",
+    "Severity provides an explicit classification of Reason code, so the users or machines can immediately\nunderstand the current situation and act accordingly.\nThe Severity field MUST be set only when Status=False.",
+    "severity provides an explicit classification of Reason code, so the users or machines can immediately\nunderstand the current situation and act accordingly.\nThe Severity field MUST be set only when Status=False.",
+    "Status of the condition, one of True, False, Unknown.",
+    "Type of condition in CamelCase or in foo.example.com/CamelCase.\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions\ncan be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions\ncan be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "ObservedGeneration is the latest generation observed by the controller.",
+    "observedGeneration is the latest generation observed by the controller.",
+    "RemediationsAllowed is the number of further remediations allowed by this machine health check before\nmaxUnhealthy short circuiting will be applied",
+    "remediationsAllowed is the number of further remediations allowed by this machine health check before\nmaxUnhealthy short circuiting will be applied",
+    "Targets shows the current list of machines the machine health check is watching",
+    "targets shows the current list of machines the machine health check is watching",
+    "v1beta2 groups all the fields that will be added or modified in MachineHealthCheck's status with the V1Beta2 version.",
+    "Any further remediation is only allowed if at most \"MaxUnhealthy\" machines selected by\n\"selector\" are not healthy.",
+    "Any further remediation is only allowed if the number of machines selected by \"selector\" as not healthy\nis within the range of \"UnhealthyRange\". Takes precedence over MaxUnhealthy.\nEg. \"[3-5]\" - This means that remediation will be allowed only when:\n(a) there are at least 3 unhealthy machines (and)\n(b) there are at most 5 unhealthy machines",
+    "Machines older than this duration without a node will be considered to have\nfailed and will be remediated.\nIf not set, this value is defaulted to 10 minutes.\nIf you wish to disable this feature, set the value explicitly to 0.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Any further remediation is only allowed if at most \"MaxUnhealthy\" machines selected by \"selector\" are not healthy.",
+    "Machines older than this duration without a node will be considered to have failed and will be remediated. If not set, this value is defaulted to 10 minutes. If you wish to disable this feature, set the value explicitly to 0.",
+    "RemediationTemplate is a reference to a remediation template provided by an infrastructure provider. \n This field is completely optional, when filled, the MachineHealthCheck controller creates a new object from the template referenced and hands off remediation of the machine to a controller that lives outside of Cluster API.",
+    "If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future.",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind of the referent.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Name of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
+    "Namespace of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
+    "Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "Specific resourceVersion to which this reference is made, if any.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids",
+    "UID of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "UnhealthyConditions contains a list of the conditions that determine whether a node is considered unhealthy.  The conditions are combined in a logical OR, i.e. if any of the conditions is met, the node is unhealthy.",
+    "Any further remediation is only allowed if the number of machines selected by \"selector\" as not healthy is within the range of \"UnhealthyRange\". Takes precedence over MaxUnhealthy. Eg. \"[3-5]\" - This means that remediation will be allowed only when: (a) there are at least 3 unhealthy machines (and) (b) there are at most 5 unhealthy machines",
+    "Last time the condition transitioned from one status to another. This should be when the underlying condition changed. If that is not known, then using the time when the API field changed is acceptable.",
+    "A human readable message indicating details about the transition. This field may be empty.",
+    "The reason for the condition's last transition in CamelCase. The specific API may choose whether or not this field is considered a guaranteed API. This field may not be empty.",
+    "Severity provides an explicit classification of Reason code, so the users or machines can immediately understand the current situation and act accordingly. The Severity field MUST be set only when Status=False.",
+    "Type of condition in CamelCase or in foo.example.com/CamelCase. Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "RemediationsAllowed is the number of further remediations allowed by this machine health check before maxUnhealthy short circuiting will be applied"
+  ]
+}

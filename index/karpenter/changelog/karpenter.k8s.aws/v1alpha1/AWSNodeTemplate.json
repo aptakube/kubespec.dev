@@ -1,0 +1,74 @@
+{
+  "versions": {
+    "v0.28.0": {
+      "added": {
+        "status.amis": "object[]",
+        "status.securityGroups.name": "string"
+      },
+      "required": [
+        "status.securityGroups.id",
+        "status.subnets.id",
+        "status.subnets.zone"
+      ],
+      "descriptionChanged": [
+        "status.securityGroups.id",
+        "status.subnets.id"
+      ],
+      "descriptions": {
+        "status.amis": [
+          null,
+          0
+        ],
+        "status.securityGroups.id": [
+          1,
+          2
+        ],
+        "status.securityGroups.name": [
+          null,
+          3
+        ],
+        "status.subnets.id": [
+          4,
+          5
+        ],
+        "status.subnets.zone": [
+          null,
+          6
+        ]
+      }
+    },
+    "v0.24.0": {
+      "added": {
+        "status": "object"
+      },
+      "descriptions": {
+        "status": [
+          null,
+          7
+        ]
+      }
+    },
+    "v0.23.0": {
+      "added": {
+        "spec.detailedMonitoring": "boolean"
+      },
+      "descriptions": {
+        "spec.detailedMonitoring": [
+          null,
+          8
+        ]
+      }
+    }
+  },
+  "texts": [
+    "AMI contains the current AMI values that are available to the cluster under the AMI selectors.",
+    "Id of the security group",
+    "ID of the security group",
+    "Name of the security group",
+    "Id of the subnet",
+    "ID of the subnet",
+    "The associated availability zone",
+    "AWSNodeTemplateStatus contains the resolved state of the AWSNodeTemplate",
+    "DetailedMonitoring controls if detailed monitoring is enabled for instances that are launched"
+  ]
+}

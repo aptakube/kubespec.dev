@@ -1,0 +1,180 @@
+{
+  "versions": {
+    "v1.13.0": {
+      "descriptionChanged": [
+        "spec.startupTaints",
+        "spec.taints"
+      ],
+      "descriptions": {
+        "spec.startupTaints": [
+          0,
+          1
+        ],
+        "spec.taints": [
+          2,
+          3
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.requirements.operator",
+        "spec.requirements.values"
+      ],
+      "descriptions": {
+        "spec.requirements.operator": [
+          4,
+          5
+        ],
+        "spec.requirements.values": [
+          6,
+          7
+        ]
+      }
+    },
+    "v1.7.0": {
+      "descriptionChanged": [
+        "spec.startupTaints.timeAdded",
+        "spec.taints.timeAdded"
+      ],
+      "descriptions": {
+        "spec.startupTaints.timeAdded": [
+          8,
+          9
+        ],
+        "spec.taints.timeAdded": [
+          8,
+          9
+        ]
+      }
+    },
+    "v1.0.2": {
+      "descriptionChanged": [
+        "spec.terminationGracePeriod",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.terminationGracePeriod": [
+          10,
+          11
+        ],
+        "status.conditions.type": [
+          12,
+          13
+        ]
+      }
+    },
+    "v1.0.0": {
+      "descriptionChanged": [
+        "spec.terminationGracePeriod",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.terminationGracePeriod": [
+          11,
+          10
+        ],
+        "status.conditions.type": [
+          13,
+          12
+        ]
+      }
+    },
+    "v0.37.3": {
+      "descriptionChanged": [
+        "spec.terminationGracePeriod",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.terminationGracePeriod": [
+          10,
+          11
+        ],
+        "status.conditions.type": [
+          12,
+          13
+        ]
+      }
+    },
+    "v0.36.5": {
+      "descriptionChanged": [
+        "spec.terminationGracePeriod",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.terminationGracePeriod": [
+          10,
+          11
+        ],
+        "status.conditions.type": [
+          12,
+          13
+        ]
+      }
+    },
+    "v0.35.8": {
+      "descriptionChanged": [
+        "spec.terminationGracePeriod",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.terminationGracePeriod": [
+          10,
+          11
+        ],
+        "status.conditions.type": [
+          12,
+          13
+        ]
+      }
+    },
+    "v0.34.9": {
+      "descriptionChanged": [
+        "spec.terminationGracePeriod",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.terminationGracePeriod": [
+          10,
+          11
+        ],
+        "status.conditions.type": [
+          12,
+          13
+        ]
+      }
+    },
+    "v0.33.8": {
+      "descriptionChanged": [
+        "spec.terminationGracePeriod",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.terminationGracePeriod": [
+          10,
+          11
+        ],
+        "status.conditions.type": [
+          12,
+          13
+        ]
+      }
+    }
+  },
+  "texts": [
+    "StartupTaints are taints that are applied to nodes upon startup which are expected to be removed automatically\nwithin a short period of time, typically by a DaemonSet that tolerates the taint. These are commonly used by\ndaemonsets to allow initialization and enforce startup ordering.  StartupTaints are ignored for provisioning\npurposes in that pods are not required to tolerate a StartupTaint in order to have nodes provisioned for them.",
+    "startupTaints are taints that are applied to nodes upon startup which are expected to be removed automatically\nwithin a short period of time, typically by a DaemonSet that tolerates the taint. These are commonly used by\ndaemonsets to allow initialization and enforce startup ordering.  StartupTaints are ignored for provisioning\npurposes in that pods are not required to tolerate a StartupTaint in order to have nodes provisioned for them.",
+    "Taints will be applied to the NodeClaim's node.",
+    "taints will be applied to the NodeClaim's node.",
+    "Represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.",
+    "Represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists, DoesNotExist. Gt, Lt, Gte, and Lte.",
+    "An array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. If the operator is Gt or Lt, the values\narray must have a single element, which will be interpreted as an integer.\nThis array is replaced during a strategic merge patch.",
+    "An array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. If the operator is Gt, Lt, Gte, or Lte, the values\narray must have a single element, which will be interpreted as an integer.\nThis array is replaced during a strategic merge patch.",
+    "TimeAdded represents the time at which the taint was added.\nIt is only written for NoExecute taints.",
+    "TimeAdded represents the time at which the taint was added.",
+    "TerminationGracePeriod is the maximum duration the controller will wait before forcefully deleting the pods on a node, measured from when deletion is first initiated.\n\n\nWarning: this feature takes precedence over a Pod's terminationGracePeriodSeconds value, and bypasses any blocked PDBs or the karpenter.sh/do-not-disrupt annotation.\n\n\nThis field is intended to be used by cluster administrators to enforce that nodes can be cycled within a given time period.\nWhen set, drifted nodes will begin draining even if there are pods blocking eviction. Draining will respect PDBs and the do-not-disrupt annotation until the TGP is reached.\n\n\nKarpenter will preemptively delete pods so their terminationGracePeriodSeconds align with the node's terminationGracePeriod.\nIf a pod would be terminated without being granted its full terminationGracePeriodSeconds prior to the node timeout,\nthat pod will be deleted at T = node timeout - pod terminationGracePeriodSeconds.\n\n\nThe feature can also be used to allow maximum time limits for long-running jobs which can delay node termination with preStop hooks.\nIf left undefined, the controller will wait indefinitely for pods to be drained.",
+    "TerminationGracePeriod is the maximum duration the controller will wait before forcefully deleting the pods on a node, measured from when deletion is first initiated.\n\nWarning: this feature takes precedence over a Pod's terminationGracePeriodSeconds value, and bypasses any blocked PDBs or the karpenter.sh/do-not-disrupt annotation.\n\nThis field is intended to be used by cluster administrators to enforce that nodes can be cycled within a given time period.\nWhen set, drifted nodes will begin draining even if there are pods blocking eviction. Draining will respect PDBs and the do-not-disrupt annotation until the TGP is reached.\n\nKarpenter will preemptively delete pods so their terminationGracePeriodSeconds align with the node's terminationGracePeriod.\nIf a pod would be terminated without being granted its full terminationGracePeriodSeconds prior to the node timeout,\nthat pod will be deleted at T = node timeout - pod terminationGracePeriodSeconds.\n\nThe feature can also be used to allow maximum time limits for long-running jobs which can delay node termination with preStop hooks.\nIf left undefined, the controller will wait indefinitely for pods to be drained.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase."
+  ]
+}

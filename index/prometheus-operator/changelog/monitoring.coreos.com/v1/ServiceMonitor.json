@@ -1,0 +1,2936 @@
+{
+  "versions": {
+    "v0.94.0": {
+      "descriptionChanged": [
+        "spec.endpoints.oauth2.clientId.configMap.key",
+        "spec.endpoints.oauth2.tlsConfig.ca.configMap.key",
+        "spec.endpoints.oauth2.tlsConfig.cert.configMap.key",
+        "spec.endpoints.tlsConfig.ca.configMap.key",
+        "spec.endpoints.tlsConfig.cert.configMap.key"
+      ],
+      "descriptions": {
+        "spec.endpoints.oauth2.clientId.configMap.key": [
+          0,
+          1
+        ],
+        "spec.endpoints.oauth2.tlsConfig.ca.configMap.key": [
+          0,
+          1
+        ],
+        "spec.endpoints.oauth2.tlsConfig.cert.configMap.key": [
+          0,
+          1
+        ],
+        "spec.endpoints.tlsConfig.ca.configMap.key": [
+          0,
+          1
+        ],
+        "spec.endpoints.tlsConfig.cert.configMap.key": [
+          0,
+          1
+        ]
+      }
+    },
+    "v0.92.0": {
+      "descriptionChanged": [
+        "spec.attachMetadata.node",
+        "spec.endpoints.port",
+        "spec.endpoints.targetPort"
+      ],
+      "descriptions": {
+        "spec.attachMetadata.node": [
+          2,
+          3
+        ],
+        "spec.endpoints.port": [
+          4,
+          5
+        ],
+        "spec.endpoints.targetPort": [
+          6,
+          7
+        ]
+      }
+    },
+    "v0.88.0": {
+      "descriptionChanged": [
+        "spec.endpoints.authorization",
+        "spec.endpoints.basicAuth",
+        "spec.endpoints.bearerTokenSecret",
+        "spec.endpoints.enableHttp2",
+        "spec.endpoints.followRedirects",
+        "spec.endpoints.oauth2",
+        "spec.endpoints.tlsConfig"
+      ],
+      "added": {
+        "spec.scrapeNativeHistograms": "boolean"
+      },
+      "descriptions": {
+        "spec.endpoints.authorization": [
+          8,
+          9
+        ],
+        "spec.endpoints.basicAuth": [
+          10,
+          11
+        ],
+        "spec.endpoints.bearerTokenSecret": [
+          12,
+          13
+        ],
+        "spec.endpoints.enableHttp2": [
+          14,
+          15
+        ],
+        "spec.endpoints.followRedirects": [
+          16,
+          17
+        ],
+        "spec.endpoints.oauth2": [
+          18,
+          19
+        ],
+        "spec.endpoints.tlsConfig": [
+          20,
+          21
+        ],
+        "spec.scrapeNativeHistograms": [
+          null,
+          22
+        ]
+      }
+    },
+    "v0.87.0": {
+      "descriptionChanged": [
+        "spec.endpoints.scheme"
+      ],
+      "descriptions": {
+        "spec.endpoints.scheme": [
+          23,
+          24
+        ]
+      }
+    },
+    "v0.86.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.attachMetadata",
+        "spec.attachMetadata.node",
+        "spec.bodySizeLimit",
+        "spec.convertClassicHistogramsToNHCB",
+        "spec.endpoints",
+        "spec.endpoints.authorization",
+        "spec.endpoints.authorization.credentials",
+        "spec.endpoints.authorization.type",
+        "spec.endpoints.basicAuth",
+        "spec.endpoints.basicAuth.password",
+        "spec.endpoints.basicAuth.username",
+        "spec.endpoints.bearerTokenFile",
+        "spec.endpoints.bearerTokenSecret",
+        "spec.endpoints.enableHttp2",
+        "spec.endpoints.filterRunning",
+        "spec.endpoints.followRedirects",
+        "spec.endpoints.honorLabels",
+        "spec.endpoints.honorTimestamps",
+        "spec.endpoints.interval",
+        "spec.endpoints.metricRelabelings",
+        "spec.endpoints.metricRelabelings.action",
+        "spec.endpoints.metricRelabelings.modulus",
+        "spec.endpoints.metricRelabelings.regex",
+        "spec.endpoints.metricRelabelings.replacement",
+        "spec.endpoints.metricRelabelings.separator",
+        "spec.endpoints.metricRelabelings.sourceLabels",
+        "spec.endpoints.metricRelabelings.targetLabel",
+        "spec.endpoints.noProxy",
+        "spec.endpoints.oauth2",
+        "spec.endpoints.oauth2.clientId",
+        "spec.endpoints.oauth2.clientId.configMap",
+        "spec.endpoints.oauth2.clientId.secret",
+        "spec.endpoints.oauth2.clientSecret",
+        "spec.endpoints.oauth2.endpointParams",
+        "spec.endpoints.oauth2.noProxy",
+        "spec.endpoints.oauth2.proxyConnectHeader",
+        "spec.endpoints.oauth2.proxyFromEnvironment",
+        "spec.endpoints.oauth2.proxyUrl",
+        "spec.endpoints.oauth2.scopes",
+        "spec.endpoints.oauth2.tlsConfig",
+        "spec.endpoints.oauth2.tlsConfig.ca",
+        "spec.endpoints.oauth2.tlsConfig.ca.configMap",
+        "spec.endpoints.oauth2.tlsConfig.ca.secret",
+        "spec.endpoints.oauth2.tlsConfig.cert",
+        "spec.endpoints.oauth2.tlsConfig.cert.configMap",
+        "spec.endpoints.oauth2.tlsConfig.cert.secret",
+        "spec.endpoints.oauth2.tlsConfig.insecureSkipVerify",
+        "spec.endpoints.oauth2.tlsConfig.keySecret",
+        "spec.endpoints.oauth2.tlsConfig.maxVersion",
+        "spec.endpoints.oauth2.tlsConfig.minVersion",
+        "spec.endpoints.oauth2.tlsConfig.serverName",
+        "spec.endpoints.oauth2.tokenUrl",
+        "spec.endpoints.path",
+        "spec.endpoints.port",
+        "spec.endpoints.proxyConnectHeader",
+        "spec.endpoints.proxyFromEnvironment",
+        "spec.endpoints.proxyUrl",
+        "spec.endpoints.relabelings",
+        "spec.endpoints.relabelings.action",
+        "spec.endpoints.relabelings.modulus",
+        "spec.endpoints.relabelings.regex",
+        "spec.endpoints.relabelings.replacement",
+        "spec.endpoints.relabelings.separator",
+        "spec.endpoints.relabelings.sourceLabels",
+        "spec.endpoints.relabelings.targetLabel",
+        "spec.endpoints.scheme",
+        "spec.endpoints.scrapeTimeout",
+        "spec.endpoints.targetPort",
+        "spec.endpoints.tlsConfig",
+        "spec.endpoints.tlsConfig.ca",
+        "spec.endpoints.tlsConfig.ca.configMap",
+        "spec.endpoints.tlsConfig.ca.secret",
+        "spec.endpoints.tlsConfig.caFile",
+        "spec.endpoints.tlsConfig.cert",
+        "spec.endpoints.tlsConfig.cert.configMap",
+        "spec.endpoints.tlsConfig.cert.secret",
+        "spec.endpoints.tlsConfig.certFile",
+        "spec.endpoints.tlsConfig.insecureSkipVerify",
+        "spec.endpoints.tlsConfig.keyFile",
+        "spec.endpoints.tlsConfig.keySecret",
+        "spec.endpoints.tlsConfig.maxVersion",
+        "spec.endpoints.tlsConfig.minVersion",
+        "spec.endpoints.tlsConfig.serverName",
+        "spec.endpoints.trackTimestampsStaleness",
+        "spec.fallbackScrapeProtocol",
+        "spec.jobLabel",
+        "spec.keepDroppedTargets",
+        "spec.labelLimit",
+        "spec.labelNameLengthLimit",
+        "spec.labelValueLengthLimit",
+        "spec.namespaceSelector",
+        "spec.namespaceSelector.any",
+        "spec.namespaceSelector.matchNames",
+        "spec.nativeHistogramBucketLimit",
+        "spec.nativeHistogramMinBucketFactor",
+        "spec.podTargetLabels",
+        "spec.sampleLimit",
+        "spec.scrapeClass",
+        "spec.scrapeClassicHistograms",
+        "spec.scrapeProtocols",
+        "spec.selector",
+        "spec.selectorMechanism",
+        "spec.targetLabels",
+        "spec.targetLimit",
+        "status",
+        "status.bindings",
+        "status.bindings.conditions",
+        "status.bindings.conditions.lastTransitionTime",
+        "status.bindings.conditions.message",
+        "status.bindings.conditions.observedGeneration",
+        "status.bindings.conditions.reason",
+        "status.bindings.conditions.status",
+        "status.bindings.conditions.type",
+        "status.bindings.group",
+        "status.bindings.name",
+        "status.bindings.namespace",
+        "status.bindings.resource"
+      ],
+      "added": {
+        "spec.serviceDiscoveryRole": "string"
+      },
+      "descriptions": {
+        "spec": [
+          25,
+          26
+        ],
+        "spec.attachMetadata": [
+          27,
+          28
+        ],
+        "spec.attachMetadata.node": [
+          29,
+          2
+        ],
+        "spec.bodySizeLimit": [
+          30,
+          31
+        ],
+        "spec.convertClassicHistogramsToNHCB": [
+          32,
+          33
+        ],
+        "spec.endpoints": [
+          34,
+          35
+        ],
+        "spec.endpoints.authorization": [
+          36,
+          8
+        ],
+        "spec.endpoints.authorization.credentials": [
+          37,
+          38
+        ],
+        "spec.endpoints.authorization.type": [
+          39,
+          40
+        ],
+        "spec.endpoints.basicAuth": [
+          41,
+          10
+        ],
+        "spec.endpoints.basicAuth.password": [
+          42,
+          43
+        ],
+        "spec.endpoints.basicAuth.username": [
+          44,
+          45
+        ],
+        "spec.endpoints.bearerTokenFile": [
+          46,
+          47
+        ],
+        "spec.endpoints.bearerTokenSecret": [
+          48,
+          12
+        ],
+        "spec.endpoints.enableHttp2": [
+          49,
+          14
+        ],
+        "spec.endpoints.filterRunning": [
+          50,
+          51
+        ],
+        "spec.endpoints.followRedirects": [
+          52,
+          16
+        ],
+        "spec.endpoints.honorLabels": [
+          53,
+          54
+        ],
+        "spec.endpoints.honorTimestamps": [
+          55,
+          56
+        ],
+        "spec.endpoints.interval": [
+          57,
+          58
+        ],
+        "spec.endpoints.metricRelabelings": [
+          59,
+          60
+        ],
+        "spec.endpoints.metricRelabelings.action": [
+          61,
+          62
+        ],
+        "spec.endpoints.metricRelabelings.modulus": [
+          63,
+          64
+        ],
+        "spec.endpoints.metricRelabelings.regex": [
+          65,
+          66
+        ],
+        "spec.endpoints.metricRelabelings.replacement": [
+          67,
+          68
+        ],
+        "spec.endpoints.metricRelabelings.separator": [
+          69,
+          70
+        ],
+        "spec.endpoints.metricRelabelings.sourceLabels": [
+          71,
+          72
+        ],
+        "spec.endpoints.metricRelabelings.targetLabel": [
+          73,
+          74
+        ],
+        "spec.endpoints.noProxy": [
+          75,
+          76
+        ],
+        "spec.endpoints.oauth2": [
+          77,
+          18
+        ],
+        "spec.endpoints.oauth2.clientId": [
+          78,
+          79
+        ],
+        "spec.endpoints.oauth2.clientId.configMap": [
+          80,
+          81
+        ],
+        "spec.endpoints.oauth2.clientId.secret": [
+          82,
+          83
+        ],
+        "spec.endpoints.oauth2.clientSecret": [
+          84,
+          85
+        ],
+        "spec.endpoints.oauth2.endpointParams": [
+          86,
+          87
+        ],
+        "spec.endpoints.oauth2.noProxy": [
+          75,
+          76
+        ],
+        "spec.endpoints.oauth2.proxyConnectHeader": [
+          88,
+          89
+        ],
+        "spec.endpoints.oauth2.proxyFromEnvironment": [
+          90,
+          91
+        ],
+        "spec.endpoints.oauth2.proxyUrl": [
+          92,
+          93
+        ],
+        "spec.endpoints.oauth2.scopes": [
+          94,
+          95
+        ],
+        "spec.endpoints.oauth2.tlsConfig": [
+          96,
+          97
+        ],
+        "spec.endpoints.oauth2.tlsConfig.ca": [
+          98,
+          99
+        ],
+        "spec.endpoints.oauth2.tlsConfig.ca.configMap": [
+          80,
+          81
+        ],
+        "spec.endpoints.oauth2.tlsConfig.ca.secret": [
+          82,
+          83
+        ],
+        "spec.endpoints.oauth2.tlsConfig.cert": [
+          100,
+          101
+        ],
+        "spec.endpoints.oauth2.tlsConfig.cert.configMap": [
+          80,
+          81
+        ],
+        "spec.endpoints.oauth2.tlsConfig.cert.secret": [
+          82,
+          83
+        ],
+        "spec.endpoints.oauth2.tlsConfig.insecureSkipVerify": [
+          102,
+          103
+        ],
+        "spec.endpoints.oauth2.tlsConfig.keySecret": [
+          104,
+          105
+        ],
+        "spec.endpoints.oauth2.tlsConfig.maxVersion": [
+          106,
+          107
+        ],
+        "spec.endpoints.oauth2.tlsConfig.minVersion": [
+          108,
+          109
+        ],
+        "spec.endpoints.oauth2.tlsConfig.serverName": [
+          110,
+          111
+        ],
+        "spec.endpoints.oauth2.tokenUrl": [
+          112,
+          113
+        ],
+        "spec.endpoints.path": [
+          114,
+          115
+        ],
+        "spec.endpoints.port": [
+          116,
+          4
+        ],
+        "spec.endpoints.proxyConnectHeader": [
+          88,
+          89
+        ],
+        "spec.endpoints.proxyFromEnvironment": [
+          90,
+          91
+        ],
+        "spec.endpoints.proxyUrl": [
+          92,
+          93
+        ],
+        "spec.endpoints.relabelings": [
+          117,
+          118
+        ],
+        "spec.endpoints.relabelings.action": [
+          61,
+          62
+        ],
+        "spec.endpoints.relabelings.modulus": [
+          63,
+          64
+        ],
+        "spec.endpoints.relabelings.regex": [
+          65,
+          66
+        ],
+        "spec.endpoints.relabelings.replacement": [
+          67,
+          68
+        ],
+        "spec.endpoints.relabelings.separator": [
+          69,
+          70
+        ],
+        "spec.endpoints.relabelings.sourceLabels": [
+          71,
+          72
+        ],
+        "spec.endpoints.relabelings.targetLabel": [
+          73,
+          74
+        ],
+        "spec.endpoints.scheme": [
+          119,
+          23
+        ],
+        "spec.endpoints.scrapeTimeout": [
+          120,
+          121
+        ],
+        "spec.endpoints.targetPort": [
+          122,
+          6
+        ],
+        "spec.endpoints.tlsConfig": [
+          123,
+          20
+        ],
+        "spec.endpoints.tlsConfig.ca": [
+          98,
+          99
+        ],
+        "spec.endpoints.tlsConfig.ca.configMap": [
+          80,
+          81
+        ],
+        "spec.endpoints.tlsConfig.ca.secret": [
+          82,
+          83
+        ],
+        "spec.endpoints.tlsConfig.caFile": [
+          124,
+          125
+        ],
+        "spec.endpoints.tlsConfig.cert": [
+          100,
+          101
+        ],
+        "spec.endpoints.tlsConfig.cert.configMap": [
+          80,
+          81
+        ],
+        "spec.endpoints.tlsConfig.cert.secret": [
+          82,
+          83
+        ],
+        "spec.endpoints.tlsConfig.certFile": [
+          126,
+          127
+        ],
+        "spec.endpoints.tlsConfig.insecureSkipVerify": [
+          102,
+          103
+        ],
+        "spec.endpoints.tlsConfig.keyFile": [
+          128,
+          129
+        ],
+        "spec.endpoints.tlsConfig.keySecret": [
+          104,
+          105
+        ],
+        "spec.endpoints.tlsConfig.maxVersion": [
+          106,
+          107
+        ],
+        "spec.endpoints.tlsConfig.minVersion": [
+          108,
+          109
+        ],
+        "spec.endpoints.tlsConfig.serverName": [
+          110,
+          111
+        ],
+        "spec.endpoints.trackTimestampsStaleness": [
+          130,
+          131
+        ],
+        "spec.fallbackScrapeProtocol": [
+          132,
+          133
+        ],
+        "spec.jobLabel": [
+          134,
+          135
+        ],
+        "spec.keepDroppedTargets": [
+          136,
+          137
+        ],
+        "spec.labelLimit": [
+          138,
+          139
+        ],
+        "spec.labelNameLengthLimit": [
+          140,
+          141
+        ],
+        "spec.labelValueLengthLimit": [
+          142,
+          143
+        ],
+        "spec.namespaceSelector": [
+          144,
+          145
+        ],
+        "spec.namespaceSelector.any": [
+          146,
+          147
+        ],
+        "spec.namespaceSelector.matchNames": [
+          148,
+          149
+        ],
+        "spec.nativeHistogramBucketLimit": [
+          150,
+          151
+        ],
+        "spec.nativeHistogramMinBucketFactor": [
+          152,
+          153
+        ],
+        "spec.podTargetLabels": [
+          154,
+          155
+        ],
+        "spec.sampleLimit": [
+          156,
+          157
+        ],
+        "spec.scrapeClass": [
+          158,
+          159
+        ],
+        "spec.scrapeClassicHistograms": [
+          160,
+          161
+        ],
+        "spec.scrapeProtocols": [
+          162,
+          163
+        ],
+        "spec.selector": [
+          164,
+          165
+        ],
+        "spec.selectorMechanism": [
+          166,
+          167
+        ],
+        "spec.serviceDiscoveryRole": [
+          null,
+          168
+        ],
+        "spec.targetLabels": [
+          169,
+          170
+        ],
+        "spec.targetLimit": [
+          171,
+          172
+        ],
+        "status": [
+          173,
+          174
+        ],
+        "status.bindings": [
+          175,
+          176
+        ],
+        "status.bindings.conditions": [
+          177,
+          178
+        ],
+        "status.bindings.conditions.lastTransitionTime": [
+          179,
+          180
+        ],
+        "status.bindings.conditions.message": [
+          181,
+          182
+        ],
+        "status.bindings.conditions.observedGeneration": [
+          183,
+          184
+        ],
+        "status.bindings.conditions.reason": [
+          185,
+          186
+        ],
+        "status.bindings.conditions.status": [
+          187,
+          188
+        ],
+        "status.bindings.conditions.type": [
+          189,
+          190
+        ],
+        "status.bindings.group": [
+          191,
+          192
+        ],
+        "status.bindings.name": [
+          193,
+          194
+        ],
+        "status.bindings.namespace": [
+          195,
+          196
+        ],
+        "status.bindings.resource": [
+          197,
+          198
+        ]
+      }
+    },
+    "v0.85.0": {
+      "descriptionChanged": [
+        "spec.scrapeClassicHistograms"
+      ],
+      "descriptions": {
+        "spec.scrapeClassicHistograms": [
+          199,
+          160
+        ]
+      }
+    },
+    "v0.84.0": {
+      "added": {
+        "spec.endpoints.noProxy": "string",
+        "spec.endpoints.proxyConnectHeader": "map[string]object[]",
+        "spec.endpoints.proxyFromEnvironment": "boolean",
+        "status": "object"
+      },
+      "descriptionChanged": [
+        "spec.endpoints.proxyUrl"
+      ],
+      "descriptions": {
+        "spec.endpoints.noProxy": [
+          null,
+          75
+        ],
+        "spec.endpoints.proxyConnectHeader": [
+          null,
+          88
+        ],
+        "spec.endpoints.proxyFromEnvironment": [
+          null,
+          90
+        ],
+        "spec.endpoints.proxyUrl": [
+          200,
+          92
+        ],
+        "status": [
+          null,
+          173
+        ]
+      }
+    },
+    "v0.82.0": {
+      "added": {
+        "spec.convertClassicHistogramsToNHCB": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.endpoints.oauth2.noProxy",
+        "spec.endpoints.oauth2.proxyConnectHeader",
+        "spec.endpoints.oauth2.proxyFromEnvironment",
+        "spec.endpoints.oauth2.tlsConfig.maxVersion",
+        "spec.endpoints.oauth2.tlsConfig.minVersion",
+        "spec.endpoints.tlsConfig.maxVersion",
+        "spec.endpoints.tlsConfig.minVersion"
+      ],
+      "descriptions": {
+        "spec.convertClassicHistogramsToNHCB": [
+          null,
+          32
+        ],
+        "spec.endpoints.oauth2.noProxy": [
+          201,
+          75
+        ],
+        "spec.endpoints.oauth2.proxyConnectHeader": [
+          202,
+          88
+        ],
+        "spec.endpoints.oauth2.proxyFromEnvironment": [
+          203,
+          90
+        ],
+        "spec.endpoints.oauth2.tlsConfig.maxVersion": [
+          204,
+          106
+        ],
+        "spec.endpoints.oauth2.tlsConfig.minVersion": [
+          205,
+          108
+        ],
+        "spec.endpoints.tlsConfig.maxVersion": [
+          204,
+          106
+        ],
+        "spec.endpoints.tlsConfig.minVersion": [
+          205,
+          108
+        ]
+      }
+    },
+    "v0.80.0": {
+      "descriptionChanged": [
+        "spec.endpoints.scrapeTimeout"
+      ],
+      "descriptions": {
+        "spec.endpoints.scrapeTimeout": [
+          206,
+          120
+        ]
+      }
+    },
+    "v0.79.1": {
+      "added": {
+        "spec.fallbackScrapeProtocol": "string"
+      },
+      "removed": {
+        "spec.scrapeFallbackProtocol": "string"
+      },
+      "descriptions": {
+        "spec.fallbackScrapeProtocol": [
+          null,
+          132
+        ],
+        "spec.scrapeFallbackProtocol": [
+          132,
+          null
+        ]
+      }
+    },
+    "v0.79.0": {
+      "added": {
+        "spec.scrapeFallbackProtocol": "string",
+        "spec.selectorMechanism": "string"
+      },
+      "descriptions": {
+        "spec.scrapeFallbackProtocol": [
+          null,
+          132
+        ],
+        "spec.selectorMechanism": [
+          null,
+          166
+        ]
+      }
+    },
+    "v0.78.0": {
+      "added": {
+        "spec.nativeHistogramBucketLimit": "integer",
+        "spec.nativeHistogramMinBucketFactor": "int | string",
+        "spec.scrapeClassicHistograms": "boolean"
+      },
+      "descriptions": {
+        "spec.nativeHistogramBucketLimit": [
+          null,
+          150
+        ],
+        "spec.nativeHistogramMinBucketFactor": [
+          null,
+          152
+        ],
+        "spec.scrapeClassicHistograms": [
+          null,
+          199
+        ]
+      }
+    },
+    "v0.77.0": {
+      "descriptionChanged": [
+        "spec.attachMetadata",
+        "spec.attachMetadata.node",
+        "spec.bodySizeLimit",
+        "spec.endpoints.authorization",
+        "spec.endpoints.authorization.credentials.name",
+        "spec.endpoints.authorization.type",
+        "spec.endpoints.basicAuth",
+        "spec.endpoints.basicAuth.password.name",
+        "spec.endpoints.basicAuth.username.name",
+        "spec.endpoints.bearerTokenFile",
+        "spec.endpoints.bearerTokenSecret",
+        "spec.endpoints.bearerTokenSecret.name",
+        "spec.endpoints.filterRunning",
+        "spec.endpoints.interval",
+        "spec.endpoints.metricRelabelings.action",
+        "spec.endpoints.metricRelabelings.modulus",
+        "spec.endpoints.metricRelabelings.replacement",
+        "spec.endpoints.metricRelabelings.targetLabel",
+        "spec.endpoints.oauth2",
+        "spec.endpoints.oauth2.clientId.configMap.name",
+        "spec.endpoints.oauth2.clientId.secret.name",
+        "spec.endpoints.oauth2.clientSecret.name",
+        "spec.endpoints.oauth2.noProxy",
+        "spec.endpoints.oauth2.proxyConnectHeader",
+        "spec.endpoints.oauth2.proxyConnectHeader.name",
+        "spec.endpoints.oauth2.proxyFromEnvironment",
+        "spec.endpoints.oauth2.proxyUrl",
+        "spec.endpoints.oauth2.tlsConfig.ca.configMap.name",
+        "spec.endpoints.oauth2.tlsConfig.ca.secret.name",
+        "spec.endpoints.oauth2.tlsConfig.cert.configMap.name",
+        "spec.endpoints.oauth2.tlsConfig.cert.secret.name",
+        "spec.endpoints.oauth2.tlsConfig.keySecret.name",
+        "spec.endpoints.oauth2.tlsConfig.maxVersion",
+        "spec.endpoints.oauth2.tlsConfig.minVersion",
+        "spec.endpoints.path",
+        "spec.endpoints.port",
+        "spec.endpoints.relabelings",
+        "spec.endpoints.relabelings.action",
+        "spec.endpoints.relabelings.modulus",
+        "spec.endpoints.relabelings.replacement",
+        "spec.endpoints.relabelings.targetLabel",
+        "spec.endpoints.scheme",
+        "spec.endpoints.scrapeTimeout",
+        "spec.endpoints.tlsConfig.ca.configMap.name",
+        "spec.endpoints.tlsConfig.ca.secret.name",
+        "spec.endpoints.tlsConfig.cert.configMap.name",
+        "spec.endpoints.tlsConfig.cert.secret.name",
+        "spec.endpoints.tlsConfig.keySecret.name",
+        "spec.endpoints.tlsConfig.maxVersion",
+        "spec.endpoints.tlsConfig.minVersion",
+        "spec.endpoints.trackTimestampsStaleness",
+        "spec.jobLabel",
+        "spec.keepDroppedTargets",
+        "spec.labelLimit",
+        "spec.labelNameLengthLimit",
+        "spec.labelValueLengthLimit",
+        "spec.scrapeProtocols"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec.attachMetadata": [
+          207,
+          27
+        ],
+        "spec.attachMetadata.node": [
+          208,
+          29
+        ],
+        "spec.bodySizeLimit": [
+          209,
+          30
+        ],
+        "spec.endpoints.authorization": [
+          210,
+          36
+        ],
+        "spec.endpoints.authorization.credentials.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.authorization.type": [
+          213,
+          39
+        ],
+        "spec.endpoints.basicAuth": [
+          214,
+          41
+        ],
+        "spec.endpoints.basicAuth.password.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.basicAuth.username.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.bearerTokenFile": [
+          215,
+          46
+        ],
+        "spec.endpoints.bearerTokenSecret": [
+          216,
+          48
+        ],
+        "spec.endpoints.bearerTokenSecret.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.filterRunning": [
+          217,
+          50
+        ],
+        "spec.endpoints.interval": [
+          218,
+          57
+        ],
+        "spec.endpoints.metricRelabelings.action": [
+          219,
+          61
+        ],
+        "spec.endpoints.metricRelabelings.modulus": [
+          220,
+          63
+        ],
+        "spec.endpoints.metricRelabelings.replacement": [
+          221,
+          67
+        ],
+        "spec.endpoints.metricRelabelings.targetLabel": [
+          222,
+          73
+        ],
+        "spec.endpoints.oauth2": [
+          223,
+          77
+        ],
+        "spec.endpoints.oauth2.clientId.configMap.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.oauth2.clientId.secret.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.oauth2.clientSecret.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.oauth2.noProxy": [
+          224,
+          201
+        ],
+        "spec.endpoints.oauth2.proxyConnectHeader": [
+          225,
+          202
+        ],
+        "spec.endpoints.oauth2.proxyConnectHeader.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.oauth2.proxyFromEnvironment": [
+          226,
+          203
+        ],
+        "spec.endpoints.oauth2.proxyUrl": [
+          227,
+          92
+        ],
+        "spec.endpoints.oauth2.tlsConfig.ca.configMap.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.oauth2.tlsConfig.ca.secret.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.oauth2.tlsConfig.cert.configMap.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.oauth2.tlsConfig.cert.secret.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.oauth2.tlsConfig.keySecret.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.oauth2.tlsConfig.maxVersion": [
+          228,
+          204
+        ],
+        "spec.endpoints.oauth2.tlsConfig.minVersion": [
+          229,
+          205
+        ],
+        "spec.endpoints.path": [
+          230,
+          114
+        ],
+        "spec.endpoints.port": [
+          231,
+          116
+        ],
+        "spec.endpoints.relabelings": [
+          232,
+          117
+        ],
+        "spec.endpoints.relabelings.action": [
+          219,
+          61
+        ],
+        "spec.endpoints.relabelings.modulus": [
+          220,
+          63
+        ],
+        "spec.endpoints.relabelings.replacement": [
+          221,
+          67
+        ],
+        "spec.endpoints.relabelings.targetLabel": [
+          222,
+          73
+        ],
+        "spec.endpoints.scheme": [
+          233,
+          119
+        ],
+        "spec.endpoints.scrapeTimeout": [
+          234,
+          206
+        ],
+        "spec.endpoints.tlsConfig.ca.configMap.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.tlsConfig.ca.secret.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.tlsConfig.cert.configMap.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.tlsConfig.cert.secret.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.tlsConfig.keySecret.name": [
+          211,
+          212
+        ],
+        "spec.endpoints.tlsConfig.maxVersion": [
+          228,
+          204
+        ],
+        "spec.endpoints.tlsConfig.minVersion": [
+          229,
+          205
+        ],
+        "spec.endpoints.trackTimestampsStaleness": [
+          235,
+          130
+        ],
+        "spec.jobLabel": [
+          236,
+          134
+        ],
+        "spec.keepDroppedTargets": [
+          237,
+          136
+        ],
+        "spec.labelLimit": [
+          238,
+          138
+        ],
+        "spec.labelNameLengthLimit": [
+          239,
+          140
+        ],
+        "spec.labelValueLengthLimit": [
+          240,
+          142
+        ],
+        "spec.scrapeProtocols": [
+          241,
+          162
+        ],
+        "": [
+          242,
+          243
+        ]
+      }
+    },
+    "v0.76.0": {
+      "descriptionChanged": [
+        "spec.attachMetadata.node",
+        "spec.endpoints",
+        "spec.namespaceSelector",
+        "spec.selector"
+      ],
+      "required": [
+        "spec.endpoints"
+      ],
+      "added": {
+        "spec.endpoints.oauth2.noProxy": "string",
+        "spec.endpoints.oauth2.proxyConnectHeader": "map[string]object[]",
+        "spec.endpoints.oauth2.proxyFromEnvironment": "boolean",
+        "spec.endpoints.oauth2.proxyUrl": "string",
+        "spec.endpoints.oauth2.tlsConfig": "object",
+        "spec.endpoints.tlsConfig.maxVersion": "string",
+        "spec.endpoints.tlsConfig.minVersion": "string"
+      },
+      "description": true,
+      "descriptions": {
+        "spec.attachMetadata.node": [
+          244,
+          208
+        ],
+        "spec.endpoints": [
+          245,
+          34
+        ],
+        "spec.endpoints.oauth2.noProxy": [
+          null,
+          224
+        ],
+        "spec.endpoints.oauth2.proxyConnectHeader": [
+          null,
+          225
+        ],
+        "spec.endpoints.oauth2.proxyFromEnvironment": [
+          null,
+          226
+        ],
+        "spec.endpoints.oauth2.proxyUrl": [
+          null,
+          227
+        ],
+        "spec.endpoints.oauth2.tlsConfig": [
+          null,
+          96
+        ],
+        "spec.endpoints.tlsConfig.maxVersion": [
+          null,
+          228
+        ],
+        "spec.endpoints.tlsConfig.minVersion": [
+          null,
+          229
+        ],
+        "spec.namespaceSelector": [
+          246,
+          144
+        ],
+        "spec.selector": [
+          247,
+          164
+        ],
+        "": [
+          248,
+          242
+        ]
+      }
+    },
+    "v0.75.0": {
+      "descriptionChanged": [
+        "spec.endpoints.authorization.credentials.name",
+        "spec.endpoints.basicAuth.password.name",
+        "spec.endpoints.basicAuth.username.name",
+        "spec.endpoints.bearerTokenSecret.name",
+        "spec.endpoints.oauth2.clientId.configMap.name",
+        "spec.endpoints.oauth2.clientId.secret.name",
+        "spec.endpoints.oauth2.clientSecret.name",
+        "spec.endpoints.tlsConfig.ca.configMap.name",
+        "spec.endpoints.tlsConfig.ca.secret.name",
+        "spec.endpoints.tlsConfig.cert.configMap.name",
+        "spec.endpoints.tlsConfig.cert.secret.name",
+        "spec.endpoints.tlsConfig.keySecret.name"
+      ],
+      "descriptions": {
+        "spec.endpoints.authorization.credentials.name": [
+          249,
+          211
+        ],
+        "spec.endpoints.basicAuth.password.name": [
+          249,
+          211
+        ],
+        "spec.endpoints.basicAuth.username.name": [
+          249,
+          211
+        ],
+        "spec.endpoints.bearerTokenSecret.name": [
+          249,
+          211
+        ],
+        "spec.endpoints.oauth2.clientId.configMap.name": [
+          249,
+          211
+        ],
+        "spec.endpoints.oauth2.clientId.secret.name": [
+          249,
+          211
+        ],
+        "spec.endpoints.oauth2.clientSecret.name": [
+          249,
+          211
+        ],
+        "spec.endpoints.tlsConfig.ca.configMap.name": [
+          249,
+          211
+        ],
+        "spec.endpoints.tlsConfig.ca.secret.name": [
+          249,
+          211
+        ],
+        "spec.endpoints.tlsConfig.cert.configMap.name": [
+          249,
+          211
+        ],
+        "spec.endpoints.tlsConfig.cert.secret.name": [
+          249,
+          211
+        ],
+        "spec.endpoints.tlsConfig.keySecret.name": [
+          249,
+          211
+        ]
+      }
+    },
+    "v0.74.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.attachMetadata",
+        "spec.attachMetadata.node",
+        "spec.bodySizeLimit",
+        "spec.endpoints.authorization",
+        "spec.endpoints.authorization.credentials.name",
+        "spec.endpoints.authorization.type",
+        "spec.endpoints.basicAuth",
+        "spec.endpoints.basicAuth.password",
+        "spec.endpoints.basicAuth.password.name",
+        "spec.endpoints.basicAuth.username",
+        "spec.endpoints.basicAuth.username.name",
+        "spec.endpoints.bearerTokenFile",
+        "spec.endpoints.bearerTokenSecret",
+        "spec.endpoints.bearerTokenSecret.name",
+        "spec.endpoints.filterRunning",
+        "spec.endpoints.followRedirects",
+        "spec.endpoints.honorLabels",
+        "spec.endpoints.honorTimestamps",
+        "spec.endpoints.interval",
+        "spec.endpoints.metricRelabelings",
+        "spec.endpoints.metricRelabelings.action",
+        "spec.endpoints.metricRelabelings.modulus",
+        "spec.endpoints.metricRelabelings.replacement",
+        "spec.endpoints.metricRelabelings.sourceLabels",
+        "spec.endpoints.metricRelabelings.targetLabel",
+        "spec.endpoints.oauth2",
+        "spec.endpoints.oauth2.clientId",
+        "spec.endpoints.oauth2.clientId.configMap.name",
+        "spec.endpoints.oauth2.clientId.secret.name",
+        "spec.endpoints.oauth2.clientSecret",
+        "spec.endpoints.oauth2.clientSecret.name",
+        "spec.endpoints.oauth2.endpointParams",
+        "spec.endpoints.path",
+        "spec.endpoints.port",
+        "spec.endpoints.proxyUrl",
+        "spec.endpoints.relabelings",
+        "spec.endpoints.relabelings.action",
+        "spec.endpoints.relabelings.modulus",
+        "spec.endpoints.relabelings.replacement",
+        "spec.endpoints.relabelings.sourceLabels",
+        "spec.endpoints.relabelings.targetLabel",
+        "spec.endpoints.scheme",
+        "spec.endpoints.scrapeTimeout",
+        "spec.endpoints.targetPort",
+        "spec.endpoints.tlsConfig.ca.configMap.name",
+        "spec.endpoints.tlsConfig.ca.secret.name",
+        "spec.endpoints.tlsConfig.cert.configMap.name",
+        "spec.endpoints.tlsConfig.cert.secret.name",
+        "spec.endpoints.tlsConfig.keySecret.name",
+        "spec.endpoints.trackTimestampsStaleness",
+        "spec.jobLabel",
+        "spec.keepDroppedTargets",
+        "spec.labelLimit",
+        "spec.labelNameLengthLimit",
+        "spec.labelValueLengthLimit",
+        "spec.namespaceSelector",
+        "spec.namespaceSelector.any",
+        "spec.podTargetLabels",
+        "spec.sampleLimit",
+        "spec.scrapeProtocols",
+        "spec.selector.matchExpressions.operator",
+        "spec.selector.matchExpressions.values",
+        "spec.selector.matchLabels",
+        "spec.targetLabels",
+        "spec.targetLimit"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          250,
+          251
+        ],
+        "kind": [
+          252,
+          253
+        ],
+        "spec": [
+          254,
+          25
+        ],
+        "spec.attachMetadata": [
+          255,
+          207
+        ],
+        "spec.attachMetadata.node": [
+          256,
+          244
+        ],
+        "spec.bodySizeLimit": [
+          257,
+          209
+        ],
+        "spec.endpoints.authorization": [
+          258,
+          210
+        ],
+        "spec.endpoints.authorization.credentials.name": [
+          259,
+          249
+        ],
+        "spec.endpoints.authorization.type": [
+          260,
+          213
+        ],
+        "spec.endpoints.basicAuth": [
+          261,
+          214
+        ],
+        "spec.endpoints.basicAuth.password": [
+          262,
+          42
+        ],
+        "spec.endpoints.basicAuth.password.name": [
+          259,
+          249
+        ],
+        "spec.endpoints.basicAuth.username": [
+          263,
+          44
+        ],
+        "spec.endpoints.basicAuth.username.name": [
+          259,
+          249
+        ],
+        "spec.endpoints.bearerTokenFile": [
+          264,
+          215
+        ],
+        "spec.endpoints.bearerTokenSecret": [
+          265,
+          216
+        ],
+        "spec.endpoints.bearerTokenSecret.name": [
+          259,
+          249
+        ],
+        "spec.endpoints.filterRunning": [
+          266,
+          217
+        ],
+        "spec.endpoints.followRedirects": [
+          267,
+          52
+        ],
+        "spec.endpoints.honorLabels": [
+          268,
+          53
+        ],
+        "spec.endpoints.honorTimestamps": [
+          269,
+          55
+        ],
+        "spec.endpoints.interval": [
+          270,
+          218
+        ],
+        "spec.endpoints.metricRelabelings": [
+          271,
+          59
+        ],
+        "spec.endpoints.metricRelabelings.action": [
+          272,
+          219
+        ],
+        "spec.endpoints.metricRelabelings.modulus": [
+          273,
+          220
+        ],
+        "spec.endpoints.metricRelabelings.replacement": [
+          274,
+          221
+        ],
+        "spec.endpoints.metricRelabelings.sourceLabels": [
+          275,
+          71
+        ],
+        "spec.endpoints.metricRelabelings.targetLabel": [
+          276,
+          222
+        ],
+        "spec.endpoints.oauth2": [
+          277,
+          223
+        ],
+        "spec.endpoints.oauth2.clientId": [
+          278,
+          78
+        ],
+        "spec.endpoints.oauth2.clientId.configMap.name": [
+          259,
+          249
+        ],
+        "spec.endpoints.oauth2.clientId.secret.name": [
+          259,
+          249
+        ],
+        "spec.endpoints.oauth2.clientSecret": [
+          279,
+          84
+        ],
+        "spec.endpoints.oauth2.clientSecret.name": [
+          259,
+          249
+        ],
+        "spec.endpoints.oauth2.endpointParams": [
+          280,
+          86
+        ],
+        "spec.endpoints.path": [
+          281,
+          230
+        ],
+        "spec.endpoints.port": [
+          282,
+          231
+        ],
+        "spec.endpoints.proxyUrl": [
+          283,
+          200
+        ],
+        "spec.endpoints.relabelings": [
+          284,
+          232
+        ],
+        "spec.endpoints.relabelings.action": [
+          272,
+          219
+        ],
+        "spec.endpoints.relabelings.modulus": [
+          273,
+          220
+        ],
+        "spec.endpoints.relabelings.replacement": [
+          274,
+          221
+        ],
+        "spec.endpoints.relabelings.sourceLabels": [
+          275,
+          71
+        ],
+        "spec.endpoints.relabelings.targetLabel": [
+          276,
+          222
+        ],
+        "spec.endpoints.scheme": [
+          285,
+          233
+        ],
+        "spec.endpoints.scrapeTimeout": [
+          286,
+          234
+        ],
+        "spec.endpoints.targetPort": [
+          287,
+          122
+        ],
+        "spec.endpoints.tlsConfig.ca.configMap.name": [
+          259,
+          249
+        ],
+        "spec.endpoints.tlsConfig.ca.secret.name": [
+          259,
+          249
+        ],
+        "spec.endpoints.tlsConfig.cert.configMap.name": [
+          259,
+          249
+        ],
+        "spec.endpoints.tlsConfig.cert.secret.name": [
+          259,
+          249
+        ],
+        "spec.endpoints.tlsConfig.keySecret.name": [
+          259,
+          249
+        ],
+        "spec.endpoints.trackTimestampsStaleness": [
+          288,
+          235
+        ],
+        "spec.jobLabel": [
+          289,
+          236
+        ],
+        "spec.keepDroppedTargets": [
+          290,
+          237
+        ],
+        "spec.labelLimit": [
+          291,
+          238
+        ],
+        "spec.labelNameLengthLimit": [
+          292,
+          239
+        ],
+        "spec.labelValueLengthLimit": [
+          293,
+          240
+        ],
+        "spec.namespaceSelector": [
+          294,
+          246
+        ],
+        "spec.namespaceSelector.any": [
+          295,
+          146
+        ],
+        "spec.podTargetLabels": [
+          296,
+          154
+        ],
+        "spec.sampleLimit": [
+          297,
+          156
+        ],
+        "spec.scrapeProtocols": [
+          298,
+          241
+        ],
+        "spec.selector.matchExpressions.operator": [
+          299,
+          300
+        ],
+        "spec.selector.matchExpressions.values": [
+          301,
+          302
+        ],
+        "spec.selector.matchLabels": [
+          303,
+          304
+        ],
+        "spec.targetLabels": [
+          305,
+          169
+        ],
+        "spec.targetLimit": [
+          306,
+          171
+        ]
+      }
+    },
+    "v0.73.0": {
+      "added": {
+        "spec.bodySizeLimit": "string"
+      },
+      "descriptions": {
+        "spec.bodySizeLimit": [
+          null,
+          257
+        ]
+      }
+    },
+    "v0.72.0": {
+      "descriptionChanged": [
+        "spec.endpoints.targetPort"
+      ],
+      "added": {
+        "spec.scrapeClass": "string",
+        "spec.scrapeProtocols": "string[]"
+      },
+      "descriptions": {
+        "spec.endpoints.targetPort": [
+          307,
+          287
+        ],
+        "spec.scrapeClass": [
+          null,
+          158
+        ],
+        "spec.scrapeProtocols": [
+          null,
+          298
+        ]
+      }
+    },
+    "v0.70.0": {
+      "descriptionChanged": [
+        "spec.attachMetadata",
+        "spec.attachMetadata.node",
+        "spec.endpoints",
+        "spec.endpoints.authorization",
+        "spec.endpoints.basicAuth",
+        "spec.endpoints.basicAuth.password",
+        "spec.endpoints.basicAuth.username",
+        "spec.endpoints.bearerTokenFile",
+        "spec.endpoints.bearerTokenSecret",
+        "spec.endpoints.enableHttp2",
+        "spec.endpoints.filterRunning",
+        "spec.endpoints.followRedirects",
+        "spec.endpoints.honorLabels",
+        "spec.endpoints.honorTimestamps",
+        "spec.endpoints.interval",
+        "spec.endpoints.metricRelabelings",
+        "spec.endpoints.oauth2",
+        "spec.endpoints.oauth2.clientId",
+        "spec.endpoints.oauth2.clientSecret",
+        "spec.endpoints.oauth2.endpointParams",
+        "spec.endpoints.oauth2.scopes",
+        "spec.endpoints.oauth2.tokenUrl",
+        "spec.endpoints.params",
+        "spec.endpoints.path",
+        "spec.endpoints.port",
+        "spec.endpoints.proxyUrl",
+        "spec.endpoints.relabelings",
+        "spec.endpoints.scheme",
+        "spec.endpoints.scrapeTimeout",
+        "spec.endpoints.targetPort",
+        "spec.endpoints.tlsConfig",
+        "spec.jobLabel",
+        "spec.labelLimit",
+        "spec.labelNameLengthLimit",
+        "spec.labelValueLengthLimit",
+        "spec.namespaceSelector",
+        "spec.podTargetLabels",
+        "spec.sampleLimit",
+        "spec.selector",
+        "spec.targetLabels",
+        "spec.targetLimit"
+      ],
+      "optional": [
+        "spec.endpoints"
+      ],
+      "added": {
+        "spec.endpoints.trackTimestampsStaleness": "boolean"
+      },
+      "descriptions": {
+        "spec.attachMetadata": [
+          308,
+          255
+        ],
+        "spec.attachMetadata.node": [
+          309,
+          256
+        ],
+        "spec.endpoints": [
+          310,
+          245
+        ],
+        "spec.endpoints.authorization": [
+          311,
+          258
+        ],
+        "spec.endpoints.basicAuth": [
+          312,
+          261
+        ],
+        "spec.endpoints.basicAuth.password": [
+          313,
+          262
+        ],
+        "spec.endpoints.basicAuth.username": [
+          314,
+          263
+        ],
+        "spec.endpoints.bearerTokenFile": [
+          315,
+          264
+        ],
+        "spec.endpoints.bearerTokenSecret": [
+          316,
+          265
+        ],
+        "spec.endpoints.enableHttp2": [
+          317,
+          49
+        ],
+        "spec.endpoints.filterRunning": [
+          318,
+          266
+        ],
+        "spec.endpoints.followRedirects": [
+          319,
+          267
+        ],
+        "spec.endpoints.honorLabels": [
+          320,
+          268
+        ],
+        "spec.endpoints.honorTimestamps": [
+          321,
+          269
+        ],
+        "spec.endpoints.interval": [
+          322,
+          270
+        ],
+        "spec.endpoints.metricRelabelings": [
+          323,
+          271
+        ],
+        "spec.endpoints.oauth2": [
+          324,
+          277
+        ],
+        "spec.endpoints.oauth2.clientId": [
+          325,
+          278
+        ],
+        "spec.endpoints.oauth2.clientSecret": [
+          326,
+          279
+        ],
+        "spec.endpoints.oauth2.endpointParams": [
+          327,
+          280
+        ],
+        "spec.endpoints.oauth2.scopes": [
+          328,
+          94
+        ],
+        "spec.endpoints.oauth2.tokenUrl": [
+          329,
+          112
+        ],
+        "spec.endpoints.params": [
+          330,
+          331
+        ],
+        "spec.endpoints.path": [
+          332,
+          281
+        ],
+        "spec.endpoints.port": [
+          333,
+          282
+        ],
+        "spec.endpoints.proxyUrl": [
+          334,
+          283
+        ],
+        "spec.endpoints.relabelings": [
+          335,
+          284
+        ],
+        "spec.endpoints.scheme": [
+          336,
+          285
+        ],
+        "spec.endpoints.scrapeTimeout": [
+          337,
+          286
+        ],
+        "spec.endpoints.targetPort": [
+          338,
+          307
+        ],
+        "spec.endpoints.tlsConfig": [
+          339,
+          123
+        ],
+        "spec.endpoints.trackTimestampsStaleness": [
+          null,
+          288
+        ],
+        "spec.jobLabel": [
+          340,
+          289
+        ],
+        "spec.labelLimit": [
+          341,
+          291
+        ],
+        "spec.labelNameLengthLimit": [
+          342,
+          292
+        ],
+        "spec.labelValueLengthLimit": [
+          343,
+          293
+        ],
+        "spec.namespaceSelector": [
+          344,
+          294
+        ],
+        "spec.podTargetLabels": [
+          345,
+          296
+        ],
+        "spec.sampleLimit": [
+          346,
+          297
+        ],
+        "spec.selector": [
+          347,
+          247
+        ],
+        "spec.targetLabels": [
+          348,
+          305
+        ],
+        "spec.targetLimit": [
+          349,
+          306
+        ]
+      }
+    },
+    "v0.68.0": {
+      "added": {
+        "spec.keepDroppedTargets": "integer"
+      },
+      "descriptions": {
+        "spec.keepDroppedTargets": [
+          null,
+          290
+        ]
+      }
+    },
+    "v0.67.0": {
+      "descriptionChanged": [
+        "spec.endpoints.authorization.credentials",
+        "spec.endpoints.authorization.type",
+        "spec.endpoints.metricRelabelings.action",
+        "spec.endpoints.metricRelabelings.modulus",
+        "spec.endpoints.metricRelabelings.regex",
+        "spec.endpoints.metricRelabelings.replacement",
+        "spec.endpoints.metricRelabelings.separator",
+        "spec.endpoints.metricRelabelings.sourceLabels",
+        "spec.endpoints.metricRelabelings.targetLabel",
+        "spec.endpoints.relabelings.action",
+        "spec.endpoints.relabelings.modulus",
+        "spec.endpoints.relabelings.regex",
+        "spec.endpoints.relabelings.replacement",
+        "spec.endpoints.relabelings.separator",
+        "spec.endpoints.relabelings.sourceLabels",
+        "spec.endpoints.relabelings.targetLabel"
+      ],
+      "descriptions": {
+        "spec.endpoints.authorization.credentials": [
+          350,
+          37
+        ],
+        "spec.endpoints.authorization.type": [
+          351,
+          260
+        ],
+        "spec.endpoints.metricRelabelings.action": [
+          352,
+          272
+        ],
+        "spec.endpoints.metricRelabelings.modulus": [
+          353,
+          273
+        ],
+        "spec.endpoints.metricRelabelings.regex": [
+          354,
+          65
+        ],
+        "spec.endpoints.metricRelabelings.replacement": [
+          355,
+          274
+        ],
+        "spec.endpoints.metricRelabelings.separator": [
+          356,
+          69
+        ],
+        "spec.endpoints.metricRelabelings.sourceLabels": [
+          357,
+          275
+        ],
+        "spec.endpoints.metricRelabelings.targetLabel": [
+          358,
+          276
+        ],
+        "spec.endpoints.relabelings.action": [
+          352,
+          272
+        ],
+        "spec.endpoints.relabelings.modulus": [
+          353,
+          273
+        ],
+        "spec.endpoints.relabelings.regex": [
+          354,
+          65
+        ],
+        "spec.endpoints.relabelings.replacement": [
+          355,
+          274
+        ],
+        "spec.endpoints.relabelings.separator": [
+          356,
+          69
+        ],
+        "spec.endpoints.relabelings.sourceLabels": [
+          357,
+          275
+        ],
+        "spec.endpoints.relabelings.targetLabel": [
+          358,
+          276
+        ]
+      }
+    },
+    "v0.65.0": {
+      "descriptionChanged": [
+        "spec.endpoints.scheme"
+      ],
+      "descriptions": {
+        "spec.endpoints.scheme": [
+          359,
+          336
+        ]
+      }
+    },
+    "v0.61.0": {
+      "added": {
+        "spec.attachMetadata": "object",
+        "spec.endpoints.filterRunning": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.endpoints.tlsConfig.ca",
+        "spec.endpoints.tlsConfig.cert"
+      ],
+      "descriptions": {
+        "spec.attachMetadata": [
+          null,
+          308
+        ],
+        "spec.endpoints.filterRunning": [
+          null,
+          318
+        ],
+        "spec.endpoints.tlsConfig.ca": [
+          360,
+          98
+        ],
+        "spec.endpoints.tlsConfig.cert": [
+          361,
+          100
+        ]
+      }
+    },
+    "v0.58.0": {
+      "added": {
+        "spec.endpoints.enableHttp2": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.endpoints.metricRelabelings.action",
+        "spec.endpoints.path",
+        "spec.endpoints.relabelings.action",
+        "spec.jobLabel"
+      ],
+      "descriptions": {
+        "spec.endpoints.enableHttp2": [
+          null,
+          317
+        ],
+        "spec.endpoints.metricRelabelings.action": [
+          362,
+          352
+        ],
+        "spec.endpoints.path": [
+          363,
+          332
+        ],
+        "spec.endpoints.relabelings.action": [
+          362,
+          352
+        ],
+        "spec.jobLabel": [
+          364,
+          340
+        ]
+      }
+    },
+    "v0.56.0": {
+      "descriptionChanged": [
+        "spec.endpoints.interval",
+        "spec.endpoints.scrapeTimeout"
+      ],
+      "descriptions": {
+        "spec.endpoints.interval": [
+          365,
+          322
+        ],
+        "spec.endpoints.scrapeTimeout": [
+          366,
+          337
+        ]
+      }
+    },
+    "v0.55.0": {
+      "added": {
+        "spec.endpoints.followRedirects": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.endpoints.relabelings",
+        "spec.namespaceSelector.matchNames",
+        "spec.targetLabels"
+      ],
+      "descriptions": {
+        "spec.endpoints.followRedirects": [
+          null,
+          319
+        ],
+        "spec.endpoints.relabelings": [
+          367,
+          335
+        ],
+        "spec.namespaceSelector.matchNames": [
+          368,
+          148
+        ],
+        "spec.targetLabels": [
+          369,
+          348
+        ]
+      }
+    },
+    "v0.50.0": {
+      "added": {
+        "spec.endpoints.authorization": "object",
+        "spec.endpoints.oauth2": "object",
+        "spec.labelLimit": "integer",
+        "spec.labelNameLengthLimit": "integer",
+        "spec.labelValueLengthLimit": "integer"
+      },
+      "descriptions": {
+        "spec.endpoints.authorization": [
+          null,
+          311
+        ],
+        "spec.endpoints.oauth2": [
+          null,
+          324
+        ],
+        "spec.labelLimit": [
+          null,
+          341
+        ],
+        "spec.labelNameLengthLimit": [
+          null,
+          342
+        ],
+        "spec.labelValueLengthLimit": [
+          null,
+          343
+        ]
+      }
+    },
+    "v0.49.0": {
+      "descriptionChanged": [
+        "spec.jobLabel",
+        "spec.namespaceSelector",
+        "spec.podTargetLabels",
+        "spec.targetLabels"
+      ],
+      "descriptions": {
+        "spec.jobLabel": [
+          370,
+          364
+        ],
+        "spec.namespaceSelector": [
+          371,
+          344
+        ],
+        "spec.podTargetLabels": [
+          372,
+          345
+        ],
+        "spec.targetLabels": [
+          373,
+          369
+        ]
+      }
+    },
+    "v0.47.0": {
+      "descriptionChanged": [
+        "spec.endpoints.relabelings"
+      ],
+      "descriptions": {
+        "spec.endpoints.relabelings": [
+          374,
+          367
+        ]
+      }
+    },
+    "v0.43.0": {
+      "descriptionChanged": [
+        "spec.endpoints.tlsConfig.ca"
+      ],
+      "added": {
+        "spec.targetLimit": "integer"
+      },
+      "descriptions": {
+        "spec.endpoints.tlsConfig.ca": [
+          375,
+          360
+        ],
+        "spec.targetLimit": [
+          null,
+          349
+        ]
+      }
+    },
+    "v0.42.0": {
+      "descriptionChanged": [
+        "spec.endpoints.targetPort"
+      ],
+      "descriptions": {
+        "spec.endpoints.targetPort": [
+          376,
+          338
+        ]
+      }
+    },
+    "v0.38.0": {
+      "descriptionChanged": [
+        "spec.endpoints.targetPort"
+      ],
+      "descriptions": {
+        "spec.endpoints.targetPort": [
+          377,
+          376
+        ]
+      }
+    },
+    "v0.35.0": {
+      "added": {
+        "metadata": "object",
+        "spec.endpoints.tlsConfig.ca.configMap": "object",
+        "spec.endpoints.tlsConfig.ca.secret": "object",
+        "spec.endpoints.tlsConfig.cert.configMap": "object",
+        "spec.endpoints.tlsConfig.cert.secret": "object"
+      },
+      "required": [
+        "spec"
+      ],
+      "descriptionChanged": [
+        "spec",
+        "spec.endpoints.basicAuth.password",
+        "spec.endpoints.basicAuth.password.name",
+        "spec.endpoints.basicAuth.username",
+        "spec.endpoints.basicAuth.username.name",
+        "spec.endpoints.bearerTokenSecret",
+        "spec.endpoints.bearerTokenSecret.name",
+        "spec.endpoints.metricRelabelings.regex",
+        "spec.endpoints.relabelings.regex",
+        "spec.endpoints.targetPort",
+        "spec.endpoints.tlsConfig",
+        "spec.endpoints.tlsConfig.ca",
+        "spec.endpoints.tlsConfig.cert",
+        "spec.endpoints.tlsConfig.keySecret",
+        "spec.endpoints.tlsConfig.keySecret.name",
+        "spec.namespaceSelector",
+        "spec.selector"
+      ],
+      "typeChanged": {
+        "spec.endpoints.params": [
+          "object",
+          "map[string]string[]"
+        ],
+        "spec.endpoints.targetPort": [
+          "object",
+          "int | string"
+        ],
+        "spec.selector.matchLabels": [
+          "object",
+          "map[string]string"
+        ]
+      },
+      "description": true,
+      "descriptions": {
+        "spec": [
+          378,
+          254
+        ],
+        "spec.endpoints.basicAuth.password": [
+          379,
+          313
+        ],
+        "spec.endpoints.basicAuth.password.name": [
+          380,
+          259
+        ],
+        "spec.endpoints.basicAuth.username": [
+          379,
+          314
+        ],
+        "spec.endpoints.basicAuth.username.name": [
+          380,
+          259
+        ],
+        "spec.endpoints.bearerTokenSecret": [
+          379,
+          316
+        ],
+        "spec.endpoints.bearerTokenSecret.name": [
+          380,
+          259
+        ],
+        "spec.endpoints.metricRelabelings.regex": [
+          381,
+          354
+        ],
+        "spec.endpoints.params": [
+          null,
+          330
+        ],
+        "spec.endpoints.relabelings.regex": [
+          381,
+          354
+        ],
+        "spec.endpoints.targetPort": [
+          null,
+          377
+        ],
+        "spec.endpoints.tlsConfig": [
+          382,
+          339
+        ],
+        "spec.endpoints.tlsConfig.ca": [
+          null,
+          375
+        ],
+        "spec.endpoints.tlsConfig.ca.configMap": [
+          null,
+          80
+        ],
+        "spec.endpoints.tlsConfig.ca.secret": [
+          null,
+          82
+        ],
+        "spec.endpoints.tlsConfig.cert": [
+          null,
+          361
+        ],
+        "spec.endpoints.tlsConfig.cert.configMap": [
+          null,
+          80
+        ],
+        "spec.endpoints.tlsConfig.cert.secret": [
+          null,
+          82
+        ],
+        "spec.endpoints.tlsConfig.keySecret": [
+          379,
+          104
+        ],
+        "spec.endpoints.tlsConfig.keySecret.name": [
+          380,
+          259
+        ],
+        "spec.namespaceSelector": [
+          383,
+          371
+        ],
+        "spec.selector": [
+          384,
+          347
+        ],
+        "spec.selector.matchLabels": [
+          null,
+          303
+        ],
+        "": [
+          null,
+          248
+        ]
+      }
+    },
+    "v0.34.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.endpoints.tlsConfig.caFile",
+        "spec.endpoints.tlsConfig.certFile",
+        "spec.endpoints.tlsConfig.keyFile"
+      ],
+      "added": {
+        "spec.endpoints.bearerTokenSecret": "object",
+        "spec.endpoints.honorTimestamps": "boolean",
+        "spec.endpoints.tlsConfig.ca": "object",
+        "spec.endpoints.tlsConfig.cert": "object",
+        "spec.endpoints.tlsConfig.keySecret": "object"
+      },
+      "descriptions": {
+        "apiVersion": [
+          385,
+          250
+        ],
+        "kind": [
+          386,
+          252
+        ],
+        "spec.endpoints.bearerTokenSecret": [
+          null,
+          379
+        ],
+        "spec.endpoints.honorTimestamps": [
+          null,
+          321
+        ],
+        "spec.endpoints.tlsConfig.caFile": [
+          387,
+          124
+        ],
+        "spec.endpoints.tlsConfig.certFile": [
+          388,
+          126
+        ],
+        "spec.endpoints.tlsConfig.keyFile": [
+          389,
+          128
+        ],
+        "spec.endpoints.tlsConfig.keySecret": [
+          null,
+          379
+        ]
+      }
+    },
+    "v0.32.0": {
+      "descriptionChanged": [
+        "spec.endpoints.basicAuth.password.optional",
+        "spec.endpoints.basicAuth.username.optional",
+        "spec.endpoints.relabelings"
+      ],
+      "descriptions": {
+        "spec.endpoints.basicAuth.password.optional": [
+          390,
+          391
+        ],
+        "spec.endpoints.basicAuth.username.optional": [
+          390,
+          391
+        ],
+        "spec.endpoints.relabelings": [
+          392,
+          374
+        ]
+      }
+    },
+    "v0.29.0": {
+      "descriptionChanged": [
+        "spec.endpoints.relabelings"
+      ],
+      "descriptions": {
+        "spec.endpoints.relabelings": [
+          393,
+          392
+        ]
+      }
+    },
+    "v0.24.0": {
+      "added": {
+        "spec.endpoints.relabelings": "object[]",
+        "spec.podTargetLabels": "string[]",
+        "spec.sampleLimit": "integer"
+      },
+      "descriptions": {
+        "spec.endpoints.relabelings": [
+          null,
+          393
+        ],
+        "spec.podTargetLabels": [
+          null,
+          372
+        ],
+        "spec.sampleLimit": [
+          null,
+          346
+        ]
+      }
+    },
+    "v0.23.0": {
+      "descriptionChanged": [
+        "spec.namespaceSelector"
+      ],
+      "descriptions": {
+        "spec.namespaceSelector": [
+          394,
+          383
+        ]
+      }
+    },
+    "v0.22.0": {
+      "optional": [
+        "spec"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec": [
+          null,
+          378
+        ],
+        "": [
+          248,
+          null
+        ]
+      }
+    },
+    "v0.20.0": {
+      "added": {
+        "spec.endpoints.proxyUrl": "string"
+      },
+      "descriptions": {
+        "spec.endpoints.proxyUrl": [
+          null,
+          334
+        ]
+      }
+    },
+    "v0.18.0": {
+      "optional": [
+        "spec.endpoints.metricRelabelings.replacement",
+        "spec.endpoints.metricRelabelings.sourceLabels"
+      ],
+      "added": {
+        "spec.targetLabels": "string[]"
+      },
+      "descriptions": {
+        "spec.endpoints.metricRelabelings.replacement": [
+          null,
+          355
+        ],
+        "spec.endpoints.metricRelabelings.sourceLabels": [
+          null,
+          357
+        ],
+        "spec.targetLabels": [
+          null,
+          373
+        ]
+      }
+    }
+  },
+  "texts": [
+    "The key to select.",
+    "The key to select from the ConfigMap's Data field.\nKeys in the BinaryData field are not currently propagated to container env vars.",
+    "node when set to true, Prometheus attaches node metadata to the discovered\ntargets.\n\nThe Prometheus service account must have the `list` and `watch`\npermissions on the `Nodes` objects.",
+    "node when set to true, Prometheus attaches node metadata to the discovered\ntargets.\n\nThe Prometheus service account must have the `list` and `watch`\npermissions on the `Nodes` objects.\n\nNode metadata labels are not automatically added to scraped metrics. They are\nexposed as `__meta_kubernetes_node_*` labels and can be copied to timeseries\nwith relabeling configuration.",
+    "port defines the name of the Service port which this endpoint refers to.\n\nIt takes precedence over `targetPort`.",
+    "port defines the name of the Service port which this endpoint refers to\n(e.g. `.spec.ports[].name`).\n\nIt takes precedence over `targetPort`.",
+    "targetPort defines the name or number of the target port of the `Pod` object behind the\nService. The port must be specified with the container's port property.",
+    "targetPort defines the name or number of a container port on Pods selected\nby the Service.\nIf a name, it matches against `.spec.containers[].ports[].name` of the Pods.\nIf a number, it matches against `.spec.containers[].ports[].containerPort` of the Pods.",
+    "authorization configures the Authorization header credentials to use when\nscraping the target.\n\nCannot be set at the same time as `basicAuth`, or `oauth2`.",
+    "authorization configures the Authorization header credentials used by\nthe client.\n\nCannot be set at the same time as `basicAuth`, `bearerTokenSecret` or `oauth2`.",
+    "basicAuth defines the Basic Authentication credentials to use when\nscraping the target.\n\nCannot be set at the same time as `authorization`, or `oauth2`.",
+    "basicAuth defines the Basic Authentication credentials used by the\nclient.\n\nCannot be set at the same time as `authorization`, `bearerTokenSecret` or `oauth2`.",
+    "bearerTokenSecret defines a key of a Secret containing the bearer\ntoken for scraping targets. The secret needs to be in the same namespace\nas the ServiceMonitor object and readable by the Prometheus Operator.\n\nDeprecated: use `authorization` instead.",
+    "bearerTokenSecret defines a key of a Secret containing the bearer token\nused by the client for authentication. The secret needs to be in the\nsame namespace as the custom resource and readable by the Prometheus\nOperator.\n\nCannot be set at the same time as `authorization`, `basicAuth` or `oauth2`.\n\nDeprecated: use `authorization` instead.",
+    "enableHttp2 can be used to disable HTTP2 when scraping the target.",
+    "enableHttp2 can be used to disable HTTP2.",
+    "followRedirects defines whether the scrape requests should follow HTTP\n3xx redirects.",
+    "followRedirects defines whether the client should follow HTTP 3xx\nredirects.",
+    "oauth2 defines the OAuth2 settings to use when scraping the target.\n\nIt requires Prometheus >= 2.27.0.\n\nCannot be set at the same time as `authorization`, or `basicAuth`.",
+    "oauth2 defines the OAuth2 settings used by the client.\n\nIt requires Prometheus >= 2.27.0.\n\nCannot be set at the same time as `authorization`, `basicAuth` or `bearerTokenSecret`.",
+    "tlsConfig defines the TLS configuration to use when scraping the target.",
+    "tlsConfig defines TLS configuration used by the client.",
+    "scrapeNativeHistograms defines whether to enable scraping of native histograms.\nIt requires Prometheus >= v3.8.0.",
+    "scheme defines the HTTP scheme to use for scraping.\n\n`http` and `https` are the expected values unless you rewrite the\n`__scheme__` label via relabeling.\n\nIf empty, Prometheus uses the default value `http`.",
+    "scheme defines the HTTP scheme to use when scraping the metrics.",
+    "Specification of desired Service selection for target discovery by\nPrometheus.",
+    "spec defines the specification of desired Service selection for target discovery by\nPrometheus.",
+    "`attachMetadata` defines additional metadata which is added to the\ndiscovered targets.\n\nIt requires Prometheus >= v2.37.0.",
+    "attachMetadata defines additional metadata which is added to the\ndiscovered targets.\n\nIt requires Prometheus >= v2.37.0.",
+    "When set to true, Prometheus attaches node metadata to the discovered\ntargets.\n\nThe Prometheus service account must have the `list` and `watch`\npermissions on the `Nodes` objects.",
+    "When defined, bodySizeLimit specifies a job level limit on the size\nof uncompressed response body that will be accepted by Prometheus.\n\nIt requires Prometheus >= v2.28.0.",
+    "bodySizeLimit when defined, bodySizeLimit specifies a job level limit on the size\nof uncompressed response body that will be accepted by Prometheus.\n\nIt requires Prometheus >= v2.28.0.",
+    "Whether to convert all scraped classic histograms into a native histogram with custom buckets.\nIt requires Prometheus >= v3.0.0.",
+    "convertClassicHistogramsToNHCB defines whether to convert all scraped classic histograms into a native histogram with custom buckets.\nIt requires Prometheus >= v3.0.0.",
+    "List of endpoints part of this ServiceMonitor.\nDefines how to scrape metrics from Kubernetes [Endpoints](https://kubernetes.io/docs/concepts/services-networking/service/#endpoints) objects.\nIn most cases, an Endpoints object is backed by a Kubernetes [Service](https://kubernetes.io/docs/concepts/services-networking/service/) object with the same name and labels.",
+    "endpoints defines the list of endpoints part of this ServiceMonitor.\nDefines how to scrape metrics from Kubernetes [Endpoints](https://kubernetes.io/docs/concepts/services-networking/service/#endpoints) objects.\nIn most cases, an Endpoints object is backed by a Kubernetes [Service](https://kubernetes.io/docs/concepts/services-networking/service/) object with the same name and labels.",
+    "`authorization` configures the Authorization header credentials to use when\nscraping the target.\n\nCannot be set at the same time as `basicAuth`, or `oauth2`.",
+    "Selects a key of a Secret in the namespace that contains the credentials for authentication.",
+    "credentials defines a key of a Secret in the namespace that contains the credentials for authentication.",
+    "Defines the authentication type. The value is case-insensitive.\n\n\"Basic\" is not a supported value.\n\nDefault: \"Bearer\"",
+    "type defines the authentication type. The value is case-insensitive.\n\n\"Basic\" is not a supported value.\n\nDefault: \"Bearer\"",
+    "`basicAuth` configures the Basic Authentication credentials to use when\nscraping the target.\n\nCannot be set at the same time as `authorization`, or `oauth2`.",
+    "`password` specifies a key of a Secret containing the password for\nauthentication.",
+    "password defines a key of a Secret containing the password for\nauthentication.",
+    "`username` specifies a key of a Secret containing the username for\nauthentication.",
+    "username defines a key of a Secret containing the username for\nauthentication.",
+    "File to read bearer token for scraping the target.\n\nDeprecated: use `authorization` instead.",
+    "bearerTokenFile defines the file to read bearer token for scraping the target.\n\nDeprecated: use `authorization` instead.",
+    "`bearerTokenSecret` specifies a key of a Secret containing the bearer\ntoken for scraping targets. The secret needs to be in the same namespace\nas the ServiceMonitor object and readable by the Prometheus Operator.\n\nDeprecated: use `authorization` instead.",
+    "`enableHttp2` can be used to disable HTTP2 when scraping the target.",
+    "When true, the pods which are not running (e.g. either in Failed or\nSucceeded state) are dropped during the target discovery.\n\nIf unset, the filtering is enabled.\n\nMore info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-phase",
+    "filterRunning when true, the pods which are not running (e.g. either in Failed or\nSucceeded state) are dropped during the target discovery.\n\nIf unset, the filtering is enabled.\n\nMore info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-phase",
+    "`followRedirects` defines whether the scrape requests should follow HTTP\n3xx redirects.",
+    "When true, `honorLabels` preserves the metric's labels when they collide\nwith the target's labels.",
+    "honorLabels defines when true the metric's labels when they collide\nwith the target's labels.",
+    "`honorTimestamps` controls whether Prometheus preserves the timestamps\nwhen exposed by the target.",
+    "honorTimestamps defines whether Prometheus preserves the timestamps\nwhen exposed by the target.",
+    "Interval at which Prometheus scrapes the metrics from the target.\n\nIf empty, Prometheus uses the global scrape interval.",
+    "interval at which Prometheus scrapes the metrics from the target.\n\nIf empty, Prometheus uses the global scrape interval.",
+    "`metricRelabelings` configures the relabeling rules to apply to the\nsamples before ingestion.",
+    "metricRelabelings defines the relabeling rules to apply to the\nsamples before ingestion.",
+    "Action to perform based on the regex matching.\n\n`Uppercase` and `Lowercase` actions require Prometheus >= v2.36.0.\n`DropEqual` and `KeepEqual` actions require Prometheus >= v2.41.0.\n\nDefault: \"Replace\"",
+    "action to perform based on the regex matching.\n\n`Uppercase` and `Lowercase` actions require Prometheus >= v2.36.0.\n`DropEqual` and `KeepEqual` actions require Prometheus >= v2.41.0.\n\nDefault: \"Replace\"",
+    "Modulus to take of the hash of the source label values.\n\nOnly applicable when the action is `HashMod`.",
+    "modulus to take of the hash of the source label values.\n\nOnly applicable when the action is `HashMod`.",
+    "Regular expression against which the extracted value is matched.",
+    "regex defines the regular expression against which the extracted value is matched.",
+    "Replacement value against which a Replace action is performed if the\nregular expression matches.\n\nRegex capture groups are available.",
+    "replacement value against which a Replace action is performed if the\nregular expression matches.\n\nRegex capture groups are available.",
+    "Separator is the string between concatenated SourceLabels.",
+    "separator defines the string between concatenated SourceLabels.",
+    "The source labels select values from existing labels. Their content is\nconcatenated using the configured Separator and matched against the\nconfigured regular expression.",
+    "sourceLabels defines the source labels select values from existing labels. Their content is\nconcatenated using the configured Separator and matched against the\nconfigured regular expression.",
+    "Label to which the resulting string is written in a replacement.\n\nIt is mandatory for `Replace`, `HashMod`, `Lowercase`, `Uppercase`,\n`KeepEqual` and `DropEqual` actions.\n\nRegex capture groups are available.",
+    "targetLabel defines the label to which the resulting string is written in a replacement.\n\nIt is mandatory for `Replace`, `HashMod`, `Lowercase`, `Uppercase`,\n`KeepEqual` and `DropEqual` actions.\n\nRegex capture groups are available.",
+    "`noProxy` is a comma-separated string that can contain IPs, CIDR notation, domain names\nthat should be excluded from proxying. IP and domain names can\ncontain port numbers.\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "noProxy defines a comma-separated string that can contain IPs, CIDR notation, domain names\nthat should be excluded from proxying. IP and domain names can\ncontain port numbers.\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "`oauth2` configures the OAuth2 settings to use when scraping the target.\n\nIt requires Prometheus >= 2.27.0.\n\nCannot be set at the same time as `authorization`, or `basicAuth`.",
+    "`clientId` specifies a key of a Secret or ConfigMap containing the\nOAuth2 client's ID.",
+    "clientId defines a key of a Secret or ConfigMap containing the\nOAuth2 client's ID.",
+    "ConfigMap containing data to use for the targets.",
+    "configMap defines the ConfigMap containing data to use for the targets.",
+    "Secret containing data to use for the targets.",
+    "secret defines the Secret containing data to use for the targets.",
+    "`clientSecret` specifies a key of a Secret containing the OAuth2\nclient's secret.",
+    "clientSecret defines a key of a Secret containing the OAuth2\nclient's secret.",
+    "`endpointParams` configures the HTTP parameters to append to the token\nURL.",
+    "endpointParams configures the HTTP parameters to append to the token\nURL.",
+    "ProxyConnectHeader optionally specifies headers to send to\nproxies during CONNECT requests.\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "proxyConnectHeader optionally specifies headers to send to\nproxies during CONNECT requests.\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "Whether to use the proxy configuration defined by environment variables (HTTP_PROXY, HTTPS_PROXY, and NO_PROXY).\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "proxyFromEnvironment defines whether to use the proxy configuration defined by environment variables (HTTP_PROXY, HTTPS_PROXY, and NO_PROXY).\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "`proxyURL` defines the HTTP proxy server to use.",
+    "proxyUrl defines the HTTP proxy server to use.",
+    "`scopes` defines the OAuth2 scopes used for the token request.",
+    "scopes defines the OAuth2 scopes used for the token request.",
+    "TLS configuration to use when connecting to the OAuth2 server.\nIt requires Prometheus >= v2.43.0.",
+    "tlsConfig defines the TLS configuration to use when connecting to the OAuth2 server.\nIt requires Prometheus >= v2.43.0.",
+    "Certificate authority used when verifying server certificates.",
+    "ca defines the Certificate authority used when verifying server certificates.",
+    "Client certificate to present when doing client-authentication.",
+    "cert defines the Client certificate to present when doing client-authentication.",
+    "Disable target certificate validation.",
+    "insecureSkipVerify defines how to disable target certificate validation.",
+    "Secret containing the client key file for the targets.",
+    "keySecret defines the Secret containing the client key file for the targets.",
+    "Maximum acceptable TLS version.\n\nIt requires Prometheus >= v2.41.0 or Thanos >= v0.31.0.",
+    "maxVersion defines the maximum acceptable TLS version.\n\nIt requires Prometheus >= v2.41.0 or Thanos >= v0.31.0.",
+    "Minimum acceptable TLS version.\n\nIt requires Prometheus >= v2.35.0 or Thanos >= v0.28.0.",
+    "minVersion defines the minimum acceptable TLS version.\n\nIt requires Prometheus >= v2.35.0 or Thanos >= v0.28.0.",
+    "Used to verify the hostname for the targets.",
+    "serverName is used to verify the hostname for the targets.",
+    "`tokenURL` configures the URL to fetch the token from.",
+    "tokenUrl defines the URL to fetch the token from.",
+    "HTTP path from which to scrape for metrics.\n\nIf empty, Prometheus uses the default value (e.g. `/metrics`).",
+    "path defines the HTTP path from which to scrape for metrics.\n\nIf empty, Prometheus uses the default value (e.g. `/metrics`).",
+    "Name of the Service port which this endpoint refers to.\n\nIt takes precedence over `targetPort`.",
+    "`relabelings` configures the relabeling rules to apply the target's\nmetadata labels.\n\nThe Operator automatically adds relabelings for a few standard Kubernetes fields.\n\nThe original scrape job's name is available via the `__tmp_prometheus_job_name` label.\n\nMore info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "relabelings defines the relabeling rules to apply the target's\nmetadata labels.\n\nThe Operator automatically adds relabelings for a few standard Kubernetes fields.\n\nThe original scrape job's name is available via the `__tmp_prometheus_job_name` label.\n\nMore info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "HTTP scheme to use for scraping.\n\n`http` and `https` are the expected values unless you rewrite the\n`__scheme__` label via relabeling.\n\nIf empty, Prometheus uses the default value `http`.",
+    "Timeout after which Prometheus considers the scrape to be failed.\n\nIf empty, Prometheus uses the global scrape timeout unless it is less\nthan the target's scrape interval value in which the latter is used.\nThe value cannot be greater than the scrape interval otherwise the operator will reject the resource.",
+    "scrapeTimeout defines the timeout after which Prometheus considers the scrape to be failed.\n\nIf empty, Prometheus uses the global scrape timeout unless it is less\nthan the target's scrape interval value in which the latter is used.\nThe value cannot be greater than the scrape interval otherwise the operator will reject the resource.",
+    "Name or number of the target port of the `Pod` object behind the\nService. The port must be specified with the container's port property.",
+    "TLS configuration to use when scraping the target.",
+    "Path to the CA cert in the Prometheus container to use for the targets.",
+    "caFile defines the path to the CA cert in the Prometheus container to use for the targets.",
+    "Path to the client cert file in the Prometheus container for the targets.",
+    "certFile defines the path to the client cert file in the Prometheus container for the targets.",
+    "Path to the client key file in the Prometheus container for the targets.",
+    "keyFile defines the path to the client key file in the Prometheus container for the targets.",
+    "`trackTimestampsStaleness` defines whether Prometheus tracks staleness of\nthe metrics that have an explicit timestamp present in scraped data.\nHas no effect if `honorTimestamps` is false.\n\nIt requires Prometheus >= v2.48.0.",
+    "trackTimestampsStaleness defines whether Prometheus tracks staleness of\nthe metrics that have an explicit timestamp present in scraped data.\nHas no effect if `honorTimestamps` is false.\n\nIt requires Prometheus >= v2.48.0.",
+    "The protocol to use if a scrape returns blank, unparseable, or otherwise invalid Content-Type.\n\nIt requires Prometheus >= v3.0.0.",
+    "fallbackScrapeProtocol defines the protocol to use if a scrape returns blank, unparseable, or otherwise invalid Content-Type.\n\nIt requires Prometheus >= v3.0.0.",
+    "`jobLabel` selects the label from the associated Kubernetes `Service`\nobject which will be used as the `job` label for all metrics.\n\nFor example if `jobLabel` is set to `foo` and the Kubernetes `Service`\nobject is labeled with `foo: bar`, then Prometheus adds the `job=\"bar\"`\nlabel to all ingested metrics.\n\nIf the value of this field is empty or if the label doesn't exist for\nthe given Service, the `job` label of the metrics defaults to the name\nof the associated Kubernetes `Service`.",
+    "jobLabel selects the label from the associated Kubernetes `Service`\nobject which will be used as the `job` label for all metrics.\n\nFor example if `jobLabel` is set to `foo` and the Kubernetes `Service`\nobject is labeled with `foo: bar`, then Prometheus adds the `job=\"bar\"`\nlabel to all ingested metrics.\n\nIf the value of this field is empty or if the label doesn't exist for\nthe given Service, the `job` label of the metrics defaults to the name\nof the associated Kubernetes `Service`.",
+    "Per-scrape limit on the number of targets dropped by relabeling\nthat will be kept in memory. 0 means no limit.\n\nIt requires Prometheus >= v2.47.0.",
+    "keepDroppedTargets defines the per-scrape limit on the number of targets dropped by relabeling\nthat will be kept in memory. 0 means no limit.\n\nIt requires Prometheus >= v2.47.0.",
+    "Per-scrape limit on number of labels that will be accepted for a sample.\n\nIt requires Prometheus >= v2.27.0.",
+    "labelLimit defines the per-scrape limit on number of labels that will be accepted for a sample.\n\nIt requires Prometheus >= v2.27.0.",
+    "Per-scrape limit on length of labels name that will be accepted for a sample.\n\nIt requires Prometheus >= v2.27.0.",
+    "labelNameLengthLimit defines the per-scrape limit on length of labels name that will be accepted for a sample.\n\nIt requires Prometheus >= v2.27.0.",
+    "Per-scrape limit on length of labels value that will be accepted for a sample.\n\nIt requires Prometheus >= v2.27.0.",
+    "labelValueLengthLimit defines the per-scrape limit on length of labels value that will be accepted for a sample.\n\nIt requires Prometheus >= v2.27.0.",
+    "`namespaceSelector` defines in which namespace(s) Prometheus should discover the services.\nBy default, the services are discovered in the same namespace as the `ServiceMonitor` object but it is possible to select pods across different/all namespaces.",
+    "namespaceSelector defines in which namespace(s) Prometheus should discover the services.\nBy default, the services are discovered in the same namespace as the `ServiceMonitor` object but it is possible to select pods across different/all namespaces.",
+    "Boolean describing whether all namespaces are selected in contrast to a\nlist restricting them.",
+    "any defines the boolean describing whether all namespaces are selected in contrast to a\nlist restricting them.",
+    "List of namespace names to select from.",
+    "matchNames defines the list of namespace names to select from.",
+    "If there are more than this many buckets in a native histogram,\nbuckets will be merged to stay within the limit.\nIt requires Prometheus >= v2.45.0.",
+    "nativeHistogramBucketLimit defines ff there are more than this many buckets in a native histogram,\nbuckets will be merged to stay within the limit.\nIt requires Prometheus >= v2.45.0.",
+    "If the growth factor of one bucket to the next is smaller than this,\nbuckets will be merged to increase the factor sufficiently.\nIt requires Prometheus >= v2.50.0.",
+    "nativeHistogramMinBucketFactor defines if the growth factor of one bucket to the next is smaller than this,\nbuckets will be merged to increase the factor sufficiently.\nIt requires Prometheus >= v2.50.0.",
+    "`podTargetLabels` defines the labels which are transferred from the\nassociated Kubernetes `Pod` object onto the ingested metrics.",
+    "podTargetLabels defines the labels which are transferred from the\nassociated Kubernetes `Pod` object onto the ingested metrics.",
+    "`sampleLimit` defines a per-scrape limit on the number of scraped samples\nthat will be accepted.",
+    "sampleLimit defines a per-scrape limit on the number of scraped samples\nthat will be accepted.",
+    "The scrape class to apply.",
+    "scrapeClass defines the scrape class to apply.",
+    "Whether to scrape a classic histogram that is also exposed as a native histogram.\nIt requires Prometheus >= v2.45.0.\n\nNotice: `scrapeClassicHistograms` corresponds to the `always_scrape_classic_histograms` field in the Prometheus configuration.",
+    "scrapeClassicHistograms defines whether to scrape a classic histogram that is also exposed as a native histogram.\nIt requires Prometheus >= v2.45.0.\n\nNotice: `scrapeClassicHistograms` corresponds to the `always_scrape_classic_histograms` field in the Prometheus configuration.",
+    "`scrapeProtocols` defines the protocols to negotiate during a scrape. It tells clients the\nprotocols supported by Prometheus in order of preference (from most to least preferred).\n\nIf unset, Prometheus uses its default value.\n\nIt requires Prometheus >= v2.49.0.",
+    "scrapeProtocols defines the protocols to negotiate during a scrape. It tells clients the\nprotocols supported by Prometheus in order of preference (from most to least preferred).\n\nIf unset, Prometheus uses its default value.\n\nIt requires Prometheus >= v2.49.0.",
+    "Label selector to select the Kubernetes `Endpoints` objects to scrape metrics from.",
+    "selector defines the label selector to select the Kubernetes `Endpoints` objects to scrape metrics from.",
+    "Mechanism used to select the endpoints to scrape.\nBy default, the selection process relies on relabel configurations to filter the discovered targets.\nAlternatively, you can opt in for role selectors, which may offer better efficiency in large clusters.\nWhich strategy is best for your use case needs to be carefully evaluated.\n\nIt requires Prometheus >= v2.17.0.",
+    "selectorMechanism defines the mechanism used to select the endpoints to scrape.\nBy default, the selection process relies on relabel configurations to filter the discovered targets.\nAlternatively, you can opt in for role selectors, which may offer better efficiency in large clusters.\nWhich strategy is best for your use case needs to be carefully evaluated.\n\nIt requires Prometheus >= v2.17.0.",
+    "serviceDiscoveryRole defines the service discovery role used to discover targets.\n\nIf set, the value should be either \"Endpoints\" or \"EndpointSlice\".\nOtherwise it defaults to the value defined in the\nPrometheus/PrometheusAgent resource.",
+    "`targetLabels` defines the labels which are transferred from the\nassociated Kubernetes `Service` object onto the ingested metrics.",
+    "targetLabels defines the labels which are transferred from the\nassociated Kubernetes `Service` object onto the ingested metrics.",
+    "`targetLimit` defines a limit on the number of scraped targets that will\nbe accepted.",
+    "targetLimit defines a limit on the number of scraped targets that will\nbe accepted.",
+    "This Status subresource is under active development and is updated only when the\n\"StatusForConfigurationResources\" feature gate is enabled.\n\nMost recent observed status of the ServiceMonitor. Read-only.\nMore info:\nhttps://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "status defines the status subresource. It is under active development and is updated only when the\n\"StatusForConfigurationResources\" feature gate is enabled.\n\nMost recent observed status of the ServiceMonitor. Read-only.\nMore info:\nhttps://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "The list of workload resources (Prometheus or PrometheusAgent) which select the configuration resource.",
+    "bindings defines the list of workload resources (Prometheus, PrometheusAgent, ThanosRuler or Alertmanager) which select the configuration resource.",
+    "The current state of the configuration resource when bound to the referenced Prometheus object.",
+    "conditions defines the current state of the configuration resource when bound to the referenced Workload object.",
+    "LastTransitionTime is the time of the last update to the current status property.",
+    "lastTransitionTime defines the time of the last update to the current status property.",
+    "Human-readable message indicating details for the condition's last transition.",
+    "message defines the human-readable message indicating details for the condition's last transition.",
+    "ObservedGeneration represents the .metadata.generation that the\ncondition was set based upon. For instance, if `.metadata.generation` is\ncurrently 12, but the `.status.conditions[].observedGeneration` is 9, the\ncondition is out of date with respect to the current state of the object.",
+    "observedGeneration defines the .metadata.generation that the\ncondition was set based upon. For instance, if `.metadata.generation` is\ncurrently 12, but the `.status.conditions[].observedGeneration` is 9, the\ncondition is out of date with respect to the current state of the object.",
+    "Reason for the condition's last transition.",
+    "reason for the condition's last transition.",
+    "Status of the condition.",
+    "status of the condition.",
+    "Type of the condition being reported.\nCurrently, only \"Accepted\" is supported.",
+    "type of the condition being reported.\nCurrently, only \"Accepted\" is supported.",
+    "The group of the referenced resource.",
+    "group defines the group of the referenced resource.",
+    "The name of the referenced object.",
+    "name defines the name of the referenced object.",
+    "The namespace of the referenced object.",
+    "namespace defines the namespace of the referenced object.",
+    "The type of resource being referenced (e.g. Prometheus or PrometheusAgent).",
+    "resource defines the type of resource being referenced (e.g. Prometheus, PrometheusAgent, ThanosRuler or Alertmanager).",
+    "Whether to scrape a classic histogram that is also exposed as a native histogram.\nIt requires Prometheus >= v2.45.0.",
+    "`proxyURL` configures the HTTP Proxy URL (e.g.\n\"http://proxyserver:2195\") to go through when scraping the target.",
+    "`noProxy` is a comma-separated string that can contain IPs, CIDR notation, domain names\nthat should be excluded from proxying. IP and domain names can\ncontain port numbers.\n\nIt requires Prometheus >= v2.43.0 or Alertmanager >= 0.25.0.",
+    "ProxyConnectHeader optionally specifies headers to send to\nproxies during CONNECT requests.\n\nIt requires Prometheus >= v2.43.0 or Alertmanager >= 0.25.0.",
+    "Whether to use the proxy configuration defined by environment variables (HTTP_PROXY, HTTPS_PROXY, and NO_PROXY).\n\nIt requires Prometheus >= v2.43.0 or Alertmanager >= 0.25.0.",
+    "Maximum acceptable TLS version.\n\nIt requires Prometheus >= v2.41.0.",
+    "Minimum acceptable TLS version.\n\nIt requires Prometheus >= v2.35.0.",
+    "Timeout after which Prometheus considers the scrape to be failed.\n\nIf empty, Prometheus uses the global scrape timeout unless it is less\nthan the target's scrape interval value in which the latter is used.",
+    "`attachMetadata` defines additional metadata which is added to the\ndiscovered targets.\n\n\nIt requires Prometheus >= v2.37.0.",
+    "When set to true, Prometheus attaches node metadata to the discovered\ntargets.\n\n\nThe Prometheus service account must have the `list` and `watch`\npermissions on the `Nodes` objects.",
+    "When defined, bodySizeLimit specifies a job level limit on the size\nof uncompressed response body that will be accepted by Prometheus.\n\n\nIt requires Prometheus >= v2.28.0.",
+    "`authorization` configures the Authorization header credentials to use when\nscraping the target.\n\n\nCannot be set at the same time as `basicAuth`, or `oauth2`.",
+    "Name of the referent.\nThis field is effectively required, but due to backwards compatibility is\nallowed to be empty. Instances of this type with an empty value here are\nalmost certainly wrong.\nTODO: Add other useful fields. apiVersion, kind, uid?\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names\nTODO: Drop `kubebuilder:default` when controller-gen doesn't need it https://github.com/kubernetes-sigs/kubebuilder/issues/3896.",
+    "Name of the referent.\nThis field is effectively required, but due to backwards compatibility is\nallowed to be empty. Instances of this type with an empty value here are\nalmost certainly wrong.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Defines the authentication type. The value is case-insensitive.\n\n\n\"Basic\" is not a supported value.\n\n\nDefault: \"Bearer\"",
+    "`basicAuth` configures the Basic Authentication credentials to use when\nscraping the target.\n\n\nCannot be set at the same time as `authorization`, or `oauth2`.",
+    "File to read bearer token for scraping the target.\n\n\nDeprecated: use `authorization` instead.",
+    "`bearerTokenSecret` specifies a key of a Secret containing the bearer\ntoken for scraping targets. The secret needs to be in the same namespace\nas the ServiceMonitor object and readable by the Prometheus Operator.\n\n\nDeprecated: use `authorization` instead.",
+    "When true, the pods which are not running (e.g. either in Failed or\nSucceeded state) are dropped during the target discovery.\n\n\nIf unset, the filtering is enabled.\n\n\nMore info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-phase",
+    "Interval at which Prometheus scrapes the metrics from the target.\n\n\nIf empty, Prometheus uses the global scrape interval.",
+    "Action to perform based on the regex matching.\n\n\n`Uppercase` and `Lowercase` actions require Prometheus >= v2.36.0.\n`DropEqual` and `KeepEqual` actions require Prometheus >= v2.41.0.\n\n\nDefault: \"Replace\"",
+    "Modulus to take of the hash of the source label values.\n\n\nOnly applicable when the action is `HashMod`.",
+    "Replacement value against which a Replace action is performed if the\nregular expression matches.\n\n\nRegex capture groups are available.",
+    "Label to which the resulting string is written in a replacement.\n\n\nIt is mandatory for `Replace`, `HashMod`, `Lowercase`, `Uppercase`,\n`KeepEqual` and `DropEqual` actions.\n\n\nRegex capture groups are available.",
+    "`oauth2` configures the OAuth2 settings to use when scraping the target.\n\n\nIt requires Prometheus >= 2.27.0.\n\n\nCannot be set at the same time as `authorization`, or `basicAuth`.",
+    "`noProxy` is a comma-separated string that can contain IPs, CIDR notation, domain names\nthat should be excluded from proxying. IP and domain names can\ncontain port numbers.\n\n\nIt requires Prometheus >= v2.43.0.",
+    "ProxyConnectHeader optionally specifies headers to send to\nproxies during CONNECT requests.\n\n\nIt requires Prometheus >= v2.43.0.",
+    "Whether to use the proxy configuration defined by environment variables (HTTP_PROXY, HTTPS_PROXY, and NO_PROXY).\nIf unset, Prometheus uses its default value.\n\n\nIt requires Prometheus >= v2.43.0.",
+    "`proxyURL` defines the HTTP proxy server to use.\n\n\nIt requires Prometheus >= v2.43.0.",
+    "Maximum acceptable TLS version.\n\n\nIt requires Prometheus >= v2.41.0.",
+    "Minimum acceptable TLS version.\n\n\nIt requires Prometheus >= v2.35.0.",
+    "HTTP path from which to scrape for metrics.\n\n\nIf empty, Prometheus uses the default value (e.g. `/metrics`).",
+    "Name of the Service port which this endpoint refers to.\n\n\nIt takes precedence over `targetPort`.",
+    "`relabelings` configures the relabeling rules to apply the target's\nmetadata labels.\n\n\nThe Operator automatically adds relabelings for a few standard Kubernetes fields.\n\n\nThe original scrape job's name is available via the `__tmp_prometheus_job_name` label.\n\n\nMore info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "HTTP scheme to use for scraping.\n\n\n`http` and `https` are the expected values unless you rewrite the\n`__scheme__` label via relabeling.\n\n\nIf empty, Prometheus uses the default value `http`.",
+    "Timeout after which Prometheus considers the scrape to be failed.\n\n\nIf empty, Prometheus uses the global scrape timeout unless it is less\nthan the target's scrape interval value in which the latter is used.",
+    "`trackTimestampsStaleness` defines whether Prometheus tracks staleness of\nthe metrics that have an explicit timestamp present in scraped data.\nHas no effect if `honorTimestamps` is false.\n\n\nIt requires Prometheus >= v2.48.0.",
+    "`jobLabel` selects the label from the associated Kubernetes `Service`\nobject which will be used as the `job` label for all metrics.\n\n\nFor example if `jobLabel` is set to `foo` and the Kubernetes `Service`\nobject is labeled with `foo: bar`, then Prometheus adds the `job=\"bar\"`\nlabel to all ingested metrics.\n\n\nIf the value of this field is empty or if the label doesn't exist for\nthe given Service, the `job` label of the metrics defaults to the name\nof the associated Kubernetes `Service`.",
+    "Per-scrape limit on the number of targets dropped by relabeling\nthat will be kept in memory. 0 means no limit.\n\n\nIt requires Prometheus >= v2.47.0.",
+    "Per-scrape limit on number of labels that will be accepted for a sample.\n\n\nIt requires Prometheus >= v2.27.0.",
+    "Per-scrape limit on length of labels name that will be accepted for a sample.\n\n\nIt requires Prometheus >= v2.27.0.",
+    "Per-scrape limit on length of labels value that will be accepted for a sample.\n\n\nIt requires Prometheus >= v2.27.0.",
+    "`scrapeProtocols` defines the protocols to negotiate during a scrape. It tells clients the\nprotocols supported by Prometheus in order of preference (from most to least preferred).\n\n\nIf unset, Prometheus uses its default value.\n\n\nIt requires Prometheus >= v2.49.0.",
+    "The `ServiceMonitor` custom resource definition (CRD) defines how `Prometheus` and `PrometheusAgent` can scrape metrics from a group of services.\nAmong other things, it allows to specify:\n* The services to scrape via label selectors.\n* The container ports to scrape.\n* Authentication credentials to use.\n* Target and metric relabeling.\n\n\n`Prometheus` and `PrometheusAgent` objects select `ServiceMonitor` objects using label and namespace selectors.",
+    "The `ServiceMonitor` custom resource definition (CRD) defines how `Prometheus` and `PrometheusAgent` can scrape metrics from a group of services.\nAmong other things, it allows to specify:\n* The services to scrape via label selectors.\n* The container ports to scrape.\n* Authentication credentials to use.\n* Target and metric relabeling.\n\n`Prometheus` and `PrometheusAgent` objects select `ServiceMonitor` objects using label and namespace selectors.",
+    "When set to true, Prometheus must have the `get` permission on the\n`Nodes` objects.",
+    "List of endpoints part of this ServiceMonitor.",
+    "Selector to select which namespaces the Kubernetes `Endpoints` objects\nare discovered from.",
+    "Label selector to select the Kubernetes `Endpoints` objects.",
+    "ServiceMonitor defines monitoring for a set of services.",
+    "Name of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names\nTODO: Add other useful fields. apiVersion, kind, uid?",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Specification of desired Service selection for target discovery by Prometheus.",
+    "`attachMetadata` defines additional metadata which is added to the discovered targets. \n It requires Prometheus >= v2.37.0.",
+    "When set to true, Prometheus must have the `get` permission on the `Nodes` objects.",
+    "When defined, bodySizeLimit specifies a job level limit on the size of uncompressed response body that will be accepted by Prometheus. \n It requires Prometheus >= v2.28.0.",
+    "`authorization` configures the Authorization header credentials to use when scraping the target. \n Cannot be set at the same time as `basicAuth`, or `oauth2`.",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "Defines the authentication type. The value is case-insensitive. \n \"Basic\" is not a supported value. \n Default: \"Bearer\"",
+    "`basicAuth` configures the Basic Authentication credentials to use when scraping the target. \n Cannot be set at the same time as `authorization`, or `oauth2`.",
+    "`password` specifies a key of a Secret containing the password for authentication.",
+    "`username` specifies a key of a Secret containing the username for authentication.",
+    "File to read bearer token for scraping the target. \n Deprecated: use `authorization` instead.",
+    "`bearerTokenSecret` specifies a key of a Secret containing the bearer token for scraping targets. The secret needs to be in the same namespace as the ServiceMonitor object and readable by the Prometheus Operator. \n Deprecated: use `authorization` instead.",
+    "When true, the pods which are not running (e.g. either in Failed or Succeeded state) are dropped during the target discovery. \n If unset, the filtering is enabled. \n More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-phase",
+    "`followRedirects` defines whether the scrape requests should follow HTTP 3xx redirects.",
+    "When true, `honorLabels` preserves the metric's labels when they collide with the target's labels.",
+    "`honorTimestamps` controls whether Prometheus preserves the timestamps when exposed by the target.",
+    "Interval at which Prometheus scrapes the metrics from the target. \n If empty, Prometheus uses the global scrape interval.",
+    "`metricRelabelings` configures the relabeling rules to apply to the samples before ingestion.",
+    "Action to perform based on the regex matching. \n `Uppercase` and `Lowercase` actions require Prometheus >= v2.36.0. `DropEqual` and `KeepEqual` actions require Prometheus >= v2.41.0. \n Default: \"Replace\"",
+    "Modulus to take of the hash of the source label values. \n Only applicable when the action is `HashMod`.",
+    "Replacement value against which a Replace action is performed if the regular expression matches. \n Regex capture groups are available.",
+    "The source labels select values from existing labels. Their content is concatenated using the configured Separator and matched against the configured regular expression.",
+    "Label to which the resulting string is written in a replacement. \n It is mandatory for `Replace`, `HashMod`, `Lowercase`, `Uppercase`, `KeepEqual` and `DropEqual` actions. \n Regex capture groups are available.",
+    "`oauth2` configures the OAuth2 settings to use when scraping the target. \n It requires Prometheus >= 2.27.0. \n Cannot be set at the same time as `authorization`, or `basicAuth`.",
+    "`clientId` specifies a key of a Secret or ConfigMap containing the OAuth2 client's ID.",
+    "`clientSecret` specifies a key of a Secret containing the OAuth2 client's secret.",
+    "`endpointParams` configures the HTTP parameters to append to the token URL.",
+    "HTTP path from which to scrape for metrics. \n If empty, Prometheus uses the default value (e.g. `/metrics`).",
+    "Name of the Service port which this endpoint refers to. \n It takes precedence over `targetPort`.",
+    "`proxyURL` configures the HTTP Proxy URL (e.g. \"http://proxyserver:2195\") to go through when scraping the target.",
+    "`relabelings` configures the relabeling rules to apply the target's metadata labels. \n The Operator automatically adds relabelings for a few standard Kubernetes fields. \n The original scrape job's name is available via the `__tmp_prometheus_job_name` label. \n More info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "HTTP scheme to use for scraping. \n `http` and `https` are the expected values unless you rewrite the `__scheme__` label via relabeling. \n If empty, Prometheus uses the default value `http`.",
+    "Timeout after which Prometheus considers the scrape to be failed. \n If empty, Prometheus uses the global scrape timeout unless it is less than the target's scrape interval value in which the latter is used.",
+    "Name or number of the target port of the `Pod` object behind the Service. The port must be specified with the container's port property.",
+    "`trackTimestampsStaleness` defines whether Prometheus tracks staleness of the metrics that have an explicit timestamp present in scraped data. Has no effect if `honorTimestamps` is false. \n It requires Prometheus >= v2.48.0.",
+    "`jobLabel` selects the label from the associated Kubernetes `Service` object which will be used as the `job` label for all metrics. \n For example if `jobLabel` is set to `foo` and the Kubernetes `Service` object is labeled with `foo: bar`, then Prometheus adds the `job=\"bar\"` label to all ingested metrics. \n If the value of this field is empty or if the label doesn't exist for the given Service, the `job` label of the metrics defaults to the name of the associated Kubernetes `Service`.",
+    "Per-scrape limit on the number of targets dropped by relabeling that will be kept in memory. 0 means no limit. \n It requires Prometheus >= v2.47.0.",
+    "Per-scrape limit on number of labels that will be accepted for a sample. \n It requires Prometheus >= v2.27.0.",
+    "Per-scrape limit on length of labels name that will be accepted for a sample. \n It requires Prometheus >= v2.27.0.",
+    "Per-scrape limit on length of labels value that will be accepted for a sample. \n It requires Prometheus >= v2.27.0.",
+    "Selector to select which namespaces the Kubernetes `Endpoints` objects are discovered from.",
+    "Boolean describing whether all namespaces are selected in contrast to a list restricting them.",
+    "`podTargetLabels` defines the labels which are transferred from the associated Kubernetes `Pod` object onto the ingested metrics.",
+    "`sampleLimit` defines a per-scrape limit on the number of scraped samples that will be accepted.",
+    "`scrapeProtocols` defines the protocols to negotiate during a scrape. It tells clients the protocols supported by Prometheus in order of preference (from most to least preferred). \n If unset, Prometheus uses its default value. \n It requires Prometheus >= v2.49.0.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "`targetLabels` defines the labels which are transferred from the associated Kubernetes `Service` object onto the ingested metrics.",
+    "`targetLimit` defines a limit on the number of scraped targets that will be accepted.",
+    "Name or number of the target port of the `Pod` object behind the Service, the port must be specified with container port property. \n Deprecated: use `port` instead.",
+    "Attaches node metadata to discovered targets. Requires Prometheus v2.37.0 and above.",
+    "When set to true, Prometheus must have permissions to get Nodes.",
+    "A list of endpoints allowed as part of this ServiceMonitor.",
+    "Authorization section for this endpoint",
+    "BasicAuth allow an endpoint to authenticate over basic authentication More info: https://prometheus.io/docs/operating/configuration/#endpoints",
+    "The secret in the service monitor namespace that contains the password for authentication.",
+    "The secret in the service monitor namespace that contains the username for authentication.",
+    "File to read bearer token for scraping targets.",
+    "Secret to mount to read bearer token for scraping targets. The secret needs to be in the same namespace as the service monitor and accessible by the Prometheus Operator.",
+    "Whether to enable HTTP2.",
+    "Drop pods that are not running. (Failed, Succeeded). Enabled by default. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-phase",
+    "FollowRedirects configures whether scrape requests follow HTTP 3xx redirects.",
+    "HonorLabels chooses the metric's labels on collisions with target labels.",
+    "HonorTimestamps controls whether Prometheus respects the timestamps present in scraped data.",
+    "Interval at which metrics should be scraped If not specified Prometheus' global scrape interval is used.",
+    "MetricRelabelConfigs to apply to samples before ingestion.",
+    "OAuth2 for the URL. Only valid in Prometheus versions 2.27.0 and newer.",
+    "The secret or configmap containing the OAuth2 client id",
+    "The secret containing the OAuth2 client secret",
+    "Parameters to append to the token URL",
+    "OAuth2 scopes used for the token request",
+    "The URL to fetch the token from",
+    "Optional HTTP URL parameters",
+    "params define optional HTTP URL parameters.",
+    "HTTP path to scrape for metrics. If empty, Prometheus uses the default value (e.g. `/metrics`).",
+    "Name of the service port this endpoint refers to. Mutually exclusive with targetPort.",
+    "ProxyURL eg http://proxyserver:2195 Directs scrapes to proxy through this endpoint.",
+    "RelabelConfigs to apply to samples before scraping. Prometheus Operator automatically adds relabelings for a few standard Kubernetes fields. The original scrape job's name is available via the `__tmp_prometheus_job_name` label. More info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "HTTP scheme to use for scraping. `http` and `https` are the expected values unless you rewrite the `__scheme__` label via relabeling. If empty, Prometheus uses the default value `http`.",
+    "Timeout after which the scrape is ended If not specified, the Prometheus global scrape timeout is used unless it is less than `Interval` in which the latter is used.",
+    "Name or number of the target port of the Pod behind the Service, the port must be specified with container port property. Mutually exclusive with port.",
+    "TLS configuration to use when scraping the endpoint",
+    "JobLabel selects the label from the associated Kubernetes service which will be used as the `job` label for all metrics. \n For example: If in `ServiceMonitor.spec.jobLabel: foo` and in `Service.metadata.labels.foo: bar`, then the `job=\"bar\"` label is added to all metrics. \n If the value of this field is empty or if the label doesn't exist for the given Service, the `job` label of the metrics defaults to the name of the Kubernetes Service.",
+    "Per-scrape limit on number of labels that will be accepted for a sample. Only valid in Prometheus versions 2.27.0 and newer.",
+    "Per-scrape limit on length of labels name that will be accepted for a sample. Only valid in Prometheus versions 2.27.0 and newer.",
+    "Per-scrape limit on length of labels value that will be accepted for a sample. Only valid in Prometheus versions 2.27.0 and newer.",
+    "Selector to select which namespaces the Kubernetes Endpoints objects are discovered from.",
+    "PodTargetLabels transfers labels on the Kubernetes `Pod` onto the created metrics.",
+    "SampleLimit defines per-scrape limit on number of scraped samples that will be accepted.",
+    "Selector to select Endpoints objects.",
+    "TargetLabels transfers labels from the Kubernetes `Service` onto the created metrics.",
+    "TargetLimit defines a limit on the number of scraped targets that will be accepted.",
+    "The secret's key that contains the credentials of the request",
+    "Set the authentication type. Defaults to Bearer, Basic will cause an error",
+    "Action to perform based on regex matching. Default is 'replace'. uppercase and lowercase actions require Prometheus >= 2.36.",
+    "Modulus to take of the hash of the source label values.",
+    "Regular expression against which the extracted value is matched. Default is '(.*)'",
+    "Replacement value against which a regex replace is performed if the regular expression matches. Regex capture groups are available. Default is '$1'",
+    "Separator placed between concatenated source label values. default is ';'.",
+    "The source labels select values from existing labels. Their content is concatenated using the configured separator and matched against the configured regular expression for the replace, keep, and drop actions.",
+    "Label to which the resulting value is written in a replace action. It is mandatory for replace actions. Regex capture groups are available.",
+    "HTTP scheme to use for scraping.",
+    "Struct containing the CA cert to use for the targets.",
+    "Struct containing the client cert file for the targets.",
+    "Action to perform based on regex matching. Default is 'replace'",
+    "HTTP path to scrape for metrics.",
+    "Chooses the label of the Kubernetes `Endpoints`. Its value will be used for the `job`-label's value of the created metrics. \n Default & fallback value: the name of the respective Kubernetes `Endpoint`.",
+    "Interval at which metrics should be scraped",
+    "Timeout after which the scrape is ended",
+    "RelabelConfigs to apply to samples before scraping. Prometheus Operator automatically adds relabelings for a few standard Kubernetes fields and replaces original scrape job name with __tmp_prometheus_job_name. More info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "List of namespace names.",
+    "TargetLabels transfers labels from the Kubernetes `Service` onto the created metrics. All labels set in `selector.matchLabels` are automatically transferred.",
+    "The label to use to retrieve the job name from.",
+    "Selector to select which namespaces the Endpoints objects are discovered from.",
+    "PodTargetLabels transfers labels on the Kubernetes Pod onto the target.",
+    "TargetLabels transfers labels on the Kubernetes Service onto the target.",
+    "RelabelConfigs to apply to samples before scraping. More info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "Stuct containing the CA cert to use for the targets.",
+    "Name or number of the pod port this endpoint refers to. Mutually exclusive with port.",
+    "Name or number of the target port of the endpoint. Mutually exclusive with port.",
+    "ServiceMonitorSpec contains specification parameters for a ServiceMonitor.",
+    "SecretKeySelector selects a key of a Secret.",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Regular expression against which the extracted value is matched. defailt is '(.*)'",
+    "TLSConfig specifies TLS configuration parameters.",
+    "NamespaceSelector is a selector for selecting either all namespaces or a list of namespaces.",
+    "A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "The CA cert to use for the targets.",
+    "The client cert file for the targets.",
+    "The client key file for the targets.",
+    "Specify whether the Secret or it's key must be defined",
+    "Specify whether the Secret or its key must be defined",
+    "RelabelConfigs to apply to samples before ingestion. More info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "RelabelConfigs to apply to samples before ingestion. More info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#<relabel_config>",
+    "A selector for selecting namespaces either selecting all namespaces or a list of namespaces."
+  ]
+}

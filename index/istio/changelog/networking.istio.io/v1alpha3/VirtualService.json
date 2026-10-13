@@ -1,0 +1,561 @@
+{
+  "versions": {
+    "1.31.0": {
+      "added": {
+        "spec.http.redirect.prefixRewrite": "string"
+      },
+      "descriptions": {
+        "spec.http.redirect.prefixRewrite": [
+          null,
+          0
+        ]
+      }
+    },
+    "1.26.0": {
+      "added": {
+        "spec.http.retries.backoff": "string",
+        "spec.http.retries.retryIgnorePreviousHosts": "boolean"
+      },
+      "descriptions": {
+        "spec.http.retries.backoff": [
+          null,
+          1
+        ],
+        "spec.http.retries.retryIgnorePreviousHosts": [
+          null,
+          2
+        ]
+      }
+    },
+    "1.25.0": {
+      "added": {
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "status.conditions.observedGeneration": [
+          null,
+          3
+        ],
+        "status.observedGeneration": [
+          4,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "status.conditions": [
+          null,
+          5
+        ],
+        "status.observedGeneration": [
+          null,
+          4
+        ],
+        "status.validationMessages": [
+          null,
+          6
+        ]
+      }
+    },
+    "1.23.0": {
+      "descriptionChanged": [
+        "spec.http.corsPolicy.allowOrigins.regex",
+        "spec.http.match.authority",
+        "spec.http.match.authority.regex",
+        "spec.http.match.headers.regex",
+        "spec.http.match.method",
+        "spec.http.match.method.regex",
+        "spec.http.match.queryParams.regex",
+        "spec.http.match.scheme",
+        "spec.http.match.scheme.regex",
+        "spec.http.match.uri",
+        "spec.http.match.uri.regex",
+        "spec.http.match.withoutHeaders.regex",
+        "spec.http.rewrite.uriRegexRewrite.match"
+      ],
+      "added": {
+        "spec.http.corsPolicy.unmatchedPreflights": "string"
+      },
+      "descriptions": {
+        "spec.http.corsPolicy.allowOrigins.regex": [
+          7,
+          8
+        ],
+        "spec.http.corsPolicy.unmatchedPreflights": [
+          null,
+          9
+        ],
+        "spec.http.match.authority": [
+          10,
+          11
+        ],
+        "spec.http.match.authority.regex": [
+          7,
+          8
+        ],
+        "spec.http.match.headers.regex": [
+          7,
+          8
+        ],
+        "spec.http.match.method": [
+          12,
+          13
+        ],
+        "spec.http.match.method.regex": [
+          7,
+          8
+        ],
+        "spec.http.match.queryParams.regex": [
+          7,
+          8
+        ],
+        "spec.http.match.scheme": [
+          14,
+          15
+        ],
+        "spec.http.match.scheme.regex": [
+          7,
+          8
+        ],
+        "spec.http.match.uri": [
+          16,
+          17
+        ],
+        "spec.http.match.uri.regex": [
+          7,
+          8
+        ],
+        "spec.http.match.withoutHeaders.regex": [
+          7,
+          8
+        ],
+        "spec.http.rewrite.uriRegexRewrite.match": [
+          7,
+          8
+        ]
+      }
+    },
+    "1.22.0": {
+      "descriptionChanged": [
+        "spec.http.redirect.derivePort"
+      ],
+      "descriptions": {
+        "spec.http.redirect.derivePort": [
+          18,
+          19
+        ]
+      }
+    },
+    "1.20.0": {
+      "descriptionChanged": [
+        "spec.http.corsPolicy.allowCredentials",
+        "spec.http.corsPolicy.allowHeaders",
+        "spec.http.corsPolicy.allowOrigin",
+        "spec.http.corsPolicy.exposeHeaders",
+        "spec.http.corsPolicy.maxAge",
+        "spec.http.delegate",
+        "spec.http.fault.abort",
+        "spec.http.fault.delay",
+        "spec.http.match",
+        "spec.http.match.authority",
+        "spec.http.match.headers",
+        "spec.http.match.method",
+        "spec.http.match.scheme",
+        "spec.http.match.sourceLabels",
+        "spec.http.match.uri",
+        "spec.http.mirror",
+        "spec.http.mirror_percent",
+        "spec.http.mirrorPercent",
+        "spec.http.mirrors",
+        "spec.http.mirrors.destination",
+        "spec.http.mirrors.percentage",
+        "spec.http.redirect.authority",
+        "spec.http.redirect.derivePort",
+        "spec.http.redirect.redirectCode",
+        "spec.http.redirect.uri",
+        "spec.http.rewrite.uri",
+        "spec.http.route.destination",
+        "spec.tcp.match",
+        "spec.tcp.match.sourceLabels",
+        "spec.tcp.match.sourceSubnet",
+        "spec.tcp.route.destination",
+        "spec.tls",
+        "spec.tls.match",
+        "spec.tls.match.sourceLabels",
+        "spec.tls.route.destination"
+      ],
+      "required": [
+        "spec.http.directResponse.status",
+        "spec.http.mirror.host",
+        "spec.http.mirrors.destination",
+        "spec.http.mirrors.destination.host",
+        "spec.http.route.destination",
+        "spec.http.route.destination.host",
+        "spec.tcp.route.destination",
+        "spec.tcp.route.destination.host",
+        "spec.tls.match",
+        "spec.tls.match.sniHosts",
+        "spec.tls.route.destination",
+        "spec.tls.route.destination.host"
+      ],
+      "descriptions": {
+        "spec.http.corsPolicy.allowCredentials": [
+          null,
+          20
+        ],
+        "spec.http.corsPolicy.allowHeaders": [
+          null,
+          21
+        ],
+        "spec.http.corsPolicy.allowOrigin": [
+          22,
+          null
+        ],
+        "spec.http.corsPolicy.exposeHeaders": [
+          null,
+          23
+        ],
+        "spec.http.corsPolicy.maxAge": [
+          null,
+          24
+        ],
+        "spec.http.delegate": [
+          null,
+          25
+        ],
+        "spec.http.directResponse.status": [
+          null,
+          26
+        ],
+        "spec.http.fault.abort": [
+          null,
+          27
+        ],
+        "spec.http.fault.delay": [
+          null,
+          28
+        ],
+        "spec.http.match": [
+          null,
+          29
+        ],
+        "spec.http.match.authority": [
+          null,
+          10
+        ],
+        "spec.http.match.headers": [
+          null,
+          30
+        ],
+        "spec.http.match.method": [
+          null,
+          12
+        ],
+        "spec.http.match.scheme": [
+          null,
+          14
+        ],
+        "spec.http.match.sourceLabels": [
+          null,
+          31
+        ],
+        "spec.http.match.uri": [
+          null,
+          16
+        ],
+        "spec.http.mirror": [
+          null,
+          32
+        ],
+        "spec.http.mirror.host": [
+          null,
+          33
+        ],
+        "spec.http.mirror_percent": [
+          34,
+          null
+        ],
+        "spec.http.mirrorPercent": [
+          34,
+          null
+        ],
+        "spec.http.mirrors": [
+          null,
+          35
+        ],
+        "spec.http.mirrors.destination": [
+          null,
+          36
+        ],
+        "spec.http.mirrors.destination.host": [
+          null,
+          33
+        ],
+        "spec.http.mirrors.percentage": [
+          null,
+          37
+        ],
+        "spec.http.redirect.authority": [
+          null,
+          38
+        ],
+        "spec.http.redirect.derivePort": [
+          null,
+          18
+        ],
+        "spec.http.redirect.redirectCode": [
+          null,
+          39
+        ],
+        "spec.http.redirect.uri": [
+          null,
+          40
+        ],
+        "spec.http.rewrite.uri": [
+          null,
+          41
+        ],
+        "spec.http.route.destination": [
+          null,
+          42
+        ],
+        "spec.http.route.destination.host": [
+          null,
+          33
+        ],
+        "spec.tcp.match": [
+          null,
+          29
+        ],
+        "spec.tcp.match.sourceLabels": [
+          null,
+          43
+        ],
+        "spec.tcp.match.sourceSubnet": [
+          44,
+          null
+        ],
+        "spec.tcp.route.destination": [
+          null,
+          42
+        ],
+        "spec.tcp.route.destination.host": [
+          null,
+          33
+        ],
+        "spec.tls": [
+          null,
+          45
+        ],
+        "spec.tls.match": [
+          null,
+          29
+        ],
+        "spec.tls.match.sniHosts": [
+          null,
+          46
+        ],
+        "spec.tls.match.sourceLabels": [
+          null,
+          43
+        ],
+        "spec.tls.route.destination": [
+          null,
+          42
+        ],
+        "spec.tls.route.destination.host": [
+          null,
+          33
+        ]
+      }
+    },
+    "1.19.0": {
+      "added": {
+        "spec.http.mirrors": "object[]",
+        "spec.http.rewrite.uriRegexRewrite": "object"
+      },
+      "descriptions": {
+        "spec.http.rewrite.uriRegexRewrite": [
+          null,
+          47
+        ]
+      }
+    },
+    "1.15.0": {
+      "added": {
+        "spec.http.directResponse": "object",
+        "spec.http.match.statPrefix": "string"
+      },
+      "descriptionChanged": [
+        "spec.http.fault.abort.grpcStatus",
+        "spec.http.redirect",
+        "spec.http.route"
+      ],
+      "descriptions": {
+        "spec.http.directResponse": [
+          null,
+          48
+        ],
+        "spec.http.fault.abort.grpcStatus": [
+          null,
+          49
+        ],
+        "spec.http.match.statPrefix": [
+          null,
+          50
+        ],
+        "spec.http.redirect": [
+          51,
+          48
+        ],
+        "spec.http.route": [
+          51,
+          48
+        ]
+      }
+    },
+    "1.13.0": {
+      "descriptionChanged": [
+        "spec.http.route.weight",
+        "spec.tcp.route.weight",
+        "spec.tls.route.weight"
+      ],
+      "descriptions": {
+        "spec.http.route.weight": [
+          null,
+          52
+        ],
+        "spec.tcp.route.weight": [
+          null,
+          52
+        ],
+        "spec.tls.route.weight": [
+          null,
+          52
+        ]
+      }
+    },
+    "1.12.0": {
+      "added": {
+        "spec.http.redirect.derivePort": "string",
+        "spec.http.redirect.port": "integer",
+        "spec.http.redirect.scheme": "string"
+      },
+      "descriptions": {
+        "spec.http.redirect.port": [
+          null,
+          53
+        ],
+        "spec.http.redirect.scheme": [
+          null,
+          54
+        ]
+      }
+    },
+    "1.9.2": {
+      "descriptionChanged": [
+        "spec.http.retries.perTryTimeout"
+      ],
+      "descriptions": {
+        "spec.http.retries.perTryTimeout": [
+          55,
+          56
+        ]
+      }
+    },
+    "1.7.4": {
+      "descriptionChanged": [
+        "spec.http.retries.attempts"
+      ],
+      "descriptions": {
+        "spec.http.retries.attempts": [
+          57,
+          58
+        ]
+      }
+    },
+    "1.7.1": {
+      "descriptionChanged": [
+        "spec.http.timeout"
+      ],
+      "descriptions": {
+        "spec.http.timeout": [
+          59,
+          60
+        ]
+      }
+    }
+  },
+  "texts": [
+    "On a redirect, replace the matched prefix with this value.",
+    "Specifies the minimum duration between retry attempts.",
+    "Flag to specify whether the retries should ignore previously tried hosts during retry.",
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers.",
+    "RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax).",
+    "[RE2 style regex-based match](https://github.com/google/re2/wiki/Syntax).",
+    "Indicates whether preflight requests not matching the configured allowed origin shouldn't be forwarded to the upstream.\n\nValid Options: FORWARD, IGNORE",
+    "HTTP Authority values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax).",
+    "HTTP Authority values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for [RE2 style regex-based match](https://github.com/google/re2/wiki/Syntax).",
+    "HTTP Method values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax).",
+    "HTTP Method values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for [RE2 style regex-based match](https://github.com/google/re2/wiki/Syntax).",
+    "URI Scheme values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax).",
+    "URI Scheme values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for [RE2 style regex-based match](https://github.com/google/re2/wiki/Syntax).",
+    "URI to match values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax).",
+    "URI to match values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for [RE2 style regex-based match](https://github.com/google/re2/wiki/Syntax).",
+    "On a redirect, dynamically set the port: * FROM_PROTOCOL_DEFAULT: automatically set to 80 for HTTP and 443 for HTTPS.",
+    "On a redirect, dynamically set the port: * FROM_PROTOCOL_DEFAULT: automatically set to 80 for HTTP and 443 for HTTPS.\n\nValid Options: FROM_PROTOCOL_DEFAULT, FROM_REQUEST_PORT",
+    "Indicates whether the caller is allowed to send the actual request (not the preflight) using credentials.",
+    "List of HTTP headers that can be used when requesting the resource.",
+    "The list of origins that are allowed to perform CORS requests.",
+    "A list of HTTP headers that the browsers are allowed to access.",
+    "Specifies how long the results of a preflight request can be cached.",
+    "Delegate is used to specify the particular VirtualService which can be used to define delegate HTTPRoute.",
+    "Specifies the HTTP response status to be returned.",
+    "Abort Http request attempts and return error codes back to downstream service, giving the impression that the upstream service is faulty.",
+    "Delay requests before forwarding, emulating various failures such as network issues, overloaded upstream service, etc.",
+    "Match conditions to be satisfied for the rule to be activated.",
+    "The header keys must be lowercase and use hyphen as the separator, e.g.",
+    "One or more labels that constrain the applicability of a rule to source (client) workloads with the given labels.",
+    "Mirror HTTP traffic to a another destination in addition to forwarding the requests to the intended destination.",
+    "The name of a service from the service registry.",
+    "Percentage of the traffic to be mirrored by the `mirror` field.",
+    "Specifies the destinations to mirror HTTP traffic in addition to the original destination.",
+    "Destination specifies the target of the mirror operation.",
+    "Percentage of the traffic to be mirrored by the `destination` field.",
+    "On a redirect, overwrite the Authority/Host portion of the URL with this value.",
+    "On a redirect, Specifies the HTTP status code to use in the redirect response.",
+    "On a redirect, overwrite the Path portion of the URL with this value.",
+    "rewrite the path (or the prefix) portion of the URI with this value.",
+    "Destination uniquely identifies the instances of a service to which the request/connection should be forwarded to.",
+    "One or more labels that constrain the applicability of a rule to workloads with the given labels.",
+    "IPv4 or IPv6 ip address of source with optional subnet.",
+    "An ordered list of route rule for non-terminated TLS & HTTPS traffic.",
+    "SNI (server name indicator) to match on.",
+    "rewrite the path portion of the URI with the specified regex.",
+    "A HTTP rule can either return a direct_response, redirect or forward (default) traffic.",
+    "GRPC status code to use to abort the request.",
+    "The human readable prefix to use when emitting statistics for this route.",
+    "A HTTP rule can either redirect or forward (default) traffic.",
+    "Weight specifies the relative proportion of traffic to be forwarded to the destination.",
+    "On a redirect, overwrite the port portion of the URL with this value.",
+    "On a redirect, overwrite the scheme portion of the URL with this value.",
+    "Timeout per retry attempt for a given request.",
+    "Timeout per attempt for a given request, including the initial call and any retries.",
+    "Number of retries for a given request.",
+    "Number of retries to be allowed for a given request.",
+    "Timeout for HTTP requests.",
+    "Timeout for HTTP requests, default is disabled."
+  ]
+}

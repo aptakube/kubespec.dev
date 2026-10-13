@@ -1,0 +1,30 @@
+{
+  "versions": {
+    "v1.7.0": {
+      "added": {
+        "spec.jobTemplate.rayClusterSpec.autoscalerOptions.args": "string[]",
+        "spec.jobTemplate.rayClusterSpec.autoscalerOptions.command": "string[]",
+        "spec.jobTemplate.rayClusterSpec.gcsFaultToleranceOptions.backend": "string",
+        "spec.jobTemplate.rayClusterSpec.gcsFaultToleranceOptions.storage": "object",
+        "spec.jobTemplate.rayClusterSpec.headGroupSpec.ingressOptions": "object",
+        "spec.jobTemplate.rayClusterSpec.headGroupSpec.template.spec.schedulingGroup": "object",
+        "spec.jobTemplate.rayClusterSpec.historyServerOptions": "object",
+        "spec.jobTemplate.rayClusterSpec.networkPolicy": "object",
+        "spec.jobTemplate.rayClusterSpec.tlsOptions": "object",
+        "spec.jobTemplate.rayClusterSpec.workerGroupSpecs.priority": "integer",
+        "spec.jobTemplate.rayClusterSpec.workerGroupSpecs.template.spec.schedulingGroup": "object",
+        "spec.jobTemplate.submitterPodTemplate.spec.schedulingGroup": "object",
+        "spec.timeZone": "string"
+      },
+      "optional": [
+        "spec.jobTemplate.rayClusterSpec.gcsFaultToleranceOptions.redisAddress"
+      ],
+      "removed": {
+        "spec.jobTemplate.rayClusterSpec.headGroupSpec.template.spec.workloadRef": "object",
+        "spec.jobTemplate.rayClusterSpec.workerGroupSpecs.template.spec.workloadRef": "object",
+        "spec.jobTemplate.submitterPodTemplate.spec.workloadRef": "object"
+      }
+    }
+  },
+  "texts": []
+}

@@ -1,0 +1,890 @@
+{
+  "versions": {
+    "v1.19.0": {
+      "descriptionChanged": [
+        "metadata.namespace"
+      ],
+      "added": {
+        "spec.versions.deprecated": "boolean",
+        "spec.versions.deprecationWarning": "string"
+      },
+      "description": true,
+      "descriptions": {
+        "metadata.namespace": [
+          0,
+          1
+        ],
+        "spec.versions.deprecated": [
+          null,
+          2
+        ],
+        "spec.versions.deprecationWarning": [
+          null,
+          3
+        ],
+        "": [
+          4,
+          5
+        ]
+      }
+    },
+    "v1.18.0": {
+      "descriptionChanged": [
+        "spec.validation.openAPIV3Schema.x-kubernetes-list-map-keys",
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-list-map-keys"
+      ],
+      "optional": [
+        "status.acceptedNames",
+        "status.storedVersions"
+      ],
+      "descriptions": {
+        "spec.validation.openAPIV3Schema.x-kubernetes-list-map-keys": [
+          6,
+          7
+        ],
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-list-map-keys": [
+          6,
+          7
+        ],
+        "status.acceptedNames": [
+          null,
+          8
+        ],
+        "status.storedVersions": [
+          null,
+          9
+        ]
+      }
+    },
+    "v1.17.0": {
+      "descriptionChanged": [
+        "metadata.finalizers",
+        "spec.validation.openAPIV3Schema.format",
+        "spec.validation.openAPIV3Schema.x-kubernetes-list-type",
+        "spec.versions.schema.openAPIV3Schema.format",
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-list-type"
+      ],
+      "added": {
+        "spec.validation.openAPIV3Schema.x-kubernetes-map-type": "string",
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-map-type": "string"
+      },
+      "descriptions": {
+        "metadata.finalizers": [
+          10,
+          11
+        ],
+        "spec.validation.openAPIV3Schema.format": [
+          null,
+          12
+        ],
+        "spec.validation.openAPIV3Schema.x-kubernetes-list-type": [
+          13,
+          14
+        ],
+        "spec.validation.openAPIV3Schema.x-kubernetes-map-type": [
+          null,
+          15
+        ],
+        "spec.versions.schema.openAPIV3Schema.format": [
+          null,
+          12
+        ],
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-list-type": [
+          13,
+          14
+        ],
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-map-type": [
+          null,
+          15
+        ]
+      }
+    },
+    "v1.16.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "metadata.creationTimestamp",
+        "metadata.deletionTimestamp",
+        "metadata.generateName",
+        "metadata.managedFields",
+        "metadata.ownerReferences.kind",
+        "metadata.resourceVersion",
+        "metadata.selfLink",
+        "spec",
+        "spec.additionalPrinterColumns",
+        "spec.additionalPrinterColumns.JSONPath",
+        "spec.additionalPrinterColumns.format",
+        "spec.additionalPrinterColumns.priority",
+        "spec.additionalPrinterColumns.type",
+        "spec.conversion",
+        "spec.conversion.conversionReviewVersions",
+        "spec.conversion.strategy",
+        "spec.conversion.webhookClientConfig",
+        "spec.conversion.webhookClientConfig.caBundle",
+        "spec.conversion.webhookClientConfig.service",
+        "spec.conversion.webhookClientConfig.service.name",
+        "spec.conversion.webhookClientConfig.service.namespace",
+        "spec.conversion.webhookClientConfig.service.path",
+        "spec.conversion.webhookClientConfig.service.port",
+        "spec.conversion.webhookClientConfig.url",
+        "spec.group",
+        "spec.names",
+        "spec.names.categories",
+        "spec.names.kind",
+        "spec.names.listKind",
+        "spec.names.plural",
+        "spec.names.shortNames",
+        "spec.names.singular",
+        "spec.preserveUnknownFields",
+        "spec.scope",
+        "spec.subresources",
+        "spec.subresources.scale",
+        "spec.subresources.scale.labelSelectorPath",
+        "spec.subresources.scale.specReplicasPath",
+        "spec.subresources.scale.statusReplicasPath",
+        "spec.subresources.status",
+        "spec.validation",
+        "spec.validation.openAPIV3Schema",
+        "spec.validation.openAPIV3Schema.default",
+        "spec.version",
+        "spec.versions",
+        "spec.versions.additionalPrinterColumns",
+        "spec.versions.additionalPrinterColumns.JSONPath",
+        "spec.versions.additionalPrinterColumns.format",
+        "spec.versions.additionalPrinterColumns.priority",
+        "spec.versions.additionalPrinterColumns.type",
+        "spec.versions.name",
+        "spec.versions.schema",
+        "spec.versions.schema.openAPIV3Schema",
+        "spec.versions.schema.openAPIV3Schema.default",
+        "spec.versions.served",
+        "spec.versions.storage",
+        "spec.versions.subresources",
+        "spec.versions.subresources.scale",
+        "spec.versions.subresources.scale.labelSelectorPath",
+        "spec.versions.subresources.scale.specReplicasPath",
+        "spec.versions.subresources.scale.statusReplicasPath",
+        "spec.versions.subresources.status",
+        "status",
+        "status.acceptedNames",
+        "status.acceptedNames.categories",
+        "status.acceptedNames.kind",
+        "status.acceptedNames.listKind",
+        "status.acceptedNames.plural",
+        "status.acceptedNames.shortNames",
+        "status.acceptedNames.singular",
+        "status.conditions",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason",
+        "status.conditions.status",
+        "status.conditions.type",
+        "status.storedVersions"
+      ],
+      "added": {
+        "metadata.managedFields.fieldsType": "string",
+        "metadata.managedFields.fieldsV1": "FieldsV1",
+        "spec.validation.openAPIV3Schema.x-kubernetes-list-map-keys": "string[]",
+        "spec.validation.openAPIV3Schema.x-kubernetes-list-type": "string",
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-list-map-keys": "string[]",
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-list-type": "string"
+      },
+      "optional": [
+        "status.conditions"
+      ],
+      "removed": {
+        "metadata.initializers": "Initializers",
+        "metadata.managedFields.fields": "Fields"
+      },
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          16,
+          17
+        ],
+        "kind": [
+          18,
+          19
+        ],
+        "metadata.creationTimestamp": [
+          20,
+          21
+        ],
+        "metadata.deletionTimestamp": [
+          22,
+          23
+        ],
+        "metadata.generateName": [
+          24,
+          25
+        ],
+        "metadata.managedFields": [
+          26,
+          27
+        ],
+        "metadata.managedFields.fieldsType": [
+          null,
+          28
+        ],
+        "metadata.managedFields.fieldsV1": [
+          null,
+          29
+        ],
+        "metadata.ownerReferences.kind": [
+          30,
+          31
+        ],
+        "metadata.resourceVersion": [
+          32,
+          33
+        ],
+        "metadata.selfLink": [
+          34,
+          35
+        ],
+        "spec": [
+          36,
+          37
+        ],
+        "spec.additionalPrinterColumns": [
+          38,
+          39
+        ],
+        "spec.additionalPrinterColumns.JSONPath": [
+          40,
+          41
+        ],
+        "spec.additionalPrinterColumns.format": [
+          42,
+          43
+        ],
+        "spec.additionalPrinterColumns.priority": [
+          44,
+          45
+        ],
+        "spec.additionalPrinterColumns.type": [
+          46,
+          47
+        ],
+        "spec.conversion": [
+          48,
+          49
+        ],
+        "spec.conversion.conversionReviewVersions": [
+          50,
+          51
+        ],
+        "spec.conversion.strategy": [
+          52,
+          53
+        ],
+        "spec.conversion.webhookClientConfig": [
+          54,
+          55
+        ],
+        "spec.conversion.webhookClientConfig.caBundle": [
+          56,
+          57
+        ],
+        "spec.conversion.webhookClientConfig.service": [
+          58,
+          59
+        ],
+        "spec.conversion.webhookClientConfig.service.name": [
+          60,
+          61
+        ],
+        "spec.conversion.webhookClientConfig.service.namespace": [
+          62,
+          63
+        ],
+        "spec.conversion.webhookClientConfig.service.path": [
+          64,
+          65
+        ],
+        "spec.conversion.webhookClientConfig.service.port": [
+          66,
+          67
+        ],
+        "spec.conversion.webhookClientConfig.url": [
+          68,
+          69
+        ],
+        "spec.group": [
+          70,
+          71
+        ],
+        "spec.names": [
+          72,
+          73
+        ],
+        "spec.names.categories": [
+          74,
+          75
+        ],
+        "spec.names.kind": [
+          76,
+          77
+        ],
+        "spec.names.listKind": [
+          78,
+          79
+        ],
+        "spec.names.plural": [
+          80,
+          81
+        ],
+        "spec.names.shortNames": [
+          82,
+          83
+        ],
+        "spec.names.singular": [
+          84,
+          85
+        ],
+        "spec.preserveUnknownFields": [
+          86,
+          87
+        ],
+        "spec.scope": [
+          88,
+          89
+        ],
+        "spec.subresources": [
+          90,
+          91
+        ],
+        "spec.subresources.scale": [
+          92,
+          93
+        ],
+        "spec.subresources.scale.labelSelectorPath": [
+          94,
+          95
+        ],
+        "spec.subresources.scale.specReplicasPath": [
+          96,
+          97
+        ],
+        "spec.subresources.scale.statusReplicasPath": [
+          98,
+          99
+        ],
+        "spec.subresources.status": [
+          100,
+          101
+        ],
+        "spec.validation": [
+          102,
+          103
+        ],
+        "spec.validation.openAPIV3Schema": [
+          104,
+          105
+        ],
+        "spec.validation.openAPIV3Schema.default": [
+          106,
+          107
+        ],
+        "spec.validation.openAPIV3Schema.x-kubernetes-list-map-keys": [
+          null,
+          6
+        ],
+        "spec.validation.openAPIV3Schema.x-kubernetes-list-type": [
+          null,
+          13
+        ],
+        "spec.version": [
+          108,
+          109
+        ],
+        "spec.versions": [
+          110,
+          111
+        ],
+        "spec.versions.additionalPrinterColumns": [
+          112,
+          113
+        ],
+        "spec.versions.additionalPrinterColumns.JSONPath": [
+          40,
+          41
+        ],
+        "spec.versions.additionalPrinterColumns.format": [
+          42,
+          43
+        ],
+        "spec.versions.additionalPrinterColumns.priority": [
+          44,
+          45
+        ],
+        "spec.versions.additionalPrinterColumns.type": [
+          46,
+          47
+        ],
+        "spec.versions.name": [
+          114,
+          115
+        ],
+        "spec.versions.schema": [
+          116,
+          117
+        ],
+        "spec.versions.schema.openAPIV3Schema": [
+          104,
+          105
+        ],
+        "spec.versions.schema.openAPIV3Schema.default": [
+          106,
+          107
+        ],
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-list-map-keys": [
+          null,
+          6
+        ],
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-list-type": [
+          null,
+          13
+        ],
+        "spec.versions.served": [
+          118,
+          119
+        ],
+        "spec.versions.storage": [
+          120,
+          121
+        ],
+        "spec.versions.subresources": [
+          122,
+          123
+        ],
+        "spec.versions.subresources.scale": [
+          92,
+          93
+        ],
+        "spec.versions.subresources.scale.labelSelectorPath": [
+          94,
+          95
+        ],
+        "spec.versions.subresources.scale.specReplicasPath": [
+          96,
+          97
+        ],
+        "spec.versions.subresources.scale.statusReplicasPath": [
+          98,
+          99
+        ],
+        "spec.versions.subresources.status": [
+          100,
+          101
+        ],
+        "status": [
+          124,
+          125
+        ],
+        "status.acceptedNames": [
+          126,
+          8
+        ],
+        "status.acceptedNames.categories": [
+          74,
+          75
+        ],
+        "status.acceptedNames.kind": [
+          76,
+          77
+        ],
+        "status.acceptedNames.listKind": [
+          78,
+          79
+        ],
+        "status.acceptedNames.plural": [
+          80,
+          81
+        ],
+        "status.acceptedNames.shortNames": [
+          82,
+          83
+        ],
+        "status.acceptedNames.singular": [
+          84,
+          85
+        ],
+        "status.conditions": [
+          127,
+          128
+        ],
+        "status.conditions.lastTransitionTime": [
+          129,
+          130
+        ],
+        "status.conditions.message": [
+          131,
+          132
+        ],
+        "status.conditions.reason": [
+          133,
+          134
+        ],
+        "status.conditions.status": [
+          135,
+          136
+        ],
+        "status.conditions.type": [
+          137,
+          138
+        ],
+        "status.storedVersions": [
+          139,
+          9
+        ],
+        "metadata.initializers": [
+          140,
+          null
+        ],
+        "metadata.managedFields.fields": [
+          141,
+          null
+        ],
+        "": [
+          142,
+          4
+        ]
+      }
+    },
+    "v1.15.0": {
+      "added": {
+        "metadata.initializers.result.metadata.remainingItemCount": "integer",
+        "spec.conversion.webhookClientConfig.service.port": "integer",
+        "spec.preserveUnknownFields": "boolean",
+        "spec.validation.openAPIV3Schema.x-kubernetes-embedded-resource": "boolean",
+        "spec.validation.openAPIV3Schema.x-kubernetes-int-or-string": "boolean",
+        "spec.validation.openAPIV3Schema.x-kubernetes-preserve-unknown-fields": "boolean",
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-embedded-resource": "boolean",
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-int-or-string": "boolean",
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-preserve-unknown-fields": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.conversion.strategy",
+        "spec.conversion.webhookClientConfig.service",
+        "spec.subresources.scale.labelSelectorPath",
+        "spec.validation.openAPIV3Schema.default",
+        "spec.versions.schema.openAPIV3Schema.default",
+        "spec.versions.subresources.scale.labelSelectorPath",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "metadata.initializers.result.metadata.remainingItemCount": [
+          null,
+          143
+        ],
+        "spec.conversion.strategy": [
+          144,
+          52
+        ],
+        "spec.conversion.webhookClientConfig.service": [
+          145,
+          58
+        ],
+        "spec.conversion.webhookClientConfig.service.port": [
+          null,
+          66
+        ],
+        "spec.preserveUnknownFields": [
+          null,
+          86
+        ],
+        "spec.subresources.scale.labelSelectorPath": [
+          146,
+          94
+        ],
+        "spec.validation.openAPIV3Schema.default": [
+          147,
+          106
+        ],
+        "spec.validation.openAPIV3Schema.x-kubernetes-embedded-resource": [
+          null,
+          148
+        ],
+        "spec.validation.openAPIV3Schema.x-kubernetes-int-or-string": [
+          null,
+          149
+        ],
+        "spec.validation.openAPIV3Schema.x-kubernetes-preserve-unknown-fields": [
+          null,
+          150
+        ],
+        "spec.versions.schema.openAPIV3Schema.default": [
+          147,
+          106
+        ],
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-embedded-resource": [
+          null,
+          148
+        ],
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-int-or-string": [
+          null,
+          149
+        ],
+        "spec.versions.schema.openAPIV3Schema.x-kubernetes-preserve-unknown-fields": [
+          null,
+          150
+        ],
+        "spec.versions.subresources.scale.labelSelectorPath": [
+          146,
+          94
+        ],
+        "status.conditions.type": [
+          151,
+          137
+        ]
+      }
+    },
+    "v1.14.0": {
+      "descriptionChanged": [
+        "metadata.initializers"
+      ],
+      "added": {
+        "metadata.managedFields": "ManagedFieldsEntry[]",
+        "spec.conversion.conversionReviewVersions": "string[]",
+        "spec.validation.openAPIV3Schema.nullable": "boolean",
+        "spec.versions.schema.openAPIV3Schema.nullable": "boolean"
+      },
+      "descriptions": {
+        "metadata.initializers": [
+          152,
+          140
+        ],
+        "metadata.managedFields": [
+          null,
+          26
+        ],
+        "spec.conversion.conversionReviewVersions": [
+          null,
+          50
+        ]
+      }
+    },
+    "v1.13.0": {
+      "descriptionChanged": [
+        "spec.additionalPrinterColumns",
+        "spec.subresources",
+        "spec.validation"
+      ],
+      "added": {
+        "spec.conversion": "CustomResourceConversion",
+        "spec.versions.additionalPrinterColumns": "CustomResourceColumnDefinition[]",
+        "spec.versions.schema": "CustomResourceValidation",
+        "spec.versions.subresources": "CustomResourceSubresources"
+      },
+      "descriptions": {
+        "spec.additionalPrinterColumns": [
+          153,
+          38
+        ],
+        "spec.conversion": [
+          null,
+          48
+        ],
+        "spec.subresources": [
+          154,
+          90
+        ],
+        "spec.validation": [
+          155,
+          102
+        ],
+        "spec.versions.additionalPrinterColumns": [
+          null,
+          112
+        ],
+        "spec.versions.schema": [
+          null,
+          116
+        ],
+        "spec.versions.subresources": [
+          null,
+          122
+        ]
+      }
+    },
+    "v1.12.0": {
+      "descriptionChanged": [
+        "metadata.initializers.result.metadata.continue"
+      ],
+      "required": [
+        "spec"
+      ],
+      "descriptions": {
+        "metadata.initializers.result.metadata.continue": [
+          156,
+          157
+        ],
+        "spec": [
+          null,
+          36
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Namespace defines the space within each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces",
+    "Namespace defines the space within which each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces",
+    "deprecated indicates this version of the custom resource API is deprecated. When set to true, API requests to this version receive a warning header in the server response. Defaults to false.",
+    "deprecationWarning overrides the default warning returned to API clients. May only be set when `deprecated` is true. The default warning indicates this version is deprecated and recommends use of the newest served version of equal or greater stability, if one exists.",
+    "CustomResourceDefinition represents a resource that should be exposed on the API server.  Its name MUST be in the format <.spec.name>.<.spec.group>. Deprecated in v1.16, planned for removal in v1.19. Use apiextensions.k8s.io/v1 CustomResourceDefinition instead.",
+    "CustomResourceDefinition represents a resource that should be exposed on the API server.  Its name MUST be in the format <.spec.name>.<.spec.group>. Deprecated in v1.16, planned for removal in v1.22. Use apiextensions.k8s.io/v1 CustomResourceDefinition instead.",
+    "x-kubernetes-list-map-keys annotates an array with the x-kubernetes-list-type `map` by specifying the keys used as the index of the map.\n\nThis tag MUST only be used on lists that have the \"x-kubernetes-list-type\" extension set to \"map\". Also, the values specified for this attribute must be a scalar typed field of the child structure (no nesting is supported).",
+    "x-kubernetes-list-map-keys annotates an array with the x-kubernetes-list-type `map` by specifying the keys used as the index of the map.\n\nThis tag MUST only be used on lists that have the \"x-kubernetes-list-type\" extension set to \"map\". Also, the values specified for this attribute must be a scalar typed field of the child structure (no nesting is supported).\n\nThe properties specified must either be required or have a default value, to ensure those properties are present for all list items.",
+    "acceptedNames are the names that are actually being used to serve discovery. They may be different than the names in spec.",
+    "storedVersions lists all versions of CustomResources that were ever persisted. Tracking these versions allows a migration path for stored versions in etcd. The field is mutable so a migration controller can finish a migration to another version (ensuring no old objects are left in storage), and then remove the rest of the versions from this list. Versions may not be removed from `spec.versions` while they exist in this list.",
+    "Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed.",
+    "Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list.",
+    "format is an OpenAPI v3 format string. Unknown formats are ignored. The following formats are validated:\n\n- bsonobjectid: a bson object ID, i.e. a 24 characters hex string - uri: an URI as parsed by Golang net/url.ParseRequestURI - email: an email address as parsed by Golang net/mail.ParseAddress - hostname: a valid representation for an Internet host name, as defined by RFC 1034, section 3.1 [RFC1034]. - ipv4: an IPv4 IP as parsed by Golang net.ParseIP - ipv6: an IPv6 IP as parsed by Golang net.ParseIP - cidr: a CIDR as parsed by Golang net.ParseCIDR - mac: a MAC address as parsed by Golang net.ParseMAC - uuid: an UUID that allows uppercase defined by the regex (?i)^[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}$ - uuid3: an UUID3 that allows uppercase defined by the regex (?i)^[0-9a-f]{8}-?[0-9a-f]{4}-?3[0-9a-f]{3}-?[0-9a-f]{4}-?[0-9a-f]{12}$ - uuid4: an UUID4 that allows uppercase defined by the regex (?i)^[0-9a-f]{8}-?[0-9a-f]{4}-?4[0-9a-f]{3}-?[89ab][0-9a-f]{3}-?[0-9a-f]{12}$ - uuid5: an UUID5 that allows uppercase defined by the regex (?i)^[0-9a-f]{8}-?[0-9a-f]{4}-?5[0-9a-f]{3}-?[89ab][0-9a-f]{3}-?[0-9a-f]{12}$ - isbn: an ISBN10 or ISBN13 number string like \"0321751043\" or \"978-0321751041\" - isbn10: an ISBN10 number string like \"0321751043\" - isbn13: an ISBN13 number string like \"978-0321751041\" - creditcard: a credit card number defined by the regex ^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\\d{3})\\d{11})$ with any non digit characters mixed in - ssn: a U.S. social security number following the regex ^\\d{3}[- ]?\\d{2}[- ]?\\d{4}$ - hexcolor: an hexadecimal color code like \"#FFFFFF: following the regex ^#?([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$ - rgbcolor: an RGB color code like rgb like \"rgb(255,255,2559\" - byte: base64 encoded binary data - password: any kind of string - date: a date string like \"2006-01-02\" as defined by full-date in RFC3339 - duration: a duration string like \"22 ns\" as parsed by Golang time.ParseDuration or compatible with Scala duration format - datetime: a date time string like \"2014-12-15T19:30:20.000Z\" as defined by date-time in RFC3339.",
+    "x-kubernetes-list-type annotates an array to further describe its topology. This extension must only be used on lists and may have 3 possible values:\n\n1) `atomic`: the list is treated as a single entity, like a scalar.\n     Atomic lists will be entirely replaced when updated. This extension\n     may be used on any type of list (struct, scalar, ...).\n2) `set`:\n     Sets are lists that must not have multiple items with the same value. Each\n     value must be a scalar (or another atomic type).\n3) `map`:\n     These lists are like maps in that their elements have a non-index key\n     used to identify them. Order is preserved upon merge. The map tag\n     must only be used on a list with elements of type object.\nDefaults to atomic for arrays.",
+    "x-kubernetes-list-type annotates an array to further describe its topology. This extension must only be used on lists and may have 3 possible values:\n\n1) `atomic`: the list is treated as a single entity, like a scalar.\n     Atomic lists will be entirely replaced when updated. This extension\n     may be used on any type of list (struct, scalar, ...).\n2) `set`:\n     Sets are lists that must not have multiple items with the same value. Each\n     value must be a scalar, an object with x-kubernetes-map-type `atomic` or an\n     array with x-kubernetes-list-type `atomic`.\n3) `map`:\n     These lists are like maps in that their elements have a non-index key\n     used to identify them. Order is preserved upon merge. The map tag\n     must only be used on a list with elements of type object.\nDefaults to atomic for arrays.",
+    "x-kubernetes-map-type annotates an object to further describe its topology. This extension must only be used when type is object and may have 2 possible values:\n\n1) `granular`:\n     These maps are actual maps (key-value pairs) and each fields are independent\n     from each other (they can each be manipulated by separate actors). This is\n     the default behaviour for all maps.\n2) `atomic`: the list is treated as a single entity, like a scalar.\n     Atomic maps will be entirely replaced when updated.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "CreationTimestamp is a timestamp representing the server time when this object was created. It is not guaranteed to be set in happens-before order across separate operations. Clients may not set this value. It is represented in RFC3339 form and is in UTC.\n\nPopulated by the system. Read-only. Null for lists. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+    "CreationTimestamp is a timestamp representing the server time when this object was created. It is not guaranteed to be set in happens-before order across separate operations. Clients may not set this value. It is represented in RFC3339 form and is in UTC.\n\nPopulated by the system. Read-only. Null for lists. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "DeletionTimestamp is RFC 3339 date and time at which this resource will be deleted. This field is set by the server when a graceful deletion is requested by the user, and is not directly settable by a client. The resource is expected to be deleted (no longer visible from resource lists, and not reachable by name) after the time in this field, once the finalizers list is empty. As long as the finalizers list contains items, deletion is blocked. Once the deletionTimestamp is set, this value may not be unset or be set further into the future, although it may be shortened or the resource may be deleted prior to this time. For example, a user may request that a pod is deleted in 30 seconds. The Kubelet will react by sending a graceful termination signal to the containers in the pod. After that 30 seconds, the Kubelet will send a hard termination signal (SIGKILL) to the container and after cleanup, remove the pod from the API. In the presence of network partitions, this object may still exist after this timestamp, until an administrator or automated process can determine the resource is fully terminated. If not set, graceful deletion of the object has not been requested.\n\nPopulated by the system when a graceful deletion is requested. Read-only. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+    "DeletionTimestamp is RFC 3339 date and time at which this resource will be deleted. This field is set by the server when a graceful deletion is requested by the user, and is not directly settable by a client. The resource is expected to be deleted (no longer visible from resource lists, and not reachable by name) after the time in this field, once the finalizers list is empty. As long as the finalizers list contains items, deletion is blocked. Once the deletionTimestamp is set, this value may not be unset or be set further into the future, although it may be shortened or the resource may be deleted prior to this time. For example, a user may request that a pod is deleted in 30 seconds. The Kubelet will react by sending a graceful termination signal to the containers in the pod. After that 30 seconds, the Kubelet will send a hard termination signal (SIGKILL) to the container and after cleanup, remove the pod from the API. In the presence of network partitions, this object may still exist after this timestamp, until an administrator or automated process can determine the resource is fully terminated. If not set, graceful deletion of the object has not been requested.\n\nPopulated by the system when a graceful deletion is requested. Read-only. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency",
+    "ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.\n\nThis field is alpha and can be changed or removed without notice.",
+    "ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.",
+    "FieldsType is the discriminator for the different fields format and version. There is currently only one possible value: \"FieldsV1\"",
+    "FieldsV1 holds the first JSON version format as described in the \"FieldsV1\" type.",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency",
+    "An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "SelfLink is a URL representing this object. Populated by the system. Read-only.",
+    "SelfLink is a URL representing this object. Populated by the system. Read-only.\n\nDEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is planned to be removed in 1.21 release.",
+    "Spec describes how the user wants the resources to appear",
+    "spec describes how the user wants the resources to appear",
+    "AdditionalPrinterColumns are additional columns shown e.g. in kubectl next to the name. Defaults to a created-at column. Optional, the global columns for all versions. Top-level and per-version columns are mutually exclusive.",
+    "additionalPrinterColumns specifies additional columns returned in Table output. See https://kubernetes.io/docs/reference/using-api/api-concepts/#receiving-resources-as-tables for details. If present, this field configures columns for all versions. Top-level and per-version columns are mutually exclusive. If no top-level or per-version columns are specified, a single column displaying the age of the custom resource is used.",
+    "JSONPath is a simple JSON path, i.e. with array notation.",
+    "JSONPath is a simple JSON path (i.e. with array notation) which is evaluated against each custom resource to produce the value for this column.",
+    "format is an optional OpenAPI type definition for this column. The 'name' format is applied to the primary identifier column to assist in clients identifying column is the resource name. See https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for more.",
+    "format is an optional OpenAPI type definition for this column. The 'name' format is applied to the primary identifier column to assist in clients identifying column is the resource name. See https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for details.",
+    "priority is an integer defining the relative importance of this column compared to others. Lower numbers are considered higher priority. Columns that may be omitted in limited space scenarios should be given a higher priority.",
+    "priority is an integer defining the relative importance of this column compared to others. Lower numbers are considered higher priority. Columns that may be omitted in limited space scenarios should be given a priority greater than 0.",
+    "type is an OpenAPI type definition for this column. See https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for more.",
+    "type is an OpenAPI type definition for this column. See https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for details.",
+    "`conversion` defines conversion settings for the CRD.",
+    "conversion defines conversion settings for the CRD.",
+    "ConversionReviewVersions is an ordered list of preferred `ConversionReview` versions the Webhook expects. API server will try to use first version in the list which it supports. If none of the versions specified in this list supported by API server, conversion will fail for this object. If a persisted Webhook configuration specifies allowed versions and does not include any versions known to the API Server, calls to the webhook will fail. Default to `['v1beta1']`.",
+    "conversionReviewVersions is an ordered list of preferred `ConversionReview` versions the Webhook expects. The API server will use the first version in the list which it supports. If none of the versions specified in this list are supported by API server, conversion will fail for the custom resource. If a persisted Webhook configuration specifies allowed versions and does not include any versions known to the API Server, calls to the webhook will fail. Defaults to `[\"v1beta1\"]`.",
+    "`strategy` specifies the conversion strategy. Allowed values are: - `None`: The converter only change the apiVersion and would not touch any other field in the CR. - `Webhook`: API Server will call to an external webhook to do the conversion. Additional information\n  is needed for this option. This requires spec.preserveUnknownFields to be false.",
+    "strategy specifies how custom resources are converted between versions. Allowed values are: - `None`: The converter only change the apiVersion and would not touch any other field in the custom resource. - `Webhook`: API Server will call to an external webhook to do the conversion. Additional information\n  is needed for this option. This requires spec.preserveUnknownFields to be false, and spec.conversion.webhookClientConfig to be set.",
+    "`webhookClientConfig` is the instructions for how to call the webhook if strategy is `Webhook`. This field is alpha-level and is only honored by servers that enable the CustomResourceWebhookConversion feature.",
+    "webhookClientConfig is the instructions for how to call the webhook if strategy is `Webhook`. Required when `strategy` is set to `Webhook`.",
+    "`caBundle` is a PEM encoded CA bundle which will be used to validate the webhook's server certificate. If unspecified, system trust roots on the apiserver are used.",
+    "caBundle is a PEM encoded CA bundle which will be used to validate the webhook's server certificate. If unspecified, system trust roots on the apiserver are used.",
+    "`service` is a reference to the service for this webhook. Either `service` or `url` must be specified.\n\nIf the webhook is running within the cluster, then you should use `service`.",
+    "service is a reference to the service for this webhook. Either service or url must be specified.\n\nIf the webhook is running within the cluster, then you should use `service`.",
+    "`name` is the name of the service. Required",
+    "name is the name of the service. Required",
+    "`namespace` is the namespace of the service. Required",
+    "namespace is the namespace of the service. Required",
+    "`path` is an optional URL path which will be sent in any request to this service.",
+    "path is an optional URL path at which the webhook will be contacted.",
+    "If specified, the port on the service that hosting webhook. Default to 443 for backward compatibility. `port` should be a valid port number (1-65535, inclusive).",
+    "port is an optional service port at which the webhook will be contacted. `port` should be a valid port number (1-65535, inclusive). Defaults to 443 for backward compatibility.",
+    "`url` gives the location of the webhook, in standard URL form (`scheme://host:port/path`). Exactly one of `url` or `service` must be specified.\n\nThe `host` should not refer to a service running in the cluster; use the `service` field instead. The host might be resolved via external DNS in some apiservers (e.g., `kube-apiserver` cannot resolve in-cluster DNS as that would be a layering violation). `host` may also be an IP address.\n\nPlease note that using `localhost` or `127.0.0.1` as a `host` is risky unless you take great care to run this webhook on all hosts which run an apiserver which might need to make calls to this webhook. Such installs are likely to be non-portable, i.e., not easy to turn up in a new cluster.\n\nThe scheme must be \"https\"; the URL must begin with \"https://\".\n\nA path is optional, and if present may be any string permissible in a URL. You may use the path to pass an arbitrary string to the webhook, for example, a cluster identifier.\n\nAttempting to use a user or basic auth e.g. \"user:password@\" is not allowed. Fragments (\"#...\") and query parameters (\"?...\") are not allowed, either.",
+    "url gives the location of the webhook, in standard URL form (`scheme://host:port/path`). Exactly one of `url` or `service` must be specified.\n\nThe `host` should not refer to a service running in the cluster; use the `service` field instead. The host might be resolved via external DNS in some apiservers (e.g., `kube-apiserver` cannot resolve in-cluster DNS as that would be a layering violation). `host` may also be an IP address.\n\nPlease note that using `localhost` or `127.0.0.1` as a `host` is risky unless you take great care to run this webhook on all hosts which run an apiserver which might need to make calls to this webhook. Such installs are likely to be non-portable, i.e., not easy to turn up in a new cluster.\n\nThe scheme must be \"https\"; the URL must begin with \"https://\".\n\nA path is optional, and if present may be any string permissible in a URL. You may use the path to pass an arbitrary string to the webhook, for example, a cluster identifier.\n\nAttempting to use a user or basic auth e.g. \"user:password@\" is not allowed. Fragments (\"#...\") and query parameters (\"?...\") are not allowed, either.",
+    "Group is the group this resource belongs in",
+    "group is the API group of the defined custom resource. The custom resources are served under `/apis/<group>/...`. Must match the name of the CustomResourceDefinition (in the form `<names.plural>.<group>`).",
+    "Names are the names used to describe this custom resource",
+    "names specify the resource and kind names for the custom resource.",
+    "Categories is a list of grouped resources custom resources belong to (e.g. 'all')",
+    "categories is a list of grouped resources this custom resource belongs to (e.g. 'all'). This is published in API discovery documents, and used by clients to support invocations like `kubectl get all`.",
+    "Kind is the serialized kind of the resource.  It is normally CamelCase and singular.",
+    "kind is the serialized kind of the resource. It is normally CamelCase and singular. Custom resource instances will use this value as the `kind` attribute in API calls.",
+    "ListKind is the serialized kind of the list for this resource.  Defaults to <kind>List.",
+    "listKind is the serialized kind of the list for this resource. Defaults to \"`kind`List\".",
+    "Plural is the plural name of the resource to serve.  It must match the name of the CustomResourceDefinition-registration too: plural.group and it must be all lowercase.",
+    "plural is the plural name of the resource to serve. The custom resources are served under `/apis/<group>/<version>/.../<plural>`. Must match the name of the CustomResourceDefinition (in the form `<names.plural>.<group>`). Must be all lowercase.",
+    "ShortNames are short names for the resource.  It must be all lowercase.",
+    "shortNames are short names for the resource, exposed in API discovery documents, and used by clients to support invocations like `kubectl get <shortname>`. It must be all lowercase.",
+    "Singular is the singular name of the resource.  It must be all lowercase  Defaults to lowercased <kind>",
+    "singular is the singular name of the resource. It must be all lowercase. Defaults to lowercased `kind`.",
+    "preserveUnknownFields disables pruning of object fields which are not specified in the OpenAPI schema. apiVersion, kind, metadata and known fields inside metadata are always preserved. Defaults to true in v1beta and will default to false in v1.",
+    "preserveUnknownFields indicates that object fields which are not specified in the OpenAPI schema should be preserved when persisting to storage. apiVersion, kind, metadata and known fields inside metadata are always preserved. If false, schemas must be defined for all versions. Defaults to true in v1beta for backwards compatibility. Deprecated: will be required to be false in v1. Preservation of unknown fields can be specified in the validation schema using the `x-kubernetes-preserve-unknown-fields: true` extension. See https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/#pruning-versus-preserving-unknown-fields for details.",
+    "Scope indicates whether this resource is cluster or namespace scoped.  Default is namespaced",
+    "scope indicates whether the defined custom resource is cluster- or namespace-scoped. Allowed values are `Cluster` and `Namespaced`. Default is `Namespaced`.",
+    "Subresources describes the subresources for CustomResource Optional, the global subresources for all versions. Top-level and per-version subresources are mutually exclusive.",
+    "subresources specify what subresources the defined custom resource has. If present, this field configures subresources for all versions. Top-level and per-version subresources are mutually exclusive.",
+    "Scale denotes the scale subresource for CustomResources",
+    "scale indicates the custom resource should serve a `/scale` subresource that returns an `autoscaling/v1` Scale object.",
+    "LabelSelectorPath defines the JSON path inside of a CustomResource that corresponds to Scale.Status.Selector. Only JSON paths without the array notation are allowed. Must be a JSON Path under .status or .spec. Must be set to work with HPA. The field pointed by this JSON path must be a string field (not a complex selector struct) which contains a serialized label selector in string form. More info: https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions#scale-subresource If there is no value under the given path in the CustomResource, the status label selector value in the /scale subresource will default to the empty string.",
+    "labelSelectorPath defines the JSON path inside of a custom resource that corresponds to Scale `status.selector`. Only JSON paths without the array notation are allowed. Must be a JSON Path under `.status` or `.spec`. Must be set to work with HorizontalPodAutoscaler. The field pointed by this JSON path must be a string field (not a complex selector struct) which contains a serialized label selector in string form. More info: https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions#scale-subresource If there is no value under the given path in the custom resource, the `status.selector` value in the `/scale` subresource will default to the empty string.",
+    "SpecReplicasPath defines the JSON path inside of a CustomResource that corresponds to Scale.Spec.Replicas. Only JSON paths without the array notation are allowed. Must be a JSON Path under .spec. If there is no value under the given path in the CustomResource, the /scale subresource will return an error on GET.",
+    "specReplicasPath defines the JSON path inside of a custom resource that corresponds to Scale `spec.replicas`. Only JSON paths without the array notation are allowed. Must be a JSON Path under `.spec`. If there is no value under the given path in the custom resource, the `/scale` subresource will return an error on GET.",
+    "StatusReplicasPath defines the JSON path inside of a CustomResource that corresponds to Scale.Status.Replicas. Only JSON paths without the array notation are allowed. Must be a JSON Path under .status. If there is no value under the given path in the CustomResource, the status replica value in the /scale subresource will default to 0.",
+    "statusReplicasPath defines the JSON path inside of a custom resource that corresponds to Scale `status.replicas`. Only JSON paths without the array notation are allowed. Must be a JSON Path under `.status`. If there is no value under the given path in the custom resource, the `status.replicas` value in the `/scale` subresource will default to 0.",
+    "Status denotes the status subresource for CustomResources",
+    "status indicates the custom resource should serve a `/status` subresource. When enabled: 1. requests to the custom resource primary endpoint ignore changes to the `status` stanza of the object. 2. requests to the custom resource `/status` subresource ignore changes to anything other than the `status` stanza of the object.",
+    "Validation describes the validation methods for CustomResources Optional, the global validation schema for all versions. Top-level and per-version schemas are mutually exclusive.",
+    "validation describes the schema used for validation and pruning of the custom resource. If present, this validation schema is used to validate all versions. Top-level and per-version schemas are mutually exclusive.",
+    "OpenAPIV3Schema is the OpenAPI v3 schema to be validated against.",
+    "openAPIV3Schema is the OpenAPI v3 schema to use for validation and pruning.",
+    "default is a default value for undefined object fields. Defaulting is an alpha feature under the CustomResourceDefaulting feature gate. Defaulting requires spec.preserveUnknownFields to be false.",
+    "default is a default value for undefined object fields. Defaulting is a beta feature under the CustomResourceDefaulting feature gate. CustomResourceDefinitions with defaults must be created using the v1 (or newer) CustomResourceDefinition API.",
+    "Version is the version this resource belongs in Should be always first item in Versions field if provided. Optional, but at least one of Version or Versions must be set. Deprecated: Please use `Versions`.",
+    "version is the API version of the defined custom resource. The custom resources are served under `/apis/<group>/<version>/...`. Must match the name of the first item in the `versions` list if `version` and `versions` are both specified. Optional if `versions` is specified. Deprecated: use `versions` instead.",
+    "Versions is the list of all supported versions for this resource. If Version field is provided, this field is optional. Validation: All versions must use the same validation schema for now. i.e., top level Validation field is applied to all of these versions. Order: The version name will be used to compute the order. If the version string is \"kube-like\", it will sort above non \"kube-like\" version strings, which are ordered lexicographically. \"Kube-like\" versions start with a \"v\", then are followed by a number (the major version), then optionally the string \"alpha\" or \"beta\" and another number (the minor version). These are sorted first by GA > beta > alpha (where GA is a version with no suffix such as beta or alpha), and then by comparing major version, then minor version. An example sorted list of versions: v10, v2, v1, v11beta2, v10beta3, v3beta1, v12alpha1, v11alpha2, foo1, foo10.",
+    "versions is the list of all API versions of the defined custom resource. Optional if `version` is specified. The name of the first item in the `versions` list must match the `version` field if `version` and `versions` are both specified. Version names are used to compute the order in which served versions are listed in API discovery. If the version string is \"kube-like\", it will sort above non \"kube-like\" version strings, which are ordered lexicographically. \"Kube-like\" versions start with a \"v\", then are followed by a number (the major version), then optionally the string \"alpha\" or \"beta\" and another number (the minor version). These are sorted first by GA > beta > alpha (where GA is a version with no suffix such as beta or alpha), and then by comparing major version, then minor version. An example sorted list of versions: v10, v2, v1, v11beta2, v10beta3, v3beta1, v12alpha1, v11alpha2, foo1, foo10.",
+    "AdditionalPrinterColumns are additional columns shown e.g. in kubectl next to the name. Defaults to a created-at column. Top-level and per-version columns are mutually exclusive. Per-version columns must not all be set to identical values (top-level columns should be used instead) This field is alpha-level and is only honored by servers that enable the CustomResourceWebhookConversion feature. NOTE: CRDs created prior to 1.13 populated the top-level additionalPrinterColumns field by default. To apply an update that changes to per-version additionalPrinterColumns, the top-level additionalPrinterColumns field must be explicitly set to null",
+    "additionalPrinterColumns specifies additional columns returned in Table output. See https://kubernetes.io/docs/reference/using-api/api-concepts/#receiving-resources-as-tables for details. Top-level and per-version columns are mutually exclusive. Per-version columns must not all be set to identical values (top-level columns should be used instead). If no top-level or per-version columns are specified, a single column displaying the age of the custom resource is used.",
+    "Name is the version name, e.g. “v1”, “v2beta1”, etc.",
+    "name is the version name, e.g. “v1”, “v2beta1”, etc. The custom resources are served under this version at `/apis/<group>/<version>/...` if `served` is true.",
+    "Schema describes the schema for CustomResource used in validation, pruning, and defaulting. Top-level and per-version schemas are mutually exclusive. Per-version schemas must not all be set to identical values (top-level validation schema should be used instead) This field is alpha-level and is only honored by servers that enable the CustomResourceWebhookConversion feature.",
+    "schema describes the schema used for validation and pruning of this version of the custom resource. Top-level and per-version schemas are mutually exclusive. Per-version schemas must not all be set to identical values (top-level validation schema should be used instead).",
+    "Served is a flag enabling/disabling this version from being served via REST APIs",
+    "served is a flag enabling/disabling this version from being served via REST APIs",
+    "Storage flags the version as storage version. There must be exactly one flagged as storage version.",
+    "storage indicates this version should be used when persisting custom resources to storage. There must be exactly one version with storage=true.",
+    "Subresources describes the subresources for CustomResource Top-level and per-version subresources are mutually exclusive. Per-version subresources must not all be set to identical values (top-level subresources should be used instead) This field is alpha-level and is only honored by servers that enable the CustomResourceWebhookConversion feature.",
+    "subresources specify what subresources this version of the defined custom resource have. Top-level and per-version subresources are mutually exclusive. Per-version subresources must not all be set to identical values (top-level subresources should be used instead).",
+    "Status indicates the actual state of the CustomResourceDefinition",
+    "status indicates the actual state of the CustomResourceDefinition",
+    "AcceptedNames are the names that are actually being used to serve discovery They may be different than the names in spec.",
+    "Conditions indicate state for particular aspects of a CustomResourceDefinition",
+    "conditions indicate state for particular aspects of a CustomResourceDefinition",
+    "Last time the condition transitioned from one status to another.",
+    "lastTransitionTime last time the condition transitioned from one status to another.",
+    "Human-readable message indicating details about last transition.",
+    "message is a human-readable message indicating details about last transition.",
+    "Unique, one-word, CamelCase reason for the condition's last transition.",
+    "reason is a unique, one-word, CamelCase reason for the condition's last transition.",
+    "Status is the status of the condition. Can be True, False, Unknown.",
+    "status is the status of the condition. Can be True, False, Unknown.",
+    "Type is the type of the condition. Types include Established, NamesAccepted and Terminating.",
+    "type is the type of the condition. Types include Established, NamesAccepted and Terminating.",
+    "StoredVersions are all versions of CustomResources that were ever persisted. Tracking these versions allows a migration path for stored versions in etcd. The field is mutable so the migration controller can first finish a migration to another version (i.e. that no old objects are left in the storage), and then remove the rest of the versions from this list. None of the versions in this list can be removed from the spec.Versions field.",
+    "An initializer is a controller which enforces some system invariant at object creation time. This field is a list of initializers that have not yet acted on this object. If nil or empty, this object has been completely initialized. Otherwise, the object is considered uninitialized and is hidden (in list/watch and get calls) from clients that haven't explicitly asked to observe uninitialized objects.\n\nWhen an object is created, the system will populate this list with the current set of initializers. Only privileged users may set or modify this list. Once it is empty, it may not be modified further by any user.\n\nDEPRECATED - initializers are an alpha field and will be removed in v1.15.",
+    "Fields identifies a set of fields.",
+    "CustomResourceDefinition represents a resource that should be exposed on the API server.  Its name MUST be in the format <.spec.name>.<.spec.group>.",
+    "remainingItemCount is the number of subsequent items in the list which are not included in this list response. If the list request contained label or field selectors, then the number of remaining items is unknown and the field will be left unset and omitted during serialization. If the list is complete (either because it is not chunking or because this is the last chunk), then there are no more remaining items and this field will be left unset and omitted during serialization. Servers older than v1.15 do not set this field. The intended use of the remainingItemCount is *estimating* the size of a collection. Clients should not rely on the remainingItemCount to be set or to be exact.\n\nThis field is alpha and can be changed or removed without notice.",
+    "`strategy` specifies the conversion strategy. Allowed values are: - `None`: The converter only change the apiVersion and would not touch any other field in the CR. - `Webhook`: API Server will call to an external webhook to do the conversion. Additional information is needed for this option.",
+    "`service` is a reference to the service for this webhook. Either `service` or `url` must be specified.\n\nIf the webhook is running within the cluster, then you should use `service`.\n\nPort 443 will be used if it is open, otherwise it is an error.",
+    "LabelSelectorPath defines the JSON path inside of a CustomResource that corresponds to Scale.Status.Selector. Only JSON paths without the array notation are allowed. Must be a JSON Path under .status. Must be set to work with HPA. If there is no value under the given path in the CustomResource, the status label selector value in the /scale subresource will default to the empty string.",
+    "JSON represents any valid JSON value. These types are supported: bool, int64, float64, string, []interface{}, map[string]interface{} and nil.",
+    "x-kubernetes-embedded-resource defines that the value is an embedded Kubernetes runtime.Object, with TypeMeta and ObjectMeta. The type must be object. It is allowed to further restrict the embedded object. kind, apiVersion and metadata are validated automatically. x-kubernetes-preserve-unknown-fields is allowed to be true, but does not have to be if the object is fully specified (up to kind, apiVersion, metadata).",
+    "x-kubernetes-int-or-string specifies that this value is either an integer or a string. If this is true, an empty type is allowed and type as child of anyOf is permitted if following one of the following patterns:\n\n1) anyOf:\n   - type: integer\n   - type: string\n2) allOf:\n   - anyOf:\n     - type: integer\n     - type: string\n   - ... zero or more",
+    "x-kubernetes-preserve-unknown-fields stops the API server decoding step from pruning fields which are not specified in the validation schema. This affects fields recursively, but switches back to normal pruning behaviour if nested properties or additionalProperties are specified in the schema. This can either be true or undefined. False is forbidden.",
+    "Type is the type of the condition.",
+    "An initializer is a controller which enforces some system invariant at object creation time. This field is a list of initializers that have not yet acted on this object. If nil or empty, this object has been completely initialized. Otherwise, the object is considered uninitialized and is hidden (in list/watch and get calls) from clients that haven't explicitly asked to observe uninitialized objects.\n\nWhen an object is created, the system will populate this list with the current set of initializers. Only privileged users may set or modify this list. Once it is empty, it may not be modified further by any user.",
+    "AdditionalPrinterColumns are additional columns shown e.g. in kubectl next to the name. Defaults to a created-at column.",
+    "Subresources describes the subresources for CustomResources",
+    "Validation describes the validation methods for CustomResources",
+    "continue may be set if the user set a limit on the number of items returned, and indicates that the server has more data available. The value is opaque and may be used to issue another request to the endpoint that served this list to retrieve the next set of available objects. Continuing a list may not be possible if the server configuration has changed or more than a few minutes have passed. The resourceVersion field returned when using this continue value will be identical to the value in the first response.",
+    "continue may be set if the user set a limit on the number of items returned, and indicates that the server has more data available. The value is opaque and may be used to issue another request to the endpoint that served this list to retrieve the next set of available objects. Continuing a consistent list may not be possible if the server configuration has changed or more than a few minutes have passed. The resourceVersion field returned when using this continue value will be identical to the value in the first response, unless you have received this token from an error message."
+  ]
+}

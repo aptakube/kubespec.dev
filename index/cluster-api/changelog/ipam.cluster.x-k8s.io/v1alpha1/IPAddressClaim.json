@@ -1,0 +1,227 @@
+{
+  "versions": {
+    "v1.10.0": {
+      "descriptionChanged": [
+        "spec",
+        "status",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason"
+      ],
+      "descriptions": {
+        "spec": [
+          0,
+          1
+        ],
+        "status": [
+          2,
+          3
+        ],
+        "status.conditions.lastTransitionTime": [
+          4,
+          5
+        ],
+        "status.conditions.message": [
+          6,
+          7
+        ],
+        "status.conditions.reason": [
+          8,
+          9
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.poolRef",
+        "status.addressRef",
+        "status.addressRef.name",
+        "status.conditions",
+        "status.conditions.reason",
+        "status.conditions.severity",
+        "status.conditions.status",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.poolRef": [
+          10,
+          11
+        ],
+        "status.addressRef": [
+          12,
+          13
+        ],
+        "status.addressRef.name": [
+          14,
+          15
+        ],
+        "status.conditions": [
+          16,
+          17
+        ],
+        "status.conditions.reason": [
+          18,
+          8
+        ],
+        "status.conditions.severity": [
+          19,
+          20
+        ],
+        "status.conditions.status": [
+          21,
+          22
+        ],
+        "status.conditions.type": [
+          23,
+          24
+        ]
+      }
+    },
+    "v1.8.0": {
+      "descriptionChanged": [
+        "status.addressRef.name"
+      ],
+      "descriptions": {
+        "status.addressRef.name": [
+          25,
+          14
+        ]
+      }
+    },
+    "v1.7.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.poolRef.apiGroup",
+        "status.addressRef.name",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason",
+        "status.conditions.severity",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          26,
+          27
+        ],
+        "kind": [
+          28,
+          29
+        ],
+        "spec.poolRef.apiGroup": [
+          30,
+          31
+        ],
+        "status.addressRef.name": [
+          32,
+          25
+        ],
+        "status.conditions.lastTransitionTime": [
+          33,
+          4
+        ],
+        "status.conditions.message": [
+          34,
+          6
+        ],
+        "status.conditions.reason": [
+          35,
+          18
+        ],
+        "status.conditions.severity": [
+          36,
+          19
+        ],
+        "status.conditions.type": [
+          37,
+          23
+        ]
+      }
+    },
+    "v1.6.0": {
+      "optional": [
+        "spec.poolRef.apiGroup"
+      ],
+      "descriptions": {
+        "spec.poolRef.apiGroup": [
+          null,
+          30
+        ]
+      }
+    },
+    "v1.4.2": {
+      "optional": [
+        "status.addressRef"
+      ],
+      "descriptions": {
+        "status.addressRef": [
+          null,
+          12
+        ]
+      }
+    },
+    "v1.4.0": {
+      "required": [
+        "status.addressRef"
+      ],
+      "descriptions": {
+        "status.addressRef": [
+          null,
+          12
+        ]
+      }
+    },
+    "v1.3.7": {
+      "optional": [
+        "status.addressRef"
+      ],
+      "descriptions": {
+        "status.addressRef": [
+          null,
+          12
+        ]
+      }
+    }
+  },
+  "texts": [
+    "IPAddressClaimSpec is the desired state of an IPAddressClaim.",
+    "spec is the desired state of IPAddressClaim.",
+    "IPAddressClaimStatus is the observed status of a IPAddressClaim.",
+    "status is the observed state of IPAddressClaim.",
+    "Last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed. If that is not known, then using the time when\nthe API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed. If that is not known, then using the time when\nthe API field changed is acceptable.",
+    "A human readable message indicating details about the transition.\nThis field may be empty.",
+    "message is a human readable message indicating details about the transition.\nThis field may be empty.",
+    "The reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may be empty.",
+    "reason is the reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may be empty.",
+    "PoolRef is a reference to the pool from which an IP address should be created.",
+    "poolRef is a reference to the pool from which an IP address should be created.",
+    "AddressRef is a reference to the address that was created for this claim.",
+    "addressRef is a reference to the address that was created for this claim.",
+    "Name of the referent.\nThis field is effectively required, but due to backwards compatibility is\nallowed to be empty. Instances of this type with an empty value here are\nalmost certainly wrong.\nTODO: Add other useful fields. apiVersion, kind, uid?\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names\nTODO: Drop `kubebuilder:default` when controller-gen doesn't need it https://github.com/kubernetes-sigs/kubebuilder/issues/3896.",
+    "Name of the referent.\nThis field is effectively required, but due to backwards compatibility is\nallowed to be empty. Instances of this type with an empty value here are\nalmost certainly wrong.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Conditions summarises the current state of the IPAddressClaim",
+    "conditions summarises the current state of the IPAddressClaim",
+    "The reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may not be empty.",
+    "Severity provides an explicit classification of Reason code, so the users or machines can immediately\nunderstand the current situation and act accordingly.\nThe Severity field MUST be set only when Status=False.",
+    "severity provides an explicit classification of Reason code, so the users or machines can immediately\nunderstand the current situation and act accordingly.\nThe Severity field MUST be set only when Status=False.",
+    "Status of the condition, one of True, False, Unknown.",
+    "status of the condition, one of True, False, Unknown.",
+    "Type of condition in CamelCase or in foo.example.com/CamelCase.\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions\ncan be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions\ncan be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "Name of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names\nTODO: Add other useful fields. apiVersion, kind, uid?",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required.",
+    "APIGroup is the group for the resource being referenced.\nIf APIGroup is not specified, the specified Kind must be in the core API group.\nFor any other third-party types, APIGroup is required.",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "Last time the condition transitioned from one status to another. This should be when the underlying condition changed. If that is not known, then using the time when the API field changed is acceptable.",
+    "A human readable message indicating details about the transition. This field may be empty.",
+    "The reason for the condition's last transition in CamelCase. The specific API may choose whether or not this field is considered a guaranteed API. This field may not be empty.",
+    "Severity provides an explicit classification of Reason code, so the users or machines can immediately understand the current situation and act accordingly. The Severity field MUST be set only when Status=False.",
+    "Type of condition in CamelCase or in foo.example.com/CamelCase. Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important."
+  ]
+}

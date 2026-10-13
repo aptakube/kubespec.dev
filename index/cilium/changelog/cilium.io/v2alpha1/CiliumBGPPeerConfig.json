@@ -1,0 +1,170 @@
+{
+  "versions": {
+    "1.19.0": {
+      "descriptionChanged": [
+        "spec.families.advertisements"
+      ],
+      "descriptions": {
+        "spec.families.advertisements": [
+          0,
+          1
+        ]
+      }
+    },
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.authSecretRef",
+        "spec.ebgpMultihop",
+        "spec.families",
+        "spec.families.advertisements",
+        "spec.families.advertisements.matchExpressions.operator",
+        "spec.families.advertisements.matchExpressions.values",
+        "spec.families.advertisements.matchLabels",
+        "spec.gracefulRestart",
+        "spec.gracefulRestart.restartTimeSeconds",
+        "spec.timers",
+        "spec.timers.connectRetryTimeSeconds",
+        "spec.timers.holdTimeSeconds",
+        "spec.timers.keepAliveTimeSeconds",
+        "spec.transport",
+        "spec.transport.localPort",
+        "spec.transport.peerPort"
+      ],
+      "added": {
+        "status": "object"
+      },
+      "descriptions": {
+        "apiVersion": [
+          2,
+          3
+        ],
+        "kind": [
+          4,
+          5
+        ],
+        "spec.authSecretRef": [
+          6,
+          7
+        ],
+        "spec.ebgpMultihop": [
+          8,
+          9
+        ],
+        "spec.families": [
+          10,
+          11
+        ],
+        "spec.families.advertisements": [
+          12,
+          0
+        ],
+        "spec.families.advertisements.matchExpressions.operator": [
+          13,
+          14
+        ],
+        "spec.families.advertisements.matchExpressions.values": [
+          15,
+          16
+        ],
+        "spec.families.advertisements.matchLabels": [
+          17,
+          18
+        ],
+        "spec.gracefulRestart": [
+          19,
+          20
+        ],
+        "spec.gracefulRestart.restartTimeSeconds": [
+          21,
+          22
+        ],
+        "spec.timers": [
+          23,
+          24
+        ],
+        "spec.timers.connectRetryTimeSeconds": [
+          25,
+          26
+        ],
+        "spec.timers.holdTimeSeconds": [
+          27,
+          28
+        ],
+        "spec.timers.keepAliveTimeSeconds": [
+          29,
+          30
+        ],
+        "spec.transport": [
+          31,
+          32
+        ],
+        "spec.transport.localPort": [
+          33,
+          34
+        ],
+        "spec.transport.peerPort": [
+          35,
+          36
+        ],
+        "status": [
+          null,
+          37
+        ]
+      }
+    },
+    "1.16.1": {
+      "descriptionChanged": [
+        "spec.transport.localPort"
+      ],
+      "descriptions": {
+        "spec.transport.localPort": [
+          38,
+          33
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Advertisements selects group of BGP Advertisement(s) to advertise for this family.\n\nIf not specified, no advertisements are sent for this family.\n\nThis field is ignored in CiliumBGPNeighbor which is used in CiliumBGPPeeringPolicy.\nUse CiliumBGPPeeringPolicy advertisement options instead.",
+    "Advertisements selects group of BGP Advertisement(s) to advertise for this family.\n\nIf not specified, no advertisements are sent for this family.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "AuthSecretRef is the name of the secret to use to fetch a TCP authentication password for this peer. \n If not specified, no authentication is used.",
+    "AuthSecretRef is the name of the secret to use to fetch a TCP\nauthentication password for this peer.\n\nIf not specified, no authentication is used.",
+    "EBGPMultihopTTL controls the multi-hop feature for eBGP peers. Its value defines the Time To Live (TTL) value used in BGP packets sent to the peer. \n If not specified, EBGP multihop is disabled. This field is ignored for iBGP neighbors.",
+    "EBGPMultihopTTL controls the multi-hop feature for eBGP peers.\nIts value defines the Time To Live (TTL) value used in BGP\npackets sent to the peer.\n\nIf not specified, EBGP multihop is disabled. This field is ignored for iBGP neighbors.",
+    "Families, if provided, defines a set of AFI/SAFIs the speaker will negotiate with it's peer. \n If not specified, the default families of IPv6/unicast and IPv4/unicast will be created.",
+    "Families, if provided, defines a set of AFI/SAFIs the speaker will\nnegotiate with it's peer.\n\nIf not specified, the default families of IPv6/unicast and IPv4/unicast will be created.",
+    "Advertisements selects group of BGP Advertisement(s) to advertise for this family. \n If not specified, no advertisements are sent for this family. \n This field is ignored in CiliumBGPNeighbor which is used in CiliumBGPPeeringPolicy. Use CiliumBGPPeeringPolicy advertisement options instead.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "GracefulRestart defines graceful restart parameters which are negotiated with this peer. \n If not specified, the graceful restart capability is disabled.",
+    "GracefulRestart defines graceful restart parameters which are negotiated\nwith this peer.\n\nIf not specified, the graceful restart capability is disabled.",
+    "RestartTimeSeconds is the estimated time it will take for the BGP session to be re-established with peer after a restart. After this period, peer will remove stale routes. This is described RFC 4724 section 4.2.",
+    "RestartTimeSeconds is the estimated time it will take for the BGP\nsession to be re-established with peer after a restart.\nAfter this period, peer will remove stale routes. This is\ndescribed RFC 4724 section 4.2.",
+    "Timers defines the BGP timers for the peer. \n If not specified, the default timers are used.",
+    "Timers defines the BGP timers for the peer.\n\nIf not specified, the default timers are used.",
+    "ConnectRetryTimeSeconds defines the initial value for the BGP ConnectRetryTimer (RFC 4271, Section 8). \n If not specified, defaults to 120 seconds.",
+    "ConnectRetryTimeSeconds defines the initial value for the BGP ConnectRetryTimer (RFC 4271, Section 8).\n\nIf not specified, defaults to 120 seconds.",
+    "HoldTimeSeconds defines the initial value for the BGP HoldTimer (RFC 4271, Section 4.2). Updating this value will cause a session reset. \n If not specified, defaults to 90 seconds.",
+    "HoldTimeSeconds defines the initial value for the BGP HoldTimer (RFC 4271, Section 4.2).\nUpdating this value will cause a session reset.\n\nIf not specified, defaults to 90 seconds.",
+    "KeepaliveTimeSeconds defines the initial value for the BGP KeepaliveTimer (RFC 4271, Section 8). It can not be larger than HoldTimeSeconds. Updating this value will cause a session reset. \n If not specified, defaults to 30 seconds.",
+    "KeepaliveTimeSeconds defines the initial value for the BGP KeepaliveTimer (RFC 4271, Section 8).\nIt can not be larger than HoldTimeSeconds. Updating this value will cause a session reset.\n\nIf not specified, defaults to 30 seconds.",
+    "Transport defines the BGP transport parameters for the peer. \n If not specified, the default transport parameters are used.",
+    "Transport defines the BGP transport parameters for the peer.\n\nIf not specified, the default transport parameters are used.",
+    "Deprecated LocalPort is the local port to be used for the BGP session. \n If not specified, ephemeral port will be picked to initiate a connection. \n This field is deprecated and will be removed in a future release. Local port configuration is unnecessary and is not recommended.",
+    "Deprecated\nLocalPort is the local port to be used for the BGP session.\n\nIf not specified, ephemeral port will be picked to initiate a connection.\n\nThis field is deprecated and will be removed in a future release.\nLocal port configuration is unnecessary and is not recommended.",
+    "PeerPort is the peer port to be used for the BGP session. \n If not specified, defaults to TCP port 179.",
+    "PeerPort is the peer port to be used for the BGP session.\n\nIf not specified, defaults to TCP port 179.",
+    "Status is the running status of the CiliumBGPPeerConfig",
+    "LocalPort is the local port to be used for the BGP session. \n If not specified, defaults to TCP port 179."
+  ]
+}

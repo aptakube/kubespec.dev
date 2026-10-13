@@ -1,0 +1,103 @@
+{
+  "versions": {
+    "v2.10.0": {
+      "descriptionChanged": [
+        "spec.auth.jwt.serviceAccountRef.audiences"
+      ],
+      "descriptions": {
+        "spec.auth.jwt.serviceAccountRef.audiences": [
+          0,
+          1
+        ]
+      }
+    },
+    "v0.20.4": {
+      "descriptionChanged": [
+        "spec",
+        "spec.auth.jwt",
+        "spec.auth.jwt.serviceAccountRef"
+      ],
+      "descriptions": {
+        "spec": [
+          null,
+          2
+        ],
+        "spec.auth.jwt": [
+          3,
+          4
+        ],
+        "spec.auth.jwt.serviceAccountRef": [
+          5,
+          6
+        ]
+      }
+    },
+    "v0.18.0": {
+      "descriptionChanged": [
+        "spec.requestParameters.sessionDuration"
+      ],
+      "descriptions": {
+        "spec.requestParameters.sessionDuration": [
+          7,
+          null
+        ]
+      }
+    },
+    "v0.11.0": {
+      "descriptionChanged": [
+        "spec.auth.jwt.serviceAccountRef.namespace",
+        "spec.auth.secretRef.accessKeyIDSecretRef.key",
+        "spec.auth.secretRef.accessKeyIDSecretRef.namespace",
+        "spec.auth.secretRef.secretAccessKeySecretRef.key",
+        "spec.auth.secretRef.secretAccessKeySecretRef.namespace",
+        "spec.auth.secretRef.sessionTokenSecretRef.key",
+        "spec.auth.secretRef.sessionTokenSecretRef.namespace"
+      ],
+      "descriptions": {
+        "spec.auth.jwt.serviceAccountRef.namespace": [
+          8,
+          9
+        ],
+        "spec.auth.secretRef.accessKeyIDSecretRef.key": [
+          10,
+          11
+        ],
+        "spec.auth.secretRef.accessKeyIDSecretRef.namespace": [
+          8,
+          12
+        ],
+        "spec.auth.secretRef.secretAccessKeySecretRef.key": [
+          10,
+          11
+        ],
+        "spec.auth.secretRef.secretAccessKeySecretRef.namespace": [
+          8,
+          12
+        ],
+        "spec.auth.secretRef.sessionTokenSecretRef.key": [
+          10,
+          11
+        ],
+        "spec.auth.secretRef.sessionTokenSecretRef.namespace": [
+          8,
+          12
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Audience specifies the `aud` claim for the service account token\nIf the service account uses a well-known annotation for e.g. IRSA or GCP Workload Identity\nthen this audiences will be appended to the list",
+    "Audience specifies the `aud` claim for the service account token\nSome providers automatically extend the audience field based on well-known annotations for workload\nidentity (e.g. IRSA or GCP Workload Identity)",
+    "STSSessionTokenSpec defines the desired state to generate an AWS STS session token.",
+    "Authenticate against AWS using service account tokens.",
+    "AWSJWTAuth provides configuration to authenticate against AWS using service account tokens.",
+    "A reference to a ServiceAccount resource.",
+    "ServiceAccountSelector is a reference to a ServiceAccount resource.",
+    "SessionDuration The duration, in seconds, that the credentials should remain valid. Acceptable durations for\nIAM user sessions range from 900 seconds (15 minutes) to 129,600 seconds (36 hours), with 43,200 seconds\n(12 hours) as the default.",
+    "Namespace of the resource being referred to. Ignored if referent is not cluster-scoped. cluster-scoped defaults\nto the namespace of the referent.",
+    "Namespace of the resource being referred to.\nIgnored if referent is not cluster-scoped, otherwise defaults to the namespace of the referent.",
+    "The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be\ndefaulted, in others it may be required.",
+    "A key in the referenced Secret.\nSome instances of this field may be defaulted, in others it may be required.",
+    "The namespace of the Secret resource being referred to.\nIgnored if referent is not cluster-scoped, otherwise defaults to the namespace of the referent."
+  ]
+}

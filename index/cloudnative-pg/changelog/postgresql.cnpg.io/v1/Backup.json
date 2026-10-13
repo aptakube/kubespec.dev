@@ -1,0 +1,762 @@
+{
+  "versions": {
+    "v1.29.0": {
+      "added": {
+        "status.reconciliationStartedAt": "string",
+        "status.reconciliationTerminatedAt": "string"
+      },
+      "descriptionChanged": [
+        "status.startedAt",
+        "status.stoppedAt"
+      ],
+      "descriptions": {
+        "status.reconciliationStartedAt": [
+          null,
+          0
+        ],
+        "status.reconciliationTerminatedAt": [
+          null,
+          1
+        ],
+        "status.startedAt": [
+          2,
+          3
+        ],
+        "status.stoppedAt": [
+          4,
+          5
+        ]
+      }
+    },
+    "v1.28.1": {
+      "added": {
+        "status.azureCredentials.useDefaultAzureCredentials": "boolean",
+        "status.instanceID.sessionID": "string"
+      },
+      "descriptions": {
+        "status.azureCredentials.useDefaultAzureCredentials": [
+          null,
+          6
+        ],
+        "status.instanceID.sessionID": [
+          null,
+          7
+        ]
+      }
+    },
+    "v1.28.0": {
+      "removed": {
+        "status.azureCredentials.useDefaultAzureCredentials": "boolean",
+        "status.instanceID.sessionID": "string"
+      },
+      "descriptions": {
+        "status.azureCredentials.useDefaultAzureCredentials": [
+          6,
+          null
+        ],
+        "status.instanceID.sessionID": [
+          7,
+          null
+        ]
+      }
+    },
+    "v1.27.3": {
+      "added": {
+        "status.azureCredentials.useDefaultAzureCredentials": "boolean",
+        "status.instanceID.sessionID": "string"
+      },
+      "descriptions": {
+        "status.azureCredentials.useDefaultAzureCredentials": [
+          null,
+          6
+        ],
+        "status.instanceID.sessionID": [
+          null,
+          7
+        ]
+      }
+    },
+    "v1.27.1": {
+      "added": {
+        "status.majorVersion": "integer"
+      },
+      "descriptions": {
+        "status.majorVersion": [
+          null,
+          8
+        ]
+      }
+    },
+    "v1.27.0": {
+      "removed": {
+        "status.majorVersion": "integer"
+      },
+      "descriptions": {
+        "status.majorVersion": [
+          8,
+          null
+        ]
+      }
+    },
+    "v1.26.2": {
+      "added": {
+        "status.majorVersion": "integer"
+      },
+      "descriptions": {
+        "status.majorVersion": [
+          null,
+          8
+        ]
+      }
+    },
+    "v1.25.2": {
+      "description": true,
+      "descriptions": {
+        "": [
+          9,
+          10
+        ]
+      }
+    },
+    "v1.25.0": {
+      "added": {
+        "status.pluginMetadata": "map[string]string"
+      },
+      "description": true,
+      "descriptions": {
+        "status.pluginMetadata": [
+          null,
+          11
+        ],
+        "": [
+          10,
+          9
+        ]
+      }
+    },
+    "v1.24.4": {
+      "description": true,
+      "descriptions": {
+        "": [
+          9,
+          10
+        ]
+      }
+    },
+    "v1.23.0": {
+      "descriptionChanged": [
+        "spec.method"
+      ],
+      "added": {
+        "spec.pluginConfiguration": "object"
+      },
+      "descriptions": {
+        "spec.method": [
+          12,
+          13
+        ],
+        "spec.pluginConfiguration": [
+          null,
+          14
+        ]
+      }
+    },
+    "v1.22.2": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.method",
+        "spec.online",
+        "spec.onlineConfiguration",
+        "spec.onlineConfiguration.immediateCheckpoint",
+        "spec.onlineConfiguration.waitForArchive",
+        "spec.target",
+        "status",
+        "status.azureCredentials.storageKey",
+        "status.azureCredentials.storageSasToken",
+        "status.destinationPath",
+        "status.endpointCA",
+        "status.endpointURL",
+        "status.googleCredentials.gkeEnvironment",
+        "status.serverName",
+        "status.snapshotBackupStatus.elements.tablespaceName"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          15,
+          16
+        ],
+        "kind": [
+          17,
+          18
+        ],
+        "spec": [
+          19,
+          20
+        ],
+        "spec.method": [
+          21,
+          12
+        ],
+        "spec.online": [
+          22,
+          23
+        ],
+        "spec.onlineConfiguration": [
+          24,
+          25
+        ],
+        "spec.onlineConfiguration.immediateCheckpoint": [
+          26,
+          27
+        ],
+        "spec.onlineConfiguration.waitForArchive": [
+          28,
+          29
+        ],
+        "spec.target": [
+          30,
+          31
+        ],
+        "status": [
+          32,
+          33
+        ],
+        "status.azureCredentials.storageKey": [
+          34,
+          35
+        ],
+        "status.azureCredentials.storageSasToken": [
+          36,
+          37
+        ],
+        "status.destinationPath": [
+          38,
+          39
+        ],
+        "status.endpointCA": [
+          40,
+          41
+        ],
+        "status.endpointURL": [
+          42,
+          43
+        ],
+        "status.googleCredentials.gkeEnvironment": [
+          44,
+          45
+        ],
+        "status.serverName": [
+          46,
+          47
+        ],
+        "status.snapshotBackupStatus.elements.tablespaceName": [
+          48,
+          49
+        ]
+      }
+    },
+    "v1.22.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.method",
+        "spec.online",
+        "spec.onlineConfiguration",
+        "spec.onlineConfiguration.immediateCheckpoint",
+        "spec.onlineConfiguration.waitForArchive",
+        "spec.target",
+        "status",
+        "status.azureCredentials.storageKey",
+        "status.azureCredentials.storageSasToken",
+        "status.destinationPath",
+        "status.endpointCA",
+        "status.endpointURL",
+        "status.googleCredentials.gkeEnvironment",
+        "status.serverName",
+        "status.snapshotBackupStatus.elements.type"
+      ],
+      "added": {
+        "status.snapshotBackupStatus.elements.tablespaceName": "string"
+      },
+      "descriptions": {
+        "apiVersion": [
+          16,
+          15
+        ],
+        "kind": [
+          18,
+          17
+        ],
+        "spec": [
+          20,
+          19
+        ],
+        "spec.method": [
+          12,
+          21
+        ],
+        "spec.online": [
+          23,
+          22
+        ],
+        "spec.onlineConfiguration": [
+          25,
+          24
+        ],
+        "spec.onlineConfiguration.immediateCheckpoint": [
+          27,
+          26
+        ],
+        "spec.onlineConfiguration.waitForArchive": [
+          29,
+          28
+        ],
+        "spec.target": [
+          31,
+          30
+        ],
+        "status": [
+          33,
+          32
+        ],
+        "status.azureCredentials.storageKey": [
+          35,
+          34
+        ],
+        "status.azureCredentials.storageSasToken": [
+          37,
+          36
+        ],
+        "status.destinationPath": [
+          39,
+          38
+        ],
+        "status.endpointCA": [
+          41,
+          40
+        ],
+        "status.endpointURL": [
+          43,
+          42
+        ],
+        "status.googleCredentials.gkeEnvironment": [
+          45,
+          44
+        ],
+        "status.serverName": [
+          47,
+          46
+        ],
+        "status.snapshotBackupStatus.elements.tablespaceName": [
+          null,
+          48
+        ],
+        "status.snapshotBackupStatus.elements.type": [
+          50,
+          51
+        ]
+      }
+    },
+    "v1.21.4": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.method",
+        "spec.online",
+        "spec.onlineConfiguration",
+        "spec.onlineConfiguration.immediateCheckpoint",
+        "spec.onlineConfiguration.waitForArchive",
+        "spec.target",
+        "status",
+        "status.azureCredentials.storageKey",
+        "status.azureCredentials.storageSasToken",
+        "status.destinationPath",
+        "status.endpointCA",
+        "status.endpointURL",
+        "status.googleCredentials.gkeEnvironment",
+        "status.serverName"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          15,
+          16
+        ],
+        "kind": [
+          17,
+          18
+        ],
+        "spec": [
+          19,
+          20
+        ],
+        "spec.method": [
+          21,
+          12
+        ],
+        "spec.online": [
+          22,
+          23
+        ],
+        "spec.onlineConfiguration": [
+          24,
+          25
+        ],
+        "spec.onlineConfiguration.immediateCheckpoint": [
+          26,
+          27
+        ],
+        "spec.onlineConfiguration.waitForArchive": [
+          28,
+          29
+        ],
+        "spec.target": [
+          30,
+          31
+        ],
+        "status": [
+          32,
+          33
+        ],
+        "status.azureCredentials.storageKey": [
+          34,
+          35
+        ],
+        "status.azureCredentials.storageSasToken": [
+          36,
+          37
+        ],
+        "status.destinationPath": [
+          38,
+          39
+        ],
+        "status.endpointCA": [
+          40,
+          41
+        ],
+        "status.endpointURL": [
+          42,
+          43
+        ],
+        "status.googleCredentials.gkeEnvironment": [
+          44,
+          45
+        ],
+        "status.serverName": [
+          46,
+          47
+        ]
+      }
+    },
+    "v1.21.1": {
+      "added": {
+        "spec.online": "boolean",
+        "spec.onlineConfiguration": "object",
+        "status.backupLabelFile": "string",
+        "status.online": "boolean",
+        "status.tablespaceMapFile": "string"
+      },
+      "descriptions": {
+        "spec.online": [
+          null,
+          22
+        ],
+        "spec.onlineConfiguration": [
+          null,
+          24
+        ],
+        "status.backupLabelFile": [
+          null,
+          52
+        ],
+        "status.online": [
+          null,
+          53
+        ],
+        "status.tablespaceMapFile": [
+          null,
+          54
+        ]
+      }
+    },
+    "v1.21.0": {
+      "added": {
+        "spec.method": "string",
+        "status.method": "string",
+        "status.snapshotBackupStatus": "object"
+      },
+      "descriptions": {
+        "spec.method": [
+          null,
+          21
+        ],
+        "status.method": [
+          null,
+          55
+        ],
+        "status.snapshotBackupStatus": [
+          null,
+          56
+        ]
+      }
+    },
+    "v1.20.3": {
+      "required": [
+        "metadata",
+        "spec",
+        "spec.cluster"
+      ],
+      "descriptions": {
+        "spec": [
+          null,
+          19
+        ],
+        "spec.cluster": [
+          null,
+          57
+        ]
+      }
+    },
+    "v1.20.0": {
+      "optional": [
+        "metadata",
+        "spec",
+        "spec.cluster"
+      ],
+      "descriptionChanged": [
+        "spec.target"
+      ],
+      "descriptions": {
+        "spec": [
+          null,
+          19
+        ],
+        "spec.cluster": [
+          null,
+          57
+        ],
+        "spec.target": [
+          58,
+          30
+        ]
+      }
+    },
+    "v1.19.5": {
+      "required": [
+        "metadata",
+        "spec",
+        "spec.cluster"
+      ],
+      "descriptions": {
+        "spec": [
+          null,
+          19
+        ],
+        "spec.cluster": [
+          null,
+          57
+        ]
+      }
+    },
+    "v1.19.1": {
+      "added": {
+        "spec.target": "string",
+        "status.backupName": "string"
+      },
+      "optional": [
+        "status.destinationPath"
+      ],
+      "descriptionChanged": [
+        "status.destinationPath"
+      ],
+      "descriptions": {
+        "spec.target": [
+          null,
+          58
+        ],
+        "status.backupName": [
+          null,
+          59
+        ],
+        "status.destinationPath": [
+          60,
+          38
+        ]
+      }
+    },
+    "v1.19.0": {
+      "required": [
+        "status.destinationPath"
+      ],
+      "descriptionChanged": [
+        "status.destinationPath"
+      ],
+      "removed": {
+        "status.backupName": "string"
+      },
+      "descriptions": {
+        "status.destinationPath": [
+          38,
+          60
+        ],
+        "status.backupName": [
+          59,
+          null
+        ]
+      }
+    },
+    "v1.18.3": {
+      "added": {
+        "status.backupName": "string"
+      },
+      "optional": [
+        "status.destinationPath"
+      ],
+      "descriptionChanged": [
+        "status.destinationPath"
+      ],
+      "descriptions": {
+        "status.backupName": [
+          null,
+          59
+        ],
+        "status.destinationPath": [
+          60,
+          38
+        ]
+      }
+    },
+    "v1.18.0": {
+      "required": [
+        "status.destinationPath"
+      ],
+      "descriptionChanged": [
+        "status.destinationPath"
+      ],
+      "descriptions": {
+        "status.destinationPath": [
+          38,
+          60
+        ]
+      }
+    },
+    "v1.17.5": {
+      "optional": [
+        "status.destinationPath"
+      ],
+      "descriptionChanged": [
+        "status.destinationPath"
+      ],
+      "descriptions": {
+        "status.destinationPath": [
+          60,
+          38
+        ]
+      }
+    },
+    "v1.16.1": {
+      "descriptionChanged": [
+        "status.azureCredentials",
+        "status.s3Credentials"
+      ],
+      "descriptions": {
+        "status.azureCredentials": [
+          61,
+          62
+        ],
+        "status.s3Credentials": [
+          63,
+          64
+        ]
+      }
+    },
+    "v1.16.0": {
+      "added": {
+        "status.azureCredentials.inheritFromAzureAD": "boolean",
+        "status.s3Credentials.region": "object"
+      },
+      "descriptions": {
+        "status.azureCredentials.inheritFromAzureAD": [
+          null,
+          65
+        ],
+        "status.s3Credentials.region": [
+          null,
+          66
+        ]
+      }
+    }
+  },
+  "texts": [
+    "When the backup process was started by the operator",
+    "When the reconciliation was terminated by the operator (either successfully or not)",
+    "When the backup was started",
+    "When the backup execution was started by the backup tool",
+    "When the backup was terminated",
+    "When the backup execution was terminated by the backup tool",
+    "Use the default Azure authentication flow, which includes DefaultAzureCredential.\nThis allows authentication using environment variables and managed identities.",
+    "The instance manager session ID. This is a unique identifier generated at instance manager\nstartup and changes on every restart (including container reboots). Used to detect if\nthe instance manager was restarted during long-running operations like backups, which\nwould terminate any running backup process.",
+    "The PostgreSQL major version that was running when the\nbackup was taken.",
+    "Backup is the Schema for the backups API",
+    "A Backup resource is a request for a PostgreSQL backup by the user.",
+    "A map containing the plugin metadata",
+    "The backup method to be used, possible options are `barmanObjectStore`\nand `volumeSnapshot`. Defaults to: `barmanObjectStore`.",
+    "The backup method to be used, possible options are `barmanObjectStore`,\n`volumeSnapshot` or `plugin`. Defaults to: `barmanObjectStore`.",
+    "Configuration parameters passed to the plugin managing this backup",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Specification of the desired behavior of the backup. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "Specification of the desired behavior of the backup.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "The backup method to be used, possible options are `barmanObjectStore` and `volumeSnapshot`. Defaults to: `barmanObjectStore`.",
+    "Whether the default type of backup with volume snapshots is online/hot (`true`, default) or offline/cold (`false`) Overrides the default setting specified in the cluster field '.spec.backup.volumeSnapshot.online'",
+    "Whether the default type of backup with volume snapshots is\nonline/hot (`true`, default) or offline/cold (`false`)\nOverrides the default setting specified in the cluster field '.spec.backup.volumeSnapshot.online'",
+    "Configuration parameters to control the online/hot backup with volume snapshots Overrides the default settings specified in the cluster '.backup.volumeSnapshot.onlineConfiguration' stanza",
+    "Configuration parameters to control the online/hot backup with volume snapshots\nOverrides the default settings specified in the cluster '.backup.volumeSnapshot.onlineConfiguration' stanza",
+    "Control whether the I/O workload for the backup initial checkpoint will be limited, according to the `checkpoint_completion_target` setting on the PostgreSQL server. If set to true, an immediate checkpoint will be used, meaning PostgreSQL will complete the checkpoint as soon as possible. `false` by default.",
+    "Control whether the I/O workload for the backup initial checkpoint will\nbe limited, according to the `checkpoint_completion_target` setting on\nthe PostgreSQL server. If set to true, an immediate checkpoint will be\nused, meaning PostgreSQL will complete the checkpoint as soon as\npossible. `false` by default.",
+    "If false, the function will return immediately after the backup is completed, without waiting for WAL to be archived. This behavior is only useful with backup software that independently monitors WAL archiving. Otherwise, WAL required to make the backup consistent might be missing and make the backup useless. By default, or when this parameter is true, pg_backup_stop will wait for WAL to be archived when archiving is enabled. On a standby, this means that it will wait only when archive_mode = always. If write activity on the primary is low, it may be useful to run pg_switch_wal on the primary in order to trigger an immediate segment switch.",
+    "If false, the function will return immediately after the backup is completed,\nwithout waiting for WAL to be archived.\nThis behavior is only useful with backup software that independently monitors WAL archiving.\nOtherwise, WAL required to make the backup consistent might be missing and make the backup useless.\nBy default, or when this parameter is true, pg_backup_stop will wait for WAL to be archived when archiving is\nenabled.\nOn a standby, this means that it will wait only when archive_mode = always.\nIf write activity on the primary is low, it may be useful to run pg_switch_wal on the primary in order to trigger\nan immediate segment switch.",
+    "The policy to decide which instance should perform this backup. If empty, it defaults to `cluster.spec.backup.target`. Available options are empty string, `primary` and `prefer-standby`. `primary` to have backups run always on primary instances, `prefer-standby` to have backups run preferably on the most updated standby, if available.",
+    "The policy to decide which instance should perform this backup. If empty,\nit defaults to `cluster.spec.backup.target`.\nAvailable options are empty string, `primary` and `prefer-standby`.\n`primary` to have backups run always on primary instances,\n`prefer-standby` to have backups run preferably on the most updated\nstandby, if available.",
+    "Most recently observed status of the backup. This data may not be up to date. Populated by the system. Read-only. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "Most recently observed status of the backup. This data may not be up to\ndate. Populated by the system. Read-only.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "The storage account key to be used in conjunction with the storage account name",
+    "The storage account key to be used in conjunction\nwith the storage account name",
+    "A shared-access-signature to be used in conjunction with the storage account name",
+    "A shared-access-signature to be used in conjunction with\nthe storage account name",
+    "The path where to store the backup (i.e. s3://bucket/path/to/folder) this path, with different destination folders, will be used for WALs and for data. This may not be populated in case of errors.",
+    "The path where to store the backup (i.e. s3://bucket/path/to/folder)\nthis path, with different destination folders, will be used for WALs\nand for data. This may not be populated in case of errors.",
+    "EndpointCA store the CA bundle of the barman endpoint. Useful when using self-signed certificates to avoid errors with certificate issuer and barman-cloud-wal-archive.",
+    "EndpointCA store the CA bundle of the barman endpoint.\nUseful when using self-signed certificates to avoid\nerrors with certificate issuer and barman-cloud-wal-archive.",
+    "Endpoint to be used to upload data to the cloud, overriding the automatic endpoint discovery",
+    "Endpoint to be used to upload data to the cloud,\noverriding the automatic endpoint discovery",
+    "If set to true, will presume that it's running inside a GKE environment, default to false.",
+    "If set to true, will presume that it's running inside a GKE environment,\ndefault to false.",
+    "The server name on S3, the cluster name is used if this parameter is omitted",
+    "The server name on S3, the cluster name is used if this\nparameter is omitted",
+    "TablespaceName is the name of the snapshotted tablespace. Only set when type is PG_TABLESPACE",
+    "TablespaceName is the name of the snapshotted tablespace. Only set\nwhen type is PG_TABLESPACE",
+    "Type is tho role of the snapshot in the cluster, such as PG_DATA and PG_WAL",
+    "Type is tho role of the snapshot in the cluster, such as PG_DATA, PG_WAL and PG_TABLESPACE",
+    "Backup label file content as returned by Postgres in case of online (hot) backups",
+    "Whether the backup was online/hot (`true`) or offline/cold (`false`)",
+    "Tablespace map file content as returned by Postgres in case of online (hot) backups",
+    "The backup method being used",
+    "Status of the volumeSnapshot backup",
+    "The cluster to backup",
+    "The policy to decide which instance should perform this backup. If empty, it defaults to `cluster.spec.backup.target`. Available options are empty string, which will default to `primary` policy, `primary` to have backups run always on primary instances, `prefer-standby` to have backups run preferably on the most updated standby, if available.",
+    "The Name of the Barman backup",
+    "The path where to store the backup (i.e. s3://bucket/path/to/folder) this path, with different destination folders, will be used for WALs and for data",
+    "The credentials to be used to upload data to Azure Blob Storage",
+    "The credentials to use to upload data to Azure Blob Storage",
+    "The credentials to be used to upload data to S3",
+    "The credentials to use to upload data to S3",
+    "Use the Azure AD based authentication without providing explicitly the keys.",
+    "The reference to the secret containing the region name"
+  ]
+}

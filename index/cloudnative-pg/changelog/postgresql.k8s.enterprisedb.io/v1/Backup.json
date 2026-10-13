@@ -1,0 +1,178 @@
+{
+  "versions": {
+    "v1.14.0": {
+      "added": {
+        "status.googleCredentials": "object",
+        "status.s3Credentials.inheritFromIAMRole": "boolean"
+      },
+      "optional": [
+        "status.s3Credentials.accessKeyId",
+        "status.s3Credentials.secretAccessKey"
+      ],
+      "descriptions": {
+        "status.googleCredentials": [
+          null,
+          0
+        ],
+        "status.s3Credentials.accessKeyId": [
+          null,
+          1
+        ],
+        "status.s3Credentials.inheritFromIAMRole": [
+          null,
+          2
+        ],
+        "status.s3Credentials.secretAccessKey": [
+          null,
+          3
+        ]
+      }
+    },
+    "v1.12.0": {
+      "added": {
+        "status.endpointCA": "object"
+      },
+      "descriptions": {
+        "status.endpointCA": [
+          null,
+          4
+        ]
+      }
+    },
+    "v1.10.0": {
+      "added": {
+        "status.instanceID": "object"
+      },
+      "descriptions": {
+        "status.instanceID": [
+          null,
+          5
+        ]
+      }
+    },
+    "v1.8.0": {
+      "added": {
+        "status.azureCredentials": "object"
+      },
+      "optional": [
+        "status.s3Credentials"
+      ],
+      "descriptionChanged": [
+        "status.s3Credentials"
+      ],
+      "descriptions": {
+        "status.azureCredentials": [
+          null,
+          6
+        ],
+        "status.s3Credentials": [
+          7,
+          8
+        ]
+      }
+    },
+    "v1.5.0": {
+      "required": [
+        "spec.cluster.name",
+        "status.s3Credentials.accessKeyId.name",
+        "status.s3Credentials.secretAccessKey.name"
+      ],
+      "descriptionChanged": [
+        "spec.cluster.name",
+        "status.commandError",
+        "status.commandOutput",
+        "status.s3Credentials.accessKeyId.key",
+        "status.s3Credentials.accessKeyId.name",
+        "status.s3Credentials.secretAccessKey.key",
+        "status.s3Credentials.secretAccessKey.name"
+      ],
+      "added": {
+        "status.beginLSN": "string",
+        "status.beginWal": "string",
+        "status.endLSN": "string",
+        "status.endWal": "string"
+      },
+      "removed": {
+        "status.s3Credentials.accessKeyId.optional": "boolean",
+        "status.s3Credentials.secretAccessKey.optional": "boolean"
+      },
+      "descriptions": {
+        "spec.cluster.name": [
+          9,
+          10
+        ],
+        "status.beginLSN": [
+          null,
+          11
+        ],
+        "status.beginWal": [
+          null,
+          12
+        ],
+        "status.commandError": [
+          13,
+          14
+        ],
+        "status.commandOutput": [
+          13,
+          15
+        ],
+        "status.endLSN": [
+          null,
+          16
+        ],
+        "status.endWal": [
+          null,
+          17
+        ],
+        "status.s3Credentials.accessKeyId.key": [
+          18,
+          19
+        ],
+        "status.s3Credentials.accessKeyId.name": [
+          9,
+          10
+        ],
+        "status.s3Credentials.secretAccessKey.key": [
+          18,
+          19
+        ],
+        "status.s3Credentials.secretAccessKey.name": [
+          9,
+          10
+        ],
+        "status.s3Credentials.accessKeyId.optional": [
+          20,
+          null
+        ],
+        "status.s3Credentials.secretAccessKey.optional": [
+          20,
+          null
+        ]
+      }
+    }
+  },
+  "texts": [
+    "The credentials to use to upload data to Google Cloud Storage",
+    "The reference to the access key id",
+    "Use the role based authentication without providing explicitly the keys.",
+    "The reference to the secret access key",
+    "EndpointCA store the CA bundle of the barman endpoint. Useful when using self-signed certificates to avoid errors with certificate issuer and barman-cloud-wal-archive.",
+    "Information to identify the instance where the backup has been taken from",
+    "The credentials to be used to upload data to Azure Blob Storage",
+    "The credentials to use to upload data to S3",
+    "The credentials to be used to upload data to S3",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "Name of the referent.",
+    "The starting xlog",
+    "The starting WAL",
+    "The backup command output",
+    "The backup command output in case of error",
+    "Unused. Retained for compatibility with old versions.",
+    "The ending xlog",
+    "The ending WAL",
+    "The key of the secret to select from.  Must be a valid secret key.",
+    "The key to select",
+    "Specify whether the Secret or its key must be defined"
+  ]
+}

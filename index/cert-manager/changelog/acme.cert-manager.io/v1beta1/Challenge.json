@@ -1,0 +1,261 @@
+{
+  "versions": {
+    "v1.6.0": {
+      "descriptionChanged": [
+        "spec.solver.dns01.azureDNS.environment",
+        "spec.solver.dns01.azureDNS.hostedZoneName",
+        "spec.solver.dns01.azureDNS.resourceGroupName",
+        "spec.solver.dns01.azureDNS.subscriptionID",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector"
+      ],
+      "added": {
+        "spec.solver.dns01.azureDNS.managedIdentity": "object"
+      },
+      "descriptions": {
+        "spec.solver.dns01.azureDNS.environment": [
+          null,
+          0
+        ],
+        "spec.solver.dns01.azureDNS.hostedZoneName": [
+          null,
+          1
+        ],
+        "spec.solver.dns01.azureDNS.managedIdentity": [
+          null,
+          2
+        ],
+        "spec.solver.dns01.azureDNS.resourceGroupName": [
+          null,
+          3
+        ],
+        "spec.solver.dns01.azureDNS.subscriptionID": [
+          null,
+          4
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          5,
+          6
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          5,
+          6
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          5,
+          6
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          5,
+          6
+        ]
+      }
+    },
+    "v1.5.2": {
+      "descriptionChanged": [
+        "spec.solver.http01.gatewayHTTPRoute.serviceType",
+        "spec.solver.http01.ingress.serviceType"
+      ],
+      "descriptions": {
+        "spec.solver.http01.gatewayHTTPRoute.serviceType": [
+          7,
+          8
+        ],
+        "spec.solver.http01.ingress.serviceType": [
+          7,
+          8
+        ]
+      }
+    },
+    "v1.5.1": {
+      "added": {
+        "spec.solver.dns01.acmeDNS": "object",
+        "spec.solver.dns01.azureDNS": "object",
+        "spec.solver.dns01.cloudDNS": "object"
+      },
+      "removed": {
+        "spec.solver.dns01.acmedns": "object",
+        "spec.solver.dns01.azuredns": "object",
+        "spec.solver.dns01.clouddns": "object"
+      },
+      "descriptions": {
+        "spec.solver.dns01.acmeDNS": [
+          null,
+          9
+        ],
+        "spec.solver.dns01.azureDNS": [
+          null,
+          10
+        ],
+        "spec.solver.dns01.cloudDNS": [
+          null,
+          11
+        ],
+        "spec.solver.dns01.acmedns": [
+          9,
+          null
+        ],
+        "spec.solver.dns01.azuredns": [
+          10,
+          null
+        ],
+        "spec.solver.dns01.clouddns": [
+          11,
+          null
+        ]
+      }
+    },
+    "v1.5.0": {
+      "added": {
+        "spec.solver.dns01.acmedns": "object",
+        "spec.solver.dns01.azuredns": "object",
+        "spec.solver.dns01.clouddns": "object",
+        "spec.solver.http01.gatewayHTTPRoute": "object"
+      },
+      "descriptionChanged": [
+        "spec.solver.http01.ingress.ingressTemplate",
+        "spec.solver.http01.ingress.serviceType"
+      ],
+      "removed": {
+        "spec.solver.dns01.acmeDNS": "object",
+        "spec.solver.dns01.azureDNS": "object",
+        "spec.solver.dns01.cloudDNS": "object"
+      },
+      "descriptions": {
+        "spec.solver.dns01.acmedns": [
+          null,
+          9
+        ],
+        "spec.solver.dns01.azuredns": [
+          null,
+          10
+        ],
+        "spec.solver.dns01.clouddns": [
+          null,
+          11
+        ],
+        "spec.solver.http01.gatewayHTTPRoute": [
+          null,
+          12
+        ],
+        "spec.solver.http01.ingress.ingressTemplate": [
+          13,
+          14
+        ],
+        "spec.solver.http01.ingress.serviceType": [
+          15,
+          7
+        ],
+        "spec.solver.dns01.acmeDNS": [
+          9,
+          null
+        ],
+        "spec.solver.dns01.azureDNS": [
+          10,
+          null
+        ],
+        "spec.solver.dns01.cloudDNS": [
+          11,
+          null
+        ]
+      }
+    },
+    "v1.4.0": {
+      "added": {
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": "object",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": "object",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": "object",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": "object"
+      },
+      "descriptionChanged": [
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces"
+      ],
+      "descriptions": {
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          16,
+          17
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          16,
+          17
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          16,
+          17
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          16,
+          17
+        ]
+      }
+    },
+    "v1.0.0": {
+      "descriptionChanged": [
+        "spec.solver.http01.ingress.podTemplate.spec"
+      ],
+      "added": {
+        "spec.solver.http01.ingress.podTemplate.spec.priorityClassName": "string",
+        "spec.solver.http01.ingress.podTemplate.spec.serviceAccountName": "string"
+      },
+      "descriptions": {
+        "spec.solver.http01.ingress.podTemplate.spec": [
+          18,
+          19
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.priorityClassName": [
+          null,
+          20
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.serviceAccountName": [
+          null,
+          21
+        ]
+      }
+    }
+  },
+  "texts": [
+    "name of the Azure environment (default AzurePublicCloud)",
+    "name of the DNS zone that should be used",
+    "managed identity configuration, can not be used at the same time as clientID, clientSecretSecretRef or tenantID",
+    "resource group the DNS zone is located in",
+    "ID of the Azure subscription",
+    "A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces. This field is alpha-level and is only honored when PodAffinityNamespaceSelector feature is enabled.",
+    "A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces. This field is beta-level and is only honored when PodAffinityNamespaceSelector feature is enabled.",
+    "Optional service type for Kubernetes solver service. Supported values are NodePort or ClusterIP (default).",
+    "Optional service type for Kubernetes solver service. Supported values are NodePort or ClusterIP. If unset, defaults to NodePort.",
+    "Use the 'ACME DNS' (https://github.com/joohoi/acme-dns) API to manage DNS01 challenge records.",
+    "Use the Microsoft Azure DNS API to manage DNS01 challenge records.",
+    "Use the Google Cloud DNS API to manage DNS01 challenge records.",
+    "The Gateway API is a sig-network community API that models service networking in Kubernetes (https://gateway-api.sigs.k8s.io/). The Gateway solver will create HTTPRoutes with the specified labels in the same namespace as the challenge. This solver is experimental, and fields / behaviour may change in the future.",
+    "Optional ingress template used to configure the ACME challenge solver ingress used for HTTP01 challenges",
+    "Optional ingress template used to configure the ACME challenge solver ingress used for HTTP01 challenges.",
+    "Optional service type for Kubernetes solver service",
+    "namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means \"this pod's namespace\"",
+    "namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means \"this pod's namespace\"",
+    "PodSpec defines overrides for the HTTP01 challenge solver pod. Only the 'nodeSelector', 'affinity' and 'tolerations' fields are supported currently. All other fields will be ignored.",
+    "PodSpec defines overrides for the HTTP01 challenge solver pod. Only the 'priorityClassName', 'nodeSelector', 'affinity', 'serviceAccountName' and 'tolerations' fields are supported currently. All other fields will be ignored.",
+    "If specified, the pod's priorityClassName.",
+    "If specified, the pod's service account"
+  ]
+}

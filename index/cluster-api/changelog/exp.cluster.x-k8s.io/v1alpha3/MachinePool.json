@@ -1,0 +1,42 @@
+{
+  "versions": {
+    "v0.3.10": {
+      "added": {
+        "spec.template.spec.nodeDrainTimeout": "string",
+        "status.conditions": "object[]"
+      },
+      "descriptions": {
+        "spec.template.spec.nodeDrainTimeout": [
+          null,
+          0
+        ],
+        "status.conditions": [
+          null,
+          1
+        ]
+      }
+    },
+    "v0.3.7": {
+      "added": {
+        "spec.failureDomains": "string[]",
+        "status.observedGeneration": "integer"
+      },
+      "descriptions": {
+        "spec.failureDomains": [
+          null,
+          2
+        ],
+        "status.observedGeneration": [
+          null,
+          3
+        ]
+      }
+    }
+  },
+  "texts": [
+    "NodeDrainTimeout is the total amount of time that the controller will spend on draining a node. The default value is 0, meaning that the node can be drained without any time limitations. NOTE: NodeDrainTimeout is different from `kubectl drain --timeout`",
+    "Conditions define the current service state of the MachinePool.",
+    "FailureDomains is the list of failure domains this MachinePool should be attached to.",
+    "ObservedGeneration is the latest generation observed by the controller."
+  ]
+}

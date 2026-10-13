@@ -1,0 +1,63 @@
+{
+  "versions": {
+    "1.18.0": {
+      "added": {
+        "spec.bgpInstances.localASN": "integer"
+      },
+      "descriptions": {
+        "spec.bgpInstances.localASN": [
+          null,
+          0
+        ]
+      }
+    },
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          1,
+          2
+        ],
+        "kind": [
+          3,
+          4
+        ],
+        "": [
+          5,
+          6
+        ]
+      }
+    },
+    "1.16.0": {
+      "removed": {
+        "spec.nodeRef": "string"
+      },
+      "description": true,
+      "descriptions": {
+        "spec.nodeRef": [
+          7,
+          null
+        ],
+        "": [
+          8,
+          5
+        ]
+      }
+    }
+  },
+  "texts": [
+    "LocalASN is the ASN to use for this BGP instance.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "CiliumBGPNodeConfigOverride specifies configuration overrides for a CiliumBGPNodeConfig. It allows fine-tuning of BGP behavior on a per-node basis. For the override to be effective, the names in CiliumBGPNodeConfigOverride and CiliumBGPNodeConfig must match exactly. This matching ensures that specific node configurations are applied correctly and only where intended.",
+    "CiliumBGPNodeConfigOverride specifies configuration overrides for a CiliumBGPNodeConfig.\nIt allows fine-tuning of BGP behavior on a per-node basis. For the override to be effective,\nthe names in CiliumBGPNodeConfigOverride and CiliumBGPNodeConfig must match exactly. This\nmatching ensures that specific node configurations are applied correctly and only where intended.",
+    "NodeRef is the name of the node for which the BGP configuration is overridden.",
+    "CiliumBGPNodeConfigOverride is used to overrides some of the BGP configurations which are node local. Users can user this resource to override auto-generated BGP settings for the node."
+  ]
+}

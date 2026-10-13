@@ -1,0 +1,1495 @@
+{
+  "versions": {
+    "v1.12.1": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.conditions.all",
+        "spec.conditions.all.operator",
+        "spec.conditions.all.value",
+        "spec.conditions.any",
+        "spec.conditions.any.operator",
+        "spec.conditions.any.value",
+        "spec.context.apiCall",
+        "spec.context.apiCall.data",
+        "spec.context.apiCall.jmesPath",
+        "spec.context.apiCall.service",
+        "spec.context.apiCall.service.caBundle",
+        "spec.context.apiCall.service.url",
+        "spec.context.apiCall.urlPath",
+        "spec.context.globalReference.jmesPath",
+        "spec.context.imageRegistry",
+        "spec.context.imageRegistry.imageRegistryCredentials.providers",
+        "spec.context.imageRegistry.imageRegistryCredentials.secrets",
+        "spec.context.imageRegistry.jmesPath",
+        "spec.context.imageRegistry.reference",
+        "spec.context.variable.default",
+        "spec.context.variable.jmesPath",
+        "spec.exclude",
+        "spec.exclude.all.resources.annotations",
+        "spec.exclude.all.resources.name",
+        "spec.exclude.all.resources.names",
+        "spec.exclude.all.resources.namespaceSelector",
+        "spec.exclude.all.resources.namespaceSelector.matchExpressions.operator",
+        "spec.exclude.all.resources.namespaceSelector.matchExpressions.values",
+        "spec.exclude.all.resources.namespaceSelector.matchLabels",
+        "spec.exclude.all.resources.namespaces",
+        "spec.exclude.all.resources.selector",
+        "spec.exclude.all.resources.selector.matchExpressions.operator",
+        "spec.exclude.all.resources.selector.matchExpressions.values",
+        "spec.exclude.all.resources.selector.matchLabels",
+        "spec.exclude.all.subjects.apiGroup",
+        "spec.exclude.all.subjects.kind",
+        "spec.exclude.all.subjects.namespace",
+        "spec.exclude.any.resources.annotations",
+        "spec.exclude.any.resources.name",
+        "spec.exclude.any.resources.names",
+        "spec.exclude.any.resources.namespaceSelector",
+        "spec.exclude.any.resources.namespaceSelector.matchExpressions.operator",
+        "spec.exclude.any.resources.namespaceSelector.matchExpressions.values",
+        "spec.exclude.any.resources.namespaceSelector.matchLabels",
+        "spec.exclude.any.resources.namespaces",
+        "spec.exclude.any.resources.selector",
+        "spec.exclude.any.resources.selector.matchExpressions.operator",
+        "spec.exclude.any.resources.selector.matchExpressions.values",
+        "spec.exclude.any.resources.selector.matchLabels",
+        "spec.exclude.any.subjects.apiGroup",
+        "spec.exclude.any.subjects.kind",
+        "spec.exclude.any.subjects.namespace",
+        "spec.match",
+        "spec.match.all.resources.annotations",
+        "spec.match.all.resources.name",
+        "spec.match.all.resources.names",
+        "spec.match.all.resources.namespaceSelector",
+        "spec.match.all.resources.namespaceSelector.matchExpressions.operator",
+        "spec.match.all.resources.namespaceSelector.matchExpressions.values",
+        "spec.match.all.resources.namespaceSelector.matchLabels",
+        "spec.match.all.resources.namespaces",
+        "spec.match.all.resources.selector",
+        "spec.match.all.resources.selector.matchExpressions.operator",
+        "spec.match.all.resources.selector.matchExpressions.values",
+        "spec.match.all.resources.selector.matchLabels",
+        "spec.match.all.subjects.apiGroup",
+        "spec.match.all.subjects.kind",
+        "spec.match.all.subjects.namespace",
+        "spec.match.any.resources.annotations",
+        "spec.match.any.resources.name",
+        "spec.match.any.resources.names",
+        "spec.match.any.resources.namespaceSelector",
+        "spec.match.any.resources.namespaceSelector.matchExpressions.operator",
+        "spec.match.any.resources.namespaceSelector.matchExpressions.values",
+        "spec.match.any.resources.namespaceSelector.matchLabels",
+        "spec.match.any.resources.namespaces",
+        "spec.match.any.resources.selector",
+        "spec.match.any.resources.selector.matchExpressions.operator",
+        "spec.match.any.resources.selector.matchExpressions.values",
+        "spec.match.any.resources.selector.matchLabels",
+        "spec.match.any.subjects.apiGroup",
+        "spec.match.any.subjects.kind",
+        "spec.match.any.subjects.namespace",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          0,
+          1
+        ],
+        "kind": [
+          2,
+          3
+        ],
+        "spec.conditions.all": [
+          4,
+          5
+        ],
+        "spec.conditions.all.operator": [
+          6,
+          7
+        ],
+        "spec.conditions.all.value": [
+          8,
+          9
+        ],
+        "spec.conditions.any": [
+          10,
+          11
+        ],
+        "spec.conditions.any.operator": [
+          6,
+          7
+        ],
+        "spec.conditions.any.value": [
+          8,
+          9
+        ],
+        "spec.context.apiCall": [
+          12,
+          13
+        ],
+        "spec.context.apiCall.data": [
+          14,
+          15
+        ],
+        "spec.context.apiCall.jmesPath": [
+          16,
+          17
+        ],
+        "spec.context.apiCall.service": [
+          18,
+          19
+        ],
+        "spec.context.apiCall.service.caBundle": [
+          20,
+          21
+        ],
+        "spec.context.apiCall.service.url": [
+          22,
+          23
+        ],
+        "spec.context.apiCall.urlPath": [
+          24,
+          25
+        ],
+        "spec.context.globalReference.jmesPath": [
+          16,
+          17
+        ],
+        "spec.context.imageRegistry": [
+          26,
+          27
+        ],
+        "spec.context.imageRegistry.imageRegistryCredentials.providers": [
+          28,
+          29
+        ],
+        "spec.context.imageRegistry.imageRegistryCredentials.secrets": [
+          30,
+          31
+        ],
+        "spec.context.imageRegistry.jmesPath": [
+          32,
+          33
+        ],
+        "spec.context.imageRegistry.reference": [
+          34,
+          35
+        ],
+        "spec.context.variable.default": [
+          36,
+          37
+        ],
+        "spec.context.variable.jmesPath": [
+          38,
+          39
+        ],
+        "spec.exclude": [
+          40,
+          41
+        ],
+        "spec.exclude.all.resources.annotations": [
+          42,
+          43
+        ],
+        "spec.exclude.all.resources.name": [
+          44,
+          45
+        ],
+        "spec.exclude.all.resources.names": [
+          46,
+          47
+        ],
+        "spec.exclude.all.resources.namespaceSelector": [
+          48,
+          49
+        ],
+        "spec.exclude.all.resources.namespaceSelector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.exclude.all.resources.namespaceSelector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.exclude.all.resources.namespaceSelector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.exclude.all.resources.namespaces": [
+          56,
+          57
+        ],
+        "spec.exclude.all.resources.selector": [
+          58,
+          59
+        ],
+        "spec.exclude.all.resources.selector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.exclude.all.resources.selector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.exclude.all.resources.selector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.exclude.all.subjects.apiGroup": [
+          60,
+          61
+        ],
+        "spec.exclude.all.subjects.kind": [
+          62,
+          63
+        ],
+        "spec.exclude.all.subjects.namespace": [
+          64,
+          65
+        ],
+        "spec.exclude.any.resources.annotations": [
+          42,
+          43
+        ],
+        "spec.exclude.any.resources.name": [
+          44,
+          45
+        ],
+        "spec.exclude.any.resources.names": [
+          46,
+          47
+        ],
+        "spec.exclude.any.resources.namespaceSelector": [
+          48,
+          49
+        ],
+        "spec.exclude.any.resources.namespaceSelector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.exclude.any.resources.namespaceSelector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.exclude.any.resources.namespaceSelector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.exclude.any.resources.namespaces": [
+          56,
+          57
+        ],
+        "spec.exclude.any.resources.selector": [
+          58,
+          59
+        ],
+        "spec.exclude.any.resources.selector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.exclude.any.resources.selector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.exclude.any.resources.selector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.exclude.any.subjects.apiGroup": [
+          60,
+          61
+        ],
+        "spec.exclude.any.subjects.kind": [
+          62,
+          63
+        ],
+        "spec.exclude.any.subjects.namespace": [
+          64,
+          65
+        ],
+        "spec.match": [
+          66,
+          67
+        ],
+        "spec.match.all.resources.annotations": [
+          42,
+          43
+        ],
+        "spec.match.all.resources.name": [
+          44,
+          45
+        ],
+        "spec.match.all.resources.names": [
+          46,
+          47
+        ],
+        "spec.match.all.resources.namespaceSelector": [
+          48,
+          49
+        ],
+        "spec.match.all.resources.namespaceSelector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.match.all.resources.namespaceSelector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.match.all.resources.namespaceSelector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.match.all.resources.namespaces": [
+          56,
+          57
+        ],
+        "spec.match.all.resources.selector": [
+          58,
+          59
+        ],
+        "spec.match.all.resources.selector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.match.all.resources.selector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.match.all.resources.selector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.match.all.subjects.apiGroup": [
+          60,
+          61
+        ],
+        "spec.match.all.subjects.kind": [
+          62,
+          63
+        ],
+        "spec.match.all.subjects.namespace": [
+          64,
+          65
+        ],
+        "spec.match.any.resources.annotations": [
+          42,
+          43
+        ],
+        "spec.match.any.resources.name": [
+          44,
+          45
+        ],
+        "spec.match.any.resources.names": [
+          46,
+          47
+        ],
+        "spec.match.any.resources.namespaceSelector": [
+          48,
+          49
+        ],
+        "spec.match.any.resources.namespaceSelector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.match.any.resources.namespaceSelector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.match.any.resources.namespaceSelector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.match.any.resources.namespaces": [
+          56,
+          57
+        ],
+        "spec.match.any.resources.selector": [
+          58,
+          59
+        ],
+        "spec.match.any.resources.selector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.match.any.resources.selector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.match.any.resources.selector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.match.any.subjects.apiGroup": [
+          60,
+          61
+        ],
+        "spec.match.any.subjects.kind": [
+          62,
+          63
+        ],
+        "spec.match.any.subjects.namespace": [
+          64,
+          65
+        ],
+        "status.conditions.lastTransitionTime": [
+          68,
+          69
+        ],
+        "status.conditions.message": [
+          70,
+          71
+        ],
+        "status.conditions.observedGeneration": [
+          72,
+          73
+        ],
+        "status.conditions.reason": [
+          74,
+          75
+        ],
+        "status.conditions.type": [
+          76,
+          77
+        ]
+      }
+    },
+    "v1.12.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.conditions.all",
+        "spec.conditions.all.operator",
+        "spec.conditions.all.value",
+        "spec.conditions.any",
+        "spec.conditions.any.operator",
+        "spec.conditions.any.value",
+        "spec.context.apiCall",
+        "spec.context.apiCall.data",
+        "spec.context.apiCall.jmesPath",
+        "spec.context.apiCall.service",
+        "spec.context.apiCall.service.caBundle",
+        "spec.context.apiCall.service.url",
+        "spec.context.apiCall.urlPath",
+        "spec.context.imageRegistry",
+        "spec.context.imageRegistry.imageRegistryCredentials.providers",
+        "spec.context.imageRegistry.imageRegistryCredentials.secrets",
+        "spec.context.imageRegistry.jmesPath",
+        "spec.context.imageRegistry.reference",
+        "spec.context.variable.default",
+        "spec.context.variable.jmesPath",
+        "spec.exclude",
+        "spec.exclude.all.resources.annotations",
+        "spec.exclude.all.resources.name",
+        "spec.exclude.all.resources.names",
+        "spec.exclude.all.resources.namespaceSelector",
+        "spec.exclude.all.resources.namespaceSelector.matchExpressions.operator",
+        "spec.exclude.all.resources.namespaceSelector.matchExpressions.values",
+        "spec.exclude.all.resources.namespaceSelector.matchLabels",
+        "spec.exclude.all.resources.namespaces",
+        "spec.exclude.all.resources.selector",
+        "spec.exclude.all.resources.selector.matchExpressions.operator",
+        "spec.exclude.all.resources.selector.matchExpressions.values",
+        "spec.exclude.all.resources.selector.matchLabels",
+        "spec.exclude.all.subjects.apiGroup",
+        "spec.exclude.all.subjects.kind",
+        "spec.exclude.all.subjects.namespace",
+        "spec.exclude.any.resources.annotations",
+        "spec.exclude.any.resources.name",
+        "spec.exclude.any.resources.names",
+        "spec.exclude.any.resources.namespaceSelector",
+        "spec.exclude.any.resources.namespaceSelector.matchExpressions.operator",
+        "spec.exclude.any.resources.namespaceSelector.matchExpressions.values",
+        "spec.exclude.any.resources.namespaceSelector.matchLabels",
+        "spec.exclude.any.resources.namespaces",
+        "spec.exclude.any.resources.selector",
+        "spec.exclude.any.resources.selector.matchExpressions.operator",
+        "spec.exclude.any.resources.selector.matchExpressions.values",
+        "spec.exclude.any.resources.selector.matchLabels",
+        "spec.exclude.any.subjects.apiGroup",
+        "spec.exclude.any.subjects.kind",
+        "spec.exclude.any.subjects.namespace",
+        "spec.match",
+        "spec.match.all.resources.annotations",
+        "spec.match.all.resources.name",
+        "spec.match.all.resources.names",
+        "spec.match.all.resources.namespaceSelector",
+        "spec.match.all.resources.namespaceSelector.matchExpressions.operator",
+        "spec.match.all.resources.namespaceSelector.matchExpressions.values",
+        "spec.match.all.resources.namespaceSelector.matchLabels",
+        "spec.match.all.resources.namespaces",
+        "spec.match.all.resources.selector",
+        "spec.match.all.resources.selector.matchExpressions.operator",
+        "spec.match.all.resources.selector.matchExpressions.values",
+        "spec.match.all.resources.selector.matchLabels",
+        "spec.match.all.subjects.apiGroup",
+        "spec.match.all.subjects.kind",
+        "spec.match.all.subjects.namespace",
+        "spec.match.any.resources.annotations",
+        "spec.match.any.resources.name",
+        "spec.match.any.resources.names",
+        "spec.match.any.resources.namespaceSelector",
+        "spec.match.any.resources.namespaceSelector.matchExpressions.operator",
+        "spec.match.any.resources.namespaceSelector.matchExpressions.values",
+        "spec.match.any.resources.namespaceSelector.matchLabels",
+        "spec.match.any.resources.namespaces",
+        "spec.match.any.resources.selector",
+        "spec.match.any.resources.selector.matchExpressions.operator",
+        "spec.match.any.resources.selector.matchExpressions.values",
+        "spec.match.any.resources.selector.matchLabels",
+        "spec.match.any.subjects.apiGroup",
+        "spec.match.any.subjects.kind",
+        "spec.match.any.subjects.namespace",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type"
+      ],
+      "added": {
+        "spec.context.globalReference": "object"
+      },
+      "descriptions": {
+        "apiVersion": [
+          1,
+          0
+        ],
+        "kind": [
+          3,
+          2
+        ],
+        "spec.conditions.all": [
+          5,
+          4
+        ],
+        "spec.conditions.all.operator": [
+          7,
+          6
+        ],
+        "spec.conditions.all.value": [
+          9,
+          8
+        ],
+        "spec.conditions.any": [
+          11,
+          10
+        ],
+        "spec.conditions.any.operator": [
+          7,
+          6
+        ],
+        "spec.conditions.any.value": [
+          9,
+          8
+        ],
+        "spec.context.apiCall": [
+          13,
+          12
+        ],
+        "spec.context.apiCall.data": [
+          78,
+          14
+        ],
+        "spec.context.apiCall.jmesPath": [
+          17,
+          16
+        ],
+        "spec.context.apiCall.service": [
+          79,
+          18
+        ],
+        "spec.context.apiCall.service.caBundle": [
+          21,
+          20
+        ],
+        "spec.context.apiCall.service.url": [
+          23,
+          22
+        ],
+        "spec.context.apiCall.urlPath": [
+          80,
+          24
+        ],
+        "spec.context.globalReference": [
+          null,
+          81
+        ],
+        "spec.context.imageRegistry": [
+          27,
+          26
+        ],
+        "spec.context.imageRegistry.imageRegistryCredentials.providers": [
+          29,
+          28
+        ],
+        "spec.context.imageRegistry.imageRegistryCredentials.secrets": [
+          31,
+          30
+        ],
+        "spec.context.imageRegistry.jmesPath": [
+          33,
+          32
+        ],
+        "spec.context.imageRegistry.reference": [
+          35,
+          34
+        ],
+        "spec.context.variable.default": [
+          37,
+          36
+        ],
+        "spec.context.variable.jmesPath": [
+          39,
+          38
+        ],
+        "spec.exclude": [
+          41,
+          40
+        ],
+        "spec.exclude.all.resources.annotations": [
+          43,
+          42
+        ],
+        "spec.exclude.all.resources.name": [
+          45,
+          44
+        ],
+        "spec.exclude.all.resources.names": [
+          47,
+          46
+        ],
+        "spec.exclude.all.resources.namespaceSelector": [
+          49,
+          48
+        ],
+        "spec.exclude.all.resources.namespaceSelector.matchExpressions.operator": [
+          51,
+          50
+        ],
+        "spec.exclude.all.resources.namespaceSelector.matchExpressions.values": [
+          53,
+          52
+        ],
+        "spec.exclude.all.resources.namespaceSelector.matchLabels": [
+          55,
+          54
+        ],
+        "spec.exclude.all.resources.namespaces": [
+          57,
+          56
+        ],
+        "spec.exclude.all.resources.selector": [
+          59,
+          58
+        ],
+        "spec.exclude.all.resources.selector.matchExpressions.operator": [
+          51,
+          50
+        ],
+        "spec.exclude.all.resources.selector.matchExpressions.values": [
+          53,
+          52
+        ],
+        "spec.exclude.all.resources.selector.matchLabels": [
+          55,
+          54
+        ],
+        "spec.exclude.all.subjects.apiGroup": [
+          61,
+          60
+        ],
+        "spec.exclude.all.subjects.kind": [
+          63,
+          62
+        ],
+        "spec.exclude.all.subjects.namespace": [
+          65,
+          64
+        ],
+        "spec.exclude.any.resources.annotations": [
+          43,
+          42
+        ],
+        "spec.exclude.any.resources.name": [
+          45,
+          44
+        ],
+        "spec.exclude.any.resources.names": [
+          47,
+          46
+        ],
+        "spec.exclude.any.resources.namespaceSelector": [
+          49,
+          48
+        ],
+        "spec.exclude.any.resources.namespaceSelector.matchExpressions.operator": [
+          51,
+          50
+        ],
+        "spec.exclude.any.resources.namespaceSelector.matchExpressions.values": [
+          53,
+          52
+        ],
+        "spec.exclude.any.resources.namespaceSelector.matchLabels": [
+          55,
+          54
+        ],
+        "spec.exclude.any.resources.namespaces": [
+          57,
+          56
+        ],
+        "spec.exclude.any.resources.selector": [
+          59,
+          58
+        ],
+        "spec.exclude.any.resources.selector.matchExpressions.operator": [
+          51,
+          50
+        ],
+        "spec.exclude.any.resources.selector.matchExpressions.values": [
+          53,
+          52
+        ],
+        "spec.exclude.any.resources.selector.matchLabels": [
+          55,
+          54
+        ],
+        "spec.exclude.any.subjects.apiGroup": [
+          61,
+          60
+        ],
+        "spec.exclude.any.subjects.kind": [
+          63,
+          62
+        ],
+        "spec.exclude.any.subjects.namespace": [
+          65,
+          64
+        ],
+        "spec.match": [
+          67,
+          66
+        ],
+        "spec.match.all.resources.annotations": [
+          43,
+          42
+        ],
+        "spec.match.all.resources.name": [
+          45,
+          44
+        ],
+        "spec.match.all.resources.names": [
+          47,
+          46
+        ],
+        "spec.match.all.resources.namespaceSelector": [
+          49,
+          48
+        ],
+        "spec.match.all.resources.namespaceSelector.matchExpressions.operator": [
+          51,
+          50
+        ],
+        "spec.match.all.resources.namespaceSelector.matchExpressions.values": [
+          53,
+          52
+        ],
+        "spec.match.all.resources.namespaceSelector.matchLabels": [
+          55,
+          54
+        ],
+        "spec.match.all.resources.namespaces": [
+          57,
+          56
+        ],
+        "spec.match.all.resources.selector": [
+          59,
+          58
+        ],
+        "spec.match.all.resources.selector.matchExpressions.operator": [
+          51,
+          50
+        ],
+        "spec.match.all.resources.selector.matchExpressions.values": [
+          53,
+          52
+        ],
+        "spec.match.all.resources.selector.matchLabels": [
+          55,
+          54
+        ],
+        "spec.match.all.subjects.apiGroup": [
+          61,
+          60
+        ],
+        "spec.match.all.subjects.kind": [
+          63,
+          62
+        ],
+        "spec.match.all.subjects.namespace": [
+          65,
+          64
+        ],
+        "spec.match.any.resources.annotations": [
+          43,
+          42
+        ],
+        "spec.match.any.resources.name": [
+          45,
+          44
+        ],
+        "spec.match.any.resources.names": [
+          47,
+          46
+        ],
+        "spec.match.any.resources.namespaceSelector": [
+          49,
+          48
+        ],
+        "spec.match.any.resources.namespaceSelector.matchExpressions.operator": [
+          51,
+          50
+        ],
+        "spec.match.any.resources.namespaceSelector.matchExpressions.values": [
+          53,
+          52
+        ],
+        "spec.match.any.resources.namespaceSelector.matchLabels": [
+          55,
+          54
+        ],
+        "spec.match.any.resources.namespaces": [
+          57,
+          56
+        ],
+        "spec.match.any.resources.selector": [
+          59,
+          58
+        ],
+        "spec.match.any.resources.selector.matchExpressions.operator": [
+          51,
+          50
+        ],
+        "spec.match.any.resources.selector.matchExpressions.values": [
+          53,
+          52
+        ],
+        "spec.match.any.resources.selector.matchLabels": [
+          55,
+          54
+        ],
+        "spec.match.any.subjects.apiGroup": [
+          61,
+          60
+        ],
+        "spec.match.any.subjects.kind": [
+          63,
+          62
+        ],
+        "spec.match.any.subjects.namespace": [
+          65,
+          64
+        ],
+        "status.conditions.lastTransitionTime": [
+          69,
+          68
+        ],
+        "status.conditions.message": [
+          71,
+          70
+        ],
+        "status.conditions.observedGeneration": [
+          73,
+          72
+        ],
+        "status.conditions.reason": [
+          75,
+          74
+        ],
+        "status.conditions.type": [
+          77,
+          76
+        ]
+      }
+    },
+    "v1.11.5": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.conditions.all",
+        "spec.conditions.all.operator",
+        "spec.conditions.all.value",
+        "spec.conditions.any",
+        "spec.conditions.any.operator",
+        "spec.conditions.any.value",
+        "spec.context.apiCall",
+        "spec.context.apiCall.jmesPath",
+        "spec.context.apiCall.service.caBundle",
+        "spec.context.apiCall.service.url",
+        "spec.context.apiCall.urlPath",
+        "spec.context.imageRegistry",
+        "spec.context.imageRegistry.imageRegistryCredentials.providers",
+        "spec.context.imageRegistry.imageRegistryCredentials.secrets",
+        "spec.context.imageRegistry.jmesPath",
+        "spec.context.imageRegistry.reference",
+        "spec.context.variable.default",
+        "spec.context.variable.jmesPath",
+        "spec.exclude",
+        "spec.exclude.all.resources.annotations",
+        "spec.exclude.all.resources.name",
+        "spec.exclude.all.resources.names",
+        "spec.exclude.all.resources.namespaceSelector",
+        "spec.exclude.all.resources.namespaceSelector.matchExpressions.operator",
+        "spec.exclude.all.resources.namespaceSelector.matchExpressions.values",
+        "spec.exclude.all.resources.namespaceSelector.matchLabels",
+        "spec.exclude.all.resources.namespaces",
+        "spec.exclude.all.resources.selector",
+        "spec.exclude.all.resources.selector.matchExpressions.operator",
+        "spec.exclude.all.resources.selector.matchExpressions.values",
+        "spec.exclude.all.resources.selector.matchLabels",
+        "spec.exclude.all.subjects.apiGroup",
+        "spec.exclude.all.subjects.kind",
+        "spec.exclude.all.subjects.namespace",
+        "spec.exclude.any.resources.annotations",
+        "spec.exclude.any.resources.name",
+        "spec.exclude.any.resources.names",
+        "spec.exclude.any.resources.namespaceSelector",
+        "spec.exclude.any.resources.namespaceSelector.matchExpressions.operator",
+        "spec.exclude.any.resources.namespaceSelector.matchExpressions.values",
+        "spec.exclude.any.resources.namespaceSelector.matchLabels",
+        "spec.exclude.any.resources.namespaces",
+        "spec.exclude.any.resources.selector",
+        "spec.exclude.any.resources.selector.matchExpressions.operator",
+        "spec.exclude.any.resources.selector.matchExpressions.values",
+        "spec.exclude.any.resources.selector.matchLabels",
+        "spec.exclude.any.subjects.apiGroup",
+        "spec.exclude.any.subjects.kind",
+        "spec.exclude.any.subjects.namespace",
+        "spec.match",
+        "spec.match.all.resources.annotations",
+        "spec.match.all.resources.name",
+        "spec.match.all.resources.names",
+        "spec.match.all.resources.namespaceSelector",
+        "spec.match.all.resources.namespaceSelector.matchExpressions.operator",
+        "spec.match.all.resources.namespaceSelector.matchExpressions.values",
+        "spec.match.all.resources.namespaceSelector.matchLabels",
+        "spec.match.all.resources.namespaces",
+        "spec.match.all.resources.selector",
+        "spec.match.all.resources.selector.matchExpressions.operator",
+        "spec.match.all.resources.selector.matchExpressions.values",
+        "spec.match.all.resources.selector.matchLabels",
+        "spec.match.all.subjects.apiGroup",
+        "spec.match.all.subjects.kind",
+        "spec.match.all.subjects.namespace",
+        "spec.match.any.resources.annotations",
+        "spec.match.any.resources.name",
+        "spec.match.any.resources.names",
+        "spec.match.any.resources.namespaceSelector",
+        "spec.match.any.resources.namespaceSelector.matchExpressions.operator",
+        "spec.match.any.resources.namespaceSelector.matchExpressions.values",
+        "spec.match.any.resources.namespaceSelector.matchLabels",
+        "spec.match.any.resources.namespaces",
+        "spec.match.any.resources.selector",
+        "spec.match.any.resources.selector.matchExpressions.operator",
+        "spec.match.any.resources.selector.matchExpressions.values",
+        "spec.match.any.resources.selector.matchLabels",
+        "spec.match.any.subjects.apiGroup",
+        "spec.match.any.subjects.kind",
+        "spec.match.any.subjects.namespace",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          0,
+          1
+        ],
+        "kind": [
+          2,
+          3
+        ],
+        "spec.conditions.all": [
+          4,
+          5
+        ],
+        "spec.conditions.all.operator": [
+          6,
+          7
+        ],
+        "spec.conditions.all.value": [
+          8,
+          9
+        ],
+        "spec.conditions.any": [
+          10,
+          11
+        ],
+        "spec.conditions.any.operator": [
+          6,
+          7
+        ],
+        "spec.conditions.any.value": [
+          8,
+          9
+        ],
+        "spec.context.apiCall": [
+          12,
+          13
+        ],
+        "spec.context.apiCall.jmesPath": [
+          16,
+          17
+        ],
+        "spec.context.apiCall.service.caBundle": [
+          20,
+          21
+        ],
+        "spec.context.apiCall.service.url": [
+          22,
+          23
+        ],
+        "spec.context.apiCall.urlPath": [
+          82,
+          80
+        ],
+        "spec.context.imageRegistry": [
+          26,
+          27
+        ],
+        "spec.context.imageRegistry.imageRegistryCredentials.providers": [
+          28,
+          29
+        ],
+        "spec.context.imageRegistry.imageRegistryCredentials.secrets": [
+          30,
+          31
+        ],
+        "spec.context.imageRegistry.jmesPath": [
+          32,
+          33
+        ],
+        "spec.context.imageRegistry.reference": [
+          34,
+          35
+        ],
+        "spec.context.variable.default": [
+          36,
+          37
+        ],
+        "spec.context.variable.jmesPath": [
+          38,
+          39
+        ],
+        "spec.exclude": [
+          40,
+          41
+        ],
+        "spec.exclude.all.resources.annotations": [
+          42,
+          43
+        ],
+        "spec.exclude.all.resources.name": [
+          44,
+          45
+        ],
+        "spec.exclude.all.resources.names": [
+          46,
+          47
+        ],
+        "spec.exclude.all.resources.namespaceSelector": [
+          48,
+          49
+        ],
+        "spec.exclude.all.resources.namespaceSelector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.exclude.all.resources.namespaceSelector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.exclude.all.resources.namespaceSelector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.exclude.all.resources.namespaces": [
+          56,
+          57
+        ],
+        "spec.exclude.all.resources.selector": [
+          58,
+          59
+        ],
+        "spec.exclude.all.resources.selector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.exclude.all.resources.selector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.exclude.all.resources.selector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.exclude.all.subjects.apiGroup": [
+          60,
+          61
+        ],
+        "spec.exclude.all.subjects.kind": [
+          62,
+          63
+        ],
+        "spec.exclude.all.subjects.namespace": [
+          64,
+          65
+        ],
+        "spec.exclude.any.resources.annotations": [
+          42,
+          43
+        ],
+        "spec.exclude.any.resources.name": [
+          44,
+          45
+        ],
+        "spec.exclude.any.resources.names": [
+          46,
+          47
+        ],
+        "spec.exclude.any.resources.namespaceSelector": [
+          48,
+          49
+        ],
+        "spec.exclude.any.resources.namespaceSelector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.exclude.any.resources.namespaceSelector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.exclude.any.resources.namespaceSelector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.exclude.any.resources.namespaces": [
+          56,
+          57
+        ],
+        "spec.exclude.any.resources.selector": [
+          58,
+          59
+        ],
+        "spec.exclude.any.resources.selector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.exclude.any.resources.selector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.exclude.any.resources.selector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.exclude.any.subjects.apiGroup": [
+          60,
+          61
+        ],
+        "spec.exclude.any.subjects.kind": [
+          62,
+          63
+        ],
+        "spec.exclude.any.subjects.namespace": [
+          64,
+          65
+        ],
+        "spec.match": [
+          66,
+          67
+        ],
+        "spec.match.all.resources.annotations": [
+          42,
+          43
+        ],
+        "spec.match.all.resources.name": [
+          44,
+          45
+        ],
+        "spec.match.all.resources.names": [
+          46,
+          47
+        ],
+        "spec.match.all.resources.namespaceSelector": [
+          48,
+          49
+        ],
+        "spec.match.all.resources.namespaceSelector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.match.all.resources.namespaceSelector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.match.all.resources.namespaceSelector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.match.all.resources.namespaces": [
+          56,
+          57
+        ],
+        "spec.match.all.resources.selector": [
+          58,
+          59
+        ],
+        "spec.match.all.resources.selector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.match.all.resources.selector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.match.all.resources.selector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.match.all.subjects.apiGroup": [
+          60,
+          61
+        ],
+        "spec.match.all.subjects.kind": [
+          62,
+          63
+        ],
+        "spec.match.all.subjects.namespace": [
+          64,
+          65
+        ],
+        "spec.match.any.resources.annotations": [
+          42,
+          43
+        ],
+        "spec.match.any.resources.name": [
+          44,
+          45
+        ],
+        "spec.match.any.resources.names": [
+          46,
+          47
+        ],
+        "spec.match.any.resources.namespaceSelector": [
+          48,
+          49
+        ],
+        "spec.match.any.resources.namespaceSelector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.match.any.resources.namespaceSelector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.match.any.resources.namespaceSelector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.match.any.resources.namespaces": [
+          56,
+          57
+        ],
+        "spec.match.any.resources.selector": [
+          58,
+          59
+        ],
+        "spec.match.any.resources.selector.matchExpressions.operator": [
+          50,
+          51
+        ],
+        "spec.match.any.resources.selector.matchExpressions.values": [
+          52,
+          53
+        ],
+        "spec.match.any.resources.selector.matchLabels": [
+          54,
+          55
+        ],
+        "spec.match.any.subjects.apiGroup": [
+          60,
+          61
+        ],
+        "spec.match.any.subjects.kind": [
+          62,
+          63
+        ],
+        "spec.match.any.subjects.namespace": [
+          64,
+          65
+        ],
+        "status.conditions.lastTransitionTime": [
+          68,
+          69
+        ],
+        "status.conditions.message": [
+          70,
+          71
+        ],
+        "status.conditions.observedGeneration": [
+          72,
+          73
+        ],
+        "status.conditions.reason": [
+          74,
+          75
+        ],
+        "status.conditions.type": [
+          76,
+          77
+        ]
+      }
+    },
+    "v1.11.0": {
+      "added": {
+        "spec.context": "object[]",
+        "status.lastExecutionTime": "string"
+      },
+      "descriptions": {
+        "spec.context": [
+          null,
+          83
+        ]
+      }
+    },
+    "v1.10.0": {
+      "added": {
+        "spec.conditions.all.message": "string",
+        "spec.conditions.any.message": "string",
+        "spec.exclude.all.resources.operations": "string[]",
+        "spec.exclude.any.resources.operations": "string[]",
+        "spec.match.all.resources.operations": "string[]",
+        "spec.match.any.resources.operations": "string[]"
+      },
+      "descriptions": {
+        "spec.conditions.all.message": [
+          null,
+          84
+        ],
+        "spec.conditions.any.message": [
+          null,
+          84
+        ],
+        "spec.exclude.all.resources.operations": [
+          null,
+          85
+        ],
+        "spec.exclude.any.resources.operations": [
+          null,
+          85
+        ],
+        "spec.match.all.resources.operations": [
+          null,
+          85
+        ],
+        "spec.match.any.resources.operations": [
+          null,
+          85
+        ]
+      }
+    }
+  },
+  "texts": [
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "AllConditions enable variable-based conditional rule execution. This is useful for finer control of when an rule is applied. A condition can reference object data using JMESPath notation. Here, all of the conditions need to pass.",
+    "AllConditions enable variable-based conditional rule execution. This is useful for\nfiner control of when an rule is applied. A condition can reference object data\nusing JMESPath notation.\nHere, all of the conditions need to pass.",
+    "Operator is the conditional operation to perform. Valid operators are: Equals, NotEquals, In, AnyIn, AllIn, NotIn, AnyNotIn, AllNotIn, GreaterThanOrEquals, GreaterThan, LessThanOrEquals, LessThan, DurationGreaterThanOrEquals, DurationGreaterThan, DurationLessThanOrEquals, DurationLessThan",
+    "Operator is the conditional operation to perform. Valid operators are:\nEquals, NotEquals, In, AnyIn, AllIn, NotIn, AnyNotIn, AllNotIn, GreaterThanOrEquals,\nGreaterThan, LessThanOrEquals, LessThan, DurationGreaterThanOrEquals, DurationGreaterThan,\nDurationLessThanOrEquals, DurationLessThan",
+    "Value is the conditional value, or set of values. The values can be fixed set or can be variables declared using JMESPath.",
+    "Value is the conditional value, or set of values. The values can be fixed set\nor can be variables declared using JMESPath.",
+    "AnyConditions enable variable-based conditional rule execution. This is useful for finer control of when an rule is applied. A condition can reference object data using JMESPath notation. Here, at least one of the conditions need to pass.",
+    "AnyConditions enable variable-based conditional rule execution. This is useful for\nfiner control of when an rule is applied. A condition can reference object data\nusing JMESPath notation.\nHere, at least one of the conditions need to pass.",
+    "APICall is an HTTP request to the Kubernetes API server, or other JSON web service. The data returned is stored in the context with the name for the context entry.",
+    "APICall is an HTTP request to the Kubernetes API server, or other JSON web service.\nThe data returned is stored in the context with the name for the context entry.",
+    "The data object specifies the POST data sent to the server. Only applicable when the method field is set to POST.",
+    "The data object specifies the POST data sent to the server.\nOnly applicable when the method field is set to POST.",
+    "JMESPath is an optional JSON Match Expression that can be used to transform the JSON response returned from the server. For example a JMESPath of \"items | length(@)\" applied to the API server response for the URLPath \"/apis/apps/v1/deployments\" will return the total count of deployments across all namespaces.",
+    "JMESPath is an optional JSON Match Expression that can be used to\ntransform the JSON response returned from the server. For example\na JMESPath of \"items | length(@)\" applied to the API server response\nfor the URLPath \"/apis/apps/v1/deployments\" will return the total count\nof deployments across all namespaces.",
+    "Service is an API call to a JSON web service. This is used for non-Kubernetes API server calls. It's mutually exclusive with the URLPath field.",
+    "Service is an API call to a JSON web service.\nThis is used for non-Kubernetes API server calls.\nIt's mutually exclusive with the URLPath field.",
+    "CABundle is a PEM encoded CA bundle which will be used to validate the server certificate.",
+    "CABundle is a PEM encoded CA bundle which will be used to validate\nthe server certificate.",
+    "URL is the JSON web service URL. A typical form is `https://{service}.{namespace}:{port}/{path}`.",
+    "URL is the JSON web service URL. A typical form is\n`https://{service}.{namespace}:{port}/{path}`.",
+    "URLPath is the URL path to be used in the HTTP GET or POST request to the Kubernetes API server (e.g. \"/api/v1/namespaces\" or  \"/apis/apps/v1/deployments\"). The format required is the same format used by the `kubectl get --raw` command. See https://kyverno.io/docs/writing-policies/external-data-sources/#variables-from-kubernetes-api-server-calls for details. It's mutually exclusive with the Service field.",
+    "URLPath is the URL path to be used in the HTTP GET or POST request to the\nKubernetes API server (e.g. \"/api/v1/namespaces\" or  \"/apis/apps/v1/deployments\").\nThe format required is the same format used by the `kubectl get --raw` command.\nSee https://kyverno.io/docs/writing-policies/external-data-sources/#variables-from-kubernetes-api-server-calls\nfor details.\nIt's mutually exclusive with the Service field.",
+    "ImageRegistry defines requests to an OCI/Docker V2 registry to fetch image details.",
+    "ImageRegistry defines requests to an OCI/Docker V2 registry to fetch image\ndetails.",
+    "Providers specifies a list of OCI Registry names, whose authentication providers are provided. It can be of one of these values: default,google,azure,amazon,github.",
+    "Providers specifies a list of OCI Registry names, whose authentication providers are provided.\nIt can be of one of these values: default,google,azure,amazon,github.",
+    "Secrets specifies a list of secrets that are provided for credentials. Secrets must live in the Kyverno namespace.",
+    "Secrets specifies a list of secrets that are provided for credentials.\nSecrets must live in the Kyverno namespace.",
+    "JMESPath is an optional JSON Match Expression that can be used to transform the ImageData struct returned as a result of processing the image reference.",
+    "JMESPath is an optional JSON Match Expression that can be used to\ntransform the ImageData struct returned as a result of processing\nthe image reference.",
+    "Reference is image reference to a container image in the registry. Example: ghcr.io/kyverno/kyverno:latest",
+    "Reference is image reference to a container image in the registry.\nExample: ghcr.io/kyverno/kyverno:latest",
+    "Default is an optional arbitrary JSON object that the variable may take if the JMESPath expression evaluates to nil",
+    "Default is an optional arbitrary JSON object that the variable may take if the JMESPath\nexpression evaluates to nil",
+    "JMESPath is an optional JMESPath Expression that can be used to transform the variable.",
+    "JMESPath is an optional JMESPath Expression that can be used to\ntransform the variable.",
+    "ExcludeResources defines when cleanuppolicy should not be applied. The exclude criteria can include resource information (e.g. kind, name, namespace, labels) and admission review request information like the name or role.",
+    "ExcludeResources defines when cleanuppolicy should not be applied. The exclude\ncriteria can include resource information (e.g. kind, name, namespace, labels)\nand admission review request information like the name or role.",
+    "Annotations is a  map of annotations (key-value pairs of type string). Annotation keys and values support the wildcard characters \"*\" (matches zero or many characters) and \"?\" (matches at least one character).",
+    "Annotations is a  map of annotations (key-value pairs of type string). Annotation keys\nand values support the wildcard characters \"*\" (matches zero or many characters) and\n\"?\" (matches at least one character).",
+    "Name is the name of the resource. The name supports wildcard characters \"*\" (matches zero or many characters) and \"?\" (at least one character). NOTE: \"Name\" is being deprecated in favor of \"Names\".",
+    "Name is the name of the resource. The name supports wildcard characters\n\"*\" (matches zero or many characters) and \"?\" (at least one character).\nNOTE: \"Name\" is being deprecated in favor of \"Names\".",
+    "Names are the names of the resources. Each name supports wildcard characters \"*\" (matches zero or many characters) and \"?\" (at least one character).",
+    "Names are the names of the resources. Each name supports wildcard characters\n\"*\" (matches zero or many characters) and \"?\" (at least one character).",
+    "NamespaceSelector is a label selector for the resource namespace. Label keys and values in `matchLabels` support the wildcard characters `*` (matches zero or many characters) and `?` (matches one character).Wildcards allows writing label selectors like [\"storage.k8s.io/*\": \"*\"]. Note that using [\"*\" : \"*\"] matches any key and value but does not match an empty label set.",
+    "NamespaceSelector is a label selector for the resource namespace. Label keys and values\nin `matchLabels` support the wildcard characters `*` (matches zero or many characters)\nand `?` (matches one character).Wildcards allows writing label selectors like\n[\"storage.k8s.io/*\": \"*\"]. Note that using [\"*\" : \"*\"] matches any key and value but\ndoes not match an empty label set.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "Namespaces is a list of namespaces names. Each name supports wildcard characters \"*\" (matches zero or many characters) and \"?\" (at least one character).",
+    "Namespaces is a list of namespaces names. Each name supports wildcard characters\n\"*\" (matches zero or many characters) and \"?\" (at least one character).",
+    "Selector is a label selector. Label keys and values in `matchLabels` support the wildcard characters `*` (matches zero or many characters) and `?` (matches one character). Wildcards allows writing label selectors like [\"storage.k8s.io/*\": \"*\"]. Note that using [\"*\" : \"*\"] matches any key and value but does not match an empty label set.",
+    "Selector is a label selector. Label keys and values in `matchLabels` support the wildcard\ncharacters `*` (matches zero or many characters) and `?` (matches one character).\nWildcards allows writing label selectors like [\"storage.k8s.io/*\": \"*\"]. Note that\nusing [\"*\" : \"*\"] matches any key and value but does not match an empty label set.",
+    "APIGroup holds the API group of the referenced subject. Defaults to \"\" for ServiceAccount subjects. Defaults to \"rbac.authorization.k8s.io\" for User and Group subjects.",
+    "APIGroup holds the API group of the referenced subject.\nDefaults to \"\" for ServiceAccount subjects.\nDefaults to \"rbac.authorization.k8s.io\" for User and Group subjects.",
+    "Kind of object being referenced. Values defined by this API group are \"User\", \"Group\", and \"ServiceAccount\". If the Authorizer does not recognized the kind value, the Authorizer should report an error.",
+    "Kind of object being referenced. Values defined by this API group are \"User\", \"Group\", and \"ServiceAccount\".\nIf the Authorizer does not recognized the kind value, the Authorizer should report an error.",
+    "Namespace of the referenced object.  If the object kind is non-namespace, such as \"User\" or \"Group\", and this value is not empty the Authorizer should report an error.",
+    "Namespace of the referenced object.  If the object kind is non-namespace, such as \"User\" or \"Group\", and this value is not empty\nthe Authorizer should report an error.",
+    "MatchResources defines when cleanuppolicy should be applied. The match criteria can include resource information (e.g. kind, name, namespace, labels) and admission review request information like the user name or role. At least one kind is required.",
+    "MatchResources defines when cleanuppolicy should be applied. The match\ncriteria can include resource information (e.g. kind, name, namespace, labels)\nand admission review request information like the user name or role.\nAt least one kind is required.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "Data specifies the POST data sent to the server.",
+    "Service is an API call to a JSON web service",
+    "URLPath is the URL path to be used in the HTTP GET or POST request to the\nKubernetes API server (e.g. \"/api/v1/namespaces\" or  \"/apis/apps/v1/deployments\").\nThe format required is the same format used by the `kubectl get --raw` command.\nSee https://kyverno.io/docs/writing-policies/external-data-sources/#variables-from-kubernetes-api-server-calls\nfor details.",
+    "GlobalContextEntryReference is a reference to a cached global context entry.",
+    "URLPath is the URL path to be used in the HTTP GET or POST request to the Kubernetes API server (e.g. \"/api/v1/namespaces\" or  \"/apis/apps/v1/deployments\"). The format required is the same format used by the `kubectl get --raw` command. See https://kyverno.io/docs/writing-policies/external-data-sources/#variables-from-kubernetes-api-server-calls for details.",
+    "Context defines variables and data sources that can be used during rule execution.",
+    "Message is an optional display message",
+    "Operations can contain values [\"CREATE, \"UPDATE\", \"CONNECT\", \"DELETE\"], which are used to match a specific action."
+  ]
+}

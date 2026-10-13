@@ -1,0 +1,134 @@
+{
+  "versions": {
+    "v1.10.0": {
+      "descriptionChanged": [
+        "spec"
+      ],
+      "descriptions": {
+        "spec": [
+          0,
+          1
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.address",
+        "spec.claimRef",
+        "spec.claimRef.name",
+        "spec.gateway",
+        "spec.poolRef",
+        "spec.prefix"
+      ],
+      "descriptions": {
+        "spec.address": [
+          2,
+          3
+        ],
+        "spec.claimRef": [
+          4,
+          5
+        ],
+        "spec.claimRef.name": [
+          6,
+          7
+        ],
+        "spec.gateway": [
+          8,
+          9
+        ],
+        "spec.poolRef": [
+          10,
+          11
+        ],
+        "spec.prefix": [
+          12,
+          13
+        ]
+      }
+    },
+    "v1.8.0": {
+      "descriptionChanged": [
+        "spec.claimRef.name"
+      ],
+      "descriptions": {
+        "spec.claimRef.name": [
+          14,
+          6
+        ]
+      }
+    },
+    "v1.7.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.claimRef.name",
+        "spec.poolRef.apiGroup"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          15,
+          16
+        ],
+        "kind": [
+          17,
+          18
+        ],
+        "spec.claimRef.name": [
+          19,
+          14
+        ],
+        "spec.poolRef.apiGroup": [
+          20,
+          21
+        ]
+      }
+    },
+    "v1.6.0": {
+      "optional": [
+        "spec.poolRef.apiGroup"
+      ],
+      "descriptions": {
+        "spec.poolRef.apiGroup": [
+          null,
+          20
+        ]
+      }
+    },
+    "v1.4.2": {
+      "optional": [
+        "spec.gateway"
+      ],
+      "descriptions": {
+        "spec.gateway": [
+          null,
+          8
+        ]
+      }
+    }
+  },
+  "texts": [
+    "IPAddressSpec is the desired state of an IPAddress.",
+    "spec is the desired state of IPAddress.",
+    "Address is the IP address.",
+    "address is the IP address.",
+    "ClaimRef is a reference to the claim this IPAddress was created for.",
+    "claimRef is a reference to the claim this IPAddress was created for.",
+    "Name of the referent.\nThis field is effectively required, but due to backwards compatibility is\nallowed to be empty. Instances of this type with an empty value here are\nalmost certainly wrong.\nTODO: Add other useful fields. apiVersion, kind, uid?\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names\nTODO: Drop `kubebuilder:default` when controller-gen doesn't need it https://github.com/kubernetes-sigs/kubebuilder/issues/3896.",
+    "Name of the referent.\nThis field is effectively required, but due to backwards compatibility is\nallowed to be empty. Instances of this type with an empty value here are\nalmost certainly wrong.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Gateway is the network gateway of the network the address is from.",
+    "gateway is the network gateway of the network the address is from.",
+    "PoolRef is a reference to the pool that this IPAddress was created from.",
+    "poolRef is a reference to the pool that this IPAddress was created from.",
+    "Prefix is the prefix of the address.",
+    "prefix is the prefix of the address.",
+    "Name of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names\nTODO: Add other useful fields. apiVersion, kind, uid?",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required.",
+    "APIGroup is the group for the resource being referenced.\nIf APIGroup is not specified, the specified Kind must be in the core API group.\nFor any other third-party types, APIGroup is required."
+  ]
+}

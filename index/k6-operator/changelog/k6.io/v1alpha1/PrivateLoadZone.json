@@ -1,0 +1,45 @@
+{
+  "versions": {
+    "v1.6.0": {
+      "added": {
+        "spec.podTemplate.spec.schedulingGroup": "object",
+        "spec.podTemplate.spec.volumes.projected.sources.podCertificate.userAnnotations": "map[string]string"
+      }
+    },
+    "v1.3.0": {
+      "added": {
+        "spec.podTemplate": "object"
+      }
+    },
+    "v0.0.20": {
+      "added": {
+        "spec.config": "object"
+      }
+    },
+    "v0.0.17": {
+      "added": {
+        "spec.resources.claims.request": "string"
+      }
+    },
+    "v0.0.16": {
+      "added": {
+        "spec.image": "string",
+        "spec.imagePullSecrets": "object[]"
+      }
+    },
+    "v0.0.11": {
+      "typeChanged": {
+        "spec.resources": [
+          "map[string]int | string",
+          "object"
+        ]
+      },
+      "added": {
+        "spec.resources.claims": "object[]",
+        "spec.resources.limits": "map[string]int | string",
+        "spec.resources.requests": "map[string]int | string"
+      }
+    }
+  },
+  "texts": []
+}

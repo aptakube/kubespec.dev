@@ -1,0 +1,229 @@
+{
+  "versions": {
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.description",
+        "spec.redirectBackend",
+        "spec.redirectBackend.localEndpointSelector.matchExpressions.operator",
+        "spec.redirectBackend.localEndpointSelector.matchExpressions.values",
+        "spec.redirectBackend.localEndpointSelector.matchLabels",
+        "spec.redirectBackend.toPorts",
+        "spec.redirectBackend.toPorts.name",
+        "spec.redirectBackend.toPorts.protocol",
+        "spec.redirectFrontend",
+        "spec.redirectFrontend.addressMatcher",
+        "spec.redirectFrontend.addressMatcher.ip",
+        "spec.redirectFrontend.addressMatcher.toPorts",
+        "spec.redirectFrontend.addressMatcher.toPorts.name",
+        "spec.redirectFrontend.addressMatcher.toPorts.protocol",
+        "spec.redirectFrontend.serviceMatcher",
+        "spec.redirectFrontend.serviceMatcher.namespace",
+        "spec.redirectFrontend.serviceMatcher.serviceName",
+        "spec.redirectFrontend.serviceMatcher.toPorts",
+        "spec.redirectFrontend.serviceMatcher.toPorts.name",
+        "spec.redirectFrontend.serviceMatcher.toPorts.protocol",
+        "spec.skipRedirectFromBackend",
+        "status",
+        "status.ok"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          0,
+          1
+        ],
+        "kind": [
+          2,
+          3
+        ],
+        "spec.description": [
+          4,
+          5
+        ],
+        "spec.redirectBackend": [
+          6,
+          7
+        ],
+        "spec.redirectBackend.localEndpointSelector.matchExpressions.operator": [
+          8,
+          9
+        ],
+        "spec.redirectBackend.localEndpointSelector.matchExpressions.values": [
+          10,
+          11
+        ],
+        "spec.redirectBackend.localEndpointSelector.matchLabels": [
+          12,
+          13
+        ],
+        "spec.redirectBackend.toPorts": [
+          14,
+          15
+        ],
+        "spec.redirectBackend.toPorts.name": [
+          16,
+          17
+        ],
+        "spec.redirectBackend.toPorts.protocol": [
+          18,
+          19
+        ],
+        "spec.redirectFrontend": [
+          20,
+          21
+        ],
+        "spec.redirectFrontend.addressMatcher": [
+          22,
+          23
+        ],
+        "spec.redirectFrontend.addressMatcher.ip": [
+          24,
+          25
+        ],
+        "spec.redirectFrontend.addressMatcher.toPorts": [
+          26,
+          27
+        ],
+        "spec.redirectFrontend.addressMatcher.toPorts.name": [
+          16,
+          17
+        ],
+        "spec.redirectFrontend.addressMatcher.toPorts.protocol": [
+          18,
+          19
+        ],
+        "spec.redirectFrontend.serviceMatcher": [
+          28,
+          29
+        ],
+        "spec.redirectFrontend.serviceMatcher.namespace": [
+          30,
+          31
+        ],
+        "spec.redirectFrontend.serviceMatcher.serviceName": [
+          32,
+          33
+        ],
+        "spec.redirectFrontend.serviceMatcher.toPorts": [
+          34,
+          35
+        ],
+        "spec.redirectFrontend.serviceMatcher.toPorts.name": [
+          16,
+          17
+        ],
+        "spec.redirectFrontend.serviceMatcher.toPorts.protocol": [
+          18,
+          19
+        ],
+        "spec.skipRedirectFromBackend": [
+          36,
+          37
+        ],
+        "status": [
+          38,
+          39
+        ],
+        "status.ok": [
+          40,
+          null
+        ],
+        "": [
+          41,
+          42
+        ]
+      }
+    },
+    "1.16.0": {
+      "added": {
+        "spec.skipRedirectFromBackend": "boolean"
+      },
+      "descriptions": {
+        "spec.skipRedirectFromBackend": [
+          null,
+          36
+        ]
+      }
+    },
+    "1.15.0": {
+      "typeChanged": {
+        "status.ok": [
+          "object",
+          "boolean"
+        ]
+      },
+      "descriptions": {
+        "status.ok": [
+          null,
+          40
+        ]
+      }
+    },
+    "1.10.0": {
+      "descriptionChanged": [
+        "spec.redirectBackend.localEndpointSelector.matchExpressions",
+        "spec.redirectBackend.localEndpointSelector.matchLabels"
+      ],
+      "descriptions": {
+        "spec.redirectBackend.localEndpointSelector.matchExpressions": [
+          43,
+          44
+        ],
+        "spec.redirectBackend.localEndpointSelector.matchLabels": [
+          45,
+          12
+        ]
+      }
+    }
+  },
+  "texts": [
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Description can be used by the creator of the policy to describe the purpose of this policy.",
+    "Description can be used by the creator of the policy to describe the\npurpose of this policy.",
+    "RedirectBackend specifies backend configuration to redirect traffic to. It can not be empty.",
+    "RedirectBackend specifies backend configuration to redirect traffic to.\nIt can not be empty.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "ToPorts is a list of L4 ports with protocol of node local pod(s) where traffic is redirected to. When multiple ports are specified, the ports must be named.",
+    "ToPorts is a list of L4 ports with protocol of node local pod(s) where traffic\nis redirected to.\nWhen multiple ports are specified, the ports must be named.",
+    "Name is a port name, which must contain at least one [a-z], and may also contain [0-9] and '-' anywhere except adjacent to another '-' or in the beginning or the end.",
+    "Name is a port name, which must contain at least one [a-z],\nand may also contain [0-9] and '-' anywhere except adjacent to another\n'-' or in the beginning or the end.",
+    "Protocol is the L4 protocol. Accepted values: \"TCP\", \"UDP\"",
+    "Protocol is the L4 protocol.\nAccepted values: \"TCP\", \"UDP\"",
+    "RedirectFrontend specifies frontend configuration to redirect traffic from. It can not be empty.",
+    "RedirectFrontend specifies frontend configuration to redirect traffic from.\nIt can not be empty.",
+    "AddressMatcher is a tuple {IP, port, protocol} that matches traffic to be redirected.",
+    "AddressMatcher is a tuple {IP, port, protocol} that matches traffic to be\nredirected.",
+    "IP is a destination ip address for traffic to be redirected. \n Example: When it is set to \"169.254.169.254\", traffic destined to \"169.254.169.254\" is redirected.",
+    "IP is a destination ip address for traffic to be redirected.\n\nExample:\nWhen it is set to \"169.254.169.254\", traffic destined to\n\"169.254.169.254\" is redirected.",
+    "ToPorts is a list of destination L4 ports with protocol for traffic to be redirected. When multiple ports are specified, the ports must be named. \n Example: When set to Port: \"53\" and Protocol: UDP, traffic destined to port '53' with UDP protocol is redirected.",
+    "ToPorts is a list of destination L4 ports with protocol for traffic\nto be redirected.\nWhen multiple ports are specified, the ports must be named.\n\nExample:\nWhen set to Port: \"53\" and Protocol: UDP, traffic destined to port '53'\nwith UDP protocol is redirected.",
+    "ServiceMatcher specifies Kubernetes service and port that matches traffic to be redirected.",
+    "ServiceMatcher specifies Kubernetes service and port that matches\ntraffic to be redirected.",
+    "Namespace is the Kubernetes service namespace. The service namespace must match the namespace of the parent Local Redirect Policy.  For Cluster-wide Local Redirect Policy, this can be any namespace.",
+    "Namespace is the Kubernetes service namespace.\nThe service namespace must match the namespace of the parent Local\nRedirect Policy.  For Cluster-wide Local Redirect Policy, this\ncan be any namespace.",
+    "Name is the name of a destination Kubernetes service that identifies traffic to be redirected. The service type needs to be ClusterIP. \n Example: When this field is populated with 'serviceName:myService', all the traffic destined to the cluster IP of this service at the (specified) service port(s) will be redirected.",
+    "Name is the name of a destination Kubernetes service that identifies traffic\nto be redirected.\nThe service type needs to be ClusterIP.\n\nExample:\nWhen this field is populated with 'serviceName:myService', all the traffic\ndestined to the cluster IP of this service at the (specified)\nservice port(s) will be redirected.",
+    "ToPorts is a list of destination service L4 ports with protocol for traffic to be redirected. If not specified, traffic for all the service ports will be redirected. When multiple ports are specified, the ports must be named.",
+    "ToPorts is a list of destination service L4 ports with protocol for\ntraffic to be redirected. If not specified, traffic for all the service\nports will be redirected.\nWhen multiple ports are specified, the ports must be named.",
+    "SkipRedirectFromBackend indicates whether traffic matching RedirectFrontend from RedirectBackend should skip redirection, and hence the traffic will be forwarded as-is. \n The default is false which means traffic matching RedirectFrontend will get redirected from all pods, including the RedirectBackend(s). \n Example: If RedirectFrontend is configured to \"169.254.169.254:80\" as the traffic that needs to be redirected to backends selected by RedirectBackend, if SkipRedirectFromBackend is set to true, traffic going to \"169.254.169.254:80\" from such backends will not be redirected back to the backends. Instead, the matched traffic from the backends will be forwarded to the original destination \"169.254.169.254:80\".",
+    "SkipRedirectFromBackend indicates whether traffic matching RedirectFrontend\nfrom RedirectBackend should skip redirection, and hence the traffic will\nbe forwarded as-is.\n\nThe default is false which means traffic matching RedirectFrontend will\nget redirected from all pods, including the RedirectBackend(s).\n\nExample: If RedirectFrontend is configured to \"169.254.169.254:80\" as the traffic\nthat needs to be redirected to backends selected by RedirectBackend, if\nSkipRedirectFromBackend is set to true, traffic going to \"169.254.169.254:80\"\nfrom such backends will not be redirected back to the backends. Instead,\nthe matched traffic from the backends will be forwarded to the original\ndestination \"169.254.169.254:80\".",
+    "Status is the most recent status of the local redirect policy. It is a read-only field.",
+    "Status is the most recent status of the local redirect policy.\nIt is a read-only field.",
+    "TODO Define status(aditi)",
+    "CiliumLocalRedirectPolicy is a Kubernetes Custom Resource that contains a specification to redirect traffic locally within a node.",
+    "CiliumLocalRedirectPolicy is a Kubernetes Custom Resource that contains a\nspecification to redirect traffic locally within a node.",
+    "MatchExpressions is a list of label selector requirements. The requirements are ANDed.",
+    "matchExpressions is a list of label selector requirements. The requirements are ANDed.",
+    "MatchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+  ]
+}

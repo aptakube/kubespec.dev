@@ -1,0 +1,49 @@
+{
+  "versions": {
+    "v0.20.4": {
+      "descriptionChanged": [
+        "spec.auth.ntlm.passwordSecret",
+        "spec.auth.ntlm.usernameSecret"
+      ],
+      "descriptions": {
+        "spec.auth.ntlm.passwordSecret": [
+          0,
+          1
+        ],
+        "spec.auth.ntlm.usernameSecret": [
+          0,
+          1
+        ]
+      }
+    },
+    "v0.16.2": {
+      "added": {
+        "spec.auth": "object"
+      },
+      "descriptions": {
+        "spec.auth": [
+          null,
+          2
+        ]
+      }
+    },
+    "v0.11.0": {
+      "descriptionChanged": [
+        "spec.caProvider.key"
+      ],
+      "descriptions": {
+        "spec.caProvider.key": [
+          3,
+          4
+        ]
+      }
+    }
+  },
+  "texts": [
+    "A reference to a specific 'key' within a Secret resource.\nIn some instances, `key` is a required field.",
+    "SecretKeySelector is a reference to a specific 'key' within a Secret resource.\nIn some instances, `key` is a required field.",
+    "Auth specifies a authorization protocol. Only one protocol may be set.",
+    "The key the value inside of the provider type to use, only used with \"Secret\" type",
+    "The key where the CA certificate can be found in the Secret or ConfigMap."
+  ]
+}

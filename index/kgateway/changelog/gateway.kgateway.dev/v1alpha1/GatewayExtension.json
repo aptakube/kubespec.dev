@@ -1,0 +1,645 @@
+{
+  "versions": {
+    "v2.4.5": {
+      "descriptionChanged": [
+        "spec.oauth2.issuerURI"
+      ],
+      "descriptions": {
+        "spec.oauth2.issuerURI": [
+          0,
+          1
+        ]
+      }
+    },
+    "v2.4.0": {
+      "added": {
+        "spec.extAuth.httpService.authorizationResponse.headersToClient": "string[]",
+        "spec.extAuth.httpService.authorizationResponse.headersToClientOnSuccess": "string[]",
+        "spec.extProc.filterStage": "object",
+        "spec.extProc.requestAttributes": "string[]",
+        "spec.jwt.providers.jwks.remote.asyncFetch": "object",
+        "spec.jwt.providers.jwks.remote.retryPolicy": "object",
+        "spec.oauth2.jwt.jwksBackendRef": "object"
+      },
+      "descriptionChanged": [
+        "spec.oauth2.issuerURI"
+      ],
+      "descriptions": {
+        "spec.extAuth.httpService.authorizationResponse.headersToClient": [
+          null,
+          2
+        ],
+        "spec.extAuth.httpService.authorizationResponse.headersToClientOnSuccess": [
+          null,
+          3
+        ],
+        "spec.extProc.filterStage": [
+          null,
+          4
+        ],
+        "spec.extProc.requestAttributes": [
+          null,
+          5
+        ],
+        "spec.jwt.providers.jwks.remote.asyncFetch": [
+          null,
+          6
+        ],
+        "spec.jwt.providers.jwks.remote.retryPolicy": [
+          null,
+          7
+        ],
+        "spec.oauth2.issuerURI": [
+          1,
+          0
+        ],
+        "spec.oauth2.jwt.jwksBackendRef": [
+          null,
+          8
+        ]
+      }
+    },
+    "v2.3.9": {
+      "descriptionChanged": [
+        "spec.oauth2.issuerURI"
+      ],
+      "descriptions": {
+        "spec.oauth2.issuerURI": [
+          0,
+          1
+        ]
+      }
+    },
+    "v2.3.0": {
+      "added": {
+        "spec.extProc.allowProcessingModeOverride": "boolean",
+        "spec.extProc.allowedProcessingModeOverrides": "object[]",
+        "spec.oauth2.cookies.disableAccessTokenSetCookie": "boolean",
+        "spec.oauth2.cookies.disableIDTokenSetCookie": "boolean",
+        "spec.oauth2.cookies.disableRefreshTokenSetCookie": "boolean",
+        "spec.oauth2.jwt": "object"
+      },
+      "descriptionChanged": [
+        "spec.oauth2.authorizationEndpoint",
+        "spec.oauth2.denyRedirect.headers.value",
+        "spec.oauth2.endSessionEndpoint",
+        "spec.oauth2.issuerURI",
+        "spec.oauth2.tokenEndpoint"
+      ],
+      "descriptions": {
+        "spec.extProc.allowProcessingModeOverride": [
+          null,
+          9
+        ],
+        "spec.extProc.allowedProcessingModeOverrides": [
+          null,
+          10
+        ],
+        "spec.oauth2.authorizationEndpoint": [
+          11,
+          12
+        ],
+        "spec.oauth2.cookies.disableAccessTokenSetCookie": [
+          null,
+          13
+        ],
+        "spec.oauth2.cookies.disableIDTokenSetCookie": [
+          null,
+          14
+        ],
+        "spec.oauth2.cookies.disableRefreshTokenSetCookie": [
+          null,
+          15
+        ],
+        "spec.oauth2.denyRedirect.headers.value": [
+          16,
+          17
+        ],
+        "spec.oauth2.endSessionEndpoint": [
+          18,
+          19
+        ],
+        "spec.oauth2.issuerURI": [
+          20,
+          0
+        ],
+        "spec.oauth2.jwt": [
+          null,
+          21
+        ],
+        "spec.oauth2.tokenEndpoint": [
+          22,
+          23
+        ]
+      }
+    },
+    "v2.2.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.extAuth",
+        "spec.extAuth.clearRouteCache",
+        "spec.extAuth.failOpen",
+        "spec.extAuth.grpcService",
+        "spec.extAuth.grpcService.authority",
+        "spec.extAuth.grpcService.backendRef",
+        "spec.extAuth.grpcService.backendRef.group",
+        "spec.extAuth.grpcService.backendRef.kind",
+        "spec.extAuth.grpcService.backendRef.name",
+        "spec.extAuth.grpcService.backendRef.namespace",
+        "spec.extAuth.grpcService.backendRef.port",
+        "spec.extAuth.grpcService.backendRef.weight",
+        "spec.extAuth.grpcService.requestTimeout",
+        "spec.extAuth.statPrefix",
+        "spec.extAuth.statusOnError",
+        "spec.extAuth.withRequestBody",
+        "spec.extAuth.withRequestBody.allowPartialMessage",
+        "spec.extAuth.withRequestBody.maxRequestBytes",
+        "spec.extAuth.withRequestBody.packAsBytes",
+        "spec.extProc",
+        "spec.extProc.failOpen",
+        "spec.extProc.grpcService",
+        "spec.extProc.grpcService.authority",
+        "spec.extProc.grpcService.backendRef",
+        "spec.extProc.grpcService.backendRef.group",
+        "spec.extProc.grpcService.backendRef.kind",
+        "spec.extProc.grpcService.backendRef.name",
+        "spec.extProc.grpcService.backendRef.namespace",
+        "spec.extProc.grpcService.backendRef.port",
+        "spec.extProc.grpcService.backendRef.weight",
+        "spec.extProc.grpcService.requestTimeout",
+        "spec.extProc.maxMessageTimeout",
+        "spec.extProc.messageTimeout",
+        "spec.extProc.metadataOptions",
+        "spec.extProc.metadataOptions.forwarding",
+        "spec.extProc.processingMode",
+        "spec.extProc.processingMode.requestBodyMode",
+        "spec.extProc.processingMode.requestHeaderMode",
+        "spec.extProc.processingMode.requestTrailerMode",
+        "spec.extProc.processingMode.responseBodyMode",
+        "spec.extProc.processingMode.responseHeaderMode",
+        "spec.extProc.processingMode.responseTrailerMode",
+        "spec.extProc.routeCacheAction",
+        "spec.extProc.statPrefix",
+        "spec.rateLimit",
+        "spec.rateLimit.domain",
+        "spec.rateLimit.failOpen",
+        "spec.rateLimit.grpcService",
+        "spec.rateLimit.grpcService.authority",
+        "spec.rateLimit.grpcService.backendRef",
+        "spec.rateLimit.grpcService.backendRef.group",
+        "spec.rateLimit.grpcService.backendRef.kind",
+        "spec.rateLimit.grpcService.backendRef.name",
+        "spec.rateLimit.grpcService.backendRef.namespace",
+        "spec.rateLimit.grpcService.backendRef.port",
+        "spec.rateLimit.grpcService.backendRef.weight",
+        "spec.rateLimit.grpcService.requestTimeout",
+        "spec.rateLimit.timeout",
+        "spec.rateLimit.xRateLimitHeaders",
+        "spec.type",
+        "status",
+        "status.conditions",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.status",
+        "status.conditions.type"
+      ],
+      "required": [
+        "spec"
+      ],
+      "optional": [
+        "spec.extAuth.grpcService",
+        "spec.type"
+      ],
+      "added": {
+        "spec.extAuth.grpcService.retry": "object",
+        "spec.extAuth.headersToForward": "string[]",
+        "spec.extAuth.httpService": "object",
+        "spec.extProc.grpcService.retry": "object",
+        "spec.jwt": "object",
+        "spec.oauth2": "object",
+        "spec.rateLimit.grpcService.retry": "object"
+      },
+      "descriptions": {
+        "apiVersion": [
+          null,
+          24
+        ],
+        "kind": [
+          null,
+          25
+        ],
+        "spec": [
+          null,
+          26
+        ],
+        "spec.extAuth": [
+          null,
+          27
+        ],
+        "spec.extAuth.clearRouteCache": [
+          null,
+          28
+        ],
+        "spec.extAuth.failOpen": [
+          null,
+          29
+        ],
+        "spec.extAuth.grpcService": [
+          null,
+          30
+        ],
+        "spec.extAuth.grpcService.authority": [
+          null,
+          31
+        ],
+        "spec.extAuth.grpcService.backendRef": [
+          null,
+          32
+        ],
+        "spec.extAuth.grpcService.backendRef.group": [
+          null,
+          33
+        ],
+        "spec.extAuth.grpcService.backendRef.kind": [
+          null,
+          34
+        ],
+        "spec.extAuth.grpcService.backendRef.name": [
+          null,
+          35
+        ],
+        "spec.extAuth.grpcService.backendRef.namespace": [
+          null,
+          36
+        ],
+        "spec.extAuth.grpcService.backendRef.port": [
+          null,
+          37
+        ],
+        "spec.extAuth.grpcService.backendRef.weight": [
+          null,
+          38
+        ],
+        "spec.extAuth.grpcService.requestTimeout": [
+          null,
+          39
+        ],
+        "spec.extAuth.grpcService.retry": [
+          null,
+          40
+        ],
+        "spec.extAuth.headersToForward": [
+          null,
+          41
+        ],
+        "spec.extAuth.httpService": [
+          null,
+          42
+        ],
+        "spec.extAuth.statPrefix": [
+          null,
+          43
+        ],
+        "spec.extAuth.statusOnError": [
+          null,
+          44
+        ],
+        "spec.extAuth.withRequestBody": [
+          null,
+          45
+        ],
+        "spec.extAuth.withRequestBody.allowPartialMessage": [
+          null,
+          46
+        ],
+        "spec.extAuth.withRequestBody.maxRequestBytes": [
+          null,
+          47
+        ],
+        "spec.extAuth.withRequestBody.packAsBytes": [
+          null,
+          48
+        ],
+        "spec.extProc": [
+          null,
+          49
+        ],
+        "spec.extProc.failOpen": [
+          null,
+          50
+        ],
+        "spec.extProc.grpcService": [
+          null,
+          51
+        ],
+        "spec.extProc.grpcService.authority": [
+          null,
+          31
+        ],
+        "spec.extProc.grpcService.backendRef": [
+          null,
+          32
+        ],
+        "spec.extProc.grpcService.backendRef.group": [
+          null,
+          33
+        ],
+        "spec.extProc.grpcService.backendRef.kind": [
+          null,
+          34
+        ],
+        "spec.extProc.grpcService.backendRef.name": [
+          null,
+          35
+        ],
+        "spec.extProc.grpcService.backendRef.namespace": [
+          null,
+          36
+        ],
+        "spec.extProc.grpcService.backendRef.port": [
+          null,
+          37
+        ],
+        "spec.extProc.grpcService.backendRef.weight": [
+          null,
+          38
+        ],
+        "spec.extProc.grpcService.requestTimeout": [
+          null,
+          39
+        ],
+        "spec.extProc.grpcService.retry": [
+          null,
+          40
+        ],
+        "spec.extProc.maxMessageTimeout": [
+          null,
+          52
+        ],
+        "spec.extProc.messageTimeout": [
+          null,
+          53
+        ],
+        "spec.extProc.metadataOptions": [
+          null,
+          54
+        ],
+        "spec.extProc.metadataOptions.forwarding": [
+          null,
+          55
+        ],
+        "spec.extProc.processingMode": [
+          null,
+          56
+        ],
+        "spec.extProc.processingMode.requestBodyMode": [
+          null,
+          57
+        ],
+        "spec.extProc.processingMode.requestHeaderMode": [
+          null,
+          58
+        ],
+        "spec.extProc.processingMode.requestTrailerMode": [
+          null,
+          59
+        ],
+        "spec.extProc.processingMode.responseBodyMode": [
+          null,
+          60
+        ],
+        "spec.extProc.processingMode.responseHeaderMode": [
+          null,
+          61
+        ],
+        "spec.extProc.processingMode.responseTrailerMode": [
+          null,
+          62
+        ],
+        "spec.extProc.routeCacheAction": [
+          null,
+          63
+        ],
+        "spec.extProc.statPrefix": [
+          null,
+          64
+        ],
+        "spec.jwt": [
+          null,
+          65
+        ],
+        "spec.oauth2": [
+          null,
+          66
+        ],
+        "spec.rateLimit": [
+          null,
+          67
+        ],
+        "spec.rateLimit.domain": [
+          null,
+          68
+        ],
+        "spec.rateLimit.failOpen": [
+          null,
+          69
+        ],
+        "spec.rateLimit.grpcService": [
+          null,
+          70
+        ],
+        "spec.rateLimit.grpcService.authority": [
+          null,
+          31
+        ],
+        "spec.rateLimit.grpcService.backendRef": [
+          null,
+          32
+        ],
+        "spec.rateLimit.grpcService.backendRef.group": [
+          null,
+          33
+        ],
+        "spec.rateLimit.grpcService.backendRef.kind": [
+          null,
+          34
+        ],
+        "spec.rateLimit.grpcService.backendRef.name": [
+          null,
+          35
+        ],
+        "spec.rateLimit.grpcService.backendRef.namespace": [
+          null,
+          36
+        ],
+        "spec.rateLimit.grpcService.backendRef.port": [
+          null,
+          37
+        ],
+        "spec.rateLimit.grpcService.backendRef.weight": [
+          null,
+          38
+        ],
+        "spec.rateLimit.grpcService.requestTimeout": [
+          null,
+          39
+        ],
+        "spec.rateLimit.grpcService.retry": [
+          null,
+          40
+        ],
+        "spec.rateLimit.timeout": [
+          null,
+          71
+        ],
+        "spec.rateLimit.xRateLimitHeaders": [
+          null,
+          72
+        ],
+        "spec.type": [
+          null,
+          73
+        ],
+        "status": [
+          null,
+          74
+        ],
+        "status.conditions": [
+          null,
+          75
+        ],
+        "status.conditions.lastTransitionTime": [
+          null,
+          76
+        ],
+        "status.conditions.message": [
+          null,
+          77
+        ],
+        "status.conditions.observedGeneration": [
+          null,
+          78
+        ],
+        "status.conditions.reason": [
+          null,
+          79
+        ],
+        "status.conditions.status": [
+          null,
+          80
+        ],
+        "status.conditions.type": [
+          null,
+          81
+        ]
+      }
+    },
+    "v2.1.0": {
+      "added": {
+        "spec.extAuth.clearRouteCache": "boolean",
+        "spec.extAuth.failOpen": "boolean",
+        "spec.extAuth.grpcService.requestTimeout": "string",
+        "spec.extAuth.statPrefix": "string",
+        "spec.extAuth.statusOnError": "integer",
+        "spec.extAuth.withRequestBody": "object",
+        "spec.extProc.failOpen": "boolean",
+        "spec.extProc.grpcService.requestTimeout": "string",
+        "spec.extProc.maxMessageTimeout": "string",
+        "spec.extProc.messageTimeout": "string",
+        "spec.extProc.metadataOptions": "object",
+        "spec.extProc.processingMode": "object",
+        "spec.extProc.routeCacheAction": "string",
+        "spec.extProc.statPrefix": "string",
+        "spec.rateLimit": "object"
+      }
+    }
+  },
+  "texts": [
+    "IssuerURI specifies the OpenID provider's issuer URL to discover the OpenID provider's configuration.\nThe Issuer must be a URI RFC 3986 [RFC3986] with a scheme component that must be https, a host component,\nand optionally, port and path components and no query or fragment components.\nIt discovers the authorizationEndpoint, tokenEndpoint, endSessionEndpoint, and jwksURI if specified in the discovery response.\nExplicit configuration of these options will take precedence over the discovered values.\nRefer to https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig for more details.\nNote that the OpenID provider configuration is cached and only refreshed periodically when the GatewayExtension object\nis reprocessed.",
+    "IssuerURI specifies the OpenID provider's issuer URL to discover the OpenID provider's configuration.\nThe Issuer must be a URI RFC 3986 [RFC3986] with a scheme component that must be https, a host component,\nand optionally, port and path components and no query or fragment components.\nIt discovers the authorizationEndpoint, tokenEndpoint, endSessionEndpoint, and jwksURI if specified in the discovery response.\nExplicit configuration of these options will take precedence over the discovered values.\nRefer to https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig for more details.\nNote that the OpenID provider configuration is cached. It is refreshed periodically in the background, and a failed\ndiscovery is retried, so a provider that is unreachable when the configuration is first discovered is picked up once\nit becomes reachable. Discovery stops once authorizationEndpoint, tokenEndpoint, endSessionEndpoint, and jwksURI\n(when JWT parsing is configured) are all set explicitly, since none of the discovered values are then used.",
+    "HeadersToClient specifies which headers from the authorization response\nshould be forwarded back to the downstream client when the request is denied.\nMaps to Envoy's allowed_client_headers. Required for redirect-based flows\n(e.g. oauth2-proxy returning 302 + Location) so that the redirect Location\nheader reaches the browser on denial.\nCommon examples: [\"location\", \"set-cookie\", \"www-authenticate\"]",
+    "HeadersToClientOnSuccess specifies which headers from the authorization response\nshould be forwarded back to the downstream client when the request is allowed.\nMaps to Envoy's allowed_client_headers_on_success.\nCommon examples: [\"set-cookie\", \"x-auth-token\"]",
+    "FilterStage specifies where in the HTTP filter chain the ExtProc filter\nshould be placed. If not specified, the ExtProc filter defaults to running\nafter the AuthZ stage.",
+    "RequestAttributes specifies a list of Envoy attribute expressions whose values will be\nincluded in the ProcessingRequest.attributes map sent to the external processing server\non every HTTP request.\nSee: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/http/ext_proc/v3/ext_proc.proto",
+    "AsyncFetch configures fetching the JWKS asynchronously and caching it on a timer,\ninstead of fetching it on demand during request handling.",
+    "RetryPolicy configures how the JWKS fetch is retried (with exponential backoff)\nwhen the remote JWKS server is unavailable.",
+    "JWKSBackendRef specifies the backend to use for fetching the JWKS.\nIf not set, the parent OAuth2Provider's BackendRef is used.",
+    "AllowProcessingModeOverride determines if the processing mode can be overridden.\nDefaults to false, meaning the processing mode cannot be overridden.",
+    "AllowedProcessingModeOverrides specifies which processing modes are allowed to override the default.\nEmpty or unspecified means all overrides are allowed (if AllowProcessingModeOverride is true).\nThis is an allowlist; any processing mode in this list will allow the override to the specified mode.\nIf AllowProcessingModeOverride is false, this field is ignored.\nSee: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/http/ext_proc/v3/ext_proc.proto#envoy-v3-api-field-extensions-filters-http-ext-proc-v3-externalprocessor-allowed-override-modes",
+    "AuthorizationEndpoint specifies the endpoint to redirect to for authorization in response to unauthorized requests.\nRefer to https://datatracker.ietf.org/doc/html/rfc6749#section-3.1 for more details.",
+    "AuthorizationEndpoint specifies the endpoint to redirect to for authorization in response to unauthorized requests.\nIf both IssuerURI and this value are specified, the value discovered from the issuer will *not* be used and this takes precedence.\nRefer to https://datatracker.ietf.org/doc/html/rfc6749#section-3.1 for more details.",
+    "DisableAccessTokenSetCookie specifies whether to disable setting the access token cookie.\nThis can be used when the access token is too large to fit in a cookie. When true, the\nset-cookie response header for the access token will be omitted.",
+    "DisableIDTokenSetCookie specifies whether to disable setting the ID token cookie.\nThis can be used when the ID token is too large to fit in a cookie. When true, the\nset-cookie response header for the ID token will be omitted.",
+    "DisableRefreshTokenSetCookie specifies whether to disable setting the refresh token cookie.\nThis can be used when the refresh token is too large to fit in a cookie. When true, the\nset-cookie response header for the refresh token will be omitted.",
+    "Value is the value of HTTP Header to be matched.",
+    "Value is the value of HTTP Header to be matched.\n<gateway:experimental:description>\nMust consist of printable US-ASCII characters, optionally separated\nby single tabs or spaces. See: https://tools.ietf.org/html/rfc7230#section-3.2\n</gateway:experimental:description>\n\n<gateway:experimental:validation:Pattern=`^[!-~]+([\\t ]?[!-~]+)*$`>",
+    "EndSessionEndpoint specifies the URL that redirects a user's browser to in order to initiate a single logout\nacross all applications and the OpenID provider. Users are directed to this endpoint when they access the logout path.\nThis should only be set when the OpenID provider supports RP-Initiated Logout and \"openid\" is included in the list of scopes.\nRefer to https://openid.net/specs/openid-connect-rpinitiated-1_0.html#RPLogout for more details.",
+    "EndSessionEndpoint specifies the URL that redirects a user's browser to in order to initiate a single logout\nacross all applications and the OpenID provider. Users are directed to this endpoint when they access the logout path.\nThis should only be set when the OpenID provider supports RP-Initiated Logout and \"openid\" is included in the list of scopes.\nIf both IssuerURI and this value are specified, the value discovered from the issuer will *not* be used and this takes precedence.\nRefer to https://openid.net/specs/openid-connect-rpinitiated-1_0.html#RPLogout for more details.",
+    "IssuerURI specifies the OpenID provider's issuer URL to discover the OpenID provider's configuration.\nThe Issuer must be a URI RFC 3986 [RFC3986] with a scheme component that must be https, a host component,\nand optionally, port and path components and no query or fragment components.\nIt discovers the authorizationEndpoint, tokenEndpoint, and endSessionEndpoint if specified in the discovery response.\nRefer to https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig for more details.\nNote that the OpenID provider configuration is cached and only refreshed periodically when the GatewayExtension object\nis reprocessed.",
+    "JWT specifies the configuration for whether and how to process the retrieved access and ID tokens as JSON Web Token.",
+    "TokenEndpoint specifies the endpoint on the authorization server to retrieve the access token from.\nRefer to https://datatracker.ietf.org/doc/html/rfc6749#section-3.2 for more details.",
+    "TokenEndpoint specifies the endpoint on the authorization server to retrieve the access token from.\nIf both IssuerURI and this value are specified, the value discovered from the issuer will *not* be used and this takes precedence.\nRefer to https://datatracker.ietf.org/doc/html/rfc6749#section-3.2 for more details.",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "GatewayExtensionSpec defines the desired state of GatewayExtension.",
+    "ExtAuth configuration for ExtAuth extension type.",
+    "ClearRouteCache determines if the route cache should be cleared to allow the\nexternal authentication service to correctly affect routing decisions.",
+    "FailOpen determines if requests are allowed when the ext auth service is unavailable.\nDefaults to false, meaning requests will be denied if the ext auth service is unavailable.",
+    "GrpcService is the GRPC service that will handle the auth.\nMutually exclusive with HttpService.",
+    "Authority is the authority header to use for the GRPC service.",
+    "BackendRef references the backend GRPC service.",
+    "Group is the group of the referent. For example, \"gateway.networking.k8s.io\".\nWhen unspecified or empty string, core API group is inferred.",
+    "Kind is the Kubernetes resource kind of the referent. For example\n\"Service\".\n\nDefaults to \"Service\" when not specified.\n\nExternalName services can refer to CNAME DNS records that may live\noutside of the cluster and as such are difficult to reason about in\nterms of conformance. They also may not be safe to forward to (see\nCVE-2021-25740 for more information). Implementations SHOULD NOT\nsupport ExternalName Services.\n\nSupport: Core (Services with a type other than ExternalName)\n\nSupport: Implementation-specific (Services with type ExternalName)",
+    "Name is the name of the referent.",
+    "Namespace is the namespace of the backend. When unspecified, the local\nnamespace is inferred.\n\nNote that when a namespace different than the local namespace is specified,\na ReferenceGrant object is required in the referent namespace to allow that\nnamespace's owner to accept the reference. See the ReferenceGrant\ndocumentation for details.\n\nSupport: Core",
+    "Port specifies the destination port number to use for this resource.\nPort is required when the referent is a Kubernetes Service. In this\ncase, the port number is the service port number, not the target port.\nFor other resources, destination port might be derived from the referent\nresource or this field.",
+    "Weight specifies the proportion of requests forwarded to the referenced\nbackend. This is computed as weight/(sum of all weights in this\nBackendRefs list). For non-zero values, there may be some epsilon from\nthe exact proportion defined here depending on the precision an\nimplementation supports. Weight is not a percentage and the sum of\nweights does not need to equal 100.\n\nIf only one backend is specified and it has a weight greater than 0, 100%\nof the traffic is forwarded to that backend. If weight is set to 0, no\ntraffic should be forwarded for this entry. If unspecified, weight\ndefaults to 1.\n\nSupport for this field varies based on the context where used.",
+    "RequestTimeout is the timeout for the gRPC request. This is the timeout for a specific request.",
+    "Retry specifies the retry policy for gRPC streams associated with the service.",
+    "HeadersToForward specifies which headers from the client request should be\nforwarded to the external authorization service.\n\nHTTP services by default have the following headers forwarded: Host, Method, Path, Content-Length, Authorization.\n\nIf this field is omitted, gRPC services will have all client request headers forwarded,\nwhile HTTP services will only receive the default headers described above.\n\nCommon examples: [\"cookie\", \"authorization\", \"x-forwarded-for\"]\nMore info is available on the [Envoy docs](https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/http/ext_authz/v3/ext_authz.proto#envoy-v3-api-field-extensions-filters-http-ext-authz-v3-extauthz-allowed-headers)",
+    "HttpService is the HTTP service that will handle the auth.\nMutually exclusive with GrpcService.",
+    "StatPrefix is an optional prefix to include when emitting stats from the extauthz filter,\nenabling different instances of the filter to have unique stats.",
+    "StatusOnError sets the HTTP status response code that is returned to the client when the\nauth server returns an error or cannot be reached. Must be in the range of 100-511 inclusive.\nThe default matches the deny response code of 403 Forbidden.",
+    "WithRequestBody allows the request body to be buffered and sent to the auth service.\nWarning: buffering has implications for streaming and therefore performance.",
+    "AllowPartialMessage determines if partial messages should be allowed.\nWhen true, requests will be sent to the auth service even if they exceed maxRequestBytes.\nThe default behavior is false.",
+    "MaxRequestBytes sets the maximum size of a message body to buffer.\nRequests exceeding this size will receive HTTP 413 and not be sent to the auth service.",
+    "PackAsBytes determines if the body should be sent as raw bytes.\nWhen true, the body is sent as raw bytes in the raw_body field.\nWhen false, the body is sent as UTF-8 string in the body field.\nThe default behavior is false.",
+    "ExtProc configuration for ExtProc extension type.",
+    "FailOpen determines if requests are allowed when the ext proc service is unavailable.\nDefaults to true, meaning requests are allowed upstream even if the ext proc service is unavailable.",
+    "GrpcService is the GRPC service that will handle the processing.",
+    "MaxMessageTimeout specifies the upper bound of override_message_timeout that may be sent from the external processing server.\nThe default value 0, which effectively disables the override_message_timeout API.",
+    "MessageTimeout is the timeout for each message sent to the external processing server.",
+    "MetadataOptions allows configuring metadata namespaces to forwarded or received from the external\nprocessing server.",
+    "Forwarding defines the typed or untyped dynamic metadata namespaces to forward to the external processing server.",
+    "ProcessingMode defines how the filter should interact with the request/response streams.",
+    "RequestBodyMode determines how to handle the request body",
+    "RequestHeaderMode determines how to handle the request headers",
+    "RequestTrailerMode determines how to handle the request trailers",
+    "ResponseBodyMode determines how to handle the response body",
+    "ResponseHeaderMode determines how to handle the response headers",
+    "ResponseTrailerMode determines how to handle the response trailers",
+    "RouteCacheAction describes the route cache action to be taken when an\nexternal processor response is received in response to request headers.\nThe default behavior is \"FromResponse\" which will only clear the route cache when\nan external processing response has the clear_route_cache field set.",
+    "StatPrefix is an optional prefix to include when emitting stats from the extproc filter,\nenabling different instances of the filter to have unique stats.",
+    "JWT configuration for JWT extension type.",
+    "OAuth2 configuration for OAuth2 extension type.",
+    "RateLimit configuration for RateLimit extension type.",
+    "Domain identifies a rate limiting configuration for the rate limit service.\nAll rate limit requests must specify a domain, which enables the configuration\nto be per application without fear of overlap (e.g., \"api\", \"web\", \"admin\").",
+    "FailOpen determines if requests are limited when the rate limit service is unavailable.\nDefaults to true, meaning requests are allowed upstream and not limited if the rate limit service is unavailable.",
+    "GrpcService is the GRPC service that will handle the rate limiting.",
+    "Timeout provides an optional timeout value for requests to the rate limit service.\nFor rate limiting, prefer using this timeout rather than setting the generic `timeout` on the `GrpcService`.\nSee [envoy issue](https://github.com/envoyproxy/envoy/issues/20070) for more info.",
+    "XRateLimitHeaders configures the standard version to use for X-RateLimit headers emitted.\nSee [envoy docs](https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/http/ratelimit/v3/rate_limit.proto#envoy-v3-api-field-extensions-filters-http-ratelimit-v3-ratelimit-enable-x-ratelimit-headers) for more info.\nDisabled by default.",
+    "Deprecated: Setting this field has no effect.\nType indicates the type of the GatewayExtension to be used.",
+    "GatewayExtensionStatus defines the observed state of GatewayExtension.",
+    "Conditions is the list of conditions for the GatewayExtension.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "status of the condition, one of True, False, Unknown.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase."
+  ]
+}

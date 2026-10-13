@@ -1,0 +1,1437 @@
+{
+  "versions": {
+    "v2.4.5": {
+      "added": {
+        "spec.mergeSlashes": "boolean",
+        "spec.normalizePath": "boolean"
+      },
+      "descriptions": {
+        "spec.mergeSlashes": [
+          null,
+          0
+        ],
+        "spec.normalizePath": [
+          null,
+          1
+        ]
+      }
+    },
+    "v2.4.0": {
+      "added": {
+        "spec.forwardClientCertDetails": "object",
+        "spec.http2ProtocolOptions.allowConnect": "boolean",
+        "spec.localReplies": "object",
+        "spec.maxRequestsPerConnection": "integer",
+        "spec.serverName": "string"
+      },
+      "descriptionChanged": [
+        "spec.idleTimeout"
+      ],
+      "descriptions": {
+        "spec.forwardClientCertDetails": [
+          null,
+          2
+        ],
+        "spec.http2ProtocolOptions.allowConnect": [
+          null,
+          3
+        ],
+        "spec.idleTimeout": [
+          4,
+          5
+        ],
+        "spec.localReplies": [
+          null,
+          6
+        ],
+        "spec.maxRequestsPerConnection": [
+          null,
+          7
+        ],
+        "spec.serverName": [
+          null,
+          8
+        ]
+      }
+    },
+    "v2.3.3": {
+      "added": {
+        "spec.maxHeadersCount": "integer"
+      },
+      "descriptions": {
+        "spec.maxHeadersCount": [
+          null,
+          9
+        ]
+      }
+    },
+    "v2.3.2": {
+      "added": {
+        "spec.stripHostPortMode": "string"
+      },
+      "descriptions": {
+        "spec.stripHostPortMode": [
+          null,
+          10
+        ]
+      }
+    },
+    "v2.3.0": {
+      "descriptionChanged": [
+        "spec.accessLog.filter.andFilter.headerFilter.header.value",
+        "spec.accessLog.filter.headerFilter.header.value",
+        "spec.accessLog.filter.orFilter.headerFilter.header.value",
+        "spec.earlyRequestHeaderModifier.add.value",
+        "spec.earlyRequestHeaderModifier.set.value",
+        "spec.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector",
+        "spec.useRemoteAddress",
+        "spec.xffNumTrustedHops"
+      ],
+      "added": {
+        "spec.accessLog.filter.andFilter.runtimeFilter": "object",
+        "spec.accessLog.filter.orFilter.runtimeFilter": "object",
+        "spec.accessLog.filter.runtimeFilter": "object",
+        "spec.http2ProtocolOptions": "object",
+        "spec.skipXFFAppend": "boolean",
+        "spec.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector.enable": "boolean",
+        "spec.uuidRequestIdConfig": "object",
+        "spec.xffTrustedCIDRs": "string[]"
+      },
+      "removed": {
+        "spec.maxHeadersCount": "integer"
+      },
+      "descriptions": {
+        "spec.accessLog.filter.andFilter.headerFilter.header.value": [
+          11,
+          12
+        ],
+        "spec.accessLog.filter.andFilter.runtimeFilter": [
+          null,
+          13
+        ],
+        "spec.accessLog.filter.headerFilter.header.value": [
+          11,
+          12
+        ],
+        "spec.accessLog.filter.orFilter.headerFilter.header.value": [
+          11,
+          12
+        ],
+        "spec.accessLog.filter.orFilter.runtimeFilter": [
+          null,
+          13
+        ],
+        "spec.accessLog.filter.runtimeFilter": [
+          null,
+          13
+        ],
+        "spec.earlyRequestHeaderModifier.add.value": [
+          11,
+          12
+        ],
+        "spec.earlyRequestHeaderModifier.set.value": [
+          11,
+          12
+        ],
+        "spec.http2ProtocolOptions": [
+          null,
+          14
+        ],
+        "spec.skipXFFAppend": [
+          null,
+          15
+        ],
+        "spec.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector": [
+          16,
+          17
+        ],
+        "spec.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector.enable": [
+          null,
+          18
+        ],
+        "spec.useRemoteAddress": [
+          19,
+          20
+        ],
+        "spec.uuidRequestIdConfig": [
+          null,
+          21
+        ],
+        "spec.xffNumTrustedHops": [
+          22,
+          23
+        ],
+        "spec.xffTrustedCIDRs": [
+          null,
+          24
+        ],
+        "spec.maxHeadersCount": [
+          9,
+          null
+        ]
+      }
+    },
+    "v2.2.6": {
+      "added": {
+        "spec.maxHeadersCount": "integer"
+      },
+      "descriptions": {
+        "spec.maxHeadersCount": [
+          null,
+          9
+        ]
+      }
+    },
+    "v2.2.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.acceptHttp10",
+        "spec.accessLog",
+        "spec.accessLog.fileSink",
+        "spec.accessLog.fileSink.jsonFormat",
+        "spec.accessLog.fileSink.path",
+        "spec.accessLog.fileSink.stringFormat",
+        "spec.accessLog.filter",
+        "spec.accessLog.filter.andFilter",
+        "spec.accessLog.filter.andFilter.celFilter",
+        "spec.accessLog.filter.andFilter.celFilter.match",
+        "spec.accessLog.filter.andFilter.durationFilter",
+        "spec.accessLog.filter.andFilter.durationFilter.op",
+        "spec.accessLog.filter.andFilter.durationFilter.value",
+        "spec.accessLog.filter.andFilter.grpcStatusFilter",
+        "spec.accessLog.filter.andFilter.headerFilter",
+        "spec.accessLog.filter.andFilter.headerFilter.header",
+        "spec.accessLog.filter.andFilter.headerFilter.header.name",
+        "spec.accessLog.filter.andFilter.headerFilter.header.type",
+        "spec.accessLog.filter.andFilter.headerFilter.header.value",
+        "spec.accessLog.filter.andFilter.notHealthCheckFilter",
+        "spec.accessLog.filter.andFilter.responseFlagFilter",
+        "spec.accessLog.filter.andFilter.statusCodeFilter",
+        "spec.accessLog.filter.andFilter.statusCodeFilter.op",
+        "spec.accessLog.filter.andFilter.statusCodeFilter.value",
+        "spec.accessLog.filter.andFilter.traceableFilter",
+        "spec.accessLog.filter.celFilter",
+        "spec.accessLog.filter.celFilter.match",
+        "spec.accessLog.filter.durationFilter",
+        "spec.accessLog.filter.durationFilter.op",
+        "spec.accessLog.filter.durationFilter.value",
+        "spec.accessLog.filter.grpcStatusFilter",
+        "spec.accessLog.filter.headerFilter",
+        "spec.accessLog.filter.headerFilter.header",
+        "spec.accessLog.filter.headerFilter.header.name",
+        "spec.accessLog.filter.headerFilter.header.type",
+        "spec.accessLog.filter.headerFilter.header.value",
+        "spec.accessLog.filter.notHealthCheckFilter",
+        "spec.accessLog.filter.orFilter",
+        "spec.accessLog.filter.orFilter.celFilter",
+        "spec.accessLog.filter.orFilter.celFilter.match",
+        "spec.accessLog.filter.orFilter.durationFilter",
+        "spec.accessLog.filter.orFilter.durationFilter.op",
+        "spec.accessLog.filter.orFilter.durationFilter.value",
+        "spec.accessLog.filter.orFilter.grpcStatusFilter",
+        "spec.accessLog.filter.orFilter.headerFilter",
+        "spec.accessLog.filter.orFilter.headerFilter.header",
+        "spec.accessLog.filter.orFilter.headerFilter.header.name",
+        "spec.accessLog.filter.orFilter.headerFilter.header.type",
+        "spec.accessLog.filter.orFilter.headerFilter.header.value",
+        "spec.accessLog.filter.orFilter.notHealthCheckFilter",
+        "spec.accessLog.filter.orFilter.responseFlagFilter",
+        "spec.accessLog.filter.orFilter.statusCodeFilter",
+        "spec.accessLog.filter.orFilter.statusCodeFilter.op",
+        "spec.accessLog.filter.orFilter.statusCodeFilter.value",
+        "spec.accessLog.filter.orFilter.traceableFilter",
+        "spec.accessLog.filter.responseFlagFilter",
+        "spec.accessLog.filter.statusCodeFilter",
+        "spec.accessLog.filter.statusCodeFilter.op",
+        "spec.accessLog.filter.statusCodeFilter.value",
+        "spec.accessLog.filter.traceableFilter",
+        "spec.accessLog.grpcService",
+        "spec.accessLog.grpcService.additionalRequestHeadersToLog",
+        "spec.accessLog.grpcService.additionalResponseHeadersToLog",
+        "spec.accessLog.grpcService.additionalResponseTrailersToLog",
+        "spec.accessLog.grpcService.authority",
+        "spec.accessLog.grpcService.backendRef",
+        "spec.accessLog.grpcService.backendRef.group",
+        "spec.accessLog.grpcService.backendRef.kind",
+        "spec.accessLog.grpcService.backendRef.name",
+        "spec.accessLog.grpcService.backendRef.namespace",
+        "spec.accessLog.grpcService.backendRef.port",
+        "spec.accessLog.grpcService.backendRef.weight",
+        "spec.accessLog.grpcService.initialMetadata",
+        "spec.accessLog.grpcService.initialMetadata.key",
+        "spec.accessLog.grpcService.initialMetadata.value",
+        "spec.accessLog.grpcService.logName",
+        "spec.accessLog.grpcService.maxReceiveMessageLength",
+        "spec.accessLog.grpcService.retryPolicy",
+        "spec.accessLog.grpcService.retryPolicy.numRetries",
+        "spec.accessLog.grpcService.retryPolicy.retryBackOff",
+        "spec.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval",
+        "spec.accessLog.grpcService.retryPolicy.retryBackOff.maxInterval",
+        "spec.accessLog.grpcService.skipEnvoyHeaders",
+        "spec.accessLog.grpcService.timeout",
+        "spec.accessLog.openTelemetry",
+        "spec.accessLog.openTelemetry.attributes",
+        "spec.accessLog.openTelemetry.attributes.values",
+        "spec.accessLog.openTelemetry.attributes.values.key",
+        "spec.accessLog.openTelemetry.attributes.values.value",
+        "spec.accessLog.openTelemetry.body",
+        "spec.accessLog.openTelemetry.disableBuiltinLabels",
+        "spec.accessLog.openTelemetry.grpcService",
+        "spec.accessLog.openTelemetry.grpcService.authority",
+        "spec.accessLog.openTelemetry.grpcService.backendRef",
+        "spec.accessLog.openTelemetry.grpcService.backendRef.group",
+        "spec.accessLog.openTelemetry.grpcService.backendRef.kind",
+        "spec.accessLog.openTelemetry.grpcService.backendRef.name",
+        "spec.accessLog.openTelemetry.grpcService.backendRef.namespace",
+        "spec.accessLog.openTelemetry.grpcService.backendRef.port",
+        "spec.accessLog.openTelemetry.grpcService.backendRef.weight",
+        "spec.accessLog.openTelemetry.grpcService.initialMetadata",
+        "spec.accessLog.openTelemetry.grpcService.initialMetadata.key",
+        "spec.accessLog.openTelemetry.grpcService.initialMetadata.value",
+        "spec.accessLog.openTelemetry.grpcService.logName",
+        "spec.accessLog.openTelemetry.grpcService.maxReceiveMessageLength",
+        "spec.accessLog.openTelemetry.grpcService.retryPolicy",
+        "spec.accessLog.openTelemetry.grpcService.retryPolicy.numRetries",
+        "spec.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff",
+        "spec.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval",
+        "spec.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.maxInterval",
+        "spec.accessLog.openTelemetry.grpcService.skipEnvoyHeaders",
+        "spec.accessLog.openTelemetry.grpcService.timeout",
+        "spec.accessLog.openTelemetry.resourceAttributes",
+        "spec.accessLog.openTelemetry.resourceAttributes.values",
+        "spec.accessLog.openTelemetry.resourceAttributes.values.key",
+        "spec.accessLog.openTelemetry.resourceAttributes.values.value",
+        "spec.defaultHostForHttp10",
+        "spec.healthCheck",
+        "spec.healthCheck.path",
+        "spec.idleTimeout",
+        "spec.preserveHttp1HeaderCase",
+        "spec.serverHeaderTransformation",
+        "spec.streamIdleTimeout",
+        "spec.targetRefs",
+        "spec.targetRefs.group",
+        "spec.targetRefs.kind",
+        "spec.targetRefs.name",
+        "spec.targetSelectors",
+        "spec.targetSelectors.group",
+        "spec.targetSelectors.kind",
+        "spec.targetSelectors.matchLabels",
+        "spec.tracing",
+        "spec.tracing.attributes",
+        "spec.tracing.attributes.environment",
+        "spec.tracing.attributes.environment.defaultValue",
+        "spec.tracing.attributes.environment.name",
+        "spec.tracing.attributes.literal",
+        "spec.tracing.attributes.literal.value",
+        "spec.tracing.attributes.metadata",
+        "spec.tracing.attributes.metadata.defaultValue",
+        "spec.tracing.attributes.metadata.kind",
+        "spec.tracing.attributes.metadata.metadataKey",
+        "spec.tracing.attributes.metadata.metadataKey.key",
+        "spec.tracing.attributes.metadata.metadataKey.path",
+        "spec.tracing.attributes.metadata.metadataKey.path.key",
+        "spec.tracing.attributes.name",
+        "spec.tracing.attributes.requestHeader",
+        "spec.tracing.attributes.requestHeader.defaultValue",
+        "spec.tracing.attributes.requestHeader.name",
+        "spec.tracing.clientSampling",
+        "spec.tracing.maxPathTagLength",
+        "spec.tracing.overallSampling",
+        "spec.tracing.provider",
+        "spec.tracing.provider.openTelemetry",
+        "spec.tracing.provider.openTelemetry.grpcService",
+        "spec.tracing.provider.openTelemetry.grpcService.authority",
+        "spec.tracing.provider.openTelemetry.grpcService.backendRef",
+        "spec.tracing.provider.openTelemetry.grpcService.backendRef.group",
+        "spec.tracing.provider.openTelemetry.grpcService.backendRef.kind",
+        "spec.tracing.provider.openTelemetry.grpcService.backendRef.name",
+        "spec.tracing.provider.openTelemetry.grpcService.backendRef.namespace",
+        "spec.tracing.provider.openTelemetry.grpcService.backendRef.port",
+        "spec.tracing.provider.openTelemetry.grpcService.backendRef.weight",
+        "spec.tracing.provider.openTelemetry.grpcService.initialMetadata",
+        "spec.tracing.provider.openTelemetry.grpcService.initialMetadata.key",
+        "spec.tracing.provider.openTelemetry.grpcService.initialMetadata.value",
+        "spec.tracing.provider.openTelemetry.grpcService.maxReceiveMessageLength",
+        "spec.tracing.provider.openTelemetry.grpcService.retryPolicy",
+        "spec.tracing.provider.openTelemetry.grpcService.retryPolicy.numRetries",
+        "spec.tracing.provider.openTelemetry.grpcService.retryPolicy.retryBackOff",
+        "spec.tracing.provider.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval",
+        "spec.tracing.provider.openTelemetry.grpcService.retryPolicy.retryBackOff.maxInterval",
+        "spec.tracing.provider.openTelemetry.grpcService.skipEnvoyHeaders",
+        "spec.tracing.provider.openTelemetry.grpcService.timeout",
+        "spec.tracing.provider.openTelemetry.resourceDetectors",
+        "spec.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector",
+        "spec.tracing.provider.openTelemetry.sampler",
+        "spec.tracing.provider.openTelemetry.sampler.alwaysOnConfig",
+        "spec.tracing.provider.openTelemetry.serviceName",
+        "spec.tracing.randomSampling",
+        "spec.tracing.spawnUpstreamSpan",
+        "spec.tracing.verbose",
+        "spec.upgradeConfig",
+        "spec.upgradeConfig.enabledUpgrades",
+        "spec.useRemoteAddress",
+        "spec.xffNumTrustedHops",
+        "status",
+        "status.ancestors",
+        "status.ancestors.ancestorRef",
+        "status.ancestors.ancestorRef.group",
+        "status.ancestors.ancestorRef.kind",
+        "status.ancestors.ancestorRef.name",
+        "status.ancestors.ancestorRef.namespace",
+        "status.ancestors.ancestorRef.port",
+        "status.ancestors.ancestorRef.sectionName",
+        "status.ancestors.conditions",
+        "status.ancestors.conditions.lastTransitionTime",
+        "status.ancestors.conditions.message",
+        "status.ancestors.conditions.observedGeneration",
+        "status.ancestors.conditions.reason",
+        "status.ancestors.conditions.status",
+        "status.ancestors.conditions.type",
+        "status.ancestors.controllerName"
+      ],
+      "required": [
+        "spec",
+        "spec.accessLog.filter.andFilter.durationFilter.value",
+        "spec.accessLog.filter.andFilter.statusCodeFilter.value",
+        "spec.accessLog.filter.durationFilter.value",
+        "spec.accessLog.filter.orFilter.durationFilter.value",
+        "spec.accessLog.filter.orFilter.statusCodeFilter.value",
+        "spec.accessLog.filter.statusCodeFilter.value"
+      ],
+      "added": {
+        "spec.earlyRequestHeaderModifier": "object",
+        "spec.generateRequestId": "boolean",
+        "spec.maxRequestHeadersKb": "integer",
+        "spec.preserveExternalRequestId": "boolean"
+      },
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          null,
+          25
+        ],
+        "kind": [
+          null,
+          26
+        ],
+        "spec": [
+          null,
+          27
+        ],
+        "spec.acceptHttp10": [
+          null,
+          28
+        ],
+        "spec.accessLog": [
+          null,
+          29
+        ],
+        "spec.accessLog.fileSink": [
+          null,
+          30
+        ],
+        "spec.accessLog.fileSink.jsonFormat": [
+          null,
+          31
+        ],
+        "spec.accessLog.fileSink.path": [
+          null,
+          32
+        ],
+        "spec.accessLog.fileSink.stringFormat": [
+          null,
+          33
+        ],
+        "spec.accessLog.filter": [
+          null,
+          34
+        ],
+        "spec.accessLog.filter.andFilter": [
+          null,
+          35
+        ],
+        "spec.accessLog.filter.andFilter.celFilter": [
+          null,
+          36
+        ],
+        "spec.accessLog.filter.andFilter.celFilter.match": [
+          null,
+          37
+        ],
+        "spec.accessLog.filter.andFilter.durationFilter": [
+          null,
+          38
+        ],
+        "spec.accessLog.filter.andFilter.durationFilter.op": [
+          null,
+          39
+        ],
+        "spec.accessLog.filter.andFilter.durationFilter.value": [
+          null,
+          40
+        ],
+        "spec.accessLog.filter.andFilter.grpcStatusFilter": [
+          null,
+          41
+        ],
+        "spec.accessLog.filter.andFilter.headerFilter": [
+          null,
+          42
+        ],
+        "spec.accessLog.filter.andFilter.headerFilter.header": [
+          null,
+          43
+        ],
+        "spec.accessLog.filter.andFilter.headerFilter.header.name": [
+          null,
+          44
+        ],
+        "spec.accessLog.filter.andFilter.headerFilter.header.type": [
+          null,
+          45
+        ],
+        "spec.accessLog.filter.andFilter.headerFilter.header.value": [
+          null,
+          11
+        ],
+        "spec.accessLog.filter.andFilter.notHealthCheckFilter": [
+          null,
+          46
+        ],
+        "spec.accessLog.filter.andFilter.responseFlagFilter": [
+          null,
+          47
+        ],
+        "spec.accessLog.filter.andFilter.statusCodeFilter": [
+          null,
+          48
+        ],
+        "spec.accessLog.filter.andFilter.statusCodeFilter.op": [
+          null,
+          39
+        ],
+        "spec.accessLog.filter.andFilter.statusCodeFilter.value": [
+          null,
+          40
+        ],
+        "spec.accessLog.filter.andFilter.traceableFilter": [
+          null,
+          49
+        ],
+        "spec.accessLog.filter.celFilter": [
+          null,
+          36
+        ],
+        "spec.accessLog.filter.celFilter.match": [
+          null,
+          37
+        ],
+        "spec.accessLog.filter.durationFilter": [
+          null,
+          38
+        ],
+        "spec.accessLog.filter.durationFilter.op": [
+          null,
+          39
+        ],
+        "spec.accessLog.filter.durationFilter.value": [
+          null,
+          40
+        ],
+        "spec.accessLog.filter.grpcStatusFilter": [
+          null,
+          41
+        ],
+        "spec.accessLog.filter.headerFilter": [
+          null,
+          42
+        ],
+        "spec.accessLog.filter.headerFilter.header": [
+          null,
+          43
+        ],
+        "spec.accessLog.filter.headerFilter.header.name": [
+          null,
+          44
+        ],
+        "spec.accessLog.filter.headerFilter.header.type": [
+          null,
+          45
+        ],
+        "spec.accessLog.filter.headerFilter.header.value": [
+          null,
+          11
+        ],
+        "spec.accessLog.filter.notHealthCheckFilter": [
+          null,
+          46
+        ],
+        "spec.accessLog.filter.orFilter": [
+          null,
+          50
+        ],
+        "spec.accessLog.filter.orFilter.celFilter": [
+          null,
+          36
+        ],
+        "spec.accessLog.filter.orFilter.celFilter.match": [
+          null,
+          37
+        ],
+        "spec.accessLog.filter.orFilter.durationFilter": [
+          null,
+          38
+        ],
+        "spec.accessLog.filter.orFilter.durationFilter.op": [
+          null,
+          39
+        ],
+        "spec.accessLog.filter.orFilter.durationFilter.value": [
+          null,
+          40
+        ],
+        "spec.accessLog.filter.orFilter.grpcStatusFilter": [
+          null,
+          41
+        ],
+        "spec.accessLog.filter.orFilter.headerFilter": [
+          null,
+          42
+        ],
+        "spec.accessLog.filter.orFilter.headerFilter.header": [
+          null,
+          43
+        ],
+        "spec.accessLog.filter.orFilter.headerFilter.header.name": [
+          null,
+          44
+        ],
+        "spec.accessLog.filter.orFilter.headerFilter.header.type": [
+          null,
+          45
+        ],
+        "spec.accessLog.filter.orFilter.headerFilter.header.value": [
+          null,
+          11
+        ],
+        "spec.accessLog.filter.orFilter.notHealthCheckFilter": [
+          null,
+          46
+        ],
+        "spec.accessLog.filter.orFilter.responseFlagFilter": [
+          null,
+          47
+        ],
+        "spec.accessLog.filter.orFilter.statusCodeFilter": [
+          null,
+          48
+        ],
+        "spec.accessLog.filter.orFilter.statusCodeFilter.op": [
+          null,
+          39
+        ],
+        "spec.accessLog.filter.orFilter.statusCodeFilter.value": [
+          null,
+          40
+        ],
+        "spec.accessLog.filter.orFilter.traceableFilter": [
+          null,
+          49
+        ],
+        "spec.accessLog.filter.responseFlagFilter": [
+          null,
+          47
+        ],
+        "spec.accessLog.filter.statusCodeFilter": [
+          null,
+          48
+        ],
+        "spec.accessLog.filter.statusCodeFilter.op": [
+          null,
+          39
+        ],
+        "spec.accessLog.filter.statusCodeFilter.value": [
+          null,
+          40
+        ],
+        "spec.accessLog.filter.traceableFilter": [
+          null,
+          49
+        ],
+        "spec.accessLog.grpcService": [
+          null,
+          51
+        ],
+        "spec.accessLog.grpcService.additionalRequestHeadersToLog": [
+          null,
+          52
+        ],
+        "spec.accessLog.grpcService.additionalResponseHeadersToLog": [
+          null,
+          53
+        ],
+        "spec.accessLog.grpcService.additionalResponseTrailersToLog": [
+          null,
+          54
+        ],
+        "spec.accessLog.grpcService.authority": [
+          null,
+          55
+        ],
+        "spec.accessLog.grpcService.backendRef": [
+          null,
+          56
+        ],
+        "spec.accessLog.grpcService.backendRef.group": [
+          null,
+          57
+        ],
+        "spec.accessLog.grpcService.backendRef.kind": [
+          null,
+          58
+        ],
+        "spec.accessLog.grpcService.backendRef.name": [
+          null,
+          59
+        ],
+        "spec.accessLog.grpcService.backendRef.namespace": [
+          null,
+          60
+        ],
+        "spec.accessLog.grpcService.backendRef.port": [
+          null,
+          61
+        ],
+        "spec.accessLog.grpcService.backendRef.weight": [
+          null,
+          62
+        ],
+        "spec.accessLog.grpcService.initialMetadata": [
+          null,
+          63
+        ],
+        "spec.accessLog.grpcService.initialMetadata.key": [
+          null,
+          64
+        ],
+        "spec.accessLog.grpcService.initialMetadata.value": [
+          null,
+          65
+        ],
+        "spec.accessLog.grpcService.logName": [
+          null,
+          66
+        ],
+        "spec.accessLog.grpcService.maxReceiveMessageLength": [
+          null,
+          67
+        ],
+        "spec.accessLog.grpcService.retryPolicy": [
+          null,
+          68
+        ],
+        "spec.accessLog.grpcService.retryPolicy.numRetries": [
+          null,
+          69
+        ],
+        "spec.accessLog.grpcService.retryPolicy.retryBackOff": [
+          null,
+          70
+        ],
+        "spec.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval": [
+          null,
+          71
+        ],
+        "spec.accessLog.grpcService.retryPolicy.retryBackOff.maxInterval": [
+          null,
+          72
+        ],
+        "spec.accessLog.grpcService.skipEnvoyHeaders": [
+          null,
+          73
+        ],
+        "spec.accessLog.grpcService.timeout": [
+          null,
+          74
+        ],
+        "spec.accessLog.openTelemetry": [
+          null,
+          75
+        ],
+        "spec.accessLog.openTelemetry.attributes": [
+          null,
+          76
+        ],
+        "spec.accessLog.openTelemetry.attributes.values": [
+          null,
+          77
+        ],
+        "spec.accessLog.openTelemetry.attributes.values.key": [
+          null,
+          78
+        ],
+        "spec.accessLog.openTelemetry.attributes.values.value": [
+          null,
+          79
+        ],
+        "spec.accessLog.openTelemetry.body": [
+          null,
+          80
+        ],
+        "spec.accessLog.openTelemetry.disableBuiltinLabels": [
+          null,
+          81
+        ],
+        "spec.accessLog.openTelemetry.grpcService": [
+          null,
+          51
+        ],
+        "spec.accessLog.openTelemetry.grpcService.authority": [
+          null,
+          55
+        ],
+        "spec.accessLog.openTelemetry.grpcService.backendRef": [
+          null,
+          56
+        ],
+        "spec.accessLog.openTelemetry.grpcService.backendRef.group": [
+          null,
+          57
+        ],
+        "spec.accessLog.openTelemetry.grpcService.backendRef.kind": [
+          null,
+          58
+        ],
+        "spec.accessLog.openTelemetry.grpcService.backendRef.name": [
+          null,
+          59
+        ],
+        "spec.accessLog.openTelemetry.grpcService.backendRef.namespace": [
+          null,
+          60
+        ],
+        "spec.accessLog.openTelemetry.grpcService.backendRef.port": [
+          null,
+          61
+        ],
+        "spec.accessLog.openTelemetry.grpcService.backendRef.weight": [
+          null,
+          62
+        ],
+        "spec.accessLog.openTelemetry.grpcService.initialMetadata": [
+          null,
+          63
+        ],
+        "spec.accessLog.openTelemetry.grpcService.initialMetadata.key": [
+          null,
+          64
+        ],
+        "spec.accessLog.openTelemetry.grpcService.initialMetadata.value": [
+          null,
+          65
+        ],
+        "spec.accessLog.openTelemetry.grpcService.logName": [
+          null,
+          66
+        ],
+        "spec.accessLog.openTelemetry.grpcService.maxReceiveMessageLength": [
+          null,
+          67
+        ],
+        "spec.accessLog.openTelemetry.grpcService.retryPolicy": [
+          null,
+          68
+        ],
+        "spec.accessLog.openTelemetry.grpcService.retryPolicy.numRetries": [
+          null,
+          69
+        ],
+        "spec.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff": [
+          null,
+          70
+        ],
+        "spec.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
+          null,
+          71
+        ],
+        "spec.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.maxInterval": [
+          null,
+          72
+        ],
+        "spec.accessLog.openTelemetry.grpcService.skipEnvoyHeaders": [
+          null,
+          73
+        ],
+        "spec.accessLog.openTelemetry.grpcService.timeout": [
+          null,
+          74
+        ],
+        "spec.accessLog.openTelemetry.resourceAttributes": [
+          null,
+          82
+        ],
+        "spec.accessLog.openTelemetry.resourceAttributes.values": [
+          null,
+          77
+        ],
+        "spec.accessLog.openTelemetry.resourceAttributes.values.key": [
+          null,
+          78
+        ],
+        "spec.accessLog.openTelemetry.resourceAttributes.values.value": [
+          null,
+          79
+        ],
+        "spec.defaultHostForHttp10": [
+          null,
+          83
+        ],
+        "spec.earlyRequestHeaderModifier": [
+          null,
+          84
+        ],
+        "spec.generateRequestId": [
+          null,
+          85
+        ],
+        "spec.healthCheck": [
+          null,
+          86
+        ],
+        "spec.healthCheck.path": [
+          null,
+          87
+        ],
+        "spec.idleTimeout": [
+          null,
+          4
+        ],
+        "spec.maxRequestHeadersKb": [
+          null,
+          88
+        ],
+        "spec.preserveExternalRequestId": [
+          null,
+          89
+        ],
+        "spec.preserveHttp1HeaderCase": [
+          null,
+          90
+        ],
+        "spec.serverHeaderTransformation": [
+          null,
+          91
+        ],
+        "spec.streamIdleTimeout": [
+          null,
+          92
+        ],
+        "spec.targetRefs": [
+          null,
+          93
+        ],
+        "spec.targetRefs.group": [
+          null,
+          94
+        ],
+        "spec.targetRefs.kind": [
+          null,
+          95
+        ],
+        "spec.targetRefs.name": [
+          null,
+          96
+        ],
+        "spec.targetSelectors": [
+          null,
+          97
+        ],
+        "spec.targetSelectors.group": [
+          null,
+          94
+        ],
+        "spec.targetSelectors.kind": [
+          null,
+          95
+        ],
+        "spec.targetSelectors.matchLabels": [
+          null,
+          98
+        ],
+        "spec.tracing": [
+          null,
+          99
+        ],
+        "spec.tracing.attributes": [
+          null,
+          100
+        ],
+        "spec.tracing.attributes.environment": [
+          null,
+          101
+        ],
+        "spec.tracing.attributes.environment.defaultValue": [
+          null,
+          102
+        ],
+        "spec.tracing.attributes.environment.name": [
+          null,
+          103
+        ],
+        "spec.tracing.attributes.literal": [
+          null,
+          104
+        ],
+        "spec.tracing.attributes.literal.value": [
+          null,
+          105
+        ],
+        "spec.tracing.attributes.metadata": [
+          null,
+          106
+        ],
+        "spec.tracing.attributes.metadata.defaultValue": [
+          null,
+          107
+        ],
+        "spec.tracing.attributes.metadata.kind": [
+          null,
+          108
+        ],
+        "spec.tracing.attributes.metadata.metadataKey": [
+          null,
+          109
+        ],
+        "spec.tracing.attributes.metadata.metadataKey.key": [
+          null,
+          110
+        ],
+        "spec.tracing.attributes.metadata.metadataKey.path": [
+          null,
+          111
+        ],
+        "spec.tracing.attributes.metadata.metadataKey.path.key": [
+          null,
+          112
+        ],
+        "spec.tracing.attributes.name": [
+          null,
+          113
+        ],
+        "spec.tracing.attributes.requestHeader": [
+          null,
+          114
+        ],
+        "spec.tracing.attributes.requestHeader.defaultValue": [
+          null,
+          115
+        ],
+        "spec.tracing.attributes.requestHeader.name": [
+          null,
+          116
+        ],
+        "spec.tracing.clientSampling": [
+          null,
+          117
+        ],
+        "spec.tracing.maxPathTagLength": [
+          null,
+          118
+        ],
+        "spec.tracing.overallSampling": [
+          null,
+          119
+        ],
+        "spec.tracing.provider": [
+          null,
+          120
+        ],
+        "spec.tracing.provider.openTelemetry": [
+          null,
+          121
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService": [
+          null,
+          122
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.authority": [
+          null,
+          55
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.backendRef": [
+          null,
+          56
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.backendRef.group": [
+          null,
+          57
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.backendRef.kind": [
+          null,
+          58
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.backendRef.name": [
+          null,
+          59
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.backendRef.namespace": [
+          null,
+          60
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.backendRef.port": [
+          null,
+          61
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.backendRef.weight": [
+          null,
+          62
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.initialMetadata": [
+          null,
+          63
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.initialMetadata.key": [
+          null,
+          64
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.initialMetadata.value": [
+          null,
+          65
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.maxReceiveMessageLength": [
+          null,
+          67
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.retryPolicy": [
+          null,
+          68
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.retryPolicy.numRetries": [
+          null,
+          69
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.retryPolicy.retryBackOff": [
+          null,
+          70
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
+          null,
+          71
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.retryPolicy.retryBackOff.maxInterval": [
+          null,
+          72
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.skipEnvoyHeaders": [
+          null,
+          73
+        ],
+        "spec.tracing.provider.openTelemetry.grpcService.timeout": [
+          null,
+          74
+        ],
+        "spec.tracing.provider.openTelemetry.resourceDetectors": [
+          null,
+          123
+        ],
+        "spec.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector": [
+          null,
+          16
+        ],
+        "spec.tracing.provider.openTelemetry.sampler": [
+          null,
+          124
+        ],
+        "spec.tracing.provider.openTelemetry.sampler.alwaysOnConfig": [
+          null,
+          125
+        ],
+        "spec.tracing.provider.openTelemetry.serviceName": [
+          null,
+          126
+        ],
+        "spec.tracing.randomSampling": [
+          null,
+          127
+        ],
+        "spec.tracing.spawnUpstreamSpan": [
+          null,
+          128
+        ],
+        "spec.tracing.verbose": [
+          null,
+          129
+        ],
+        "spec.upgradeConfig": [
+          null,
+          130
+        ],
+        "spec.upgradeConfig.enabledUpgrades": [
+          null,
+          131
+        ],
+        "spec.useRemoteAddress": [
+          null,
+          19
+        ],
+        "spec.xffNumTrustedHops": [
+          null,
+          22
+        ],
+        "status": [
+          null,
+          132
+        ],
+        "status.ancestors": [
+          null,
+          133
+        ],
+        "status.ancestors.ancestorRef": [
+          null,
+          134
+        ],
+        "status.ancestors.ancestorRef.group": [
+          null,
+          135
+        ],
+        "status.ancestors.ancestorRef.kind": [
+          null,
+          136
+        ],
+        "status.ancestors.ancestorRef.name": [
+          null,
+          137
+        ],
+        "status.ancestors.ancestorRef.namespace": [
+          null,
+          138
+        ],
+        "status.ancestors.ancestorRef.port": [
+          null,
+          139
+        ],
+        "status.ancestors.ancestorRef.sectionName": [
+          null,
+          140
+        ],
+        "status.ancestors.conditions": [
+          null,
+          141
+        ],
+        "status.ancestors.conditions.lastTransitionTime": [
+          null,
+          142
+        ],
+        "status.ancestors.conditions.message": [
+          null,
+          143
+        ],
+        "status.ancestors.conditions.observedGeneration": [
+          null,
+          144
+        ],
+        "status.ancestors.conditions.reason": [
+          null,
+          145
+        ],
+        "status.ancestors.conditions.status": [
+          null,
+          146
+        ],
+        "status.ancestors.conditions.type": [
+          null,
+          147
+        ],
+        "status.ancestors.controllerName": [
+          null,
+          148
+        ],
+        "": [
+          null,
+          149
+        ]
+      }
+    },
+    "v2.1.0": {
+      "added": {
+        "spec.acceptHttp10": "boolean",
+        "spec.accessLog.grpcService.authority": "string",
+        "spec.accessLog.grpcService.initialMetadata": "object[]",
+        "spec.accessLog.grpcService.maxReceiveMessageLength": "integer",
+        "spec.accessLog.grpcService.retryPolicy": "object",
+        "spec.accessLog.grpcService.skipEnvoyHeaders": "boolean",
+        "spec.accessLog.grpcService.timeout": "string",
+        "spec.accessLog.openTelemetry": "object",
+        "spec.defaultHostForHttp10": "string",
+        "spec.healthCheck": "object",
+        "spec.idleTimeout": "string",
+        "spec.preserveHttp1HeaderCase": "boolean",
+        "spec.serverHeaderTransformation": "string",
+        "spec.streamIdleTimeout": "string",
+        "spec.targetSelectors": "object[]",
+        "spec.tracing": "object",
+        "spec.upgradeConfig": "object",
+        "spec.useRemoteAddress": "boolean",
+        "spec.xffNumTrustedHops": "integer",
+        "status.ancestors": "object[]"
+      },
+      "removed": {
+        "status.conditions": "object[]"
+      }
+    }
+  },
+  "texts": [
+    "MergeSlashes determines whether the connection manager merges adjacent slashes in the request\npath before routing. This defaults to true. Disable this if a backend (e.g. an S3-compatible\nobject store) relies on repeated slashes in the path having meaning, such as object keys that\ncontain \"//\".\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-merge-slashes",
+    "NormalizePath determines whether the connection manager normalizes the path per RFC 3986 before\nrouting, e.g. collapsing `.` and `..` segments and decoding percent-encoded characters. This\ndefaults to true. Disable this if a backend (e.g. an S3-compatible object store) needs to see\nthe original, unnormalized request path.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-normalize-path",
+    "ForwardClientCertDetails configures how Envoy handles the x-forwarded-client-cert (XFCC)\nheader and which parts of the downstream client certificate are forwarded to upstream\nbackends. Most modes only have effect on listeners where mTLS is configured. The exceptions\nare Sanitize, which strips XFCC unconditionally, and AlwaysForwardOnly, which forwards XFCC\nunconditionally; on a non-mTLS listener under any other mode the setting is a no-op.\nSee: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-forward-client-cert-details",
+    "AllowConnect allows proxying of WebSocket and other upgrades over HTTP/2 by\nenabling Envoy to handle Extended CONNECT requests (RFC 8441) on the downstream\nconnection. This is required for WebSocket-over-HTTP/2 when the listener advertises\nh2 in its ALPN; otherwise user agents that use Extended CONNECT (e.g. Firefox) fail\nto establish WebSocket connections.\nDefaults to false.",
+    "IdleTimeout is the idle timeout for connnections.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/protocol.proto#envoy-v3-api-msg-config-core-v3-httpprotocoloptions",
+    "IdleTimeout is the idle timeout for connections.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/protocol.proto#envoy-v3-api-msg-config-core-v3-httpprotocoloptions",
+    "LocalReplies configures how Envoy's local replies are formatted etc.",
+    "MaxRequestsPerConnection sets the maximum number of requests served over a single downstream\nkeepalive connection. When the limit is reached, Envoy closes the connection, which forces\nclients to reconnect. This allows L4 load balancers like AWS NLB to rebalance long-lived\nHTTP/2 and gRPC connections across gateway pods.\nIf set to 0 or unspecified, defaults to unlimited.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/protocol.proto#envoy-v3-api-field-config-core-v3-httpprotocoloptions-max-requests-per-connection",
+    "ServerName determines the value of the server header.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-server-name",
+    "MaxHeadersCount sets the maximum number of headers allowed in a request.\nDownstream requests that exceed this limit will receive a 431 response for HTTP/1.x and a\nstream reset for HTTP/2. If unset, defaults to Envoy's built-in default of 100.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/protocol.proto#envoy-v3-api-field-config-core-v3-httpprotocoloptions-max-headers-count",
+    "StripHostPortMode determines whether, and under what conditions, Envoy will strip the port\nfrom the Host/authority header. StripMatchingHostPort strips the port only if it matches\nthe listener's own port. StripAnyHostPort strips the port unconditionally.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-strip-matching-host-port\nSee also: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-strip-any-host-port",
+    "Value is the value of HTTP Header to be matched.",
+    "Value is the value of HTTP Header to be matched.\n<gateway:experimental:description>\nMust consist of printable US-ASCII characters, optionally separated\nby single tabs or spaces. See: https://tools.ietf.org/html/rfc7230#section-3.2\n</gateway:experimental:description>\n\n<gateway:experimental:validation:Pattern=`^[!-~]+([\\t ]?[!-~]+)*$`>",
+    "Filters for random sampling of access logs.\nBased on: https://www.envoyproxy.io/docs/envoy/v1.33.0/api-v3/config/accesslog/v3/accesslog.proto#config-accesslog-v3-runtimefilter",
+    "Http2ProtocolOptions configures downstream HTTP/2 behavior on the listener's\nHttpConnectionManager.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/protocol.proto#config-core-v3-http2protocoloptions",
+    "SkipXffAppend specifies whether to skip adding the downstream's remote IP address to the X-Forwarded-For HTTP header.\nNote: If omitted, this effectively will default to true when UseRemoteAddress is false, such that Envoy acts as a \"transparent proxy\".\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-skip-xff-append",
+    "EnvironmentResourceDetectorConfig specified the EnvironmentResourceDetector",
+    "EnvironmentResourceDetector sets OpenTelemetry resource attributes from the OTEL_RESOURCE_ATTRIBUTES\nenvironment variable in the Envoy container.\nDefault enabled if not set. If multiple are set, the last will take precedence.",
+    "Enable controls whether the EnvironmentResourceDetector is used.",
+    "UseRemoteAddress determines whether to use the remote address for the original client.\nNote: If this field is omitted, it will fallback to the default value of 'true', which we set for all Envoy HCMs.\nThus, setting this explicitly to true is unnecessary (but will not cause any harm).\nWhen true, Envoy will use the remote address of the connection as the client address.\nWhen false, Envoy will use the X-Forwarded-For header to determine the client address.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-use-remote-address",
+    "UseRemoteAddress determines whether to use the remote address for the original client.\nNote: If this field is omitted, it will fallback to the default value of 'true', which we set for all Envoy HCMs.\nThus, setting this explicitly to true is unnecessary (but will not cause any harm).\nWhen true, Envoy will use the remote address of the connection as the client address.\nWhen false, Envoy will use the X-Forwarded-For header to determine the client address. Furthermore, SkipXffAppend will implicitly be set to true unless explicitly configured.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-use-remote-address",
+    "UuidRequestIdConfig configures the behavior of the UUID request ID extension.\nThis extension sets the x-request-id header to a UUID value.",
+    "XffNumTrustedHops is the number of additional ingress proxy hops from the right side of the X-Forwarded-For HTTP header to trust when determining the origin client's IP address.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-xff-num-trusted-hops",
+    "XffNumTrustedHops is the number of additional ingress proxy hops from the right side of the X-Forwarded-For HTTP header to trust when determining the origin client's IP address.\nThis is mutually exclusive with XffTrustedCIDRs.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-xff-num-trusted-hops",
+    "XffTrustedCIDRs are ranges of IPs that may appear in the X-Forwarded-For HTTP header and are trusted when determining the origin client's IP address.\nThis is mutually exclusive with XffNumTrustedHops and requires UseRemoteAddress to be set to false.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/http/original_ip_detection/xff/v3/xff.proto#envoy-v3-api-field-extensions-http-original-ip-detection-xff-v3-xffconfig-xff-trusted-cidrs",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "HTTPListenerPolicySpec defines the desired state of a HTTP listener policy.",
+    "AcceptHTTP10 determines whether to accept incoming HTTP/1.0 and HTTP 0.9 requests.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/protocol.proto#config-core-v3-http1protocoloptions",
+    "AccessLoggingConfig contains various settings for Envoy's access logging service.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/v1.33.0/api-v3/config/accesslog/v3/accesslog.proto",
+    "Output access logs to local file",
+    "the format object by which to envoy will emit the logs in a structured way.\nhttps://www.envoyproxy.io/docs/envoy/v1.33.0/configuration/observability/access_log/usage#format-dictionaries",
+    "the file path to which the file access logging service will sink",
+    "the format string by which envoy will format the log lines\nhttps://www.envoyproxy.io/docs/envoy/v1.33.0/configuration/observability/access_log/usage#format-strings",
+    "Filter access logs configuration",
+    "Performs a logical \"and\" operation on the result of each individual filter.\nBased on: https://www.envoyproxy.io/docs/envoy/v1.33.0/api-v3/config/accesslog/v3/accesslog.proto#config-accesslog-v3-andfilter",
+    "CELFilter filters requests based on Common Expression Language (CEL).",
+    "The CEL expressions to evaluate. AccessLogs are only emitted when the CEL expressions evaluates to true.\nsee: https://www.envoyproxy.io/docs/envoy/v1.33.0/xds/type/v3/cel.proto.html#common-expression-language-cel-proto",
+    "DurationFilter filters based on request duration.\nBased on: https://www.envoyproxy.io/docs/envoy/v1.33.0/api-v3/config/accesslog/v3/accesslog.proto#config-accesslog-v3-durationfilter",
+    "Op represents comparison operators.",
+    "Value to compare against.",
+    "GrpcStatusFilter filters gRPC requests based on their response status.\nBased on: https://www.envoyproxy.io/docs/envoy/v1.33.0/api-v3/config/accesslog/v3/accesslog.proto#enum-config-accesslog-v3-grpcstatusfilter-status",
+    "HeaderFilter filters requests based on headers.\nBased on: https://www.envoyproxy.io/docs/envoy/v1.33.0/api-v3/config/accesslog/v3/accesslog.proto#config-accesslog-v3-headerfilter",
+    "HTTPHeaderMatch describes how to select a HTTP route by matching HTTP request\nheaders.",
+    "Name is the name of the HTTP Header to be matched. Name matching MUST be\ncase-insensitive. (See https://tools.ietf.org/html/rfc7230#section-3.2).\n\nIf multiple entries specify equivalent header names, only the first\nentry with an equivalent name MUST be considered for a match. Subsequent\nentries with an equivalent header name MUST be ignored. Due to the\ncase-insensitivity of header names, \"foo\" and \"Foo\" are considered\nequivalent.\n\nWhen a header is repeated in an HTTP request, it is\nimplementation-specific behavior as to how this is represented.\nGenerally, proxies should follow the guidance from the RFC:\nhttps://www.rfc-editor.org/rfc/rfc7230.html#section-3.2.2 regarding\nprocessing a repeated header, with special handling for \"Set-Cookie\".",
+    "Type specifies how to match against the value of the header.\n\nSupport: Core (Exact)\n\nSupport: Implementation-specific (RegularExpression)\n\nSince RegularExpression HeaderMatchType has implementation-specific\nconformance, implementations can support POSIX, PCRE or any other dialects\nof regular expressions. Please read the implementation's documentation to\ndetermine the supported dialect.",
+    "Filters for requests that are not health check requests.\nBased on: https://www.envoyproxy.io/docs/envoy/v1.33.0/api-v3/config/accesslog/v3/accesslog.proto#config-accesslog-v3-nothealthcheckfilter",
+    "ResponseFlagFilter filters based on response flags.\nBased on: https://www.envoyproxy.io/docs/envoy/v1.33.0/api-v3/config/accesslog/v3/accesslog.proto#config-accesslog-v3-responseflagfilter",
+    "StatusCodeFilter filters based on HTTP status code.\nBased on: https://www.envoyproxy.io/docs/envoy/v1.33.0/api-v3/config/accesslog/v3/accesslog.proto#envoy-v3-api-msg-config-accesslog-v3-statuscodefilter",
+    "Filters for requests that are traceable.\nBased on: https://www.envoyproxy.io/docs/envoy/v1.33.0/api-v3/config/accesslog/v3/accesslog.proto#config-accesslog-v3-traceablefilter",
+    "Performs a logical \"or\" operation on the result of each individual filter.\nBased on: https://www.envoyproxy.io/docs/envoy/v1.33.0/api-v3/config/accesslog/v3/accesslog.proto#config-accesslog-v3-orfilter",
+    "Send access logs to gRPC service",
+    "Additional request headers to log in the access log",
+    "Additional response headers to log in the access log",
+    "Additional response trailers to log in the access log",
+    "The :authority header in the grpc request. If this field is not set, the authority header value will be cluster_name.\nNote that this authority does not override the SNI. The SNI is provided by the transport socket of the cluster.",
+    "The backend gRPC service. Can be any type of supported backend (Kubernetes Service, kgateway Backend, etc..)",
+    "Group is the group of the referent. For example, \"gateway.networking.k8s.io\".\nWhen unspecified or empty string, core API group is inferred.",
+    "Kind is the Kubernetes resource kind of the referent. For example\n\"Service\".\n\nDefaults to \"Service\" when not specified.\n\nExternalName services can refer to CNAME DNS records that may live\noutside of the cluster and as such are difficult to reason about in\nterms of conformance. They also may not be safe to forward to (see\nCVE-2021-25740 for more information). Implementations SHOULD NOT\nsupport ExternalName Services.\n\nSupport: Core (Services with a type other than ExternalName)\n\nSupport: Implementation-specific (Services with type ExternalName)",
+    "Name is the name of the referent.",
+    "Namespace is the namespace of the backend. When unspecified, the local\nnamespace is inferred.\n\nNote that when a namespace different than the local namespace is specified,\na ReferenceGrant object is required in the referent namespace to allow that\nnamespace's owner to accept the reference. See the ReferenceGrant\ndocumentation for details.\n\nSupport: Core",
+    "Port specifies the destination port number to use for this resource.\nPort is required when the referent is a Kubernetes Service. In this\ncase, the port number is the service port number, not the target port.\nFor other resources, destination port might be derived from the referent\nresource or this field.",
+    "Weight specifies the proportion of requests forwarded to the referenced\nbackend. This is computed as weight/(sum of all weights in this\nBackendRefs list). For non-zero values, there may be some epsilon from\nthe exact proportion defined here depending on the precision an\nimplementation supports. Weight is not a percentage and the sum of\nweights does not need to equal 100.\n\nIf only one backend is specified and it has a weight greater than 0, 100%\nof the traffic is forwarded to that backend. If weight is set to 0, no\ntraffic should be forwarded for this entry. If unspecified, weight\ndefaults to 1.\n\nSupport for this field varies based on the context where used.",
+    "Additional metadata to include in streams initiated to the GrpcService.\nThis can be used for scenarios in which additional ad hoc authorization headers (e.g. x-foo-bar: baz-key) are to be injected",
+    "Header name.",
+    "Header value.",
+    "name of log stream",
+    "Maximum gRPC message size that is allowed to be received. If a message over this limit is received, the gRPC stream is terminated with the RESOURCE_EXHAUSTED error.\nDefaults to 0, which means unlimited.",
+    "Indicates the retry policy for re-establishing the gRPC stream.\nIf max interval is not provided, it will be set to ten times the provided base interval",
+    "Specifies the allowed number of retries. Defaults to 1.",
+    "Specifies parameters that control retry backoff strategy.\nthe default base interval is 1000 milliseconds and the default maximum interval is 10 times the base interval.",
+    "The base interval to be used for the next back off computation. It should be greater than zero and less than or equal to max_interval.",
+    "Specifies the maximum interval between retries. This parameter is optional, but must be greater than or equal to the base_interval if set. The default is 10 times the base_interval.",
+    "This provides gRPC client level control over envoy generated headers. If false, the header will be sent but it can be overridden by per stream option. If true, the header will be removed and can not be overridden by per stream option. Default to false.",
+    "The timeout for the gRPC request. This is the timeout for a specific request",
+    "Send access logs to an OTel collector",
+    "Additional attributes that describe the specific event occurrence.",
+    "A collection of key/value pairs of key-value pairs.",
+    "Attribute keys must be unique",
+    "Value may contain a primitive value such as a string or integer or it may contain an arbitrary nested object containing arrays, key-value lists and primitives.",
+    "OpenTelemetry LogResource fields, following Envoy access logging formatting.",
+    "If specified, Envoy will not generate built-in resource labels like log_name, zone_name, cluster_name, node_name.",
+    "Additional resource attributes that describe the resource.\nIf the `service.name` resource attribute is not specified, it adds it with the default value\nof the envoy cluster name, ie: `<gateway-name>.<gateway-namespace>`",
+    "DefaultHostForHttp10 specifies a default host for HTTP/1.0 requests. This is highly suggested if acceptHttp10 is true and a no-op if acceptHttp10 is false.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/protocol.proto#config-core-v3-http1protocoloptions",
+    "EarlyRequestHeaderModifier defines header modifications to be applied early in the request processing,\nbefore route selection.\nFor example, if you use ExternalAuthz to add a header, you may want to remove it here, to make\nsure it did not come from the client.",
+    "GenerateRequestId:  Whether the connection manager will generate the x-request-id header if it does not exist.\nThis defaults to true. Generating a random UUID4 is expensive so in high throughput scenarios where this feature is not desired it can be disabled.\nSee here for more information https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-generate-request-id",
+    "HealthCheck configures [Envoy health checks](https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/http/health_check/v3/health_check.proto)",
+    "Path defines the exact path that will be matched for health check requests.",
+    "MaxRequestHeadersKb sets the maximum size of request headers that Envoy will accept.\nIf unset, the Envoy default is 60 KiB.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-max-request-headers-kb",
+    "PreserveExternalRequestId determines whether the connection manager will keep the x-request-id header if passed for\na request that is edge (Edge request is the request from external clients to front Envoy) and not reset it, which is the current Envoy behaviour. This defaults to false.\nSee here for more information https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-preserve-external-request-id",
+    "PreserveHttp1HeaderCase determines whether to preserve the case of HTTP1 request headers.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_conn_man/header_casing",
+    "ServerHeaderTransformation determines how the server header is transformed.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-server-header-transformation",
+    "StreamIdleTimeout is the idle timeout for HTTP streams.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-stream-idle-timeout",
+    "TargetRefs specifies the target resources by reference to attach the policy to.",
+    "The API group of the target resource.\nFor Kubernetes Gateway API resources, the group is `gateway.networking.k8s.io`.",
+    "The API kind of the target resource,\nsuch as Gateway or HTTPRoute.",
+    "The name of the target resource.",
+    "TargetSelectors specifies the target selectors to select resources to attach the policy to.",
+    "Label selector to select the target resource.",
+    "Tracing contains various settings for Envoy's OpenTelemetry tracer.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/trace/v3/opentelemetry.proto.html",
+    "A list of attributes with a unique name to create attributes for the active span.",
+    "An environment attribute value.",
+    "When the environment variable is not found, the attribute value will be populated with this default value if specified,\notherwise no attribute will be populated.",
+    "Environment variable name to obtain the value to populate the attribute value.",
+    "A literal attribute value.",
+    "Static literal value to populate the attribute value.",
+    "An attribute to obtain the value from the metadata.",
+    "When no valid metadata is found, the attribute value would be populated with this default value if specified, otherwise no attribute would be populated.",
+    "Specify what kind of metadata to obtain attribute value from",
+    "Metadata key to define the path to retrieve the attribute value.",
+    "The key name of the Metadata from which to retrieve the Struct",
+    "The path used to retrieve a specific Value from the Struct. This can be either a prefix or a full path,\ndepending on the use case",
+    "The key used to retrieve the value in the struct",
+    "The name of the attribute",
+    "A request header attribute value.",
+    "When the header does not exist, the attribute value will be populated with this default value if specified,\notherwise no attribute will be populated.",
+    "Header name to obtain the value to populate the attribute value.",
+    "Target percentage of requests managed by this HTTP connection manager that will be force traced if the x-client-trace-id header is set. Defaults to 100%",
+    "Maximum length of the request path to extract and include in the HttpUrl tag. Used to truncate lengthy request paths to meet the needs of a tracing backend. Default: 256",
+    "Target percentage of requests managed by this HTTP connection manager that will be traced after all other sampling checks have been applied (client-directed, force tracing, random sampling). Defaults to 100%",
+    "Provider defines the upstream to which envoy sends traces",
+    "Tracing contains various settings for Envoy's OTel tracer.",
+    "Send traces to the gRPC service",
+    "An ordered list of resource detectors. Currently supported values are `EnvironmentResourceDetector`",
+    "Specifies the sampler to be used by the OpenTelemetry tracer. This field can be left empty. In this case, the default Envoy sampling decision is used.\nCurrently supported values are `AlwaysOn`",
+    "AlwaysOnConfig specified the AlwaysOn samplerc",
+    "The name for the service. This will be populated in the ResourceSpan Resource attributes\nDefaults to the envoy cluster name. Ie: `<gateway-name>.<gateway-namespace>`",
+    "Target percentage of requests managed by this HTTP connection manager that will be randomly selected for trace generation, if not requested by the client or not forced. Defaults to 100%",
+    "Create separate tracing span for each upstream request if true. Defaults to false\nLink to envoy docs for more info",
+    "Whether to annotate spans with additional data. If true, spans will include logs for stream events. Defaults to false",
+    "UpgradeConfig contains configuration for HTTP upgrades like WebSocket.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/v1.34.1/intro/arch_overview/http/upgrades.html",
+    "List of upgrade types to enable (e.g. \"websocket\", \"CONNECT\", etc.)",
+    "PolicyStatus defines the common attributes that all Policies should include within\ntheir status.",
+    "Ancestors is a list of ancestor resources (usually Gateways) that are\nassociated with the policy, and the status of the policy with respect to\neach ancestor. When this policy attaches to a parent, the controller that\nmanages the parent and the ancestors MUST add an entry to this list when\nthe controller first sees the policy and SHOULD update the entry as\nappropriate when the relevant ancestor is modified.\n\nNote that choosing the relevant ancestor is left to the Policy designers;\nan important part of Policy design is designing the right object level at\nwhich to namespace this status.\n\nNote also that implementations MUST ONLY populate ancestor status for\nthe Ancestor resources they are responsible for. Implementations MUST\nuse the ControllerName field to uniquely identify the entries in this list\nthat they are responsible for.\n\nNote that to achieve this, the list of PolicyAncestorStatus structs\nMUST be treated as a map with a composite key, made up of the AncestorRef\nand ControllerName fields combined.\n\nA maximum of 16 ancestors will be represented in this list. An empty list\nmeans the Policy is not relevant for any ancestors.\n\nIf this slice is full, implementations MUST NOT add further entries.\nInstead they MUST consider the policy unimplementable and signal that\non any related resources such as the ancestor that would be referenced\nhere. For example, if this list was full on BackendTLSPolicy, no\nadditional Gateways would be able to reference the Service targeted by\nthe BackendTLSPolicy.",
+    "AncestorRef corresponds with a ParentRef in the spec that this\nPolicyAncestorStatus struct describes the status of.",
+    "Group is the group of the referent.\nWhen unspecified, \"gateway.networking.k8s.io\" is inferred.\nTo set the core API group (such as for a \"Service\" kind referent),\nGroup must be explicitly set to \"\" (empty string).\n\nSupport: Core",
+    "Kind is kind of the referent.\n\nThere are two kinds of parent resources with \"Core\" support:\n\n* Gateway (Gateway conformance profile)\n* Service (Mesh conformance profile, ClusterIP Services only)\n\nSupport for other resources is Implementation-Specific.",
+    "Name is the name of the referent.\n\nSupport: Core",
+    "Namespace is the namespace of the referent. When unspecified, this refers\nto the local namespace of the Route.\n\nNote that there are specific rules for ParentRefs which cross namespace\nboundaries. Cross-namespace references are only valid if they are explicitly\nallowed by something in the namespace they are referring to. For example:\nGateway has the AllowedRoutes field, and ReferenceGrant provides a\ngeneric way to enable any other kind of cross-namespace reference.\n\n<gateway:experimental:description>\nParentRefs from a Route to a Service in the same namespace are \"producer\"\nroutes, which apply default routing rules to inbound connections from\nany namespace to the Service.\n\nParentRefs from a Route to a Service in a different namespace are\n\"consumer\" routes, and these routing rules are only applied to outbound\nconnections originating from the same namespace as the Route, for which\nthe intended destination of the connections are a Service targeted as a\nParentRef of the Route.\n</gateway:experimental:description>\n\nSupport: Core",
+    "Port is the network port this Route targets. It can be interpreted\ndifferently based on the type of parent resource.\n\nWhen the parent resource is a Gateway, this targets all listeners\nlistening on the specified port that also support this kind of Route(and\nselect this Route). It's not recommended to set `Port` unless the\nnetworking behaviors specified in a Route must apply to a specific port\nas opposed to a listener(s) whose port(s) may be changed. When both Port\nand SectionName are specified, the name and port of the selected listener\nmust match both specified values.\n\n<gateway:experimental:description>\nWhen the parent resource is a Service, this targets a specific port in the\nService spec. When both Port (experimental) and SectionName are specified,\nthe name and port of the selected port must match both specified values.\n</gateway:experimental:description>\n\nImplementations MAY choose to support other parent resources.\nImplementations supporting other types of parent resources MUST clearly\ndocument how/if Port is interpreted.\n\nFor the purpose of status, an attachment is considered successful as\nlong as the parent resource accepts it partially. For example, Gateway\nlisteners can restrict which Routes can attach to them by Route kind,\nnamespace, or hostname. If 1 of 2 Gateway listeners accept attachment\nfrom the referencing Route, the Route MUST be considered successfully\nattached. If no Gateway listeners accept attachment from this Route,\nthe Route MUST be considered detached from the Gateway.\n\nSupport: Extended",
+    "SectionName is the name of a section within the target resource. In the\nfollowing resources, SectionName is interpreted as the following:\n\n* Gateway: Listener name. When both Port (experimental) and SectionName\nare specified, the name and port of the selected listener must match\nboth specified values.\n* Service: Port name. When both Port (experimental) and SectionName\nare specified, the name and port of the selected listener must match\nboth specified values.\n\nImplementations MAY choose to support attaching Routes to other resources.\nIf that is the case, they MUST clearly document how SectionName is\ninterpreted.\n\nWhen unspecified (empty string), this will reference the entire resource.\nFor the purpose of status, an attachment is considered successful if at\nleast one section in the parent resource accepts it. For example, Gateway\nlisteners can restrict which Routes can attach to them by Route kind,\nnamespace, or hostname. If 1 of 2 Gateway listeners accept attachment from\nthe referencing Route, the Route MUST be considered successfully\nattached. If no Gateway listeners accept attachment from this Route, the\nRoute MUST be considered detached from the Gateway.\n\nSupport: Core",
+    "Conditions describes the status of the Policy with respect to the given Ancestor.\n\n<gateway:util:excludeFromCRD>\n\nNotes for implementors:\n\nConditions are a listType `map`, which means that they function like a\nmap with a key of the `type` field _in the k8s apiserver_.\n\nThis means that implementations must obey some rules when updating this\nsection.\n\n* Implementations MUST perform a read-modify-write cycle on this field\n  before modifying it. That is, when modifying this field, implementations\n  must be confident they have fetched the most recent version of this field,\n  and ensure that changes they make are on that recent version.\n* Implementations MUST NOT remove or reorder Conditions that they are not\n  directly responsible for. For example, if an implementation sees a Condition\n  with type `special.io/SomeField`, it MUST NOT remove, change or update that\n  Condition.\n* Implementations MUST always _merge_ changes into Conditions of the same Type,\n  rather than creating more than one Condition of the same Type.\n* Implementations MUST always update the `observedGeneration` field of the\n  Condition to the `metadata.generation` of the Gateway at the time of update creation.\n* If the `observedGeneration` of a Condition is _greater than_ the value the\n  implementation knows about, then it MUST NOT perform the update on that Condition,\n  but must wait for a future reconciliation and status update. (The assumption is that\n  the implementation's copy of the object is stale and an update will be re-triggered\n  if relevant.)\n\n</gateway:util:excludeFromCRD>",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "status of the condition, one of True, False, Unknown.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "ControllerName is a domain/path string that indicates the name of the\ncontroller that wrote this status. This corresponds with the\ncontrollerName field on GatewayClass.\n\nExample: \"example.net/gateway-controller\".\n\nThe format of this field is DOMAIN \"/\" PATH, where DOMAIN and PATH are\nvalid Kubernetes names\n(https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names).\n\nControllers MUST populate this field when writing status. Controllers should ensure that\nentries to status populated with their ControllerName are cleaned up when they are no\nlonger necessary.",
+    "HTTPListenerPolicy is intended to be used for configuring the Envoy `HttpConnectionManager` and any other config or policy\nthat should map 1-to-1 with a given HTTP listener, such as the Envoy health check HTTP filter.\nCurrently these policies can only be applied per `Gateway` but support for `Listener` attachment may be added in the future.\nSee https://github.com/kgateway-dev/kgateway/issues/11786 for more details.\nDeprecated: Use the httpSettings field on ListenerPolicy instead."
+  ]
+}

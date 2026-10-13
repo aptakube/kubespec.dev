@@ -1,0 +1,938 @@
+{
+  "versions": {
+    "v1.6.0": {
+      "descriptionChanged": [
+        "spec.acme.solvers.dns01.azuredns.environment",
+        "spec.acme.solvers.dns01.azuredns.hostedZoneName",
+        "spec.acme.solvers.dns01.azuredns.resourceGroupName",
+        "spec.acme.solvers.dns01.azuredns.subscriptionID",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector"
+      ],
+      "added": {
+        "spec.acme.solvers.dns01.azuredns.managedIdentity": "object"
+      },
+      "descriptions": {
+        "spec.acme.solvers.dns01.azuredns.environment": [
+          null,
+          0
+        ],
+        "spec.acme.solvers.dns01.azuredns.hostedZoneName": [
+          null,
+          1
+        ],
+        "spec.acme.solvers.dns01.azuredns.managedIdentity": [
+          null,
+          2
+        ],
+        "spec.acme.solvers.dns01.azuredns.resourceGroupName": [
+          null,
+          3
+        ],
+        "spec.acme.solvers.dns01.azuredns.subscriptionID": [
+          null,
+          4
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          5,
+          6
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          5,
+          6
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          5,
+          6
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          5,
+          6
+        ]
+      }
+    },
+    "v1.5.2": {
+      "descriptionChanged": [
+        "spec.acme.solvers.http01.gatewayHTTPRoute.serviceType",
+        "spec.acme.solvers.http01.ingress.serviceType"
+      ],
+      "descriptions": {
+        "spec.acme.solvers.http01.gatewayHTTPRoute.serviceType": [
+          7,
+          8
+        ],
+        "spec.acme.solvers.http01.ingress.serviceType": [
+          7,
+          8
+        ]
+      }
+    },
+    "v1.5.0": {
+      "added": {
+        "spec.acme.solvers.http01.gatewayHTTPRoute": "object"
+      },
+      "descriptionChanged": [
+        "spec.acme.solvers.http01.ingress.podTemplate",
+        "spec.acme.solvers.http01.ingress.serviceType",
+        "spec.vault.caBundle"
+      ],
+      "descriptions": {
+        "spec.acme.solvers.http01.gatewayHTTPRoute": [
+          null,
+          9
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate": [
+          10,
+          11
+        ],
+        "spec.acme.solvers.http01.ingress.serviceType": [
+          12,
+          7
+        ],
+        "spec.vault.caBundle": [
+          13,
+          14
+        ]
+      }
+    },
+    "v1.4.0": {
+      "optional": [
+        "spec.acme.externalAccountBinding.keyAlgorithm"
+      ],
+      "descriptionChanged": [
+        "spec.acme.externalAccountBinding.keyAlgorithm",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces"
+      ],
+      "added": {
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": "object",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": "object",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": "object",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": "object"
+      },
+      "descriptions": {
+        "spec.acme.externalAccountBinding.keyAlgorithm": [
+          15,
+          16
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          17,
+          18
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          17,
+          18
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          17,
+          18
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          17,
+          18
+        ]
+      }
+    },
+    "v1.3.0": {
+      "descriptionChanged": [
+        "spec.ca.ocspServers"
+      ],
+      "added": {
+        "status.conditions.observedGeneration": "integer"
+      },
+      "descriptions": {
+        "spec.ca.ocspServers": [
+          19,
+          20
+        ],
+        "status.conditions.observedGeneration": [
+          null,
+          21
+        ]
+      }
+    },
+    "v1.2.0": {
+      "added": {
+        "spec.ca.ocspServers": "string[]"
+      },
+      "descriptionChanged": [
+        "status.conditions.status",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.ca.ocspServers": [
+          null,
+          19
+        ],
+        "status.conditions.status": [
+          22,
+          23
+        ],
+        "status.conditions.type": [
+          24,
+          25
+        ]
+      }
+    },
+    "v1.1.0": {
+      "added": {
+        "spec.acme.enableDurationFeature": "boolean"
+      },
+      "descriptions": {
+        "spec.acme.enableDurationFeature": [
+          null,
+          26
+        ]
+      }
+    },
+    "v1.0.0": {
+      "added": {
+        "spec.acme.disableAccountKeyGeneration": "boolean",
+        "spec.acme.preferredChain": "string",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.priorityClassName": "string",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.serviceAccountName": "string",
+        "spec.vault.namespace": "string"
+      },
+      "descriptionChanged": [
+        "spec.acme.solvers.http01.ingress.podTemplate.spec"
+      ],
+      "descriptions": {
+        "spec.acme.disableAccountKeyGeneration": [
+          null,
+          27
+        ],
+        "spec.acme.preferredChain": [
+          null,
+          28
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec": [
+          29,
+          30
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.priorityClassName": [
+          null,
+          31
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.serviceAccountName": [
+          null,
+          32
+        ],
+        "spec.vault.namespace": [
+          null,
+          33
+        ]
+      }
+    },
+    "v0.16.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.acme",
+        "spec.acme.email",
+        "spec.acme.externalAccountBinding",
+        "spec.acme.externalAccountBinding.keySecretRef.key",
+        "spec.acme.externalAccountBinding.keySecretRef.name",
+        "spec.acme.privateKeySecretRef",
+        "spec.acme.privateKeySecretRef.key",
+        "spec.acme.privateKeySecretRef.name",
+        "spec.acme.server",
+        "spec.acme.skipTLSVerify",
+        "spec.acme.solvers",
+        "spec.acme.solvers.dns01",
+        "spec.acme.solvers.dns01.acmedns",
+        "spec.acme.solvers.dns01.acmedns.accountSecretRef",
+        "spec.acme.solvers.dns01.acmedns.accountSecretRef.key",
+        "spec.acme.solvers.dns01.acmedns.accountSecretRef.name",
+        "spec.acme.solvers.dns01.akamai",
+        "spec.acme.solvers.dns01.akamai.accessTokenSecretRef",
+        "spec.acme.solvers.dns01.akamai.accessTokenSecretRef.key",
+        "spec.acme.solvers.dns01.akamai.accessTokenSecretRef.name",
+        "spec.acme.solvers.dns01.akamai.clientSecretSecretRef",
+        "spec.acme.solvers.dns01.akamai.clientSecretSecretRef.key",
+        "spec.acme.solvers.dns01.akamai.clientSecretSecretRef.name",
+        "spec.acme.solvers.dns01.akamai.clientTokenSecretRef",
+        "spec.acme.solvers.dns01.akamai.clientTokenSecretRef.key",
+        "spec.acme.solvers.dns01.akamai.clientTokenSecretRef.name",
+        "spec.acme.solvers.dns01.azuredns",
+        "spec.acme.solvers.dns01.azuredns.clientSecretSecretRef.key",
+        "spec.acme.solvers.dns01.azuredns.clientSecretSecretRef.name",
+        "spec.acme.solvers.dns01.clouddns",
+        "spec.acme.solvers.dns01.clouddns.serviceAccountSecretRef",
+        "spec.acme.solvers.dns01.clouddns.serviceAccountSecretRef.key",
+        "spec.acme.solvers.dns01.clouddns.serviceAccountSecretRef.name",
+        "spec.acme.solvers.dns01.cloudflare",
+        "spec.acme.solvers.dns01.cloudflare.apiKeySecretRef",
+        "spec.acme.solvers.dns01.cloudflare.apiKeySecretRef.key",
+        "spec.acme.solvers.dns01.cloudflare.apiKeySecretRef.name",
+        "spec.acme.solvers.dns01.cloudflare.apiTokenSecretRef",
+        "spec.acme.solvers.dns01.cloudflare.apiTokenSecretRef.key",
+        "spec.acme.solvers.dns01.cloudflare.apiTokenSecretRef.name",
+        "spec.acme.solvers.dns01.cloudflare.email",
+        "spec.acme.solvers.dns01.digitalocean",
+        "spec.acme.solvers.dns01.digitalocean.tokenSecretRef",
+        "spec.acme.solvers.dns01.digitalocean.tokenSecretRef.key",
+        "spec.acme.solvers.dns01.digitalocean.tokenSecretRef.name",
+        "spec.acme.solvers.dns01.rfc2136",
+        "spec.acme.solvers.dns01.rfc2136.tsigSecretSecretRef.key",
+        "spec.acme.solvers.dns01.rfc2136.tsigSecretSecretRef.name",
+        "spec.acme.solvers.dns01.route53",
+        "spec.acme.solvers.dns01.route53.secretAccessKeySecretRef.key",
+        "spec.acme.solvers.dns01.route53.secretAccessKeySecretRef.name",
+        "spec.acme.solvers.dns01.webhook",
+        "spec.acme.solvers.http01",
+        "spec.acme.solvers.selector",
+        "spec.ca",
+        "spec.ca.crlDistributionPoints",
+        "spec.selfSigned",
+        "spec.vault",
+        "spec.vault.auth",
+        "spec.vault.auth.appRole",
+        "spec.vault.auth.appRole.path",
+        "spec.vault.auth.appRole.roleId",
+        "spec.vault.auth.appRole.secretRef",
+        "spec.vault.auth.appRole.secretRef.key",
+        "spec.vault.auth.appRole.secretRef.name",
+        "spec.vault.auth.kubernetes",
+        "spec.vault.auth.kubernetes.secretRef.key",
+        "spec.vault.auth.kubernetes.secretRef.name",
+        "spec.vault.auth.tokenSecretRef",
+        "spec.vault.auth.tokenSecretRef.key",
+        "spec.vault.auth.tokenSecretRef.name",
+        "spec.vault.caBundle",
+        "spec.vault.path",
+        "spec.vault.server",
+        "spec.venafi",
+        "spec.venafi.cloud.apiTokenSecretRef.key",
+        "spec.venafi.cloud.apiTokenSecretRef.name",
+        "spec.venafi.cloud.url",
+        "spec.venafi.tpp.credentialsRef.name",
+        "spec.venafi.tpp.url",
+        "status",
+        "status.acme",
+        "status.conditions",
+        "status.conditions.type"
+      ],
+      "added": {
+        "spec.acme.solvers.dns01.clouddns.hostedZoneName": "string"
+      },
+      "optional": [
+        "spec.acme.solvers.dns01.cloudflare.email"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec": [
+          34,
+          35
+        ],
+        "spec.acme": [
+          36,
+          37
+        ],
+        "spec.acme.email": [
+          38,
+          39
+        ],
+        "spec.acme.externalAccountBinding": [
+          40,
+          41
+        ],
+        "spec.acme.externalAccountBinding.keySecretRef.key": [
+          42,
+          43
+        ],
+        "spec.acme.externalAccountBinding.keySecretRef.name": [
+          44,
+          45
+        ],
+        "spec.acme.privateKeySecretRef": [
+          46,
+          47
+        ],
+        "spec.acme.privateKeySecretRef.key": [
+          42,
+          43
+        ],
+        "spec.acme.privateKeySecretRef.name": [
+          44,
+          45
+        ],
+        "spec.acme.server": [
+          48,
+          49
+        ],
+        "spec.acme.skipTLSVerify": [
+          50,
+          51
+        ],
+        "spec.acme.solvers": [
+          52,
+          53
+        ],
+        "spec.acme.solvers.dns01": [
+          null,
+          54
+        ],
+        "spec.acme.solvers.dns01.acmedns": [
+          55,
+          56
+        ],
+        "spec.acme.solvers.dns01.acmedns.accountSecretRef": [
+          null,
+          57
+        ],
+        "spec.acme.solvers.dns01.acmedns.accountSecretRef.key": [
+          42,
+          43
+        ],
+        "spec.acme.solvers.dns01.acmedns.accountSecretRef.name": [
+          44,
+          45
+        ],
+        "spec.acme.solvers.dns01.akamai": [
+          58,
+          59
+        ],
+        "spec.acme.solvers.dns01.akamai.accessTokenSecretRef": [
+          null,
+          57
+        ],
+        "spec.acme.solvers.dns01.akamai.accessTokenSecretRef.key": [
+          42,
+          43
+        ],
+        "spec.acme.solvers.dns01.akamai.accessTokenSecretRef.name": [
+          44,
+          45
+        ],
+        "spec.acme.solvers.dns01.akamai.clientSecretSecretRef": [
+          null,
+          57
+        ],
+        "spec.acme.solvers.dns01.akamai.clientSecretSecretRef.key": [
+          42,
+          43
+        ],
+        "spec.acme.solvers.dns01.akamai.clientSecretSecretRef.name": [
+          44,
+          45
+        ],
+        "spec.acme.solvers.dns01.akamai.clientTokenSecretRef": [
+          null,
+          57
+        ],
+        "spec.acme.solvers.dns01.akamai.clientTokenSecretRef.key": [
+          42,
+          43
+        ],
+        "spec.acme.solvers.dns01.akamai.clientTokenSecretRef.name": [
+          44,
+          45
+        ],
+        "spec.acme.solvers.dns01.azuredns": [
+          60,
+          61
+        ],
+        "spec.acme.solvers.dns01.azuredns.clientSecretSecretRef.key": [
+          42,
+          43
+        ],
+        "spec.acme.solvers.dns01.azuredns.clientSecretSecretRef.name": [
+          44,
+          45
+        ],
+        "spec.acme.solvers.dns01.clouddns": [
+          62,
+          63
+        ],
+        "spec.acme.solvers.dns01.clouddns.hostedZoneName": [
+          null,
+          64
+        ],
+        "spec.acme.solvers.dns01.clouddns.serviceAccountSecretRef": [
+          null,
+          57
+        ],
+        "spec.acme.solvers.dns01.clouddns.serviceAccountSecretRef.key": [
+          42,
+          43
+        ],
+        "spec.acme.solvers.dns01.clouddns.serviceAccountSecretRef.name": [
+          44,
+          45
+        ],
+        "spec.acme.solvers.dns01.cloudflare": [
+          65,
+          66
+        ],
+        "spec.acme.solvers.dns01.cloudflare.apiKeySecretRef": [
+          null,
+          67
+        ],
+        "spec.acme.solvers.dns01.cloudflare.apiKeySecretRef.key": [
+          42,
+          43
+        ],
+        "spec.acme.solvers.dns01.cloudflare.apiKeySecretRef.name": [
+          44,
+          45
+        ],
+        "spec.acme.solvers.dns01.cloudflare.apiTokenSecretRef": [
+          null,
+          68
+        ],
+        "spec.acme.solvers.dns01.cloudflare.apiTokenSecretRef.key": [
+          42,
+          43
+        ],
+        "spec.acme.solvers.dns01.cloudflare.apiTokenSecretRef.name": [
+          44,
+          45
+        ],
+        "spec.acme.solvers.dns01.cloudflare.email": [
+          null,
+          69
+        ],
+        "spec.acme.solvers.dns01.digitalocean": [
+          70,
+          71
+        ],
+        "spec.acme.solvers.dns01.digitalocean.tokenSecretRef": [
+          null,
+          57
+        ],
+        "spec.acme.solvers.dns01.digitalocean.tokenSecretRef.key": [
+          42,
+          43
+        ],
+        "spec.acme.solvers.dns01.digitalocean.tokenSecretRef.name": [
+          44,
+          45
+        ],
+        "spec.acme.solvers.dns01.rfc2136": [
+          72,
+          73
+        ],
+        "spec.acme.solvers.dns01.rfc2136.tsigSecretSecretRef.key": [
+          42,
+          43
+        ],
+        "spec.acme.solvers.dns01.rfc2136.tsigSecretSecretRef.name": [
+          44,
+          45
+        ],
+        "spec.acme.solvers.dns01.route53": [
+          74,
+          75
+        ],
+        "spec.acme.solvers.dns01.route53.secretAccessKeySecretRef.key": [
+          42,
+          43
+        ],
+        "spec.acme.solvers.dns01.route53.secretAccessKeySecretRef.name": [
+          44,
+          45
+        ],
+        "spec.acme.solvers.dns01.webhook": [
+          76,
+          77
+        ],
+        "spec.acme.solvers.http01": [
+          78,
+          79
+        ],
+        "spec.acme.solvers.selector": [
+          80,
+          81
+        ],
+        "spec.ca": [
+          null,
+          82
+        ],
+        "spec.ca.crlDistributionPoints": [
+          83,
+          84
+        ],
+        "spec.selfSigned": [
+          null,
+          85
+        ],
+        "spec.vault": [
+          null,
+          86
+        ],
+        "spec.vault.auth": [
+          87,
+          88
+        ],
+        "spec.vault.auth.appRole": [
+          89,
+          90
+        ],
+        "spec.vault.auth.appRole.path": [
+          91,
+          92
+        ],
+        "spec.vault.auth.appRole.roleId": [
+          null,
+          93
+        ],
+        "spec.vault.auth.appRole.secretRef": [
+          null,
+          94
+        ],
+        "spec.vault.auth.appRole.secretRef.key": [
+          42,
+          43
+        ],
+        "spec.vault.auth.appRole.secretRef.name": [
+          44,
+          45
+        ],
+        "spec.vault.auth.kubernetes": [
+          95,
+          96
+        ],
+        "spec.vault.auth.kubernetes.secretRef.key": [
+          42,
+          43
+        ],
+        "spec.vault.auth.kubernetes.secretRef.name": [
+          44,
+          45
+        ],
+        "spec.vault.auth.tokenSecretRef": [
+          97,
+          98
+        ],
+        "spec.vault.auth.tokenSecretRef.key": [
+          42,
+          43
+        ],
+        "spec.vault.auth.tokenSecretRef.name": [
+          44,
+          45
+        ],
+        "spec.vault.caBundle": [
+          99,
+          13
+        ],
+        "spec.vault.path": [
+          100,
+          101
+        ],
+        "spec.vault.server": [
+          102,
+          103
+        ],
+        "spec.venafi": [
+          104,
+          105
+        ],
+        "spec.venafi.cloud.apiTokenSecretRef.key": [
+          42,
+          43
+        ],
+        "spec.venafi.cloud.apiTokenSecretRef.name": [
+          44,
+          45
+        ],
+        "spec.venafi.cloud.url": [
+          106,
+          107
+        ],
+        "spec.venafi.tpp.credentialsRef.name": [
+          44,
+          45
+        ],
+        "spec.venafi.tpp.url": [
+          108,
+          109
+        ],
+        "status": [
+          110,
+          111
+        ],
+        "status.acme": [
+          null,
+          112
+        ],
+        "status.conditions": [
+          null,
+          113
+        ],
+        "status.conditions.type": [
+          114,
+          24
+        ],
+        "": [
+          null,
+          115
+        ]
+      }
+    },
+    "v0.15.0": {
+      "optional": [
+        "spec.acme.solvers.dns01.azuredns.clientID",
+        "spec.acme.solvers.dns01.azuredns.clientSecretSecretRef",
+        "spec.acme.solvers.dns01.azuredns.tenantID"
+      ],
+      "descriptionChanged": [
+        "spec.acme.solvers.dns01.azuredns.clientID",
+        "spec.acme.solvers.dns01.azuredns.clientSecretSecretRef",
+        "spec.acme.solvers.dns01.azuredns.tenantID",
+        "spec.acme.solvers.dns01.rfc2136.nameserver"
+      ],
+      "added": {
+        "spec.acme.solvers.http01.ingress.ingressTemplate": "object",
+        "spec.ca.crlDistributionPoints": "string[]",
+        "spec.selfSigned.crlDistributionPoints": "string[]"
+      },
+      "descriptions": {
+        "spec.acme.solvers.dns01.azuredns.clientID": [
+          null,
+          116
+        ],
+        "spec.acme.solvers.dns01.azuredns.clientSecretSecretRef": [
+          null,
+          117
+        ],
+        "spec.acme.solvers.dns01.azuredns.tenantID": [
+          null,
+          118
+        ],
+        "spec.acme.solvers.dns01.rfc2136.nameserver": [
+          119,
+          120
+        ],
+        "spec.acme.solvers.http01.ingress.ingressTemplate": [
+          null,
+          121
+        ],
+        "spec.ca.crlDistributionPoints": [
+          null,
+          83
+        ],
+        "spec.selfSigned.crlDistributionPoints": [
+          null,
+          83
+        ]
+      }
+    },
+    "v0.14.0": {
+      "descriptionChanged": [
+        "spec.acme.externalAccountBinding",
+        "spec.venafi.tpp.caBundle"
+      ],
+      "descriptions": {
+        "spec.acme.externalAccountBinding": [
+          122,
+          40
+        ],
+        "spec.venafi.tpp.caBundle": [
+          123,
+          124
+        ]
+      }
+    },
+    "v0.13.1": {
+      "optional": [
+        "spec.venafi.cloud.url"
+      ],
+      "descriptions": {
+        "spec.venafi.cloud.url": [
+          null,
+          106
+        ]
+      }
+    },
+    "v0.13.0": {
+      "added": {
+        "spec.acme.externalAccountBinding": "object"
+      },
+      "descriptions": {
+        "spec.acme.externalAccountBinding": [
+          null,
+          122
+        ]
+      }
+    },
+    "v0.12.0": {
+      "optional": [
+        "spec.acme.solvers.dns01.clouddns.serviceAccountSecretRef",
+        "spec.acme.solvers.dns01.cloudflare.apiKeySecretRef"
+      ],
+      "added": {
+        "spec.acme.solvers.dns01.cloudflare.apiTokenSecretRef": "object",
+        "spec.acme.solvers.http01.ingress.podTemplate.metadata.annotations": "map[string]string",
+        "spec.acme.solvers.http01.ingress.podTemplate.metadata.labels": "map[string]string"
+      },
+      "descriptionChanged": [
+        "spec.vault.auth.kubernetes.mountPath"
+      ],
+      "descriptions": {
+        "spec.acme.solvers.http01.ingress.podTemplate.metadata.annotations": [
+          null,
+          125
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.metadata.labels": [
+          null,
+          126
+        ],
+        "spec.vault.auth.kubernetes.mountPath": [
+          127,
+          128
+        ]
+      }
+    }
+  },
+  "texts": [
+    "name of the Azure environment (default AzurePublicCloud)",
+    "name of the DNS zone that should be used",
+    "managed identity configuration, can not be used at the same time as clientID, clientSecretSecretRef or tenantID",
+    "resource group the DNS zone is located in",
+    "ID of the Azure subscription",
+    "A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces. This field is alpha-level and is only honored when PodAffinityNamespaceSelector feature is enabled.",
+    "A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces. This field is beta-level and is only honored when PodAffinityNamespaceSelector feature is enabled.",
+    "Optional service type for Kubernetes solver service. Supported values are NodePort or ClusterIP (default).",
+    "Optional service type for Kubernetes solver service. Supported values are NodePort or ClusterIP. If unset, defaults to NodePort.",
+    "The Gateway API is a sig-network community API that models service networking in Kubernetes (https://gateway-api.sigs.k8s.io/). The Gateway solver will create HTTPRoutes with the specified labels in the same namespace as the challenge. This solver is experimental, and fields / behaviour may change in the future.",
+    "Optional pod template used to configure the ACME challenge solver pods used for HTTP01 challenges",
+    "Optional pod template used to configure the ACME challenge solver pods used for HTTP01 challenges.",
+    "Optional service type for Kubernetes solver service",
+    "PEM encoded CA bundle used to validate Vault server certificate. Only used if the Server URL is using HTTPS protocol. This parameter is ignored for plain HTTP protocol connection. If not set the system root certificates are used to validate the TLS connection.",
+    "PEM-encoded CA bundle (base64-encoded) used to validate Vault server certificate. Only used if the Server URL is using HTTPS protocol. This parameter is ignored for plain HTTP protocol connection. If not set the system root certificates are used to validate the TLS connection.",
+    "keyAlgorithm is the MAC key algorithm that the key is used for. Valid values are \"HS256\", \"HS384\" and \"HS512\".",
+    "Deprecated: keyAlgorithm field exists for historical compatibility reasons and should not be used. The algorithm is now hardcoded to HS256 in golang/x/crypto/acme.",
+    "namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means \"this pod's namespace\"",
+    "namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means \"this pod's namespace\"",
+    "The OCSP server list is an X.509 v3 extension that defines a list of URLs of OCSP responders. The OCSP responders can be queried for the revocation status of an issued certificate. If not set, the certificate wil be issued with no OCSP servers set. For example, an OCSP server URL could be \"http://ocsp.int-x3.letsencrypt.org\".",
+    "The OCSP server list is an X.509 v3 extension that defines a list of URLs of OCSP responders. The OCSP responders can be queried for the revocation status of an issued certificate. If not set, the certificate will be issued with no OCSP servers set. For example, an OCSP server URL could be \"http://ocsp.int-x3.letsencrypt.org\".",
+    "If set, this represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.condition[x].observedGeneration is 9, the condition is out of date with respect to the current state of the Issuer.",
+    "Status of the condition, one of ('True', 'False', 'Unknown').",
+    "Status of the condition, one of (`True`, `False`, `Unknown`).",
+    "Type of the condition, known values are ('Ready').",
+    "Type of the condition, known values are (`Ready`).",
+    "Enables requesting a Not After date on certificates that matches the duration of the certificate. This is not supported by all ACME servers like Let's Encrypt. If set to true when the ACME server does not support it it will create an error on the Order. Defaults to false.",
+    "Enables or disables generating a new ACME account key. If true, the Issuer resource will *not* request a new account but will expect the account key to be supplied via an existing secret. If false, the cert-manager system will generate a new ACME account key for the Issuer. Defaults to false.",
+    "PreferredChain is the chain to use if the ACME server outputs multiple. PreferredChain is no guarantee that this one gets delivered by the ACME endpoint. For example, for Let's Encrypt's DST crosssign you would use: \"DST Root CA X3\" or \"ISRG Root X1\" for the newer Let's Encrypt root CA. This value picks the first certificate bundle in the ACME alternative chains that has a certificate with this value as its issuer's CN",
+    "PodSpec defines overrides for the HTTP01 challenge solver pod. Only the 'nodeSelector', 'affinity' and 'tolerations' fields are supported currently. All other fields will be ignored.",
+    "PodSpec defines overrides for the HTTP01 challenge solver pod. Only the 'priorityClassName', 'nodeSelector', 'affinity', 'serviceAccountName' and 'tolerations' fields are supported currently. All other fields will be ignored.",
+    "If specified, the pod's priorityClassName.",
+    "If specified, the pod's service account",
+    "Name of the vault namespace. Namespaces is a set of features within Vault Enterprise that allows Vault environments to support Secure Multi-tenancy. e.g: \"ns1\" More about namespaces can be found here https://www.vaultproject.io/docs/enterprise/namespaces",
+    "IssuerSpec is the specification of an Issuer. This includes any configuration required for the issuer.",
+    "Desired state of the Issuer resource.",
+    "ACMEIssuer contains the specification for an ACME issuer",
+    "ACME configures this issuer to communicate with a RFC8555 (ACME) server to obtain signed x509 certificates.",
+    "Email is the email for this account",
+    "Email is the email address to be associated with the ACME account. This field is optional, but it is strongly recommended to be set. It will be used to contact you in case of issues with your account or certificates, including expiry notification emails. This field may be updated after the account is initially registered.",
+    "ExternalAccountBinding is a reference to a CA external account of the ACME server.",
+    "ExternalAccountBinding is a reference to a CA external account of the ACME server. If set, upon registration cert-manager will attempt to associate the given external account credentials with the registered ACME account.",
+    "The key of the secret to select from. Must be a valid secret key.",
+    "The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required.",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "PrivateKey is the name of a secret containing the private key for this user account.",
+    "PrivateKey is the name of a Kubernetes Secret resource that will be used to store the automatically generated ACME account private key. Optionally, a `key` may be specified to select a specific entry within the named Secret resource. If `key` is not specified, a default of `tls.key` will be used.",
+    "Server is the ACME server URL",
+    "Server is the URL used to access the ACME server's 'directory' endpoint. For example, for Let's Encrypt's staging endpoint, you would use: \"https://acme-staging-v02.api.letsencrypt.org/directory\". Only ACME v2 endpoints (i.e. RFC 8555) are supported.",
+    "If true, skip verifying the ACME server TLS certificate",
+    "Enables or disables validation of the ACME server TLS certificate. If true, requests to the ACME server will not have their TLS certificate validated (i.e. insecure connections will be allowed). Only enable this option in development environments. The cert-manager system installed roots will be used to verify connections to the ACME server if this is false. Defaults to false.",
+    "Solvers is a list of challenge solvers that will be used to solve ACME challenges for the matching domains.",
+    "Solvers is a list of challenge solvers that will be used to solve ACME challenges for the matching domains. Solver configurations must be provided in order to obtain certificates from an ACME server. For more information, see: https://cert-manager.io/docs/configuration/acme/",
+    "Configures cert-manager to attempt to complete authorizations by performing the DNS01 challenge flow.",
+    "ACMEIssuerDNS01ProviderAcmeDNS is a structure containing the configuration for ACME-DNS servers",
+    "Use the 'ACME DNS' (https://github.com/joohoi/acme-dns) API to manage DNS01 challenge records.",
+    "A reference to a specific 'key' within a Secret resource. In some instances, `key` is a required field.",
+    "ACMEIssuerDNS01ProviderAkamai is a structure containing the DNS configuration for Akamai DNS—Zone Record Management API",
+    "Use the Akamai DNS zone management API to manage DNS01 challenge records.",
+    "ACMEIssuerDNS01ProviderAzureDNS is a structure containing the configuration for Azure DNS",
+    "Use the Microsoft Azure DNS API to manage DNS01 challenge records.",
+    "ACMEIssuerDNS01ProviderCloudDNS is a structure containing the DNS configuration for Google Cloud DNS",
+    "Use the Google Cloud DNS API to manage DNS01 challenge records.",
+    "HostedZoneName is an optional field that tells cert-manager in which Cloud DNS zone the challenge record has to be created. If left empty cert-manager will automatically choose a zone.",
+    "ACMEIssuerDNS01ProviderCloudflare is a structure containing the DNS configuration for Cloudflare",
+    "Use the Cloudflare API to manage DNS01 challenge records.",
+    "API key to use to authenticate with Cloudflare. Note: using an API token to authenticate is now the recommended method as it allows greater control of permissions.",
+    "API token used to authenticate with Cloudflare.",
+    "Email of the account, only required when using API key based authentication.",
+    "ACMEIssuerDNS01ProviderDigitalOcean is a structure containing the DNS configuration for DigitalOcean Domains",
+    "Use the DigitalOcean DNS API to manage DNS01 challenge records.",
+    "ACMEIssuerDNS01ProviderRFC2136 is a structure containing the configuration for RFC2136 DNS",
+    "Use RFC2136 (\"Dynamic Updates in the Domain Name System\") (https://datatracker.ietf.org/doc/rfc2136/) to manage DNS01 challenge records.",
+    "ACMEIssuerDNS01ProviderRoute53 is a structure containing the Route 53 configuration for AWS",
+    "Use the AWS Route53 API to manage DNS01 challenge records.",
+    "ACMEIssuerDNS01ProviderWebhook specifies configuration for a webhook DNS01 provider, including where to POST ChallengePayload resources.",
+    "Configure an external webhook based DNS01 challenge solver to manage DNS01 challenge records.",
+    "ACMEChallengeSolverHTTP01 contains configuration detailing how to solve HTTP01 challenges within a Kubernetes cluster. Typically this is accomplished through creating 'routes' of some description that configure ingress controllers to direct traffic to 'solver pods', which are responsible for responding to the ACME server's HTTP requests.",
+    "Configures cert-manager to attempt to complete authorizations by performing the HTTP01 challenge flow. It is not possible to obtain certificates for wildcard domain names (e.g. `*.example.com`) using the HTTP01 challenge mechanism.",
+    "Selector selects a set of DNSNames on the Certificate resource that should be solved using this challenge solver.",
+    "Selector selects a set of DNSNames on the Certificate resource that should be solved using this challenge solver. If not specified, the solver will be treated as the 'default' solver with the lowest priority, i.e. if any other solver has a more specific match, it will be used instead.",
+    "CA configures this issuer to sign certificates using a signing CA keypair stored in a Secret resource. This is used to build internal PKIs that are managed by cert-manager.",
+    "The CRL distribution points is an X.509 v3 certificate extension which identifies the location of the CRL from which the revocation of this certificate can be checked. If not set certificate will be issued without CDP. Values are strings.",
+    "The CRL distribution points is an X.509 v3 certificate extension which identifies the location of the CRL from which the revocation of this certificate can be checked. If not set, certificates will be issued without distribution points set.",
+    "SelfSigned configures this issuer to 'self sign' certificates using the private key used to create the CertificateRequest object.",
+    "Vault configures this issuer to sign certificates using a HashiCorp Vault PKI backend.",
+    "Vault authentication",
+    "Auth configures how cert-manager authenticates with the Vault server.",
+    "This Secret contains a AppRole and Secret",
+    "AppRole authenticates with Vault using the App Role auth mechanism, with the role and secret stored in a Kubernetes Secret resource.",
+    "Where the authentication path is mounted in Vault.",
+    "Path where the App Role authentication backend is mounted in Vault, e.g: \"approle\"",
+    "RoleID configured in the App Role authentication backend when setting up the authentication backend in Vault.",
+    "Reference to a key in a Secret that contains the App Role secret used to authenticate with Vault. The `key` field must be specified and denotes which entry within the Secret resource is used as the app role secret.",
+    "This contains a Role and Secret with a ServiceAccount token to authenticate with vault.",
+    "Kubernetes authenticates with Vault by passing the ServiceAccount token stored in the named Secret resource to the Vault server.",
+    "This Secret contains the Vault token key",
+    "TokenSecretRef authenticates with Vault by presenting a token.",
+    "Base64 encoded CA bundle to validate Vault server certificate. Only used if the Server URL is using HTTPS protocol. This parameter is ignored for plain HTTP protocol connection. If not set the system root certificates are used to validate the TLS connection.",
+    "Vault URL path to the certificate role",
+    "Path is the mount path of the Vault PKI backend's `sign` endpoint, e.g: \"my_pki_mount/sign/my-role-name\".",
+    "Server is the vault connection address",
+    "Server is the connection address for the Vault server, e.g: \"https://vault.example.com:8200\".",
+    "VenafiIssuer describes issuer configuration details for Venafi Cloud.",
+    "Venafi configures this issuer to sign certificates using a Venafi TPP or Venafi Cloud policy zone.",
+    "URL is the base URL for Venafi Cloud",
+    "URL is the base URL for Venafi Cloud. Defaults to \"https://api.venafi.cloud/v1\".",
+    "URL is the base URL for the Venafi TPP instance",
+    "URL is the base URL for the vedsdk endpoint of the Venafi TPP instance, for example: \"https://tpp.example.com/vedsdk\".",
+    "IssuerStatus contains status information about an Issuer",
+    "Status of the Issuer. This is set and managed automatically.",
+    "ACME specific status options. This field should only be set if the Issuer is configured to use an ACME server to issue certificates.",
+    "List of status conditions to indicate the status of a CertificateRequest. Known condition types are `Ready`.",
+    "Type of the condition, currently ('Ready').",
+    "An Issuer represents a certificate issuing authority which can be referenced as part of `issuerRef` fields. It is scoped to a single namespace and can therefore only be referenced by resources within the same namespace.",
+    "if both this and ClientSecret are left unset MSI will be used",
+    "if both this and ClientID are left unset MSI will be used",
+    "when specifying ClientID and ClientSecret then this field is also needed",
+    "The IP address of the DNS supporting RFC2136. Required. Note: FQDN is not a valid value, only IP.",
+    "The IP address or hostname of an authoritative DNS server supporting RFC2136 in the form host:port. If the host is an IPv6 address it must be enclosed in square brackets (e.g [2001:db8::1]) ; port is optional. This field is required.",
+    "Optional ingress template used to configure the ACME challenge solver ingress used for HTTP01 challenges",
+    "ExternalAcccountBinding is a reference to a CA external account of the ACME server.",
+    "CABundle is a PEM encoded TLS certifiate to use to verify connections to the TPP instance. If specified, system roots will not be used and the issuing CA for the TPP instance must be verifiable using the provided root. If not specified, the connection will be verified using the cert-manager system root certificates.",
+    "CABundle is a PEM encoded TLS certificate to use to verify connections to the TPP instance. If specified, system roots will not be used and the issuing CA for the TPP instance must be verifiable using the provided root. If not specified, the connection will be verified using the cert-manager system root certificates.",
+    "Annotations that should be added to the create ACME HTTP01 solver pods.",
+    "Labels that should be added to the created ACME HTTP01 solver pods.",
+    "The value here will be used as part of the path used when authenticating with vault, for example if you set a value of \"foo\", the path used will be `/v1/auth/foo/login`. If unspecified, the default value \"kubernetes\" will be used.",
+    "The Vault mountPath here is the mount path to use when authenticating with Vault. For example, setting a value to `/v1/auth/foo`, will use the path `/v1/auth/foo/login` to authenticate with Vault. If unspecified, the default value \"/v1/auth/kubernetes\" will be used."
+  ]
+}

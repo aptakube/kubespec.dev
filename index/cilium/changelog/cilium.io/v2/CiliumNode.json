@@ -1,0 +1,808 @@
+{
+  "versions": {
+    "1.20.0": {
+      "added": {
+        "spec.ipam.pools.allocated.allowFirstIP": "boolean",
+        "spec.ipam.pools.allocated.allowLastIP": "boolean",
+        "status.azure.interfaces.ip": "string",
+        "status.azure.interfaces.subnet": "object",
+        "status.eni.enis.ipv6-prefixes": "string[]"
+      },
+      "descriptionChanged": [
+        "spec.ipam.pre-allocate",
+        "status.azure.interfaces.addresses",
+        "status.azure.interfaces.addresses.subnet",
+        "status.azure.interfaces.cidr",
+        "status.eni.enis.prefixes"
+      ],
+      "removed": {
+        "spec.eni.instance-id": "string",
+        "spec.eni.max-above-watermark": "integer",
+        "spec.eni.min-allocate": "integer",
+        "spec.eni.pre-allocate": "integer",
+        "spec.nodeidentity": "integer",
+        "status.azure.interfaces.GatewayIP": "string"
+      },
+      "descriptions": {
+        "spec.ipam.pools.allocated.allowFirstIP": [
+          null,
+          0
+        ],
+        "spec.ipam.pools.allocated.allowLastIP": [
+          null,
+          1
+        ],
+        "spec.ipam.pre-allocate": [
+          2,
+          3
+        ],
+        "status.azure.interfaces.addresses": [
+          4,
+          5
+        ],
+        "status.azure.interfaces.addresses.subnet": [
+          6,
+          7
+        ],
+        "status.azure.interfaces.cidr": [
+          8,
+          9
+        ],
+        "status.azure.interfaces.ip": [
+          null,
+          10
+        ],
+        "status.azure.interfaces.subnet": [
+          null,
+          11
+        ],
+        "status.eni.enis.ipv6-prefixes": [
+          null,
+          12
+        ],
+        "status.eni.enis.prefixes": [
+          13,
+          14
+        ],
+        "spec.eni.instance-id": [
+          15,
+          null
+        ],
+        "spec.eni.max-above-watermark": [
+          16,
+          null
+        ],
+        "spec.eni.min-allocate": [
+          17,
+          null
+        ],
+        "spec.eni.pre-allocate": [
+          18,
+          null
+        ],
+        "spec.nodeidentity": [
+          19,
+          null
+        ],
+        "status.azure.interfaces.GatewayIP": [
+          20,
+          null
+        ]
+      }
+    },
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.alibaba-cloud.availability-zone",
+        "spec.alibaba-cloud.security-group-tags",
+        "spec.alibaba-cloud.security-groups",
+        "spec.alibaba-cloud.vswitch-tags",
+        "spec.azure.interface-name",
+        "spec.encryption.key",
+        "spec.eni.availability-zone",
+        "spec.eni.delete-on-termination",
+        "spec.eni.disable-prefix-delegation",
+        "spec.eni.exclude-interface-tags",
+        "spec.eni.first-interface-index",
+        "spec.eni.instance-id",
+        "spec.eni.max-above-watermark",
+        "spec.eni.min-allocate",
+        "spec.eni.node-subnet-id",
+        "spec.eni.pre-allocate",
+        "spec.eni.security-group-tags",
+        "spec.eni.security-groups",
+        "spec.eni.subnet-ids",
+        "spec.eni.subnet-tags",
+        "spec.eni.use-primary-address",
+        "spec.health",
+        "spec.instance-id",
+        "spec.ipam",
+        "spec.ipam.ipv6-pool",
+        "spec.ipam.ipv6-pool.owner",
+        "spec.ipam.ipv6-pool.resource",
+        "spec.ipam.max-above-watermark",
+        "spec.ipam.max-allocate",
+        "spec.ipam.min-allocate",
+        "spec.ipam.podCIDRs",
+        "spec.ipam.pool",
+        "spec.ipam.pool.owner",
+        "spec.ipam.pool.resource",
+        "spec.ipam.pools.allocated",
+        "spec.ipam.pools.requested",
+        "spec.ipam.pools.requested.needed",
+        "spec.ipam.pools.requested.needed.ipv4-addrs",
+        "spec.ipam.pools.requested.needed.ipv6-addrs",
+        "spec.ipam.pre-allocate",
+        "status",
+        "status.azure.interfaces.GatewayIP",
+        "status.azure.interfaces.addresses",
+        "status.eni.enis.number",
+        "status.eni.enis.tags",
+        "status.ipam.ipv6-used",
+        "status.ipam.ipv6-used.owner",
+        "status.ipam.ipv6-used.resource",
+        "status.ipam.release-ips",
+        "status.ipam.release-ipv6s",
+        "status.ipam.used",
+        "status.ipam.used.owner",
+        "status.ipam.used.resource"
+      ],
+      "added": {
+        "spec.ipam.static-ip-tags": "map[string]string",
+        "status.eni.enis.public-ip": "string",
+        "status.ipam.assigned-static-ip": "string"
+      },
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          21,
+          22
+        ],
+        "kind": [
+          23,
+          24
+        ],
+        "spec.alibaba-cloud.availability-zone": [
+          25,
+          26
+        ],
+        "spec.alibaba-cloud.security-group-tags": [
+          27,
+          28
+        ],
+        "spec.alibaba-cloud.security-groups": [
+          29,
+          30
+        ],
+        "spec.alibaba-cloud.vswitch-tags": [
+          31,
+          32
+        ],
+        "spec.azure.interface-name": [
+          33,
+          34
+        ],
+        "spec.encryption.key": [
+          35,
+          36
+        ],
+        "spec.eni.availability-zone": [
+          25,
+          26
+        ],
+        "spec.eni.delete-on-termination": [
+          37,
+          38
+        ],
+        "spec.eni.disable-prefix-delegation": [
+          39,
+          40
+        ],
+        "spec.eni.exclude-interface-tags": [
+          41,
+          42
+        ],
+        "spec.eni.first-interface-index": [
+          43,
+          44
+        ],
+        "spec.eni.instance-id": [
+          45,
+          15
+        ],
+        "spec.eni.max-above-watermark": [
+          46,
+          16
+        ],
+        "spec.eni.min-allocate": [
+          47,
+          17
+        ],
+        "spec.eni.node-subnet-id": [
+          48,
+          49
+        ],
+        "spec.eni.pre-allocate": [
+          50,
+          18
+        ],
+        "spec.eni.security-group-tags": [
+          51,
+          52
+        ],
+        "spec.eni.security-groups": [
+          29,
+          30
+        ],
+        "spec.eni.subnet-ids": [
+          53,
+          54
+        ],
+        "spec.eni.subnet-tags": [
+          55,
+          56
+        ],
+        "spec.eni.use-primary-address": [
+          57,
+          58
+        ],
+        "spec.health": [
+          59,
+          60
+        ],
+        "spec.instance-id": [
+          61,
+          62
+        ],
+        "spec.ipam": [
+          63,
+          64
+        ],
+        "spec.ipam.ipv6-pool": [
+          65,
+          66
+        ],
+        "spec.ipam.ipv6-pool.owner": [
+          67,
+          68
+        ],
+        "spec.ipam.ipv6-pool.resource": [
+          69,
+          70
+        ],
+        "spec.ipam.max-above-watermark": [
+          71,
+          72
+        ],
+        "spec.ipam.max-allocate": [
+          73,
+          74
+        ],
+        "spec.ipam.min-allocate": [
+          75,
+          76
+        ],
+        "spec.ipam.podCIDRs": [
+          77,
+          78
+        ],
+        "spec.ipam.pool": [
+          79,
+          80
+        ],
+        "spec.ipam.pool.owner": [
+          67,
+          68
+        ],
+        "spec.ipam.pool.resource": [
+          69,
+          70
+        ],
+        "spec.ipam.pools.allocated": [
+          81,
+          82
+        ],
+        "spec.ipam.pools.requested": [
+          83,
+          84
+        ],
+        "spec.ipam.pools.requested.needed": [
+          85,
+          86
+        ],
+        "spec.ipam.pools.requested.needed.ipv4-addrs": [
+          87,
+          88
+        ],
+        "spec.ipam.pools.requested.needed.ipv6-addrs": [
+          89,
+          90
+        ],
+        "spec.ipam.pre-allocate": [
+          91,
+          2
+        ],
+        "spec.ipam.static-ip-tags": [
+          null,
+          92
+        ],
+        "status": [
+          93,
+          94
+        ],
+        "status.azure.interfaces.GatewayIP": [
+          95,
+          20
+        ],
+        "status.azure.interfaces.addresses": [
+          96,
+          4
+        ],
+        "status.eni.enis.number": [
+          97,
+          98
+        ],
+        "status.eni.enis.public-ip": [
+          null,
+          99
+        ],
+        "status.eni.enis.tags": [
+          100,
+          101
+        ],
+        "status.ipam.assigned-static-ip": [
+          null,
+          102
+        ],
+        "status.ipam.ipv6-used": [
+          103,
+          104
+        ],
+        "status.ipam.ipv6-used.owner": [
+          67,
+          68
+        ],
+        "status.ipam.ipv6-used.resource": [
+          69,
+          70
+        ],
+        "status.ipam.release-ips": [
+          105,
+          106
+        ],
+        "status.ipam.release-ipv6s": [
+          107,
+          108
+        ],
+        "status.ipam.used": [
+          109,
+          110
+        ],
+        "status.ipam.used.owner": [
+          67,
+          68
+        ],
+        "status.ipam.used.resource": [
+          69,
+          70
+        ],
+        "": [
+          111,
+          112
+        ]
+      }
+    },
+    "1.16.0": {
+      "added": {
+        "spec.ipam.ipv6-pool": "map[string]object",
+        "status.ipam.ipv6-used": "map[string]object",
+        "status.ipam.release-ipv6s": "map[string]string"
+      },
+      "descriptionChanged": [
+        "spec.ipam.pool",
+        "status.ipam.release-ips",
+        "status.ipam.used"
+      ],
+      "descriptions": {
+        "spec.ipam.ipv6-pool": [
+          null,
+          65
+        ],
+        "spec.ipam.pool": [
+          113,
+          79
+        ],
+        "status.ipam.ipv6-used": [
+          null,
+          103
+        ],
+        "status.ipam.release-ips": [
+          114,
+          105
+        ],
+        "status.ipam.release-ipv6s": [
+          null,
+          107
+        ],
+        "status.ipam.used": [
+          115,
+          109
+        ]
+      }
+    },
+    "1.15.3": {
+      "added": {
+        "spec.bootid": "string"
+      },
+      "descriptions": {
+        "spec.bootid": [
+          null,
+          116
+        ]
+      }
+    },
+    "1.15.0": {
+      "added": {
+        "status.alibaba-cloud.enis.vpc.secondary-cidrs": "string[]"
+      },
+      "removed": {
+        "spec.bootid": "string",
+        "spec.ipam.pod-cidr-allocation-threshold": "integer",
+        "spec.ipam.pod-cidr-release-threshold": "integer"
+      },
+      "descriptions": {
+        "status.alibaba-cloud.enis.vpc.secondary-cidrs": [
+          null,
+          117
+        ],
+        "spec.bootid": [
+          116,
+          null
+        ],
+        "spec.ipam.pod-cidr-allocation-threshold": [
+          118,
+          null
+        ],
+        "spec.ipam.pod-cidr-release-threshold": [
+          119,
+          null
+        ]
+      }
+    },
+    "1.14.9": {
+      "added": {
+        "spec.bootid": "string"
+      },
+      "descriptions": {
+        "spec.bootid": [
+          null,
+          116
+        ]
+      }
+    },
+    "1.14.0": {
+      "added": {
+        "spec.ipam.pools": "object"
+      },
+      "removed": {
+        "spec.bootid": "string"
+      },
+      "descriptions": {
+        "spec.ipam.pools": [
+          null,
+          120
+        ],
+        "spec.bootid": [
+          116,
+          null
+        ]
+      }
+    },
+    "1.13.14": {
+      "added": {
+        "spec.bootid": "string"
+      },
+      "descriptions": {
+        "spec.bootid": [
+          null,
+          116
+        ]
+      }
+    },
+    "1.13.0": {
+      "added": {
+        "spec.eni.node-subnet-id": "string"
+      },
+      "descriptions": {
+        "spec.eni.node-subnet-id": [
+          null,
+          48
+        ]
+      }
+    },
+    "1.12.0": {
+      "added": {
+        "spec.eni.disable-prefix-delegation": "boolean",
+        "spec.eni.exclude-interface-tags": "map[string]string",
+        "spec.eni.use-primary-address": "boolean",
+        "spec.ingress": "object",
+        "spec.ipam.pod-cidr-allocation-threshold": "integer",
+        "spec.ipam.pod-cidr-release-threshold": "integer",
+        "status.eni.enis.prefixes": "string[]",
+        "status.eni.enis.tags": "map[string]string",
+        "status.ipam.pod-cidrs": "map[string]object"
+      },
+      "descriptions": {
+        "spec.eni.disable-prefix-delegation": [
+          null,
+          39
+        ],
+        "spec.eni.exclude-interface-tags": [
+          null,
+          41
+        ],
+        "spec.eni.use-primary-address": [
+          null,
+          57
+        ],
+        "spec.ingress": [
+          null,
+          121
+        ],
+        "spec.ipam.pod-cidr-allocation-threshold": [
+          null,
+          118
+        ],
+        "spec.ipam.pod-cidr-release-threshold": [
+          null,
+          119
+        ],
+        "status.eni.enis.prefixes": [
+          null,
+          13
+        ],
+        "status.eni.enis.tags": [
+          null,
+          100
+        ],
+        "status.ipam.pod-cidrs": [
+          null,
+          122
+        ]
+      }
+    },
+    "1.11.1": {
+      "added": {
+        "status.ipam.release-ips": "map[string]string"
+      },
+      "descriptions": {
+        "status.ipam.release-ips": [
+          null,
+          114
+        ]
+      }
+    },
+    "1.11.0": {
+      "added": {
+        "spec.eni.subnet-ids": "string[]"
+      },
+      "descriptions": {
+        "spec.eni.subnet-ids": [
+          null,
+          53
+        ]
+      }
+    },
+    "1.10.2": {
+      "added": {
+        "status.azure.interfaces.cidr": "string"
+      },
+      "descriptions": {
+        "status.azure.interfaces.cidr": [
+          null,
+          8
+        ]
+      }
+    },
+    "1.10.0": {
+      "added": {
+        "spec.alibaba-cloud": "object",
+        "status.alibaba-cloud": "object",
+        "status.azure.interfaces.gateway": "string"
+      },
+      "descriptionChanged": [
+        "status.azure.interfaces.GatewayIP"
+      ],
+      "removed": {
+        "status.azure.interfaces.cidr": "string"
+      },
+      "descriptions": {
+        "spec.alibaba-cloud": [
+          null,
+          123
+        ],
+        "status.alibaba-cloud": [
+          null,
+          124
+        ],
+        "status.azure.interfaces.GatewayIP": [
+          125,
+          95
+        ],
+        "status.azure.interfaces.gateway": [
+          null,
+          126
+        ],
+        "status.azure.interfaces.cidr": [
+          8,
+          null
+        ]
+      }
+    },
+    "1.9.9": {
+      "added": {
+        "status.azure.interfaces.cidr": "string"
+      },
+      "descriptions": {
+        "status.azure.interfaces.cidr": [
+          null,
+          8
+        ]
+      }
+    },
+    "1.9.7": {
+      "descriptionChanged": [
+        "status.eni.enis.addresses"
+      ],
+      "descriptions": {
+        "status.eni.enis.addresses": [
+          127,
+          128
+        ]
+      }
+    },
+    "1.9.6": {
+      "added": {
+        "status.azure.interfaces.GatewayIP": "string"
+      },
+      "descriptions": {
+        "status.azure.interfaces.GatewayIP": [
+          null,
+          125
+        ]
+      }
+    }
+  },
+  "texts": [
+    "AllowFirstIP allows the first IP of each allocated CIDR to be used.",
+    "AllowLastIP allows the last IP of each allocated CIDR to be used.",
+    "PreAllocate defines the number of IP addresses that must be\navailable for allocation in the IPAMspec. It defines the buffer of\naddresses available immediately without requiring cilium-operator to\nget involved.",
+    "PreAllocate defines the number of IP addresses that must be\navailable for allocation in the IPAMSpec. It defines the buffer of\naddresses available immediately without requiring cilium-operator to\nget involved.",
+    "Addresses is the list of all IPs associated with the interface,\nincluding all secondary addresses",
+    "Addresses is the list of secondary IPs associated with the interface.\nThe primary IP is tracked separately in the IP field, but is also\nincluded here when the operator is configured to expose it for\nallocation.",
+    "Subnet is the subnet the address belongs to",
+    "Subnet is the subnet the address belongs to.\n\nDeprecated: use AzureInterface.Subnet.ID. Populated as a mirror for one\nrelease so external consumers of CiliumNode.Status.Azure can migrate.",
+    "CIDR is the range that the interface belongs to.",
+    "CIDR is the range that the interface belongs to.\n\nDeprecated: use Subnet.CIDR. Retained for one release so agent/operator\nrolling upgrades work in either order.",
+    "IP is the primary IP of the interface",
+    "Subnet is the subnet the interface is attached to.",
+    "IPv6Prefixes is the list of all IPv6 /80 delegated prefixes associated with the ENI",
+    "Prefixes is the list of all /28 prefixes associated with the ENI",
+    "Prefixes is the list of all IPv4 /28 delegated prefixes associated with the ENI",
+    "InstanceID is the AWS InstanceId of the node. The InstanceID is used\nto retrieve AWS metadata for the node.\n\nOBSOLETE: This field is obsolete, please use Spec.InstanceID",
+    "MaxAboveWatermark is the maximum number of addresses to allocate\nbeyond the addresses needed to reach the PreAllocate watermark.\nGoing above the watermark can help reduce the number of API calls to\nallocate IPs, e.g. when a new ENI is allocated, as many secondary\nIPs as possible are allocated. Limiting the amount can help reduce\nwaste of IPs.\n\nOBSOLETE: This field is obsolete, please use Spec.IPAM.MaxAboveWatermark",
+    "MinAllocate is the minimum number of IPs that must be allocated when\nthe node is first bootstrapped. It defines the minimum base socket\nof addresses that must be available. After reaching this watermark,\nthe PreAllocate and MaxAboveWatermark logic takes over to continue\nallocating IPs.\n\nOBSOLETE: This field is obsolete, please use Spec.IPAM.MinAllocate",
+    "PreAllocate defines the number of IP addresses that must be\navailable for allocation in the IPAMspec. It defines the buffer of\naddresses available immediately without requiring cilium-operator to\nget involved.\n\nOBSOLETE: This field is obsolete, please use Spec.IPAM.PreAllocate",
+    "NodeIdentity is the Cilium numeric identity allocated for the node, if any.",
+    "GatewayIP is the interface's subnet's default route\n\nOBSOLETE: This field is obsolete, please use Gateway field instead.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "AvailabilityZone is the availability zone to use when allocating ENIs.",
+    "AvailabilityZone is the availability zone to use when allocating\nENIs.",
+    "SecurityGroupTags is the list of tags to use when evaluating which security groups to use for the ENI.",
+    "SecurityGroupTags is the list of tags to use when evaluating which\nsecurity groups to use for the ENI.",
+    "SecurityGroups is the list of security groups to attach to any ENI that is created and attached to the instance.",
+    "SecurityGroups is the list of security groups to attach to any ENI\nthat is created and attached to the instance.",
+    "VSwitchTags is the list of tags to use when evaluating which vSwitch to use for the ENI.",
+    "VSwitchTags is the list of tags to use when evaluating which\nvSwitch to use for the ENI.",
+    "InterfaceName is the name of the interface the cilium-operator will use to allocate all the IPs on",
+    "InterfaceName is the name of the interface the cilium-operator\nwill use to allocate all the IPs on",
+    "Key is the index to the key to use for encryption or 0 if encryption is disabled.",
+    "Key is the index to the key to use for encryption or 0 if encryption is\ndisabled.",
+    "DeleteOnTermination defines that the ENI should be deleted when the associated instance is terminated. If the parameter is not set the default behavior is to delete the ENI on instance termination.",
+    "DeleteOnTermination defines that the ENI should be deleted when the\nassociated instance is terminated. If the parameter is not set the\ndefault behavior is to delete the ENI on instance termination.",
+    "DisablePrefixDelegation determines whether ENI prefix delegation should be disabled on this node.",
+    "DisablePrefixDelegation determines whether ENI prefix delegation should be\ndisabled on this node.",
+    "ExcludeInterfaceTags is the list of tags to use when excluding ENIs for Cilium IP allocation. Any interface matching this set of tags will not be managed by Cilium.",
+    "ExcludeInterfaceTags is the list of tags to use when excluding ENIs for\nCilium IP allocation. Any interface matching this set of tags will not\nbe managed by Cilium.",
+    "FirstInterfaceIndex is the index of the first ENI to use for IP allocation, e.g. if the node has eth0, eth1, eth2 and FirstInterfaceIndex is set to 1, then only eth1 and eth2 will be used for IP allocation, eth0 will be ignored for PodIP allocation.",
+    "FirstInterfaceIndex is the index of the first ENI to use for IP\nallocation, e.g. if the node has eth0, eth1, eth2 and\nFirstInterfaceIndex is set to 1, then only eth1 and eth2 will be\nused for IP allocation, eth0 will be ignored for PodIP allocation.",
+    "InstanceID is the AWS InstanceId of the node. The InstanceID is used to retrieve AWS metadata for the node. \n OBSOLETE: This field is obsolete, please use Spec.InstanceID",
+    "MaxAboveWatermark is the maximum number of addresses to allocate beyond the addresses needed to reach the PreAllocate watermark. Going above the watermark can help reduce the number of API calls to allocate IPs, e.g. when a new ENI is allocated, as many secondary IPs as possible are allocated. Limiting the amount can help reduce waste of IPs. \n OBSOLETE: This field is obsolete, please use Spec.IPAM.MaxAboveWatermark",
+    "MinAllocate is the minimum number of IPs that must be allocated when the node is first bootstrapped. It defines the minimum base socket of addresses that must be available. After reaching this watermark, the PreAllocate and MaxAboveWatermark logic takes over to continue allocating IPs. \n OBSOLETE: This field is obsolete, please use Spec.IPAM.MinAllocate",
+    "NodeSubnetID is the subnet of the primary ENI the instance was brought up with. It is used as a sensible default subnet to create ENIs in.",
+    "NodeSubnetID is the subnet of the primary ENI the instance was brought up\nwith. It is used as a sensible default subnet to create ENIs in.",
+    "PreAllocate defines the number of IP addresses that must be available for allocation in the IPAMspec. It defines the buffer of addresses available immediately without requiring cilium-operator to get involved. \n OBSOLETE: This field is obsolete, please use Spec.IPAM.PreAllocate",
+    "SecurityGroupTags is the list of tags to use when evaliating what AWS security groups to use for the ENI.",
+    "SecurityGroupTags is the list of tags to use when evaliating what\nAWS security groups to use for the ENI.",
+    "SubnetIDs is the list of subnet ids to use when evaluating what AWS subnets to use for ENI and IP allocation.",
+    "SubnetIDs is the list of subnet ids to use when evaluating what AWS\nsubnets to use for ENI and IP allocation.",
+    "SubnetTags is the list of tags to use when evaluating what AWS subnets to use for ENI and IP allocation.",
+    "SubnetTags is the list of tags to use when evaluating what AWS\nsubnets to use for ENI and IP allocation.",
+    "UsePrimaryAddress determines whether an ENI's primary address should be available for allocations on the node",
+    "UsePrimaryAddress determines whether an ENI's primary address\nshould be available for allocations on the node",
+    "HealthAddressing is the addressing information for health connectivity checking.",
+    "HealthAddressing is the addressing information for health connectivity\nchecking.",
+    "InstanceID is the identifier of the node. This is different from the node name which is typically the FQDN of the node. The InstanceID typically refers to the identifier used by the cloud provider or some other means of identification.",
+    "InstanceID is the identifier of the node. This is different from the\nnode name which is typically the FQDN of the node. The InstanceID\ntypically refers to the identifier used by the cloud provider or\nsome other means of identification.",
+    "IPAM is the address management specification. This section can be populated by a user or it can be automatically populated by an IPAM operator.",
+    "IPAM is the address management specification. This section can be\npopulated by a user or it can be automatically populated by an IPAM\noperator.",
+    "IPv6Pool is the list of IPv6 addresses available to the node for allocation. When an IPv6 address is used, it will remain on this list but will be added to Status.IPAM.IPv6Used",
+    "IPv6Pool is the list of IPv6 addresses available to the node for allocation.\nWhen an IPv6 address is used, it will remain on this list but will be added to\nStatus.IPAM.IPv6Used",
+    "Owner is the owner of the IP. This field is set if the IP has been allocated. It will be set to the pod name or another identifier representing the usage of the IP \n The owner field is left blank for an entry in Spec.IPAM.Pool and filled out as the IP is used and also added to Status.IPAM.Used.",
+    "Owner is the owner of the IP. This field is set if the IP has been\nallocated. It will be set to the pod name or another identifier\nrepresenting the usage of the IP\n\nThe owner field is left blank for an entry in Spec.IPAM.Pool and\nfilled out as the IP is used and also added to Status.IPAM.Used.",
+    "Resource is set for both available and allocated IPs, it represents what resource the IP is associated with, e.g. in combination with AWS ENI, this will refer to the ID of the ENI",
+    "Resource is set for both available and allocated IPs, it represents\nwhat resource the IP is associated with, e.g. in combination with\nAWS ENI, this will refer to the ID of the ENI",
+    "MaxAboveWatermark is the maximum number of addresses to allocate beyond the addresses needed to reach the PreAllocate watermark. Going above the watermark can help reduce the number of API calls to allocate IPs, e.g. when a new ENI is allocated, as many secondary IPs as possible are allocated. Limiting the amount can help reduce waste of IPs.",
+    "MaxAboveWatermark is the maximum number of addresses to allocate\nbeyond the addresses needed to reach the PreAllocate watermark.\nGoing above the watermark can help reduce the number of API calls to\nallocate IPs, e.g. when a new ENI is allocated, as many secondary\nIPs as possible are allocated. Limiting the amount can help reduce\nwaste of IPs.",
+    "MaxAllocate is the maximum number of IPs that can be allocated to the node. When the current amount of allocated IPs will approach this value, the considered value for PreAllocate will decrease down to 0 in order to not attempt to allocate more addresses than defined.",
+    "MaxAllocate is the maximum number of IPs that can be allocated to the\nnode. When the current amount of allocated IPs will approach this value,\nthe considered value for PreAllocate will decrease down to 0 in order to\nnot attempt to allocate more addresses than defined.",
+    "MinAllocate is the minimum number of IPs that must be allocated when the node is first bootstrapped. It defines the minimum base socket of addresses that must be available. After reaching this watermark, the PreAllocate and MaxAboveWatermark logic takes over to continue allocating IPs.",
+    "MinAllocate is the minimum number of IPs that must be allocated when\nthe node is first bootstrapped. It defines the minimum base socket\nof addresses that must be available. After reaching this watermark,\nthe PreAllocate and MaxAboveWatermark logic takes over to continue\nallocating IPs.",
+    "PodCIDRs is the list of CIDRs available to the node for allocation. When an IP is used, the IP will be added to Status.IPAM.Used",
+    "PodCIDRs is the list of CIDRs available to the node for allocation.\nWhen an IP is used, the IP will be added to Status.IPAM.Used",
+    "Pool is the list of IPv4 addresses available to the node for allocation. When an IPv4 address is used, it will remain on this list but will be added to Status.IPAM.Used",
+    "Pool is the list of IPv4 addresses available to the node for allocation.\nWhen an IPv4 address is used, it will remain on this list but will be added to\nStatus.IPAM.Used",
+    "Allocated contains the list of pooled CIDR assigned to this node. The operator will add new pod CIDRs to this field, whereas the agent will remove CIDRs it has released.",
+    "Allocated contains the list of pooled CIDR assigned to this node. The\noperator will add new pod CIDRs to this field, whereas the agent will\nremove CIDRs it has released.",
+    "Requested contains a list of IPAM pool requests, i.e. indicates how many addresses this node requests out of each pool listed here. This field is owned and written to by cilium-agent and read by the operator.",
+    "Requested contains a list of IPAM pool requests, i.e. indicates how many\naddresses this node requests out of each pool listed here. This field\nis owned and written to by cilium-agent and read by the operator.",
+    "Needed indicates how many IPs out of the above Pool this node requests from the operator. The operator runs a reconciliation loop to ensure each node always has enough PodCIDRs allocated in each pool to fulfill the requested number of IPs here.",
+    "Needed indicates how many IPs out of the above Pool this node requests\nfrom the operator. The operator runs a reconciliation loop to ensure each\nnode always has enough PodCIDRs allocated in each pool to fulfill the\nrequested number of IPs here.",
+    "IPv4Addrs contains the number of requested IPv4 addresses out of a given pool",
+    "IPv4Addrs contains the number of requested IPv4 addresses out of a given\npool",
+    "IPv6Addrs contains the number of requested IPv6 addresses out of a given pool",
+    "IPv6Addrs contains the number of requested IPv6 addresses out of a given\npool",
+    "PreAllocate defines the number of IP addresses that must be available for allocation in the IPAMspec. It defines the buffer of addresses available immediately without requiring cilium-operator to get involved.",
+    "StaticIPTags are used to determine the pool of IPs from which to\nattribute a static IP to the node. For example in AWS this is used to\nfilter Elastic IP Addresses.",
+    "Status defines the realized specification/configuration and status of the node.",
+    "Status defines the realized specification/configuration and status\nof the node.",
+    "GatewayIP is the interface's subnet's default route \n OBSOLETE: This field is obsolete, please use Gateway field instead.",
+    "Addresses is the list of all IPs associated with the interface, including all secondary addresses",
+    "Number is the interface index, it used in combination with FirstInterfaceIndex",
+    "Number is the interface index, it used in combination with\nFirstInterfaceIndex",
+    "PublicIP is the public IP associated with the ENI",
+    "Tags is the set of tags of the ENI. Used to detect ENIs which should not be managed by Cilium",
+    "Tags is the set of tags of the ENI. Used to detect ENIs which should\nnot be managed by Cilium",
+    "AssignedStaticIP is the static IP assigned to the node (ex: public Elastic IP address in AWS)",
+    "IPv6Used lists all IPv6 addresses out of Spec.IPAM.IPv6Pool which have been allocated and are in use.",
+    "IPv6Used lists all IPv6 addresses out of Spec.IPAM.IPv6Pool which have been\nallocated and are in use.",
+    "ReleaseIPs tracks the state for every IPv4 address considered for release. The value can be one of the following strings: * marked-for-release : Set by operator as possible candidate for IP * ready-for-release  : Acknowledged as safe to release by agent * do-not-release     : IP already in use / not owned by the node. Set by agent * released           : IP successfully released. Set by operator",
+    "ReleaseIPs tracks the state for every IPv4 address considered for release.\nThe value can be one of the following strings:\n* marked-for-release : Set by operator as possible candidate for IP\n* ready-for-release  : Acknowledged as safe to release by agent\n* do-not-release     : IP already in use / not owned by the node. Set by agent\n* released           : IP successfully released. Set by operator",
+    "ReleaseIPv6s tracks the state for every IPv6 address considered for release. The value can be one of the following strings: * marked-for-release : Set by operator as possible candidate for IP * ready-for-release  : Acknowledged as safe to release by agent * do-not-release     : IP already in use / not owned by the node. Set by agent * released           : IP successfully released. Set by operator",
+    "ReleaseIPv6s tracks the state for every IPv6 address considered for release.\nThe value can be one of the following strings:\n* marked-for-release : Set by operator as possible candidate for IP\n* ready-for-release  : Acknowledged as safe to release by agent\n* do-not-release     : IP already in use / not owned by the node. Set by agent\n* released           : IP successfully released. Set by operator",
+    "Used lists all IPv4 addresses out of Spec.IPAM.Pool which have been allocated and are in use.",
+    "Used lists all IPv4 addresses out of Spec.IPAM.Pool which have been allocated\nand are in use.",
+    "CiliumNode represents a node managed by Cilium. It contains a specification to control various node specific configuration aspects and a status section to represent the status of the node.",
+    "CiliumNode represents a node managed by Cilium. It contains a specification\nto control various node specific configuration aspects and a status section\nto represent the status of the node.",
+    "Pool is the list of IPs available to the node for allocation. When an IP is used, the IP will remain on this list but will be added to Status.IPAM.Used",
+    "ReleaseIPs tracks the state for every IP considered for release. value can be one of the following string : * marked-for-release : Set by operator as possible candidate for IP * ready-for-release  : Acknowledged as safe to release by agent * do-not-release     : IP already in use / not owned by the node. Set by agent * released           : IP successfully released. Set by operator",
+    "Used lists all IPs out of Spec.IPAM.Pool which have been allocated and are in use.",
+    "BootID is a unique node identifier generated on boot",
+    "SecondaryCIDRs is the list of Secondary CIDRs associated with the VPC",
+    "PodCIDRAllocationThreshold defines the minimum number of free IPs which must be available to this node via its pod CIDR pool. If the total number of IP addresses in the pod CIDR pool is less than this value, the pod CIDRs currently in-use by this node will be marked as depleted and cilium-operator will allocate a new pod CIDR to this node. This value effectively defines the buffer of IP addresses available immediately without requiring cilium-operator to get involved.",
+    "PodCIDRReleaseThreshold defines the maximum number of free IPs which may be available to this node via its pod CIDR pool. While the total number of free IP addresses in the pod CIDR pool is larger than this value, cilium-agent will attempt to release currently unused pod CIDRs.",
+    "Pools contains the list of assigned IPAM pools for this node.",
+    "IngressAddressing is the addressing information for Ingress listener.",
+    "PodCIDRs lists the status of each pod CIDR allocated to this node.",
+    "AlibabaCloud is the AlibabaCloud IPAM specific configuration.",
+    "AlibabaCloud is the AlibabaCloud specific status of the node.",
+    "GatewayIP is the interface's subnet's default route",
+    "Gateway is the interface's subnet's default route",
+    "Addresses is the list of all IPs associated with the ENI, including all secondary addresses",
+    "Addresses is the list of all secondary IPs associated with the ENI"
+  ]
+}

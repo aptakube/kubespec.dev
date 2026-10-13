@@ -1,0 +1,135 @@
+{
+  "versions": {
+    "v2.7.0": {
+      "descriptionChanged": [
+        "spec.certSecretRef",
+        "spec.proxy",
+        "spec.serviceAccountName"
+      ],
+      "added": {
+        "spec.proxySecretRef": "object"
+      },
+      "descriptions": {
+        "spec.certSecretRef": [
+          0,
+          1
+        ],
+        "spec.proxy": [
+          2,
+          3
+        ],
+        "spec.proxySecretRef": [
+          null,
+          4
+        ],
+        "spec.serviceAccountName": [
+          5,
+          6
+        ]
+      }
+    },
+    "v2.6.0": {
+      "added": {
+        "spec.commitStatusExpr": "string",
+        "spec.serviceAccountName": "string"
+      },
+      "descriptions": {
+        "spec.commitStatusExpr": [
+          null,
+          7
+        ],
+        "spec.serviceAccountName": [
+          null,
+          5
+        ]
+      }
+    },
+    "v2.4.0": {
+      "descriptionChanged": [
+        "spec.certSecretRef"
+      ],
+      "descriptions": {
+        "spec.certSecretRef": [
+          8,
+          0
+        ]
+      }
+    },
+    "v2.3.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.address",
+        "spec.certSecretRef",
+        "spec.interval",
+        "spec.secretRef",
+        "spec.suspend"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          9,
+          10
+        ],
+        "kind": [
+          11,
+          12
+        ],
+        "spec.address": [
+          13,
+          14
+        ],
+        "spec.certSecretRef": [
+          15,
+          8
+        ],
+        "spec.interval": [
+          16,
+          17
+        ],
+        "spec.secretRef": [
+          18,
+          19
+        ],
+        "spec.suspend": [
+          20,
+          21
+        ]
+      }
+    },
+    "v2.2.1": {
+      "added": {
+        "spec.interval": "string"
+      },
+      "descriptions": {
+        "spec.interval": [
+          null,
+          16
+        ]
+      }
+    }
+  },
+  "texts": [
+    "CertSecretRef specifies the Secret containing\na PEM-encoded CA certificate (in the `ca.crt` key).\n\nNote: Support for the `caFile` key has\nbeen deprecated.",
+    "CertSecretRef specifies the Secret containing TLS certificates\nfor secure communication.\n\nSupported configurations:\n- CA-only: Server authentication (provide ca.crt only)\n- mTLS: Mutual authentication (provide ca.crt + tls.crt + tls.key)\n- Client-only: Client authentication with system CA (provide tls.crt + tls.key only)\n\nLegacy keys \"caFile\", \"certFile\", \"keyFile\" are supported but deprecated. Use \"ca.crt\", \"tls.crt\", \"tls.key\" instead.",
+    "Proxy the HTTP/S address of the proxy server.",
+    "Proxy the HTTP/S address of the proxy server.\nDeprecated: Use ProxySecretRef instead. Will be removed in v1.",
+    "ProxySecretRef specifies the Secret containing the proxy configuration\nfor this Provider. The Secret should contain an 'address' key with the\nHTTP/S address of the proxy server. Optional 'username' and 'password'\nkeys can be provided for proxy authentication.",
+    "ServiceAccountName is the name of the service account used to\nauthenticate with services from cloud providers. An error is thrown if a\nstatic credential is also defined inside the Secret referenced by the\nSecretRef.",
+    "ServiceAccountName is the name of the Kubernetes ServiceAccount used to\nauthenticate with cloud provider services through workload identity.\nThis enables multi-tenant authentication without storing static credentials.\n\nSupported provider types: azureeventhub, azuredevops, googlepubsub\n\nWhen specified, the controller will:\n1. Create an OIDC token for the specified ServiceAccount\n2. Exchange it for cloud provider credentials via STS\n3. Use the obtained credentials for API authentication\n\nWhen unspecified, controller-level authentication is used (single-tenant).\n\nAn error is thrown if static credentials are also defined in SecretRef.\nThis field requires the ObjectLevelWorkloadIdentity feature gate to be enabled.",
+    "CommitStatusExpr is a CEL expression that evaluates to a string value\nthat can be used to generate a custom commit status message for use\nwith eligible Provider types (github, gitlab, gitea, bitbucketserver,\nbitbucket, azuredevops). Supported variables are: event, provider,\nand alert.",
+    "CertSecretRef specifies the Secret containing\na PEM-encoded CA certificate (in the `ca.crt` key).\n\n\nNote: Support for the `caFile` key has\nbeen deprecated.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Address specifies the endpoint, in a generic sense, to where alerts are sent. What kind of endpoint depends on the specific Provider type being used. For the generic Provider, for example, this is an HTTP/S address. For other Provider types this could be a project ID or a namespace.",
+    "Address specifies the endpoint, in a generic sense, to where alerts are sent.\nWhat kind of endpoint depends on the specific Provider type being used.\nFor the generic Provider, for example, this is an HTTP/S address.\nFor other Provider types this could be a project ID or a namespace.",
+    "CertSecretRef specifies the Secret containing a PEM-encoded CA certificate (in the `ca.crt` key). \n Note: Support for the `caFile` key has been deprecated.",
+    "Interval at which to reconcile the Provider with its Secret references. Deprecated and not used in v1beta3.",
+    "Interval at which to reconcile the Provider with its Secret references.\nDeprecated and not used in v1beta3.",
+    "SecretRef specifies the Secret containing the authentication credentials for this Provider.",
+    "SecretRef specifies the Secret containing the authentication\ncredentials for this Provider.",
+    "Suspend tells the controller to suspend subsequent events handling for this Provider.",
+    "Suspend tells the controller to suspend subsequent\nevents handling for this Provider."
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "versions": {
+    "v2.21.0": {
+      "added": {
+        "spec.azureServicePrincipal": "object"
+      },
+      "descriptions": {
+        "spec.azureServicePrincipal": [
+          null,
+          0
+        ]
+      }
+    },
+    "v2.20.0": {
+      "added": {
+        "spec.awsSecretManager.podIdentity.externalID": "string",
+        "spec.azureKeyVault.podIdentity.externalID": "string",
+        "spec.gcpSecretManager.podIdentity.externalID": "string",
+        "spec.oauth2": "object",
+        "spec.podIdentity.externalID": "string"
+      },
+      "descriptions": {
+        "spec.awsSecretManager.podIdentity.externalID": [
+          null,
+          1
+        ],
+        "spec.azureKeyVault.podIdentity.externalID": [
+          null,
+          1
+        ],
+        "spec.gcpSecretManager.podIdentity.externalID": [
+          null,
+          1
+        ],
+        "spec.podIdentity.externalID": [
+          null,
+          1
+        ]
+      }
+    },
+    "v2.19.0": {
+      "added": {
+        "spec.filePath": "string"
+      },
+      "descriptions": {
+        "spec.filePath": [
+          null,
+          2
+        ]
+      }
+    },
+    "v2.18.0": {
+      "added": {
+        "spec.hashiCorpVault.credential.serviceAccountName": "string"
+      }
+    },
+    "v2.17.0": {
+      "added": {
+        "spec.awsSecretManager.secrets.secretKey": "string",
+        "spec.boundServiceAccountToken": "object[]"
+      }
+    },
+    "v2.14.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.awsSecretManager.podIdentity",
+        "spec.azureKeyVault.podIdentity",
+        "spec.gcpSecretManager.podIdentity",
+        "spec.podIdentity"
+      ],
+      "added": {
+        "spec.awsSecretManager.podIdentity.identityAuthorityHost": "string",
+        "spec.awsSecretManager.podIdentity.identityTenantId": "string",
+        "spec.azureKeyVault.podIdentity.identityAuthorityHost": "string",
+        "spec.azureKeyVault.podIdentity.identityTenantId": "string",
+        "spec.gcpSecretManager.podIdentity.identityAuthorityHost": "string",
+        "spec.gcpSecretManager.podIdentity.identityTenantId": "string",
+        "spec.podIdentity.identityAuthorityHost": "string",
+        "spec.podIdentity.identityTenantId": "string"
+      },
+      "descriptions": {
+        "apiVersion": [
+          3,
+          4
+        ],
+        "kind": [
+          5,
+          6
+        ],
+        "spec.awsSecretManager.podIdentity": [
+          7,
+          8
+        ],
+        "spec.awsSecretManager.podIdentity.identityAuthorityHost": [
+          null,
+          9
+        ],
+        "spec.awsSecretManager.podIdentity.identityTenantId": [
+          null,
+          10
+        ],
+        "spec.azureKeyVault.podIdentity": [
+          7,
+          8
+        ],
+        "spec.azureKeyVault.podIdentity.identityAuthorityHost": [
+          null,
+          9
+        ],
+        "spec.azureKeyVault.podIdentity.identityTenantId": [
+          null,
+          10
+        ],
+        "spec.gcpSecretManager.podIdentity": [
+          7,
+          8
+        ],
+        "spec.gcpSecretManager.podIdentity.identityAuthorityHost": [
+          null,
+          9
+        ],
+        "spec.gcpSecretManager.podIdentity.identityTenantId": [
+          null,
+          10
+        ],
+        "spec.podIdentity": [
+          7,
+          8
+        ],
+        "spec.podIdentity.identityAuthorityHost": [
+          null,
+          9
+        ],
+        "spec.podIdentity.identityTenantId": [
+          null,
+          10
+        ]
+      }
+    },
+    "v2.13.0": {
+      "added": {
+        "spec.awsSecretManager": "object",
+        "spec.azureKeyVault.podIdentity.identityOwner": "string",
+        "spec.azureKeyVault.podIdentity.roleArn": "string",
+        "spec.configMapTargetRef": "object[]",
+        "spec.gcpSecretManager": "object",
+        "spec.hashiCorpVault.secrets.pkiData": "object",
+        "spec.hashiCorpVault.secrets.type": "string",
+        "spec.podIdentity.identityOwner": "string",
+        "spec.podIdentity.roleArn": "string"
+      },
+      "descriptions": {
+        "spec.awsSecretManager": [
+          null,
+          11
+        ],
+        "spec.azureKeyVault.podIdentity.identityOwner": [
+          null,
+          12
+        ],
+        "spec.azureKeyVault.podIdentity.roleArn": [
+          null,
+          13
+        ],
+        "spec.hashiCorpVault.secrets.type": [
+          null,
+          14
+        ],
+        "spec.podIdentity.identityOwner": [
+          null,
+          12
+        ],
+        "spec.podIdentity.roleArn": [
+          null,
+          13
+        ]
+      }
+    },
+    "v2.12.0": {
+      "added": {
+        "status": "object"
+      },
+      "descriptions": {
+        "status": [
+          null,
+          15
+        ]
+      }
+    },
+    "v2.9.0": {
+      "added": {
+        "spec.azureKeyVault.podIdentity": "object"
+      },
+      "descriptions": {
+        "spec.azureKeyVault.podIdentity": [
+          null,
+          7
+        ]
+      }
+    },
+    "v2.8.0": {
+      "optional": [
+        "spec.azureKeyVault.credentials"
+      ],
+      "added": {
+        "spec.podIdentity.identityId": "string"
+      }
+    },
+    "v2.7.0": {
+      "added": {
+        "spec.azureKeyVault": "object"
+      },
+      "descriptions": {
+        "spec.azureKeyVault": [
+          null,
+          16
+        ]
+      }
+    },
+    "v2.5.0": {
+      "added": {
+        "spec.hashiCorpVault.namespace": "string"
+      }
+    }
+  },
+  "texts": [
+    "AzureServicePrincipal defines Microsoft Entra service principal credentials\nthat can be shared by Azure scalers.",
+    "ExternalID sets the External ID to be used when assuming an identity. This is only applicable when using AWS pod identity with a RoleArn.",
+    "FilePath specifies a file containing auth parameters as JSON map[string]string.\nWhen set, auth params are read directly from this file instead.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "AuthPodIdentity allows users to select the platform native identity mechanism",
+    "AuthPodIdentity allows users to select the platform native identity\nmechanism",
+    "Set identityAuthorityHost to override the default Azure authority host. If this is set, then the IdentityTenantID must also be set",
+    "Set identityTenantId to override the default Azure tenant id. If this is set, then the IdentityID must also be set",
+    "AwsSecretManager is used to authenticate using AwsSecretManager",
+    "IdentityOwner configures which identity has to be used during auto discovery, keda or the scaled workload. Mutually exclusive with roleArn",
+    "RoleArn sets the AWS RoleArn to be used. Mutually exclusive with IdentityOwner",
+    "VaultSecretType defines the type of vault secret",
+    "TriggerAuthenticationStatus defines the observed state of TriggerAuthentication",
+    "AzureKeyVault is used to authenticate using Azure Key Vault"
+  ]
+}

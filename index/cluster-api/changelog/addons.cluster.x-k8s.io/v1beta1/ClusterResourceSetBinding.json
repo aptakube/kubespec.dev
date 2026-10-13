@@ -1,0 +1,131 @@
+{
+  "versions": {
+    "v1.10.0": {
+      "descriptionChanged": [
+        "spec"
+      ],
+      "descriptions": {
+        "spec": [
+          0,
+          1
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.bindings",
+        "spec.bindings.clusterResourceSetName",
+        "spec.bindings.resources",
+        "spec.bindings.resources.applied",
+        "spec.bindings.resources.hash",
+        "spec.bindings.resources.kind",
+        "spec.bindings.resources.lastAppliedTime",
+        "spec.bindings.resources.name",
+        "spec.clusterName"
+      ],
+      "descriptions": {
+        "spec.bindings": [
+          2,
+          3
+        ],
+        "spec.bindings.clusterResourceSetName": [
+          4,
+          5
+        ],
+        "spec.bindings.resources": [
+          6,
+          7
+        ],
+        "spec.bindings.resources.applied": [
+          8,
+          9
+        ],
+        "spec.bindings.resources.hash": [
+          10,
+          11
+        ],
+        "spec.bindings.resources.kind": [
+          12,
+          13
+        ],
+        "spec.bindings.resources.lastAppliedTime": [
+          14,
+          15
+        ],
+        "spec.bindings.resources.name": [
+          16,
+          17
+        ],
+        "spec.clusterName": [
+          18,
+          19
+        ]
+      }
+    },
+    "v1.7.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.bindings.resources.hash",
+        "spec.clusterName"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          20,
+          21
+        ],
+        "kind": [
+          22,
+          23
+        ],
+        "spec.bindings.resources.hash": [
+          24,
+          10
+        ],
+        "spec.clusterName": [
+          25,
+          18
+        ]
+      }
+    },
+    "v1.4.0": {
+      "added": {
+        "spec.clusterName": "string"
+      },
+      "descriptions": {
+        "spec.clusterName": [
+          null,
+          25
+        ]
+      }
+    }
+  },
+  "texts": [
+    "ClusterResourceSetBindingSpec defines the desired state of ClusterResourceSetBinding.",
+    "spec is the desired state of ClusterResourceSetBinding.",
+    "Bindings is a list of ClusterResourceSets and their resources.",
+    "bindings is a list of ClusterResourceSets and their resources.",
+    "ClusterResourceSetName is the name of the ClusterResourceSet that is applied to the owner cluster of the binding.",
+    "clusterResourceSetName is the name of the ClusterResourceSet that is applied to the owner cluster of the binding.",
+    "Resources is a list of resources that the ClusterResourceSet has.",
+    "resources is a list of resources that the ClusterResourceSet has.",
+    "Applied is to track if a resource is applied to the cluster or not.",
+    "applied is to track if a resource is applied to the cluster or not.",
+    "Hash is the hash of a resource's data. This can be used to decide if a resource is changed.\nFor \"ApplyOnce\" ClusterResourceSet.spec.strategy, this is no-op as that strategy does not act on change.",
+    "hash is the hash of a resource's data. This can be used to decide if a resource is changed.\nFor \"ApplyOnce\" ClusterResourceSet.spec.strategy, this is no-op as that strategy does not act on change.",
+    "Kind of the resource. Supported kinds are: Secrets and ConfigMaps.",
+    "kind of the resource. Supported kinds are: Secrets and ConfigMaps.",
+    "LastAppliedTime identifies when this resource was last applied to the cluster.",
+    "lastAppliedTime identifies when this resource was last applied to the cluster.",
+    "Name of the resource that is in the same namespace with ClusterResourceSet object.",
+    "name of the resource that is in the same namespace with ClusterResourceSet object.",
+    "ClusterName is the name of the Cluster this binding applies to.\nNote: this field mandatory in v1beta2.",
+    "clusterName is the name of the Cluster this binding applies to.\nNote: this field mandatory in v1beta2.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Hash is the hash of a resource's data. This can be used to decide if a resource is changed. For \"ApplyOnce\" ClusterResourceSet.spec.strategy, this is no-op as that strategy does not act on change.",
+    "ClusterName is the name of the Cluster this binding applies to. Note: this field mandatory in v1beta2."
+  ]
+}

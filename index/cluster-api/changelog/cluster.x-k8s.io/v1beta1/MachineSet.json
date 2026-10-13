@@ -1,0 +1,704 @@
+{
+  "versions": {
+    "v1.13.0": {
+      "added": {
+        "spec.template.spec.taints": "object[]"
+      },
+      "descriptions": {
+        "spec.template.spec.taints": [
+          null,
+          0
+        ]
+      }
+    },
+    "v1.11.0": {
+      "descriptionChanged": [
+        "status.failureMessage",
+        "status.failureReason",
+        "status.fullyLabeledReplicas"
+      ],
+      "descriptions": {
+        "status.failureMessage": [
+          1,
+          2
+        ],
+        "status.failureReason": [
+          3,
+          4
+        ],
+        "status.fullyLabeledReplicas": [
+          5,
+          6
+        ]
+      }
+    },
+    "v1.10.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.template.metadata",
+        "spec.template.metadata.labels",
+        "spec.template.spec",
+        "spec.template.spec.readinessGates.conditionType",
+        "status",
+        "status.availableReplicas",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason",
+        "status.failureMessage",
+        "status.failureReason",
+        "status.fullyLabeledReplicas",
+        "status.readyReplicas"
+      ],
+      "added": {
+        "spec.template.spec.readinessGates.polarity": "string"
+      },
+      "descriptions": {
+        "spec": [
+          7,
+          8
+        ],
+        "spec.template.metadata": [
+          9,
+          10
+        ],
+        "spec.template.metadata.labels": [
+          11,
+          12
+        ],
+        "spec.template.spec": [
+          13,
+          14
+        ],
+        "spec.template.spec.readinessGates.conditionType": [
+          15,
+          16
+        ],
+        "spec.template.spec.readinessGates.polarity": [
+          null,
+          17
+        ],
+        "status": [
+          18,
+          19
+        ],
+        "status.availableReplicas": [
+          20,
+          21
+        ],
+        "status.conditions.lastTransitionTime": [
+          22,
+          23
+        ],
+        "status.conditions.message": [
+          24,
+          25
+        ],
+        "status.conditions.reason": [
+          26,
+          27
+        ],
+        "status.failureMessage": [
+          28,
+          1
+        ],
+        "status.failureReason": [
+          29,
+          3
+        ],
+        "status.fullyLabeledReplicas": [
+          30,
+          5
+        ],
+        "status.readyReplicas": [
+          31,
+          32
+        ]
+      }
+    },
+    "v1.9.8": {
+      "added": {
+        "spec.machineNamingStrategy": "object"
+      },
+      "descriptions": {
+        "spec.machineNamingStrategy": [
+          null,
+          33
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.clusterName",
+        "spec.deletePolicy",
+        "spec.minReadySeconds",
+        "spec.replicas",
+        "spec.selector",
+        "spec.template",
+        "spec.template.metadata.annotations",
+        "spec.template.spec.bootstrap",
+        "spec.template.spec.bootstrap.configRef",
+        "spec.template.spec.bootstrap.configRef.fieldPath",
+        "spec.template.spec.bootstrap.dataSecretName",
+        "spec.template.spec.clusterName",
+        "spec.template.spec.failureDomain",
+        "spec.template.spec.infrastructureRef",
+        "spec.template.spec.infrastructureRef.fieldPath",
+        "spec.template.spec.nodeDeletionTimeout",
+        "spec.template.spec.nodeDrainTimeout",
+        "spec.template.spec.nodeVolumeDetachTimeout",
+        "spec.template.spec.providerID",
+        "spec.template.spec.version",
+        "status.conditions",
+        "status.conditions.reason",
+        "status.conditions.severity",
+        "status.conditions.status",
+        "status.conditions.type",
+        "status.failureMessage",
+        "status.failureReason",
+        "status.fullyLabeledReplicas",
+        "status.observedGeneration",
+        "status.replicas",
+        "status.selector"
+      ],
+      "added": {
+        "spec.template.spec.readinessGates": "object[]",
+        "status.v1beta2": "object"
+      },
+      "descriptions": {
+        "spec.clusterName": [
+          34,
+          35
+        ],
+        "spec.deletePolicy": [
+          36,
+          37
+        ],
+        "spec.minReadySeconds": [
+          38,
+          39
+        ],
+        "spec.replicas": [
+          40,
+          41
+        ],
+        "spec.selector": [
+          42,
+          43
+        ],
+        "spec.template": [
+          44,
+          45
+        ],
+        "spec.template.metadata.annotations": [
+          46,
+          47
+        ],
+        "spec.template.spec.bootstrap": [
+          48,
+          49
+        ],
+        "spec.template.spec.bootstrap.configRef": [
+          50,
+          51
+        ],
+        "spec.template.spec.bootstrap.configRef.fieldPath": [
+          52,
+          53
+        ],
+        "spec.template.spec.bootstrap.dataSecretName": [
+          54,
+          55
+        ],
+        "spec.template.spec.clusterName": [
+          34,
+          35
+        ],
+        "spec.template.spec.failureDomain": [
+          56,
+          57
+        ],
+        "spec.template.spec.infrastructureRef": [
+          58,
+          59
+        ],
+        "spec.template.spec.infrastructureRef.fieldPath": [
+          52,
+          53
+        ],
+        "spec.template.spec.nodeDeletionTimeout": [
+          60,
+          61
+        ],
+        "spec.template.spec.nodeDrainTimeout": [
+          62,
+          63
+        ],
+        "spec.template.spec.nodeVolumeDetachTimeout": [
+          64,
+          65
+        ],
+        "spec.template.spec.providerID": [
+          66,
+          67
+        ],
+        "spec.template.spec.readinessGates": [
+          null,
+          68
+        ],
+        "spec.template.spec.version": [
+          69,
+          70
+        ],
+        "status.conditions": [
+          71,
+          72
+        ],
+        "status.conditions.reason": [
+          73,
+          26
+        ],
+        "status.conditions.severity": [
+          74,
+          75
+        ],
+        "status.conditions.status": [
+          76,
+          77
+        ],
+        "status.conditions.type": [
+          78,
+          79
+        ],
+        "status.failureMessage": [
+          null,
+          28
+        ],
+        "status.failureReason": [
+          80,
+          29
+        ],
+        "status.fullyLabeledReplicas": [
+          81,
+          30
+        ],
+        "status.observedGeneration": [
+          82,
+          83
+        ],
+        "status.replicas": [
+          84,
+          85
+        ],
+        "status.selector": [
+          86,
+          87
+        ],
+        "status.v1beta2": [
+          null,
+          88
+        ]
+      }
+    },
+    "v1.7.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.deletePolicy",
+        "spec.minReadySeconds",
+        "spec.replicas",
+        "spec.selector",
+        "spec.selector.matchExpressions.operator",
+        "spec.selector.matchExpressions.values",
+        "spec.selector.matchLabels",
+        "spec.template",
+        "spec.template.metadata",
+        "spec.template.metadata.annotations",
+        "spec.template.metadata.labels",
+        "spec.template.spec",
+        "spec.template.spec.bootstrap",
+        "spec.template.spec.bootstrap.configRef",
+        "spec.template.spec.bootstrap.configRef.fieldPath",
+        "spec.template.spec.bootstrap.configRef.kind",
+        "spec.template.spec.bootstrap.configRef.name",
+        "spec.template.spec.bootstrap.configRef.namespace",
+        "spec.template.spec.bootstrap.configRef.resourceVersion",
+        "spec.template.spec.bootstrap.configRef.uid",
+        "spec.template.spec.bootstrap.dataSecretName",
+        "spec.template.spec.failureDomain",
+        "spec.template.spec.infrastructureRef",
+        "spec.template.spec.infrastructureRef.fieldPath",
+        "spec.template.spec.infrastructureRef.kind",
+        "spec.template.spec.infrastructureRef.name",
+        "spec.template.spec.infrastructureRef.namespace",
+        "spec.template.spec.infrastructureRef.resourceVersion",
+        "spec.template.spec.infrastructureRef.uid",
+        "spec.template.spec.nodeDeletionTimeout",
+        "spec.template.spec.nodeDrainTimeout",
+        "spec.template.spec.nodeVolumeDetachTimeout",
+        "spec.template.spec.providerID",
+        "spec.template.spec.version",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason",
+        "status.conditions.severity",
+        "status.conditions.type",
+        "status.failureReason",
+        "status.selector"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          89,
+          90
+        ],
+        "kind": [
+          91,
+          92
+        ],
+        "spec.deletePolicy": [
+          93,
+          36
+        ],
+        "spec.minReadySeconds": [
+          94,
+          38
+        ],
+        "spec.replicas": [
+          95,
+          40
+        ],
+        "spec.selector": [
+          96,
+          42
+        ],
+        "spec.selector.matchExpressions.operator": [
+          97,
+          98
+        ],
+        "spec.selector.matchExpressions.values": [
+          99,
+          100
+        ],
+        "spec.selector.matchLabels": [
+          101,
+          102
+        ],
+        "spec.template": [
+          103,
+          44
+        ],
+        "spec.template.metadata": [
+          104,
+          9
+        ],
+        "spec.template.metadata.annotations": [
+          105,
+          46
+        ],
+        "spec.template.metadata.labels": [
+          106,
+          11
+        ],
+        "spec.template.spec": [
+          107,
+          13
+        ],
+        "spec.template.spec.bootstrap": [
+          108,
+          48
+        ],
+        "spec.template.spec.bootstrap.configRef": [
+          109,
+          50
+        ],
+        "spec.template.spec.bootstrap.configRef.fieldPath": [
+          110,
+          52
+        ],
+        "spec.template.spec.bootstrap.configRef.kind": [
+          111,
+          112
+        ],
+        "spec.template.spec.bootstrap.configRef.name": [
+          113,
+          114
+        ],
+        "spec.template.spec.bootstrap.configRef.namespace": [
+          115,
+          116
+        ],
+        "spec.template.spec.bootstrap.configRef.resourceVersion": [
+          117,
+          118
+        ],
+        "spec.template.spec.bootstrap.configRef.uid": [
+          119,
+          120
+        ],
+        "spec.template.spec.bootstrap.dataSecretName": [
+          121,
+          54
+        ],
+        "spec.template.spec.failureDomain": [
+          122,
+          56
+        ],
+        "spec.template.spec.infrastructureRef": [
+          123,
+          58
+        ],
+        "spec.template.spec.infrastructureRef.fieldPath": [
+          110,
+          52
+        ],
+        "spec.template.spec.infrastructureRef.kind": [
+          111,
+          112
+        ],
+        "spec.template.spec.infrastructureRef.name": [
+          113,
+          114
+        ],
+        "spec.template.spec.infrastructureRef.namespace": [
+          115,
+          116
+        ],
+        "spec.template.spec.infrastructureRef.resourceVersion": [
+          117,
+          118
+        ],
+        "spec.template.spec.infrastructureRef.uid": [
+          119,
+          120
+        ],
+        "spec.template.spec.nodeDeletionTimeout": [
+          124,
+          60
+        ],
+        "spec.template.spec.nodeDrainTimeout": [
+          125,
+          62
+        ],
+        "spec.template.spec.nodeVolumeDetachTimeout": [
+          126,
+          64
+        ],
+        "spec.template.spec.providerID": [
+          127,
+          66
+        ],
+        "spec.template.spec.version": [
+          128,
+          69
+        ],
+        "status.conditions.lastTransitionTime": [
+          129,
+          22
+        ],
+        "status.conditions.message": [
+          130,
+          24
+        ],
+        "status.conditions.reason": [
+          131,
+          73
+        ],
+        "status.conditions.severity": [
+          132,
+          74
+        ],
+        "status.conditions.type": [
+          133,
+          78
+        ],
+        "status.failureReason": [
+          134,
+          80
+        ],
+        "status.selector": [
+          135,
+          86
+        ]
+      }
+    },
+    "v1.5.0": {
+      "descriptionChanged": [
+        "spec.minReadySeconds"
+      ],
+      "descriptions": {
+        "spec.minReadySeconds": [
+          136,
+          94
+        ]
+      }
+    },
+    "v1.3.0": {
+      "descriptionChanged": [
+        "spec.template"
+      ],
+      "added": {
+        "spec.template.spec.nodeVolumeDetachTimeout": "string"
+      },
+      "descriptions": {
+        "spec.template": [
+          137,
+          103
+        ],
+        "spec.template.spec.nodeVolumeDetachTimeout": [
+          null,
+          126
+        ]
+      }
+    },
+    "v1.2.0": {
+      "added": {
+        "spec.template.spec.nodeDeletionTimeout": "string"
+      },
+      "descriptions": {
+        "spec.template.spec.nodeDeletionTimeout": [
+          null,
+          124
+        ]
+      }
+    }
+  },
+  "texts": [
+    "taints are the node taints that Cluster API will manage.\nThis list is not necessarily complete: other Kubernetes components may add or remove other taints from nodes,\ne.g. the node controller might add the node.kubernetes.io/not-ready taint.\nOnly those taints defined in this list will be added or removed by core Cluster API controllers.\n\nThere can be at most 64 taints.\nA pod would have to tolerate all existing taints to run on the corresponding node.\n\nNOTE: This list is implemented as a \"map\" type, meaning that individual elements can be managed by different owners.",
+    "failureMessage will be set in the event that there is a terminal problem\nreconciling the Machine and will contain a more verbose string suitable\nfor logging and human consumption.\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md for more details.",
+    "failureMessage will be set in the event that there is a terminal problem\nreconciling the Machine and will contain a more verbose string suitable\nfor logging and human consumption.\n\nDeprecated: This field is deprecated and is going to be removed when support for v1beta1 will be dropped. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md for more details.",
+    "failureReason will be set in the event that there is a terminal problem\nreconciling the Machine and will contain a succinct value suitable\nfor machine interpretation.\n\nIn the event that there is a terminal problem reconciling the\nreplicas, both FailureReason and FailureMessage will be set. FailureReason\nwill be populated with a succinct value suitable for machine\ninterpretation, while FailureMessage will contain a more verbose\nstring suitable for logging and human consumption.\n\nThese fields should not be set for transitive errors that a\ncontroller faces that are expected to be fixed automatically over\ntime (like service outages), but instead indicate that something is\nfundamentally wrong with the MachineTemplate's spec or the configuration of\nthe machine controller, and that manual intervention is required. Examples\nof terminal errors would be invalid combinations of settings in the\nspec, values that are unsupported by the machine controller, or the\nresponsible machine controller itself being critically misconfigured.\n\nAny transient errors that occur during the reconciliation of Machines\ncan be added as events to the MachineSet object and/or logged in the\ncontroller's output.\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md for more details.",
+    "failureReason will be set in the event that there is a terminal problem\nreconciling the Machine and will contain a succinct value suitable\nfor machine interpretation.\n\nIn the event that there is a terminal problem reconciling the\nreplicas, both FailureReason and FailureMessage will be set. FailureReason\nwill be populated with a succinct value suitable for machine\ninterpretation, while FailureMessage will contain a more verbose\nstring suitable for logging and human consumption.\n\nThese fields should not be set for transitive errors that a\ncontroller faces that are expected to be fixed automatically over\ntime (like service outages), but instead indicate that something is\nfundamentally wrong with the MachineTemplate's spec or the configuration of\nthe machine controller, and that manual intervention is required. Examples\nof terminal errors would be invalid combinations of settings in the\nspec, values that are unsupported by the machine controller, or the\nresponsible machine controller itself being critically misconfigured.\n\nAny transient errors that occur during the reconciliation of Machines\ncan be added as events to the MachineSet object and/or logged in the\ncontroller's output.\n\nDeprecated: This field is deprecated and is going to be removed when support for v1beta1 will be dropped. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md for more details.",
+    "fullyLabeledReplicas is the number of replicas that have labels matching the labels of the machine template of the MachineSet.\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md for more details.",
+    "fullyLabeledReplicas is the number of replicas that have labels matching the labels of the machine template of the MachineSet.\n\nDeprecated: This field is deprecated and is going to be removed when support for v1beta1 will be dropped. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md for more details.",
+    "MachineSetSpec defines the desired state of MachineSet.",
+    "spec is the desired state of MachineSet.",
+    "Standard object's metadata.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "metadata is the standard object's metadata.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "Map of string keys and values that can be used to organize and categorize\n(scope and select) objects. May match selectors of replication controllers\nand services.\nMore info: http://kubernetes.io/docs/user-guide/labels",
+    "labels is a map of string keys and values that can be used to organize and categorize\n(scope and select) objects. May match selectors of replication controllers\nand services.\nMore info: http://kubernetes.io/docs/user-guide/labels",
+    "Specification of the desired behavior of the machine.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "spec is the specification of the desired behavior of the machine.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "conditionType refers to a positive polarity condition (status true means good) with matching type in the Machine's condition list.\nIf the conditions doesn't exist, it will be treated as unknown.\nNote: Both Cluster API conditions or conditions added by 3rd party controllers can be used as readiness gates.",
+    "conditionType refers to a condition with matching type in the Machine's condition list.\nIf the conditions doesn't exist, it will be treated as unknown.\nNote: Both Cluster API conditions or conditions added by 3rd party controllers can be used as readiness gates.",
+    "polarity of the conditionType specified in this readinessGate.\nValid values are Positive, Negative and omitted.\nWhen omitted, the default behaviour will be Positive.\nA positive polarity means that the condition should report a true status under normal conditions.\nA negative polarity means that the condition should report a false status under normal conditions.",
+    "MachineSetStatus defines the observed state of MachineSet.",
+    "status is the observed state of MachineSet.",
+    "The number of available replicas (ready for at least minReadySeconds) for this MachineSet.",
+    "availableReplicas is the number of available replicas (ready for at least minReadySeconds) for this MachineSet.",
+    "Last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed. If that is not known, then using the time when\nthe API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed. If that is not known, then using the time when\nthe API field changed is acceptable.",
+    "A human readable message indicating details about the transition.\nThis field may be empty.",
+    "message is a human readable message indicating details about the transition.\nThis field may be empty.",
+    "The reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may be empty.",
+    "reason is the reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may be empty.",
+    "Deprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md for more details.",
+    "In the event that there is a terminal problem reconciling the\nreplicas, both FailureReason and FailureMessage will be set. FailureReason\nwill be populated with a succinct value suitable for machine\ninterpretation, while FailureMessage will contain a more verbose\nstring suitable for logging and human consumption.\n\nThese fields should not be set for transitive errors that a\ncontroller faces that are expected to be fixed automatically over\ntime (like service outages), but instead indicate that something is\nfundamentally wrong with the MachineTemplate's spec or the configuration of\nthe machine controller, and that manual intervention is required. Examples\nof terminal errors would be invalid combinations of settings in the\nspec, values that are unsupported by the machine controller, or the\nresponsible machine controller itself being critically misconfigured.\n\nAny transient errors that occur during the reconciliation of Machines\ncan be added as events to the MachineSet object and/or logged in the\ncontroller's output.\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md for more details.",
+    "The number of replicas that have labels matching the labels of the machine template of the MachineSet.\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion. Please see https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20240916-improve-status-in-CAPI-resources.md for more details.",
+    "The number of ready replicas for this MachineSet. A machine is considered ready when the node has been created and is \"Ready\".",
+    "readyReplicas is the number of ready replicas for this MachineSet. A machine is considered ready when the node has been created and is \"Ready\".",
+    "machineNamingStrategy allows changing the naming pattern used when creating Machines.\nNote: InfraMachines & BootstrapConfigs will use the same name as the corresponding Machines.",
+    "ClusterName is the name of the Cluster this object belongs to.",
+    "clusterName is the name of the Cluster this object belongs to.",
+    "DeletePolicy defines the policy used to identify nodes to delete when downscaling.\nDefaults to \"Random\".  Valid values are \"Random, \"Newest\", \"Oldest\"",
+    "deletePolicy defines the policy used to identify nodes to delete when downscaling.\nDefaults to \"Random\".  Valid values are \"Random, \"Newest\", \"Oldest\"",
+    "MinReadySeconds is the minimum number of seconds for which a Node for a newly created machine should be ready before considering the replica available.\nDefaults to 0 (machine will be considered available as soon as the Node is ready)",
+    "minReadySeconds is the minimum number of seconds for which a Node for a newly created machine should be ready before considering the replica available.\nDefaults to 0 (machine will be considered available as soon as the Node is ready)",
+    "Replicas is the number of desired replicas.\nThis is a pointer to distinguish between explicit zero and unspecified.\n\n\nDefaults to:\n* if the Kubernetes autoscaler min size and max size annotations are set:\n  - if it's a new MachineSet, use min size\n  - if the replicas field of the old MachineSet is < min size, use min size\n  - if the replicas field of the old MachineSet is > max size, use max size\n  - if the replicas field of the old MachineSet is in the (min size, max size) range, keep the value from the oldMS\n* otherwise use 1\nNote: Defaulting will be run whenever the replicas field is not set:\n* A new MachineSet is created with replicas not set.\n* On an existing MachineSet the replicas field was first set and is now unset.\nThose cases are especially relevant for the following Kubernetes autoscaler use cases:\n* A new MachineSet is created and replicas should be managed by the autoscaler\n* An existing MachineSet which initially wasn't controlled by the autoscaler\n  should be later controlled by the autoscaler",
+    "replicas is the number of desired replicas.\nThis is a pointer to distinguish between explicit zero and unspecified.\n\nDefaults to:\n* if the Kubernetes autoscaler min size and max size annotations are set:\n  - if it's a new MachineSet, use min size\n  - if the replicas field of the old MachineSet is < min size, use min size\n  - if the replicas field of the old MachineSet is > max size, use max size\n  - if the replicas field of the old MachineSet is in the (min size, max size) range, keep the value from the oldMS\n* otherwise use 1\nNote: Defaulting will be run whenever the replicas field is not set:\n* A new MachineSet is created with replicas not set.\n* On an existing MachineSet the replicas field was first set and is now unset.\nThose cases are especially relevant for the following Kubernetes autoscaler use cases:\n* A new MachineSet is created and replicas should be managed by the autoscaler\n* An existing MachineSet which initially wasn't controlled by the autoscaler\n  should be later controlled by the autoscaler",
+    "Selector is a label query over machines that should match the replica count.\nLabel keys and values that must match in order to be controlled by this MachineSet.\nIt must match the machine template's labels.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors",
+    "selector is a label query over machines that should match the replica count.\nLabel keys and values that must match in order to be controlled by this MachineSet.\nIt must match the machine template's labels.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors",
+    "Template is the object that describes the machine that will be created if\ninsufficient replicas are detected.\nObject references to custom resources are treated as templates.",
+    "template is the object that describes the machine that will be created if\ninsufficient replicas are detected.\nObject references to custom resources are treated as templates.",
+    "Annotations is an unstructured key value map stored with a resource that may be\nset by external tools to store and retrieve arbitrary metadata. They are not\nqueryable and should be preserved when modifying objects.\nMore info: http://kubernetes.io/docs/user-guide/annotations",
+    "annotations is an unstructured key value map stored with a resource that may be\nset by external tools to store and retrieve arbitrary metadata. They are not\nqueryable and should be preserved when modifying objects.\nMore info: http://kubernetes.io/docs/user-guide/annotations",
+    "Bootstrap is a reference to a local struct which encapsulates\nfields to configure the Machine’s bootstrapping mechanism.",
+    "bootstrap is a reference to a local struct which encapsulates\nfields to configure the Machine’s bootstrapping mechanism.",
+    "ConfigRef is a reference to a bootstrap provider-specific resource\nthat holds configuration details. The reference is optional to\nallow users/operators to specify Bootstrap.DataSecretName without\nthe need of a controller.",
+    "configRef is a reference to a bootstrap provider-specific resource\nthat holds configuration details. The reference is optional to\nallow users/operators to specify Bootstrap.DataSecretName without\nthe need of a controller.",
+    "If referring to a piece of an object instead of an entire object, this string\nshould contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2].\nFor example, if the object reference is to a container within a pod, this would take on a value like:\n\"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered\nthe event) or if no container name is specified \"spec.containers[2]\" (container with\nindex 2 in this pod). This syntax is chosen only to have some well-defined way of\nreferencing a part of an object.\nTODO: this design is not final and this field is subject to change in the future.",
+    "If referring to a piece of an object instead of an entire object, this string\nshould contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2].\nFor example, if the object reference is to a container within a pod, this would take on a value like:\n\"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered\nthe event) or if no container name is specified \"spec.containers[2]\" (container with\nindex 2 in this pod). This syntax is chosen only to have some well-defined way of\nreferencing a part of an object.",
+    "DataSecretName is the name of the secret that stores the bootstrap data script.\nIf nil, the Machine should remain in the Pending state.",
+    "dataSecretName is the name of the secret that stores the bootstrap data script.\nIf nil, the Machine should remain in the Pending state.",
+    "FailureDomain is the failure domain the machine will be created in.\nMust match a key in the FailureDomains map stored on the cluster object.",
+    "failureDomain is the failure domain the machine will be created in.\nMust match a key in the FailureDomains map stored on the cluster object.",
+    "InfrastructureRef is a required reference to a custom resource\noffered by an infrastructure provider.",
+    "infrastructureRef is a required reference to a custom resource\noffered by an infrastructure provider.",
+    "NodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine\nhosts after the Machine is marked for deletion. A duration of 0 will retry deletion indefinitely.\nDefaults to 10 seconds.",
+    "nodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine\nhosts after the Machine is marked for deletion. A duration of 0 will retry deletion indefinitely.\nDefaults to 10 seconds.",
+    "NodeDrainTimeout is the total amount of time that the controller will spend on draining a node.\nThe default value is 0, meaning that the node can be drained without any time limitations.\nNOTE: NodeDrainTimeout is different from `kubectl drain --timeout`",
+    "nodeDrainTimeout is the total amount of time that the controller will spend on draining a node.\nThe default value is 0, meaning that the node can be drained without any time limitations.\nNOTE: NodeDrainTimeout is different from `kubectl drain --timeout`",
+    "NodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes\nto be detached. The default value is 0, meaning that the volumes can be detached without any time limitations.",
+    "nodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes\nto be detached. The default value is 0, meaning that the volumes can be detached without any time limitations.",
+    "ProviderID is the identification ID of the machine provided by the provider.\nThis field must match the provider ID as seen on the node object corresponding to this machine.\nThis field is required by higher level consumers of cluster-api. Example use case is cluster autoscaler\nwith cluster-api as provider. Clean-up logic in the autoscaler compares machines to nodes to find out\nmachines at provider which could not get registered as Kubernetes nodes. With cluster-api as a\ngeneric out-of-tree provider for autoscaler, this field is required by autoscaler to be\nable to have a provider view of the list of machines. Another list of nodes is queried from the k8s apiserver\nand then a comparison is done to find out unregistered machines and are marked for delete.\nThis field will be set by the actuators and consumed by higher level entities like autoscaler that will\nbe interfacing with cluster-api as generic provider.",
+    "providerID is the identification ID of the machine provided by the provider.\nThis field must match the provider ID as seen on the node object corresponding to this machine.\nThis field is required by higher level consumers of cluster-api. Example use case is cluster autoscaler\nwith cluster-api as provider. Clean-up logic in the autoscaler compares machines to nodes to find out\nmachines at provider which could not get registered as Kubernetes nodes. With cluster-api as a\ngeneric out-of-tree provider for autoscaler, this field is required by autoscaler to be\nable to have a provider view of the list of machines. Another list of nodes is queried from the k8s apiserver\nand then a comparison is done to find out unregistered machines and are marked for delete.\nThis field will be set by the actuators and consumed by higher level entities like autoscaler that will\nbe interfacing with cluster-api as generic provider.",
+    "readinessGates specifies additional conditions to include when evaluating Machine Ready condition.\n\nThis field can be used e.g. by Cluster API control plane providers to extend the semantic of the\nReady condition for the Machine they control, like the kubeadm control provider adding ReadinessGates\nfor the APIServerPodHealthy, SchedulerPodHealthy conditions, etc.\n\nAnother example are external controllers, e.g. responsible to install special software/hardware on the Machines;\nthey can include the status of those components with a new condition and add this condition to ReadinessGates.\n\nNOTE: This field is considered only for computing v1beta2 conditions.\nNOTE: In case readinessGates conditions start with the APIServer, ControllerManager, Scheduler prefix, and all those\nreadiness gates condition are reporting the same message, when computing the Machine's Ready condition those\nreadinessGates will be replaced by a single entry reporting \"Control plane components: \" + message.\nThis helps to improve readability of conditions bubbling up to the Machine's owner resource / to the Cluster).",
+    "Version defines the desired Kubernetes version.\nThis field is meant to be optionally used by bootstrap providers.",
+    "version defines the desired Kubernetes version.\nThis field is meant to be optionally used by bootstrap providers.",
+    "Conditions defines current service state of the MachineSet.",
+    "conditions defines current service state of the MachineSet.",
+    "The reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may not be empty.",
+    "Severity provides an explicit classification of Reason code, so the users or machines can immediately\nunderstand the current situation and act accordingly.\nThe Severity field MUST be set only when Status=False.",
+    "severity provides an explicit classification of Reason code, so the users or machines can immediately\nunderstand the current situation and act accordingly.\nThe Severity field MUST be set only when Status=False.",
+    "Status of the condition, one of True, False, Unknown.",
+    "status of the condition, one of True, False, Unknown.",
+    "Type of condition in CamelCase or in foo.example.com/CamelCase.\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions\ncan be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions\ncan be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "In the event that there is a terminal problem reconciling the\nreplicas, both FailureReason and FailureMessage will be set. FailureReason\nwill be populated with a succinct value suitable for machine\ninterpretation, while FailureMessage will contain a more verbose\nstring suitable for logging and human consumption.\n\n\nThese fields should not be set for transitive errors that a\ncontroller faces that are expected to be fixed automatically over\ntime (like service outages), but instead indicate that something is\nfundamentally wrong with the MachineTemplate's spec or the configuration of\nthe machine controller, and that manual intervention is required. Examples\nof terminal errors would be invalid combinations of settings in the\nspec, values that are unsupported by the machine controller, or the\nresponsible machine controller itself being critically misconfigured.\n\n\nAny transient errors that occur during the reconciliation of Machines\ncan be added as events to the MachineSet object and/or logged in the\ncontroller's output.",
+    "The number of replicas that have labels matching the labels of the machine template of the MachineSet.",
+    "ObservedGeneration reflects the generation of the most recently observed MachineSet.",
+    "observedGeneration reflects the generation of the most recently observed MachineSet.",
+    "Replicas is the most recently observed number of replicas.",
+    "replicas is the most recently observed number of replicas.",
+    "Selector is the same as the label selector but in the string format to avoid introspection\nby clients. The string will be in the same format as the query-param syntax.\nMore info about label selectors: http://kubernetes.io/docs/user-guide/labels#label-selectors",
+    "selector is the same as the label selector but in the string format to avoid introspection\nby clients. The string will be in the same format as the query-param syntax.\nMore info about label selectors: http://kubernetes.io/docs/user-guide/labels#label-selectors",
+    "v1beta2 groups all the fields that will be added or modified in MachineSet's status with the V1Beta2 version.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "DeletePolicy defines the policy used to identify nodes to delete when downscaling. Defaults to \"Random\".  Valid values are \"Random, \"Newest\", \"Oldest\"",
+    "MinReadySeconds is the minimum number of seconds for which a Node for a newly created machine should be ready before considering the replica available. Defaults to 0 (machine will be considered available as soon as the Node is ready)",
+    "Replicas is the number of desired replicas. This is a pointer to distinguish between explicit zero and unspecified. Defaults to 1.",
+    "Selector is a label query over machines that should match the replica count. Label keys and values that must match in order to be controlled by this MachineSet. It must match the machine template's labels. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "Template is the object that describes the machine that will be created if insufficient replicas are detected. Object references to custom resources are treated as templates.",
+    "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels",
+    "Specification of the desired behavior of the machine. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "Bootstrap is a reference to a local struct which encapsulates fields to configure the Machine’s bootstrapping mechanism.",
+    "ConfigRef is a reference to a bootstrap provider-specific resource that holds configuration details. The reference is optional to allow users/operators to specify Bootstrap.DataSecretName without the need of a controller.",
+    "If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future.",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind of the referent.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Name of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
+    "Namespace of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
+    "Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "Specific resourceVersion to which this reference is made, if any.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids",
+    "UID of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids",
+    "DataSecretName is the name of the secret that stores the bootstrap data script. If nil, the Machine should remain in the Pending state.",
+    "FailureDomain is the failure domain the machine will be created in. Must match a key in the FailureDomains map stored on the cluster object.",
+    "InfrastructureRef is a required reference to a custom resource offered by an infrastructure provider.",
+    "NodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine hosts after the Machine is marked for deletion. A duration of 0 will retry deletion indefinitely. Defaults to 10 seconds.",
+    "NodeDrainTimeout is the total amount of time that the controller will spend on draining a node. The default value is 0, meaning that the node can be drained without any time limitations. NOTE: NodeDrainTimeout is different from `kubectl drain --timeout`",
+    "NodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes to be detached. The default value is 0, meaning that the volumes can be detached without any time limitations.",
+    "ProviderID is the identification ID of the machine provided by the provider. This field must match the provider ID as seen on the node object corresponding to this machine. This field is required by higher level consumers of cluster-api. Example use case is cluster autoscaler with cluster-api as provider. Clean-up logic in the autoscaler compares machines to nodes to find out machines at provider which could not get registered as Kubernetes nodes. With cluster-api as a generic out-of-tree provider for autoscaler, this field is required by autoscaler to be able to have a provider view of the list of machines. Another list of nodes is queried from the k8s apiserver and then a comparison is done to find out unregistered machines and are marked for delete. This field will be set by the actuators and consumed by higher level entities like autoscaler that will be interfacing with cluster-api as generic provider.",
+    "Version defines the desired Kubernetes version. This field is meant to be optionally used by bootstrap providers.",
+    "Last time the condition transitioned from one status to another. This should be when the underlying condition changed. If that is not known, then using the time when the API field changed is acceptable.",
+    "A human readable message indicating details about the transition. This field may be empty.",
+    "The reason for the condition's last transition in CamelCase. The specific API may choose whether or not this field is considered a guaranteed API. This field may not be empty.",
+    "Severity provides an explicit classification of Reason code, so the users or machines can immediately understand the current situation and act accordingly. The Severity field MUST be set only when Status=False.",
+    "Type of condition in CamelCase or in foo.example.com/CamelCase. Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "In the event that there is a terminal problem reconciling the replicas, both FailureReason and FailureMessage will be set. FailureReason will be populated with a succinct value suitable for machine interpretation, while FailureMessage will contain a more verbose string suitable for logging and human consumption. \n These fields should not be set for transitive errors that a controller faces that are expected to be fixed automatically over time (like service outages), but instead indicate that something is fundamentally wrong with the MachineTemplate's spec or the configuration of the machine controller, and that manual intervention is required. Examples of terminal errors would be invalid combinations of settings in the spec, values that are unsupported by the machine controller, or the responsible machine controller itself being critically misconfigured. \n Any transient errors that occur during the reconciliation of Machines can be added as events to the MachineSet object and/or logged in the controller's output.",
+    "Selector is the same as the label selector but in the string format to avoid introspection by clients. The string will be in the same format as the query-param syntax. More info about label selectors: http://kubernetes.io/docs/user-guide/labels#label-selectors",
+    "MinReadySeconds is the minimum number of seconds for which a newly created machine should be ready. Defaults to 0 (machine will be considered available as soon as it is ready)",
+    "Template is the object that describes the machine that will be created if insufficient replicas are detected. Object references to custom resources resources are treated as templates."
+  ]
+}

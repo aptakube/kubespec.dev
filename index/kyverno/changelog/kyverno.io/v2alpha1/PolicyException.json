@@ -1,0 +1,673 @@
+{
+  "versions": {
+    "v1.12.1": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.background",
+        "spec.conditions",
+        "spec.conditions.all",
+        "spec.conditions.all.operator",
+        "spec.conditions.all.value",
+        "spec.conditions.any",
+        "spec.conditions.any.operator",
+        "spec.conditions.any.value",
+        "spec.exceptions.policyName",
+        "spec.match.all.resources.annotations",
+        "spec.match.all.resources.name",
+        "spec.match.all.resources.names",
+        "spec.match.all.resources.namespaceSelector",
+        "spec.match.all.resources.namespaceSelector.matchExpressions.operator",
+        "spec.match.all.resources.namespaceSelector.matchExpressions.values",
+        "spec.match.all.resources.namespaceSelector.matchLabels",
+        "spec.match.all.resources.namespaces",
+        "spec.match.all.resources.selector",
+        "spec.match.all.resources.selector.matchExpressions.operator",
+        "spec.match.all.resources.selector.matchExpressions.values",
+        "spec.match.all.resources.selector.matchLabels",
+        "spec.match.all.subjects.apiGroup",
+        "spec.match.all.subjects.kind",
+        "spec.match.all.subjects.namespace",
+        "spec.match.any.resources.annotations",
+        "spec.match.any.resources.name",
+        "spec.match.any.resources.names",
+        "spec.match.any.resources.namespaceSelector",
+        "spec.match.any.resources.namespaceSelector.matchExpressions.operator",
+        "spec.match.any.resources.namespaceSelector.matchExpressions.values",
+        "spec.match.any.resources.namespaceSelector.matchLabels",
+        "spec.match.any.resources.namespaces",
+        "spec.match.any.resources.selector",
+        "spec.match.any.resources.selector.matchExpressions.operator",
+        "spec.match.any.resources.selector.matchExpressions.values",
+        "spec.match.any.resources.selector.matchLabels",
+        "spec.match.any.subjects.apiGroup",
+        "spec.match.any.subjects.kind",
+        "spec.match.any.subjects.namespace",
+        "spec.podSecurity",
+        "spec.podSecurity.controlName",
+        "spec.podSecurity.images",
+        "spec.podSecurity.restrictedField"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          0,
+          1
+        ],
+        "kind": [
+          2,
+          3
+        ],
+        "spec.background": [
+          4,
+          5
+        ],
+        "spec.conditions": [
+          6,
+          7
+        ],
+        "spec.conditions.all": [
+          8,
+          9
+        ],
+        "spec.conditions.all.operator": [
+          10,
+          11
+        ],
+        "spec.conditions.all.value": [
+          12,
+          13
+        ],
+        "spec.conditions.any": [
+          14,
+          15
+        ],
+        "spec.conditions.any.operator": [
+          10,
+          11
+        ],
+        "spec.conditions.any.value": [
+          12,
+          13
+        ],
+        "spec.exceptions.policyName": [
+          16,
+          17
+        ],
+        "spec.match.all.resources.annotations": [
+          18,
+          19
+        ],
+        "spec.match.all.resources.name": [
+          20,
+          21
+        ],
+        "spec.match.all.resources.names": [
+          22,
+          23
+        ],
+        "spec.match.all.resources.namespaceSelector": [
+          24,
+          25
+        ],
+        "spec.match.all.resources.namespaceSelector.matchExpressions.operator": [
+          26,
+          27
+        ],
+        "spec.match.all.resources.namespaceSelector.matchExpressions.values": [
+          28,
+          29
+        ],
+        "spec.match.all.resources.namespaceSelector.matchLabels": [
+          30,
+          31
+        ],
+        "spec.match.all.resources.namespaces": [
+          32,
+          33
+        ],
+        "spec.match.all.resources.selector": [
+          34,
+          35
+        ],
+        "spec.match.all.resources.selector.matchExpressions.operator": [
+          26,
+          27
+        ],
+        "spec.match.all.resources.selector.matchExpressions.values": [
+          28,
+          29
+        ],
+        "spec.match.all.resources.selector.matchLabels": [
+          30,
+          31
+        ],
+        "spec.match.all.subjects.apiGroup": [
+          36,
+          37
+        ],
+        "spec.match.all.subjects.kind": [
+          38,
+          39
+        ],
+        "spec.match.all.subjects.namespace": [
+          40,
+          41
+        ],
+        "spec.match.any.resources.annotations": [
+          18,
+          19
+        ],
+        "spec.match.any.resources.name": [
+          20,
+          21
+        ],
+        "spec.match.any.resources.names": [
+          22,
+          23
+        ],
+        "spec.match.any.resources.namespaceSelector": [
+          24,
+          25
+        ],
+        "spec.match.any.resources.namespaceSelector.matchExpressions.operator": [
+          26,
+          27
+        ],
+        "spec.match.any.resources.namespaceSelector.matchExpressions.values": [
+          28,
+          29
+        ],
+        "spec.match.any.resources.namespaceSelector.matchLabels": [
+          30,
+          31
+        ],
+        "spec.match.any.resources.namespaces": [
+          32,
+          33
+        ],
+        "spec.match.any.resources.selector": [
+          34,
+          35
+        ],
+        "spec.match.any.resources.selector.matchExpressions.operator": [
+          26,
+          27
+        ],
+        "spec.match.any.resources.selector.matchExpressions.values": [
+          28,
+          29
+        ],
+        "spec.match.any.resources.selector.matchLabels": [
+          30,
+          31
+        ],
+        "spec.match.any.subjects.apiGroup": [
+          36,
+          37
+        ],
+        "spec.match.any.subjects.kind": [
+          38,
+          39
+        ],
+        "spec.match.any.subjects.namespace": [
+          40,
+          41
+        ],
+        "spec.podSecurity": [
+          42,
+          43
+        ],
+        "spec.podSecurity.controlName": [
+          44,
+          45
+        ],
+        "spec.podSecurity.images": [
+          46,
+          47
+        ],
+        "spec.podSecurity.restrictedField": [
+          48,
+          49
+        ]
+      }
+    },
+    "v1.12.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.background",
+        "spec.exceptions.policyName",
+        "spec.match.all.resources.annotations",
+        "spec.match.all.resources.name",
+        "spec.match.all.resources.names",
+        "spec.match.all.resources.namespaceSelector",
+        "spec.match.all.resources.namespaceSelector.matchExpressions.operator",
+        "spec.match.all.resources.namespaceSelector.matchExpressions.values",
+        "spec.match.all.resources.namespaceSelector.matchLabels",
+        "spec.match.all.resources.namespaces",
+        "spec.match.all.resources.selector",
+        "spec.match.all.resources.selector.matchExpressions.operator",
+        "spec.match.all.resources.selector.matchExpressions.values",
+        "spec.match.all.resources.selector.matchLabels",
+        "spec.match.all.subjects.apiGroup",
+        "spec.match.all.subjects.kind",
+        "spec.match.all.subjects.namespace",
+        "spec.match.any.resources.annotations",
+        "spec.match.any.resources.name",
+        "spec.match.any.resources.names",
+        "spec.match.any.resources.namespaceSelector",
+        "spec.match.any.resources.namespaceSelector.matchExpressions.operator",
+        "spec.match.any.resources.namespaceSelector.matchExpressions.values",
+        "spec.match.any.resources.namespaceSelector.matchLabels",
+        "spec.match.any.resources.namespaces",
+        "spec.match.any.resources.selector",
+        "spec.match.any.resources.selector.matchExpressions.operator",
+        "spec.match.any.resources.selector.matchExpressions.values",
+        "spec.match.any.resources.selector.matchLabels",
+        "spec.match.any.subjects.apiGroup",
+        "spec.match.any.subjects.kind",
+        "spec.match.any.subjects.namespace"
+      ],
+      "added": {
+        "spec.conditions": "object",
+        "spec.podSecurity": "object[]"
+      },
+      "descriptions": {
+        "apiVersion": [
+          1,
+          0
+        ],
+        "kind": [
+          3,
+          2
+        ],
+        "spec.background": [
+          5,
+          4
+        ],
+        "spec.conditions": [
+          null,
+          6
+        ],
+        "spec.exceptions.policyName": [
+          17,
+          16
+        ],
+        "spec.match.all.resources.annotations": [
+          19,
+          18
+        ],
+        "spec.match.all.resources.name": [
+          21,
+          20
+        ],
+        "spec.match.all.resources.names": [
+          23,
+          22
+        ],
+        "spec.match.all.resources.namespaceSelector": [
+          25,
+          24
+        ],
+        "spec.match.all.resources.namespaceSelector.matchExpressions.operator": [
+          27,
+          26
+        ],
+        "spec.match.all.resources.namespaceSelector.matchExpressions.values": [
+          29,
+          28
+        ],
+        "spec.match.all.resources.namespaceSelector.matchLabels": [
+          31,
+          30
+        ],
+        "spec.match.all.resources.namespaces": [
+          33,
+          32
+        ],
+        "spec.match.all.resources.selector": [
+          35,
+          34
+        ],
+        "spec.match.all.resources.selector.matchExpressions.operator": [
+          27,
+          26
+        ],
+        "spec.match.all.resources.selector.matchExpressions.values": [
+          29,
+          28
+        ],
+        "spec.match.all.resources.selector.matchLabels": [
+          31,
+          30
+        ],
+        "spec.match.all.subjects.apiGroup": [
+          37,
+          36
+        ],
+        "spec.match.all.subjects.kind": [
+          39,
+          38
+        ],
+        "spec.match.all.subjects.namespace": [
+          41,
+          40
+        ],
+        "spec.match.any.resources.annotations": [
+          19,
+          18
+        ],
+        "spec.match.any.resources.name": [
+          21,
+          20
+        ],
+        "spec.match.any.resources.names": [
+          23,
+          22
+        ],
+        "spec.match.any.resources.namespaceSelector": [
+          25,
+          24
+        ],
+        "spec.match.any.resources.namespaceSelector.matchExpressions.operator": [
+          27,
+          26
+        ],
+        "spec.match.any.resources.namespaceSelector.matchExpressions.values": [
+          29,
+          28
+        ],
+        "spec.match.any.resources.namespaceSelector.matchLabels": [
+          31,
+          30
+        ],
+        "spec.match.any.resources.namespaces": [
+          33,
+          32
+        ],
+        "spec.match.any.resources.selector": [
+          35,
+          34
+        ],
+        "spec.match.any.resources.selector.matchExpressions.operator": [
+          27,
+          26
+        ],
+        "spec.match.any.resources.selector.matchExpressions.values": [
+          29,
+          28
+        ],
+        "spec.match.any.resources.selector.matchLabels": [
+          31,
+          30
+        ],
+        "spec.match.any.subjects.apiGroup": [
+          37,
+          36
+        ],
+        "spec.match.any.subjects.kind": [
+          39,
+          38
+        ],
+        "spec.match.any.subjects.namespace": [
+          41,
+          40
+        ],
+        "spec.podSecurity": [
+          null,
+          42
+        ]
+      }
+    },
+    "v1.11.5": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.background",
+        "spec.exceptions.policyName",
+        "spec.match.all.resources.annotations",
+        "spec.match.all.resources.name",
+        "spec.match.all.resources.names",
+        "spec.match.all.resources.namespaceSelector",
+        "spec.match.all.resources.namespaceSelector.matchExpressions.operator",
+        "spec.match.all.resources.namespaceSelector.matchExpressions.values",
+        "spec.match.all.resources.namespaceSelector.matchLabels",
+        "spec.match.all.resources.namespaces",
+        "spec.match.all.resources.selector",
+        "spec.match.all.resources.selector.matchExpressions.operator",
+        "spec.match.all.resources.selector.matchExpressions.values",
+        "spec.match.all.resources.selector.matchLabels",
+        "spec.match.all.subjects.apiGroup",
+        "spec.match.all.subjects.kind",
+        "spec.match.all.subjects.namespace",
+        "spec.match.any.resources.annotations",
+        "spec.match.any.resources.name",
+        "spec.match.any.resources.names",
+        "spec.match.any.resources.namespaceSelector",
+        "spec.match.any.resources.namespaceSelector.matchExpressions.operator",
+        "spec.match.any.resources.namespaceSelector.matchExpressions.values",
+        "spec.match.any.resources.namespaceSelector.matchLabels",
+        "spec.match.any.resources.namespaces",
+        "spec.match.any.resources.selector",
+        "spec.match.any.resources.selector.matchExpressions.operator",
+        "spec.match.any.resources.selector.matchExpressions.values",
+        "spec.match.any.resources.selector.matchLabels",
+        "spec.match.any.subjects.apiGroup",
+        "spec.match.any.subjects.kind",
+        "spec.match.any.subjects.namespace"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          0,
+          1
+        ],
+        "kind": [
+          2,
+          3
+        ],
+        "spec.background": [
+          4,
+          5
+        ],
+        "spec.exceptions.policyName": [
+          16,
+          17
+        ],
+        "spec.match.all.resources.annotations": [
+          18,
+          19
+        ],
+        "spec.match.all.resources.name": [
+          20,
+          21
+        ],
+        "spec.match.all.resources.names": [
+          22,
+          23
+        ],
+        "spec.match.all.resources.namespaceSelector": [
+          24,
+          25
+        ],
+        "spec.match.all.resources.namespaceSelector.matchExpressions.operator": [
+          26,
+          27
+        ],
+        "spec.match.all.resources.namespaceSelector.matchExpressions.values": [
+          28,
+          29
+        ],
+        "spec.match.all.resources.namespaceSelector.matchLabels": [
+          30,
+          31
+        ],
+        "spec.match.all.resources.namespaces": [
+          32,
+          33
+        ],
+        "spec.match.all.resources.selector": [
+          34,
+          35
+        ],
+        "spec.match.all.resources.selector.matchExpressions.operator": [
+          26,
+          27
+        ],
+        "spec.match.all.resources.selector.matchExpressions.values": [
+          28,
+          29
+        ],
+        "spec.match.all.resources.selector.matchLabels": [
+          30,
+          31
+        ],
+        "spec.match.all.subjects.apiGroup": [
+          36,
+          37
+        ],
+        "spec.match.all.subjects.kind": [
+          38,
+          39
+        ],
+        "spec.match.all.subjects.namespace": [
+          40,
+          41
+        ],
+        "spec.match.any.resources.annotations": [
+          18,
+          19
+        ],
+        "spec.match.any.resources.name": [
+          20,
+          21
+        ],
+        "spec.match.any.resources.names": [
+          22,
+          23
+        ],
+        "spec.match.any.resources.namespaceSelector": [
+          24,
+          25
+        ],
+        "spec.match.any.resources.namespaceSelector.matchExpressions.operator": [
+          26,
+          27
+        ],
+        "spec.match.any.resources.namespaceSelector.matchExpressions.values": [
+          28,
+          29
+        ],
+        "spec.match.any.resources.namespaceSelector.matchLabels": [
+          30,
+          31
+        ],
+        "spec.match.any.resources.namespaces": [
+          32,
+          33
+        ],
+        "spec.match.any.resources.selector": [
+          34,
+          35
+        ],
+        "spec.match.any.resources.selector.matchExpressions.operator": [
+          26,
+          27
+        ],
+        "spec.match.any.resources.selector.matchExpressions.values": [
+          28,
+          29
+        ],
+        "spec.match.any.resources.selector.matchLabels": [
+          30,
+          31
+        ],
+        "spec.match.any.subjects.apiGroup": [
+          36,
+          37
+        ],
+        "spec.match.any.subjects.kind": [
+          38,
+          39
+        ],
+        "spec.match.any.subjects.namespace": [
+          40,
+          41
+        ]
+      }
+    },
+    "v1.10.0": {
+      "added": {
+        "spec.background": "boolean",
+        "spec.match.all.resources.operations": "string[]",
+        "spec.match.any.resources.operations": "string[]"
+      },
+      "descriptions": {
+        "spec.background": [
+          null,
+          4
+        ],
+        "spec.match.all.resources.operations": [
+          null,
+          50
+        ],
+        "spec.match.any.resources.operations": [
+          null,
+          50
+        ]
+      }
+    }
+  },
+  "texts": [
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Background controls if exceptions are applied to existing policies during a background scan. Optional. Default value is \"true\". The value must be set to \"false\" if the policy rule uses variables that are only available in the admission review request (e.g. user name).",
+    "Background controls if exceptions are applied to existing policies during a background scan.\nOptional. Default value is \"true\". The value must be set to \"false\" if the policy rule\nuses variables that are only available in the admission review request (e.g. user name).",
+    "Conditions are used to determine if a resource applies to the exception by evaluating a set of conditions. The declaration can contain nested `any` or `all` statements.",
+    "Conditions are used to determine if a resource applies to the exception by evaluating a\nset of conditions. The declaration can contain nested `any` or `all` statements.",
+    "AllConditions enable variable-based conditional rule execution. This is useful for finer control of when an rule is applied. A condition can reference object data using JMESPath notation. Here, all of the conditions need to pass.",
+    "AllConditions enable variable-based conditional rule execution. This is useful for\nfiner control of when an rule is applied. A condition can reference object data\nusing JMESPath notation.\nHere, all of the conditions need to pass.",
+    "Operator is the conditional operation to perform. Valid operators are: Equals, NotEquals, In, AnyIn, AllIn, NotIn, AnyNotIn, AllNotIn, GreaterThanOrEquals, GreaterThan, LessThanOrEquals, LessThan, DurationGreaterThanOrEquals, DurationGreaterThan, DurationLessThanOrEquals, DurationLessThan",
+    "Operator is the conditional operation to perform. Valid operators are:\nEquals, NotEquals, In, AnyIn, AllIn, NotIn, AnyNotIn, AllNotIn, GreaterThanOrEquals,\nGreaterThan, LessThanOrEquals, LessThan, DurationGreaterThanOrEquals, DurationGreaterThan,\nDurationLessThanOrEquals, DurationLessThan",
+    "Value is the conditional value, or set of values. The values can be fixed set or can be variables declared using JMESPath.",
+    "Value is the conditional value, or set of values. The values can be fixed set\nor can be variables declared using JMESPath.",
+    "AnyConditions enable variable-based conditional rule execution. This is useful for finer control of when an rule is applied. A condition can reference object data using JMESPath notation. Here, at least one of the conditions need to pass.",
+    "AnyConditions enable variable-based conditional rule execution. This is useful for\nfiner control of when an rule is applied. A condition can reference object data\nusing JMESPath notation.\nHere, at least one of the conditions need to pass.",
+    "PolicyName identifies the policy to which the exception is applied. The policy name uses the format <namespace>/<name> unless it references a ClusterPolicy.",
+    "PolicyName identifies the policy to which the exception is applied.\nThe policy name uses the format <namespace>/<name> unless it\nreferences a ClusterPolicy.",
+    "Annotations is a  map of annotations (key-value pairs of type string). Annotation keys and values support the wildcard characters \"*\" (matches zero or many characters) and \"?\" (matches at least one character).",
+    "Annotations is a  map of annotations (key-value pairs of type string). Annotation keys\nand values support the wildcard characters \"*\" (matches zero or many characters) and\n\"?\" (matches at least one character).",
+    "Name is the name of the resource. The name supports wildcard characters \"*\" (matches zero or many characters) and \"?\" (at least one character). NOTE: \"Name\" is being deprecated in favor of \"Names\".",
+    "Name is the name of the resource. The name supports wildcard characters\n\"*\" (matches zero or many characters) and \"?\" (at least one character).\nNOTE: \"Name\" is being deprecated in favor of \"Names\".",
+    "Names are the names of the resources. Each name supports wildcard characters \"*\" (matches zero or many characters) and \"?\" (at least one character).",
+    "Names are the names of the resources. Each name supports wildcard characters\n\"*\" (matches zero or many characters) and \"?\" (at least one character).",
+    "NamespaceSelector is a label selector for the resource namespace. Label keys and values in `matchLabels` support the wildcard characters `*` (matches zero or many characters) and `?` (matches one character).Wildcards allows writing label selectors like [\"storage.k8s.io/*\": \"*\"]. Note that using [\"*\" : \"*\"] matches any key and value but does not match an empty label set.",
+    "NamespaceSelector is a label selector for the resource namespace. Label keys and values\nin `matchLabels` support the wildcard characters `*` (matches zero or many characters)\nand `?` (matches one character).Wildcards allows writing label selectors like\n[\"storage.k8s.io/*\": \"*\"]. Note that using [\"*\" : \"*\"] matches any key and value but\ndoes not match an empty label set.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "Namespaces is a list of namespaces names. Each name supports wildcard characters \"*\" (matches zero or many characters) and \"?\" (at least one character).",
+    "Namespaces is a list of namespaces names. Each name supports wildcard characters\n\"*\" (matches zero or many characters) and \"?\" (at least one character).",
+    "Selector is a label selector. Label keys and values in `matchLabels` support the wildcard characters `*` (matches zero or many characters) and `?` (matches one character). Wildcards allows writing label selectors like [\"storage.k8s.io/*\": \"*\"]. Note that using [\"*\" : \"*\"] matches any key and value but does not match an empty label set.",
+    "Selector is a label selector. Label keys and values in `matchLabels` support the wildcard\ncharacters `*` (matches zero or many characters) and `?` (matches one character).\nWildcards allows writing label selectors like [\"storage.k8s.io/*\": \"*\"]. Note that\nusing [\"*\" : \"*\"] matches any key and value but does not match an empty label set.",
+    "APIGroup holds the API group of the referenced subject. Defaults to \"\" for ServiceAccount subjects. Defaults to \"rbac.authorization.k8s.io\" for User and Group subjects.",
+    "APIGroup holds the API group of the referenced subject.\nDefaults to \"\" for ServiceAccount subjects.\nDefaults to \"rbac.authorization.k8s.io\" for User and Group subjects.",
+    "Kind of object being referenced. Values defined by this API group are \"User\", \"Group\", and \"ServiceAccount\". If the Authorizer does not recognized the kind value, the Authorizer should report an error.",
+    "Kind of object being referenced. Values defined by this API group are \"User\", \"Group\", and \"ServiceAccount\".\nIf the Authorizer does not recognized the kind value, the Authorizer should report an error.",
+    "Namespace of the referenced object.  If the object kind is non-namespace, such as \"User\" or \"Group\", and this value is not empty the Authorizer should report an error.",
+    "Namespace of the referenced object.  If the object kind is non-namespace, such as \"User\" or \"Group\", and this value is not empty\nthe Authorizer should report an error.",
+    "PodSecurity specifies the Pod Security Standard controls to be excluded. Applicable only to policies that have validate.podSecurity subrule.",
+    "PodSecurity specifies the Pod Security Standard controls to be excluded.\nApplicable only to policies that have validate.podSecurity subrule.",
+    "ControlName specifies the name of the Pod Security Standard control. See: https://kubernetes.io/docs/concepts/security/pod-security-standards/",
+    "ControlName specifies the name of the Pod Security Standard control.\nSee: https://kubernetes.io/docs/concepts/security/pod-security-standards/",
+    "Images selects matching containers and applies the container level PSS. Each image is the image name consisting of the registry address, repository, image, and tag. Empty list matches no containers, PSS checks are applied at the pod level only. Wildcards ('*' and '?') are allowed. See: https://kubernetes.io/docs/concepts/containers/images.",
+    "Images selects matching containers and applies the container level PSS.\nEach image is the image name consisting of the registry address, repository, image, and tag.\nEmpty list matches no containers, PSS checks are applied at the pod level only.\nWildcards ('*' and '?') are allowed. See: https://kubernetes.io/docs/concepts/containers/images.",
+    "RestrictedField selects the field for the given Pod Security Standard control. When not set, all restricted fields for the control are selected.",
+    "RestrictedField selects the field for the given Pod Security Standard control.\nWhen not set, all restricted fields for the control are selected.",
+    "Operations can contain values [\"CREATE, \"UPDATE\", \"CONNECT\", \"DELETE\"], which are used to match a specific action."
+  ]
+}

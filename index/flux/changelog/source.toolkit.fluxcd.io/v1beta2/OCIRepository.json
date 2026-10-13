@@ -1,0 +1,453 @@
+{
+  "versions": {
+    "v2.7.0": {
+      "required": [
+        "status.artifact.digest"
+      ],
+      "descriptions": {
+        "status.artifact.digest": [
+          null,
+          0
+        ]
+      }
+    },
+    "v2.4.0": {
+      "descriptionChanged": [
+        "spec.certSecretRef",
+        "status.conditions.type",
+        "status.contentConfigChecksum"
+      ],
+      "added": {
+        "spec.proxySecretRef": "object"
+      },
+      "descriptions": {
+        "spec.certSecretRef": [
+          1,
+          2
+        ],
+        "spec.proxySecretRef": [
+          null,
+          3
+        ],
+        "status.conditions.type": [
+          4,
+          5
+        ],
+        "status.contentConfigChecksum": [
+          6,
+          7
+        ]
+      }
+    },
+    "v2.3.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.certSecretRef",
+        "spec.ignore",
+        "spec.interval",
+        "spec.layerSelector",
+        "spec.layerSelector.mediaType",
+        "spec.layerSelector.operation",
+        "spec.provider",
+        "spec.ref",
+        "spec.ref.digest",
+        "spec.ref.semver",
+        "spec.secretRef",
+        "spec.serviceAccountName",
+        "spec.url",
+        "spec.verify",
+        "spec.verify.matchOIDCIdentity",
+        "spec.verify.matchOIDCIdentity.issuer",
+        "spec.verify.matchOIDCIdentity.subject",
+        "spec.verify.secretRef",
+        "status.artifact.lastUpdateTime",
+        "status.artifact.path",
+        "status.artifact.revision",
+        "status.artifact.url",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type",
+        "status.contentConfigChecksum",
+        "status.lastHandledReconcileAt",
+        "status.observedIgnore",
+        "status.observedLayerSelector",
+        "status.observedLayerSelector.mediaType",
+        "status.observedLayerSelector.operation"
+      ],
+      "added": {
+        "spec.ref.semverFilter": "string"
+      },
+      "descriptions": {
+        "apiVersion": [
+          8,
+          9
+        ],
+        "kind": [
+          10,
+          11
+        ],
+        "spec.certSecretRef": [
+          12,
+          1
+        ],
+        "spec.ignore": [
+          13,
+          14
+        ],
+        "spec.interval": [
+          15,
+          16
+        ],
+        "spec.layerSelector": [
+          17,
+          18
+        ],
+        "spec.layerSelector.mediaType": [
+          19,
+          20
+        ],
+        "spec.layerSelector.operation": [
+          21,
+          22
+        ],
+        "spec.provider": [
+          23,
+          24
+        ],
+        "spec.ref": [
+          25,
+          26
+        ],
+        "spec.ref.digest": [
+          27,
+          28
+        ],
+        "spec.ref.semver": [
+          29,
+          30
+        ],
+        "spec.ref.semverFilter": [
+          null,
+          31
+        ],
+        "spec.secretRef": [
+          32,
+          33
+        ],
+        "spec.serviceAccountName": [
+          34,
+          35
+        ],
+        "spec.url": [
+          36,
+          37
+        ],
+        "spec.verify": [
+          38,
+          39
+        ],
+        "spec.verify.matchOIDCIdentity": [
+          40,
+          41
+        ],
+        "spec.verify.matchOIDCIdentity.issuer": [
+          42,
+          43
+        ],
+        "spec.verify.matchOIDCIdentity.subject": [
+          44,
+          45
+        ],
+        "spec.verify.secretRef": [
+          46,
+          47
+        ],
+        "status.artifact.lastUpdateTime": [
+          48,
+          49
+        ],
+        "status.artifact.path": [
+          50,
+          51
+        ],
+        "status.artifact.revision": [
+          52,
+          53
+        ],
+        "status.artifact.url": [
+          54,
+          55
+        ],
+        "status.conditions.lastTransitionTime": [
+          56,
+          57
+        ],
+        "status.conditions.message": [
+          58,
+          59
+        ],
+        "status.conditions.observedGeneration": [
+          60,
+          61
+        ],
+        "status.conditions.reason": [
+          62,
+          63
+        ],
+        "status.conditions.type": [
+          64,
+          4
+        ],
+        "status.contentConfigChecksum": [
+          65,
+          6
+        ],
+        "status.lastHandledReconcileAt": [
+          66,
+          67
+        ],
+        "status.observedIgnore": [
+          68,
+          69
+        ],
+        "status.observedLayerSelector": [
+          70,
+          71
+        ],
+        "status.observedLayerSelector.mediaType": [
+          19,
+          20
+        ],
+        "status.observedLayerSelector.operation": [
+          21,
+          22
+        ]
+      }
+    },
+    "v2.2.0": {
+      "added": {
+        "spec.verify.matchOIDCIdentity": "object[]"
+      },
+      "descriptions": {
+        "spec.verify.matchOIDCIdentity": [
+          null,
+          40
+        ]
+      }
+    },
+    "v2.1.0": {
+      "descriptionChanged": [
+        "spec.certSecretRef",
+        "spec.interval"
+      ],
+      "descriptions": {
+        "spec.certSecretRef": [
+          72,
+          12
+        ],
+        "spec.interval": [
+          73,
+          15
+        ]
+      }
+    },
+    "v2.0.0": {
+      "required": [
+        "status.artifact.lastUpdateTime",
+        "status.artifact.revision"
+      ],
+      "removed": {
+        "status.artifact.checksum": "string"
+      },
+      "descriptions": {
+        "status.artifact.lastUpdateTime": [
+          null,
+          48
+        ],
+        "status.artifact.revision": [
+          null,
+          52
+        ],
+        "status.artifact.checksum": [
+          74,
+          null
+        ]
+      }
+    },
+    "v0.40.0": {
+      "descriptionChanged": [
+        "status.artifact.checksum"
+      ],
+      "added": {
+        "status.artifact.digest": "string"
+      },
+      "descriptions": {
+        "status.artifact.checksum": [
+          75,
+          74
+        ],
+        "status.artifact.digest": [
+          null,
+          0
+        ]
+      }
+    },
+    "v0.36.0": {
+      "descriptionChanged": [
+        "status.contentConfigChecksum"
+      ],
+      "added": {
+        "status.observedIgnore": "string",
+        "status.observedLayerSelector": "object"
+      },
+      "descriptions": {
+        "status.contentConfigChecksum": [
+          76,
+          65
+        ],
+        "status.observedIgnore": [
+          null,
+          68
+        ],
+        "status.observedLayerSelector": [
+          null,
+          70
+        ]
+      }
+    },
+    "v0.35.0": {
+      "descriptionChanged": [
+        "spec.certSecretRef"
+      ],
+      "added": {
+        "spec.layerSelector.operation": "string",
+        "spec.verify": "object",
+        "status.contentConfigChecksum": "string"
+      },
+      "descriptions": {
+        "spec.certSecretRef": [
+          77,
+          72
+        ],
+        "spec.layerSelector.operation": [
+          null,
+          21
+        ],
+        "spec.verify": [
+          null,
+          38
+        ],
+        "status.contentConfigChecksum": [
+          null,
+          76
+        ]
+      }
+    },
+    "v0.34.0": {
+      "added": {
+        "spec.insecure": "boolean"
+      },
+      "descriptions": {
+        "spec.insecure": [
+          null,
+          78
+        ]
+      }
+    },
+    "v0.33.0": {
+      "added": {
+        "spec.layerSelector": "object"
+      },
+      "descriptions": {
+        "spec.layerSelector": [
+          null,
+          17
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Digest is the digest of the file in the form of '<algorithm>:<checksum>'.",
+    "CertSecretRef can be given the name of a Secret containing\neither or both of\n\n\n- a PEM-encoded client certificate (`tls.crt`) and private\nkey (`tls.key`);\n- a PEM-encoded CA certificate (`ca.crt`)\n\n\nand whichever are supplied, will be used for connecting to the\nregistry. The client cert and key are useful if you are\nauthenticating with a certificate; the CA cert is useful if\nyou are using a self-signed server certificate. The Secret must\nbe of type `Opaque` or `kubernetes.io/tls`.\n\n\nNote: Support for the `caFile`, `certFile` and `keyFile` keys have\nbeen deprecated.",
+    "CertSecretRef can be given the name of a Secret containing\neither or both of\n\n- a PEM-encoded client certificate (`tls.crt`) and private\nkey (`tls.key`);\n- a PEM-encoded CA certificate (`ca.crt`)\n\nand whichever are supplied, will be used for connecting to the\nregistry. The client cert and key are useful if you are\nauthenticating with a certificate; the CA cert is useful if\nyou are using a self-signed server certificate. The Secret must\nbe of type `Opaque` or `kubernetes.io/tls`.\n\nNote: Support for the `caFile`, `certFile` and `keyFile` keys have\nbeen deprecated.",
+    "ProxySecretRef specifies the Secret containing the proxy configuration\nto use while communicating with the container registry.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "ContentConfigChecksum is a checksum of all the configurations related to\nthe content of the source artifact:\n - .spec.ignore\n - .spec.layerSelector\nobserved in .status.observedGeneration version of the object. This can\nbe used to determine if the content configuration has changed and the\nartifact needs to be rebuilt.\nIt has the format of `<algo>:<checksum>`, for example: `sha256:<checksum>`.\n\n\nDeprecated: Replaced with explicit fields for observed artifact content\nconfig in the status.",
+    "ContentConfigChecksum is a checksum of all the configurations related to\nthe content of the source artifact:\n - .spec.ignore\n - .spec.layerSelector\nobserved in .status.observedGeneration version of the object. This can\nbe used to determine if the content configuration has changed and the\nartifact needs to be rebuilt.\nIt has the format of `<algo>:<checksum>`, for example: `sha256:<checksum>`.\n\nDeprecated: Replaced with explicit fields for observed artifact content\nconfig in the status.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "CertSecretRef can be given the name of a Secret containing either or both of \n - a PEM-encoded client certificate (`tls.crt`) and private key (`tls.key`); - a PEM-encoded CA certificate (`ca.crt`) \n and whichever are supplied, will be used for connecting to the registry. The client cert and key are useful if you are authenticating with a certificate; the CA cert is useful if you are using a self-signed server certificate. The Secret must be of type `Opaque` or `kubernetes.io/tls`. \n Note: Support for the `caFile`, `certFile` and `keyFile` keys have been deprecated.",
+    "Ignore overrides the set of excluded patterns in the .sourceignore format (which is the same as .gitignore). If not provided, a default will be used, consult the documentation for your version to find out what those are.",
+    "Ignore overrides the set of excluded patterns in the .sourceignore format\n(which is the same as .gitignore). If not provided, a default will be used,\nconsult the documentation for your version to find out what those are.",
+    "Interval at which the OCIRepository URL is checked for updates. This interval is approximate and may be subject to jitter to ensure efficient use of resources.",
+    "Interval at which the OCIRepository URL is checked for updates.\nThis interval is approximate and may be subject to jitter to ensure\nefficient use of resources.",
+    "LayerSelector specifies which layer should be extracted from the OCI artifact. When not specified, the first layer found in the artifact is selected.",
+    "LayerSelector specifies which layer should be extracted from the OCI artifact.\nWhen not specified, the first layer found in the artifact is selected.",
+    "MediaType specifies the OCI media type of the layer which should be extracted from the OCI Artifact. The first layer matching this type is selected.",
+    "MediaType specifies the OCI media type of the layer\nwhich should be extracted from the OCI Artifact. The\nfirst layer matching this type is selected.",
+    "Operation specifies how the selected layer should be processed. By default, the layer compressed content is extracted to storage. When the operation is set to 'copy', the layer compressed content is persisted to storage as it is.",
+    "Operation specifies how the selected layer should be processed.\nBy default, the layer compressed content is extracted to storage.\nWhen the operation is set to 'copy', the layer compressed content\nis persisted to storage as it is.",
+    "The provider used for authentication, can be 'aws', 'azure', 'gcp' or 'generic'. When not specified, defaults to 'generic'.",
+    "The provider used for authentication, can be 'aws', 'azure', 'gcp' or 'generic'.\nWhen not specified, defaults to 'generic'.",
+    "The OCI reference to pull and monitor for changes, defaults to the latest tag.",
+    "The OCI reference to pull and monitor for changes,\ndefaults to the latest tag.",
+    "Digest is the image digest to pull, takes precedence over SemVer. The value should be in the format 'sha256:<HASH>'.",
+    "Digest is the image digest to pull, takes precedence over SemVer.\nThe value should be in the format 'sha256:<HASH>'.",
+    "SemVer is the range of tags to pull selecting the latest within the range, takes precedence over Tag.",
+    "SemVer is the range of tags to pull selecting the latest within\nthe range, takes precedence over Tag.",
+    "SemverFilter is a regex pattern to filter the tags within the SemVer range.",
+    "SecretRef contains the secret name containing the registry login credentials to resolve image metadata. The secret must be of type kubernetes.io/dockerconfigjson.",
+    "SecretRef contains the secret name containing the registry login\ncredentials to resolve image metadata.\nThe secret must be of type kubernetes.io/dockerconfigjson.",
+    "ServiceAccountName is the name of the Kubernetes ServiceAccount used to authenticate the image pull if the service account has attached pull secrets. For more information: https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#add-imagepullsecrets-to-a-service-account",
+    "ServiceAccountName is the name of the Kubernetes ServiceAccount used to authenticate\nthe image pull if the service account has attached pull secrets. For more information:\nhttps://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#add-imagepullsecrets-to-a-service-account",
+    "URL is a reference to an OCI artifact repository hosted on a remote container registry.",
+    "URL is a reference to an OCI artifact repository hosted\non a remote container registry.",
+    "Verify contains the secret name containing the trusted public keys used to verify the signature and specifies which provider to use to check whether OCI image is authentic.",
+    "Verify contains the secret name containing the trusted public keys\nused to verify the signature and specifies which provider to use to check\nwhether OCI image is authentic.",
+    "MatchOIDCIdentity specifies the identity matching criteria to use while verifying an OCI artifact which was signed using Cosign keyless signing. The artifact's identity is deemed to be verified if any of the specified matchers match against the identity.",
+    "MatchOIDCIdentity specifies the identity matching criteria to use\nwhile verifying an OCI artifact which was signed using Cosign keyless\nsigning. The artifact's identity is deemed to be verified if any of the\nspecified matchers match against the identity.",
+    "Issuer specifies the regex pattern to match against to verify the OIDC issuer in the Fulcio certificate. The pattern must be a valid Go regular expression.",
+    "Issuer specifies the regex pattern to match against to verify\nthe OIDC issuer in the Fulcio certificate. The pattern must be a\nvalid Go regular expression.",
+    "Subject specifies the regex pattern to match against to verify the identity subject in the Fulcio certificate. The pattern must be a valid Go regular expression.",
+    "Subject specifies the regex pattern to match against to verify\nthe identity subject in the Fulcio certificate. The pattern must\nbe a valid Go regular expression.",
+    "SecretRef specifies the Kubernetes Secret containing the trusted public keys.",
+    "SecretRef specifies the Kubernetes Secret containing the\ntrusted public keys.",
+    "LastUpdateTime is the timestamp corresponding to the last update of the Artifact.",
+    "LastUpdateTime is the timestamp corresponding to the last update of the\nArtifact.",
+    "Path is the relative file path of the Artifact. It can be used to locate the file in the root of the Artifact storage on the local file system of the controller managing the Source.",
+    "Path is the relative file path of the Artifact. It can be used to locate\nthe file in the root of the Artifact storage on the local file system of\nthe controller managing the Source.",
+    "Revision is a human-readable identifier traceable in the origin source system. It can be a Git commit SHA, Git tag, a Helm chart version, etc.",
+    "Revision is a human-readable identifier traceable in the origin source\nsystem. It can be a Git commit SHA, Git tag, a Helm chart version, etc.",
+    "URL is the HTTP address of the Artifact as exposed by the controller managing the Source. It can be used to retrieve the Artifact for consumption, e.g. by another controller applying the Artifact contents.",
+    "URL is the HTTP address of the Artifact as exposed by the controller\nmanaging the Source. It can be used to retrieve the Artifact for\nconsumption, e.g. by another controller applying the Artifact contents.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "ContentConfigChecksum is a checksum of all the configurations related to the content of the source artifact: - .spec.ignore - .spec.layerSelector observed in .status.observedGeneration version of the object. This can be used to determine if the content configuration has changed and the artifact needs to be rebuilt. It has the format of `<algo>:<checksum>`, for example: `sha256:<checksum>`. \n Deprecated: Replaced with explicit fields for observed artifact content config in the status.",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change of the annotation value can be detected.",
+    "LastHandledReconcileAt holds the value of the most recent\nreconcile request value, so a change of the annotation value\ncan be detected.",
+    "ObservedIgnore is the observed exclusion patterns used for constructing the source artifact.",
+    "ObservedIgnore is the observed exclusion patterns used for constructing\nthe source artifact.",
+    "ObservedLayerSelector is the observed layer selector used for constructing the source artifact.",
+    "ObservedLayerSelector is the observed layer selector used for constructing\nthe source artifact.",
+    "CertSecretRef can be given the name of a secret containing either or both of \n - a PEM-encoded client certificate (`certFile`) and private key (`keyFile`); - a PEM-encoded CA certificate (`caFile`) \n and whichever are supplied, will be used for connecting to the registry. The client cert and key are useful if you are authenticating with a certificate; the CA cert is useful if you are using a self-signed server certificate.",
+    "The interval at which to check for image updates.",
+    "Checksum is the SHA256 checksum of the Artifact file. Deprecated: use Artifact.Digest instead.",
+    "Checksum is the SHA256 checksum of the Artifact file.",
+    "ContentConfigChecksum is a checksum of all the configurations related to the content of the source artifact: - .spec.ignore - .spec.layerSelector observed in .status.observedGeneration version of the object. This can be used to determine if the content configuration has changed and the artifact needs to be rebuilt. It has the format of `<algo>:<checksum>`, for example: `sha256:<checksum>`.",
+    "CertSecretRef can be given the name of a secret containing either or both of \n  - a PEM-encoded client certificate (`certFile`) and private  key (`keyFile`);  - a PEM-encoded CA certificate (`caFile`) \n  and whichever are supplied, will be used for connecting to the  registry. The client cert and key are useful if you are  authenticating with a certificate; the CA cert is useful if  you are using a self-signed server certificate.",
+    "Insecure allows connecting to a non-TLS HTTP container registry."
+  ]
+}

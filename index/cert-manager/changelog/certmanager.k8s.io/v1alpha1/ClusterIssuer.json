@@ -1,0 +1,101 @@
+{
+  "versions": {
+    "v0.10.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.acme",
+        "spec.venafi",
+        "status"
+      ],
+      "added": {
+        "spec.acme.dns01": "object",
+        "spec.acme.http01": "object",
+        "spec.acme.solvers.dns01": "object",
+        "spec.acme.solvers.http01": "object"
+      },
+      "typeChanged": {
+        "spec.acme.solvers.selector.matchLabels": [
+          "object",
+          "map[string]string"
+        ]
+      },
+      "descriptions": {
+        "spec": [
+          null,
+          0
+        ],
+        "spec.acme": [
+          null,
+          1
+        ],
+        "spec.acme.dns01": [
+          null,
+          2
+        ],
+        "spec.acme.http01": [
+          null,
+          3
+        ],
+        "spec.acme.solvers.http01": [
+          null,
+          4
+        ],
+        "spec.acme.solvers.selector.matchLabels": [
+          null,
+          5
+        ],
+        "spec.venafi": [
+          null,
+          6
+        ],
+        "status": [
+          null,
+          7
+        ]
+      }
+    },
+    "v0.9.0": {
+      "descriptionChanged": [
+        "spec.acme.solvers.selector.dnsNames",
+        "spec.acme.solvers.selector.matchLabels"
+      ],
+      "added": {
+        "spec.acme.solvers.selector.dnsZones": "string[]",
+        "status.acme.lastRegisteredEmail": "string"
+      },
+      "descriptions": {
+        "spec.acme.solvers.selector.dnsNames": [
+          8,
+          9
+        ],
+        "spec.acme.solvers.selector.dnsZones": [
+          null,
+          10
+        ],
+        "spec.acme.solvers.selector.matchLabels": [
+          11,
+          5
+        ],
+        "status.acme.lastRegisteredEmail": [
+          null,
+          12
+        ]
+      }
+    }
+  },
+  "texts": [
+    "IssuerSpec is the specification of an Issuer. This includes any configuration required for the issuer.",
+    "ACMEIssuer contains the specification for an ACME issuer",
+    "DEPRECATED: DNS-01 config",
+    "DEPRECATED: HTTP-01 config",
+    "ACMEChallengeSolverHTTP01 contains configuration detailing how to solve HTTP01 challenges within a Kubernetes cluster. Typically this is accomplished through creating 'routes' of some description that configure ingress controllers to direct traffic to 'solver pods', which are responsible for responding to the ACME server's HTTP requests.",
+    "A label selector that is used to refine the set of certificate's that this challenge solver will apply to.",
+    "VenafiIssuer describes issuer configuration details for Venafi Cloud.",
+    "IssuerStatus contains status information about an Issuer",
+    "List of DNSNames that can be used to further refine the domains that this solver applies to.",
+    "List of DNSNames that this solver will be used to solve. If specified and a match is found, a dnsNames selector will take precedence over a dnsZones selector. If multiple solvers match with the same dnsNames value, the solver with the most matching labels in matchLabels will be selected. If neither has more matches, the solver defined earlier in the list will be selected.",
+    "List of DNSZones that this solver will be used to solve. The most specific DNS zone match specified here will take precedence over other DNS zone matches, so a solver specifying sys.example.com will be selected over one specifying example.com for the domain www.sys.example.com. If multiple solvers match with the same dnsZones value, the solver with the most matching labels in matchLabels will be selected. If neither has more matches, the solver defined earlier in the list will be selected.",
+    "A label selector that is used to refine the set of certificate's that this challenge solver will apply to. TODO: use kubernetes standard types for matchLabels",
+    "LastRegisteredEmail is the email associated with the latest registered ACME account, in order to track changes made to registered account associated with the  Issuer"
+  ]
+}

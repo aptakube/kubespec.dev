@@ -1,0 +1,70 @@
+{
+  "versions": {
+    "v1.19.0": {
+      "added": {
+        "spec.evaluationMode": "string",
+        "spec.expiresAt": "string",
+        "spec.properties": "map[string]string"
+      },
+      "descriptionChanged": [
+        "spec.matchConditions.expression",
+        "spec.matchConditions.name"
+      ],
+      "descriptions": {
+        "spec.evaluationMode": [
+          null,
+          0
+        ],
+        "spec.expiresAt": [
+          null,
+          1
+        ],
+        "spec.matchConditions.expression": [
+          2,
+          3
+        ],
+        "spec.matchConditions.name": [
+          4,
+          5
+        ],
+        "spec.properties": [
+          null,
+          6
+        ]
+      }
+    },
+    "v1.16.0": {
+      "added": {
+        "spec.allowedValues": "string[]",
+        "spec.images": "string[]",
+        "spec.reportResult": "string"
+      },
+      "descriptions": {
+        "spec.allowedValues": [
+          null,
+          7
+        ],
+        "spec.images": [
+          null,
+          8
+        ],
+        "spec.reportResult": [
+          null,
+          9
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Evaluation mode denotes which controller is in charge of compiling and handling this exception.",
+    "ExpiresAt specifies the time when the policy exception expires.\nOnce expired, the exception will no longer be applied to incoming requests.\nThe expected format is RFC3339 date-time (for example \"2026-05-01T00:00:00Z\").",
+    "Expression represents the expression which will be evaluated by CEL. Must evaluate to bool.\nCEL expressions have access to the contents of the AdmissionRequest and Authorizer, organized into CEL variables:\n\n'object' - The object from the incoming request. The value is null for DELETE requests.\n'oldObject' - The existing object. The value is null for CREATE requests.\n'request' - Attributes of the admission request(/pkg/apis/admission/types.go#AdmissionRequest).\n'authorizer' - A CEL Authorizer. May be used to perform authorization checks for the principal (user or service account) of the request.\n  See https://pkg.go.dev/k8s.io/apiserver/pkg/cel/library#Authz\n'authorizer.requestResource' - A CEL ResourceCheck constructed from the 'authorizer' and configured with the\n  request resource.\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/\n\nRequired.",
+    "expression represents the expression which will be evaluated by CEL. Must evaluate to bool.\nCEL expressions have access to the contents of the AdmissionRequest and Authorizer, organized into CEL variables:\n\n'object' - The object from the incoming request. The value is null for DELETE requests.\n'oldObject' - The existing object. The value is null for CREATE requests.\n'request' - Attributes of the admission request(/pkg/apis/admission/types.go#AdmissionRequest).\n'authorizer' - A CEL Authorizer. May be used to perform authorization checks for the principal (user or service account) of the request.\n  See https://pkg.go.dev/k8s.io/apiserver/pkg/cel/library#Authz\n'authorizer.requestResource' - A CEL ResourceCheck constructed from the 'authorizer' and configured with the\n  request resource.\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/\n\nRequired.",
+    "Name is an identifier for this match condition, used for strategic merging of MatchConditions,\nas well as providing an identifier for logging purposes. A good name should be descriptive of\nthe associated expression.\nName must be a qualified name consisting of alphanumeric characters, '-', '_' or '.', and\nmust start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or\n'123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]') with an\noptional DNS subdomain prefix and '/' (e.g. 'example.com/MyName')\n\nRequired.",
+    "name is an identifier for this match condition, used for strategic merging of MatchConditions,\nas well as providing an identifier for logging purposes. A good name should be descriptive of\nthe associated expression.\nName must be a qualified name consisting of alphanumeric characters, '-', '_' or '.', and\nmust start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or\n'123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]') with an\noptional DNS subdomain prefix and '/' (e.g. 'example.com/MyName')\n\nRequired.",
+    "Properties is an optional map for additional metadata attached to this exception.\nFor example:\n- reason: why this exception is needed\n- ticket: external approval/request identifier\n- approved-by: comma-separated approver list",
+    "AllowedValues specifies values that can be used in CEL expressions to bypass policy checks.\nThese values can be referenced in CEL expressions via `exceptions.allowedValues`.",
+    "Images specifies container images to be excluded from policy evaluation.\nThese excluded images can be referenced in CEL expressions via `exceptions.allowedImages`.",
+    "ReportResult indicates whether the policy exception should be reported in the policy report\nas a skip result or pass result. Defaults to \"skip\"."
+  ]
+}

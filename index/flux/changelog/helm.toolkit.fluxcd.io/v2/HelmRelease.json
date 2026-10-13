@@ -1,0 +1,329 @@
+{
+  "versions": {
+    "v2.9.0": {
+      "descriptionChanged": [
+        "spec.dependsOn.namespace"
+      ],
+      "optional": [
+        "spec.healthCheckExprs.kind"
+      ],
+      "added": {
+        "spec.postRenderStrategy": "string",
+        "spec.upgrade.chartNameChangeStrategy": "string",
+        "spec.valuesFrom.literal": "boolean"
+      },
+      "descriptions": {
+        "spec.dependsOn.namespace": [
+          0,
+          1
+        ],
+        "spec.healthCheckExprs.kind": [
+          null,
+          2
+        ],
+        "spec.postRenderStrategy": [
+          null,
+          3
+        ],
+        "spec.upgrade.chartNameChangeStrategy": [
+          null,
+          4
+        ],
+        "spec.valuesFrom.literal": [
+          null,
+          5
+        ]
+      }
+    },
+    "v2.8.6": {
+      "descriptionChanged": [
+        "spec.rollback.force",
+        "spec.upgrade.force"
+      ],
+      "descriptions": {
+        "spec.rollback.force": [
+          6,
+          7
+        ],
+        "spec.upgrade.force": [
+          6,
+          7
+        ]
+      }
+    },
+    "v2.8.2": {
+      "descriptionChanged": [
+        "spec.install.strategy",
+        "spec.upgrade.strategy"
+      ],
+      "descriptions": {
+        "spec.install.strategy": [
+          8,
+          9
+        ],
+        "spec.upgrade.strategy": [
+          10,
+          11
+        ]
+      }
+    },
+    "v2.8.0": {
+      "added": {
+        "spec.healthCheckExprs": "object[]",
+        "spec.install.serverSideApply": "boolean",
+        "spec.rollback.serverSideApply": "string",
+        "spec.upgrade.serverSideApply": "string",
+        "spec.waitStrategy": "object",
+        "status.history.action": "string",
+        "status.inventory": "object"
+      },
+      "descriptionChanged": [
+        "spec.rollback.recreate",
+        "status.history.apiVersion"
+      ],
+      "descriptions": {
+        "spec.healthCheckExprs": [
+          null,
+          12
+        ],
+        "spec.install.serverSideApply": [
+          null,
+          13
+        ],
+        "spec.rollback.recreate": [
+          14,
+          15
+        ],
+        "spec.rollback.serverSideApply": [
+          null,
+          16
+        ],
+        "spec.upgrade.serverSideApply": [
+          null,
+          17
+        ],
+        "spec.waitStrategy": [
+          null,
+          18
+        ],
+        "status.history.action": [
+          null,
+          19
+        ],
+        "status.history.apiVersion": [
+          20,
+          21
+        ],
+        "status.inventory": [
+          null,
+          22
+        ]
+      }
+    },
+    "v2.7.0": {
+      "added": {
+        "spec.commonMetadata": "object",
+        "spec.dependsOn.readyExpr": "string",
+        "spec.install.strategy": "object",
+        "spec.kubeConfig.configMapRef": "object",
+        "spec.upgrade.strategy": "object",
+        "status.lastAttemptedReleaseActionDuration": "string",
+        "status.observedCommonMetadataDigest": "string"
+      },
+      "descriptionChanged": [
+        "spec.dependsOn",
+        "spec.dependsOn.namespace",
+        "spec.kubeConfig.secretRef",
+        "status.lastAttemptedReleaseAction",
+        "status.lastAttemptedValuesChecksum",
+        "status.lastHandledForceAt",
+        "status.lastReleaseRevision"
+      ],
+      "optional": [
+        "spec.kubeConfig.secretRef"
+      ],
+      "descriptions": {
+        "spec.commonMetadata": [
+          null,
+          23
+        ],
+        "spec.dependsOn": [
+          24,
+          25
+        ],
+        "spec.dependsOn.namespace": [
+          26,
+          0
+        ],
+        "spec.dependsOn.readyExpr": [
+          null,
+          27
+        ],
+        "spec.install.strategy": [
+          null,
+          8
+        ],
+        "spec.kubeConfig.configMapRef": [
+          null,
+          28
+        ],
+        "spec.kubeConfig.secretRef": [
+          29,
+          30
+        ],
+        "spec.upgrade.strategy": [
+          null,
+          10
+        ],
+        "status.lastAttemptedReleaseAction": [
+          31,
+          32
+        ],
+        "status.lastAttemptedReleaseActionDuration": [
+          null,
+          33
+        ],
+        "status.lastAttemptedValuesChecksum": [
+          34,
+          35
+        ],
+        "status.lastHandledForceAt": [
+          36,
+          37
+        ],
+        "status.lastReleaseRevision": [
+          38,
+          39
+        ],
+        "status.observedCommonMetadataDigest": [
+          null,
+          40
+        ]
+      }
+    },
+    "v2.5.0": {
+      "added": {
+        "spec.install.disableTakeOwnership": "boolean",
+        "spec.upgrade.disableTakeOwnership": "boolean"
+      },
+      "descriptions": {
+        "spec.install.disableTakeOwnership": [
+          null,
+          41
+        ],
+        "spec.upgrade.disableTakeOwnership": [
+          null,
+          42
+        ]
+      }
+    },
+    "v2.4.0": {
+      "required": [
+        "spec.chart.spec.sourceRef.kind"
+      ],
+      "descriptionChanged": [
+        "spec.install.crds",
+        "spec.install.skipCRDs",
+        "spec.persistentClient",
+        "spec.upgrade.crds",
+        "status.conditions.type"
+      ],
+      "added": {
+        "spec.install.disableSchemaValidation": "boolean",
+        "spec.upgrade.disableSchemaValidation": "boolean"
+      },
+      "descriptions": {
+        "spec.chart.spec.sourceRef.kind": [
+          null,
+          43
+        ],
+        "spec.install.crds": [
+          44,
+          45
+        ],
+        "spec.install.disableSchemaValidation": [
+          null,
+          46
+        ],
+        "spec.install.skipCRDs": [
+          47,
+          48
+        ],
+        "spec.persistentClient": [
+          49,
+          50
+        ],
+        "spec.upgrade.crds": [
+          51,
+          52
+        ],
+        "spec.upgrade.disableSchemaValidation": [
+          null,
+          53
+        ],
+        "status.conditions.type": [
+          54,
+          55
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Namespace of the referent, defaults to the namespace of the HelmRelease\nresource object that contains the reference.",
+    "Namespace of the referent, defaults to the namespace of the resource\nobject that contains the reference.",
+    "Kind of the custom resource under evaluation.",
+    "PostRenderStrategy defines the strategy for sending hooks to post-renderers.\nValid values are 'nohooks' (hooks not sent to post-renderers, Helm 3 behavior),\n'combined' (hooks and templates sent together, Helm 4 default), and 'separate'\n(hooks and templates sent in separate streams, Helm 4.2 opt-in).\nDefaults to 'combined', or 'nohooks' when the UseHelm3Defaults feature gate is enabled.",
+    "ChartNameChangeStrategy defines the strategy to use when a Helm chart name changes.\nValid values are 'Reinstall' or 'InPlaceUpdate'. Defaults to 'Reinstall' if omitted.\n\nReinstall: Reinstall the Helm release, uninstalling the existing Helm release.\n\nInPlaceUpdate: Update the Helm release in place.",
+    "Literal marks this ValuesReference as a literal value. When set in\ncombination with TargetPath, the referenced value is merged at the target\npath without interpreting Helm's `--set` syntax (commas, brackets, dots,\nequal signs, etc.), mirroring the behavior of `helm --set-literal`. This\nis the only safe way to inject arbitrary file content (config files, JSON\nblobs, multi-line strings containing special characters) through\n`valuesFrom`. Has no effect when TargetPath is empty: in that mode the\nreferenced value is always YAML-merged at the root.",
+    "Force forces resource updates through a replacement strategy.",
+    "Force forces resource updates through a replacement strategy\nthat avoids 3-way merge conflicts on client-side apply.\nThis field is ignored for server-side apply (which always\nforces conflicts with other field managers).",
+    "Strategy defines the install strategy to use for this HelmRelease.\nDefaults to 'RemediateOnFailure'.",
+    "Strategy defines the install strategy to use for this HelmRelease.\nDefaults to 'RemediateOnFailure', or 'RetryOnFailure' when the\nDefaultToRetryOnFailure feature gate is enabled.",
+    "Strategy defines the upgrade strategy to use for this HelmRelease.\nDefaults to 'RemediateOnFailure'.",
+    "Strategy defines the upgrade strategy to use for this HelmRelease.\nDefaults to 'RemediateOnFailure', or 'RetryOnFailure' when the\nDefaultToRetryOnFailure feature gate is enabled.",
+    "HealthCheckExprs is a list of healthcheck expressions for evaluating the\nhealth of custom resources using Common Expression Language (CEL).\nThe expressions are evaluated only when the specific Helm action\ntaking place has wait enabled, i.e. DisableWait is false, and the\n'poller' WaitStrategy is used.",
+    "ServerSideApply enables server-side apply for resources during install.\nDefaults to true (or false when UseHelm3Defaults feature gate is enabled).",
+    "Recreate performs pod restarts for the resource if applicable.",
+    "Recreate performs pod restarts for any managed workloads.\n\nDeprecated: This behavior was deprecated in Helm 3:\n  - Deprecation: https://github.com/helm/helm/pull/6463\n  - Removal: https://github.com/helm/helm/pull/31023\nAfter helm-controller was upgraded to the Helm 4 SDK,\nthis field is no longer functional and will print a\nwarning if set to true. It will also be removed in a\nfuture release.",
+    "ServerSideApply enables server-side apply for resources during rollback.\nCan be \"enabled\", \"disabled\", or \"auto\".\nWhen \"auto\", server-side apply usage will be based on the release's previous usage.\nDefaults to \"auto\".",
+    "ServerSideApply enables server-side apply for resources during upgrade.\nCan be \"enabled\", \"disabled\", or \"auto\".\nWhen \"auto\", server-side apply usage will be based on the release's previous usage.\nDefaults to \"auto\".",
+    "WaitStrategy defines Helm's wait strategy for waiting for applied\nresources to become ready.",
+    "Action is the action that resulted in this snapshot being created.",
+    "APIVersion is the API version of the Snapshot.\nProvisional: when the calculation method of the Digest field is changed,\nthis field will be used to distinguish between the old and new methods.",
+    "APIVersion is the API version of the Snapshot.\nWhen the calculation method of the Digest field is changed, this\nfield will be used to distinguish between the old and new methods.",
+    "Inventory contains the list of Kubernetes resource object references\nthat have been applied for this release.",
+    "CommonMetadata specifies the common labels and annotations that are\napplied to all resources. Any existing label or annotation will be\noverridden if its key matches a common one.",
+    "DependsOn may contain a meta.NamespacedObjectReference slice with\nreferences to HelmRelease resources that must be ready before this HelmRelease\ncan be reconciled.",
+    "DependsOn may contain a DependencyReference slice with\nreferences to HelmRelease resources that must be ready before this HelmRelease\ncan be reconciled.",
+    "Namespace of the referent, when not specified it acts as LocalObjectReference.",
+    "ReadyExpr is a CEL expression that can be used to assess the readiness\nof a dependency. When specified, the built-in readiness check\nis replaced by the logic defined in the CEL expression.\nTo make the CEL expression additive to the built-in readiness check,\nthe feature gate `AdditiveCELDependencyCheck` must be set to `true`.",
+    "ConfigMapRef holds an optional name of a ConfigMap that contains\nthe following keys:\n\n- `provider`: the provider to use. One of `aws`, `azure`, `gcp`, or\n   `generic`. Required.\n- `cluster`: the fully qualified resource name of the Kubernetes\n   cluster in the cloud provider API. Not used by the `generic`\n   provider. Required when one of `address` or `ca.crt` is not set.\n- `address`: the address of the Kubernetes API server. Required\n   for `generic`. For the other providers, if not specified, the\n   first address in the cluster resource will be used, and if\n   specified, it must match one of the addresses in the cluster\n   resource.\n   If audiences is not set, will be used as the audience for the\n   `generic` provider.\n- `ca.crt`: the optional PEM-encoded CA certificate for the\n   Kubernetes API server. If not set, the controller will use the\n   CA certificate from the cluster resource.\n- `audiences`: the optional audiences as a list of\n   line-break-separated strings for the Kubernetes ServiceAccount\n   token. Defaults to the `address` for the `generic` provider, or\n   to specific values for the other providers depending on the\n   provider.\n-  `serviceAccountName`: the optional name of the Kubernetes\n   ServiceAccount in the same namespace that should be used\n   for authentication. If not specified, the controller\n   ServiceAccount will be used.\n\nMutually exclusive with SecretRef.",
+    "SecretRef holds the name of a secret that contains a key with\nthe kubeconfig file as the value. If no key is set, the key will default\nto 'value'.\nIt is recommended that the kubeconfig is self-contained, and the secret\nis regularly updated if credentials such as a cloud-access-token expire.\nCloud specific `cmd-path` auth helpers will not function without adding\nbinaries and credentials to the Pod that is responsible for reconciling\nKubernetes resources.",
+    "SecretRef holds an optional name of a secret that contains a key with\nthe kubeconfig file as the value. If no key is set, the key will default\nto 'value'. Mutually exclusive with ConfigMapRef.\nIt is recommended that the kubeconfig is self-contained, and the secret\nis regularly updated if credentials such as a cloud-access-token expire.\nCloud specific `cmd-path` auth helpers will not function without adding\nbinaries and credentials to the Pod that is responsible for reconciling\nKubernetes resources. Supported only for the generic provider.",
+    "LastAttemptedReleaseAction is the last release action performed for this\nHelmRelease. It is used to determine the active remediation strategy.",
+    "LastAttemptedReleaseAction is the last release action performed for this\nHelmRelease. It is used to determine the active retry or remediation\nstrategy.",
+    "LastAttemptedReleaseActionDuration is the duration of the last\nrelease action performed for this HelmRelease.",
+    "LastAttemptedValuesChecksum is the SHA1 checksum for the values of the last\nreconciliation attempt.\nDeprecated: Use LastAttemptedConfigDigest instead.",
+    "LastAttemptedValuesChecksum is the SHA1 checksum for the values of the last\nreconciliation attempt.\n\nDeprecated: Use LastAttemptedConfigDigest instead.",
+    "LastHandledForceAt holds the value of the most recent force request\nvalue, so a change of the annotation value can be detected.",
+    "LastHandledForceAt holds the value of the most recent\nforce request value, so a change of the annotation value\ncan be detected.",
+    "LastReleaseRevision is the revision of the last successful Helm release.\nDeprecated: Use History instead.",
+    "LastReleaseRevision is the revision of the last successful Helm release.\n\nDeprecated: Use History instead.",
+    "ObservedCommonMetadataDigest is the digest for the common metadata of\nthe last successful reconciliation attempt.",
+    "DisableTakeOwnership disables taking ownership of existing resources\nduring the Helm install action. Defaults to false.",
+    "DisableTakeOwnership disables taking ownership of existing resources\nduring the Helm upgrade action. Defaults to false.",
+    "Kind of the referent.",
+    "CRDs upgrade CRDs from the Helm Chart's crds directory according\nto the CRD upgrade policy provided here. Valid values are `Skip`,\n`Create` or `CreateReplace`. Default is `Create` and if omitted\nCRDs are installed but not updated.\n\n\nSkip: do neither install nor replace (update) any CRDs.\n\n\nCreate: new CRDs are created, existing CRDs are neither updated nor deleted.\n\n\nCreateReplace: new CRDs are created, existing CRDs are updated (replaced)\nbut not deleted.\n\n\nBy default, CRDs are applied (installed) during Helm install action.\nWith this option users can opt in to CRD replace existing CRDs on Helm\ninstall actions, which is not (yet) natively supported by Helm.\nhttps://helm.sh/docs/chart_best_practices/custom_resource_definitions.",
+    "CRDs upgrade CRDs from the Helm Chart's crds directory according\nto the CRD upgrade policy provided here. Valid values are `Skip`,\n`Create` or `CreateReplace`. Default is `Create` and if omitted\nCRDs are installed but not updated.\n\nSkip: do neither install nor replace (update) any CRDs.\n\nCreate: new CRDs are created, existing CRDs are neither updated nor deleted.\n\nCreateReplace: new CRDs are created, existing CRDs are updated (replaced)\nbut not deleted.\n\nBy default, CRDs are applied (installed) during Helm install action.\nWith this option users can opt in to CRD replace existing CRDs on Helm\ninstall actions, which is not (yet) natively supported by Helm.\nhttps://helm.sh/docs/chart_best_practices/custom_resource_definitions.",
+    "DisableSchemaValidation prevents the Helm install action from validating\nthe values against the JSON Schema.",
+    "SkipCRDs tells the Helm install action to not install any CRDs. By default,\nCRDs are installed if not already present.\n\n\nDeprecated use CRD policy (`crds`) attribute with value `Skip` instead.",
+    "SkipCRDs tells the Helm install action to not install any CRDs. By default,\nCRDs are installed if not already present.\n\nDeprecated use CRD policy (`crds`) attribute with value `Skip` instead.",
+    "PersistentClient tells the controller to use a persistent Kubernetes\nclient for this release. When enabled, the client will be reused for the\nduration of the reconciliation, instead of being created and destroyed\nfor each (step of a) Helm action.\n\n\nThis can improve performance, but may cause issues with some Helm charts\nthat for example do create Custom Resource Definitions during installation\noutside Helm's CRD lifecycle hooks, which are then not observed to be\navailable by e.g. post-install hooks.\n\n\nIf not set, it defaults to true.",
+    "PersistentClient tells the controller to use a persistent Kubernetes\nclient for this release. When enabled, the client will be reused for the\nduration of the reconciliation, instead of being created and destroyed\nfor each (step of a) Helm action.\n\nThis can improve performance, but may cause issues with some Helm charts\nthat for example do create Custom Resource Definitions during installation\noutside Helm's CRD lifecycle hooks, which are then not observed to be\navailable by e.g. post-install hooks.\n\nIf not set, it defaults to true.",
+    "CRDs upgrade CRDs from the Helm Chart's crds directory according\nto the CRD upgrade policy provided here. Valid values are `Skip`,\n`Create` or `CreateReplace`. Default is `Skip` and if omitted\nCRDs are neither installed nor upgraded.\n\n\nSkip: do neither install nor replace (update) any CRDs.\n\n\nCreate: new CRDs are created, existing CRDs are neither updated nor deleted.\n\n\nCreateReplace: new CRDs are created, existing CRDs are updated (replaced)\nbut not deleted.\n\n\nBy default, CRDs are not applied during Helm upgrade action. With this\noption users can opt-in to CRD upgrade, which is not (yet) natively supported by Helm.\nhttps://helm.sh/docs/chart_best_practices/custom_resource_definitions.",
+    "CRDs upgrade CRDs from the Helm Chart's crds directory according\nto the CRD upgrade policy provided here. Valid values are `Skip`,\n`Create` or `CreateReplace`. Default is `Skip` and if omitted\nCRDs are neither installed nor upgraded.\n\nSkip: do neither install nor replace (update) any CRDs.\n\nCreate: new CRDs are created, existing CRDs are neither updated nor deleted.\n\nCreateReplace: new CRDs are created, existing CRDs are updated (replaced)\nbut not deleted.\n\nBy default, CRDs are not applied during Helm upgrade action. With this\noption users can opt-in to CRD upgrade, which is not (yet) natively supported by Helm.\nhttps://helm.sh/docs/chart_best_practices/custom_resource_definitions.",
+    "DisableSchemaValidation prevents the Helm upgrade action from validating\nthe values against the JSON Schema.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase."
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "versions": {
+    "v0.160.0": {
+      "added": {
+        "spec.enableServiceLinks": "boolean"
+      }
+    },
+    "v0.159.0": {
+      "added": {
+        "spec.additionalContainers.lifecycle.postStart.httpGet.protocol": "string",
+        "spec.additionalContainers.lifecycle.preStop.httpGet.protocol": "string",
+        "spec.additionalContainers.livenessProbe.grpc.mode": "string",
+        "spec.additionalContainers.livenessProbe.httpGet.protocol": "string",
+        "spec.additionalContainers.readinessProbe.grpc.mode": "string",
+        "spec.additionalContainers.readinessProbe.httpGet.protocol": "string",
+        "spec.additionalContainers.startupProbe.grpc.mode": "string",
+        "spec.additionalContainers.startupProbe.httpGet.protocol": "string",
+        "spec.additionalContainers.volumeMounts.bindMountOptions": "string[]",
+        "spec.initContainers.lifecycle.postStart.httpGet.protocol": "string",
+        "spec.initContainers.lifecycle.preStop.httpGet.protocol": "string",
+        "spec.initContainers.livenessProbe.grpc.mode": "string",
+        "spec.initContainers.livenessProbe.httpGet.protocol": "string",
+        "spec.initContainers.readinessProbe.grpc.mode": "string",
+        "spec.initContainers.readinessProbe.httpGet.protocol": "string",
+        "spec.initContainers.startupProbe.grpc.mode": "string",
+        "spec.initContainers.startupProbe.httpGet.protocol": "string",
+        "spec.initContainers.volumeMounts.bindMountOptions": "string[]",
+        "spec.lifecycle.postStart.httpGet.protocol": "string",
+        "spec.lifecycle.preStop.httpGet.protocol": "string",
+        "spec.resizePolicy": "object[]",
+        "spec.targetAllocator.telemetry": "object",
+        "spec.volumeClaimTemplates.status.healthStatus": "object",
+        "spec.volumeMounts.bindMountOptions": "string[]",
+        "spec.volumes.configMap.defaultUser": "integer",
+        "spec.volumes.configMap.items.user": "integer",
+        "spec.volumes.downwardAPI.defaultUser": "integer",
+        "spec.volumes.downwardAPI.items.user": "integer",
+        "spec.volumes.emptyDir.mode": "integer",
+        "spec.volumes.projected.defaultUser": "integer",
+        "spec.volumes.projected.sources.clusterTrustBundle.user": "integer",
+        "spec.volumes.projected.sources.configMap.items.user": "integer",
+        "spec.volumes.projected.sources.downwardAPI.items.user": "integer",
+        "spec.volumes.projected.sources.podCertificate.user": "integer",
+        "spec.volumes.projected.sources.secret.items.user": "integer",
+        "spec.volumes.projected.sources.serviceAccountToken.user": "integer",
+        "spec.volumes.secret.defaultUser": "integer",
+        "spec.volumes.secret.items.user": "integer"
+      }
+    },
+    "v0.157.0": {
+      "added": {
+        "spec.sessionAffinity": "string",
+        "spec.sessionAffinityConfig": "object",
+        "spec.targetAllocator.mtls.tls": "object"
+      }
+    },
+    "v0.154.0": {
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "integer"
+      }
+    },
+    "v0.153.0": {
+      "added": {
+        "spec.command": "string[]",
+        "spec.targetAllocator.allowInsecureAuthSecrets": "boolean",
+        "spec.targetAllocator.mtls": "object"
+      }
+    },
+    "v0.152.0": {
+      "added": {
+        "spec.targetAllocator.prometheusCR.denyFSAccessThroughSMs": "boolean"
+      }
+    },
+    "v0.151.0": {
+      "added": {
+        "spec.targetAllocator.prometheusCR.secretNamespaces": "string[]"
+      }
+    },
+    "v0.149.0": {
+      "added": {
+        "spec.hostAliases": "object[]",
+        "spec.httpRoute": "object",
+        "spec.volumes.projected.sources.podCertificate.userAnnotations": "map[string]string"
+      }
+    },
+    "v0.148.0": {
+      "added": {
+        "spec.podManagementPolicy": "string"
+      }
+    },
+    "v0.146.0": {
+      "added": {
+        "spec.hostUsers": "boolean",
+        "spec.targetAllocator.prometheusCR.evaluationInterval": "string",
+        "spec.targetAllocator.prometheusCR.podMonitorNamespaceSelector": "object",
+        "spec.targetAllocator.prometheusCR.probeNamespaceSelector": "object",
+        "spec.targetAllocator.prometheusCR.scrapeConfigNamespaceSelector": "object",
+        "spec.targetAllocator.prometheusCR.scrapeProtocols": "string[]",
+        "spec.targetAllocator.prometheusCR.serviceMonitorNamespaceSelector": "object"
+      }
+    },
+    "v0.142.0": {
+      "added": {
+        "spec.additionalContainers.env.valueFrom.fileKeyRef": "object",
+        "spec.additionalContainers.lifecycle.stopSignal": "string",
+        "spec.additionalContainers.restartPolicyRules": "object[]",
+        "spec.autoscaler.behavior.scaleDown.tolerance": "int | string",
+        "spec.autoscaler.behavior.scaleUp.tolerance": "int | string",
+        "spec.env.valueFrom.fileKeyRef": "object",
+        "spec.hostPID": "boolean",
+        "spec.initContainers.env.valueFrom.fileKeyRef": "object",
+        "spec.initContainers.lifecycle.stopSignal": "string",
+        "spec.initContainers.restartPolicyRules": "object[]",
+        "spec.lifecycle.stopSignal": "string",
+        "spec.targetAllocator.env.valueFrom.fileKeyRef": "object",
+        "spec.targetAllocator.prometheusCR.scrapeClasses": "object[]",
+        "spec.volumes.projected.sources.podCertificate": "object"
+      }
+    },
+    "v0.137.0": {
+      "added": {
+        "spec.dnsPolicy": "string",
+        "spec.startupProbe": "object"
+      }
+    },
+    "v0.135.0": {
+      "added": {
+        "spec.trafficDistribution": "string"
+      }
+    },
+    "v0.134.0": {
+      "added": {
+        "spec.targetAllocator.collectorTargetReloadInterval": "string"
+      }
+    },
+    "v0.132.0": {
+      "added": {
+        "spec.networkPolicy": "object"
+      }
+    },
+    "v0.131.0": {
+      "added": {
+        "spec.observability.metrics.extraLabels": "map[string]string",
+        "spec.targetAllocator.observability.metrics.extraLabels": "map[string]string"
+      }
+    },
+    "v0.129.1": {
+      "optional": [
+        "spec.managementState"
+      ],
+      "added": {
+        "spec.serviceName": "string"
+      }
+    },
+    "v0.122.0": {
+      "added": {
+        "spec.targetAllocator.collectorNotReadyGracePeriod": "string"
+      }
+    },
+    "v0.121.0": {
+      "added": {
+        "spec.targetAllocator.prometheusCR.allowNamespaces": "string[]",
+        "spec.targetAllocator.prometheusCR.denyNamespaces": "string[]"
+      }
+    },
+    "v0.119.0": {
+      "added": {
+        "spec.podSecurityContext.seLinuxChangePolicy": "string",
+        "spec.targetAllocator.podSecurityContext.seLinuxChangePolicy": "string"
+      }
+    },
+    "v0.115.0": {
+      "added": {
+        "spec.targetAllocator.prometheusCR.probeSelector": "object",
+        "spec.targetAllocator.prometheusCR.scrapeConfigSelector": "object"
+      }
+    },
+    "v0.112.0": {
+      "added": {
+        "spec.persistentVolumeClaimRetentionPolicy": "object"
+      }
+    },
+    "v0.108.0": {
+      "added": {
+        "spec.additionalContainers.resources.claims.request": "string",
+        "spec.initContainers.resources.claims.request": "string",
+        "spec.podSecurityContext.supplementalGroupsPolicy": "string",
+        "spec.resources.claims.request": "string",
+        "spec.targetAllocator.podSecurityContext.supplementalGroupsPolicy": "string",
+        "spec.targetAllocator.resources.claims.request": "string",
+        "spec.volumes.image": "object"
+      },
+      "required": [
+        "spec.managementState"
+      ]
+    },
+    "v0.105.0": {
+      "added": {
+        "spec.ipFamilies": "string[]",
+        "spec.ipFamilyPolicy": "string"
+      }
+    },
+    "v0.104.0": {
+      "optional": [
+        "spec.config.service.pipelines.processors"
+      ],
+      "added": {
+        "spec.podDnsConfig": "object"
+      }
+    },
+    "v0.103.0": {
+      "added": {
+        "spec.additionalContainers.securityContext.appArmorProfile": "object",
+        "spec.additionalContainers.volumeMounts.recursiveReadOnly": "string",
+        "spec.initContainers.securityContext.appArmorProfile": "object",
+        "spec.initContainers.volumeMounts.recursiveReadOnly": "string",
+        "spec.podSecurityContext.appArmorProfile": "object",
+        "spec.securityContext.appArmorProfile": "object",
+        "spec.targetAllocator.podSecurityContext.appArmorProfile": "object",
+        "spec.targetAllocator.securityContext.appArmorProfile": "object",
+        "spec.volumeMounts.recursiveReadOnly": "string"
+      }
+    },
+    "v0.101.0": {
+      "added": {
+        "spec.configVersions": "integer"
+      }
+    },
+    "v0.100.0": {
+      "added": {
+        "spec.readinessProbe": "object"
+      }
+    }
+  },
+  "texts": []
+}

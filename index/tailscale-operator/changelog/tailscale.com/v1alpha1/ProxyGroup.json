@@ -1,0 +1,94 @@
+{
+  "versions": {
+    "v1.96.0": {
+      "added": {
+        "spec.tailnet": "string"
+      },
+      "descriptions": {
+        "spec.tailnet": [
+          null,
+          0
+        ]
+      }
+    },
+    "v1.86.0": {
+      "added": {
+        "spec.kubeAPIServer": "object",
+        "status.devices.staticEndpoints": "string[]",
+        "status.url": "string"
+      },
+      "descriptionChanged": [
+        "spec.type",
+        "status.conditions"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec.kubeAPIServer": [
+          null,
+          1
+        ],
+        "spec.type": [
+          2,
+          3
+        ],
+        "status.conditions": [
+          4,
+          5
+        ],
+        "status.devices.staticEndpoints": [
+          null,
+          6
+        ],
+        "status.url": [
+          null,
+          7
+        ],
+        "": [
+          8,
+          9
+        ]
+      }
+    },
+    "v1.84.0": {
+      "descriptionChanged": [
+        "spec.type"
+      ],
+      "descriptions": {
+        "spec.type": [
+          10,
+          2
+        ]
+      }
+    },
+    "v1.80.0": {
+      "descriptionChanged": [
+        "spec.type"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec.type": [
+          11,
+          10
+        ],
+        "": [
+          null,
+          8
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Tailnet specifies the tailnet this ProxyGroup should join. If blank, the default tailnet is used. When set, this\nname must match that of a valid Tailnet resource. This field is immutable and cannot be changed once set.",
+    "KubeAPIServer contains configuration specific to the kube-apiserver\nProxyGroup type. This field is only used when Type is set to \"kube-apiserver\".",
+    "Type of the ProxyGroup proxies. Supported types are egress and ingress.\nType is immutable once a ProxyGroup is created.",
+    "Type of the ProxyGroup proxies. Supported types are egress, ingress, and kube-apiserver.\nType is immutable once a ProxyGroup is created.",
+    "List of status conditions to indicate the status of the ProxyGroup\nresources. Known condition types are `ProxyGroupReady`.",
+    "List of status conditions to indicate the status of the ProxyGroup\nresources. Known condition types include `ProxyGroupReady` and\n`ProxyGroupAvailable`.\n\n* `ProxyGroupReady` indicates all ProxyGroup resources are reconciled and\n  all expected conditions are true.\n* `ProxyGroupAvailable` indicates that at least one proxy is ready to\n  serve traffic.\n\nFor ProxyGroups of type kube-apiserver, there are two additional conditions:\n\n* `KubeAPIServerProxyConfigured` indicates that at least one API server\n  proxy is configured and ready to serve traffic.\n* `KubeAPIServerProxyValid` indicates that spec.kubeAPIServer config is\n  valid.",
+    "StaticEndpoints are user configured, 'static' endpoints by which tailnet peers can reach this device.",
+    "URL of the kube-apiserver proxy advertised by the ProxyGroup devices, if\nany. Only applies to ProxyGroups of type kube-apiserver.",
+    "ProxyGroup defines a set of Tailscale devices that will act as proxies.\nCurrently only egress ProxyGroups are supported.\n\nUse the tailscale.com/proxy-group annotation on a Service to specify that\nthe egress proxy should be implemented by a ProxyGroup instead of a single\ndedicated proxy. In addition to running a highly available set of proxies,\nProxyGroup also allows for serving many annotated Services from a single\nset of proxies to minimise resource consumption.\n\nMore info: https://tailscale.com/kb/1438/kubernetes-operator-cluster-egress",
+    "ProxyGroup defines a set of Tailscale devices that will act as proxies.\nDepending on spec.Type, it can be a group of egress, ingress, or kube-apiserver\nproxies. In addition to running a highly available set of proxies, ingress\nand egress ProxyGroups also allow for serving many annotated Services from a\nsingle set of proxies to minimise resource consumption.\n\nFor ingress and egress, use the tailscale.com/proxy-group annotation on a\nService to specify that the proxy should be implemented by a ProxyGroup\ninstead of a single dedicated proxy.\n\nMore info:\n* https://tailscale.com/kb/1438/kubernetes-operator-cluster-egress\n* https://tailscale.com/kb/1439/kubernetes-operator-cluster-ingress\n\nFor kube-apiserver, the ProxyGroup is a standalone resource. Use the\nspec.kubeAPIServer field to configure options specific to the kube-apiserver\nProxyGroup type.",
+    "Type of the ProxyGroup proxies. Currently the only supported type is egress.\nType is immutable once a ProxyGroup is created.",
+    "Type of the ProxyGroup proxies. Currently the only supported type is egress."
+  ]
+}

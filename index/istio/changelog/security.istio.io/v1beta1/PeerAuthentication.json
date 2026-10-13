@@ -1,0 +1,99 @@
+{
+  "versions": {
+    "1.25.0": {
+      "added": {
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "status.conditions.observedGeneration": [
+          null,
+          0
+        ],
+        "status.observedGeneration": [
+          1,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "status.conditions": [
+          null,
+          2
+        ],
+        "status.observedGeneration": [
+          null,
+          1
+        ],
+        "status.validationMessages": [
+          null,
+          3
+        ]
+      }
+    },
+    "1.22.0": {
+      "descriptionChanged": [
+        "spec.mtls.mode",
+        "spec.portLevelMtls.mode"
+      ],
+      "descriptions": {
+        "spec.mtls.mode": [
+          4,
+          5
+        ],
+        "spec.portLevelMtls.mode": [
+          4,
+          5
+        ]
+      }
+    },
+    "1.21.0": {
+      "descriptionChanged": [
+        "spec.selector"
+      ],
+      "descriptions": {
+        "spec.selector": [
+          6,
+          7
+        ]
+      }
+    },
+    "1.20.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.selector.matchLabels"
+      ],
+      "descriptions": {
+        "spec": [
+          8,
+          9
+        ],
+        "spec.selector.matchLabels": [
+          null,
+          10
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers.",
+    "Defines the mTLS mode used for peer authentication.",
+    "Defines the mTLS mode used for peer authentication.\n\nValid Options: DISABLE, PERMISSIVE, STRICT",
+    "The selector determines the workloads to apply the ChannelAuthentication on.",
+    "The selector determines the workloads to apply the PeerAuthentication on.",
+    "PeerAuthentication defines how traffic will be tunneled (or not) to the sidecar.",
+    "Peer authentication configuration for workloads. See more details at: https://istio.io/docs/reference/config/security/peer_authentication.html",
+    "One or more labels that indicate a specific set of pods/VMs on which a policy should be applied."
+  ]
+}

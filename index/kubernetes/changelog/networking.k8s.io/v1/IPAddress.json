@@ -1,0 +1,66 @@
+{
+  "versions": {
+    "v1.37.0": {
+      "descriptionChanged": [
+        "metadata",
+        "spec.parentRef",
+        "spec.parentRef.group",
+        "spec.parentRef.name",
+        "spec.parentRef.namespace",
+        "spec.parentRef.resource"
+      ],
+      "descriptions": {
+        "metadata": [
+          0,
+          1
+        ],
+        "spec.parentRef": [
+          2,
+          3
+        ],
+        "spec.parentRef.group": [
+          4,
+          5
+        ],
+        "spec.parentRef.name": [
+          6,
+          7
+        ],
+        "spec.parentRef.namespace": [
+          8,
+          9
+        ],
+        "spec.parentRef.resource": [
+          10,
+          11
+        ]
+      }
+    },
+    "v1.36.0": {
+      "required": [
+        "spec"
+      ],
+      "descriptions": {
+        "spec": [
+          null,
+          12
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "metadata is the standard object metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "ParentRef references the resource that an IPAddress is attached to. An IPAddress must reference a parent object.",
+    "parentRef references the resource that an IPAddress is attached to. An IPAddress must reference a parent object.",
+    "Group is the group of the object being referenced.",
+    "group is the group of the object being referenced.",
+    "Name is the name of the object being referenced.",
+    "name is the name of the object being referenced.",
+    "Namespace is the namespace of the object being referenced.",
+    "namespace is the namespace of the object being referenced.",
+    "Resource is the resource of the object being referenced.",
+    "resource is the resource of the object being referenced.",
+    "spec is the desired state of the IPAddress. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status"
+  ]
+}

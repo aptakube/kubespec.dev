@@ -1,0 +1,88 @@
+{
+  "versions": {
+    "v1.9.0": {
+      "added": {
+        "spec.healthCheck.active.healthCheckLog": "object",
+        "spec.healthCheck.active.http.requestBody": "object",
+        "spec.loadBalancer.backendUtilization.outOfBand": "object",
+        "spec.rateLimit.global.rules.limit.fromMetadata": "object",
+        "spec.rateLimit.local.rules.limit.fromMetadata": "object",
+        "spec.responseOverride.match.responseHeaders": "object[]",
+        "spec.telemetry.tracing.clientSamplingFraction": "object",
+        "spec.telemetry.tracing.overallSamplingFraction": "object"
+      },
+      "descriptionChanged": [
+        "spec.mergeType",
+        "spec.rateLimit.global.rules.limit.unit",
+        "spec.rateLimit.local.rules.limit.unit"
+      ],
+      "optional": [
+        "spec.responseOverride.match.statusCodes"
+      ],
+      "descriptions": {
+        "spec.healthCheck.active.healthCheckLog": [
+          null,
+          0
+        ],
+        "spec.healthCheck.active.http.requestBody": [
+          null,
+          1
+        ],
+        "spec.loadBalancer.backendUtilization.outOfBand": [
+          null,
+          2
+        ],
+        "spec.mergeType": [
+          3,
+          4
+        ],
+        "spec.rateLimit.global.rules.limit.fromMetadata": [
+          null,
+          5
+        ],
+        "spec.rateLimit.global.rules.limit.unit": [
+          6,
+          7
+        ],
+        "spec.rateLimit.local.rules.limit.fromMetadata": [
+          null,
+          5
+        ],
+        "spec.rateLimit.local.rules.limit.unit": [
+          6,
+          7
+        ],
+        "spec.responseOverride.match.responseHeaders": [
+          null,
+          8
+        ],
+        "spec.responseOverride.match.statusCodes": [
+          null,
+          9
+        ],
+        "spec.telemetry.tracing.clientSamplingFraction": [
+          null,
+          10
+        ],
+        "spec.telemetry.tracing.overallSamplingFraction": [
+          null,
+          11
+        ]
+      }
+    }
+  },
+  "texts": [
+    "HealthCheckLog defines health check event logging configuration for this cluster.\nWhen set, HC probe outcomes are logged to the configured sinks.\nTakes precedence over the gateway-level EnvoyProxy.spec.telemetry.healthCheckLog.",
+    "RequestBody defines the HTTP request body payload sent during health checking.",
+    "OutOfBand enables out-of-band ORCA load reporting. When set, Envoy opens a\nserver-streaming gRPC connection to each endpoint's\nxds.service.orca.v3.OpenRcaService/StreamCoreMetrics and pulls load\nreports periodically, instead of relying on in-band ORCA metrics\ncarried in response headers/trailers.\n\nThe backend must implement OpenRcaService for this to take effect.",
+    "MergeType determines how this configuration is merged with existing BackendTrafficPolicy\nconfigurations targeting a parent resource. When set, this configuration will be merged\ninto a parent BackendTrafficPolicy (i.e. the one targeting a Gateway or Listener).\nThis field cannot be set when targeting a parent resource (Gateway).\nIf unset, no merging occurs, and only the most specific configuration takes effect.",
+    "MergeType determines how this configuration is merged with existing BackendTrafficPolicy\nconfigurations targeting a parent resource. When set, this configuration will be merged\ninto the closest parent BackendTrafficPolicy in the route's attachment hierarchy (for\nexample, one targeting a Gateway, Gateway listener, ListenerSet, or ListenerSet listener).\nCurrently, this field can only be set when targeting xRoute resources.\nIf unset, no merging occurs, and only the most specific configuration takes effect.",
+    "FromMetadata sources the limit value from per-request dynamic metadata.\nWhen the referenced metadata value is present, it overrides Requests/Unit for that\nrequest; otherwise Requests/Unit are used as the default.\n\nThe referenced metadata value must be a struct containing an integer \"requests_per_unit\"\nproperty and a \"unit\" property with a value parseable to a RateLimitUnit. An upstream\nfilter (e.g. ext_proc) is responsible for writing this struct into dynamic metadata.\n\nOnly supported for Global Rate Limits.",
+    "RateLimitUnit specifies the intervals for setting rate limits.\nValid RateLimitUnit values are \"Second\", \"Minute\", \"Hour\", \"Day\", \"Month\" and \"Year\".",
+    "RateLimitUnit specifies the intervals for setting rate limits.\nValid RateLimitUnit values are \"Second\", \"Minute\", \"Hour\", \"Day\", \"Week\", \"Month\" and \"Year\".",
+    "Response headers to match on. The match evaluates to true if all matches are successful.",
+    "Status code to match on. The match evaluates to true if any of the matches are successful.",
+    "ClientSamplingFraction represents the fraction of requests that should be\nselected for tracing when requested by the client.\nIf unspecified, client-forced tracing is disabled by default and users must\nset this field to opt in.",
+    "OverallSamplingFraction represents the fraction of requests that should be\nselected for tracing after all other sampling checks have been applied."
+  ]
+}

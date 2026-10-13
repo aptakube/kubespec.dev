@@ -1,0 +1,18 @@
+{
+  "versions": {
+    "v1.12.0": {
+      "added": {
+        "spec.template.spec.taints": "object[]"
+      },
+      "descriptions": {
+        "spec.template.spec.taints": [
+          null,
+          0
+        ]
+      }
+    }
+  },
+  "texts": [
+    "taints are the node taints that Cluster API will manage.\nThis list is not necessarily complete: other Kubernetes components may add or remove other taints from nodes,\ne.g. the node controller might add the node.kubernetes.io/not-ready taint.\nOnly those taints defined in this list will be added or removed by core Cluster API controllers.\n\nThere can be at most 64 taints.\nA pod would have to tolerate all existing taints to run on the corresponding node.\n\nNOTE: This list is implemented as a \"map\" type, meaning that individual elements can be managed by different owners."
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "versions": {
+    "v0.10.0": {
+      "optional": [
+        "spec",
+        "spec.wildcard",
+        "status",
+        "status.presented",
+        "status.processing",
+        "status.reason"
+      ],
+      "added": {
+        "spec.config.dns01": "object",
+        "spec.config.http01": "object",
+        "spec.solver.dns01": "object",
+        "spec.solver.http01": "object"
+      },
+      "typeChanged": {
+        "spec.solver.selector.matchLabels": [
+          "object",
+          "map[string]string"
+        ]
+      },
+      "description": true,
+      "descriptions": {
+        "spec.config.dns01": [
+          null,
+          0
+        ],
+        "spec.config.http01": [
+          null,
+          1
+        ],
+        "spec.solver.http01": [
+          null,
+          2
+        ],
+        "spec.solver.selector.matchLabels": [
+          null,
+          3
+        ],
+        "spec.wildcard": [
+          null,
+          4
+        ],
+        "status.presented": [
+          null,
+          5
+        ],
+        "status.processing": [
+          null,
+          6
+        ],
+        "status.reason": [
+          null,
+          7
+        ],
+        "": [
+          null,
+          8
+        ]
+      }
+    },
+    "v0.9.0": {
+      "added": {
+        "spec.issuerRef.group": "string",
+        "spec.solver.selector.dnsZones": "string[]"
+      },
+      "descriptionChanged": [
+        "spec.solver.selector.dnsNames",
+        "spec.solver.selector.matchLabels"
+      ],
+      "descriptions": {
+        "spec.solver.selector.dnsNames": [
+          9,
+          10
+        ],
+        "spec.solver.selector.dnsZones": [
+          null,
+          11
+        ],
+        "spec.solver.selector.matchLabels": [
+          12,
+          3
+        ]
+      }
+    }
+  },
+  "texts": [
+    "DNS01 contains DNS01 challenge solving configuration",
+    "HTTP01 contains HTTP01 challenge solving configuration",
+    "ACMEChallengeSolverHTTP01 contains configuration detailing how to solve HTTP01 challenges within a Kubernetes cluster. Typically this is accomplished through creating 'routes' of some description that configure ingress controllers to direct traffic to 'solver pods', which are responsible for responding to the ACME server's HTTP requests.",
+    "A label selector that is used to refine the set of certificate's that this challenge solver will apply to.",
+    "Wildcard will be true if this challenge is for a wildcard identifier, for example '*.example.com'",
+    "Presented will be set to true if the challenge values for this challenge are currently 'presented'. This *does not* imply the self check is passing. Only that the values have been 'submitted' for the appropriate challenge mechanism (i.e. the DNS01 TXT record has been presented, or the HTTP01 configuration has been configured).",
+    "Processing is used to denote whether this challenge should be processed or not. This field will only be set to true by the 'scheduling' component. It will only be set to false by the 'challenges' controller, after the challenge has reached a final state or timed out. If this field is set to false, the challenge controller will not take any more action.",
+    "Reason contains human readable information on why the Challenge is in the current state.",
+    "Challenge is a type to represent a Challenge request with an ACME server",
+    "List of DNSNames that can be used to further refine the domains that this solver applies to.",
+    "List of DNSNames that this solver will be used to solve. If specified and a match is found, a dnsNames selector will take precedence over a dnsZones selector. If multiple solvers match with the same dnsNames value, the solver with the most matching labels in matchLabels will be selected. If neither has more matches, the solver defined earlier in the list will be selected.",
+    "List of DNSZones that this solver will be used to solve. The most specific DNS zone match specified here will take precedence over other DNS zone matches, so a solver specifying sys.example.com will be selected over one specifying example.com for the domain www.sys.example.com. If multiple solvers match with the same dnsZones value, the solver with the most matching labels in matchLabels will be selected. If neither has more matches, the solver defined earlier in the list will be selected.",
+    "A label selector that is used to refine the set of certificate's that this challenge solver will apply to. TODO: use kubernetes standard types for matchLabels"
+  ]
+}

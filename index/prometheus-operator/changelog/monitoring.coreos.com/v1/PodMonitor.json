@@ -1,0 +1,2506 @@
+{
+  "versions": {
+    "v0.94.0": {
+      "descriptionChanged": [
+        "spec.podMetricsEndpoints.oauth2.clientId.configMap.key",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.ca.configMap.key",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.cert.configMap.key",
+        "spec.podMetricsEndpoints.tlsConfig.ca.configMap.key",
+        "spec.podMetricsEndpoints.tlsConfig.cert.configMap.key"
+      ],
+      "descriptions": {
+        "spec.podMetricsEndpoints.oauth2.clientId.configMap.key": [
+          0,
+          1
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.ca.configMap.key": [
+          0,
+          1
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.cert.configMap.key": [
+          0,
+          1
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.ca.configMap.key": [
+          0,
+          1
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.cert.configMap.key": [
+          0,
+          1
+        ]
+      }
+    },
+    "v0.92.0": {
+      "descriptionChanged": [
+        "spec.attachMetadata.node"
+      ],
+      "descriptions": {
+        "spec.attachMetadata.node": [
+          2,
+          3
+        ]
+      }
+    },
+    "v0.88.0": {
+      "added": {
+        "spec.scrapeNativeHistograms": "boolean"
+      },
+      "descriptions": {
+        "spec.scrapeNativeHistograms": [
+          null,
+          4
+        ]
+      }
+    },
+    "v0.87.0": {
+      "descriptionChanged": [
+        "spec.podMetricsEndpoints.port",
+        "spec.podMetricsEndpoints.portNumber",
+        "spec.podMetricsEndpoints.scheme"
+      ],
+      "descriptions": {
+        "spec.podMetricsEndpoints.port": [
+          5,
+          6
+        ],
+        "spec.podMetricsEndpoints.portNumber": [
+          7,
+          8
+        ],
+        "spec.podMetricsEndpoints.scheme": [
+          9,
+          10
+        ]
+      }
+    },
+    "v0.86.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.attachMetadata",
+        "spec.attachMetadata.node",
+        "spec.bodySizeLimit",
+        "spec.convertClassicHistogramsToNHCB",
+        "spec.fallbackScrapeProtocol",
+        "spec.jobLabel",
+        "spec.keepDroppedTargets",
+        "spec.labelLimit",
+        "spec.labelNameLengthLimit",
+        "spec.labelValueLengthLimit",
+        "spec.namespaceSelector",
+        "spec.namespaceSelector.any",
+        "spec.namespaceSelector.matchNames",
+        "spec.nativeHistogramBucketLimit",
+        "spec.nativeHistogramMinBucketFactor",
+        "spec.podMetricsEndpoints",
+        "spec.podMetricsEndpoints.authorization",
+        "spec.podMetricsEndpoints.authorization.credentials",
+        "spec.podMetricsEndpoints.authorization.type",
+        "spec.podMetricsEndpoints.basicAuth",
+        "spec.podMetricsEndpoints.basicAuth.password",
+        "spec.podMetricsEndpoints.basicAuth.username",
+        "spec.podMetricsEndpoints.bearerTokenSecret",
+        "spec.podMetricsEndpoints.enableHttp2",
+        "spec.podMetricsEndpoints.filterRunning",
+        "spec.podMetricsEndpoints.followRedirects",
+        "spec.podMetricsEndpoints.honorLabels",
+        "spec.podMetricsEndpoints.honorTimestamps",
+        "spec.podMetricsEndpoints.interval",
+        "spec.podMetricsEndpoints.metricRelabelings",
+        "spec.podMetricsEndpoints.metricRelabelings.action",
+        "spec.podMetricsEndpoints.metricRelabelings.modulus",
+        "spec.podMetricsEndpoints.metricRelabelings.regex",
+        "spec.podMetricsEndpoints.metricRelabelings.replacement",
+        "spec.podMetricsEndpoints.metricRelabelings.separator",
+        "spec.podMetricsEndpoints.metricRelabelings.sourceLabels",
+        "spec.podMetricsEndpoints.metricRelabelings.targetLabel",
+        "spec.podMetricsEndpoints.noProxy",
+        "spec.podMetricsEndpoints.oauth2",
+        "spec.podMetricsEndpoints.oauth2.clientId",
+        "spec.podMetricsEndpoints.oauth2.clientId.configMap",
+        "spec.podMetricsEndpoints.oauth2.clientId.secret",
+        "spec.podMetricsEndpoints.oauth2.clientSecret",
+        "spec.podMetricsEndpoints.oauth2.endpointParams",
+        "spec.podMetricsEndpoints.oauth2.noProxy",
+        "spec.podMetricsEndpoints.oauth2.proxyConnectHeader",
+        "spec.podMetricsEndpoints.oauth2.proxyFromEnvironment",
+        "spec.podMetricsEndpoints.oauth2.proxyUrl",
+        "spec.podMetricsEndpoints.oauth2.scopes",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.ca",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.ca.configMap",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.ca.secret",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.cert",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.cert.configMap",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.cert.secret",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.insecureSkipVerify",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.keySecret",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.maxVersion",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.minVersion",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.serverName",
+        "spec.podMetricsEndpoints.oauth2.tokenUrl",
+        "spec.podMetricsEndpoints.params",
+        "spec.podMetricsEndpoints.path",
+        "spec.podMetricsEndpoints.port",
+        "spec.podMetricsEndpoints.portNumber",
+        "spec.podMetricsEndpoints.proxyConnectHeader",
+        "spec.podMetricsEndpoints.proxyFromEnvironment",
+        "spec.podMetricsEndpoints.proxyUrl",
+        "spec.podMetricsEndpoints.relabelings",
+        "spec.podMetricsEndpoints.relabelings.action",
+        "spec.podMetricsEndpoints.relabelings.modulus",
+        "spec.podMetricsEndpoints.relabelings.regex",
+        "spec.podMetricsEndpoints.relabelings.replacement",
+        "spec.podMetricsEndpoints.relabelings.separator",
+        "spec.podMetricsEndpoints.relabelings.sourceLabels",
+        "spec.podMetricsEndpoints.relabelings.targetLabel",
+        "spec.podMetricsEndpoints.scheme",
+        "spec.podMetricsEndpoints.scrapeTimeout",
+        "spec.podMetricsEndpoints.targetPort",
+        "spec.podMetricsEndpoints.tlsConfig",
+        "spec.podMetricsEndpoints.tlsConfig.ca",
+        "spec.podMetricsEndpoints.tlsConfig.ca.configMap",
+        "spec.podMetricsEndpoints.tlsConfig.ca.secret",
+        "spec.podMetricsEndpoints.tlsConfig.cert",
+        "spec.podMetricsEndpoints.tlsConfig.cert.configMap",
+        "spec.podMetricsEndpoints.tlsConfig.cert.secret",
+        "spec.podMetricsEndpoints.tlsConfig.insecureSkipVerify",
+        "spec.podMetricsEndpoints.tlsConfig.keySecret",
+        "spec.podMetricsEndpoints.tlsConfig.maxVersion",
+        "spec.podMetricsEndpoints.tlsConfig.minVersion",
+        "spec.podMetricsEndpoints.tlsConfig.serverName",
+        "spec.podMetricsEndpoints.trackTimestampsStaleness",
+        "spec.podTargetLabels",
+        "spec.sampleLimit",
+        "spec.scrapeClass",
+        "spec.scrapeClassicHistograms",
+        "spec.scrapeProtocols",
+        "spec.selector",
+        "spec.selectorMechanism",
+        "spec.targetLimit"
+      ],
+      "added": {
+        "status": "object"
+      },
+      "descriptions": {
+        "spec": [
+          11,
+          12
+        ],
+        "spec.attachMetadata": [
+          13,
+          14
+        ],
+        "spec.attachMetadata.node": [
+          15,
+          2
+        ],
+        "spec.bodySizeLimit": [
+          16,
+          17
+        ],
+        "spec.convertClassicHistogramsToNHCB": [
+          18,
+          19
+        ],
+        "spec.fallbackScrapeProtocol": [
+          20,
+          21
+        ],
+        "spec.jobLabel": [
+          22,
+          23
+        ],
+        "spec.keepDroppedTargets": [
+          24,
+          25
+        ],
+        "spec.labelLimit": [
+          26,
+          27
+        ],
+        "spec.labelNameLengthLimit": [
+          28,
+          29
+        ],
+        "spec.labelValueLengthLimit": [
+          30,
+          31
+        ],
+        "spec.namespaceSelector": [
+          32,
+          33
+        ],
+        "spec.namespaceSelector.any": [
+          34,
+          35
+        ],
+        "spec.namespaceSelector.matchNames": [
+          36,
+          37
+        ],
+        "spec.nativeHistogramBucketLimit": [
+          38,
+          39
+        ],
+        "spec.nativeHistogramMinBucketFactor": [
+          40,
+          41
+        ],
+        "spec.podMetricsEndpoints": [
+          42,
+          43
+        ],
+        "spec.podMetricsEndpoints.authorization": [
+          44,
+          45
+        ],
+        "spec.podMetricsEndpoints.authorization.credentials": [
+          46,
+          47
+        ],
+        "spec.podMetricsEndpoints.authorization.type": [
+          48,
+          49
+        ],
+        "spec.podMetricsEndpoints.basicAuth": [
+          50,
+          51
+        ],
+        "spec.podMetricsEndpoints.basicAuth.password": [
+          52,
+          53
+        ],
+        "spec.podMetricsEndpoints.basicAuth.username": [
+          54,
+          55
+        ],
+        "spec.podMetricsEndpoints.bearerTokenSecret": [
+          56,
+          57
+        ],
+        "spec.podMetricsEndpoints.enableHttp2": [
+          58,
+          59
+        ],
+        "spec.podMetricsEndpoints.filterRunning": [
+          60,
+          61
+        ],
+        "spec.podMetricsEndpoints.followRedirects": [
+          62,
+          63
+        ],
+        "spec.podMetricsEndpoints.honorLabels": [
+          64,
+          65
+        ],
+        "spec.podMetricsEndpoints.honorTimestamps": [
+          66,
+          67
+        ],
+        "spec.podMetricsEndpoints.interval": [
+          68,
+          69
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings": [
+          70,
+          71
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.action": [
+          72,
+          73
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.modulus": [
+          74,
+          75
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.regex": [
+          76,
+          77
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.replacement": [
+          78,
+          79
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.separator": [
+          80,
+          81
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.sourceLabels": [
+          82,
+          83
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.targetLabel": [
+          84,
+          85
+        ],
+        "spec.podMetricsEndpoints.noProxy": [
+          86,
+          87
+        ],
+        "spec.podMetricsEndpoints.oauth2": [
+          88,
+          89
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientId": [
+          90,
+          91
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientId.configMap": [
+          92,
+          93
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientId.secret": [
+          94,
+          95
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientSecret": [
+          96,
+          97
+        ],
+        "spec.podMetricsEndpoints.oauth2.endpointParams": [
+          98,
+          99
+        ],
+        "spec.podMetricsEndpoints.oauth2.noProxy": [
+          86,
+          87
+        ],
+        "spec.podMetricsEndpoints.oauth2.proxyConnectHeader": [
+          100,
+          101
+        ],
+        "spec.podMetricsEndpoints.oauth2.proxyFromEnvironment": [
+          102,
+          103
+        ],
+        "spec.podMetricsEndpoints.oauth2.proxyUrl": [
+          104,
+          105
+        ],
+        "spec.podMetricsEndpoints.oauth2.scopes": [
+          106,
+          107
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig": [
+          108,
+          109
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.ca": [
+          110,
+          111
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.ca.configMap": [
+          92,
+          93
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.ca.secret": [
+          94,
+          95
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.cert": [
+          112,
+          113
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.cert.configMap": [
+          92,
+          93
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.cert.secret": [
+          94,
+          95
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.insecureSkipVerify": [
+          114,
+          115
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.keySecret": [
+          116,
+          117
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.maxVersion": [
+          118,
+          119
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.minVersion": [
+          120,
+          121
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.serverName": [
+          122,
+          123
+        ],
+        "spec.podMetricsEndpoints.oauth2.tokenUrl": [
+          124,
+          125
+        ],
+        "spec.podMetricsEndpoints.params": [
+          126,
+          127
+        ],
+        "spec.podMetricsEndpoints.path": [
+          128,
+          129
+        ],
+        "spec.podMetricsEndpoints.port": [
+          130,
+          5
+        ],
+        "spec.podMetricsEndpoints.portNumber": [
+          131,
+          7
+        ],
+        "spec.podMetricsEndpoints.proxyConnectHeader": [
+          100,
+          101
+        ],
+        "spec.podMetricsEndpoints.proxyFromEnvironment": [
+          102,
+          103
+        ],
+        "spec.podMetricsEndpoints.proxyUrl": [
+          104,
+          105
+        ],
+        "spec.podMetricsEndpoints.relabelings": [
+          132,
+          133
+        ],
+        "spec.podMetricsEndpoints.relabelings.action": [
+          72,
+          73
+        ],
+        "spec.podMetricsEndpoints.relabelings.modulus": [
+          74,
+          75
+        ],
+        "spec.podMetricsEndpoints.relabelings.regex": [
+          76,
+          77
+        ],
+        "spec.podMetricsEndpoints.relabelings.replacement": [
+          78,
+          79
+        ],
+        "spec.podMetricsEndpoints.relabelings.separator": [
+          80,
+          81
+        ],
+        "spec.podMetricsEndpoints.relabelings.sourceLabels": [
+          82,
+          83
+        ],
+        "spec.podMetricsEndpoints.relabelings.targetLabel": [
+          84,
+          85
+        ],
+        "spec.podMetricsEndpoints.scheme": [
+          134,
+          9
+        ],
+        "spec.podMetricsEndpoints.scrapeTimeout": [
+          135,
+          136
+        ],
+        "spec.podMetricsEndpoints.targetPort": [
+          137,
+          138
+        ],
+        "spec.podMetricsEndpoints.tlsConfig": [
+          139,
+          140
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.ca": [
+          110,
+          111
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.ca.configMap": [
+          92,
+          93
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.ca.secret": [
+          94,
+          95
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.cert": [
+          112,
+          113
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.cert.configMap": [
+          92,
+          93
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.cert.secret": [
+          94,
+          95
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.insecureSkipVerify": [
+          114,
+          115
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.keySecret": [
+          116,
+          117
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.maxVersion": [
+          118,
+          119
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.minVersion": [
+          120,
+          121
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.serverName": [
+          122,
+          123
+        ],
+        "spec.podMetricsEndpoints.trackTimestampsStaleness": [
+          141,
+          142
+        ],
+        "spec.podTargetLabels": [
+          143,
+          144
+        ],
+        "spec.sampleLimit": [
+          145,
+          146
+        ],
+        "spec.scrapeClass": [
+          147,
+          148
+        ],
+        "spec.scrapeClassicHistograms": [
+          149,
+          150
+        ],
+        "spec.scrapeProtocols": [
+          151,
+          152
+        ],
+        "spec.selector": [
+          153,
+          154
+        ],
+        "spec.selectorMechanism": [
+          155,
+          156
+        ],
+        "spec.targetLimit": [
+          157,
+          158
+        ],
+        "status": [
+          null,
+          159
+        ]
+      }
+    },
+    "v0.85.0": {
+      "descriptionChanged": [
+        "spec.scrapeClassicHistograms"
+      ],
+      "descriptions": {
+        "spec.scrapeClassicHistograms": [
+          160,
+          149
+        ]
+      }
+    },
+    "v0.84.0": {
+      "added": {
+        "spec.podMetricsEndpoints.noProxy": "string",
+        "spec.podMetricsEndpoints.proxyConnectHeader": "map[string]object[]",
+        "spec.podMetricsEndpoints.proxyFromEnvironment": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.podMetricsEndpoints.proxyUrl"
+      ],
+      "descriptions": {
+        "spec.podMetricsEndpoints.noProxy": [
+          null,
+          86
+        ],
+        "spec.podMetricsEndpoints.proxyConnectHeader": [
+          null,
+          100
+        ],
+        "spec.podMetricsEndpoints.proxyFromEnvironment": [
+          null,
+          102
+        ],
+        "spec.podMetricsEndpoints.proxyUrl": [
+          161,
+          104
+        ]
+      }
+    },
+    "v0.82.0": {
+      "added": {
+        "spec.convertClassicHistogramsToNHCB": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.podMetricsEndpoints.oauth2.noProxy",
+        "spec.podMetricsEndpoints.oauth2.proxyConnectHeader",
+        "spec.podMetricsEndpoints.oauth2.proxyFromEnvironment",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.maxVersion",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.minVersion",
+        "spec.podMetricsEndpoints.tlsConfig.maxVersion",
+        "spec.podMetricsEndpoints.tlsConfig.minVersion"
+      ],
+      "descriptions": {
+        "spec.convertClassicHistogramsToNHCB": [
+          null,
+          18
+        ],
+        "spec.podMetricsEndpoints.oauth2.noProxy": [
+          162,
+          86
+        ],
+        "spec.podMetricsEndpoints.oauth2.proxyConnectHeader": [
+          163,
+          100
+        ],
+        "spec.podMetricsEndpoints.oauth2.proxyFromEnvironment": [
+          164,
+          102
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.maxVersion": [
+          165,
+          118
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.minVersion": [
+          166,
+          120
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.maxVersion": [
+          165,
+          118
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.minVersion": [
+          166,
+          120
+        ]
+      }
+    },
+    "v0.80.0": {
+      "descriptionChanged": [
+        "spec.podMetricsEndpoints.scrapeTimeout"
+      ],
+      "descriptions": {
+        "spec.podMetricsEndpoints.scrapeTimeout": [
+          167,
+          135
+        ]
+      }
+    },
+    "v0.79.1": {
+      "added": {
+        "spec.fallbackScrapeProtocol": "string"
+      },
+      "removed": {
+        "spec.scrapeFallbackProtocol": "string"
+      },
+      "descriptions": {
+        "spec.fallbackScrapeProtocol": [
+          null,
+          20
+        ],
+        "spec.scrapeFallbackProtocol": [
+          20,
+          null
+        ]
+      }
+    },
+    "v0.79.0": {
+      "descriptionChanged": [
+        "spec.podMetricsEndpoints.port",
+        "spec.podMetricsEndpoints.targetPort"
+      ],
+      "added": {
+        "spec.podMetricsEndpoints.portNumber": "integer",
+        "spec.scrapeFallbackProtocol": "string",
+        "spec.selectorMechanism": "string"
+      },
+      "descriptions": {
+        "spec.podMetricsEndpoints.port": [
+          168,
+          130
+        ],
+        "spec.podMetricsEndpoints.portNumber": [
+          null,
+          131
+        ],
+        "spec.podMetricsEndpoints.targetPort": [
+          169,
+          137
+        ],
+        "spec.scrapeFallbackProtocol": [
+          null,
+          20
+        ],
+        "spec.selectorMechanism": [
+          null,
+          155
+        ]
+      }
+    },
+    "v0.78.0": {
+      "added": {
+        "spec.nativeHistogramBucketLimit": "integer",
+        "spec.nativeHistogramMinBucketFactor": "int | string",
+        "spec.scrapeClassicHistograms": "boolean"
+      },
+      "descriptions": {
+        "spec.nativeHistogramBucketLimit": [
+          null,
+          38
+        ],
+        "spec.nativeHistogramMinBucketFactor": [
+          null,
+          40
+        ],
+        "spec.scrapeClassicHistograms": [
+          null,
+          160
+        ]
+      }
+    },
+    "v0.77.0": {
+      "descriptionChanged": [
+        "spec.attachMetadata",
+        "spec.attachMetadata.node",
+        "spec.bodySizeLimit",
+        "spec.jobLabel",
+        "spec.keepDroppedTargets",
+        "spec.labelLimit",
+        "spec.labelNameLengthLimit",
+        "spec.labelValueLengthLimit",
+        "spec.podMetricsEndpoints.authorization",
+        "spec.podMetricsEndpoints.authorization.credentials.name",
+        "spec.podMetricsEndpoints.authorization.type",
+        "spec.podMetricsEndpoints.basicAuth",
+        "spec.podMetricsEndpoints.basicAuth.password.name",
+        "spec.podMetricsEndpoints.basicAuth.username.name",
+        "spec.podMetricsEndpoints.bearerTokenSecret",
+        "spec.podMetricsEndpoints.bearerTokenSecret.name",
+        "spec.podMetricsEndpoints.filterRunning",
+        "spec.podMetricsEndpoints.interval",
+        "spec.podMetricsEndpoints.metricRelabelings.action",
+        "spec.podMetricsEndpoints.metricRelabelings.modulus",
+        "spec.podMetricsEndpoints.metricRelabelings.replacement",
+        "spec.podMetricsEndpoints.metricRelabelings.targetLabel",
+        "spec.podMetricsEndpoints.oauth2",
+        "spec.podMetricsEndpoints.oauth2.clientId.configMap.name",
+        "spec.podMetricsEndpoints.oauth2.clientId.secret.name",
+        "spec.podMetricsEndpoints.oauth2.clientSecret.name",
+        "spec.podMetricsEndpoints.oauth2.noProxy",
+        "spec.podMetricsEndpoints.oauth2.proxyConnectHeader",
+        "spec.podMetricsEndpoints.oauth2.proxyConnectHeader.name",
+        "spec.podMetricsEndpoints.oauth2.proxyFromEnvironment",
+        "spec.podMetricsEndpoints.oauth2.proxyUrl",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.ca.configMap.name",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.ca.secret.name",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.cert.configMap.name",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.cert.secret.name",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.keySecret.name",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.maxVersion",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.minVersion",
+        "spec.podMetricsEndpoints.path",
+        "spec.podMetricsEndpoints.port",
+        "spec.podMetricsEndpoints.relabelings",
+        "spec.podMetricsEndpoints.relabelings.action",
+        "spec.podMetricsEndpoints.relabelings.modulus",
+        "spec.podMetricsEndpoints.relabelings.replacement",
+        "spec.podMetricsEndpoints.relabelings.targetLabel",
+        "spec.podMetricsEndpoints.scheme",
+        "spec.podMetricsEndpoints.scrapeTimeout",
+        "spec.podMetricsEndpoints.targetPort",
+        "spec.podMetricsEndpoints.tlsConfig.ca.configMap.name",
+        "spec.podMetricsEndpoints.tlsConfig.ca.secret.name",
+        "spec.podMetricsEndpoints.tlsConfig.cert.configMap.name",
+        "spec.podMetricsEndpoints.tlsConfig.cert.secret.name",
+        "spec.podMetricsEndpoints.tlsConfig.keySecret.name",
+        "spec.podMetricsEndpoints.tlsConfig.maxVersion",
+        "spec.podMetricsEndpoints.tlsConfig.minVersion",
+        "spec.podMetricsEndpoints.trackTimestampsStaleness",
+        "spec.scrapeProtocols"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec.attachMetadata": [
+          170,
+          13
+        ],
+        "spec.attachMetadata.node": [
+          171,
+          15
+        ],
+        "spec.bodySizeLimit": [
+          172,
+          16
+        ],
+        "spec.jobLabel": [
+          173,
+          22
+        ],
+        "spec.keepDroppedTargets": [
+          174,
+          24
+        ],
+        "spec.labelLimit": [
+          175,
+          26
+        ],
+        "spec.labelNameLengthLimit": [
+          176,
+          28
+        ],
+        "spec.labelValueLengthLimit": [
+          177,
+          30
+        ],
+        "spec.podMetricsEndpoints.authorization": [
+          178,
+          44
+        ],
+        "spec.podMetricsEndpoints.authorization.credentials.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.authorization.type": [
+          181,
+          48
+        ],
+        "spec.podMetricsEndpoints.basicAuth": [
+          182,
+          50
+        ],
+        "spec.podMetricsEndpoints.basicAuth.password.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.basicAuth.username.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.bearerTokenSecret": [
+          183,
+          56
+        ],
+        "spec.podMetricsEndpoints.bearerTokenSecret.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.filterRunning": [
+          184,
+          60
+        ],
+        "spec.podMetricsEndpoints.interval": [
+          185,
+          68
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.action": [
+          186,
+          72
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.modulus": [
+          187,
+          74
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.replacement": [
+          188,
+          78
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.targetLabel": [
+          189,
+          84
+        ],
+        "spec.podMetricsEndpoints.oauth2": [
+          190,
+          88
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientId.configMap.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientId.secret.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientSecret.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.oauth2.noProxy": [
+          191,
+          162
+        ],
+        "spec.podMetricsEndpoints.oauth2.proxyConnectHeader": [
+          192,
+          163
+        ],
+        "spec.podMetricsEndpoints.oauth2.proxyConnectHeader.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.oauth2.proxyFromEnvironment": [
+          193,
+          164
+        ],
+        "spec.podMetricsEndpoints.oauth2.proxyUrl": [
+          194,
+          104
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.ca.configMap.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.ca.secret.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.cert.configMap.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.cert.secret.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.keySecret.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.maxVersion": [
+          195,
+          165
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig.minVersion": [
+          196,
+          166
+        ],
+        "spec.podMetricsEndpoints.path": [
+          197,
+          128
+        ],
+        "spec.podMetricsEndpoints.port": [
+          198,
+          168
+        ],
+        "spec.podMetricsEndpoints.relabelings": [
+          199,
+          132
+        ],
+        "spec.podMetricsEndpoints.relabelings.action": [
+          186,
+          72
+        ],
+        "spec.podMetricsEndpoints.relabelings.modulus": [
+          187,
+          74
+        ],
+        "spec.podMetricsEndpoints.relabelings.replacement": [
+          188,
+          78
+        ],
+        "spec.podMetricsEndpoints.relabelings.targetLabel": [
+          189,
+          84
+        ],
+        "spec.podMetricsEndpoints.scheme": [
+          200,
+          134
+        ],
+        "spec.podMetricsEndpoints.scrapeTimeout": [
+          201,
+          167
+        ],
+        "spec.podMetricsEndpoints.targetPort": [
+          202,
+          169
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.ca.configMap.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.ca.secret.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.cert.configMap.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.cert.secret.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.keySecret.name": [
+          179,
+          180
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.maxVersion": [
+          195,
+          165
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.minVersion": [
+          196,
+          166
+        ],
+        "spec.podMetricsEndpoints.trackTimestampsStaleness": [
+          203,
+          141
+        ],
+        "spec.scrapeProtocols": [
+          204,
+          151
+        ],
+        "": [
+          205,
+          206
+        ]
+      }
+    },
+    "v0.76.0": {
+      "descriptionChanged": [
+        "spec.attachMetadata",
+        "spec.attachMetadata.node",
+        "spec.namespaceSelector",
+        "spec.podMetricsEndpoints",
+        "spec.selector"
+      ],
+      "added": {
+        "spec.podMetricsEndpoints.oauth2.noProxy": "string",
+        "spec.podMetricsEndpoints.oauth2.proxyConnectHeader": "map[string]object[]",
+        "spec.podMetricsEndpoints.oauth2.proxyFromEnvironment": "boolean",
+        "spec.podMetricsEndpoints.oauth2.proxyUrl": "string",
+        "spec.podMetricsEndpoints.oauth2.tlsConfig": "object",
+        "spec.podMetricsEndpoints.tlsConfig.maxVersion": "string",
+        "spec.podMetricsEndpoints.tlsConfig.minVersion": "string"
+      },
+      "description": true,
+      "descriptions": {
+        "spec.attachMetadata": [
+          207,
+          170
+        ],
+        "spec.attachMetadata.node": [
+          208,
+          171
+        ],
+        "spec.namespaceSelector": [
+          209,
+          32
+        ],
+        "spec.podMetricsEndpoints": [
+          210,
+          42
+        ],
+        "spec.podMetricsEndpoints.oauth2.noProxy": [
+          null,
+          191
+        ],
+        "spec.podMetricsEndpoints.oauth2.proxyConnectHeader": [
+          null,
+          192
+        ],
+        "spec.podMetricsEndpoints.oauth2.proxyFromEnvironment": [
+          null,
+          193
+        ],
+        "spec.podMetricsEndpoints.oauth2.proxyUrl": [
+          null,
+          194
+        ],
+        "spec.podMetricsEndpoints.oauth2.tlsConfig": [
+          null,
+          108
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.maxVersion": [
+          null,
+          195
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.minVersion": [
+          null,
+          196
+        ],
+        "spec.selector": [
+          211,
+          153
+        ],
+        "": [
+          212,
+          205
+        ]
+      }
+    },
+    "v0.75.0": {
+      "descriptionChanged": [
+        "spec.podMetricsEndpoints.authorization.credentials.name",
+        "spec.podMetricsEndpoints.basicAuth.password.name",
+        "spec.podMetricsEndpoints.basicAuth.username.name",
+        "spec.podMetricsEndpoints.bearerTokenSecret.name",
+        "spec.podMetricsEndpoints.oauth2.clientId.configMap.name",
+        "spec.podMetricsEndpoints.oauth2.clientId.secret.name",
+        "spec.podMetricsEndpoints.oauth2.clientSecret.name",
+        "spec.podMetricsEndpoints.tlsConfig.ca.configMap.name",
+        "spec.podMetricsEndpoints.tlsConfig.ca.secret.name",
+        "spec.podMetricsEndpoints.tlsConfig.cert.configMap.name",
+        "spec.podMetricsEndpoints.tlsConfig.cert.secret.name",
+        "spec.podMetricsEndpoints.tlsConfig.keySecret.name"
+      ],
+      "descriptions": {
+        "spec.podMetricsEndpoints.authorization.credentials.name": [
+          213,
+          179
+        ],
+        "spec.podMetricsEndpoints.basicAuth.password.name": [
+          213,
+          179
+        ],
+        "spec.podMetricsEndpoints.basicAuth.username.name": [
+          213,
+          179
+        ],
+        "spec.podMetricsEndpoints.bearerTokenSecret.name": [
+          213,
+          179
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientId.configMap.name": [
+          213,
+          179
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientId.secret.name": [
+          213,
+          179
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientSecret.name": [
+          213,
+          179
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.ca.configMap.name": [
+          213,
+          179
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.ca.secret.name": [
+          213,
+          179
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.cert.configMap.name": [
+          213,
+          179
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.cert.secret.name": [
+          213,
+          179
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.keySecret.name": [
+          213,
+          179
+        ]
+      }
+    },
+    "v0.74.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.attachMetadata",
+        "spec.attachMetadata.node",
+        "spec.bodySizeLimit",
+        "spec.jobLabel",
+        "spec.keepDroppedTargets",
+        "spec.labelLimit",
+        "spec.labelNameLengthLimit",
+        "spec.labelValueLengthLimit",
+        "spec.namespaceSelector",
+        "spec.namespaceSelector.any",
+        "spec.podMetricsEndpoints.authorization",
+        "spec.podMetricsEndpoints.authorization.credentials.name",
+        "spec.podMetricsEndpoints.authorization.type",
+        "spec.podMetricsEndpoints.basicAuth",
+        "spec.podMetricsEndpoints.basicAuth.password",
+        "spec.podMetricsEndpoints.basicAuth.password.name",
+        "spec.podMetricsEndpoints.basicAuth.username",
+        "spec.podMetricsEndpoints.basicAuth.username.name",
+        "spec.podMetricsEndpoints.bearerTokenSecret",
+        "spec.podMetricsEndpoints.bearerTokenSecret.name",
+        "spec.podMetricsEndpoints.filterRunning",
+        "spec.podMetricsEndpoints.followRedirects",
+        "spec.podMetricsEndpoints.honorLabels",
+        "spec.podMetricsEndpoints.honorTimestamps",
+        "spec.podMetricsEndpoints.interval",
+        "spec.podMetricsEndpoints.metricRelabelings",
+        "spec.podMetricsEndpoints.metricRelabelings.action",
+        "spec.podMetricsEndpoints.metricRelabelings.modulus",
+        "spec.podMetricsEndpoints.metricRelabelings.replacement",
+        "spec.podMetricsEndpoints.metricRelabelings.sourceLabels",
+        "spec.podMetricsEndpoints.metricRelabelings.targetLabel",
+        "spec.podMetricsEndpoints.oauth2",
+        "spec.podMetricsEndpoints.oauth2.clientId",
+        "spec.podMetricsEndpoints.oauth2.clientId.configMap.name",
+        "spec.podMetricsEndpoints.oauth2.clientId.secret.name",
+        "spec.podMetricsEndpoints.oauth2.clientSecret",
+        "spec.podMetricsEndpoints.oauth2.clientSecret.name",
+        "spec.podMetricsEndpoints.oauth2.endpointParams",
+        "spec.podMetricsEndpoints.path",
+        "spec.podMetricsEndpoints.port",
+        "spec.podMetricsEndpoints.proxyUrl",
+        "spec.podMetricsEndpoints.relabelings",
+        "spec.podMetricsEndpoints.relabelings.action",
+        "spec.podMetricsEndpoints.relabelings.modulus",
+        "spec.podMetricsEndpoints.relabelings.replacement",
+        "spec.podMetricsEndpoints.relabelings.sourceLabels",
+        "spec.podMetricsEndpoints.relabelings.targetLabel",
+        "spec.podMetricsEndpoints.scheme",
+        "spec.podMetricsEndpoints.scrapeTimeout",
+        "spec.podMetricsEndpoints.targetPort",
+        "spec.podMetricsEndpoints.tlsConfig.ca.configMap.name",
+        "spec.podMetricsEndpoints.tlsConfig.ca.secret.name",
+        "spec.podMetricsEndpoints.tlsConfig.cert.configMap.name",
+        "spec.podMetricsEndpoints.tlsConfig.cert.secret.name",
+        "spec.podMetricsEndpoints.tlsConfig.keySecret.name",
+        "spec.podMetricsEndpoints.trackTimestampsStaleness",
+        "spec.podTargetLabels",
+        "spec.sampleLimit",
+        "spec.scrapeProtocols",
+        "spec.selector.matchExpressions.operator",
+        "spec.selector.matchExpressions.values",
+        "spec.selector.matchLabels",
+        "spec.targetLimit"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          214,
+          215
+        ],
+        "kind": [
+          216,
+          217
+        ],
+        "spec.attachMetadata": [
+          218,
+          207
+        ],
+        "spec.attachMetadata.node": [
+          219,
+          208
+        ],
+        "spec.bodySizeLimit": [
+          220,
+          172
+        ],
+        "spec.jobLabel": [
+          221,
+          173
+        ],
+        "spec.keepDroppedTargets": [
+          222,
+          174
+        ],
+        "spec.labelLimit": [
+          223,
+          175
+        ],
+        "spec.labelNameLengthLimit": [
+          224,
+          176
+        ],
+        "spec.labelValueLengthLimit": [
+          225,
+          177
+        ],
+        "spec.namespaceSelector": [
+          226,
+          209
+        ],
+        "spec.namespaceSelector.any": [
+          227,
+          34
+        ],
+        "spec.podMetricsEndpoints.authorization": [
+          228,
+          178
+        ],
+        "spec.podMetricsEndpoints.authorization.credentials.name": [
+          229,
+          213
+        ],
+        "spec.podMetricsEndpoints.authorization.type": [
+          230,
+          181
+        ],
+        "spec.podMetricsEndpoints.basicAuth": [
+          231,
+          182
+        ],
+        "spec.podMetricsEndpoints.basicAuth.password": [
+          232,
+          52
+        ],
+        "spec.podMetricsEndpoints.basicAuth.password.name": [
+          229,
+          213
+        ],
+        "spec.podMetricsEndpoints.basicAuth.username": [
+          233,
+          54
+        ],
+        "spec.podMetricsEndpoints.basicAuth.username.name": [
+          229,
+          213
+        ],
+        "spec.podMetricsEndpoints.bearerTokenSecret": [
+          234,
+          183
+        ],
+        "spec.podMetricsEndpoints.bearerTokenSecret.name": [
+          229,
+          213
+        ],
+        "spec.podMetricsEndpoints.filterRunning": [
+          235,
+          184
+        ],
+        "spec.podMetricsEndpoints.followRedirects": [
+          236,
+          62
+        ],
+        "spec.podMetricsEndpoints.honorLabels": [
+          237,
+          64
+        ],
+        "spec.podMetricsEndpoints.honorTimestamps": [
+          238,
+          66
+        ],
+        "spec.podMetricsEndpoints.interval": [
+          239,
+          185
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings": [
+          240,
+          70
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.action": [
+          241,
+          186
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.modulus": [
+          242,
+          187
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.replacement": [
+          243,
+          188
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.sourceLabels": [
+          244,
+          82
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.targetLabel": [
+          245,
+          189
+        ],
+        "spec.podMetricsEndpoints.oauth2": [
+          246,
+          190
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientId": [
+          247,
+          90
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientId.configMap.name": [
+          229,
+          213
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientId.secret.name": [
+          229,
+          213
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientSecret": [
+          248,
+          96
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientSecret.name": [
+          229,
+          213
+        ],
+        "spec.podMetricsEndpoints.oauth2.endpointParams": [
+          249,
+          98
+        ],
+        "spec.podMetricsEndpoints.path": [
+          250,
+          197
+        ],
+        "spec.podMetricsEndpoints.port": [
+          251,
+          198
+        ],
+        "spec.podMetricsEndpoints.proxyUrl": [
+          252,
+          161
+        ],
+        "spec.podMetricsEndpoints.relabelings": [
+          253,
+          199
+        ],
+        "spec.podMetricsEndpoints.relabelings.action": [
+          241,
+          186
+        ],
+        "spec.podMetricsEndpoints.relabelings.modulus": [
+          242,
+          187
+        ],
+        "spec.podMetricsEndpoints.relabelings.replacement": [
+          243,
+          188
+        ],
+        "spec.podMetricsEndpoints.relabelings.sourceLabels": [
+          244,
+          82
+        ],
+        "spec.podMetricsEndpoints.relabelings.targetLabel": [
+          245,
+          189
+        ],
+        "spec.podMetricsEndpoints.scheme": [
+          254,
+          200
+        ],
+        "spec.podMetricsEndpoints.scrapeTimeout": [
+          255,
+          201
+        ],
+        "spec.podMetricsEndpoints.targetPort": [
+          256,
+          202
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.ca.configMap.name": [
+          229,
+          213
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.ca.secret.name": [
+          229,
+          213
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.cert.configMap.name": [
+          229,
+          213
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.cert.secret.name": [
+          229,
+          213
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.keySecret.name": [
+          229,
+          213
+        ],
+        "spec.podMetricsEndpoints.trackTimestampsStaleness": [
+          257,
+          203
+        ],
+        "spec.podTargetLabels": [
+          258,
+          143
+        ],
+        "spec.sampleLimit": [
+          259,
+          145
+        ],
+        "spec.scrapeProtocols": [
+          260,
+          204
+        ],
+        "spec.selector.matchExpressions.operator": [
+          261,
+          262
+        ],
+        "spec.selector.matchExpressions.values": [
+          263,
+          264
+        ],
+        "spec.selector.matchLabels": [
+          265,
+          266
+        ],
+        "spec.targetLimit": [
+          267,
+          157
+        ]
+      }
+    },
+    "v0.73.0": {
+      "added": {
+        "spec.bodySizeLimit": "string"
+      },
+      "descriptions": {
+        "spec.bodySizeLimit": [
+          null,
+          220
+        ]
+      }
+    },
+    "v0.72.0": {
+      "added": {
+        "spec.scrapeClass": "string",
+        "spec.scrapeProtocols": "string[]"
+      },
+      "descriptions": {
+        "spec.scrapeClass": [
+          null,
+          147
+        ],
+        "spec.scrapeProtocols": [
+          null,
+          260
+        ]
+      }
+    },
+    "v0.70.0": {
+      "descriptionChanged": [
+        "spec.attachMetadata",
+        "spec.attachMetadata.node",
+        "spec.jobLabel",
+        "spec.labelLimit",
+        "spec.labelNameLengthLimit",
+        "spec.labelValueLengthLimit",
+        "spec.namespaceSelector",
+        "spec.podMetricsEndpoints",
+        "spec.podMetricsEndpoints.authorization",
+        "spec.podMetricsEndpoints.basicAuth",
+        "spec.podMetricsEndpoints.basicAuth.password",
+        "spec.podMetricsEndpoints.basicAuth.username",
+        "spec.podMetricsEndpoints.bearerTokenSecret",
+        "spec.podMetricsEndpoints.enableHttp2",
+        "spec.podMetricsEndpoints.filterRunning",
+        "spec.podMetricsEndpoints.followRedirects",
+        "spec.podMetricsEndpoints.honorLabels",
+        "spec.podMetricsEndpoints.honorTimestamps",
+        "spec.podMetricsEndpoints.interval",
+        "spec.podMetricsEndpoints.metricRelabelings",
+        "spec.podMetricsEndpoints.oauth2",
+        "spec.podMetricsEndpoints.oauth2.clientId",
+        "spec.podMetricsEndpoints.oauth2.clientSecret",
+        "spec.podMetricsEndpoints.oauth2.endpointParams",
+        "spec.podMetricsEndpoints.oauth2.scopes",
+        "spec.podMetricsEndpoints.oauth2.tokenUrl",
+        "spec.podMetricsEndpoints.params",
+        "spec.podMetricsEndpoints.path",
+        "spec.podMetricsEndpoints.port",
+        "spec.podMetricsEndpoints.proxyUrl",
+        "spec.podMetricsEndpoints.relabelings",
+        "spec.podMetricsEndpoints.scheme",
+        "spec.podMetricsEndpoints.scrapeTimeout",
+        "spec.podMetricsEndpoints.targetPort",
+        "spec.podMetricsEndpoints.tlsConfig",
+        "spec.podTargetLabels",
+        "spec.sampleLimit",
+        "spec.selector",
+        "spec.targetLimit"
+      ],
+      "optional": [
+        "spec.podMetricsEndpoints"
+      ],
+      "added": {
+        "spec.podMetricsEndpoints.trackTimestampsStaleness": "boolean"
+      },
+      "descriptions": {
+        "spec.attachMetadata": [
+          268,
+          218
+        ],
+        "spec.attachMetadata.node": [
+          269,
+          219
+        ],
+        "spec.jobLabel": [
+          270,
+          221
+        ],
+        "spec.labelLimit": [
+          271,
+          223
+        ],
+        "spec.labelNameLengthLimit": [
+          272,
+          224
+        ],
+        "spec.labelValueLengthLimit": [
+          273,
+          225
+        ],
+        "spec.namespaceSelector": [
+          274,
+          226
+        ],
+        "spec.podMetricsEndpoints": [
+          275,
+          210
+        ],
+        "spec.podMetricsEndpoints.authorization": [
+          276,
+          228
+        ],
+        "spec.podMetricsEndpoints.basicAuth": [
+          277,
+          231
+        ],
+        "spec.podMetricsEndpoints.basicAuth.password": [
+          278,
+          232
+        ],
+        "spec.podMetricsEndpoints.basicAuth.username": [
+          279,
+          233
+        ],
+        "spec.podMetricsEndpoints.bearerTokenSecret": [
+          280,
+          234
+        ],
+        "spec.podMetricsEndpoints.enableHttp2": [
+          281,
+          58
+        ],
+        "spec.podMetricsEndpoints.filterRunning": [
+          282,
+          235
+        ],
+        "spec.podMetricsEndpoints.followRedirects": [
+          283,
+          236
+        ],
+        "spec.podMetricsEndpoints.honorLabels": [
+          284,
+          237
+        ],
+        "spec.podMetricsEndpoints.honorTimestamps": [
+          285,
+          238
+        ],
+        "spec.podMetricsEndpoints.interval": [
+          286,
+          239
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings": [
+          287,
+          240
+        ],
+        "spec.podMetricsEndpoints.oauth2": [
+          288,
+          246
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientId": [
+          289,
+          247
+        ],
+        "spec.podMetricsEndpoints.oauth2.clientSecret": [
+          290,
+          248
+        ],
+        "spec.podMetricsEndpoints.oauth2.endpointParams": [
+          291,
+          249
+        ],
+        "spec.podMetricsEndpoints.oauth2.scopes": [
+          292,
+          106
+        ],
+        "spec.podMetricsEndpoints.oauth2.tokenUrl": [
+          293,
+          124
+        ],
+        "spec.podMetricsEndpoints.params": [
+          294,
+          126
+        ],
+        "spec.podMetricsEndpoints.path": [
+          295,
+          250
+        ],
+        "spec.podMetricsEndpoints.port": [
+          296,
+          251
+        ],
+        "spec.podMetricsEndpoints.proxyUrl": [
+          297,
+          252
+        ],
+        "spec.podMetricsEndpoints.relabelings": [
+          298,
+          253
+        ],
+        "spec.podMetricsEndpoints.scheme": [
+          299,
+          254
+        ],
+        "spec.podMetricsEndpoints.scrapeTimeout": [
+          300,
+          255
+        ],
+        "spec.podMetricsEndpoints.targetPort": [
+          301,
+          256
+        ],
+        "spec.podMetricsEndpoints.tlsConfig": [
+          302,
+          139
+        ],
+        "spec.podMetricsEndpoints.trackTimestampsStaleness": [
+          null,
+          257
+        ],
+        "spec.podTargetLabels": [
+          303,
+          258
+        ],
+        "spec.sampleLimit": [
+          304,
+          259
+        ],
+        "spec.selector": [
+          305,
+          211
+        ],
+        "spec.targetLimit": [
+          306,
+          267
+        ]
+      }
+    },
+    "v0.68.0": {
+      "added": {
+        "spec.keepDroppedTargets": "integer"
+      },
+      "descriptions": {
+        "spec.keepDroppedTargets": [
+          null,
+          222
+        ]
+      }
+    },
+    "v0.67.0": {
+      "descriptionChanged": [
+        "spec.podMetricsEndpoints.authorization.credentials",
+        "spec.podMetricsEndpoints.authorization.type",
+        "spec.podMetricsEndpoints.metricRelabelings.action",
+        "spec.podMetricsEndpoints.metricRelabelings.modulus",
+        "spec.podMetricsEndpoints.metricRelabelings.regex",
+        "spec.podMetricsEndpoints.metricRelabelings.replacement",
+        "spec.podMetricsEndpoints.metricRelabelings.separator",
+        "spec.podMetricsEndpoints.metricRelabelings.sourceLabels",
+        "spec.podMetricsEndpoints.metricRelabelings.targetLabel",
+        "spec.podMetricsEndpoints.relabelings.action",
+        "spec.podMetricsEndpoints.relabelings.modulus",
+        "spec.podMetricsEndpoints.relabelings.regex",
+        "spec.podMetricsEndpoints.relabelings.replacement",
+        "spec.podMetricsEndpoints.relabelings.separator",
+        "spec.podMetricsEndpoints.relabelings.sourceLabels",
+        "spec.podMetricsEndpoints.relabelings.targetLabel"
+      ],
+      "descriptions": {
+        "spec.podMetricsEndpoints.authorization.credentials": [
+          307,
+          46
+        ],
+        "spec.podMetricsEndpoints.authorization.type": [
+          308,
+          230
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.action": [
+          309,
+          241
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.modulus": [
+          310,
+          242
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.regex": [
+          311,
+          76
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.replacement": [
+          312,
+          243
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.separator": [
+          313,
+          80
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.sourceLabels": [
+          314,
+          244
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.targetLabel": [
+          315,
+          245
+        ],
+        "spec.podMetricsEndpoints.relabelings.action": [
+          309,
+          241
+        ],
+        "spec.podMetricsEndpoints.relabelings.modulus": [
+          310,
+          242
+        ],
+        "spec.podMetricsEndpoints.relabelings.regex": [
+          311,
+          76
+        ],
+        "spec.podMetricsEndpoints.relabelings.replacement": [
+          312,
+          243
+        ],
+        "spec.podMetricsEndpoints.relabelings.separator": [
+          313,
+          80
+        ],
+        "spec.podMetricsEndpoints.relabelings.sourceLabels": [
+          314,
+          244
+        ],
+        "spec.podMetricsEndpoints.relabelings.targetLabel": [
+          315,
+          245
+        ]
+      }
+    },
+    "v0.65.0": {
+      "descriptionChanged": [
+        "spec.podMetricsEndpoints.scheme"
+      ],
+      "descriptions": {
+        "spec.podMetricsEndpoints.scheme": [
+          316,
+          299
+        ]
+      }
+    },
+    "v0.61.0": {
+      "descriptionChanged": [
+        "spec.attachMetadata",
+        "spec.podMetricsEndpoints.tlsConfig.ca",
+        "spec.podMetricsEndpoints.tlsConfig.cert"
+      ],
+      "descriptions": {
+        "spec.attachMetadata": [
+          317,
+          268
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.ca": [
+          318,
+          110
+        ],
+        "spec.podMetricsEndpoints.tlsConfig.cert": [
+          319,
+          112
+        ]
+      }
+    },
+    "v0.60.0": {
+      "added": {
+        "spec.podMetricsEndpoints.filterRunning": "boolean"
+      },
+      "descriptions": {
+        "spec.podMetricsEndpoints.filterRunning": [
+          null,
+          282
+        ]
+      }
+    },
+    "v0.58.0": {
+      "added": {
+        "spec.podMetricsEndpoints.enableHttp2": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.podMetricsEndpoints.metricRelabelings.action",
+        "spec.podMetricsEndpoints.path",
+        "spec.podMetricsEndpoints.relabelings.action"
+      ],
+      "descriptions": {
+        "spec.podMetricsEndpoints.enableHttp2": [
+          null,
+          281
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.action": [
+          320,
+          309
+        ],
+        "spec.podMetricsEndpoints.path": [
+          321,
+          295
+        ],
+        "spec.podMetricsEndpoints.relabelings.action": [
+          320,
+          309
+        ]
+      }
+    },
+    "v0.57.0": {
+      "added": {
+        "spec.attachMetadata": "object"
+      },
+      "descriptions": {
+        "spec.attachMetadata": [
+          null,
+          317
+        ]
+      }
+    },
+    "v0.56.0": {
+      "descriptionChanged": [
+        "spec.podMetricsEndpoints.interval",
+        "spec.podMetricsEndpoints.scrapeTimeout"
+      ],
+      "descriptions": {
+        "spec.podMetricsEndpoints.interval": [
+          322,
+          286
+        ],
+        "spec.podMetricsEndpoints.scrapeTimeout": [
+          323,
+          300
+        ]
+      }
+    },
+    "v0.55.0": {
+      "descriptionChanged": [
+        "spec.namespaceSelector.matchNames",
+        "spec.podMetricsEndpoints.relabelings"
+      ],
+      "added": {
+        "spec.podMetricsEndpoints.followRedirects": "boolean"
+      },
+      "descriptions": {
+        "spec.namespaceSelector.matchNames": [
+          324,
+          36
+        ],
+        "spec.podMetricsEndpoints.followRedirects": [
+          null,
+          283
+        ],
+        "spec.podMetricsEndpoints.relabelings": [
+          325,
+          298
+        ]
+      }
+    },
+    "v0.50.0": {
+      "added": {
+        "spec.labelLimit": "integer",
+        "spec.labelNameLengthLimit": "integer",
+        "spec.labelValueLengthLimit": "integer",
+        "spec.podMetricsEndpoints.authorization": "object",
+        "spec.podMetricsEndpoints.oauth2": "object"
+      },
+      "descriptions": {
+        "spec.labelLimit": [
+          null,
+          271
+        ],
+        "spec.labelNameLengthLimit": [
+          null,
+          272
+        ],
+        "spec.labelValueLengthLimit": [
+          null,
+          273
+        ],
+        "spec.podMetricsEndpoints.authorization": [
+          null,
+          276
+        ],
+        "spec.podMetricsEndpoints.oauth2": [
+          null,
+          288
+        ]
+      }
+    },
+    "v0.47.0": {
+      "descriptionChanged": [
+        "spec.podMetricsEndpoints.relabelings"
+      ],
+      "descriptions": {
+        "spec.podMetricsEndpoints.relabelings": [
+          326,
+          325
+        ]
+      }
+    },
+    "v0.43.0": {
+      "added": {
+        "spec.podMetricsEndpoints.basicAuth": "object",
+        "spec.podMetricsEndpoints.bearerTokenSecret": "object",
+        "spec.podMetricsEndpoints.tlsConfig": "object",
+        "spec.targetLimit": "integer"
+      },
+      "descriptions": {
+        "spec.podMetricsEndpoints.basicAuth": [
+          null,
+          277
+        ],
+        "spec.podMetricsEndpoints.bearerTokenSecret": [
+          null,
+          280
+        ],
+        "spec.podMetricsEndpoints.tlsConfig": [
+          null,
+          302
+        ],
+        "spec.targetLimit": [
+          null,
+          306
+        ]
+      }
+    },
+    "v0.38.0": {
+      "descriptionChanged": [
+        "spec.podMetricsEndpoints.port",
+        "spec.podMetricsEndpoints.targetPort"
+      ],
+      "descriptions": {
+        "spec.podMetricsEndpoints.port": [
+          327,
+          296
+        ],
+        "spec.podMetricsEndpoints.targetPort": [
+          328,
+          301
+        ]
+      }
+    },
+    "v0.35.0": {
+      "added": {
+        "metadata": "object"
+      },
+      "required": [
+        "spec"
+      ],
+      "descriptionChanged": [
+        "spec",
+        "spec.namespaceSelector",
+        "spec.podMetricsEndpoints.metricRelabelings.regex",
+        "spec.podMetricsEndpoints.relabelings.regex",
+        "spec.podMetricsEndpoints.targetPort",
+        "spec.selector"
+      ],
+      "typeChanged": {
+        "spec.podMetricsEndpoints.params": [
+          "object",
+          "map[string]string[]"
+        ],
+        "spec.podMetricsEndpoints.targetPort": [
+          "object",
+          "int | string"
+        ],
+        "spec.selector.matchLabels": [
+          "object",
+          "map[string]string"
+        ]
+      },
+      "description": true,
+      "descriptions": {
+        "spec": [
+          329,
+          11
+        ],
+        "spec.namespaceSelector": [
+          330,
+          274
+        ],
+        "spec.podMetricsEndpoints.metricRelabelings.regex": [
+          331,
+          311
+        ],
+        "spec.podMetricsEndpoints.params": [
+          null,
+          294
+        ],
+        "spec.podMetricsEndpoints.relabelings.regex": [
+          331,
+          311
+        ],
+        "spec.podMetricsEndpoints.targetPort": [
+          null,
+          328
+        ],
+        "spec.selector": [
+          332,
+          305
+        ],
+        "spec.selector.matchLabels": [
+          null,
+          265
+        ],
+        "": [
+          null,
+          212
+        ]
+      }
+    },
+    "v0.34.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind"
+      ],
+      "added": {
+        "spec.podMetricsEndpoints.honorTimestamps": "boolean"
+      },
+      "descriptions": {
+        "apiVersion": [
+          333,
+          214
+        ],
+        "kind": [
+          334,
+          216
+        ],
+        "spec.podMetricsEndpoints.honorTimestamps": [
+          null,
+          285
+        ]
+      }
+    }
+  },
+  "texts": [
+    "The key to select.",
+    "The key to select from the ConfigMap's Data field.\nKeys in the BinaryData field are not currently propagated to container env vars.",
+    "node when set to true, Prometheus attaches node metadata to the discovered\ntargets.\n\nThe Prometheus service account must have the `list` and `watch`\npermissions on the `Nodes` objects.",
+    "node when set to true, Prometheus attaches node metadata to the discovered\ntargets.\n\nThe Prometheus service account must have the `list` and `watch`\npermissions on the `Nodes` objects.\n\nNode metadata labels are not automatically added to scraped metrics. They are\nexposed as `__meta_kubernetes_node_*` labels and can be copied to timeseries\nwith relabeling configuration.",
+    "scrapeNativeHistograms defines whether to enable scraping of native histograms.\nIt requires Prometheus >= v3.8.0.",
+    "port defines the `Pod` port name which exposes the endpoint.\n\nIt takes precedence over the `portNumber` and `targetPort` fields.",
+    "port defines the `Pod` port name which exposes the endpoint.\n\nIf the pod doesn't expose a port with the same name, it will result\nin no targets being discovered.\n\nIf a `Pod` has multiple `Port`s with the same name (which is not\nrecommended), one target instance per unique port number will be\ngenerated.\n\nIt takes precedence over the `portNumber` and `targetPort` fields.",
+    "portNumber defines the `Pod` port number which exposes the endpoint.",
+    "portNumber defines the `Pod` port number which exposes the endpoint.\n\nThe `Pod` must declare the specified `Port` in its spec or the\ntarget will be dropped by Prometheus.\n\nThis cannot be used to enable scraping of an undeclared port.\nTo scrape targets on a port which isn't exposed, you need to use\nrelabeling to override the `__address__` label (but beware of\nduplicate targets if the `Pod` has other declared ports).\n\nIn practice Prometheus will select targets for which the\nmatches the target's __meta_kubernetes_pod_container_port_number.",
+    "scheme defines the HTTP scheme to use for scraping.\n\n`http` and `https` are the expected values unless you rewrite the\n`__scheme__` label via relabeling.\n\nIf empty, Prometheus uses the default value `http`.",
+    "scheme defines the HTTP scheme to use for scraping.",
+    "Specification of desired Pod selection for target discovery by Prometheus.",
+    "spec defines the specification of desired Pod selection for target discovery by Prometheus.",
+    "`attachMetadata` defines additional metadata which is added to the\ndiscovered targets.\n\nIt requires Prometheus >= v2.35.0.",
+    "attachMetadata defines additional metadata which is added to the\ndiscovered targets.\n\nIt requires Prometheus >= v2.35.0.",
+    "When set to true, Prometheus attaches node metadata to the discovered\ntargets.\n\nThe Prometheus service account must have the `list` and `watch`\npermissions on the `Nodes` objects.",
+    "When defined, bodySizeLimit specifies a job level limit on the size\nof uncompressed response body that will be accepted by Prometheus.\n\nIt requires Prometheus >= v2.28.0.",
+    "bodySizeLimit when defined specifies a job level limit on the size\nof uncompressed response body that will be accepted by Prometheus.\n\nIt requires Prometheus >= v2.28.0.",
+    "Whether to convert all scraped classic histograms into a native histogram with custom buckets.\nIt requires Prometheus >= v3.0.0.",
+    "convertClassicHistogramsToNHCB defines whether to convert all scraped classic histograms into a native histogram with custom buckets.\nIt requires Prometheus >= v3.0.0.",
+    "The protocol to use if a scrape returns blank, unparseable, or otherwise invalid Content-Type.\n\nIt requires Prometheus >= v3.0.0.",
+    "fallbackScrapeProtocol defines the protocol to use if a scrape returns blank, unparseable, or otherwise invalid Content-Type.\n\nIt requires Prometheus >= v3.0.0.",
+    "The label to use to retrieve the job name from.\n`jobLabel` selects the label from the associated Kubernetes `Pod`\nobject which will be used as the `job` label for all metrics.\n\nFor example if `jobLabel` is set to `foo` and the Kubernetes `Pod`\nobject is labeled with `foo: bar`, then Prometheus adds the `job=\"bar\"`\nlabel to all ingested metrics.\n\nIf the value of this field is empty, the `job` label of the metrics\ndefaults to the namespace and name of the PodMonitor object (e.g. `<namespace>/<name>`).",
+    "jobLabel defines the label to use to retrieve the job name from.\n`jobLabel` selects the label from the associated Kubernetes `Pod`\nobject which will be used as the `job` label for all metrics.\n\nFor example if `jobLabel` is set to `foo` and the Kubernetes `Pod`\nobject is labeled with `foo: bar`, then Prometheus adds the `job=\"bar\"`\nlabel to all ingested metrics.\n\nIf the value of this field is empty, the `job` label of the metrics\ndefaults to the namespace and name of the PodMonitor object (e.g. `<namespace>/<name>`).",
+    "Per-scrape limit on the number of targets dropped by relabeling\nthat will be kept in memory. 0 means no limit.\n\nIt requires Prometheus >= v2.47.0.",
+    "keepDroppedTargets defines the per-scrape limit on the number of targets dropped by relabeling\nthat will be kept in memory. 0 means no limit.\n\nIt requires Prometheus >= v2.47.0.",
+    "Per-scrape limit on number of labels that will be accepted for a sample.\n\nIt requires Prometheus >= v2.27.0.",
+    "labelLimit defines the per-scrape limit on number of labels that will be accepted for a sample.\n\nIt requires Prometheus >= v2.27.0.",
+    "Per-scrape limit on length of labels name that will be accepted for a sample.\n\nIt requires Prometheus >= v2.27.0.",
+    "labelNameLengthLimit defines the per-scrape limit on length of labels name that will be accepted for a sample.\n\nIt requires Prometheus >= v2.27.0.",
+    "Per-scrape limit on length of labels value that will be accepted for a sample.\n\nIt requires Prometheus >= v2.27.0.",
+    "labelValueLengthLimit defines the per-scrape limit on length of labels value that will be accepted for a sample.\n\nIt requires Prometheus >= v2.27.0.",
+    "`namespaceSelector` defines in which namespace(s) Prometheus should discover the pods.\nBy default, the pods are discovered in the same namespace as the `PodMonitor` object but it is possible to select pods across different/all namespaces.",
+    "namespaceSelector defines in which namespace(s) Prometheus should discover the pods.\nBy default, the pods are discovered in the same namespace as the `PodMonitor` object but it is possible to select pods across different/all namespaces.",
+    "Boolean describing whether all namespaces are selected in contrast to a\nlist restricting them.",
+    "any defines the boolean describing whether all namespaces are selected in contrast to a\nlist restricting them.",
+    "List of namespace names to select from.",
+    "matchNames defines the list of namespace names to select from.",
+    "If there are more than this many buckets in a native histogram,\nbuckets will be merged to stay within the limit.\nIt requires Prometheus >= v2.45.0.",
+    "nativeHistogramBucketLimit defines ff there are more than this many buckets in a native histogram,\nbuckets will be merged to stay within the limit.\nIt requires Prometheus >= v2.45.0.",
+    "If the growth factor of one bucket to the next is smaller than this,\nbuckets will be merged to increase the factor sufficiently.\nIt requires Prometheus >= v2.50.0.",
+    "nativeHistogramMinBucketFactor defines if the growth factor of one bucket to the next is smaller than this,\nbuckets will be merged to increase the factor sufficiently.\nIt requires Prometheus >= v2.50.0.",
+    "Defines how to scrape metrics from the selected pods.",
+    "podMetricsEndpoints defines how to scrape metrics from the selected pods.",
+    "`authorization` configures the Authorization header credentials to use when\nscraping the target.\n\nCannot be set at the same time as `basicAuth`, or `oauth2`.",
+    "authorization configures the Authorization header credentials used by\nthe client.\n\nCannot be set at the same time as `basicAuth`, `bearerTokenSecret` or `oauth2`.",
+    "Selects a key of a Secret in the namespace that contains the credentials for authentication.",
+    "credentials defines a key of a Secret in the namespace that contains the credentials for authentication.",
+    "Defines the authentication type. The value is case-insensitive.\n\n\"Basic\" is not a supported value.\n\nDefault: \"Bearer\"",
+    "type defines the authentication type. The value is case-insensitive.\n\n\"Basic\" is not a supported value.\n\nDefault: \"Bearer\"",
+    "`basicAuth` configures the Basic Authentication credentials to use when\nscraping the target.\n\nCannot be set at the same time as `authorization`, or `oauth2`.",
+    "basicAuth defines the Basic Authentication credentials used by the\nclient.\n\nCannot be set at the same time as `authorization`, `bearerTokenSecret` or `oauth2`.",
+    "`password` specifies a key of a Secret containing the password for\nauthentication.",
+    "password defines a key of a Secret containing the password for\nauthentication.",
+    "`username` specifies a key of a Secret containing the username for\nauthentication.",
+    "username defines a key of a Secret containing the username for\nauthentication.",
+    "`bearerTokenSecret` specifies a key of a Secret containing the bearer\ntoken for scraping targets. The secret needs to be in the same namespace\nas the PodMonitor object and readable by the Prometheus Operator.\n\nDeprecated: use `authorization` instead.",
+    "bearerTokenSecret defines a key of a Secret containing the bearer token\nused by the client for authentication. The secret needs to be in the\nsame namespace as the custom resource and readable by the Prometheus\nOperator.\n\nCannot be set at the same time as `authorization`, `basicAuth` or `oauth2`.\n\nDeprecated: use `authorization` instead.",
+    "`enableHttp2` can be used to disable HTTP2 when scraping the target.",
+    "enableHttp2 can be used to disable HTTP2.",
+    "When true, the pods which are not running (e.g. either in Failed or\nSucceeded state) are dropped during the target discovery.\n\nIf unset, the filtering is enabled.\n\nMore info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-phase",
+    "filterRunning when true, the pods which are not running (e.g. either in Failed or\nSucceeded state) are dropped during the target discovery.\n\nIf unset, the filtering is enabled.\n\nMore info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-phase",
+    "`followRedirects` defines whether the scrape requests should follow HTTP\n3xx redirects.",
+    "followRedirects defines whether the client should follow HTTP 3xx\nredirects.",
+    "When true, `honorLabels` preserves the metric's labels when they collide\nwith the target's labels.",
+    "honorLabels when true preserves the metric's labels when they collide\nwith the target's labels.",
+    "`honorTimestamps` controls whether Prometheus preserves the timestamps\nwhen exposed by the target.",
+    "honorTimestamps defines whether Prometheus preserves the timestamps\nwhen exposed by the target.",
+    "Interval at which Prometheus scrapes the metrics from the target.\n\nIf empty, Prometheus uses the global scrape interval.",
+    "interval at which Prometheus scrapes the metrics from the target.\n\nIf empty, Prometheus uses the global scrape interval.",
+    "`metricRelabelings` configures the relabeling rules to apply to the\nsamples before ingestion.",
+    "metricRelabelings defines the relabeling rules to apply to the\nsamples before ingestion.",
+    "Action to perform based on the regex matching.\n\n`Uppercase` and `Lowercase` actions require Prometheus >= v2.36.0.\n`DropEqual` and `KeepEqual` actions require Prometheus >= v2.41.0.\n\nDefault: \"Replace\"",
+    "action to perform based on the regex matching.\n\n`Uppercase` and `Lowercase` actions require Prometheus >= v2.36.0.\n`DropEqual` and `KeepEqual` actions require Prometheus >= v2.41.0.\n\nDefault: \"Replace\"",
+    "Modulus to take of the hash of the source label values.\n\nOnly applicable when the action is `HashMod`.",
+    "modulus to take of the hash of the source label values.\n\nOnly applicable when the action is `HashMod`.",
+    "Regular expression against which the extracted value is matched.",
+    "regex defines the regular expression against which the extracted value is matched.",
+    "Replacement value against which a Replace action is performed if the\nregular expression matches.\n\nRegex capture groups are available.",
+    "replacement value against which a Replace action is performed if the\nregular expression matches.\n\nRegex capture groups are available.",
+    "Separator is the string between concatenated SourceLabels.",
+    "separator defines the string between concatenated SourceLabels.",
+    "The source labels select values from existing labels. Their content is\nconcatenated using the configured Separator and matched against the\nconfigured regular expression.",
+    "sourceLabels defines the source labels select values from existing labels. Their content is\nconcatenated using the configured Separator and matched against the\nconfigured regular expression.",
+    "Label to which the resulting string is written in a replacement.\n\nIt is mandatory for `Replace`, `HashMod`, `Lowercase`, `Uppercase`,\n`KeepEqual` and `DropEqual` actions.\n\nRegex capture groups are available.",
+    "targetLabel defines the label to which the resulting string is written in a replacement.\n\nIt is mandatory for `Replace`, `HashMod`, `Lowercase`, `Uppercase`,\n`KeepEqual` and `DropEqual` actions.\n\nRegex capture groups are available.",
+    "`noProxy` is a comma-separated string that can contain IPs, CIDR notation, domain names\nthat should be excluded from proxying. IP and domain names can\ncontain port numbers.\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "noProxy defines a comma-separated string that can contain IPs, CIDR notation, domain names\nthat should be excluded from proxying. IP and domain names can\ncontain port numbers.\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "`oauth2` configures the OAuth2 settings to use when scraping the target.\n\nIt requires Prometheus >= 2.27.0.\n\nCannot be set at the same time as `authorization`, or `basicAuth`.",
+    "oauth2 defines the OAuth2 settings used by the client.\n\nIt requires Prometheus >= 2.27.0.\n\nCannot be set at the same time as `authorization`, `basicAuth` or `bearerTokenSecret`.",
+    "`clientId` specifies a key of a Secret or ConfigMap containing the\nOAuth2 client's ID.",
+    "clientId defines a key of a Secret or ConfigMap containing the\nOAuth2 client's ID.",
+    "ConfigMap containing data to use for the targets.",
+    "configMap defines the ConfigMap containing data to use for the targets.",
+    "Secret containing data to use for the targets.",
+    "secret defines the Secret containing data to use for the targets.",
+    "`clientSecret` specifies a key of a Secret containing the OAuth2\nclient's secret.",
+    "clientSecret defines a key of a Secret containing the OAuth2\nclient's secret.",
+    "`endpointParams` configures the HTTP parameters to append to the token\nURL.",
+    "endpointParams configures the HTTP parameters to append to the token\nURL.",
+    "ProxyConnectHeader optionally specifies headers to send to\nproxies during CONNECT requests.\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "proxyConnectHeader optionally specifies headers to send to\nproxies during CONNECT requests.\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "Whether to use the proxy configuration defined by environment variables (HTTP_PROXY, HTTPS_PROXY, and NO_PROXY).\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "proxyFromEnvironment defines whether to use the proxy configuration defined by environment variables (HTTP_PROXY, HTTPS_PROXY, and NO_PROXY).\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "`proxyURL` defines the HTTP proxy server to use.",
+    "proxyUrl defines the HTTP proxy server to use.",
+    "`scopes` defines the OAuth2 scopes used for the token request.",
+    "scopes defines the OAuth2 scopes used for the token request.",
+    "TLS configuration to use when connecting to the OAuth2 server.\nIt requires Prometheus >= v2.43.0.",
+    "tlsConfig defines the TLS configuration to use when connecting to the OAuth2 server.\nIt requires Prometheus >= v2.43.0.",
+    "Certificate authority used when verifying server certificates.",
+    "ca defines the Certificate authority used when verifying server certificates.",
+    "Client certificate to present when doing client-authentication.",
+    "cert defines the Client certificate to present when doing client-authentication.",
+    "Disable target certificate validation.",
+    "insecureSkipVerify defines how to disable target certificate validation.",
+    "Secret containing the client key file for the targets.",
+    "keySecret defines the Secret containing the client key file for the targets.",
+    "Maximum acceptable TLS version.\n\nIt requires Prometheus >= v2.41.0 or Thanos >= v0.31.0.",
+    "maxVersion defines the maximum acceptable TLS version.\n\nIt requires Prometheus >= v2.41.0 or Thanos >= v0.31.0.",
+    "Minimum acceptable TLS version.\n\nIt requires Prometheus >= v2.35.0 or Thanos >= v0.28.0.",
+    "minVersion defines the minimum acceptable TLS version.\n\nIt requires Prometheus >= v2.35.0 or Thanos >= v0.28.0.",
+    "Used to verify the hostname for the targets.",
+    "serverName is used to verify the hostname for the targets.",
+    "`tokenURL` configures the URL to fetch the token from.",
+    "tokenUrl defines the URL to fetch the token from.",
+    "`params` define optional HTTP URL parameters.",
+    "params define optional HTTP URL parameters.",
+    "HTTP path from which to scrape for metrics.\n\nIf empty, Prometheus uses the default value (e.g. `/metrics`).",
+    "path defines the HTTP path from which to scrape for metrics.\n\nIf empty, Prometheus uses the default value (e.g. `/metrics`).",
+    "The `Pod` port name which exposes the endpoint.\n\nIt takes precedence over the `portNumber` and `targetPort` fields.",
+    "The `Pod` port number which exposes the endpoint.",
+    "`relabelings` configures the relabeling rules to apply the target's\nmetadata labels.\n\nThe Operator automatically adds relabelings for a few standard Kubernetes fields.\n\nThe original scrape job's name is available via the `__tmp_prometheus_job_name` label.\n\nMore info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "relabelings defines the relabeling rules to apply the target's\nmetadata labels.\n\nThe Operator automatically adds relabelings for a few standard Kubernetes fields.\n\nThe original scrape job's name is available via the `__tmp_prometheus_job_name` label.\n\nMore info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "HTTP scheme to use for scraping.\n\n`http` and `https` are the expected values unless you rewrite the\n`__scheme__` label via relabeling.\n\nIf empty, Prometheus uses the default value `http`.",
+    "Timeout after which Prometheus considers the scrape to be failed.\n\nIf empty, Prometheus uses the global scrape timeout unless it is less\nthan the target's scrape interval value in which the latter is used.\nThe value cannot be greater than the scrape interval otherwise the operator will reject the resource.",
+    "scrapeTimeout defines the timeout after which Prometheus considers the scrape to be failed.\n\nIf empty, Prometheus uses the global scrape timeout unless it is less\nthan the target's scrape interval value in which the latter is used.\nThe value cannot be greater than the scrape interval otherwise the operator will reject the resource.",
+    "Name or number of the target port of the `Pod` object behind the Service, the\nport must be specified with container port property.\n\nDeprecated: use 'port' or 'portNumber' instead.",
+    "targetPort defines the name or number of the target port of the `Pod` object behind the Service, the\nport must be specified with container port property.\n\nDeprecated: use 'port' or 'portNumber' instead.",
+    "TLS configuration to use when scraping the target.",
+    "tlsConfig defines the TLS configuration used by the client.",
+    "`trackTimestampsStaleness` defines whether Prometheus tracks staleness of\nthe metrics that have an explicit timestamp present in scraped data.\nHas no effect if `honorTimestamps` is false.\n\nIt requires Prometheus >= v2.48.0.",
+    "trackTimestampsStaleness defines whether Prometheus tracks staleness of\nthe metrics that have an explicit timestamp present in scraped data.\nHas no effect if `honorTimestamps` is false.\n\nIt requires Prometheus >= v2.48.0.",
+    "`podTargetLabels` defines the labels which are transferred from the\nassociated Kubernetes `Pod` object onto the ingested metrics.",
+    "podTargetLabels defines the labels which are transferred from the\nassociated Kubernetes `Pod` object onto the ingested metrics.",
+    "`sampleLimit` defines a per-scrape limit on the number of scraped samples\nthat will be accepted.",
+    "sampleLimit defines a per-scrape limit on the number of scraped samples\nthat will be accepted.",
+    "The scrape class to apply.",
+    "scrapeClass defines the scrape class to apply.",
+    "Whether to scrape a classic histogram that is also exposed as a native histogram.\nIt requires Prometheus >= v2.45.0.\n\nNotice: `scrapeClassicHistograms` corresponds to the `always_scrape_classic_histograms` field in the Prometheus configuration.",
+    "scrapeClassicHistograms defines whether to scrape a classic histogram that is also exposed as a native histogram.\nIt requires Prometheus >= v2.45.0.\n\nNotice: `scrapeClassicHistograms` corresponds to the `always_scrape_classic_histograms` field in the Prometheus configuration.",
+    "`scrapeProtocols` defines the protocols to negotiate during a scrape. It tells clients the\nprotocols supported by Prometheus in order of preference (from most to least preferred).\n\nIf unset, Prometheus uses its default value.\n\nIt requires Prometheus >= v2.49.0.",
+    "scrapeProtocols defines the protocols to negotiate during a scrape. It tells clients the\nprotocols supported by Prometheus in order of preference (from most to least preferred).\n\nIf unset, Prometheus uses its default value.\n\nIt requires Prometheus >= v2.49.0.",
+    "Label selector to select the Kubernetes `Pod` objects to scrape metrics from.",
+    "selector defines the label selector to select the Kubernetes `Pod` objects to scrape metrics from.",
+    "Mechanism used to select the endpoints to scrape.\nBy default, the selection process relies on relabel configurations to filter the discovered targets.\nAlternatively, you can opt in for role selectors, which may offer better efficiency in large clusters.\nWhich strategy is best for your use case needs to be carefully evaluated.\n\nIt requires Prometheus >= v2.17.0.",
+    "selectorMechanism defines the mechanism used to select the endpoints to scrape.\nBy default, the selection process relies on relabel configurations to filter the discovered targets.\nAlternatively, you can opt in for role selectors, which may offer better efficiency in large clusters.\nWhich strategy is best for your use case needs to be carefully evaluated.\n\nIt requires Prometheus >= v2.17.0.",
+    "`targetLimit` defines a limit on the number of scraped targets that will\nbe accepted.",
+    "targetLimit defines a limit on the number of scraped targets that will\nbe accepted.",
+    "status defines the status subresource. It is under active development and is updated only when the\n\"StatusForConfigurationResources\" feature gate is enabled.\n\nMost recent observed status of the PodMonitor. Read-only.\nMore info:\nhttps://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "Whether to scrape a classic histogram that is also exposed as a native histogram.\nIt requires Prometheus >= v2.45.0.",
+    "`proxyURL` configures the HTTP Proxy URL (e.g.\n\"http://proxyserver:2195\") to go through when scraping the target.",
+    "`noProxy` is a comma-separated string that can contain IPs, CIDR notation, domain names\nthat should be excluded from proxying. IP and domain names can\ncontain port numbers.\n\nIt requires Prometheus >= v2.43.0 or Alertmanager >= 0.25.0.",
+    "ProxyConnectHeader optionally specifies headers to send to\nproxies during CONNECT requests.\n\nIt requires Prometheus >= v2.43.0 or Alertmanager >= 0.25.0.",
+    "Whether to use the proxy configuration defined by environment variables (HTTP_PROXY, HTTPS_PROXY, and NO_PROXY).\n\nIt requires Prometheus >= v2.43.0 or Alertmanager >= 0.25.0.",
+    "Maximum acceptable TLS version.\n\nIt requires Prometheus >= v2.41.0.",
+    "Minimum acceptable TLS version.\n\nIt requires Prometheus >= v2.35.0.",
+    "Timeout after which Prometheus considers the scrape to be failed.\n\nIf empty, Prometheus uses the global scrape timeout unless it is less\nthan the target's scrape interval value in which the latter is used.",
+    "Name of the Pod port which this endpoint refers to.\n\nIt takes precedence over `targetPort`.",
+    "Name or number of the target port of the `Pod` object behind the Service, the\nport must be specified with container port property.\n\nDeprecated: use 'port' instead.",
+    "`attachMetadata` defines additional metadata which is added to the\ndiscovered targets.\n\n\nIt requires Prometheus >= v2.35.0.",
+    "When set to true, Prometheus attaches node metadata to the discovered\ntargets.\n\n\nThe Prometheus service account must have the `list` and `watch`\npermissions on the `Nodes` objects.",
+    "When defined, bodySizeLimit specifies a job level limit on the size\nof uncompressed response body that will be accepted by Prometheus.\n\n\nIt requires Prometheus >= v2.28.0.",
+    "The label to use to retrieve the job name from.\n`jobLabel` selects the label from the associated Kubernetes `Pod`\nobject which will be used as the `job` label for all metrics.\n\n\nFor example if `jobLabel` is set to `foo` and the Kubernetes `Pod`\nobject is labeled with `foo: bar`, then Prometheus adds the `job=\"bar\"`\nlabel to all ingested metrics.\n\n\nIf the value of this field is empty, the `job` label of the metrics\ndefaults to the namespace and name of the PodMonitor object (e.g. `<namespace>/<name>`).",
+    "Per-scrape limit on the number of targets dropped by relabeling\nthat will be kept in memory. 0 means no limit.\n\n\nIt requires Prometheus >= v2.47.0.",
+    "Per-scrape limit on number of labels that will be accepted for a sample.\n\n\nIt requires Prometheus >= v2.27.0.",
+    "Per-scrape limit on length of labels name that will be accepted for a sample.\n\n\nIt requires Prometheus >= v2.27.0.",
+    "Per-scrape limit on length of labels value that will be accepted for a sample.\n\n\nIt requires Prometheus >= v2.27.0.",
+    "`authorization` configures the Authorization header credentials to use when\nscraping the target.\n\n\nCannot be set at the same time as `basicAuth`, or `oauth2`.",
+    "Name of the referent.\nThis field is effectively required, but due to backwards compatibility is\nallowed to be empty. Instances of this type with an empty value here are\nalmost certainly wrong.\nTODO: Add other useful fields. apiVersion, kind, uid?\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names\nTODO: Drop `kubebuilder:default` when controller-gen doesn't need it https://github.com/kubernetes-sigs/kubebuilder/issues/3896.",
+    "Name of the referent.\nThis field is effectively required, but due to backwards compatibility is\nallowed to be empty. Instances of this type with an empty value here are\nalmost certainly wrong.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Defines the authentication type. The value is case-insensitive.\n\n\n\"Basic\" is not a supported value.\n\n\nDefault: \"Bearer\"",
+    "`basicAuth` configures the Basic Authentication credentials to use when\nscraping the target.\n\n\nCannot be set at the same time as `authorization`, or `oauth2`.",
+    "`bearerTokenSecret` specifies a key of a Secret containing the bearer\ntoken for scraping targets. The secret needs to be in the same namespace\nas the PodMonitor object and readable by the Prometheus Operator.\n\n\nDeprecated: use `authorization` instead.",
+    "When true, the pods which are not running (e.g. either in Failed or\nSucceeded state) are dropped during the target discovery.\n\n\nIf unset, the filtering is enabled.\n\n\nMore info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-phase",
+    "Interval at which Prometheus scrapes the metrics from the target.\n\n\nIf empty, Prometheus uses the global scrape interval.",
+    "Action to perform based on the regex matching.\n\n\n`Uppercase` and `Lowercase` actions require Prometheus >= v2.36.0.\n`DropEqual` and `KeepEqual` actions require Prometheus >= v2.41.0.\n\n\nDefault: \"Replace\"",
+    "Modulus to take of the hash of the source label values.\n\n\nOnly applicable when the action is `HashMod`.",
+    "Replacement value against which a Replace action is performed if the\nregular expression matches.\n\n\nRegex capture groups are available.",
+    "Label to which the resulting string is written in a replacement.\n\n\nIt is mandatory for `Replace`, `HashMod`, `Lowercase`, `Uppercase`,\n`KeepEqual` and `DropEqual` actions.\n\n\nRegex capture groups are available.",
+    "`oauth2` configures the OAuth2 settings to use when scraping the target.\n\n\nIt requires Prometheus >= 2.27.0.\n\n\nCannot be set at the same time as `authorization`, or `basicAuth`.",
+    "`noProxy` is a comma-separated string that can contain IPs, CIDR notation, domain names\nthat should be excluded from proxying. IP and domain names can\ncontain port numbers.\n\n\nIt requires Prometheus >= v2.43.0.",
+    "ProxyConnectHeader optionally specifies headers to send to\nproxies during CONNECT requests.\n\n\nIt requires Prometheus >= v2.43.0.",
+    "Whether to use the proxy configuration defined by environment variables (HTTP_PROXY, HTTPS_PROXY, and NO_PROXY).\nIf unset, Prometheus uses its default value.\n\n\nIt requires Prometheus >= v2.43.0.",
+    "`proxyURL` defines the HTTP proxy server to use.\n\n\nIt requires Prometheus >= v2.43.0.",
+    "Maximum acceptable TLS version.\n\n\nIt requires Prometheus >= v2.41.0.",
+    "Minimum acceptable TLS version.\n\n\nIt requires Prometheus >= v2.35.0.",
+    "HTTP path from which to scrape for metrics.\n\n\nIf empty, Prometheus uses the default value (e.g. `/metrics`).",
+    "Name of the Pod port which this endpoint refers to.\n\n\nIt takes precedence over `targetPort`.",
+    "`relabelings` configures the relabeling rules to apply the target's\nmetadata labels.\n\n\nThe Operator automatically adds relabelings for a few standard Kubernetes fields.\n\n\nThe original scrape job's name is available via the `__tmp_prometheus_job_name` label.\n\n\nMore info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "HTTP scheme to use for scraping.\n\n\n`http` and `https` are the expected values unless you rewrite the\n`__scheme__` label via relabeling.\n\n\nIf empty, Prometheus uses the default value `http`.",
+    "Timeout after which Prometheus considers the scrape to be failed.\n\n\nIf empty, Prometheus uses the global scrape timeout unless it is less\nthan the target's scrape interval value in which the latter is used.",
+    "Name or number of the target port of the `Pod` object behind the Service, the\nport must be specified with container port property.\n\n\nDeprecated: use 'port' instead.",
+    "`trackTimestampsStaleness` defines whether Prometheus tracks staleness of\nthe metrics that have an explicit timestamp present in scraped data.\nHas no effect if `honorTimestamps` is false.\n\n\nIt requires Prometheus >= v2.48.0.",
+    "`scrapeProtocols` defines the protocols to negotiate during a scrape. It tells clients the\nprotocols supported by Prometheus in order of preference (from most to least preferred).\n\n\nIf unset, Prometheus uses its default value.\n\n\nIt requires Prometheus >= v2.49.0.",
+    "The `PodMonitor` custom resource definition (CRD) defines how `Prometheus` and `PrometheusAgent` can scrape metrics from a group of pods.\nAmong other things, it allows to specify:\n* The pods to scrape via label selectors.\n* The container ports to scrape.\n* Authentication credentials to use.\n* Target and metric relabeling.\n\n\n`Prometheus` and `PrometheusAgent` objects select `PodMonitor` objects using label and namespace selectors.",
+    "The `PodMonitor` custom resource definition (CRD) defines how `Prometheus` and `PrometheusAgent` can scrape metrics from a group of pods.\nAmong other things, it allows to specify:\n* The pods to scrape via label selectors.\n* The container ports to scrape.\n* Authentication credentials to use.\n* Target and metric relabeling.\n\n`Prometheus` and `PrometheusAgent` objects select `PodMonitor` objects using label and namespace selectors.",
+    "`attachMetadata` defines additional metadata which is added to the\ndiscovered targets.\n\n\nIt requires Prometheus >= v2.37.0.",
+    "When set to true, Prometheus must have the `get` permission on the\n`Nodes` objects.",
+    "Selector to select which namespaces the Kubernetes `Pods` objects\nare discovered from.",
+    "List of endpoints part of this PodMonitor.",
+    "Label selector to select the Kubernetes `Pod` objects.",
+    "PodMonitor defines monitoring for a set of pods.",
+    "Name of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names\nTODO: Add other useful fields. apiVersion, kind, uid?",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "`attachMetadata` defines additional metadata which is added to the discovered targets. \n It requires Prometheus >= v2.37.0.",
+    "When set to true, Prometheus must have the `get` permission on the `Nodes` objects.",
+    "When defined, bodySizeLimit specifies a job level limit on the size of uncompressed response body that will be accepted by Prometheus. \n It requires Prometheus >= v2.28.0.",
+    "The label to use to retrieve the job name from. `jobLabel` selects the label from the associated Kubernetes `Pod` object which will be used as the `job` label for all metrics. \n For example if `jobLabel` is set to `foo` and the Kubernetes `Pod` object is labeled with `foo: bar`, then Prometheus adds the `job=\"bar\"` label to all ingested metrics. \n If the value of this field is empty, the `job` label of the metrics defaults to the namespace and name of the PodMonitor object (e.g. `<namespace>/<name>`).",
+    "Per-scrape limit on the number of targets dropped by relabeling that will be kept in memory. 0 means no limit. \n It requires Prometheus >= v2.47.0.",
+    "Per-scrape limit on number of labels that will be accepted for a sample. \n It requires Prometheus >= v2.27.0.",
+    "Per-scrape limit on length of labels name that will be accepted for a sample. \n It requires Prometheus >= v2.27.0.",
+    "Per-scrape limit on length of labels value that will be accepted for a sample. \n It requires Prometheus >= v2.27.0.",
+    "Selector to select which namespaces the Kubernetes `Pods` objects are discovered from.",
+    "Boolean describing whether all namespaces are selected in contrast to a list restricting them.",
+    "`authorization` configures the Authorization header credentials to use when scraping the target. \n Cannot be set at the same time as `basicAuth`, or `oauth2`.",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "Defines the authentication type. The value is case-insensitive. \n \"Basic\" is not a supported value. \n Default: \"Bearer\"",
+    "`basicAuth` configures the Basic Authentication credentials to use when scraping the target. \n Cannot be set at the same time as `authorization`, or `oauth2`.",
+    "`password` specifies a key of a Secret containing the password for authentication.",
+    "`username` specifies a key of a Secret containing the username for authentication.",
+    "`bearerTokenSecret` specifies a key of a Secret containing the bearer token for scraping targets. The secret needs to be in the same namespace as the PodMonitor object and readable by the Prometheus Operator. \n Deprecated: use `authorization` instead.",
+    "When true, the pods which are not running (e.g. either in Failed or Succeeded state) are dropped during the target discovery. \n If unset, the filtering is enabled. \n More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-phase",
+    "`followRedirects` defines whether the scrape requests should follow HTTP 3xx redirects.",
+    "When true, `honorLabels` preserves the metric's labels when they collide with the target's labels.",
+    "`honorTimestamps` controls whether Prometheus preserves the timestamps when exposed by the target.",
+    "Interval at which Prometheus scrapes the metrics from the target. \n If empty, Prometheus uses the global scrape interval.",
+    "`metricRelabelings` configures the relabeling rules to apply to the samples before ingestion.",
+    "Action to perform based on the regex matching. \n `Uppercase` and `Lowercase` actions require Prometheus >= v2.36.0. `DropEqual` and `KeepEqual` actions require Prometheus >= v2.41.0. \n Default: \"Replace\"",
+    "Modulus to take of the hash of the source label values. \n Only applicable when the action is `HashMod`.",
+    "Replacement value against which a Replace action is performed if the regular expression matches. \n Regex capture groups are available.",
+    "The source labels select values from existing labels. Their content is concatenated using the configured Separator and matched against the configured regular expression.",
+    "Label to which the resulting string is written in a replacement. \n It is mandatory for `Replace`, `HashMod`, `Lowercase`, `Uppercase`, `KeepEqual` and `DropEqual` actions. \n Regex capture groups are available.",
+    "`oauth2` configures the OAuth2 settings to use when scraping the target. \n It requires Prometheus >= 2.27.0. \n Cannot be set at the same time as `authorization`, or `basicAuth`.",
+    "`clientId` specifies a key of a Secret or ConfigMap containing the OAuth2 client's ID.",
+    "`clientSecret` specifies a key of a Secret containing the OAuth2 client's secret.",
+    "`endpointParams` configures the HTTP parameters to append to the token URL.",
+    "HTTP path from which to scrape for metrics. \n If empty, Prometheus uses the default value (e.g. `/metrics`).",
+    "Name of the Pod port which this endpoint refers to. \n It takes precedence over `targetPort`.",
+    "`proxyURL` configures the HTTP Proxy URL (e.g. \"http://proxyserver:2195\") to go through when scraping the target.",
+    "`relabelings` configures the relabeling rules to apply the target's metadata labels. \n The Operator automatically adds relabelings for a few standard Kubernetes fields. \n The original scrape job's name is available via the `__tmp_prometheus_job_name` label. \n More info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "HTTP scheme to use for scraping. \n `http` and `https` are the expected values unless you rewrite the `__scheme__` label via relabeling. \n If empty, Prometheus uses the default value `http`.",
+    "Timeout after which Prometheus considers the scrape to be failed. \n If empty, Prometheus uses the global scrape timeout unless it is less than the target's scrape interval value in which the latter is used.",
+    "Name or number of the target port of the `Pod` object behind the Service, the port must be specified with container port property. \n Deprecated: use 'port' instead.",
+    "`trackTimestampsStaleness` defines whether Prometheus tracks staleness of the metrics that have an explicit timestamp present in scraped data. Has no effect if `honorTimestamps` is false. \n It requires Prometheus >= v2.48.0.",
+    "`podTargetLabels` defines the labels which are transferred from the associated Kubernetes `Pod` object onto the ingested metrics.",
+    "`sampleLimit` defines a per-scrape limit on the number of scraped samples that will be accepted.",
+    "`scrapeProtocols` defines the protocols to negotiate during a scrape. It tells clients the protocols supported by Prometheus in order of preference (from most to least preferred). \n If unset, Prometheus uses its default value. \n It requires Prometheus >= v2.49.0.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "`targetLimit` defines a limit on the number of scraped targets that will be accepted.",
+    "Attaches node metadata to discovered targets. Requires Prometheus v2.35.0 and above.",
+    "When set to true, Prometheus must have permissions to get Nodes.",
+    "The label to use to retrieve the job name from.",
+    "Per-scrape limit on number of labels that will be accepted for a sample. Only valid in Prometheus versions 2.27.0 and newer.",
+    "Per-scrape limit on length of labels name that will be accepted for a sample. Only valid in Prometheus versions 2.27.0 and newer.",
+    "Per-scrape limit on length of labels value that will be accepted for a sample. Only valid in Prometheus versions 2.27.0 and newer.",
+    "Selector to select which namespaces the Endpoints objects are discovered from.",
+    "A list of endpoints allowed as part of this PodMonitor.",
+    "Authorization section for this endpoint",
+    "BasicAuth allow an endpoint to authenticate over basic authentication. More info: https://prometheus.io/docs/operating/configuration/#endpoint",
+    "The secret in the service monitor namespace that contains the password for authentication.",
+    "The secret in the service monitor namespace that contains the username for authentication.",
+    "Secret to mount to read bearer token for scraping targets. The secret needs to be in the same namespace as the pod monitor and accessible by the Prometheus Operator.",
+    "Whether to enable HTTP2.",
+    "Drop pods that are not running. (Failed, Succeeded). Enabled by default. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-phase",
+    "FollowRedirects configures whether scrape requests follow HTTP 3xx redirects.",
+    "HonorLabels chooses the metric's labels on collisions with target labels.",
+    "HonorTimestamps controls whether Prometheus respects the timestamps present in scraped data.",
+    "Interval at which metrics should be scraped If not specified Prometheus' global scrape interval is used.",
+    "MetricRelabelConfigs to apply to samples before ingestion.",
+    "OAuth2 for the URL. Only valid in Prometheus versions 2.27.0 and newer.",
+    "The secret or configmap containing the OAuth2 client id",
+    "The secret containing the OAuth2 client secret",
+    "Parameters to append to the token URL",
+    "OAuth2 scopes used for the token request",
+    "The URL to fetch the token from",
+    "Optional HTTP URL parameters",
+    "HTTP path to scrape for metrics. If empty, Prometheus uses the default value (e.g. `/metrics`).",
+    "Name of the pod port this endpoint refers to. Mutually exclusive with targetPort.",
+    "ProxyURL eg http://proxyserver:2195 Directs scrapes to proxy through this endpoint.",
+    "RelabelConfigs to apply to samples before scraping. Prometheus Operator automatically adds relabelings for a few standard Kubernetes fields. The original scrape job's name is available via the `__tmp_prometheus_job_name` label. More info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "HTTP scheme to use for scraping. `http` and `https` are the expected values unless you rewrite the `__scheme__` label via relabeling. If empty, Prometheus uses the default value `http`.",
+    "Timeout after which the scrape is ended If not specified, the Prometheus global scrape interval is used.",
+    "Deprecated: Use 'port' instead.",
+    "TLS configuration to use when scraping the endpoint.",
+    "PodTargetLabels transfers labels on the Kubernetes Pod onto the target.",
+    "SampleLimit defines per-scrape limit on number of scraped samples that will be accepted.",
+    "Selector to select Pod objects.",
+    "TargetLimit defines a limit on the number of scraped targets that will be accepted.",
+    "The secret's key that contains the credentials of the request",
+    "Set the authentication type. Defaults to Bearer, Basic will cause an error",
+    "Action to perform based on regex matching. Default is 'replace'. uppercase and lowercase actions require Prometheus >= 2.36.",
+    "Modulus to take of the hash of the source label values.",
+    "Regular expression against which the extracted value is matched. Default is '(.*)'",
+    "Replacement value against which a regex replace is performed if the regular expression matches. Regex capture groups are available. Default is '$1'",
+    "Separator placed between concatenated source label values. default is ';'.",
+    "The source labels select values from existing labels. Their content is concatenated using the configured separator and matched against the configured regular expression for the replace, keep, and drop actions.",
+    "Label to which the resulting value is written in a replace action. It is mandatory for replace actions. Regex capture groups are available.",
+    "HTTP scheme to use for scraping.",
+    "Attaches node metadata to discovered targets. Only valid for role: pod. Only valid in Prometheus versions 2.35.0 and newer.",
+    "Struct containing the CA cert to use for the targets.",
+    "Struct containing the client cert file for the targets.",
+    "Action to perform based on regex matching. Default is 'replace'",
+    "HTTP path to scrape for metrics.",
+    "Interval at which metrics should be scraped",
+    "Timeout after which the scrape is ended",
+    "List of namespace names.",
+    "RelabelConfigs to apply to samples before scraping. Prometheus Operator automatically adds relabelings for a few standard Kubernetes fields and replaces original scrape job name with __tmp_prometheus_job_name. More info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "RelabelConfigs to apply to samples before ingestion. More info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "Name of the port this endpoint refers to. Mutually exclusive with targetPort.",
+    "Name or number of the target port of the endpoint. Mutually exclusive with port.",
+    "PodMonitorSpec contains specification parameters for a PodMonitor.",
+    "NamespaceSelector is a selector for selecting either all namespaces or a list of namespaces.",
+    "Regular expression against which the extracted value is matched. defailt is '(.*)'",
+    "A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "versions": {
+    "v1.7.0": {
+      "added": {
+        "spec.autoscalerOptions.args": "string[]",
+        "spec.autoscalerOptions.command": "string[]",
+        "spec.gcsFaultToleranceOptions.backend": "string",
+        "spec.gcsFaultToleranceOptions.storage": "object",
+        "spec.headGroupSpec.ingressOptions": "object",
+        "spec.headGroupSpec.template.spec.schedulingGroup": "object",
+        "spec.historyServerOptions": "object",
+        "spec.networkPolicy": "object",
+        "spec.tlsOptions": "object",
+        "spec.workerGroupSpecs.priority": "integer",
+        "spec.workerGroupSpecs.template.spec.schedulingGroup": "object"
+      },
+      "optional": [
+        "spec.gcsFaultToleranceOptions.redisAddress"
+      ],
+      "removed": {
+        "spec.headGroupSpec.template.spec.workloadRef": "object",
+        "spec.workerGroupSpecs.template.spec.workloadRef": "object"
+      }
+    },
+    "v1.6.0": {
+      "added": {
+        "spec.authOptions.enableK8sTokenAuth": "boolean",
+        "spec.authOptions.secretName": "string",
+        "spec.headGroupSpec.template.spec.volumes.projected.sources.podCertificate.userAnnotations": "map[string]string",
+        "spec.headGroupSpec.template.spec.workloadRef": "object",
+        "spec.upgradeStrategy": "object",
+        "spec.workerGroupSpecs.template.spec.volumes.projected.sources.podCertificate.userAnnotations": "map[string]string",
+        "spec.workerGroupSpecs.template.spec.workloadRef": "object"
+      }
+    },
+    "v1.5.1": {
+      "added": {
+        "spec.authOptions": "object"
+      }
+    },
+    "v1.5.0": {
+      "added": {
+        "spec.autoscalerOptions.env.valueFrom.fileKeyRef": "object",
+        "spec.gcsFaultToleranceOptions.redisPassword.valueFrom.fileKeyRef": "object",
+        "spec.gcsFaultToleranceOptions.redisUsername.valueFrom.fileKeyRef": "object",
+        "spec.headGroupSpec.labels": "map[string]string",
+        "spec.headGroupSpec.resources": "map[string]string",
+        "spec.headGroupSpec.template.spec.containers.env.valueFrom.fileKeyRef": "object",
+        "spec.headGroupSpec.template.spec.containers.restartPolicyRules": "object[]",
+        "spec.headGroupSpec.template.spec.ephemeralContainers.env.valueFrom.fileKeyRef": "object",
+        "spec.headGroupSpec.template.spec.ephemeralContainers.restartPolicyRules": "object[]",
+        "spec.headGroupSpec.template.spec.hostnameOverride": "string",
+        "spec.headGroupSpec.template.spec.initContainers.env.valueFrom.fileKeyRef": "object",
+        "spec.headGroupSpec.template.spec.initContainers.restartPolicyRules": "object[]",
+        "spec.headGroupSpec.template.spec.volumes.projected.sources.podCertificate": "object",
+        "spec.workerGroupSpecs.labels": "map[string]string",
+        "spec.workerGroupSpecs.resources": "map[string]string",
+        "spec.workerGroupSpecs.template.spec.containers.env.valueFrom.fileKeyRef": "object",
+        "spec.workerGroupSpecs.template.spec.containers.restartPolicyRules": "object[]",
+        "spec.workerGroupSpecs.template.spec.ephemeralContainers.env.valueFrom.fileKeyRef": "object",
+        "spec.workerGroupSpecs.template.spec.ephemeralContainers.restartPolicyRules": "object[]",
+        "spec.workerGroupSpecs.template.spec.hostnameOverride": "string",
+        "spec.workerGroupSpecs.template.spec.initContainers.env.valueFrom.fileKeyRef": "object",
+        "spec.workerGroupSpecs.template.spec.initContainers.restartPolicyRules": "object[]",
+        "spec.workerGroupSpecs.template.spec.volumes.projected.sources.podCertificate": "object"
+      }
+    },
+    "v1.4.0": {
+      "added": {
+        "spec.autoscalerOptions.version": "string",
+        "spec.headGroupSpec.template.spec.containers.lifecycle.stopSignal": "string",
+        "spec.headGroupSpec.template.spec.ephemeralContainers.lifecycle.stopSignal": "string",
+        "spec.headGroupSpec.template.spec.initContainers.lifecycle.stopSignal": "string",
+        "spec.workerGroupSpecs.template.spec.containers.lifecycle.stopSignal": "string",
+        "spec.workerGroupSpecs.template.spec.ephemeralContainers.lifecycle.stopSignal": "string",
+        "spec.workerGroupSpecs.template.spec.initContainers.lifecycle.stopSignal": "string"
+      },
+      "optional": [
+        "spec.headGroupSpec.rayStartParams",
+        "spec.workerGroupSpecs.rayStartParams"
+      ]
+    },
+    "v1.3.1": {
+      "added": {
+        "spec.autoscalerOptions.resources.claims.request": "string",
+        "spec.headGroupSpec.template.spec.containers.resources.claims.request": "string",
+        "spec.headGroupSpec.template.spec.ephemeralContainers.resources.claims.request": "string",
+        "spec.headGroupSpec.template.spec.initContainers.resources.claims.request": "string",
+        "spec.headGroupSpec.template.spec.resourceClaims.resourceClaimName": "string",
+        "spec.headGroupSpec.template.spec.resourceClaims.resourceClaimTemplateName": "string",
+        "spec.headGroupSpec.template.spec.resources": "object",
+        "spec.headGroupSpec.template.spec.securityContext.seLinuxChangePolicy": "string",
+        "spec.headGroupSpec.template.spec.securityContext.supplementalGroupsPolicy": "string",
+        "spec.headGroupSpec.template.spec.volumes.image": "object",
+        "spec.workerGroupSpecs.template.spec.containers.resources.claims.request": "string",
+        "spec.workerGroupSpecs.template.spec.ephemeralContainers.resources.claims.request": "string",
+        "spec.workerGroupSpecs.template.spec.initContainers.resources.claims.request": "string",
+        "spec.workerGroupSpecs.template.spec.resourceClaims.resourceClaimName": "string",
+        "spec.workerGroupSpecs.template.spec.resourceClaims.resourceClaimTemplateName": "string",
+        "spec.workerGroupSpecs.template.spec.resources": "object",
+        "spec.workerGroupSpecs.template.spec.securityContext.seLinuxChangePolicy": "string",
+        "spec.workerGroupSpecs.template.spec.securityContext.supplementalGroupsPolicy": "string",
+        "spec.workerGroupSpecs.template.spec.volumes.image": "object"
+      },
+      "required": [
+        "spec.headGroupSpec.headService.status.loadBalancer.ingress.ports.error"
+      ],
+      "removed": {
+        "spec.headGroupSpec.template.spec.resourceClaims.source": "object",
+        "spec.workerGroupSpecs.template.spec.resourceClaims.source": "object"
+      }
+    },
+    "v1.3.0": {
+      "added": {
+        "spec.gcsFaultToleranceOptions": "object",
+        "spec.managedBy": "string",
+        "spec.workerGroupSpecs.idleTimeoutSeconds": "integer",
+        "spec.workerGroupSpecs.suspend": "boolean"
+      }
+    },
+    "v1.2.0": {
+      "added": {
+        "spec.autoscalerOptions.securityContext.appArmorProfile": "object",
+        "spec.autoscalerOptions.volumeMounts.recursiveReadOnly": "string",
+        "spec.headGroupSpec.headService.spec.trafficDistribution": "string",
+        "spec.headGroupSpec.headService.status.loadBalancer.ingress.ipMode": "string",
+        "spec.headGroupSpec.template.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.headGroupSpec.template.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.headGroupSpec.template.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.headGroupSpec.template.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.headGroupSpec.template.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.headGroupSpec.template.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.headGroupSpec.template.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.headGroupSpec.template.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.headGroupSpec.template.spec.containers.lifecycle.postStart.sleep": "object",
+        "spec.headGroupSpec.template.spec.containers.lifecycle.preStop.sleep": "object",
+        "spec.headGroupSpec.template.spec.containers.securityContext.appArmorProfile": "object",
+        "spec.headGroupSpec.template.spec.containers.volumeMounts.recursiveReadOnly": "string",
+        "spec.headGroupSpec.template.spec.ephemeralContainers.lifecycle.postStart.sleep": "object",
+        "spec.headGroupSpec.template.spec.ephemeralContainers.lifecycle.preStop.sleep": "object",
+        "spec.headGroupSpec.template.spec.ephemeralContainers.securityContext.appArmorProfile": "object",
+        "spec.headGroupSpec.template.spec.ephemeralContainers.volumeMounts.recursiveReadOnly": "string",
+        "spec.headGroupSpec.template.spec.initContainers.lifecycle.postStart.sleep": "object",
+        "spec.headGroupSpec.template.spec.initContainers.lifecycle.preStop.sleep": "object",
+        "spec.headGroupSpec.template.spec.initContainers.securityContext.appArmorProfile": "object",
+        "spec.headGroupSpec.template.spec.initContainers.volumeMounts.recursiveReadOnly": "string",
+        "spec.headGroupSpec.template.spec.securityContext.appArmorProfile": "object",
+        "spec.headGroupSpec.template.spec.volumes.ephemeral.volumeClaimTemplate.spec.volumeAttributesClassName": "string",
+        "spec.headGroupSpec.template.spec.volumes.projected.sources.clusterTrustBundle": "object",
+        "spec.workerGroupSpecs.template.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.workerGroupSpecs.template.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.workerGroupSpecs.template.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.workerGroupSpecs.template.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.workerGroupSpecs.template.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.workerGroupSpecs.template.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.workerGroupSpecs.template.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.workerGroupSpecs.template.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.workerGroupSpecs.template.spec.containers.lifecycle.postStart.sleep": "object",
+        "spec.workerGroupSpecs.template.spec.containers.lifecycle.preStop.sleep": "object",
+        "spec.workerGroupSpecs.template.spec.containers.securityContext.appArmorProfile": "object",
+        "spec.workerGroupSpecs.template.spec.containers.volumeMounts.recursiveReadOnly": "string",
+        "spec.workerGroupSpecs.template.spec.ephemeralContainers.lifecycle.postStart.sleep": "object",
+        "spec.workerGroupSpecs.template.spec.ephemeralContainers.lifecycle.preStop.sleep": "object",
+        "spec.workerGroupSpecs.template.spec.ephemeralContainers.securityContext.appArmorProfile": "object",
+        "spec.workerGroupSpecs.template.spec.ephemeralContainers.volumeMounts.recursiveReadOnly": "string",
+        "spec.workerGroupSpecs.template.spec.initContainers.lifecycle.postStart.sleep": "object",
+        "spec.workerGroupSpecs.template.spec.initContainers.lifecycle.preStop.sleep": "object",
+        "spec.workerGroupSpecs.template.spec.initContainers.securityContext.appArmorProfile": "object",
+        "spec.workerGroupSpecs.template.spec.initContainers.volumeMounts.recursiveReadOnly": "string",
+        "spec.workerGroupSpecs.template.spec.securityContext.appArmorProfile": "object",
+        "spec.workerGroupSpecs.template.spec.volumes.ephemeral.volumeClaimTemplate.spec.volumeAttributesClassName": "string",
+        "spec.workerGroupSpecs.template.spec.volumes.projected.sources.clusterTrustBundle": "object",
+        "status.conditions": "object[]",
+        "status.head.podName": "string",
+        "status.head.serviceName": "string",
+        "status.readyWorkerReplicas": "integer",
+        "status.stateTransitionTimes": "map[string]string"
+      },
+      "required": [
+        "spec.headGroupSpec.template.spec.hostAliases.ip",
+        "spec.workerGroupSpecs.template.spec.hostAliases.ip"
+      ],
+      "removed": {
+        "spec.headGroupSpec.template.spec.volumes.ephemeral.volumeClaimTemplate.spec.resources.claims": "object[]",
+        "spec.workerGroupSpecs.template.spec.volumes.ephemeral.volumeClaimTemplate.spec.resources.claims": "object[]"
+      }
+    },
+    "v1.1.0": {
+      "added": {
+        "spec.autoscalerOptions.resources.claims": "object[]",
+        "spec.headGroupSpec.template.spec.containers.resizePolicy": "object[]",
+        "spec.headGroupSpec.template.spec.containers.resources.claims": "object[]",
+        "spec.headGroupSpec.template.spec.containers.restartPolicy": "string",
+        "spec.headGroupSpec.template.spec.ephemeralContainers.resizePolicy": "object[]",
+        "spec.headGroupSpec.template.spec.ephemeralContainers.resources.claims": "object[]",
+        "spec.headGroupSpec.template.spec.ephemeralContainers.restartPolicy": "string",
+        "spec.headGroupSpec.template.spec.hostUsers": "boolean",
+        "spec.headGroupSpec.template.spec.initContainers.resizePolicy": "object[]",
+        "spec.headGroupSpec.template.spec.initContainers.resources.claims": "object[]",
+        "spec.headGroupSpec.template.spec.initContainers.restartPolicy": "string",
+        "spec.headGroupSpec.template.spec.resourceClaims": "object[]",
+        "spec.headGroupSpec.template.spec.schedulingGates": "object[]",
+        "spec.headGroupSpec.template.spec.topologySpreadConstraints.matchLabelKeys": "string[]",
+        "spec.headGroupSpec.template.spec.topologySpreadConstraints.minDomains": "integer",
+        "spec.headGroupSpec.template.spec.topologySpreadConstraints.nodeAffinityPolicy": "string",
+        "spec.headGroupSpec.template.spec.topologySpreadConstraints.nodeTaintsPolicy": "string",
+        "spec.headGroupSpec.template.spec.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef.namespace": "string",
+        "spec.headGroupSpec.template.spec.volumes.ephemeral.volumeClaimTemplate.spec.resources.claims": "object[]",
+        "spec.suspend": "boolean",
+        "spec.workerGroupSpecs.numOfHosts": "integer",
+        "spec.workerGroupSpecs.template.spec.containers.resizePolicy": "object[]",
+        "spec.workerGroupSpecs.template.spec.containers.resources.claims": "object[]",
+        "spec.workerGroupSpecs.template.spec.containers.restartPolicy": "string",
+        "spec.workerGroupSpecs.template.spec.ephemeralContainers.resizePolicy": "object[]",
+        "spec.workerGroupSpecs.template.spec.ephemeralContainers.resources.claims": "object[]",
+        "spec.workerGroupSpecs.template.spec.ephemeralContainers.restartPolicy": "string",
+        "spec.workerGroupSpecs.template.spec.hostUsers": "boolean",
+        "spec.workerGroupSpecs.template.spec.initContainers.resizePolicy": "object[]",
+        "spec.workerGroupSpecs.template.spec.initContainers.resources.claims": "object[]",
+        "spec.workerGroupSpecs.template.spec.initContainers.restartPolicy": "string",
+        "spec.workerGroupSpecs.template.spec.resourceClaims": "object[]",
+        "spec.workerGroupSpecs.template.spec.schedulingGates": "object[]",
+        "spec.workerGroupSpecs.template.spec.topologySpreadConstraints.matchLabelKeys": "string[]",
+        "spec.workerGroupSpecs.template.spec.topologySpreadConstraints.minDomains": "integer",
+        "spec.workerGroupSpecs.template.spec.topologySpreadConstraints.nodeAffinityPolicy": "string",
+        "spec.workerGroupSpecs.template.spec.topologySpreadConstraints.nodeTaintsPolicy": "string",
+        "spec.workerGroupSpecs.template.spec.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef.namespace": "string",
+        "spec.workerGroupSpecs.template.spec.volumes.ephemeral.volumeClaimTemplate.spec.resources.claims": "object[]",
+        "status.desiredCPU": "int | string",
+        "status.desiredGPU": "int | string",
+        "status.desiredMemory": "int | string",
+        "status.desiredTPU": "int | string"
+      },
+      "removed": {
+        "spec.headGroupSpec.replicas": "integer"
+      }
+    }
+  },
+  "texts": []
+}

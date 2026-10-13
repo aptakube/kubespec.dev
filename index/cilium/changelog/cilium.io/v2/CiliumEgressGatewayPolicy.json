@@ -1,0 +1,190 @@
+{
+  "versions": {
+    "1.20.0": {
+      "descriptionChanged": [
+        "spec.egressGateway.egressIP",
+        "spec.egressGateways.egressIP"
+      ],
+      "descriptions": {
+        "spec.egressGateway.egressIP": [
+          0,
+          1
+        ],
+        "spec.egressGateways.egressIP": [
+          0,
+          1
+        ]
+      }
+    },
+    "1.18.0": {
+      "descriptionChanged": [
+        "spec.egressGateway"
+      ],
+      "added": {
+        "spec.egressGateways": "object[]"
+      },
+      "descriptions": {
+        "spec.egressGateway": [
+          2,
+          3
+        ],
+        "spec.egressGateways": [
+          null,
+          4
+        ]
+      }
+    },
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.destinationCIDRs",
+        "spec.egressGateway.egressIP",
+        "spec.egressGateway.interface",
+        "spec.egressGateway.nodeSelector",
+        "spec.egressGateway.nodeSelector.matchExpressions.operator",
+        "spec.egressGateway.nodeSelector.matchExpressions.values",
+        "spec.egressGateway.nodeSelector.matchLabels",
+        "spec.excludedCIDRs",
+        "spec.selectors",
+        "spec.selectors.namespaceSelector",
+        "spec.selectors.namespaceSelector.matchExpressions.operator",
+        "spec.selectors.namespaceSelector.matchExpressions.values",
+        "spec.selectors.namespaceSelector.matchLabels",
+        "spec.selectors.podSelector",
+        "spec.selectors.podSelector.matchExpressions.operator",
+        "spec.selectors.podSelector.matchExpressions.values",
+        "spec.selectors.podSelector.matchLabels"
+      ],
+      "added": {
+        "spec.selectors.nodeSelector": "object"
+      },
+      "descriptions": {
+        "apiVersion": [
+          5,
+          6
+        ],
+        "kind": [
+          7,
+          8
+        ],
+        "spec.destinationCIDRs": [
+          9,
+          10
+        ],
+        "spec.egressGateway.egressIP": [
+          11,
+          0
+        ],
+        "spec.egressGateway.interface": [
+          12,
+          13
+        ],
+        "spec.egressGateway.nodeSelector": [
+          14,
+          15
+        ],
+        "spec.egressGateway.nodeSelector.matchExpressions.operator": [
+          16,
+          17
+        ],
+        "spec.egressGateway.nodeSelector.matchExpressions.values": [
+          18,
+          19
+        ],
+        "spec.egressGateway.nodeSelector.matchLabels": [
+          20,
+          21
+        ],
+        "spec.excludedCIDRs": [
+          22,
+          23
+        ],
+        "spec.selectors": [
+          24,
+          25
+        ],
+        "spec.selectors.namespaceSelector": [
+          26,
+          27
+        ],
+        "spec.selectors.namespaceSelector.matchExpressions.operator": [
+          16,
+          17
+        ],
+        "spec.selectors.namespaceSelector.matchExpressions.values": [
+          18,
+          19
+        ],
+        "spec.selectors.namespaceSelector.matchLabels": [
+          20,
+          21
+        ],
+        "spec.selectors.nodeSelector": [
+          null,
+          28
+        ],
+        "spec.selectors.podSelector": [
+          29,
+          30
+        ],
+        "spec.selectors.podSelector.matchExpressions.operator": [
+          16,
+          17
+        ],
+        "spec.selectors.podSelector.matchExpressions.values": [
+          18,
+          19
+        ],
+        "spec.selectors.podSelector.matchLabels": [
+          20,
+          21
+        ]
+      }
+    },
+    "1.14.0": {
+      "added": {
+        "spec.excludedCIDRs": "string[]"
+      },
+      "descriptions": {
+        "spec.excludedCIDRs": [
+          null,
+          22
+        ]
+      }
+    }
+  },
+  "texts": [
+    "EgressIP is the source IP address that the egress traffic is SNATed\nwith.\n\nExample:\nWhen set to \"192.168.1.100\", matching egress traffic will be\nredirected to the node matching the NodeSelector field and SNATed\nwith IP address 192.168.1.100.\n\nWhen none of the Interface or EgressIP fields is specified, the\npolicy will use the first IPv4 assigned to the interface with the\ndefault route.",
+    "EgressIP is the source IP address that the egress traffic is SNATed\nwith.\n\nExample:\nWhen set to \"192.168.1.100\", matching egress traffic will be\nredirected to the node matching the NodeSelector field and SNATed\nwith IP address 192.168.1.100.\n\nWhen set to \"2001:db8::1\", matching egress traffic will be\nredirected to the node matching the NodeSelector field and SNATed\nwith IPv6 address 2001:db8::1.\n\nWhen none of the Interface or EgressIP fields is specified, the\npolicy will use the first IPv4 assigned to the interface with the\ndefault route.",
+    "EgressGateway is the gateway node responsible for SNATing traffic.",
+    "EgressGateway is the gateway node responsible for SNATing traffic.\nIn case multiple nodes are a match for the given set of labels, the first node\nin lexical ordering based on their name will be selected.",
+    "Optional list of gateway nodes responsible for SNATing traffic.\nIf this field has any entries the contents of the egressGateway field will be ignored.\nIn case multiple nodes are a match for the given set of labels in each entry,\nthe first node in lexical ordering based on their name will be selected for each entry.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "DestinationCIDRs is a list of destination CIDRs for destination IP addresses. If a destination IP matches any one CIDR, it will be selected.",
+    "DestinationCIDRs is a list of destination CIDRs for destination IP addresses.\nIf a destination IP matches any one CIDR, it will be selected.",
+    "EgressIP is the source IP address that the egress traffic is SNATed with. \n Example: When set to \"192.168.1.100\", matching egress traffic will be redirected to the node matching the NodeSelector field and SNATed with IP address 192.168.1.100. \n When none of the Interface or EgressIP fields is specified, the policy will use the first IPv4 assigned to the interface with the default route.",
+    "Interface is the network interface to which the egress IP address that the traffic is SNATed with is assigned. \n Example: When set to \"eth1\", matching egress traffic will be redirected to the node matching the NodeSelector field and SNATed with the first IPv4 address assigned to the eth1 interface. \n When none of the Interface or EgressIP fields is specified, the policy will use the first IPv4 assigned to the interface with the default route.",
+    "Interface is the network interface to which the egress IP address\nthat the traffic is SNATed with is assigned.\n\nExample:\nWhen set to \"eth1\", matching egress traffic will be redirected to the\nnode matching the NodeSelector field and SNATed with the first IPv4\naddress assigned to the eth1 interface.\n\nWhen none of the Interface or EgressIP fields is specified, the\npolicy will use the first IPv4 assigned to the interface with the\ndefault route.",
+    "This is a label selector which selects the node that should act as egress gateway for the given policy. In case multiple nodes are selected, only the first one in the lexical ordering over the node names will be used. This field follows standard label selector semantics.",
+    "This is a label selector which selects the node that should act as\negress gateway for the given policy.\nIn case multiple nodes are selected, only the first one in the\nlexical ordering over the node names will be used.\nThis field follows standard label selector semantics.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "ExcludedCIDRs is a list of destination CIDRs that will be excluded from the egress gateway redirection and SNAT logic. Should be a subset of destinationCIDRs otherwise it will not have any effect.",
+    "ExcludedCIDRs is a list of destination CIDRs that will be excluded\nfrom the egress gateway redirection and SNAT logic.\nShould be a subset of destinationCIDRs otherwise it will not have any\neffect.",
+    "Egress represents a list of rules by which egress traffic is filtered from the source pods.",
+    "Egress represents a list of rules by which egress traffic is\nfiltered from the source pods.",
+    "Selects Namespaces using cluster-scoped labels. This field follows standard label selector semantics; if present but empty, it selects all namespaces.",
+    "Selects Namespaces using cluster-scoped labels. This field follows standard label\nselector semantics; if present but empty, it selects all namespaces.",
+    "This is a label selector which selects Pods by Node. This field follows standard label\nselector semantics; if present but empty, it selects all nodes.",
+    "This is a label selector which selects Pods. This field follows standard label selector semantics; if present but empty, it selects all pods.",
+    "This is a label selector which selects Pods. This field follows standard label\nselector semantics; if present but empty, it selects all pods."
+  ]
+}

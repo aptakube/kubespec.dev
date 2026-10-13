@@ -1,0 +1,526 @@
+{
+  "versions": {
+    "v1.12.0": {
+      "added": {
+        "spec.target": "string",
+        "status.freight.charts.subscriptionName": "string",
+        "status.freight.commits.subscriptionName": "string",
+        "status.freight.images.subscriptionName": "string",
+        "status.freightCollection.items.charts.subscriptionName": "string",
+        "status.freightCollection.items.commits.subscriptionName": "string",
+        "status.freightCollection.items.images.subscriptionName": "string"
+      },
+      "descriptions": {
+        "spec.target": [
+          null,
+          0
+        ],
+        "status.freight.charts.subscriptionName": [
+          null,
+          1
+        ],
+        "status.freight.commits.subscriptionName": [
+          null,
+          2
+        ],
+        "status.freight.images.subscriptionName": [
+          null,
+          3
+        ],
+        "status.freightCollection.items.charts.subscriptionName": [
+          null,
+          1
+        ],
+        "status.freightCollection.items.commits.subscriptionName": [
+          null,
+          2
+        ],
+        "status.freightCollection.items.images.subscriptionName": [
+          null,
+          3
+        ]
+      }
+    },
+    "v1.11.0": {
+      "optional": [
+        "spec.freight"
+      ],
+      "descriptionChanged": [
+        "spec.freight"
+      ],
+      "added": {
+        "spec.origin": "object"
+      },
+      "descriptions": {
+        "spec.freight": [
+          4,
+          5
+        ],
+        "spec.origin": [
+          null,
+          6
+        ]
+      }
+    },
+    "v1.9.0": {
+      "added": {
+        "status.freight.artifacts": "object[]",
+        "status.freightCollection.items.artifacts": "object[]"
+      },
+      "descriptions": {
+        "status.freight.artifacts": [
+          null,
+          7
+        ],
+        "status.freightCollection.items.artifacts": [
+          null,
+          7
+        ]
+      }
+    },
+    "v1.7.0": {
+      "added": {
+        "status.startedAt": "string"
+      },
+      "removed": {
+        "status.freight.images.gitRepoURL": "string",
+        "status.freightCollection.items.images.gitRepoURL": "string"
+      },
+      "descriptions": {
+        "status.startedAt": [
+          null,
+          8
+        ],
+        "status.freight.images.gitRepoURL": [
+          9,
+          null
+        ],
+        "status.freightCollection.items.images.gitRepoURL": [
+          9,
+          null
+        ]
+      }
+    },
+    "v1.5.3": {
+      "optional": [
+        "status.freightCollection.verificationHistory.id",
+        "status.freightCollection.verificationHistory.phase",
+        "status.freightCollection.verificationHistory.startTime"
+      ],
+      "descriptions": {
+        "status.freightCollection.verificationHistory.id": [
+          null,
+          10
+        ],
+        "status.freightCollection.verificationHistory.phase": [
+          null,
+          11
+        ],
+        "status.freightCollection.verificationHistory.startTime": [
+          null,
+          12
+        ]
+      }
+    },
+    "v1.5.2": {
+      "required": [
+        "status.freightCollection.verificationHistory.id",
+        "status.freightCollection.verificationHistory.phase",
+        "status.freightCollection.verificationHistory.startTime"
+      ],
+      "descriptions": {
+        "status.freightCollection.verificationHistory.id": [
+          null,
+          10
+        ],
+        "status.freightCollection.verificationHistory.phase": [
+          null,
+          11
+        ],
+        "status.freightCollection.verificationHistory.startTime": [
+          null,
+          12
+        ]
+      }
+    },
+    "v1.5.0": {
+      "added": {
+        "spec.steps.continueOnError": "boolean",
+        "status.stepExecutionMetadata.continueOnError": "boolean"
+      },
+      "descriptionChanged": [
+        "status.freight.images.gitRepoURL",
+        "status.freight.name",
+        "status.freightCollection.items.images.gitRepoURL",
+        "status.freightCollection.items.name"
+      ],
+      "descriptions": {
+        "spec.steps.continueOnError": [
+          null,
+          13
+        ],
+        "status.freight.images.gitRepoURL": [
+          14,
+          9
+        ],
+        "status.freight.name": [
+          15,
+          16
+        ],
+        "status.freightCollection.items.images.gitRepoURL": [
+          14,
+          9
+        ],
+        "status.freightCollection.items.name": [
+          15,
+          16
+        ],
+        "status.stepExecutionMetadata.continueOnError": [
+          null,
+          13
+        ]
+      }
+    },
+    "v1.4.0": {
+      "added": {
+        "status.freight.images.annotations": "map[string]string",
+        "status.freightCollection.items.images.annotations": "map[string]string"
+      },
+      "descriptions": {
+        "status.freight.images.annotations": [
+          null,
+          17
+        ],
+        "status.freightCollection.items.images.annotations": [
+          null,
+          17
+        ]
+      }
+    },
+    "v1.3.2": {
+      "descriptionChanged": [
+        "spec.steps.config",
+        "spec.steps.vars.value",
+        "spec.vars.value"
+      ],
+      "descriptions": {
+        "spec.steps.config": [
+          18,
+          19
+        ],
+        "spec.steps.vars.value": [
+          20,
+          21
+        ],
+        "spec.vars.value": [
+          20,
+          21
+        ]
+      }
+    },
+    "v1.3.0": {
+      "added": {
+        "spec.steps.if": "string"
+      },
+      "descriptions": {
+        "spec.steps.if": [
+          null,
+          22
+        ]
+      }
+    },
+    "v1.2.0": {
+      "required": [
+        "spec.steps"
+      ],
+      "added": {
+        "spec.steps.task": "object",
+        "spec.steps.vars": "object[]"
+      },
+      "optional": [
+        "spec.steps.uses",
+        "spec.vars.value"
+      ],
+      "descriptionChanged": [
+        "status.freight.origin.name",
+        "status.freightCollection.items.origin.name"
+      ],
+      "descriptions": {
+        "spec.steps": [
+          null,
+          23
+        ],
+        "spec.steps.task": [
+          null,
+          24
+        ],
+        "spec.steps.uses": [
+          null,
+          25
+        ],
+        "spec.steps.vars": [
+          null,
+          26
+        ],
+        "spec.vars.value": [
+          null,
+          20
+        ],
+        "status.freight.origin.name": [
+          27,
+          28
+        ],
+        "status.freightCollection.items.origin.name": [
+          27,
+          28
+        ]
+      }
+    },
+    "v1.1.0": {
+      "descriptionChanged": [
+        "spec.steps.config"
+      ],
+      "added": {
+        "spec.steps.retry": "object",
+        "spec.vars": "object[]",
+        "status.stepExecutionMetadata": "object[]"
+      },
+      "descriptions": {
+        "spec.steps.config": [
+          29,
+          18
+        ],
+        "spec.steps.retry": [
+          null,
+          30
+        ],
+        "spec.vars": [
+          null,
+          31
+        ],
+        "status.stepExecutionMetadata": [
+          null,
+          32
+        ]
+      }
+    },
+    "v1.0.0": {
+      "removed": {
+        "status.freight.commits.healthCheckCommit": "string",
+        "status.freightCollection.items.commits.healthCheckCommit": "string",
+        "status.metadata": "map[string]string"
+      },
+      "descriptions": {
+        "status.freight.commits.healthCheckCommit": [
+          33,
+          null
+        ],
+        "status.freightCollection.items.commits.healthCheckCommit": [
+          33,
+          null
+        ],
+        "status.metadata": [
+          34,
+          null
+        ]
+      }
+    },
+    "v0.9.0": {
+      "added": {
+        "spec.steps": "object[]",
+        "status.currentStep": "integer",
+        "status.healthChecks": "object[]",
+        "status.state": "object"
+      },
+      "removed": {
+        "status.freight.verificationHistory": "object[]",
+        "status.freight.verificationInfo": "object",
+        "status.freight.warehouse": "string",
+        "status.freightCollection.items.verificationHistory": "object[]",
+        "status.freightCollection.items.verificationInfo": "object",
+        "status.freightCollection.items.warehouse": "string"
+      },
+      "descriptions": {
+        "spec.steps": [
+          null,
+          23
+        ],
+        "status.currentStep": [
+          null,
+          35
+        ],
+        "status.healthChecks": [
+          null,
+          36
+        ],
+        "status.state": [
+          null,
+          37
+        ],
+        "status.freight.verificationHistory": [
+          38,
+          null
+        ],
+        "status.freight.verificationInfo": [
+          39,
+          null
+        ],
+        "status.freight.warehouse": [
+          40,
+          null
+        ],
+        "status.freightCollection.items.verificationHistory": [
+          38,
+          null
+        ],
+        "status.freightCollection.items.verificationInfo": [
+          39,
+          null
+        ],
+        "status.freightCollection.items.warehouse": [
+          40,
+          null
+        ]
+      }
+    },
+    "v0.8.0": {
+      "added": {
+        "status.finishedAt": "string",
+        "status.freight.origin": "object",
+        "status.freightCollection": "object"
+      },
+      "descriptionChanged": [
+        "status.freight.commits.healthCheckCommit",
+        "status.freight.verificationHistory",
+        "status.freight.verificationInfo",
+        "status.freight.warehouse"
+      ],
+      "descriptions": {
+        "status.finishedAt": [
+          null,
+          41
+        ],
+        "status.freight.commits.healthCheckCommit": [
+          42,
+          33
+        ],
+        "status.freight.origin": [
+          null,
+          43
+        ],
+        "status.freight.verificationHistory": [
+          44,
+          38
+        ],
+        "status.freight.verificationInfo": [
+          45,
+          39
+        ],
+        "status.freight.warehouse": [
+          46,
+          40
+        ],
+        "status.freightCollection": [
+          null,
+          47
+        ]
+      }
+    },
+    "v0.7.0": {
+      "descriptionChanged": [
+        "status.freight.commits.author",
+        "status.freight.commits.message"
+      ],
+      "added": {
+        "status.freight.commits.committer": "string"
+      },
+      "descriptions": {
+        "status.freight.commits.author": [
+          48,
+          49
+        ],
+        "status.freight.commits.committer": [
+          null,
+          50
+        ],
+        "status.freight.commits.message": [
+          51,
+          52
+        ]
+      }
+    },
+    "v0.6.0": {
+      "added": {
+        "status.freight": "object",
+        "status.lastHandledRefresh": "string"
+      },
+      "descriptions": {
+        "status.freight": [
+          null,
+          53
+        ],
+        "status.lastHandledRefresh": [
+          null,
+          54
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Target optionally names the Target, within the Promotion's own Project\n(namespace), that this Promotion promotes Freight to. Targets allow a\nsingle Stage to govern -- and promote Freight to -- multiple destinations.\nWhen set, the named Target must be one that the referenced Stage governs,\ni.e. one selected by the Stage's targets.selectors.\n\nWhen empty (the default), the Promotion promotes to the Stage itself. This\npreserves the behavior of Promotions created before Targets existed:\nclassic Stages -- those without a targets block -- govern no Targets, so\ntheir Promotions leave this field empty.",
+    "SubscriptionName is the name of the subscription that discovered this\nchart. This field is only populated if the subscription was assigned\na name.",
+    "SubscriptionName is the name of the subscription that discovered this\ncommit. This field is only populated if the subscription was assigned\na name.",
+    "SubscriptionName is the name of the subscription that discovered this\nimage. This field is only populated if the subscription was assigned\na name.",
+    "Freight specifies the piece of Freight to be promoted into the Stage\nreferenced by the Stage field.",
+    "Freight specifies the piece of Freight to be promoted into the Stage.\nExactly one of Freight or Origin must be set.",
+    "Origin, when set, identifies the FreightOrigin whose auto-promotion\ncandidate should be promoted. The mutating webhook resolves this to the\ncandidate Freight for that origin and fills Freight before the Promotion\nis persisted. Exactly one of Freight or Origin must be set.",
+    "Artifacts describes specific versions of artifacts other\nthan Git repository commits, container images, and Helm charts.",
+    "StartedAt is the time when the promotion started.",
+    "GitRepoURL specifies the URL of a Git repository that contains the source\ncode for the image repository referenced by the RepoURL field if Kargo was\nable to infer it.\n\nDeprecated: Use OCI annotations instead. Will be removed in v1.7.0.",
+    "ID is the identifier of the Verification process.",
+    "Phase describes the current phase of the Verification process. Generally,\nthis will be a reflection of the underlying AnalysisRun's phase, however,\nthere are exceptions to this, such as in the case where an AnalysisRun\ncannot be launched successfully.",
+    "StartTime is the time at which the Verification process was started.",
+    "ContinueOnError is a boolean value that, if set to true, will cause the\nPromotion to continue executing the next step even if this step fails. It\nalso will not permit this failure to impact the overall status of the\nPromotion.",
+    "GitRepoURL specifies the URL of a Git repository that contains the source\ncode for the image repository referenced by the RepoURL field if Kargo was\nable to infer it.",
+    "Name is system-assigned identifier that is derived deterministically from\nthe contents of the Freight. i.e. Two pieces of Freight can be compared for\nequality by comparing their Names.",
+    "Name is a system-assigned identifier derived deterministically from\nthe contents of the Freight. I.e., two pieces of Freight can be compared\nfor equality by comparing their Names.",
+    "Annotations is a map of arbitrary metadata for the image.",
+    "Config is opaque configuration for the PromotionStep that is understood\nonly by each PromotionStep's implementation. It is legal to utilize\nexpressions in defining values at any level of this block.\nSee https://docs.kargo.io/references/expression-language for details.",
+    "Config is opaque configuration for the PromotionStep that is understood\nonly by each PromotionStep's implementation. It is legal to utilize\nexpressions in defining values at any level of this block.\nSee https://docs.kargo.io/user-guide/reference-docs/expressions for details.",
+    "Value is the value of the variable. It is allowed to utilize expressions\nin the value.\nSee https://docs.kargo.io/references/expression-language for details.",
+    "Value is the value of the variable. It is allowed to utilize expressions\nin the value.\nSee https://docs.kargo.io/user-guide/reference-docs/expressions for details.",
+    "If is an optional expression that, if present, must evaluate to a boolean\nvalue. If the expression evaluates to false, the step will be skipped.\nIf the expression does not evaluate to a boolean value, the step will be\nconsidered to have failed.",
+    "Steps specifies the directives to be executed as part of this Promotion.\nThe order in which the directives are executed is the order in which they\nare listed in this field.",
+    "Task is a reference to a PromotionTask that should be inflated into a\nPromotion when it is built from a PromotionTemplate.",
+    "Uses identifies a runner that can execute this step.",
+    "Vars is a list of variables that can be referenced by expressions in\nthe step's Config. The values override the values specified in the\nPromotionSpec.",
+    "Name is the name of the resource of the kind indicated by the Kind field\nfrom which Freight may originated.",
+    "Name is the name of the resource of the kind indicated by the Kind field\nfrom which Freight may originate.",
+    "Config is the configuration for the directive.",
+    "Retry is the retry policy for this step.",
+    "Vars is a list of variables that can be referenced by expressions in\npromotion steps.",
+    "StepExecutionMetadata tracks metadata pertaining to the execution\nof individual promotion steps.",
+    "HealthCheckCommit is the ID of a specific commit. When specified,\nassessments of Stage health will use this value (instead of ID) when\ndetermining if applicable sources of Argo CD Application resources\nassociated with the Stage are or are not synced to this commit. Note that\nthere are cases (as in that of Kargo Render being utilized as a promotion\nmechanism) wherein the value of this field may differ from the commit ID\nfound in the ID field.",
+    "Metadata holds arbitrary metadata set by promotion mechanisms\n(e.g. for display purposes, or internal bookkeeping)",
+    "CurrentStep is the index of the current promotion step being executed. This\npermits steps that have already run successfully to be skipped on\nsubsequent reconciliations attempts.",
+    "HealthChecks contains the health check directives to be executed after\nthe Promotion has completed.",
+    "State stores the state of the promotion process between reconciliation\nattempts.",
+    "VerificationHistory is a stack of recent VerificationInfo. By default,\nthe last ten VerificationInfo are stored.\n\n\nDeprecated: Use FreightCollection.VerificationHistory instead.",
+    "VerificationInfo is information about any verification process that was\nassociated with this Freight for this Stage.\n\n\nDeprecated: Use FreightCollection.VerificationHistory instead.",
+    "Warehouse is the name of the Warehouse that created this Freight.\n\n\nDeprecated: Use the Origin instead.",
+    "FinishedAt is the time when the promotion was completed.",
+    "HealthCheckCommit is the ID of a specific commit. When specified,\nassessments of Stage health will used this value (instead of ID) when\ndetermining if applicable sources of Argo CD Application resources\nassociated with the Stage are or are not synced to this commit. Note that\nthere are cases (as in that of Kargo Render being utilized as a promotion\nmechanism) wherein the value of this field may differ from the commit ID\nfound in the ID field.",
+    "Origin describes a kind of Freight in terms of its origin.",
+    "VerificationHistory is a stack of recent VerificationInfo. By default,\nthe last ten VerificationInfo are stored.",
+    "VerificationInfo is information about any verification process that was\nassociated with this Freight for this Stage.",
+    "Warehouse is the name of the Warehouse that created this Freight.",
+    "FreightCollection contains the details of the piece of Freight referenced\nby this Promotion as well as any additional Freight that is carried over\nfrom the target Stage's current state.",
+    "Author is the git commit author",
+    "Author is the author of the commit.",
+    "Committer is the person who committed the commit.",
+    "Message is the git commit message",
+    "Message is the message associated with the commit. At present, this only\ncontains the first line (subject) of the commit message.",
+    "Freight is the detail of the piece of freight that was referenced by this promotion.",
+    "LastHandledRefresh holds the value of the most recent AnnotationKeyRefresh\nannotation that was handled by the controller. This field can be used to\ndetermine whether the request to refresh the resource has been handled."
+  ]
+}

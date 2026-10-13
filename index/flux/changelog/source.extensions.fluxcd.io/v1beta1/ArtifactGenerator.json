@@ -1,0 +1,54 @@
+{
+  "versions": {
+    "v2.9.0": {
+      "descriptionChanged": [
+        "spec.artifacts.copy.exclude",
+        "spec.artifacts.copy.from",
+        "spec.artifacts.copy.to",
+        "spec.artifacts.name"
+      ],
+      "added": {
+        "spec.commonMetadata": "object",
+        "spec.pathPattern": "string"
+      },
+      "descriptions": {
+        "spec.artifacts.copy.exclude": [
+          0,
+          1
+        ],
+        "spec.artifacts.copy.from": [
+          2,
+          3
+        ],
+        "spec.artifacts.copy.to": [
+          4,
+          5
+        ],
+        "spec.artifacts.name": [
+          6,
+          7
+        ],
+        "spec.commonMetadata": [
+          null,
+          8
+        ],
+        "spec.pathPattern": [
+          null,
+          9
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Exclude specifies a list of glob patterns to exclude\nfiles and dirs matched by the 'From' field.",
+    "Exclude specifies a list of glob patterns to exclude\nfiles and dirs matched by the 'From' field. Patterns are matched\nagainst paths relative to the source alias root or to the non-glob\nprefix of 'From'. Patterns without a separator (e.g. \"*.md\") match\nthe file name at any depth.",
+    "From specifies the source (by alias) and the glob pattern to match files.\nThe format is \"@<alias>/<glob-pattern>\".",
+    "From specifies the source (by alias) and the glob pattern to match files.\nThe format is \"@<alias>/<glob-pattern>\". When pathPattern is set,\nthe path may use capture placeholders such as \"{app}\".",
+    "To specifies the destination path within the artifact.\nThe format is \"@artifact/path\", the alias \"artifact\"\nrefers to the root path of the generated artifact.",
+    "To specifies the destination path within the artifact.\nThe format is \"@artifact/path\", the alias \"artifact\"\nrefers to the root path of the generated artifact. When pathPattern\nis set, the path may use capture placeholders such as \"{app}\".",
+    "Name is the name of the generated artifact.",
+    "Name is the name of the generated artifact.\nWhen pathPattern is set, this field may use capture placeholders such as \"{app}\".",
+    "CommonMetadata specifies the common labels and annotations that are\napplied to all resources. Any existing label or annotation will be\noverridden if its key matches a common one.",
+    "PathPattern specifies a directory traversal pattern to match within the sources.\nThe format is \"@<alias>/<pattern>\". Named captures in the pattern (e.g. \"{app}\")\ncan be used as placeholders in OutputArtifacts fields."
+  ]
+}

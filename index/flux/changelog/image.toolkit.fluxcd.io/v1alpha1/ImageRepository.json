@@ -1,0 +1,79 @@
+{
+  "versions": {
+    "v0.35.0": {
+      "descriptionChanged": [
+        "spec.certSecretRef"
+      ],
+      "descriptions": {
+        "spec.certSecretRef": [
+          0,
+          1
+        ]
+      }
+    },
+    "v0.28.0": {
+      "descriptionChanged": [
+        "spec.certSecretRef.name",
+        "spec.secretRef.name",
+        "status.lastHandledReconcileAt"
+      ],
+      "descriptions": {
+        "spec.certSecretRef.name": [
+          2,
+          3
+        ],
+        "spec.secretRef.name": [
+          2,
+          3
+        ],
+        "status.lastHandledReconcileAt": [
+          4,
+          5
+        ]
+      }
+    },
+    "v0.7.5": {
+      "added": {
+        "spec.certSecretRef": "object"
+      },
+      "descriptionChanged": [
+        "status.canonicalImageName"
+      ],
+      "descriptions": {
+        "spec.certSecretRef": [
+          null,
+          0
+        ],
+        "status.canonicalImageName": [
+          6,
+          7
+        ]
+      }
+    },
+    "v0.7.0": {
+      "required": [
+        "spec.secretRef.name"
+      ],
+      "descriptionChanged": [
+        "spec.secretRef.name"
+      ],
+      "descriptions": {
+        "spec.secretRef.name": [
+          8,
+          2
+        ]
+      }
+    }
+  },
+  "texts": [
+    "CertSecretRef can be given the name of a secret containing either or both of \n  - a PEM-encoded client certificate (`certFile`) and private  key (`keyFile`);  - a PEM-encoded CA certificate (`caFile`) \n  and whichever are supplied, will be used for connecting to the  registry. The client cert and key are useful if you are  authenticating with a certificate; the CA cert is useful if  you are using a self-signed server certificate.",
+    "CertSecretRef can be given the name of a secret containing either or both of \n - a PEM-encoded client certificate (`certFile`) and private key (`keyFile`); - a PEM-encoded CA certificate (`caFile`) \n and whichever are supplied, will be used for connecting to the registry. The client cert and key are useful if you are authenticating with a certificate; the CA cert is useful if you are using a self-signed server certificate.",
+    "Name of the referent",
+    "Name of the referent.",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change can be detected.",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change of the annotation value can be detected.",
+    "CannonicalName is the name of the image repository with all the implied bits made explicit; e.g., `docker.io/library/alpine` rather than `alpine`.",
+    "CanonicalName is the name of the image repository with all the implied bits made explicit; e.g., `docker.io/library/alpine` rather than `alpine`.",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?"
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "versions": {
+    "v1.5.0": {
+      "added": {
+        "spec.secretTemplate": "object"
+      },
+      "descriptions": {
+        "spec.secretTemplate": [
+          null,
+          0
+        ]
+      }
+    },
+    "v1.4.0": {
+      "descriptionChanged": [
+        "spec.duration",
+        "spec.renewBefore"
+      ],
+      "descriptions": {
+        "spec.duration": [
+          1,
+          2
+        ],
+        "spec.renewBefore": [
+          3,
+          4
+        ]
+      }
+    },
+    "v1.3.0": {
+      "added": {
+        "spec.revisionHistoryLimit": "integer",
+        "status.conditions.observedGeneration": "integer"
+      },
+      "descriptions": {
+        "spec.revisionHistoryLimit": [
+          null,
+          5
+        ],
+        "status.conditions.observedGeneration": [
+          null,
+          6
+        ]
+      }
+    },
+    "v1.2.0": {
+      "descriptionChanged": [
+        "spec.issuerRef",
+        "spec.keyAlgorithm",
+        "spec.keyEncoding",
+        "spec.keySize",
+        "status.conditions.status",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.issuerRef": [
+          7,
+          8
+        ],
+        "spec.keyAlgorithm": [
+          9,
+          10
+        ],
+        "spec.keyEncoding": [
+          11,
+          12
+        ],
+        "spec.keySize": [
+          13,
+          14
+        ],
+        "status.conditions.status": [
+          15,
+          16
+        ],
+        "status.conditions.type": [
+          17,
+          18
+        ]
+      }
+    },
+    "v1.1.0": {
+      "added": {
+        "spec.encodeUsagesInRequest": "boolean"
+      },
+      "descriptions": {
+        "spec.encodeUsagesInRequest": [
+          null,
+          19
+        ]
+      }
+    },
+    "v0.16.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.dnsNames",
+        "spec.duration",
+        "spec.emailSANs",
+        "spec.ipAddresses",
+        "spec.isCA",
+        "spec.issuerRef.group",
+        "spec.issuerRef.kind",
+        "spec.issuerRef.name",
+        "spec.keyAlgorithm",
+        "spec.keySize",
+        "spec.keystores.jks.passwordSecretRef.key",
+        "spec.keystores.jks.passwordSecretRef.name",
+        "spec.keystores.pkcs12.passwordSecretRef.key",
+        "spec.keystores.pkcs12.passwordSecretRef.name",
+        "spec.organization",
+        "spec.renewBefore",
+        "spec.secretName",
+        "spec.uriSANs",
+        "spec.usages",
+        "status",
+        "status.conditions",
+        "status.conditions.type",
+        "status.lastFailureTime",
+        "status.notAfter"
+      ],
+      "added": {
+        "status.notBefore": "string",
+        "status.renewalTime": "string"
+      },
+      "description": true,
+      "descriptions": {
+        "spec": [
+          20,
+          21
+        ],
+        "spec.dnsNames": [
+          22,
+          23
+        ],
+        "spec.duration": [
+          24,
+          1
+        ],
+        "spec.emailSANs": [
+          25,
+          26
+        ],
+        "spec.ipAddresses": [
+          27,
+          28
+        ],
+        "spec.isCA": [
+          29,
+          30
+        ],
+        "spec.issuerRef.group": [
+          null,
+          31
+        ],
+        "spec.issuerRef.kind": [
+          null,
+          32
+        ],
+        "spec.issuerRef.name": [
+          null,
+          33
+        ],
+        "spec.keyAlgorithm": [
+          34,
+          9
+        ],
+        "spec.keySize": [
+          35,
+          13
+        ],
+        "spec.keystores.jks.passwordSecretRef.key": [
+          36,
+          37
+        ],
+        "spec.keystores.jks.passwordSecretRef.name": [
+          38,
+          39
+        ],
+        "spec.keystores.pkcs12.passwordSecretRef.key": [
+          36,
+          37
+        ],
+        "spec.keystores.pkcs12.passwordSecretRef.name": [
+          38,
+          39
+        ],
+        "spec.organization": [
+          40,
+          41
+        ],
+        "spec.renewBefore": [
+          42,
+          3
+        ],
+        "spec.secretName": [
+          43,
+          44
+        ],
+        "spec.uriSANs": [
+          45,
+          46
+        ],
+        "spec.usages": [
+          47,
+          48
+        ],
+        "status": [
+          49,
+          50
+        ],
+        "status.conditions": [
+          null,
+          51
+        ],
+        "status.conditions.type": [
+          52,
+          17
+        ],
+        "status.lastFailureTime": [
+          null,
+          53
+        ],
+        "status.notAfter": [
+          54,
+          55
+        ],
+        "status.notBefore": [
+          null,
+          56
+        ],
+        "status.renewalTime": [
+          null,
+          57
+        ],
+        "": [
+          58,
+          59
+        ]
+      }
+    },
+    "v0.15.0": {
+      "added": {
+        "spec.keystores": "object",
+        "spec.privateKey": "object",
+        "status.nextPrivateKeySecretName": "string",
+        "status.revision": "integer"
+      },
+      "descriptions": {
+        "spec.keystores": [
+          null,
+          60
+        ],
+        "spec.privateKey": [
+          null,
+          61
+        ],
+        "status.nextPrivateKeySecretName": [
+          null,
+          62
+        ],
+        "status.revision": [
+          null,
+          63
+        ]
+      }
+    },
+    "v0.14.0": {
+      "descriptionChanged": [
+        "spec.commonName"
+      ],
+      "added": {
+        "spec.emailSANs": "string[]"
+      },
+      "descriptions": {
+        "spec.commonName": [
+          64,
+          65
+        ],
+        "spec.emailSANs": [
+          null,
+          25
+        ]
+      }
+    },
+    "v0.13.0": {
+      "added": {
+        "spec.subject": "object"
+      },
+      "descriptions": {
+        "spec.subject": [
+          null,
+          66
+        ]
+      }
+    }
+  },
+  "texts": [
+    "SecretTemplate defines annotations and labels to be propagated to the Kubernetes Secret when it is created or updated. Once created, labels and annotations are not yet removed from the Secret when they are removed from the template. See https://github.com/jetstack/cert-manager/issues/4292",
+    "The requested 'duration' (i.e. lifetime) of the Certificate. This option may be ignored/overridden by some issuer types. If overridden and `renewBefore` is greater than the actual certificate duration, the certificate will be automatically renewed 2/3rds of the way through the certificate's duration.",
+    "The requested 'duration' (i.e. lifetime) of the Certificate. This option may be ignored/overridden by some issuer types. If unset this defaults to 90 days. Certificate will be renewed either 2/3 through its duration or `renewBefore` period before its expiry, whichever is later. Minimum accepted duration is 1 hour. Value must be in units accepted by Go time.ParseDuration https://golang.org/pkg/time/#ParseDuration",
+    "The amount of time before the currently issued certificate's `notAfter` time that cert-manager will begin to attempt to renew the certificate. If this value is greater than the total duration of the certificate (i.e. notAfter - notBefore), it will be automatically renewed 2/3rds of the way through the certificate's duration.",
+    "How long before the currently issued certificate's expiry cert-manager should renew the certificate. The default is 2/3 of the issued certificate's duration. Minimum accepted value is 5 minutes. Value must be in units accepted by Go time.ParseDuration https://golang.org/pkg/time/#ParseDuration",
+    "revisionHistoryLimit is the maximum number of CertificateRequest revisions that are maintained in the Certificate's history. Each revision represents a single `CertificateRequest` created by this Certificate, either when it was created, renewed, or Spec was changed. Revisions will be removed by oldest first if the number of revisions exceeds this number. If set, revisionHistoryLimit must be a value of `1` or greater. If unset (`nil`), revisions will not be garbage collected. Default value is `nil`.",
+    "If set, this represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.condition[x].observedGeneration is 9, the condition is out of date with respect to the current state of the Certificate.",
+    "IssuerRef is a reference to the issuer for this certificate. If the 'kind' field is not set, or set to 'Issuer', an Issuer resource with the given name in the same namespace as the Certificate will be used. If the 'kind' field is set to 'ClusterIssuer', a ClusterIssuer with the provided name will be used. The 'name' field in this stanza is required at all times.",
+    "IssuerRef is a reference to the issuer for this certificate. If the `kind` field is not set, or set to `Issuer`, an Issuer resource with the given name in the same namespace as the Certificate will be used. If the `kind` field is set to `ClusterIssuer`, a ClusterIssuer with the provided name will be used. The `name` field in this stanza is required at all times.",
+    "KeyAlgorithm is the private key algorithm of the corresponding private key for this certificate. If provided, allowed values are either \"rsa\" or \"ecdsa\" If `keyAlgorithm` is specified and `keySize` is not provided, key size of 256 will be used for \"ecdsa\" key algorithm and key size of 2048 will be used for \"rsa\" key algorithm.",
+    "KeyAlgorithm is the private key algorithm of the corresponding private key for this certificate. If provided, allowed values are either `rsa` or `ecdsa` If `keyAlgorithm` is specified and `keySize` is not provided, key size of 256 will be used for `ecdsa` key algorithm and key size of 2048 will be used for `rsa` key algorithm.",
+    "KeyEncoding is the private key cryptography standards (PKCS) for this certificate's private key to be encoded in. If provided, allowed values are \"pkcs1\" and \"pkcs8\" standing for PKCS#1 and PKCS#8, respectively. If KeyEncoding is not specified, then PKCS#1 will be used by default.",
+    "KeyEncoding is the private key cryptography standards (PKCS) for this certificate's private key to be encoded in. If provided, allowed values are `pkcs1` and `pkcs8` standing for PKCS#1 and PKCS#8, respectively. If KeyEncoding is not specified, then `pkcs1` will be used by default.",
+    "KeySize is the key bit size of the corresponding private key for this certificate. If `keyAlgorithm` is set to `RSA`, valid values are `2048`, `4096` or `8192`, and will default to `2048` if not specified. If `keyAlgorithm` is set to `ECDSA`, valid values are `256`, `384` or `521`, and will default to `256` if not specified. No other values are allowed.",
+    "KeySize is the key bit size of the corresponding private key for this certificate. If `keyAlgorithm` is set to `rsa`, valid values are `2048`, `4096` or `8192`, and will default to `2048` if not specified. If `keyAlgorithm` is set to `ecdsa`, valid values are `256`, `384` or `521`, and will default to `256` if not specified. No other values are allowed.",
+    "Status of the condition, one of ('True', 'False', 'Unknown').",
+    "Status of the condition, one of (`True`, `False`, `Unknown`).",
+    "Type of the condition, known values are ('Ready', `Issuing`).",
+    "Type of the condition, known values are (`Ready`, `Issuing`).",
+    "EncodeUsagesInRequest controls whether key usages should be present in the CertificateRequest",
+    "CertificateSpec defines the desired state of Certificate. A valid Certificate requires at least one of a CommonName, DNSName, or URISAN to be valid.",
+    "Desired state of the Certificate resource.",
+    "DNSNames is a list of subject alt names to be used on the Certificate.",
+    "DNSNames is a list of DNS subjectAltNames to be set on the Certificate.",
+    "Certificate default Duration",
+    "EmailSANs is a list of Email Subject Alternative Names to be set on this Certificate.",
+    "EmailSANs is a list of email subjectAltNames to be set on the Certificate.",
+    "IPAddresses is a list of IP addresses to be used on the Certificate",
+    "IPAddresses is a list of IP address subjectAltNames to be set on the Certificate.",
+    "IsCA will mark this Certificate as valid for signing. This implies that the 'cert sign' usage is set",
+    "IsCA will mark this Certificate as valid for certificate signing. This will automatically add the `cert sign` usage to the list of `usages`.",
+    "Group of the resource being referred to.",
+    "Kind of the resource being referred to.",
+    "Name of the resource being referred to.",
+    "KeyAlgorithm is the private key algorithm of the corresponding private key for this certificate. If provided, allowed values are either \"rsa\" or \"ecdsa\" If KeyAlgorithm is specified and KeySize is not provided, key size of 256 will be used for \"ecdsa\" key algorithm and key size of 2048 will be used for \"rsa\" key algorithm.",
+    "KeySize is the key bit size of the corresponding private key for this certificate. If provided, value must be between 2048 and 8192 inclusive when KeyAlgorithm is empty or is set to \"rsa\", and value must be one of (256, 384, 521) when KeyAlgorithm is set to \"ecdsa\".",
+    "The key of the secret to select from. Must be a valid secret key.",
+    "The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required.",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Organization is the organization to be used on the Certificate",
+    "Organization is a list of organizations to be used on the Certificate.",
+    "Certificate renew before expiration duration",
+    "SecretName is the name of the secret resource to store this secret in",
+    "SecretName is the name of the secret resource that will be automatically created and managed by this Certificate resource. It will be populated with a private key and certificate, signed by the denoted issuer.",
+    "URISANs is a list of URI Subject Alternative Names to be set on this Certificate.",
+    "URISANs is a list of URI subjectAltNames to be set on the Certificate.",
+    "Usages is the set of x509 actions that are enabled for a given key. Defaults are ('digital signature', 'key encipherment') if empty",
+    "Usages is the set of x509 usages that are requested for the certificate. Defaults to `digital signature` and `key encipherment` if not specified.",
+    "CertificateStatus defines the observed state of Certificate",
+    "Status of the Certificate. This is set and managed automatically.",
+    "List of status conditions to indicate the status of certificates. Known condition types are `Ready` and `Issuing`.",
+    "Type of the condition, currently ('Ready').",
+    "LastFailureTime is the time as recorded by the Certificate controller of the most recent failure to complete a CertificateRequest for this Certificate resource. If set, cert-manager will not re-request another Certificate until 1 hour has elapsed from this time.",
+    "The expiration time of the certificate stored in the secret named by this resource in spec.secretName.",
+    "The expiration time of the certificate stored in the secret named by this resource in `spec.secretName`.",
+    "The time after which the certificate stored in the secret named by this resource in spec.secretName is valid.",
+    "RenewalTime is the time at which the certificate will be next renewed. If not set, no upcoming renewal is scheduled.",
+    "Certificate is a type to represent a Certificate from ACME",
+    "A Certificate resource should be created to ensure an up to date and signed x509 certificate is stored in the Kubernetes Secret resource named in `spec.secretName`. \n The stored certificate will be renewed before it expires (as configured by `spec.renewBefore`).",
+    "Keystores configures additional keystore output formats stored in the `secretName` Secret resource.",
+    "Options to control private keys used for the Certificate.",
+    "The name of the Secret resource containing the private key to be used for the next certificate iteration. The keymanager controller will automatically set this field if the `Issuing` condition is set to `True`. It will automatically unset this field when the Issuing condition is not set or False.",
+    "The current 'revision' of the certificate as issued. \n When a CertificateRequest resource is created, it will have the `cert-manager.io/certificate-revision` set to one greater than the current value of this field. \n Upon issuance, this field will be set to the value of the annotation on the CertificateRequest resource used to issue the certificate. \n Persisting the value on the CertificateRequest resource allows the certificates controller to know whether a request is part of an old issuance or if it is part of the ongoing revision's issuance by checking if the revision value in the annotation is greater than this field.",
+    "CommonName is a common name to be used on the Certificate. The CommonName should have a length of 64 characters or fewer to avoid generating invalid CSRs.",
+    "CommonName is a common name to be used on the Certificate. The CommonName should have a length of 64 characters or fewer to avoid generating invalid CSRs. This value is ignored by TLS clients when any subject alt name is set. This is x509 behaviour: https://tools.ietf.org/html/rfc6125#section-6.4.4",
+    "Full X509 name specification (https://golang.org/pkg/crypto/x509/pkix/#Name)."
+  ]
+}

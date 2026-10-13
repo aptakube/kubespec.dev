@@ -1,0 +1,179 @@
+{
+  "versions": {
+    "v2.4.0": {
+      "required": [
+        "spec.resources.kind",
+        "spec.secretRef"
+      ],
+      "descriptionChanged": [
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.resources.kind": [
+          null,
+          0
+        ],
+        "spec.secretRef": [
+          null,
+          1
+        ],
+        "status.conditions.type": [
+          2,
+          3
+        ]
+      }
+    },
+    "v2.3.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.events",
+        "spec.resources.matchLabels",
+        "spec.secretRef",
+        "spec.suspend",
+        "spec.type",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type",
+        "status.url"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          4,
+          5
+        ],
+        "kind": [
+          6,
+          7
+        ],
+        "spec.events": [
+          8,
+          9
+        ],
+        "spec.resources.matchLabels": [
+          10,
+          11
+        ],
+        "spec.secretRef": [
+          12,
+          1
+        ],
+        "spec.suspend": [
+          13,
+          14
+        ],
+        "spec.type": [
+          15,
+          16
+        ],
+        "status.conditions.lastTransitionTime": [
+          17,
+          18
+        ],
+        "status.conditions.message": [
+          19,
+          20
+        ],
+        "status.conditions.observedGeneration": [
+          21,
+          22
+        ],
+        "status.conditions.reason": [
+          23,
+          24
+        ],
+        "status.conditions.type": [
+          25,
+          2
+        ],
+        "status.url": [
+          26,
+          27
+        ]
+      }
+    },
+    "v0.28.0": {
+      "descriptionChanged": [
+        "spec.secretRef.name"
+      ],
+      "descriptions": {
+        "spec.secretRef.name": [
+          28,
+          29
+        ]
+      }
+    },
+    "v0.27.0": {
+      "added": {
+        "spec.resources.matchLabels": "map[string]string"
+      },
+      "descriptions": {
+        "spec.resources.matchLabels": [
+          null,
+          10
+        ]
+      }
+    },
+    "v0.12.0": {
+      "added": {
+        "status.observedGeneration": "integer"
+      },
+      "descriptions": {
+        "status.observedGeneration": [
+          null,
+          30
+        ]
+      }
+    },
+    "v0.7.0": {
+      "required": [
+        "spec.secretRef.name"
+      ],
+      "descriptionChanged": [
+        "spec.secretRef.name"
+      ],
+      "descriptions": {
+        "spec.secretRef.name": [
+          31,
+          28
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Kind of the referent",
+    "Secret reference containing the token used\nto validate the payload authenticity",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "A list of events to handle, e.g. 'push' for GitHub or 'Push Hook' for GitLab.",
+    "A list of events to handle,\ne.g. 'push' for GitHub or 'Push Hook' for GitLab.",
+    "MatchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "MatchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "Secret reference containing the token used to validate the payload authenticity",
+    "This flag tells the controller to suspend subsequent events handling. Defaults to false.",
+    "This flag tells the controller to suspend subsequent events handling.\nDefaults to false.",
+    "Type of webhook sender, used to determine the validation procedure and payload deserialization.",
+    "Type of webhook sender, used to determine\nthe validation procedure and payload deserialization.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "Generated webhook URL in the format of '/hook/sha256sum(token+name+namespace)'.",
+    "Generated webhook URL in the format\nof '/hook/sha256sum(token+name+namespace)'.",
+    "Name of the referent",
+    "Name of the referent.",
+    "ObservedGeneration is the last observed generation.",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?"
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "versions": {
+    "v1.6.0": {
+      "descriptionChanged": [
+        "spec.acme.solvers.dns01.azureDNS.environment",
+        "spec.acme.solvers.dns01.azureDNS.hostedZoneName",
+        "spec.acme.solvers.dns01.azureDNS.resourceGroupName",
+        "spec.acme.solvers.dns01.azureDNS.subscriptionID",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector"
+      ],
+      "added": {
+        "spec.acme.solvers.dns01.azureDNS.managedIdentity": "object"
+      },
+      "descriptions": {
+        "spec.acme.solvers.dns01.azureDNS.environment": [
+          null,
+          0
+        ],
+        "spec.acme.solvers.dns01.azureDNS.hostedZoneName": [
+          null,
+          1
+        ],
+        "spec.acme.solvers.dns01.azureDNS.managedIdentity": [
+          null,
+          2
+        ],
+        "spec.acme.solvers.dns01.azureDNS.resourceGroupName": [
+          null,
+          3
+        ],
+        "spec.acme.solvers.dns01.azureDNS.subscriptionID": [
+          null,
+          4
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          5,
+          6
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          5,
+          6
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          5,
+          6
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          5,
+          6
+        ]
+      }
+    },
+    "v1.5.2": {
+      "descriptionChanged": [
+        "spec.acme.solvers.http01.gatewayHTTPRoute.serviceType",
+        "spec.acme.solvers.http01.ingress.serviceType"
+      ],
+      "descriptions": {
+        "spec.acme.solvers.http01.gatewayHTTPRoute.serviceType": [
+          7,
+          8
+        ],
+        "spec.acme.solvers.http01.ingress.serviceType": [
+          7,
+          8
+        ]
+      }
+    },
+    "v1.5.1": {
+      "added": {
+        "spec.acme.solvers.dns01.acmeDNS": "object",
+        "spec.acme.solvers.dns01.azureDNS": "object",
+        "spec.acme.solvers.dns01.cloudDNS": "object"
+      },
+      "removed": {
+        "spec.acme.solvers.dns01.acmedns": "object",
+        "spec.acme.solvers.dns01.azuredns": "object",
+        "spec.acme.solvers.dns01.clouddns": "object"
+      },
+      "descriptions": {
+        "spec.acme.solvers.dns01.acmeDNS": [
+          null,
+          9
+        ],
+        "spec.acme.solvers.dns01.azureDNS": [
+          null,
+          10
+        ],
+        "spec.acme.solvers.dns01.cloudDNS": [
+          null,
+          11
+        ],
+        "spec.acme.solvers.dns01.acmedns": [
+          9,
+          null
+        ],
+        "spec.acme.solvers.dns01.azuredns": [
+          10,
+          null
+        ],
+        "spec.acme.solvers.dns01.clouddns": [
+          11,
+          null
+        ]
+      }
+    },
+    "v1.5.0": {
+      "added": {
+        "spec.acme.solvers.dns01.acmedns": "object",
+        "spec.acme.solvers.dns01.azuredns": "object",
+        "spec.acme.solvers.dns01.clouddns": "object",
+        "spec.acme.solvers.http01.gatewayHTTPRoute": "object"
+      },
+      "descriptionChanged": [
+        "spec.acme.solvers.http01.ingress.ingressTemplate",
+        "spec.acme.solvers.http01.ingress.serviceType",
+        "spec.vault.caBundle"
+      ],
+      "removed": {
+        "spec.acme.solvers.dns01.acmeDNS": "object",
+        "spec.acme.solvers.dns01.azureDNS": "object",
+        "spec.acme.solvers.dns01.cloudDNS": "object"
+      },
+      "descriptions": {
+        "spec.acme.solvers.dns01.acmedns": [
+          null,
+          9
+        ],
+        "spec.acme.solvers.dns01.azuredns": [
+          null,
+          10
+        ],
+        "spec.acme.solvers.dns01.clouddns": [
+          null,
+          11
+        ],
+        "spec.acme.solvers.http01.gatewayHTTPRoute": [
+          null,
+          12
+        ],
+        "spec.acme.solvers.http01.ingress.ingressTemplate": [
+          13,
+          14
+        ],
+        "spec.acme.solvers.http01.ingress.serviceType": [
+          15,
+          7
+        ],
+        "spec.vault.caBundle": [
+          16,
+          17
+        ],
+        "spec.acme.solvers.dns01.acmeDNS": [
+          9,
+          null
+        ],
+        "spec.acme.solvers.dns01.azureDNS": [
+          10,
+          null
+        ],
+        "spec.acme.solvers.dns01.cloudDNS": [
+          11,
+          null
+        ]
+      }
+    },
+    "v1.4.0": {
+      "optional": [
+        "spec.acme.externalAccountBinding.keyAlgorithm"
+      ],
+      "descriptionChanged": [
+        "spec.acme.externalAccountBinding.keyAlgorithm",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces"
+      ],
+      "added": {
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": "object",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": "object",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": "object",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": "object"
+      },
+      "descriptions": {
+        "spec.acme.externalAccountBinding.keyAlgorithm": [
+          18,
+          19
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          20,
+          21
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          20,
+          21
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          20,
+          21
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          20,
+          21
+        ]
+      }
+    },
+    "v1.3.0": {
+      "descriptionChanged": [
+        "spec.ca.ocspServers"
+      ],
+      "added": {
+        "status.conditions.observedGeneration": "integer"
+      },
+      "descriptions": {
+        "spec.ca.ocspServers": [
+          22,
+          23
+        ],
+        "status.conditions.observedGeneration": [
+          null,
+          24
+        ]
+      }
+    },
+    "v1.2.0": {
+      "added": {
+        "spec.ca.ocspServers": "string[]"
+      },
+      "descriptionChanged": [
+        "status.conditions.status",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.ca.ocspServers": [
+          null,
+          22
+        ],
+        "status.conditions.status": [
+          25,
+          26
+        ],
+        "status.conditions.type": [
+          27,
+          28
+        ]
+      }
+    },
+    "v1.1.0": {
+      "added": {
+        "spec.acme.enableDurationFeature": "boolean"
+      },
+      "descriptions": {
+        "spec.acme.enableDurationFeature": [
+          null,
+          29
+        ]
+      }
+    },
+    "v1.0.0": {
+      "added": {
+        "spec.acme.disableAccountKeyGeneration": "boolean",
+        "spec.acme.preferredChain": "string",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.priorityClassName": "string",
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.serviceAccountName": "string",
+        "spec.vault.namespace": "string"
+      },
+      "descriptionChanged": [
+        "spec.acme.solvers.http01.ingress.podTemplate.spec"
+      ],
+      "descriptions": {
+        "spec.acme.disableAccountKeyGeneration": [
+          null,
+          30
+        ],
+        "spec.acme.preferredChain": [
+          null,
+          31
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec": [
+          32,
+          33
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.priorityClassName": [
+          null,
+          34
+        ],
+        "spec.acme.solvers.http01.ingress.podTemplate.spec.serviceAccountName": [
+          null,
+          35
+        ],
+        "spec.vault.namespace": [
+          null,
+          36
+        ]
+      }
+    }
+  },
+  "texts": [
+    "name of the Azure environment (default AzurePublicCloud)",
+    "name of the DNS zone that should be used",
+    "managed identity configuration, can not be used at the same time as clientID, clientSecretSecretRef or tenantID",
+    "resource group the DNS zone is located in",
+    "ID of the Azure subscription",
+    "A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces. This field is alpha-level and is only honored when PodAffinityNamespaceSelector feature is enabled.",
+    "A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces. This field is beta-level and is only honored when PodAffinityNamespaceSelector feature is enabled.",
+    "Optional service type for Kubernetes solver service. Supported values are NodePort or ClusterIP (default).",
+    "Optional service type for Kubernetes solver service. Supported values are NodePort or ClusterIP. If unset, defaults to NodePort.",
+    "Use the 'ACME DNS' (https://github.com/joohoi/acme-dns) API to manage DNS01 challenge records.",
+    "Use the Microsoft Azure DNS API to manage DNS01 challenge records.",
+    "Use the Google Cloud DNS API to manage DNS01 challenge records.",
+    "The Gateway API is a sig-network community API that models service networking in Kubernetes (https://gateway-api.sigs.k8s.io/). The Gateway solver will create HTTPRoutes with the specified labels in the same namespace as the challenge. This solver is experimental, and fields / behaviour may change in the future.",
+    "Optional ingress template used to configure the ACME challenge solver ingress used for HTTP01 challenges",
+    "Optional ingress template used to configure the ACME challenge solver ingress used for HTTP01 challenges.",
+    "Optional service type for Kubernetes solver service",
+    "PEM encoded CA bundle used to validate Vault server certificate. Only used if the Server URL is using HTTPS protocol. This parameter is ignored for plain HTTP protocol connection. If not set the system root certificates are used to validate the TLS connection.",
+    "PEM-encoded CA bundle (base64-encoded) used to validate Vault server certificate. Only used if the Server URL is using HTTPS protocol. This parameter is ignored for plain HTTP protocol connection. If not set the system root certificates are used to validate the TLS connection.",
+    "keyAlgorithm is the MAC key algorithm that the key is used for. Valid values are \"HS256\", \"HS384\" and \"HS512\".",
+    "Deprecated: keyAlgorithm field exists for historical compatibility reasons and should not be used. The algorithm is now hardcoded to HS256 in golang/x/crypto/acme.",
+    "namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means \"this pod's namespace\"",
+    "namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means \"this pod's namespace\"",
+    "The OCSP server list is an X.509 v3 extension that defines a list of URLs of OCSP responders. The OCSP responders can be queried for the revocation status of an issued certificate. If not set, the certificate wil be issued with no OCSP servers set. For example, an OCSP server URL could be \"http://ocsp.int-x3.letsencrypt.org\".",
+    "The OCSP server list is an X.509 v3 extension that defines a list of URLs of OCSP responders. The OCSP responders can be queried for the revocation status of an issued certificate. If not set, the certificate will be issued with no OCSP servers set. For example, an OCSP server URL could be \"http://ocsp.int-x3.letsencrypt.org\".",
+    "If set, this represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.condition[x].observedGeneration is 9, the condition is out of date with respect to the current state of the Issuer.",
+    "Status of the condition, one of ('True', 'False', 'Unknown').",
+    "Status of the condition, one of (`True`, `False`, `Unknown`).",
+    "Type of the condition, known values are ('Ready').",
+    "Type of the condition, known values are (`Ready`).",
+    "Enables requesting a Not After date on certificates that matches the duration of the certificate. This is not supported by all ACME servers like Let's Encrypt. If set to true when the ACME server does not support it it will create an error on the Order. Defaults to false.",
+    "Enables or disables generating a new ACME account key. If true, the Issuer resource will *not* request a new account but will expect the account key to be supplied via an existing secret. If false, the cert-manager system will generate a new ACME account key for the Issuer. Defaults to false.",
+    "PreferredChain is the chain to use if the ACME server outputs multiple. PreferredChain is no guarantee that this one gets delivered by the ACME endpoint. For example, for Let's Encrypt's DST crosssign you would use: \"DST Root CA X3\" or \"ISRG Root X1\" for the newer Let's Encrypt root CA. This value picks the first certificate bundle in the ACME alternative chains that has a certificate with this value as its issuer's CN",
+    "PodSpec defines overrides for the HTTP01 challenge solver pod. Only the 'nodeSelector', 'affinity' and 'tolerations' fields are supported currently. All other fields will be ignored.",
+    "PodSpec defines overrides for the HTTP01 challenge solver pod. Only the 'priorityClassName', 'nodeSelector', 'affinity', 'serviceAccountName' and 'tolerations' fields are supported currently. All other fields will be ignored.",
+    "If specified, the pod's priorityClassName.",
+    "If specified, the pod's service account",
+    "Name of the vault namespace. Namespaces is a set of features within Vault Enterprise that allows Vault environments to support Secure Multi-tenancy. e.g: \"ns1\" More about namespaces can be found here https://www.vaultproject.io/docs/enterprise/namespaces"
+  ]
+}

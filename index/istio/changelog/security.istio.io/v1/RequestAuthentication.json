@@ -1,0 +1,247 @@
+{
+  "versions": {
+    "1.28.0": {
+      "added": {
+        "spec.jwtRules.spaceDelimitedClaims": "string[]"
+      },
+      "descriptions": {
+        "spec.jwtRules.spaceDelimitedClaims": [
+          null,
+          0
+        ]
+      }
+    },
+    "1.27.0": {
+      "optional": [
+        "spec.jwtRules.issuer"
+      ],
+      "descriptions": {
+        "spec.jwtRules.issuer": [
+          null,
+          1
+        ]
+      }
+    },
+    "1.25.0": {
+      "added": {
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "status.conditions.observedGeneration": [
+          null,
+          2
+        ],
+        "status.observedGeneration": [
+          3,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "status.conditions": [
+          null,
+          4
+        ],
+        "status.observedGeneration": [
+          null,
+          3
+        ],
+        "status.validationMessages": [
+          null,
+          5
+        ]
+      }
+    },
+    "1.23.0": {
+      "required": [
+        "spec.jwtRules.outputClaimToHeaders.claim",
+        "spec.jwtRules.outputClaimToHeaders.header",
+        "spec.targetRef.kind",
+        "spec.targetRef.name",
+        "spec.targetRefs.kind",
+        "spec.targetRefs.name"
+      ],
+      "descriptions": {
+        "spec.jwtRules.outputClaimToHeaders.claim": [
+          null,
+          6
+        ],
+        "spec.jwtRules.outputClaimToHeaders.header": [
+          null,
+          7
+        ],
+        "spec.targetRef.kind": [
+          null,
+          8
+        ],
+        "spec.targetRef.name": [
+          null,
+          9
+        ],
+        "spec.targetRefs.kind": [
+          null,
+          8
+        ],
+        "spec.targetRefs.name": [
+          null,
+          9
+        ]
+      }
+    },
+    "1.22.0": {
+      "added": {
+        "spec.jwtRules.timeout": "string",
+        "spec.targetRefs": "object[]"
+      },
+      "descriptionChanged": [
+        "spec.targetRef"
+      ],
+      "descriptions": {
+        "spec.jwtRules.timeout": [
+          null,
+          10
+        ],
+        "spec.targetRef": [
+          11,
+          null
+        ],
+        "spec.targetRefs": [
+          null,
+          11
+        ]
+      }
+    },
+    "1.21.0": {
+      "added": {
+        "spec.jwtRules.fromCookies": "string[]"
+      },
+      "descriptions": {
+        "spec.jwtRules.fromCookies": [
+          null,
+          12
+        ]
+      }
+    },
+    "1.20.2": {
+      "descriptionChanged": [
+        "spec.targetRef"
+      ],
+      "descriptions": {
+        "spec.targetRef": [
+          null,
+          11
+        ]
+      }
+    },
+    "1.20.1": {
+      "descriptionChanged": [
+        "spec.targetRef.group",
+        "spec.targetRef.kind",
+        "spec.targetRef.name",
+        "spec.targetRef.namespace"
+      ],
+      "descriptions": {
+        "spec.targetRef.group": [
+          null,
+          13
+        ],
+        "spec.targetRef.kind": [
+          null,
+          8
+        ],
+        "spec.targetRef.name": [
+          null,
+          9
+        ],
+        "spec.targetRef.namespace": [
+          null,
+          14
+        ]
+      }
+    },
+    "1.20.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.jwtRules.audiences",
+        "spec.jwtRules.jwks_uri",
+        "spec.jwtRules.jwksUri",
+        "spec.jwtRules.outputPayloadToHeader",
+        "spec.selector.matchLabels"
+      ],
+      "required": [
+        "spec.jwtRules.fromHeaders.name",
+        "spec.jwtRules.issuer"
+      ],
+      "added": {
+        "spec.targetRef": "object"
+      },
+      "descriptions": {
+        "spec": [
+          15,
+          16
+        ],
+        "spec.jwtRules.audiences": [
+          null,
+          17
+        ],
+        "spec.jwtRules.fromHeaders.name": [
+          null,
+          18
+        ],
+        "spec.jwtRules.issuer": [
+          null,
+          1
+        ],
+        "spec.jwtRules.jwks_uri": [
+          null,
+          19
+        ],
+        "spec.jwtRules.jwksUri": [
+          null,
+          19
+        ],
+        "spec.jwtRules.outputPayloadToHeader": [
+          null,
+          20
+        ],
+        "spec.selector.matchLabels": [
+          null,
+          21
+        ]
+      }
+    }
+  },
+  "texts": [
+    "List of JWT claim names that should be treated as space-delimited strings.",
+    "Identifies the issuer that issued the JWT.",
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers.",
+    "The name of the claim to be copied from.",
+    "The name of the header to be created.",
+    "kind is kind of the target resource.",
+    "name is the name of the target resource.",
+    "The maximum amount of time that the resolver, determined by the PILOT_JWT_ENABLE_REMOTE_JWKS environment variable, will spend waiting for the JWKS to be fetched.",
+    "Optional.",
+    "List of cookie names from which JWT is expected.",
+    "group is the group of the target resource.",
+    "namespace is the namespace of the referent.",
+    "RequestAuthentication defines what request authentication methods are supported by a workload.",
+    "Request authentication configuration for workloads. See more details at: https://istio.io/docs/reference/config/security/request_authentication.html",
+    "The list of JWT [audiences](https://tools.ietf.org/html/rfc7519#section-4.1.3) that are allowed to access.",
+    "The HTTP header name.",
+    "URL of the provider's public key set to validate signature of the JWT.",
+    "This field specifies the header name to output a successfully verified JWT payload to the backend.",
+    "One or more labels that indicate a specific set of pods/VMs on which a policy should be applied."
+  ]
+}

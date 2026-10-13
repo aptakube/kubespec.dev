@@ -1,48 +1,30 @@
 {
   "name": "kubespec-dev",
+  "version": "0.1.0",
+  "private": true,
   "type": "module",
-  "version": "0.0.0",
   "scripts": {
-    "dev": "astro dev",
-    "start": "node ./dist/server/entry.mjs",
-    "download": "tsx ./scripts/download",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "build-index": "node scripts/build-index.ts"
   },
   "dependencies": {
-    "@astrojs/check": "0.9.4",
-    "@astrojs/react": "4.3.0",
-    "@astrojs/sitemap": "3.4.1",
-    "@astrojs/vercel": "^8.2.5",
-    "@fontsource-variable/inter": "5.2.6",
-    "@radix-ui/react-tooltip": "1.2.7",
-    "@tabler/icons-react": "3.34.1",
-    "@tailwindcss/vite": "^4.1.11",
-    "@types/diff": "7.0.2",
-    "@types/pluralize": "0.0.33",
-    "@types/react": "19.1.8",
-    "@types/react-dom": "19.1.6",
-    "@types/semver": "7.7.0",
-    "astro": "5.12.3",
-    "astro-expressive-code": "^0.41.3",
-    "cal-sans": "1.0.1",
-    "diff": "8.0.2",
-    "minimist": "1.2.8",
-    "pluralize": "8.0.0",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "semver": "7.7.2",
-    "tailwind-merge": "3.3.1",
-    "tailwindcss": "4.1.11",
-    "tsx": "4.20.3",
-    "typescript": "5.8.3",
-    "yaml": "2.8.0"
-  },
-  "engines": {
-    "node": ">=22.0.0"
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "yaml": "2.9.1"
   },
   "devDependencies": {
-    "@types/minimist": "1.2.5"
-  }
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "10.12.0",
+    "eslint-config-next": "16.4.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "7.0.2"
+  },
+  "packageManager": "pnpm@12.8.1"
 }

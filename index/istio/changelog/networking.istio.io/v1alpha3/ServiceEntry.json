@@ -1,0 +1,173 @@
+{
+  "versions": {
+    "1.28.0": {
+      "descriptionChanged": [
+        "spec.resolution"
+      ],
+      "descriptions": {
+        "spec.resolution": [
+          0,
+          1
+        ]
+      }
+    },
+    "1.25.0": {
+      "added": {
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "status.conditions.observedGeneration": [
+          null,
+          2
+        ],
+        "status.observedGeneration": [
+          3,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "required": [
+        "spec"
+      ],
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "spec": [
+          null,
+          4
+        ],
+        "status.conditions": [
+          null,
+          5
+        ],
+        "status.observedGeneration": [
+          null,
+          3
+        ],
+        "status.validationMessages": [
+          null,
+          6
+        ]
+      }
+    },
+    "1.22.0": {
+      "descriptionChanged": [
+        "spec.location",
+        "spec.resolution"
+      ],
+      "descriptions": {
+        "spec.location": [
+          7,
+          8
+        ],
+        "spec.resolution": [
+          9,
+          0
+        ]
+      }
+    },
+    "1.20.0": {
+      "descriptionChanged": [
+        "spec.endpoints.address",
+        "spec.endpoints.network",
+        "spec.endpoints.serviceAccount",
+        "spec.location",
+        "spec.ports.targetPort",
+        "spec.subjectAltNames",
+        "spec.workloadSelector.labels"
+      ],
+      "required": [
+        "spec.hosts",
+        "spec.ports.name",
+        "spec.ports.number"
+      ],
+      "descriptions": {
+        "spec.endpoints.address": [
+          null,
+          10
+        ],
+        "spec.endpoints.network": [
+          null,
+          11
+        ],
+        "spec.endpoints.serviceAccount": [
+          null,
+          12
+        ],
+        "spec.hosts": [
+          null,
+          13
+        ],
+        "spec.location": [
+          null,
+          7
+        ],
+        "spec.ports.name": [
+          null,
+          14
+        ],
+        "spec.ports.number": [
+          null,
+          15
+        ],
+        "spec.ports.targetPort": [
+          null,
+          16
+        ],
+        "spec.subjectAltNames": [
+          null,
+          17
+        ],
+        "spec.workloadSelector.labels": [
+          null,
+          18
+        ]
+      }
+    },
+    "1.17.0": {
+      "descriptionChanged": [
+        "spec.resolution"
+      ],
+      "descriptions": {
+        "spec.resolution": [
+          19,
+          9
+        ]
+      }
+    },
+    "1.7.0": {
+      "added": {
+        "spec.ports.targetPort": "integer"
+      }
+    }
+  },
+  "texts": [
+    "Service resolution mode for the hosts.\n\nValid Options: NONE, STATIC, DNS, DNS_ROUND_ROBIN",
+    "Service resolution mode for the hosts.\n\nValid Options: NONE, STATIC, DNS, DNS_ROUND_ROBIN, DYNAMIC_DNS",
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Configuration affecting service registry. See more details at: https://istio.io/docs/reference/config/networking/service-entry.html",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers.",
+    "Specify whether the service should be considered external to the mesh or part of the mesh.",
+    "Specify whether the service should be considered external to the mesh or part of the mesh.\n\nValid Options: MESH_EXTERNAL, MESH_INTERNAL",
+    "Service resolution mode for the hosts.",
+    "Address associated with the network endpoint without the port.",
+    "Network enables Istio to group endpoints resident in the same L3 domain/network.",
+    "The service account associated with the workload if a sidecar is present in the workload.",
+    "The hosts associated with the ServiceEntry.",
+    "Label assigned to the port.",
+    "A valid non-negative integer port number.",
+    "The port number on the endpoint where the traffic will be received.",
+    "If specified, the proxy will verify that the server certificate's subject alternate name matches one of the specified values.",
+    "One or more labels that indicate a specific set of pods/VMs on which the configuration should be applied.",
+    "Service discovery mode for the hosts."
+  ]
+}

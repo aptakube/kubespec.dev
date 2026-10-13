@@ -1,0 +1,118 @@
+{
+  "versions": {
+    "v0.3.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.bootstrap.configRef.kind",
+        "spec.bootstrap.configRef.resourceVersion",
+        "spec.infrastructureRef.kind",
+        "spec.infrastructureRef.resourceVersion",
+        "spec.metadata.ownerReferences.kind",
+        "status.nodeRef.kind",
+        "status.nodeRef.resourceVersion"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          0,
+          1
+        ],
+        "kind": [
+          2,
+          3
+        ],
+        "spec.bootstrap.configRef.kind": [
+          4,
+          5
+        ],
+        "spec.bootstrap.configRef.resourceVersion": [
+          6,
+          7
+        ],
+        "spec.infrastructureRef.kind": [
+          4,
+          5
+        ],
+        "spec.infrastructureRef.resourceVersion": [
+          6,
+          7
+        ],
+        "spec.metadata.ownerReferences.kind": [
+          4,
+          5
+        ],
+        "status.nodeRef.kind": [
+          4,
+          5
+        ],
+        "status.nodeRef.resourceVersion": [
+          6,
+          7
+        ]
+      }
+    },
+    "v0.2.4": {
+      "descriptionChanged": [
+        "spec.metadata.generateName"
+      ],
+      "descriptions": {
+        "spec.metadata.generateName": [
+          8,
+          9
+        ]
+      }
+    },
+    "v0.2.3": {
+      "descriptionChanged": [
+        "spec.metadata"
+      ],
+      "descriptions": {
+        "spec.metadata": [
+          10,
+          11
+        ]
+      }
+    },
+    "v0.2.1": {
+      "descriptionChanged": [
+        "spec",
+        "status"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec": [
+          12,
+          13
+        ],
+        "status": [
+          14,
+          15
+        ],
+        "": [
+          16,
+          17
+        ]
+      }
+    }
+  },
+  "texts": [
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency",
+    "Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server. \n If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header). \n Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server. \n If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header). \n Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency",
+    "ObjectMeta will autopopulate the Node created. Use this to indicate what labels, annotations, name prefix, etc., should be used when creating the Node.",
+    "DEPRECATED: ObjectMeta has no function and isn't used anywhere.",
+    "/ [MachineSpec] MachineSpec defines the desired state of Machine",
+    "MachineSpec defines the desired state of Machine",
+    "/ [MachineStatus] MachineStatus defines the observed state of Machine",
+    "MachineStatus defines the observed state of Machine",
+    "/ [Machine] Machine is the Schema for the machines API",
+    "Machine is the Schema for the machines API"
+  ]
+}

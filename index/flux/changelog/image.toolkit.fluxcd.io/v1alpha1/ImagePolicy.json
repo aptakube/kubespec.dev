@@ -1,0 +1,81 @@
+{
+  "versions": {
+    "v0.28.0": {
+      "descriptionChanged": [
+        "spec.imageRepositoryRef.name"
+      ],
+      "descriptions": {
+        "spec.imageRepositoryRef.name": [
+          0,
+          1
+        ]
+      }
+    },
+    "v0.25.0": {
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "status.observedGeneration": [
+          2,
+          null
+        ]
+      }
+    },
+    "v0.24.0": {
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "status.observedGeneration": [
+          null,
+          2
+        ]
+      }
+    },
+    "v0.8.0": {
+      "added": {
+        "spec.policy.numerical": "object"
+      },
+      "descriptions": {
+        "spec.policy.numerical": [
+          null,
+          3
+        ]
+      }
+    },
+    "v0.7.0": {
+      "required": [
+        "spec.imageRepositoryRef.name"
+      ],
+      "descriptionChanged": [
+        "spec.imageRepositoryRef.name"
+      ],
+      "descriptions": {
+        "spec.imageRepositoryRef.name": [
+          4,
+          0
+        ]
+      }
+    },
+    "v0.6.0": {
+      "added": {
+        "spec.filterTags": "object"
+      },
+      "descriptions": {
+        "spec.filterTags": [
+          null,
+          5
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Name of the referent",
+    "Name of the referent.",
+    "ObservedGeneration is the last reconciled generation.",
+    "Numerical set of rules to use for numerical ordering of the tags.",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "FilterTags enables filtering for only a subset of tags based on a set of rules. If no rules are provided, all the tags from the repository will be ordered and compared."
+  ]
+}

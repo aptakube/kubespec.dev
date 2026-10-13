@@ -1,0 +1,1731 @@
+{
+  "name": "CloudNativePG",
+  "slug": "cloudnative-pg",
+  "repo": "cloudnative-pg/cloudnative-pg",
+  "logo": "https://avatars.githubusercontent.com/u/100373852?s=200&v=4",
+  "versions": [
+    {
+      "version": "v1.30.1",
+      "tag": "v1.30.1",
+      "date": "2026-09-23",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.1/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.1/config/crd/bases/postgresql.cnpg.io_databaseroles.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.1/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.1/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.1/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.1/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.1/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.30.0"
+    },
+    {
+      "version": "v1.30.0",
+      "tag": "v1.30.0",
+      "date": "2026-06-29",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.0/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.0/config/crd/bases/postgresql.cnpg.io_databaseroles.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.0/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.0/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.0/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.0/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.30.0/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.29.3",
+      "added": [
+        {
+          "apiVersion": "postgresql.cnpg.io/v1",
+          "kind": "DatabaseRole",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.29.3",
+      "tag": "v1.29.3",
+      "date": "2026-09-23",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.3/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.3/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.3/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.3/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.3/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.3/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.3/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.3/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.3/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.3/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.29.2"
+    },
+    {
+      "version": "v1.29.2",
+      "tag": "v1.29.2",
+      "date": "2026-06-29",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.2/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.2/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.2/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.2/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.2/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.2/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.2/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.2/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.2/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.2/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.29.1"
+    },
+    {
+      "version": "v1.29.1",
+      "tag": "v1.29.1",
+      "date": "2026-05-08",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.1/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.1/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.1/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.1/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.1/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.1/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.29.0"
+    },
+    {
+      "version": "v1.29.0",
+      "tag": "v1.29.0",
+      "date": "2026-04-01",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.0/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.0/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.0/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.0/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.0/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.29.0/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.28.4"
+    },
+    {
+      "version": "v1.28.4",
+      "tag": "v1.28.4",
+      "date": "2026-06-29",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.4/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.4/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.4/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.4/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.4/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.4/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.4/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.4/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.4/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.4/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.28.3"
+    },
+    {
+      "version": "v1.28.3",
+      "tag": "v1.28.3",
+      "date": "2026-05-08",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.3/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.3/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.3/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.3/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.3/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.3/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.3/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.3/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.3/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.3/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.28.2"
+    },
+    {
+      "version": "v1.28.2",
+      "tag": "v1.28.2",
+      "date": "2026-04-01",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.2/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.2/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.2/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.2/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.2/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.2/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.2/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.2/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.2/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.2/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.28.1"
+    },
+    {
+      "version": "v1.28.1",
+      "tag": "v1.28.1",
+      "date": "2026-02-05",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.1/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.1/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.1/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.1/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.1/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.1/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.28.0"
+    },
+    {
+      "version": "v1.28.0",
+      "tag": "v1.28.0",
+      "date": "2025-12-09",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.0/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.0/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.0/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.0/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.0/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.28.0/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.27.4"
+    },
+    {
+      "version": "v1.27.4",
+      "tag": "v1.27.4",
+      "date": "2026-04-01",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.4/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.4/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.4/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.4/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.4/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.4/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.4/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.4/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.4/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.4/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.27.3"
+    },
+    {
+      "version": "v1.27.3",
+      "tag": "v1.27.3",
+      "date": "2026-02-05",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.3/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.3/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.3/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.3/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.3/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.3/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.3/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.3/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.3/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.3/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.27.2"
+    },
+    {
+      "version": "v1.27.2",
+      "tag": "v1.27.2",
+      "date": "2025-12-09",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.2/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.2/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.2/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.2/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.2/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.2/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.2/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.2/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.2/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.2/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.27.1"
+    },
+    {
+      "version": "v1.27.1",
+      "tag": "v1.27.1",
+      "date": "2025-10-23",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.1/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.1/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.1/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.1/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.1/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.1/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.27.0"
+    },
+    {
+      "version": "v1.27.0",
+      "tag": "v1.27.0",
+      "date": "2025-08-12",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.0/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.0/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.0/config/crd/bases/postgresql.cnpg.io_failoverquorums.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.0/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.0/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.27.0/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.26.3",
+      "added": [
+        {
+          "apiVersion": "postgresql.cnpg.io/v1",
+          "kind": "FailoverQuorum",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.26.3",
+      "tag": "v1.26.3",
+      "date": "2025-12-09",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.3/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.3/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.3/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.3/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.3/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.3/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.3/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.3/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.3/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.26.2"
+    },
+    {
+      "version": "v1.26.2",
+      "tag": "v1.26.2",
+      "date": "2025-10-23",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.2/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.2/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.2/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.2/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.2/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.2/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.2/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.2/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.2/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.26.1"
+    },
+    {
+      "version": "v1.26.1",
+      "tag": "v1.26.1",
+      "date": "2025-07-25",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.1/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.1/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.1/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.1/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.1/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.26.0"
+    },
+    {
+      "version": "v1.26.0",
+      "tag": "v1.26.0",
+      "date": "2025-05-23",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.0/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.0/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.0/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.0/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.26.0/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.25.4"
+    },
+    {
+      "version": "v1.25.4",
+      "tag": "v1.25.4",
+      "date": "2025-10-23",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.4/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.4/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.4/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.4/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.4/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.4/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.4/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.4/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.4/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.25.3"
+    },
+    {
+      "version": "v1.25.3",
+      "tag": "v1.25.3",
+      "date": "2025-07-25",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.3/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.3/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.3/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.3/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.3/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.3/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.3/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.3/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.3/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.25.2"
+    },
+    {
+      "version": "v1.25.2",
+      "tag": "v1.25.2",
+      "date": "2025-05-23",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.2/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.2/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.2/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.2/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.2/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.2/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.2/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.2/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.2/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.25.1"
+    },
+    {
+      "version": "v1.25.1",
+      "tag": "v1.25.1",
+      "date": "2025-02-28",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.1/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.1/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.1/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.1/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.1/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.25.0"
+    },
+    {
+      "version": "v1.25.0",
+      "tag": "v1.25.0",
+      "date": "2024-12-23",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.0/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.0/config/crd/bases/postgresql.cnpg.io_databases.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.0/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.0/config/crd/bases/postgresql.cnpg.io_publications.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.25.0/config/crd/bases/postgresql.cnpg.io_subscriptions.yaml"
+      ],
+      "changelogBase": "v1.24.4",
+      "added": [
+        {
+          "apiVersion": "postgresql.cnpg.io/v1",
+          "kind": "Database",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.cnpg.io/v1",
+          "kind": "Publication",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.cnpg.io/v1",
+          "kind": "Subscription",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.24.4",
+      "tag": "v1.24.4",
+      "date": "2025-05-23",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.4/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.4/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.4/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.4/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.4/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.4/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.24.3"
+    },
+    {
+      "version": "v1.24.3",
+      "tag": "v1.24.3",
+      "date": "2025-02-28",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.3/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.3/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.3/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.3/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.3/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.3/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.24.2"
+    },
+    {
+      "version": "v1.24.2",
+      "tag": "v1.24.2",
+      "date": "2024-12-23",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.2/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.2/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.2/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.2/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.2/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.2/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.24.1"
+    },
+    {
+      "version": "v1.24.1",
+      "tag": "v1.24.1",
+      "date": "2024-10-16",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.1/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.1/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.24.0"
+    },
+    {
+      "version": "v1.24.0",
+      "tag": "v1.24.0",
+      "date": "2024-08-22",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.0/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.0/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.24.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.23.6"
+    },
+    {
+      "version": "v1.23.6",
+      "tag": "v1.23.6",
+      "date": "2024-12-23",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.6/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.6/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.6/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.6/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.6/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.6/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.23.5"
+    },
+    {
+      "version": "v1.23.5",
+      "tag": "v1.23.5",
+      "date": "2024-10-16",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.5/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.5/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.5/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.5/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.5/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.5/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.23.4"
+    },
+    {
+      "version": "v1.23.4",
+      "tag": "v1.23.4",
+      "date": "2024-08-22",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.4/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.4/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.4/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.4/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.4/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.4/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.23.3"
+    },
+    {
+      "version": "v1.23.3",
+      "tag": "v1.23.3",
+      "date": "2024-07-29",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.3/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.3/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.3/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.3/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.3/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.3/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.23.2"
+    },
+    {
+      "version": "v1.23.2",
+      "tag": "v1.23.2",
+      "date": "2024-06-12",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.2/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.2/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.2/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.2/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.2/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.2/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.23.1"
+    },
+    {
+      "version": "v1.23.1",
+      "tag": "v1.23.1",
+      "date": "2024-04-30",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.1/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.1/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.23.0"
+    },
+    {
+      "version": "v1.23.0",
+      "tag": "v1.23.0",
+      "date": "2024-04-24",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.0/config/crd/bases/postgresql.cnpg.io_clusterimagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.0/config/crd/bases/postgresql.cnpg.io_imagecatalogs.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.23.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.22.5",
+      "added": [
+        {
+          "apiVersion": "postgresql.cnpg.io/v1",
+          "kind": "ClusterImageCatalog",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "postgresql.cnpg.io/v1",
+          "kind": "ImageCatalog",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.22.5",
+      "tag": "v1.22.5",
+      "date": "2024-07-29",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.5/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.5/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.5/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.5/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.22.4"
+    },
+    {
+      "version": "v1.22.4",
+      "tag": "v1.22.4",
+      "date": "2024-06-12",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.4/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.4/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.4/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.4/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.22.3"
+    },
+    {
+      "version": "v1.22.3",
+      "tag": "v1.22.3",
+      "date": "2024-04-24",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.3/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.3/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.3/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.3/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.22.2"
+    },
+    {
+      "version": "v1.22.2",
+      "tag": "v1.22.2",
+      "date": "2024-03-14",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.2/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.2/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.2/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.2/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.22.1"
+    },
+    {
+      "version": "v1.22.1",
+      "tag": "v1.22.1",
+      "date": "2024-02-02",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.22.0"
+    },
+    {
+      "version": "v1.22.0",
+      "tag": "v1.22.0",
+      "date": "2023-12-21",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.22.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.21.6"
+    },
+    {
+      "version": "v1.21.6",
+      "tag": "v1.21.6",
+      "date": "2024-06-12",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.6/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.6/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.6/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.6/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.21.5"
+    },
+    {
+      "version": "v1.21.5",
+      "tag": "v1.21.5",
+      "date": "2024-04-24",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.5/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.5/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.5/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.5/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.21.4"
+    },
+    {
+      "version": "v1.21.4",
+      "tag": "v1.21.4",
+      "date": "2024-03-14",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.4/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.4/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.4/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.4/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.21.3"
+    },
+    {
+      "version": "v1.21.3",
+      "tag": "v1.21.3",
+      "date": "2024-02-02",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.3/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.3/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.3/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.3/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.21.2"
+    },
+    {
+      "version": "v1.21.2",
+      "tag": "v1.21.2",
+      "date": "2023-12-21",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.2/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.2/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.2/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.2/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.21.1"
+    },
+    {
+      "version": "v1.21.1",
+      "tag": "v1.21.1",
+      "date": "2023-11-03",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.21.0"
+    },
+    {
+      "version": "v1.21.0",
+      "tag": "v1.21.0",
+      "date": "2023-10-12",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.21.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.20.6"
+    },
+    {
+      "version": "v1.20.6",
+      "tag": "v1.20.6",
+      "date": "2024-02-02",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.6/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.6/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.6/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.6/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.20.5"
+    },
+    {
+      "version": "v1.20.5",
+      "tag": "v1.20.5",
+      "date": "2023-12-21",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.5/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.5/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.5/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.5/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.20.4"
+    },
+    {
+      "version": "v1.20.4",
+      "tag": "v1.20.4",
+      "date": "2023-11-03",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.4/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.4/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.4/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.4/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.20.3"
+    },
+    {
+      "version": "v1.20.3",
+      "tag": "v1.20.3",
+      "date": "2023-10-11",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.3/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.3/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.3/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.3/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.20.2"
+    },
+    {
+      "version": "v1.20.2",
+      "tag": "v1.20.2",
+      "date": "2023-07-27",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.2/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.2/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.2/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.2/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.20.1"
+    },
+    {
+      "version": "v1.20.1",
+      "tag": "v1.20.1",
+      "date": "2023-06-12",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.20.0"
+    },
+    {
+      "version": "v1.20.0",
+      "tag": "v1.20.0",
+      "date": "2023-04-27",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.20.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.19.6"
+    },
+    {
+      "version": "v1.19.6",
+      "tag": "v1.19.6",
+      "date": "2023-11-03",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.6/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.6/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.6/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.6/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.19.5"
+    },
+    {
+      "version": "v1.19.5",
+      "tag": "v1.19.5",
+      "date": "2023-10-11",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.5/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.5/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.5/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.5/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.19.4"
+    },
+    {
+      "version": "v1.19.4",
+      "tag": "v1.19.4",
+      "date": "2023-07-27",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.4/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.4/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.4/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.4/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.19.3"
+    },
+    {
+      "version": "v1.19.3",
+      "tag": "v1.19.3",
+      "date": "2023-06-12",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.3/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.3/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.3/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.3/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.19.2"
+    },
+    {
+      "version": "v1.19.2",
+      "tag": "v1.19.2",
+      "date": "2023-04-27",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.2/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.2/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.2/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.2/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.19.1"
+    },
+    {
+      "version": "v1.19.1",
+      "tag": "v1.19.1",
+      "date": "2023-03-20",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.19.0"
+    },
+    {
+      "version": "v1.19.0",
+      "tag": "v1.19.0",
+      "date": "2023-02-14",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.19.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.18.5"
+    },
+    {
+      "version": "v1.18.5",
+      "tag": "v1.18.5",
+      "date": "2023-06-12",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.5/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.5/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.5/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.5/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.18.4"
+    },
+    {
+      "version": "v1.18.4",
+      "tag": "v1.18.4",
+      "date": "2023-04-27",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.4/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.4/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.4/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.4/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.18.3"
+    },
+    {
+      "version": "v1.18.3",
+      "tag": "v1.18.3",
+      "date": "2023-03-20",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.3/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.3/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.3/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.3/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.18.2"
+    },
+    {
+      "version": "v1.18.2",
+      "tag": "v1.18.2",
+      "date": "2023-02-14",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.2/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.2/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.2/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.2/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.18.1"
+    },
+    {
+      "version": "v1.18.1",
+      "tag": "v1.18.1",
+      "date": "2022-12-21",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.18.0"
+    },
+    {
+      "version": "v1.18.0",
+      "tag": "v1.18.0",
+      "date": "2022-11-10",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.18.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.17.5"
+    },
+    {
+      "version": "v1.17.5",
+      "tag": "v1.17.5",
+      "date": "2023-03-20",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.5/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.5/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.5/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.5/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.17.4"
+    },
+    {
+      "version": "v1.17.4",
+      "tag": "v1.17.4",
+      "date": "2023-02-14",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.4/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.4/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.4/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.4/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.17.3"
+    },
+    {
+      "version": "v1.17.3",
+      "tag": "v1.17.3",
+      "date": "2022-12-21",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.3/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.3/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.3/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.3/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.17.2"
+    },
+    {
+      "version": "v1.17.2",
+      "tag": "v1.17.2",
+      "date": "2022-11-10",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.2/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.2/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.2/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.2/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.17.1"
+    },
+    {
+      "version": "v1.17.1",
+      "tag": "v1.17.1",
+      "date": "2022-10-06",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.17.0"
+    },
+    {
+      "version": "v1.17.0",
+      "tag": "v1.17.0",
+      "date": "2022-09-06",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.17.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.16.5"
+    },
+    {
+      "version": "v1.16.5",
+      "tag": "v1.16.5",
+      "date": "2022-12-21",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.5/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.5/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.5/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.5/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.16.4"
+    },
+    {
+      "version": "v1.16.4",
+      "tag": "v1.16.4",
+      "date": "2022-11-10",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.4/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.4/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.4/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.4/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.16.3"
+    },
+    {
+      "version": "v1.16.3",
+      "tag": "v1.16.3",
+      "date": "2022-10-06",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.3/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.3/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.3/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.3/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.16.2"
+    },
+    {
+      "version": "v1.16.2",
+      "tag": "v1.16.2",
+      "date": "2022-09-06",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.2/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.2/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.2/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.2/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.16.1"
+    },
+    {
+      "version": "v1.16.1",
+      "tag": "v1.16.1",
+      "date": "2022-08-12",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.16.0"
+    },
+    {
+      "version": "v1.16.0",
+      "tag": "v1.16.0",
+      "date": "2022-07-07",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.16.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.15.5"
+    },
+    {
+      "version": "v1.15.5",
+      "tag": "v1.15.5",
+      "date": "2022-10-06",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.5/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.5/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.5/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.5/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.15.4"
+    },
+    {
+      "version": "v1.15.4",
+      "tag": "v1.15.4",
+      "date": "2022-09-06",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.4/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.4/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.4/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.4/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.15.3"
+    },
+    {
+      "version": "v1.15.3",
+      "tag": "v1.15.3",
+      "date": "2022-08-12",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.3/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.3/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.3/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.3/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.15.2"
+    },
+    {
+      "version": "v1.15.2",
+      "tag": "v1.15.2",
+      "date": "2022-07-07",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.2/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.2/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.2/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.2/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.15.1"
+    },
+    {
+      "version": "v1.15.1",
+      "tag": "v1.15.1",
+      "date": "2022-05-27",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.1/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.1/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.1/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.1/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.15.0"
+    },
+    {
+      "version": "v1.15.0",
+      "tag": "v1.15.0",
+      "date": "2022-04-21",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.0/config/crd/bases/postgresql.cnpg.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.0/config/crd/bases/postgresql.cnpg.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.0/config/crd/bases/postgresql.cnpg.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.15.0/config/crd/bases/postgresql.cnpg.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.14.0",
+      "added": [
+        {
+          "apiVersion": "postgresql.cnpg.io/v1",
+          "kind": "Backup",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.cnpg.io/v1",
+          "kind": "Cluster",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.cnpg.io/v1",
+          "kind": "Pooler",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.cnpg.io/v1",
+          "kind": "ScheduledBackup",
+          "scope": "Namespaced"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "postgresql.k8s.enterprisedb.io/v1",
+          "kind": "Backup",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.k8s.enterprisedb.io/v1",
+          "kind": "Cluster",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.k8s.enterprisedb.io/v1",
+          "kind": "Pooler",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.k8s.enterprisedb.io/v1",
+          "kind": "ScheduledBackup",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.14.0",
+      "tag": "v1.14.0",
+      "date": "2022-03-25",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.14.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.14.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.14.0/config/crd/bases/postgresql.k8s.enterprisedb.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.14.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.13.0"
+    },
+    {
+      "version": "v1.13.0",
+      "tag": "v1.13.0",
+      "date": "2022-02-17",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.13.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.13.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.13.0/config/crd/bases/postgresql.k8s.enterprisedb.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.13.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.12.0"
+    },
+    {
+      "version": "v1.12.0",
+      "tag": "v1.12.0",
+      "date": "2022-01-11",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.12.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.12.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.12.0/config/crd/bases/postgresql.k8s.enterprisedb.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.12.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.11.0"
+    },
+    {
+      "version": "v1.11.0",
+      "tag": "v1.11.0",
+      "date": "2021-12-15",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.11.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.11.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.11.0/config/crd/bases/postgresql.k8s.enterprisedb.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.11.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.10.0"
+    },
+    {
+      "version": "v1.10.0",
+      "tag": "v1.10.0",
+      "date": "2021-11-11",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.10.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.10.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.10.0/config/crd/bases/postgresql.k8s.enterprisedb.io_poolers.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.10.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.9.2",
+      "added": [
+        {
+          "apiVersion": "postgresql.k8s.enterprisedb.io/v1",
+          "kind": "Pooler",
+          "scope": "Namespaced"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "postgresql.k8s.enterprisedb.io/v1alpha1",
+          "kind": "Backup",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.k8s.enterprisedb.io/v1alpha1",
+          "kind": "Cluster",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.k8s.enterprisedb.io/v1alpha1",
+          "kind": "ScheduledBackup",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.9.2",
+      "tag": "v1.9.2",
+      "date": "2021-10-15",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.9.2/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.9.2/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.9.2/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.9.1"
+    },
+    {
+      "version": "v1.9.1",
+      "tag": "v1.9.1",
+      "date": "2021-09-30",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.9.1/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.9.1/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.9.1/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.9.0"
+    },
+    {
+      "version": "v1.9.0",
+      "tag": "v1.9.0",
+      "date": "2021-09-28",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.9.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.9.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.9.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.8.0"
+    },
+    {
+      "version": "v1.8.0",
+      "tag": "v1.8.0",
+      "date": "2021-09-13",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.8.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.8.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.8.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.7.1"
+    },
+    {
+      "version": "v1.7.1",
+      "tag": "v1.7.1",
+      "date": "2021-08-11",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.7.1/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.7.1/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.7.1/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.7.0"
+    },
+    {
+      "version": "v1.7.0",
+      "tag": "v1.7.0",
+      "date": "2021-07-28",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.7.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.7.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.7.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.6.0"
+    },
+    {
+      "version": "v1.6.0",
+      "tag": "v1.6.0",
+      "date": "2021-07-12",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.6.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.6.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.6.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.5.1"
+    },
+    {
+      "version": "v1.5.1",
+      "tag": "v1.5.1",
+      "date": "2021-06-17",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.5.1/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.5.1/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.5.1/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.5.0"
+    },
+    {
+      "version": "v1.5.0",
+      "tag": "v1.5.0",
+      "date": "2021-06-11",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.5.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.5.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.5.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.4.0"
+    },
+    {
+      "version": "v1.4.0",
+      "tag": "v1.4.0",
+      "date": "2021-05-18",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.4.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.4.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.4.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.3.0"
+    },
+    {
+      "version": "v1.3.0",
+      "tag": "v1.3.0",
+      "date": "2021-04-23",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.3.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.3.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.3.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.2.1"
+    },
+    {
+      "version": "v1.2.1",
+      "tag": "v1.2.1",
+      "date": "2021-04-06",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.2.1/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.2.1/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.2.1/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.2.0"
+    },
+    {
+      "version": "v1.2.0",
+      "tag": "v1.2.0",
+      "date": "2021-03-31",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.2.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.2.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.2.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.1.0"
+    },
+    {
+      "version": "v1.1.0",
+      "tag": "v1.1.0",
+      "date": "2021-03-03",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.1.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.1.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.1.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v1.0.0"
+    },
+    {
+      "version": "v1.0.0",
+      "tag": "v1.0.0",
+      "date": "2021-02-04",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.0.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.0.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v1.0.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v0.8.0"
+    },
+    {
+      "version": "v0.8.0",
+      "tag": "v0.8.0",
+      "date": "2021-01-29",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.8.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.8.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.8.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v0.7.0",
+      "added": [
+        {
+          "apiVersion": "postgresql.k8s.enterprisedb.io/v1",
+          "kind": "Backup",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.k8s.enterprisedb.io/v1",
+          "kind": "Cluster",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.k8s.enterprisedb.io/v1",
+          "kind": "ScheduledBackup",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v0.7.0",
+      "tag": "v0.7.0",
+      "date": "2020-12-31",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.7.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.7.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.7.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v0.6.0"
+    },
+    {
+      "version": "v0.6.0",
+      "tag": "v0.6.0",
+      "date": "2020-12-04",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.6.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.6.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.6.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v0.5.0"
+    },
+    {
+      "version": "v0.5.0",
+      "tag": "v0.5.0",
+      "date": "2020-11-20",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.5.0/config/crd/bases/postgresql.k8s.enterprisedb.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.5.0/config/crd/bases/postgresql.k8s.enterprisedb.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.5.0/config/crd/bases/postgresql.k8s.enterprisedb.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v0.4.0",
+      "added": [
+        {
+          "apiVersion": "postgresql.k8s.enterprisedb.io/v1alpha1",
+          "kind": "Backup",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.k8s.enterprisedb.io/v1alpha1",
+          "kind": "Cluster",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.k8s.enterprisedb.io/v1alpha1",
+          "kind": "ScheduledBackup",
+          "scope": "Namespaced"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "postgresql.k8s.2ndq.io/v1alpha1",
+          "kind": "Backup",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.k8s.2ndq.io/v1alpha1",
+          "kind": "Cluster",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.k8s.2ndq.io/v1alpha1",
+          "kind": "ScheduledBackup",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v0.4.0",
+      "tag": "v0.4.0",
+      "date": "2020-11-04",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.4.0/config/crd/bases/postgresql.k8s.2ndq.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.4.0/config/crd/bases/postgresql.k8s.2ndq.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.4.0/config/crd/bases/postgresql.k8s.2ndq.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v0.3.0"
+    },
+    {
+      "version": "v0.3.0",
+      "tag": "v0.3.0",
+      "date": "2020-09-25",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.3.0/config/crd/bases/postgresql.k8s.2ndq.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.3.0/config/crd/bases/postgresql.k8s.2ndq.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.3.0/config/crd/bases/postgresql.k8s.2ndq.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v0.2.0"
+    },
+    {
+      "version": "v0.2.0",
+      "tag": "v0.2.0",
+      "date": "2020-08-12",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.2.0/config/crd/bases/postgresql.k8s.2ndq.io_backups.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.2.0/config/crd/bases/postgresql.k8s.2ndq.io_clusters.yaml",
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.2.0/config/crd/bases/postgresql.k8s.2ndq.io_scheduledbackups.yaml"
+      ],
+      "changelogBase": "v0.1.0",
+      "added": [
+        {
+          "apiVersion": "postgresql.k8s.2ndq.io/v1alpha1",
+          "kind": "Backup",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "postgresql.k8s.2ndq.io/v1alpha1",
+          "kind": "ScheduledBackup",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v0.1.0",
+      "tag": "v0.1.0",
+      "date": "2020-04-03",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.1.0/config/crd/bases/postgresql.k8s.2ndq.io_clusters.yaml"
+      ],
+      "changelogBase": "v0.0.1"
+    },
+    {
+      "version": "v0.0.1",
+      "tag": "v0.0.1",
+      "date": "2020-03-04",
+      "urls": [
+        "https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/v0.0.1/config/crd/bases/postgresql.k8s.2ndq.io_clusters.yaml"
+      ],
+      "added": [
+        {
+          "apiVersion": "postgresql.k8s.2ndq.io/v1alpha1",
+          "kind": "Cluster",
+          "scope": "Namespaced"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2049 @@
+{
+  "versions": {
+    "v0.94.0": {
+      "descriptionChanged": [
+        "spec.oauth2.clientId.configMap.key",
+        "spec.oauth2.tlsConfig.ca.configMap.key",
+        "spec.oauth2.tlsConfig.cert.configMap.key",
+        "spec.tlsConfig.ca.configMap.key",
+        "spec.tlsConfig.cert.configMap.key"
+      ],
+      "descriptions": {
+        "spec.oauth2.clientId.configMap.key": [
+          0,
+          1
+        ],
+        "spec.oauth2.tlsConfig.ca.configMap.key": [
+          0,
+          1
+        ],
+        "spec.oauth2.tlsConfig.cert.configMap.key": [
+          0,
+          1
+        ],
+        "spec.tlsConfig.ca.configMap.key": [
+          0,
+          1
+        ],
+        "spec.tlsConfig.cert.configMap.key": [
+          0,
+          1
+        ]
+      }
+    },
+    "v0.88.0": {
+      "descriptionChanged": [
+        "spec.authorization",
+        "spec.basicAuth",
+        "spec.bearerTokenSecret",
+        "spec.oauth2",
+        "spec.tlsConfig"
+      ],
+      "added": {
+        "spec.enableHttp2": "boolean",
+        "spec.followRedirects": "boolean",
+        "spec.scrapeNativeHistograms": "boolean"
+      },
+      "descriptions": {
+        "spec.authorization": [
+          2,
+          3
+        ],
+        "spec.basicAuth": [
+          4,
+          5
+        ],
+        "spec.bearerTokenSecret": [
+          6,
+          7
+        ],
+        "spec.enableHttp2": [
+          null,
+          8
+        ],
+        "spec.followRedirects": [
+          null,
+          9
+        ],
+        "spec.oauth2": [
+          10,
+          11
+        ],
+        "spec.scrapeNativeHistograms": [
+          null,
+          12
+        ],
+        "spec.tlsConfig": [
+          13,
+          14
+        ]
+      }
+    },
+    "v0.87.0": {
+      "descriptionChanged": [
+        "spec.prober.scheme",
+        "spec.prober.url"
+      ],
+      "descriptions": {
+        "spec.prober.scheme": [
+          15,
+          16
+        ],
+        "spec.prober.url": [
+          17,
+          18
+        ]
+      }
+    },
+    "v0.86.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.authorization",
+        "spec.authorization.credentials",
+        "spec.authorization.type",
+        "spec.basicAuth",
+        "spec.basicAuth.password",
+        "spec.basicAuth.username",
+        "spec.bearerTokenSecret",
+        "spec.convertClassicHistogramsToNHCB",
+        "spec.fallbackScrapeProtocol",
+        "spec.interval",
+        "spec.jobName",
+        "spec.keepDroppedTargets",
+        "spec.labelLimit",
+        "spec.labelNameLengthLimit",
+        "spec.labelValueLengthLimit",
+        "spec.metricRelabelings",
+        "spec.metricRelabelings.action",
+        "spec.metricRelabelings.modulus",
+        "spec.metricRelabelings.regex",
+        "spec.metricRelabelings.replacement",
+        "spec.metricRelabelings.separator",
+        "spec.metricRelabelings.sourceLabels",
+        "spec.metricRelabelings.targetLabel",
+        "spec.module",
+        "spec.nativeHistogramBucketLimit",
+        "spec.nativeHistogramMinBucketFactor",
+        "spec.oauth2",
+        "spec.oauth2.clientId",
+        "spec.oauth2.clientId.configMap",
+        "spec.oauth2.clientId.secret",
+        "spec.oauth2.clientSecret",
+        "spec.oauth2.endpointParams",
+        "spec.oauth2.noProxy",
+        "spec.oauth2.proxyConnectHeader",
+        "spec.oauth2.proxyFromEnvironment",
+        "spec.oauth2.proxyUrl",
+        "spec.oauth2.scopes",
+        "spec.oauth2.tlsConfig",
+        "spec.oauth2.tlsConfig.ca",
+        "spec.oauth2.tlsConfig.ca.configMap",
+        "spec.oauth2.tlsConfig.ca.secret",
+        "spec.oauth2.tlsConfig.cert",
+        "spec.oauth2.tlsConfig.cert.configMap",
+        "spec.oauth2.tlsConfig.cert.secret",
+        "spec.oauth2.tlsConfig.insecureSkipVerify",
+        "spec.oauth2.tlsConfig.keySecret",
+        "spec.oauth2.tlsConfig.maxVersion",
+        "spec.oauth2.tlsConfig.minVersion",
+        "spec.oauth2.tlsConfig.serverName",
+        "spec.oauth2.tokenUrl",
+        "spec.params",
+        "spec.params.name",
+        "spec.params.values",
+        "spec.prober",
+        "spec.prober.noProxy",
+        "spec.prober.path",
+        "spec.prober.proxyConnectHeader",
+        "spec.prober.proxyFromEnvironment",
+        "spec.prober.proxyUrl",
+        "spec.prober.scheme",
+        "spec.prober.url",
+        "spec.sampleLimit",
+        "spec.scrapeClass",
+        "spec.scrapeClassicHistograms",
+        "spec.scrapeProtocols",
+        "spec.scrapeTimeout",
+        "spec.targetLimit",
+        "spec.targets",
+        "spec.targets.ingress.namespaceSelector",
+        "spec.targets.ingress.namespaceSelector.any",
+        "spec.targets.ingress.namespaceSelector.matchNames",
+        "spec.targets.ingress.relabelingConfigs",
+        "spec.targets.ingress.relabelingConfigs.action",
+        "spec.targets.ingress.relabelingConfigs.modulus",
+        "spec.targets.ingress.relabelingConfigs.regex",
+        "spec.targets.ingress.relabelingConfigs.replacement",
+        "spec.targets.ingress.relabelingConfigs.separator",
+        "spec.targets.ingress.relabelingConfigs.sourceLabels",
+        "spec.targets.ingress.relabelingConfigs.targetLabel",
+        "spec.targets.ingress.selector",
+        "spec.targets.staticConfig.labels",
+        "spec.targets.staticConfig.relabelingConfigs",
+        "spec.targets.staticConfig.relabelingConfigs.action",
+        "spec.targets.staticConfig.relabelingConfigs.modulus",
+        "spec.targets.staticConfig.relabelingConfigs.regex",
+        "spec.targets.staticConfig.relabelingConfigs.replacement",
+        "spec.targets.staticConfig.relabelingConfigs.separator",
+        "spec.targets.staticConfig.relabelingConfigs.sourceLabels",
+        "spec.targets.staticConfig.relabelingConfigs.targetLabel",
+        "spec.targets.staticConfig.static",
+        "spec.tlsConfig",
+        "spec.tlsConfig.ca",
+        "spec.tlsConfig.ca.configMap",
+        "spec.tlsConfig.ca.secret",
+        "spec.tlsConfig.cert",
+        "spec.tlsConfig.cert.configMap",
+        "spec.tlsConfig.cert.secret",
+        "spec.tlsConfig.insecureSkipVerify",
+        "spec.tlsConfig.keySecret",
+        "spec.tlsConfig.maxVersion",
+        "spec.tlsConfig.minVersion",
+        "spec.tlsConfig.serverName"
+      ],
+      "added": {
+        "status": "object"
+      },
+      "descriptions": {
+        "spec": [
+          19,
+          20
+        ],
+        "spec.authorization": [
+          21,
+          2
+        ],
+        "spec.authorization.credentials": [
+          22,
+          23
+        ],
+        "spec.authorization.type": [
+          24,
+          25
+        ],
+        "spec.basicAuth": [
+          26,
+          4
+        ],
+        "spec.basicAuth.password": [
+          27,
+          28
+        ],
+        "spec.basicAuth.username": [
+          29,
+          30
+        ],
+        "spec.bearerTokenSecret": [
+          31,
+          6
+        ],
+        "spec.convertClassicHistogramsToNHCB": [
+          32,
+          33
+        ],
+        "spec.fallbackScrapeProtocol": [
+          34,
+          35
+        ],
+        "spec.interval": [
+          36,
+          37
+        ],
+        "spec.jobName": [
+          38,
+          39
+        ],
+        "spec.keepDroppedTargets": [
+          40,
+          41
+        ],
+        "spec.labelLimit": [
+          42,
+          43
+        ],
+        "spec.labelNameLengthLimit": [
+          44,
+          45
+        ],
+        "spec.labelValueLengthLimit": [
+          46,
+          47
+        ],
+        "spec.metricRelabelings": [
+          48,
+          49
+        ],
+        "spec.metricRelabelings.action": [
+          50,
+          51
+        ],
+        "spec.metricRelabelings.modulus": [
+          52,
+          53
+        ],
+        "spec.metricRelabelings.regex": [
+          54,
+          55
+        ],
+        "spec.metricRelabelings.replacement": [
+          56,
+          57
+        ],
+        "spec.metricRelabelings.separator": [
+          58,
+          59
+        ],
+        "spec.metricRelabelings.sourceLabels": [
+          60,
+          61
+        ],
+        "spec.metricRelabelings.targetLabel": [
+          62,
+          63
+        ],
+        "spec.module": [
+          64,
+          65
+        ],
+        "spec.nativeHistogramBucketLimit": [
+          66,
+          67
+        ],
+        "spec.nativeHistogramMinBucketFactor": [
+          68,
+          69
+        ],
+        "spec.oauth2": [
+          70,
+          10
+        ],
+        "spec.oauth2.clientId": [
+          71,
+          72
+        ],
+        "spec.oauth2.clientId.configMap": [
+          73,
+          74
+        ],
+        "spec.oauth2.clientId.secret": [
+          75,
+          76
+        ],
+        "spec.oauth2.clientSecret": [
+          77,
+          78
+        ],
+        "spec.oauth2.endpointParams": [
+          79,
+          80
+        ],
+        "spec.oauth2.noProxy": [
+          81,
+          82
+        ],
+        "spec.oauth2.proxyConnectHeader": [
+          83,
+          84
+        ],
+        "spec.oauth2.proxyFromEnvironment": [
+          85,
+          86
+        ],
+        "spec.oauth2.proxyUrl": [
+          87,
+          88
+        ],
+        "spec.oauth2.scopes": [
+          89,
+          90
+        ],
+        "spec.oauth2.tlsConfig": [
+          91,
+          92
+        ],
+        "spec.oauth2.tlsConfig.ca": [
+          93,
+          94
+        ],
+        "spec.oauth2.tlsConfig.ca.configMap": [
+          73,
+          74
+        ],
+        "spec.oauth2.tlsConfig.ca.secret": [
+          75,
+          76
+        ],
+        "spec.oauth2.tlsConfig.cert": [
+          95,
+          96
+        ],
+        "spec.oauth2.tlsConfig.cert.configMap": [
+          73,
+          74
+        ],
+        "spec.oauth2.tlsConfig.cert.secret": [
+          75,
+          76
+        ],
+        "spec.oauth2.tlsConfig.insecureSkipVerify": [
+          97,
+          98
+        ],
+        "spec.oauth2.tlsConfig.keySecret": [
+          99,
+          100
+        ],
+        "spec.oauth2.tlsConfig.maxVersion": [
+          101,
+          102
+        ],
+        "spec.oauth2.tlsConfig.minVersion": [
+          103,
+          104
+        ],
+        "spec.oauth2.tlsConfig.serverName": [
+          105,
+          106
+        ],
+        "spec.oauth2.tokenUrl": [
+          107,
+          108
+        ],
+        "spec.params": [
+          109,
+          110
+        ],
+        "spec.params.name": [
+          111,
+          112
+        ],
+        "spec.params.values": [
+          113,
+          114
+        ],
+        "spec.prober": [
+          115,
+          116
+        ],
+        "spec.prober.noProxy": [
+          81,
+          82
+        ],
+        "spec.prober.path": [
+          117,
+          118
+        ],
+        "spec.prober.proxyConnectHeader": [
+          83,
+          84
+        ],
+        "spec.prober.proxyFromEnvironment": [
+          85,
+          86
+        ],
+        "spec.prober.proxyUrl": [
+          87,
+          88
+        ],
+        "spec.prober.scheme": [
+          119,
+          15
+        ],
+        "spec.prober.url": [
+          120,
+          17
+        ],
+        "spec.sampleLimit": [
+          121,
+          122
+        ],
+        "spec.scrapeClass": [
+          123,
+          124
+        ],
+        "spec.scrapeClassicHistograms": [
+          125,
+          126
+        ],
+        "spec.scrapeProtocols": [
+          127,
+          128
+        ],
+        "spec.scrapeTimeout": [
+          129,
+          130
+        ],
+        "spec.targetLimit": [
+          131,
+          132
+        ],
+        "spec.targets": [
+          133,
+          134
+        ],
+        "spec.targets.ingress.namespaceSelector": [
+          135,
+          136
+        ],
+        "spec.targets.ingress.namespaceSelector.any": [
+          137,
+          138
+        ],
+        "spec.targets.ingress.namespaceSelector.matchNames": [
+          139,
+          140
+        ],
+        "spec.targets.ingress.relabelingConfigs": [
+          141,
+          142
+        ],
+        "spec.targets.ingress.relabelingConfigs.action": [
+          50,
+          51
+        ],
+        "spec.targets.ingress.relabelingConfigs.modulus": [
+          52,
+          53
+        ],
+        "spec.targets.ingress.relabelingConfigs.regex": [
+          54,
+          55
+        ],
+        "spec.targets.ingress.relabelingConfigs.replacement": [
+          56,
+          57
+        ],
+        "spec.targets.ingress.relabelingConfigs.separator": [
+          58,
+          59
+        ],
+        "spec.targets.ingress.relabelingConfigs.sourceLabels": [
+          60,
+          61
+        ],
+        "spec.targets.ingress.relabelingConfigs.targetLabel": [
+          62,
+          63
+        ],
+        "spec.targets.ingress.selector": [
+          143,
+          144
+        ],
+        "spec.targets.staticConfig.labels": [
+          145,
+          146
+        ],
+        "spec.targets.staticConfig.relabelingConfigs": [
+          147,
+          148
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.action": [
+          50,
+          51
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.modulus": [
+          52,
+          53
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.regex": [
+          54,
+          55
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.replacement": [
+          56,
+          57
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.separator": [
+          58,
+          59
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.sourceLabels": [
+          60,
+          61
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.targetLabel": [
+          62,
+          63
+        ],
+        "spec.targets.staticConfig.static": [
+          149,
+          150
+        ],
+        "spec.tlsConfig": [
+          151,
+          13
+        ],
+        "spec.tlsConfig.ca": [
+          93,
+          94
+        ],
+        "spec.tlsConfig.ca.configMap": [
+          73,
+          74
+        ],
+        "spec.tlsConfig.ca.secret": [
+          75,
+          76
+        ],
+        "spec.tlsConfig.cert": [
+          95,
+          96
+        ],
+        "spec.tlsConfig.cert.configMap": [
+          73,
+          74
+        ],
+        "spec.tlsConfig.cert.secret": [
+          75,
+          76
+        ],
+        "spec.tlsConfig.insecureSkipVerify": [
+          97,
+          98
+        ],
+        "spec.tlsConfig.keySecret": [
+          99,
+          100
+        ],
+        "spec.tlsConfig.maxVersion": [
+          101,
+          102
+        ],
+        "spec.tlsConfig.minVersion": [
+          103,
+          104
+        ],
+        "spec.tlsConfig.serverName": [
+          105,
+          106
+        ],
+        "status": [
+          null,
+          152
+        ]
+      }
+    },
+    "v0.85.0": {
+      "added": {
+        "spec.params": "object[]"
+      },
+      "descriptionChanged": [
+        "spec.scrapeClassicHistograms"
+      ],
+      "descriptions": {
+        "spec.params": [
+          null,
+          109
+        ],
+        "spec.scrapeClassicHistograms": [
+          153,
+          125
+        ]
+      }
+    },
+    "v0.84.0": {
+      "added": {
+        "spec.prober.noProxy": "string",
+        "spec.prober.proxyConnectHeader": "map[string]object[]",
+        "spec.prober.proxyFromEnvironment": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.prober.proxyUrl"
+      ],
+      "descriptions": {
+        "spec.prober.noProxy": [
+          null,
+          81
+        ],
+        "spec.prober.proxyConnectHeader": [
+          null,
+          83
+        ],
+        "spec.prober.proxyFromEnvironment": [
+          null,
+          85
+        ],
+        "spec.prober.proxyUrl": [
+          154,
+          87
+        ]
+      }
+    },
+    "v0.82.0": {
+      "added": {
+        "spec.convertClassicHistogramsToNHCB": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.oauth2.noProxy",
+        "spec.oauth2.proxyConnectHeader",
+        "spec.oauth2.proxyFromEnvironment",
+        "spec.oauth2.tlsConfig.maxVersion",
+        "spec.oauth2.tlsConfig.minVersion",
+        "spec.tlsConfig.maxVersion",
+        "spec.tlsConfig.minVersion"
+      ],
+      "descriptions": {
+        "spec.convertClassicHistogramsToNHCB": [
+          null,
+          32
+        ],
+        "spec.oauth2.noProxy": [
+          155,
+          81
+        ],
+        "spec.oauth2.proxyConnectHeader": [
+          156,
+          83
+        ],
+        "spec.oauth2.proxyFromEnvironment": [
+          157,
+          85
+        ],
+        "spec.oauth2.tlsConfig.maxVersion": [
+          158,
+          101
+        ],
+        "spec.oauth2.tlsConfig.minVersion": [
+          159,
+          103
+        ],
+        "spec.tlsConfig.maxVersion": [
+          158,
+          101
+        ],
+        "spec.tlsConfig.minVersion": [
+          159,
+          103
+        ]
+      }
+    },
+    "v0.80.0": {
+      "descriptionChanged": [
+        "spec.scrapeTimeout"
+      ],
+      "descriptions": {
+        "spec.scrapeTimeout": [
+          160,
+          129
+        ]
+      }
+    },
+    "v0.79.1": {
+      "added": {
+        "spec.fallbackScrapeProtocol": "string"
+      },
+      "removed": {
+        "spec.scrapeFallbackProtocol": "string"
+      },
+      "descriptions": {
+        "spec.fallbackScrapeProtocol": [
+          null,
+          34
+        ],
+        "spec.scrapeFallbackProtocol": [
+          34,
+          null
+        ]
+      }
+    },
+    "v0.79.0": {
+      "added": {
+        "spec.scrapeFallbackProtocol": "string"
+      },
+      "descriptions": {
+        "spec.scrapeFallbackProtocol": [
+          null,
+          34
+        ]
+      }
+    },
+    "v0.78.0": {
+      "added": {
+        "spec.nativeHistogramBucketLimit": "integer",
+        "spec.nativeHistogramMinBucketFactor": "int | string",
+        "spec.scrapeClassicHistograms": "boolean"
+      },
+      "descriptions": {
+        "spec.nativeHistogramBucketLimit": [
+          null,
+          66
+        ],
+        "spec.nativeHistogramMinBucketFactor": [
+          null,
+          68
+        ],
+        "spec.scrapeClassicHistograms": [
+          null,
+          153
+        ]
+      }
+    },
+    "v0.77.0": {
+      "descriptionChanged": [
+        "spec.authorization.credentials.name",
+        "spec.authorization.type",
+        "spec.basicAuth.password.name",
+        "spec.basicAuth.username.name",
+        "spec.bearerTokenSecret.name",
+        "spec.keepDroppedTargets",
+        "spec.metricRelabelings.action",
+        "spec.metricRelabelings.modulus",
+        "spec.metricRelabelings.replacement",
+        "spec.metricRelabelings.targetLabel",
+        "spec.oauth2.clientId.configMap.name",
+        "spec.oauth2.clientId.secret.name",
+        "spec.oauth2.clientSecret.name",
+        "spec.oauth2.noProxy",
+        "spec.oauth2.proxyConnectHeader",
+        "spec.oauth2.proxyConnectHeader.name",
+        "spec.oauth2.proxyFromEnvironment",
+        "spec.oauth2.proxyUrl",
+        "spec.oauth2.tlsConfig.ca.configMap.name",
+        "spec.oauth2.tlsConfig.ca.secret.name",
+        "spec.oauth2.tlsConfig.cert.configMap.name",
+        "spec.oauth2.tlsConfig.cert.secret.name",
+        "spec.oauth2.tlsConfig.keySecret.name",
+        "spec.oauth2.tlsConfig.maxVersion",
+        "spec.oauth2.tlsConfig.minVersion",
+        "spec.scrapeProtocols",
+        "spec.targets.ingress.relabelingConfigs.action",
+        "spec.targets.ingress.relabelingConfigs.modulus",
+        "spec.targets.ingress.relabelingConfigs.replacement",
+        "spec.targets.ingress.relabelingConfigs.targetLabel",
+        "spec.targets.staticConfig.relabelingConfigs.action",
+        "spec.targets.staticConfig.relabelingConfigs.modulus",
+        "spec.targets.staticConfig.relabelingConfigs.replacement",
+        "spec.targets.staticConfig.relabelingConfigs.targetLabel",
+        "spec.tlsConfig.ca.configMap.name",
+        "spec.tlsConfig.ca.secret.name",
+        "spec.tlsConfig.cert.configMap.name",
+        "spec.tlsConfig.cert.secret.name",
+        "spec.tlsConfig.keySecret.name",
+        "spec.tlsConfig.maxVersion",
+        "spec.tlsConfig.minVersion"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec.authorization.credentials.name": [
+          161,
+          162
+        ],
+        "spec.authorization.type": [
+          163,
+          24
+        ],
+        "spec.basicAuth.password.name": [
+          161,
+          162
+        ],
+        "spec.basicAuth.username.name": [
+          161,
+          162
+        ],
+        "spec.bearerTokenSecret.name": [
+          161,
+          162
+        ],
+        "spec.keepDroppedTargets": [
+          164,
+          40
+        ],
+        "spec.metricRelabelings.action": [
+          165,
+          50
+        ],
+        "spec.metricRelabelings.modulus": [
+          166,
+          52
+        ],
+        "spec.metricRelabelings.replacement": [
+          167,
+          56
+        ],
+        "spec.metricRelabelings.targetLabel": [
+          168,
+          62
+        ],
+        "spec.oauth2.clientId.configMap.name": [
+          161,
+          162
+        ],
+        "spec.oauth2.clientId.secret.name": [
+          161,
+          162
+        ],
+        "spec.oauth2.clientSecret.name": [
+          161,
+          162
+        ],
+        "spec.oauth2.noProxy": [
+          169,
+          155
+        ],
+        "spec.oauth2.proxyConnectHeader": [
+          170,
+          156
+        ],
+        "spec.oauth2.proxyConnectHeader.name": [
+          161,
+          162
+        ],
+        "spec.oauth2.proxyFromEnvironment": [
+          171,
+          157
+        ],
+        "spec.oauth2.proxyUrl": [
+          172,
+          87
+        ],
+        "spec.oauth2.tlsConfig.ca.configMap.name": [
+          161,
+          162
+        ],
+        "spec.oauth2.tlsConfig.ca.secret.name": [
+          161,
+          162
+        ],
+        "spec.oauth2.tlsConfig.cert.configMap.name": [
+          161,
+          162
+        ],
+        "spec.oauth2.tlsConfig.cert.secret.name": [
+          161,
+          162
+        ],
+        "spec.oauth2.tlsConfig.keySecret.name": [
+          161,
+          162
+        ],
+        "spec.oauth2.tlsConfig.maxVersion": [
+          173,
+          158
+        ],
+        "spec.oauth2.tlsConfig.minVersion": [
+          174,
+          159
+        ],
+        "spec.scrapeProtocols": [
+          175,
+          127
+        ],
+        "spec.targets.ingress.relabelingConfigs.action": [
+          165,
+          50
+        ],
+        "spec.targets.ingress.relabelingConfigs.modulus": [
+          166,
+          52
+        ],
+        "spec.targets.ingress.relabelingConfigs.replacement": [
+          167,
+          56
+        ],
+        "spec.targets.ingress.relabelingConfigs.targetLabel": [
+          168,
+          62
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.action": [
+          165,
+          50
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.modulus": [
+          166,
+          52
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.replacement": [
+          167,
+          56
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.targetLabel": [
+          168,
+          62
+        ],
+        "spec.tlsConfig.ca.configMap.name": [
+          161,
+          162
+        ],
+        "spec.tlsConfig.ca.secret.name": [
+          161,
+          162
+        ],
+        "spec.tlsConfig.cert.configMap.name": [
+          161,
+          162
+        ],
+        "spec.tlsConfig.cert.secret.name": [
+          161,
+          162
+        ],
+        "spec.tlsConfig.keySecret.name": [
+          161,
+          162
+        ],
+        "spec.tlsConfig.maxVersion": [
+          173,
+          158
+        ],
+        "spec.tlsConfig.minVersion": [
+          174,
+          159
+        ],
+        "": [
+          176,
+          177
+        ]
+      }
+    },
+    "v0.76.0": {
+      "added": {
+        "spec.oauth2.noProxy": "string",
+        "spec.oauth2.proxyConnectHeader": "map[string]object[]",
+        "spec.oauth2.proxyFromEnvironment": "boolean",
+        "spec.oauth2.proxyUrl": "string",
+        "spec.oauth2.tlsConfig": "object",
+        "spec.tlsConfig.maxVersion": "string",
+        "spec.tlsConfig.minVersion": "string"
+      },
+      "description": true,
+      "descriptions": {
+        "spec.oauth2.noProxy": [
+          null,
+          169
+        ],
+        "spec.oauth2.proxyConnectHeader": [
+          null,
+          170
+        ],
+        "spec.oauth2.proxyFromEnvironment": [
+          null,
+          171
+        ],
+        "spec.oauth2.proxyUrl": [
+          null,
+          172
+        ],
+        "spec.oauth2.tlsConfig": [
+          null,
+          91
+        ],
+        "spec.tlsConfig.maxVersion": [
+          null,
+          173
+        ],
+        "spec.tlsConfig.minVersion": [
+          null,
+          174
+        ],
+        "": [
+          178,
+          176
+        ]
+      }
+    },
+    "v0.75.0": {
+      "descriptionChanged": [
+        "spec.authorization.credentials.name",
+        "spec.basicAuth.password.name",
+        "spec.basicAuth.username.name",
+        "spec.bearerTokenSecret.name",
+        "spec.oauth2.clientId.configMap.name",
+        "spec.oauth2.clientId.secret.name",
+        "spec.oauth2.clientSecret.name",
+        "spec.tlsConfig.ca.configMap.name",
+        "spec.tlsConfig.ca.secret.name",
+        "spec.tlsConfig.cert.configMap.name",
+        "spec.tlsConfig.cert.secret.name",
+        "spec.tlsConfig.keySecret.name"
+      ],
+      "descriptions": {
+        "spec.authorization.credentials.name": [
+          179,
+          161
+        ],
+        "spec.basicAuth.password.name": [
+          179,
+          161
+        ],
+        "spec.basicAuth.username.name": [
+          179,
+          161
+        ],
+        "spec.bearerTokenSecret.name": [
+          179,
+          161
+        ],
+        "spec.oauth2.clientId.configMap.name": [
+          179,
+          161
+        ],
+        "spec.oauth2.clientId.secret.name": [
+          179,
+          161
+        ],
+        "spec.oauth2.clientSecret.name": [
+          179,
+          161
+        ],
+        "spec.tlsConfig.ca.configMap.name": [
+          179,
+          161
+        ],
+        "spec.tlsConfig.ca.secret.name": [
+          179,
+          161
+        ],
+        "spec.tlsConfig.cert.configMap.name": [
+          179,
+          161
+        ],
+        "spec.tlsConfig.cert.secret.name": [
+          179,
+          161
+        ],
+        "spec.tlsConfig.keySecret.name": [
+          179,
+          161
+        ]
+      }
+    },
+    "v0.74.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.authorization.credentials.name",
+        "spec.authorization.type",
+        "spec.basicAuth",
+        "spec.basicAuth.password",
+        "spec.basicAuth.password.name",
+        "spec.basicAuth.username",
+        "spec.basicAuth.username.name",
+        "spec.bearerTokenSecret",
+        "spec.bearerTokenSecret.name",
+        "spec.interval",
+        "spec.keepDroppedTargets",
+        "spec.labelLimit",
+        "spec.labelNameLengthLimit",
+        "spec.labelValueLengthLimit",
+        "spec.metricRelabelings.action",
+        "spec.metricRelabelings.modulus",
+        "spec.metricRelabelings.replacement",
+        "spec.metricRelabelings.sourceLabels",
+        "spec.metricRelabelings.targetLabel",
+        "spec.module",
+        "spec.oauth2.clientId",
+        "spec.oauth2.clientId.configMap.name",
+        "spec.oauth2.clientId.secret.name",
+        "spec.oauth2.clientSecret",
+        "spec.oauth2.clientSecret.name",
+        "spec.oauth2.endpointParams",
+        "spec.prober",
+        "spec.prober.path",
+        "spec.prober.scheme",
+        "spec.scrapeProtocols",
+        "spec.scrapeTimeout",
+        "spec.targets.ingress",
+        "spec.targets.ingress.namespaceSelector.any",
+        "spec.targets.ingress.relabelingConfigs",
+        "spec.targets.ingress.relabelingConfigs.action",
+        "spec.targets.ingress.relabelingConfigs.modulus",
+        "spec.targets.ingress.relabelingConfigs.replacement",
+        "spec.targets.ingress.relabelingConfigs.sourceLabels",
+        "spec.targets.ingress.relabelingConfigs.targetLabel",
+        "spec.targets.ingress.selector.matchExpressions.operator",
+        "spec.targets.ingress.selector.matchExpressions.values",
+        "spec.targets.ingress.selector.matchLabels",
+        "spec.targets.staticConfig",
+        "spec.targets.staticConfig.relabelingConfigs",
+        "spec.targets.staticConfig.relabelingConfigs.action",
+        "spec.targets.staticConfig.relabelingConfigs.modulus",
+        "spec.targets.staticConfig.relabelingConfigs.replacement",
+        "spec.targets.staticConfig.relabelingConfigs.sourceLabels",
+        "spec.targets.staticConfig.relabelingConfigs.targetLabel",
+        "spec.tlsConfig.ca.configMap.name",
+        "spec.tlsConfig.ca.secret.name",
+        "spec.tlsConfig.cert.configMap.name",
+        "spec.tlsConfig.cert.secret.name",
+        "spec.tlsConfig.keySecret.name"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          180,
+          181
+        ],
+        "kind": [
+          182,
+          183
+        ],
+        "spec.authorization.credentials.name": [
+          184,
+          179
+        ],
+        "spec.authorization.type": [
+          185,
+          163
+        ],
+        "spec.basicAuth": [
+          186,
+          26
+        ],
+        "spec.basicAuth.password": [
+          187,
+          27
+        ],
+        "spec.basicAuth.password.name": [
+          184,
+          179
+        ],
+        "spec.basicAuth.username": [
+          188,
+          29
+        ],
+        "spec.basicAuth.username.name": [
+          184,
+          179
+        ],
+        "spec.bearerTokenSecret": [
+          189,
+          31
+        ],
+        "spec.bearerTokenSecret.name": [
+          184,
+          179
+        ],
+        "spec.interval": [
+          190,
+          36
+        ],
+        "spec.keepDroppedTargets": [
+          191,
+          164
+        ],
+        "spec.labelLimit": [
+          192,
+          42
+        ],
+        "spec.labelNameLengthLimit": [
+          193,
+          44
+        ],
+        "spec.labelValueLengthLimit": [
+          194,
+          46
+        ],
+        "spec.metricRelabelings.action": [
+          195,
+          165
+        ],
+        "spec.metricRelabelings.modulus": [
+          196,
+          166
+        ],
+        "spec.metricRelabelings.replacement": [
+          197,
+          167
+        ],
+        "spec.metricRelabelings.sourceLabels": [
+          198,
+          60
+        ],
+        "spec.metricRelabelings.targetLabel": [
+          199,
+          168
+        ],
+        "spec.module": [
+          200,
+          64
+        ],
+        "spec.oauth2.clientId": [
+          201,
+          71
+        ],
+        "spec.oauth2.clientId.configMap.name": [
+          184,
+          179
+        ],
+        "spec.oauth2.clientId.secret.name": [
+          184,
+          179
+        ],
+        "spec.oauth2.clientSecret": [
+          202,
+          77
+        ],
+        "spec.oauth2.clientSecret.name": [
+          184,
+          179
+        ],
+        "spec.oauth2.endpointParams": [
+          203,
+          79
+        ],
+        "spec.prober": [
+          204,
+          115
+        ],
+        "spec.prober.path": [
+          205,
+          117
+        ],
+        "spec.prober.scheme": [
+          206,
+          119
+        ],
+        "spec.scrapeProtocols": [
+          207,
+          175
+        ],
+        "spec.scrapeTimeout": [
+          208,
+          160
+        ],
+        "spec.targets.ingress": [
+          209,
+          210
+        ],
+        "spec.targets.ingress.namespaceSelector.any": [
+          211,
+          137
+        ],
+        "spec.targets.ingress.relabelingConfigs": [
+          212,
+          141
+        ],
+        "spec.targets.ingress.relabelingConfigs.action": [
+          195,
+          165
+        ],
+        "spec.targets.ingress.relabelingConfigs.modulus": [
+          196,
+          166
+        ],
+        "spec.targets.ingress.relabelingConfigs.replacement": [
+          197,
+          167
+        ],
+        "spec.targets.ingress.relabelingConfigs.sourceLabels": [
+          198,
+          60
+        ],
+        "spec.targets.ingress.relabelingConfigs.targetLabel": [
+          199,
+          168
+        ],
+        "spec.targets.ingress.selector.matchExpressions.operator": [
+          213,
+          214
+        ],
+        "spec.targets.ingress.selector.matchExpressions.values": [
+          215,
+          216
+        ],
+        "spec.targets.ingress.selector.matchLabels": [
+          217,
+          218
+        ],
+        "spec.targets.staticConfig": [
+          219,
+          220
+        ],
+        "spec.targets.staticConfig.relabelingConfigs": [
+          221,
+          147
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.action": [
+          195,
+          165
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.modulus": [
+          196,
+          166
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.replacement": [
+          197,
+          167
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.sourceLabels": [
+          198,
+          60
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.targetLabel": [
+          199,
+          168
+        ],
+        "spec.tlsConfig.ca.configMap.name": [
+          184,
+          179
+        ],
+        "spec.tlsConfig.ca.secret.name": [
+          184,
+          179
+        ],
+        "spec.tlsConfig.cert.configMap.name": [
+          184,
+          179
+        ],
+        "spec.tlsConfig.cert.secret.name": [
+          184,
+          179
+        ],
+        "spec.tlsConfig.keySecret.name": [
+          184,
+          179
+        ]
+      }
+    },
+    "v0.72.0": {
+      "added": {
+        "spec.scrapeClass": "string",
+        "spec.scrapeProtocols": "string[]"
+      },
+      "descriptions": {
+        "spec.scrapeClass": [
+          null,
+          123
+        ],
+        "spec.scrapeProtocols": [
+          null,
+          207
+        ]
+      }
+    },
+    "v0.70.0": {
+      "descriptionChanged": [
+        "spec.basicAuth.password",
+        "spec.basicAuth.username",
+        "spec.oauth2.clientId",
+        "spec.oauth2.clientSecret",
+        "spec.oauth2.endpointParams",
+        "spec.oauth2.scopes",
+        "spec.oauth2.tokenUrl"
+      ],
+      "descriptions": {
+        "spec.basicAuth.password": [
+          222,
+          187
+        ],
+        "spec.basicAuth.username": [
+          223,
+          188
+        ],
+        "spec.oauth2.clientId": [
+          224,
+          201
+        ],
+        "spec.oauth2.clientSecret": [
+          225,
+          202
+        ],
+        "spec.oauth2.endpointParams": [
+          226,
+          203
+        ],
+        "spec.oauth2.scopes": [
+          227,
+          89
+        ],
+        "spec.oauth2.tokenUrl": [
+          228,
+          107
+        ]
+      }
+    },
+    "v0.68.0": {
+      "added": {
+        "spec.keepDroppedTargets": "integer"
+      },
+      "descriptions": {
+        "spec.keepDroppedTargets": [
+          null,
+          191
+        ]
+      }
+    },
+    "v0.67.0": {
+      "descriptionChanged": [
+        "spec.authorization.credentials",
+        "spec.authorization.type",
+        "spec.metricRelabelings.action",
+        "spec.metricRelabelings.modulus",
+        "spec.metricRelabelings.regex",
+        "spec.metricRelabelings.replacement",
+        "spec.metricRelabelings.separator",
+        "spec.metricRelabelings.sourceLabels",
+        "spec.metricRelabelings.targetLabel",
+        "spec.targets.ingress.relabelingConfigs.action",
+        "spec.targets.ingress.relabelingConfigs.modulus",
+        "spec.targets.ingress.relabelingConfigs.regex",
+        "spec.targets.ingress.relabelingConfigs.replacement",
+        "spec.targets.ingress.relabelingConfigs.separator",
+        "spec.targets.ingress.relabelingConfigs.sourceLabels",
+        "spec.targets.ingress.relabelingConfigs.targetLabel",
+        "spec.targets.staticConfig.relabelingConfigs.action",
+        "spec.targets.staticConfig.relabelingConfigs.modulus",
+        "spec.targets.staticConfig.relabelingConfigs.regex",
+        "spec.targets.staticConfig.relabelingConfigs.replacement",
+        "spec.targets.staticConfig.relabelingConfigs.separator",
+        "spec.targets.staticConfig.relabelingConfigs.sourceLabels",
+        "spec.targets.staticConfig.relabelingConfigs.targetLabel"
+      ],
+      "descriptions": {
+        "spec.authorization.credentials": [
+          229,
+          22
+        ],
+        "spec.authorization.type": [
+          230,
+          185
+        ],
+        "spec.metricRelabelings.action": [
+          231,
+          195
+        ],
+        "spec.metricRelabelings.modulus": [
+          232,
+          196
+        ],
+        "spec.metricRelabelings.regex": [
+          233,
+          54
+        ],
+        "spec.metricRelabelings.replacement": [
+          234,
+          197
+        ],
+        "spec.metricRelabelings.separator": [
+          235,
+          58
+        ],
+        "spec.metricRelabelings.sourceLabels": [
+          236,
+          198
+        ],
+        "spec.metricRelabelings.targetLabel": [
+          237,
+          199
+        ],
+        "spec.targets.ingress.relabelingConfigs.action": [
+          231,
+          195
+        ],
+        "spec.targets.ingress.relabelingConfigs.modulus": [
+          232,
+          196
+        ],
+        "spec.targets.ingress.relabelingConfigs.regex": [
+          233,
+          54
+        ],
+        "spec.targets.ingress.relabelingConfigs.replacement": [
+          234,
+          197
+        ],
+        "spec.targets.ingress.relabelingConfigs.separator": [
+          235,
+          58
+        ],
+        "spec.targets.ingress.relabelingConfigs.sourceLabels": [
+          236,
+          198
+        ],
+        "spec.targets.ingress.relabelingConfigs.targetLabel": [
+          237,
+          199
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.action": [
+          231,
+          195
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.modulus": [
+          232,
+          196
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.regex": [
+          233,
+          54
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.replacement": [
+          234,
+          197
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.separator": [
+          235,
+          58
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.sourceLabels": [
+          236,
+          198
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.targetLabel": [
+          237,
+          199
+        ]
+      }
+    },
+    "v0.65.0": {
+      "descriptionChanged": [
+        "spec.prober.scheme",
+        "spec.scrapeTimeout"
+      ],
+      "descriptions": {
+        "spec.prober.scheme": [
+          238,
+          206
+        ],
+        "spec.scrapeTimeout": [
+          239,
+          208
+        ]
+      }
+    },
+    "v0.61.0": {
+      "descriptionChanged": [
+        "spec.tlsConfig.ca",
+        "spec.tlsConfig.cert"
+      ],
+      "descriptions": {
+        "spec.tlsConfig.ca": [
+          240,
+          93
+        ],
+        "spec.tlsConfig.cert": [
+          241,
+          95
+        ]
+      }
+    },
+    "v0.58.0": {
+      "descriptionChanged": [
+        "spec.metricRelabelings.action",
+        "spec.targets.ingress.relabelingConfigs.action",
+        "spec.targets.staticConfig.relabelingConfigs.action"
+      ],
+      "descriptions": {
+        "spec.metricRelabelings.action": [
+          242,
+          231
+        ],
+        "spec.targets.ingress.relabelingConfigs.action": [
+          242,
+          231
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.action": [
+          242,
+          231
+        ]
+      }
+    },
+    "v0.56.0": {
+      "descriptionChanged": [
+        "spec.scrapeTimeout"
+      ],
+      "descriptions": {
+        "spec.scrapeTimeout": [
+          243,
+          239
+        ]
+      }
+    },
+    "v0.55.0": {
+      "descriptionChanged": [
+        "spec.targets",
+        "spec.targets.ingress",
+        "spec.targets.ingress.namespaceSelector",
+        "spec.targets.ingress.namespaceSelector.matchNames",
+        "spec.targets.ingress.relabelingConfigs",
+        "spec.targets.ingress.selector",
+        "spec.targets.staticConfig",
+        "spec.targets.staticConfig.relabelingConfigs",
+        "spec.targets.staticConfig.static"
+      ],
+      "descriptions": {
+        "spec.targets": [
+          244,
+          133
+        ],
+        "spec.targets.ingress": [
+          245,
+          209
+        ],
+        "spec.targets.ingress.namespaceSelector": [
+          246,
+          135
+        ],
+        "spec.targets.ingress.namespaceSelector.matchNames": [
+          247,
+          139
+        ],
+        "spec.targets.ingress.relabelingConfigs": [
+          248,
+          212
+        ],
+        "spec.targets.ingress.selector": [
+          249,
+          143
+        ],
+        "spec.targets.staticConfig": [
+          250,
+          219
+        ],
+        "spec.targets.staticConfig.relabelingConfigs": [
+          248,
+          221
+        ],
+        "spec.targets.staticConfig.static": [
+          251,
+          149
+        ]
+      }
+    },
+    "v0.51.0": {
+      "added": {
+        "spec.metricRelabelings": "object[]"
+      },
+      "descriptions": {
+        "spec.metricRelabelings": [
+          null,
+          48
+        ]
+      }
+    },
+    "v0.50.0": {
+      "added": {
+        "spec.authorization": "object",
+        "spec.labelLimit": "integer",
+        "spec.labelNameLengthLimit": "integer",
+        "spec.labelValueLengthLimit": "integer",
+        "spec.oauth2": "object",
+        "spec.sampleLimit": "integer",
+        "spec.targetLimit": "integer"
+      },
+      "descriptions": {
+        "spec.authorization": [
+          null,
+          21
+        ],
+        "spec.labelLimit": [
+          null,
+          192
+        ],
+        "spec.labelNameLengthLimit": [
+          null,
+          193
+        ],
+        "spec.labelValueLengthLimit": [
+          null,
+          194
+        ],
+        "spec.oauth2": [
+          null,
+          70
+        ],
+        "spec.sampleLimit": [
+          null,
+          121
+        ],
+        "spec.targetLimit": [
+          null,
+          131
+        ]
+      }
+    },
+    "v0.49.0": {
+      "added": {
+        "spec.prober.proxyUrl": "string"
+      },
+      "descriptions": {
+        "spec.prober.proxyUrl": [
+          null,
+          154
+        ]
+      }
+    },
+    "v0.47.0": {
+      "added": {
+        "spec.basicAuth": "object",
+        "spec.bearerTokenSecret": "object",
+        "spec.tlsConfig": "object"
+      },
+      "descriptions": {
+        "spec.basicAuth": [
+          null,
+          186
+        ],
+        "spec.bearerTokenSecret": [
+          null,
+          189
+        ],
+        "spec.tlsConfig": [
+          null,
+          151
+        ]
+      }
+    },
+    "v0.46.0": {
+      "added": {
+        "spec.targets.staticConfig.relabelingConfigs": "object[]"
+      },
+      "descriptions": {
+        "spec.targets.staticConfig.relabelingConfigs": [
+          null,
+          248
+        ]
+      }
+    }
+  },
+  "texts": [
+    "The key to select.",
+    "The key to select from the ConfigMap's Data field.\nKeys in the BinaryData field are not currently propagated to container env vars.",
+    "authorization section for this endpoint",
+    "authorization configures the Authorization header credentials used by\nthe client.\n\nCannot be set at the same time as `basicAuth`, `bearerTokenSecret` or `oauth2`.",
+    "basicAuth allow an endpoint to authenticate over basic authentication.\nMore info: https://prometheus.io/docs/operating/configuration/#endpoint",
+    "basicAuth defines the Basic Authentication credentials used by the\nclient.\n\nCannot be set at the same time as `authorization`, `bearerTokenSecret` or `oauth2`.",
+    "bearerTokenSecret defines the secret to mount to read bearer token for scraping targets. The secret\nneeds to be in the same namespace as the probe and accessible by\nthe Prometheus Operator.",
+    "bearerTokenSecret defines a key of a Secret containing the bearer token\nused by the client for authentication. The secret needs to be in the\nsame namespace as the custom resource and readable by the Prometheus\nOperator.\n\nCannot be set at the same time as `authorization`, `basicAuth` or `oauth2`.\n\nDeprecated: use `authorization` instead.",
+    "enableHttp2 can be used to disable HTTP2.",
+    "followRedirects defines whether the client should follow HTTP 3xx\nredirects.",
+    "oauth2 for the URL. Only valid in Prometheus versions 2.27.0 and newer.",
+    "oauth2 defines the OAuth2 settings used by the client.\n\nIt requires Prometheus >= 2.27.0.\n\nCannot be set at the same time as `authorization`, `basicAuth` or `bearerTokenSecret`.",
+    "scrapeNativeHistograms defines whether to enable scraping of native histograms.\nIt requires Prometheus >= v3.8.0.",
+    "tlsConfig defines the TLS configuration to use when scraping the endpoint.",
+    "tlsConfig defines the TLS configuration used by the client.",
+    "scheme defines the HTTP scheme to use for scraping.\n`http` and `https` are the expected values unless you rewrite the `__scheme__` label via relabeling.\nIf empty, Prometheus uses the default value `http`.",
+    "scheme defines the HTTP scheme to use when scraping the prober.",
+    "url defines the mandatory URL of the prober.",
+    "url defines the address of the prober.\n\nUnlike what the name indicates, the value should be in the form of\n`address:port` without any scheme which should be specified in the\n`scheme` field.",
+    "Specification of desired Ingress selection for target discovery by Prometheus.",
+    "spec defines the specification of desired Ingress selection for target discovery by Prometheus.",
+    "Authorization section for this endpoint",
+    "Selects a key of a Secret in the namespace that contains the credentials for authentication.",
+    "credentials defines a key of a Secret in the namespace that contains the credentials for authentication.",
+    "Defines the authentication type. The value is case-insensitive.\n\n\"Basic\" is not a supported value.\n\nDefault: \"Bearer\"",
+    "type defines the authentication type. The value is case-insensitive.\n\n\"Basic\" is not a supported value.\n\nDefault: \"Bearer\"",
+    "BasicAuth allow an endpoint to authenticate over basic authentication.\nMore info: https://prometheus.io/docs/operating/configuration/#endpoint",
+    "`password` specifies a key of a Secret containing the password for\nauthentication.",
+    "password defines a key of a Secret containing the password for\nauthentication.",
+    "`username` specifies a key of a Secret containing the username for\nauthentication.",
+    "username defines a key of a Secret containing the username for\nauthentication.",
+    "Secret to mount to read bearer token for scraping targets. The secret\nneeds to be in the same namespace as the probe and accessible by\nthe Prometheus Operator.",
+    "Whether to convert all scraped classic histograms into a native histogram with custom buckets.\nIt requires Prometheus >= v3.0.0.",
+    "convertClassicHistogramsToNHCB defines whether to convert all scraped classic histograms into a native histogram with custom buckets.\nIt requires Prometheus >= v3.0.0.",
+    "The protocol to use if a scrape returns blank, unparseable, or otherwise invalid Content-Type.\n\nIt requires Prometheus >= v3.0.0.",
+    "fallbackScrapeProtocol defines the protocol to use if a scrape returns blank, unparseable, or otherwise invalid Content-Type.\n\nIt requires Prometheus >= v3.0.0.",
+    "Interval at which targets are probed using the configured prober.\nIf not specified Prometheus' global scrape interval is used.",
+    "interval at which targets are probed using the configured prober.\nIf not specified Prometheus' global scrape interval is used.",
+    "The job name assigned to scraped metrics by default.",
+    "jobName assigned to scraped metrics by default.",
+    "Per-scrape limit on the number of targets dropped by relabeling\nthat will be kept in memory. 0 means no limit.\n\nIt requires Prometheus >= v2.47.0.",
+    "keepDroppedTargets defines the per-scrape limit on the number of targets dropped by relabeling\nthat will be kept in memory. 0 means no limit.\n\nIt requires Prometheus >= v2.47.0.",
+    "Per-scrape limit on number of labels that will be accepted for a sample.\nOnly valid in Prometheus versions 2.27.0 and newer.",
+    "labelLimit defines the per-scrape limit on number of labels that will be accepted for a sample.\nOnly valid in Prometheus versions 2.27.0 and newer.",
+    "Per-scrape limit on length of labels name that will be accepted for a sample.\nOnly valid in Prometheus versions 2.27.0 and newer.",
+    "labelNameLengthLimit defines the per-scrape limit on length of labels name that will be accepted for a sample.\nOnly valid in Prometheus versions 2.27.0 and newer.",
+    "Per-scrape limit on length of labels value that will be accepted for a sample.\nOnly valid in Prometheus versions 2.27.0 and newer.",
+    "labelValueLengthLimit defines the per-scrape limit on length of labels value that will be accepted for a sample.\nOnly valid in Prometheus versions 2.27.0 and newer.",
+    "MetricRelabelConfigs to apply to samples before ingestion.",
+    "metricRelabelings defines the RelabelConfig to apply to samples before ingestion.",
+    "Action to perform based on the regex matching.\n\n`Uppercase` and `Lowercase` actions require Prometheus >= v2.36.0.\n`DropEqual` and `KeepEqual` actions require Prometheus >= v2.41.0.\n\nDefault: \"Replace\"",
+    "action to perform based on the regex matching.\n\n`Uppercase` and `Lowercase` actions require Prometheus >= v2.36.0.\n`DropEqual` and `KeepEqual` actions require Prometheus >= v2.41.0.\n\nDefault: \"Replace\"",
+    "Modulus to take of the hash of the source label values.\n\nOnly applicable when the action is `HashMod`.",
+    "modulus to take of the hash of the source label values.\n\nOnly applicable when the action is `HashMod`.",
+    "Regular expression against which the extracted value is matched.",
+    "regex defines the regular expression against which the extracted value is matched.",
+    "Replacement value against which a Replace action is performed if the\nregular expression matches.\n\nRegex capture groups are available.",
+    "replacement value against which a Replace action is performed if the\nregular expression matches.\n\nRegex capture groups are available.",
+    "Separator is the string between concatenated SourceLabels.",
+    "separator defines the string between concatenated SourceLabels.",
+    "The source labels select values from existing labels. Their content is\nconcatenated using the configured Separator and matched against the\nconfigured regular expression.",
+    "sourceLabels defines the source labels select values from existing labels. Their content is\nconcatenated using the configured Separator and matched against the\nconfigured regular expression.",
+    "Label to which the resulting string is written in a replacement.\n\nIt is mandatory for `Replace`, `HashMod`, `Lowercase`, `Uppercase`,\n`KeepEqual` and `DropEqual` actions.\n\nRegex capture groups are available.",
+    "targetLabel defines the label to which the resulting string is written in a replacement.\n\nIt is mandatory for `Replace`, `HashMod`, `Lowercase`, `Uppercase`,\n`KeepEqual` and `DropEqual` actions.\n\nRegex capture groups are available.",
+    "The module to use for probing specifying how to probe the target.\nExample module configuring in the blackbox exporter:\nhttps://github.com/prometheus/blackbox_exporter/blob/master/example.yml",
+    "module to use for probing specifying how to probe the target.\nExample module configuring in the blackbox exporter:\nhttps://github.com/prometheus/blackbox_exporter/blob/master/example.yml",
+    "If there are more than this many buckets in a native histogram,\nbuckets will be merged to stay within the limit.\nIt requires Prometheus >= v2.45.0.",
+    "nativeHistogramBucketLimit defines ff there are more than this many buckets in a native histogram,\nbuckets will be merged to stay within the limit.\nIt requires Prometheus >= v2.45.0.",
+    "If the growth factor of one bucket to the next is smaller than this,\nbuckets will be merged to increase the factor sufficiently.\nIt requires Prometheus >= v2.50.0.",
+    "nativeHistogramMinBucketFactor defines if the growth factor of one bucket to the next is smaller than this,\nbuckets will be merged to increase the factor sufficiently.\nIt requires Prometheus >= v2.50.0.",
+    "OAuth2 for the URL. Only valid in Prometheus versions 2.27.0 and newer.",
+    "`clientId` specifies a key of a Secret or ConfigMap containing the\nOAuth2 client's ID.",
+    "clientId defines a key of a Secret or ConfigMap containing the\nOAuth2 client's ID.",
+    "ConfigMap containing data to use for the targets.",
+    "configMap defines the ConfigMap containing data to use for the targets.",
+    "Secret containing data to use for the targets.",
+    "secret defines the Secret containing data to use for the targets.",
+    "`clientSecret` specifies a key of a Secret containing the OAuth2\nclient's secret.",
+    "clientSecret defines a key of a Secret containing the OAuth2\nclient's secret.",
+    "`endpointParams` configures the HTTP parameters to append to the token\nURL.",
+    "endpointParams configures the HTTP parameters to append to the token\nURL.",
+    "`noProxy` is a comma-separated string that can contain IPs, CIDR notation, domain names\nthat should be excluded from proxying. IP and domain names can\ncontain port numbers.\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "noProxy defines a comma-separated string that can contain IPs, CIDR notation, domain names\nthat should be excluded from proxying. IP and domain names can\ncontain port numbers.\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "ProxyConnectHeader optionally specifies headers to send to\nproxies during CONNECT requests.\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "proxyConnectHeader optionally specifies headers to send to\nproxies during CONNECT requests.\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "Whether to use the proxy configuration defined by environment variables (HTTP_PROXY, HTTPS_PROXY, and NO_PROXY).\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "proxyFromEnvironment defines whether to use the proxy configuration defined by environment variables (HTTP_PROXY, HTTPS_PROXY, and NO_PROXY).\n\nIt requires Prometheus >= v2.43.0, Alertmanager >= v0.25.0 or Thanos >= v0.32.0.",
+    "`proxyURL` defines the HTTP proxy server to use.",
+    "proxyUrl defines the HTTP proxy server to use.",
+    "`scopes` defines the OAuth2 scopes used for the token request.",
+    "scopes defines the OAuth2 scopes used for the token request.",
+    "TLS configuration to use when connecting to the OAuth2 server.\nIt requires Prometheus >= v2.43.0.",
+    "tlsConfig defines the TLS configuration to use when connecting to the OAuth2 server.\nIt requires Prometheus >= v2.43.0.",
+    "Certificate authority used when verifying server certificates.",
+    "ca defines the Certificate authority used when verifying server certificates.",
+    "Client certificate to present when doing client-authentication.",
+    "cert defines the Client certificate to present when doing client-authentication.",
+    "Disable target certificate validation.",
+    "insecureSkipVerify defines how to disable target certificate validation.",
+    "Secret containing the client key file for the targets.",
+    "keySecret defines the Secret containing the client key file for the targets.",
+    "Maximum acceptable TLS version.\n\nIt requires Prometheus >= v2.41.0 or Thanos >= v0.31.0.",
+    "maxVersion defines the maximum acceptable TLS version.\n\nIt requires Prometheus >= v2.41.0 or Thanos >= v0.31.0.",
+    "Minimum acceptable TLS version.\n\nIt requires Prometheus >= v2.35.0 or Thanos >= v0.28.0.",
+    "minVersion defines the minimum acceptable TLS version.\n\nIt requires Prometheus >= v2.35.0 or Thanos >= v0.28.0.",
+    "Used to verify the hostname for the targets.",
+    "serverName is used to verify the hostname for the targets.",
+    "`tokenURL` configures the URL to fetch the token from.",
+    "tokenUrl defines the URL to fetch the token from.",
+    "The list of HTTP query parameters for the scrape.\nPlease note that the `.spec.module` field takes precedence over the `module` parameter from this list when both are defined.\nThe module name must be added using Module under ProbeSpec.",
+    "params defines the list of HTTP query parameters for the scrape.\nPlease note that the `.spec.module` field takes precedence over the `module` parameter from this list when both are defined.\nThe module name must be added using Module under ProbeSpec.",
+    "The parameter name",
+    "name defines the parameter name",
+    "The parameter values",
+    "values defines the parameter values",
+    "Specification for the prober to use for probing targets.\nThe prober.URL parameter is required. Targets cannot be probed if left empty.",
+    "prober defines the specification for the prober to use for probing targets.\nThe prober.URL parameter is required. Targets cannot be probed if left empty.",
+    "Path to collect metrics from.\nDefaults to `/probe`.",
+    "path to collect metrics from.\nDefaults to `/probe`.",
+    "HTTP scheme to use for scraping.\n`http` and `https` are the expected values unless you rewrite the `__scheme__` label via relabeling.\nIf empty, Prometheus uses the default value `http`.",
+    "Mandatory URL of the prober.",
+    "SampleLimit defines per-scrape limit on number of scraped samples that will be accepted.",
+    "sampleLimit defines per-scrape limit on number of scraped samples that will be accepted.",
+    "The scrape class to apply.",
+    "scrapeClass defines the scrape class to apply.",
+    "Whether to scrape a classic histogram that is also exposed as a native histogram.\nIt requires Prometheus >= v2.45.0.\n\nNotice: `scrapeClassicHistograms` corresponds to the `always_scrape_classic_histograms` field in the Prometheus configuration.",
+    "scrapeClassicHistograms defines whether to scrape a classic histogram that is also exposed as a native histogram.\nIt requires Prometheus >= v2.45.0.\n\nNotice: `scrapeClassicHistograms` corresponds to the `always_scrape_classic_histograms` field in the Prometheus configuration.",
+    "`scrapeProtocols` defines the protocols to negotiate during a scrape. It tells clients the\nprotocols supported by Prometheus in order of preference (from most to least preferred).\n\nIf unset, Prometheus uses its default value.\n\nIt requires Prometheus >= v2.49.0.",
+    "scrapeProtocols defines the protocols to negotiate during a scrape. It tells clients the\nprotocols supported by Prometheus in order of preference (from most to least preferred).\n\nIf unset, Prometheus uses its default value.\n\nIt requires Prometheus >= v2.49.0.",
+    "Timeout for scraping metrics from the Prometheus exporter.\nIf not specified, the Prometheus global scrape timeout is used.\nThe value cannot be greater than the scrape interval otherwise the operator will reject the resource.",
+    "scrapeTimeout defines the timeout for scraping metrics from the Prometheus exporter.\nIf not specified, the Prometheus global scrape timeout is used.\nThe value cannot be greater than the scrape interval otherwise the operator will reject the resource.",
+    "TargetLimit defines a limit on the number of scraped targets that will be accepted.",
+    "targetLimit defines a limit on the number of scraped targets that will be accepted.",
+    "Targets defines a set of static or dynamically discovered targets to probe.",
+    "targets defines a set of static or dynamically discovered targets to probe.",
+    "From which namespaces to select Ingress objects.",
+    "namespaceSelector defines from which namespaces to select Ingress objects.",
+    "Boolean describing whether all namespaces are selected in contrast to a\nlist restricting them.",
+    "any defines the boolean describing whether all namespaces are selected in contrast to a\nlist restricting them.",
+    "List of namespace names to select from.",
+    "matchNames defines the list of namespace names to select from.",
+    "RelabelConfigs to apply to the label set of the target before it gets\nscraped.\nThe original ingress address is available via the\n`__tmp_prometheus_ingress_address` label. It can be used to customize the\nprobed URL.\nThe original scrape job's name is available via the `__tmp_prometheus_job_name` label.\nMore info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "relabelingConfigs to apply to the label set of the target before it gets\nscraped.\nThe original ingress address is available via the\n`__tmp_prometheus_ingress_address` label. It can be used to customize the\nprobed URL.\nThe original scrape job's name is available via the `__tmp_prometheus_job_name` label.\nMore info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "Selector to select the Ingress objects.",
+    "selector to select the Ingress objects.",
+    "Labels assigned to all metrics scraped from the targets.",
+    "labels defines all labels assigned to all metrics scraped from the targets.",
+    "RelabelConfigs to apply to the label set of the targets before it gets\nscraped.\nMore info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "relabelingConfigs defines relabelings to be apply to the label set of the targets before it gets\nscraped.\nMore info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "The list of hosts to probe.",
+    "static defines the list of hosts to probe.",
+    "TLS configuration to use when scraping the endpoint.",
+    "status defines the status subresource. It is under active development and is updated only when the\n\"StatusForConfigurationResources\" feature gate is enabled.\n\nMost recent observed status of the Probe. Read-only.\nMore info:\nhttps://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "Whether to scrape a classic histogram that is also exposed as a native histogram.\nIt requires Prometheus >= v2.45.0.",
+    "Optional ProxyURL.",
+    "`noProxy` is a comma-separated string that can contain IPs, CIDR notation, domain names\nthat should be excluded from proxying. IP and domain names can\ncontain port numbers.\n\nIt requires Prometheus >= v2.43.0 or Alertmanager >= 0.25.0.",
+    "ProxyConnectHeader optionally specifies headers to send to\nproxies during CONNECT requests.\n\nIt requires Prometheus >= v2.43.0 or Alertmanager >= 0.25.0.",
+    "Whether to use the proxy configuration defined by environment variables (HTTP_PROXY, HTTPS_PROXY, and NO_PROXY).\n\nIt requires Prometheus >= v2.43.0 or Alertmanager >= 0.25.0.",
+    "Maximum acceptable TLS version.\n\nIt requires Prometheus >= v2.41.0.",
+    "Minimum acceptable TLS version.\n\nIt requires Prometheus >= v2.35.0.",
+    "Timeout for scraping metrics from the Prometheus exporter.\nIf not specified, the Prometheus global scrape timeout is used.",
+    "Name of the referent.\nThis field is effectively required, but due to backwards compatibility is\nallowed to be empty. Instances of this type with an empty value here are\nalmost certainly wrong.\nTODO: Add other useful fields. apiVersion, kind, uid?\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names\nTODO: Drop `kubebuilder:default` when controller-gen doesn't need it https://github.com/kubernetes-sigs/kubebuilder/issues/3896.",
+    "Name of the referent.\nThis field is effectively required, but due to backwards compatibility is\nallowed to be empty. Instances of this type with an empty value here are\nalmost certainly wrong.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Defines the authentication type. The value is case-insensitive.\n\n\n\"Basic\" is not a supported value.\n\n\nDefault: \"Bearer\"",
+    "Per-scrape limit on the number of targets dropped by relabeling\nthat will be kept in memory. 0 means no limit.\n\n\nIt requires Prometheus >= v2.47.0.",
+    "Action to perform based on the regex matching.\n\n\n`Uppercase` and `Lowercase` actions require Prometheus >= v2.36.0.\n`DropEqual` and `KeepEqual` actions require Prometheus >= v2.41.0.\n\n\nDefault: \"Replace\"",
+    "Modulus to take of the hash of the source label values.\n\n\nOnly applicable when the action is `HashMod`.",
+    "Replacement value against which a Replace action is performed if the\nregular expression matches.\n\n\nRegex capture groups are available.",
+    "Label to which the resulting string is written in a replacement.\n\n\nIt is mandatory for `Replace`, `HashMod`, `Lowercase`, `Uppercase`,\n`KeepEqual` and `DropEqual` actions.\n\n\nRegex capture groups are available.",
+    "`noProxy` is a comma-separated string that can contain IPs, CIDR notation, domain names\nthat should be excluded from proxying. IP and domain names can\ncontain port numbers.\n\n\nIt requires Prometheus >= v2.43.0.",
+    "ProxyConnectHeader optionally specifies headers to send to\nproxies during CONNECT requests.\n\n\nIt requires Prometheus >= v2.43.0.",
+    "Whether to use the proxy configuration defined by environment variables (HTTP_PROXY, HTTPS_PROXY, and NO_PROXY).\nIf unset, Prometheus uses its default value.\n\n\nIt requires Prometheus >= v2.43.0.",
+    "`proxyURL` defines the HTTP proxy server to use.\n\n\nIt requires Prometheus >= v2.43.0.",
+    "Maximum acceptable TLS version.\n\n\nIt requires Prometheus >= v2.41.0.",
+    "Minimum acceptable TLS version.\n\n\nIt requires Prometheus >= v2.35.0.",
+    "`scrapeProtocols` defines the protocols to negotiate during a scrape. It tells clients the\nprotocols supported by Prometheus in order of preference (from most to least preferred).\n\n\nIf unset, Prometheus uses its default value.\n\n\nIt requires Prometheus >= v2.49.0.",
+    "The `Probe` custom resource definition (CRD) defines how to scrape metrics from prober exporters such as the [blackbox exporter](https://github.com/prometheus/blackbox_exporter).\n\n\nThe `Probe` resource needs 2 pieces of information:\n* The list of probed addresses which can be defined statically or by discovering Kubernetes Ingress objects.\n* The prober which exposes the availability of probed endpoints (over various protocols such HTTP, TCP, ICMP, ...) as Prometheus metrics.\n\n\n`Prometheus` and `PrometheusAgent` objects select `Probe` objects using label and namespace selectors.",
+    "The `Probe` custom resource definition (CRD) defines how to scrape metrics from prober exporters such as the [blackbox exporter](https://github.com/prometheus/blackbox_exporter).\n\nThe `Probe` resource needs 2 pieces of information:\n* The list of probed addresses which can be defined statically or by discovering Kubernetes Ingress objects.\n* The prober which exposes the availability of probed endpoints (over various protocols such HTTP, TCP, ICMP, ...) as Prometheus metrics.\n\n`Prometheus` and `PrometheusAgent` objects select `Probe` objects using label and namespace selectors.",
+    "Probe defines monitoring for a set of static targets or ingresses.",
+    "Name of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names\nTODO: Add other useful fields. apiVersion, kind, uid?",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "Defines the authentication type. The value is case-insensitive. \n \"Basic\" is not a supported value. \n Default: \"Bearer\"",
+    "BasicAuth allow an endpoint to authenticate over basic authentication. More info: https://prometheus.io/docs/operating/configuration/#endpoint",
+    "`password` specifies a key of a Secret containing the password for authentication.",
+    "`username` specifies a key of a Secret containing the username for authentication.",
+    "Secret to mount to read bearer token for scraping targets. The secret needs to be in the same namespace as the probe and accessible by the Prometheus Operator.",
+    "Interval at which targets are probed using the configured prober. If not specified Prometheus' global scrape interval is used.",
+    "Per-scrape limit on the number of targets dropped by relabeling that will be kept in memory. 0 means no limit. \n It requires Prometheus >= v2.47.0.",
+    "Per-scrape limit on number of labels that will be accepted for a sample. Only valid in Prometheus versions 2.27.0 and newer.",
+    "Per-scrape limit on length of labels name that will be accepted for a sample. Only valid in Prometheus versions 2.27.0 and newer.",
+    "Per-scrape limit on length of labels value that will be accepted for a sample. Only valid in Prometheus versions 2.27.0 and newer.",
+    "Action to perform based on the regex matching. \n `Uppercase` and `Lowercase` actions require Prometheus >= v2.36.0. `DropEqual` and `KeepEqual` actions require Prometheus >= v2.41.0. \n Default: \"Replace\"",
+    "Modulus to take of the hash of the source label values. \n Only applicable when the action is `HashMod`.",
+    "Replacement value against which a Replace action is performed if the regular expression matches. \n Regex capture groups are available.",
+    "The source labels select values from existing labels. Their content is concatenated using the configured Separator and matched against the configured regular expression.",
+    "Label to which the resulting string is written in a replacement. \n It is mandatory for `Replace`, `HashMod`, `Lowercase`, `Uppercase`, `KeepEqual` and `DropEqual` actions. \n Regex capture groups are available.",
+    "The module to use for probing specifying how to probe the target. Example module configuring in the blackbox exporter: https://github.com/prometheus/blackbox_exporter/blob/master/example.yml",
+    "`clientId` specifies a key of a Secret or ConfigMap containing the OAuth2 client's ID.",
+    "`clientSecret` specifies a key of a Secret containing the OAuth2 client's secret.",
+    "`endpointParams` configures the HTTP parameters to append to the token URL.",
+    "Specification for the prober to use for probing targets. The prober.URL parameter is required. Targets cannot be probed if left empty.",
+    "Path to collect metrics from. Defaults to `/probe`.",
+    "HTTP scheme to use for scraping. `http` and `https` are the expected values unless you rewrite the `__scheme__` label via relabeling. If empty, Prometheus uses the default value `http`.",
+    "`scrapeProtocols` defines the protocols to negotiate during a scrape. It tells clients the protocols supported by Prometheus in order of preference (from most to least preferred). \n If unset, Prometheus uses its default value. \n It requires Prometheus >= v2.49.0.",
+    "Timeout for scraping metrics from the Prometheus exporter. If not specified, the Prometheus global scrape timeout is used.",
+    "ingress defines the Ingress objects to probe and the relabeling configuration. If `staticConfig` is also defined, `staticConfig` takes precedence.",
+    "ingress defines the Ingress objects to probe and the relabeling\nconfiguration.\nIf `staticConfig` is also defined, `staticConfig` takes precedence.",
+    "Boolean describing whether all namespaces are selected in contrast to a list restricting them.",
+    "RelabelConfigs to apply to the label set of the target before it gets scraped. The original ingress address is available via the `__tmp_prometheus_ingress_address` label. It can be used to customize the probed URL. The original scrape job's name is available via the `__tmp_prometheus_job_name` label. More info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "staticConfig defines the static list of targets to probe and the relabeling configuration. If `ingress` is also defined, `staticConfig` takes precedence. More info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#static_config.",
+    "staticConfig defines the static list of targets to probe and the\nrelabeling configuration.\nIf `ingress` is also defined, `staticConfig` takes precedence.\nMore info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#static_config.",
+    "RelabelConfigs to apply to the label set of the targets before it gets scraped. More info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "The secret in the service monitor namespace that contains the password for authentication.",
+    "The secret in the service monitor namespace that contains the username for authentication.",
+    "The secret or configmap containing the OAuth2 client id",
+    "The secret containing the OAuth2 client secret",
+    "Parameters to append to the token URL",
+    "OAuth2 scopes used for the token request",
+    "The URL to fetch the token from",
+    "The secret's key that contains the credentials of the request",
+    "Set the authentication type. Defaults to Bearer, Basic will cause an error",
+    "Action to perform based on regex matching. Default is 'replace'. uppercase and lowercase actions require Prometheus >= 2.36.",
+    "Modulus to take of the hash of the source label values.",
+    "Regular expression against which the extracted value is matched. Default is '(.*)'",
+    "Replacement value against which a regex replace is performed if the regular expression matches. Regex capture groups are available. Default is '$1'",
+    "Separator placed between concatenated source label values. default is ';'.",
+    "The source labels select values from existing labels. Their content is concatenated using the configured separator and matched against the configured regular expression for the replace, keep, and drop actions.",
+    "Label to which the resulting value is written in a replace action. It is mandatory for replace actions. Regex capture groups are available.",
+    "HTTP scheme to use for scraping. Defaults to `http`.",
+    "Timeout for scraping metrics from the Prometheus exporter. If not specified, the Prometheus global scrape interval is used.",
+    "Struct containing the CA cert to use for the targets.",
+    "Struct containing the client cert file for the targets.",
+    "Action to perform based on regex matching. Default is 'replace'",
+    "Timeout for scraping metrics from the Prometheus exporter.",
+    "Targets defines a set of static and/or dynamically discovered targets to be probed using the prober.",
+    "Ingress defines the set of dynamically discovered ingress objects which hosts are considered for probing.",
+    "Select Ingress objects by namespace.",
+    "List of namespace names.",
+    "RelabelConfigs to apply to samples before ingestion. More info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config",
+    "Select Ingress objects by labels.",
+    "StaticConfig defines static targets which are considers for probing. More info: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#static_config.",
+    "Targets is a list of URLs to probe using the configured prober."
+  ]
+}

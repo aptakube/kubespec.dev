@@ -1,0 +1,359 @@
+{
+  "versions": {
+    "v2.4.0": {
+      "descriptionChanged": [
+        "spec.git.checkout.ref.commit",
+        "spec.git.checkout.ref.name",
+        "status.conditions.type"
+      ],
+      "required": [
+        "spec.git.commit.signingKey.secretRef"
+      ],
+      "descriptions": {
+        "spec.git.checkout.ref.commit": [
+          0,
+          1
+        ],
+        "spec.git.checkout.ref.name": [
+          2,
+          3
+        ],
+        "spec.git.commit.signingKey.secretRef": [
+          null,
+          4
+        ],
+        "status.conditions.type": [
+          5,
+          6
+        ]
+      }
+    },
+    "v2.3.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.git",
+        "spec.git.checkout",
+        "spec.git.checkout.ref",
+        "spec.git.checkout.ref.commit",
+        "spec.git.checkout.ref.name",
+        "spec.git.commit.author",
+        "spec.git.commit.messageTemplate",
+        "spec.git.commit.signingKey.secretRef",
+        "spec.git.push",
+        "spec.git.push.branch",
+        "spec.git.push.options",
+        "spec.git.push.refspec",
+        "spec.interval",
+        "spec.sourceRef",
+        "spec.suspend",
+        "spec.update",
+        "spec.update.path",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type",
+        "status.lastAutomationRunTime",
+        "status.lastHandledReconcileAt",
+        "status.lastPushCommit"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          7,
+          8
+        ],
+        "kind": [
+          9,
+          10
+        ],
+        "spec.git": [
+          11,
+          12
+        ],
+        "spec.git.checkout": [
+          13,
+          14
+        ],
+        "spec.git.checkout.ref": [
+          15,
+          16
+        ],
+        "spec.git.checkout.ref.commit": [
+          17,
+          0
+        ],
+        "spec.git.checkout.ref.name": [
+          18,
+          2
+        ],
+        "spec.git.commit.author": [
+          19,
+          20
+        ],
+        "spec.git.commit.messageTemplate": [
+          21,
+          22
+        ],
+        "spec.git.commit.signingKey.secretRef": [
+          23,
+          4
+        ],
+        "spec.git.push": [
+          24,
+          25
+        ],
+        "spec.git.push.branch": [
+          26,
+          27
+        ],
+        "spec.git.push.options": [
+          28,
+          29
+        ],
+        "spec.git.push.refspec": [
+          30,
+          31
+        ],
+        "spec.interval": [
+          32,
+          33
+        ],
+        "spec.sourceRef": [
+          34,
+          35
+        ],
+        "spec.suspend": [
+          36,
+          37
+        ],
+        "spec.update": [
+          38,
+          39
+        ],
+        "spec.update.path": [
+          40,
+          41
+        ],
+        "status.conditions.lastTransitionTime": [
+          42,
+          43
+        ],
+        "status.conditions.message": [
+          44,
+          45
+        ],
+        "status.conditions.observedGeneration": [
+          46,
+          47
+        ],
+        "status.conditions.reason": [
+          48,
+          49
+        ],
+        "status.conditions.type": [
+          50,
+          5
+        ],
+        "status.lastAutomationRunTime": [
+          51,
+          52
+        ],
+        "status.lastHandledReconcileAt": [
+          53,
+          54
+        ],
+        "status.lastPushCommit": [
+          55,
+          56
+        ]
+      }
+    },
+    "v2.1.0": {
+      "optional": [
+        "spec.git.push.branch"
+      ],
+      "added": {
+        "spec.git.push.options": "map[string]string",
+        "spec.git.push.refspec": "string"
+      },
+      "descriptions": {
+        "spec.git.push.branch": [
+          null,
+          26
+        ],
+        "spec.git.push.options": [
+          null,
+          28
+        ],
+        "spec.git.push.refspec": [
+          null,
+          30
+        ]
+      }
+    },
+    "v0.40.0": {
+      "descriptionChanged": [
+        "spec.git.checkout.ref.branch",
+        "spec.git.checkout.ref.commit"
+      ],
+      "added": {
+        "spec.git.checkout.ref.name": "string"
+      },
+      "descriptions": {
+        "spec.git.checkout.ref.branch": [
+          57,
+          58
+        ],
+        "spec.git.checkout.ref.commit": [
+          59,
+          17
+        ],
+        "spec.git.checkout.ref.name": [
+          null,
+          18
+        ]
+      }
+    },
+    "v0.28.0": {
+      "descriptionChanged": [
+        "spec.git.checkout.ref.branch",
+        "spec.git.checkout.ref.commit",
+        "spec.git.checkout.ref.semver",
+        "spec.git.checkout.ref.tag",
+        "spec.git.commit.signingKey.secretRef.name",
+        "status.lastHandledReconcileAt"
+      ],
+      "descriptions": {
+        "spec.git.checkout.ref.branch": [
+          60,
+          57
+        ],
+        "spec.git.checkout.ref.commit": [
+          61,
+          59
+        ],
+        "spec.git.checkout.ref.semver": [
+          62,
+          63
+        ],
+        "spec.git.checkout.ref.tag": [
+          64,
+          65
+        ],
+        "spec.git.commit.signingKey.secretRef.name": [
+          66,
+          67
+        ],
+        "status.lastHandledReconcileAt": [
+          68,
+          53
+        ]
+      }
+    },
+    "v0.26.0": {
+      "descriptionChanged": [
+        "spec.sourceRef.apiVersion",
+        "spec.sourceRef.kind",
+        "spec.sourceRef.name"
+      ],
+      "added": {
+        "spec.sourceRef.namespace": "string"
+      },
+      "descriptions": {
+        "spec.sourceRef.apiVersion": [
+          69,
+          70
+        ],
+        "spec.sourceRef.kind": [
+          71,
+          72
+        ],
+        "spec.sourceRef.name": [
+          66,
+          67
+        ],
+        "spec.sourceRef.namespace": [
+          null,
+          73
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Commit SHA to check out, takes precedence over all reference fields.\n\n\nThis can be combined with Branch to shallow clone the branch, in which\nthe commit is expected to exist.",
+    "Commit SHA to check out, takes precedence over all reference fields.\n\nThis can be combined with Branch to shallow clone the branch, in which\nthe commit is expected to exist.",
+    "Name of the reference to check out; takes precedence over Branch, Tag and SemVer.\n\n\nIt must be a valid Git reference: https://git-scm.com/docs/git-check-ref-format#_description\nExamples: \"refs/heads/main\", \"refs/tags/v0.1.0\", \"refs/pull/420/head\", \"refs/merge-requests/1/head\"",
+    "Name of the reference to check out; takes precedence over Branch, Tag and SemVer.\n\nIt must be a valid Git reference: https://git-scm.com/docs/git-check-ref-format#_description\nExamples: \"refs/heads/main\", \"refs/tags/v0.1.0\", \"refs/pull/420/head\", \"refs/merge-requests/1/head\"",
+    "SecretRef holds the name to a secret that contains a 'git.asc' key\ncorresponding to the ASCII Armored file containing the GPG signing\nkeypair as the value. It must be in the same namespace as the\nImageUpdateAutomation.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "GitSpec contains all the git-specific definitions. This is technically optional, but in practice mandatory until there are other kinds of source allowed.",
+    "GitSpec contains all the git-specific definitions. This is\ntechnically optional, but in practice mandatory until there are\nother kinds of source allowed.",
+    "Checkout gives the parameters for cloning the git repository, ready to make changes. If not present, the `spec.ref` field from the referenced `GitRepository` or its default will be used.",
+    "Checkout gives the parameters for cloning the git repository,\nready to make changes. If not present, the `spec.ref` field from the\nreferenced `GitRepository` or its default will be used.",
+    "Reference gives a branch, tag or commit to clone from the Git repository.",
+    "Reference gives a branch, tag or commit to clone from the Git\nrepository.",
+    "Commit SHA to check out, takes precedence over all reference fields. \n This can be combined with Branch to shallow clone the branch, in which the commit is expected to exist.",
+    "Name of the reference to check out; takes precedence over Branch, Tag and SemVer. \n It must be a valid Git reference: https://git-scm.com/docs/git-check-ref-format#_description Examples: \"refs/heads/main\", \"refs/tags/v0.1.0\", \"refs/pull/420/head\", \"refs/merge-requests/1/head\"",
+    "Author gives the email and optionally the name to use as the author of commits.",
+    "Author gives the email and optionally the name to use as the\nauthor of commits.",
+    "MessageTemplate provides a template for the commit message, into which will be interpolated the details of the change made.",
+    "MessageTemplate provides a template for the commit message,\ninto which will be interpolated the details of the change made.",
+    "SecretRef holds the name to a secret that contains a 'git.asc' key corresponding to the ASCII Armored file containing the GPG signing keypair as the value. It must be in the same namespace as the ImageUpdateAutomation.",
+    "Push specifies how and where to push commits made by the automation. If missing, commits are pushed (back) to `.spec.checkout.branch` or its default.",
+    "Push specifies how and where to push commits made by the\nautomation. If missing, commits are pushed (back) to\n`.spec.checkout.branch` or its default.",
+    "Branch specifies that commits should be pushed to the branch named. The branch is created using `.spec.checkout.branch` as the starting point, if it doesn't already exist.",
+    "Branch specifies that commits should be pushed to the branch\nnamed. The branch is created using `.spec.checkout.branch` as the\nstarting point, if it doesn't already exist.",
+    "Options specifies the push options that are sent to the Git server when performing a push operation. For details, see: https://git-scm.com/docs/git-push#Documentation/git-push.txt---push-optionltoptiongt",
+    "Options specifies the push options that are sent to the Git\nserver when performing a push operation. For details, see:\nhttps://git-scm.com/docs/git-push#Documentation/git-push.txt---push-optionltoptiongt",
+    "Refspec specifies the Git Refspec to use for a push operation. If both Branch and Refspec are provided, then the commit is pushed to the branch and also using the specified refspec. For more details about Git Refspecs, see: https://git-scm.com/book/en/v2/Git-Internals-The-Refspec",
+    "Refspec specifies the Git Refspec to use for a push operation.\nIf both Branch and Refspec are provided, then the commit is pushed\nto the branch and also using the specified refspec.\nFor more details about Git Refspecs, see:\nhttps://git-scm.com/book/en/v2/Git-Internals-The-Refspec",
+    "Interval gives an lower bound for how often the automation run should be attempted.",
+    "Interval gives an lower bound for how often the automation\nrun should be attempted.",
+    "SourceRef refers to the resource giving access details to a git repository.",
+    "SourceRef refers to the resource giving access details\nto a git repository.",
+    "Suspend tells the controller to not run this automation, until it is unset (or set to false). Defaults to false.",
+    "Suspend tells the controller to not run this automation, until\nit is unset (or set to false). Defaults to false.",
+    "Update gives the specification for how to update the files in the repository. This can be left empty, to use the default value.",
+    "Update gives the specification for how to update the files in\nthe repository. This can be left empty, to use the default\nvalue.",
+    "Path to the directory containing the manifests to be updated. Defaults to 'None', which translates to the root path of the GitRepositoryRef.",
+    "Path to the directory containing the manifests to be updated.\nDefaults to 'None', which translates to the root path\nof the GitRepositoryRef.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "LastAutomationRunTime records the last time the controller ran this automation through to completion (even if no updates were made).",
+    "LastAutomationRunTime records the last time the controller ran\nthis automation through to completion (even if no updates were\nmade).",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change of the annotation value can be detected.",
+    "LastHandledReconcileAt holds the value of the most recent\nreconcile request value, so a change of the annotation value\ncan be detected.",
+    "LastPushCommit records the SHA1 of the last commit made by the controller, for this automation object",
+    "LastPushCommit records the SHA1 of the last commit made by the\ncontroller, for this automation object",
+    "Branch to check out, defaults to 'master' if no other field is defined. \n When GitRepositorySpec.GitImplementation is set to 'go-git', a shallow clone of the specified branch is performed.",
+    "Branch to check out, defaults to 'master' if no other field is defined.",
+    "Commit SHA to check out, takes precedence over all reference fields. \n When GitRepositorySpec.GitImplementation is set to 'go-git', this can be combined with Branch to shallow clone the branch, in which the commit is expected to exist.",
+    "The Git branch to checkout, defaults to master.",
+    "The Git commit SHA to checkout, if specified Tag filters will be ignored.",
+    "The Git tag semver expression, takes precedence over Tag.",
+    "SemVer tag expression to check out, takes precedence over Tag.",
+    "The Git tag to checkout, takes precedence over Branch.",
+    "Tag to check out, takes precedence over Branch.",
+    "Name of the referent",
+    "Name of the referent.",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change can be detected.",
+    "API version of the referent",
+    "API version of the referent.",
+    "Kind of the referent",
+    "Kind of the referent.",
+    "Namespace of the referent, defaults to the namespace of the Kubernetes resource object that contains the reference."
+  ]
+}

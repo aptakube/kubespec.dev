@@ -1,0 +1,402 @@
+{
+  "versions": {
+    "v1.6.0": {
+      "descriptionChanged": [
+        "spec.env.valueFrom.configMapKeyRef.key"
+      ],
+      "descriptions": {
+        "spec.env.valueFrom.configMapKeyRef.key": [
+          0,
+          1
+        ]
+      }
+    },
+    "v1.5.0": {
+      "added": {
+        "spec.spiffe": "object"
+      },
+      "descriptions": {
+        "spec.spiffe": [
+          null,
+          2
+        ]
+      }
+    },
+    "v1.4.0": {
+      "added": {
+        "spec.daemonSet": "object",
+        "spec.workload": "object"
+      },
+      "descriptionChanged": [
+        "spec.env.valueFrom.configMapKeyRef.name",
+        "spec.env.valueFrom.secretKeyRef.name",
+        "spec.horizontalPodAutoscaler",
+        "spec.podDisruptionBudget"
+      ],
+      "descriptions": {
+        "spec.daemonSet": [
+          null,
+          3
+        ],
+        "spec.env.valueFrom.configMapKeyRef.name": [
+          4,
+          5
+        ],
+        "spec.env.valueFrom.secretKeyRef.name": [
+          4,
+          5
+        ],
+        "spec.horizontalPodAutoscaler": [
+          6,
+          7
+        ],
+        "spec.podDisruptionBudget": [
+          8,
+          9
+        ],
+        "spec.workload": [
+          null,
+          10
+        ]
+      }
+    },
+    "v1.3.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.deployment",
+        "spec.env",
+        "spec.horizontalPodAutoscaler",
+        "spec.image.digest",
+        "spec.image.pullPolicy",
+        "spec.image.registry",
+        "spec.image.repository",
+        "spec.image.tag",
+        "spec.istio",
+        "spec.istio.caAddress",
+        "spec.istio.trustDomain",
+        "spec.logging",
+        "spec.logging.format",
+        "spec.podDisruptionBudget",
+        "spec.rawConfig",
+        "spec.resources",
+        "spec.service",
+        "spec.serviceAccount",
+        "status"
+      ],
+      "added": {
+        "spec.istio.clusterId": "string",
+        "spec.istio.enabled": "boolean",
+        "spec.istio.network": "string",
+        "spec.modelCatalog": "object"
+      },
+      "description": true,
+      "descriptions": {
+        "spec": [
+          11,
+          12
+        ],
+        "spec.deployment": [
+          13,
+          14
+        ],
+        "spec.env": [
+          15,
+          16
+        ],
+        "spec.horizontalPodAutoscaler": [
+          17,
+          6
+        ],
+        "spec.image.digest": [
+          18,
+          19
+        ],
+        "spec.image.pullPolicy": [
+          20,
+          21
+        ],
+        "spec.image.registry": [
+          22,
+          23
+        ],
+        "spec.image.repository": [
+          24,
+          25
+        ],
+        "spec.image.tag": [
+          26,
+          27
+        ],
+        "spec.istio": [
+          28,
+          29
+        ],
+        "spec.istio.caAddress": [
+          30,
+          31
+        ],
+        "spec.istio.clusterId": [
+          null,
+          32
+        ],
+        "spec.istio.enabled": [
+          null,
+          33
+        ],
+        "spec.istio.network": [
+          null,
+          34
+        ],
+        "spec.istio.trustDomain": [
+          35,
+          36
+        ],
+        "spec.logging": [
+          37,
+          38
+        ],
+        "spec.logging.format": [
+          39,
+          40
+        ],
+        "spec.modelCatalog": [
+          null,
+          41
+        ],
+        "spec.podDisruptionBudget": [
+          42,
+          8
+        ],
+        "spec.rawConfig": [
+          43,
+          44
+        ],
+        "spec.resources": [
+          45,
+          46
+        ],
+        "spec.service": [
+          47,
+          48
+        ],
+        "spec.serviceAccount": [
+          49,
+          50
+        ],
+        "status": [
+          51,
+          52
+        ],
+        "": [
+          53,
+          54
+        ]
+      }
+    },
+    "v1.2.0": {
+      "added": {
+        "spec.istio.additionalTrustDomains": "string[]"
+      },
+      "descriptions": {
+        "spec.istio.additionalTrustDomains": [
+          null,
+          55
+        ]
+      }
+    },
+    "v1.1.0": {
+      "descriptionChanged": [
+        "spec.deployment",
+        "spec.deployment.metadata",
+        "spec.deployment.spec",
+        "spec.env",
+        "spec.horizontalPodAutoscaler",
+        "spec.horizontalPodAutoscaler.metadata",
+        "spec.horizontalPodAutoscaler.spec",
+        "spec.logging",
+        "spec.logging.level",
+        "spec.podDisruptionBudget",
+        "spec.podDisruptionBudget.metadata",
+        "spec.podDisruptionBudget.spec",
+        "spec.rawConfig",
+        "spec.service",
+        "spec.service.metadata",
+        "spec.service.spec",
+        "spec.serviceAccount",
+        "spec.serviceAccount.metadata",
+        "spec.serviceAccount.spec",
+        "spec.shutdown",
+        "spec.shutdown.max",
+        "spec.shutdown.min"
+      ],
+      "descriptions": {
+        "spec.deployment": [
+          56,
+          13
+        ],
+        "spec.deployment.metadata": [
+          57,
+          58
+        ],
+        "spec.deployment.spec": [
+          59,
+          60
+        ],
+        "spec.env": [
+          61,
+          15
+        ],
+        "spec.horizontalPodAutoscaler": [
+          62,
+          17
+        ],
+        "spec.horizontalPodAutoscaler.metadata": [
+          57,
+          58
+        ],
+        "spec.horizontalPodAutoscaler.spec": [
+          59,
+          60
+        ],
+        "spec.logging": [
+          63,
+          37
+        ],
+        "spec.logging.level": [
+          64,
+          65
+        ],
+        "spec.podDisruptionBudget": [
+          66,
+          42
+        ],
+        "spec.podDisruptionBudget.metadata": [
+          57,
+          58
+        ],
+        "spec.podDisruptionBudget.spec": [
+          59,
+          60
+        ],
+        "spec.rawConfig": [
+          67,
+          43
+        ],
+        "spec.service": [
+          68,
+          47
+        ],
+        "spec.service.metadata": [
+          57,
+          58
+        ],
+        "spec.service.spec": [
+          59,
+          60
+        ],
+        "spec.serviceAccount": [
+          69,
+          49
+        ],
+        "spec.serviceAccount.metadata": [
+          57,
+          58
+        ],
+        "spec.serviceAccount.spec": [
+          59,
+          60
+        ],
+        "spec.shutdown": [
+          70,
+          71
+        ],
+        "spec.shutdown.max": [
+          72,
+          73
+        ],
+        "spec.shutdown.min": [
+          74,
+          75
+        ]
+      }
+    }
+  },
+  "texts": [
+    "The key to select.",
+    "The key to select from the ConfigMap's Data field.\nKeys in the BinaryData field are not currently propagated to container env vars.",
+    "SPIFFE integration settings. When set, the gateway sources its TLS identity (X.509-SVID)\nand trust bundle from the local SPIFFE Workload API, and the controller\nmounts the Workload API socket into the pod. Listeners and backends opt in to SPIFFE individually\n(via the `agentgateway.dev/tls-certificate-source: SPIFFE` listener option and the\nAgentgatewayPolicy `backend.tls.certificateSource: SPIFFE` field respectively).",
+    "Overrides for the generated\n`DaemonSet` resource.",
+    "Name of the referent.\nThis field is effectively required, but due to backwards compatibility is\nallowed to be empty. Instances of this type with an empty value here are\nalmost certainly wrong.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Name of the referent",
+    "Creates a `HorizontalPodAutoscaler`\nfor the agentgateway proxy. If absent, no HPA is created. If present, an\nHPA is created with its `scaleTargetRef` automatically configured to\ntarget the agentgateway proxy `Deployment`. The `metadata` and `spec`\nfields from this overlay are applied to the generated HPA.",
+    "Creates a `HorizontalPodAutoscaler`\nfor Deployment-backed agentgateway proxies. If absent, no HPA is created.\nIf present, an HPA is created with its `scaleTargetRef` automatically\nconfigured to target the generated `Deployment`. The `metadata` and `spec`\nfields from this overlay are applied to the generated HPA.",
+    "Creates a `PodDisruptionBudget` for the\nagentgateway proxy. If absent, no PDB is created. If present, a PDB is\ncreated with its selector automatically configured to target the\nagentgateway proxy `Deployment`. The `metadata` and `spec` fields from\nthis overlay are applied to the generated PDB.",
+    "Creates a `PodDisruptionBudget` for the\nagentgateway proxy. If absent, no PDB is created. If present, a PDB is\ncreated with its selector automatically configured to target the selected\ngenerated workload. The `metadata` and `spec` fields from this overlay are\napplied to the generated PDB.",
+    "`workload` selects the Kubernetes workload kind for the managed Gateway\ndata plane. If unset, Deployment is used.",
+    "spec defines the desired state of AgentgatewayParameters.",
+    "Desired data plane provisioning settings.",
+    "`deployment` allows specifying overrides for the generated\n`Deployment` resource.",
+    "Overrides for the generated\n`Deployment` resource.",
+    "The container environment variables. These override any existing\nvalues. If you want to delete an environment variable entirely, use\n`$patch: delete` with `AgentgatewayParametersOverlays` instead. Note that\n[variable\nexpansion](https://kubernetes.io/docs/tasks/inject-data-application/define-interdependent-environment-variables/)\ndoes apply, but is highly discouraged -- to set dependent environment\nvariables, you can use `$(VAR_NAME)`, but it's highly discouraged.\n`$$(VAR_NAME)` avoids expansion and results in a literal\n`$(VAR_NAME)`.\n\nIf `SESSION_KEY` is specified, it takes precedence over the\ncontroller-managed per-`Gateway` session key `Secret`.",
+    "Container environment variables. These override any existing\nvalues. If you want to delete an environment variable entirely, use\n`$patch: delete` with an overlay instead. Note that\n[variable\nexpansion](https://kubernetes.io/docs/tasks/inject-data-application/define-interdependent-environment-variables/)\ndoes apply, but is highly discouraged -- to set dependent environment\nvariables, you can use `$(VAR_NAME)`, but it's highly discouraged.\n`$$(VAR_NAME)` avoids expansion and results in a literal\n`$(VAR_NAME)`.\n\nIf `SESSION_KEY` is specified, it takes precedence over the\ncontroller-managed per-`Gateway` session key `Secret`.",
+    "`horizontalPodAutoscaler` allows creating a `HorizontalPodAutoscaler`\nfor the agentgateway proxy. If absent, no HPA is created. If present, an\nHPA is created with its `scaleTargetRef` automatically configured to\ntarget the agentgateway proxy `Deployment`. The `metadata` and `spec`\nfields from this overlay are applied to the generated HPA.",
+    "The hash digest of the image, e.g. `sha256:12345...`",
+    "Image digest, such as `sha256:12345...`.",
+    "The image pull policy for the container. See\nhttps://kubernetes.io/docs/concepts/containers/images/#image-pull-policy\nfor details.",
+    "Image pull policy for the container. See\nhttps://kubernetes.io/docs/concepts/containers/images/#image-pull-policy\nfor details.",
+    "The image registry.",
+    "Image registry.",
+    "The image repository (name).",
+    "Image repository.",
+    "The image tag.",
+    "Image tag.",
+    "Configure Istio integration. If enabled, Agentgateway can natively connect to Istio enabled pods with mTLS.",
+    "Istio integration settings. If enabled, agentgateway can natively connect to Istio-enabled pods with mTLS.",
+    "The address of the Istio CA. If unset, defaults to `https://istiod.istio-system.svc:15012`.",
+    "Address of the Istio CA. If unset, defaults to `https://istiod.istio-system.svc:15012`.",
+    "ID of the cluster this gateway runs in. If unset, defaults to `Kubernetes`.",
+    "Explicitly turns Istio integration on or off for this gateway.",
+    "Istio network this gateway runs in. If unset, defaults to the empty network.",
+    "The Istio trust domain. If not set, defaults to `cluster.local`.",
+    "Istio trust domain. If not set, defaults to `cluster.local`, or the default\ntrust domain for the control plane's istio revision.",
+    "`logging` configuration for Agentgateway. By default, all logs are set to\n`info` level.",
+    "Logging configuration. By default, all logs are set to\n`info` level.",
+    "The default logging format is text.",
+    "Logging output format.",
+    "Model cost catalog sources. Only effective when set on a Gateway-level\nAgentgatewayParameters (via Gateway.spec.infrastructure.parametersRef);\nignored on GatewayClass-level parameters because ConfigMap references\nare resolved from the Gateway's deployment namespace.",
+    "`podDisruptionBudget` allows creating a `PodDisruptionBudget` for the\nagentgateway proxy. If absent, no PDB is created. If present, a PDB is\ncreated with its selector automatically configured to target the\nagentgateway proxy `Deployment`. The `metadata` and `spec` fields from\nthis overlay are applied to the generated PDB.",
+    "`rawConfig` provides an opaque mechanism to configure the `agentgateway`\nconfig file. The `agentgateway` binary has a `-f` option to specify a\nconfig file, and this field supplies that file. This will be merged with\nconfiguration derived from typed fields like `logging.format`, and those\ntyped fields will take precedence.\n\nExample:\n\n\trawConfig:\n\t  binds:\n\t  - port: 3000\n\t    listeners:\n\t    - routes:\n\t      - policies:\n\t          cors:\n\t            allowOrigins:\n\t            - \"*\"\n\t            allowHeaders:\n\t            - mcp-protocol-version\n\t            - content-type\n\t            - cache-control\n\t        backends:\n\t        - mcp:\n\t            targets:\n\t            - name: everything\n\t              stdio:\n\t                cmd: npx\n\t                args: [\"@modelcontextprotocol/server-everything\"]",
+    "Raw agentgateway configuration to merge into the generated config file.\nThis is merged with\nconfiguration derived from typed fields like `logging.format`, and those\ntyped fields will take precedence.\n\nExample:\n\n\trawConfig:\n\t  binds:\n\t  - port: 3000\n\t    listeners:\n\t    - routes:\n\t      - policies:\n\t          cors:\n\t            allowOrigins:\n\t            - \"*\"\n\t            allowHeaders:\n\t            - mcp-protocol-version\n\t            - content-type\n\t            - cache-control\n\t        backends:\n\t        - mcp:\n\t            targets:\n\t            - name: everything\n\t              stdio:\n\t                cmd: npx\n\t                args: [\"@modelcontextprotocol/server-everything\"]",
+    "The compute resources required by this container. See\nhttps://kubernetes.io/docs/concepts/configuration/manage-resources-containers/\nfor details.",
+    "Compute resources required by this container. See\nhttps://kubernetes.io/docs/concepts/configuration/manage-resources-containers/\nfor details.",
+    "`service` allows specifying overrides for the generated `Service`\nresource.",
+    "Overrides for the generated `Service`\nresource.",
+    "`serviceAccount` allows specifying overrides for the generated\n`ServiceAccount` resource.",
+    "Overrides for the generated\n`ServiceAccount` resource.",
+    "status defines the current state of AgentgatewayParameters.",
+    "Current status for these provisioning settings.",
+    "AgentgatewayParameters are configuration that is used to dynamically\nprovision the agentgateway data plane. Labels and annotations that apply to\nall resources may be specified at a higher level; see\nhttps://gateway-api.sigs.k8s.io/reference/spec/#gatewayinfrastructure",
+    "Configures dynamic provisioning for the agentgateway data plane.\nLabels and annotations that apply to\nall resources may be specified at a higher level; see\nhttps://gateway-api.sigs.k8s.io/reference/api-spec/main/spec/#gatewayinfrastructure",
+    "Additional SPIFFE trust domains accepted on inbound HBONE connections.\nThe local trust domain is always implicitly included.",
+    "deployment allows specifying overrides for the generated Deployment resource.",
+    "metadata defines a subset of object metadata to be customized.\nLabels and annotations are merged with existing values. If both GatewayClass\nand Gateway parameters define the same label or annotation key, the Gateway\nvalue takes precedence (applied second).",
+    "`metadata` defines a subset of object metadata to be customized.\n`labels` and `annotations` are merged with existing values. If both\n`GatewayClass` and `Gateway` parameters define the same label or\nannotation key, the `Gateway` value takes precedence (applied second).",
+    "Spec provides an opaque mechanism to configure the resource Spec.\nThis field accepts a complete or partial Kubernetes resource spec (e.g., PodSpec, ServiceSpec)\nand will be merged with the generated configuration using **Strategic Merge Patch** semantics.\n\n# Application Order\n\nOverlays are applied after all typed configuration fields from both levels.\nThe full merge order is:\n\n 1. GatewayClass typed configuration fields\n 2. Gateway typed configuration fields\n 3. GatewayClass overlays\n 4. Gateway overlays (can override all previous values)\n\n# Strategic Merge Patch & Deletion Guide\n\nThis merge strategy allows you to override individual fields, merge lists, or delete items\nwithout needing to provide the entire resource definition.\n\n**1. Replacing Values (Scalars):**\nSimple fields (strings, integers, booleans) in your config will overwrite the generated defaults.\n\n**2. Merging Lists (Append/Merge):**\nLists with \"merge keys\" (like `containers` which merges on `name`, or `tolerations` which merges on `key`)\nwill append your items to the generated list, or update existing items if keys match.\n\n**3. Deleting Fields or List Items ($patch: delete):**\nTo remove a field or list item from the generated resource, use the\n`$patch: delete` directive. This works for both map fields and list items,\nand is the recommended approach because it works with both client-side\nand server-side apply.\n\n\tspec:\n\t  template:\n\t    spec:\n\t      # Delete pod-level securityContext\n\t      securityContext:\n\t        $patch: delete\n\t      # Delete nodeSelector\n\t      nodeSelector:\n\t        $patch: delete\n\t      containers:\n\t        # Be sure to use the correct proxy name here or you will add a container instead of modifying a container:\n\t        - name: proxy-name\n\t          # Delete container-level securityContext\n\t          securityContext:\n\t            $patch: delete\n\n**4. Null Values (server-side apply only):**\nSetting a field to `null` can also remove it, but this ONLY works with\n`kubectl apply --server-side` or equivalent. With regular client-side\n`kubectl apply`, null values are stripped by kubectl before reaching\nthe API server, so the deletion won't occur. Prefer `$patch: delete`\nfor consistent behavior across both apply modes.\n\n\tspec:\n\t  template:\n\t    spec:\n\t      nodeSelector: null  # Removes nodeSelector (server-side apply only!)\n\n**5. Replacing Maps Entirely ($patch: replace):**\nTo replace an entire map with your values (instead of merging), use `$patch: replace`.\nThis removes all existing keys and replaces them with only your specified keys.\n\n\tspec:\n\t  template:\n\t    spec:\n\t      nodeSelector:\n\t        $patch: replace\n\t        custom-key: custom-value\n\n**6. Replacing Lists Entirely ($patch: replace):**\nIf you want to strictly define a list and ignore all generated defaults, use `$patch: replace`.\n\n\tservice:\n\t  spec:\n\t    ports:\n\t      - $patch: replace\n\t      - name: http\n\t        port: 80\n\t        targetPort: 8080\n\t        protocol: TCP\n\t      - name: https\n\t        port: 443\n\t        targetPort: 8443\n\t        protocol: TCP",
+    "`spec` provides an opaque mechanism to configure the resource spec.\nThis field accepts a complete or partial Kubernetes resource spec, such\nas `PodSpec` or `ServiceSpec`, and will be merged with the generated\nconfiguration using **Strategic Merge Patch** semantics.\n\n# Application Order\n\nOverlays are applied after all typed configuration fields from both levels.\nThe full merge order is:\n\n 1. `GatewayClass` typed configuration fields\n 2. `Gateway` typed configuration fields\n 3. `GatewayClass` overlays\n 4. `Gateway` overlays (can override all previous values)\n\n# Strategic Merge Patch & Deletion Guide\n\nThis merge strategy allows you to override individual fields, merge lists, or delete items\nwithout needing to provide the entire resource definition.\n\n**1. Replacing Values (Scalars):**\nSimple fields (strings, integers, booleans) in your config will overwrite the generated defaults.\n\n**2. Merging Lists (Append/Merge):**\nLists with \"merge keys\", like `containers` which merges on `name`, or\n`tolerations` which merges on `key`,\nwill append your items to the generated list, or update existing items if keys match.\n\n**3. Deleting Fields or List Items ($patch: delete):**\nTo remove a field or list item from the generated resource, use the\n`$patch: delete` directive. This works for both map fields and list items,\nand is the recommended approach because it works with both client-side\nand server-side apply.\n\n\tspec:\n\t  template:\n\t    spec:\n\t      # Delete pod-level securityContext\n\t      securityContext:\n\t        $patch: delete\n\t      # Delete nodeSelector\n\t      nodeSelector:\n\t        $patch: delete\n\t      containers:\n\t      # Be sure to use the correct proxy name here or you will add a\n\t      # container instead of modifying a container.\n\t      - name: proxy-name\n\t        # Delete container-level securityContext\n\t        securityContext:\n\t          $patch: delete\n\n**4. Null Values (server-side apply only):**\nSetting a field to `null` can also remove it, but this ONLY works with\n`kubectl apply --server-side` or equivalent. With regular client-side\n`kubectl apply`, null values are stripped by kubectl before reaching\nthe API server, so the deletion won't occur. Prefer `$patch: delete`\nfor consistent behavior across both apply modes.\n\n\tspec:\n\t  template:\n\t    spec:\n\t      nodeSelector: null  # Removes nodeSelector (server-side apply only!)\n\n**5. Replacing Maps Entirely ($patch: replace):**\nTo replace an entire map with your values (instead of merging), use `$patch: replace`.\nThis removes all existing keys and replaces them with only your specified keys.\n\n\tspec:\n\t  template:\n\t    spec:\n\t      nodeSelector:\n\t        $patch: replace\n\t        custom-key: custom-value\n\n**6. Replacing Lists Entirely ($patch: replace):**\nIf you want to strictly define a list and ignore all generated defaults, use `$patch: replace`.\n\n\tservice:\n\t  spec:\n\t    ports:\n\t    - $patch: replace\n\t    - name: http\n\t      port: 80\n\t      targetPort: 8080\n\t      protocol: TCP\n\t    - name: https\n\t      port: 443\n\t      targetPort: 8443\n\t      protocol: TCP",
+    "The container environment variables. These override any existing\nvalues. If you want to delete an environment variable entirely, use\n`$patch: delete` with AgentgatewayParametersOverlays instead. Note that\n[variable\nexpansion](https://kubernetes.io/docs/tasks/inject-data-application/define-interdependent-environment-variables/)\ndoes apply, but is highly discouraged -- to set dependent environment\nvariables, you can use $(VAR_NAME), but it's highly\ndiscouraged. `$$(VAR_NAME)` avoids expansion and results in a literal\n`$(VAR_NAME)`.\n\nIf `SESSION_KEY` is specified, it takes precedence over the\ncontroller-managed per-Gateway session key Secret.",
+    "horizontalPodAutoscaler allows creating a HorizontalPodAutoscaler for the agentgateway proxy.\nIf absent, no HPA is created. If present, an HPA is created with its scaleTargetRef\nautomatically configured to target the agentgateway proxy Deployment.\nThe metadata and spec fields from this overlay are applied to the generated HPA.",
+    "logging configuration for Agentgateway. By default, all logs are set to \"info\" level.",
+    "Logging level in standard RUST_LOG syntax, e.g. 'info', the default, or\nby module, comma-separated. E.g.,\n\"rmcp=warn,hickory_server::server::server_future=off,typespec_client_core::http::policies::logging=warn\"",
+    "Logging level in standard `RUST_LOG` syntax, for example `info` (the\ndefault), or a comma-separated per-module setting such as\n`rmcp=warn,hickory_server::server::server_future=off,typespec_client_core::http::policies::logging=warn`.",
+    "podDisruptionBudget allows creating a PodDisruptionBudget for the agentgateway proxy.\nIf absent, no PDB is created. If present, a PDB is created with its selector\nautomatically configured to target the agentgateway proxy Deployment.\nThe metadata and spec fields from this overlay are applied to the generated PDB.",
+    "rawConfig provides an opaque mechanism to configure the agentgateway\nconfig file (the agentgateway binary has a '-f' option to specify a\nconfig file, and this is that file).  This will be merged with\nconfiguration derived from typed fields like\nAgentgatewayParametersLogging.Format, and those typed fields will take\nprecedence.\n\nExample:\n\n\trawConfig:\n\t  binds:\n\t  - port: 3000\n\t    listeners:\n\t    - routes:\n\t      - policies:\n\t          cors:\n\t            allowOrigins:\n\t              - \"*\"\n\t            allowHeaders:\n\t              - mcp-protocol-version\n\t              - content-type\n\t              - cache-control\n\t        backends:\n\t        - mcp:\n\t            targets:\n\t            - name: everything\n\t              stdio:\n\t                cmd: npx\n\t                args: [\"@modelcontextprotocol/server-everything\"]",
+    "service allows specifying overrides for the generated Service resource.",
+    "serviceAccount allows specifying overrides for the generated ServiceAccount resource.",
+    "Shutdown delay configuration.  How graceful planned or unplanned data\nplane changes happen is in tension with how quickly rollouts of the data\nplane complete. How long a data plane pod must wait for shutdown to be\nperfectly graceful depends on how you have configured your Gateways.",
+    "Shutdown delay configuration. How graceful planned or unplanned data\nplane changes happen is in tension with how quickly rollouts of the data\nplane complete. How long a data plane pod must wait for shutdown to be\nperfectly graceful depends on how you have configured your `Gateway`\nresources.",
+    "Maximum time (in seconds) to wait before allowing Agentgateway to\nterminate. Refer to the TERMINATION_GRACE_PERIOD_SECONDS environment\nvariable for details.",
+    "Maximum time (in seconds) to wait before allowing Agentgateway to\nterminate. Refer to the `TERMINATION_GRACE_PERIOD_SECONDS`\nenvironment variable for details.",
+    "Minimum time (in seconds) to wait before allowing Agentgateway to\nterminate. Refer to the CONNECTION_MIN_TERMINATION_DEADLINE environment\nvariable for details.",
+    "Minimum time (in seconds) to wait before allowing Agentgateway to\nterminate. Refer to the `CONNECTION_MIN_TERMINATION_DEADLINE`\nenvironment variable for details."
+  ]
+}

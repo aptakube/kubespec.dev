@@ -1,0 +1,330 @@
+{
+  "versions": {
+    "v2.4.0": {
+      "optional": [
+        "spec.aws.accountId",
+        "spec.aws.lambda"
+      ],
+      "descriptionChanged": [
+        "spec.aws.accountId",
+        "spec.aws.auth.secretRef",
+        "spec.aws.lambda"
+      ],
+      "added": {
+        "spec.aws.auth.assumeRole": "object",
+        "spec.aws.ec2": "object",
+        "spec.aws.lambda.accountId": "string",
+        "spec.priorityGroups": "object[]"
+      },
+      "descriptions": {
+        "spec.aws.accountId": [
+          0,
+          1
+        ],
+        "spec.aws.auth.assumeRole": [
+          null,
+          2
+        ],
+        "spec.aws.auth.secretRef": [
+          3,
+          4
+        ],
+        "spec.aws.ec2": [
+          null,
+          5
+        ],
+        "spec.aws.lambda": [
+          6,
+          7
+        ],
+        "spec.aws.lambda.accountId": [
+          null,
+          8
+        ],
+        "spec.priorityGroups": [
+          null,
+          9
+        ]
+      }
+    },
+    "v2.3.0": {
+      "descriptionChanged": [
+        "spec.aws"
+      ],
+      "added": {
+        "spec.gcp": "object"
+      },
+      "descriptions": {
+        "spec.aws": [
+          10,
+          11
+        ],
+        "spec.gcp": [
+          null,
+          12
+        ]
+      }
+    },
+    "v2.2.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.aws",
+        "spec.aws.accountId",
+        "spec.aws.auth",
+        "spec.aws.auth.secretRef",
+        "spec.aws.auth.secretRef.name",
+        "spec.aws.auth.type",
+        "spec.aws.lambda",
+        "spec.aws.lambda.endpointURL",
+        "spec.aws.lambda.functionName",
+        "spec.aws.lambda.invocationMode",
+        "spec.aws.lambda.payloadTransformMode",
+        "spec.aws.lambda.qualifier",
+        "spec.aws.region",
+        "spec.dynamicForwardProxy",
+        "spec.dynamicForwardProxy.enableTls",
+        "spec.static",
+        "spec.static.appProtocol",
+        "spec.static.hosts",
+        "spec.static.hosts.host",
+        "spec.static.hosts.port",
+        "spec.type",
+        "status",
+        "status.conditions",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.status",
+        "status.conditions.type"
+      ],
+      "required": [
+        "spec"
+      ],
+      "optional": [
+        "spec.type"
+      ],
+      "removed": {
+        "spec.ai": "object",
+        "spec.mcp": "object"
+      },
+      "descriptions": {
+        "apiVersion": [
+          null,
+          13
+        ],
+        "kind": [
+          null,
+          14
+        ],
+        "spec": [
+          null,
+          15
+        ],
+        "spec.aws": [
+          null,
+          10
+        ],
+        "spec.aws.accountId": [
+          null,
+          0
+        ],
+        "spec.aws.auth": [
+          null,
+          16
+        ],
+        "spec.aws.auth.secretRef": [
+          null,
+          3
+        ],
+        "spec.aws.auth.secretRef.name": [
+          null,
+          17
+        ],
+        "spec.aws.auth.type": [
+          null,
+          18
+        ],
+        "spec.aws.lambda": [
+          null,
+          6
+        ],
+        "spec.aws.lambda.endpointURL": [
+          null,
+          19
+        ],
+        "spec.aws.lambda.functionName": [
+          null,
+          20
+        ],
+        "spec.aws.lambda.invocationMode": [
+          null,
+          21
+        ],
+        "spec.aws.lambda.payloadTransformMode": [
+          null,
+          22
+        ],
+        "spec.aws.lambda.qualifier": [
+          null,
+          23
+        ],
+        "spec.aws.region": [
+          null,
+          24
+        ],
+        "spec.dynamicForwardProxy": [
+          null,
+          25
+        ],
+        "spec.dynamicForwardProxy.enableTls": [
+          null,
+          26
+        ],
+        "spec.static": [
+          null,
+          27
+        ],
+        "spec.static.appProtocol": [
+          null,
+          28
+        ],
+        "spec.static.hosts": [
+          null,
+          29
+        ],
+        "spec.static.hosts.host": [
+          null,
+          30
+        ],
+        "spec.static.hosts.port": [
+          null,
+          31
+        ],
+        "spec.type": [
+          null,
+          32
+        ],
+        "status": [
+          null,
+          33
+        ],
+        "status.conditions": [
+          null,
+          34
+        ],
+        "status.conditions.lastTransitionTime": [
+          null,
+          35
+        ],
+        "status.conditions.message": [
+          null,
+          36
+        ],
+        "status.conditions.observedGeneration": [
+          null,
+          37
+        ],
+        "status.conditions.reason": [
+          null,
+          38
+        ],
+        "status.conditions.status": [
+          null,
+          39
+        ],
+        "status.conditions.type": [
+          null,
+          40
+        ]
+      }
+    },
+    "v2.1.0": {
+      "added": {
+        "spec.ai.llm.anthropic": "object",
+        "spec.ai.llm.authHeader": "object",
+        "spec.ai.llm.azureopenai": "object",
+        "spec.ai.llm.bedrock": "object",
+        "spec.ai.llm.gemini": "object",
+        "spec.ai.llm.host": "string",
+        "spec.ai.llm.openai": "object",
+        "spec.ai.llm.path": "object",
+        "spec.ai.llm.port": "integer",
+        "spec.ai.llm.vertexai": "object",
+        "spec.ai.priorityGroups": "object[]",
+        "spec.aws.lambda.payloadTransformMode": "string",
+        "spec.dynamicForwardProxy": "object",
+        "spec.mcp": "object",
+        "spec.static.appProtocol": "string"
+      },
+      "required": [
+        "spec.aws.lambda",
+        "spec.static.hosts"
+      ],
+      "removed": {
+        "spec.ai.llm.hostOverride": "object",
+        "spec.ai.llm.provider": "object",
+        "spec.ai.multipool": "object"
+      }
+    },
+    "v2.0.2": {
+      "removed": {
+        "spec.ai.llm.hostOverride.insecureSkipVerify": "boolean",
+        "spec.ai.multipool.priorities.pool.hostOverride.insecureSkipVerify": "boolean",
+        "spec.static.hosts.insecureSkipVerify": "boolean"
+      }
+    },
+    "v2.0.1": {
+      "added": {
+        "spec.ai.llm.hostOverride.insecureSkipVerify": "boolean",
+        "spec.ai.multipool.priorities.pool.hostOverride.insecureSkipVerify": "boolean",
+        "spec.static.hosts.insecureSkipVerify": "boolean"
+      }
+    }
+  },
+  "texts": [
+    "AccountId is the AWS account ID to use for the backend.",
+    "AccountId is the AWS account ID to use for the backend.\nDeprecated: Set accountId on spec.aws.lambda instead. This field is kept for backward compatibility.\nWhen both fields are set, spec.aws.lambda.accountId takes precedence.",
+    "AssumeRole configures STS role chaining. The backend's ambient credentials\n(the gateway ServiceAccount's IRSA identity for Lambda request signing, or the\ncontroller's identity for EC2 discovery; more generally any credential resolved\nby the default provider chain) are used to assume the target role. The resulting\ntemporary credentials are then used to sign requests to the backend (Lambda) or\nto list instances (EC2). This enables per-backend, least-privilege roles without\ngranting the gateway/controller role direct access to every target.\nRequired when type is 'AssumeRole'.",
+    "SecretRef references a Kubernetes Secret containing the AWS credentials.\nThe Secret must have keys \"accessKey\", \"secretKey\", and optionally \"sessionToken\".",
+    "SecretRef references a Kubernetes Secret containing the AWS credentials.\nThe Secret must have keys \"accessKey\", \"secretKey\", and optionally \"sessionToken\".\nRequired when type is 'Secret'.",
+    "Ec2 configures dynamic discovery of AWS EC2 instances.",
+    "Lambda configures the AWS lambda service.",
+    "Lambda configures the AWS Lambda service.",
+    "AccountId is the AWS account ID to use for the backend.\nThis is the preferred location for Lambda backends.",
+    "PriorityGroups is an ordered list of backend groups used for failover.\nTraffic is sent to the backends of the first group; each subsequent\ngroup is only used when the backends of all preceding groups are\nunhealthy. The health check can be configured via the BackendConfigPolicy\nthat targets this Backend\n\nNote: This field is part of an experimental API and subject to breaking changes in future releases.",
+    "Aws is the AWS backend configuration.\nThe Aws backend type is only supported with envoy-based gateways, it is not supported in agentgateway.",
+    "Aws is the AWS backend configuration.",
+    "Gcp is the GCP backend configuration.",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "BackendSpec defines the desired state of Backend.",
+    "Auth specifies an explicit AWS authentication method for the backend.\nWhen omitted, the following credential providers are tried in order, stopping when one\nof them returns an access key ID and a secret access key (the session token is optional):\n1. Environment variables: when the environment variables AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_SESSION_TOKEN are set.\n2. AssumeRoleWithWebIdentity API call: when the environment variables AWS_WEB_IDENTITY_TOKEN_FILE and AWS_ROLE_ARN are set.\n3. EKS Pod Identity: when the environment variable AWS_CONTAINER_AUTHORIZATION_TOKEN_FILE is set.\n\nSee the Envoy docs for more info:\nhttps://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/aws_request_signing_filter#credentials",
+    "Name of the referent.\nThis field is effectively required, but due to backwards compatibility is\nallowed to be empty. Instances of this type with an empty value here are\nalmost certainly wrong.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Type specifies the authentication method to use for the backend.",
+    "EndpointURL is the URL or domain for the Lambda service. This is primarily\nuseful for testing and development purposes. When omitted, the default\nlambda hostname will be used.",
+    "FunctionName is the name of the Lambda function to invoke.",
+    "InvocationMode defines how to invoke the Lambda function.\nDefaults to Sync.",
+    "PayloadTransformation specifies payload transformation mode before it is sent to the Lambda function.\nDefaults to Envoy.",
+    "Qualifier is the alias or version for the Lambda function.\nValid values include a numeric version (e.g. \"1\"), an alias name\n(alphanumeric plus \"-\" or \"_\"), or the special literal \"$LATEST\".",
+    "Region is the AWS region to use for the backend.\nDefaults to us-east-1 if not specified.",
+    "DynamicForwardProxy is the dynamic forward proxy backend configuration.",
+    "EnableTls enables TLS. When true, the backend will be configured to use TLS. System CA will be used for validation.\nThe hostname will be used for SNI and auto SAN validation.",
+    "Static is the static backend configuration.",
+    "AppProtocol is the application protocol to use when communicating with the backend.",
+    "Hosts is a list of hosts to use for the backend.",
+    "Host is the host name to use for the backend.",
+    "Port is the port to use for the backend.",
+    "Type indicates the type of the backend to be used.\nDeprecated: The Type field is deprecated and will be removed in a future release.\nThe backend type is inferred from the configuration.",
+    "BackendStatus defines the observed state of Backend.",
+    "Conditions is the list of conditions for the backend.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "status of the condition, one of True, False, Unknown.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase."
+  ]
+}

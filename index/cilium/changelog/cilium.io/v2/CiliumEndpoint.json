@@ -1,0 +1,236 @@
+{
+  "versions": {
+    "1.19.0": {
+      "added": {
+        "status.service-account": "string"
+      },
+      "descriptions": {
+        "status.service-account": [
+          null,
+          0
+        ]
+      }
+    },
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "status.controllers.configuration.error-retry-base",
+        "status.controllers.configuration.interval",
+        "status.encryption.key",
+        "status.external-identifiers",
+        "status.log.code",
+        "status.named-ports",
+        "status.named-ports.protocol",
+        "status.networking.node",
+        "status.policy",
+        "status.policy.egress.allowed",
+        "status.policy.egress.denied",
+        "status.policy.ingress.allowed",
+        "status.policy.ingress.denied"
+      ],
+      "removed": {
+        "status.visibility-policy-status": "string"
+      },
+      "descriptions": {
+        "apiVersion": [
+          1,
+          2
+        ],
+        "kind": [
+          3,
+          4
+        ],
+        "status.controllers.configuration.error-retry-base": [
+          5,
+          6
+        ],
+        "status.controllers.configuration.interval": [
+          7,
+          8
+        ],
+        "status.encryption.key": [
+          9,
+          10
+        ],
+        "status.external-identifiers": [
+          11,
+          12
+        ],
+        "status.log.code": [
+          13,
+          14
+        ],
+        "status.named-ports": [
+          15,
+          16
+        ],
+        "status.named-ports.protocol": [
+          17,
+          18
+        ],
+        "status.networking.node": [
+          19,
+          20
+        ],
+        "status.policy": [
+          21,
+          22
+        ],
+        "status.policy.egress.allowed": [
+          23,
+          24
+        ],
+        "status.policy.egress.denied": [
+          25,
+          26
+        ],
+        "status.policy.ingress.allowed": [
+          23,
+          24
+        ],
+        "status.policy.ingress.denied": [
+          25,
+          26
+        ]
+      }
+    },
+    "1.16.5": {
+      "descriptionChanged": [
+        "status.log.code",
+        "status.named-ports.protocol"
+      ],
+      "descriptions": {
+        "status.log.code": [
+          27,
+          13
+        ],
+        "status.named-ports.protocol": [
+          28,
+          17
+        ]
+      }
+    },
+    "1.15.0": {
+      "added": {
+        "status.external-identifiers.cni-attachment-id": "string"
+      },
+      "descriptionChanged": [
+        "status.external-identifiers.container-id",
+        "status.external-identifiers.container-name",
+        "status.external-identifiers.k8s-namespace",
+        "status.external-identifiers.k8s-pod-name",
+        "status.external-identifiers.pod-name"
+      ],
+      "descriptions": {
+        "status.external-identifiers.cni-attachment-id": [
+          null,
+          29
+        ],
+        "status.external-identifiers.container-id": [
+          30,
+          31
+        ],
+        "status.external-identifiers.container-name": [
+          32,
+          33
+        ],
+        "status.external-identifiers.k8s-namespace": [
+          34,
+          35
+        ],
+        "status.external-identifiers.k8s-pod-name": [
+          36,
+          37
+        ],
+        "status.external-identifiers.pod-name": [
+          38,
+          39
+        ]
+      }
+    },
+    "1.13.0": {
+      "descriptionChanged": [
+        "status.named-ports.protocol"
+      ],
+      "descriptions": {
+        "status.named-ports.protocol": [
+          40,
+          28
+        ]
+      }
+    },
+    "1.12.2": {
+      "added": {
+        "status.policy.egress.state": "string",
+        "status.policy.ingress.state": "string"
+      },
+      "descriptions": {
+        "status.policy.egress.state": [
+          null,
+          41
+        ],
+        "status.policy.ingress.state": [
+          null,
+          41
+        ]
+      }
+    },
+    "1.11.0": {
+      "descriptionChanged": [
+        "status.named-ports.protocol"
+      ],
+      "descriptions": {
+        "status.named-ports.protocol": [
+          42,
+          40
+        ]
+      }
+    }
+  },
+  "texts": [
+    "ServiceAccount is the service account associated with the endpoint",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Base error retry back-off time Format: duration",
+    "Base error retry back-off time\nFormat: duration",
+    "Regular synchronization interval Format: duration",
+    "Regular synchronization interval\nFormat: duration",
+    "Key is the index to the key to use for encryption or 0 if encryption is disabled.",
+    "Key is the index to the key to use for encryption or 0 if encryption is\ndisabled.",
+    "ExternalIdentifiers is a set of identifiers to identify the endpoint apart from the pod name. This includes container runtime IDs.",
+    "ExternalIdentifiers is a set of identifiers to identify the endpoint\napart from the pod name. This includes container runtime IDs.",
+    "Code indicate type of status change Enum: [\"ok\",\"failed\"]",
+    "Code indicate type of status change\nEnum: [\"ok\",\"failed\"]",
+    "NamedPorts List of named Layer 4 port and protocol pairs which will be used in Network Policy specs. \n swagger:model NamedPorts",
+    "NamedPorts List of named Layer 4 port and protocol pairs which will be used in Network\nPolicy specs.\n\nswagger:model NamedPorts",
+    "Layer 4 protocol Enum: [\"TCP\",\"UDP\",\"SCTP\",\"ICMP\",\"ICMPV6\",\"ANY\"]",
+    "Layer 4 protocol\nEnum: [\"TCP\",\"UDP\",\"SCTP\",\"ICMP\",\"ICMPV6\",\"ANY\"]",
+    "NodeIP is the IP of the node the endpoint is running on. The IP must be reachable between nodes.",
+    "NodeIP is the IP of the node the endpoint is running on. The IP must\nbe reachable between nodes.",
+    "EndpointPolicy represents the endpoint's policy by listing all allowed ingress and egress identities in combination with L4 port and protocol.",
+    "EndpointPolicy represents the endpoint's policy by listing all allowed\ningress and egress identities in combination with L4 port and protocol.",
+    "AllowedIdentityList is a list of IdentityTuples that species peers that are allowed.",
+    "AllowedIdentityList is a list of IdentityTuples that species peers that are\nallowed.",
+    "DenyIdentityList is a list of IdentityTuples that species peers that are denied.",
+    "DenyIdentityList is a list of IdentityTuples that species peers that are\ndenied.",
+    "Code indicate type of status change Enum: [ok failed]",
+    "Layer 4 protocol Enum: [TCP UDP SCTP ICMP ICMPV6 ANY]",
+    "ID assigned to this attachment by container runtime",
+    "ID assigned by container runtime",
+    "ID assigned by container runtime (deprecated, may not be unique)",
+    "Name assigned to container",
+    "Name assigned to container (deprecated, may not be unique)",
+    "K8s namespace for this endpoint",
+    "K8s namespace for this endpoint (deprecated, may not be unique)",
+    "K8s pod name for this endpoint",
+    "K8s pod name for this endpoint (deprecated, may not be unique)",
+    "K8s pod for this endpoint(Deprecated, use K8sPodName and K8sNamespace instead)",
+    "K8s pod for this endpoint (deprecated, may not be unique)",
+    "Layer 4 protocol Enum: [TCP UDP ICMP ICMPV6 ANY]",
+    "EndpointPolicyState defines the state of the Policy mode: \"enforcing\", \"non-enforcing\", \"disabled\"",
+    "Layer 4 protocol Enum: [TCP UDP ANY]"
+  ]
+}

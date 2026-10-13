@@ -1,0 +1,144 @@
+{
+  "versions": {
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.interfaces",
+        "spec.loadBalancerIPs",
+        "spec.nodeSelector",
+        "spec.nodeSelector.matchExpressions.operator",
+        "spec.nodeSelector.matchExpressions.values",
+        "spec.nodeSelector.matchLabels",
+        "spec.serviceSelector",
+        "spec.serviceSelector.matchExpressions.operator",
+        "spec.serviceSelector.matchExpressions.values",
+        "spec.serviceSelector.matchLabels",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          0,
+          1
+        ],
+        "kind": [
+          2,
+          3
+        ],
+        "spec.interfaces": [
+          4,
+          5
+        ],
+        "spec.loadBalancerIPs": [
+          6,
+          7
+        ],
+        "spec.nodeSelector": [
+          8,
+          9
+        ],
+        "spec.nodeSelector.matchExpressions.operator": [
+          10,
+          11
+        ],
+        "spec.nodeSelector.matchExpressions.values": [
+          12,
+          13
+        ],
+        "spec.nodeSelector.matchLabels": [
+          14,
+          15
+        ],
+        "spec.serviceSelector": [
+          16,
+          17
+        ],
+        "spec.serviceSelector.matchExpressions.operator": [
+          10,
+          11
+        ],
+        "spec.serviceSelector.matchExpressions.values": [
+          12,
+          13
+        ],
+        "spec.serviceSelector.matchLabels": [
+          14,
+          15
+        ],
+        "status.conditions.lastTransitionTime": [
+          18,
+          19
+        ],
+        "status.conditions.message": [
+          20,
+          21
+        ],
+        "status.conditions.observedGeneration": [
+          22,
+          23
+        ],
+        "status.conditions.reason": [
+          24,
+          25
+        ],
+        "status.conditions.type": [
+          26,
+          27
+        ],
+        "": [
+          28,
+          29
+        ]
+      }
+    },
+    "1.15.0": {
+      "descriptionChanged": [
+        "spec.serviceSelector"
+      ],
+      "descriptions": {
+        "spec.serviceSelector": [
+          30,
+          16
+        ]
+      }
+    }
+  },
+  "texts": [
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "A list of regular expressions that express which network interface(s) should be used to announce the services over. If nil, all network interfaces are used.",
+    "A list of regular expressions that express which network interface(s) should be used\nto announce the services over. If nil, all network interfaces are used.",
+    "If true, the loadbalancer IPs of the services are announced \n If nil this policy applies to all services.",
+    "If true, the loadbalancer IPs of the services are announced\n\nIf nil this policy applies to all services.",
+    "NodeSelector selects a group of nodes which will announce the IPs for the services selected by the service selector. \n If nil this policy applies to all nodes.",
+    "NodeSelector selects a group of nodes which will announce the IPs for\nthe services selected by the service selector.\n\nIf nil this policy applies to all nodes.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "ServiceSelector selects a set of services which will be announced over L2 networks. The loadBalancerClass for a service must be nil or specify a supported class, e.g. \"io.cilium/l2-announcer\". Refer to the following document for additional details regarding load balancer classes: \n https://kubernetes.io/docs/concepts/services-networking/service/#load-balancer-class \n If nil this policy applies to all services.",
+    "ServiceSelector selects a set of services which will be announced over L2 networks.\nThe loadBalancerClass for a service must be nil or specify a supported class, e.g.\n\"io.cilium/l2-announcer\". Refer to the following document for additional details\nregarding load balancer classes:\n\n  https://kubernetes.io/docs/concepts/services-networking/service/#load-balancer-class\n\nIf nil this policy applies to all services.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "CiliumL2AnnouncementPolicy is a Kubernetes third-party resource which is used to defined which nodes should announce what services on the L2 network.",
+    "CiliumL2AnnouncementPolicy is a Kubernetes third-party resource which\nis used to defined which nodes should announce what services on the\nL2 network.",
+    "ServiceSelector selects a set of services which will be announced over L2 networks \n If nil this policy applies to all services."
+  ]
+}

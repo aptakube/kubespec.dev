@@ -1,0 +1,109 @@
+{
+  "versions": {
+    "1.20.0": {
+      "added": {
+        "endpoints.pod-uid": "string"
+      },
+      "descriptions": {
+        "endpoints.pod-uid": [
+          null,
+          0
+        ]
+      }
+    },
+    "1.19.0": {
+      "added": {
+        "endpoints.service-account": "string"
+      },
+      "descriptions": {
+        "endpoints.service-account": [
+          null,
+          1
+        ]
+      }
+    },
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "endpoints.encryption.key",
+        "endpoints.named-ports",
+        "endpoints.named-ports.protocol",
+        "endpoints.networking.node",
+        "kind",
+        "namespace"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          2,
+          3
+        ],
+        "endpoints.encryption.key": [
+          4,
+          5
+        ],
+        "endpoints.named-ports": [
+          6,
+          7
+        ],
+        "endpoints.named-ports.protocol": [
+          8,
+          9
+        ],
+        "endpoints.networking.node": [
+          10,
+          11
+        ],
+        "kind": [
+          12,
+          13
+        ],
+        "namespace": [
+          14,
+          15
+        ]
+      }
+    },
+    "1.16.5": {
+      "descriptionChanged": [
+        "endpoints.named-ports.protocol"
+      ],
+      "descriptions": {
+        "endpoints.named-ports.protocol": [
+          16,
+          8
+        ]
+      }
+    },
+    "1.13.0": {
+      "descriptionChanged": [
+        "endpoints.named-ports.protocol"
+      ],
+      "descriptions": {
+        "endpoints.named-ports.protocol": [
+          17,
+          16
+        ]
+      }
+    }
+  },
+  "texts": [
+    "PodUID is the UID of the Pod that owns this endpoint.",
+    "ServiceAccount is the service account of the endpoint.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Key is the index to the key to use for encryption or 0 if encryption is disabled.",
+    "Key is the index to the key to use for encryption or 0 if encryption is\ndisabled.",
+    "NamedPorts List of named Layer 4 port and protocol pairs which will be used in Network Policy specs. \n swagger:model NamedPorts",
+    "NamedPorts List of named Layer 4 port and protocol pairs which will be used in Network\nPolicy specs.\n\nswagger:model NamedPorts",
+    "Layer 4 protocol Enum: [\"TCP\",\"UDP\",\"SCTP\",\"ICMP\",\"ICMPV6\",\"ANY\"]",
+    "Layer 4 protocol\nEnum: [\"TCP\",\"UDP\",\"SCTP\",\"ICMP\",\"ICMPV6\",\"ANY\"]",
+    "NodeIP is the IP of the node the endpoint is running on. The IP must be reachable between nodes.",
+    "NodeIP is the IP of the node the endpoint is running on. The IP must\nbe reachable between nodes.",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Namespace indicate as CiliumEndpointSlice namespace. All the CiliumEndpoints within the same namespace are put together in CiliumEndpointSlice.",
+    "Namespace indicate as CiliumEndpointSlice namespace.\nAll the CiliumEndpoints within the same namespace are put together\nin CiliumEndpointSlice.",
+    "Layer 4 protocol Enum: [TCP UDP SCTP ICMP ICMPV6 ANY]",
+    "Layer 4 protocol Enum: [TCP UDP ICMP ICMPV6 ANY]"
+  ]
+}

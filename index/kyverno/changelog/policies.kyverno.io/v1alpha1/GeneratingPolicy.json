@@ -1,0 +1,167 @@
+{
+  "versions": {
+    "v1.19.0": {
+      "added": {
+        "spec.auditAnnotations": "object[]",
+        "spec.evaluation.skipBackgroundRequests": "boolean",
+        "spec.generate.template": "object",
+        "spec.useServerSideApply": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.matchConditions.expression",
+        "spec.matchConditions.name",
+        "spec.matchConstraints.excludeResourceRules",
+        "spec.matchConstraints.excludeResourceRules.apiGroups",
+        "spec.matchConstraints.excludeResourceRules.apiVersions",
+        "spec.matchConstraints.excludeResourceRules.operations",
+        "spec.matchConstraints.excludeResourceRules.resourceNames",
+        "spec.matchConstraints.excludeResourceRules.resources",
+        "spec.matchConstraints.namespaceSelector",
+        "spec.matchConstraints.objectSelector",
+        "spec.matchConstraints.resourceRules",
+        "spec.matchConstraints.resourceRules.apiGroups",
+        "spec.matchConstraints.resourceRules.apiVersions",
+        "spec.matchConstraints.resourceRules.operations",
+        "spec.matchConstraints.resourceRules.resourceNames",
+        "spec.matchConstraints.resourceRules.resources",
+        "spec.variables.expression",
+        "spec.variables.name"
+      ],
+      "descriptions": {
+        "spec.auditAnnotations": [
+          null,
+          0
+        ],
+        "spec.evaluation.skipBackgroundRequests": [
+          null,
+          1
+        ],
+        "spec.generate.template": [
+          null,
+          2
+        ],
+        "spec.matchConditions.expression": [
+          3,
+          4
+        ],
+        "spec.matchConditions.name": [
+          5,
+          6
+        ],
+        "spec.matchConstraints.excludeResourceRules": [
+          7,
+          8
+        ],
+        "spec.matchConstraints.excludeResourceRules.apiGroups": [
+          9,
+          10
+        ],
+        "spec.matchConstraints.excludeResourceRules.apiVersions": [
+          11,
+          12
+        ],
+        "spec.matchConstraints.excludeResourceRules.operations": [
+          13,
+          14
+        ],
+        "spec.matchConstraints.excludeResourceRules.resourceNames": [
+          15,
+          16
+        ],
+        "spec.matchConstraints.excludeResourceRules.resources": [
+          17,
+          18
+        ],
+        "spec.matchConstraints.namespaceSelector": [
+          19,
+          20
+        ],
+        "spec.matchConstraints.objectSelector": [
+          21,
+          22
+        ],
+        "spec.matchConstraints.resourceRules": [
+          23,
+          24
+        ],
+        "spec.matchConstraints.resourceRules.apiGroups": [
+          9,
+          10
+        ],
+        "spec.matchConstraints.resourceRules.apiVersions": [
+          11,
+          12
+        ],
+        "spec.matchConstraints.resourceRules.operations": [
+          13,
+          14
+        ],
+        "spec.matchConstraints.resourceRules.resourceNames": [
+          15,
+          16
+        ],
+        "spec.matchConstraints.resourceRules.resources": [
+          17,
+          18
+        ],
+        "spec.useServerSideApply": [
+          null,
+          25
+        ],
+        "spec.variables.expression": [
+          26,
+          27
+        ],
+        "spec.variables.name": [
+          28,
+          29
+        ]
+      }
+    },
+    "v1.16.0": {
+      "descriptionChanged": [
+        "spec.matchConditions"
+      ],
+      "descriptions": {
+        "spec.matchConditions": [
+          30,
+          31
+        ]
+      }
+    }
+  },
+  "texts": [
+    "AuditAnnotations contains CEL expressions which are used to produce audit annotations for the audit event of the\nAPI server. auditAnnotations are evaluated after the policy has been evaluated but before the decision is logged.\nThe results of evaluating the expressions are attached to the audit event as annotations with the key\n\"<policy name>/<key>\".\nIf the expression evaluates to an empty string or null the annotation will not be included in the audit event.",
+    "SkipBackgroundRequests bypasses admission requests that are sent by the background controller.\nThe default value is set to \"true\", it must be set to \"false\" to apply generateExisting rules to those requests.",
+    "Template declares the resources to be generated as a YAML document,\nwith optional CEL interpolation.",
+    "Expression represents the expression which will be evaluated by CEL. Must evaluate to bool.\nCEL expressions have access to the contents of the AdmissionRequest and Authorizer, organized into CEL variables:\n\n'object' - The object from the incoming request. The value is null for DELETE requests.\n'oldObject' - The existing object. The value is null for CREATE requests.\n'request' - Attributes of the admission request(/pkg/apis/admission/types.go#AdmissionRequest).\n'authorizer' - A CEL Authorizer. May be used to perform authorization checks for the principal (user or service account) of the request.\n  See https://pkg.go.dev/k8s.io/apiserver/pkg/cel/library#Authz\n'authorizer.requestResource' - A CEL ResourceCheck constructed from the 'authorizer' and configured with the\n  request resource.\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/\n\nRequired.",
+    "expression represents the expression which will be evaluated by CEL. Must evaluate to bool.\nCEL expressions have access to the contents of the AdmissionRequest and Authorizer, organized into CEL variables:\n\n'object' - The object from the incoming request. The value is null for DELETE requests.\n'oldObject' - The existing object. The value is null for CREATE requests.\n'request' - Attributes of the admission request(/pkg/apis/admission/types.go#AdmissionRequest).\n'authorizer' - A CEL Authorizer. May be used to perform authorization checks for the principal (user or service account) of the request.\n  See https://pkg.go.dev/k8s.io/apiserver/pkg/cel/library#Authz\n'authorizer.requestResource' - A CEL ResourceCheck constructed from the 'authorizer' and configured with the\n  request resource.\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/\n\nRequired.",
+    "Name is an identifier for this match condition, used for strategic merging of MatchConditions,\nas well as providing an identifier for logging purposes. A good name should be descriptive of\nthe associated expression.\nName must be a qualified name consisting of alphanumeric characters, '-', '_' or '.', and\nmust start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or\n'123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]') with an\noptional DNS subdomain prefix and '/' (e.g. 'example.com/MyName')\n\nRequired.",
+    "name is an identifier for this match condition, used for strategic merging of MatchConditions,\nas well as providing an identifier for logging purposes. A good name should be descriptive of\nthe associated expression.\nName must be a qualified name consisting of alphanumeric characters, '-', '_' or '.', and\nmust start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or\n'123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]') with an\noptional DNS subdomain prefix and '/' (e.g. 'example.com/MyName')\n\nRequired.",
+    "ExcludeResourceRules describes what operations on what resources/subresources the ValidatingAdmissionPolicy should not care about.\nThe exclude rules take precedence over include rules (if a resource matches both, it is excluded)",
+    "excludeResourceRules describes what operations on what resources/subresources the ValidatingAdmissionPolicy should not care about.\nThe exclude rules take precedence over include rules (if a resource matches both, it is excluded)",
+    "APIGroups is the API groups the resources belong to. '*' is all groups.\nIf '*' is present, the length of the slice must be one.\nRequired.",
+    "apiGroups is the API groups the resources belong to. '*' is all groups.\nIf '*' is present, the length of the slice must be one.\nRequired.",
+    "APIVersions is the API versions the resources belong to. '*' is all versions.\nIf '*' is present, the length of the slice must be one.\nRequired.",
+    "apiVersions is the API versions the resources belong to. '*' is all versions.\nIf '*' is present, the length of the slice must be one.\nRequired.",
+    "Operations is the operations the admission hook cares about - CREATE, UPDATE, DELETE, CONNECT or *\nfor all of those operations and any future admission operations that are added.\nIf '*' is present, the length of the slice must be one.\nRequired.",
+    "operations is the operations the admission hook cares about - CREATE, UPDATE, DELETE, CONNECT or *\nfor all of those operations and any future admission operations that are added.\nIf '*' is present, the length of the slice must be one.\nRequired.",
+    "ResourceNames is an optional white list of names that the rule applies to.  An empty set means that everything is allowed.",
+    "resourceNames is an optional white list of names that the rule applies to.  An empty set means that everything is allowed.",
+    "Resources is a list of resources this rule applies to.\n\nFor example:\n'pods' means pods.\n'pods/log' means the log subresource of pods.\n'*' means all resources, but not subresources.\n'pods/*' means all subresources of pods.\n'*/scale' means all scale subresources.\n'*/*' means all resources and their subresources.\n\nIf wildcard is present, the validation rule will ensure resources do not\noverlap with each other.\n\nDepending on the enclosing object, subresources might not be allowed.\nRequired.",
+    "resources is a list of resources this rule applies to.\n\nFor example:\n'pods' means pods.\n'pods/log' means the log subresource of pods.\n'*' means all resources, but not subresources.\n'pods/*' means all subresources of pods.\n'*/scale' means all scale subresources.\n'*/*' means all resources and their subresources.\n\nIf wildcard is present, the validation rule will ensure resources do not\noverlap with each other.\n\nDepending on the enclosing object, subresources might not be allowed.\nRequired.",
+    "NamespaceSelector decides whether to run the admission control policy on an object based\non whether the namespace for that object matches the selector. If the\nobject itself is a namespace, the matching is performed on\nobject.metadata.labels. If the object is another cluster scoped resource,\nit never skips the policy.\n\nFor example, to run the webhook on any objects whose namespace is not\nassociated with \"runlevel\" of \"0\" or \"1\";  you will set the selector as\nfollows:\n\"namespaceSelector\": {\n  \"matchExpressions\": [\n    {\n      \"key\": \"runlevel\",\n      \"operator\": \"NotIn\",\n      \"values\": [\n        \"0\",\n        \"1\"\n      ]\n    }\n  ]\n}\n\nIf instead you want to only run the policy on any objects whose\nnamespace is associated with the \"environment\" of \"prod\" or \"staging\";\nyou will set the selector as follows:\n\"namespaceSelector\": {\n  \"matchExpressions\": [\n    {\n      \"key\": \"environment\",\n      \"operator\": \"In\",\n      \"values\": [\n        \"prod\",\n        \"staging\"\n      ]\n    }\n  ]\n}\n\nSee\nhttps://kubernetes.io/docs/concepts/overview/working-with-objects/labels/\nfor more examples of label selectors.\n\nDefault to the empty LabelSelector, which matches everything.",
+    "namespaceSelector decides whether to run the admission control policy on an object based\non whether the namespace for that object matches the selector. If the\nobject itself is a namespace, the matching is performed on\nobject.metadata.labels. If the object is another cluster scoped resource,\nit never skips the policy.\n\nFor example, to run the webhook on any objects whose namespace is not\nassociated with \"runlevel\" of \"0\" or \"1\";  you will set the selector as\nfollows:\n\"namespaceSelector\": {\n  \"matchExpressions\": [\n    {\n      \"key\": \"runlevel\",\n      \"operator\": \"NotIn\",\n      \"values\": [\n        \"0\",\n        \"1\"\n      ]\n    }\n  ]\n}\n\nIf instead you want to only run the policy on any objects whose\nnamespace is associated with the \"environment\" of \"prod\" or \"staging\";\nyou will set the selector as follows:\n\"namespaceSelector\": {\n  \"matchExpressions\": [\n    {\n      \"key\": \"environment\",\n      \"operator\": \"In\",\n      \"values\": [\n        \"prod\",\n        \"staging\"\n      ]\n    }\n  ]\n}\n\nSee\nhttps://kubernetes.io/docs/concepts/overview/working-with-objects/labels/\nfor more examples of label selectors.\n\nDefault to the empty LabelSelector, which matches everything.",
+    "ObjectSelector decides whether to run the validation based on if the\nobject has matching labels. objectSelector is evaluated against both\nthe oldObject and newObject that would be sent to the cel validation, and\nis considered to match if either object matches the selector. A null\nobject (oldObject in the case of create, or newObject in the case of\ndelete) or an object that cannot have labels (like a\nDeploymentRollback or a PodProxyOptions object) is not considered to\nmatch.\nUse the object selector only if the webhook is opt-in, because end\nusers may skip the admission webhook by setting the labels.\nDefault to the empty LabelSelector, which matches everything.",
+    "objectSelector decides whether to run the validation based on if the\nobject has matching labels. objectSelector is evaluated against both\nthe oldObject and newObject that would be sent to the cel validation, and\nis considered to match if either object matches the selector. A null\nobject (oldObject in the case of create, or newObject in the case of\ndelete) or an object that cannot have labels (like a\nDeploymentRollback or a PodProxyOptions object) is not considered to\nmatch.\nUse the object selector only if the webhook is opt-in, because end\nusers may skip the admission webhook by setting the labels.\nDefault to the empty LabelSelector, which matches everything.",
+    "ResourceRules describes what operations on what resources/subresources the ValidatingAdmissionPolicy matches.\nThe policy cares about an operation if it matches _any_ Rule.",
+    "resourceRules describes what operations on what resources/subresources the ValidatingAdmissionPolicy matches.\nThe policy cares about an operation if it matches _any_ Rule.",
+    "UseServerSideApply controls whether to use server-side apply for generate rules.\nIf set to \"true\", create & update for generated resources will use apply instead of create/update.\nDefaults to \"false\" if not specified.",
+    "Expression is the expression that will be evaluated as the value of the variable.\nThe CEL expression has access to the same identifiers as the CEL expressions in Validation.",
+    "expression is the expression that will be evaluated as the value of the variable.\nThe CEL expression has access to the same identifiers as the CEL expressions in Validation.",
+    "Name is the name of the variable. The name must be a valid CEL identifier and unique among all variables.\nThe variable can be accessed in other expressions through `variables`\nFor example, if name is \"foo\", the variable will be available as `variables.foo`",
+    "name is the name of the variable. The name must be a valid CEL identifier and unique among all variables.\nThe variable can be accessed in other expressions through `variables`\nFor example, if name is \"foo\", the variable will be available as `variables.foo`",
+    "MatchConditions is a list of conditions that must be met for a request to be validated.\nMatch conditions filter requests that have already been matched by the rules,\nnamespaceSelector, and objectSelector. An empty list of matchConditions matches all requests.\nThere are a maximum of 64 match conditions allowed.\n\nIf a parameter object is provided, it can be accessed via the `params` handle in the same\nmanner as validation expressions.\n\nThe exact matching logic is (in order):\n  1. If ANY matchCondition evaluates to FALSE, the policy is skipped.\n  2. If ALL matchConditions evaluate to TRUE, the policy is evaluated.\n  3. If any matchCondition evaluates to an error (but none are FALSE):\n     - If failurePolicy=Fail, reject the request\n     - If failurePolicy=Ignore, the policy is skipped",
+    "MatchConditions is a list of conditions that must be met for a request to be validated.\nMatch conditions filter requests that have already been matched by the rules,\nnamespaceSelector, and objectSelector. An empty list of matchConditions matches all requests.\nThere are a maximum of 64 match conditions allowed.\n\nThe exact matching logic is (in order):\n  1. If ANY matchCondition evaluates to FALSE, the policy is skipped.\n  2. If ALL matchConditions evaluate to TRUE, the policy is evaluated.\n  3. If any matchCondition evaluates to an error (but none are FALSE):\n     - If failurePolicy=Fail, reject the request\n     - If failurePolicy=Ignore, the policy is skipped"
+  ]
+}

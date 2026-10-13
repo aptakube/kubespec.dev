@@ -1,0 +1,392 @@
+{
+  "versions": {
+    "1.31.0": {
+      "added": {
+        "spec.inboundConnectionPool.http.http2KeepAlive": "object",
+        "spec.ingress.connectionPool.http.http2KeepAlive": "object",
+        "spec.ingress.tls.insecureSkipVerify": "boolean"
+      },
+      "descriptions": {
+        "spec.inboundConnectionPool.http.http2KeepAlive": [
+          null,
+          0
+        ],
+        "spec.ingress.connectionPool.http.http2KeepAlive": [
+          null,
+          0
+        ],
+        "spec.ingress.tls.insecureSkipVerify": [
+          null,
+          1
+        ]
+      }
+    },
+    "1.28.0": {
+      "added": {
+        "spec.ingress.tls.caCertCredentialName": "string"
+      },
+      "descriptions": {
+        "spec.ingress.tls.caCertCredentialName": [
+          null,
+          2
+        ]
+      }
+    },
+    "1.27.0": {
+      "descriptionChanged": [
+        "spec.ingress.tls.tlsCertificates",
+        "spec.ingress.tls.tlsCertificates.caCertificates"
+      ],
+      "descriptions": {
+        "spec.ingress.tls.tlsCertificates": [
+          3,
+          4
+        ],
+        "spec.ingress.tls.tlsCertificates.caCertificates": [
+          5,
+          null
+        ]
+      }
+    },
+    "1.26.0": {
+      "added": {
+        "spec.ingress.tls.credentialNames": "string[]",
+        "spec.ingress.tls.tlsCertificates": "object[]"
+      },
+      "descriptions": {
+        "spec.ingress.tls.credentialNames": [
+          null,
+          6
+        ],
+        "spec.ingress.tls.tlsCertificates": [
+          null,
+          3
+        ]
+      }
+    },
+    "1.25.0": {
+      "added": {
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "status.conditions.observedGeneration": [
+          null,
+          7
+        ],
+        "status.observedGeneration": [
+          8,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "descriptionChanged": [
+        "spec.outboundTrafficPolicy"
+      ],
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "spec.outboundTrafficPolicy": [
+          9,
+          10
+        ],
+        "status.conditions": [
+          null,
+          11
+        ],
+        "status.observedGeneration": [
+          null,
+          8
+        ],
+        "status.validationMessages": [
+          null,
+          12
+        ]
+      }
+    },
+    "1.22.0": {
+      "descriptionChanged": [
+        "spec.egress.captureMode",
+        "spec.inboundConnectionPool.http.h2UpgradePolicy",
+        "spec.ingress.captureMode",
+        "spec.ingress.connectionPool.http.h2UpgradePolicy",
+        "spec.ingress.tls.maxProtocolVersion",
+        "spec.ingress.tls.minProtocolVersion",
+        "spec.ingress.tls.mode",
+        "spec.outboundTrafficPolicy.mode"
+      ],
+      "added": {
+        "spec.ingress.tls.caCrl": "string"
+      },
+      "descriptions": {
+        "spec.egress.captureMode": [
+          13,
+          14
+        ],
+        "spec.inboundConnectionPool.http.h2UpgradePolicy": [
+          15,
+          16
+        ],
+        "spec.ingress.captureMode": [
+          17,
+          18
+        ],
+        "spec.ingress.connectionPool.http.h2UpgradePolicy": [
+          15,
+          16
+        ],
+        "spec.ingress.tls.caCrl": [
+          null,
+          19
+        ],
+        "spec.ingress.tls.maxProtocolVersion": [
+          20,
+          21
+        ],
+        "spec.ingress.tls.minProtocolVersion": [
+          22,
+          23
+        ],
+        "spec.ingress.tls.mode": [
+          24,
+          25
+        ],
+        "spec.outboundTrafficPolicy.mode": [
+          null,
+          26
+        ]
+      }
+    },
+    "1.21.0": {
+      "added": {
+        "spec.inboundConnectionPool.http.maxConcurrentStreams": "integer",
+        "spec.inboundConnectionPool.tcp.idleTimeout": "string",
+        "spec.ingress.connectionPool.http.maxConcurrentStreams": "integer",
+        "spec.ingress.connectionPool.tcp.idleTimeout": "string"
+      },
+      "descriptions": {
+        "spec.inboundConnectionPool.http.maxConcurrentStreams": [
+          null,
+          27
+        ],
+        "spec.inboundConnectionPool.tcp.idleTimeout": [
+          null,
+          28
+        ],
+        "spec.ingress.connectionPool.http.maxConcurrentStreams": [
+          null,
+          27
+        ],
+        "spec.ingress.connectionPool.tcp.idleTimeout": [
+          null,
+          28
+        ]
+      }
+    },
+    "1.20.0": {
+      "descriptionChanged": [
+        "spec.egress",
+        "spec.egress.bind",
+        "spec.egress.captureMode",
+        "spec.egress.hosts",
+        "spec.ingress",
+        "spec.ingress.captureMode",
+        "spec.ingress.defaultEndpoint",
+        "spec.ingress.tls",
+        "spec.ingress.tls.credentialName",
+        "spec.ingress.tls.httpsRedirect",
+        "spec.ingress.tls.mode",
+        "spec.ingress.tls.subjectAltNames",
+        "spec.ingress.tls.verifyCertificateHash",
+        "spec.ingress.tls.verifyCertificateSpki",
+        "spec.workloadSelector",
+        "spec.workloadSelector.labels"
+      ],
+      "required": [
+        "spec.egress.hosts",
+        "spec.ingress.port",
+        "spec.outboundTrafficPolicy.egressProxy.host"
+      ],
+      "added": {
+        "spec.inboundConnectionPool": "object",
+        "spec.ingress.connectionPool": "object"
+      },
+      "descriptions": {
+        "spec.egress": [
+          null,
+          29
+        ],
+        "spec.egress.bind": [
+          null,
+          30
+        ],
+        "spec.egress.captureMode": [
+          null,
+          13
+        ],
+        "spec.egress.hosts": [
+          null,
+          31
+        ],
+        "spec.inboundConnectionPool": [
+          null,
+          32
+        ],
+        "spec.ingress": [
+          null,
+          33
+        ],
+        "spec.ingress.captureMode": [
+          null,
+          17
+        ],
+        "spec.ingress.connectionPool": [
+          null,
+          32
+        ],
+        "spec.ingress.defaultEndpoint": [
+          null,
+          34
+        ],
+        "spec.ingress.port": [
+          null,
+          35
+        ],
+        "spec.ingress.tls": [
+          null,
+          36
+        ],
+        "spec.ingress.tls.credentialName": [
+          null,
+          37
+        ],
+        "spec.ingress.tls.httpsRedirect": [
+          null,
+          38
+        ],
+        "spec.ingress.tls.mode": [
+          null,
+          24
+        ],
+        "spec.ingress.tls.subjectAltNames": [
+          null,
+          39
+        ],
+        "spec.ingress.tls.verifyCertificateHash": [
+          null,
+          40
+        ],
+        "spec.ingress.tls.verifyCertificateSpki": [
+          null,
+          41
+        ],
+        "spec.outboundTrafficPolicy.egressProxy.host": [
+          null,
+          42
+        ],
+        "spec.workloadSelector": [
+          null,
+          43
+        ],
+        "spec.workloadSelector.labels": [
+          null,
+          44
+        ]
+      }
+    },
+    "1.19.0": {
+      "descriptionChanged": [
+        "spec.ingress.tls.caCertificates"
+      ],
+      "descriptions": {
+        "spec.ingress.tls.caCertificates": [
+          45,
+          5
+        ]
+      }
+    },
+    "1.15.0": {
+      "descriptionChanged": [
+        "spec.ingress.bind"
+      ],
+      "descriptions": {
+        "spec.ingress.bind": [
+          46,
+          47
+        ]
+      }
+    },
+    "1.13.0": {
+      "added": {
+        "spec.ingress.tls": "object"
+      }
+    },
+    "1.7.0": {
+      "added": {
+        "spec.egress.port.targetPort": "integer",
+        "spec.ingress.port.targetPort": "integer"
+      },
+      "removed": {
+        "spec.egress.localhostServerTls": "object",
+        "spec.ingress.localhostClientTls": "object",
+        "spec.localhost": "object"
+      }
+    }
+  },
+  "texts": [
+    "Configure HTTP/2 PING frames for upstream connections.",
+    "Optional: If set to true, the proxy will try to validate the certificate, but even if the validation fails, it will allow the connection through.",
+    "For mutual TLS, the name of the secret or the configmap that holds CA certificates.",
+    "Only one of `server_certificate`, `private_key`, `ca_certificates` or `credential_name` or `credential_names` or `tls_certificates` should be specified.",
+    "Only one of `server_certificate`, `private_key` or `credential_name` or `credential_names` or `tls_certificates` should be specified.",
+    "REQUIRED if mode is `MUTUAL` or `OPTIONAL_MUTUAL`.",
+    "Same as CredentialName but for multiple certificates.",
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Configuration for the outbound traffic policy.",
+    "Set the default behavior of the sidecar for handling outbound traffic from the application.",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers.",
+    "When the bind address is an IP, the captureMode option dictates how traffic to the listener is expected to be captured (or not).",
+    "When the bind address is an IP, the captureMode option dictates how traffic to the listener is expected to be captured (or not).\n\nValid Options: DEFAULT, IPTABLES, NONE",
+    "Specify if http1.1 connection should be upgraded to http2 for the associated destination.",
+    "Specify if http1.1 connection should be upgraded to http2 for the associated destination.\n\nValid Options: DEFAULT, DO_NOT_UPGRADE, UPGRADE",
+    "The captureMode option dictates how traffic to the listener is expected to be captured (or not).",
+    "The captureMode option dictates how traffic to the listener is expected to be captured (or not).\n\nValid Options: DEFAULT, IPTABLES, NONE",
+    "OPTIONAL: The path to the file containing the certificate revocation list (CRL) to use in verifying a presented client side certificate.",
+    "Optional: Maximum TLS protocol version.",
+    "Optional: Maximum TLS protocol version.\n\nValid Options: TLS_AUTO, TLSV1_0, TLSV1_1, TLSV1_2, TLSV1_3",
+    "Optional: Minimum TLS protocol version.",
+    "Optional: Minimum TLS protocol version.\n\nValid Options: TLS_AUTO, TLSV1_0, TLSV1_1, TLSV1_2, TLSV1_3",
+    "Optional: Indicates whether connections to this port should be secured using TLS.",
+    "Optional: Indicates whether connections to this port should be secured using TLS.\n\nValid Options: PASSTHROUGH, SIMPLE, MUTUAL, AUTO_PASSTHROUGH, ISTIO_MUTUAL, OPTIONAL_MUTUAL",
+    "\n\nValid Options: REGISTRY_ONLY, ALLOW_ANY",
+    "The maximum number of concurrent streams allowed for a peer on one HTTP/2 connection.",
+    "The idle timeout for TCP connections.",
+    "Egress specifies the configuration of the sidecar for processing outbound traffic from the attached workload instance to other services in the mesh.",
+    "The IP(IPv4 or IPv6) or the Unix domain socket to which the listener should be bound to.",
+    "One or more service hosts exposed by the listener in `namespace/dnsName` format.",
+    "Settings controlling the volume of connections Envoy will accept from the network.",
+    "Ingress specifies the configuration of the sidecar for processing inbound traffic to the attached workload instance.",
+    "The IP endpoint or Unix domain socket to which traffic should be forwarded to.",
+    "The port associated with the listener.",
+    "Set of TLS related options that will enable TLS termination on the sidecar for requests originating from outside the mesh.",
+    "For gateways running on Kubernetes, the name of the secret that holds the TLS certs including the CA certificates.",
+    "If set to true, the load balancer will send a 301 redirect for all http connections, asking the clients to use HTTPS.",
+    "A list of alternate names to verify the subject identity in the certificate presented by the client.",
+    "An optional list of hex-encoded SHA-256 hashes of the authorized client certificates.",
+    "An optional list of base64-encoded SHA-256 hashes of the SPKIs of authorized client certificates.",
+    "The name of a service from the service registry.",
+    "Criteria used to select the specific set of pods/VMs on which this `Sidecar` configuration should be applied.",
+    "One or more labels that indicate a specific set of pods/VMs on which the configuration should be applied.",
+    "REQUIRED if mode is `MUTUAL`.",
+    "The IP to which the listener should be bound.",
+    "The IP(IPv4 or IPv6) to which the listener should be bound."
+  ]
+}

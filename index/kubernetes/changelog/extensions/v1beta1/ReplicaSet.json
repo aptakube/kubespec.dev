@@ -1,0 +1,896 @@
+{
+  "versions": {
+    "v1.17.0": {
+      "descriptionChanged": [
+        "metadata.finalizers",
+        "spec.template.metadata.finalizers",
+        "spec.template.spec.containers.env.valueFrom.fieldRef",
+        "spec.template.spec.containers.securityContext.windowsOptions.runAsUserName",
+        "spec.template.spec.containers.volumeMounts.subPathExpr",
+        "spec.template.spec.ephemeralContainers.env.valueFrom.fieldRef",
+        "spec.template.spec.ephemeralContainers.securityContext.windowsOptions.runAsUserName",
+        "spec.template.spec.ephemeralContainers.volumeMounts.subPathExpr",
+        "spec.template.spec.initContainers.env.valueFrom.fieldRef",
+        "spec.template.spec.initContainers.securityContext.windowsOptions.runAsUserName",
+        "spec.template.spec.initContainers.volumeMounts.subPathExpr",
+        "spec.template.spec.securityContext.windowsOptions.runAsUserName",
+        "spec.template.spec.shareProcessNamespace"
+      ],
+      "descriptions": {
+        "metadata.finalizers": [
+          0,
+          1
+        ],
+        "spec.template.metadata.finalizers": [
+          0,
+          1
+        ],
+        "spec.template.spec.containers.env.valueFrom.fieldRef": [
+          2,
+          3
+        ],
+        "spec.template.spec.containers.securityContext.windowsOptions.runAsUserName": [
+          4,
+          5
+        ],
+        "spec.template.spec.containers.volumeMounts.subPathExpr": [
+          6,
+          7
+        ],
+        "spec.template.spec.ephemeralContainers.env.valueFrom.fieldRef": [
+          2,
+          3
+        ],
+        "spec.template.spec.ephemeralContainers.securityContext.windowsOptions.runAsUserName": [
+          4,
+          5
+        ],
+        "spec.template.spec.ephemeralContainers.volumeMounts.subPathExpr": [
+          6,
+          7
+        ],
+        "spec.template.spec.initContainers.env.valueFrom.fieldRef": [
+          2,
+          3
+        ],
+        "spec.template.spec.initContainers.securityContext.windowsOptions.runAsUserName": [
+          4,
+          5
+        ],
+        "spec.template.spec.initContainers.volumeMounts.subPathExpr": [
+          6,
+          7
+        ],
+        "spec.template.spec.securityContext.windowsOptions.runAsUserName": [
+          4,
+          5
+        ],
+        "spec.template.spec.shareProcessNamespace": [
+          8,
+          9
+        ]
+      }
+    },
+    "v1.16.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "metadata.creationTimestamp",
+        "metadata.deletionTimestamp",
+        "metadata.generateName",
+        "metadata.managedFields",
+        "metadata.ownerReferences.kind",
+        "metadata.resourceVersion",
+        "metadata.selfLink",
+        "spec.template.metadata",
+        "spec.template.metadata.creationTimestamp",
+        "spec.template.metadata.deletionTimestamp",
+        "spec.template.metadata.generateName",
+        "spec.template.metadata.managedFields",
+        "spec.template.metadata.ownerReferences.kind",
+        "spec.template.metadata.resourceVersion",
+        "spec.template.metadata.selfLink",
+        "spec.template.spec",
+        "spec.template.spec.containers.lifecycle.preStop",
+        "spec.template.spec.containers.livenessProbe.successThreshold",
+        "spec.template.spec.containers.readinessProbe.successThreshold",
+        "spec.template.spec.containers.securityContext.windowsOptions",
+        "spec.template.spec.initContainers",
+        "spec.template.spec.initContainers.lifecycle.preStop",
+        "spec.template.spec.initContainers.livenessProbe.successThreshold",
+        "spec.template.spec.initContainers.readinessProbe.successThreshold",
+        "spec.template.spec.initContainers.securityContext.windowsOptions",
+        "spec.template.spec.securityContext.windowsOptions",
+        "spec.template.spec.volumes.cephfs.monitors",
+        "spec.template.spec.volumes.cephfs.readOnly",
+        "spec.template.spec.volumes.cephfs.secretFile",
+        "spec.template.spec.volumes.cephfs.secretRef",
+        "spec.template.spec.volumes.cephfs.user",
+        "spec.template.spec.volumes.cinder",
+        "spec.template.spec.volumes.cinder.fsType",
+        "spec.template.spec.volumes.cinder.readOnly",
+        "spec.template.spec.volumes.cinder.volumeID",
+        "spec.template.spec.volumes.glusterfs",
+        "spec.template.spec.volumes.glusterfs.endpoints",
+        "spec.template.spec.volumes.glusterfs.path",
+        "spec.template.spec.volumes.glusterfs.readOnly",
+        "spec.template.spec.volumes.iscsi",
+        "spec.template.spec.volumes.rbd",
+        "spec.template.spec.volumes.rbd.image",
+        "spec.template.spec.volumes.rbd.keyring",
+        "spec.template.spec.volumes.rbd.monitors",
+        "spec.template.spec.volumes.rbd.pool",
+        "spec.template.spec.volumes.rbd.readOnly",
+        "spec.template.spec.volumes.rbd.secretRef",
+        "spec.template.spec.volumes.rbd.user"
+      ],
+      "added": {
+        "metadata.managedFields.fieldsType": "string",
+        "metadata.managedFields.fieldsV1": "FieldsV1",
+        "spec.template.metadata.managedFields.fieldsType": "string",
+        "spec.template.metadata.managedFields.fieldsV1": "FieldsV1",
+        "spec.template.spec.containers.securityContext.windowsOptions.runAsUserName": "string",
+        "spec.template.spec.containers.startupProbe": "Probe",
+        "spec.template.spec.ephemeralContainers": "EphemeralContainer[]",
+        "spec.template.spec.initContainers.securityContext.windowsOptions.runAsUserName": "string",
+        "spec.template.spec.initContainers.startupProbe": "Probe",
+        "spec.template.spec.overhead": "map[string]Quantity",
+        "spec.template.spec.securityContext.windowsOptions.runAsUserName": "string",
+        "spec.template.spec.topologySpreadConstraints": "TopologySpreadConstraint[]"
+      },
+      "removed": {
+        "metadata.initializers": "Initializers",
+        "metadata.managedFields.fields": "Fields",
+        "spec.template.metadata.initializers": "Initializers",
+        "spec.template.metadata.managedFields.fields": "Fields"
+      },
+      "descriptions": {
+        "apiVersion": [
+          10,
+          11
+        ],
+        "kind": [
+          12,
+          13
+        ],
+        "metadata.creationTimestamp": [
+          14,
+          15
+        ],
+        "metadata.deletionTimestamp": [
+          16,
+          17
+        ],
+        "metadata.generateName": [
+          18,
+          19
+        ],
+        "metadata.managedFields": [
+          20,
+          21
+        ],
+        "metadata.managedFields.fieldsType": [
+          null,
+          22
+        ],
+        "metadata.managedFields.fieldsV1": [
+          null,
+          23
+        ],
+        "metadata.ownerReferences.kind": [
+          24,
+          25
+        ],
+        "metadata.resourceVersion": [
+          26,
+          27
+        ],
+        "metadata.selfLink": [
+          28,
+          29
+        ],
+        "spec.template.metadata": [
+          30,
+          31
+        ],
+        "spec.template.metadata.creationTimestamp": [
+          14,
+          15
+        ],
+        "spec.template.metadata.deletionTimestamp": [
+          16,
+          17
+        ],
+        "spec.template.metadata.generateName": [
+          18,
+          19
+        ],
+        "spec.template.metadata.managedFields": [
+          20,
+          21
+        ],
+        "spec.template.metadata.managedFields.fieldsType": [
+          null,
+          22
+        ],
+        "spec.template.metadata.managedFields.fieldsV1": [
+          null,
+          23
+        ],
+        "spec.template.metadata.ownerReferences.kind": [
+          24,
+          25
+        ],
+        "spec.template.metadata.resourceVersion": [
+          26,
+          27
+        ],
+        "spec.template.metadata.selfLink": [
+          28,
+          29
+        ],
+        "spec.template.spec": [
+          32,
+          33
+        ],
+        "spec.template.spec.containers.lifecycle.preStop": [
+          34,
+          35
+        ],
+        "spec.template.spec.containers.livenessProbe.successThreshold": [
+          36,
+          37
+        ],
+        "spec.template.spec.containers.readinessProbe.successThreshold": [
+          36,
+          37
+        ],
+        "spec.template.spec.containers.securityContext.windowsOptions": [
+          38,
+          39
+        ],
+        "spec.template.spec.containers.securityContext.windowsOptions.runAsUserName": [
+          null,
+          4
+        ],
+        "spec.template.spec.containers.startupProbe": [
+          null,
+          40
+        ],
+        "spec.template.spec.ephemeralContainers": [
+          null,
+          41
+        ],
+        "spec.template.spec.initContainers": [
+          42,
+          43
+        ],
+        "spec.template.spec.initContainers.lifecycle.preStop": [
+          34,
+          35
+        ],
+        "spec.template.spec.initContainers.livenessProbe.successThreshold": [
+          36,
+          37
+        ],
+        "spec.template.spec.initContainers.readinessProbe.successThreshold": [
+          36,
+          37
+        ],
+        "spec.template.spec.initContainers.securityContext.windowsOptions": [
+          38,
+          39
+        ],
+        "spec.template.spec.initContainers.securityContext.windowsOptions.runAsUserName": [
+          null,
+          4
+        ],
+        "spec.template.spec.initContainers.startupProbe": [
+          null,
+          40
+        ],
+        "spec.template.spec.overhead": [
+          null,
+          44
+        ],
+        "spec.template.spec.securityContext.windowsOptions": [
+          38,
+          45
+        ],
+        "spec.template.spec.securityContext.windowsOptions.runAsUserName": [
+          null,
+          4
+        ],
+        "spec.template.spec.topologySpreadConstraints": [
+          null,
+          46
+        ],
+        "spec.template.spec.volumes.cephfs.monitors": [
+          47,
+          48
+        ],
+        "spec.template.spec.volumes.cephfs.readOnly": [
+          49,
+          50
+        ],
+        "spec.template.spec.volumes.cephfs.secretFile": [
+          51,
+          52
+        ],
+        "spec.template.spec.volumes.cephfs.secretRef": [
+          53,
+          54
+        ],
+        "spec.template.spec.volumes.cephfs.user": [
+          55,
+          56
+        ],
+        "spec.template.spec.volumes.cinder": [
+          57,
+          58
+        ],
+        "spec.template.spec.volumes.cinder.fsType": [
+          59,
+          60
+        ],
+        "spec.template.spec.volumes.cinder.readOnly": [
+          61,
+          62
+        ],
+        "spec.template.spec.volumes.cinder.volumeID": [
+          63,
+          64
+        ],
+        "spec.template.spec.volumes.glusterfs": [
+          65,
+          66
+        ],
+        "spec.template.spec.volumes.glusterfs.endpoints": [
+          67,
+          68
+        ],
+        "spec.template.spec.volumes.glusterfs.path": [
+          69,
+          70
+        ],
+        "spec.template.spec.volumes.glusterfs.readOnly": [
+          71,
+          72
+        ],
+        "spec.template.spec.volumes.iscsi": [
+          73,
+          74
+        ],
+        "spec.template.spec.volumes.rbd": [
+          75,
+          76
+        ],
+        "spec.template.spec.volumes.rbd.image": [
+          77,
+          78
+        ],
+        "spec.template.spec.volumes.rbd.keyring": [
+          79,
+          80
+        ],
+        "spec.template.spec.volumes.rbd.monitors": [
+          81,
+          82
+        ],
+        "spec.template.spec.volumes.rbd.pool": [
+          83,
+          84
+        ],
+        "spec.template.spec.volumes.rbd.readOnly": [
+          85,
+          86
+        ],
+        "spec.template.spec.volumes.rbd.secretRef": [
+          87,
+          88
+        ],
+        "spec.template.spec.volumes.rbd.user": [
+          89,
+          90
+        ],
+        "metadata.initializers": [
+          91,
+          null
+        ],
+        "metadata.managedFields.fields": [
+          92,
+          null
+        ],
+        "spec.template.metadata.initializers": [
+          91,
+          null
+        ],
+        "spec.template.metadata.managedFields.fields": [
+          92,
+          null
+        ]
+      }
+    },
+    "v1.15.0": {
+      "added": {
+        "metadata.initializers.result.metadata.remainingItemCount": "integer",
+        "spec.template.metadata.initializers.result.metadata.remainingItemCount": "integer",
+        "spec.template.spec.containers.securityContext.windowsOptions": "WindowsSecurityContextOptions",
+        "spec.template.spec.initContainers.securityContext.windowsOptions": "WindowsSecurityContextOptions",
+        "spec.template.spec.preemptionPolicy": "string",
+        "spec.template.spec.securityContext.windowsOptions": "WindowsSecurityContextOptions"
+      },
+      "descriptionChanged": [
+        "spec.template.spec.containers.env.valueFrom.configMapKeyRef.optional",
+        "spec.template.spec.containers.env.valueFrom.secretKeyRef.optional",
+        "spec.template.spec.containers.volumeMounts.subPathExpr",
+        "spec.template.spec.initContainers.env.valueFrom.configMapKeyRef.optional",
+        "spec.template.spec.initContainers.env.valueFrom.secretKeyRef.optional",
+        "spec.template.spec.initContainers.volumeMounts.subPathExpr",
+        "spec.template.spec.runtimeClassName",
+        "spec.template.spec.volumes.configMap.optional",
+        "spec.template.spec.volumes.projected.sources.configMap.optional",
+        "spec.template.spec.volumes.secret.optional"
+      ],
+      "descriptions": {
+        "metadata.initializers.result.metadata.remainingItemCount": [
+          null,
+          93
+        ],
+        "spec.template.metadata.initializers.result.metadata.remainingItemCount": [
+          null,
+          93
+        ],
+        "spec.template.spec.containers.env.valueFrom.configMapKeyRef.optional": [
+          94,
+          95
+        ],
+        "spec.template.spec.containers.env.valueFrom.secretKeyRef.optional": [
+          96,
+          97
+        ],
+        "spec.template.spec.containers.securityContext.windowsOptions": [
+          null,
+          38
+        ],
+        "spec.template.spec.containers.volumeMounts.subPathExpr": [
+          98,
+          6
+        ],
+        "spec.template.spec.initContainers.env.valueFrom.configMapKeyRef.optional": [
+          94,
+          95
+        ],
+        "spec.template.spec.initContainers.env.valueFrom.secretKeyRef.optional": [
+          96,
+          97
+        ],
+        "spec.template.spec.initContainers.securityContext.windowsOptions": [
+          null,
+          38
+        ],
+        "spec.template.spec.initContainers.volumeMounts.subPathExpr": [
+          98,
+          6
+        ],
+        "spec.template.spec.preemptionPolicy": [
+          null,
+          99
+        ],
+        "spec.template.spec.runtimeClassName": [
+          100,
+          101
+        ],
+        "spec.template.spec.securityContext.windowsOptions": [
+          null,
+          38
+        ],
+        "spec.template.spec.volumes.configMap.optional": [
+          102,
+          103
+        ],
+        "spec.template.spec.volumes.projected.sources.configMap.optional": [
+          102,
+          103
+        ],
+        "spec.template.spec.volumes.secret.optional": [
+          104,
+          105
+        ]
+      }
+    },
+    "v1.14.0": {
+      "descriptionChanged": [
+        "metadata",
+        "metadata.initializers",
+        "spec",
+        "spec.template.metadata.initializers",
+        "spec.template.spec.containers.lifecycle.preStop",
+        "spec.template.spec.enableServiceLinks",
+        "spec.template.spec.initContainers.lifecycle.preStop",
+        "spec.template.spec.readinessGates",
+        "spec.template.spec.runtimeClassName",
+        "status"
+      ],
+      "added": {
+        "metadata.managedFields": "ManagedFieldsEntry[]",
+        "spec.template.metadata.managedFields": "ManagedFieldsEntry[]",
+        "spec.template.spec.containers.volumeMounts.subPathExpr": "string",
+        "spec.template.spec.initContainers.volumeMounts.subPathExpr": "string",
+        "spec.template.spec.volumes.csi": "CSIVolumeSource",
+        "spec.template.spec.volumes.quobyte.tenant": "string"
+      },
+      "descriptions": {
+        "metadata": [
+          106,
+          107
+        ],
+        "metadata.initializers": [
+          108,
+          91
+        ],
+        "metadata.managedFields": [
+          null,
+          20
+        ],
+        "spec": [
+          109,
+          110
+        ],
+        "spec.template.metadata.initializers": [
+          108,
+          91
+        ],
+        "spec.template.metadata.managedFields": [
+          null,
+          20
+        ],
+        "spec.template.spec.containers.lifecycle.preStop": [
+          111,
+          34
+        ],
+        "spec.template.spec.containers.volumeMounts.subPathExpr": [
+          null,
+          98
+        ],
+        "spec.template.spec.enableServiceLinks": [
+          112,
+          113
+        ],
+        "spec.template.spec.initContainers.lifecycle.preStop": [
+          111,
+          34
+        ],
+        "spec.template.spec.initContainers.volumeMounts.subPathExpr": [
+          null,
+          98
+        ],
+        "spec.template.spec.readinessGates": [
+          114,
+          115
+        ],
+        "spec.template.spec.runtimeClassName": [
+          116,
+          100
+        ],
+        "spec.template.spec.volumes.csi": [
+          null,
+          117
+        ],
+        "spec.template.spec.volumes.quobyte.tenant": [
+          null,
+          118
+        ],
+        "status": [
+          119,
+          120
+        ]
+      }
+    },
+    "v1.13.0": {
+      "descriptionChanged": [
+        "spec.template.spec.containers.volumeDevices",
+        "spec.template.spec.initContainers.volumeDevices"
+      ],
+      "added": {
+        "spec.template.spec.enableServiceLinks": "boolean"
+      },
+      "descriptions": {
+        "spec.template.spec.containers.volumeDevices": [
+          121,
+          122
+        ],
+        "spec.template.spec.enableServiceLinks": [
+          null,
+          112
+        ],
+        "spec.template.spec.initContainers.volumeDevices": [
+          121,
+          122
+        ]
+      }
+    },
+    "v1.12.0": {
+      "descriptionChanged": [
+        "metadata.initializers.result.metadata.continue",
+        "spec.template.metadata.initializers.result.metadata.continue",
+        "spec.template.spec.containers.ports.protocol",
+        "spec.template.spec.containers.resources",
+        "spec.template.spec.containers.volumeMounts.mountPropagation",
+        "spec.template.spec.initContainers.ports.protocol",
+        "spec.template.spec.initContainers.resources",
+        "spec.template.spec.initContainers.volumeMounts.mountPropagation",
+        "spec.template.spec.shareProcessNamespace",
+        "spec.template.spec.volumes.scaleIO.fsType",
+        "spec.template.spec.volumes.scaleIO.storageMode"
+      ],
+      "added": {
+        "spec.template.spec.containers.securityContext.procMount": "string",
+        "spec.template.spec.initContainers.securityContext.procMount": "string",
+        "spec.template.spec.runtimeClassName": "string"
+      },
+      "descriptions": {
+        "metadata.initializers.result.metadata.continue": [
+          123,
+          124
+        ],
+        "spec.template.metadata.initializers.result.metadata.continue": [
+          123,
+          124
+        ],
+        "spec.template.spec.containers.ports.protocol": [
+          125,
+          126
+        ],
+        "spec.template.spec.containers.resources": [
+          127,
+          128
+        ],
+        "spec.template.spec.containers.securityContext.procMount": [
+          null,
+          129
+        ],
+        "spec.template.spec.containers.volumeMounts.mountPropagation": [
+          130,
+          131
+        ],
+        "spec.template.spec.initContainers.ports.protocol": [
+          125,
+          126
+        ],
+        "spec.template.spec.initContainers.resources": [
+          127,
+          128
+        ],
+        "spec.template.spec.initContainers.securityContext.procMount": [
+          null,
+          129
+        ],
+        "spec.template.spec.initContainers.volumeMounts.mountPropagation": [
+          130,
+          131
+        ],
+        "spec.template.spec.runtimeClassName": [
+          null,
+          116
+        ],
+        "spec.template.spec.shareProcessNamespace": [
+          132,
+          8
+        ],
+        "spec.template.spec.volumes.scaleIO.fsType": [
+          133,
+          134
+        ],
+        "spec.template.spec.volumes.scaleIO.storageMode": [
+          135,
+          136
+        ]
+      }
+    },
+    "v1.11.0": {
+      "optional": [
+        "spec.template.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions",
+        "spec.template.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions"
+      ],
+      "descriptionChanged": [
+        "spec.template.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions",
+        "spec.template.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions",
+        "spec.template.spec.volumes.gitRepo"
+      ],
+      "added": {
+        "spec.template.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields": "NodeSelectorRequirement[]",
+        "spec.template.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields": "NodeSelectorRequirement[]",
+        "spec.template.spec.readinessGates": "PodReadinessGate[]",
+        "spec.template.spec.securityContext.sysctls": "Sysctl[]",
+        "spec.template.spec.volumes.cinder.secretRef": "LocalObjectReference",
+        "spec.template.spec.volumes.projected.sources.serviceAccountToken": "ServiceAccountTokenProjection"
+      },
+      "descriptions": {
+        "spec.template.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions": [
+          137,
+          138
+        ],
+        "spec.template.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields": [
+          null,
+          139
+        ],
+        "spec.template.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions": [
+          137,
+          138
+        ],
+        "spec.template.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields": [
+          null,
+          139
+        ],
+        "spec.template.spec.readinessGates": [
+          null,
+          114
+        ],
+        "spec.template.spec.securityContext.sysctls": [
+          null,
+          140
+        ],
+        "spec.template.spec.volumes.cinder.secretRef": [
+          null,
+          141
+        ],
+        "spec.template.spec.volumes.gitRepo": [
+          142,
+          143
+        ],
+        "spec.template.spec.volumes.projected.sources.serviceAccountToken": [
+          null,
+          144
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed.",
+    "Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list.",
+    "Selects a field of the pod: supports metadata.name, metadata.namespace, metadata.labels, metadata.annotations, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP.",
+    "Selects a field of the pod: supports metadata.name, metadata.namespace, metadata.labels, metadata.annotations, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.",
+    "The UserName in Windows to run the entrypoint of the container process. Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. This field is alpha-level and it is only honored by servers that enable the WindowsRunAsUserName feature flag.",
+    "The UserName in Windows to run the entrypoint of the container process. Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. This field is beta-level and may be disabled with the WindowsRunAsUserName feature flag.",
+    "Expanded path within the volume from which the container's volume should be mounted. Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded using the container's environment. Defaults to \"\" (volume's root). SubPathExpr and SubPath are mutually exclusive. This field is beta in 1.15.",
+    "Expanded path within the volume from which the container's volume should be mounted. Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded using the container's environment. Defaults to \"\" (volume's root). SubPathExpr and SubPath are mutually exclusive.",
+    "Share a single process namespace between all of the containers in a pod. When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Default to false. This field is beta-level and may be disabled with the PodShareProcessNamespace feature.",
+    "Share a single process namespace between all of the containers in a pod. When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Default to false.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "CreationTimestamp is a timestamp representing the server time when this object was created. It is not guaranteed to be set in happens-before order across separate operations. Clients may not set this value. It is represented in RFC3339 form and is in UTC.\n\nPopulated by the system. Read-only. Null for lists. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+    "CreationTimestamp is a timestamp representing the server time when this object was created. It is not guaranteed to be set in happens-before order across separate operations. Clients may not set this value. It is represented in RFC3339 form and is in UTC.\n\nPopulated by the system. Read-only. Null for lists. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "DeletionTimestamp is RFC 3339 date and time at which this resource will be deleted. This field is set by the server when a graceful deletion is requested by the user, and is not directly settable by a client. The resource is expected to be deleted (no longer visible from resource lists, and not reachable by name) after the time in this field, once the finalizers list is empty. As long as the finalizers list contains items, deletion is blocked. Once the deletionTimestamp is set, this value may not be unset or be set further into the future, although it may be shortened or the resource may be deleted prior to this time. For example, a user may request that a pod is deleted in 30 seconds. The Kubelet will react by sending a graceful termination signal to the containers in the pod. After that 30 seconds, the Kubelet will send a hard termination signal (SIGKILL) to the container and after cleanup, remove the pod from the API. In the presence of network partitions, this object may still exist after this timestamp, until an administrator or automated process can determine the resource is fully terminated. If not set, graceful deletion of the object has not been requested.\n\nPopulated by the system when a graceful deletion is requested. Read-only. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+    "DeletionTimestamp is RFC 3339 date and time at which this resource will be deleted. This field is set by the server when a graceful deletion is requested by the user, and is not directly settable by a client. The resource is expected to be deleted (no longer visible from resource lists, and not reachable by name) after the time in this field, once the finalizers list is empty. As long as the finalizers list contains items, deletion is blocked. Once the deletionTimestamp is set, this value may not be unset or be set further into the future, although it may be shortened or the resource may be deleted prior to this time. For example, a user may request that a pod is deleted in 30 seconds. The Kubelet will react by sending a graceful termination signal to the containers in the pod. After that 30 seconds, the Kubelet will send a hard termination signal (SIGKILL) to the container and after cleanup, remove the pod from the API. In the presence of network partitions, this object may still exist after this timestamp, until an administrator or automated process can determine the resource is fully terminated. If not set, graceful deletion of the object has not been requested.\n\nPopulated by the system when a graceful deletion is requested. Read-only. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency",
+    "ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.\n\nThis field is alpha and can be changed or removed without notice.",
+    "ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.",
+    "FieldsType is the discriminator for the different fields format and version. There is currently only one possible value: \"FieldsV1\"",
+    "FieldsV1 holds the first JSON version format as described in the \"FieldsV1\" type.",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency",
+    "An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "SelfLink is a URL representing this object. Populated by the system. Read-only.",
+    "SelfLink is a URL representing this object. Populated by the system. Read-only.\n\nDEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is planned to be removed in 1.21 release.",
+    "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+    "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "Specification of the desired behavior of the pod. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status",
+    "Specification of the desired behavior of the pod. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "PreStop is called immediately before a container is terminated due to an API request or management event such as liveness probe failure, preemption, resource contention, etc. The handler is not called if the container crashes or exits. The reason for termination is passed to the handler. The Pod's termination grace period countdown begins before the PreStop hooked is executed. Regardless of the outcome of the handler, the container will eventually terminate within the Pod's termination grace period. Other management of the container blocks until the hook completes or until the termination grace period is reached. More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks",
+    "PreStop is called immediately before a container is terminated due to an API request or management event such as liveness/startup probe failure, preemption, resource contention, etc. The handler is not called if the container crashes or exits. The reason for termination is passed to the handler. The Pod's termination grace period countdown begins before the PreStop hooked is executed. Regardless of the outcome of the handler, the container will eventually terminate within the Pod's termination grace period. Other management of the container blocks until the hook completes or until the termination grace period is reached. More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks",
+    "Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness. Minimum value is 1.",
+    "Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.",
+    "Windows security options.",
+    "The Windows specific settings applied to all containers. If unspecified, the options from the PodSecurityContext will be used. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.",
+    "StartupProbe indicates that the Pod has successfully initialized. If specified, no other probes are executed until this completes successfully. If this probe fails, the Pod will be restarted, just as if the livenessProbe failed. This can be used to provide different probe parameters at the beginning of a Pod's lifecycle, when it might take a long time to load data or warm a cache, than during steady-state operation. This cannot be updated. This is an alpha feature enabled by the StartupProbe feature flag. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes",
+    "List of ephemeral containers run in this pod. Ephemeral containers may be run in an existing pod to perform user-initiated actions such as debugging. This list cannot be specified when creating a pod, and it cannot be modified by updating the pod spec. In order to add an ephemeral container to an existing pod, use the pod's ephemeralcontainers subresource. This field is alpha-level and is only honored by servers that enable the EphemeralContainers feature.",
+    "List of initialization containers belonging to the pod. Init containers are executed in order prior to containers being started. If any init container fails, the pod is considered to have failed and is handled according to its restartPolicy. The name for an init container or normal container must be unique among all containers. Init containers may not have Lifecycle actions, Readiness probes, or Liveness probes. The resourceRequirements of an init container are taken into account during scheduling by finding the highest request/limit for each resource type, and then using the max of of that value or the sum of the normal containers. Limits are applied to init containers in a similar fashion. Init containers cannot currently be added or removed. Cannot be updated. More info: https://kubernetes.io/docs/concepts/workloads/pods/init-containers/",
+    "List of initialization containers belonging to the pod. Init containers are executed in order prior to containers being started. If any init container fails, the pod is considered to have failed and is handled according to its restartPolicy. The name for an init container or normal container must be unique among all containers. Init containers may not have Lifecycle actions, Readiness probes, Liveness probes, or Startup probes. The resourceRequirements of an init container are taken into account during scheduling by finding the highest request/limit for each resource type, and then using the max of of that value or the sum of the normal containers. Limits are applied to init containers in a similar fashion. Init containers cannot currently be added or removed. Cannot be updated. More info: https://kubernetes.io/docs/concepts/workloads/pods/init-containers/",
+    "Overhead represents the resource overhead associated with running a pod for a given RuntimeClass. This field will be autopopulated at admission time by the RuntimeClass admission controller. If the RuntimeClass admission controller is enabled, overhead must not be set in Pod create requests. The RuntimeClass admission controller will reject Pod create requests which have the overhead already set. If RuntimeClass is configured and selected in the PodSpec, Overhead will be set to the value defined in the corresponding RuntimeClass, otherwise it will remain unset and treated as zero. More info: https://git.k8s.io/enhancements/keps/sig-node/20190226-pod-overhead.md This field is alpha-level as of Kubernetes v1.16, and is only honored by servers that enable the PodOverhead feature.",
+    "The Windows specific settings applied to all containers. If unspecified, the options within a container's SecurityContext will be used. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.",
+    "TopologySpreadConstraints describes how a group of pods ought to spread across topology domains. Scheduler will schedule pods in a way which abides by the constraints. This field is alpha-level and is only honored by clusters that enables the EvenPodsSpread feature. All topologySpreadConstraints are ANDed.",
+    "Required: Monitors is a collection of Ceph monitors More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it",
+    "Required: Monitors is a collection of Ceph monitors More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: SecretRef is reference to the authentication secret for User, default is empty. More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: SecretRef is reference to the authentication secret for User, default is empty. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: User is the rados user name, default is admin More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it",
+    "Optional: User is the rados user name, default is admin More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it",
+    "Cinder represents a cinder volume attached and mounted on kubelets host machine More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md",
+    "Cinder represents a cinder volume attached and mounted on kubelets host machine. More info: https://examples.k8s.io/mysql-cinder-pd/README.md",
+    "Filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md",
+    "Filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md",
+    "Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md",
+    "Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/mysql-cinder-pd/README.md",
+    "volume id used to identify the volume in cinder More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md",
+    "volume id used to identify the volume in cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md",
+    "Glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md",
+    "Glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime. More info: https://examples.k8s.io/volumes/glusterfs/README.md",
+    "EndpointsName is the endpoint name that details Glusterfs topology. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod",
+    "EndpointsName is the endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod",
+    "Path is the Glusterfs volume path. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod",
+    "Path is the Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod",
+    "ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod",
+    "ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod",
+    "ISCSI represents an ISCSI Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://releases.k8s.io/HEAD/examples/volumes/iscsi/README.md",
+    "ISCSI represents an ISCSI Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://examples.k8s.io/volumes/iscsi/README.md",
+    "RBD represents a Rados Block Device mount on the host that shares a pod's lifetime. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md",
+    "RBD represents a Rados Block Device mount on the host that shares a pod's lifetime. More info: https://examples.k8s.io/volumes/rbd/README.md",
+    "The rados image name. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it",
+    "The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
+    "Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it",
+    "Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
+    "A collection of Ceph monitors. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it",
+    "A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
+    "The rados pool name. Default is rbd. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it",
+    "The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
+    "ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it",
+    "ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
+    "SecretRef is name of the authentication secret for RBDUser. If provided overrides keyring. Default is nil. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it",
+    "SecretRef is name of the authentication secret for RBDUser. If provided overrides keyring. Default is nil. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
+    "The rados user name. Default is admin. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it",
+    "The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it",
+    "An initializer is a controller which enforces some system invariant at object creation time. This field is a list of initializers that have not yet acted on this object. If nil or empty, this object has been completely initialized. Otherwise, the object is considered uninitialized and is hidden (in list/watch and get calls) from clients that haven't explicitly asked to observe uninitialized objects.\n\nWhen an object is created, the system will populate this list with the current set of initializers. Only privileged users may set or modify this list. Once it is empty, it may not be modified further by any user.\n\nDEPRECATED - initializers are an alpha field and will be removed in v1.15.",
+    "Fields identifies a set of fields.",
+    "remainingItemCount is the number of subsequent items in the list which are not included in this list response. If the list request contained label or field selectors, then the number of remaining items is unknown and the field will be left unset and omitted during serialization. If the list is complete (either because it is not chunking or because this is the last chunk), then there are no more remaining items and this field will be left unset and omitted during serialization. Servers older than v1.15 do not set this field. The intended use of the remainingItemCount is *estimating* the size of a collection. Clients should not rely on the remainingItemCount to be set or to be exact.\n\nThis field is alpha and can be changed or removed without notice.",
+    "Specify whether the ConfigMap or it's key must be defined",
+    "Specify whether the ConfigMap or its key must be defined",
+    "Specify whether the Secret or it's key must be defined",
+    "Specify whether the Secret or its key must be defined",
+    "Expanded path within the volume from which the container's volume should be mounted. Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded using the container's environment. Defaults to \"\" (volume's root). SubPathExpr and SubPath are mutually exclusive. This field is alpha in 1.14.",
+    "PreemptionPolicy is the Policy for preempting pods with lower priority. One of Never, PreemptLowerPriority. Defaults to PreemptLowerPriority if unset. This field is alpha-level and is only honored by servers that enable the NonPreemptingPriority feature.",
+    "RuntimeClassName refers to a RuntimeClass object in the node.k8s.io group, which should be used to run this pod.  If no RuntimeClass resource matches the named class, the pod will not be run. If unset or empty, the \"legacy\" RuntimeClass will be used, which is an implicit class with an empty definition that uses the default runtime handler. More info: https://git.k8s.io/enhancements/keps/sig-node/runtime-class.md This is an alpha feature and may change in the future.",
+    "RuntimeClassName refers to a RuntimeClass object in the node.k8s.io group, which should be used to run this pod.  If no RuntimeClass resource matches the named class, the pod will not be run. If unset or empty, the \"legacy\" RuntimeClass will be used, which is an implicit class with an empty definition that uses the default runtime handler. More info: https://git.k8s.io/enhancements/keps/sig-node/runtime-class.md This is a beta feature as of Kubernetes v1.14.",
+    "Specify whether the ConfigMap or it's keys must be defined",
+    "Specify whether the ConfigMap or its keys must be defined",
+    "Specify whether the Secret or it's keys must be defined",
+    "Specify whether the Secret or its keys must be defined",
+    "If the Labels of a ReplicaSet are empty, they are defaulted to be the same as the Pod(s) that the ReplicaSet manages. Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+    "If the Labels of a ReplicaSet are empty, they are defaulted to be the same as the Pod(s) that the ReplicaSet manages. Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "An initializer is a controller which enforces some system invariant at object creation time. This field is a list of initializers that have not yet acted on this object. If nil or empty, this object has been completely initialized. Otherwise, the object is considered uninitialized and is hidden (in list/watch and get calls) from clients that haven't explicitly asked to observe uninitialized objects.\n\nWhen an object is created, the system will populate this list with the current set of initializers. Only privileged users may set or modify this list. Once it is empty, it may not be modified further by any user.",
+    "Spec defines the specification of the desired behavior of the ReplicaSet. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status",
+    "Spec defines the specification of the desired behavior of the ReplicaSet. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "PreStop is called immediately before a container is terminated. The container is terminated after the handler completes. The reason for termination is passed to the handler. Regardless of the outcome of the handler, the container is eventually terminated. Other management of the container blocks until the hook completes. More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks",
+    "EnableServiceLinks indicates whether information about services should be injected into pod's environment variables, matching the syntax of Docker links.",
+    "EnableServiceLinks indicates whether information about services should be injected into pod's environment variables, matching the syntax of Docker links. Optional: Defaults to true.",
+    "If specified, all readiness gates will be evaluated for pod readiness. A pod is ready when all its containers are ready AND all conditions specified in the readiness gates have status equal to \"True\" More info: https://github.com/kubernetes/community/blob/master/keps/sig-network/0007-pod-ready%2B%2B.md",
+    "If specified, all readiness gates will be evaluated for pod readiness. A pod is ready when all its containers are ready AND all conditions specified in the readiness gates have status equal to \"True\" More info: https://git.k8s.io/enhancements/keps/sig-network/0007-pod-ready%2B%2B.md",
+    "RuntimeClassName refers to a RuntimeClass object in the node.k8s.io group, which should be used to run this pod.  If no RuntimeClass resource matches the named class, the pod will not be run. If unset or empty, the \"legacy\" RuntimeClass will be used, which is an implicit class with an empty definition that uses the default runtime handler. More info: https://github.com/kubernetes/community/blob/master/keps/sig-node/0014-runtime-class.md This is an alpha feature and may change in the future.",
+    "CSI (Container Storage Interface) represents storage that is handled by an external CSI driver (Alpha feature).",
+    "Tenant owning the given Quobyte volume in the Backend Used with dynamically provisioned Quobyte volumes, value is set by the plugin",
+    "Status is the most recently observed status of the ReplicaSet. This data may be out of date by some window of time. Populated by the system. Read-only. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status",
+    "Status is the most recently observed status of the ReplicaSet. This data may be out of date by some window of time. Populated by the system. Read-only. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "volumeDevices is the list of block devices to be used by the container. This is an alpha feature and may change in the future.",
+    "volumeDevices is the list of block devices to be used by the container. This is a beta feature.",
+    "continue may be set if the user set a limit on the number of items returned, and indicates that the server has more data available. The value is opaque and may be used to issue another request to the endpoint that served this list to retrieve the next set of available objects. Continuing a list may not be possible if the server configuration has changed or more than a few minutes have passed. The resourceVersion field returned when using this continue value will be identical to the value in the first response.",
+    "continue may be set if the user set a limit on the number of items returned, and indicates that the server has more data available. The value is opaque and may be used to issue another request to the endpoint that served this list to retrieve the next set of available objects. Continuing a consistent list may not be possible if the server configuration has changed or more than a few minutes have passed. The resourceVersion field returned when using this continue value will be identical to the value in the first response, unless you have received this token from an error message.",
+    "Protocol for port. Must be UDP or TCP. Defaults to \"TCP\".",
+    "Protocol for port. Must be UDP, TCP, or SCTP. Defaults to \"TCP\".",
+    "Compute Resources required by this container. Cannot be updated. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources",
+    "Compute Resources required by this container. Cannot be updated. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/",
+    "procMount denotes the type of proc mount to use for the containers. The default is DefaultProcMount which uses the container runtime defaults for readonly paths and masked paths. This requires the ProcMountType feature flag to be enabled.",
+    "mountPropagation determines how mounts are propagated from the host to container and the other way around. When not set, MountPropagationHostToContainer is used. This field is beta in 1.10.",
+    "mountPropagation determines how mounts are propagated from the host to container and the other way around. When not set, MountPropagationNone is used. This field is beta in 1.10.",
+    "Share a single process namespace between all of the containers in a pod. When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Default to false. This field is alpha-level and is honored only by servers that enable the PodShareProcessNamespace feature.",
+    "Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified.",
+    "Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Default is \"xfs\".",
+    "Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned.",
+    "Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned. Default is ThinProvisioned.",
+    "Required. A list of node selector requirements. The requirements are ANDed.",
+    "A list of node selector requirements by node's labels.",
+    "A list of node selector requirements by node's fields.",
+    "Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch.",
+    "Optional: points to a secret object containing parameters used to connect to OpenStack.",
+    "GitRepo represents a git repository at a particular revision.",
+    "GitRepo represents a git repository at a particular revision. DEPRECATED: GitRepo is deprecated. To provision a container with a git repo, mount an EmptyDir into an InitContainer that clones the repo using git, then mount the EmptyDir into the Pod's container.",
+    "information about the serviceAccountToken data to project"
+  ]
+}

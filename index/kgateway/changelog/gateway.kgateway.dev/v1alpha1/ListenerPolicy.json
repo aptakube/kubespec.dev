@@ -1,0 +1,427 @@
+{
+  "versions": {
+    "v2.4.5": {
+      "added": {
+        "spec.default.httpSettings.mergeSlashes": "boolean",
+        "spec.default.httpSettings.normalizePath": "boolean",
+        "spec.perPort.listener.httpSettings.mergeSlashes": "boolean",
+        "spec.perPort.listener.httpSettings.normalizePath": "boolean"
+      },
+      "descriptions": {
+        "spec.default.httpSettings.mergeSlashes": [
+          null,
+          0
+        ],
+        "spec.default.httpSettings.normalizePath": [
+          null,
+          1
+        ],
+        "spec.perPort.listener.httpSettings.mergeSlashes": [
+          null,
+          0
+        ],
+        "spec.perPort.listener.httpSettings.normalizePath": [
+          null,
+          1
+        ]
+      }
+    },
+    "v2.4.0": {
+      "added": {
+        "spec.default.httpSettings.forwardClientCertDetails": "object",
+        "spec.default.httpSettings.http2ProtocolOptions.allowConnect": "boolean",
+        "spec.default.httpSettings.localReplies": "object",
+        "spec.default.httpSettings.maxRequestsPerConnection": "integer",
+        "spec.default.httpSettings.serverName": "string",
+        "spec.default.transportSocketConnectTimeout": "string",
+        "spec.perPort.listener.httpSettings.forwardClientCertDetails": "object",
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions.allowConnect": "boolean",
+        "spec.perPort.listener.httpSettings.localReplies": "object",
+        "spec.perPort.listener.httpSettings.maxRequestsPerConnection": "integer",
+        "spec.perPort.listener.httpSettings.serverName": "string",
+        "spec.perPort.listener.transportSocketConnectTimeout": "string"
+      },
+      "descriptionChanged": [
+        "spec.default.httpSettings.idleTimeout",
+        "spec.perPort.listener.httpSettings.idleTimeout"
+      ],
+      "descriptions": {
+        "spec.default.httpSettings.forwardClientCertDetails": [
+          null,
+          2
+        ],
+        "spec.default.httpSettings.http2ProtocolOptions.allowConnect": [
+          null,
+          3
+        ],
+        "spec.default.httpSettings.idleTimeout": [
+          4,
+          5
+        ],
+        "spec.default.httpSettings.localReplies": [
+          null,
+          6
+        ],
+        "spec.default.httpSettings.maxRequestsPerConnection": [
+          null,
+          7
+        ],
+        "spec.default.httpSettings.serverName": [
+          null,
+          8
+        ],
+        "spec.default.transportSocketConnectTimeout": [
+          null,
+          9
+        ],
+        "spec.perPort.listener.httpSettings.forwardClientCertDetails": [
+          null,
+          2
+        ],
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions.allowConnect": [
+          null,
+          3
+        ],
+        "spec.perPort.listener.httpSettings.idleTimeout": [
+          4,
+          5
+        ],
+        "spec.perPort.listener.httpSettings.localReplies": [
+          null,
+          6
+        ],
+        "spec.perPort.listener.httpSettings.maxRequestsPerConnection": [
+          null,
+          7
+        ],
+        "spec.perPort.listener.httpSettings.serverName": [
+          null,
+          8
+        ],
+        "spec.perPort.listener.transportSocketConnectTimeout": [
+          null,
+          9
+        ]
+      }
+    },
+    "v2.3.3": {
+      "added": {
+        "spec.default.httpSettings.maxHeadersCount": "integer",
+        "spec.perPort.listener.httpSettings.maxHeadersCount": "integer"
+      },
+      "descriptions": {
+        "spec.default.httpSettings.maxHeadersCount": [
+          null,
+          10
+        ],
+        "spec.perPort.listener.httpSettings.maxHeadersCount": [
+          null,
+          10
+        ]
+      }
+    },
+    "v2.3.2": {
+      "added": {
+        "spec.default.httpSettings.stripHostPortMode": "string",
+        "spec.perPort.listener.httpSettings.stripHostPortMode": "string"
+      },
+      "descriptions": {
+        "spec.default.httpSettings.stripHostPortMode": [
+          null,
+          11
+        ],
+        "spec.perPort.listener.httpSettings.stripHostPortMode": [
+          null,
+          11
+        ]
+      }
+    },
+    "v2.3.0": {
+      "added": {
+        "spec.default.clientCertificateValidation": "object",
+        "spec.default.httpSettings.accessLog.filter.andFilter.runtimeFilter": "object",
+        "spec.default.httpSettings.accessLog.filter.orFilter.runtimeFilter": "object",
+        "spec.default.httpSettings.accessLog.filter.runtimeFilter": "object",
+        "spec.default.httpSettings.http2ProtocolOptions": "object",
+        "spec.default.httpSettings.skipXFFAppend": "boolean",
+        "spec.default.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector.enable": "boolean",
+        "spec.default.httpSettings.uuidRequestIdConfig": "object",
+        "spec.default.httpSettings.xffTrustedCIDRs": "string[]",
+        "spec.default.proxyProtocol.allowRequestsWithoutProxyProtocol": "boolean",
+        "spec.default.tcpKeepalive": "object",
+        "spec.perPort.listener.httpSettings.accessLog.filter.andFilter.runtimeFilter": "object",
+        "spec.perPort.listener.httpSettings.accessLog.filter.orFilter.runtimeFilter": "object",
+        "spec.perPort.listener.httpSettings.accessLog.filter.runtimeFilter": "object",
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions": "object",
+        "spec.perPort.listener.httpSettings.skipXFFAppend": "boolean",
+        "spec.perPort.listener.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector.enable": "boolean",
+        "spec.perPort.listener.httpSettings.uuidRequestIdConfig": "object",
+        "spec.perPort.listener.httpSettings.xffTrustedCIDRs": "string[]",
+        "spec.perPort.listener.proxyProtocol.allowRequestsWithoutProxyProtocol": "boolean",
+        "spec.perPort.listener.tcpKeepalive": "object",
+        "spec.targetRefs.sectionName": "string",
+        "spec.targetSelectors.sectionName": "string"
+      },
+      "descriptionChanged": [
+        "spec.default.httpSettings",
+        "spec.default.httpSettings.accessLog.filter.andFilter.headerFilter.header.value",
+        "spec.default.httpSettings.accessLog.filter.headerFilter.header.value",
+        "spec.default.httpSettings.accessLog.filter.orFilter.headerFilter.header.value",
+        "spec.default.httpSettings.earlyRequestHeaderModifier.add.value",
+        "spec.default.httpSettings.earlyRequestHeaderModifier.set.value",
+        "spec.default.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector",
+        "spec.default.httpSettings.useRemoteAddress",
+        "spec.default.httpSettings.xffNumTrustedHops",
+        "spec.default.proxyProtocol",
+        "spec.perPort.listener.httpSettings",
+        "spec.perPort.listener.httpSettings.accessLog.filter.andFilter.headerFilter.header.value",
+        "spec.perPort.listener.httpSettings.accessLog.filter.headerFilter.header.value",
+        "spec.perPort.listener.httpSettings.accessLog.filter.orFilter.headerFilter.header.value",
+        "spec.perPort.listener.httpSettings.earlyRequestHeaderModifier.add.value",
+        "spec.perPort.listener.httpSettings.earlyRequestHeaderModifier.set.value",
+        "spec.perPort.listener.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector",
+        "spec.perPort.listener.httpSettings.useRemoteAddress",
+        "spec.perPort.listener.httpSettings.xffNumTrustedHops",
+        "spec.perPort.listener.proxyProtocol"
+      ],
+      "removed": {
+        "spec.default.httpSettings.maxHeadersCount": "integer",
+        "spec.perPort.listener.httpSettings.maxHeadersCount": "integer"
+      },
+      "descriptions": {
+        "spec.default.clientCertificateValidation": [
+          null,
+          12
+        ],
+        "spec.default.httpSettings": [
+          13,
+          14
+        ],
+        "spec.default.httpSettings.accessLog.filter.andFilter.headerFilter.header.value": [
+          15,
+          16
+        ],
+        "spec.default.httpSettings.accessLog.filter.andFilter.runtimeFilter": [
+          null,
+          17
+        ],
+        "spec.default.httpSettings.accessLog.filter.headerFilter.header.value": [
+          15,
+          16
+        ],
+        "spec.default.httpSettings.accessLog.filter.orFilter.headerFilter.header.value": [
+          15,
+          16
+        ],
+        "spec.default.httpSettings.accessLog.filter.orFilter.runtimeFilter": [
+          null,
+          17
+        ],
+        "spec.default.httpSettings.accessLog.filter.runtimeFilter": [
+          null,
+          17
+        ],
+        "spec.default.httpSettings.earlyRequestHeaderModifier.add.value": [
+          15,
+          16
+        ],
+        "spec.default.httpSettings.earlyRequestHeaderModifier.set.value": [
+          15,
+          16
+        ],
+        "spec.default.httpSettings.http2ProtocolOptions": [
+          null,
+          18
+        ],
+        "spec.default.httpSettings.skipXFFAppend": [
+          null,
+          19
+        ],
+        "spec.default.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector": [
+          20,
+          21
+        ],
+        "spec.default.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector.enable": [
+          null,
+          22
+        ],
+        "spec.default.httpSettings.useRemoteAddress": [
+          23,
+          24
+        ],
+        "spec.default.httpSettings.uuidRequestIdConfig": [
+          null,
+          25
+        ],
+        "spec.default.httpSettings.xffNumTrustedHops": [
+          26,
+          27
+        ],
+        "spec.default.httpSettings.xffTrustedCIDRs": [
+          null,
+          28
+        ],
+        "spec.default.proxyProtocol": [
+          29,
+          30
+        ],
+        "spec.default.proxyProtocol.allowRequestsWithoutProxyProtocol": [
+          null,
+          31
+        ],
+        "spec.default.tcpKeepalive": [
+          null,
+          32
+        ],
+        "spec.perPort.listener.httpSettings": [
+          13,
+          14
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.filter.andFilter.headerFilter.header.value": [
+          15,
+          16
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.filter.andFilter.runtimeFilter": [
+          null,
+          17
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.filter.headerFilter.header.value": [
+          15,
+          16
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.filter.orFilter.headerFilter.header.value": [
+          15,
+          16
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.filter.orFilter.runtimeFilter": [
+          null,
+          17
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.filter.runtimeFilter": [
+          null,
+          17
+        ],
+        "spec.perPort.listener.httpSettings.earlyRequestHeaderModifier.add.value": [
+          15,
+          16
+        ],
+        "spec.perPort.listener.httpSettings.earlyRequestHeaderModifier.set.value": [
+          15,
+          16
+        ],
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions": [
+          null,
+          18
+        ],
+        "spec.perPort.listener.httpSettings.skipXFFAppend": [
+          null,
+          19
+        ],
+        "spec.perPort.listener.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector": [
+          20,
+          21
+        ],
+        "spec.perPort.listener.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector.enable": [
+          null,
+          22
+        ],
+        "spec.perPort.listener.httpSettings.useRemoteAddress": [
+          23,
+          24
+        ],
+        "spec.perPort.listener.httpSettings.uuidRequestIdConfig": [
+          null,
+          25
+        ],
+        "spec.perPort.listener.httpSettings.xffNumTrustedHops": [
+          26,
+          27
+        ],
+        "spec.perPort.listener.httpSettings.xffTrustedCIDRs": [
+          null,
+          28
+        ],
+        "spec.perPort.listener.proxyProtocol": [
+          29,
+          30
+        ],
+        "spec.perPort.listener.proxyProtocol.allowRequestsWithoutProxyProtocol": [
+          null,
+          31
+        ],
+        "spec.perPort.listener.tcpKeepalive": [
+          null,
+          32
+        ],
+        "spec.targetRefs.sectionName": [
+          null,
+          33
+        ],
+        "spec.targetSelectors.sectionName": [
+          null,
+          33
+        ],
+        "spec.default.httpSettings.maxHeadersCount": [
+          10,
+          null
+        ],
+        "spec.perPort.listener.httpSettings.maxHeadersCount": [
+          10,
+          null
+        ]
+      }
+    },
+    "v2.2.6": {
+      "added": {
+        "spec.default.httpSettings.maxHeadersCount": "integer",
+        "spec.perPort.listener.httpSettings.maxHeadersCount": "integer"
+      },
+      "descriptions": {
+        "spec.default.httpSettings.maxHeadersCount": [
+          null,
+          10
+        ],
+        "spec.perPort.listener.httpSettings.maxHeadersCount": [
+          null,
+          10
+        ]
+      }
+    }
+  },
+  "texts": [
+    "MergeSlashes determines whether the connection manager merges adjacent slashes in the request\npath before routing. This defaults to true. Disable this if a backend (e.g. an S3-compatible\nobject store) relies on repeated slashes in the path having meaning, such as object keys that\ncontain \"//\".\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-merge-slashes",
+    "NormalizePath determines whether the connection manager normalizes the path per RFC 3986 before\nrouting, e.g. collapsing `.` and `..` segments and decoding percent-encoded characters. This\ndefaults to true. Disable this if a backend (e.g. an S3-compatible object store) needs to see\nthe original, unnormalized request path.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-normalize-path",
+    "ForwardClientCertDetails configures how Envoy handles the x-forwarded-client-cert (XFCC)\nheader and which parts of the downstream client certificate are forwarded to upstream\nbackends. Most modes only have effect on listeners where mTLS is configured. The exceptions\nare Sanitize, which strips XFCC unconditionally, and AlwaysForwardOnly, which forwards XFCC\nunconditionally; on a non-mTLS listener under any other mode the setting is a no-op.\nSee: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-forward-client-cert-details",
+    "AllowConnect allows proxying of WebSocket and other upgrades over HTTP/2 by\nenabling Envoy to handle Extended CONNECT requests (RFC 8441) on the downstream\nconnection. This is required for WebSocket-over-HTTP/2 when the listener advertises\nh2 in its ALPN; otherwise user agents that use Extended CONNECT (e.g. Firefox) fail\nto establish WebSocket connections.\nDefaults to false.",
+    "IdleTimeout is the idle timeout for connnections.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/protocol.proto#envoy-v3-api-msg-config-core-v3-httpprotocoloptions",
+    "IdleTimeout is the idle timeout for connections.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/protocol.proto#envoy-v3-api-msg-config-core-v3-httpprotocoloptions",
+    "LocalReplies configures how Envoy's local replies are formatted etc.",
+    "MaxRequestsPerConnection sets the maximum number of requests served over a single downstream\nkeepalive connection. When the limit is reached, Envoy closes the connection, which forces\nclients to reconnect. This allows L4 load balancers like AWS NLB to rebalance long-lived\nHTTP/2 and gRPC connections across gateway pods.\nIf set to 0 or unspecified, defaults to unlimited.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/protocol.proto#envoy-v3-api-field-config-core-v3-httpprotocoloptions-max-requests-per-connection",
+    "ServerName determines the value of the server header.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-server-name",
+    "TransportSocketConnectTimeout is the timeout for the transport socket to complete after a new connection is accepted.\nIf the timeout fires, the connection is closed. Setting this protects Envoy from clients that open connections and\nthen never complete the TLS handshake. Applied to every filter chain on the listener.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/listener/v3/listener_components.proto#envoy-v3-api-field-config-listener-v3-filterchain-transport-socket-connect-timeout",
+    "MaxHeadersCount sets the maximum number of headers allowed in a request.\nDownstream requests that exceed this limit will receive a 431 response for HTTP/1.x and a\nstream reset for HTTP/2. If unset, defaults to Envoy's built-in default of 100.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/protocol.proto#envoy-v3-api-field-config-core-v3-httpprotocoloptions-max-headers-count",
+    "StripHostPortMode determines whether, and under what conditions, Envoy will strip the port\nfrom the Host/authority header. StripMatchingHostPort strips the port only if it matches\nthe listener's own port. StripAnyHostPort strips the port unconditionally.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-strip-matching-host-port\nSee also: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-strip-any-host-port",
+    "ClientCertificateValidation configures mutual TLS (mTLS) client certificate validation for the listener.\nThis enables per-listener configuration of CA certificates for client certificate validation,\nallowing different listeners on the same port to enforce different mTLS trust boundaries.\nWhen configured on a ListenerPolicy targeting a specific listener (via sectionName),\nit overrides any Gateway-level mTLS configuration for that listener.\n\nSecurity Note: Per-listener CA certificate validation can be bypassed in scenarios where\nwildcard listeners (e.g., *.example.com) overlap with more specific hostnames on the same port,\ndue to TLS connection coalescing. For deployments with non-overlapping hostnames per listener,\nthis security concern does not apply. See GEP-91 and GEP-3567 for more details.\nReference: https://gateway-api.sigs.k8s.io/geps/gep-91/\nReference: https://github.com/kubernetes-sigs/gateway-api/issues/3567",
+    "HTTPListenerPolicy is intended to be used for configuring the Envoy `HttpConnectionManager` and any other config or policy\nthat should map 1-to-1 with a given HTTP listener, such as the Envoy health check HTTP filter.",
+    "HTTPSettings is intended to be used for configuring the Envoy `HttpConnectionManager` and any other config or policy\nthat should map 1-to-1 with a given HTTP listener, such as the Envoy health check HTTP filter.",
+    "Value is the value of HTTP Header to be matched.",
+    "Value is the value of HTTP Header to be matched.\n<gateway:experimental:description>\nMust consist of printable US-ASCII characters, optionally separated\nby single tabs or spaces. See: https://tools.ietf.org/html/rfc7230#section-3.2\n</gateway:experimental:description>\n\n<gateway:experimental:validation:Pattern=`^[!-~]+([\\t ]?[!-~]+)*$`>",
+    "Filters for random sampling of access logs.\nBased on: https://www.envoyproxy.io/docs/envoy/v1.33.0/api-v3/config/accesslog/v3/accesslog.proto#config-accesslog-v3-runtimefilter",
+    "Http2ProtocolOptions configures downstream HTTP/2 behavior on the listener's\nHttpConnectionManager.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/protocol.proto#config-core-v3-http2protocoloptions",
+    "SkipXffAppend specifies whether to skip adding the downstream's remote IP address to the X-Forwarded-For HTTP header.\nNote: If omitted, this effectively will default to true when UseRemoteAddress is false, such that Envoy acts as a \"transparent proxy\".\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-skip-xff-append",
+    "EnvironmentResourceDetectorConfig specified the EnvironmentResourceDetector",
+    "EnvironmentResourceDetector sets OpenTelemetry resource attributes from the OTEL_RESOURCE_ATTRIBUTES\nenvironment variable in the Envoy container.\nDefault enabled if not set. If multiple are set, the last will take precedence.",
+    "Enable controls whether the EnvironmentResourceDetector is used.",
+    "UseRemoteAddress determines whether to use the remote address for the original client.\nNote: If this field is omitted, it will fallback to the default value of 'true', which we set for all Envoy HCMs.\nThus, setting this explicitly to true is unnecessary (but will not cause any harm).\nWhen true, Envoy will use the remote address of the connection as the client address.\nWhen false, Envoy will use the X-Forwarded-For header to determine the client address.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-use-remote-address",
+    "UseRemoteAddress determines whether to use the remote address for the original client.\nNote: If this field is omitted, it will fallback to the default value of 'true', which we set for all Envoy HCMs.\nThus, setting this explicitly to true is unnecessary (but will not cause any harm).\nWhen true, Envoy will use the remote address of the connection as the client address.\nWhen false, Envoy will use the X-Forwarded-For header to determine the client address. Furthermore, SkipXffAppend will implicitly be set to true unless explicitly configured.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-use-remote-address",
+    "UuidRequestIdConfig configures the behavior of the UUID request ID extension.\nThis extension sets the x-request-id header to a UUID value.",
+    "XffNumTrustedHops is the number of additional ingress proxy hops from the right side of the X-Forwarded-For HTTP header to trust when determining the origin client's IP address.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-xff-num-trusted-hops",
+    "XffNumTrustedHops is the number of additional ingress proxy hops from the right side of the X-Forwarded-For HTTP header to trust when determining the origin client's IP address.\nThis is mutually exclusive with XffTrustedCIDRs.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-xff-num-trusted-hops",
+    "XffTrustedCIDRs are ranges of IPs that may appear in the X-Forwarded-For HTTP header and are trusted when determining the origin client's IP address.\nThis is mutually exclusive with XffNumTrustedHops and requires UseRemoteAddress to be set to false.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/http/original_ip_detection/xff/v3/xff.proto#envoy-v3-api-field-extensions-http-original-ip-detection-xff-v3-xffconfig-xff-trusted-cidrs",
+    "ProxyProtocol configures the PROXY protocol listener filter.\nWhen set, Envoy will expect connections to include the PROXY protocol header.\nThis is commonly used when kgateway is behind a load balancer that preserves client IP information.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/listener/proxy_protocol/v3/proxy_protocol.proto",
+    "ProxyProtocol configures the PROXY protocol listener filter.\nBy default, when set, Envoy will require connections to include the PROXY\nprotocol header. This behavior can be relaxed by setting\nallowRequestsWithoutProxyProtocol to true, which allows the listener to\nalso accept connections without the PROXY protocol header.\nThis is commonly used when kgateway is behind a load balancer that preserves client IP information.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/listener/proxy_protocol/v3/proxy_protocol.proto",
+    "AllowRequestsWithoutProxyProtocol, when true, configures the PROXY protocol\nlistener filter to accept connections that do not include a PROXY protocol\nheader in addition to those that do. This allows a single listener to serve\nmixed traffic, e.g. PROXY-preserving load balancer traffic plus direct\nin-cluster traffic on the same port.\n\nSecurity: accepting connections without a PROXY header is non-conformant\nwith the PROXY protocol spec and allows clients to spoof the perceived\nsource address. Only enable this when every source that can reach the\nlistener is trusted. See\nhttps://www.haproxy.org/download/2.1/doc/proxy-protocol.txt.\n\nDefaults to false.",
+    "TCPKeepalive configures OS-level TCP keepalive checks for downstream client connections accepted by this listener.",
+    "The section name of the target resource."
+  ]
+}

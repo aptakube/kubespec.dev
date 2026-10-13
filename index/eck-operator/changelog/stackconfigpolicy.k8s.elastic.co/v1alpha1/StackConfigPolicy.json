@@ -1,0 +1,222 @@
+{
+  "versions": {
+    "v3.5.0": {
+      "added": {
+        "spec.elasticsearch.securityRoles": "object",
+        "spec.variablesFrom": "object[]"
+      },
+      "descriptions": {
+        "spec.elasticsearch.securityRoles": [
+          null,
+          0
+        ],
+        "spec.variablesFrom": [
+          null,
+          1
+        ]
+      }
+    },
+    "v3.3.0": {
+      "added": {
+        "spec.weight": "integer"
+      },
+      "descriptionChanged": [
+        "status.resourcesStatuses"
+      ],
+      "descriptions": {
+        "spec.weight": [
+          null,
+          2
+        ],
+        "status.resourcesStatuses": [
+          3,
+          4
+        ]
+      }
+    },
+    "v2.12.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.elasticsearch.secureSettings.entries",
+        "spec.elasticsearch.secureSettings.entries.path",
+        "spec.kibana.secureSettings.entries",
+        "spec.kibana.secureSettings.entries.path",
+        "spec.resourceSelector",
+        "spec.resourceSelector.matchExpressions.operator",
+        "spec.resourceSelector.matchExpressions.values",
+        "spec.resourceSelector.matchLabels",
+        "spec.secureSettings.entries",
+        "spec.secureSettings.entries.path",
+        "status.details.currentVersion",
+        "status.details.expectedVersion",
+        "status.resourcesStatuses",
+        "status.resourcesStatuses.currentVersion",
+        "status.resourcesStatuses.expectedVersion"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          5,
+          6
+        ],
+        "kind": [
+          7,
+          8
+        ],
+        "spec.elasticsearch.secureSettings.entries": [
+          9,
+          10
+        ],
+        "spec.elasticsearch.secureSettings.entries.path": [
+          11,
+          12
+        ],
+        "spec.kibana.secureSettings.entries": [
+          9,
+          10
+        ],
+        "spec.kibana.secureSettings.entries.path": [
+          11,
+          12
+        ],
+        "spec.resourceSelector": [
+          13,
+          14
+        ],
+        "spec.resourceSelector.matchExpressions.operator": [
+          15,
+          16
+        ],
+        "spec.resourceSelector.matchExpressions.values": [
+          17,
+          18
+        ],
+        "spec.resourceSelector.matchLabels": [
+          19,
+          20
+        ],
+        "spec.secureSettings.entries": [
+          9,
+          10
+        ],
+        "spec.secureSettings.entries.path": [
+          11,
+          12
+        ],
+        "status.details.currentVersion": [
+          21,
+          22
+        ],
+        "status.details.expectedVersion": [
+          23,
+          24
+        ],
+        "status.resourcesStatuses": [
+          25,
+          3
+        ],
+        "status.resourcesStatuses.currentVersion": [
+          21,
+          22
+        ],
+        "status.resourcesStatuses.expectedVersion": [
+          23,
+          24
+        ]
+      }
+    },
+    "v2.11.1": {
+      "optional": [
+        "status.details"
+      ],
+      "added": {
+        "status.resourcesStatuses": "map[string]object"
+      },
+      "descriptions": {
+        "status.details": [
+          null,
+          26
+        ],
+        "status.resourcesStatuses": [
+          null,
+          25
+        ]
+      }
+    },
+    "v2.11.0": {
+      "added": {
+        "spec.elasticsearch.config": "object",
+        "spec.elasticsearch.secretMounts": "object[]",
+        "spec.elasticsearch.secureSettings": "object[]",
+        "spec.kibana": "object",
+        "status.details": "map[string]map[string]object"
+      },
+      "descriptionChanged": [
+        "spec.secureSettings"
+      ],
+      "removed": {
+        "status.resourcesStatuses": "map[string]object"
+      },
+      "descriptions": {
+        "spec.elasticsearch.config": [
+          null,
+          27
+        ],
+        "spec.elasticsearch.secretMounts": [
+          null,
+          28
+        ],
+        "spec.elasticsearch.secureSettings": [
+          null,
+          29
+        ],
+        "spec.secureSettings": [
+          null,
+          30
+        ],
+        "status.details": [
+          null,
+          26
+        ],
+        "status.resourcesStatuses": [
+          31,
+          null
+        ]
+      }
+    }
+  },
+  "texts": [
+    "SecurityRoles holds the Role definitions (/_security/role).\nRoles defined here are merged into the roles.yml file mounted into Elasticsearch pods.",
+    "VariablesFrom references ConfigMaps or Secrets from which substitution variables are loaded.\nEach source's keys become variables that can be referenced as ${VAR} in the Elasticsearch and Kibana spec fields.\nSources without a namespace default to the policy's namespace; cross-namespace sources are only\npermitted for policies deployed in the operator namespace.\nLater entries take precedence over earlier ones on key conflicts.\nIf no sources are specified, no variable substitution is performed and ${VAR} expressions are left as-is.\nOnly keys present in a source are substituted; any other ${...} expression (including native\nES references such as ${ENV} or ${foo.bar}) is left verbatim so it can be resolved by\nElasticsearch at runtime. Use ${VAR:-default} to supply a fallback for an optional key.\nValues from sources are JSON-escaped before substitution and are limited to string-typed\nfields: numeric, boolean, and object fields cannot be templated because ConfigMap and Secret\nvalues are always strings and the intended target type cannot be inferred.",
+    "Weight determines the priority of this policy when multiple policies target the same resource.\nHigher weight values take precedence. Defaults to 0.",
+    "ResourcesStatuses holds the status for each resource to be configured.\nDeprecated: Details is used to store the status of resources from ECK 2.11",
+    "ResourcesStatuses holds the status for each resource to be configured.\n\nDeprecated: Details is used to store the status of resources from ECK 2.11",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Entries define how to project each key-value pair in the secret to filesystem paths. If not defined, all keys will be projected to similarly named paths in the filesystem. If defined, only the specified keys will be projected to the corresponding paths.",
+    "Entries define how to project each key-value pair in the secret to filesystem paths.\nIf not defined, all keys will be projected to similarly named paths in the filesystem.\nIf defined, only the specified keys will be projected to the corresponding paths.",
+    "Path is the relative file path to map the key to. Path must not be an absolute file path and must not contain any \"..\" components.",
+    "Path is the relative file path to map the key to.\nPath must not be an absolute file path and must not contain any \"..\" components.",
+    "A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects.",
+    "A label selector is a label query over a set of resources. The result of matchLabels and\nmatchExpressions are ANDed. An empty label selector matches all objects. A null\nlabel selector matches no objects.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "CurrentVersion denotes the current version of filesettings applied to the Elasticsearch cluster This field does not apply to Kibana resources",
+    "CurrentVersion denotes the current version of filesettings applied to the Elasticsearch cluster\nThis field does not apply to Kibana resources",
+    "ExpectedVersion denotes the expected version of filesettings that should be applied to the Elasticsearch cluster This field does not apply to Kibana resources",
+    "ExpectedVersion denotes the expected version of filesettings that should be applied to the Elasticsearch cluster\nThis field does not apply to Kibana resources",
+    "ResourcesStatuses holds the status for each resource to be configured. Deprecated: Details is used to store the status of resources from ECK 2.11",
+    "Details holds the status details for each resource to be configured.",
+    "Config holds the settings that go into elasticsearch.yml.",
+    "SecretMounts are additional Secrets that need to be mounted into the Elasticsearch pods.",
+    "SecureSettings are additional Secrets that contain data to be configured to Elasticsearch's keystore.",
+    "Deprecated: SecureSettings only applies to Elasticsearch and is deprecated. It must be set per application instead.",
+    "ResourcesStatuses holds the status for each resource to be configured."
+  ]
+}

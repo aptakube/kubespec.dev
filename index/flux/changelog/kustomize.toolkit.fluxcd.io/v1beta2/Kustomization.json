@@ -1,0 +1,580 @@
+{
+  "versions": {
+    "v2.7.0": {
+      "added": {
+        "spec.kubeConfig.configMapRef": "object"
+      },
+      "optional": [
+        "spec.kubeConfig.secretRef"
+      ],
+      "descriptionChanged": [
+        "spec.kubeConfig.secretRef"
+      ],
+      "descriptions": {
+        "spec.kubeConfig.configMapRef": [
+          null,
+          0
+        ],
+        "spec.kubeConfig.secretRef": [
+          1,
+          2
+        ]
+      }
+    },
+    "v2.4.0": {
+      "descriptionChanged": [
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "status.conditions.type": [
+          3,
+          4
+        ]
+      }
+    },
+    "v2.3.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.commonMetadata",
+        "spec.dependsOn",
+        "spec.force",
+        "spec.images",
+        "spec.images.digest",
+        "spec.kubeConfig",
+        "spec.kubeConfig.secretRef",
+        "spec.patches",
+        "spec.patches.patch",
+        "spec.patches.target.annotationSelector",
+        "spec.patches.target.group",
+        "spec.patches.target.kind",
+        "spec.patches.target.labelSelector",
+        "spec.patches.target.version",
+        "spec.patchesJson6902",
+        "spec.patchesJson6902.patch.from",
+        "spec.patchesJson6902.patch.op",
+        "spec.patchesJson6902.patch.path",
+        "spec.patchesJson6902.patch.value",
+        "spec.patchesJson6902.target.annotationSelector",
+        "spec.patchesJson6902.target.group",
+        "spec.patchesJson6902.target.kind",
+        "spec.patchesJson6902.target.labelSelector",
+        "spec.patchesJson6902.target.version",
+        "spec.patchesStrategicMerge",
+        "spec.path",
+        "spec.postBuild",
+        "spec.postBuild.substitute",
+        "spec.postBuild.substituteFrom",
+        "spec.postBuild.substituteFrom.name",
+        "spec.postBuild.substituteFrom.optional",
+        "spec.retryInterval",
+        "spec.serviceAccountName",
+        "spec.suspend",
+        "spec.targetNamespace",
+        "spec.timeout",
+        "spec.wait",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type",
+        "status.inventory.entries.id",
+        "status.lastAppliedRevision",
+        "status.lastHandledReconcileAt"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          5,
+          6
+        ],
+        "kind": [
+          7,
+          8
+        ],
+        "spec.commonMetadata": [
+          9,
+          10
+        ],
+        "spec.dependsOn": [
+          11,
+          12
+        ],
+        "spec.force": [
+          13,
+          14
+        ],
+        "spec.images": [
+          15,
+          16
+        ],
+        "spec.images.digest": [
+          17,
+          18
+        ],
+        "spec.kubeConfig": [
+          19,
+          20
+        ],
+        "spec.kubeConfig.secretRef": [
+          21,
+          1
+        ],
+        "spec.patches": [
+          22,
+          23
+        ],
+        "spec.patches.patch": [
+          24,
+          25
+        ],
+        "spec.patches.target.annotationSelector": [
+          26,
+          27
+        ],
+        "spec.patches.target.group": [
+          28,
+          29
+        ],
+        "spec.patches.target.kind": [
+          30,
+          31
+        ],
+        "spec.patches.target.labelSelector": [
+          32,
+          33
+        ],
+        "spec.patches.target.version": [
+          34,
+          35
+        ],
+        "spec.patchesJson6902": [
+          36,
+          37
+        ],
+        "spec.patchesJson6902.patch.from": [
+          38,
+          39
+        ],
+        "spec.patchesJson6902.patch.op": [
+          40,
+          41
+        ],
+        "spec.patchesJson6902.patch.path": [
+          42,
+          43
+        ],
+        "spec.patchesJson6902.patch.value": [
+          44,
+          45
+        ],
+        "spec.patchesJson6902.target.annotationSelector": [
+          26,
+          27
+        ],
+        "spec.patchesJson6902.target.group": [
+          28,
+          29
+        ],
+        "spec.patchesJson6902.target.kind": [
+          30,
+          31
+        ],
+        "spec.patchesJson6902.target.labelSelector": [
+          32,
+          33
+        ],
+        "spec.patchesJson6902.target.version": [
+          34,
+          35
+        ],
+        "spec.patchesStrategicMerge": [
+          46,
+          47
+        ],
+        "spec.path": [
+          48,
+          49
+        ],
+        "spec.postBuild": [
+          50,
+          51
+        ],
+        "spec.postBuild.substitute": [
+          52,
+          53
+        ],
+        "spec.postBuild.substituteFrom": [
+          54,
+          55
+        ],
+        "spec.postBuild.substituteFrom.name": [
+          56,
+          57
+        ],
+        "spec.postBuild.substituteFrom.optional": [
+          58,
+          59
+        ],
+        "spec.retryInterval": [
+          60,
+          61
+        ],
+        "spec.serviceAccountName": [
+          62,
+          63
+        ],
+        "spec.suspend": [
+          64,
+          65
+        ],
+        "spec.targetNamespace": [
+          66,
+          67
+        ],
+        "spec.timeout": [
+          68,
+          69
+        ],
+        "spec.wait": [
+          70,
+          71
+        ],
+        "status.conditions.lastTransitionTime": [
+          72,
+          73
+        ],
+        "status.conditions.message": [
+          74,
+          75
+        ],
+        "status.conditions.observedGeneration": [
+          76,
+          77
+        ],
+        "status.conditions.reason": [
+          78,
+          79
+        ],
+        "status.conditions.type": [
+          80,
+          3
+        ],
+        "status.inventory.entries.id": [
+          81,
+          82
+        ],
+        "status.lastAppliedRevision": [
+          83,
+          84
+        ],
+        "status.lastHandledReconcileAt": [
+          85,
+          86
+        ]
+      }
+    },
+    "v2.0.0": {
+      "added": {
+        "spec.commonMetadata": "object"
+      },
+      "descriptionChanged": [
+        "spec.components"
+      ],
+      "required": [
+        "spec.patches.patch"
+      ],
+      "descriptions": {
+        "spec.commonMetadata": [
+          null,
+          9
+        ],
+        "spec.components": [
+          87,
+          88
+        ],
+        "spec.patches.patch": [
+          null,
+          24
+        ]
+      }
+    },
+    "v0.41.0": {
+      "descriptionChanged": [
+        "status.lastAppliedRevision"
+      ],
+      "descriptions": {
+        "status.lastAppliedRevision": [
+          89,
+          83
+        ]
+      }
+    },
+    "v0.38.0": {
+      "added": {
+        "spec.components": "string[]"
+      },
+      "descriptions": {
+        "spec.components": [
+          null,
+          87
+        ]
+      }
+    },
+    "v0.36.0": {
+      "required": [
+        "spec.kubeConfig.secretRef"
+      ],
+      "descriptionChanged": [
+        "spec.kubeConfig.secretRef"
+      ],
+      "descriptions": {
+        "spec.kubeConfig.secretRef": [
+          90,
+          21
+        ]
+      }
+    },
+    "v0.30.0": {
+      "descriptionChanged": [
+        "spec.kubeConfig.secretRef",
+        "spec.kubeConfig.secretRef.name"
+      ],
+      "added": {
+        "spec.kubeConfig.secretRef.key": "string"
+      },
+      "descriptions": {
+        "spec.kubeConfig.secretRef": [
+          91,
+          90
+        ],
+        "spec.kubeConfig.secretRef.key": [
+          null,
+          92
+        ],
+        "spec.kubeConfig.secretRef.name": [
+          93,
+          94
+        ]
+      }
+    },
+    "v0.29.0": {
+      "descriptionChanged": [
+        "spec.kubeConfig"
+      ],
+      "descriptions": {
+        "spec.kubeConfig": [
+          95,
+          19
+        ]
+      }
+    },
+    "v0.28.0": {
+      "descriptionChanged": [
+        "spec.decryption.secretRef.name",
+        "spec.dependsOn",
+        "spec.dependsOn.name",
+        "spec.dependsOn.namespace",
+        "spec.healthChecks.apiVersion",
+        "spec.healthChecks.kind",
+        "spec.healthChecks.name",
+        "spec.healthChecks.namespace",
+        "spec.kubeConfig.secretRef.name",
+        "status.lastHandledReconcileAt"
+      ],
+      "descriptions": {
+        "spec.decryption.secretRef.name": [
+          96,
+          93
+        ],
+        "spec.dependsOn": [
+          97,
+          11
+        ],
+        "spec.dependsOn.name": [
+          98,
+          93
+        ],
+        "spec.dependsOn.namespace": [
+          99,
+          100
+        ],
+        "spec.healthChecks.apiVersion": [
+          101,
+          102
+        ],
+        "spec.healthChecks.kind": [
+          103,
+          104
+        ],
+        "spec.healthChecks.name": [
+          96,
+          93
+        ],
+        "spec.healthChecks.namespace": [
+          105,
+          100
+        ],
+        "spec.kubeConfig.secretRef.name": [
+          96,
+          93
+        ],
+        "status.lastHandledReconcileAt": [
+          106,
+          85
+        ]
+      }
+    },
+    "v0.27.0": {
+      "added": {
+        "spec.postBuild.substituteFrom.optional": "boolean"
+      },
+      "descriptions": {
+        "spec.postBuild.substituteFrom.optional": [
+          null,
+          58
+        ]
+      }
+    },
+    "v0.24.1": {
+      "descriptionChanged": [
+        "spec.patches.patch",
+        "spec.patchesJson6902.patch.from",
+        "spec.patchesJson6902.patch.op",
+        "spec.patchesJson6902.patch.path",
+        "spec.patchesJson6902.patch.value"
+      ],
+      "descriptions": {
+        "spec.patches.patch": [
+          107,
+          24
+        ],
+        "spec.patchesJson6902.patch.from": [
+          null,
+          38
+        ],
+        "spec.patchesJson6902.patch.op": [
+          null,
+          40
+        ],
+        "spec.patchesJson6902.patch.path": [
+          null,
+          42
+        ],
+        "spec.patchesJson6902.patch.value": [
+          null,
+          44
+        ]
+      }
+    }
+  },
+  "texts": [
+    "ConfigMapRef holds an optional name of a ConfigMap that contains\nthe following keys:\n\n- `provider`: the provider to use. One of `aws`, `azure`, `gcp`, or\n   `generic`. Required.\n- `cluster`: the fully qualified resource name of the Kubernetes\n   cluster in the cloud provider API. Not used by the `generic`\n   provider. Required when one of `address` or `ca.crt` is not set.\n- `address`: the address of the Kubernetes API server. Required\n   for `generic`. For the other providers, if not specified, the\n   first address in the cluster resource will be used, and if\n   specified, it must match one of the addresses in the cluster\n   resource.\n   If audiences is not set, will be used as the audience for the\n   `generic` provider.\n- `ca.crt`: the optional PEM-encoded CA certificate for the\n   Kubernetes API server. If not set, the controller will use the\n   CA certificate from the cluster resource.\n- `audiences`: the optional audiences as a list of\n   line-break-separated strings for the Kubernetes ServiceAccount\n   token. Defaults to the `address` for the `generic` provider, or\n   to specific values for the other providers depending on the\n   provider.\n-  `serviceAccountName`: the optional name of the Kubernetes\n   ServiceAccount in the same namespace that should be used\n   for authentication. If not specified, the controller\n   ServiceAccount will be used.\n\nMutually exclusive with SecretRef.",
+    "SecretRef holds the name of a secret that contains a key with\nthe kubeconfig file as the value. If no key is set, the key will default\nto 'value'.\nIt is recommended that the kubeconfig is self-contained, and the secret\nis regularly updated if credentials such as a cloud-access-token expire.\nCloud specific `cmd-path` auth helpers will not function without adding\nbinaries and credentials to the Pod that is responsible for reconciling\nKubernetes resources.",
+    "SecretRef holds an optional name of a secret that contains a key with\nthe kubeconfig file as the value. If no key is set, the key will default\nto 'value'. Mutually exclusive with ConfigMapRef.\nIt is recommended that the kubeconfig is self-contained, and the secret\nis regularly updated if credentials such as a cloud-access-token expire.\nCloud specific `cmd-path` auth helpers will not function without adding\nbinaries and credentials to the Pod that is responsible for reconciling\nKubernetes resources. Supported only for the generic provider.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "CommonMetadata specifies the common labels and annotations that are applied to all resources. Any existing label or annotation will be overridden if its key matches a common one.",
+    "CommonMetadata specifies the common labels and annotations that are applied to all resources.\nAny existing label or annotation will be overridden if its key matches a common one.",
+    "DependsOn may contain a meta.NamespacedObjectReference slice with references to Kustomization resources that must be ready before this Kustomization can be reconciled.",
+    "DependsOn may contain a meta.NamespacedObjectReference slice\nwith references to Kustomization resources that must be ready before this\nKustomization can be reconciled.",
+    "Force instructs the controller to recreate resources when patching fails due to an immutable field change.",
+    "Force instructs the controller to recreate resources\nwhen patching fails due to an immutable field change.",
+    "Images is a list of (image name, new name, new tag or digest) for changing image names, tags or digests. This can also be achieved with a patch, but this operator is simpler to specify.",
+    "Images is a list of (image name, new name, new tag or digest)\nfor changing image names, tags or digests. This can also be achieved with a\npatch, but this operator is simpler to specify.",
+    "Digest is the value used to replace the original image tag. If digest is present NewTag value is ignored.",
+    "Digest is the value used to replace the original image tag.\nIf digest is present NewTag value is ignored.",
+    "The KubeConfig for reconciling the Kustomization on a remote cluster. When used in combination with KustomizationSpec.ServiceAccountName, forces the controller to act on behalf of that Service Account at the target cluster. If the --default-service-account flag is set, its value will be used as a controller level fallback for when KustomizationSpec.ServiceAccountName is empty.",
+    "The KubeConfig for reconciling the Kustomization on a remote cluster.\nWhen used in combination with KustomizationSpec.ServiceAccountName,\nforces the controller to act on behalf of that Service Account at the\ntarget cluster.\nIf the --default-service-account flag is set, its value will be used as\na controller level fallback for when KustomizationSpec.ServiceAccountName\nis empty.",
+    "SecretRef holds the name of a secret that contains a key with the kubeconfig file as the value. If no key is set, the key will default to 'value'. It is recommended that the kubeconfig is self-contained, and the secret is regularly updated if credentials such as a cloud-access-token expire. Cloud specific `cmd-path` auth helpers will not function without adding binaries and credentials to the Pod that is responsible for reconciling Kubernetes resources.",
+    "Strategic merge and JSON patches, defined as inline YAML objects, capable of targeting objects based on kind, label and annotation selectors.",
+    "Strategic merge and JSON patches, defined as inline YAML objects,\ncapable of targeting objects based on kind, label and annotation selectors.",
+    "Patch contains an inline StrategicMerge patch or an inline JSON6902 patch with an array of operation objects.",
+    "Patch contains an inline StrategicMerge patch or an inline JSON6902 patch with\nan array of operation objects.",
+    "AnnotationSelector is a string that follows the label selection expression https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#api It matches with the resource annotations.",
+    "AnnotationSelector is a string that follows the label selection expression\nhttps://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#api\nIt matches with the resource annotations.",
+    "Group is the API group to select resources from. Together with Version and Kind it is capable of unambiguously identifying and/or selecting resources. https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md",
+    "Group is the API group to select resources from.\nTogether with Version and Kind it is capable of unambiguously identifying and/or selecting resources.\nhttps://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md",
+    "Kind of the API Group to select resources from. Together with Group and Version it is capable of unambiguously identifying and/or selecting resources. https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md",
+    "Kind of the API Group to select resources from.\nTogether with Group and Version it is capable of unambiguously\nidentifying and/or selecting resources.\nhttps://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md",
+    "LabelSelector is a string that follows the label selection expression https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#api It matches with the resource labels.",
+    "LabelSelector is a string that follows the label selection expression\nhttps://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#api\nIt matches with the resource labels.",
+    "Version of the API Group to select resources from. Together with Group and Kind it is capable of unambiguously identifying and/or selecting resources. https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md",
+    "Version of the API Group to select resources from.\nTogether with Group and Kind it is capable of unambiguously identifying and/or selecting resources.\nhttps://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md",
+    "JSON 6902 patches, defined as inline YAML objects. Deprecated: Use Patches instead.",
+    "JSON 6902 patches, defined as inline YAML objects.\nDeprecated: Use Patches instead.",
+    "From contains a JSON-pointer value that references a location within the target document where the operation is performed. The meaning of the value depends on the value of Op, and is NOT taken into account by all operations.",
+    "From contains a JSON-pointer value that references a location within the target document where the operation is\nperformed. The meaning of the value depends on the value of Op, and is NOT taken into account by all operations.",
+    "Op indicates the operation to perform. Its value MUST be one of \"add\", \"remove\", \"replace\", \"move\", \"copy\", or \"test\". https://datatracker.ietf.org/doc/html/rfc6902#section-4",
+    "Op indicates the operation to perform. Its value MUST be one of \"add\", \"remove\", \"replace\", \"move\", \"copy\", or\n\"test\".\nhttps://datatracker.ietf.org/doc/html/rfc6902#section-4",
+    "Path contains the JSON-pointer value that references a location within the target document where the operation is performed. The meaning of the value depends on the value of Op.",
+    "Path contains the JSON-pointer value that references a location within the target document where the operation\nis performed. The meaning of the value depends on the value of Op.",
+    "Value contains a valid JSON structure. The meaning of the value depends on the value of Op, and is NOT taken into account by all operations.",
+    "Value contains a valid JSON structure. The meaning of the value depends on the value of Op, and is NOT taken into\naccount by all operations.",
+    "Strategic merge patches, defined as inline YAML objects. Deprecated: Use Patches instead.",
+    "Strategic merge patches, defined as inline YAML objects.\nDeprecated: Use Patches instead.",
+    "Path to the directory containing the kustomization.yaml file, or the set of plain YAMLs a kustomization.yaml should be generated for. Defaults to 'None', which translates to the root path of the SourceRef.",
+    "Path to the directory containing the kustomization.yaml file, or the\nset of plain YAMLs a kustomization.yaml should be generated for.\nDefaults to 'None', which translates to the root path of the SourceRef.",
+    "PostBuild describes which actions to perform on the YAML manifest generated by building the kustomize overlay.",
+    "PostBuild describes which actions to perform on the YAML manifest\ngenerated by building the kustomize overlay.",
+    "Substitute holds a map of key/value pairs. The variables defined in your YAML manifests that match any of the keys defined in the map will be substituted with the set value. Includes support for bash string replacement functions e.g. ${var:=default}, ${var:position} and ${var/substring/replacement}.",
+    "Substitute holds a map of key/value pairs.\nThe variables defined in your YAML manifests\nthat match any of the keys defined in the map\nwill be substituted with the set value.\nIncludes support for bash string replacement functions\ne.g. ${var:=default}, ${var:position} and ${var/substring/replacement}.",
+    "SubstituteFrom holds references to ConfigMaps and Secrets containing the variables and their values to be substituted in the YAML manifests. The ConfigMap and the Secret data keys represent the var names and they must match the vars declared in the manifests for the substitution to happen.",
+    "SubstituteFrom holds references to ConfigMaps and Secrets containing\nthe variables and their values to be substituted in the YAML manifests.\nThe ConfigMap and the Secret data keys represent the var names and they\nmust match the vars declared in the manifests for the substitution to happen.",
+    "Name of the values referent. Should reside in the same namespace as the referring resource.",
+    "Name of the values referent. Should reside in the same namespace as the\nreferring resource.",
+    "Optional indicates whether the referenced resource must exist, or whether to tolerate its absence. If true and the referenced resource is absent, proceed as if the resource was present but empty, without any variables defined.",
+    "Optional indicates whether the referenced resource must exist, or whether to\ntolerate its absence. If true and the referenced resource is absent, proceed\nas if the resource was present but empty, without any variables defined.",
+    "The interval at which to retry a previously failed reconciliation. When not specified, the controller uses the KustomizationSpec.Interval value to retry failures.",
+    "The interval at which to retry a previously failed reconciliation.\nWhen not specified, the controller uses the KustomizationSpec.Interval\nvalue to retry failures.",
+    "The name of the Kubernetes service account to impersonate when reconciling this Kustomization.",
+    "The name of the Kubernetes service account to impersonate\nwhen reconciling this Kustomization.",
+    "This flag tells the controller to suspend subsequent kustomize executions, it does not apply to already started executions. Defaults to false.",
+    "This flag tells the controller to suspend subsequent kustomize executions,\nit does not apply to already started executions. Defaults to false.",
+    "TargetNamespace sets or overrides the namespace in the kustomization.yaml file.",
+    "TargetNamespace sets or overrides the namespace in the\nkustomization.yaml file.",
+    "Timeout for validation, apply and health checking operations. Defaults to 'Interval' duration.",
+    "Timeout for validation, apply and health checking operations.\nDefaults to 'Interval' duration.",
+    "Wait instructs the controller to check the health of all the reconciled resources. When enabled, the HealthChecks are ignored. Defaults to false.",
+    "Wait instructs the controller to check the health of all the reconciled resources.\nWhen enabled, the HealthChecks are ignored. Defaults to false.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "ID is the string representation of the Kubernetes resource object's metadata, in the format '<namespace>_<name>_<group>_<kind>'.",
+    "ID is the string representation of the Kubernetes resource object's metadata,\nin the format '<namespace>_<name>_<group>_<kind>'.",
+    "The last successfully applied revision. Equals the Revision of the applied Artifact from the referenced Source.",
+    "The last successfully applied revision.\nEquals the Revision of the applied Artifact from the referenced Source.",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change of the annotation value can be detected.",
+    "LastHandledReconcileAt holds the value of the most recent\nreconcile request value, so a change of the annotation value\ncan be detected.",
+    "Components specifies relative paths to specifications of other Components",
+    "Components specifies relative paths to specifications of other Components.",
+    "The last successfully applied revision. The revision format for Git sources is <branch|tag>/<commit-sha>.",
+    "SecretRef holds the name of a secret that contains a key with the kubeconfig file as the value. If no key is set, the key will default to 'value'. The secret must be in the same namespace as the Kustomization. It is recommended that the kubeconfig is self-contained, and the secret is regularly updated if credentials such as a cloud-access-token expire. Cloud specific `cmd-path` auth helpers will not function without adding binaries and credentials to the Pod that is responsible for reconciling the Kustomization.",
+    "SecretRef holds the name to a secret that contains a 'value' key with the kubeconfig file as the value. It must be in the same namespace as the Kustomization. It is recommended that the kubeconfig is self-contained, and the secret is regularly updated if credentials such as a cloud-access-token expire. Cloud specific `cmd-path` auth helpers will not function without adding binaries and credentials to the Pod that is responsible for reconciling the Kustomization.",
+    "Key in the Secret, when not specified an implementation-specific default key is used.",
+    "Name of the referent.",
+    "Name of the Secret.",
+    "The KubeConfig for reconciling the Kustomization on a remote cluster. When specified, KubeConfig takes precedence over ServiceAccountName.",
+    "Name of the referent",
+    "DependsOn may contain a dependency.CrossNamespaceDependencyReference slice with references to Kustomization resources that must be ready before this Kustomization can be reconciled.",
+    "Name holds the name reference of a dependency.",
+    "Namespace holds the namespace reference of a dependency.",
+    "Namespace of the referent, when not specified it acts as LocalObjectReference.",
+    "API version of the referent, if not specified the Kubernetes preferred version will be used",
+    "API version of the referent, if not specified the Kubernetes preferred version will be used.",
+    "Kind of the referent",
+    "Kind of the referent.",
+    "Namespace of the referent, when not specified it acts as LocalObjectReference",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change can be detected.",
+    "Patch contains the JSON6902 patch document with an array of operation objects."
+  ]
+}

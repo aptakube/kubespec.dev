@@ -1,0 +1,1674 @@
+{
+  "name": "Kubernetes",
+  "slug": "kubernetes",
+  "repo": "kubernetes/kubernetes",
+  "logo": "https://avatars.githubusercontent.com/u/13629408?s=48&v=4",
+  "versions": [
+    {
+      "version": "v1.37",
+      "tag": "v1.37.0",
+      "date": "2026-08-26",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.37.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.36.0",
+      "added": [
+        {
+          "apiVersion": "certificates.k8s.io/v1",
+          "kind": "PodCertificateRequest",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "lifecycle.k8s.io/v1alpha1",
+          "kind": "Eviction",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "lifecycle.k8s.io/v1alpha1",
+          "kind": "EvictionRequest",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1",
+          "kind": "DeviceTaintRule",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "scheduling.k8s.io/v1alpha3",
+          "kind": "CompositePodGroup",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "scheduling.k8s.io/v1alpha3",
+          "kind": "PodGroup",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "scheduling.k8s.io/v1alpha3",
+          "kind": "Workload",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "storagemigration.k8s.io/v1",
+          "kind": "StorageVersionMigration",
+          "scope": "Cluster"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "networking.k8s.io/v1beta1",
+          "kind": "IPAddress",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "networking.k8s.io/v1beta1",
+          "kind": "ServiceCIDR",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1beta1",
+          "kind": "VolumeAttributesClass",
+          "scope": "Cluster"
+        }
+      ],
+      "moved": [
+        {
+          "kind": "ClusterTrustBundle",
+          "scope": "Cluster",
+          "from": "certificates.k8s.io/v1alpha1",
+          "to": "certificates.k8s.io/v1"
+        },
+        {
+          "kind": "PodGroup",
+          "scope": "Namespaced",
+          "from": "scheduling.k8s.io/v1alpha2",
+          "to": "scheduling.k8s.io/v1beta1"
+        },
+        {
+          "kind": "Workload",
+          "scope": "Namespaced",
+          "from": "scheduling.k8s.io/v1alpha2",
+          "to": "scheduling.k8s.io/v1beta1"
+        }
+      ]
+    },
+    {
+      "version": "v1.36",
+      "tag": "v1.36.0",
+      "date": "2026-04-22",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.36.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.35.0",
+      "added": [
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1",
+          "kind": "MutatingAdmissionPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1",
+          "kind": "MutatingAdmissionPolicyBinding",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1alpha3",
+          "kind": "ResourcePoolStatusRequest",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1beta2",
+          "kind": "DeviceTaintRule",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "scheduling.k8s.io/v1alpha2",
+          "kind": "PodGroup",
+          "scope": "Namespaced"
+        }
+      ],
+      "moved": [
+        {
+          "kind": "Workload",
+          "scope": "Namespaced",
+          "from": "scheduling.k8s.io/v1alpha1",
+          "to": "scheduling.k8s.io/v1alpha2"
+        }
+      ]
+    },
+    {
+      "version": "v1.35",
+      "tag": "v1.35.0",
+      "date": "2025-12-17",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.34.0",
+      "added": [
+        {
+          "apiVersion": "scheduling.k8s.io/v1alpha1",
+          "kind": "Workload",
+          "scope": "Namespaced"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "storage.k8s.io/v1alpha1",
+          "kind": "VolumeAttributesClass",
+          "scope": "Cluster"
+        }
+      ],
+      "moved": [
+        {
+          "kind": "PodCertificateRequest",
+          "scope": "Namespaced",
+          "from": "certificates.k8s.io/v1alpha1",
+          "to": "certificates.k8s.io/v1beta1"
+        },
+        {
+          "kind": "StorageVersionMigration",
+          "scope": "Cluster",
+          "from": "storagemigration.k8s.io/v1alpha1",
+          "to": "storagemigration.k8s.io/v1beta1"
+        }
+      ]
+    },
+    {
+      "version": "v1.34",
+      "tag": "v1.34.0",
+      "date": "2025-08-27",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.34.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.33.0",
+      "added": [
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1beta1",
+          "kind": "MutatingAdmissionPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1beta1",
+          "kind": "MutatingAdmissionPolicyBinding",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "certificates.k8s.io/v1alpha1",
+          "kind": "PodCertificateRequest",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1",
+          "kind": "VolumeAttributesClass",
+          "scope": "Cluster"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1beta1",
+          "kind": "ValidatingAdmissionPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1beta1",
+          "kind": "ValidatingAdmissionPolicyBinding",
+          "scope": "Cluster"
+        }
+      ],
+      "moved": [
+        {
+          "kind": "DeviceClass",
+          "scope": "Cluster",
+          "from": "resource.k8s.io/v1alpha3",
+          "to": "resource.k8s.io/v1"
+        },
+        {
+          "kind": "ResourceClaim",
+          "scope": "Namespaced",
+          "from": "resource.k8s.io/v1alpha3",
+          "to": "resource.k8s.io/v1"
+        },
+        {
+          "kind": "ResourceClaimTemplate",
+          "scope": "Namespaced",
+          "from": "resource.k8s.io/v1alpha3",
+          "to": "resource.k8s.io/v1"
+        },
+        {
+          "kind": "ResourceSlice",
+          "scope": "Cluster",
+          "from": "resource.k8s.io/v1alpha3",
+          "to": "resource.k8s.io/v1"
+        }
+      ]
+    },
+    {
+      "version": "v1.33",
+      "tag": "v1.33.0",
+      "date": "2025-04-23",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.33.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.32.0",
+      "added": [
+        {
+          "apiVersion": "certificates.k8s.io/v1beta1",
+          "kind": "ClusterTrustBundle",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "coordination.k8s.io/v1beta1",
+          "kind": "LeaseCandidate",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "networking.k8s.io/v1",
+          "kind": "IPAddress",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "networking.k8s.io/v1",
+          "kind": "ServiceCIDR",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1alpha3",
+          "kind": "DeviceTaintRule",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1beta2",
+          "kind": "DeviceClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1beta2",
+          "kind": "ResourceClaim",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1beta2",
+          "kind": "ResourceClaimTemplate",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1beta2",
+          "kind": "ResourceSlice",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.32",
+      "tag": "v1.32.0",
+      "date": "2024-12-11",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.32.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.31.0",
+      "added": [
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1alpha1",
+          "kind": "MutatingAdmissionPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1alpha1",
+          "kind": "MutatingAdmissionPolicyBinding",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1beta1",
+          "kind": "DeviceClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1beta1",
+          "kind": "ResourceClaim",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1beta1",
+          "kind": "ResourceClaimTemplate",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1beta1",
+          "kind": "ResourceSlice",
+          "scope": "Cluster"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1alpha1",
+          "kind": "ValidatingAdmissionPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1alpha1",
+          "kind": "ValidatingAdmissionPolicyBinding",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "flowcontrol.apiserver.k8s.io/v1beta3",
+          "kind": "FlowSchema",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "flowcontrol.apiserver.k8s.io/v1beta3",
+          "kind": "PriorityLevelConfiguration",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1alpha3",
+          "kind": "PodSchedulingContext",
+          "scope": "Namespaced"
+        }
+      ],
+      "moved": [
+        {
+          "kind": "LeaseCandidate",
+          "scope": "Namespaced",
+          "from": "coordination.k8s.io/v1alpha1",
+          "to": "coordination.k8s.io/v1alpha2"
+        }
+      ]
+    },
+    {
+      "version": "v1.31",
+      "tag": "v1.31.0",
+      "date": "2024-08-13",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.31.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.30.0",
+      "added": [
+        {
+          "apiVersion": "coordination.k8s.io/v1alpha1",
+          "kind": "LeaseCandidate",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1alpha3",
+          "kind": "DeviceClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1beta1",
+          "kind": "VolumeAttributesClass",
+          "scope": "Cluster"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "resource.k8s.io/v1alpha2",
+          "kind": "ResourceClaimParameters",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1alpha2",
+          "kind": "ResourceClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1alpha2",
+          "kind": "ResourceClassParameters",
+          "scope": "Namespaced"
+        }
+      ],
+      "moved": [
+        {
+          "kind": "IPAddress",
+          "scope": "Cluster",
+          "from": "networking.k8s.io/v1alpha1",
+          "to": "networking.k8s.io/v1beta1"
+        },
+        {
+          "kind": "ServiceCIDR",
+          "scope": "Cluster",
+          "from": "networking.k8s.io/v1alpha1",
+          "to": "networking.k8s.io/v1beta1"
+        },
+        {
+          "kind": "PodSchedulingContext",
+          "scope": "Namespaced",
+          "from": "resource.k8s.io/v1alpha2",
+          "to": "resource.k8s.io/v1alpha3"
+        },
+        {
+          "kind": "ResourceClaim",
+          "scope": "Namespaced",
+          "from": "resource.k8s.io/v1alpha2",
+          "to": "resource.k8s.io/v1alpha3"
+        },
+        {
+          "kind": "ResourceClaimTemplate",
+          "scope": "Namespaced",
+          "from": "resource.k8s.io/v1alpha2",
+          "to": "resource.k8s.io/v1alpha3"
+        },
+        {
+          "kind": "ResourceSlice",
+          "scope": "Cluster",
+          "from": "resource.k8s.io/v1alpha2",
+          "to": "resource.k8s.io/v1alpha3"
+        }
+      ]
+    },
+    {
+      "version": "v1.30",
+      "tag": "v1.30.0",
+      "date": "2024-04-17",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.30.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.29.0",
+      "added": [
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1",
+          "kind": "ValidatingAdmissionPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1",
+          "kind": "ValidatingAdmissionPolicyBinding",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1alpha2",
+          "kind": "ResourceClaimParameters",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1alpha2",
+          "kind": "ResourceClassParameters",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1alpha2",
+          "kind": "ResourceSlice",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storagemigration.k8s.io/v1alpha1",
+          "kind": "StorageVersionMigration",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.29",
+      "tag": "v1.29.0",
+      "date": "2023-12-13",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.29.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.28.0",
+      "added": [
+        {
+          "apiVersion": "networking.k8s.io/v1alpha1",
+          "kind": "ServiceCIDR",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1alpha1",
+          "kind": "VolumeAttributesClass",
+          "scope": "Cluster"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "networking.k8s.io/v1alpha1",
+          "kind": "ClusterCIDR",
+          "scope": "Cluster"
+        }
+      ],
+      "moved": [
+        {
+          "kind": "FlowSchema",
+          "scope": "Cluster",
+          "from": "flowcontrol.apiserver.k8s.io/v1beta2",
+          "to": "flowcontrol.apiserver.k8s.io/v1"
+        },
+        {
+          "kind": "PriorityLevelConfiguration",
+          "scope": "Cluster",
+          "from": "flowcontrol.apiserver.k8s.io/v1beta2",
+          "to": "flowcontrol.apiserver.k8s.io/v1"
+        }
+      ]
+    },
+    {
+      "version": "v1.28",
+      "tag": "v1.28.0",
+      "date": "2023-08-15",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.28.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.27.0",
+      "added": [
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1beta1",
+          "kind": "ValidatingAdmissionPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1beta1",
+          "kind": "ValidatingAdmissionPolicyBinding",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.27",
+      "tag": "v1.27.0",
+      "date": "2023-04-11",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.27.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.26.0",
+      "added": [
+        {
+          "apiVersion": "certificates.k8s.io/v1alpha1",
+          "kind": "ClusterTrustBundle",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "networking.k8s.io/v1alpha1",
+          "kind": "IPAddress",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1alpha2",
+          "kind": "PodSchedulingContext",
+          "scope": "Namespaced"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "resource.k8s.io/v1alpha1",
+          "kind": "PodScheduling",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1beta1",
+          "kind": "CSIStorageCapacity",
+          "scope": "Namespaced"
+        }
+      ],
+      "moved": [
+        {
+          "kind": "ResourceClaim",
+          "scope": "Namespaced",
+          "from": "resource.k8s.io/v1alpha1",
+          "to": "resource.k8s.io/v1alpha2"
+        },
+        {
+          "kind": "ResourceClaimTemplate",
+          "scope": "Namespaced",
+          "from": "resource.k8s.io/v1alpha1",
+          "to": "resource.k8s.io/v1alpha2"
+        },
+        {
+          "kind": "ResourceClass",
+          "scope": "Cluster",
+          "from": "resource.k8s.io/v1alpha1",
+          "to": "resource.k8s.io/v1alpha2"
+        }
+      ]
+    },
+    {
+      "version": "v1.26",
+      "tag": "v1.26.0",
+      "date": "2022-12-08",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.26.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.25.0",
+      "added": [
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1alpha1",
+          "kind": "ValidatingAdmissionPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1alpha1",
+          "kind": "ValidatingAdmissionPolicyBinding",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1alpha1",
+          "kind": "PodScheduling",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1alpha1",
+          "kind": "ResourceClaim",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1alpha1",
+          "kind": "ResourceClaimTemplate",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "resource.k8s.io/v1alpha1",
+          "kind": "ResourceClass",
+          "scope": "Cluster"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "autoscaling/v2beta2",
+          "kind": "HorizontalPodAutoscaler",
+          "scope": "Namespaced"
+        }
+      ],
+      "moved": [
+        {
+          "kind": "FlowSchema",
+          "scope": "Cluster",
+          "from": "flowcontrol.apiserver.k8s.io/v1beta1",
+          "to": "flowcontrol.apiserver.k8s.io/v1beta3"
+        },
+        {
+          "kind": "PriorityLevelConfiguration",
+          "scope": "Cluster",
+          "from": "flowcontrol.apiserver.k8s.io/v1beta1",
+          "to": "flowcontrol.apiserver.k8s.io/v1beta3"
+        }
+      ]
+    },
+    {
+      "version": "v1.25",
+      "tag": "v1.25.0",
+      "date": "2022-08-23",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.25.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.24.0",
+      "added": [
+        {
+          "apiVersion": "networking.k8s.io/v1alpha1",
+          "kind": "ClusterCIDR",
+          "scope": "Cluster"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "autoscaling/v2beta1",
+          "kind": "HorizontalPodAutoscaler",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "batch/v1beta1",
+          "kind": "CronJob",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "discovery.k8s.io/v1beta1",
+          "kind": "EndpointSlice",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "events.k8s.io/v1beta1",
+          "kind": "Event",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "node.k8s.io/v1beta1",
+          "kind": "RuntimeClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "policy/v1beta1",
+          "kind": "PodDisruptionBudget",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policy/v1beta1",
+          "kind": "PodSecurityPolicy",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.24",
+      "tag": "v1.24.0",
+      "date": "2022-05-03",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.24.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.23.0",
+      "removed": [
+        {
+          "apiVersion": "node.k8s.io/v1alpha1",
+          "kind": "RuntimeClass",
+          "scope": "Cluster"
+        }
+      ],
+      "moved": [
+        {
+          "kind": "CSIStorageCapacity",
+          "scope": "Namespaced",
+          "from": "storage.k8s.io/v1alpha1",
+          "to": "storage.k8s.io/v1"
+        }
+      ]
+    },
+    {
+      "version": "v1.23",
+      "tag": "v1.23.0",
+      "date": "2021-12-07",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.23.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.22.0",
+      "added": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "flowcontrol.apiserver.k8s.io/v1beta2",
+          "kind": "FlowSchema",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "flowcontrol.apiserver.k8s.io/v1beta2",
+          "kind": "PriorityLevelConfiguration",
+          "scope": "Cluster"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1alpha1",
+          "kind": "ClusterRole",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1alpha1",
+          "kind": "ClusterRoleBinding",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1alpha1",
+          "kind": "Role",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1alpha1",
+          "kind": "RoleBinding",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "scheduling.k8s.io/v1alpha1",
+          "kind": "PriorityClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1alpha1",
+          "kind": "VolumeAttachment",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.22",
+      "tag": "v1.22.0",
+      "date": "2021-08-04",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.22.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.21.0",
+      "removed": [
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1beta1",
+          "kind": "MutatingWebhookConfiguration",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1beta1",
+          "kind": "ValidatingWebhookConfiguration",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "apiextensions.k8s.io/v1beta1",
+          "kind": "CustomResourceDefinition",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "apiregistration.k8s.io/v1beta1",
+          "kind": "APIService",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "certificates.k8s.io/v1beta1",
+          "kind": "CertificateSigningRequest",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "coordination.k8s.io/v1beta1",
+          "kind": "Lease",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "extensions/v1beta1",
+          "kind": "Ingress",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "networking.k8s.io/v1beta1",
+          "kind": "Ingress",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "networking.k8s.io/v1beta1",
+          "kind": "IngressClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1beta1",
+          "kind": "ClusterRole",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1beta1",
+          "kind": "ClusterRoleBinding",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1beta1",
+          "kind": "Role",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1beta1",
+          "kind": "RoleBinding",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "scheduling.k8s.io/v1beta1",
+          "kind": "PriorityClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1beta1",
+          "kind": "CSIDriver",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1beta1",
+          "kind": "CSINode",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1beta1",
+          "kind": "StorageClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1beta1",
+          "kind": "VolumeAttachment",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.21",
+      "tag": "v1.21.0",
+      "date": "2021-04-08",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.21.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.20.0",
+      "added": [
+        {
+          "apiVersion": "discovery.k8s.io/v1",
+          "kind": "EndpointSlice",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policy/v1",
+          "kind": "PodDisruptionBudget",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1alpha1",
+          "kind": "CSIStorageCapacity",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1beta1",
+          "kind": "CSIStorageCapacity",
+          "scope": "Namespaced"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "flowcontrol.apiserver.k8s.io/v1alpha1",
+          "kind": "FlowSchema",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "flowcontrol.apiserver.k8s.io/v1alpha1",
+          "kind": "PriorityLevelConfiguration",
+          "scope": "Cluster"
+        }
+      ],
+      "moved": [
+        {
+          "kind": "CronJob",
+          "scope": "Namespaced",
+          "from": "batch/v2alpha1",
+          "to": "batch/v1"
+        }
+      ]
+    },
+    {
+      "version": "v1.20",
+      "tag": "v1.20.0",
+      "date": "2020-12-08",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.20.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.19.0",
+      "added": [
+        {
+          "apiVersion": "flowcontrol.apiserver.k8s.io/v1beta1",
+          "kind": "FlowSchema",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "flowcontrol.apiserver.k8s.io/v1beta1",
+          "kind": "PriorityLevelConfiguration",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "internal.apiserver.k8s.io/v1alpha1",
+          "kind": "StorageVersion",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "node.k8s.io/v1",
+          "kind": "RuntimeClass",
+          "scope": "Cluster"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "settings.k8s.io/v1alpha1",
+          "kind": "PodPreset",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.19",
+      "tag": "v1.19.0",
+      "date": "2020-08-26",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.19.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.18.0",
+      "added": [
+        {
+          "apiVersion": "certificates.k8s.io/v1",
+          "kind": "CertificateSigningRequest",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "events.k8s.io/v1",
+          "kind": "Event",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "networking.k8s.io/v1",
+          "kind": "Ingress",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "networking.k8s.io/v1",
+          "kind": "IngressClass",
+          "scope": "Cluster"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "auditregistration.k8s.io/v1alpha1",
+          "kind": "AuditSink",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.18",
+      "tag": "v1.18.0",
+      "date": "2020-03-25",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.18.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.17.0",
+      "added": [
+        {
+          "apiVersion": "networking.k8s.io/v1beta1",
+          "kind": "IngressClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1",
+          "kind": "CSIDriver",
+          "scope": "Cluster"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "apps/v1beta1",
+          "kind": "ControllerRevision",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1beta1",
+          "kind": "Deployment",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1beta1",
+          "kind": "StatefulSet",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1beta2",
+          "kind": "ControllerRevision",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1beta2",
+          "kind": "DaemonSet",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1beta2",
+          "kind": "Deployment",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1beta2",
+          "kind": "ReplicaSet",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1beta2",
+          "kind": "StatefulSet",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "extensions/v1beta1",
+          "kind": "DaemonSet",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "extensions/v1beta1",
+          "kind": "Deployment",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "extensions/v1beta1",
+          "kind": "NetworkPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "extensions/v1beta1",
+          "kind": "PodSecurityPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "extensions/v1beta1",
+          "kind": "ReplicaSet",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.17",
+      "tag": "v1.17.0",
+      "date": "2019-12-07",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.17.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.16.0",
+      "added": [
+        {
+          "apiVersion": "flowcontrol.apiserver.k8s.io/v1alpha1",
+          "kind": "FlowSchema",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "flowcontrol.apiserver.k8s.io/v1alpha1",
+          "kind": "PriorityLevelConfiguration",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1",
+          "kind": "CSINode",
+          "scope": "Cluster"
+        }
+      ],
+      "moved": [
+        {
+          "kind": "EndpointSlice",
+          "scope": "Namespaced",
+          "from": "discovery.k8s.io/v1alpha1",
+          "to": "discovery.k8s.io/v1beta1"
+        }
+      ]
+    },
+    {
+      "version": "v1.16",
+      "tag": "v1.16.0",
+      "date": "2019-09-18",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.16.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.15.0",
+      "added": [
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1",
+          "kind": "MutatingWebhookConfiguration",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1",
+          "kind": "ValidatingWebhookConfiguration",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "apiextensions.k8s.io/v1",
+          "kind": "CustomResourceDefinition",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "discovery.k8s.io/v1alpha1",
+          "kind": "EndpointSlice",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.15",
+      "tag": "v1.15.0",
+      "date": "2019-06-19",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.15.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.14.0"
+    },
+    {
+      "version": "v1.14",
+      "tag": "v1.14.0",
+      "date": "2019-03-25",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.14.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.13.0",
+      "added": [
+        {
+          "apiVersion": "coordination.k8s.io/v1",
+          "kind": "Lease",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "networking.k8s.io/v1beta1",
+          "kind": "Ingress",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "node.k8s.io/v1alpha1",
+          "kind": "RuntimeClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "node.k8s.io/v1beta1",
+          "kind": "RuntimeClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "scheduling.k8s.io/v1",
+          "kind": "PriorityClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1beta1",
+          "kind": "CSIDriver",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1beta1",
+          "kind": "CSINode",
+          "scope": "Cluster"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1alpha1",
+          "kind": "InitializerConfiguration",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.13",
+      "tag": "v1.13.0",
+      "date": "2018-12-03",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.13.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.12.0",
+      "added": [
+        {
+          "apiVersion": "auditregistration.k8s.io/v1alpha1",
+          "kind": "AuditSink",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1",
+          "kind": "VolumeAttachment",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.12",
+      "tag": "v1.12.0",
+      "date": "2018-09-27",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.12.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.11.0",
+      "added": [
+        {
+          "apiVersion": "autoscaling/v2beta2",
+          "kind": "HorizontalPodAutoscaler",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "coordination.k8s.io/v1beta1",
+          "kind": "Lease",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.11",
+      "tag": "v1.11.0",
+      "date": "2018-06-27",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.11.0/api/openapi-spec/swagger.json"
+      ],
+      "changelogBase": "v1.10.0",
+      "added": [
+        {
+          "apiVersion": "scheduling.k8s.io/v1beta1",
+          "kind": "PriorityClass",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.10",
+      "tag": "v1.10.0",
+      "date": "2018-03-26",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.10.0/api/openapi-spec/swagger.json"
+      ],
+      "added": [
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1alpha1",
+          "kind": "InitializerConfiguration",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1beta1",
+          "kind": "MutatingWebhookConfiguration",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "admissionregistration.k8s.io/v1beta1",
+          "kind": "ValidatingWebhookConfiguration",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "apiextensions.k8s.io/v1beta1",
+          "kind": "CustomResourceDefinition",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "apiregistration.k8s.io/v1",
+          "kind": "APIService",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "apiregistration.k8s.io/v1beta1",
+          "kind": "APIService",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "apps/v1",
+          "kind": "ControllerRevision",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1",
+          "kind": "DaemonSet",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1",
+          "kind": "Deployment",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1",
+          "kind": "ReplicaSet",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1",
+          "kind": "StatefulSet",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1beta1",
+          "kind": "ControllerRevision",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1beta1",
+          "kind": "Deployment",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1beta1",
+          "kind": "StatefulSet",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1beta2",
+          "kind": "ControllerRevision",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1beta2",
+          "kind": "DaemonSet",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1beta2",
+          "kind": "Deployment",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1beta2",
+          "kind": "ReplicaSet",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "apps/v1beta2",
+          "kind": "StatefulSet",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "autoscaling/v1",
+          "kind": "HorizontalPodAutoscaler",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "autoscaling/v2beta1",
+          "kind": "HorizontalPodAutoscaler",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "batch/v1",
+          "kind": "Job",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "batch/v1beta1",
+          "kind": "CronJob",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "batch/v2alpha1",
+          "kind": "CronJob",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "certificates.k8s.io/v1beta1",
+          "kind": "CertificateSigningRequest",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "events.k8s.io/v1beta1",
+          "kind": "Event",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "extensions/v1beta1",
+          "kind": "DaemonSet",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "extensions/v1beta1",
+          "kind": "Deployment",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "extensions/v1beta1",
+          "kind": "Ingress",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "extensions/v1beta1",
+          "kind": "NetworkPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "extensions/v1beta1",
+          "kind": "PodSecurityPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "extensions/v1beta1",
+          "kind": "ReplicaSet",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "networking.k8s.io/v1",
+          "kind": "NetworkPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policy/v1beta1",
+          "kind": "PodDisruptionBudget",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policy/v1beta1",
+          "kind": "PodSecurityPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1",
+          "kind": "ClusterRole",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1",
+          "kind": "ClusterRoleBinding",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1",
+          "kind": "Role",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1",
+          "kind": "RoleBinding",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1alpha1",
+          "kind": "ClusterRole",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1alpha1",
+          "kind": "ClusterRoleBinding",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1alpha1",
+          "kind": "Role",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1alpha1",
+          "kind": "RoleBinding",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1beta1",
+          "kind": "ClusterRole",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1beta1",
+          "kind": "ClusterRoleBinding",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1beta1",
+          "kind": "Role",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "rbac.authorization.k8s.io/v1beta1",
+          "kind": "RoleBinding",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "scheduling.k8s.io/v1alpha1",
+          "kind": "PriorityClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "settings.k8s.io/v1alpha1",
+          "kind": "PodPreset",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1",
+          "kind": "StorageClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1alpha1",
+          "kind": "VolumeAttachment",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1beta1",
+          "kind": "StorageClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "storage.k8s.io/v1beta1",
+          "kind": "VolumeAttachment",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "ComponentStatus",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "ConfigMap",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "Endpoints",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "Event",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "LimitRange",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "Namespace",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "Node",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "PersistentVolume",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "PersistentVolumeClaim",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "Pod",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "PodTemplate",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "ReplicationController",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "ResourceQuota",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "Secret",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "Service",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "v1",
+          "kind": "ServiceAccount",
+          "scope": "Namespaced"
+        }
+      ]
+    }
+  ]
+}

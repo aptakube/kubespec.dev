@@ -1,0 +1,255 @@
+{
+  "versions": {
+    "1.31.0": {
+      "added": {
+        "spec.servers.tls.insecureSkipVerify": "boolean"
+      },
+      "descriptions": {
+        "spec.servers.tls.insecureSkipVerify": [
+          null,
+          0
+        ]
+      }
+    },
+    "1.28.0": {
+      "added": {
+        "spec.servers.tls.caCertCredentialName": "string"
+      },
+      "descriptions": {
+        "spec.servers.tls.caCertCredentialName": [
+          null,
+          1
+        ]
+      }
+    },
+    "1.27.0": {
+      "descriptionChanged": [
+        "spec.servers.tls.tlsCertificates",
+        "spec.servers.tls.tlsCertificates.caCertificates"
+      ],
+      "descriptions": {
+        "spec.servers.tls.tlsCertificates": [
+          2,
+          3
+        ],
+        "spec.servers.tls.tlsCertificates.caCertificates": [
+          4,
+          null
+        ]
+      }
+    },
+    "1.26.0": {
+      "added": {
+        "spec.servers.tls.credentialNames": "string[]",
+        "spec.servers.tls.tlsCertificates": "object[]"
+      },
+      "descriptions": {
+        "spec.servers.tls.credentialNames": [
+          null,
+          5
+        ],
+        "spec.servers.tls.tlsCertificates": [
+          null,
+          2
+        ]
+      }
+    },
+    "1.25.0": {
+      "added": {
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "status.conditions.observedGeneration": [
+          null,
+          6
+        ],
+        "status.observedGeneration": [
+          7,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "status.conditions": [
+          null,
+          8
+        ],
+        "status.observedGeneration": [
+          null,
+          7
+        ],
+        "status.validationMessages": [
+          null,
+          9
+        ]
+      }
+    },
+    "1.22.0": {
+      "added": {
+        "spec.servers.tls.caCrl": "string"
+      },
+      "descriptionChanged": [
+        "spec.servers.tls.maxProtocolVersion",
+        "spec.servers.tls.minProtocolVersion",
+        "spec.servers.tls.mode"
+      ],
+      "descriptions": {
+        "spec.servers.tls.caCrl": [
+          null,
+          10
+        ],
+        "spec.servers.tls.maxProtocolVersion": [
+          11,
+          12
+        ],
+        "spec.servers.tls.minProtocolVersion": [
+          13,
+          14
+        ],
+        "spec.servers.tls.mode": [
+          15,
+          16
+        ]
+      }
+    },
+    "1.20.0": {
+      "descriptionChanged": [
+        "spec.selector",
+        "spec.servers.bind",
+        "spec.servers.port",
+        "spec.servers.tls.credentialName",
+        "spec.servers.tls.httpsRedirect",
+        "spec.servers.tls.mode",
+        "spec.servers.tls.subjectAltNames",
+        "spec.servers.tls.verifyCertificateHash",
+        "spec.servers.tls.verifyCertificateSpki"
+      ],
+      "required": [
+        "spec.servers.hosts",
+        "spec.servers.port",
+        "spec.servers.port.name",
+        "spec.servers.port.number",
+        "spec.servers.port.protocol"
+      ],
+      "descriptions": {
+        "spec.selector": [
+          null,
+          17
+        ],
+        "spec.servers.bind": [
+          null,
+          18
+        ],
+        "spec.servers.hosts": [
+          null,
+          19
+        ],
+        "spec.servers.port": [
+          null,
+          20
+        ],
+        "spec.servers.port.name": [
+          null,
+          21
+        ],
+        "spec.servers.port.number": [
+          null,
+          22
+        ],
+        "spec.servers.port.protocol": [
+          null,
+          23
+        ],
+        "spec.servers.tls.credentialName": [
+          null,
+          24
+        ],
+        "spec.servers.tls.httpsRedirect": [
+          null,
+          25
+        ],
+        "spec.servers.tls.mode": [
+          null,
+          15
+        ],
+        "spec.servers.tls.subjectAltNames": [
+          null,
+          26
+        ],
+        "spec.servers.tls.verifyCertificateHash": [
+          null,
+          27
+        ],
+        "spec.servers.tls.verifyCertificateSpki": [
+          null,
+          28
+        ]
+      }
+    },
+    "1.19.0": {
+      "descriptionChanged": [
+        "spec.servers.tls.caCertificates"
+      ],
+      "descriptions": {
+        "spec.servers.tls.caCertificates": [
+          29,
+          4
+        ]
+      }
+    },
+    "1.7.0": {
+      "added": {
+        "spec.servers.name": "string",
+        "spec.servers.port.targetPort": "integer"
+      },
+      "descriptions": {
+        "spec.servers.name": [
+          null,
+          30
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Optional: If set to true, the proxy will try to validate the certificate, but even if the validation fails, it will allow the connection through.",
+    "For mutual TLS, the name of the secret or the configmap that holds CA certificates.",
+    "Only one of `server_certificate`, `private_key`, `ca_certificates` or `credential_name` or `credential_names` or `tls_certificates` should be specified.",
+    "Only one of `server_certificate`, `private_key` or `credential_name` or `credential_names` or `tls_certificates` should be specified.",
+    "REQUIRED if mode is `MUTUAL` or `OPTIONAL_MUTUAL`.",
+    "Same as CredentialName but for multiple certificates.",
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers.",
+    "OPTIONAL: The path to the file containing the certificate revocation list (CRL) to use in verifying a presented client side certificate.",
+    "Optional: Maximum TLS protocol version.",
+    "Optional: Maximum TLS protocol version.\n\nValid Options: TLS_AUTO, TLSV1_0, TLSV1_1, TLSV1_2, TLSV1_3",
+    "Optional: Minimum TLS protocol version.",
+    "Optional: Minimum TLS protocol version.\n\nValid Options: TLS_AUTO, TLSV1_0, TLSV1_1, TLSV1_2, TLSV1_3",
+    "Optional: Indicates whether connections to this port should be secured using TLS.",
+    "Optional: Indicates whether connections to this port should be secured using TLS.\n\nValid Options: PASSTHROUGH, SIMPLE, MUTUAL, AUTO_PASSTHROUGH, ISTIO_MUTUAL, OPTIONAL_MUTUAL",
+    "One or more labels that indicate a specific set of pods/VMs on which this gateway configuration should be applied.",
+    "The ip or the Unix domain socket to which the listener should be bound to.",
+    "One or more hosts exposed by this gateway.",
+    "The Port on which the proxy should listen for incoming connections.",
+    "Label assigned to the port.",
+    "A valid non-negative integer port number.",
+    "The protocol exposed on the port.",
+    "For gateways running on Kubernetes, the name of the secret that holds the TLS certs including the CA certificates.",
+    "If set to true, the load balancer will send a 301 redirect for all http connections, asking the clients to use HTTPS.",
+    "A list of alternate names to verify the subject identity in the certificate presented by the client.",
+    "An optional list of hex-encoded SHA-256 hashes of the authorized client certificates.",
+    "An optional list of base64-encoded SHA-256 hashes of the SPKIs of authorized client certificates.",
+    "REQUIRED if mode is `MUTUAL`.",
+    "An optional name of the server, when set must be unique across all servers."
+  ]
+}

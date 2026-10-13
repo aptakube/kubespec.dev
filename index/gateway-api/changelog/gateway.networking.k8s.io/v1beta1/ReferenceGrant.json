@@ -1,0 +1,162 @@
+{
+  "versions": {
+    "v1.6.0": {
+      "required": [
+        "spec"
+      ],
+      "descriptions": {
+        "spec": [
+          null,
+          0
+        ]
+      }
+    },
+    "v1.2.0": {
+      "descriptionChanged": [
+        "spec.from",
+        "spec.from.group",
+        "spec.from.kind",
+        "spec.from.namespace",
+        "spec.to",
+        "spec.to.group",
+        "spec.to.kind"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec.from": [
+          1,
+          2
+        ],
+        "spec.from.group": [
+          3,
+          4
+        ],
+        "spec.from.kind": [
+          5,
+          6
+        ],
+        "spec.from.namespace": [
+          7,
+          8
+        ],
+        "spec.to": [
+          9,
+          10
+        ],
+        "spec.to.group": [
+          3,
+          4
+        ],
+        "spec.to.kind": [
+          11,
+          12
+        ],
+        "": [
+          13,
+          14
+        ]
+      }
+    },
+    "v1.1.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.from",
+        "spec.from.group",
+        "spec.from.kind",
+        "spec.from.namespace",
+        "spec.to",
+        "spec.to.group",
+        "spec.to.kind",
+        "spec.to.name"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          15,
+          16
+        ],
+        "kind": [
+          17,
+          18
+        ],
+        "spec.from": [
+          19,
+          1
+        ],
+        "spec.from.group": [
+          20,
+          3
+        ],
+        "spec.from.kind": [
+          21,
+          5
+        ],
+        "spec.from.namespace": [
+          22,
+          7
+        ],
+        "spec.to": [
+          23,
+          9
+        ],
+        "spec.to.group": [
+          20,
+          3
+        ],
+        "spec.to.kind": [
+          24,
+          11
+        ],
+        "spec.to.name": [
+          25,
+          26
+        ],
+        "": [
+          27,
+          13
+        ]
+      }
+    },
+    "v0.8.0": {
+      "description": true,
+      "descriptions": {
+        "": [
+          28,
+          27
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Spec defines the desired state of ReferenceGrant.",
+    "From describes the trusted namespaces and kinds that can reference the\nresources described in \"To\". Each entry in this list MUST be considered\nto be an additional place that references can be valid from, or to put\nthis another way, entries MUST be combined using OR.\n\n\nSupport: Core",
+    "From describes the trusted namespaces and kinds that can reference the\nresources described in \"To\". Each entry in this list MUST be considered\nto be an additional place that references can be valid from, or to put\nthis another way, entries MUST be combined using OR.\n\nSupport: Core",
+    "Group is the group of the referent.\nWhen empty, the Kubernetes core API group is inferred.\n\n\nSupport: Core",
+    "Group is the group of the referent.\nWhen empty, the Kubernetes core API group is inferred.\n\nSupport: Core",
+    "Kind is the kind of the referent. Although implementations may support\nadditional resources, the following types are part of the \"Core\"\nsupport level for this field.\n\n\nWhen used to permit a SecretObjectReference:\n\n\n* Gateway\n\n\nWhen used to permit a BackendObjectReference:\n\n\n* GRPCRoute\n* HTTPRoute\n* TCPRoute\n* TLSRoute\n* UDPRoute",
+    "Kind is the kind of the referent. Although implementations may support\nadditional resources, the following types are part of the \"Core\"\nsupport level for this field.\n\nWhen used to permit a SecretObjectReference:\n\n* Gateway\n\nWhen used to permit a BackendObjectReference:\n\n* GRPCRoute\n* HTTPRoute\n* TCPRoute\n* TLSRoute\n* UDPRoute",
+    "Namespace is the namespace of the referent.\n\n\nSupport: Core",
+    "Namespace is the namespace of the referent.\n\nSupport: Core",
+    "To describes the resources that may be referenced by the resources\ndescribed in \"From\". Each entry in this list MUST be considered to be an\nadditional place that references can be valid to, or to put this another\nway, entries MUST be combined using OR.\n\n\nSupport: Core",
+    "To describes the resources that may be referenced by the resources\ndescribed in \"From\". Each entry in this list MUST be considered to be an\nadditional place that references can be valid to, or to put this another\nway, entries MUST be combined using OR.\n\nSupport: Core",
+    "Kind is the kind of the referent. Although implementations may support\nadditional resources, the following types are part of the \"Core\"\nsupport level for this field:\n\n\n* Secret when used to permit a SecretObjectReference\n* Service when used to permit a BackendObjectReference",
+    "Kind is the kind of the referent. Although implementations may support\nadditional resources, the following types are part of the \"Core\"\nsupport level for this field:\n\n* Secret when used to permit a SecretObjectReference\n* Service when used to permit a BackendObjectReference",
+    "ReferenceGrant identifies kinds of resources in other namespaces that are\ntrusted to reference the specified kinds of resources in the same namespace\nas the policy.\n\n\nEach ReferenceGrant can be used to represent a unique trust relationship.\nAdditional Reference Grants can be used to add to the set of trusted\nsources of inbound references for the namespace they are defined within.\n\n\nAll cross-namespace references in Gateway API (with the exception of cross-namespace\nGateway-route attachment) require a ReferenceGrant.\n\n\nReferenceGrant is a form of runtime verification allowing users to assert\nwhich cross-namespace object references are permitted. Implementations that\nsupport ReferenceGrant MUST NOT permit cross-namespace references which have\nno grant, and MUST respond to the removal of a grant by revoking the access\nthat the grant allowed.",
+    "ReferenceGrant identifies kinds of resources in other namespaces that are\ntrusted to reference the specified kinds of resources in the same namespace\nas the policy.\n\nEach ReferenceGrant can be used to represent a unique trust relationship.\nAdditional Reference Grants can be used to add to the set of trusted\nsources of inbound references for the namespace they are defined within.\n\nAll cross-namespace references in Gateway API (with the exception of cross-namespace\nGateway-route attachment) require a ReferenceGrant.\n\nReferenceGrant is a form of runtime verification allowing users to assert\nwhich cross-namespace object references are permitted. Implementations that\nsupport ReferenceGrant MUST NOT permit cross-namespace references which have\nno grant, and MUST respond to the removal of a grant by revoking the access\nthat the grant allowed.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "From describes the trusted namespaces and kinds that can reference the resources described in \"To\". Each entry in this list MUST be considered to be an additional place that references can be valid from, or to put this another way, entries MUST be combined using OR. \n Support: Core",
+    "Group is the group of the referent. When empty, the Kubernetes core API group is inferred. \n Support: Core",
+    "Kind is the kind of the referent. Although implementations may support additional resources, the following types are part of the \"Core\" support level for this field. \n When used to permit a SecretObjectReference: \n * Gateway \n When used to permit a BackendObjectReference: \n * GRPCRoute * HTTPRoute * TCPRoute * TLSRoute * UDPRoute",
+    "Namespace is the namespace of the referent. \n Support: Core",
+    "To describes the resources that may be referenced by the resources described in \"From\". Each entry in this list MUST be considered to be an additional place that references can be valid to, or to put this another way, entries MUST be combined using OR. \n Support: Core",
+    "Kind is the kind of the referent. Although implementations may support additional resources, the following types are part of the \"Core\" support level for this field: \n * Secret when used to permit a SecretObjectReference * Service when used to permit a BackendObjectReference",
+    "Name is the name of the referent. When unspecified, this policy refers to all resources of the specified Group and Kind in the local namespace.",
+    "Name is the name of the referent. When unspecified, this policy\nrefers to all resources of the specified Group and Kind in the local\nnamespace.",
+    "ReferenceGrant identifies kinds of resources in other namespaces that are trusted to reference the specified kinds of resources in the same namespace as the policy. \n Each ReferenceGrant can be used to represent a unique trust relationship. Additional Reference Grants can be used to add to the set of trusted sources of inbound references for the namespace they are defined within. \n All cross-namespace references in Gateway API (with the exception of cross-namespace Gateway-route attachment) require a ReferenceGrant. \n ReferenceGrant is a form of runtime verification allowing users to assert which cross-namespace object references are permitted. Implementations that support ReferenceGrant MUST NOT permit cross-namespace references which have no grant, and MUST respond to the removal of a grant by revoking the access that the grant allowed.",
+    "ReferenceGrant identifies kinds of resources in other namespaces that are trusted to reference the specified kinds of resources in the same namespace as the policy. \n Each ReferenceGrant can be used to represent a unique trust relationship. Additional Reference Grants can be used to add to the set of trusted sources of inbound references for the namespace they are defined within. \n All cross-namespace references in Gateway API (with the exception of cross-namespace Gateway-route attachment) require a ReferenceGrant. \n ReferenceGrant is a form of runtime verification allowing users to assert which cross-namespace object references are permitted. Implementations that support ReferenceGrant MUST NOT permit cross-namespace references which have no grant, and MUST respond to the removal of a grant by revoking the access that the grant allowed. \n Support: Core"
+  ]
+}

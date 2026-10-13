@@ -1,0 +1,492 @@
+{
+  "name": "Gateway API",
+  "slug": "gateway-api",
+  "repo": "kubernetes-sigs/gateway-api",
+  "logo": "https://avatars.githubusercontent.com/u/36015203?s=200&v=4",
+  "versions": [
+    {
+      "version": "v1.6.3",
+      "tag": "v1.6.3",
+      "date": "2026-10-06",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.3/config/crd/standard/gateway.networking.k8s.io_backendtlspolicies.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.3/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.3/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.3/config/crd/standard/gateway.networking.k8s.io_grpcroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.3/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.3/config/crd/standard/gateway.networking.k8s.io_listenersets.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.3/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.3/config/crd/standard/gateway.networking.k8s.io_tcproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.3/config/crd/standard/gateway.networking.k8s.io_tlsroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.3/config/crd/standard/gateway.networking.k8s.io_udproutes.yaml"
+      ],
+      "changelogBase": "v1.6.2"
+    },
+    {
+      "version": "v1.6.2",
+      "tag": "v1.6.2",
+      "date": "2026-09-03",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.2/config/crd/standard/gateway.networking.k8s.io_backendtlspolicies.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.2/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.2/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.2/config/crd/standard/gateway.networking.k8s.io_grpcroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.2/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.2/config/crd/standard/gateway.networking.k8s.io_listenersets.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.2/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.2/config/crd/standard/gateway.networking.k8s.io_tcproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.2/config/crd/standard/gateway.networking.k8s.io_tlsroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.2/config/crd/standard/gateway.networking.k8s.io_udproutes.yaml"
+      ],
+      "changelogBase": "v1.6.1"
+    },
+    {
+      "version": "v1.6.1",
+      "tag": "v1.6.1",
+      "date": "2026-07-16",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.1/config/crd/standard/gateway.networking.k8s.io_backendtlspolicies.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.1/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.1/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.1/config/crd/standard/gateway.networking.k8s.io_grpcroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.1/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.1/config/crd/standard/gateway.networking.k8s.io_listenersets.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.1/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.1/config/crd/standard/gateway.networking.k8s.io_tcproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.1/config/crd/standard/gateway.networking.k8s.io_tlsroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.1/config/crd/standard/gateway.networking.k8s.io_udproutes.yaml"
+      ],
+      "changelogBase": "v1.6.0"
+    },
+    {
+      "version": "v1.6.0",
+      "tag": "v1.6.0",
+      "date": "2026-06-29",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.0/config/crd/standard/gateway.networking.k8s.io_backendtlspolicies.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.0/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.0/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.0/config/crd/standard/gateway.networking.k8s.io_grpcroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.0/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.0/config/crd/standard/gateway.networking.k8s.io_listenersets.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.0/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.0/config/crd/standard/gateway.networking.k8s.io_tcproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.0/config/crd/standard/gateway.networking.k8s.io_tlsroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.6.0/config/crd/standard/gateway.networking.k8s.io_udproutes.yaml"
+      ],
+      "changelogBase": "v1.5.1",
+      "added": [
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1",
+          "kind": "TCPRoute",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1",
+          "kind": "UDPRoute",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1alpha2",
+          "kind": "TCPRoute",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1alpha2",
+          "kind": "UDPRoute",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.5.1",
+      "tag": "v1.5.1",
+      "date": "2026-03-13",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.1/config/crd/standard/gateway.networking.k8s.io_backendtlspolicies.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.1/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.1/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.1/config/crd/standard/gateway.networking.k8s.io_grpcroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.1/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.1/config/crd/standard/gateway.networking.k8s.io_listenersets.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.1/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.1/config/crd/standard/gateway.networking.k8s.io_tlsroutes.yaml"
+      ],
+      "changelogBase": "v1.5.0"
+    },
+    {
+      "version": "v1.5.0",
+      "tag": "v1.5.0",
+      "date": "2026-02-27",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.0/config/crd/standard/gateway.networking.k8s.io_backendtlspolicies.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.0/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.0/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.0/config/crd/standard/gateway.networking.k8s.io_grpcroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.0/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.0/config/crd/standard/gateway.networking.k8s.io_listenersets.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.0/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.5.0/config/crd/standard/gateway.networking.k8s.io_tlsroutes.yaml"
+      ],
+      "changelogBase": "v1.4.1",
+      "added": [
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1",
+          "kind": "ListenerSet",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1",
+          "kind": "ReferenceGrant",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1",
+          "kind": "TLSRoute",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1alpha2",
+          "kind": "TLSRoute",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1alpha3",
+          "kind": "TLSRoute",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.4.1",
+      "tag": "v1.4.1",
+      "date": "2025-12-04",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.4.1/config/crd/standard/gateway.networking.k8s.io_backendtlspolicies.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.4.1/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.4.1/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.4.1/config/crd/standard/gateway.networking.k8s.io_grpcroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.4.1/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.4.1/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v1.4.0"
+    },
+    {
+      "version": "v1.4.0",
+      "tag": "v1.4.0",
+      "date": "2025-10-06",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.4.0/config/crd/standard/gateway.networking.k8s.io_backendtlspolicies.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.4.0/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.4.0/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.4.0/config/crd/standard/gateway.networking.k8s.io_grpcroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.4.0/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.4.0/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v1.3.0",
+      "added": [
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1",
+          "kind": "BackendTLSPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1alpha3",
+          "kind": "BackendTLSPolicy",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.3.0",
+      "tag": "v1.3.0",
+      "date": "2025-04-24",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.3.0/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.3.0/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.3.0/config/crd/standard/gateway.networking.k8s.io_grpcroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.3.0/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.3.0/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v1.2.1"
+    },
+    {
+      "version": "v1.2.1",
+      "tag": "v1.2.1",
+      "date": "2024-11-29",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.2.1/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.2.1/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.2.1/config/crd/standard/gateway.networking.k8s.io_grpcroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.2.1/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.2.1/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v1.2.0"
+    },
+    {
+      "version": "v1.2.0",
+      "tag": "v1.2.0",
+      "date": "2024-10-03",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.2.0/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.2.0/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.2.0/config/crd/standard/gateway.networking.k8s.io_grpcroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.2.0/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.2.0/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v1.1.1",
+      "removed": [
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1alpha2",
+          "kind": "GRPCRoute",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1alpha2",
+          "kind": "ReferenceGrant",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.1.1",
+      "tag": "v1.1.1",
+      "date": "2024-10-31",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.1.1/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.1.1/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.1.1/config/crd/standard/gateway.networking.k8s.io_grpcroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.1.1/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.1.1/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v1.1.0"
+    },
+    {
+      "version": "v1.1.0",
+      "tag": "v1.1.0",
+      "date": "2024-05-08",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.1.0/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.1.0/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.1.0/config/crd/standard/gateway.networking.k8s.io_grpcroutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.1.0/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.1.0/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v1.0.0",
+      "added": [
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1",
+          "kind": "GRPCRoute",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1alpha2",
+          "kind": "GRPCRoute",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.0.0",
+      "tag": "v1.0.0",
+      "date": "2023-10-31",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.0.0/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.0.0/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.0.0/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v1.0.0/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v0.15.25",
+      "moved": [
+        {
+          "kind": "Gateway",
+          "scope": "Namespaced",
+          "from": "gateway.networking.k8s.io/v1alpha2",
+          "to": "gateway.networking.k8s.io/v1"
+        },
+        {
+          "kind": "GatewayClass",
+          "scope": "Cluster",
+          "from": "gateway.networking.k8s.io/v1alpha2",
+          "to": "gateway.networking.k8s.io/v1"
+        },
+        {
+          "kind": "HTTPRoute",
+          "scope": "Namespaced",
+          "from": "gateway.networking.k8s.io/v1alpha2",
+          "to": "gateway.networking.k8s.io/v1"
+        }
+      ]
+    },
+    {
+      "version": "v0.15.25",
+      "tag": "v0.15.25",
+      "date": "2023-09-27",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.15.25/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.15.25/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.15.25/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.15.25/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v0.8.1"
+    },
+    {
+      "version": "v0.8.1",
+      "tag": "v0.8.1",
+      "date": "2023-09-14",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.8.1/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.8.1/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.8.1/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.8.1/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v0.8.0"
+    },
+    {
+      "version": "v0.8.0",
+      "tag": "v0.8.0",
+      "date": "2023-08-29",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.8.0/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.8.0/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.8.0/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.8.0/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v0.7.1"
+    },
+    {
+      "version": "v0.7.1",
+      "tag": "v0.7.1",
+      "date": "2023-06-01",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.7.1/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.7.1/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.7.1/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.7.1/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v0.7.0"
+    },
+    {
+      "version": "v0.7.0",
+      "tag": "v0.7.0",
+      "date": "2023-05-15",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.7.0/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.7.0/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.7.0/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.7.0/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v0.6.2"
+    },
+    {
+      "version": "v0.6.2",
+      "tag": "v0.6.2",
+      "date": "2023-03-15",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.6.2/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.6.2/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.6.2/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.6.2/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v0.6.1"
+    },
+    {
+      "version": "v0.6.1",
+      "tag": "v0.6.1",
+      "date": "2023-02-08",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.6.1/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.6.1/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.6.1/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.6.1/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v0.6.0"
+    },
+    {
+      "version": "v0.6.0",
+      "tag": "v0.6.0",
+      "date": "2022-12-21",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.6.0/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.6.0/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.6.0/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.6.0/config/crd/standard/gateway.networking.k8s.io_referencegrants.yaml"
+      ],
+      "changelogBase": "v0.5.1",
+      "added": [
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1alpha2",
+          "kind": "ReferenceGrant",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1beta1",
+          "kind": "ReferenceGrant",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v0.5.1",
+      "tag": "v0.5.1",
+      "date": "2022-09-27",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.5.1/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.5.1/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.5.1/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml"
+      ],
+      "changelogBase": "v0.5.0"
+    },
+    {
+      "version": "v0.5.0",
+      "tag": "v0.5.0",
+      "date": "2022-07-13",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.5.0/config/crd/standard/gateway.networking.k8s.io_gatewayclasses.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.5.0/config/crd/standard/gateway.networking.k8s.io_gateways.yaml",
+        "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/v0.5.0/config/crd/standard/gateway.networking.k8s.io_httproutes.yaml"
+      ],
+      "added": [
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1alpha2",
+          "kind": "Gateway",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1alpha2",
+          "kind": "GatewayClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1alpha2",
+          "kind": "HTTPRoute",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1beta1",
+          "kind": "Gateway",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1beta1",
+          "kind": "GatewayClass",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "gateway.networking.k8s.io/v1beta1",
+          "kind": "HTTPRoute",
+          "scope": "Namespaced"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    "v0.4.3",
+    "v0.4.2",
+    "v0.4.1",
+    "v0.4.0",
+    "v0.3.0",
+    "v0.2.0",
+    "v0.1.0"
+  ]
+}

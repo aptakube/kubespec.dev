@@ -1,0 +1,55 @@
+{
+  "versions": {
+    "v5.25.0": {
+      "added": {
+        "spec.publicSharing": "object",
+        "spec.variables": "object[]",
+        "status.publicSharingPath": "string"
+      },
+      "descriptions": {
+        "spec.publicSharing": [
+          null,
+          0
+        ],
+        "spec.variables": [
+          null,
+          1
+        ],
+        "status.publicSharingPath": [
+          null,
+          2
+        ]
+      }
+    },
+    "v5.24.0": {
+      "added": {
+        "spec.oci": "object"
+      },
+      "descriptions": {
+        "spec.oci": [
+          null,
+          3
+        ]
+      }
+    },
+    "v5.21.4": {
+      "descriptionChanged": [
+        "status.conditions"
+      ],
+      "descriptions": {
+        "status.conditions": [
+          4,
+          5
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Allows configuration of sharing the dashboard publicly",
+    "overrides the default (current) value of named template variables in the dashboard model.\nVariables that are not present in the model are ignored.",
+    "The resulting path where a public sharing config is available",
+    "model from an OCI artifact (e.g. ghcr.io/team/dashboards:v1)",
+    "Results when synchonizing resource with Grafana instances",
+    "Results when synchronizing resource with Grafana instances"
+  ]
+}

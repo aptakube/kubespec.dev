@@ -1,0 +1,199 @@
+{
+  "versions": {
+    "v1.3.0": {
+      "added": {
+        "spec.extra": "map[string]string[]",
+        "spec.groups": "string[]",
+        "spec.uid": "string",
+        "spec.username": "string"
+      },
+      "descriptionChanged": [
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.extra": [
+          null,
+          0
+        ],
+        "spec.groups": [
+          null,
+          1
+        ],
+        "spec.uid": [
+          null,
+          2
+        ],
+        "spec.username": [
+          null,
+          3
+        ],
+        "status.conditions.type": [
+          4,
+          5
+        ]
+      }
+    },
+    "v1.2.0": {
+      "descriptionChanged": [
+        "spec.issuerRef",
+        "status.conditions.status",
+        "status.conditions.type"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec.issuerRef": [
+          6,
+          7
+        ],
+        "status.conditions.status": [
+          8,
+          9
+        ],
+        "status.conditions.type": [
+          10,
+          4
+        ],
+        "": [
+          11,
+          12
+        ]
+      }
+    },
+    "v0.16.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.csr",
+        "spec.duration",
+        "spec.isCA",
+        "spec.issuerRef.group",
+        "spec.issuerRef.kind",
+        "spec.issuerRef.name",
+        "spec.usages",
+        "status",
+        "status.ca",
+        "status.certificate",
+        "status.conditions",
+        "status.conditions.type"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec": [
+          13,
+          14
+        ],
+        "spec.csr": [
+          15,
+          16
+        ],
+        "spec.duration": [
+          17,
+          18
+        ],
+        "spec.isCA": [
+          19,
+          20
+        ],
+        "spec.issuerRef.group": [
+          null,
+          21
+        ],
+        "spec.issuerRef.kind": [
+          null,
+          22
+        ],
+        "spec.issuerRef.name": [
+          null,
+          23
+        ],
+        "spec.usages": [
+          24,
+          25
+        ],
+        "status": [
+          26,
+          27
+        ],
+        "status.ca": [
+          28,
+          29
+        ],
+        "status.certificate": [
+          30,
+          31
+        ],
+        "status.conditions": [
+          null,
+          32
+        ],
+        "status.conditions.type": [
+          33,
+          10
+        ],
+        "": [
+          34,
+          11
+        ]
+      }
+    },
+    "v0.13.0": {
+      "descriptionChanged": [
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "status.conditions.type": [
+          35,
+          33
+        ]
+      }
+    },
+    "v0.12.0": {
+      "required": [
+        "spec.csr"
+      ],
+      "descriptions": {
+        "spec.csr": [
+          null,
+          15
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Extra contains extra attributes of the user that created the CertificateRequest. Populated by the cert-manager webhook on creation and immutable.",
+    "Groups contains group membership of the user that created the CertificateRequest. Populated by the cert-manager webhook on creation and immutable.",
+    "UID contains the uid of the user that created the CertificateRequest. Populated by the cert-manager webhook on creation and immutable.",
+    "Username contains the name of the user that created the CertificateRequest. Populated by the cert-manager webhook on creation and immutable.",
+    "Type of the condition, known values are (`Ready`, `InvalidRequest`).",
+    "Type of the condition, known values are (`Ready`, `InvalidRequest`, `Approved`, `Denied`).",
+    "IssuerRef is a reference to the issuer for this CertificateRequest.  If the 'kind' field is not set, or set to 'Issuer', an Issuer resource with the given name in the same namespace as the CertificateRequest will be used.  If the 'kind' field is set to 'ClusterIssuer', a ClusterIssuer with the provided name will be used. The 'name' field in this stanza is required at all times. The group field refers to the API group of the issuer which defaults to 'cert-manager.io' if empty.",
+    "IssuerRef is a reference to the issuer for this CertificateRequest.  If the `kind` field is not set, or set to `Issuer`, an Issuer resource with the given name in the same namespace as the CertificateRequest will be used.  If the `kind` field is set to `ClusterIssuer`, a ClusterIssuer with the provided name will be used. The `name` field in this stanza is required at all times. The group field refers to the API group of the issuer which defaults to `cert-manager.io` if empty.",
+    "Status of the condition, one of ('True', 'False', 'Unknown').",
+    "Status of the condition, one of (`True`, `False`, `Unknown`).",
+    "Type of the condition, known values are ('Ready', 'InvalidRequest').",
+    "A CertificateRequest is used to request a signed certificate from one of the configured issuers. \n All fields within the CertificateRequest's `spec` are immutable after creation. A CertificateRequest will either succeed or fail, as denoted by its `status.state` field. \n A CertificateRequest is a 'one-shot' resource, meaning it represents a single point in time request for a certificate and cannot be re-used.",
+    "A CertificateRequest is used to request a signed certificate from one of the configured issuers. \n All fields within the CertificateRequest's `spec` are immutable after creation. A CertificateRequest will either succeed or fail, as denoted by its `status.state` field. \n A CertificateRequest is a one-shot resource, meaning it represents a single point in time request for a certificate and cannot be re-used.",
+    "CertificateRequestSpec defines the desired state of CertificateRequest",
+    "Desired state of the CertificateRequest resource.",
+    "Byte slice containing the PEM encoded CertificateSigningRequest",
+    "The PEM-encoded x509 certificate signing request to be submitted to the CA for signing.",
+    "Requested certificate default Duration",
+    "The requested 'duration' (i.e. lifetime) of the Certificate. This option may be ignored/overridden by some issuer types.",
+    "IsCA will mark the resulting certificate as valid for signing. This implies that the 'cert sign' usage is set",
+    "IsCA will request to mark the certificate as valid for certificate signing when submitting to the issuer. This will automatically add the `cert sign` usage to the list of `usages`.",
+    "Group of the resource being referred to.",
+    "Kind of the resource being referred to.",
+    "Name of the resource being referred to.",
+    "Usages is the set of x509 actions that are enabled for a given key. Defaults are ('digital signature', 'key encipherment') if empty",
+    "Usages is the set of x509 usages that are requested for the certificate. Defaults to `digital signature` and `key encipherment` if not specified.",
+    "CertificateStatus defines the observed state of CertificateRequest and resulting signed certificate.",
+    "Status of the CertificateRequest. This is set and managed automatically.",
+    "Byte slice containing the PEM encoded certificate authority of the signed certificate.",
+    "The PEM encoded x509 certificate of the signer, also known as the CA (Certificate Authority). This is set on a best-effort basis by different issuers. If not set, the CA is assumed to be unknown/not available.",
+    "Byte slice containing a PEM encoded signed certificate resulting from the given certificate signing request.",
+    "The PEM encoded x509 certificate resulting from the certificate signing request. If not set, the CertificateRequest has either not been completed or has failed. More information on failure can be found by checking the `conditions` field.",
+    "List of status conditions to indicate the status of a CertificateRequest. Known condition types are `Ready` and `InvalidRequest`.",
+    "Type of the condition, currently ('Ready', 'InvalidRequest').",
+    "CertificateRequest is a type to represent a Certificate Signing Request",
+    "Type of the condition, currently ('Ready')."
+  ]
+}

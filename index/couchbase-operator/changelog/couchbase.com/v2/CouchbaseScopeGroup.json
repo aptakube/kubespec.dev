@@ -1,0 +1,122 @@
+{
+  "versions": {
+    "couchbase-operator-2.70.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.collections",
+        "spec.collections.managed",
+        "spec.collections.preserveDefaultCollection",
+        "spec.collections.resources",
+        "spec.collections.resources.kind",
+        "spec.collections.resources.name",
+        "spec.collections.selector",
+        "spec.collections.selector.matchExpressions.operator",
+        "spec.collections.selector.matchExpressions.values",
+        "spec.collections.selector.matchLabels",
+        "spec.names"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          0,
+          1
+        ],
+        "kind": [
+          2,
+          3
+        ],
+        "spec.collections": [
+          4,
+          5
+        ],
+        "spec.collections.managed": [
+          6,
+          7
+        ],
+        "spec.collections.preserveDefaultCollection": [
+          8,
+          9
+        ],
+        "spec.collections.resources": [
+          10,
+          11
+        ],
+        "spec.collections.resources.kind": [
+          12,
+          13
+        ],
+        "spec.collections.resources.name": [
+          14,
+          15
+        ],
+        "spec.collections.selector": [
+          16,
+          17
+        ],
+        "spec.collections.selector.matchExpressions.operator": [
+          18,
+          19
+        ],
+        "spec.collections.selector.matchExpressions.values": [
+          20,
+          21
+        ],
+        "spec.collections.selector.matchLabels": [
+          22,
+          23
+        ],
+        "spec.names": [
+          24,
+          25
+        ],
+        "": [
+          26,
+          27
+        ]
+      }
+    },
+    "couchbase-operator-2.60.0": {
+      "descriptionChanged": [
+        "spec.collections.selector"
+      ],
+      "descriptions": {
+        "spec.collections.selector": [
+          28,
+          16
+        ]
+      }
+    }
+  },
+  "texts": [
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Collections defines how to collate collections included in this scope or scope group. Any of the provided methods may be used to collate a set of collections to manage.  Collated collections must have unique names, otherwise it is considered ambiguous, and an error condition.",
+    "Collections defines how to collate collections included in this scope or scope group.\nAny of the provided methods may be used to collate a set of collections to\nmanage.  Collated collections must have unique names, otherwise it is\nconsidered ambiguous, and an error condition.",
+    "Managed indicates whether collections within this scope are managed. If not then you can dynamically create and delete collections with the Couchbase UI or SDKs.",
+    "Managed indicates whether collections within this scope are managed.\nIf not then you can dynamically create and delete collections with\nthe Couchbase UI or SDKs.",
+    "PreserveDefaultCollection indicates whether the Operator should manage the default collection within the default scope.  The default collection can be deleted, but can not be recreated by Couchbase Server.  By setting this field to `true`, the Operator will implicitly manage the default collection within the default scope.  The default collection cannot be modified and will have no document time-to-live (TTL).  When set to `false`, the operator will not manage the default collection, which will be deleted and cannot be used or recreated.",
+    "PreserveDefaultCollection indicates whether the Operator should manage the\ndefault collection within the default scope.  The default collection can\nbe deleted, but can not be recreated by Couchbase Server.  By setting this\nfield to `true`, the Operator will implicitly manage the default collection\nwithin the default scope.  The default collection cannot be modified and\nwill have no document time-to-live (TTL).  When set to `false`, the operator\nwill not manage the default collection, which will be deleted and cannot be\nused or recreated.",
+    "Resources is an explicit list of named resources that will be considered for inclusion in this scope or scopes.  If a resource reference doesn't match a resource, then no error conditions are raised due to undefined resource creation ordering and eventual consistency.",
+    "Resources is an explicit list of named resources that will be considered\nfor inclusion in this scope or scopes.  If a resource reference doesn't\nmatch a resource, then no error conditions are raised due to undefined\nresource creation ordering and eventual consistency.",
+    "Kind indicates the kind of resource that is being referenced.  A scope can only reference `CouchbaseCollection` and `CouchbaseCollectionGroup` resource kinds.  This field defaults to `CouchbaseCollection` if not specified.",
+    "Kind indicates the kind of resource that is being referenced.  A scope\ncan only reference `CouchbaseCollection` and `CouchbaseCollectionGroup`\nresource kinds.  This field defaults to `CouchbaseCollection` if not\nspecified.",
+    "Name is the name of the Kubernetes resource name that is being referenced. Legal collection names have a maximum length of 251 characters and may be composed of any character from \"a-z\", \"A-Z\", \"0-9\" and \"_-%\".",
+    "Name is the name of the Kubernetes resource name that is being referenced.\nLegal collection names have a maximum length of 251\ncharacters and may be composed of any character from \"a-z\", \"A-Z\", \"0-9\" and \"_-%\".",
+    "Selector allows resources to be implicitly considered for inclusion in this scope or scopes.  More info: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/#labelselector-v1-meta",
+    "Selector allows resources to be implicitly considered for inclusion in this\nscope or scopes.  More info:\nhttps://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/#labelselector-v1-meta",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "Names specifies the names of the scopes.  Unlike CouchbaseScope, which specifies a single scope, a scope group specifies multiple, and the scope group must specify at least one scope name. Any scope names specified must be unique. Scope names must be 1-251 characters in length, contain only [a-zA-Z0-9_-%] and not start with either _ or %.",
+    "Names specifies the names of the scopes.  Unlike CouchbaseScope, which\nspecifies a single scope, a scope group specifies multiple, and the\nscope group must specify at least one scope name.\nAny scope names specified must be unique.\nScope names must be 1-251 characters in length, contain only [a-zA-Z0-9_-%]\nand not start with either _ or %.",
+    "CouchbaseScopeGroup represents a logical unit of data storage that sits between buckets and collections e.g. a bucket may contain multiple scopes, and a scope may contain multiple collections.  At present, scopes are not nested, so provide only a single level of abstraction.  Scopes provide a coarser grained basis for role-based access control (RBAC) and cross-datacenter replication (XDCR) than collections, but finer that buckets. In order to be considered by the Operator, a scope must be referenced by either a `CouchbaseBucket` or `CouchbaseEphemeralBucket` resource. Unlike `CouchbaseScope` resources, scope groups represents multiple scopes, with the same common set of collections, to be expressed as a single resource, minimizing required configuration and Kubernetes API traffic.  It also forms the basis of Couchbase RBAC security boundaries.",
+    "CouchbaseScopeGroup represents a logical unit of data storage that sits between buckets and\ncollections e.g. a bucket may contain multiple scopes, and a scope may contain multiple\ncollections.  At present, scopes are not nested, so provide only a single level of\nabstraction.  Scopes provide a coarser grained basis for role-based access control (RBAC)\nand cross-datacenter replication (XDCR) than collections, but finer that buckets.\nIn order to be considered by the Operator, a scope must be referenced by either a\n`CouchbaseBucket` or `CouchbaseEphemeralBucket` resource.\nUnlike `CouchbaseScope` resources, scope groups represents multiple scopes, with the same\ncommon set of collections, to be expressed as a single resource, minimizing required\nconfiguration and Kubernetes API traffic.  It also forms the basis of Couchbase RBAC\nsecurity boundaries.",
+    "Selector allows resources to be implicitly considered for inclusion in this scope or scopes.  More info: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#labelselector-v1-meta"
+  ]
+}

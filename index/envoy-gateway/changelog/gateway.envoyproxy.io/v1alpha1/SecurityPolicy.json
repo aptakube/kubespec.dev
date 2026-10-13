@@ -1,0 +1,183 @@
+{
+  "versions": {
+    "v1.9.0": {
+      "added": {
+        "spec.authorization.rules.cel": "string",
+        "spec.authorization.rules.operation.path": "object",
+        "spec.csrf": "object",
+        "spec.extAuth.grpc.backendSettings.healthCheck.active.healthCheckLog": "object",
+        "spec.extAuth.grpc.backendSettings.healthCheck.active.http.requestBody": "object",
+        "spec.extAuth.grpc.backendSettings.loadBalancer.backendUtilization.outOfBand": "object",
+        "spec.extAuth.http.backendSettings.healthCheck.active.healthCheckLog": "object",
+        "spec.extAuth.http.backendSettings.healthCheck.active.http.requestBody": "object",
+        "spec.extAuth.http.backendSettings.loadBalancer.backendUtilization.outOfBand": "object",
+        "spec.jwt.failOpen": "boolean",
+        "spec.jwt.providers.remoteJWKS.backendSettings.healthCheck.active.healthCheckLog": "object",
+        "spec.jwt.providers.remoteJWKS.backendSettings.healthCheck.active.http.requestBody": "object",
+        "spec.jwt.providers.remoteJWKS.backendSettings.loadBalancer.backendUtilization.outOfBand": "object",
+        "spec.jwt.providers.remoteJWKS.failedRefetchDuration": "string",
+        "spec.oidc.provider.backendSettings.healthCheck.active.healthCheckLog": "object",
+        "spec.oidc.provider.backendSettings.healthCheck.active.http.requestBody": "object",
+        "spec.oidc.provider.backendSettings.loadBalancer.backendUtilization.outOfBand": "object"
+      },
+      "optional": [
+        "spec.authorization.rules.operation.methods",
+        "spec.authorization.rules.principal"
+      ],
+      "descriptionChanged": [
+        "spec.authorization.rules.principal.clientIPGeoLocations",
+        "spec.jwt.optional",
+        "spec.mergeType",
+        "spec.oidc.forwardIDToken",
+        "spec.oidc.forwardIDToken.header"
+      ],
+      "descriptions": {
+        "spec.authorization.rules.cel": [
+          null,
+          0
+        ],
+        "spec.authorization.rules.operation.methods": [
+          null,
+          1
+        ],
+        "spec.authorization.rules.operation.path": [
+          null,
+          2
+        ],
+        "spec.authorization.rules.principal": [
+          null,
+          3
+        ],
+        "spec.authorization.rules.principal.clientIPGeoLocations": [
+          4,
+          5
+        ],
+        "spec.csrf": [
+          null,
+          6
+        ],
+        "spec.extAuth.grpc.backendSettings.healthCheck.active.healthCheckLog": [
+          null,
+          7
+        ],
+        "spec.extAuth.grpc.backendSettings.healthCheck.active.http.requestBody": [
+          null,
+          8
+        ],
+        "spec.extAuth.grpc.backendSettings.loadBalancer.backendUtilization.outOfBand": [
+          null,
+          9
+        ],
+        "spec.extAuth.http.backendSettings.healthCheck.active.healthCheckLog": [
+          null,
+          7
+        ],
+        "spec.extAuth.http.backendSettings.healthCheck.active.http.requestBody": [
+          null,
+          8
+        ],
+        "spec.extAuth.http.backendSettings.loadBalancer.backendUtilization.outOfBand": [
+          null,
+          9
+        ],
+        "spec.jwt.failOpen": [
+          null,
+          10
+        ],
+        "spec.jwt.optional": [
+          11,
+          12
+        ],
+        "spec.jwt.providers.remoteJWKS.backendSettings.healthCheck.active.healthCheckLog": [
+          null,
+          7
+        ],
+        "spec.jwt.providers.remoteJWKS.backendSettings.healthCheck.active.http.requestBody": [
+          null,
+          8
+        ],
+        "spec.jwt.providers.remoteJWKS.backendSettings.loadBalancer.backendUtilization.outOfBand": [
+          null,
+          9
+        ],
+        "spec.jwt.providers.remoteJWKS.failedRefetchDuration": [
+          null,
+          13
+        ],
+        "spec.mergeType": [
+          14,
+          15
+        ],
+        "spec.oidc.forwardIDToken": [
+          16,
+          17
+        ],
+        "spec.oidc.forwardIDToken.header": [
+          18,
+          19
+        ],
+        "spec.oidc.provider.backendSettings.healthCheck.active.healthCheckLog": [
+          null,
+          7
+        ],
+        "spec.oidc.provider.backendSettings.healthCheck.active.http.requestBody": [
+          null,
+          8
+        ],
+        "spec.oidc.provider.backendSettings.loadBalancer.backendUtilization.outOfBand": [
+          null,
+          9
+        ]
+      }
+    },
+    "v1.8.2": {
+      "descriptionChanged": [
+        "spec.apiKeyAuth.extractFrom.cookies",
+        "spec.apiKeyAuth.extractFrom.headers",
+        "spec.apiKeyAuth.extractFrom.params"
+      ],
+      "descriptions": {
+        "spec.apiKeyAuth.extractFrom.cookies": [
+          20,
+          21
+        ],
+        "spec.apiKeyAuth.extractFrom.headers": [
+          22,
+          23
+        ],
+        "spec.apiKeyAuth.extractFrom.params": [
+          24,
+          25
+        ]
+      }
+    }
+  },
+  "texts": [
+    "CEL specifies a Common Expression Language expression to evaluate for the\nrequest. If specified, the expression must evaluate to true for the rule to match.\n\nThe expression can use Envoy attributes exposed to the CEL runtime.\nRequest attributes, such as request.path, request.url_path, request.host,\nrequest.scheme, request.method, request.headers, and request.query, are\ngenerally available during authorization. Connection attributes, such as\nsource.address, source.port, destination.address, destination.port,\nconnection.mtls, and connection.requested_server_name, may also be used.\nDynamic metadata and filter state produced by earlier filters may also be\navailable through attributes such as metadata and filter_state.\nResponse attributes are only available after the request completes and\nshould not be used for authorization decisions.\n\nFor more details, see:\nhttps://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/advanced/attributes\n\nThe rule matches only when the expression evaluates to a boolean true.\nNon-boolean results, false, null, and CEL evaluation errors are treated as\nno match.\n\nExamples:\n`request.headers['x-tenant'] == 'team-a'`\n`request.method == 'POST' && request.path.startsWith('/admin')`",
+    "Methods are the HTTP methods of the request.\nIf multiple methods are specified, all specified methods are allowed or denied, based on the action of the rule.",
+    "Path is the HTTP path of the request.\nSupport Exact, PathPrefix and RegularExpression match types.",
+    "Principal specifies the client identity of a request.\nIf there are multiple principal types, all principals must match for the rule to match.\nFor example, if there are two principals: one for client IP and one for JWT claim,\nthe rule will match only if both the client IP and the JWT claim match.",
+    "ClientIPGeoLocations authorizes the request based on geolocation metadata derived from the client IP.\nThis field is supported for HTTPRoute and GRPCRoute authorization.\nIt is not supported for TCPRoute targets.\n\nIf multiple entries are specified,  one of the ClientIPGeoLocation entries must match for the rule to match.\n\nThe client IP is inferred from the X-Forwarded-For header or a custom header.\nYou can use the `ClientIPDetection` field in the `ClientTrafficPolicy` to configure the client IP detection.",
+    "ClientIPGeoLocations authorizes the request based on geolocation metadata derived from the client IP.\nThis field is supported for HTTPRoute and GRPCRoute authorization.\nIt is not supported for TCPRoute targets.\n\nIf multiple entries are specified,  one of the ClientIPGeoLocation entries must match for the rule to match.\n\nThe client IP is inferred from the X-Forwarded-For header, a custom header, or the\ndirect downstream connection source address (the TCP peer of the connection terminated by Envoy).\nYou can use the `ClientIPDetection` field in the `ClientTrafficPolicy` to configure the client IP detection.",
+    "CSRF defines the configuration for Cross-Site Request Forgery (CSRF) protection.\nWhen enabled, the CSRF filter checks that the Origin header matches the destination\nor one of the additional allowed origins on mutating requests (POST, PUT, DELETE, PATCH).",
+    "HealthCheckLog defines health check event logging configuration for this cluster.\nWhen set, HC probe outcomes are logged to the configured sinks.\nTakes precedence over the gateway-level EnvoyProxy.spec.telemetry.healthCheckLog.",
+    "RequestBody defines the HTTP request body payload sent during health checking.",
+    "OutOfBand enables out-of-band ORCA load reporting. When set, Envoy opens a\nserver-streaming gRPC connection to each endpoint's\nxds.service.orca.v3.OpenRcaService/StreamCoreMetrics and pulls load\nreports periodically, instead of relying on in-band ORCA metrics\ncarried in response headers/trailers.\n\nThe backend must implement OpenRcaService for this to take effect.",
+    "FailOpen lets a request pass JWT authentication even when its JWT is\nmissing or invalid, rather than being rejected. This helps when a header\nthat clients use to carry a JWT may also legitimately hold a non-JWT value\nthat the backend relies on.\n\nA valid JWT is still verified and its claims forwarded as usual; only the\nrejection of requests with a missing or invalid JWT is relaxed. Because this\ndoes not enforce authentication on its own, pair it with an Authorization\npolicy when access needs to be restricted.\n\nThis is broader than Optional (which tolerates a missing JWT but still\nrejects an invalid one) and takes precedence over it.",
+    "Optional determines whether a missing JWT is acceptable, defaulting to false if not specified.\nNote: Even if optional is set to true, JWT authentication will still fail if an invalid JWT is presented.",
+    "Optional determines whether a missing JWT is acceptable, defaulting to false if not specified.\nNote: Even if optional is set to true, JWT authentication will still fail if an invalid JWT\nis presented. See FailOpen if this is necessary for your use case.",
+    "FailedRefetchDuration is the duration Envoy waits before re-fetching the JWKS\nafter a failed fetch.\nThis does not control retries within a single fetch attempt (see BackendSettings.Retry),\nonly the interval between fetch attempts after a failure.\nIf not specified, Envoy's default of 1 second is used.",
+    "MergeType determines how this configuration is merged with existing SecurityPolicy\nconfigurations targeting a parent resource. When set, this configuration will be merged\ninto a parent SecurityPolicy (i.e. the one targeting a Gateway or Listener).\nThis field cannot be set when targeting a parent resource (Gateway).\nIf unset, no merging occurs, and only the most specific configuration takes effect.",
+    "MergeType determines how this configuration is merged with existing SecurityPolicy\nconfigurations targeting a parent resource. When set, this configuration will be merged\ninto the closest parent SecurityPolicy in the route's attachment hierarchy (for\nexample, one targeting a Gateway, Gateway listener, ListenerSet, or ListenerSet\nlistener).\nCurrently, this field can only be set when targeting xRoute resources.\nIf unset, no merging occurs, and only the most specific configuration takes effect.",
+    "ForwardIDToken configures forwarding of the OIDC ID token to the upstream.\n\nIf the configured header is \"Authorization\", EG forwards the ID token using\nthe \"Bearer \" prefix. For any other header, EG forwards the raw token value.\nIf not specified, the ID token will not be forwarded.",
+    "ForwardIDToken configures forwarding of the OIDC ID token to the upstream.\n\nIf the configured header is \"Authorization\", EG forwards the ID token using\nthe \"Bearer \" prefix. For any other header, EG forwards the raw token value.\nIf not specified, the ID token will not be forwarded.\n\nNote: when passThroughAuthHeader is enabled, this header must not be the same\nas a header a JWT provider extracts from (the \"Authorization\" header by\ndefault). The forwarded ID token header is owned by Envoy, and Envoy rejects\nan OAuth2 configuration whose pass-through matcher keys on it.",
+    "Header is the upstream request header that will carry the ID token.",
+    "Header is the upstream request header that will carry the ID token.\nIt must be a valid HTTP header name. Pseudo-headers (names starting with \":\")\nand the \"Host\" header are not allowed.",
+    "Cookies is the names of the cookie to fetch the key from.\nIf multiple cookies are specified, envoy will look for the api key in the order of the list.\nThis field is optional, but only one of headers, params or cookies is supposed to be specified.",
+    "Cookies is the names of the cookie to fetch the key from.\nIf multiple cookies are specified, envoy will look for the api key in the order of the list.\nThis field is optional, but only one of headers, params or cookies must be specified.",
+    "Headers is the names of the header to fetch the key from.\nIf multiple headers are specified, envoy will look for the api key in the order of the list.\nThis field is optional, but only one of headers, params or cookies is supposed to be specified.",
+    "Headers is the names of the header to fetch the key from.\nIf multiple headers are specified, envoy will look for the api key in the order of the list.\nThis field is optional, but only one of headers, params or cookies must be specified.",
+    "Params is the names of the query parameter to fetch the key from.\nIf multiple params are specified, envoy will look for the api key in the order of the list.\nThis field is optional, but only one of headers, params or cookies is supposed to be specified.",
+    "Params is the names of the query parameter to fetch the key from.\nIf multiple params are specified, envoy will look for the api key in the order of the list.\nThis field is optional, but only one of headers, params or cookies must be specified."
+  ]
+}

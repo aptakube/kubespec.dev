@@ -1,0 +1,377 @@
+{
+  "versions": {
+    "v1.0.2": {
+      "descriptionChanged": [
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "status.conditions.type": [
+          0,
+          1
+        ]
+      }
+    },
+    "v1.0.0": {
+      "added": {
+        "status.conditions": "object[]"
+      },
+      "descriptions": {
+        "status.conditions": [
+          null,
+          2
+        ]
+      }
+    },
+    "v0.36.0": {
+      "typeChanged": {
+        "spec.template.spec.kubelet.kubeReserved": [
+          "map[string]int | string",
+          "map[string]string"
+        ],
+        "spec.template.spec.kubelet.systemReserved": [
+          "map[string]int | string",
+          "map[string]string"
+        ]
+      },
+      "descriptions": {
+        "spec.template.spec.kubelet.kubeReserved": [
+          null,
+          3
+        ],
+        "spec.template.spec.kubelet.systemReserved": [
+          null,
+          4
+        ]
+      }
+    },
+    "v0.35.0": {
+      "required": [
+        "spec"
+      ],
+      "added": {
+        "spec.template.spec.requirements.minValues": "integer"
+      },
+      "descriptions": {
+        "spec": [
+          null,
+          5
+        ],
+        "spec.template.spec.requirements.minValues": [
+          null,
+          6
+        ]
+      }
+    },
+    "v0.34.0": {
+      "added": {
+        "spec.disruption.budgets": "object[]"
+      },
+      "descriptions": {
+        "spec.disruption.budgets": [
+          null,
+          7
+        ]
+      }
+    },
+    "v0.33.6": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.disruption.consolidateAfter",
+        "spec.disruption.consolidationPolicy",
+        "spec.disruption.expireAfter",
+        "spec.template",
+        "spec.template.metadata.annotations",
+        "spec.template.metadata.labels",
+        "spec.template.spec.kubelet",
+        "spec.template.spec.kubelet.clusterDNS",
+        "spec.template.spec.kubelet.evictionMaxPodGracePeriod",
+        "spec.template.spec.kubelet.imageGCHighThresholdPercent",
+        "spec.template.spec.kubelet.imageGCLowThresholdPercent",
+        "spec.template.spec.kubelet.maxPods",
+        "spec.template.spec.kubelet.podsPerCore",
+        "spec.template.spec.requirements.operator",
+        "spec.template.spec.requirements.values",
+        "spec.template.spec.startupTaints",
+        "spec.template.spec.startupTaints.effect",
+        "spec.template.spec.startupTaints.timeAdded",
+        "spec.template.spec.taints.effect",
+        "spec.template.spec.taints.timeAdded",
+        "spec.weight"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          8,
+          9
+        ],
+        "kind": [
+          10,
+          11
+        ],
+        "spec": [
+          12,
+          5
+        ],
+        "spec.disruption.consolidateAfter": [
+          13,
+          14
+        ],
+        "spec.disruption.consolidationPolicy": [
+          15,
+          16
+        ],
+        "spec.disruption.expireAfter": [
+          17,
+          18
+        ],
+        "spec.template": [
+          19,
+          20
+        ],
+        "spec.template.metadata.annotations": [
+          21,
+          22
+        ],
+        "spec.template.metadata.labels": [
+          23,
+          24
+        ],
+        "spec.template.spec.kubelet": [
+          25,
+          26
+        ],
+        "spec.template.spec.kubelet.clusterDNS": [
+          27,
+          28
+        ],
+        "spec.template.spec.kubelet.evictionMaxPodGracePeriod": [
+          29,
+          30
+        ],
+        "spec.template.spec.kubelet.imageGCHighThresholdPercent": [
+          31,
+          32
+        ],
+        "spec.template.spec.kubelet.imageGCLowThresholdPercent": [
+          33,
+          34
+        ],
+        "spec.template.spec.kubelet.maxPods": [
+          35,
+          36
+        ],
+        "spec.template.spec.kubelet.podsPerCore": [
+          37,
+          38
+        ],
+        "spec.template.spec.requirements.operator": [
+          39,
+          40
+        ],
+        "spec.template.spec.requirements.values": [
+          41,
+          42
+        ],
+        "spec.template.spec.startupTaints": [
+          43,
+          44
+        ],
+        "spec.template.spec.startupTaints.effect": [
+          45,
+          46
+        ],
+        "spec.template.spec.startupTaints.timeAdded": [
+          47,
+          48
+        ],
+        "spec.template.spec.taints.effect": [
+          45,
+          46
+        ],
+        "spec.template.spec.taints.timeAdded": [
+          47,
+          48
+        ],
+        "spec.weight": [
+          49,
+          50
+        ]
+      }
+    },
+    "v0.33.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.weight"
+      ],
+      "descriptions": {
+        "spec": [
+          51,
+          12
+        ],
+        "spec.weight": [
+          52,
+          49
+        ]
+      }
+    },
+    "v0.32.2": {
+      "required": [
+        "spec.template",
+        "spec.template.spec"
+      ],
+      "descriptions": {
+        "spec.template": [
+          null,
+          19
+        ],
+        "spec.template.spec": [
+          null,
+          53
+        ]
+      }
+    },
+    "v0.32.0": {
+      "descriptionChanged": [
+        "spec.template.metadata.annotations",
+        "spec.template.metadata.labels"
+      ],
+      "added": {
+        "spec.template.spec.nodeClassRef": "object"
+      },
+      "removed": {
+        "spec.template.metadata.finalizers": "string[]",
+        "spec.template.metadata.name": "string",
+        "spec.template.metadata.namespace": "string",
+        "spec.template.spec.nodeClass": "object"
+      },
+      "descriptions": {
+        "spec.template.metadata.annotations": [
+          null,
+          21
+        ],
+        "spec.template.metadata.labels": [
+          null,
+          23
+        ],
+        "spec.template.spec.nodeClassRef": [
+          null,
+          54
+        ],
+        "spec.template.spec.nodeClass": [
+          55,
+          null
+        ]
+      }
+    },
+    "v0.31.0": {
+      "added": {
+        "spec.disruption": "object",
+        "spec.template.metadata.annotations": "map[string]string",
+        "spec.template.metadata.finalizers": "string[]",
+        "spec.template.metadata.labels": "map[string]string",
+        "spec.template.metadata.name": "string",
+        "spec.template.metadata.namespace": "string",
+        "spec.template.spec.kubelet": "object"
+      },
+      "required": [
+        "spec.template.spec.requirements"
+      ],
+      "removed": {
+        "spec.deprovisioning": "object",
+        "spec.template.spec.kubeletConfiguration": "object"
+      },
+      "description": true,
+      "descriptions": {
+        "spec.disruption": [
+          null,
+          56
+        ],
+        "spec.template.spec.kubelet": [
+          null,
+          25
+        ],
+        "spec.template.spec.requirements": [
+          null,
+          57
+        ],
+        "spec.deprovisioning": [
+          58,
+          null
+        ],
+        "spec.template.spec.kubeletConfiguration": [
+          59,
+          null
+        ],
+        "": [
+          60,
+          61
+        ]
+      }
+    }
+  },
+  "texts": [
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "Conditions contains signals for health and readiness",
+    "KubeReserved contains resources reserved for Kubernetes system components.",
+    "SystemReserved contains resources reserved for OS system daemons and kernel memory.",
+    "NodePoolSpec is the top level nodepool specification. Nodepools\nlaunch nodes in response to pods that are unschedulable. A single nodepool\nis capable of managing a diverse set of nodes. Node properties are determined\nfrom a combination of nodepool and pod scheduling constraints.",
+    "This field is ALPHA and can be dropped or replaced at any time\nMinValues is the minimum number of unique values required to define the flexibility of the specific requirement.",
+    "Budgets is a list of Budgets.\nIf there are multiple active budgets, Karpenter uses\nthe most restrictive value. If left undefined,\nthis will default to one budget with a value to 10%.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "NodePoolSpec is the top level nodepool specification. Nodepools launch nodes in response to pods that are unschedulable. A single nodepool is capable of managing a diverse set of nodes. Node properties are determined from a combination of nodepool and pod scheduling constraints.",
+    "ConsolidateAfter is the duration the controller will wait before attempting to terminate nodes that are underutilized. Refer to ConsolidationPolicy for how underutilization is considered.",
+    "ConsolidateAfter is the duration the controller will wait\nbefore attempting to terminate nodes that are underutilized.\nRefer to ConsolidationPolicy for how underutilization is considered.",
+    "ConsolidationPolicy describes which nodes Karpenter can disrupt through its consolidation algorithm. This policy defaults to \"WhenUnderutilized\" if not specified",
+    "ConsolidationPolicy describes which nodes Karpenter can disrupt through its consolidation\nalgorithm. This policy defaults to \"WhenUnderutilized\" if not specified",
+    "ExpireAfter is the duration the controller will wait before terminating a node, measured from when the node is created. This is useful to implement features like eventually consistent node upgrade, memory leak protection, and disruption testing.",
+    "ExpireAfter is the duration the controller will wait\nbefore terminating a node, measured from when the node is created. This\nis useful to implement features like eventually consistent node upgrade,\nmemory leak protection, and disruption testing.",
+    "Template contains the template of possibilities for the provisioning logic to launch a NodeClaim with. NodeClaims launched from this NodePool will often be further constrained than the template specifies.",
+    "Template contains the template of possibilities for the provisioning logic to launch a NodeClaim with.\nNodeClaims launched from this NodePool will often be further constrained than the template specifies.",
+    "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations",
+    "Annotations is an unstructured key value map stored with a resource that may be\nset by external tools to store and retrieve arbitrary metadata. They are not\nqueryable and should be preserved when modifying objects.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels",
+    "Map of string keys and values that can be used to organize and categorize\n(scope and select) objects. May match selectors of replication controllers\nand services.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels",
+    "Kubelet defines args to be used when configuring kubelet on provisioned nodes. They are a subset of the upstream types, recognizing not all options may be supported. Wherever possible, the types and names should reflect the upstream kubelet types.",
+    "Kubelet defines args to be used when configuring kubelet on provisioned nodes.\nThey are a subset of the upstream types, recognizing not all options may be supported.\nWherever possible, the types and names should reflect the upstream kubelet types.",
+    "clusterDNS is a list of IP addresses for the cluster DNS server. Note that not all providers may use all addresses.",
+    "clusterDNS is a list of IP addresses for the cluster DNS server.\nNote that not all providers may use all addresses.",
+    "EvictionMaxPodGracePeriod is the maximum allowed grace period (in seconds) to use when terminating pods in response to soft eviction thresholds being met.",
+    "EvictionMaxPodGracePeriod is the maximum allowed grace period (in seconds) to use when terminating pods in\nresponse to soft eviction thresholds being met.",
+    "ImageGCHighThresholdPercent is the percent of disk usage after which image garbage collection is always run. The percent is calculated by dividing this field value by 100, so this field must be between 0 and 100, inclusive. When specified, the value must be greater than ImageGCLowThresholdPercent.",
+    "ImageGCHighThresholdPercent is the percent of disk usage after which image\ngarbage collection is always run. The percent is calculated by dividing this\nfield value by 100, so this field must be between 0 and 100, inclusive.\nWhen specified, the value must be greater than ImageGCLowThresholdPercent.",
+    "ImageGCLowThresholdPercent is the percent of disk usage before which image garbage collection is never run. Lowest disk usage to garbage collect to. The percent is calculated by dividing this field value by 100, so the field value must be between 0 and 100, inclusive. When specified, the value must be less than imageGCHighThresholdPercent",
+    "ImageGCLowThresholdPercent is the percent of disk usage before which image\ngarbage collection is never run. Lowest disk usage to garbage collect to.\nThe percent is calculated by dividing this field value by 100,\nso the field value must be between 0 and 100, inclusive.\nWhen specified, the value must be less than imageGCHighThresholdPercent",
+    "MaxPods is an override for the maximum number of pods that can run on a worker node instance.",
+    "MaxPods is an override for the maximum number of pods that can run on\na worker node instance.",
+    "PodsPerCore is an override for the number of pods that can run on a worker node instance based on the number of cpu cores. This value cannot exceed MaxPods, so, if MaxPods is a lower value, that value will be used.",
+    "PodsPerCore is an override for the number of pods that can run on a worker node\ninstance based on the number of cpu cores. This value cannot exceed MaxPods, so, if\nMaxPods is a lower value, that value will be used.",
+    "Represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.",
+    "Represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.",
+    "An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.",
+    "An array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. If the operator is Gt or Lt, the values\narray must have a single element, which will be interpreted as an integer.\nThis array is replaced during a strategic merge patch.",
+    "StartupTaints are taints that are applied to nodes upon startup which are expected to be removed automatically within a short period of time, typically by a DaemonSet that tolerates the taint. These are commonly used by daemonsets to allow initialization and enforce startup ordering.  StartupTaints are ignored for provisioning purposes in that pods are not required to tolerate a StartupTaint in order to have nodes provisioned for them.",
+    "StartupTaints are taints that are applied to nodes upon startup which are expected to be removed automatically\nwithin a short period of time, typically by a DaemonSet that tolerates the taint. These are commonly used by\ndaemonsets to allow initialization and enforce startup ordering.  StartupTaints are ignored for provisioning\npurposes in that pods are not required to tolerate a StartupTaint in order to have nodes provisioned for them.",
+    "Required. The effect of the taint on pods that do not tolerate the taint. Valid effects are NoSchedule, PreferNoSchedule and NoExecute.",
+    "Required. The effect of the taint on pods\nthat do not tolerate the taint.\nValid effects are NoSchedule, PreferNoSchedule and NoExecute.",
+    "TimeAdded represents the time at which the taint was added. It is only written for NoExecute taints.",
+    "TimeAdded represents the time at which the taint was added.\nIt is only written for NoExecute taints.",
+    "Weight is the priority given to the nodepool during scheduling. A higher numerical weight indicates that this nodepool will be ordered ahead of other nodepools with lower weights. A nodepool with no weight will be treated as if it is a nodepool with a weight of 0.",
+    "Weight is the priority given to the nodepool during scheduling. A higher\nnumerical weight indicates that this nodepool will be ordered\nahead of other nodepools with lower weights. A nodepool with no weight\nwill be treated as if it is a nodepool with a weight of 0.",
+    "NodePoolSpec is the top level provisioner specification. Provisioners launch nodes in response to pods that are unschedulable. A single provisioner is capable of managing a diverse set of nodes. Node properties are determined from a combination of provisioner and pod scheduling constraints.",
+    "Weight is the priority given to the provisioner during scheduling. A higher numerical weight indicates that this provisioner will be ordered ahead of other provisioners with lower weights. A provisioner with no weight will be treated as if it is a provisioner with a weight of 0.",
+    "NodeClaimSpec describes the desired state of the NodeClaim",
+    "NodeClassRef is a reference to an object that defines provider specific configuration",
+    "NodeClass is a reference to an object that defines provider specific configuration",
+    "Disruption contains the parameters that relate to Karpenter's disruption logic",
+    "Requirements are layered with GetLabels and applied to every node.",
+    "Deprovisioning contains the parameters that relate to Karpenter's deprovisioning logic",
+    "KubeletConfiguration are options passed to the kubelet when provisioning nodes",
+    "NodePool is the Schema for the Provisioners API",
+    "NodePool is the Schema for the NodePools API"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "versions": {
+    "v2.7.0": {
+      "required": [
+        "status.artifact.digest"
+      ],
+      "descriptions": {
+        "status.artifact.digest": [
+          null,
+          0
+        ]
+      }
+    },
+    "v2.4.0": {
+      "descriptionChanged": [
+        "spec.certSecretRef",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.certSecretRef": [
+          1,
+          2
+        ],
+        "status.conditions.type": [
+          3,
+          4
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Digest is the digest of the file in the form of '<algorithm>:<checksum>'.",
+    "CertSecretRef can be given the name of a Secret containing\neither or both of\n\n\n- a PEM-encoded client certificate (`tls.crt`) and private\nkey (`tls.key`);\n- a PEM-encoded CA certificate (`ca.crt`)\n\n\nand whichever are supplied, will be used for connecting to the\nregistry. The client cert and key are useful if you are\nauthenticating with a certificate; the CA cert is useful if\nyou are using a self-signed server certificate. The Secret must\nbe of type `Opaque` or `kubernetes.io/tls`.\n\n\nIt takes precedence over the values specified in the Secret referred\nto by `.spec.secretRef`.",
+    "CertSecretRef can be given the name of a Secret containing\neither or both of\n\n- a PEM-encoded client certificate (`tls.crt`) and private\nkey (`tls.key`);\n- a PEM-encoded CA certificate (`ca.crt`)\n\nand whichever are supplied, will be used for connecting to the\nregistry. The client cert and key are useful if you are\nauthenticating with a certificate; the CA cert is useful if\nyou are using a self-signed server certificate. The Secret must\nbe of type `Opaque` or `kubernetes.io/tls`.\n\nIt takes precedence over the values specified in the Secret referred\nto by `.spec.secretRef`.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase."
+  ]
+}

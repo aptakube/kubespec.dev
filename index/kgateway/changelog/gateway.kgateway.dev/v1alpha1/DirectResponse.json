@@ -1,0 +1,89 @@
+{
+  "versions": {
+    "v2.3.0": {
+      "descriptionChanged": [
+        "spec.body",
+        "status"
+      ],
+      "added": {
+        "spec.bodyFormat": "object",
+        "status.ancestors": "object[]"
+      },
+      "descriptions": {
+        "spec.body": [
+          0,
+          1
+        ],
+        "spec.bodyFormat": [
+          null,
+          2
+        ],
+        "status": [
+          3,
+          4
+        ],
+        "status.ancestors": [
+          null,
+          5
+        ]
+      }
+    },
+    "v2.2.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.body",
+        "spec.status",
+        "status"
+      ],
+      "required": [
+        "spec"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          null,
+          6
+        ],
+        "kind": [
+          null,
+          7
+        ],
+        "spec": [
+          null,
+          8
+        ],
+        "spec.body": [
+          null,
+          0
+        ],
+        "spec.status": [
+          null,
+          9
+        ],
+        "status": [
+          null,
+          3
+        ],
+        "": [
+          null,
+          10
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Body defines the content to be returned in the HTTP response body.\nThe maximum length of the body is restricted to prevent excessively large responses.\nIf this field is omitted, no body is included in the response.",
+    "Body defines the content to be returned in the HTTP response body.\nThe maximum length of the body is restricted to prevent excessively large responses.\nIf this field and BodyFormat are both omitted, no body is included in the response.\nMutually exclusive with BodyFormat.",
+    "BodyFormat defines the content to be returned in the HTTP response body as an Envoy format string.\nIf this field and Body are both omitted, no body is included in the response.\nMutually exclusive with Body.\nSee https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/route/v3/route_components.proto#envoy-v3-api-field-config-route-v3-directresponseaction-body-format for details.",
+    "DirectResponseStatus defines the observed state of a DirectResponse.",
+    "PolicyStatus defines the common attributes that all Policies should include within\ntheir status.",
+    "Ancestors is a list of ancestor resources (usually Gateways) that are\nassociated with the policy, and the status of the policy with respect to\neach ancestor. When this policy attaches to a parent, the controller that\nmanages the parent and the ancestors MUST add an entry to this list when\nthe controller first sees the policy and SHOULD update the entry as\nappropriate when the relevant ancestor is modified.\n\nNote that choosing the relevant ancestor is left to the Policy designers;\nan important part of Policy design is designing the right object level at\nwhich to namespace this status.\n\nNote also that implementations MUST ONLY populate ancestor status for\nthe Ancestor resources they are responsible for. Implementations MUST\nuse the ControllerName field to uniquely identify the entries in this list\nthat they are responsible for.\n\nNote that to achieve this, the list of PolicyAncestorStatus structs\nMUST be treated as a map with a composite key, made up of the AncestorRef\nand ControllerName fields combined.\n\nA maximum of 16 ancestors will be represented in this list. An empty list\nmeans the Policy is not relevant for any ancestors.\n\nIf this slice is full, implementations MUST NOT add further entries.\nInstead they MUST consider the policy unimplementable and signal that\non any related resources such as the ancestor that would be referenced\nhere. For example, if this list was full on BackendTLSPolicy, no\nadditional Gateways would be able to reference the Service targeted by\nthe BackendTLSPolicy.",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "DirectResponseSpec describes the desired state of a DirectResponse.",
+    "StatusCode defines the HTTP status code to return for this route.",
+    "DirectResponse contains configuration for defining direct response routes."
+  ]
+}

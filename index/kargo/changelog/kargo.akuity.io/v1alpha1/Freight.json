@@ -1,0 +1,226 @@
+{
+  "versions": {
+    "v1.12.0": {
+      "added": {
+        "charts.subscriptionName": "string",
+        "commits.subscriptionName": "string",
+        "images.subscriptionName": "string"
+      },
+      "descriptions": {
+        "charts.subscriptionName": [
+          null,
+          0
+        ],
+        "commits.subscriptionName": [
+          null,
+          1
+        ],
+        "images.subscriptionName": [
+          null,
+          2
+        ]
+      }
+    },
+    "v1.11.0": {
+      "added": {
+        "discoveredAt": "string"
+      },
+      "descriptions": {
+        "discoveredAt": [
+          null,
+          3
+        ]
+      }
+    },
+    "v1.9.0": {
+      "added": {
+        "artifacts": "object[]"
+      },
+      "descriptions": {
+        "artifacts": [
+          null,
+          4
+        ]
+      }
+    },
+    "v1.7.0": {
+      "removed": {
+        "images.gitRepoURL": "string"
+      },
+      "descriptions": {
+        "images.gitRepoURL": [
+          5,
+          null
+        ]
+      }
+    },
+    "v1.6.0": {
+      "added": {
+        "status.metadata": "map[string]object"
+      },
+      "descriptions": {
+        "status.metadata": [
+          null,
+          6
+        ]
+      }
+    },
+    "v1.5.0": {
+      "descriptionChanged": [
+        "images.gitRepoURL"
+      ],
+      "descriptions": {
+        "images.gitRepoURL": [
+          7,
+          5
+        ]
+      }
+    },
+    "v1.4.0": {
+      "added": {
+        "images.annotations": "map[string]string"
+      },
+      "descriptions": {
+        "images.annotations": [
+          null,
+          8
+        ]
+      }
+    },
+    "v1.2.0": {
+      "descriptionChanged": [
+        "origin.name"
+      ],
+      "added": {
+        "status.approvedFor.approvedAt": "string",
+        "status.currentlyIn": "map[string]object",
+        "status.verifiedIn.longestSoak": "string",
+        "status.verifiedIn.verifiedAt": "string"
+      },
+      "descriptions": {
+        "origin.name": [
+          9,
+          10
+        ],
+        "status.approvedFor.approvedAt": [
+          null,
+          11
+        ],
+        "status.currentlyIn": [
+          null,
+          12
+        ],
+        "status.verifiedIn.longestSoak": [
+          null,
+          13
+        ],
+        "status.verifiedIn.verifiedAt": [
+          null,
+          14
+        ]
+      }
+    },
+    "v1.0.0": {
+      "removed": {
+        "commits.healthCheckCommit": "string"
+      },
+      "descriptions": {
+        "commits.healthCheckCommit": [
+          15,
+          null
+        ]
+      }
+    },
+    "v0.9.0": {
+      "required": [
+        "origin"
+      ],
+      "removed": {
+        "warehouse": "string"
+      },
+      "descriptions": {
+        "origin": [
+          null,
+          16
+        ],
+        "warehouse": [
+          17,
+          null
+        ]
+      }
+    },
+    "v0.8.0": {
+      "descriptionChanged": [
+        "commits.healthCheckCommit",
+        "warehouse"
+      ],
+      "added": {
+        "origin": "object"
+      },
+      "descriptions": {
+        "commits.healthCheckCommit": [
+          18,
+          15
+        ],
+        "origin": [
+          null,
+          16
+        ],
+        "warehouse": [
+          19,
+          17
+        ]
+      }
+    },
+    "v0.7.0": {
+      "descriptionChanged": [
+        "commits.author",
+        "commits.message"
+      ],
+      "added": {
+        "commits.committer": "string"
+      },
+      "descriptions": {
+        "commits.author": [
+          20,
+          21
+        ],
+        "commits.committer": [
+          null,
+          22
+        ],
+        "commits.message": [
+          23,
+          24
+        ]
+      }
+    }
+  },
+  "texts": [
+    "SubscriptionName is the name of the subscription that discovered this\nchart. This field is only populated if the subscription was assigned\na name.",
+    "SubscriptionName is the name of the subscription that discovered this\ncommit. This field is only populated if the subscription was assigned\na name.",
+    "SubscriptionName is the name of the subscription that discovered this\nimage. This field is only populated if the subscription was assigned\na name.",
+    "DiscoveredAt is the time at which this Freight was discovered/created.\nA defaulting webhook initializes this to the creation time of the Freight.",
+    "Artifacts describes specific versions of artifacts other\nthan Git repository commits, container images, and Helm charts.",
+    "GitRepoURL specifies the URL of a Git repository that contains the source\ncode for the image repository referenced by the RepoURL field if Kargo was\nable to infer it.\n\nDeprecated: Use OCI annotations instead. Will be removed in v1.7.0.",
+    "Metadata is a map of arbitrary metadata associated with the Freight.\nThis is useful for storing additional information about the Freight\nor Promotion that can be shared across steps or stages.",
+    "GitRepoURL specifies the URL of a Git repository that contains the source\ncode for the image repository referenced by the RepoURL field if Kargo was\nable to infer it.",
+    "Annotations is a map of arbitrary metadata for the image.",
+    "Name is the name of the resource of the kind indicated by the Kind field\nfrom which Freight may originated.",
+    "Name is the name of the resource of the kind indicated by the Kind field\nfrom which Freight may originate.",
+    "ApprovedAt is the time at which the Freight was approved for the Stage.",
+    "CurrentlyIn describes the Stages in which this Freight is currently in use.",
+    "LongestCompletedSoak represents the longest definite time interval wherein\nthe Freight was in CONTINUOUS use by the Stage. This value is updated as\nFreight EXITS the Stage. If the Freight is currently in use by the Stage,\nthe time elapsed since the Freight ENTERED the Stage is its current soak\ntime, which may exceed the value of this field.",
+    "VerifiedAt is the time at which the Freight was verified in the Stage.",
+    "HealthCheckCommit is the ID of a specific commit. When specified,\nassessments of Stage health will use this value (instead of ID) when\ndetermining if applicable sources of Argo CD Application resources\nassociated with the Stage are or are not synced to this commit. Note that\nthere are cases (as in that of Kargo Render being utilized as a promotion\nmechanism) wherein the value of this field may differ from the commit ID\nfound in the ID field.",
+    "Origin describes a kind of Freight in terms of its origin.",
+    "Warehouse is the name of the Warehouse that created this Freight. This is a\nrequired field. TODO: It is not clear yet how this field should be set in\nthe case of user-defined Freight.\n\n\nDeprecated: Use Origin instead.",
+    "HealthCheckCommit is the ID of a specific commit. When specified,\nassessments of Stage health will used this value (instead of ID) when\ndetermining if applicable sources of Argo CD Application resources\nassociated with the Stage are or are not synced to this commit. Note that\nthere are cases (as in that of Kargo Render being utilized as a promotion\nmechanism) wherein the value of this field may differ from the commit ID\nfound in the ID field.",
+    "Warehouse is the name of the Warehouse that created this Freight. This is a\nrequired field. TODO: It is not clear yet how this field should be set in\nthe case of user-defined Freight.",
+    "Author is the git commit author",
+    "Author is the author of the commit.",
+    "Committer is the person who committed the commit.",
+    "Message is the git commit message",
+    "Message is the message associated with the commit. At present, this only\ncontains the first line (subject) of the commit message."
+  ]
+}

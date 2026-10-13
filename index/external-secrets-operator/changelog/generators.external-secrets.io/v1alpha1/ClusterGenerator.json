@@ -1,0 +1,562 @@
+{
+  "versions": {
+    "v2.12.0": {
+      "added": {
+        "spec.generator.passwordSpec.prefix": "string",
+        "spec.generator.passwordSpec.suffix": "string"
+      },
+      "descriptions": {
+        "spec.generator.passwordSpec.prefix": [
+          null,
+          0
+        ],
+        "spec.generator.passwordSpec.suffix": [
+          null,
+          1
+        ]
+      }
+    },
+    "v2.10.0": {
+      "descriptionChanged": [
+        "spec.generator.acrAccessTokenSpec.auth.workloadIdentity.serviceAccountRef.audiences",
+        "spec.generator.cloudsmithAccessTokenSpec.serviceAccountRef.audiences",
+        "spec.generator.ecrAuthorizationTokenSpec.auth.jwt.serviceAccountRef.audiences",
+        "spec.generator.gcrAccessTokenSpec.auth.workloadIdentity.serviceAccountRef.audiences",
+        "spec.generator.gcrAccessTokenSpec.auth.workloadIdentityFederation.serviceAccountRef.audiences",
+        "spec.generator.quayAccessTokenSpec.serviceAccountRef.audiences",
+        "spec.generator.stsSessionTokenSpec.auth.jwt.serviceAccountRef.audiences",
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.gcp.serviceAccountRef.audiences",
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.gcp.workloadIdentity.serviceAccountRef.audiences",
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.iam.jwt.serviceAccountRef.audiences",
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.jwt.kubernetesServiceAccountToken.serviceAccountRef.audiences",
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.kubernetes.serviceAccountRef.audiences"
+      ],
+      "descriptions": {
+        "spec.generator.acrAccessTokenSpec.auth.workloadIdentity.serviceAccountRef.audiences": [
+          2,
+          3
+        ],
+        "spec.generator.cloudsmithAccessTokenSpec.serviceAccountRef.audiences": [
+          2,
+          3
+        ],
+        "spec.generator.ecrAuthorizationTokenSpec.auth.jwt.serviceAccountRef.audiences": [
+          2,
+          3
+        ],
+        "spec.generator.gcrAccessTokenSpec.auth.workloadIdentity.serviceAccountRef.audiences": [
+          2,
+          3
+        ],
+        "spec.generator.gcrAccessTokenSpec.auth.workloadIdentityFederation.serviceAccountRef.audiences": [
+          2,
+          3
+        ],
+        "spec.generator.quayAccessTokenSpec.serviceAccountRef.audiences": [
+          2,
+          3
+        ],
+        "spec.generator.stsSessionTokenSpec.auth.jwt.serviceAccountRef.audiences": [
+          2,
+          3
+        ],
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.gcp.serviceAccountRef.audiences": [
+          2,
+          3
+        ],
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.gcp.workloadIdentity.serviceAccountRef.audiences": [
+          2,
+          3
+        ],
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.iam.jwt.serviceAccountRef.audiences": [
+          2,
+          3
+        ],
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.jwt.kubernetesServiceAccountToken.serviceAccountRef.audiences": [
+          2,
+          3
+        ],
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.kubernetes.serviceAccountRef.audiences": [
+          2,
+          3
+        ]
+      }
+    },
+    "v2.8.0": {
+      "added": {
+        "spec.generator.gitlabDeployTokenSpec": "object",
+        "spec.generator.grafanaSpec.serviceAccount.secondsToLive": "integer"
+      },
+      "descriptions": {
+        "spec.generator.gitlabDeployTokenSpec": [
+          null,
+          4
+        ],
+        "spec.generator.grafanaSpec.serviceAccount.secondsToLive": [
+          null,
+          5
+        ]
+      }
+    },
+    "v2.7.0": {
+      "added": {
+        "spec.generator.beyondtrustWorkloadCredentialsDynamicSecretSpec": "object"
+      },
+      "descriptions": {
+        "spec.generator.beyondtrustWorkloadCredentialsDynamicSecretSpec": [
+          null,
+          6
+        ]
+      }
+    },
+    "v2.5.0": {
+      "added": {
+        "spec.generator.gcrAccessTokenSpec.auth.workloadIdentityFederation.gcpServiceAccountEmail": "string"
+      },
+      "descriptions": {
+        "spec.generator.gcrAccessTokenSpec.auth.workloadIdentityFederation.gcpServiceAccountEmail": [
+          null,
+          7
+        ]
+      }
+    },
+    "v2.4.0": {
+      "added": {
+        "spec.generator.vaultDynamicSecretSpec.getParameters": "map[string]string[]"
+      },
+      "descriptions": {
+        "spec.generator.vaultDynamicSecretSpec.getParameters": [
+          null,
+          8
+        ]
+      }
+    },
+    "v2.3.0": {
+      "added": {
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.cert.vaultRole": "string"
+      },
+      "descriptions": {
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.cert.vaultRole": [
+          null,
+          9
+        ]
+      }
+    },
+    "v2.2.0": {
+      "descriptionChanged": [
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.jwt.kubernetesServiceAccountToken.audiences",
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.jwt.kubernetesServiceAccountToken.expirationSeconds"
+      ],
+      "descriptions": {
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.jwt.kubernetesServiceAccountToken.audiences": [
+          10,
+          11
+        ],
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.jwt.kubernetesServiceAccountToken.expirationSeconds": [
+          12,
+          13
+        ]
+      }
+    },
+    "v1.1.1": {
+      "added": {
+        "spec.generator.passwordSpec.secretKeys": "string[]"
+      },
+      "descriptions": {
+        "spec.generator.passwordSpec.secretKeys": [
+          null,
+          14
+        ]
+      }
+    },
+    "v1.1.0": {
+      "descriptionChanged": [
+        "spec.generator.sshKeySpec.keySize",
+        "spec.generator.sshKeySpec.keyType"
+      ],
+      "added": {
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.gcp": "object"
+      },
+      "descriptions": {
+        "spec.generator.sshKeySpec.keySize": [
+          15,
+          16
+        ],
+        "spec.generator.sshKeySpec.keyType": [
+          17,
+          18
+        ],
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.gcp": [
+          null,
+          19
+        ]
+      }
+    },
+    "v0.20.4": {
+      "descriptionChanged": [
+        "spec",
+        "spec.generator.acrAccessTokenSpec.auth",
+        "spec.generator.acrAccessTokenSpec.auth.servicePrincipal.secretRef",
+        "spec.generator.acrAccessTokenSpec.environmentType",
+        "spec.generator.cloudsmithAccessTokenSpec",
+        "spec.generator.ecrAuthorizationTokenSpec",
+        "spec.generator.ecrAuthorizationTokenSpec.auth.jwt",
+        "spec.generator.ecrAuthorizationTokenSpec.auth.jwt.serviceAccountRef",
+        "spec.generator.gcrAccessTokenSpec",
+        "spec.generator.gcrAccessTokenSpec.auth.secretRef",
+        "spec.generator.gcrAccessTokenSpec.auth.workloadIdentity",
+        "spec.generator.gcrAccessTokenSpec.auth.workloadIdentity.serviceAccountRef",
+        "spec.generator.githubAccessTokenSpec",
+        "spec.generator.githubAccessTokenSpec.auth.privateKey",
+        "spec.generator.githubAccessTokenSpec.auth.privateKey.secretRef",
+        "spec.generator.githubAccessTokenSpec.url",
+        "spec.generator.quayAccessTokenSpec",
+        "spec.generator.stsSessionTokenSpec",
+        "spec.generator.stsSessionTokenSpec.auth.jwt",
+        "spec.generator.stsSessionTokenSpec.auth.jwt.serviceAccountRef",
+        "spec.generator.vaultDynamicSecretSpec",
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.iam.jwt.serviceAccountRef",
+        "spec.generator.vaultDynamicSecretSpec.resultType",
+        "spec.generator.webhookSpec.auth.ntlm.passwordSecret",
+        "spec.generator.webhookSpec.auth.ntlm.usernameSecret"
+      ],
+      "added": {
+        "spec.generator.passwordSpec.encoding": "string"
+      },
+      "descriptions": {
+        "spec": [
+          null,
+          20
+        ],
+        "spec.generator.acrAccessTokenSpec.auth": [
+          null,
+          21
+        ],
+        "spec.generator.acrAccessTokenSpec.auth.servicePrincipal.secretRef": [
+          22,
+          23
+        ],
+        "spec.generator.acrAccessTokenSpec.environmentType": [
+          24,
+          25
+        ],
+        "spec.generator.cloudsmithAccessTokenSpec": [
+          null,
+          26
+        ],
+        "spec.generator.ecrAuthorizationTokenSpec": [
+          null,
+          27
+        ],
+        "spec.generator.ecrAuthorizationTokenSpec.auth.jwt": [
+          28,
+          29
+        ],
+        "spec.generator.ecrAuthorizationTokenSpec.auth.jwt.serviceAccountRef": [
+          30,
+          31
+        ],
+        "spec.generator.gcrAccessTokenSpec": [
+          null,
+          32
+        ],
+        "spec.generator.gcrAccessTokenSpec.auth.secretRef": [
+          null,
+          33
+        ],
+        "spec.generator.gcrAccessTokenSpec.auth.workloadIdentity": [
+          null,
+          34
+        ],
+        "spec.generator.gcrAccessTokenSpec.auth.workloadIdentity.serviceAccountRef": [
+          30,
+          31
+        ],
+        "spec.generator.githubAccessTokenSpec": [
+          null,
+          35
+        ],
+        "spec.generator.githubAccessTokenSpec.auth.privateKey": [
+          null,
+          36
+        ],
+        "spec.generator.githubAccessTokenSpec.auth.privateKey.secretRef": [
+          37,
+          38
+        ],
+        "spec.generator.githubAccessTokenSpec.url": [
+          39,
+          40
+        ],
+        "spec.generator.passwordSpec.encoding": [
+          null,
+          41
+        ],
+        "spec.generator.quayAccessTokenSpec": [
+          null,
+          42
+        ],
+        "spec.generator.stsSessionTokenSpec": [
+          null,
+          43
+        ],
+        "spec.generator.stsSessionTokenSpec.auth.jwt": [
+          28,
+          29
+        ],
+        "spec.generator.stsSessionTokenSpec.auth.jwt.serviceAccountRef": [
+          30,
+          31
+        ],
+        "spec.generator.vaultDynamicSecretSpec": [
+          null,
+          44
+        ],
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.iam.jwt.serviceAccountRef": [
+          30,
+          31
+        ],
+        "spec.generator.vaultDynamicSecretSpec.resultType": [
+          45,
+          46
+        ],
+        "spec.generator.webhookSpec.auth.ntlm.passwordSecret": [
+          37,
+          38
+        ],
+        "spec.generator.webhookSpec.auth.ntlm.usernameSecret": [
+          37,
+          38
+        ]
+      }
+    },
+    "v0.20.2": {
+      "added": {
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.cert.path": "string"
+      },
+      "descriptions": {
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.cert.path": [
+          null,
+          47
+        ]
+      }
+    },
+    "v0.20.0": {
+      "added": {
+        "spec.generator.cloudsmithAccessTokenSpec": "object",
+        "spec.generator.gcrAccessTokenSpec.auth.workloadIdentityFederation": "object",
+        "spec.generator.vaultDynamicSecretSpec.provider.checkAndSet": "object"
+      },
+      "descriptions": {
+        "spec.generator.gcrAccessTokenSpec.auth.workloadIdentityFederation": [
+          null,
+          48
+        ],
+        "spec.generator.vaultDynamicSecretSpec.provider.checkAndSet": [
+          null,
+          49
+        ]
+      }
+    },
+    "v0.19.0": {
+      "added": {
+        "spec.generator.sshKeySpec": "object"
+      },
+      "descriptions": {
+        "spec.generator.sshKeySpec": [
+          null,
+          50
+        ]
+      }
+    },
+    "v0.18.0": {
+      "added": {
+        "spec.generator.mfaSpec": "object"
+      },
+      "descriptionChanged": [
+        "spec.generator.stsSessionTokenSpec.requestParameters.sessionDuration"
+      ],
+      "descriptions": {
+        "spec.generator.mfaSpec": [
+          null,
+          51
+        ],
+        "spec.generator.stsSessionTokenSpec.requestParameters.sessionDuration": [
+          52,
+          null
+        ]
+      }
+    },
+    "v0.16.2": {
+      "added": {
+        "spec.generator.webhookSpec.auth": "object"
+      },
+      "descriptions": {
+        "spec.generator.webhookSpec.auth": [
+          null,
+          53
+        ]
+      }
+    },
+    "v0.15.0": {
+      "added": {
+        "spec.generator.grafanaSpec.auth.basic": "object"
+      },
+      "optional": [
+        "spec.generator.grafanaSpec.auth.token"
+      ],
+      "descriptions": {
+        "spec.generator.grafanaSpec.auth.basic": [
+          null,
+          54
+        ],
+        "spec.generator.grafanaSpec.auth.token": [
+          null,
+          55
+        ]
+      }
+    },
+    "v0.14.4": {
+      "optional": [
+        "spec.generator.vaultDynamicSecretSpec.provider.auth"
+      ],
+      "descriptions": {
+        "spec.generator.vaultDynamicSecretSpec.provider.auth": [
+          null,
+          56
+        ]
+      }
+    },
+    "v0.14.3": {
+      "descriptionChanged": [
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.ldap.username",
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.userPass.path",
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.userPass.username"
+      ],
+      "descriptions": {
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.ldap.username": [
+          57,
+          58
+        ],
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.userPass.path": [
+          59,
+          60
+        ],
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.userPass.username": [
+          61,
+          62
+        ]
+      }
+    },
+    "v0.14.1": {
+      "descriptionChanged": [
+        "spec.generator.vaultDynamicSecretSpec.resultType"
+      ],
+      "descriptions": {
+        "spec.generator.vaultDynamicSecretSpec.resultType": [
+          63,
+          45
+        ]
+      }
+    },
+    "v0.14.0": {
+      "added": {
+        "spec.generator.grafanaSpec": "object"
+      },
+      "descriptions": {
+        "spec.generator.grafanaSpec": [
+          null,
+          64
+        ]
+      }
+    },
+    "v0.13.0": {
+      "added": {
+        "spec.generator.quayAccessTokenSpec": "object",
+        "spec.generator.vaultDynamicSecretSpec.allowEmptyResponse": "boolean"
+      },
+      "descriptions": {
+        "spec.generator.vaultDynamicSecretSpec.allowEmptyResponse": [
+          null,
+          65
+        ]
+      }
+    },
+    "v0.12.0": {
+      "added": {
+        "spec.generator.ecrAuthorizationTokenSpec": "object"
+      },
+      "removed": {
+        "spec.generator.ecrRAuthorizationTokenSpec": "object"
+      }
+    }
+  },
+  "texts": [
+    "Prefix is prepended to every generated password after encoding.\nIt is not counted in length or subject to the character settings.",
+    "Suffix is appended to every generated password after encoding.\nIt is not counted in length or subject to the character settings.",
+    "Audience specifies the `aud` claim for the service account token\nIf the service account uses a well-known annotation for e.g. IRSA or GCP Workload Identity\nthen this audiences will be appended to the list",
+    "Audience specifies the `aud` claim for the service account token\nSome providers automatically extend the audience field based on well-known annotations for workload\nidentity (e.g. IRSA or GCP Workload Identity)",
+    "GitlabDeployTokenSpec defines the desired state to generate a GitLab deploy token.",
+    "SecondsToLive is the number of seconds before the generated service account token will expire.\nSome Grafana deployments (e.g. AWS Managed Grafana) require this value to be set.",
+    "BeyondtrustWorkloadCredentialsDynamicSecretSpec defines the desired spec for BeyondtrustWorkloadCredentials dynamic generator.\nThis generator enables obtaining temporary, short-lived credentials from BeyondTrust Workload Credentials.\nFor more information, see: https://docs.beyondtrust.com/bt-docs/docs/secrets-api",
+    "GCPServiceAccountEmail is the email of the Google Cloud service account to impersonate\nafter Workload Identity Federation. Use this to grant access through the service account's\nIAM bindings (for example roles/secretmanager.secretAccessor). When set, it overrides\nservice_account_impersonation_url in the external account JSON from credConfig;\nwhen serviceAccountRef is set, it also overrides the \"iam.gke.io/gcp-service-account\" annotation\non that ServiceAccount.",
+    "GetParameters are query-string parameters passed to Vault on GET calls.\nEach key may map to multiple values, matching HTTP query-string semantics.\nIgnored for non-GET methods; use Parameters for write bodies.",
+    "VaultRole specifies the Vault role to use for TLS certificate authentication.",
+    "Optional audiences field that will be used to request a temporary Kubernetes service\naccount token for the service account referenced by `serviceAccountRef`.\nDefaults to a single audience `vault` it not specified.\nDeprecated: use serviceAccountRef.Audiences instead",
+    "Optional audiences field that will be used to request a temporary Kubernetes service\naccount token for the service account referenced by `serviceAccountRef`.\nDefaults to a single audience `vault` it not specified.\n\nDeprecated: use serviceAccountRef.Audiences instead",
+    "Optional expiration time in seconds that will be used to request a temporary\nKubernetes service account token for the service account referenced by\n`serviceAccountRef`.\nDeprecated: this will be removed in the future.\nDefaults to 10 minutes.",
+    "Optional expiration time in seconds that will be used to request a temporary\nKubernetes service account token for the service account referenced by\n`serviceAccountRef`.\n\nDeprecated: this will be removed in the future.\nDefaults to 10 minutes.",
+    "SecretKeys defines the keys that will be populated with generated passwords.\nDefaults to \"password\" when not set.",
+    "KeySize specifies the key size for RSA keys (default: 2048)\nFor RSA keys: 2048, 3072, 4096\nIgnored for ed25519 keys",
+    "KeySize specifies the key size for RSA keys (default: 2048) and ECDSA keys (default: 256).\nFor RSA keys: 2048, 3072, 4096\nFor ECDSA keys: 256, 384, 521\nIgnored for ed25519 keys",
+    "KeyType specifies the SSH key type (rsa, ed25519)",
+    "KeyType specifies the SSH key type (rsa, ecdsa, ed25519)",
+    "Gcp authenticates with Vault using Google Cloud Platform authentication method\nGCP authentication method",
+    "ClusterGeneratorSpec defines the desired state of a ClusterGenerator.",
+    "ACRAuth defines the authentication methods for Azure Container Registry.",
+    "Configuration used to authenticate with Azure using static\ncredentials stored in a Kind=Secret.",
+    "AzureACRServicePrincipalAuthSecretRef defines the secret references for Azure Service Principal authentication.\nIt uses static credentials stored in a Kind=Secret.",
+    "EnvironmentType specifies the Azure cloud environment endpoints to use for\nconnecting and authenticating with Azure. By default it points to the public cloud AAD endpoint.\nThe following endpoints are available, also see here: https://github.com/Azure/go-autorest/blob/main/autorest/azure/environments.go#L152\nPublicCloud, USGovernmentCloud, ChinaCloud, GermanCloud",
+    "EnvironmentType specifies the Azure cloud environment endpoints to use for\nconnecting and authenticating with Azure. By default, it points to the public cloud AAD endpoint.\nThe following endpoints are available, also see here: https://github.com/Azure/go-autorest/blob/main/autorest/azure/environments.go#L152\nPublicCloud, USGovernmentCloud, ChinaCloud, GermanCloud",
+    "CloudsmithAccessTokenSpec defines the configuration for generating a Cloudsmith access token using OIDC authentication.",
+    "ECRAuthorizationTokenSpec defines the desired state to generate an AWS ECR authorization token.",
+    "Authenticate against AWS using service account tokens.",
+    "AWSJWTAuth provides configuration to authenticate against AWS using service account tokens.",
+    "A reference to a ServiceAccount resource.",
+    "ServiceAccountSelector is a reference to a ServiceAccount resource.",
+    "GCRAccessTokenSpec defines the desired state to generate a Google Container Registry access token.",
+    "GCPSMAuthSecretRef defines the reference to a secret containing Google Cloud Platform credentials.",
+    "GCPWorkloadIdentity defines the configuration for using GCP Workload Identity authentication.",
+    "GithubAccessTokenSpec defines the desired state to generate a GitHub access token.",
+    "GithubSecretRef references a secret containing GitHub credentials.",
+    "A reference to a specific 'key' within a Secret resource.\nIn some instances, `key` is a required field.",
+    "SecretKeySelector is a reference to a specific 'key' within a Secret resource.\nIn some instances, `key` is a required field.",
+    "URL configures the Github instance URL. Defaults to https://github.com/.",
+    "URL configures the GitHub instance URL. Defaults to https://github.com/.",
+    "Encoding specifies the encoding of the generated password.\nValid values are:\n- \"raw\" (default): no encoding\n- \"base64\": standard base64 encoding\n- \"base64url\": base64url encoding\n- \"base32\": base32 encoding\n- \"hex\": hexadecimal encoding",
+    "QuayAccessTokenSpec defines the desired state to generate a Quay access token.",
+    "STSSessionTokenSpec defines the desired state to generate an AWS STS session token.",
+    "VaultDynamicSecretSpec defines the desired spec of VaultDynamicSecret.",
+    "Result type defines which data is returned from the generator.\nBy default it is the \"data\" section of the Vault API response.\nWhen using e.g. /auth/token/create the \"data\" section is empty but\nthe \"auth\" section contains the generated token.\nPlease refer to the vault docs regarding the result data structure.\nAdditionally, accessing the raw response is possibly by using \"Raw\" result type.",
+    "Result type defines which data is returned from the generator.\nBy default, it is the \"data\" section of the Vault API response.\nWhen using e.g. /auth/token/create the \"data\" section is empty but\nthe \"auth\" section contains the generated token.\nPlease refer to the vault docs regarding the result data structure.\nAdditionally, accessing the raw response is possibly by using \"Raw\" result type.",
+    "Path where the Certificate authentication backend is mounted\nin Vault, e.g: \"cert\"",
+    "GCPWorkloadIdentityFederation holds the configurations required for generating federated access tokens.",
+    "CheckAndSet defines the Check-And-Set (CAS) settings for PushSecret operations.\nOnly applies to Vault KV v2 stores. When enabled, write operations must include\nthe current version of the secret to prevent unintentional overwrites.",
+    "SSHKeySpec controls the behavior of the ssh key generator.",
+    "MFASpec controls the behavior of the mfa generator.",
+    "SessionDuration The duration, in seconds, that the credentials should remain valid. Acceptable durations for\nIAM user sessions range from 900 seconds (15 minutes) to 129,600 seconds (36 hours), with 43,200 seconds\n(12 hours) as the default.",
+    "Auth specifies a authorization protocol. Only one protocol may be set.",
+    "Basic auth credentials used to authenticate against the Grafana instance.\nNote: you need a token which has elevated permissions to create service accounts.\nSee here for the documentation on basic roles offered by Grafana:\nhttps://grafana.com/docs/grafana/latest/administration/roles-and-permissions/access-control/rbac-fixed-basic-role-definitions/",
+    "A service account token used to authenticate against the Grafana instance.\nNote: you need a token which has elevated permissions to create service accounts.\nSee here for the documentation on basic roles offered by Grafana:\nhttps://grafana.com/docs/grafana/latest/administration/roles-and-permissions/access-control/rbac-fixed-basic-role-definitions/",
+    "Auth configures how secret-manager authenticates with the Vault server.",
+    "Username is a LDAP user name used to authenticate using the LDAP Vault\nauthentication method",
+    "Username is an LDAP username used to authenticate using the LDAP Vault\nauthentication method",
+    "Path where the UserPassword authentication backend is mounted\nin Vault, e.g: \"user\"",
+    "Path where the UserPassword authentication backend is mounted\nin Vault, e.g: \"userpass\"",
+    "Username is a user name used to authenticate using the UserPass Vault\nauthentication method",
+    "Username is a username used to authenticate using the UserPass Vault\nauthentication method",
+    "Result type defines which data is returned from the generator.\nBy default it is the \"data\" section of the Vault API response.\nWhen using e.g. /auth/token/create the \"data\" section is empty but\nthe \"auth\" section contains the generated token.\nPlease refer to the vault docs regarding the result data structure.",
+    "GrafanaSpec controls the behavior of the grafana generator.",
+    "Do not fail if no secrets are found. Useful for requests where no data is expected."
+  ]
+}

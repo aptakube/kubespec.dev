@@ -1,0 +1,420 @@
+{
+  "versions": {
+    "v1.17.0": {
+      "descriptionChanged": [
+        "metadata.finalizers"
+      ],
+      "descriptions": {
+        "metadata.finalizers": [
+          0,
+          1
+        ]
+      }
+    },
+    "v1.16.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "metadata.creationTimestamp",
+        "metadata.deletionTimestamp",
+        "metadata.generateName",
+        "metadata.managedFields",
+        "metadata.ownerReferences.kind",
+        "metadata.resourceVersion",
+        "metadata.selfLink",
+        "spec.allowedCSIDrivers"
+      ],
+      "added": {
+        "metadata.managedFields.fieldsType": "string",
+        "metadata.managedFields.fieldsV1": "FieldsV1"
+      },
+      "removed": {
+        "metadata.initializers": "Initializers",
+        "metadata.managedFields.fields": "Fields"
+      },
+      "descriptions": {
+        "apiVersion": [
+          2,
+          3
+        ],
+        "kind": [
+          4,
+          5
+        ],
+        "metadata.creationTimestamp": [
+          6,
+          7
+        ],
+        "metadata.deletionTimestamp": [
+          8,
+          9
+        ],
+        "metadata.generateName": [
+          10,
+          11
+        ],
+        "metadata.managedFields": [
+          12,
+          13
+        ],
+        "metadata.managedFields.fieldsType": [
+          null,
+          14
+        ],
+        "metadata.managedFields.fieldsV1": [
+          null,
+          15
+        ],
+        "metadata.ownerReferences.kind": [
+          16,
+          17
+        ],
+        "metadata.resourceVersion": [
+          18,
+          19
+        ],
+        "metadata.selfLink": [
+          20,
+          21
+        ],
+        "spec.allowedCSIDrivers": [
+          22,
+          23
+        ],
+        "metadata.initializers": [
+          24,
+          null
+        ],
+        "metadata.managedFields.fields": [
+          25,
+          null
+        ]
+      }
+    },
+    "v1.15.0": {
+      "added": {
+        "metadata.initializers.result.metadata.remainingItemCount": "integer",
+        "spec.runtimeClass": "RuntimeClassStrategyOptions"
+      },
+      "descriptionChanged": [
+        "spec.allowedCSIDrivers"
+      ],
+      "descriptions": {
+        "metadata.initializers.result.metadata.remainingItemCount": [
+          null,
+          26
+        ],
+        "spec.allowedCSIDrivers": [
+          27,
+          22
+        ],
+        "spec.runtimeClass": [
+          null,
+          28
+        ]
+      }
+    },
+    "v1.14.0": {
+      "descriptionChanged": [
+        "metadata",
+        "metadata.initializers"
+      ],
+      "added": {
+        "metadata.managedFields": "ManagedFieldsEntry[]",
+        "spec.allowedCSIDrivers": "AllowedCSIDriver[]"
+      },
+      "descriptions": {
+        "metadata": [
+          29,
+          30
+        ],
+        "metadata.initializers": [
+          31,
+          24
+        ],
+        "metadata.managedFields": [
+          null,
+          12
+        ],
+        "spec.allowedCSIDrivers": [
+          null,
+          27
+        ]
+      }
+    },
+    "v1.13.0": {
+      "added": {
+        "spec.runAsGroup": "RunAsGroupStrategyOptions"
+      },
+      "descriptions": {
+        "spec.runAsGroup": [
+          null,
+          32
+        ]
+      }
+    },
+    "v1.12.0": {
+      "descriptionChanged": [
+        "metadata.initializers.result.metadata.continue"
+      ],
+      "added": {
+        "spec.allowedProcMountTypes": "string[]"
+      },
+      "descriptions": {
+        "metadata.initializers.result.metadata.continue": [
+          33,
+          34
+        ],
+        "spec.allowedProcMountTypes": [
+          null,
+          35
+        ]
+      }
+    },
+    "v1.11.0": {
+      "descriptionChanged": [
+        "spec.allowPrivilegeEscalation",
+        "spec.allowedCapabilities",
+        "spec.allowedFlexVolumes",
+        "spec.allowedFlexVolumes.driver",
+        "spec.allowedHostPaths",
+        "spec.allowedHostPaths.pathPrefix",
+        "spec.defaultAddCapabilities",
+        "spec.defaultAllowPrivilegeEscalation",
+        "spec.fsGroup",
+        "spec.fsGroup.ranges",
+        "spec.fsGroup.ranges.max",
+        "spec.fsGroup.ranges.min",
+        "spec.fsGroup.rule",
+        "spec.readOnlyRootFilesystem",
+        "spec.requiredDropCapabilities",
+        "spec.runAsUser.ranges",
+        "spec.runAsUser.ranges.max",
+        "spec.runAsUser.ranges.min",
+        "spec.runAsUser.rule",
+        "spec.seLinux.rule",
+        "spec.supplementalGroups",
+        "spec.supplementalGroups.ranges",
+        "spec.supplementalGroups.ranges.max",
+        "spec.supplementalGroups.ranges.min",
+        "spec.supplementalGroups.rule",
+        "spec.volumes"
+      ],
+      "added": {
+        "spec.allowedHostPaths.readOnly": "boolean",
+        "spec.allowedUnsafeSysctls": "string[]",
+        "spec.forbiddenSysctls": "string[]"
+      },
+      "description": true,
+      "descriptions": {
+        "spec.allowPrivilegeEscalation": [
+          36,
+          37
+        ],
+        "spec.allowedCapabilities": [
+          38,
+          39
+        ],
+        "spec.allowedFlexVolumes": [
+          40,
+          41
+        ],
+        "spec.allowedFlexVolumes.driver": [
+          42,
+          43
+        ],
+        "spec.allowedHostPaths": [
+          44,
+          45
+        ],
+        "spec.allowedHostPaths.pathPrefix": [
+          46,
+          47
+        ],
+        "spec.allowedHostPaths.readOnly": [
+          null,
+          48
+        ],
+        "spec.allowedUnsafeSysctls": [
+          null,
+          49
+        ],
+        "spec.defaultAddCapabilities": [
+          50,
+          51
+        ],
+        "spec.defaultAllowPrivilegeEscalation": [
+          52,
+          53
+        ],
+        "spec.forbiddenSysctls": [
+          null,
+          54
+        ],
+        "spec.fsGroup": [
+          55,
+          56
+        ],
+        "spec.fsGroup.ranges": [
+          57,
+          58
+        ],
+        "spec.fsGroup.ranges.max": [
+          59,
+          60
+        ],
+        "spec.fsGroup.ranges.min": [
+          61,
+          62
+        ],
+        "spec.fsGroup.rule": [
+          63,
+          64
+        ],
+        "spec.readOnlyRootFilesystem": [
+          65,
+          66
+        ],
+        "spec.requiredDropCapabilities": [
+          67,
+          68
+        ],
+        "spec.runAsUser.ranges": [
+          69,
+          70
+        ],
+        "spec.runAsUser.ranges.max": [
+          59,
+          60
+        ],
+        "spec.runAsUser.ranges.min": [
+          61,
+          62
+        ],
+        "spec.runAsUser.rule": [
+          71,
+          72
+        ],
+        "spec.seLinux.rule": [
+          73,
+          74
+        ],
+        "spec.supplementalGroups": [
+          75,
+          76
+        ],
+        "spec.supplementalGroups.ranges": [
+          77,
+          78
+        ],
+        "spec.supplementalGroups.ranges.max": [
+          59,
+          60
+        ],
+        "spec.supplementalGroups.ranges.min": [
+          61,
+          62
+        ],
+        "spec.supplementalGroups.rule": [
+          79,
+          80
+        ],
+        "spec.volumes": [
+          81,
+          82
+        ],
+        "": [
+          83,
+          84
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed.",
+    "Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "CreationTimestamp is a timestamp representing the server time when this object was created. It is not guaranteed to be set in happens-before order across separate operations. Clients may not set this value. It is represented in RFC3339 form and is in UTC.\n\nPopulated by the system. Read-only. Null for lists. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+    "CreationTimestamp is a timestamp representing the server time when this object was created. It is not guaranteed to be set in happens-before order across separate operations. Clients may not set this value. It is represented in RFC3339 form and is in UTC.\n\nPopulated by the system. Read-only. Null for lists. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "DeletionTimestamp is RFC 3339 date and time at which this resource will be deleted. This field is set by the server when a graceful deletion is requested by the user, and is not directly settable by a client. The resource is expected to be deleted (no longer visible from resource lists, and not reachable by name) after the time in this field, once the finalizers list is empty. As long as the finalizers list contains items, deletion is blocked. Once the deletionTimestamp is set, this value may not be unset or be set further into the future, although it may be shortened or the resource may be deleted prior to this time. For example, a user may request that a pod is deleted in 30 seconds. The Kubelet will react by sending a graceful termination signal to the containers in the pod. After that 30 seconds, the Kubelet will send a hard termination signal (SIGKILL) to the container and after cleanup, remove the pod from the API. In the presence of network partitions, this object may still exist after this timestamp, until an administrator or automated process can determine the resource is fully terminated. If not set, graceful deletion of the object has not been requested.\n\nPopulated by the system when a graceful deletion is requested. Read-only. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+    "DeletionTimestamp is RFC 3339 date and time at which this resource will be deleted. This field is set by the server when a graceful deletion is requested by the user, and is not directly settable by a client. The resource is expected to be deleted (no longer visible from resource lists, and not reachable by name) after the time in this field, once the finalizers list is empty. As long as the finalizers list contains items, deletion is blocked. Once the deletionTimestamp is set, this value may not be unset or be set further into the future, although it may be shortened or the resource may be deleted prior to this time. For example, a user may request that a pod is deleted in 30 seconds. The Kubelet will react by sending a graceful termination signal to the containers in the pod. After that 30 seconds, the Kubelet will send a hard termination signal (SIGKILL) to the container and after cleanup, remove the pod from the API. In the presence of network partitions, this object may still exist after this timestamp, until an administrator or automated process can determine the resource is fully terminated. If not set, graceful deletion of the object has not been requested.\n\nPopulated by the system when a graceful deletion is requested. Read-only. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency",
+    "ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.\n\nThis field is alpha and can be changed or removed without notice.",
+    "ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.",
+    "FieldsType is the discriminator for the different fields format and version. There is currently only one possible value: \"FieldsV1\"",
+    "FieldsV1 holds the first JSON version format as described in the \"FieldsV1\" type.",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency",
+    "An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "SelfLink is a URL representing this object. Populated by the system. Read-only.",
+    "SelfLink is a URL representing this object. Populated by the system. Read-only.\n\nDEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is planned to be removed in 1.21 release.",
+    "AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be embedded within a pod spec. An empty value indicates that any CSI driver can be used for inline ephemeral volumes. This is an alpha field, and is only honored if the API server enables the CSIInlineVolume feature gate.",
+    "AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be embedded within a pod spec. An empty value indicates that any CSI driver can be used for inline ephemeral volumes.",
+    "An initializer is a controller which enforces some system invariant at object creation time. This field is a list of initializers that have not yet acted on this object. If nil or empty, this object has been completely initialized. Otherwise, the object is considered uninitialized and is hidden (in list/watch and get calls) from clients that haven't explicitly asked to observe uninitialized objects.\n\nWhen an object is created, the system will populate this list with the current set of initializers. Only privileged users may set or modify this list. Once it is empty, it may not be modified further by any user.\n\nDEPRECATED - initializers are an alpha field and will be removed in v1.15.",
+    "Fields identifies a set of fields.",
+    "remainingItemCount is the number of subsequent items in the list which are not included in this list response. If the list request contained label or field selectors, then the number of remaining items is unknown and the field will be left unset and omitted during serialization. If the list is complete (either because it is not chunking or because this is the last chunk), then there are no more remaining items and this field will be left unset and omitted during serialization. Servers older than v1.15 do not set this field. The intended use of the remainingItemCount is *estimating* the size of a collection. Clients should not rely on the remainingItemCount to be set or to be exact.\n\nThis field is alpha and can be changed or removed without notice.",
+    "AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be embedded within a pod spec. An empty value means no CSI drivers can run inline within a pod spec.",
+    "runtimeClass is the strategy that will dictate the allowable RuntimeClasses for a pod. If this field is omitted, the pod's runtimeClassName field is unrestricted. Enforcement of this field depends on the RuntimeClass feature gate being enabled.",
+    "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+    "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "An initializer is a controller which enforces some system invariant at object creation time. This field is a list of initializers that have not yet acted on this object. If nil or empty, this object has been completely initialized. Otherwise, the object is considered uninitialized and is hidden (in list/watch and get calls) from clients that haven't explicitly asked to observe uninitialized objects.\n\nWhen an object is created, the system will populate this list with the current set of initializers. Only privileged users may set or modify this list. Once it is empty, it may not be modified further by any user.",
+    "RunAsGroup is the strategy that will dictate the allowable RunAsGroup values that may be set. If this field is omitted, the pod's RunAsGroup can take any value. This field requires the RunAsGroup feature gate to be enabled.",
+    "continue may be set if the user set a limit on the number of items returned, and indicates that the server has more data available. The value is opaque and may be used to issue another request to the endpoint that served this list to retrieve the next set of available objects. Continuing a list may not be possible if the server configuration has changed or more than a few minutes have passed. The resourceVersion field returned when using this continue value will be identical to the value in the first response.",
+    "continue may be set if the user set a limit on the number of items returned, and indicates that the server has more data available. The value is opaque and may be used to issue another request to the endpoint that served this list to retrieve the next set of available objects. Continuing a consistent list may not be possible if the server configuration has changed or more than a few minutes have passed. The resourceVersion field returned when using this continue value will be identical to the value in the first response, unless you have received this token from an error message.",
+    "AllowedProcMountTypes is a whitelist of allowed ProcMountTypes. Empty or nil indicates that only the DefaultProcMountType may be used. This requires the ProcMountType feature flag to be enabled.",
+    "AllowPrivilegeEscalation determines if a pod can request to allow privilege escalation. If unspecified, defaults to true.",
+    "allowPrivilegeEscalation determines if a pod can request to allow privilege escalation. If unspecified, defaults to true.",
+    "AllowedCapabilities is a list of capabilities that can be requested to add to the container. Capabilities in this field may be added at the pod author's discretion. You must not list a capability in both AllowedCapabilities and RequiredDropCapabilities.",
+    "allowedCapabilities is a list of capabilities that can be requested to add to the container. Capabilities in this field may be added at the pod author's discretion. You must not list a capability in both allowedCapabilities and requiredDropCapabilities.",
+    "AllowedFlexVolumes is a whitelist of allowed Flexvolumes.  Empty or nil indicates that all Flexvolumes may be used.  This parameter is effective only when the usage of the Flexvolumes is allowed in the \"Volumes\" field.",
+    "allowedFlexVolumes is a whitelist of allowed Flexvolumes.  Empty or nil indicates that all Flexvolumes may be used.  This parameter is effective only when the usage of the Flexvolumes is allowed in the \"volumes\" field.",
+    "Driver is the name of the Flexvolume driver.",
+    "driver is the name of the Flexvolume driver.",
+    "is a white list of allowed host paths. Empty indicates that all host paths may be used.",
+    "allowedHostPaths is a white list of allowed host paths. Empty indicates that all host paths may be used.",
+    "is the path prefix that the host volume must match. It does not support `*`. Trailing slashes are trimmed when validating the path prefix with a host path.\n\nExamples: `/foo` would allow `/foo`, `/foo/` and `/foo/bar` `/foo` would not allow `/food` or `/etc/foo`",
+    "pathPrefix is the path prefix that the host volume must match. It does not support `*`. Trailing slashes are trimmed when validating the path prefix with a host path.\n\nExamples: `/foo` would allow `/foo`, `/foo/` and `/foo/bar` `/foo` would not allow `/food` or `/etc/foo`",
+    "when set to true, will allow host volumes matching the pathPrefix only if all volume mounts are readOnly.",
+    "allowedUnsafeSysctls is a list of explicitly allowed unsafe sysctls, defaults to none. Each entry is either a plain sysctl name or ends in \"*\" in which case it is considered as a prefix of allowed sysctls. Single * means all unsafe sysctls are allowed. Kubelet has to whitelist all allowed unsafe sysctls explicitly to avoid rejection.\n\nExamples: e.g. \"foo/*\" allows \"foo/bar\", \"foo/baz\", etc. e.g. \"foo.*\" allows \"foo.bar\", \"foo.baz\", etc.",
+    "DefaultAddCapabilities is the default set of capabilities that will be added to the container unless the pod spec specifically drops the capability.  You may not list a capability in both DefaultAddCapabilities and RequiredDropCapabilities. Capabilities added here are implicitly allowed, and need not be included in the AllowedCapabilities list.",
+    "defaultAddCapabilities is the default set of capabilities that will be added to the container unless the pod spec specifically drops the capability.  You may not list a capability in both defaultAddCapabilities and requiredDropCapabilities. Capabilities added here are implicitly allowed, and need not be included in the allowedCapabilities list.",
+    "DefaultAllowPrivilegeEscalation controls the default setting for whether a process can gain more privileges than its parent process.",
+    "defaultAllowPrivilegeEscalation controls the default setting for whether a process can gain more privileges than its parent process.",
+    "forbiddenSysctls is a list of explicitly forbidden sysctls, defaults to none. Each entry is either a plain sysctl name or ends in \"*\" in which case it is considered as a prefix of forbidden sysctls. Single * means all sysctls are forbidden.\n\nExamples: e.g. \"foo/*\" forbids \"foo/bar\", \"foo/baz\", etc. e.g. \"foo.*\" forbids \"foo.bar\", \"foo.baz\", etc.",
+    "FSGroup is the strategy that will dictate what fs group is used by the SecurityContext.",
+    "fsGroup is the strategy that will dictate what fs group is used by the SecurityContext.",
+    "Ranges are the allowed ranges of fs groups.  If you would like to force a single fs group then supply a single range with the same start and end.",
+    "ranges are the allowed ranges of fs groups.  If you would like to force a single fs group then supply a single range with the same start and end. Required for MustRunAs.",
+    "Max is the end of the range, inclusive.",
+    "max is the end of the range, inclusive.",
+    "Min is the start of the range, inclusive.",
+    "min is the start of the range, inclusive.",
+    "Rule is the strategy that will dictate what FSGroup is used in the SecurityContext.",
+    "rule is the strategy that will dictate what FSGroup is used in the SecurityContext.",
+    "ReadOnlyRootFilesystem when set to true will force containers to run with a read only root file system.  If the container specifically requests to run with a non-read only root file system the PSP should deny the pod. If set to false the container may run with a read only root file system if it wishes but it will not be forced to.",
+    "readOnlyRootFilesystem when set to true will force containers to run with a read only root file system.  If the container specifically requests to run with a non-read only root file system the PSP should deny the pod. If set to false the container may run with a read only root file system if it wishes but it will not be forced to.",
+    "RequiredDropCapabilities are the capabilities that will be dropped from the container.  These are required to be dropped and cannot be added.",
+    "requiredDropCapabilities are the capabilities that will be dropped from the container.  These are required to be dropped and cannot be added.",
+    "Ranges are the allowed ranges of uids that may be used.",
+    "ranges are the allowed ranges of uids that may be used. If you would like to force a single uid then supply a single range with the same start and end. Required for MustRunAs.",
+    "Rule is the strategy that will dictate the allowable RunAsUser values that may be set.",
+    "rule is the strategy that will dictate the allowable RunAsUser values that may be set.",
+    "type is the strategy that will dictate the allowable labels that may be set.",
+    "rule is the strategy that will dictate the allowable labels that may be set.",
+    "SupplementalGroups is the strategy that will dictate what supplemental groups are used by the SecurityContext.",
+    "supplementalGroups is the strategy that will dictate what supplemental groups are used by the SecurityContext.",
+    "Ranges are the allowed ranges of supplemental groups.  If you would like to force a single supplemental group then supply a single range with the same start and end.",
+    "ranges are the allowed ranges of supplemental groups.  If you would like to force a single supplemental group then supply a single range with the same start and end. Required for MustRunAs.",
+    "Rule is the strategy that will dictate what supplemental groups is used in the SecurityContext.",
+    "rule is the strategy that will dictate what supplemental groups is used in the SecurityContext.",
+    "volumes is a white list of allowed volume plugins.  Empty indicates that all plugins may be used.",
+    "volumes is a white list of allowed volume plugins. Empty indicates that no volumes may be used. To allow all volumes you may use '*'.",
+    "Pod Security Policy governs the ability to make requests that affect the Security Context that will be applied to a pod and container.",
+    "PodSecurityPolicy governs the ability to make requests that affect the Security Context that will be applied to a pod and container. Deprecated: use PodSecurityPolicy from policy API Group instead."
+  ]
+}

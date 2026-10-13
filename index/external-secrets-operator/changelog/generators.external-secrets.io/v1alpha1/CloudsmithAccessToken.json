@@ -1,0 +1,31 @@
+{
+  "versions": {
+    "v2.10.0": {
+      "descriptionChanged": [
+        "spec.serviceAccountRef.audiences"
+      ],
+      "descriptions": {
+        "spec.serviceAccountRef.audiences": [
+          0,
+          1
+        ]
+      }
+    },
+    "v0.20.4": {
+      "descriptionChanged": [
+        "spec"
+      ],
+      "descriptions": {
+        "spec": [
+          null,
+          2
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Audience specifies the `aud` claim for the service account token\nIf the service account uses a well-known annotation for e.g. IRSA or GCP Workload Identity\nthen this audiences will be appended to the list",
+    "Audience specifies the `aud` claim for the service account token\nSome providers automatically extend the audience field based on well-known annotations for workload\nidentity (e.g. IRSA or GCP Workload Identity)",
+    "CloudsmithAccessTokenSpec defines the configuration for generating a Cloudsmith access token using OIDC authentication."
+  ]
+}

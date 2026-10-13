@@ -1,0 +1,4329 @@
+{
+  "versions": {
+    "1.20.0": {
+      "descriptionChanged": [
+        "spec.egress.toEntities",
+        "spec.egress.toGroups",
+        "spec.egress.toGroups.aws.labels",
+        "spec.egress.toGroups.aws.region",
+        "spec.egress.toGroups.aws.securityGroupsIds",
+        "spec.egress.toGroups.aws.securityGroupsNames",
+        "spec.egress.toPorts.ports.protocol",
+        "spec.egressDeny.toEntities",
+        "spec.egressDeny.toGroups",
+        "spec.egressDeny.toGroups.aws.labels",
+        "spec.egressDeny.toGroups.aws.region",
+        "spec.egressDeny.toGroups.aws.securityGroupsIds",
+        "spec.egressDeny.toGroups.aws.securityGroupsNames",
+        "spec.egressDeny.toPorts.ports.protocol",
+        "spec.ingress.fromEntities",
+        "spec.ingress.fromGroups",
+        "spec.ingress.fromGroups.aws.labels",
+        "spec.ingress.fromGroups.aws.region",
+        "spec.ingress.fromGroups.aws.securityGroupsIds",
+        "spec.ingress.fromGroups.aws.securityGroupsNames",
+        "spec.ingress.toPorts.ports.protocol",
+        "spec.ingressDeny.fromEntities",
+        "spec.ingressDeny.fromGroups",
+        "spec.ingressDeny.fromGroups.aws.labels",
+        "spec.ingressDeny.fromGroups.aws.region",
+        "spec.ingressDeny.fromGroups.aws.securityGroupsIds",
+        "spec.ingressDeny.fromGroups.aws.securityGroupsNames",
+        "spec.ingressDeny.toPorts.ports.protocol",
+        "spec.labels.source",
+        "specs.egress.toEntities",
+        "specs.egress.toGroups",
+        "specs.egress.toGroups.aws.labels",
+        "specs.egress.toGroups.aws.region",
+        "specs.egress.toGroups.aws.securityGroupsIds",
+        "specs.egress.toGroups.aws.securityGroupsNames",
+        "specs.egress.toPorts.ports.protocol",
+        "specs.egressDeny.toEntities",
+        "specs.egressDeny.toGroups",
+        "specs.egressDeny.toGroups.aws.labels",
+        "specs.egressDeny.toGroups.aws.region",
+        "specs.egressDeny.toGroups.aws.securityGroupsIds",
+        "specs.egressDeny.toGroups.aws.securityGroupsNames",
+        "specs.egressDeny.toPorts.ports.protocol",
+        "specs.ingress.fromEntities",
+        "specs.ingress.fromGroups",
+        "specs.ingress.fromGroups.aws.labels",
+        "specs.ingress.fromGroups.aws.region",
+        "specs.ingress.fromGroups.aws.securityGroupsIds",
+        "specs.ingress.fromGroups.aws.securityGroupsNames",
+        "specs.ingress.toPorts.ports.protocol",
+        "specs.ingressDeny.fromEntities",
+        "specs.ingressDeny.fromGroups",
+        "specs.ingressDeny.fromGroups.aws.labels",
+        "specs.ingressDeny.fromGroups.aws.region",
+        "specs.ingressDeny.fromGroups.aws.securityGroupsIds",
+        "specs.ingressDeny.fromGroups.aws.securityGroupsNames",
+        "specs.ingressDeny.toPorts.ports.protocol",
+        "specs.labels.source"
+      ],
+      "removed": {
+        "spec.egress.toPorts.rules.kafka": "object[]",
+        "spec.egress.toPorts.rules.l7": "map[string]string[]",
+        "spec.egress.toPorts.rules.l7proto": "string",
+        "spec.ingress.toPorts.rules.kafka": "object[]",
+        "spec.ingress.toPorts.rules.l7": "map[string]string[]",
+        "spec.ingress.toPorts.rules.l7proto": "string",
+        "specs.egress.toPorts.rules.kafka": "object[]",
+        "specs.egress.toPorts.rules.l7": "map[string]string[]",
+        "specs.egress.toPorts.rules.l7proto": "string",
+        "specs.ingress.toPorts.rules.kafka": "object[]",
+        "specs.ingress.toPorts.rules.l7": "map[string]string[]",
+        "specs.ingress.toPorts.rules.l7proto": "string"
+      },
+      "descriptions": {
+        "spec.egress.toEntities": [
+          0,
+          1
+        ],
+        "spec.egress.toGroups": [
+          2,
+          3
+        ],
+        "spec.egress.toGroups.aws.labels": [
+          null,
+          4
+        ],
+        "spec.egress.toGroups.aws.region": [
+          null,
+          5
+        ],
+        "spec.egress.toGroups.aws.securityGroupsIds": [
+          null,
+          6
+        ],
+        "spec.egress.toGroups.aws.securityGroupsNames": [
+          null,
+          7
+        ],
+        "spec.egress.toPorts.ports.protocol": [
+          8,
+          9
+        ],
+        "spec.egressDeny.toEntities": [
+          0,
+          1
+        ],
+        "spec.egressDeny.toGroups": [
+          2,
+          3
+        ],
+        "spec.egressDeny.toGroups.aws.labels": [
+          null,
+          4
+        ],
+        "spec.egressDeny.toGroups.aws.region": [
+          null,
+          5
+        ],
+        "spec.egressDeny.toGroups.aws.securityGroupsIds": [
+          null,
+          6
+        ],
+        "spec.egressDeny.toGroups.aws.securityGroupsNames": [
+          null,
+          7
+        ],
+        "spec.egressDeny.toPorts.ports.protocol": [
+          8,
+          9
+        ],
+        "spec.ingress.fromEntities": [
+          10,
+          11
+        ],
+        "spec.ingress.fromGroups": [
+          12,
+          13
+        ],
+        "spec.ingress.fromGroups.aws.labels": [
+          null,
+          4
+        ],
+        "spec.ingress.fromGroups.aws.region": [
+          null,
+          5
+        ],
+        "spec.ingress.fromGroups.aws.securityGroupsIds": [
+          null,
+          6
+        ],
+        "spec.ingress.fromGroups.aws.securityGroupsNames": [
+          null,
+          7
+        ],
+        "spec.ingress.toPorts.ports.protocol": [
+          8,
+          9
+        ],
+        "spec.ingressDeny.fromEntities": [
+          10,
+          11
+        ],
+        "spec.ingressDeny.fromGroups": [
+          12,
+          13
+        ],
+        "spec.ingressDeny.fromGroups.aws.labels": [
+          null,
+          4
+        ],
+        "spec.ingressDeny.fromGroups.aws.region": [
+          null,
+          5
+        ],
+        "spec.ingressDeny.fromGroups.aws.securityGroupsIds": [
+          null,
+          6
+        ],
+        "spec.ingressDeny.fromGroups.aws.securityGroupsNames": [
+          null,
+          7
+        ],
+        "spec.ingressDeny.toPorts.ports.protocol": [
+          8,
+          9
+        ],
+        "spec.labels.source": [
+          14,
+          15
+        ],
+        "specs.egress.toEntities": [
+          0,
+          1
+        ],
+        "specs.egress.toGroups": [
+          2,
+          3
+        ],
+        "specs.egress.toGroups.aws.labels": [
+          null,
+          4
+        ],
+        "specs.egress.toGroups.aws.region": [
+          null,
+          5
+        ],
+        "specs.egress.toGroups.aws.securityGroupsIds": [
+          null,
+          6
+        ],
+        "specs.egress.toGroups.aws.securityGroupsNames": [
+          null,
+          7
+        ],
+        "specs.egress.toPorts.ports.protocol": [
+          8,
+          9
+        ],
+        "specs.egressDeny.toEntities": [
+          0,
+          1
+        ],
+        "specs.egressDeny.toGroups": [
+          2,
+          3
+        ],
+        "specs.egressDeny.toGroups.aws.labels": [
+          null,
+          4
+        ],
+        "specs.egressDeny.toGroups.aws.region": [
+          null,
+          5
+        ],
+        "specs.egressDeny.toGroups.aws.securityGroupsIds": [
+          null,
+          6
+        ],
+        "specs.egressDeny.toGroups.aws.securityGroupsNames": [
+          null,
+          7
+        ],
+        "specs.egressDeny.toPorts.ports.protocol": [
+          8,
+          9
+        ],
+        "specs.ingress.fromEntities": [
+          10,
+          11
+        ],
+        "specs.ingress.fromGroups": [
+          12,
+          13
+        ],
+        "specs.ingress.fromGroups.aws.labels": [
+          null,
+          4
+        ],
+        "specs.ingress.fromGroups.aws.region": [
+          null,
+          5
+        ],
+        "specs.ingress.fromGroups.aws.securityGroupsIds": [
+          null,
+          6
+        ],
+        "specs.ingress.fromGroups.aws.securityGroupsNames": [
+          null,
+          7
+        ],
+        "specs.ingress.toPorts.ports.protocol": [
+          8,
+          9
+        ],
+        "specs.ingressDeny.fromEntities": [
+          10,
+          11
+        ],
+        "specs.ingressDeny.fromGroups": [
+          12,
+          13
+        ],
+        "specs.ingressDeny.fromGroups.aws.labels": [
+          null,
+          4
+        ],
+        "specs.ingressDeny.fromGroups.aws.region": [
+          null,
+          5
+        ],
+        "specs.ingressDeny.fromGroups.aws.securityGroupsIds": [
+          null,
+          6
+        ],
+        "specs.ingressDeny.fromGroups.aws.securityGroupsNames": [
+          null,
+          7
+        ],
+        "specs.ingressDeny.toPorts.ports.protocol": [
+          8,
+          9
+        ],
+        "specs.labels.source": [
+          14,
+          15
+        ],
+        "spec.egress.toPorts.rules.kafka": [
+          16,
+          null
+        ],
+        "spec.egress.toPorts.rules.l7": [
+          17,
+          null
+        ],
+        "spec.egress.toPorts.rules.l7proto": [
+          18,
+          null
+        ],
+        "spec.ingress.toPorts.rules.kafka": [
+          16,
+          null
+        ],
+        "spec.ingress.toPorts.rules.l7": [
+          17,
+          null
+        ],
+        "spec.ingress.toPorts.rules.l7proto": [
+          18,
+          null
+        ],
+        "specs.egress.toPorts.rules.kafka": [
+          16,
+          null
+        ],
+        "specs.egress.toPorts.rules.l7": [
+          17,
+          null
+        ],
+        "specs.egress.toPorts.rules.l7proto": [
+          18,
+          null
+        ],
+        "specs.ingress.toPorts.rules.kafka": [
+          16,
+          null
+        ],
+        "specs.ingress.toPorts.rules.l7": [
+          17,
+          null
+        ],
+        "specs.ingress.toPorts.rules.l7proto": [
+          18,
+          null
+        ]
+      }
+    },
+    "1.19.0": {
+      "descriptionChanged": [
+        "spec.egress.toEndpoints",
+        "spec.egress.toFQDNs.matchPattern",
+        "spec.egress.toPorts.ports.protocol",
+        "spec.egress.toPorts.rules.dns.matchPattern",
+        "spec.egress.toPorts.rules.kafka",
+        "spec.egress.toRequires",
+        "spec.egressDeny.toEndpoints",
+        "spec.egressDeny.toPorts.ports.protocol",
+        "spec.egressDeny.toRequires",
+        "spec.ingress.fromEndpoints",
+        "spec.ingress.fromRequires",
+        "spec.ingress.toPorts.ports.protocol",
+        "spec.ingress.toPorts.rules.dns.matchPattern",
+        "spec.ingress.toPorts.rules.kafka",
+        "spec.ingressDeny.fromEndpoints",
+        "spec.ingressDeny.fromRequires",
+        "spec.ingressDeny.toPorts.ports.protocol",
+        "specs.egress.toEndpoints",
+        "specs.egress.toFQDNs.matchPattern",
+        "specs.egress.toPorts.ports.protocol",
+        "specs.egress.toPorts.rules.dns.matchPattern",
+        "specs.egress.toPorts.rules.kafka",
+        "specs.egress.toRequires",
+        "specs.egressDeny.toEndpoints",
+        "specs.egressDeny.toPorts.ports.protocol",
+        "specs.egressDeny.toRequires",
+        "specs.ingress.fromEndpoints",
+        "specs.ingress.fromRequires",
+        "specs.ingress.toPorts.ports.protocol",
+        "specs.ingress.toPorts.rules.dns.matchPattern",
+        "specs.ingress.toPorts.rules.kafka",
+        "specs.ingressDeny.fromEndpoints",
+        "specs.ingressDeny.fromRequires",
+        "specs.ingressDeny.toPorts.ports.protocol"
+      ],
+      "optional": [
+        "spec.egress.toPorts.ports.port",
+        "spec.egressDeny.toPorts.ports.port",
+        "spec.ingress.toPorts.ports.port",
+        "spec.ingressDeny.toPorts.ports.port",
+        "specs.egress.toPorts.ports.port",
+        "specs.egressDeny.toPorts.ports.port",
+        "specs.ingress.toPorts.ports.port",
+        "specs.ingressDeny.toPorts.ports.port"
+      ],
+      "typeChanged": {
+        "spec.egress.toRequires": [
+          "object[]",
+          "string[]"
+        ],
+        "spec.egressDeny.toRequires": [
+          "object[]",
+          "string[]"
+        ],
+        "spec.ingress.fromRequires": [
+          "object[]",
+          "string[]"
+        ],
+        "spec.ingressDeny.fromRequires": [
+          "object[]",
+          "string[]"
+        ],
+        "specs.egress.toRequires": [
+          "object[]",
+          "string[]"
+        ],
+        "specs.egressDeny.toRequires": [
+          "object[]",
+          "string[]"
+        ],
+        "specs.ingress.fromRequires": [
+          "object[]",
+          "string[]"
+        ],
+        "specs.ingressDeny.fromRequires": [
+          "object[]",
+          "string[]"
+        ]
+      },
+      "removed": {
+        "spec.egress.toRequires.matchExpressions": "object[]",
+        "spec.egress.toRequires.matchLabels": "map[string]string",
+        "spec.egressDeny.toRequires.matchExpressions": "object[]",
+        "spec.egressDeny.toRequires.matchLabels": "map[string]string",
+        "spec.ingress.fromRequires.matchExpressions": "object[]",
+        "spec.ingress.fromRequires.matchLabels": "map[string]string",
+        "spec.ingressDeny.fromRequires.matchExpressions": "object[]",
+        "spec.ingressDeny.fromRequires.matchLabels": "map[string]string",
+        "specs.egress.toRequires.matchExpressions": "object[]",
+        "specs.egress.toRequires.matchLabels": "map[string]string",
+        "specs.egressDeny.toRequires.matchExpressions": "object[]",
+        "specs.egressDeny.toRequires.matchLabels": "map[string]string",
+        "specs.ingress.fromRequires.matchExpressions": "object[]",
+        "specs.ingress.fromRequires.matchLabels": "map[string]string",
+        "specs.ingressDeny.fromRequires.matchExpressions": "object[]",
+        "specs.ingressDeny.fromRequires.matchLabels": "map[string]string"
+      },
+      "descriptions": {
+        "spec.egress.toEndpoints": [
+          19,
+          20
+        ],
+        "spec.egress.toFQDNs.matchPattern": [
+          21,
+          22
+        ],
+        "spec.egress.toPorts.ports.port": [
+          null,
+          23
+        ],
+        "spec.egress.toPorts.ports.protocol": [
+          24,
+          8
+        ],
+        "spec.egress.toPorts.rules.dns.matchPattern": [
+          21,
+          22
+        ],
+        "spec.egress.toPorts.rules.kafka": [
+          25,
+          16
+        ],
+        "spec.egress.toRequires": [
+          26,
+          27
+        ],
+        "spec.egressDeny.toEndpoints": [
+          19,
+          20
+        ],
+        "spec.egressDeny.toPorts.ports.port": [
+          null,
+          23
+        ],
+        "spec.egressDeny.toPorts.ports.protocol": [
+          24,
+          8
+        ],
+        "spec.egressDeny.toRequires": [
+          26,
+          27
+        ],
+        "spec.ingress.fromEndpoints": [
+          28,
+          29
+        ],
+        "spec.ingress.fromRequires": [
+          30,
+          27
+        ],
+        "spec.ingress.toPorts.ports.port": [
+          null,
+          23
+        ],
+        "spec.ingress.toPorts.ports.protocol": [
+          24,
+          8
+        ],
+        "spec.ingress.toPorts.rules.dns.matchPattern": [
+          21,
+          22
+        ],
+        "spec.ingress.toPorts.rules.kafka": [
+          25,
+          16
+        ],
+        "spec.ingressDeny.fromEndpoints": [
+          28,
+          29
+        ],
+        "spec.ingressDeny.fromRequires": [
+          30,
+          27
+        ],
+        "spec.ingressDeny.toPorts.ports.port": [
+          null,
+          23
+        ],
+        "spec.ingressDeny.toPorts.ports.protocol": [
+          24,
+          8
+        ],
+        "specs.egress.toEndpoints": [
+          19,
+          20
+        ],
+        "specs.egress.toFQDNs.matchPattern": [
+          21,
+          22
+        ],
+        "specs.egress.toPorts.ports.port": [
+          null,
+          23
+        ],
+        "specs.egress.toPorts.ports.protocol": [
+          24,
+          8
+        ],
+        "specs.egress.toPorts.rules.dns.matchPattern": [
+          21,
+          22
+        ],
+        "specs.egress.toPorts.rules.kafka": [
+          25,
+          16
+        ],
+        "specs.egress.toRequires": [
+          26,
+          27
+        ],
+        "specs.egressDeny.toEndpoints": [
+          19,
+          20
+        ],
+        "specs.egressDeny.toPorts.ports.port": [
+          null,
+          23
+        ],
+        "specs.egressDeny.toPorts.ports.protocol": [
+          24,
+          8
+        ],
+        "specs.egressDeny.toRequires": [
+          26,
+          27
+        ],
+        "specs.ingress.fromEndpoints": [
+          28,
+          29
+        ],
+        "specs.ingress.fromRequires": [
+          30,
+          27
+        ],
+        "specs.ingress.toPorts.ports.port": [
+          null,
+          23
+        ],
+        "specs.ingress.toPorts.ports.protocol": [
+          24,
+          8
+        ],
+        "specs.ingress.toPorts.rules.dns.matchPattern": [
+          21,
+          22
+        ],
+        "specs.ingress.toPorts.rules.kafka": [
+          25,
+          16
+        ],
+        "specs.ingressDeny.fromEndpoints": [
+          28,
+          29
+        ],
+        "specs.ingressDeny.fromRequires": [
+          30,
+          27
+        ],
+        "specs.ingressDeny.toPorts.ports.port": [
+          null,
+          23
+        ],
+        "specs.ingressDeny.toPorts.ports.protocol": [
+          24,
+          8
+        ],
+        "spec.egress.toRequires.matchExpressions": [
+          31,
+          null
+        ],
+        "spec.egress.toRequires.matchLabels": [
+          32,
+          null
+        ],
+        "spec.egressDeny.toRequires.matchExpressions": [
+          31,
+          null
+        ],
+        "spec.egressDeny.toRequires.matchLabels": [
+          32,
+          null
+        ],
+        "spec.ingress.fromRequires.matchExpressions": [
+          31,
+          null
+        ],
+        "spec.ingress.fromRequires.matchLabels": [
+          32,
+          null
+        ],
+        "spec.ingressDeny.fromRequires.matchExpressions": [
+          31,
+          null
+        ],
+        "spec.ingressDeny.fromRequires.matchLabels": [
+          32,
+          null
+        ],
+        "specs.egress.toRequires.matchExpressions": [
+          31,
+          null
+        ],
+        "specs.egress.toRequires.matchLabels": [
+          32,
+          null
+        ],
+        "specs.egressDeny.toRequires.matchExpressions": [
+          31,
+          null
+        ],
+        "specs.egressDeny.toRequires.matchLabels": [
+          32,
+          null
+        ],
+        "specs.ingress.fromRequires.matchExpressions": [
+          31,
+          null
+        ],
+        "specs.ingress.fromRequires.matchLabels": [
+          32,
+          null
+        ],
+        "specs.ingressDeny.fromRequires.matchExpressions": [
+          31,
+          null
+        ],
+        "specs.ingressDeny.fromRequires.matchLabels": [
+          32,
+          null
+        ]
+      }
+    },
+    "1.18.0": {
+      "descriptionChanged": [
+        "spec.egress.toEntities",
+        "spec.egress.toFQDNs.matchPattern",
+        "spec.egress.toPorts.rules.dns.matchPattern",
+        "spec.egressDeny.toEntities",
+        "spec.ingress.fromEntities",
+        "spec.ingress.toPorts.rules.dns.matchPattern",
+        "spec.ingressDeny.fromEntities",
+        "specs.egress.toEntities",
+        "specs.egress.toFQDNs.matchPattern",
+        "specs.egress.toPorts.rules.dns.matchPattern",
+        "specs.egressDeny.toEntities",
+        "specs.ingress.fromEntities",
+        "specs.ingress.toPorts.rules.dns.matchPattern",
+        "specs.ingressDeny.fromEntities"
+      ],
+      "added": {
+        "spec.log": "object",
+        "specs.log": "object"
+      },
+      "descriptions": {
+        "spec.egress.toEntities": [
+          33,
+          0
+        ],
+        "spec.egress.toFQDNs.matchPattern": [
+          34,
+          21
+        ],
+        "spec.egress.toPorts.rules.dns.matchPattern": [
+          34,
+          21
+        ],
+        "spec.egressDeny.toEntities": [
+          33,
+          0
+        ],
+        "spec.ingress.fromEntities": [
+          35,
+          10
+        ],
+        "spec.ingress.toPorts.rules.dns.matchPattern": [
+          34,
+          21
+        ],
+        "spec.ingressDeny.fromEntities": [
+          35,
+          10
+        ],
+        "spec.log": [
+          null,
+          36
+        ],
+        "specs.egress.toEntities": [
+          33,
+          0
+        ],
+        "specs.egress.toFQDNs.matchPattern": [
+          34,
+          21
+        ],
+        "specs.egress.toPorts.rules.dns.matchPattern": [
+          34,
+          21
+        ],
+        "specs.egressDeny.toEntities": [
+          33,
+          0
+        ],
+        "specs.ingress.fromEntities": [
+          35,
+          10
+        ],
+        "specs.ingress.toPorts.rules.dns.matchPattern": [
+          34,
+          21
+        ],
+        "specs.ingressDeny.fromEntities": [
+          35,
+          10
+        ],
+        "specs.log": [
+          null,
+          36
+        ]
+      }
+    },
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.description",
+        "spec.egress",
+        "spec.egress.icmps",
+        "spec.egress.icmps.fields.family",
+        "spec.egress.icmps.fields.type",
+        "spec.egress.toCIDR",
+        "spec.egress.toCIDRSet",
+        "spec.egress.toCIDRSet.cidrGroupRef",
+        "spec.egress.toCIDRSet.except",
+        "spec.egress.toEndpoints",
+        "spec.egress.toEndpoints.matchExpressions.operator",
+        "spec.egress.toEndpoints.matchExpressions.values",
+        "spec.egress.toEndpoints.matchLabels",
+        "spec.egress.toEntities",
+        "spec.egress.toFQDNs",
+        "spec.egress.toFQDNs.matchName",
+        "spec.egress.toFQDNs.matchPattern",
+        "spec.egress.toGroups",
+        "spec.egress.toNodes",
+        "spec.egress.toNodes.matchExpressions.operator",
+        "spec.egress.toNodes.matchExpressions.values",
+        "spec.egress.toNodes.matchLabels",
+        "spec.egress.toPorts",
+        "spec.egress.toPorts.listener",
+        "spec.egress.toPorts.listener.envoyConfig",
+        "spec.egress.toPorts.listener.envoyConfig.kind",
+        "spec.egress.toPorts.listener.envoyConfig.name",
+        "spec.egress.toPorts.listener.priority",
+        "spec.egress.toPorts.originatingTLS",
+        "spec.egress.toPorts.originatingTLS.certificate",
+        "spec.egress.toPorts.originatingTLS.privateKey",
+        "spec.egress.toPorts.originatingTLS.secret",
+        "spec.egress.toPorts.originatingTLS.secret.namespace",
+        "spec.egress.toPorts.originatingTLS.trustedCA",
+        "spec.egress.toPorts.ports.port",
+        "spec.egress.toPorts.ports.protocol",
+        "spec.egress.toPorts.rules",
+        "spec.egress.toPorts.rules.dns.matchName",
+        "spec.egress.toPorts.rules.dns.matchPattern",
+        "spec.egress.toPorts.rules.http.headerMatches",
+        "spec.egress.toPorts.rules.http.headerMatches.mismatch",
+        "spec.egress.toPorts.rules.http.headerMatches.secret",
+        "spec.egress.toPorts.rules.http.headerMatches.secret.namespace",
+        "spec.egress.toPorts.rules.http.headerMatches.value",
+        "spec.egress.toPorts.rules.http.headers",
+        "spec.egress.toPorts.rules.http.host",
+        "spec.egress.toPorts.rules.http.method",
+        "spec.egress.toPorts.rules.http.path",
+        "spec.egress.toPorts.rules.kafka.apiKey",
+        "spec.egress.toPorts.rules.kafka.apiVersion",
+        "spec.egress.toPorts.rules.kafka.clientID",
+        "spec.egress.toPorts.rules.kafka.role",
+        "spec.egress.toPorts.rules.kafka.topic",
+        "spec.egress.toPorts.serverNames",
+        "spec.egress.toPorts.terminatingTLS",
+        "spec.egress.toPorts.terminatingTLS.certificate",
+        "spec.egress.toPorts.terminatingTLS.privateKey",
+        "spec.egress.toPorts.terminatingTLS.secret",
+        "spec.egress.toPorts.terminatingTLS.secret.namespace",
+        "spec.egress.toPorts.terminatingTLS.trustedCA",
+        "spec.egress.toRequires",
+        "spec.egress.toRequires.matchExpressions.operator",
+        "spec.egress.toRequires.matchExpressions.values",
+        "spec.egress.toRequires.matchLabels",
+        "spec.egress.toServices",
+        "spec.egress.toServices.k8sServiceSelector.selector.matchExpressions.operator",
+        "spec.egress.toServices.k8sServiceSelector.selector.matchExpressions.values",
+        "spec.egress.toServices.k8sServiceSelector.selector.matchLabels",
+        "spec.egressDeny",
+        "spec.egressDeny.icmps",
+        "spec.egressDeny.icmps.fields.family",
+        "spec.egressDeny.icmps.fields.type",
+        "spec.egressDeny.toCIDR",
+        "spec.egressDeny.toCIDRSet",
+        "spec.egressDeny.toCIDRSet.cidrGroupRef",
+        "spec.egressDeny.toCIDRSet.except",
+        "spec.egressDeny.toEndpoints",
+        "spec.egressDeny.toEndpoints.matchExpressions.operator",
+        "spec.egressDeny.toEndpoints.matchExpressions.values",
+        "spec.egressDeny.toEndpoints.matchLabels",
+        "spec.egressDeny.toEntities",
+        "spec.egressDeny.toGroups",
+        "spec.egressDeny.toNodes",
+        "spec.egressDeny.toNodes.matchExpressions.operator",
+        "spec.egressDeny.toNodes.matchExpressions.values",
+        "spec.egressDeny.toNodes.matchLabels",
+        "spec.egressDeny.toPorts",
+        "spec.egressDeny.toPorts.ports.port",
+        "spec.egressDeny.toPorts.ports.protocol",
+        "spec.egressDeny.toRequires",
+        "spec.egressDeny.toRequires.matchExpressions.operator",
+        "spec.egressDeny.toRequires.matchExpressions.values",
+        "spec.egressDeny.toRequires.matchLabels",
+        "spec.egressDeny.toServices",
+        "spec.egressDeny.toServices.k8sServiceSelector.selector.matchExpressions.operator",
+        "spec.egressDeny.toServices.k8sServiceSelector.selector.matchExpressions.values",
+        "spec.egressDeny.toServices.k8sServiceSelector.selector.matchLabels",
+        "spec.enableDefaultDeny",
+        "spec.enableDefaultDeny.egress",
+        "spec.enableDefaultDeny.ingress",
+        "spec.endpointSelector",
+        "spec.endpointSelector.matchExpressions.operator",
+        "spec.endpointSelector.matchExpressions.values",
+        "spec.endpointSelector.matchLabels",
+        "spec.ingress",
+        "spec.ingress.fromCIDR",
+        "spec.ingress.fromCIDRSet",
+        "spec.ingress.fromCIDRSet.cidrGroupRef",
+        "spec.ingress.fromCIDRSet.except",
+        "spec.ingress.fromEndpoints",
+        "spec.ingress.fromEndpoints.matchExpressions.operator",
+        "spec.ingress.fromEndpoints.matchExpressions.values",
+        "spec.ingress.fromEndpoints.matchLabels",
+        "spec.ingress.fromEntities",
+        "spec.ingress.fromGroups",
+        "spec.ingress.fromNodes",
+        "spec.ingress.fromNodes.matchExpressions.operator",
+        "spec.ingress.fromNodes.matchExpressions.values",
+        "spec.ingress.fromNodes.matchLabels",
+        "spec.ingress.fromRequires",
+        "spec.ingress.fromRequires.matchExpressions.operator",
+        "spec.ingress.fromRequires.matchExpressions.values",
+        "spec.ingress.fromRequires.matchLabels",
+        "spec.ingress.icmps",
+        "spec.ingress.icmps.fields.family",
+        "spec.ingress.icmps.fields.type",
+        "spec.ingress.toPorts",
+        "spec.ingress.toPorts.listener",
+        "spec.ingress.toPorts.listener.envoyConfig",
+        "spec.ingress.toPorts.listener.envoyConfig.kind",
+        "spec.ingress.toPorts.listener.envoyConfig.name",
+        "spec.ingress.toPorts.listener.priority",
+        "spec.ingress.toPorts.originatingTLS",
+        "spec.ingress.toPorts.originatingTLS.certificate",
+        "spec.ingress.toPorts.originatingTLS.privateKey",
+        "spec.ingress.toPorts.originatingTLS.secret",
+        "spec.ingress.toPorts.originatingTLS.secret.namespace",
+        "spec.ingress.toPorts.originatingTLS.trustedCA",
+        "spec.ingress.toPorts.ports.port",
+        "spec.ingress.toPorts.ports.protocol",
+        "spec.ingress.toPorts.rules",
+        "spec.ingress.toPorts.rules.dns.matchName",
+        "spec.ingress.toPorts.rules.dns.matchPattern",
+        "spec.ingress.toPorts.rules.http.headerMatches",
+        "spec.ingress.toPorts.rules.http.headerMatches.mismatch",
+        "spec.ingress.toPorts.rules.http.headerMatches.secret",
+        "spec.ingress.toPorts.rules.http.headerMatches.secret.namespace",
+        "spec.ingress.toPorts.rules.http.headerMatches.value",
+        "spec.ingress.toPorts.rules.http.headers",
+        "spec.ingress.toPorts.rules.http.host",
+        "spec.ingress.toPorts.rules.http.method",
+        "spec.ingress.toPorts.rules.http.path",
+        "spec.ingress.toPorts.rules.kafka.apiKey",
+        "spec.ingress.toPorts.rules.kafka.apiVersion",
+        "spec.ingress.toPorts.rules.kafka.clientID",
+        "spec.ingress.toPorts.rules.kafka.role",
+        "spec.ingress.toPorts.rules.kafka.topic",
+        "spec.ingress.toPorts.serverNames",
+        "spec.ingress.toPorts.terminatingTLS",
+        "spec.ingress.toPorts.terminatingTLS.certificate",
+        "spec.ingress.toPorts.terminatingTLS.privateKey",
+        "spec.ingress.toPorts.terminatingTLS.secret",
+        "spec.ingress.toPorts.terminatingTLS.secret.namespace",
+        "spec.ingress.toPorts.terminatingTLS.trustedCA",
+        "spec.ingressDeny",
+        "spec.ingressDeny.fromCIDR",
+        "spec.ingressDeny.fromCIDRSet",
+        "spec.ingressDeny.fromCIDRSet.cidrGroupRef",
+        "spec.ingressDeny.fromCIDRSet.except",
+        "spec.ingressDeny.fromEndpoints",
+        "spec.ingressDeny.fromEndpoints.matchExpressions.operator",
+        "spec.ingressDeny.fromEndpoints.matchExpressions.values",
+        "spec.ingressDeny.fromEndpoints.matchLabels",
+        "spec.ingressDeny.fromEntities",
+        "spec.ingressDeny.fromGroups",
+        "spec.ingressDeny.fromNodes",
+        "spec.ingressDeny.fromNodes.matchExpressions.operator",
+        "spec.ingressDeny.fromNodes.matchExpressions.values",
+        "spec.ingressDeny.fromNodes.matchLabels",
+        "spec.ingressDeny.fromRequires",
+        "spec.ingressDeny.fromRequires.matchExpressions.operator",
+        "spec.ingressDeny.fromRequires.matchExpressions.values",
+        "spec.ingressDeny.fromRequires.matchLabels",
+        "spec.ingressDeny.icmps",
+        "spec.ingressDeny.icmps.fields.family",
+        "spec.ingressDeny.icmps.fields.type",
+        "spec.ingressDeny.toPorts",
+        "spec.ingressDeny.toPorts.ports.port",
+        "spec.ingressDeny.toPorts.ports.protocol",
+        "spec.labels",
+        "spec.nodeSelector",
+        "spec.nodeSelector.matchExpressions.operator",
+        "spec.nodeSelector.matchExpressions.values",
+        "spec.nodeSelector.matchLabels",
+        "specs.description",
+        "specs.egress",
+        "specs.egress.icmps",
+        "specs.egress.icmps.fields.family",
+        "specs.egress.icmps.fields.type",
+        "specs.egress.toCIDR",
+        "specs.egress.toCIDRSet",
+        "specs.egress.toCIDRSet.cidrGroupRef",
+        "specs.egress.toCIDRSet.except",
+        "specs.egress.toEndpoints",
+        "specs.egress.toEndpoints.matchExpressions.operator",
+        "specs.egress.toEndpoints.matchExpressions.values",
+        "specs.egress.toEndpoints.matchLabels",
+        "specs.egress.toEntities",
+        "specs.egress.toFQDNs",
+        "specs.egress.toFQDNs.matchName",
+        "specs.egress.toFQDNs.matchPattern",
+        "specs.egress.toGroups",
+        "specs.egress.toNodes",
+        "specs.egress.toNodes.matchExpressions.operator",
+        "specs.egress.toNodes.matchExpressions.values",
+        "specs.egress.toNodes.matchLabels",
+        "specs.egress.toPorts",
+        "specs.egress.toPorts.listener",
+        "specs.egress.toPorts.listener.envoyConfig",
+        "specs.egress.toPorts.listener.envoyConfig.kind",
+        "specs.egress.toPorts.listener.envoyConfig.name",
+        "specs.egress.toPorts.listener.priority",
+        "specs.egress.toPorts.originatingTLS",
+        "specs.egress.toPorts.originatingTLS.certificate",
+        "specs.egress.toPorts.originatingTLS.privateKey",
+        "specs.egress.toPorts.originatingTLS.secret",
+        "specs.egress.toPorts.originatingTLS.secret.namespace",
+        "specs.egress.toPorts.originatingTLS.trustedCA",
+        "specs.egress.toPorts.ports.port",
+        "specs.egress.toPorts.ports.protocol",
+        "specs.egress.toPorts.rules",
+        "specs.egress.toPorts.rules.dns.matchName",
+        "specs.egress.toPorts.rules.dns.matchPattern",
+        "specs.egress.toPorts.rules.http.headerMatches",
+        "specs.egress.toPorts.rules.http.headerMatches.mismatch",
+        "specs.egress.toPorts.rules.http.headerMatches.secret",
+        "specs.egress.toPorts.rules.http.headerMatches.secret.namespace",
+        "specs.egress.toPorts.rules.http.headerMatches.value",
+        "specs.egress.toPorts.rules.http.headers",
+        "specs.egress.toPorts.rules.http.host",
+        "specs.egress.toPorts.rules.http.method",
+        "specs.egress.toPorts.rules.http.path",
+        "specs.egress.toPorts.rules.kafka.apiKey",
+        "specs.egress.toPorts.rules.kafka.apiVersion",
+        "specs.egress.toPorts.rules.kafka.clientID",
+        "specs.egress.toPorts.rules.kafka.role",
+        "specs.egress.toPorts.rules.kafka.topic",
+        "specs.egress.toPorts.serverNames",
+        "specs.egress.toPorts.terminatingTLS",
+        "specs.egress.toPorts.terminatingTLS.certificate",
+        "specs.egress.toPorts.terminatingTLS.privateKey",
+        "specs.egress.toPorts.terminatingTLS.secret",
+        "specs.egress.toPorts.terminatingTLS.secret.namespace",
+        "specs.egress.toPorts.terminatingTLS.trustedCA",
+        "specs.egress.toRequires",
+        "specs.egress.toRequires.matchExpressions.operator",
+        "specs.egress.toRequires.matchExpressions.values",
+        "specs.egress.toRequires.matchLabels",
+        "specs.egress.toServices",
+        "specs.egress.toServices.k8sServiceSelector.selector.matchExpressions.operator",
+        "specs.egress.toServices.k8sServiceSelector.selector.matchExpressions.values",
+        "specs.egress.toServices.k8sServiceSelector.selector.matchLabels",
+        "specs.egressDeny",
+        "specs.egressDeny.icmps",
+        "specs.egressDeny.icmps.fields.family",
+        "specs.egressDeny.icmps.fields.type",
+        "specs.egressDeny.toCIDR",
+        "specs.egressDeny.toCIDRSet",
+        "specs.egressDeny.toCIDRSet.cidrGroupRef",
+        "specs.egressDeny.toCIDRSet.except",
+        "specs.egressDeny.toEndpoints",
+        "specs.egressDeny.toEndpoints.matchExpressions.operator",
+        "specs.egressDeny.toEndpoints.matchExpressions.values",
+        "specs.egressDeny.toEndpoints.matchLabels",
+        "specs.egressDeny.toEntities",
+        "specs.egressDeny.toGroups",
+        "specs.egressDeny.toNodes",
+        "specs.egressDeny.toNodes.matchExpressions.operator",
+        "specs.egressDeny.toNodes.matchExpressions.values",
+        "specs.egressDeny.toNodes.matchLabels",
+        "specs.egressDeny.toPorts",
+        "specs.egressDeny.toPorts.ports.port",
+        "specs.egressDeny.toPorts.ports.protocol",
+        "specs.egressDeny.toRequires",
+        "specs.egressDeny.toRequires.matchExpressions.operator",
+        "specs.egressDeny.toRequires.matchExpressions.values",
+        "specs.egressDeny.toRequires.matchLabels",
+        "specs.egressDeny.toServices",
+        "specs.egressDeny.toServices.k8sServiceSelector.selector.matchExpressions.operator",
+        "specs.egressDeny.toServices.k8sServiceSelector.selector.matchExpressions.values",
+        "specs.egressDeny.toServices.k8sServiceSelector.selector.matchLabels",
+        "specs.enableDefaultDeny",
+        "specs.enableDefaultDeny.egress",
+        "specs.enableDefaultDeny.ingress",
+        "specs.endpointSelector",
+        "specs.endpointSelector.matchExpressions.operator",
+        "specs.endpointSelector.matchExpressions.values",
+        "specs.endpointSelector.matchLabels",
+        "specs.ingress",
+        "specs.ingress.fromCIDR",
+        "specs.ingress.fromCIDRSet",
+        "specs.ingress.fromCIDRSet.cidrGroupRef",
+        "specs.ingress.fromCIDRSet.except",
+        "specs.ingress.fromEndpoints",
+        "specs.ingress.fromEndpoints.matchExpressions.operator",
+        "specs.ingress.fromEndpoints.matchExpressions.values",
+        "specs.ingress.fromEndpoints.matchLabels",
+        "specs.ingress.fromEntities",
+        "specs.ingress.fromGroups",
+        "specs.ingress.fromNodes",
+        "specs.ingress.fromNodes.matchExpressions.operator",
+        "specs.ingress.fromNodes.matchExpressions.values",
+        "specs.ingress.fromNodes.matchLabels",
+        "specs.ingress.fromRequires",
+        "specs.ingress.fromRequires.matchExpressions.operator",
+        "specs.ingress.fromRequires.matchExpressions.values",
+        "specs.ingress.fromRequires.matchLabels",
+        "specs.ingress.icmps",
+        "specs.ingress.icmps.fields.family",
+        "specs.ingress.icmps.fields.type",
+        "specs.ingress.toPorts",
+        "specs.ingress.toPorts.listener",
+        "specs.ingress.toPorts.listener.envoyConfig",
+        "specs.ingress.toPorts.listener.envoyConfig.kind",
+        "specs.ingress.toPorts.listener.envoyConfig.name",
+        "specs.ingress.toPorts.listener.priority",
+        "specs.ingress.toPorts.originatingTLS",
+        "specs.ingress.toPorts.originatingTLS.certificate",
+        "specs.ingress.toPorts.originatingTLS.privateKey",
+        "specs.ingress.toPorts.originatingTLS.secret",
+        "specs.ingress.toPorts.originatingTLS.secret.namespace",
+        "specs.ingress.toPorts.originatingTLS.trustedCA",
+        "specs.ingress.toPorts.ports.port",
+        "specs.ingress.toPorts.ports.protocol",
+        "specs.ingress.toPorts.rules",
+        "specs.ingress.toPorts.rules.dns.matchName",
+        "specs.ingress.toPorts.rules.dns.matchPattern",
+        "specs.ingress.toPorts.rules.http.headerMatches",
+        "specs.ingress.toPorts.rules.http.headerMatches.mismatch",
+        "specs.ingress.toPorts.rules.http.headerMatches.secret",
+        "specs.ingress.toPorts.rules.http.headerMatches.secret.namespace",
+        "specs.ingress.toPorts.rules.http.headerMatches.value",
+        "specs.ingress.toPorts.rules.http.headers",
+        "specs.ingress.toPorts.rules.http.host",
+        "specs.ingress.toPorts.rules.http.method",
+        "specs.ingress.toPorts.rules.http.path",
+        "specs.ingress.toPorts.rules.kafka.apiKey",
+        "specs.ingress.toPorts.rules.kafka.apiVersion",
+        "specs.ingress.toPorts.rules.kafka.clientID",
+        "specs.ingress.toPorts.rules.kafka.role",
+        "specs.ingress.toPorts.rules.kafka.topic",
+        "specs.ingress.toPorts.serverNames",
+        "specs.ingress.toPorts.terminatingTLS",
+        "specs.ingress.toPorts.terminatingTLS.certificate",
+        "specs.ingress.toPorts.terminatingTLS.privateKey",
+        "specs.ingress.toPorts.terminatingTLS.secret",
+        "specs.ingress.toPorts.terminatingTLS.secret.namespace",
+        "specs.ingress.toPorts.terminatingTLS.trustedCA",
+        "specs.ingressDeny",
+        "specs.ingressDeny.fromCIDR",
+        "specs.ingressDeny.fromCIDRSet",
+        "specs.ingressDeny.fromCIDRSet.cidrGroupRef",
+        "specs.ingressDeny.fromCIDRSet.except",
+        "specs.ingressDeny.fromEndpoints",
+        "specs.ingressDeny.fromEndpoints.matchExpressions.operator",
+        "specs.ingressDeny.fromEndpoints.matchExpressions.values",
+        "specs.ingressDeny.fromEndpoints.matchLabels",
+        "specs.ingressDeny.fromEntities",
+        "specs.ingressDeny.fromGroups",
+        "specs.ingressDeny.fromNodes",
+        "specs.ingressDeny.fromNodes.matchExpressions.operator",
+        "specs.ingressDeny.fromNodes.matchExpressions.values",
+        "specs.ingressDeny.fromNodes.matchLabels",
+        "specs.ingressDeny.fromRequires",
+        "specs.ingressDeny.fromRequires.matchExpressions.operator",
+        "specs.ingressDeny.fromRequires.matchExpressions.values",
+        "specs.ingressDeny.fromRequires.matchLabels",
+        "specs.ingressDeny.icmps",
+        "specs.ingressDeny.icmps.fields.family",
+        "specs.ingressDeny.icmps.fields.type",
+        "specs.ingressDeny.toPorts",
+        "specs.ingressDeny.toPorts.ports.port",
+        "specs.ingressDeny.toPorts.ports.protocol",
+        "specs.labels",
+        "specs.nodeSelector",
+        "specs.nodeSelector.matchExpressions.operator",
+        "specs.nodeSelector.matchExpressions.values",
+        "specs.nodeSelector.matchLabels",
+        "status",
+        "status.derivativePolicies",
+        "status.derivativePolicies.annotations",
+        "status.derivativePolicies.enforcing",
+        "status.derivativePolicies.error",
+        "status.derivativePolicies.localPolicyRevision",
+        "status.derivativePolicies.ok"
+      ],
+      "added": {
+        "spec.egress.toCIDRSet.cidrGroupSelector": "object",
+        "spec.egressDeny.toCIDRSet.cidrGroupSelector": "object",
+        "spec.ingress.fromCIDRSet.cidrGroupSelector": "object",
+        "spec.ingressDeny.fromCIDRSet.cidrGroupSelector": "object",
+        "specs.egress.toCIDRSet.cidrGroupSelector": "object",
+        "specs.egressDeny.toCIDRSet.cidrGroupSelector": "object",
+        "specs.ingress.fromCIDRSet.cidrGroupSelector": "object",
+        "specs.ingressDeny.fromCIDRSet.cidrGroupSelector": "object"
+      },
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          37,
+          38
+        ],
+        "kind": [
+          39,
+          40
+        ],
+        "spec.description": [
+          41,
+          42
+        ],
+        "spec.egress": [
+          43,
+          44
+        ],
+        "spec.egress.icmps": [
+          45,
+          46
+        ],
+        "spec.egress.icmps.fields.family": [
+          47,
+          48
+        ],
+        "spec.egress.icmps.fields.type": [
+          49,
+          50
+        ],
+        "spec.egress.toCIDR": [
+          51,
+          52
+        ],
+        "spec.egress.toCIDRSet": [
+          53,
+          54
+        ],
+        "spec.egress.toCIDRSet.cidrGroupRef": [
+          55,
+          56
+        ],
+        "spec.egress.toCIDRSet.cidrGroupSelector": [
+          null,
+          57
+        ],
+        "spec.egress.toCIDRSet.except": [
+          58,
+          59
+        ],
+        "spec.egress.toEndpoints": [
+          60,
+          19
+        ],
+        "spec.egress.toEndpoints.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.egress.toEndpoints.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.egress.toEndpoints.matchLabels": [
+          65,
+          32
+        ],
+        "spec.egress.toEntities": [
+          66,
+          33
+        ],
+        "spec.egress.toFQDNs": [
+          67,
+          68
+        ],
+        "spec.egress.toFQDNs.matchName": [
+          69,
+          70
+        ],
+        "spec.egress.toFQDNs.matchPattern": [
+          71,
+          34
+        ],
+        "spec.egress.toGroups": [
+          72,
+          2
+        ],
+        "spec.egress.toNodes": [
+          73,
+          74
+        ],
+        "spec.egress.toNodes.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.egress.toNodes.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.egress.toNodes.matchLabels": [
+          65,
+          32
+        ],
+        "spec.egress.toPorts": [
+          75,
+          76
+        ],
+        "spec.egress.toPorts.listener": [
+          77,
+          78
+        ],
+        "spec.egress.toPorts.listener.envoyConfig": [
+          79,
+          80
+        ],
+        "spec.egress.toPorts.listener.envoyConfig.kind": [
+          81,
+          82
+        ],
+        "spec.egress.toPorts.listener.envoyConfig.name": [
+          83,
+          84
+        ],
+        "spec.egress.toPorts.listener.priority": [
+          85,
+          86
+        ],
+        "spec.egress.toPorts.originatingTLS": [
+          87,
+          88
+        ],
+        "spec.egress.toPorts.originatingTLS.certificate": [
+          89,
+          90
+        ],
+        "spec.egress.toPorts.originatingTLS.privateKey": [
+          91,
+          92
+        ],
+        "spec.egress.toPorts.originatingTLS.secret": [
+          93,
+          94
+        ],
+        "spec.egress.toPorts.originatingTLS.secret.namespace": [
+          95,
+          96
+        ],
+        "spec.egress.toPorts.originatingTLS.trustedCA": [
+          97,
+          98
+        ],
+        "spec.egress.toPorts.ports.port": [
+          99,
+          23
+        ],
+        "spec.egress.toPorts.ports.protocol": [
+          100,
+          24
+        ],
+        "spec.egress.toPorts.rules": [
+          101,
+          102
+        ],
+        "spec.egress.toPorts.rules.dns.matchName": [
+          69,
+          70
+        ],
+        "spec.egress.toPorts.rules.dns.matchPattern": [
+          71,
+          34
+        ],
+        "spec.egress.toPorts.rules.http.headerMatches": [
+          103,
+          104
+        ],
+        "spec.egress.toPorts.rules.http.headerMatches.mismatch": [
+          105,
+          106
+        ],
+        "spec.egress.toPorts.rules.http.headerMatches.secret": [
+          107,
+          108
+        ],
+        "spec.egress.toPorts.rules.http.headerMatches.secret.namespace": [
+          95,
+          96
+        ],
+        "spec.egress.toPorts.rules.http.headerMatches.value": [
+          109,
+          110
+        ],
+        "spec.egress.toPorts.rules.http.headers": [
+          111,
+          112
+        ],
+        "spec.egress.toPorts.rules.http.host": [
+          113,
+          114
+        ],
+        "spec.egress.toPorts.rules.http.method": [
+          115,
+          116
+        ],
+        "spec.egress.toPorts.rules.http.path": [
+          117,
+          118
+        ],
+        "spec.egress.toPorts.rules.kafka.apiKey": [
+          119,
+          120
+        ],
+        "spec.egress.toPorts.rules.kafka.apiVersion": [
+          121,
+          122
+        ],
+        "spec.egress.toPorts.rules.kafka.clientID": [
+          123,
+          124
+        ],
+        "spec.egress.toPorts.rules.kafka.role": [
+          125,
+          126
+        ],
+        "spec.egress.toPorts.rules.kafka.topic": [
+          127,
+          128
+        ],
+        "spec.egress.toPorts.serverNames": [
+          129,
+          130
+        ],
+        "spec.egress.toPorts.terminatingTLS": [
+          131,
+          132
+        ],
+        "spec.egress.toPorts.terminatingTLS.certificate": [
+          89,
+          90
+        ],
+        "spec.egress.toPorts.terminatingTLS.privateKey": [
+          91,
+          92
+        ],
+        "spec.egress.toPorts.terminatingTLS.secret": [
+          93,
+          94
+        ],
+        "spec.egress.toPorts.terminatingTLS.secret.namespace": [
+          95,
+          96
+        ],
+        "spec.egress.toPorts.terminatingTLS.trustedCA": [
+          97,
+          98
+        ],
+        "spec.egress.toRequires": [
+          133,
+          26
+        ],
+        "spec.egress.toRequires.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.egress.toRequires.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.egress.toRequires.matchLabels": [
+          65,
+          32
+        ],
+        "spec.egress.toServices": [
+          134,
+          135
+        ],
+        "spec.egress.toServices.k8sServiceSelector.selector.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.egress.toServices.k8sServiceSelector.selector.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.egress.toServices.k8sServiceSelector.selector.matchLabels": [
+          65,
+          32
+        ],
+        "spec.egressDeny": [
+          136,
+          137
+        ],
+        "spec.egressDeny.icmps": [
+          138,
+          139
+        ],
+        "spec.egressDeny.icmps.fields.family": [
+          47,
+          48
+        ],
+        "spec.egressDeny.icmps.fields.type": [
+          49,
+          50
+        ],
+        "spec.egressDeny.toCIDR": [
+          51,
+          52
+        ],
+        "spec.egressDeny.toCIDRSet": [
+          53,
+          54
+        ],
+        "spec.egressDeny.toCIDRSet.cidrGroupRef": [
+          55,
+          56
+        ],
+        "spec.egressDeny.toCIDRSet.cidrGroupSelector": [
+          null,
+          57
+        ],
+        "spec.egressDeny.toCIDRSet.except": [
+          58,
+          59
+        ],
+        "spec.egressDeny.toEndpoints": [
+          60,
+          19
+        ],
+        "spec.egressDeny.toEndpoints.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.egressDeny.toEndpoints.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.egressDeny.toEndpoints.matchLabels": [
+          65,
+          32
+        ],
+        "spec.egressDeny.toEntities": [
+          66,
+          33
+        ],
+        "spec.egressDeny.toGroups": [
+          72,
+          2
+        ],
+        "spec.egressDeny.toNodes": [
+          73,
+          74
+        ],
+        "spec.egressDeny.toNodes.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.egressDeny.toNodes.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.egressDeny.toNodes.matchLabels": [
+          65,
+          32
+        ],
+        "spec.egressDeny.toPorts": [
+          140,
+          141
+        ],
+        "spec.egressDeny.toPorts.ports.port": [
+          99,
+          23
+        ],
+        "spec.egressDeny.toPorts.ports.protocol": [
+          100,
+          24
+        ],
+        "spec.egressDeny.toRequires": [
+          133,
+          26
+        ],
+        "spec.egressDeny.toRequires.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.egressDeny.toRequires.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.egressDeny.toRequires.matchLabels": [
+          65,
+          32
+        ],
+        "spec.egressDeny.toServices": [
+          134,
+          135
+        ],
+        "spec.egressDeny.toServices.k8sServiceSelector.selector.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.egressDeny.toServices.k8sServiceSelector.selector.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.egressDeny.toServices.k8sServiceSelector.selector.matchLabels": [
+          65,
+          32
+        ],
+        "spec.enableDefaultDeny": [
+          142,
+          143
+        ],
+        "spec.enableDefaultDeny.egress": [
+          144,
+          145
+        ],
+        "spec.enableDefaultDeny.ingress": [
+          146,
+          147
+        ],
+        "spec.endpointSelector": [
+          148,
+          149
+        ],
+        "spec.endpointSelector.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.endpointSelector.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.endpointSelector.matchLabels": [
+          65,
+          32
+        ],
+        "spec.ingress": [
+          150,
+          151
+        ],
+        "spec.ingress.fromCIDR": [
+          152,
+          153
+        ],
+        "spec.ingress.fromCIDRSet": [
+          154,
+          155
+        ],
+        "spec.ingress.fromCIDRSet.cidrGroupRef": [
+          55,
+          56
+        ],
+        "spec.ingress.fromCIDRSet.cidrGroupSelector": [
+          null,
+          57
+        ],
+        "spec.ingress.fromCIDRSet.except": [
+          58,
+          59
+        ],
+        "spec.ingress.fromEndpoints": [
+          156,
+          28
+        ],
+        "spec.ingress.fromEndpoints.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.ingress.fromEndpoints.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.ingress.fromEndpoints.matchLabels": [
+          65,
+          32
+        ],
+        "spec.ingress.fromEntities": [
+          157,
+          35
+        ],
+        "spec.ingress.fromGroups": [
+          158,
+          12
+        ],
+        "spec.ingress.fromNodes": [
+          159,
+          160
+        ],
+        "spec.ingress.fromNodes.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.ingress.fromNodes.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.ingress.fromNodes.matchLabels": [
+          65,
+          32
+        ],
+        "spec.ingress.fromRequires": [
+          161,
+          30
+        ],
+        "spec.ingress.fromRequires.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.ingress.fromRequires.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.ingress.fromRequires.matchLabels": [
+          65,
+          32
+        ],
+        "spec.ingress.icmps": [
+          162,
+          163
+        ],
+        "spec.ingress.icmps.fields.family": [
+          47,
+          48
+        ],
+        "spec.ingress.icmps.fields.type": [
+          49,
+          50
+        ],
+        "spec.ingress.toPorts": [
+          164,
+          165
+        ],
+        "spec.ingress.toPorts.listener": [
+          77,
+          78
+        ],
+        "spec.ingress.toPorts.listener.envoyConfig": [
+          79,
+          80
+        ],
+        "spec.ingress.toPorts.listener.envoyConfig.kind": [
+          81,
+          82
+        ],
+        "spec.ingress.toPorts.listener.envoyConfig.name": [
+          83,
+          84
+        ],
+        "spec.ingress.toPorts.listener.priority": [
+          85,
+          86
+        ],
+        "spec.ingress.toPorts.originatingTLS": [
+          87,
+          88
+        ],
+        "spec.ingress.toPorts.originatingTLS.certificate": [
+          89,
+          90
+        ],
+        "spec.ingress.toPorts.originatingTLS.privateKey": [
+          91,
+          92
+        ],
+        "spec.ingress.toPorts.originatingTLS.secret": [
+          93,
+          94
+        ],
+        "spec.ingress.toPorts.originatingTLS.secret.namespace": [
+          95,
+          96
+        ],
+        "spec.ingress.toPorts.originatingTLS.trustedCA": [
+          97,
+          98
+        ],
+        "spec.ingress.toPorts.ports.port": [
+          99,
+          23
+        ],
+        "spec.ingress.toPorts.ports.protocol": [
+          100,
+          24
+        ],
+        "spec.ingress.toPorts.rules": [
+          101,
+          102
+        ],
+        "spec.ingress.toPorts.rules.dns.matchName": [
+          69,
+          70
+        ],
+        "spec.ingress.toPorts.rules.dns.matchPattern": [
+          71,
+          34
+        ],
+        "spec.ingress.toPorts.rules.http.headerMatches": [
+          103,
+          104
+        ],
+        "spec.ingress.toPorts.rules.http.headerMatches.mismatch": [
+          105,
+          106
+        ],
+        "spec.ingress.toPorts.rules.http.headerMatches.secret": [
+          107,
+          108
+        ],
+        "spec.ingress.toPorts.rules.http.headerMatches.secret.namespace": [
+          95,
+          96
+        ],
+        "spec.ingress.toPorts.rules.http.headerMatches.value": [
+          109,
+          110
+        ],
+        "spec.ingress.toPorts.rules.http.headers": [
+          111,
+          112
+        ],
+        "spec.ingress.toPorts.rules.http.host": [
+          113,
+          114
+        ],
+        "spec.ingress.toPorts.rules.http.method": [
+          115,
+          116
+        ],
+        "spec.ingress.toPorts.rules.http.path": [
+          117,
+          118
+        ],
+        "spec.ingress.toPorts.rules.kafka.apiKey": [
+          119,
+          120
+        ],
+        "spec.ingress.toPorts.rules.kafka.apiVersion": [
+          121,
+          122
+        ],
+        "spec.ingress.toPorts.rules.kafka.clientID": [
+          123,
+          124
+        ],
+        "spec.ingress.toPorts.rules.kafka.role": [
+          125,
+          126
+        ],
+        "spec.ingress.toPorts.rules.kafka.topic": [
+          127,
+          128
+        ],
+        "spec.ingress.toPorts.serverNames": [
+          129,
+          130
+        ],
+        "spec.ingress.toPorts.terminatingTLS": [
+          131,
+          132
+        ],
+        "spec.ingress.toPorts.terminatingTLS.certificate": [
+          89,
+          90
+        ],
+        "spec.ingress.toPorts.terminatingTLS.privateKey": [
+          91,
+          92
+        ],
+        "spec.ingress.toPorts.terminatingTLS.secret": [
+          93,
+          94
+        ],
+        "spec.ingress.toPorts.terminatingTLS.secret.namespace": [
+          95,
+          96
+        ],
+        "spec.ingress.toPorts.terminatingTLS.trustedCA": [
+          97,
+          98
+        ],
+        "spec.ingressDeny": [
+          166,
+          167
+        ],
+        "spec.ingressDeny.fromCIDR": [
+          152,
+          153
+        ],
+        "spec.ingressDeny.fromCIDRSet": [
+          154,
+          155
+        ],
+        "spec.ingressDeny.fromCIDRSet.cidrGroupRef": [
+          55,
+          56
+        ],
+        "spec.ingressDeny.fromCIDRSet.cidrGroupSelector": [
+          null,
+          57
+        ],
+        "spec.ingressDeny.fromCIDRSet.except": [
+          58,
+          59
+        ],
+        "spec.ingressDeny.fromEndpoints": [
+          156,
+          28
+        ],
+        "spec.ingressDeny.fromEndpoints.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.ingressDeny.fromEndpoints.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.ingressDeny.fromEndpoints.matchLabels": [
+          65,
+          32
+        ],
+        "spec.ingressDeny.fromEntities": [
+          157,
+          35
+        ],
+        "spec.ingressDeny.fromGroups": [
+          158,
+          12
+        ],
+        "spec.ingressDeny.fromNodes": [
+          159,
+          160
+        ],
+        "spec.ingressDeny.fromNodes.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.ingressDeny.fromNodes.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.ingressDeny.fromNodes.matchLabels": [
+          65,
+          32
+        ],
+        "spec.ingressDeny.fromRequires": [
+          161,
+          30
+        ],
+        "spec.ingressDeny.fromRequires.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.ingressDeny.fromRequires.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.ingressDeny.fromRequires.matchLabels": [
+          65,
+          32
+        ],
+        "spec.ingressDeny.icmps": [
+          168,
+          169
+        ],
+        "spec.ingressDeny.icmps.fields.family": [
+          47,
+          48
+        ],
+        "spec.ingressDeny.icmps.fields.type": [
+          49,
+          50
+        ],
+        "spec.ingressDeny.toPorts": [
+          170,
+          171
+        ],
+        "spec.ingressDeny.toPorts.ports.port": [
+          99,
+          23
+        ],
+        "spec.ingressDeny.toPorts.ports.protocol": [
+          100,
+          24
+        ],
+        "spec.labels": [
+          172,
+          173
+        ],
+        "spec.nodeSelector": [
+          174,
+          175
+        ],
+        "spec.nodeSelector.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "spec.nodeSelector.matchExpressions.values": [
+          63,
+          64
+        ],
+        "spec.nodeSelector.matchLabels": [
+          65,
+          32
+        ],
+        "specs.description": [
+          41,
+          42
+        ],
+        "specs.egress": [
+          43,
+          44
+        ],
+        "specs.egress.icmps": [
+          45,
+          46
+        ],
+        "specs.egress.icmps.fields.family": [
+          47,
+          48
+        ],
+        "specs.egress.icmps.fields.type": [
+          49,
+          50
+        ],
+        "specs.egress.toCIDR": [
+          51,
+          52
+        ],
+        "specs.egress.toCIDRSet": [
+          53,
+          54
+        ],
+        "specs.egress.toCIDRSet.cidrGroupRef": [
+          55,
+          56
+        ],
+        "specs.egress.toCIDRSet.cidrGroupSelector": [
+          null,
+          57
+        ],
+        "specs.egress.toCIDRSet.except": [
+          58,
+          59
+        ],
+        "specs.egress.toEndpoints": [
+          60,
+          19
+        ],
+        "specs.egress.toEndpoints.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.egress.toEndpoints.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.egress.toEndpoints.matchLabels": [
+          65,
+          32
+        ],
+        "specs.egress.toEntities": [
+          66,
+          33
+        ],
+        "specs.egress.toFQDNs": [
+          67,
+          68
+        ],
+        "specs.egress.toFQDNs.matchName": [
+          69,
+          70
+        ],
+        "specs.egress.toFQDNs.matchPattern": [
+          71,
+          34
+        ],
+        "specs.egress.toGroups": [
+          72,
+          2
+        ],
+        "specs.egress.toNodes": [
+          73,
+          74
+        ],
+        "specs.egress.toNodes.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.egress.toNodes.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.egress.toNodes.matchLabels": [
+          65,
+          32
+        ],
+        "specs.egress.toPorts": [
+          75,
+          76
+        ],
+        "specs.egress.toPorts.listener": [
+          77,
+          78
+        ],
+        "specs.egress.toPorts.listener.envoyConfig": [
+          79,
+          80
+        ],
+        "specs.egress.toPorts.listener.envoyConfig.kind": [
+          81,
+          82
+        ],
+        "specs.egress.toPorts.listener.envoyConfig.name": [
+          83,
+          84
+        ],
+        "specs.egress.toPorts.listener.priority": [
+          85,
+          86
+        ],
+        "specs.egress.toPorts.originatingTLS": [
+          87,
+          88
+        ],
+        "specs.egress.toPorts.originatingTLS.certificate": [
+          89,
+          90
+        ],
+        "specs.egress.toPorts.originatingTLS.privateKey": [
+          91,
+          92
+        ],
+        "specs.egress.toPorts.originatingTLS.secret": [
+          93,
+          94
+        ],
+        "specs.egress.toPorts.originatingTLS.secret.namespace": [
+          95,
+          96
+        ],
+        "specs.egress.toPorts.originatingTLS.trustedCA": [
+          97,
+          98
+        ],
+        "specs.egress.toPorts.ports.port": [
+          99,
+          23
+        ],
+        "specs.egress.toPorts.ports.protocol": [
+          100,
+          24
+        ],
+        "specs.egress.toPorts.rules": [
+          101,
+          102
+        ],
+        "specs.egress.toPorts.rules.dns.matchName": [
+          69,
+          70
+        ],
+        "specs.egress.toPorts.rules.dns.matchPattern": [
+          71,
+          34
+        ],
+        "specs.egress.toPorts.rules.http.headerMatches": [
+          103,
+          104
+        ],
+        "specs.egress.toPorts.rules.http.headerMatches.mismatch": [
+          105,
+          106
+        ],
+        "specs.egress.toPorts.rules.http.headerMatches.secret": [
+          107,
+          108
+        ],
+        "specs.egress.toPorts.rules.http.headerMatches.secret.namespace": [
+          95,
+          96
+        ],
+        "specs.egress.toPorts.rules.http.headerMatches.value": [
+          109,
+          110
+        ],
+        "specs.egress.toPorts.rules.http.headers": [
+          111,
+          112
+        ],
+        "specs.egress.toPorts.rules.http.host": [
+          113,
+          114
+        ],
+        "specs.egress.toPorts.rules.http.method": [
+          115,
+          116
+        ],
+        "specs.egress.toPorts.rules.http.path": [
+          117,
+          118
+        ],
+        "specs.egress.toPorts.rules.kafka.apiKey": [
+          119,
+          120
+        ],
+        "specs.egress.toPorts.rules.kafka.apiVersion": [
+          121,
+          122
+        ],
+        "specs.egress.toPorts.rules.kafka.clientID": [
+          123,
+          124
+        ],
+        "specs.egress.toPorts.rules.kafka.role": [
+          125,
+          126
+        ],
+        "specs.egress.toPorts.rules.kafka.topic": [
+          127,
+          128
+        ],
+        "specs.egress.toPorts.serverNames": [
+          129,
+          130
+        ],
+        "specs.egress.toPorts.terminatingTLS": [
+          131,
+          132
+        ],
+        "specs.egress.toPorts.terminatingTLS.certificate": [
+          89,
+          90
+        ],
+        "specs.egress.toPorts.terminatingTLS.privateKey": [
+          91,
+          92
+        ],
+        "specs.egress.toPorts.terminatingTLS.secret": [
+          93,
+          94
+        ],
+        "specs.egress.toPorts.terminatingTLS.secret.namespace": [
+          95,
+          96
+        ],
+        "specs.egress.toPorts.terminatingTLS.trustedCA": [
+          97,
+          98
+        ],
+        "specs.egress.toRequires": [
+          133,
+          26
+        ],
+        "specs.egress.toRequires.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.egress.toRequires.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.egress.toRequires.matchLabels": [
+          65,
+          32
+        ],
+        "specs.egress.toServices": [
+          134,
+          135
+        ],
+        "specs.egress.toServices.k8sServiceSelector.selector.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.egress.toServices.k8sServiceSelector.selector.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.egress.toServices.k8sServiceSelector.selector.matchLabels": [
+          65,
+          32
+        ],
+        "specs.egressDeny": [
+          136,
+          137
+        ],
+        "specs.egressDeny.icmps": [
+          138,
+          139
+        ],
+        "specs.egressDeny.icmps.fields.family": [
+          47,
+          48
+        ],
+        "specs.egressDeny.icmps.fields.type": [
+          49,
+          50
+        ],
+        "specs.egressDeny.toCIDR": [
+          51,
+          52
+        ],
+        "specs.egressDeny.toCIDRSet": [
+          53,
+          54
+        ],
+        "specs.egressDeny.toCIDRSet.cidrGroupRef": [
+          55,
+          56
+        ],
+        "specs.egressDeny.toCIDRSet.cidrGroupSelector": [
+          null,
+          57
+        ],
+        "specs.egressDeny.toCIDRSet.except": [
+          58,
+          59
+        ],
+        "specs.egressDeny.toEndpoints": [
+          60,
+          19
+        ],
+        "specs.egressDeny.toEndpoints.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.egressDeny.toEndpoints.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.egressDeny.toEndpoints.matchLabels": [
+          65,
+          32
+        ],
+        "specs.egressDeny.toEntities": [
+          66,
+          33
+        ],
+        "specs.egressDeny.toGroups": [
+          72,
+          2
+        ],
+        "specs.egressDeny.toNodes": [
+          73,
+          74
+        ],
+        "specs.egressDeny.toNodes.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.egressDeny.toNodes.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.egressDeny.toNodes.matchLabels": [
+          65,
+          32
+        ],
+        "specs.egressDeny.toPorts": [
+          140,
+          141
+        ],
+        "specs.egressDeny.toPorts.ports.port": [
+          99,
+          23
+        ],
+        "specs.egressDeny.toPorts.ports.protocol": [
+          100,
+          24
+        ],
+        "specs.egressDeny.toRequires": [
+          133,
+          26
+        ],
+        "specs.egressDeny.toRequires.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.egressDeny.toRequires.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.egressDeny.toRequires.matchLabels": [
+          65,
+          32
+        ],
+        "specs.egressDeny.toServices": [
+          134,
+          135
+        ],
+        "specs.egressDeny.toServices.k8sServiceSelector.selector.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.egressDeny.toServices.k8sServiceSelector.selector.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.egressDeny.toServices.k8sServiceSelector.selector.matchLabels": [
+          65,
+          32
+        ],
+        "specs.enableDefaultDeny": [
+          142,
+          143
+        ],
+        "specs.enableDefaultDeny.egress": [
+          144,
+          145
+        ],
+        "specs.enableDefaultDeny.ingress": [
+          146,
+          147
+        ],
+        "specs.endpointSelector": [
+          148,
+          149
+        ],
+        "specs.endpointSelector.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.endpointSelector.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.endpointSelector.matchLabels": [
+          65,
+          32
+        ],
+        "specs.ingress": [
+          150,
+          151
+        ],
+        "specs.ingress.fromCIDR": [
+          152,
+          153
+        ],
+        "specs.ingress.fromCIDRSet": [
+          154,
+          155
+        ],
+        "specs.ingress.fromCIDRSet.cidrGroupRef": [
+          55,
+          56
+        ],
+        "specs.ingress.fromCIDRSet.cidrGroupSelector": [
+          null,
+          57
+        ],
+        "specs.ingress.fromCIDRSet.except": [
+          58,
+          59
+        ],
+        "specs.ingress.fromEndpoints": [
+          156,
+          28
+        ],
+        "specs.ingress.fromEndpoints.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.ingress.fromEndpoints.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.ingress.fromEndpoints.matchLabels": [
+          65,
+          32
+        ],
+        "specs.ingress.fromEntities": [
+          157,
+          35
+        ],
+        "specs.ingress.fromGroups": [
+          158,
+          12
+        ],
+        "specs.ingress.fromNodes": [
+          159,
+          160
+        ],
+        "specs.ingress.fromNodes.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.ingress.fromNodes.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.ingress.fromNodes.matchLabels": [
+          65,
+          32
+        ],
+        "specs.ingress.fromRequires": [
+          161,
+          30
+        ],
+        "specs.ingress.fromRequires.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.ingress.fromRequires.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.ingress.fromRequires.matchLabels": [
+          65,
+          32
+        ],
+        "specs.ingress.icmps": [
+          162,
+          163
+        ],
+        "specs.ingress.icmps.fields.family": [
+          47,
+          48
+        ],
+        "specs.ingress.icmps.fields.type": [
+          49,
+          50
+        ],
+        "specs.ingress.toPorts": [
+          164,
+          165
+        ],
+        "specs.ingress.toPorts.listener": [
+          77,
+          78
+        ],
+        "specs.ingress.toPorts.listener.envoyConfig": [
+          79,
+          80
+        ],
+        "specs.ingress.toPorts.listener.envoyConfig.kind": [
+          81,
+          82
+        ],
+        "specs.ingress.toPorts.listener.envoyConfig.name": [
+          83,
+          84
+        ],
+        "specs.ingress.toPorts.listener.priority": [
+          85,
+          86
+        ],
+        "specs.ingress.toPorts.originatingTLS": [
+          87,
+          88
+        ],
+        "specs.ingress.toPorts.originatingTLS.certificate": [
+          89,
+          90
+        ],
+        "specs.ingress.toPorts.originatingTLS.privateKey": [
+          91,
+          92
+        ],
+        "specs.ingress.toPorts.originatingTLS.secret": [
+          93,
+          94
+        ],
+        "specs.ingress.toPorts.originatingTLS.secret.namespace": [
+          95,
+          96
+        ],
+        "specs.ingress.toPorts.originatingTLS.trustedCA": [
+          97,
+          98
+        ],
+        "specs.ingress.toPorts.ports.port": [
+          99,
+          23
+        ],
+        "specs.ingress.toPorts.ports.protocol": [
+          100,
+          24
+        ],
+        "specs.ingress.toPorts.rules": [
+          101,
+          102
+        ],
+        "specs.ingress.toPorts.rules.dns.matchName": [
+          69,
+          70
+        ],
+        "specs.ingress.toPorts.rules.dns.matchPattern": [
+          71,
+          34
+        ],
+        "specs.ingress.toPorts.rules.http.headerMatches": [
+          103,
+          104
+        ],
+        "specs.ingress.toPorts.rules.http.headerMatches.mismatch": [
+          105,
+          106
+        ],
+        "specs.ingress.toPorts.rules.http.headerMatches.secret": [
+          107,
+          108
+        ],
+        "specs.ingress.toPorts.rules.http.headerMatches.secret.namespace": [
+          95,
+          96
+        ],
+        "specs.ingress.toPorts.rules.http.headerMatches.value": [
+          109,
+          110
+        ],
+        "specs.ingress.toPorts.rules.http.headers": [
+          111,
+          112
+        ],
+        "specs.ingress.toPorts.rules.http.host": [
+          113,
+          114
+        ],
+        "specs.ingress.toPorts.rules.http.method": [
+          115,
+          116
+        ],
+        "specs.ingress.toPorts.rules.http.path": [
+          117,
+          118
+        ],
+        "specs.ingress.toPorts.rules.kafka.apiKey": [
+          119,
+          120
+        ],
+        "specs.ingress.toPorts.rules.kafka.apiVersion": [
+          121,
+          122
+        ],
+        "specs.ingress.toPorts.rules.kafka.clientID": [
+          123,
+          124
+        ],
+        "specs.ingress.toPorts.rules.kafka.role": [
+          125,
+          126
+        ],
+        "specs.ingress.toPorts.rules.kafka.topic": [
+          127,
+          128
+        ],
+        "specs.ingress.toPorts.serverNames": [
+          129,
+          130
+        ],
+        "specs.ingress.toPorts.terminatingTLS": [
+          131,
+          132
+        ],
+        "specs.ingress.toPorts.terminatingTLS.certificate": [
+          89,
+          90
+        ],
+        "specs.ingress.toPorts.terminatingTLS.privateKey": [
+          91,
+          92
+        ],
+        "specs.ingress.toPorts.terminatingTLS.secret": [
+          93,
+          94
+        ],
+        "specs.ingress.toPorts.terminatingTLS.secret.namespace": [
+          95,
+          96
+        ],
+        "specs.ingress.toPorts.terminatingTLS.trustedCA": [
+          97,
+          98
+        ],
+        "specs.ingressDeny": [
+          166,
+          167
+        ],
+        "specs.ingressDeny.fromCIDR": [
+          152,
+          153
+        ],
+        "specs.ingressDeny.fromCIDRSet": [
+          154,
+          155
+        ],
+        "specs.ingressDeny.fromCIDRSet.cidrGroupRef": [
+          55,
+          56
+        ],
+        "specs.ingressDeny.fromCIDRSet.cidrGroupSelector": [
+          null,
+          57
+        ],
+        "specs.ingressDeny.fromCIDRSet.except": [
+          58,
+          59
+        ],
+        "specs.ingressDeny.fromEndpoints": [
+          156,
+          28
+        ],
+        "specs.ingressDeny.fromEndpoints.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.ingressDeny.fromEndpoints.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.ingressDeny.fromEndpoints.matchLabels": [
+          65,
+          32
+        ],
+        "specs.ingressDeny.fromEntities": [
+          157,
+          35
+        ],
+        "specs.ingressDeny.fromGroups": [
+          158,
+          12
+        ],
+        "specs.ingressDeny.fromNodes": [
+          159,
+          160
+        ],
+        "specs.ingressDeny.fromNodes.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.ingressDeny.fromNodes.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.ingressDeny.fromNodes.matchLabels": [
+          65,
+          32
+        ],
+        "specs.ingressDeny.fromRequires": [
+          161,
+          30
+        ],
+        "specs.ingressDeny.fromRequires.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.ingressDeny.fromRequires.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.ingressDeny.fromRequires.matchLabels": [
+          65,
+          32
+        ],
+        "specs.ingressDeny.icmps": [
+          168,
+          169
+        ],
+        "specs.ingressDeny.icmps.fields.family": [
+          47,
+          48
+        ],
+        "specs.ingressDeny.icmps.fields.type": [
+          49,
+          50
+        ],
+        "specs.ingressDeny.toPorts": [
+          170,
+          171
+        ],
+        "specs.ingressDeny.toPorts.ports.port": [
+          99,
+          23
+        ],
+        "specs.ingressDeny.toPorts.ports.protocol": [
+          100,
+          24
+        ],
+        "specs.labels": [
+          172,
+          173
+        ],
+        "specs.nodeSelector": [
+          174,
+          175
+        ],
+        "specs.nodeSelector.matchExpressions.operator": [
+          61,
+          62
+        ],
+        "specs.nodeSelector.matchExpressions.values": [
+          63,
+          64
+        ],
+        "specs.nodeSelector.matchLabels": [
+          65,
+          32
+        ],
+        "status": [
+          176,
+          177
+        ],
+        "status.derivativePolicies": [
+          178,
+          179
+        ],
+        "status.derivativePolicies.annotations": [
+          180,
+          181
+        ],
+        "status.derivativePolicies.enforcing": [
+          182,
+          183
+        ],
+        "status.derivativePolicies.error": [
+          184,
+          185
+        ],
+        "status.derivativePolicies.localPolicyRevision": [
+          186,
+          187
+        ],
+        "status.derivativePolicies.ok": [
+          188,
+          189
+        ],
+        "": [
+          190,
+          191
+        ]
+      }
+    },
+    "1.16.2": {
+      "descriptionChanged": [
+        "spec.egress.toPorts.rules.http.host",
+        "spec.ingress.toPorts.rules.http.host",
+        "specs.egress.toPorts.rules.http.host",
+        "specs.ingress.toPorts.rules.http.host"
+      ],
+      "descriptions": {
+        "spec.egress.toPorts.rules.http.host": [
+          192,
+          113
+        ],
+        "spec.ingress.toPorts.rules.http.host": [
+          192,
+          113
+        ],
+        "specs.egress.toPorts.rules.http.host": [
+          192,
+          113
+        ],
+        "specs.ingress.toPorts.rules.http.host": [
+          192,
+          113
+        ]
+      }
+    },
+    "1.16.0": {
+      "typeChanged": {
+        "spec.egress.icmps.fields.type": [
+          "integer",
+          "int | string"
+        ],
+        "spec.egressDeny.icmps.fields.type": [
+          "integer",
+          "int | string"
+        ],
+        "spec.ingress.icmps.fields.type": [
+          "integer",
+          "int | string"
+        ],
+        "spec.ingressDeny.icmps.fields.type": [
+          "integer",
+          "int | string"
+        ],
+        "specs.egress.icmps.fields.type": [
+          "integer",
+          "int | string"
+        ],
+        "specs.egressDeny.icmps.fields.type": [
+          "integer",
+          "int | string"
+        ],
+        "specs.ingress.icmps.fields.type": [
+          "integer",
+          "int | string"
+        ],
+        "specs.ingressDeny.icmps.fields.type": [
+          "integer",
+          "int | string"
+        ]
+      },
+      "descriptionChanged": [
+        "spec.egress.icmps.fields.type",
+        "spec.egress.toCIDRSet.cidrGroupRef",
+        "spec.egress.toPorts.listener.envoyConfig",
+        "spec.egress.toPorts.ports.port",
+        "spec.egress.toPorts.rules.http.host",
+        "spec.egressDeny.icmps.fields.type",
+        "spec.egressDeny.toCIDRSet.cidrGroupRef",
+        "spec.egressDeny.toPorts.ports.port",
+        "spec.ingress.fromCIDRSet.cidrGroupRef",
+        "spec.ingress.icmps.fields.type",
+        "spec.ingress.toPorts.listener.envoyConfig",
+        "spec.ingress.toPorts.ports.port",
+        "spec.ingress.toPorts.rules.http.host",
+        "spec.ingressDeny.fromCIDRSet.cidrGroupRef",
+        "spec.ingressDeny.icmps.fields.type",
+        "spec.ingressDeny.toPorts.ports.port",
+        "specs.egress.icmps.fields.type",
+        "specs.egress.toCIDRSet.cidrGroupRef",
+        "specs.egress.toPorts.listener.envoyConfig",
+        "specs.egress.toPorts.ports.port",
+        "specs.egress.toPorts.rules.http.host",
+        "specs.egressDeny.icmps.fields.type",
+        "specs.egressDeny.toCIDRSet.cidrGroupRef",
+        "specs.egressDeny.toPorts.ports.port",
+        "specs.ingress.fromCIDRSet.cidrGroupRef",
+        "specs.ingress.icmps.fields.type",
+        "specs.ingress.toPorts.listener.envoyConfig",
+        "specs.ingress.toPorts.ports.port",
+        "specs.ingress.toPorts.rules.http.host",
+        "specs.ingressDeny.fromCIDRSet.cidrGroupRef",
+        "specs.ingressDeny.icmps.fields.type",
+        "specs.ingressDeny.toPorts.ports.port"
+      ],
+      "added": {
+        "spec.egress.toNodes": "object[]",
+        "spec.egress.toPorts.listener.priority": "integer",
+        "spec.egress.toPorts.ports.endPort": "integer",
+        "spec.egressDeny.toNodes": "object[]",
+        "spec.egressDeny.toPorts.ports.endPort": "integer",
+        "spec.enableDefaultDeny": "object",
+        "spec.ingress.fromGroups": "object[]",
+        "spec.ingress.fromNodes": "object[]",
+        "spec.ingress.toPorts.listener.priority": "integer",
+        "spec.ingress.toPorts.ports.endPort": "integer",
+        "spec.ingressDeny.fromGroups": "object[]",
+        "spec.ingressDeny.fromNodes": "object[]",
+        "spec.ingressDeny.toPorts.ports.endPort": "integer",
+        "specs.egress.toNodes": "object[]",
+        "specs.egress.toPorts.listener.priority": "integer",
+        "specs.egress.toPorts.ports.endPort": "integer",
+        "specs.egressDeny.toNodes": "object[]",
+        "specs.egressDeny.toPorts.ports.endPort": "integer",
+        "specs.enableDefaultDeny": "object",
+        "specs.ingress.fromGroups": "object[]",
+        "specs.ingress.fromNodes": "object[]",
+        "specs.ingress.toPorts.listener.priority": "integer",
+        "specs.ingress.toPorts.ports.endPort": "integer",
+        "specs.ingressDeny.fromGroups": "object[]",
+        "specs.ingressDeny.fromNodes": "object[]",
+        "specs.ingressDeny.toPorts.ports.endPort": "integer",
+        "status.conditions": "object[]"
+      },
+      "removed": {
+        "status.nodes": "map[string]object"
+      },
+      "descriptions": {
+        "spec.egress.icmps.fields.type": [
+          193,
+          49
+        ],
+        "spec.egress.toCIDRSet.cidrGroupRef": [
+          194,
+          55
+        ],
+        "spec.egress.toNodes": [
+          null,
+          73
+        ],
+        "spec.egress.toPorts.listener.envoyConfig": [
+          195,
+          79
+        ],
+        "spec.egress.toPorts.listener.priority": [
+          null,
+          85
+        ],
+        "spec.egress.toPorts.ports.endPort": [
+          null,
+          196
+        ],
+        "spec.egress.toPorts.ports.port": [
+          197,
+          99
+        ],
+        "spec.egress.toPorts.rules.http.host": [
+          113,
+          192
+        ],
+        "spec.egressDeny.icmps.fields.type": [
+          193,
+          49
+        ],
+        "spec.egressDeny.toCIDRSet.cidrGroupRef": [
+          194,
+          55
+        ],
+        "spec.egressDeny.toNodes": [
+          null,
+          73
+        ],
+        "spec.egressDeny.toPorts.ports.endPort": [
+          null,
+          196
+        ],
+        "spec.egressDeny.toPorts.ports.port": [
+          197,
+          99
+        ],
+        "spec.enableDefaultDeny": [
+          null,
+          142
+        ],
+        "spec.ingress.fromCIDRSet.cidrGroupRef": [
+          194,
+          55
+        ],
+        "spec.ingress.fromGroups": [
+          null,
+          158
+        ],
+        "spec.ingress.fromNodes": [
+          null,
+          159
+        ],
+        "spec.ingress.icmps.fields.type": [
+          193,
+          49
+        ],
+        "spec.ingress.toPorts.listener.envoyConfig": [
+          195,
+          79
+        ],
+        "spec.ingress.toPorts.listener.priority": [
+          null,
+          85
+        ],
+        "spec.ingress.toPorts.ports.endPort": [
+          null,
+          196
+        ],
+        "spec.ingress.toPorts.ports.port": [
+          197,
+          99
+        ],
+        "spec.ingress.toPorts.rules.http.host": [
+          113,
+          192
+        ],
+        "spec.ingressDeny.fromCIDRSet.cidrGroupRef": [
+          194,
+          55
+        ],
+        "spec.ingressDeny.fromGroups": [
+          null,
+          158
+        ],
+        "spec.ingressDeny.fromNodes": [
+          null,
+          159
+        ],
+        "spec.ingressDeny.icmps.fields.type": [
+          193,
+          49
+        ],
+        "spec.ingressDeny.toPorts.ports.endPort": [
+          null,
+          196
+        ],
+        "spec.ingressDeny.toPorts.ports.port": [
+          197,
+          99
+        ],
+        "specs.egress.icmps.fields.type": [
+          193,
+          49
+        ],
+        "specs.egress.toCIDRSet.cidrGroupRef": [
+          194,
+          55
+        ],
+        "specs.egress.toNodes": [
+          null,
+          73
+        ],
+        "specs.egress.toPorts.listener.envoyConfig": [
+          195,
+          79
+        ],
+        "specs.egress.toPorts.listener.priority": [
+          null,
+          85
+        ],
+        "specs.egress.toPorts.ports.endPort": [
+          null,
+          196
+        ],
+        "specs.egress.toPorts.ports.port": [
+          197,
+          99
+        ],
+        "specs.egress.toPorts.rules.http.host": [
+          113,
+          192
+        ],
+        "specs.egressDeny.icmps.fields.type": [
+          193,
+          49
+        ],
+        "specs.egressDeny.toCIDRSet.cidrGroupRef": [
+          194,
+          55
+        ],
+        "specs.egressDeny.toNodes": [
+          null,
+          73
+        ],
+        "specs.egressDeny.toPorts.ports.endPort": [
+          null,
+          196
+        ],
+        "specs.egressDeny.toPorts.ports.port": [
+          197,
+          99
+        ],
+        "specs.enableDefaultDeny": [
+          null,
+          142
+        ],
+        "specs.ingress.fromCIDRSet.cidrGroupRef": [
+          194,
+          55
+        ],
+        "specs.ingress.fromGroups": [
+          null,
+          158
+        ],
+        "specs.ingress.fromNodes": [
+          null,
+          159
+        ],
+        "specs.ingress.icmps.fields.type": [
+          193,
+          49
+        ],
+        "specs.ingress.toPorts.listener.envoyConfig": [
+          195,
+          79
+        ],
+        "specs.ingress.toPorts.listener.priority": [
+          null,
+          85
+        ],
+        "specs.ingress.toPorts.ports.endPort": [
+          null,
+          196
+        ],
+        "specs.ingress.toPorts.ports.port": [
+          197,
+          99
+        ],
+        "specs.ingress.toPorts.rules.http.host": [
+          113,
+          192
+        ],
+        "specs.ingressDeny.fromCIDRSet.cidrGroupRef": [
+          194,
+          55
+        ],
+        "specs.ingressDeny.fromGroups": [
+          null,
+          158
+        ],
+        "specs.ingressDeny.fromNodes": [
+          null,
+          159
+        ],
+        "specs.ingressDeny.icmps.fields.type": [
+          193,
+          49
+        ],
+        "specs.ingressDeny.toPorts.ports.endPort": [
+          null,
+          196
+        ],
+        "specs.ingressDeny.toPorts.ports.port": [
+          197,
+          99
+        ],
+        "status.nodes": [
+          198,
+          null
+        ]
+      }
+    },
+    "1.15.9": {
+      "descriptionChanged": [
+        "spec.egress.toPorts.rules.http.host",
+        "spec.ingress.toPorts.rules.http.host",
+        "specs.egress.toPorts.rules.http.host",
+        "specs.ingress.toPorts.rules.http.host"
+      ],
+      "descriptions": {
+        "spec.egress.toPorts.rules.http.host": [
+          192,
+          113
+        ],
+        "spec.ingress.toPorts.rules.http.host": [
+          192,
+          113
+        ],
+        "specs.egress.toPorts.rules.http.host": [
+          192,
+          113
+        ],
+        "specs.ingress.toPorts.rules.http.host": [
+          192,
+          113
+        ]
+      }
+    },
+    "1.15.0": {
+      "descriptionChanged": [
+        "spec.egress.toFQDNs.matchPattern",
+        "spec.egress.toGroups",
+        "spec.egress.toPorts.originatingTLS.secret",
+        "spec.egress.toPorts.rules.dns.matchPattern",
+        "spec.egress.toPorts.rules.http.host",
+        "spec.egress.toPorts.rules.kafka.role",
+        "spec.egress.toPorts.terminatingTLS.secret",
+        "spec.egressDeny.toGroups",
+        "spec.ingress.toPorts.originatingTLS.secret",
+        "spec.ingress.toPorts.rules.dns.matchPattern",
+        "spec.ingress.toPorts.rules.http.host",
+        "spec.ingress.toPorts.rules.kafka.role",
+        "spec.ingress.toPorts.terminatingTLS.secret",
+        "specs.egress.toFQDNs.matchPattern",
+        "specs.egress.toGroups",
+        "specs.egress.toPorts.originatingTLS.secret",
+        "specs.egress.toPorts.rules.dns.matchPattern",
+        "specs.egress.toPorts.rules.http.host",
+        "specs.egress.toPorts.rules.kafka.role",
+        "specs.egress.toPorts.terminatingTLS.secret",
+        "specs.egressDeny.toGroups",
+        "specs.ingress.toPorts.originatingTLS.secret",
+        "specs.ingress.toPorts.rules.dns.matchPattern",
+        "specs.ingress.toPorts.rules.http.host",
+        "specs.ingress.toPorts.rules.kafka.role",
+        "specs.ingress.toPorts.terminatingTLS.secret"
+      ],
+      "descriptions": {
+        "spec.egress.toFQDNs.matchPattern": [
+          199,
+          71
+        ],
+        "spec.egress.toGroups": [
+          200,
+          72
+        ],
+        "spec.egress.toPorts.originatingTLS.secret": [
+          201,
+          93
+        ],
+        "spec.egress.toPorts.rules.dns.matchPattern": [
+          199,
+          71
+        ],
+        "spec.egress.toPorts.rules.http.host": [
+          113,
+          192
+        ],
+        "spec.egress.toPorts.rules.kafka.role": [
+          202,
+          125
+        ],
+        "spec.egress.toPorts.terminatingTLS.secret": [
+          201,
+          93
+        ],
+        "spec.egressDeny.toGroups": [
+          200,
+          72
+        ],
+        "spec.ingress.toPorts.originatingTLS.secret": [
+          201,
+          93
+        ],
+        "spec.ingress.toPorts.rules.dns.matchPattern": [
+          199,
+          71
+        ],
+        "spec.ingress.toPorts.rules.http.host": [
+          113,
+          192
+        ],
+        "spec.ingress.toPorts.rules.kafka.role": [
+          202,
+          125
+        ],
+        "spec.ingress.toPorts.terminatingTLS.secret": [
+          201,
+          93
+        ],
+        "specs.egress.toFQDNs.matchPattern": [
+          199,
+          71
+        ],
+        "specs.egress.toGroups": [
+          200,
+          72
+        ],
+        "specs.egress.toPorts.originatingTLS.secret": [
+          201,
+          93
+        ],
+        "specs.egress.toPorts.rules.dns.matchPattern": [
+          199,
+          71
+        ],
+        "specs.egress.toPorts.rules.http.host": [
+          113,
+          192
+        ],
+        "specs.egress.toPorts.rules.kafka.role": [
+          202,
+          125
+        ],
+        "specs.egress.toPorts.terminatingTLS.secret": [
+          201,
+          93
+        ],
+        "specs.egressDeny.toGroups": [
+          200,
+          72
+        ],
+        "specs.ingress.toPorts.originatingTLS.secret": [
+          201,
+          93
+        ],
+        "specs.ingress.toPorts.rules.dns.matchPattern": [
+          199,
+          71
+        ],
+        "specs.ingress.toPorts.rules.http.host": [
+          113,
+          192
+        ],
+        "specs.ingress.toPorts.rules.kafka.role": [
+          202,
+          125
+        ],
+        "specs.ingress.toPorts.terminatingTLS.secret": [
+          201,
+          93
+        ]
+      }
+    },
+    "1.14.15": {
+      "descriptionChanged": [
+        "spec.egress.toPorts.rules.http.host",
+        "spec.ingress.toPorts.rules.http.host",
+        "specs.egress.toPorts.rules.http.host",
+        "specs.ingress.toPorts.rules.http.host"
+      ],
+      "descriptions": {
+        "spec.egress.toPorts.rules.http.host": [
+          192,
+          113
+        ],
+        "spec.ingress.toPorts.rules.http.host": [
+          192,
+          113
+        ],
+        "specs.egress.toPorts.rules.http.host": [
+          192,
+          113
+        ],
+        "specs.ingress.toPorts.rules.http.host": [
+          192,
+          113
+        ]
+      }
+    },
+    "1.14.2": {
+      "descriptionChanged": [
+        "spec.egress.toFQDNs",
+        "specs.egress.toFQDNs"
+      ],
+      "descriptions": {
+        "spec.egress.toFQDNs": [
+          203,
+          67
+        ],
+        "specs.egress.toFQDNs": [
+          203,
+          67
+        ]
+      }
+    },
+    "1.14.0": {
+      "added": {
+        "spec.egress.authentication": "object",
+        "spec.egress.toCIDRSet.cidrGroupRef": "string",
+        "spec.egressDeny.toCIDRSet.cidrGroupRef": "string",
+        "spec.ingress.authentication": "object",
+        "spec.ingress.fromCIDRSet.cidrGroupRef": "string",
+        "spec.ingressDeny.fromCIDRSet.cidrGroupRef": "string",
+        "specs.egress.authentication": "object",
+        "specs.egress.toCIDRSet.cidrGroupRef": "string",
+        "specs.egressDeny.toCIDRSet.cidrGroupRef": "string",
+        "specs.ingress.authentication": "object",
+        "specs.ingress.fromCIDRSet.cidrGroupRef": "string",
+        "specs.ingressDeny.fromCIDRSet.cidrGroupRef": "string"
+      },
+      "optional": [
+        "spec.egress.toCIDRSet.cidr",
+        "spec.egressDeny.toCIDRSet.cidr",
+        "spec.ingress.fromCIDRSet.cidr",
+        "spec.ingressDeny.fromCIDRSet.cidr",
+        "specs.egress.toCIDRSet.cidr",
+        "specs.egressDeny.toCIDRSet.cidr",
+        "specs.ingress.fromCIDRSet.cidr",
+        "specs.ingressDeny.fromCIDRSet.cidr"
+      ],
+      "descriptionChanged": [
+        "spec.egress.toCIDRSet.except",
+        "spec.egress.toEntities",
+        "spec.egressDeny",
+        "spec.egressDeny.toCIDRSet.except",
+        "spec.egressDeny.toEntities",
+        "spec.ingress.fromCIDRSet.except",
+        "spec.ingressDeny",
+        "spec.ingressDeny.fromCIDRSet.except",
+        "specs.egress.toCIDRSet.except",
+        "specs.egress.toEntities",
+        "specs.egressDeny",
+        "specs.egressDeny.toCIDRSet.except",
+        "specs.egressDeny.toEntities",
+        "specs.ingress.fromCIDRSet.except",
+        "specs.ingressDeny",
+        "specs.ingressDeny.fromCIDRSet.except"
+      ],
+      "removed": {
+        "spec.egress.auth": "object",
+        "spec.ingress.auth": "object",
+        "specs.egress.auth": "object",
+        "specs.ingress.auth": "object"
+      },
+      "descriptions": {
+        "spec.egress.authentication": [
+          null,
+          204
+        ],
+        "spec.egress.toCIDRSet.cidr": [
+          null,
+          205
+        ],
+        "spec.egress.toCIDRSet.cidrGroupRef": [
+          null,
+          194
+        ],
+        "spec.egress.toCIDRSet.except": [
+          206,
+          58
+        ],
+        "spec.egress.toEntities": [
+          207,
+          66
+        ],
+        "spec.egressDeny": [
+          208,
+          136
+        ],
+        "spec.egressDeny.toCIDRSet.cidr": [
+          null,
+          205
+        ],
+        "spec.egressDeny.toCIDRSet.cidrGroupRef": [
+          null,
+          194
+        ],
+        "spec.egressDeny.toCIDRSet.except": [
+          206,
+          58
+        ],
+        "spec.egressDeny.toEntities": [
+          207,
+          66
+        ],
+        "spec.ingress.authentication": [
+          null,
+          204
+        ],
+        "spec.ingress.fromCIDRSet.cidr": [
+          null,
+          205
+        ],
+        "spec.ingress.fromCIDRSet.cidrGroupRef": [
+          null,
+          194
+        ],
+        "spec.ingress.fromCIDRSet.except": [
+          206,
+          58
+        ],
+        "spec.ingressDeny": [
+          209,
+          166
+        ],
+        "spec.ingressDeny.fromCIDRSet.cidr": [
+          null,
+          205
+        ],
+        "spec.ingressDeny.fromCIDRSet.cidrGroupRef": [
+          null,
+          194
+        ],
+        "spec.ingressDeny.fromCIDRSet.except": [
+          206,
+          58
+        ],
+        "specs.egress.authentication": [
+          null,
+          204
+        ],
+        "specs.egress.toCIDRSet.cidr": [
+          null,
+          205
+        ],
+        "specs.egress.toCIDRSet.cidrGroupRef": [
+          null,
+          194
+        ],
+        "specs.egress.toCIDRSet.except": [
+          206,
+          58
+        ],
+        "specs.egress.toEntities": [
+          207,
+          66
+        ],
+        "specs.egressDeny": [
+          208,
+          136
+        ],
+        "specs.egressDeny.toCIDRSet.cidr": [
+          null,
+          205
+        ],
+        "specs.egressDeny.toCIDRSet.cidrGroupRef": [
+          null,
+          194
+        ],
+        "specs.egressDeny.toCIDRSet.except": [
+          206,
+          58
+        ],
+        "specs.egressDeny.toEntities": [
+          207,
+          66
+        ],
+        "specs.ingress.authentication": [
+          null,
+          204
+        ],
+        "specs.ingress.fromCIDRSet.cidr": [
+          null,
+          205
+        ],
+        "specs.ingress.fromCIDRSet.cidrGroupRef": [
+          null,
+          194
+        ],
+        "specs.ingress.fromCIDRSet.except": [
+          206,
+          58
+        ],
+        "specs.ingressDeny": [
+          209,
+          166
+        ],
+        "specs.ingressDeny.fromCIDRSet.cidr": [
+          null,
+          205
+        ],
+        "specs.ingressDeny.fromCIDRSet.cidrGroupRef": [
+          null,
+          194
+        ],
+        "specs.ingressDeny.fromCIDRSet.except": [
+          206,
+          58
+        ],
+        "spec.egress.auth": [
+          210,
+          null
+        ],
+        "spec.ingress.auth": [
+          210,
+          null
+        ],
+        "specs.egress.auth": [
+          210,
+          null
+        ],
+        "specs.ingress.auth": [
+          210,
+          null
+        ]
+      }
+    },
+    "1.13.0": {
+      "added": {
+        "spec.egress.auth": "object",
+        "spec.egress.toPorts.listener": "object",
+        "spec.egress.toPorts.serverNames": "string[]",
+        "spec.ingress.auth": "object",
+        "spec.ingress.toPorts.listener": "object",
+        "spec.ingress.toPorts.serverNames": "string[]",
+        "specs.egress.auth": "object",
+        "specs.egress.toPorts.listener": "object",
+        "specs.egress.toPorts.serverNames": "string[]",
+        "specs.ingress.auth": "object",
+        "specs.ingress.toPorts.listener": "object",
+        "specs.ingress.toPorts.serverNames": "string[]"
+      },
+      "descriptionChanged": [
+        "spec.egress.toPorts.ports.protocol",
+        "spec.egressDeny.toPorts.ports.protocol",
+        "spec.ingress.toPorts.ports.protocol",
+        "spec.ingressDeny.toPorts.ports.protocol",
+        "specs.egress.toPorts.ports.protocol",
+        "specs.egressDeny.toPorts.ports.protocol",
+        "specs.ingress.toPorts.ports.protocol",
+        "specs.ingressDeny.toPorts.ports.protocol"
+      ],
+      "descriptions": {
+        "spec.egress.auth": [
+          null,
+          210
+        ],
+        "spec.egress.toPorts.listener": [
+          null,
+          77
+        ],
+        "spec.egress.toPorts.ports.protocol": [
+          211,
+          100
+        ],
+        "spec.egress.toPorts.serverNames": [
+          null,
+          129
+        ],
+        "spec.egressDeny.toPorts.ports.protocol": [
+          211,
+          100
+        ],
+        "spec.ingress.auth": [
+          null,
+          210
+        ],
+        "spec.ingress.toPorts.listener": [
+          null,
+          77
+        ],
+        "spec.ingress.toPorts.ports.protocol": [
+          211,
+          100
+        ],
+        "spec.ingress.toPorts.serverNames": [
+          null,
+          129
+        ],
+        "spec.ingressDeny.toPorts.ports.protocol": [
+          211,
+          100
+        ],
+        "specs.egress.auth": [
+          null,
+          210
+        ],
+        "specs.egress.toPorts.listener": [
+          null,
+          77
+        ],
+        "specs.egress.toPorts.ports.protocol": [
+          211,
+          100
+        ],
+        "specs.egress.toPorts.serverNames": [
+          null,
+          129
+        ],
+        "specs.egressDeny.toPorts.ports.protocol": [
+          211,
+          100
+        ],
+        "specs.ingress.auth": [
+          null,
+          210
+        ],
+        "specs.ingress.toPorts.listener": [
+          null,
+          77
+        ],
+        "specs.ingress.toPorts.ports.protocol": [
+          211,
+          100
+        ],
+        "specs.ingress.toPorts.serverNames": [
+          null,
+          129
+        ],
+        "specs.ingressDeny.toPorts.ports.protocol": [
+          211,
+          100
+        ]
+      }
+    },
+    "1.12.1": {
+      "descriptionChanged": [
+        "spec.egress.toFQDNs.matchPattern",
+        "spec.egress.toPorts.rules.dns.matchPattern",
+        "spec.ingress.toPorts.rules.dns.matchPattern",
+        "specs.egress.toFQDNs.matchPattern",
+        "specs.egress.toPorts.rules.dns.matchPattern",
+        "specs.ingress.toPorts.rules.dns.matchPattern"
+      ],
+      "descriptions": {
+        "spec.egress.toFQDNs.matchPattern": [
+          212,
+          199
+        ],
+        "spec.egress.toPorts.rules.dns.matchPattern": [
+          212,
+          199
+        ],
+        "spec.ingress.toPorts.rules.dns.matchPattern": [
+          212,
+          199
+        ],
+        "specs.egress.toFQDNs.matchPattern": [
+          212,
+          199
+        ],
+        "specs.egress.toPorts.rules.dns.matchPattern": [
+          212,
+          199
+        ],
+        "specs.ingress.toPorts.rules.dns.matchPattern": [
+          212,
+          199
+        ]
+      }
+    },
+    "1.12.0": {
+      "descriptionChanged": [
+        "spec.egress.toFQDNs.matchPattern",
+        "spec.egress.toPorts.rules.dns.matchPattern",
+        "spec.ingress.toPorts.rules.dns.matchPattern",
+        "specs.egress.toFQDNs.matchPattern",
+        "specs.egress.toPorts.rules.dns.matchPattern",
+        "specs.ingress.toPorts.rules.dns.matchPattern"
+      ],
+      "descriptions": {
+        "spec.egress.toFQDNs.matchPattern": [
+          199,
+          212
+        ],
+        "spec.egress.toPorts.rules.dns.matchPattern": [
+          199,
+          212
+        ],
+        "spec.ingress.toPorts.rules.dns.matchPattern": [
+          199,
+          212
+        ],
+        "specs.egress.toFQDNs.matchPattern": [
+          199,
+          212
+        ],
+        "specs.egress.toPorts.rules.dns.matchPattern": [
+          199,
+          212
+        ],
+        "specs.ingress.toPorts.rules.dns.matchPattern": [
+          199,
+          212
+        ]
+      }
+    },
+    "1.11.8": {
+      "descriptionChanged": [
+        "spec.egress.toFQDNs.matchPattern",
+        "spec.egress.toPorts.rules.dns.matchPattern",
+        "spec.ingress.toPorts.rules.dns.matchPattern",
+        "specs.egress.toFQDNs.matchPattern",
+        "specs.egress.toPorts.rules.dns.matchPattern",
+        "specs.ingress.toPorts.rules.dns.matchPattern"
+      ],
+      "descriptions": {
+        "spec.egress.toFQDNs.matchPattern": [
+          212,
+          199
+        ],
+        "spec.egress.toPorts.rules.dns.matchPattern": [
+          212,
+          199
+        ],
+        "spec.ingress.toPorts.rules.dns.matchPattern": [
+          212,
+          199
+        ],
+        "specs.egress.toFQDNs.matchPattern": [
+          212,
+          199
+        ],
+        "specs.egress.toPorts.rules.dns.matchPattern": [
+          212,
+          199
+        ],
+        "specs.ingress.toPorts.rules.dns.matchPattern": [
+          212,
+          199
+        ]
+      }
+    },
+    "1.11.0": {
+      "added": {
+        "spec.egress.icmps": "object[]",
+        "spec.egressDeny.icmps": "object[]",
+        "spec.ingress.icmps": "object[]",
+        "spec.ingressDeny.icmps": "object[]",
+        "specs.egress.icmps": "object[]",
+        "specs.egressDeny.icmps": "object[]",
+        "specs.ingress.icmps": "object[]",
+        "specs.ingressDeny.icmps": "object[]"
+      },
+      "descriptions": {
+        "spec.egress.icmps": [
+          null,
+          45
+        ],
+        "spec.egressDeny.icmps": [
+          null,
+          138
+        ],
+        "spec.ingress.icmps": [
+          null,
+          162
+        ],
+        "spec.ingressDeny.icmps": [
+          null,
+          168
+        ],
+        "specs.egress.icmps": [
+          null,
+          45
+        ],
+        "specs.egressDeny.icmps": [
+          null,
+          138
+        ],
+        "specs.ingress.icmps": [
+          null,
+          162
+        ],
+        "specs.ingressDeny.icmps": [
+          null,
+          168
+        ]
+      }
+    },
+    "1.10.0": {
+      "descriptionChanged": [
+        "spec.egress.toEndpoints.matchExpressions",
+        "spec.egress.toEndpoints.matchLabels",
+        "spec.egress.toRequires.matchExpressions",
+        "spec.egress.toRequires.matchLabels",
+        "spec.egress.toServices.k8sServiceSelector.selector.matchExpressions",
+        "spec.egress.toServices.k8sServiceSelector.selector.matchLabels",
+        "spec.egressDeny.toEndpoints.matchExpressions",
+        "spec.egressDeny.toEndpoints.matchLabels",
+        "spec.egressDeny.toRequires.matchExpressions",
+        "spec.egressDeny.toRequires.matchLabels",
+        "spec.egressDeny.toServices.k8sServiceSelector.selector.matchExpressions",
+        "spec.egressDeny.toServices.k8sServiceSelector.selector.matchLabels",
+        "spec.endpointSelector.matchExpressions",
+        "spec.endpointSelector.matchLabels",
+        "spec.ingress.fromEndpoints.matchExpressions",
+        "spec.ingress.fromEndpoints.matchLabels",
+        "spec.ingress.fromRequires.matchExpressions",
+        "spec.ingress.fromRequires.matchLabels",
+        "spec.ingressDeny.fromEndpoints.matchExpressions",
+        "spec.ingressDeny.fromEndpoints.matchLabels",
+        "spec.ingressDeny.fromRequires.matchExpressions",
+        "spec.ingressDeny.fromRequires.matchLabels",
+        "spec.nodeSelector.matchExpressions",
+        "spec.nodeSelector.matchLabels",
+        "specs.egress.toEndpoints.matchExpressions",
+        "specs.egress.toEndpoints.matchLabels",
+        "specs.egress.toRequires.matchExpressions",
+        "specs.egress.toRequires.matchLabels",
+        "specs.egress.toServices.k8sServiceSelector.selector.matchExpressions",
+        "specs.egress.toServices.k8sServiceSelector.selector.matchLabels",
+        "specs.egressDeny.toEndpoints.matchExpressions",
+        "specs.egressDeny.toEndpoints.matchLabels",
+        "specs.egressDeny.toRequires.matchExpressions",
+        "specs.egressDeny.toRequires.matchLabels",
+        "specs.egressDeny.toServices.k8sServiceSelector.selector.matchExpressions",
+        "specs.egressDeny.toServices.k8sServiceSelector.selector.matchLabels",
+        "specs.endpointSelector.matchExpressions",
+        "specs.endpointSelector.matchLabels",
+        "specs.ingress.fromEndpoints.matchExpressions",
+        "specs.ingress.fromEndpoints.matchLabels",
+        "specs.ingress.fromRequires.matchExpressions",
+        "specs.ingress.fromRequires.matchLabels",
+        "specs.ingressDeny.fromEndpoints.matchExpressions",
+        "specs.ingressDeny.fromEndpoints.matchLabels",
+        "specs.ingressDeny.fromRequires.matchExpressions",
+        "specs.ingressDeny.fromRequires.matchLabels",
+        "specs.nodeSelector.matchExpressions",
+        "specs.nodeSelector.matchLabels"
+      ],
+      "descriptions": {
+        "spec.egress.toEndpoints.matchExpressions": [
+          213,
+          31
+        ],
+        "spec.egress.toEndpoints.matchLabels": [
+          214,
+          65
+        ],
+        "spec.egress.toRequires.matchExpressions": [
+          213,
+          31
+        ],
+        "spec.egress.toRequires.matchLabels": [
+          214,
+          65
+        ],
+        "spec.egress.toServices.k8sServiceSelector.selector.matchExpressions": [
+          213,
+          31
+        ],
+        "spec.egress.toServices.k8sServiceSelector.selector.matchLabels": [
+          214,
+          65
+        ],
+        "spec.egressDeny.toEndpoints.matchExpressions": [
+          213,
+          31
+        ],
+        "spec.egressDeny.toEndpoints.matchLabels": [
+          214,
+          65
+        ],
+        "spec.egressDeny.toRequires.matchExpressions": [
+          213,
+          31
+        ],
+        "spec.egressDeny.toRequires.matchLabels": [
+          214,
+          65
+        ],
+        "spec.egressDeny.toServices.k8sServiceSelector.selector.matchExpressions": [
+          213,
+          31
+        ],
+        "spec.egressDeny.toServices.k8sServiceSelector.selector.matchLabels": [
+          214,
+          65
+        ],
+        "spec.endpointSelector.matchExpressions": [
+          213,
+          31
+        ],
+        "spec.endpointSelector.matchLabels": [
+          214,
+          65
+        ],
+        "spec.ingress.fromEndpoints.matchExpressions": [
+          213,
+          31
+        ],
+        "spec.ingress.fromEndpoints.matchLabels": [
+          214,
+          65
+        ],
+        "spec.ingress.fromRequires.matchExpressions": [
+          213,
+          31
+        ],
+        "spec.ingress.fromRequires.matchLabels": [
+          214,
+          65
+        ],
+        "spec.ingressDeny.fromEndpoints.matchExpressions": [
+          213,
+          31
+        ],
+        "spec.ingressDeny.fromEndpoints.matchLabels": [
+          214,
+          65
+        ],
+        "spec.ingressDeny.fromRequires.matchExpressions": [
+          213,
+          31
+        ],
+        "spec.ingressDeny.fromRequires.matchLabels": [
+          214,
+          65
+        ],
+        "spec.nodeSelector.matchExpressions": [
+          213,
+          31
+        ],
+        "spec.nodeSelector.matchLabels": [
+          214,
+          65
+        ],
+        "specs.egress.toEndpoints.matchExpressions": [
+          213,
+          31
+        ],
+        "specs.egress.toEndpoints.matchLabels": [
+          214,
+          65
+        ],
+        "specs.egress.toRequires.matchExpressions": [
+          213,
+          31
+        ],
+        "specs.egress.toRequires.matchLabels": [
+          214,
+          65
+        ],
+        "specs.egress.toServices.k8sServiceSelector.selector.matchExpressions": [
+          213,
+          31
+        ],
+        "specs.egress.toServices.k8sServiceSelector.selector.matchLabels": [
+          214,
+          65
+        ],
+        "specs.egressDeny.toEndpoints.matchExpressions": [
+          213,
+          31
+        ],
+        "specs.egressDeny.toEndpoints.matchLabels": [
+          214,
+          65
+        ],
+        "specs.egressDeny.toRequires.matchExpressions": [
+          213,
+          31
+        ],
+        "specs.egressDeny.toRequires.matchLabels": [
+          214,
+          65
+        ],
+        "specs.egressDeny.toServices.k8sServiceSelector.selector.matchExpressions": [
+          213,
+          31
+        ],
+        "specs.egressDeny.toServices.k8sServiceSelector.selector.matchLabels": [
+          214,
+          65
+        ],
+        "specs.endpointSelector.matchExpressions": [
+          213,
+          31
+        ],
+        "specs.endpointSelector.matchLabels": [
+          214,
+          65
+        ],
+        "specs.ingress.fromEndpoints.matchExpressions": [
+          213,
+          31
+        ],
+        "specs.ingress.fromEndpoints.matchLabels": [
+          214,
+          65
+        ],
+        "specs.ingress.fromRequires.matchExpressions": [
+          213,
+          31
+        ],
+        "specs.ingress.fromRequires.matchLabels": [
+          214,
+          65
+        ],
+        "specs.ingressDeny.fromEndpoints.matchExpressions": [
+          213,
+          31
+        ],
+        "specs.ingressDeny.fromEndpoints.matchLabels": [
+          214,
+          65
+        ],
+        "specs.ingressDeny.fromRequires.matchExpressions": [
+          213,
+          31
+        ],
+        "specs.ingressDeny.fromRequires.matchLabels": [
+          214,
+          65
+        ],
+        "specs.nodeSelector.matchExpressions": [
+          213,
+          31
+        ],
+        "specs.nodeSelector.matchLabels": [
+          214,
+          65
+        ]
+      }
+    }
+  },
+  "texts": [
+    "ToEntities is a list of special entities to which the endpoint subject\nto the rule is allowed to initiate connections. Supported entities are\n`world`, `cluster`, `host`, `remote-node`, `kube-apiserver`, `ingress`, `init`,\n`health`, `unmanaged`, `none` and `all`.",
+    "ToEntities is a list of special entities to which the endpoint subject\nto the rule is allowed to initiate connections. Supported entities are\n`world`, `cluster`, `cluster-mesh`, `host`, `remote-node`, `kube-apiserver`, `ingress`, `init`,\n`health`, `unmanaged`, `none` and `all`.",
+    "ToGroups is a directive that allows the integration with multiple outside\nproviders. Currently, only AWS is supported, and the rule can select by\nmultiple sub directives:\n\nExample:\ntoGroups:\n- aws:\n    securityGroupsIds:\n    - 'sg-XXXXXXXXXXXXX'",
+    "ToGroups allows policies to reference CIDRs provided by external integrations.\nCurrently, only AWS is supported, and the rule can select by multiple sub directives.\nToGroups entries are functionally equivalent to toCIDR, and have the same\nlimitiations. They cannot select traffic originating from within the cluster.\n\nExample:\ntoGroups:\n- aws:\n    securityGroupsIds:\n    - 'sg-XXXXXXXXXXXXX'",
+    "Labels selects AWS ENIs by labels.\nMultiple labels are AND-ed together.",
+    "Deprecated: Region is unused.",
+    "SecurityGroupsIds selects VPC SecurityGroups by IDs.\nIf multiple IDs are specified, they are OR-ed together.\n\nNote that this may be AND-ed with any Names specified. Specifying both\nIDs and Names is not recommended.",
+    "SecurityGroupsNames selects VPC SecurityGroups by name.\nIf multiple names are specified, they are OR-ed together.\n\nNote that this may be AND-ed with any IDs specified. Specifying both\nIDs and Names is not recommended.",
+    "Protocol is the L4 protocol. If \"ANY\", omitted or empty, any protocols\nwith transport ports (TCP, UDP, SCTP) match.\n\nAccepted values: \"TCP\", \"UDP\", \"SCTP\", \"VRRP\", \"IGMP\", \"ANY\"\n\nMatching on ICMP is not supported.\n\nNamed port specified for a container may narrow this down, but may not\ncontradict this.",
+    "Protocol is the L4 protocol. If \"ANY\", omitted or empty, any protocols\nwith transport ports (TCP, UDP, SCTP) match.\n\nAccepted values: \"TCP\", \"UDP\", \"SCTP\", \"VRRP\", \"IGMP\", \"GRE\", \"IPIP\",\n\"IPV6\", \"ESP\", \"AH\", \"ANY\"\n\nTunnel/encapsulation protocols (GRE, IPIP, IPV6, ESP, AH) and other\nextended IP protocols (VRRP, IGMP) require the --enable-extended-ip-protocols\nflag to be set. These protocols do not use transport-layer ports.\n\nMatching on ICMP is not supported.\n\nNamed port specified for a container may narrow this down, but may not\ncontradict this.",
+    "FromEntities is a list of special entities which the endpoint subject\nto the rule is allowed to receive connections from. Supported entities are\n`world`, `cluster`, `host`, `remote-node`, `kube-apiserver`, `ingress`, `init`,\n`health`, `unmanaged`, `none` and `all`.",
+    "FromEntities is a list of special entities which the endpoint subject\nto the rule is allowed to receive connections from. Supported entities are\n`world`, `cluster`, `cluster-mesh`, `host`, `remote-node`, `kube-apiserver`, `ingress`, `init`,\n`health`, `unmanaged`, `none` and `all`.",
+    "FromGroups is a directive that allows the integration with multiple outside\nproviders. Currently, only AWS is supported, and the rule can select by\nmultiple sub directives:\n\nExample:\nFromGroups:\n- aws:\n    securityGroupsIds:\n    - 'sg-XXXXXXXXXXXXX'",
+    "FromGroups allows policies to reference CIDRs provided by external integrations.\nCurrently, only AWS is supported, and the rule can select by multiple sub directives.\nFromGroups entries are functionally equivalent to FromCIDR, and have the same\nlimitiations. They cannot select traffic originating from within the cluster.\n\nExample:\nfromGroups:\n- aws:\n    securityGroupsIds:\n    - 'sg-XXXXXXXXXXXXX'",
+    "Source can be one of the above values (e.g.: LabelSourceContainer).",
+    "Source can be one of the above values (e.g.: LabelSourceK8s).",
+    "Kafka-specific rules.\nDeprecated: This beta feature is deprecated and will be removed in a future release.",
+    "Key-value pair rules.",
+    "Name of the L7 protocol for which the Key-value pair rules apply.",
+    "ToEndpoints is a list of endpoints identified by an EndpointSelector to\nwhich the endpoints subject to the rule are allowed to communicate.\n\nExample:\nAny endpoint with the label \"role=frontend\" can communicate with any\nendpoint carrying the label \"role=backend\".",
+    "ToEndpoints is a list of endpoints identified by an EndpointSelector to\nwhich the endpoints subject to the rule are allowed to communicate.\n\nExample:\nAny endpoint with the label \"role=frontend\" can communicate with any\nendpoint carrying the label \"role=backend\".\n\nNote that while an empty non-nil ToEndpoints does not select anything,\nnil ToEndpoints is implicitly treated as a wildcard selector if ToPorts\nare also specified.\nTo select everything, use one EndpointSelector without any match requirements.",
+    "MatchPattern allows using wildcards to match DNS names. All wildcards are\ncase insensitive. The wildcards are:\n- \"*\" matches 0 or more DNS valid characters, and may occur anywhere in\nthe pattern. As a special case a \"*\" as the leftmost character, without a\nfollowing \".\" matches all subdomains as well as the name to the right.\nA trailing \".\" is automatically added when missing.\n\nExamples:\n`*.cilium.io` matches subdomains of cilium at that level\n  www.cilium.io and blog.cilium.io match, cilium.io and google.com do not\n`*cilium.io` matches cilium.io and all subdomains ends with \"cilium.io\"\n  except those containing \".\" separator, subcilium.io and sub-cilium.io match,\n  www.cilium.io and blog.cilium.io does not\nsub*.cilium.io matches subdomains of cilium where the subdomain component\nbegins with \"sub\"\n  sub.cilium.io and subdomain.cilium.io match, www.cilium.io,\n  blog.cilium.io, cilium.io and google.com do not",
+    "MatchPattern allows using wildcards to match DNS names. All wildcards are\ncase insensitive. The wildcards are:\n- \"*\" matches 0 or more DNS valid characters, and may occur anywhere in\nthe pattern. As a special case a \"*\" as the leftmost character, without a\nfollowing \".\" matches all subdomains as well as the name to the right.\nA trailing \".\" is automatically added when missing.\n- \"**.\" is a special prefix which matches all multilevel subdomains in the prefix.\n\nExamples:\n1. `*.cilium.io` matches subdomains of cilium at that level\n  www.cilium.io and blog.cilium.io match, cilium.io and google.com do not\n2. `*cilium.io` matches cilium.io and all subdomains ends with \"cilium.io\"\n  except those containing \".\" separator, subcilium.io and sub-cilium.io match,\n  www.cilium.io and blog.cilium.io does not\n3. `sub*.cilium.io` matches subdomains of cilium where the subdomain component\n  begins with \"sub\". sub.cilium.io and subdomain.cilium.io match while www.cilium.io,\n  blog.cilium.io, cilium.io and google.com do not\n4. `**.cilium.io` matches all multilevel subdomains of cilium.io.\n  \"app.cilium.io\" and \"test.app.cilium.io\" match but not \"cilium.io\"",
+    "Port can be an L4 port number, or a name in the form of \"http\"\nor \"http-8080\".",
+    "Protocol is the L4 protocol. If omitted or empty, any protocol\nmatches. Accepted values: \"TCP\", \"UDP\", \"SCTP\", \"ANY\"\n\nMatching on ICMP is not supported.\n\nNamed port specified for a container may narrow this down, but may not\ncontradict this.",
+    "Kafka-specific rules.",
+    "ToRequires is a list of additional constraints which must be met\nin order for the selected endpoints to be able to connect to other\nendpoints. These additional constraints do no by itself grant access\nprivileges and must always be accompanied with at least one matching\nToEndpoints.\n\nExample:\nAny Endpoint with the label \"team=A\" requires any endpoint to which it\ncommunicates to also carry the label \"team=A\".",
+    "Deprecated.",
+    "FromEndpoints is a list of endpoints identified by an\nEndpointSelector which are allowed to communicate with the endpoint\nsubject to the rule.\n\nExample:\nAny endpoint with the label \"role=backend\" can be consumed by any\nendpoint carrying the label \"role=frontend\".",
+    "FromEndpoints is a list of endpoints identified by an\nEndpointSelector which are allowed to communicate with the endpoint\nsubject to the rule.\n\nExample:\nAny endpoint with the label \"role=backend\" can be consumed by any\nendpoint carrying the label \"role=frontend\".\n\nNote that while an empty non-nil FromEndpoints does not select anything,\nnil FromEndpoints is implicitly treated as a wildcard selector if ToPorts\nare also specified.\nTo select everything, use one EndpointSelector without any match requirements.",
+    "FromRequires is a list of additional constraints which must be met\nin order for the selected endpoints to be reachable. These\nadditional constraints do no by itself grant access privileges and\nmust always be accompanied with at least one matching FromEndpoints.\n\nExample:\nAny Endpoint with the label \"team=A\" requires consuming endpoint\nto also carry the label \"team=A\".",
+    "matchExpressions is a list of label selector requirements. The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "ToEntities is a list of special entities to which the endpoint subject\nto the rule is allowed to initiate connections. Supported entities are\n`world`, `cluster`,`host`,`remote-node`,`kube-apiserver`, `init`,\n`health`,`unmanaged` and `all`.",
+    "MatchPattern allows using wildcards to match DNS names. All wildcards are\ncase insensitive. The wildcards are:\n- \"*\" matches 0 or more DNS valid characters, and may occur anywhere in\nthe pattern. As a special case a \"*\" as the leftmost character, without a\nfollowing \".\" matches all subdomains as well as the name to the right.\nA trailing \".\" is automatically added when missing.\n\nExamples:\n`*.cilium.io` matches subomains of cilium at that level\n  www.cilium.io and blog.cilium.io match, cilium.io and google.com do not\n`*cilium.io` matches cilium.io and all subdomains ends with \"cilium.io\"\n  except those containing \".\" separator, subcilium.io and sub-cilium.io match,\n  www.cilium.io and blog.cilium.io does not\nsub*.cilium.io matches subdomains of cilium where the subdomain component\nbegins with \"sub\"\n  sub.cilium.io and subdomain.cilium.io match, www.cilium.io,\n  blog.cilium.io, cilium.io and google.com do not",
+    "FromEntities is a list of special entities which the endpoint subject\nto the rule is allowed to receive connections from. Supported entities are\n`world`, `cluster` and `host`",
+    "Log specifies custom policy-specific Hubble logging configuration.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Description is a free form string, it can be used by the creator of the rule to store human readable explanation of the purpose of this rule. Rules cannot be identified by comment.",
+    "Description is a free form string, it can be used by the creator of\nthe rule to store human readable explanation of the purpose of this\nrule. Rules cannot be identified by comment.",
+    "Egress is a list of EgressRule which are enforced at egress. If omitted or empty, this rule does not apply at egress.",
+    "Egress is a list of EgressRule which are enforced at egress.\nIf omitted or empty, this rule does not apply at egress.",
+    "ICMPs is a list of ICMP rule identified by type number which the endpoint subject to the rule is allowed to connect to. \n Example: Any endpoint with the label \"app=httpd\" is allowed to initiate type 8 ICMP connections.",
+    "ICMPs is a list of ICMP rule identified by type number\nwhich the endpoint subject to the rule is allowed to connect to.\n\nExample:\nAny endpoint with the label \"app=httpd\" is allowed to initiate\ntype 8 ICMP connections.",
+    "Family is a IP address version. Currently, we support `IPv4` and `IPv6`. `IPv4` is set as default.",
+    "Family is a IP address version.\nCurrently, we support `IPv4` and `IPv6`.\n`IPv4` is set as default.",
+    "Type is a ICMP-type. It should be an 8bit code (0-255), or it's CamelCase name (for example, \"EchoReply\"). Allowed ICMP types are: Ipv4: EchoReply | DestinationUnreachable | Redirect | Echo | EchoRequest | RouterAdvertisement | RouterSelection | TimeExceeded | ParameterProblem | Timestamp | TimestampReply | Photuris | ExtendedEcho Request | ExtendedEcho Reply Ipv6: DestinationUnreachable | PacketTooBig | TimeExceeded | ParameterProblem | EchoRequest | EchoReply | MulticastListenerQuery| MulticastListenerReport | MulticastListenerDone | RouterSolicitation | RouterAdvertisement | NeighborSolicitation | NeighborAdvertisement | RedirectMessage | RouterRenumbering | ICMPNodeInformationQuery | ICMPNodeInformationResponse | InverseNeighborDiscoverySolicitation | InverseNeighborDiscoveryAdvertisement | HomeAgentAddressDiscoveryRequest | HomeAgentAddressDiscoveryReply | MobilePrefixSolicitation | MobilePrefixAdvertisement | DuplicateAddressRequestCodeSuffix | DuplicateAddressConfirmationCodeSuffix | ExtendedEchoRequest | ExtendedEchoReply",
+    "Type is a ICMP-type.\nIt should be an 8bit code (0-255), or it's CamelCase name (for example, \"EchoReply\").\nAllowed ICMP types are:\n    Ipv4: EchoReply | DestinationUnreachable | Redirect | Echo | EchoRequest |\n\t\t     RouterAdvertisement | RouterSelection | TimeExceeded | ParameterProblem |\n\t\t\t Timestamp | TimestampReply | Photuris | ExtendedEcho Request | ExtendedEcho Reply\n    Ipv6: DestinationUnreachable | PacketTooBig | TimeExceeded | ParameterProblem |\n\t\t\t EchoRequest | EchoReply | MulticastListenerQuery| MulticastListenerReport |\n\t\t\t MulticastListenerDone | RouterSolicitation | RouterAdvertisement | NeighborSolicitation |\n\t\t\t NeighborAdvertisement | RedirectMessage | RouterRenumbering | ICMPNodeInformationQuery |\n\t\t\t ICMPNodeInformationResponse | InverseNeighborDiscoverySolicitation | InverseNeighborDiscoveryAdvertisement |\n\t\t\t HomeAgentAddressDiscoveryRequest | HomeAgentAddressDiscoveryReply | MobilePrefixSolicitation |\n\t\t\t MobilePrefixAdvertisement | DuplicateAddressRequestCodeSuffix | DuplicateAddressConfirmationCodeSuffix |\n\t\t\t ExtendedEchoRequest | ExtendedEchoReply",
+    "ToCIDR is a list of IP blocks which the endpoint subject to the rule is allowed to initiate connections. Only connections destined for outside of the cluster and not targeting the host will be subject to CIDR rules.  This will match on the destination IP address of outgoing connections. Adding a prefix into ToCIDR or into ToCIDRSet with no ExcludeCIDRs is equivalent. Overlaps are allowed between ToCIDR and ToCIDRSet. \n Example: Any endpoint with the label \"app=database-proxy\" is allowed to initiate connections to 10.2.3.0/24",
+    "ToCIDR is a list of IP blocks which the endpoint subject to the rule\nis allowed to initiate connections. Only connections destined for\noutside of the cluster and not targeting the host will be subject\nto CIDR rules.  This will match on the destination IP address of\noutgoing connections. Adding a prefix into ToCIDR or into ToCIDRSet\nwith no ExcludeCIDRs is equivalent. Overlaps are allowed between\nToCIDR and ToCIDRSet.\n\nExample:\nAny endpoint with the label \"app=database-proxy\" is allowed to\ninitiate connections to 10.2.3.0/24",
+    "ToCIDRSet is a list of IP blocks which the endpoint subject to the rule is allowed to initiate connections to in addition to connections which are allowed via ToEndpoints, along with a list of subnets contained within their corresponding IP block to which traffic should not be allowed. This will match on the destination IP address of outgoing connections. Adding a prefix into ToCIDR or into ToCIDRSet with no ExcludeCIDRs is equivalent. Overlaps are allowed between ToCIDR and ToCIDRSet. \n Example: Any endpoint with the label \"app=database-proxy\" is allowed to initiate connections to 10.2.3.0/24 except from IPs in subnet 10.2.3.0/28.",
+    "ToCIDRSet is a list of IP blocks which the endpoint subject to the rule\nis allowed to initiate connections to in addition to connections\nwhich are allowed via ToEndpoints, along with a list of subnets contained\nwithin their corresponding IP block to which traffic should not be\nallowed. This will match on the destination IP address of outgoing\nconnections. Adding a prefix into ToCIDR or into ToCIDRSet with no\nExcludeCIDRs is equivalent. Overlaps are allowed between ToCIDR and\nToCIDRSet.\n\nExample:\nAny endpoint with the label \"app=database-proxy\" is allowed to\ninitiate connections to 10.2.3.0/24 except from IPs in subnet 10.2.3.0/28.",
+    "CIDRGroupRef is a reference to a CiliumCIDRGroup object. A CiliumCIDRGroup contains a list of CIDRs that the endpoint, subject to the rule, can (Ingress/Egress) or cannot (IngressDeny/EgressDeny) receive connections from.",
+    "CIDRGroupRef is a reference to a CiliumCIDRGroup object.\nA CiliumCIDRGroup contains a list of CIDRs that the endpoint, subject to\nthe rule, can (Ingress/Egress) or cannot (IngressDeny/EgressDeny) receive\nconnections from.",
+    "CIDRGroupSelector selects CiliumCIDRGroups by their labels,\nrather than by name.",
+    "ExceptCIDRs is a list of IP blocks which the endpoint subject to the rule is not allowed to initiate connections to. These CIDR prefixes should be contained within Cidr, using ExceptCIDRs together with CIDRGroupRef is not supported yet. These exceptions are only applied to the Cidr in this CIDRRule, and do not apply to any other CIDR prefixes in any other CIDRRules.",
+    "ExceptCIDRs is a list of IP blocks which the endpoint subject to the rule\nis not allowed to initiate connections to. These CIDR prefixes should be\ncontained within Cidr, using ExceptCIDRs together with CIDRGroupRef is not\nsupported yet.\nThese exceptions are only applied to the Cidr in this CIDRRule, and do not\napply to any other CIDR prefixes in any other CIDRRules.",
+    "ToEndpoints is a list of endpoints identified by an EndpointSelector to which the endpoints subject to the rule are allowed to communicate. \n Example: Any endpoint with the label \"role=frontend\" can communicate with any endpoint carrying the label \"role=backend\".",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "ToEntities is a list of special entities to which the endpoint subject to the rule is allowed to initiate connections. Supported entities are `world`, `cluster`,`host`,`remote-node`,`kube-apiserver`, `init`, `health`,`unmanaged` and `all`.",
+    "ToFQDN allows whitelisting DNS names in place of IPs. The IPs that result from DNS resolution of `ToFQDN.MatchName`s are added to the same EgressRule object as ToCIDRSet entries, and behave accordingly. Any L4 and L7 rules within this EgressRule will also apply to these IPs. The DNS -> IP mapping is re-resolved periodically from within the cilium-agent, and the IPs in the DNS response are effected in the policy for selected pods as-is (i.e. the list of IPs is not modified in any way). Note: An explicit rule to allow for DNS traffic is needed for the pods, as ToFQDN counts as an egress rule and will enforce egress policy when PolicyEnforcment=default. Note: If the resolved IPs are IPs within the kubernetes cluster, the ToFQDN rule will not apply to that IP. Note: ToFQDN cannot occur in the same policy as other To* rules.",
+    "ToFQDN allows whitelisting DNS names in place of IPs. The IPs that result\nfrom DNS resolution of `ToFQDN.MatchName`s are added to the same\nEgressRule object as ToCIDRSet entries, and behave accordingly. Any L4 and\nL7 rules within this EgressRule will also apply to these IPs.\nThe DNS -> IP mapping is re-resolved periodically from within the\ncilium-agent, and the IPs in the DNS response are effected in the policy\nfor selected pods as-is (i.e. the list of IPs is not modified in any way).\nNote: An explicit rule to allow for DNS traffic is needed for the pods, as\nToFQDN counts as an egress rule and will enforce egress policy when\nPolicyEnforcment=default.\nNote: If the resolved IPs are IPs within the kubernetes cluster, the\nToFQDN rule will not apply to that IP.\nNote: ToFQDN cannot occur in the same policy as other To* rules.",
+    "MatchName matches literal DNS names. A trailing \".\" is automatically added when missing.",
+    "MatchName matches literal DNS names. A trailing \".\" is automatically added\nwhen missing.",
+    "MatchPattern allows using wildcards to match DNS names. All wildcards are case insensitive. The wildcards are: - \"*\" matches 0 or more DNS valid characters, and may occur anywhere in the pattern. As a special case a \"*\" as the leftmost character, without a following \".\" matches all subdomains as well as the name to the right. A trailing \".\" is automatically added when missing. \n Examples: `*.cilium.io` matches subomains of cilium at that level www.cilium.io and blog.cilium.io match, cilium.io and google.com do not `*cilium.io` matches cilium.io and all subdomains ends with \"cilium.io\" except those containing \".\" separator, subcilium.io and sub-cilium.io match, www.cilium.io and blog.cilium.io does not sub*.cilium.io matches subdomains of cilium where the subdomain component begins with \"sub\" sub.cilium.io and subdomain.cilium.io match, www.cilium.io, blog.cilium.io, cilium.io and google.com do not",
+    "ToGroups is a directive that allows the integration with multiple outside providers. Currently, only AWS is supported, and the rule can select by multiple sub directives: \n Example: toGroups: - aws: securityGroupsIds: - 'sg-XXXXXXXXXXXXX'",
+    "ToNodes is a list of nodes identified by an EndpointSelector to which endpoints subject to the rule is allowed to communicate.",
+    "ToNodes is a list of nodes identified by an\nEndpointSelector to which endpoints subject to the rule is allowed to communicate.",
+    "ToPorts is a list of destination ports identified by port number and protocol which the endpoint subject to the rule is allowed to connect to. \n Example: Any endpoint with the label \"role=frontend\" is allowed to initiate connections to destination port 8080/tcp",
+    "ToPorts is a list of destination ports identified by port number and\nprotocol which the endpoint subject to the rule is allowed to\nconnect to.\n\nExample:\nAny endpoint with the label \"role=frontend\" is allowed to initiate\nconnections to destination port 8080/tcp",
+    "listener specifies the name of a custom Envoy listener to which this traffic should be redirected to.",
+    "listener specifies the name of a custom Envoy listener to which this traffic should be\nredirected to.",
+    "EnvoyConfig is a reference to the CEC or CCEC resource in which the listener is defined.",
+    "EnvoyConfig is a reference to the CEC or CCEC resource in which\nthe listener is defined.",
+    "Kind is the resource type being referred to. Defaults to CiliumEnvoyConfig or CiliumClusterwideEnvoyConfig for CiliumNetworkPolicy and CiliumClusterwideNetworkPolicy, respectively. The only case this is currently explicitly needed is when referring to a CiliumClusterwideEnvoyConfig from CiliumNetworkPolicy, as using a namespaced listener from a cluster scoped policy is not allowed.",
+    "Kind is the resource type being referred to. Defaults to CiliumEnvoyConfig or\nCiliumClusterwideEnvoyConfig for CiliumNetworkPolicy and CiliumClusterwideNetworkPolicy,\nrespectively. The only case this is currently explicitly needed is when referring to a\nCiliumClusterwideEnvoyConfig from CiliumNetworkPolicy, as using a namespaced listener\nfrom a cluster scoped policy is not allowed.",
+    "Name is the resource name of the CiliumEnvoyConfig or CiliumClusterwideEnvoyConfig where the listener is defined in.",
+    "Name is the resource name of the CiliumEnvoyConfig or CiliumClusterwideEnvoyConfig where\nthe listener is defined in.",
+    "Priority for this Listener that is used when multiple rules would apply different listeners to a policy map entry. Behavior of this is implementation dependent.",
+    "Priority for this Listener that is used when multiple rules would apply different\nlisteners to a policy map entry. Behavior of this is implementation dependent.",
+    "OriginatingTLS is the TLS context for the connections originated by the L7 proxy.  For egress policy this specifies the client-side TLS parameters for the upstream connection originating from the L7 proxy to the remote destination. For ingress policy this specifies the client-side TLS parameters for the connection from the L7 proxy to the local endpoint.",
+    "OriginatingTLS is the TLS context for the connections originated by\nthe L7 proxy.  For egress policy this specifies the client-side TLS\nparameters for the upstream connection originating from the L7 proxy\nto the remote destination. For ingress policy this specifies the\nclient-side TLS parameters for the connection from the L7 proxy to\nthe local endpoint.",
+    "Certificate is the file name or k8s secret item name for the certificate chain. If omitted, 'tls.crt' is assumed, if it exists. If given, the item must exist.",
+    "Certificate is the file name or k8s secret item name for the certificate\nchain. If omitted, 'tls.crt' is assumed, if it exists. If given, the\nitem must exist.",
+    "PrivateKey is the file name or k8s secret item name for the private key matching the certificate chain. If omitted, 'tls.key' is assumed, if it exists. If given, the item must exist.",
+    "PrivateKey is the file name or k8s secret item name for the private key\nmatching the certificate chain. If omitted, 'tls.key' is assumed, if it\nexists. If given, the item must exist.",
+    "Secret is the secret that contains the certificates and private key for the TLS context. By default, Cilium will search in this secret for the following items: - 'ca.crt'  - Which represents the trusted CA to verify remote source. - 'tls.crt' - Which represents the public key certificate. - 'tls.key' - Which represents the private key matching the public key certificate.",
+    "Secret is the secret that contains the certificates and private key for\nthe TLS context.\nBy default, Cilium will search in this secret for the following items:\n - 'ca.crt'  - Which represents the trusted CA to verify remote source.\n - 'tls.crt' - Which represents the public key certificate.\n - 'tls.key' - Which represents the private key matching the public key\n               certificate.",
+    "Namespace is the namespace in which the secret exists. Context of use determines the default value if left out (e.g., \"default\").",
+    "Namespace is the namespace in which the secret exists. Context of use\ndetermines the default value if left out (e.g., \"default\").",
+    "TrustedCA is the file name or k8s secret item name for the trusted CA. If omitted, 'ca.crt' is assumed, if it exists. If given, the item must exist.",
+    "TrustedCA is the file name or k8s secret item name for the trusted CA.\nIf omitted, 'ca.crt' is assumed, if it exists. If given, the item must\nexist.",
+    "Port can be an L4 port number, or a name in the form of \"http\" or \"http-8080\".",
+    "Protocol is the L4 protocol. If omitted or empty, any protocol matches. Accepted values: \"TCP\", \"UDP\", \"SCTP\", \"ANY\" \n Matching on ICMP is not supported. \n Named port specified for a container may narrow this down, but may not contradict this.",
+    "Rules is a list of additional port level rules which must be met in order for the PortRule to allow the traffic. If omitted or empty, no layer 7 rules are enforced.",
+    "Rules is a list of additional port level rules which must be met in\norder for the PortRule to allow the traffic. If omitted or empty,\nno layer 7 rules are enforced.",
+    "HeaderMatches is a list of HTTP headers which must be present and match against the given values. Mismatch field can be used to specify what to do when there is no match.",
+    "HeaderMatches is a list of HTTP headers which must be\npresent and match against the given values. Mismatch field can be used\nto specify what to do when there is no match.",
+    "Mismatch identifies what to do in case there is no match. The default is to drop the request. Otherwise the overall rule is still considered as matching, but the mismatches are logged in the access log.",
+    "Mismatch identifies what to do in case there is no match. The default is\nto drop the request. Otherwise the overall rule is still considered as\nmatching, but the mismatches are logged in the access log.",
+    "Secret refers to a secret that contains the value to be matched against. The secret must only contain one entry. If the referred secret does not exist, and there is no \"Value\" specified, the match will fail.",
+    "Secret refers to a secret that contains the value to be matched against.\nThe secret must only contain one entry. If the referred secret does not\nexist, and there is no \"Value\" specified, the match will fail.",
+    "Value matches the exact value of the header. Can be specified either alone or together with \"Secret\"; will be used as the header value if the secret can not be found in the latter case.",
+    "Value matches the exact value of the header. Can be specified either\nalone or together with \"Secret\"; will be used as the header value if the\nsecret can not be found in the latter case.",
+    "Headers is a list of HTTP headers which must be present in the request. If omitted or empty, requests are allowed regardless of headers present.",
+    "Headers is a list of HTTP headers which must be present in the\nrequest. If omitted or empty, requests are allowed regardless of\nheaders present.",
+    "Host is an extended POSIX regex matched against the host header of a request. Examples: \n - foo.bar.com will match the host fooXbar.com or foo-bar.com - foo\\.bar\\.com will only match the host foo.bar.com \n If omitted or empty, the value of the host header is ignored.",
+    "Host is an extended POSIX regex matched against the host header of a\nrequest. Examples:\n\n- foo.bar.com will match the host fooXbar.com or foo-bar.com\n- foo\\.bar\\.com will only match the host foo.bar.com\n\nIf omitted or empty, the value of the host header is ignored.",
+    "Method is an extended POSIX regex matched against the method of a request, e.g. \"GET\", \"POST\", \"PUT\", \"PATCH\", \"DELETE\", ... \n If omitted or empty, all methods are allowed.",
+    "Method is an extended POSIX regex matched against the method of a\nrequest, e.g. \"GET\", \"POST\", \"PUT\", \"PATCH\", \"DELETE\", ...\n\nIf omitted or empty, all methods are allowed.",
+    "Path is an extended POSIX regex matched against the path of a request. Currently it can contain characters disallowed from the conventional \"path\" part of a URL as defined by RFC 3986. \n If omitted or empty, all paths are all allowed.",
+    "Path is an extended POSIX regex matched against the path of a\nrequest. Currently it can contain characters disallowed from the\nconventional \"path\" part of a URL as defined by RFC 3986.\n\nIf omitted or empty, all paths are all allowed.",
+    "APIKey is a case-insensitive string matched against the key of a request, e.g. \"produce\", \"fetch\", \"createtopic\", \"deletetopic\", et al Reference: https://kafka.apache.org/protocol#protocol_api_keys \n If omitted or empty, and if Role is not specified, then all keys are allowed.",
+    "APIKey is a case-insensitive string matched against the key of a\nrequest, e.g. \"produce\", \"fetch\", \"createtopic\", \"deletetopic\", et al\nReference: https://kafka.apache.org/protocol#protocol_api_keys\n\nIf omitted or empty, and if Role is not specified, then all keys are allowed.",
+    "APIVersion is the version matched against the api version of the Kafka message. If set, it has to be a string representing a positive integer. \n If omitted or empty, all versions are allowed.",
+    "APIVersion is the version matched against the api version of the\nKafka message. If set, it has to be a string representing a positive\ninteger.\n\nIf omitted or empty, all versions are allowed.",
+    "ClientID is the client identifier as provided in the request. \n From Kafka protocol documentation: This is a user supplied identifier for the client application. The user can use any identifier they like and it will be used when logging errors, monitoring aggregates, etc. For example, one might want to monitor not just the requests per second overall, but the number coming from each client application (each of which could reside on multiple servers). This id acts as a logical grouping across all requests from a particular client. \n If omitted or empty, all client identifiers are allowed.",
+    "ClientID is the client identifier as provided in the request.\n\nFrom Kafka protocol documentation:\nThis is a user supplied identifier for the client application. The\nuser can use any identifier they like and it will be used when\nlogging errors, monitoring aggregates, etc. For example, one might\nwant to monitor not just the requests per second overall, but the\nnumber coming from each client application (each of which could\nreside on multiple servers). This id acts as a logical grouping\nacross all requests from a particular client.\n\nIf omitted or empty, all client identifiers are allowed.",
+    "Role is a case-insensitive string and describes a group of API keys necessary to perform certain higher-level Kafka operations such as \"produce\" or \"consume\". A Role automatically expands into all APIKeys required to perform the specified higher-level operation. \n The following values are supported: - \"produce\": Allow producing to the topics specified in the rule - \"consume\": Allow consuming from the topics specified in the rule \n This field is incompatible with the APIKey field, i.e APIKey and Role cannot both be specified in the same rule. \n If omitted or empty, and if APIKey is not specified, then all keys are allowed.",
+    "Role is a case-insensitive string and describes a group of API keys\nnecessary to perform certain higher-level Kafka operations such as \"produce\"\nor \"consume\". A Role automatically expands into all APIKeys required\nto perform the specified higher-level operation.\n\nThe following values are supported:\n - \"produce\": Allow producing to the topics specified in the rule\n - \"consume\": Allow consuming from the topics specified in the rule\n\nThis field is incompatible with the APIKey field, i.e APIKey and Role\ncannot both be specified in the same rule.\n\nIf omitted or empty, and if APIKey is not specified, then all keys are\nallowed.",
+    "Topic is the topic name contained in the message. If a Kafka request contains multiple topics, then all topics must be allowed or the message will be rejected. \n This constraint is ignored if the matched request message type doesn't contain any topic. Maximum size of Topic can be 249 characters as per recent Kafka spec and allowed characters are a-z, A-Z, 0-9, -, . and _. \n Older Kafka versions had longer topic lengths of 255, but in Kafka 0.10 version the length was changed from 255 to 249. For compatibility reasons we are using 255. \n If omitted or empty, all topics are allowed.",
+    "Topic is the topic name contained in the message. If a Kafka request\ncontains multiple topics, then all topics must be allowed or the\nmessage will be rejected.\n\nThis constraint is ignored if the matched request message type\ndoesn't contain any topic. Maximum size of Topic can be 249\ncharacters as per recent Kafka spec and allowed characters are\na-z, A-Z, 0-9, -, . and _.\n\nOlder Kafka versions had longer topic lengths of 255, but in Kafka 0.10\nversion the length was changed from 255 to 249. For compatibility\nreasons we are using 255.\n\nIf omitted or empty, all topics are allowed.",
+    "ServerNames is a list of allowed TLS SNI values. If not empty, then TLS must be present and one of the provided SNIs must be indicated in the TLS handshake.",
+    "ServerNames is a list of allowed TLS SNI values. If not empty, then\nTLS must be present and one of the provided SNIs must be indicated in the\nTLS handshake.",
+    "TerminatingTLS is the TLS context for the connection terminated by the L7 proxy.  For egress policy this specifies the server-side TLS parameters to be applied on the connections originated from the local endpoint and terminated by the L7 proxy. For ingress policy this specifies the server-side TLS parameters to be applied on the connections originated from a remote source and terminated by the L7 proxy.",
+    "TerminatingTLS is the TLS context for the connection terminated by\nthe L7 proxy.  For egress policy this specifies the server-side TLS\nparameters to be applied on the connections originated from the local\nendpoint and terminated by the L7 proxy. For ingress policy this specifies\nthe server-side TLS parameters to be applied on the connections\noriginated from a remote source and terminated by the L7 proxy.",
+    "ToRequires is a list of additional constraints which must be met in order for the selected endpoints to be able to connect to other endpoints. These additional constraints do no by itself grant access privileges and must always be accompanied with at least one matching ToEndpoints. \n Example: Any Endpoint with the label \"team=A\" requires any endpoint to which it communicates to also carry the label \"team=A\".",
+    "ToServices is a list of services to which the endpoint subject to the rule is allowed to initiate connections. Currently Cilium only supports toServices for K8s services without selectors. \n Example: Any endpoint with the label \"app=backend-app\" is allowed to initiate connections to all cidrs backing the \"external-service\" service",
+    "ToServices is a list of services to which the endpoint subject\nto the rule is allowed to initiate connections.\nCurrently Cilium only supports toServices for K8s services.",
+    "EgressDeny is a list of EgressDenyRule which are enforced at egress. Any rule inserted here will be denied regardless of the allowed egress rules in the 'egress' field. If omitted or empty, this rule does not apply at egress.",
+    "EgressDeny is a list of EgressDenyRule which are enforced at egress.\nAny rule inserted here will be denied regardless of the allowed egress\nrules in the 'egress' field.\nIf omitted or empty, this rule does not apply at egress.",
+    "ICMPs is a list of ICMP rule identified by type number which the endpoint subject to the rule is not allowed to connect to. \n Example: Any endpoint with the label \"app=httpd\" is not allowed to initiate type 8 ICMP connections.",
+    "ICMPs is a list of ICMP rule identified by type number\nwhich the endpoint subject to the rule is not allowed to connect to.\n\nExample:\nAny endpoint with the label \"app=httpd\" is not allowed to initiate\ntype 8 ICMP connections.",
+    "ToPorts is a list of destination ports identified by port number and protocol which the endpoint subject to the rule is not allowed to connect to. \n Example: Any endpoint with the label \"role=frontend\" is not allowed to initiate connections to destination port 8080/tcp",
+    "ToPorts is a list of destination ports identified by port number and\nprotocol which the endpoint subject to the rule is not allowed to connect\nto.\n\nExample:\nAny endpoint with the label \"role=frontend\" is not allowed to initiate\nconnections to destination port 8080/tcp",
+    "EnableDefaultDeny determines whether this policy configures the subject endpoint(s) to have a default deny mode. If enabled, this causes all traffic not explicitly allowed by a network policy to be dropped. \n If not specified, the default is true for each traffic direction that has rules, and false otherwise. For example, if a policy only has Ingress or IngressDeny rules, then the default for ingress is true and egress is false. \n If multiple policies apply to an endpoint, that endpoint's default deny will be enabled if any policy requests it. \n This is useful for creating broad-based network policies that will not cause endpoints to enter default-deny mode.",
+    "EnableDefaultDeny determines whether this policy configures the\nsubject endpoint(s) to have a default deny mode. If enabled,\nthis causes all traffic not explicitly allowed by a network policy\nto be dropped.\n\nIf not specified, the default is true for each traffic direction\nthat has rules, and false otherwise. For example, if a policy\nonly has Ingress or IngressDeny rules, then the default for\ningress is true and egress is false.\n\nIf multiple policies apply to an endpoint, that endpoint's default deny\nwill be enabled if any policy requests it.\n\nThis is useful for creating broad-based network policies that will not\ncause endpoints to enter default-deny mode.",
+    "Whether or not the endpoint should have a default-deny rule applied to egress traffic.",
+    "Whether or not the endpoint should have a default-deny rule applied\nto egress traffic.",
+    "Whether or not the endpoint should have a default-deny rule applied to ingress traffic.",
+    "Whether or not the endpoint should have a default-deny rule applied\nto ingress traffic.",
+    "EndpointSelector selects all endpoints which should be subject to this rule. EndpointSelector and NodeSelector cannot be both empty and are mutually exclusive.",
+    "EndpointSelector selects all endpoints which should be subject to\nthis rule. EndpointSelector and NodeSelector cannot be both empty and\nare mutually exclusive.",
+    "Ingress is a list of IngressRule which are enforced at ingress. If omitted or empty, this rule does not apply at ingress.",
+    "Ingress is a list of IngressRule which are enforced at ingress.\nIf omitted or empty, this rule does not apply at ingress.",
+    "FromCIDR is a list of IP blocks which the endpoint subject to the rule is allowed to receive connections from. Only connections which do *not* originate from the cluster or from the local host are subject to CIDR rules. In order to allow in-cluster connectivity, use the FromEndpoints field.  This will match on the source IP address of incoming connections. Adding  a prefix into FromCIDR or into FromCIDRSet with no ExcludeCIDRs is  equivalent.  Overlaps are allowed between FromCIDR and FromCIDRSet. \n Example: Any endpoint with the label \"app=my-legacy-pet\" is allowed to receive connections from 10.3.9.1",
+    "FromCIDR is a list of IP blocks which the endpoint subject to the\nrule is allowed to receive connections from. Only connections which\ndo *not* originate from the cluster or from the local host are subject\nto CIDR rules. In order to allow in-cluster connectivity, use the\nFromEndpoints field.  This will match on the source IP address of\nincoming connections. Adding  a prefix into FromCIDR or into\nFromCIDRSet with no ExcludeCIDRs is  equivalent.  Overlaps are\nallowed between FromCIDR and FromCIDRSet.\n\nExample:\nAny endpoint with the label \"app=my-legacy-pet\" is allowed to receive\nconnections from 10.3.9.1",
+    "FromCIDRSet is a list of IP blocks which the endpoint subject to the rule is allowed to receive connections from in addition to FromEndpoints, along with a list of subnets contained within their corresponding IP block from which traffic should not be allowed. This will match on the source IP address of incoming connections. Adding a prefix into FromCIDR or into FromCIDRSet with no ExcludeCIDRs is equivalent. Overlaps are allowed between FromCIDR and FromCIDRSet. \n Example: Any endpoint with the label \"app=my-legacy-pet\" is allowed to receive connections from 10.0.0.0/8 except from IPs in subnet 10.96.0.0/12.",
+    "FromCIDRSet is a list of IP blocks which the endpoint subject to the\nrule is allowed to receive connections from in addition to FromEndpoints,\nalong with a list of subnets contained within their corresponding IP block\nfrom which traffic should not be allowed.\nThis will match on the source IP address of incoming connections. Adding\na prefix into FromCIDR or into FromCIDRSet with no ExcludeCIDRs is\nequivalent. Overlaps are allowed between FromCIDR and FromCIDRSet.\n\nExample:\nAny endpoint with the label \"app=my-legacy-pet\" is allowed to receive\nconnections from 10.0.0.0/8 except from IPs in subnet 10.96.0.0/12.",
+    "FromEndpoints is a list of endpoints identified by an EndpointSelector which are allowed to communicate with the endpoint subject to the rule. \n Example: Any endpoint with the label \"role=backend\" can be consumed by any endpoint carrying the label \"role=frontend\".",
+    "FromEntities is a list of special entities which the endpoint subject to the rule is allowed to receive connections from. Supported entities are `world`, `cluster` and `host`",
+    "FromGroups is a directive that allows the integration with multiple outside providers. Currently, only AWS is supported, and the rule can select by multiple sub directives: \n Example: FromGroups: - aws: securityGroupsIds: - 'sg-XXXXXXXXXXXXX'",
+    "FromNodes is a list of nodes identified by an EndpointSelector which are allowed to communicate with the endpoint subject to the rule.",
+    "FromNodes is a list of nodes identified by an\nEndpointSelector which are allowed to communicate with the endpoint\nsubject to the rule.",
+    "FromRequires is a list of additional constraints which must be met in order for the selected endpoints to be reachable. These additional constraints do no by itself grant access privileges and must always be accompanied with at least one matching FromEndpoints. \n Example: Any Endpoint with the label \"team=A\" requires consuming endpoint to also carry the label \"team=A\".",
+    "ICMPs is a list of ICMP rule identified by type number which the endpoint subject to the rule is allowed to receive connections on. \n Example: Any endpoint with the label \"app=httpd\" can only accept incoming type 8 ICMP connections.",
+    "ICMPs is a list of ICMP rule identified by type number\nwhich the endpoint subject to the rule is allowed to\nreceive connections on.\n\nExample:\nAny endpoint with the label \"app=httpd\" can only accept incoming\ntype 8 ICMP connections.",
+    "ToPorts is a list of destination ports identified by port number and protocol which the endpoint subject to the rule is allowed to receive connections on. \n Example: Any endpoint with the label \"app=httpd\" can only accept incoming connections on port 80/tcp.",
+    "ToPorts is a list of destination ports identified by port number and\nprotocol which the endpoint subject to the rule is allowed to\nreceive connections on.\n\nExample:\nAny endpoint with the label \"app=httpd\" can only accept incoming\nconnections on port 80/tcp.",
+    "IngressDeny is a list of IngressDenyRule which are enforced at ingress. Any rule inserted here will be denied regardless of the allowed ingress rules in the 'ingress' field. If omitted or empty, this rule does not apply at ingress.",
+    "IngressDeny is a list of IngressDenyRule which are enforced at ingress.\nAny rule inserted here will be denied regardless of the allowed ingress\nrules in the 'ingress' field.\nIf omitted or empty, this rule does not apply at ingress.",
+    "ICMPs is a list of ICMP rule identified by type number which the endpoint subject to the rule is not allowed to receive connections on. \n Example: Any endpoint with the label \"app=httpd\" can not accept incoming type 8 ICMP connections.",
+    "ICMPs is a list of ICMP rule identified by type number\nwhich the endpoint subject to the rule is not allowed to\nreceive connections on.\n\nExample:\nAny endpoint with the label \"app=httpd\" can not accept incoming\ntype 8 ICMP connections.",
+    "ToPorts is a list of destination ports identified by port number and protocol which the endpoint subject to the rule is not allowed to receive connections on. \n Example: Any endpoint with the label \"app=httpd\" can not accept incoming connections on port 80/tcp.",
+    "ToPorts is a list of destination ports identified by port number and\nprotocol which the endpoint subject to the rule is not allowed to\nreceive connections on.\n\nExample:\nAny endpoint with the label \"app=httpd\" can not accept incoming\nconnections on port 80/tcp.",
+    "Labels is a list of optional strings which can be used to re-identify the rule or to store metadata. It is possible to lookup or delete strings based on labels. Labels are not required to be unique, multiple rules can have overlapping or identical labels.",
+    "Labels is a list of optional strings which can be used to\nre-identify the rule or to store metadata. It is possible to lookup\nor delete strings based on labels. Labels are not required to be\nunique, multiple rules can have overlapping or identical labels.",
+    "NodeSelector selects all nodes which should be subject to this rule. EndpointSelector and NodeSelector cannot be both empty and are mutually exclusive. Can only be used in CiliumClusterwideNetworkPolicies.",
+    "NodeSelector selects all nodes which should be subject to this rule.\nEndpointSelector and NodeSelector cannot be both empty and are mutually\nexclusive. Can only be used in CiliumClusterwideNetworkPolicies.",
+    "Status is the status of the Cilium policy rule. \n The reason this field exists in this structure is due a bug in the k8s code-generator that doesn't create a `UpdateStatus` method because the field does not exist in the structure.",
+    "Status is the status of the Cilium policy rule.\n\nThe reason this field exists in this structure is due a bug in the k8s\ncode-generator that doesn't create a `UpdateStatus` method because the\nfield does not exist in the structure.",
+    "DerivativePolicies is the status of all policies derived from the Cilium policy",
+    "DerivativePolicies is the status of all policies derived from the Cilium\npolicy",
+    "Annotations corresponds to the Annotations in the ObjectMeta of the CNP that have been realized on the node for CNP. That is, if a CNP has been imported and has been assigned annotation X=Y by the user, Annotations in CiliumNetworkPolicyNodeStatus will be X=Y once the CNP that was imported corresponding to Annotation X=Y has been realized on the node.",
+    "Annotations corresponds to the Annotations in the ObjectMeta of the CNP\nthat have been realized on the node for CNP. That is, if a CNP has been\nimported and has been assigned annotation X=Y by the user,\nAnnotations in CiliumNetworkPolicyNodeStatus will be X=Y once the\nCNP that was imported corresponding to Annotation X=Y has been realized on\nthe node.",
+    "Enforcing is set to true once all endpoints present at the time the policy has been imported are enforcing this policy.",
+    "Enforcing is set to true once all endpoints present at the time the\npolicy has been imported are enforcing this policy.",
+    "Error describes any error that occurred when parsing or importing the policy, or realizing the policy for the endpoints to which it applies on the node.",
+    "Error describes any error that occurred when parsing or importing the\npolicy, or realizing the policy for the endpoints to which it applies\non the node.",
+    "Revision is the policy revision of the repository which first implemented this policy.",
+    "Revision is the policy revision of the repository which first implemented\nthis policy.",
+    "OK is true when the policy has been parsed and imported successfully into the in-memory policy repository on the node.",
+    "OK is true when the policy has been parsed and imported successfully\ninto the in-memory policy repository on the node.",
+    "CiliumClusterwideNetworkPolicy is a Kubernetes third-party resource with an modified version of CiliumNetworkPolicy which is cluster scoped rather than namespace scoped.",
+    "CiliumClusterwideNetworkPolicy is a Kubernetes third-party resource with an\nmodified version of CiliumNetworkPolicy which is cluster scoped rather than\nnamespace scoped.",
+    "Host is an extended POSIX regex matched against the host header of a request, e.g. \"foo.com\" \n If omitted or empty, the value of the host header is ignored.",
+    "Type is a ICMP-type. It should be 0-255 (8bit).",
+    "CIDRGroupRef is a reference to a CiliumCIDRGroup object. A CiliumCIDRGroup contains a list of CIDRs that the endpoint, subject to the rule, can (Ingress) or cannot (IngressDeny) receive connections from.",
+    "EnvoyConfig is a reference to the CEC or CCNP resource in which the listener is defined.",
+    "EndPort can only be an L4 port number.",
+    "Port is an L4 port number. For now the string will be strictly parsed as a single uint16. In the future, this field may support ranges in the form \"1024-2048 Port can also be a port name, which must contain at least one [a-z], and may also contain [0-9] and '-' anywhere except adjacent to another '-' or in the beginning or the end.",
+    "Nodes is the Cilium policy status for each node",
+    "MatchPattern allows using wildcards to match DNS names. All wildcards are case insensitive. The wildcards are: - \"*\" matches 0 or more DNS valid characters, and may occur anywhere in the pattern. As a special case a \"*\" as the leftmost character, without a following \".\" matches all subdomains as well as the name to the right. A trailing \".\" is automatically added when missing. \n Examples: `*.cilium.io` matches subomains of cilium at that level   www.cilium.io and blog.cilium.io match, cilium.io and google.com do not `*cilium.io` matches cilium.io and all subdomains ends with \"cilium.io\"   except those containing \".\" separator, subcilium.io and sub-cilium.io match,   www.cilium.io and blog.cilium.io does not sub*.cilium.io matches subdomains of cilium where the subdomain component begins with \"sub\"   sub.cilium.io and subdomain.cilium.io match, www.cilium.io,   blog.cilium.io, cilium.io and google.com do not",
+    "ToGroups is a directive that allows the integration with multiple outside providers. Currently, only AWS is supported, and the rule can select by multiple sub directives: \n Example: toGroups: - aws:     securityGroupsIds:     - 'sg-XXXXXXXXXXXXX'",
+    "Secret is the secret that contains the certificates and private key for the TLS context. By default, Cilium will search in this secret for the following items:  - 'ca.crt'  - Which represents the trusted CA to verify remote source.  - 'tls.crt' - Which represents the public key certificate.  - 'tls.key' - Which represents the private key matching the public key                certificate.",
+    "Role is a case-insensitive string and describes a group of API keys necessary to perform certain higher-level Kafka operations such as \"produce\" or \"consume\". A Role automatically expands into all APIKeys required to perform the specified higher-level operation. \n The following values are supported:  - \"produce\": Allow producing to the topics specified in the rule  - \"consume\": Allow consuming from the topics specified in the rule \n This field is incompatible with the APIKey field, i.e APIKey and Role cannot both be specified in the same rule. \n If omitted or empty, and if APIKey is not specified, then all keys are allowed.",
+    "ToFQDN allows whitelisting DNS names in place of IPs. The IPs that result from DNS resolution of `ToFQDN.MatchName`s are added to the same EgressRule object as ToCIDRSet entries, and behave accordingly. Any L4 and L7 rules within this EgressRule will also apply to these IPs. The DNS -> IP mapping is re-resolved periodically from within the cilium-agent, and the IPs in the DNS response are effected in the policy for selected pods as-is (i.e. the list of IPs is not modified in any way). Note: An explicit rule to allow for DNS traffic is needed for the pods, as ToFQDN counts as an egress rule and will enforce egress policy when PolicyEnforcment=default. Note: If the resolved IPs are IPs within the kubernetes cluster, the ToFQDN rule will not apply to that IP. Note: ToFQDN cannot occur in the same policy as other To* rules. \n The current implementation has a number of limitations: - The DNS resolution originates from cilium-agent, and not from the pods. Differences between the responses seen by cilium agent and a particular pod will whitelist the incorrect IP. - DNS TTLs are ignored, and cilium-agent will repoll on a short interval (5 seconds). Each change to the DNS data will trigger a policy regeneration. This may result in delayed updates to the policy for an endpoint when the data changes often or the system is under load.",
+    "Authentication is the required authentication type for the allowed traffic, if any.",
+    "CIDR is a CIDR prefix / IP Block.",
+    "ExceptCIDRs is a list of IP blocks which the endpoint subject to the rule is not allowed to initiate connections to. These CIDR prefixes should be contained within Cidr. These exceptions are only applied to the Cidr in this CIDRRule, and do not apply to any other CIDR prefixes in any other CIDRRules.",
+    "ToEntities is a list of special entities to which the endpoint subject to the rule is allowed to initiate connections. Supported entities are `world`, `cluster` and `host`",
+    "EgressDeny is a list of EgressDenyRule which are enforced at egress. Any rule inserted here will by denied regardless of the allowed egress rules in the 'egress' field. If omitted or empty, this rule does not apply at egress.",
+    "IngressDeny is a list of IngressDenyRule which are enforced at ingress. Any rule inserted here will by denied regardless of the allowed ingress rules in the 'ingress' field. If omitted or empty, this rule does not apply at ingress.",
+    "Auth is the required authentication type for the allowed traffic, if any.",
+    "Protocol is the L4 protocol. If omitted or empty, any protocol matches. Accepted values: \"TCP\", \"UDP\", \"\"/\"ANY\" \n Matching on ICMP is not supported. \n Named port specified for a container may narrow this down, but may not contradict this.",
+    "MatchPattern allows using wildcards to match DNS names. All wildcards are case insensitive. The wildcards are: - \"*\" matches 0 or more DNS valid characters, and may occur anywhere in the pattern. As a special case a \"*\" as the leftmost character, without a following \".\" matches all subdomains as well as the name to the right. A trailing \".\" is automatically added when missing. \n Examples: `*.cilium.io` matches subomains of cilium at that level   www.cilium.io and blog.cilium.io match, cilium.io and google.com do not `*cilium.io` matches cilium.io and all subdomains 1 level below   www.cilium.io, blog.cilium.io and cilium.io match, google.com does not sub*.cilium.io matches subdomains of cilium where the subdomain component begins with \"sub\"   sub.cilium.io and subdomain.cilium.io match, www.cilium.io,   blog.cilium.io, cilium.io and google.com do not",
+    "MatchExpressions is a list of label selector requirements. The requirements are ANDed.",
+    "MatchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+  ]
+}

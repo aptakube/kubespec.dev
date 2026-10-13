@@ -1,0 +1,78 @@
+{
+  "versions": {
+    "v1.3.0": {
+      "added": {
+        "spec.extra": "map[string]string[]",
+        "spec.groups": "string[]",
+        "spec.uid": "string",
+        "spec.username": "string"
+      },
+      "descriptionChanged": [
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.extra": [
+          null,
+          0
+        ],
+        "spec.groups": [
+          null,
+          1
+        ],
+        "spec.uid": [
+          null,
+          2
+        ],
+        "spec.username": [
+          null,
+          3
+        ],
+        "status.conditions.type": [
+          4,
+          5
+        ]
+      }
+    },
+    "v1.2.0": {
+      "descriptionChanged": [
+        "spec.issuerRef",
+        "status.conditions.status",
+        "status.conditions.type"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec.issuerRef": [
+          6,
+          7
+        ],
+        "status.conditions.status": [
+          8,
+          9
+        ],
+        "status.conditions.type": [
+          10,
+          4
+        ],
+        "": [
+          11,
+          12
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Extra contains extra attributes of the user that created the CertificateRequest. Populated by the cert-manager webhook on creation and immutable.",
+    "Groups contains group membership of the user that created the CertificateRequest. Populated by the cert-manager webhook on creation and immutable.",
+    "UID contains the uid of the user that created the CertificateRequest. Populated by the cert-manager webhook on creation and immutable.",
+    "Username contains the name of the user that created the CertificateRequest. Populated by the cert-manager webhook on creation and immutable.",
+    "Type of the condition, known values are (`Ready`, `InvalidRequest`).",
+    "Type of the condition, known values are (`Ready`, `InvalidRequest`, `Approved`, `Denied`).",
+    "IssuerRef is a reference to the issuer for this CertificateRequest.  If the 'kind' field is not set, or set to 'Issuer', an Issuer resource with the given name in the same namespace as the CertificateRequest will be used.  If the 'kind' field is set to 'ClusterIssuer', a ClusterIssuer with the provided name will be used. The 'name' field in this stanza is required at all times. The group field refers to the API group of the issuer which defaults to 'cert-manager.io' if empty.",
+    "IssuerRef is a reference to the issuer for this CertificateRequest.  If the `kind` field is not set, or set to `Issuer`, an Issuer resource with the given name in the same namespace as the CertificateRequest will be used.  If the `kind` field is set to `ClusterIssuer`, a ClusterIssuer with the provided name will be used. The `name` field in this stanza is required at all times. The group field refers to the API group of the issuer which defaults to `cert-manager.io` if empty.",
+    "Status of the condition, one of ('True', 'False', 'Unknown').",
+    "Status of the condition, one of (`True`, `False`, `Unknown`).",
+    "Type of the condition, known values are ('Ready', 'InvalidRequest').",
+    "A CertificateRequest is used to request a signed certificate from one of the configured issuers. \n All fields within the CertificateRequest's `spec` are immutable after creation. A CertificateRequest will either succeed or fail, as denoted by its `status.state` field. \n A CertificateRequest is a 'one-shot' resource, meaning it represents a single point in time request for a certificate and cannot be re-used.",
+    "A CertificateRequest is used to request a signed certificate from one of the configured issuers. \n All fields within the CertificateRequest's `spec` are immutable after creation. A CertificateRequest will either succeed or fail, as denoted by its `status.state` field. \n A CertificateRequest is a one-shot resource, meaning it represents a single point in time request for a certificate and cannot be re-used."
+  ]
+}

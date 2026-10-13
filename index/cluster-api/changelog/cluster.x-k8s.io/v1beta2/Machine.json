@@ -1,0 +1,47 @@
+{
+  "versions": {
+    "v1.13.0": {
+      "descriptionChanged": [
+        "status.conditions"
+      ],
+      "added": {
+        "status.failureDomain": "string"
+      },
+      "descriptions": {
+        "status.conditions": [
+          0,
+          1
+        ],
+        "status.failureDomain": [
+          null,
+          2
+        ]
+      }
+    },
+    "v1.12.0": {
+      "added": {
+        "spec.taints": "object[]"
+      },
+      "descriptionChanged": [
+        "status.conditions"
+      ],
+      "descriptions": {
+        "spec.taints": [
+          null,
+          3
+        ],
+        "status.conditions": [
+          4,
+          0
+        ]
+      }
+    }
+  },
+  "texts": [
+    "conditions represents the observations of a Machine's current state.\nKnown condition types are Available, Ready, UpToDate, BootstrapConfigReady, InfrastructureReady, NodeReady,\nNodeHealthy, Updating, Deleting, Paused.\nIf a MachineHealthCheck is targeting this machine, also HealthCheckSucceeded, OwnerRemediated conditions are added.\nAdditionally control plane Machines controlled by KubeadmControlPlane will have following additional conditions:\nAPIServerPodHealthy, ControllerManagerPodHealthy, SchedulerPodHealthy, EtcdPodHealthy, EtcdMemberHealthy.",
+    "conditions represents the observations of a Machine's current state.\nKnown condition types are Available, Ready, UpToDate, BootstrapConfigReady, InfrastructureReady, NodeReady,\nNodeHealthy, Updating, Deleting, Paused.\nIf a MachineHealthCheck is targeting this machine, also HealthCheckSucceeded, OwnerRemediated conditions are added.\nAdditionally control plane Machines controlled by KubeadmControlPlane will have following additional conditions:\nAPIServerPodHealthy, ControllerManagerPodHealthy, SchedulerPodHealthy, EtcdPodHealthy, EtcdMemberHealthy, NodeKubeadmLabelsAndTaintsSet.",
+    "failureDomain is the failure domain where the Machine has been scheduled.",
+    "taints are the node taints that Cluster API will manage.\nThis list is not necessarily complete: other Kubernetes components may add or remove other taints from nodes,\ne.g. the node controller might add the node.kubernetes.io/not-ready taint.\nOnly those taints defined in this list will be added or removed by core Cluster API controllers.\n\nThere can be at most 64 taints.\nA pod would have to tolerate all existing taints to run on the corresponding node.\n\nNOTE: This list is implemented as a \"map\" type, meaning that individual elements can be managed by different owners.",
+    "conditions represents the observations of a Machine's current state.\nKnown condition types are Available, Ready, UpToDate, BootstrapConfigReady, InfrastructureReady, NodeReady,\nNodeHealthy, Deleting, Paused.\nIf a MachineHealthCheck is targeting this machine, also HealthCheckSucceeded, OwnerRemediated conditions are added.\nAdditionally control plane Machines controlled by KubeadmControlPlane will have following additional conditions:\nAPIServerPodHealthy, ControllerManagerPodHealthy, SchedulerPodHealthy, EtcdPodHealthy, EtcdMemberHealthy."
+  ]
+}

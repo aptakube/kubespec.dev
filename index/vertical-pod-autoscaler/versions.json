@@ -1,0 +1,117 @@
+{
+  "name": "Vertical Pod Autoscaler",
+  "slug": "vertical-pod-autoscaler",
+  "repo": "kubernetes/autoscaler",
+  "logo": "https://avatars.githubusercontent.com/u/13629408?s=48&v=4",
+  "versions": [
+    {
+      "version": "0.11.0",
+      "tag": "vertical-pod-autoscaler-chart-0.11.0",
+      "date": "2026-07-26",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/autoscaler/vertical-pod-autoscaler-chart-0.11.0/vertical-pod-autoscaler/charts/vertical-pod-autoscaler/crds/vpa-v1-crd-gen.yaml"
+      ],
+      "changelogBase": "vertical-pod-autoscaler-chart-0.10.0"
+    },
+    {
+      "version": "0.10.0",
+      "tag": "vertical-pod-autoscaler-chart-0.10.0",
+      "date": "2026-06-14",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/autoscaler/vertical-pod-autoscaler-chart-0.10.0/vertical-pod-autoscaler/charts/vertical-pod-autoscaler/crds/vpa-v1-crd-gen.yaml"
+      ],
+      "changelogBase": "vertical-pod-autoscaler-chart-0.9.0"
+    },
+    {
+      "version": "0.9.0",
+      "tag": "vertical-pod-autoscaler-chart-0.9.0",
+      "date": "2026-05-02",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/autoscaler/vertical-pod-autoscaler-chart-0.9.0/vertical-pod-autoscaler/charts/vertical-pod-autoscaler/crds/vpa-v1-crd-gen.yaml"
+      ],
+      "changelogBase": "vertical-pod-autoscaler-chart-0.8.1"
+    },
+    {
+      "version": "0.8.1",
+      "tag": "vertical-pod-autoscaler-chart-0.8.1",
+      "date": "2026-02-28",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/autoscaler/vertical-pod-autoscaler-chart-0.8.1/vertical-pod-autoscaler/charts/vertical-pod-autoscaler/crds/vpa-v1-crd-gen.yaml"
+      ],
+      "changelogBase": "vertical-pod-autoscaler-chart-0.8.0"
+    },
+    {
+      "version": "0.8.0",
+      "tag": "vertical-pod-autoscaler-chart-0.8.0",
+      "date": "2025-12-22",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/autoscaler/vertical-pod-autoscaler-chart-0.8.0/vertical-pod-autoscaler/charts/vertical-pod-autoscaler/crds/vpa-v1-crd-gen.yaml"
+      ],
+      "changelogBase": "vertical-pod-autoscaler-chart-0.7.0"
+    },
+    {
+      "version": "0.7.0",
+      "tag": "vertical-pod-autoscaler-chart-0.7.0",
+      "date": "2025-12-15",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/autoscaler/vertical-pod-autoscaler-chart-0.7.0/vertical-pod-autoscaler/charts/vertical-pod-autoscaler/crds/vpa-v1-crd-gen.yaml"
+      ],
+      "changelogBase": "vertical-pod-autoscaler-chart-0.6.0"
+    },
+    {
+      "version": "0.6.0",
+      "tag": "vertical-pod-autoscaler-chart-0.6.0",
+      "date": "2025-11-20",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/autoscaler/vertical-pod-autoscaler-chart-0.6.0/vertical-pod-autoscaler/charts/vertical-pod-autoscaler/crds/vpa-v1-crd-gen.yaml"
+      ],
+      "changelogBase": "vertical-pod-autoscaler-chart-0.5.0"
+    },
+    {
+      "version": "0.5.0",
+      "tag": "vertical-pod-autoscaler-chart-0.5.0",
+      "date": "2025-10-23",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/autoscaler/vertical-pod-autoscaler-chart-0.5.0/vertical-pod-autoscaler/charts/vertical-pod-autoscaler/crds/vpa-v1-crd-gen.yaml"
+      ],
+      "changelogBase": "vertical-pod-autoscaler-chart-0.4.0"
+    },
+    {
+      "version": "0.4.0",
+      "tag": "vertical-pod-autoscaler-chart-0.4.0",
+      "date": "2025-10-23",
+      "urls": [
+        "https://raw.githubusercontent.com/kubernetes/autoscaler/vertical-pod-autoscaler-chart-0.4.0/vertical-pod-autoscaler/charts/vertical-pod-autoscaler/crds/vpa-v1-crd-gen.yaml"
+      ],
+      "added": [
+        {
+          "apiVersion": "autoscaling.k8s.io/v1",
+          "kind": "VerticalPodAutoscaler",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "autoscaling.k8s.io/v1",
+          "kind": "VerticalPodAutoscalerCheckpoint",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "autoscaling.k8s.io/v1beta2",
+          "kind": "VerticalPodAutoscaler",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "autoscaling.k8s.io/v1beta2",
+          "kind": "VerticalPodAutoscalerCheckpoint",
+          "scope": "Namespaced"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    "vertical-pod-autoscaler-chart-0.13.0",
+    "vertical-pod-autoscaler-chart-0.12.0",
+    "vertical-pod-autoscaler-chart-0.3.0",
+    "vertical-pod-autoscaler-chart-0.2.0",
+    "vertical-pod-autoscaler-chart-0.1.1"
+  ]
+}

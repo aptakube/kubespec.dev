@@ -1,0 +1,221 @@
+{
+  "versions": {
+    "v1.10.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.clusterSelector",
+        "status",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec": [
+          0,
+          1
+        ],
+        "spec.clusterSelector": [
+          2,
+          3
+        ],
+        "status": [
+          4,
+          5
+        ],
+        "status.conditions.lastTransitionTime": [
+          6,
+          7
+        ],
+        "status.conditions.message": [
+          8,
+          9
+        ],
+        "status.conditions.reason": [
+          10,
+          11
+        ],
+        "": [
+          12,
+          13
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.resources",
+        "spec.resources.kind",
+        "spec.resources.name",
+        "spec.strategy",
+        "status.conditions",
+        "status.conditions.reason",
+        "status.conditions.severity",
+        "status.conditions.status",
+        "status.conditions.type",
+        "status.observedGeneration"
+      ],
+      "added": {
+        "status.v1beta2": "object"
+      },
+      "descriptions": {
+        "spec.resources": [
+          14,
+          15
+        ],
+        "spec.resources.kind": [
+          16,
+          17
+        ],
+        "spec.resources.name": [
+          18,
+          19
+        ],
+        "spec.strategy": [
+          20,
+          21
+        ],
+        "status.conditions": [
+          22,
+          23
+        ],
+        "status.conditions.reason": [
+          24,
+          10
+        ],
+        "status.conditions.severity": [
+          25,
+          26
+        ],
+        "status.conditions.status": [
+          27,
+          28
+        ],
+        "status.conditions.type": [
+          29,
+          30
+        ],
+        "status.observedGeneration": [
+          31,
+          32
+        ],
+        "status.v1beta2": [
+          null,
+          33
+        ]
+      }
+    },
+    "v1.7.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.clusterSelector",
+        "spec.clusterSelector.matchExpressions.operator",
+        "spec.clusterSelector.matchExpressions.values",
+        "spec.clusterSelector.matchLabels",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason",
+        "status.conditions.severity",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          34,
+          35
+        ],
+        "kind": [
+          36,
+          37
+        ],
+        "spec.clusterSelector": [
+          38,
+          2
+        ],
+        "spec.clusterSelector.matchExpressions.operator": [
+          39,
+          40
+        ],
+        "spec.clusterSelector.matchExpressions.values": [
+          41,
+          42
+        ],
+        "spec.clusterSelector.matchLabels": [
+          43,
+          44
+        ],
+        "status.conditions.lastTransitionTime": [
+          45,
+          6
+        ],
+        "status.conditions.message": [
+          46,
+          8
+        ],
+        "status.conditions.reason": [
+          47,
+          24
+        ],
+        "status.conditions.severity": [
+          48,
+          25
+        ],
+        "status.conditions.type": [
+          49,
+          29
+        ]
+      }
+    }
+  },
+  "texts": [
+    "ClusterResourceSetSpec defines the desired state of ClusterResourceSet.",
+    "spec is the desired state of ClusterResourceSet.",
+    "Label selector for Clusters. The Clusters that are\nselected by this will be the ones affected by this ClusterResourceSet.\nIt must match the Cluster labels. This field is immutable.\nLabel selector cannot be empty.",
+    "clusterSelector is the label selector for Clusters. The Clusters that are\nselected by this will be the ones affected by this ClusterResourceSet.\nIt must match the Cluster labels. This field is immutable.\nLabel selector cannot be empty.",
+    "ClusterResourceSetStatus defines the observed state of ClusterResourceSet.",
+    "status is the observed state of ClusterResourceSet.",
+    "Last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed. If that is not known, then using the time when\nthe API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed. If that is not known, then using the time when\nthe API field changed is acceptable.",
+    "A human readable message indicating details about the transition.\nThis field may be empty.",
+    "message is a human readable message indicating details about the transition.\nThis field may be empty.",
+    "The reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may be empty.",
+    "reason is the reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may be empty.",
+    "ClusterResourceSet is the Schema for the clusterresourcesets API.",
+    "ClusterResourceSet is the Schema for the clusterresourcesets API.\nFor advanced use cases an add-on provider should be used instead.",
+    "Resources is a list of Secrets/ConfigMaps where each contains 1 or more resources to be applied to remote clusters.",
+    "resources is a list of Secrets/ConfigMaps where each contains 1 or more resources to be applied to remote clusters.",
+    "Kind of the resource. Supported kinds are: Secrets and ConfigMaps.",
+    "kind of the resource. Supported kinds are: Secrets and ConfigMaps.",
+    "Name of the resource that is in the same namespace with ClusterResourceSet object.",
+    "name of the resource that is in the same namespace with ClusterResourceSet object.",
+    "Strategy is the strategy to be used during applying resources. Defaults to ApplyOnce. This field is immutable.",
+    "strategy is the strategy to be used during applying resources. Defaults to ApplyOnce. This field is immutable.",
+    "Conditions defines current state of the ClusterResourceSet.",
+    "conditions defines current state of the ClusterResourceSet.",
+    "The reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may not be empty.",
+    "Severity provides an explicit classification of Reason code, so the users or machines can immediately\nunderstand the current situation and act accordingly.\nThe Severity field MUST be set only when Status=False.",
+    "severity provides an explicit classification of Reason code, so the users or machines can immediately\nunderstand the current situation and act accordingly.\nThe Severity field MUST be set only when Status=False.",
+    "Status of the condition, one of True, False, Unknown.",
+    "status of the condition, one of True, False, Unknown.",
+    "Type of condition in CamelCase or in foo.example.com/CamelCase.\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions\ncan be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions\ncan be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "ObservedGeneration reflects the generation of the most recently observed ClusterResourceSet.",
+    "observedGeneration reflects the generation of the most recently observed ClusterResourceSet.",
+    "v1beta2 groups all the fields that will be added or modified in ClusterResourceSet's status with the V1Beta2 version.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Label selector for Clusters. The Clusters that are selected by this will be the ones affected by this ClusterResourceSet. It must match the Cluster labels. This field is immutable. Label selector cannot be empty.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "Last time the condition transitioned from one status to another. This should be when the underlying condition changed. If that is not known, then using the time when the API field changed is acceptable.",
+    "A human readable message indicating details about the transition. This field may be empty.",
+    "The reason for the condition's last transition in CamelCase. The specific API may choose whether or not this field is considered a guaranteed API. This field may not be empty.",
+    "Severity provides an explicit classification of Reason code, so the users or machines can immediately understand the current situation and act accordingly. The Severity field MUST be set only when Status=False.",
+    "Type of condition in CamelCase or in foo.example.com/CamelCase. Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important."
+  ]
+}

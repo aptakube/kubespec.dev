@@ -1,0 +1,85 @@
+{
+  "versions": {
+    "1.25.0": {
+      "added": {
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "status.conditions.observedGeneration": [
+          null,
+          0
+        ],
+        "status.observedGeneration": [
+          1,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "status.conditions": [
+          null,
+          2
+        ],
+        "status.observedGeneration": [
+          null,
+          1
+        ],
+        "status.validationMessages": [
+          null,
+          3
+        ]
+      }
+    },
+    "1.23.0": {
+      "required": [
+        "spec"
+      ],
+      "descriptions": {
+        "spec": [
+          null,
+          4
+        ]
+      }
+    },
+    "1.20.0": {
+      "descriptionChanged": [
+        "spec.address",
+        "spec.network",
+        "spec.serviceAccount"
+      ],
+      "descriptions": {
+        "spec.address": [
+          null,
+          5
+        ],
+        "spec.network": [
+          null,
+          6
+        ],
+        "spec.serviceAccount": [
+          null,
+          7
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers.",
+    "Configuration affecting VMs onboarded into the mesh. See more details at: https://istio.io/docs/reference/config/networking/workload-entry.html",
+    "Address associated with the network endpoint without the port.",
+    "Network enables Istio to group endpoints resident in the same L3 domain/network.",
+    "The service account associated with the workload if a sidecar is present in the workload."
+  ]
+}

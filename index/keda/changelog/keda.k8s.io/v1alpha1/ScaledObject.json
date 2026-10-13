@@ -1,0 +1,148 @@
+{
+  "versions": {
+    "v1.2.0": {
+      "typeChanged": {
+        "spec.jobTargetRef.template.spec.containers.lifecycle.postStart.httpGet.port": [
+          "object",
+          "int | string"
+        ],
+        "spec.jobTargetRef.template.spec.containers.lifecycle.postStart.tcpSocket.port": [
+          "object",
+          "int | string"
+        ],
+        "spec.jobTargetRef.template.spec.containers.lifecycle.preStop.httpGet.port": [
+          "object",
+          "int | string"
+        ],
+        "spec.jobTargetRef.template.spec.containers.lifecycle.preStop.tcpSocket.port": [
+          "object",
+          "int | string"
+        ],
+        "spec.jobTargetRef.template.spec.containers.livenessProbe.httpGet.port": [
+          "object",
+          "int | string"
+        ],
+        "spec.jobTargetRef.template.spec.containers.livenessProbe.tcpSocket.port": [
+          "object",
+          "int | string"
+        ],
+        "spec.jobTargetRef.template.spec.containers.readinessProbe.httpGet.port": [
+          "object",
+          "int | string"
+        ],
+        "spec.jobTargetRef.template.spec.containers.readinessProbe.tcpSocket.port": [
+          "object",
+          "int | string"
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.lifecycle.postStart.httpGet.port": [
+          "object",
+          "int | string"
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.lifecycle.postStart.tcpSocket.port": [
+          "object",
+          "int | string"
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.lifecycle.preStop.httpGet.port": [
+          "object",
+          "int | string"
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.lifecycle.preStop.tcpSocket.port": [
+          "object",
+          "int | string"
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.livenessProbe.httpGet.port": [
+          "object",
+          "int | string"
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.livenessProbe.tcpSocket.port": [
+          "object",
+          "int | string"
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.readinessProbe.httpGet.port": [
+          "object",
+          "int | string"
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.readinessProbe.tcpSocket.port": [
+          "object",
+          "int | string"
+        ]
+      },
+      "descriptions": {
+        "spec.jobTargetRef.template.spec.containers.lifecycle.postStart.httpGet.port": [
+          null,
+          0
+        ],
+        "spec.jobTargetRef.template.spec.containers.lifecycle.postStart.tcpSocket.port": [
+          null,
+          1
+        ],
+        "spec.jobTargetRef.template.spec.containers.lifecycle.preStop.httpGet.port": [
+          null,
+          0
+        ],
+        "spec.jobTargetRef.template.spec.containers.lifecycle.preStop.tcpSocket.port": [
+          null,
+          1
+        ],
+        "spec.jobTargetRef.template.spec.containers.livenessProbe.httpGet.port": [
+          null,
+          0
+        ],
+        "spec.jobTargetRef.template.spec.containers.livenessProbe.tcpSocket.port": [
+          null,
+          1
+        ],
+        "spec.jobTargetRef.template.spec.containers.readinessProbe.httpGet.port": [
+          null,
+          0
+        ],
+        "spec.jobTargetRef.template.spec.containers.readinessProbe.tcpSocket.port": [
+          null,
+          1
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.lifecycle.postStart.httpGet.port": [
+          null,
+          0
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.lifecycle.postStart.tcpSocket.port": [
+          null,
+          1
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.lifecycle.preStop.httpGet.port": [
+          null,
+          0
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.lifecycle.preStop.tcpSocket.port": [
+          null,
+          1
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.livenessProbe.httpGet.port": [
+          null,
+          0
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.livenessProbe.tcpSocket.port": [
+          null,
+          1
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.readinessProbe.httpGet.port": [
+          null,
+          0
+        ],
+        "spec.jobTargetRef.template.spec.initContainers.readinessProbe.tcpSocket.port": [
+          null,
+          1
+        ]
+      }
+    },
+    "v1.1.0": {
+      "removed": {
+        "status.currentReplicas": "integer",
+        "status.desiredReplicas": "integer"
+      }
+    }
+  },
+  "texts": [
+    "Name or number of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.",
+    "Number or name of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME."
+  ]
+}

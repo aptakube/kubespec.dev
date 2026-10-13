@@ -1,0 +1,969 @@
+{
+  "versions": {
+    "v2.7.0": {
+      "added": {
+        "spec.kubeConfig.configMapRef": "object"
+      },
+      "optional": [
+        "spec.kubeConfig.secretRef"
+      ],
+      "descriptionChanged": [
+        "spec.kubeConfig.secretRef",
+        "spec.postRenderers.kustomize.patchesJson6902",
+        "spec.postRenderers.kustomize.patchesStrategicMerge",
+        "status.lastAppliedRevision",
+        "status.lastAttemptedValuesChecksum",
+        "status.lastReleaseRevision"
+      ],
+      "descriptions": {
+        "spec.kubeConfig.configMapRef": [
+          null,
+          0
+        ],
+        "spec.kubeConfig.secretRef": [
+          1,
+          2
+        ],
+        "spec.postRenderers.kustomize.patchesJson6902": [
+          3,
+          4
+        ],
+        "spec.postRenderers.kustomize.patchesStrategicMerge": [
+          5,
+          6
+        ],
+        "status.lastAppliedRevision": [
+          7,
+          8
+        ],
+        "status.lastAttemptedValuesChecksum": [
+          9,
+          10
+        ],
+        "status.lastReleaseRevision": [
+          11,
+          12
+        ]
+      }
+    },
+    "v2.4.0": {
+      "required": [
+        "spec.chart.spec.sourceRef.kind"
+      ],
+      "descriptionChanged": [
+        "spec.chartRef",
+        "spec.install.crds",
+        "spec.install.skipCRDs",
+        "spec.persistentClient",
+        "spec.upgrade.crds",
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "spec.chart.spec.sourceRef.kind": [
+          null,
+          13
+        ],
+        "spec.chartRef": [
+          14,
+          15
+        ],
+        "spec.install.crds": [
+          16,
+          17
+        ],
+        "spec.install.skipCRDs": [
+          18,
+          19
+        ],
+        "spec.persistentClient": [
+          20,
+          21
+        ],
+        "spec.upgrade.crds": [
+          22,
+          23
+        ],
+        "status.conditions.type": [
+          24,
+          25
+        ]
+      }
+    },
+    "v2.3.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.chart",
+        "spec.chart.metadata.annotations",
+        "spec.chart.metadata.labels",
+        "spec.chart.spec.interval",
+        "spec.chart.spec.reconcileStrategy",
+        "spec.chart.spec.valuesFile",
+        "spec.chart.spec.valuesFiles",
+        "spec.chart.spec.verify",
+        "spec.chart.spec.verify.secretRef",
+        "spec.chart.spec.version",
+        "spec.dependsOn",
+        "spec.driftDetection",
+        "spec.driftDetection.ignore",
+        "spec.driftDetection.ignore.paths",
+        "spec.driftDetection.ignore.target",
+        "spec.driftDetection.ignore.target.annotationSelector",
+        "spec.driftDetection.ignore.target.group",
+        "spec.driftDetection.ignore.target.kind",
+        "spec.driftDetection.ignore.target.labelSelector",
+        "spec.driftDetection.ignore.target.version",
+        "spec.driftDetection.mode",
+        "spec.install.crds",
+        "spec.install.createNamespace",
+        "spec.install.disableOpenAPIValidation",
+        "spec.install.disableWait",
+        "spec.install.disableWaitForJobs",
+        "spec.install.remediation",
+        "spec.install.remediation.ignoreTestFailures",
+        "spec.install.remediation.remediateLastFailure",
+        "spec.install.remediation.retries",
+        "spec.install.replace",
+        "spec.install.skipCRDs",
+        "spec.install.timeout",
+        "spec.kubeConfig",
+        "spec.kubeConfig.secretRef",
+        "spec.maxHistory",
+        "spec.persistentClient",
+        "spec.postRenderers",
+        "spec.postRenderers.kustomize.images",
+        "spec.postRenderers.kustomize.images.digest",
+        "spec.postRenderers.kustomize.patches",
+        "spec.postRenderers.kustomize.patches.patch",
+        "spec.postRenderers.kustomize.patches.target.annotationSelector",
+        "spec.postRenderers.kustomize.patches.target.group",
+        "spec.postRenderers.kustomize.patches.target.kind",
+        "spec.postRenderers.kustomize.patches.target.labelSelector",
+        "spec.postRenderers.kustomize.patches.target.version",
+        "spec.postRenderers.kustomize.patchesJson6902",
+        "spec.postRenderers.kustomize.patchesJson6902.patch.from",
+        "spec.postRenderers.kustomize.patchesJson6902.patch.op",
+        "spec.postRenderers.kustomize.patchesJson6902.patch.path",
+        "spec.postRenderers.kustomize.patchesJson6902.patch.value",
+        "spec.postRenderers.kustomize.patchesJson6902.target.annotationSelector",
+        "spec.postRenderers.kustomize.patchesJson6902.target.group",
+        "spec.postRenderers.kustomize.patchesJson6902.target.kind",
+        "spec.postRenderers.kustomize.patchesJson6902.target.labelSelector",
+        "spec.postRenderers.kustomize.patchesJson6902.target.version",
+        "spec.postRenderers.kustomize.patchesStrategicMerge",
+        "spec.releaseName",
+        "spec.rollback.cleanupOnFail",
+        "spec.rollback.disableWait",
+        "spec.rollback.disableWaitForJobs",
+        "spec.rollback.timeout",
+        "spec.serviceAccountName",
+        "spec.storageNamespace",
+        "spec.suspend",
+        "spec.targetNamespace",
+        "spec.test.enable",
+        "spec.test.ignoreFailures",
+        "spec.test.timeout",
+        "spec.timeout",
+        "spec.uninstall.deletionPropagation",
+        "spec.uninstall.disableWait",
+        "spec.uninstall.keepHistory",
+        "spec.uninstall.timeout",
+        "spec.upgrade.cleanupOnFail",
+        "spec.upgrade.crds",
+        "spec.upgrade.disableOpenAPIValidation",
+        "spec.upgrade.disableWait",
+        "spec.upgrade.disableWaitForJobs",
+        "spec.upgrade.preserveValues",
+        "spec.upgrade.remediation",
+        "spec.upgrade.remediation.ignoreTestFailures",
+        "spec.upgrade.remediation.remediateLastFailure",
+        "spec.upgrade.remediation.retries",
+        "spec.upgrade.timeout",
+        "spec.valuesFrom",
+        "spec.valuesFrom.name",
+        "spec.valuesFrom.optional",
+        "spec.valuesFrom.targetPath",
+        "spec.valuesFrom.valuesKey",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type",
+        "status.failures",
+        "status.helmChart",
+        "status.history",
+        "status.history.apiVersion",
+        "status.history.chartVersion",
+        "status.history.configDigest",
+        "status.history.digest",
+        "status.history.testHooks",
+        "status.installFailures",
+        "status.lastAppliedRevision",
+        "status.lastAttemptedConfigDigest",
+        "status.lastAttemptedGeneration",
+        "status.lastAttemptedReleaseAction",
+        "status.lastAttemptedRevision",
+        "status.lastAttemptedValuesChecksum",
+        "status.lastHandledForceAt",
+        "status.lastHandledReconcileAt",
+        "status.lastHandledResetAt",
+        "status.lastReleaseRevision",
+        "status.storageNamespace",
+        "status.upgradeFailures"
+      ],
+      "optional": [
+        "spec.chart"
+      ],
+      "added": {
+        "spec.chart.spec.ignoreMissingValuesFiles": "boolean",
+        "spec.chartRef": "object",
+        "status.history.appVersion": "string",
+        "status.history.ociDigest": "string",
+        "status.lastAttemptedRevisionDigest": "string",
+        "status.observedPostRenderersDigest": "string"
+      },
+      "descriptions": {
+        "apiVersion": [
+          26,
+          27
+        ],
+        "kind": [
+          28,
+          29
+        ],
+        "spec.chart": [
+          30,
+          31
+        ],
+        "spec.chart.metadata.annotations": [
+          32,
+          33
+        ],
+        "spec.chart.metadata.labels": [
+          34,
+          35
+        ],
+        "spec.chart.spec.ignoreMissingValuesFiles": [
+          null,
+          36
+        ],
+        "spec.chart.spec.interval": [
+          37,
+          38
+        ],
+        "spec.chart.spec.reconcileStrategy": [
+          39,
+          40
+        ],
+        "spec.chart.spec.valuesFile": [
+          41,
+          42
+        ],
+        "spec.chart.spec.valuesFiles": [
+          43,
+          44
+        ],
+        "spec.chart.spec.verify": [
+          45,
+          46
+        ],
+        "spec.chart.spec.verify.secretRef": [
+          47,
+          48
+        ],
+        "spec.chart.spec.version": [
+          49,
+          50
+        ],
+        "spec.chartRef": [
+          null,
+          14
+        ],
+        "spec.dependsOn": [
+          51,
+          52
+        ],
+        "spec.driftDetection": [
+          53,
+          54
+        ],
+        "spec.driftDetection.ignore": [
+          55,
+          56
+        ],
+        "spec.driftDetection.ignore.paths": [
+          57,
+          58
+        ],
+        "spec.driftDetection.ignore.target": [
+          59,
+          60
+        ],
+        "spec.driftDetection.ignore.target.annotationSelector": [
+          61,
+          62
+        ],
+        "spec.driftDetection.ignore.target.group": [
+          63,
+          64
+        ],
+        "spec.driftDetection.ignore.target.kind": [
+          65,
+          66
+        ],
+        "spec.driftDetection.ignore.target.labelSelector": [
+          67,
+          68
+        ],
+        "spec.driftDetection.ignore.target.version": [
+          69,
+          70
+        ],
+        "spec.driftDetection.mode": [
+          71,
+          72
+        ],
+        "spec.install.crds": [
+          73,
+          16
+        ],
+        "spec.install.createNamespace": [
+          74,
+          75
+        ],
+        "spec.install.disableOpenAPIValidation": [
+          76,
+          77
+        ],
+        "spec.install.disableWait": [
+          78,
+          79
+        ],
+        "spec.install.disableWaitForJobs": [
+          80,
+          81
+        ],
+        "spec.install.remediation": [
+          82,
+          83
+        ],
+        "spec.install.remediation.ignoreTestFailures": [
+          84,
+          85
+        ],
+        "spec.install.remediation.remediateLastFailure": [
+          86,
+          87
+        ],
+        "spec.install.remediation.retries": [
+          88,
+          89
+        ],
+        "spec.install.replace": [
+          90,
+          91
+        ],
+        "spec.install.skipCRDs": [
+          92,
+          18
+        ],
+        "spec.install.timeout": [
+          93,
+          94
+        ],
+        "spec.kubeConfig": [
+          95,
+          96
+        ],
+        "spec.kubeConfig.secretRef": [
+          97,
+          1
+        ],
+        "spec.maxHistory": [
+          98,
+          99
+        ],
+        "spec.persistentClient": [
+          100,
+          20
+        ],
+        "spec.postRenderers": [
+          101,
+          102
+        ],
+        "spec.postRenderers.kustomize.images": [
+          103,
+          104
+        ],
+        "spec.postRenderers.kustomize.images.digest": [
+          105,
+          106
+        ],
+        "spec.postRenderers.kustomize.patches": [
+          107,
+          108
+        ],
+        "spec.postRenderers.kustomize.patches.patch": [
+          109,
+          110
+        ],
+        "spec.postRenderers.kustomize.patches.target.annotationSelector": [
+          61,
+          62
+        ],
+        "spec.postRenderers.kustomize.patches.target.group": [
+          63,
+          64
+        ],
+        "spec.postRenderers.kustomize.patches.target.kind": [
+          65,
+          66
+        ],
+        "spec.postRenderers.kustomize.patches.target.labelSelector": [
+          67,
+          68
+        ],
+        "spec.postRenderers.kustomize.patches.target.version": [
+          69,
+          70
+        ],
+        "spec.postRenderers.kustomize.patchesJson6902": [
+          111,
+          3
+        ],
+        "spec.postRenderers.kustomize.patchesJson6902.patch.from": [
+          112,
+          113
+        ],
+        "spec.postRenderers.kustomize.patchesJson6902.patch.op": [
+          114,
+          115
+        ],
+        "spec.postRenderers.kustomize.patchesJson6902.patch.path": [
+          116,
+          117
+        ],
+        "spec.postRenderers.kustomize.patchesJson6902.patch.value": [
+          118,
+          119
+        ],
+        "spec.postRenderers.kustomize.patchesJson6902.target.annotationSelector": [
+          61,
+          62
+        ],
+        "spec.postRenderers.kustomize.patchesJson6902.target.group": [
+          63,
+          64
+        ],
+        "spec.postRenderers.kustomize.patchesJson6902.target.kind": [
+          65,
+          66
+        ],
+        "spec.postRenderers.kustomize.patchesJson6902.target.labelSelector": [
+          67,
+          68
+        ],
+        "spec.postRenderers.kustomize.patchesJson6902.target.version": [
+          69,
+          70
+        ],
+        "spec.postRenderers.kustomize.patchesStrategicMerge": [
+          120,
+          5
+        ],
+        "spec.releaseName": [
+          121,
+          122
+        ],
+        "spec.rollback.cleanupOnFail": [
+          123,
+          124
+        ],
+        "spec.rollback.disableWait": [
+          125,
+          126
+        ],
+        "spec.rollback.disableWaitForJobs": [
+          127,
+          128
+        ],
+        "spec.rollback.timeout": [
+          129,
+          130
+        ],
+        "spec.serviceAccountName": [
+          131,
+          132
+        ],
+        "spec.storageNamespace": [
+          133,
+          134
+        ],
+        "spec.suspend": [
+          135,
+          136
+        ],
+        "spec.targetNamespace": [
+          137,
+          138
+        ],
+        "spec.test.enable": [
+          139,
+          140
+        ],
+        "spec.test.ignoreFailures": [
+          141,
+          142
+        ],
+        "spec.test.timeout": [
+          143,
+          144
+        ],
+        "spec.timeout": [
+          145,
+          146
+        ],
+        "spec.uninstall.deletionPropagation": [
+          147,
+          148
+        ],
+        "spec.uninstall.disableWait": [
+          149,
+          150
+        ],
+        "spec.uninstall.keepHistory": [
+          151,
+          152
+        ],
+        "spec.uninstall.timeout": [
+          153,
+          154
+        ],
+        "spec.upgrade.cleanupOnFail": [
+          155,
+          156
+        ],
+        "spec.upgrade.crds": [
+          157,
+          22
+        ],
+        "spec.upgrade.disableOpenAPIValidation": [
+          158,
+          159
+        ],
+        "spec.upgrade.disableWait": [
+          160,
+          161
+        ],
+        "spec.upgrade.disableWaitForJobs": [
+          162,
+          163
+        ],
+        "spec.upgrade.preserveValues": [
+          164,
+          165
+        ],
+        "spec.upgrade.remediation": [
+          166,
+          167
+        ],
+        "spec.upgrade.remediation.ignoreTestFailures": [
+          168,
+          169
+        ],
+        "spec.upgrade.remediation.remediateLastFailure": [
+          170,
+          171
+        ],
+        "spec.upgrade.remediation.retries": [
+          172,
+          173
+        ],
+        "spec.upgrade.timeout": [
+          174,
+          175
+        ],
+        "spec.valuesFrom": [
+          176,
+          177
+        ],
+        "spec.valuesFrom.name": [
+          178,
+          179
+        ],
+        "spec.valuesFrom.optional": [
+          180,
+          181
+        ],
+        "spec.valuesFrom.targetPath": [
+          182,
+          183
+        ],
+        "spec.valuesFrom.valuesKey": [
+          184,
+          185
+        ],
+        "status.conditions.lastTransitionTime": [
+          186,
+          187
+        ],
+        "status.conditions.message": [
+          188,
+          189
+        ],
+        "status.conditions.observedGeneration": [
+          190,
+          191
+        ],
+        "status.conditions.reason": [
+          192,
+          193
+        ],
+        "status.conditions.type": [
+          194,
+          24
+        ],
+        "status.failures": [
+          195,
+          196
+        ],
+        "status.helmChart": [
+          197,
+          198
+        ],
+        "status.history": [
+          199,
+          200
+        ],
+        "status.history.apiVersion": [
+          201,
+          202
+        ],
+        "status.history.appVersion": [
+          null,
+          203
+        ],
+        "status.history.chartVersion": [
+          204,
+          205
+        ],
+        "status.history.configDigest": [
+          206,
+          207
+        ],
+        "status.history.digest": [
+          208,
+          209
+        ],
+        "status.history.ociDigest": [
+          null,
+          210
+        ],
+        "status.history.testHooks": [
+          211,
+          212
+        ],
+        "status.installFailures": [
+          213,
+          214
+        ],
+        "status.lastAppliedRevision": [
+          215,
+          7
+        ],
+        "status.lastAttemptedConfigDigest": [
+          216,
+          217
+        ],
+        "status.lastAttemptedGeneration": [
+          218,
+          219
+        ],
+        "status.lastAttemptedReleaseAction": [
+          220,
+          221
+        ],
+        "status.lastAttemptedRevision": [
+          222,
+          223
+        ],
+        "status.lastAttemptedRevisionDigest": [
+          null,
+          224
+        ],
+        "status.lastAttemptedValuesChecksum": [
+          225,
+          9
+        ],
+        "status.lastHandledForceAt": [
+          226,
+          227
+        ],
+        "status.lastHandledReconcileAt": [
+          228,
+          229
+        ],
+        "status.lastHandledResetAt": [
+          230,
+          231
+        ],
+        "status.lastReleaseRevision": [
+          232,
+          11
+        ],
+        "status.observedPostRenderersDigest": [
+          null,
+          233
+        ],
+        "status.storageNamespace": [
+          234,
+          235
+        ],
+        "status.upgradeFailures": [
+          236,
+          237
+        ]
+      }
+    }
+  },
+  "texts": [
+    "ConfigMapRef holds an optional name of a ConfigMap that contains\nthe following keys:\n\n- `provider`: the provider to use. One of `aws`, `azure`, `gcp`, or\n   `generic`. Required.\n- `cluster`: the fully qualified resource name of the Kubernetes\n   cluster in the cloud provider API. Not used by the `generic`\n   provider. Required when one of `address` or `ca.crt` is not set.\n- `address`: the address of the Kubernetes API server. Required\n   for `generic`. For the other providers, if not specified, the\n   first address in the cluster resource will be used, and if\n   specified, it must match one of the addresses in the cluster\n   resource.\n   If audiences is not set, will be used as the audience for the\n   `generic` provider.\n- `ca.crt`: the optional PEM-encoded CA certificate for the\n   Kubernetes API server. If not set, the controller will use the\n   CA certificate from the cluster resource.\n- `audiences`: the optional audiences as a list of\n   line-break-separated strings for the Kubernetes ServiceAccount\n   token. Defaults to the `address` for the `generic` provider, or\n   to specific values for the other providers depending on the\n   provider.\n-  `serviceAccountName`: the optional name of the Kubernetes\n   ServiceAccount in the same namespace that should be used\n   for authentication. If not specified, the controller\n   ServiceAccount will be used.\n\nMutually exclusive with SecretRef.",
+    "SecretRef holds the name of a secret that contains a key with\nthe kubeconfig file as the value. If no key is set, the key will default\nto 'value'.\nIt is recommended that the kubeconfig is self-contained, and the secret\nis regularly updated if credentials such as a cloud-access-token expire.\nCloud specific `cmd-path` auth helpers will not function without adding\nbinaries and credentials to the Pod that is responsible for reconciling\nKubernetes resources.",
+    "SecretRef holds an optional name of a secret that contains a key with\nthe kubeconfig file as the value. If no key is set, the key will default\nto 'value'. Mutually exclusive with ConfigMapRef.\nIt is recommended that the kubeconfig is self-contained, and the secret\nis regularly updated if credentials such as a cloud-access-token expire.\nCloud specific `cmd-path` auth helpers will not function without adding\nbinaries and credentials to the Pod that is responsible for reconciling\nKubernetes resources. Supported only for the generic provider.",
+    "JSON 6902 patches, defined as inline YAML objects.\nDeprecated: use Patches instead.",
+    "JSON 6902 patches, defined as inline YAML objects.\n\nDeprecated: use Patches instead.",
+    "Strategic merge patches, defined as inline YAML objects.\nDeprecated: use Patches instead.",
+    "Strategic merge patches, defined as inline YAML objects.\n\nDeprecated: use Patches instead.",
+    "LastAppliedRevision is the revision of the last successfully applied\nsource.\nDeprecated: the revision can now be found in the History.",
+    "LastAppliedRevision is the revision of the last successfully applied\nsource.\n\nDeprecated: the revision can now be found in the History.",
+    "LastAttemptedValuesChecksum is the SHA1 checksum for the values of the last\nreconciliation attempt.\nDeprecated: Use LastAttemptedConfigDigest instead.",
+    "LastAttemptedValuesChecksum is the SHA1 checksum for the values of the last\nreconciliation attempt.\n\nDeprecated: Use LastAttemptedConfigDigest instead.",
+    "LastReleaseRevision is the revision of the last successful Helm release.\nDeprecated: Use History instead.",
+    "LastReleaseRevision is the revision of the last successful Helm release.\n\nDeprecated: Use History instead.",
+    "Kind of the referent.",
+    "ChartRef holds a reference to a source controller resource containing the\nHelm chart artifact.\n\n\nNote: this field is provisional to the v2 API, and not actively used\nby v2beta2 HelmReleases.",
+    "ChartRef holds a reference to a source controller resource containing the\nHelm chart artifact.\n\nNote: this field is provisional to the v2 API, and not actively used\nby v2beta2 HelmReleases.",
+    "CRDs upgrade CRDs from the Helm Chart's crds directory according\nto the CRD upgrade policy provided here. Valid values are `Skip`,\n`Create` or `CreateReplace`. Default is `Create` and if omitted\nCRDs are installed but not updated.\n\n\nSkip: do neither install nor replace (update) any CRDs.\n\n\nCreate: new CRDs are created, existing CRDs are neither updated nor deleted.\n\n\nCreateReplace: new CRDs are created, existing CRDs are updated (replaced)\nbut not deleted.\n\n\nBy default, CRDs are applied (installed) during Helm install action.\nWith this option users can opt in to CRD replace existing CRDs on Helm\ninstall actions, which is not (yet) natively supported by Helm.\nhttps://helm.sh/docs/chart_best_practices/custom_resource_definitions.",
+    "CRDs upgrade CRDs from the Helm Chart's crds directory according\nto the CRD upgrade policy provided here. Valid values are `Skip`,\n`Create` or `CreateReplace`. Default is `Create` and if omitted\nCRDs are installed but not updated.\n\nSkip: do neither install nor replace (update) any CRDs.\n\nCreate: new CRDs are created, existing CRDs are neither updated nor deleted.\n\nCreateReplace: new CRDs are created, existing CRDs are updated (replaced)\nbut not deleted.\n\nBy default, CRDs are applied (installed) during Helm install action.\nWith this option users can opt in to CRD replace existing CRDs on Helm\ninstall actions, which is not (yet) natively supported by Helm.\nhttps://helm.sh/docs/chart_best_practices/custom_resource_definitions.",
+    "SkipCRDs tells the Helm install action to not install any CRDs. By default,\nCRDs are installed if not already present.\n\n\nDeprecated use CRD policy (`crds`) attribute with value `Skip` instead.",
+    "SkipCRDs tells the Helm install action to not install any CRDs. By default,\nCRDs are installed if not already present.\n\nDeprecated use CRD policy (`crds`) attribute with value `Skip` instead.",
+    "PersistentClient tells the controller to use a persistent Kubernetes\nclient for this release. When enabled, the client will be reused for the\nduration of the reconciliation, instead of being created and destroyed\nfor each (step of a) Helm action.\n\n\nThis can improve performance, but may cause issues with some Helm charts\nthat for example do create Custom Resource Definitions during installation\noutside Helm's CRD lifecycle hooks, which are then not observed to be\navailable by e.g. post-install hooks.\n\n\nIf not set, it defaults to true.",
+    "PersistentClient tells the controller to use a persistent Kubernetes\nclient for this release. When enabled, the client will be reused for the\nduration of the reconciliation, instead of being created and destroyed\nfor each (step of a) Helm action.\n\nThis can improve performance, but may cause issues with some Helm charts\nthat for example do create Custom Resource Definitions during installation\noutside Helm's CRD lifecycle hooks, which are then not observed to be\navailable by e.g. post-install hooks.\n\nIf not set, it defaults to true.",
+    "CRDs upgrade CRDs from the Helm Chart's crds directory according\nto the CRD upgrade policy provided here. Valid values are `Skip`,\n`Create` or `CreateReplace`. Default is `Skip` and if omitted\nCRDs are neither installed nor upgraded.\n\n\nSkip: do neither install nor replace (update) any CRDs.\n\n\nCreate: new CRDs are created, existing CRDs are neither updated nor deleted.\n\n\nCreateReplace: new CRDs are created, existing CRDs are updated (replaced)\nbut not deleted.\n\n\nBy default, CRDs are not applied during Helm upgrade action. With this\noption users can opt-in to CRD upgrade, which is not (yet) natively supported by Helm.\nhttps://helm.sh/docs/chart_best_practices/custom_resource_definitions.",
+    "CRDs upgrade CRDs from the Helm Chart's crds directory according\nto the CRD upgrade policy provided here. Valid values are `Skip`,\n`Create` or `CreateReplace`. Default is `Skip` and if omitted\nCRDs are neither installed nor upgraded.\n\nSkip: do neither install nor replace (update) any CRDs.\n\nCreate: new CRDs are created, existing CRDs are neither updated nor deleted.\n\nCreateReplace: new CRDs are created, existing CRDs are updated (replaced)\nbut not deleted.\n\nBy default, CRDs are not applied during Helm upgrade action. With this\noption users can opt-in to CRD upgrade, which is not (yet) natively supported by Helm.\nhttps://helm.sh/docs/chart_best_practices/custom_resource_definitions.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Chart defines the template of the v1beta2.HelmChart that should be created for this HelmRelease.",
+    "Chart defines the template of the v1beta2.HelmChart that should be created\nfor this HelmRelease.",
+    "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/",
+    "Annotations is an unstructured key value map stored with a resource that may be\nset by external tools to store and retrieve arbitrary metadata. They are not\nqueryable and should be preserved when modifying objects.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) objects. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/",
+    "Map of string keys and values that can be used to organize and categorize\n(scope and select) objects.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/",
+    "IgnoreMissingValuesFiles controls whether to silently ignore missing values files rather than failing.",
+    "Interval at which to check the v1.Source for updates. Defaults to 'HelmReleaseSpec.Interval'.",
+    "Interval at which to check the v1.Source for updates. Defaults to\n'HelmReleaseSpec.Interval'.",
+    "Determines what enables the creation of a new artifact. Valid values are ('ChartVersion', 'Revision'). See the documentation of the values for an explanation on their behavior. Defaults to ChartVersion when omitted.",
+    "Determines what enables the creation of a new artifact. Valid values are\n('ChartVersion', 'Revision').\nSee the documentation of the values for an explanation on their behavior.\nDefaults to ChartVersion when omitted.",
+    "Alternative values file to use as the default chart values, expected to be a relative path in the SourceRef. Deprecated in favor of ValuesFiles, for backwards compatibility the file defined here is merged before the ValuesFiles items. Ignored when omitted.",
+    "Alternative values file to use as the default chart values, expected to\nbe a relative path in the SourceRef. Deprecated in favor of ValuesFiles,\nfor backwards compatibility the file defined here is merged before the\nValuesFiles items. Ignored when omitted.",
+    "Alternative list of values files to use as the chart values (values.yaml is not included by default), expected to be a relative path in the SourceRef. Values files are merged in the order of this list with the last file overriding the first. Ignored when omitted.",
+    "Alternative list of values files to use as the chart values (values.yaml\nis not included by default), expected to be a relative path in the SourceRef.\nValues files are merged in the order of this list with the last file overriding\nthe first. Ignored when omitted.",
+    "Verify contains the secret name containing the trusted public keys used to verify the signature and specifies which provider to use to check whether OCI image is authentic. This field is only supported for OCI sources. Chart dependencies, which are not bundled in the umbrella chart artifact, are not verified.",
+    "Verify contains the secret name containing the trusted public keys\nused to verify the signature and specifies which provider to use to check\nwhether OCI image is authentic.\nThis field is only supported for OCI sources.\nChart dependencies, which are not bundled in the umbrella chart artifact,\nare not verified.",
+    "SecretRef specifies the Kubernetes Secret containing the trusted public keys.",
+    "SecretRef specifies the Kubernetes Secret containing the\ntrusted public keys.",
+    "Version semver expression, ignored for charts from v1beta2.GitRepository and v1beta2.Bucket sources. Defaults to latest when omitted.",
+    "Version semver expression, ignored for charts from v1beta2.GitRepository and\nv1beta2.Bucket sources. Defaults to latest when omitted.",
+    "DependsOn may contain a meta.NamespacedObjectReference slice with references to HelmRelease resources that must be ready before this HelmRelease can be reconciled.",
+    "DependsOn may contain a meta.NamespacedObjectReference slice with\nreferences to HelmRelease resources that must be ready before this HelmRelease\ncan be reconciled.",
+    "DriftDetection holds the configuration for detecting and handling differences between the manifest in the Helm storage and the resources currently existing in the cluster.",
+    "DriftDetection holds the configuration for detecting and handling\ndifferences between the manifest in the Helm storage and the resources\ncurrently existing in the cluster.",
+    "Ignore contains a list of rules for specifying which changes to ignore during diffing.",
+    "Ignore contains a list of rules for specifying which changes to ignore\nduring diffing.",
+    "Paths is a list of JSON Pointer (RFC 6901) paths to be excluded from consideration in a Kubernetes object.",
+    "Paths is a list of JSON Pointer (RFC 6901) paths to be excluded from\nconsideration in a Kubernetes object.",
+    "Target is a selector for specifying Kubernetes objects to which this rule applies. If Target is not set, the Paths will be ignored for all Kubernetes objects within the manifest of the Helm release.",
+    "Target is a selector for specifying Kubernetes objects to which this\nrule applies.\nIf Target is not set, the Paths will be ignored for all Kubernetes\nobjects within the manifest of the Helm release.",
+    "AnnotationSelector is a string that follows the label selection expression https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#api It matches with the resource annotations.",
+    "AnnotationSelector is a string that follows the label selection expression\nhttps://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#api\nIt matches with the resource annotations.",
+    "Group is the API group to select resources from. Together with Version and Kind it is capable of unambiguously identifying and/or selecting resources. https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md",
+    "Group is the API group to select resources from.\nTogether with Version and Kind it is capable of unambiguously identifying and/or selecting resources.\nhttps://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md",
+    "Kind of the API Group to select resources from. Together with Group and Version it is capable of unambiguously identifying and/or selecting resources. https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md",
+    "Kind of the API Group to select resources from.\nTogether with Group and Version it is capable of unambiguously\nidentifying and/or selecting resources.\nhttps://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md",
+    "LabelSelector is a string that follows the label selection expression https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#api It matches with the resource labels.",
+    "LabelSelector is a string that follows the label selection expression\nhttps://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#api\nIt matches with the resource labels.",
+    "Version of the API Group to select resources from. Together with Group and Kind it is capable of unambiguously identifying and/or selecting resources. https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md",
+    "Version of the API Group to select resources from.\nTogether with Group and Kind it is capable of unambiguously identifying and/or selecting resources.\nhttps://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md",
+    "Mode defines how differences should be handled between the Helm manifest and the manifest currently applied to the cluster. If not explicitly set, it defaults to DiffModeDisabled.",
+    "Mode defines how differences should be handled between the Helm manifest\nand the manifest currently applied to the cluster.\nIf not explicitly set, it defaults to DiffModeDisabled.",
+    "CRDs upgrade CRDs from the Helm Chart's crds directory according to the CRD upgrade policy provided here. Valid values are `Skip`, `Create` or `CreateReplace`. Default is `Create` and if omitted CRDs are installed but not updated. \n Skip: do neither install nor replace (update) any CRDs. \n Create: new CRDs are created, existing CRDs are neither updated nor deleted. \n CreateReplace: new CRDs are created, existing CRDs are updated (replaced) but not deleted. \n By default, CRDs are applied (installed) during Helm install action. With this option users can opt in to CRD replace existing CRDs on Helm install actions, which is not (yet) natively supported by Helm. https://helm.sh/docs/chart_best_practices/custom_resource_definitions.",
+    "CreateNamespace tells the Helm install action to create the HelmReleaseSpec.TargetNamespace if it does not exist yet. On uninstall, the namespace will not be garbage collected.",
+    "CreateNamespace tells the Helm install action to create the\nHelmReleaseSpec.TargetNamespace if it does not exist yet.\nOn uninstall, the namespace will not be garbage collected.",
+    "DisableOpenAPIValidation prevents the Helm install action from validating rendered templates against the Kubernetes OpenAPI Schema.",
+    "DisableOpenAPIValidation prevents the Helm install action from validating\nrendered templates against the Kubernetes OpenAPI Schema.",
+    "DisableWait disables the waiting for resources to be ready after a Helm install has been performed.",
+    "DisableWait disables the waiting for resources to be ready after a Helm\ninstall has been performed.",
+    "DisableWaitForJobs disables waiting for jobs to complete after a Helm install has been performed.",
+    "DisableWaitForJobs disables waiting for jobs to complete after a Helm\ninstall has been performed.",
+    "Remediation holds the remediation configuration for when the Helm install action for the HelmRelease fails. The default is to not perform any action.",
+    "Remediation holds the remediation configuration for when the Helm install\naction for the HelmRelease fails. The default is to not perform any action.",
+    "IgnoreTestFailures tells the controller to skip remediation when the Helm tests are run after an install action but fail. Defaults to 'Test.IgnoreFailures'.",
+    "IgnoreTestFailures tells the controller to skip remediation when the Helm\ntests are run after an install action but fail. Defaults to\n'Test.IgnoreFailures'.",
+    "RemediateLastFailure tells the controller to remediate the last failure, when no retries remain. Defaults to 'false'.",
+    "RemediateLastFailure tells the controller to remediate the last failure, when\nno retries remain. Defaults to 'false'.",
+    "Retries is the number of retries that should be attempted on failures before bailing. Remediation, using an uninstall, is performed between each attempt. Defaults to '0', a negative integer equals to unlimited retries.",
+    "Retries is the number of retries that should be attempted on failures before\nbailing. Remediation, using an uninstall, is performed between each attempt.\nDefaults to '0', a negative integer equals to unlimited retries.",
+    "Replace tells the Helm install action to re-use the 'ReleaseName', but only if that name is a deleted release which remains in the history.",
+    "Replace tells the Helm install action to re-use the 'ReleaseName', but only\nif that name is a deleted release which remains in the history.",
+    "SkipCRDs tells the Helm install action to not install any CRDs. By default, CRDs are installed if not already present. \n Deprecated use CRD policy (`crds`) attribute with value `Skip` instead.",
+    "Timeout is the time to wait for any individual Kubernetes operation (like Jobs for hooks) during the performance of a Helm install action. Defaults to 'HelmReleaseSpec.Timeout'.",
+    "Timeout is the time to wait for any individual Kubernetes operation (like\nJobs for hooks) during the performance of a Helm install action. Defaults to\n'HelmReleaseSpec.Timeout'.",
+    "KubeConfig for reconciling the HelmRelease on a remote cluster. When used in combination with HelmReleaseSpec.ServiceAccountName, forces the controller to act on behalf of that Service Account at the target cluster. If the --default-service-account flag is set, its value will be used as a controller level fallback for when HelmReleaseSpec.ServiceAccountName is empty.",
+    "KubeConfig for reconciling the HelmRelease on a remote cluster.\nWhen used in combination with HelmReleaseSpec.ServiceAccountName,\nforces the controller to act on behalf of that Service Account at the\ntarget cluster.\nIf the --default-service-account flag is set, its value will be used as\na controller level fallback for when HelmReleaseSpec.ServiceAccountName\nis empty.",
+    "SecretRef holds the name of a secret that contains a key with the kubeconfig file as the value. If no key is set, the key will default to 'value'. It is recommended that the kubeconfig is self-contained, and the secret is regularly updated if credentials such as a cloud-access-token expire. Cloud specific `cmd-path` auth helpers will not function without adding binaries and credentials to the Pod that is responsible for reconciling Kubernetes resources.",
+    "MaxHistory is the number of revisions saved by Helm for this HelmRelease. Use '0' for an unlimited number of revisions; defaults to '5'.",
+    "MaxHistory is the number of revisions saved by Helm for this HelmRelease.\nUse '0' for an unlimited number of revisions; defaults to '5'.",
+    "PersistentClient tells the controller to use a persistent Kubernetes client for this release. When enabled, the client will be reused for the duration of the reconciliation, instead of being created and destroyed for each (step of a) Helm action. \n This can improve performance, but may cause issues with some Helm charts that for example do create Custom Resource Definitions during installation outside Helm's CRD lifecycle hooks, which are then not observed to be available by e.g. post-install hooks. \n If not set, it defaults to true.",
+    "PostRenderers holds an array of Helm PostRenderers, which will be applied in order of their definition.",
+    "PostRenderers holds an array of Helm PostRenderers, which will be applied in order\nof their definition.",
+    "Images is a list of (image name, new name, new tag or digest) for changing image names, tags or digests. This can also be achieved with a patch, but this operator is simpler to specify.",
+    "Images is a list of (image name, new name, new tag or digest)\nfor changing image names, tags or digests. This can also be achieved with a\npatch, but this operator is simpler to specify.",
+    "Digest is the value used to replace the original image tag. If digest is present NewTag value is ignored.",
+    "Digest is the value used to replace the original image tag.\nIf digest is present NewTag value is ignored.",
+    "Strategic merge and JSON patches, defined as inline YAML objects, capable of targeting objects based on kind, label and annotation selectors.",
+    "Strategic merge and JSON patches, defined as inline YAML objects,\ncapable of targeting objects based on kind, label and annotation selectors.",
+    "Patch contains an inline StrategicMerge patch or an inline JSON6902 patch with an array of operation objects.",
+    "Patch contains an inline StrategicMerge patch or an inline JSON6902 patch with\nan array of operation objects.",
+    "JSON 6902 patches, defined as inline YAML objects. Deprecated: use Patches instead.",
+    "From contains a JSON-pointer value that references a location within the target document where the operation is performed. The meaning of the value depends on the value of Op, and is NOT taken into account by all operations.",
+    "From contains a JSON-pointer value that references a location within the target document where the operation is\nperformed. The meaning of the value depends on the value of Op, and is NOT taken into account by all operations.",
+    "Op indicates the operation to perform. Its value MUST be one of \"add\", \"remove\", \"replace\", \"move\", \"copy\", or \"test\". https://datatracker.ietf.org/doc/html/rfc6902#section-4",
+    "Op indicates the operation to perform. Its value MUST be one of \"add\", \"remove\", \"replace\", \"move\", \"copy\", or\n\"test\".\nhttps://datatracker.ietf.org/doc/html/rfc6902#section-4",
+    "Path contains the JSON-pointer value that references a location within the target document where the operation is performed. The meaning of the value depends on the value of Op.",
+    "Path contains the JSON-pointer value that references a location within the target document where the operation\nis performed. The meaning of the value depends on the value of Op.",
+    "Value contains a valid JSON structure. The meaning of the value depends on the value of Op, and is NOT taken into account by all operations.",
+    "Value contains a valid JSON structure. The meaning of the value depends on the value of Op, and is NOT taken into\naccount by all operations.",
+    "Strategic merge patches, defined as inline YAML objects. Deprecated: use Patches instead.",
+    "ReleaseName used for the Helm release. Defaults to a composition of '[TargetNamespace-]Name'.",
+    "ReleaseName used for the Helm release. Defaults to a composition of\n'[TargetNamespace-]Name'.",
+    "CleanupOnFail allows deletion of new resources created during the Helm rollback action when it fails.",
+    "CleanupOnFail allows deletion of new resources created during the Helm\nrollback action when it fails.",
+    "DisableWait disables the waiting for resources to be ready after a Helm rollback has been performed.",
+    "DisableWait disables the waiting for resources to be ready after a Helm\nrollback has been performed.",
+    "DisableWaitForJobs disables waiting for jobs to complete after a Helm rollback has been performed.",
+    "DisableWaitForJobs disables waiting for jobs to complete after a Helm\nrollback has been performed.",
+    "Timeout is the time to wait for any individual Kubernetes operation (like Jobs for hooks) during the performance of a Helm rollback action. Defaults to 'HelmReleaseSpec.Timeout'.",
+    "Timeout is the time to wait for any individual Kubernetes operation (like\nJobs for hooks) during the performance of a Helm rollback action. Defaults to\n'HelmReleaseSpec.Timeout'.",
+    "The name of the Kubernetes service account to impersonate when reconciling this HelmRelease.",
+    "The name of the Kubernetes service account to impersonate\nwhen reconciling this HelmRelease.",
+    "StorageNamespace used for the Helm storage. Defaults to the namespace of the HelmRelease.",
+    "StorageNamespace used for the Helm storage.\nDefaults to the namespace of the HelmRelease.",
+    "Suspend tells the controller to suspend reconciliation for this HelmRelease, it does not apply to already started reconciliations. Defaults to false.",
+    "Suspend tells the controller to suspend reconciliation for this HelmRelease,\nit does not apply to already started reconciliations. Defaults to false.",
+    "TargetNamespace to target when performing operations for the HelmRelease. Defaults to the namespace of the HelmRelease.",
+    "TargetNamespace to target when performing operations for the HelmRelease.\nDefaults to the namespace of the HelmRelease.",
+    "Enable enables Helm test actions for this HelmRelease after an Helm install or upgrade action has been performed.",
+    "Enable enables Helm test actions for this HelmRelease after an Helm install\nor upgrade action has been performed.",
+    "IgnoreFailures tells the controller to skip remediation when the Helm tests are run but fail. Can be overwritten for tests run after install or upgrade actions in 'Install.IgnoreTestFailures' and 'Upgrade.IgnoreTestFailures'.",
+    "IgnoreFailures tells the controller to skip remediation when the Helm tests\nare run but fail. Can be overwritten for tests run after install or upgrade\nactions in 'Install.IgnoreTestFailures' and 'Upgrade.IgnoreTestFailures'.",
+    "Timeout is the time to wait for any individual Kubernetes operation during the performance of a Helm test action. Defaults to 'HelmReleaseSpec.Timeout'.",
+    "Timeout is the time to wait for any individual Kubernetes operation during\nthe performance of a Helm test action. Defaults to 'HelmReleaseSpec.Timeout'.",
+    "Timeout is the time to wait for any individual Kubernetes operation (like Jobs for hooks) during the performance of a Helm action. Defaults to '5m0s'.",
+    "Timeout is the time to wait for any individual Kubernetes operation (like Jobs\nfor hooks) during the performance of a Helm action. Defaults to '5m0s'.",
+    "DeletionPropagation specifies the deletion propagation policy when a Helm uninstall is performed.",
+    "DeletionPropagation specifies the deletion propagation policy when\na Helm uninstall is performed.",
+    "DisableWait disables waiting for all the resources to be deleted after a Helm uninstall is performed.",
+    "DisableWait disables waiting for all the resources to be deleted after\na Helm uninstall is performed.",
+    "KeepHistory tells Helm to remove all associated resources and mark the release as deleted, but retain the release history.",
+    "KeepHistory tells Helm to remove all associated resources and mark the\nrelease as deleted, but retain the release history.",
+    "Timeout is the time to wait for any individual Kubernetes operation (like Jobs for hooks) during the performance of a Helm uninstall action. Defaults to 'HelmReleaseSpec.Timeout'.",
+    "Timeout is the time to wait for any individual Kubernetes operation (like\nJobs for hooks) during the performance of a Helm uninstall action. Defaults\nto 'HelmReleaseSpec.Timeout'.",
+    "CleanupOnFail allows deletion of new resources created during the Helm upgrade action when it fails.",
+    "CleanupOnFail allows deletion of new resources created during the Helm\nupgrade action when it fails.",
+    "CRDs upgrade CRDs from the Helm Chart's crds directory according to the CRD upgrade policy provided here. Valid values are `Skip`, `Create` or `CreateReplace`. Default is `Skip` and if omitted CRDs are neither installed nor upgraded. \n Skip: do neither install nor replace (update) any CRDs. \n Create: new CRDs are created, existing CRDs are neither updated nor deleted. \n CreateReplace: new CRDs are created, existing CRDs are updated (replaced) but not deleted. \n By default, CRDs are not applied during Helm upgrade action. With this option users can opt-in to CRD upgrade, which is not (yet) natively supported by Helm. https://helm.sh/docs/chart_best_practices/custom_resource_definitions.",
+    "DisableOpenAPIValidation prevents the Helm upgrade action from validating rendered templates against the Kubernetes OpenAPI Schema.",
+    "DisableOpenAPIValidation prevents the Helm upgrade action from validating\nrendered templates against the Kubernetes OpenAPI Schema.",
+    "DisableWait disables the waiting for resources to be ready after a Helm upgrade has been performed.",
+    "DisableWait disables the waiting for resources to be ready after a Helm\nupgrade has been performed.",
+    "DisableWaitForJobs disables waiting for jobs to complete after a Helm upgrade has been performed.",
+    "DisableWaitForJobs disables waiting for jobs to complete after a Helm\nupgrade has been performed.",
+    "PreserveValues will make Helm reuse the last release's values and merge in overrides from 'Values'. Setting this flag makes the HelmRelease non-declarative.",
+    "PreserveValues will make Helm reuse the last release's values and merge in\noverrides from 'Values'. Setting this flag makes the HelmRelease\nnon-declarative.",
+    "Remediation holds the remediation configuration for when the Helm upgrade action for the HelmRelease fails. The default is to not perform any action.",
+    "Remediation holds the remediation configuration for when the Helm upgrade\naction for the HelmRelease fails. The default is to not perform any action.",
+    "IgnoreTestFailures tells the controller to skip remediation when the Helm tests are run after an upgrade action but fail. Defaults to 'Test.IgnoreFailures'.",
+    "IgnoreTestFailures tells the controller to skip remediation when the Helm\ntests are run after an upgrade action but fail.\nDefaults to 'Test.IgnoreFailures'.",
+    "RemediateLastFailure tells the controller to remediate the last failure, when no retries remain. Defaults to 'false' unless 'Retries' is greater than 0.",
+    "RemediateLastFailure tells the controller to remediate the last failure, when\nno retries remain. Defaults to 'false' unless 'Retries' is greater than 0.",
+    "Retries is the number of retries that should be attempted on failures before bailing. Remediation, using 'Strategy', is performed between each attempt. Defaults to '0', a negative integer equals to unlimited retries.",
+    "Retries is the number of retries that should be attempted on failures before\nbailing. Remediation, using 'Strategy', is performed between each attempt.\nDefaults to '0', a negative integer equals to unlimited retries.",
+    "Timeout is the time to wait for any individual Kubernetes operation (like Jobs for hooks) during the performance of a Helm upgrade action. Defaults to 'HelmReleaseSpec.Timeout'.",
+    "Timeout is the time to wait for any individual Kubernetes operation (like\nJobs for hooks) during the performance of a Helm upgrade action. Defaults to\n'HelmReleaseSpec.Timeout'.",
+    "ValuesFrom holds references to resources containing Helm values for this HelmRelease, and information about how they should be merged.",
+    "ValuesFrom holds references to resources containing Helm values for this HelmRelease,\nand information about how they should be merged.",
+    "Name of the values referent. Should reside in the same namespace as the referring resource.",
+    "Name of the values referent. Should reside in the same namespace as the\nreferring resource.",
+    "Optional marks this ValuesReference as optional. When set, a not found error for the values reference is ignored, but any ValuesKey, TargetPath or transient error will still result in a reconciliation failure.",
+    "Optional marks this ValuesReference as optional. When set, a not found error\nfor the values reference is ignored, but any ValuesKey, TargetPath or\ntransient error will still result in a reconciliation failure.",
+    "TargetPath is the YAML dot notation path the value should be merged at. When set, the ValuesKey is expected to be a single flat value. Defaults to 'None', which results in the values getting merged at the root.",
+    "TargetPath is the YAML dot notation path the value should be merged at. When\nset, the ValuesKey is expected to be a single flat value. Defaults to 'None',\nwhich results in the values getting merged at the root.",
+    "ValuesKey is the data key where the values.yaml or a specific value can be found at. Defaults to 'values.yaml'.",
+    "ValuesKey is the data key where the values.yaml or a specific value can be\nfound at. Defaults to 'values.yaml'.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "Failures is the reconciliation failure count against the latest desired state. It is reset after a successful reconciliation.",
+    "Failures is the reconciliation failure count against the latest desired\nstate. It is reset after a successful reconciliation.",
+    "HelmChart is the namespaced name of the HelmChart resource created by the controller for the HelmRelease.",
+    "HelmChart is the namespaced name of the HelmChart resource created by\nthe controller for the HelmRelease.",
+    "History holds the history of Helm releases performed for this HelmRelease up to the last successfully completed release.",
+    "History holds the history of Helm releases performed for this HelmRelease\nup to the last successfully completed release.",
+    "APIVersion is the API version of the Snapshot. Provisional: when the calculation method of the Digest field is changed, this field will be used to distinguish between the old and new methods.",
+    "APIVersion is the API version of the Snapshot.\nProvisional: when the calculation method of the Digest field is changed,\nthis field will be used to distinguish between the old and new methods.",
+    "AppVersion is the chart app version of the release object in storage.",
+    "ChartVersion is the chart version of the release object in storage.",
+    "ChartVersion is the chart version of the release object in\nstorage.",
+    "ConfigDigest is the checksum of the config (better known as \"values\") of the release object in storage. It has the format of `<algo>:<checksum>`.",
+    "ConfigDigest is the checksum of the config (better known as\n\"values\") of the release object in storage.\nIt has the format of `<algo>:<checksum>`.",
+    "Digest is the checksum of the release object in storage. It has the format of `<algo>:<checksum>`.",
+    "Digest is the checksum of the release object in storage.\nIt has the format of `<algo>:<checksum>`.",
+    "OCIDigest is the digest of the OCI artifact associated with the release.",
+    "TestHooks is the list of test hooks for the release as observed to be run by the controller.",
+    "TestHooks is the list of test hooks for the release as observed to be\nrun by the controller.",
+    "InstallFailures is the install failure count against the latest desired state. It is reset after a successful reconciliation.",
+    "InstallFailures is the install failure count against the latest desired\nstate. It is reset after a successful reconciliation.",
+    "LastAppliedRevision is the revision of the last successfully applied source. Deprecated: the revision can now be found in the History.",
+    "LastAttemptedConfigDigest is the digest for the config (better known as \"values\") of the last reconciliation attempt.",
+    "LastAttemptedConfigDigest is the digest for the config (better known as\n\"values\") of the last reconciliation attempt.",
+    "LastAttemptedGeneration is the last generation the controller attempted to reconcile.",
+    "LastAttemptedGeneration is the last generation the controller attempted\nto reconcile.",
+    "LastAttemptedReleaseAction is the last release action performed for this HelmRelease. It is used to determine the active remediation strategy.",
+    "LastAttemptedReleaseAction is the last release action performed for this\nHelmRelease. It is used to determine the active remediation strategy.",
+    "LastAttemptedRevision is the Source revision of the last reconciliation attempt.",
+    "LastAttemptedRevision is the Source revision of the last reconciliation\nattempt. For OCIRepository  sources, the 12 first characters of the digest are\nappended to the chart version e.g. \"1.2.3+1234567890ab\".",
+    "LastAttemptedRevisionDigest is the digest of the last reconciliation attempt.\nThis is only set for OCIRepository sources.",
+    "LastAttemptedValuesChecksum is the SHA1 checksum for the values of the last reconciliation attempt. Deprecated: Use LastAttemptedConfigDigest instead.",
+    "LastHandledForceAt holds the value of the most recent force request value, so a change of the annotation value can be detected.",
+    "LastHandledForceAt holds the value of the most recent force request\nvalue, so a change of the annotation value can be detected.",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change of the annotation value can be detected.",
+    "LastHandledReconcileAt holds the value of the most recent\nreconcile request value, so a change of the annotation value\ncan be detected.",
+    "LastHandledResetAt holds the value of the most recent reset request value, so a change of the annotation value can be detected.",
+    "LastHandledResetAt holds the value of the most recent reset request\nvalue, so a change of the annotation value can be detected.",
+    "LastReleaseRevision is the revision of the last successful Helm release. Deprecated: Use History instead.",
+    "ObservedPostRenderersDigest is the digest for the post-renderers of\nthe last successful reconciliation attempt.",
+    "StorageNamespace is the namespace of the Helm release storage for the current release.",
+    "StorageNamespace is the namespace of the Helm release storage for the\ncurrent release.",
+    "UpgradeFailures is the upgrade failure count against the latest desired state. It is reset after a successful reconciliation.",
+    "UpgradeFailures is the upgrade failure count against the latest desired\nstate. It is reset after a successful reconciliation."
+  ]
+}

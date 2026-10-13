@@ -1,0 +1,194 @@
+{
+  "versions": {
+    "v1.37.0": {
+      "descriptionChanged": [
+        "metadata"
+      ],
+      "descriptions": {
+        "metadata": [
+          0,
+          1
+        ]
+      }
+    },
+    "v1.27.0": {
+      "descriptionChanged": [
+        "metadata.annotations",
+        "metadata.labels",
+        "metadata.name",
+        "metadata.namespace",
+        "metadata.ownerReferences.name",
+        "metadata.ownerReferences.uid",
+        "metadata.uid"
+      ],
+      "descriptions": {
+        "metadata.annotations": [
+          2,
+          3
+        ],
+        "metadata.labels": [
+          4,
+          5
+        ],
+        "metadata.name": [
+          6,
+          7
+        ],
+        "metadata.namespace": [
+          8,
+          9
+        ],
+        "metadata.ownerReferences.name": [
+          10,
+          11
+        ],
+        "metadata.ownerReferences.uid": [
+          12,
+          13
+        ],
+        "metadata.uid": [
+          14,
+          15
+        ]
+      }
+    },
+    "v1.25.0": {
+      "removed": {
+        "metadata.clusterName": "string"
+      },
+      "descriptions": {
+        "metadata.clusterName": [
+          16,
+          null
+        ]
+      }
+    },
+    "v1.24.0": {
+      "descriptionChanged": [
+        "metadata.clusterName",
+        "metadata.generateName",
+        "metadata.managedFields.time",
+        "metadata.ownerReferences.blockOwnerDeletion",
+        "metadata.selfLink"
+      ],
+      "descriptions": {
+        "metadata.clusterName": [
+          17,
+          16
+        ],
+        "metadata.generateName": [
+          18,
+          19
+        ],
+        "metadata.managedFields.time": [
+          20,
+          21
+        ],
+        "metadata.ownerReferences.blockOwnerDeletion": [
+          22,
+          23
+        ],
+        "metadata.selfLink": [
+          24,
+          25
+        ]
+      }
+    },
+    "v1.22.0": {
+      "added": {
+        "metadata.managedFields.subresource": "string"
+      },
+      "descriptions": {
+        "metadata.managedFields.subresource": [
+          null,
+          26
+        ]
+      }
+    },
+    "v1.21.0": {
+      "optional": [
+        "metadata"
+      ],
+      "descriptionChanged": [
+        "metadata"
+      ],
+      "descriptions": {
+        "metadata": [
+          27,
+          0
+        ]
+      }
+    },
+    "v1.20.0": {
+      "descriptionChanged": [
+        "action",
+        "reason",
+        "type"
+      ],
+      "required": [
+        "metadata"
+      ],
+      "description": true,
+      "descriptions": {
+        "action": [
+          28,
+          29
+        ],
+        "metadata": [
+          null,
+          27
+        ],
+        "reason": [
+          30,
+          31
+        ],
+        "type": [
+          32,
+          33
+        ],
+        "": [
+          34,
+          35
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "metadata is the standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations",
+    "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels",
+    "Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names",
+    "Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names",
+    "Namespace defines the space within which each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces",
+    "Namespace defines the space within which each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces",
+    "Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names",
+    "UID of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#uids",
+    "UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids",
+    "UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.\n\nPopulated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids",
+    "UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.\n\nPopulated by the system. Read-only. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids",
+    "Deprecated: ClusterName is a legacy field that was always cleared by the system and never used; it will be removed completely in 1.25.\n\nThe name in the go struct is changed to help clients detect accidental use.",
+    "The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request.",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will return a 409.\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency",
+    "Time is timestamp of when these fields were set. It should always be empty if Operation is 'Apply'",
+    "Time is the timestamp of when the ManagedFields entry was added. The timestamp will also be updated if a field is added, the manager changes any of the owned fields value or removes a field. The timestamp does not update when a field is removed from the entry because another manager took it over.",
+    "If true, AND if the owner has the \"foregroundDeletion\" finalizer, then the owner cannot be deleted from the key-value store until this reference is removed. Defaults to false. To set this field, a user needs \"delete\" permission of the owner, otherwise 422 (Unprocessable Entity) will be returned.",
+    "If true, AND if the owner has the \"foregroundDeletion\" finalizer, then the owner cannot be deleted from the key-value store until this reference is removed. See https://kubernetes.io/docs/concepts/architecture/garbage-collection/#foreground-deletion for how the garbage collector interacts with this field and enforces the foreground deletion. Defaults to false. To set this field, a user needs \"delete\" permission of the owner, otherwise 422 (Unprocessable Entity) will be returned.",
+    "SelfLink is a URL representing this object. Populated by the system. Read-only.\n\nDEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is planned to be removed in 1.21 release.",
+    "Deprecated: selfLink is a legacy read-only field that is no longer populated by the system.",
+    "Subresource is the name of the subresource used to update that object, or empty string if the object was updated through the main resource. The value of this field is used to distinguish between managers, even if they share the same name. For example, a status update will be distinct from a regular update using the same manager name. Note that the APIVersion field is not related to the Subresource field and it always corresponds to the version of the main resource.",
+    "ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create.",
+    "action is what action was taken/failed regarding to the regarding object. It is machine-readable. This field can have at most 128 characters.",
+    "action is what action was taken/failed regarding to the regarding object. It is machine-readable. This field cannot be empty for new Events and it can have at most 128 characters.",
+    "reason is why the action was taken. It is human-readable. This field can have at most 128 characters.",
+    "reason is why the action was taken. It is human-readable. This field cannot be empty for new Events and it can have at most 128 characters.",
+    "type is the type of this event (Normal, Warning), new types could be added in the future. It is machine-readable.",
+    "type is the type of this event (Normal, Warning), new types could be added in the future. It is machine-readable. This field cannot be empty for new Events.",
+    "Event is a report of an event somewhere in the cluster. It generally denotes some state change in the system.",
+    "Event is a report of an event somewhere in the cluster. It generally denotes some state change in the system. Events have a limited retention time and triggers and messages may evolve with time.  Event consumers should not rely on the timing of an event with a given Reason reflecting a consistent underlying trigger, or the continued existence of events with that Reason.  Events should be treated as informative, best-effort, supplemental data."
+  ]
+}

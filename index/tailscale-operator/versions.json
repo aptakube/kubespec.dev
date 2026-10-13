@@ -1,0 +1,1478 @@
+{
+  "name": "Tailscale Operator",
+  "slug": "tailscale-operator",
+  "repo": "tailscale/tailscale",
+  "logo": "https://avatars.githubusercontent.com/u/48932923?s=48&v=4",
+  "versions": [
+    {
+      "version": "v1.104.1",
+      "tag": "v1.104.1",
+      "date": "2026-10-07",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.1/cmd/k8s-operator/deploy/crds/tailscale.com_peerrelays.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.1/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.1/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.104.0"
+    },
+    {
+      "version": "v1.104.0",
+      "tag": "v1.104.0",
+      "date": "2026-09-30",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.0/cmd/k8s-operator/deploy/crds/tailscale.com_peerrelays.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.104.0/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.102.5"
+    },
+    {
+      "version": "v1.102.5",
+      "tag": "v1.102.5",
+      "date": "2026-09-24",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.5/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.5/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.5/cmd/k8s-operator/deploy/crds/tailscale.com_peerrelays.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.5/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.5/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.102.4"
+    },
+    {
+      "version": "v1.102.4",
+      "tag": "v1.102.4",
+      "date": "2026-09-10",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.4/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.4/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.4/cmd/k8s-operator/deploy/crds/tailscale.com_peerrelays.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.4/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.4/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.102.3"
+    },
+    {
+      "version": "v1.102.3",
+      "tag": "v1.102.3",
+      "date": "2026-08-19",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.3/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.3/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.3/cmd/k8s-operator/deploy/crds/tailscale.com_peerrelays.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.3/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.3/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.102.2"
+    },
+    {
+      "version": "v1.102.2",
+      "tag": "v1.102.2",
+      "date": "2026-08-04",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.2/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.2/cmd/k8s-operator/deploy/crds/tailscale.com_peerrelays.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.2/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.2/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.102.1"
+    },
+    {
+      "version": "v1.102.1",
+      "tag": "v1.102.1",
+      "date": "2026-07-31",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.1/cmd/k8s-operator/deploy/crds/tailscale.com_peerrelays.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.1/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.1/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.102.0"
+    },
+    {
+      "version": "v1.102.0",
+      "tag": "v1.102.0",
+      "date": "2026-07-23",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.0/cmd/k8s-operator/deploy/crds/tailscale.com_peerrelays.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.102.0/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.100.0",
+      "added": [
+        {
+          "apiVersion": "tailscale.com/v1alpha1",
+          "kind": "PeerRelay",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.100.0",
+      "tag": "v1.100.0",
+      "date": "2026-06-03",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.100.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.100.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.100.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.100.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.100.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.100.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.100.0/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.98.10"
+    },
+    {
+      "version": "v1.98.10",
+      "tag": "v1.98.10",
+      "date": "2026-07-28",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.10/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.10/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.10/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.10/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.10/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.10/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.10/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.98.9"
+    },
+    {
+      "version": "v1.98.9",
+      "tag": "v1.98.9",
+      "date": "2026-07-14",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.9/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.9/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.9/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.9/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.9/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.9/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.9/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.98.8"
+    },
+    {
+      "version": "v1.98.8",
+      "tag": "v1.98.8",
+      "date": "2026-06-23",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.8/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.8/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.8/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.8/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.8/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.8/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.8/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.98.7"
+    },
+    {
+      "version": "v1.98.7",
+      "tag": "v1.98.7",
+      "date": "2026-06-22",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.7/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.7/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.7/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.7/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.7/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.7/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.7/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.98.6"
+    },
+    {
+      "version": "v1.98.6",
+      "tag": "v1.98.6",
+      "date": "2026-06-18",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.6/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.6/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.6/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.6/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.6/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.6/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.6/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.98.5"
+    },
+    {
+      "version": "v1.98.5",
+      "tag": "v1.98.5",
+      "date": "2026-05-29",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.5/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.5/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.5/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.5/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.98.4"
+    },
+    {
+      "version": "v1.98.4",
+      "tag": "v1.98.4",
+      "date": "2026-05-28",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.4/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.4/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.4/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.4/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.98.3"
+    },
+    {
+      "version": "v1.98.3",
+      "tag": "v1.98.3",
+      "date": "2026-05-21",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.3/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.3/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.3/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.3/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.98.2"
+    },
+    {
+      "version": "v1.98.2",
+      "tag": "v1.98.2",
+      "date": "2026-05-14",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.2/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.2/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.2/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.98.1"
+    },
+    {
+      "version": "v1.98.1",
+      "tag": "v1.98.1",
+      "date": "2026-05-07",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.1/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.1/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.98.0"
+    },
+    {
+      "version": "v1.98.0",
+      "tag": "v1.98.0",
+      "date": "2026-05-05",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.98.0/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.96.5"
+    },
+    {
+      "version": "v1.96.5",
+      "tag": "v1.96.5",
+      "date": "2026-03-27",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.5/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.5/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.5/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.5/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.96.4"
+    },
+    {
+      "version": "v1.96.4",
+      "tag": "v1.96.4",
+      "date": "2026-03-25",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.4/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.4/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.4/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.4/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.96.3"
+    },
+    {
+      "version": "v1.96.3",
+      "tag": "v1.96.3",
+      "date": "2026-03-19",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.3/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.3/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.3/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.3/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.96.2"
+    },
+    {
+      "version": "v1.96.2",
+      "tag": "v1.96.2",
+      "date": "2026-03-17",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.2/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.2/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.2/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.96.1"
+    },
+    {
+      "version": "v1.96.1",
+      "tag": "v1.96.1",
+      "date": "2026-03-10",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.1/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.1/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.96.0"
+    },
+    {
+      "version": "v1.96.0",
+      "tag": "v1.96.0",
+      "date": "2026-03-05",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygrouppolicies.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.96.0/cmd/k8s-operator/deploy/crds/tailscale.com_tailnets.yaml"
+      ],
+      "changelogBase": "v1.94.2",
+      "added": [
+        {
+          "apiVersion": "tailscale.com/v1alpha1",
+          "kind": "ProxyGroupPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "tailscale.com/v1alpha1",
+          "kind": "Tailnet",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.94.2",
+      "tag": "v1.94.2",
+      "date": "2026-02-13",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.94.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.94.2/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.94.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.94.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.94.2/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.94.1"
+    },
+    {
+      "version": "v1.94.1",
+      "tag": "v1.94.1",
+      "date": "2026-01-22",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.94.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.94.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.94.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.94.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.94.1/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.94.0"
+    },
+    {
+      "version": "v1.94.0",
+      "tag": "v1.94.0",
+      "date": "2026-01-14",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.94.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.94.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.94.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.94.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.94.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.92.5"
+    },
+    {
+      "version": "v1.92.5",
+      "tag": "v1.92.5",
+      "date": "2026-01-06",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.5/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.5/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.5/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.92.4"
+    },
+    {
+      "version": "v1.92.4",
+      "tag": "v1.92.4",
+      "date": "2025-12-18",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.4/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.4/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.4/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.92.3"
+    },
+    {
+      "version": "v1.92.3",
+      "tag": "v1.92.3",
+      "date": "2025-12-16",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.3/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.3/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.3/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.92.2"
+    },
+    {
+      "version": "v1.92.2",
+      "tag": "v1.92.2",
+      "date": "2025-12-10",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.2/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.2/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.92.1"
+    },
+    {
+      "version": "v1.92.1",
+      "tag": "v1.92.1",
+      "date": "2025-12-05",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.1/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.92.0"
+    },
+    {
+      "version": "v1.92.0",
+      "tag": "v1.92.0",
+      "date": "2025-11-26",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.92.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.90.9"
+    },
+    {
+      "version": "v1.90.9",
+      "tag": "v1.90.9",
+      "date": "2025-11-25",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.9/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.9/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.9/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.9/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.9/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.90.8"
+    },
+    {
+      "version": "v1.90.8",
+      "tag": "v1.90.8",
+      "date": "2025-11-18",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.8/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.8/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.8/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.8/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.8/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.90.7"
+    },
+    {
+      "version": "v1.90.7",
+      "tag": "v1.90.7",
+      "date": "2025-11-18",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.7/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.7/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.7/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.7/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.7/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.90.6"
+    },
+    {
+      "version": "v1.90.6",
+      "tag": "v1.90.6",
+      "date": "2025-10-31",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.6/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.6/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.6/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.6/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.6/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.90.5"
+    },
+    {
+      "version": "v1.90.5",
+      "tag": "v1.90.5",
+      "date": "2025-10-30",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.5/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.5/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.5/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.90.4"
+    },
+    {
+      "version": "v1.90.4",
+      "tag": "v1.90.4",
+      "date": "2025-10-28",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.4/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.4/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.4/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.90.3"
+    },
+    {
+      "version": "v1.90.3",
+      "tag": "v1.90.3",
+      "date": "2025-10-27",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.3/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.3/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.3/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.90.2"
+    },
+    {
+      "version": "v1.90.2",
+      "tag": "v1.90.2",
+      "date": "2025-10-24",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.2/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.2/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.90.1"
+    },
+    {
+      "version": "v1.90.1",
+      "tag": "v1.90.1",
+      "date": "2025-10-23",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.1/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.90.0"
+    },
+    {
+      "version": "v1.90.0",
+      "tag": "v1.90.0",
+      "date": "2025-10-20",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.90.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.88.4"
+    },
+    {
+      "version": "v1.88.4",
+      "tag": "v1.88.4",
+      "date": "2025-10-14",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.4/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.4/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.4/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.88.3"
+    },
+    {
+      "version": "v1.88.3",
+      "tag": "v1.88.3",
+      "date": "2025-09-25",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.3/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.3/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.3/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.88.2"
+    },
+    {
+      "version": "v1.88.2",
+      "tag": "v1.88.2",
+      "date": "2025-09-17",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.2/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.2/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.88.1"
+    },
+    {
+      "version": "v1.88.1",
+      "tag": "v1.88.1",
+      "date": "2025-09-11",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.1/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.88.0"
+    },
+    {
+      "version": "v1.88.0",
+      "tag": "v1.88.0",
+      "date": "2025-09-11",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.88.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.86.5"
+    },
+    {
+      "version": "v1.86.5",
+      "tag": "v1.86.5",
+      "date": "2025-08-22",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.5/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.5/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.5/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.86.4"
+    },
+    {
+      "version": "v1.86.4",
+      "tag": "v1.86.4",
+      "date": "2025-08-07",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.4/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.4/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.4/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.86.3"
+    },
+    {
+      "version": "v1.86.3",
+      "tag": "v1.86.3",
+      "date": "2025-08-07",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.3/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.3/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.3/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.86.2"
+    },
+    {
+      "version": "v1.86.2",
+      "tag": "v1.86.2",
+      "date": "2025-07-29",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.2/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.2/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.86.1"
+    },
+    {
+      "version": "v1.86.1",
+      "tag": "v1.86.1",
+      "date": "2025-07-25",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.1/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.86.0"
+    },
+    {
+      "version": "v1.86.0",
+      "tag": "v1.86.0",
+      "date": "2025-07-24",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.86.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.84.3"
+    },
+    {
+      "version": "v1.84.3",
+      "tag": "v1.84.3",
+      "date": "2025-06-26",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.3/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.3/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.3/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.84.2"
+    },
+    {
+      "version": "v1.84.2",
+      "tag": "v1.84.2",
+      "date": "2025-06-09",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.2/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.2/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.84.1"
+    },
+    {
+      "version": "v1.84.1",
+      "tag": "v1.84.1",
+      "date": "2025-05-29",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.1/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.84.0"
+    },
+    {
+      "version": "v1.84.0",
+      "tag": "v1.84.0",
+      "date": "2025-05-21",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.84.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.82.5"
+    },
+    {
+      "version": "v1.82.5",
+      "tag": "v1.82.5",
+      "date": "2025-04-17",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.5/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.5/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.5/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.5/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.82.4"
+    },
+    {
+      "version": "v1.82.4",
+      "tag": "v1.82.4",
+      "date": "2025-04-11",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.4/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.4/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.4/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.82.3"
+    },
+    {
+      "version": "v1.82.3",
+      "tag": "v1.82.3",
+      "date": "2025-04-11",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.3/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.3/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.3/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.82.2"
+    },
+    {
+      "version": "v1.82.2",
+      "tag": "v1.82.2",
+      "date": "2025-04-10",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.2/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.2/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.82.0"
+    },
+    {
+      "version": "v1.82.0",
+      "tag": "v1.82.0",
+      "date": "2025-03-26",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.82.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.80.3"
+    },
+    {
+      "version": "v1.80.3",
+      "tag": "v1.80.3",
+      "date": "2025-03-03",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.3/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.3/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.3/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.80.2"
+    },
+    {
+      "version": "v1.80.2",
+      "tag": "v1.80.2",
+      "date": "2025-02-12",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.2/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.2/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.80.1"
+    },
+    {
+      "version": "v1.80.1",
+      "tag": "v1.80.1",
+      "date": "2025-02-06",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.1/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.80.0"
+    },
+    {
+      "version": "v1.80.0",
+      "tag": "v1.80.0",
+      "date": "2025-01-30",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.80.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.78.3"
+    },
+    {
+      "version": "v1.78.3",
+      "tag": "v1.78.3",
+      "date": "2024-12-11",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.3/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.3/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.3/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.78.2"
+    },
+    {
+      "version": "v1.78.2",
+      "tag": "v1.78.2",
+      "date": "2024-12-11",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.2/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.2/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.78.1"
+    },
+    {
+      "version": "v1.78.1",
+      "tag": "v1.78.1",
+      "date": "2024-12-05",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.1/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.78.0"
+    },
+    {
+      "version": "v1.78.0",
+      "tag": "v1.78.0",
+      "date": "2024-12-05",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.78.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.76.6"
+    },
+    {
+      "version": "v1.76.6",
+      "tag": "v1.76.6",
+      "date": "2024-11-06",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.6/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.6/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.6/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.6/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.6/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.76.3"
+    },
+    {
+      "version": "v1.76.3",
+      "tag": "v1.76.3",
+      "date": "2024-10-21",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.3/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.3/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.3/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.76.1"
+    },
+    {
+      "version": "v1.76.1",
+      "tag": "v1.76.1",
+      "date": "2024-10-16",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.1/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.76.0"
+    },
+    {
+      "version": "v1.76.0",
+      "tag": "v1.76.0",
+      "date": "2024-10-10",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxygroups.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.76.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.74.1",
+      "added": [
+        {
+          "apiVersion": "tailscale.com/v1alpha1",
+          "kind": "ProxyGroup",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.74.1",
+      "tag": "v1.74.1",
+      "date": "2024-09-18",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.74.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.74.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.74.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.74.1/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.74.0"
+    },
+    {
+      "version": "v1.74.0",
+      "tag": "v1.74.0",
+      "date": "2024-09-12",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.74.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.74.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.74.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.74.0/cmd/k8s-operator/deploy/crds/tailscale.com_recorders.yaml"
+      ],
+      "changelogBase": "v1.72.1",
+      "added": [
+        {
+          "apiVersion": "tailscale.com/v1alpha1",
+          "kind": "Recorder",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.72.1",
+      "tag": "v1.72.1",
+      "date": "2024-08-22",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.72.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.72.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.72.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.72.0"
+    },
+    {
+      "version": "v1.72.0",
+      "tag": "v1.72.0",
+      "date": "2024-08-19",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.72.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.72.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.72.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.70.0"
+    },
+    {
+      "version": "v1.70.0",
+      "tag": "v1.70.0",
+      "date": "2024-07-17",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.70.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.70.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.70.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.68.2"
+    },
+    {
+      "version": "v1.68.2",
+      "tag": "v1.68.2",
+      "date": "2024-07-02",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.68.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.68.2/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.68.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.68.1"
+    },
+    {
+      "version": "v1.68.1",
+      "tag": "v1.68.1",
+      "date": "2024-06-14",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.68.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.68.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.68.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.68.0"
+    },
+    {
+      "version": "v1.68.0",
+      "tag": "v1.68.0",
+      "date": "2024-06-12",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.68.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.68.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.68.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.66.4"
+    },
+    {
+      "version": "v1.66.4",
+      "tag": "v1.66.4",
+      "date": "2024-05-20",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.66.4/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.66.4/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.66.4/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.66.3"
+    },
+    {
+      "version": "v1.66.3",
+      "tag": "v1.66.3",
+      "date": "2024-05-14",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.66.3/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.66.3/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.66.3/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.66.2"
+    },
+    {
+      "version": "v1.66.2",
+      "tag": "v1.66.2",
+      "date": "2024-05-14",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.66.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.66.2/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.66.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.66.1"
+    },
+    {
+      "version": "v1.66.1",
+      "tag": "v1.66.1",
+      "date": "2024-05-09",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.66.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.66.1/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.66.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.66.0"
+    },
+    {
+      "version": "v1.66.0",
+      "tag": "v1.66.0",
+      "date": "2024-05-08",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.66.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.66.0/cmd/k8s-operator/deploy/crds/tailscale.com_dnsconfigs.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.66.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.64.2",
+      "added": [
+        {
+          "apiVersion": "tailscale.com/v1alpha1",
+          "kind": "DNSConfig",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.64.2",
+      "tag": "v1.64.2",
+      "date": "2024-04-17",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.64.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.64.2/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.64.1"
+    },
+    {
+      "version": "v1.64.1",
+      "tag": "v1.64.1",
+      "date": "2024-04-15",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.64.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.64.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.64.0"
+    },
+    {
+      "version": "v1.64.0",
+      "tag": "v1.64.0",
+      "date": "2024-04-11",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.64.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.64.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.62.1"
+    },
+    {
+      "version": "v1.62.1",
+      "tag": "v1.62.1",
+      "date": "2024-03-26",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.62.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.62.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.62.0"
+    },
+    {
+      "version": "v1.62.0",
+      "tag": "v1.62.0",
+      "date": "2024-03-13",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.62.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.62.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.60.1"
+    },
+    {
+      "version": "v1.60.1",
+      "tag": "v1.60.1",
+      "date": "2024-02-29",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.60.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.60.1/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.60.0"
+    },
+    {
+      "version": "v1.60.0",
+      "tag": "v1.60.0",
+      "date": "2024-02-15",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.60.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml",
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.60.0/cmd/k8s-operator/deploy/crds/tailscale.com_proxyclasses.yaml"
+      ],
+      "changelogBase": "v1.58.2",
+      "added": [
+        {
+          "apiVersion": "tailscale.com/v1alpha1",
+          "kind": "ProxyClass",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.58.2",
+      "tag": "v1.58.2",
+      "date": "2024-01-23",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.58.2/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml"
+      ],
+      "changelogBase": "v1.58.1"
+    },
+    {
+      "version": "v1.58.1",
+      "tag": "v1.58.1",
+      "date": "2024-01-23",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.58.1/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml"
+      ],
+      "changelogBase": "v1.58.0"
+    },
+    {
+      "version": "v1.58.0",
+      "tag": "v1.58.0",
+      "date": "2024-01-18",
+      "urls": [
+        "https://raw.githubusercontent.com/tailscale/tailscale/v1.58.0/cmd/k8s-operator/deploy/crds/tailscale.com_connectors.yaml"
+      ],
+      "added": [
+        {
+          "apiVersion": "tailscale.com/v1alpha1",
+          "kind": "Connector",
+          "scope": "Cluster"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    "v1.56.1",
+    "v1.56.0",
+    "v1.54.1",
+    "v1.54.0",
+    "v1.52.1",
+    "v1.52.0",
+    "v1.50.1",
+    "v1.50.0",
+    "v1.48.2",
+    "v1.48.1",
+    "v1.48.0",
+    "v1.46.1",
+    "v1.46.0",
+    "v1.44.3",
+    "v1.44.2",
+    "v1.44.0",
+    "v1.42.1",
+    "v1.42.0",
+    "v1.40.1",
+    "v1.40.0",
+    "v1.38.4",
+    "v1.38.3",
+    "v1.38.2",
+    "v1.38.1",
+    "v1.38.0",
+    "v1.36.2",
+    "v1.36.1",
+    "v1.36.0",
+    "v1.34.2",
+    "v1.34.1",
+    "v1.34.0",
+    "v1.32.3",
+    "v1.32.2",
+    "v1.32.1",
+    "v1.32.0",
+    "v1.30.2",
+    "v1.30.1",
+    "v1.30.0",
+    "v1.28.0",
+    "v1.26.2",
+    "v1.26.1",
+    "v1.26.0",
+    "v1.24.2",
+    "v1.24.1",
+    "v1.24.0",
+    "v1.22.2",
+    "v1.22.1",
+    "v1.22.0",
+    "v1.20.4",
+    "v1.20.3",
+    "v1.20.2",
+    "v1.20.1",
+    "v1.20.0",
+    "v1.18.2",
+    "v1.18.1",
+    "v1.18.0",
+    "v1.16.2",
+    "v1.16.1",
+    "v1.16.0",
+    "v1.14.6",
+    "v1.14.5",
+    "v1.14.4",
+    "v1.14.3",
+    "v1.14.0",
+    "v1.12.4",
+    "v1.12.3",
+    "v1.12.2",
+    "v1.12.1",
+    "v1.12.0",
+    "v1.10.2",
+    "v1.10.1",
+    "v1.10.0",
+    "v1.8.8",
+    "v1.8.7",
+    "v1.8.6",
+    "v1.8.5",
+    "v1.8.4",
+    "v1.8.3",
+    "v1.8.2",
+    "v1.8.1",
+    "v1.8.0",
+    "v1.6.0",
+    "v1.4.6",
+    "v1.4.5",
+    "v1.4.4",
+    "v1.4.3",
+    "v1.4.2",
+    "v1.4.1",
+    "v1.4.0",
+    "v1.2.10",
+    "v1.2.9",
+    "v1.2.8",
+    "v1.2.7",
+    "v1.2.6",
+    "v1.2.5",
+    "v1.2.3",
+    "v1.2.2",
+    "v1.2.1",
+    "v1.2.0",
+    "v1.1.0",
+    "v1.0.5",
+    "v1.0.4",
+    "v1.0.3",
+    "v1.0.2",
+    "v1.0.1",
+    "v1.0.0",
+    "v0.100.0",
+    "v0.99.1",
+    "v0.99.0",
+    "v0.98.1",
+    "v0.98.0",
+    "v0.96.1"
+  ]
+}

@@ -1,0 +1,1032 @@
+{
+  "versions": {
+    "v1.9.2": {
+      "descriptionChanged": [
+        "spec.provider.kubernetes.envoyDaemonSet.container.env.valueFrom.configMapKeyRef.key",
+        "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.mountPath",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.securityContext.seLinuxChangePolicy",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef",
+        "spec.provider.kubernetes.envoyDeployment.container.env.valueFrom.configMapKeyRef.key",
+        "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.mountPath",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.env.valueFrom.configMapKeyRef.key",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.mountPath",
+        "spec.provider.kubernetes.envoyDeployment.pod.securityContext.seLinuxChangePolicy",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef",
+        "spec.provider.kubernetes.envoyHpa.behavior.scaleDown.tolerance",
+        "spec.provider.kubernetes.envoyHpa.behavior.scaleUp.tolerance"
+      ],
+      "added": {
+        "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.bindMountOptions": "string[]",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.items.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.items.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.emptyDir.mode": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.clusterTrustBundle.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.configMap.items.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.downwardAPI.items.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.podCertificate.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.secret.items.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.serviceAccountToken.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.bindMountOptions": "string[]",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.postStart.httpGet.protocol": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.preStop.httpGet.protocol": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.grpc.mode": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.httpGet.protocol": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.grpc.mode": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.httpGet.protocol": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.grpc.mode": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.httpGet.protocol": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.bindMountOptions": "string[]",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.emptyDir.mode": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.clusterTrustBundle.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.configMap.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.downwardAPI.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.podCertificate.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.secret.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.serviceAccountToken.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.items.user": "integer"
+      },
+      "descriptions": {
+        "spec.provider.kubernetes.envoyDaemonSet.container.env.valueFrom.configMapKeyRef.key": [
+          0,
+          1
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.bindMountOptions": [
+          null,
+          2
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.mountPath": [
+          3,
+          4
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.securityContext.seLinuxChangePolicy": [
+          5,
+          6
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.emptyDir.mode": [
+          null,
+          9
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource": [
+          10,
+          11
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef": [
+          12,
+          13
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.clusterTrustBundle.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.configMap.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.downwardAPI.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.podCertificate.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.secret.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.serviceAccountToken.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.container.env.valueFrom.configMapKeyRef.key": [
+          0,
+          1
+        ],
+        "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.bindMountOptions": [
+          null,
+          2
+        ],
+        "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.mountPath": [
+          3,
+          4
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.env.valueFrom.configMapKeyRef.key": [
+          0,
+          1
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.postStart.httpGet.protocol": [
+          null,
+          14
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.preStop.httpGet.protocol": [
+          null,
+          14
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.grpc.mode": [
+          null,
+          15
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.httpGet.protocol": [
+          null,
+          14
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.grpc.mode": [
+          null,
+          15
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.httpGet.protocol": [
+          null,
+          14
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.grpc.mode": [
+          null,
+          15
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.httpGet.protocol": [
+          null,
+          14
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.bindMountOptions": [
+          null,
+          2
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.mountPath": [
+          3,
+          4
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.securityContext.seLinuxChangePolicy": [
+          5,
+          6
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.emptyDir.mode": [
+          null,
+          9
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource": [
+          10,
+          11
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef": [
+          12,
+          13
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.clusterTrustBundle.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.configMap.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.downwardAPI.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.podCertificate.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.secret.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.serviceAccountToken.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyHpa.behavior.scaleDown.tolerance": [
+          16,
+          17
+        ],
+        "spec.provider.kubernetes.envoyHpa.behavior.scaleUp.tolerance": [
+          16,
+          17
+        ]
+      }
+    },
+    "v1.9.0": {
+      "added": {
+        "spec.mergeBackends": "object",
+        "spec.shutdown.healthCheckFailureDelay": "string",
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.healthCheck.active.healthCheckLog": "object",
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.healthCheck.active.http.requestBody": "object",
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.loadBalancer.backendUtilization.outOfBand": "object",
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.healthCheck.active.healthCheckLog": "object",
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.healthCheck.active.http.requestBody": "object",
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.loadBalancer.backendUtilization.outOfBand": "object",
+        "spec.telemetry.healthCheckLog": "object",
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.healthCheck.active.healthCheckLog": "object",
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.healthCheck.active.http.requestBody": "object",
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.loadBalancer.backendUtilization.outOfBand": "object",
+        "spec.telemetry.tracing.clientSamplingFraction": "object",
+        "spec.telemetry.tracing.overallSamplingFraction": "object",
+        "spec.telemetry.tracing.provider.backendSettings.healthCheck.active.healthCheckLog": "object",
+        "spec.telemetry.tracing.provider.backendSettings.healthCheck.active.http.requestBody": "object",
+        "spec.telemetry.tracing.provider.backendSettings.loadBalancer.backendUtilization.outOfBand": "object"
+      },
+      "descriptionChanged": [
+        "spec.mergeGateways",
+        "spec.preserveRouteOrder",
+        "spec.provider.kubernetes.envoyDaemonSet.container.env.valueFrom.configMapKeyRef.key",
+        "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.mountPath",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.securityContext.seLinuxChangePolicy",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef",
+        "spec.provider.kubernetes.envoyDeployment.container.env.valueFrom.configMapKeyRef.key",
+        "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.mountPath",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.env.valueFrom.configMapKeyRef.key",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.mountPath",
+        "spec.provider.kubernetes.envoyDeployment.pod.securityContext.seLinuxChangePolicy",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef",
+        "spec.provider.kubernetes.envoyHpa.behavior.scaleDown.tolerance",
+        "spec.provider.kubernetes.envoyHpa.behavior.scaleUp.tolerance",
+        "spec.provider.type"
+      ],
+      "removed": {
+        "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.bindMountOptions": "string[]",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.items.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.items.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.emptyDir.mode": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.clusterTrustBundle.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.configMap.items.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.downwardAPI.items.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.podCertificate.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.secret.items.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.serviceAccountToken.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.bindMountOptions": "string[]",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.postStart.httpGet.protocol": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.preStop.httpGet.protocol": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.grpc.mode": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.httpGet.protocol": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.grpc.mode": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.httpGet.protocol": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.grpc.mode": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.httpGet.protocol": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.bindMountOptions": "string[]",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.emptyDir.mode": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.clusterTrustBundle.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.configMap.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.downwardAPI.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.podCertificate.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.secret.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.serviceAccountToken.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.items.user": "integer"
+      },
+      "descriptions": {
+        "spec.mergeBackends": [
+          null,
+          18
+        ],
+        "spec.mergeGateways": [
+          19,
+          20
+        ],
+        "spec.preserveRouteOrder": [
+          21,
+          22
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.container.env.valueFrom.configMapKeyRef.key": [
+          1,
+          0
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.mountPath": [
+          4,
+          3
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.securityContext.seLinuxChangePolicy": [
+          6,
+          5
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource": [
+          11,
+          10
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef": [
+          13,
+          12
+        ],
+        "spec.provider.kubernetes.envoyDeployment.container.env.valueFrom.configMapKeyRef.key": [
+          1,
+          0
+        ],
+        "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.mountPath": [
+          4,
+          3
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.env.valueFrom.configMapKeyRef.key": [
+          1,
+          0
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.mountPath": [
+          4,
+          3
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.securityContext.seLinuxChangePolicy": [
+          6,
+          5
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource": [
+          11,
+          10
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef": [
+          13,
+          12
+        ],
+        "spec.provider.kubernetes.envoyHpa.behavior.scaleDown.tolerance": [
+          17,
+          16
+        ],
+        "spec.provider.kubernetes.envoyHpa.behavior.scaleUp.tolerance": [
+          17,
+          16
+        ],
+        "spec.provider.type": [
+          23,
+          24
+        ],
+        "spec.shutdown.healthCheckFailureDelay": [
+          null,
+          25
+        ],
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.healthCheck.active.healthCheckLog": [
+          null,
+          26
+        ],
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.healthCheck.active.http.requestBody": [
+          null,
+          27
+        ],
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.loadBalancer.backendUtilization.outOfBand": [
+          null,
+          28
+        ],
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.healthCheck.active.healthCheckLog": [
+          null,
+          26
+        ],
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.healthCheck.active.http.requestBody": [
+          null,
+          27
+        ],
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.loadBalancer.backendUtilization.outOfBand": [
+          null,
+          28
+        ],
+        "spec.telemetry.healthCheckLog": [
+          null,
+          29
+        ],
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.healthCheck.active.healthCheckLog": [
+          null,
+          26
+        ],
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.healthCheck.active.http.requestBody": [
+          null,
+          27
+        ],
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.loadBalancer.backendUtilization.outOfBand": [
+          null,
+          28
+        ],
+        "spec.telemetry.tracing.clientSamplingFraction": [
+          null,
+          30
+        ],
+        "spec.telemetry.tracing.overallSamplingFraction": [
+          null,
+          31
+        ],
+        "spec.telemetry.tracing.provider.backendSettings.healthCheck.active.healthCheckLog": [
+          null,
+          26
+        ],
+        "spec.telemetry.tracing.provider.backendSettings.healthCheck.active.http.requestBody": [
+          null,
+          27
+        ],
+        "spec.telemetry.tracing.provider.backendSettings.loadBalancer.backendUtilization.outOfBand": [
+          null,
+          28
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.bindMountOptions": [
+          2,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.defaultUser": [
+          7,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.items.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.defaultUser": [
+          7,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.items.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.emptyDir.mode": [
+          9,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.defaultUser": [
+          7,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.clusterTrustBundle.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.configMap.items.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.downwardAPI.items.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.podCertificate.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.secret.items.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.serviceAccountToken.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.defaultUser": [
+          7,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.items.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.bindMountOptions": [
+          2,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.postStart.httpGet.protocol": [
+          14,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.preStop.httpGet.protocol": [
+          14,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.grpc.mode": [
+          15,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.httpGet.protocol": [
+          14,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.grpc.mode": [
+          15,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.httpGet.protocol": [
+          14,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.grpc.mode": [
+          15,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.httpGet.protocol": [
+          14,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.bindMountOptions": [
+          2,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.defaultUser": [
+          7,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.items.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.defaultUser": [
+          7,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.items.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.emptyDir.mode": [
+          9,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.defaultUser": [
+          7,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.clusterTrustBundle.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.configMap.items.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.downwardAPI.items.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.podCertificate.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.secret.items.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.serviceAccountToken.user": [
+          8,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.defaultUser": [
+          7,
+          null
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.items.user": [
+          8,
+          null
+        ]
+      }
+    },
+    "v1.8.5": {
+      "descriptionChanged": [
+        "spec.provider.kubernetes.envoyDaemonSet.container.env.valueFrom.configMapKeyRef.key",
+        "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.mountPath",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.securityContext.seLinuxChangePolicy",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef",
+        "spec.provider.kubernetes.envoyDeployment.container.env.valueFrom.configMapKeyRef.key",
+        "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.mountPath",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.env.valueFrom.configMapKeyRef.key",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.mountPath",
+        "spec.provider.kubernetes.envoyDeployment.pod.securityContext.seLinuxChangePolicy",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef",
+        "spec.provider.kubernetes.envoyHpa.behavior.scaleDown.tolerance",
+        "spec.provider.kubernetes.envoyHpa.behavior.scaleUp.tolerance"
+      ],
+      "added": {
+        "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.bindMountOptions": "string[]",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.items.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.items.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.emptyDir.mode": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.clusterTrustBundle.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.configMap.items.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.downwardAPI.items.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.podCertificate.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.secret.items.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.serviceAccountToken.user": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.bindMountOptions": "string[]",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.postStart.httpGet.protocol": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.preStop.httpGet.protocol": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.grpc.mode": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.httpGet.protocol": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.grpc.mode": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.httpGet.protocol": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.grpc.mode": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.httpGet.protocol": "string",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.bindMountOptions": "string[]",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.emptyDir.mode": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.clusterTrustBundle.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.configMap.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.downwardAPI.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.podCertificate.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.secret.items.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.serviceAccountToken.user": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.defaultUser": "integer",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.items.user": "integer"
+      },
+      "descriptions": {
+        "spec.provider.kubernetes.envoyDaemonSet.container.env.valueFrom.configMapKeyRef.key": [
+          0,
+          1
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.bindMountOptions": [
+          null,
+          2
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.mountPath": [
+          3,
+          4
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.securityContext.seLinuxChangePolicy": [
+          5,
+          6
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.emptyDir.mode": [
+          null,
+          9
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource": [
+          10,
+          11
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef": [
+          12,
+          13
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.clusterTrustBundle.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.configMap.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.downwardAPI.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.podCertificate.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.secret.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.serviceAccountToken.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.container.env.valueFrom.configMapKeyRef.key": [
+          0,
+          1
+        ],
+        "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.bindMountOptions": [
+          null,
+          2
+        ],
+        "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.mountPath": [
+          3,
+          4
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.env.valueFrom.configMapKeyRef.key": [
+          0,
+          1
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.postStart.httpGet.protocol": [
+          null,
+          14
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.preStop.httpGet.protocol": [
+          null,
+          14
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.grpc.mode": [
+          null,
+          15
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.httpGet.protocol": [
+          null,
+          14
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.grpc.mode": [
+          null,
+          15
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.httpGet.protocol": [
+          null,
+          14
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.grpc.mode": [
+          null,
+          15
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.httpGet.protocol": [
+          null,
+          14
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.bindMountOptions": [
+          null,
+          2
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.mountPath": [
+          3,
+          4
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.securityContext.seLinuxChangePolicy": [
+          5,
+          6
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.emptyDir.mode": [
+          null,
+          9
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource": [
+          10,
+          11
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef": [
+          12,
+          13
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.clusterTrustBundle.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.configMap.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.downwardAPI.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.podCertificate.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.secret.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.serviceAccountToken.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.defaultUser": [
+          null,
+          7
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.items.user": [
+          null,
+          8
+        ],
+        "spec.provider.kubernetes.envoyHpa.behavior.scaleDown.tolerance": [
+          16,
+          17
+        ],
+        "spec.provider.kubernetes.envoyHpa.behavior.scaleUp.tolerance": [
+          16,
+          17
+        ]
+      }
+    },
+    "v1.8.4": {
+      "descriptionChanged": [
+        "spec.provider.kubernetes.envoyHpa"
+      ],
+      "descriptions": {
+        "spec.provider.kubernetes.envoyHpa": [
+          32,
+          33
+        ]
+      }
+    },
+    "v1.8.2": {
+      "descriptionChanged": [
+        "spec.provider.kubernetes.envoyDaemonSet.container.securityContext.procMount",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.image",
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.portworxVolume",
+        "spec.provider.kubernetes.envoyDeployment.container.securityContext.procMount",
+        "spec.provider.kubernetes.envoyDeployment.initContainers.securityContext.procMount",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.image",
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.portworxVolume"
+      ],
+      "descriptions": {
+        "spec.provider.kubernetes.envoyDaemonSet.container.securityContext.procMount": [
+          34,
+          35
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.image": [
+          36,
+          37
+        ],
+        "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.portworxVolume": [
+          38,
+          39
+        ],
+        "spec.provider.kubernetes.envoyDeployment.container.securityContext.procMount": [
+          34,
+          35
+        ],
+        "spec.provider.kubernetes.envoyDeployment.initContainers.securityContext.procMount": [
+          34,
+          35
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.image": [
+          36,
+          37
+        ],
+        "spec.provider.kubernetes.envoyDeployment.pod.volumes.portworxVolume": [
+          38,
+          39
+        ]
+      }
+    },
+    "v1.8.1": {
+      "descriptionChanged": [
+        "spec.backendTLS.ciphers"
+      ],
+      "descriptions": {
+        "spec.backendTLS.ciphers": [
+          40,
+          41
+        ]
+      }
+    }
+  },
+  "texts": [
+    "The key to select.",
+    "The key to select from the ConfigMap's Data field.\nKeys in the BinaryData field are not currently propagated to container env vars.",
+    "bindMountOptions is the list of additional bind mount options to apply when\nmounting this volume into the container. Allowed values are noexec,\nnodev, and nosuid. These are Linux mount options and have no effect on\nWindows nodes.\nThis field is not supported with image volumes.\nThis is an alpha field and requires enabling the VolumeBindMountOptions feature gate.",
+    "Path within the container at which the volume should be mounted.  Must\nnot contain ':'.",
+    "Path within the container at which the volume should be mounted.",
+    "seLinuxChangePolicy defines how the container's SELinux label is applied to all volumes used by the Pod.\nIt has no effect on nodes that do not support SELinux or to volumes does not support SELinux.\nValid values are \"MountOption\" and \"Recursive\".\n\n\"Recursive\" means relabeling of all files on all Pod volumes by the container runtime.\nThis may be slow for large volumes, but allows mixing privileged and unprivileged Pods sharing the same volume on the same node.\n\n\"MountOption\" mounts all eligible Pod volumes with `-o context` mount option.\nThis requires all Pods that share the same volume to use the same SELinux label.\nIt is not possible to share the same volume among privileged and unprivileged Pods.\nEligible volumes are in-tree FibreChannel and iSCSI volumes, and all CSI volumes\nwhose CSI driver announces SELinux support by setting spec.seLinuxMount: true in their\nCSIDriver instance. Other volumes are always re-labelled recursively.\n\"MountOption\" value is allowed only when SELinuxMount feature gate is enabled.\n\nIf not specified and SELinuxMount feature gate is enabled, \"MountOption\" is used.\nIf not specified and SELinuxMount feature gate is disabled, \"MountOption\" is used for ReadWriteOncePod volumes\nand \"Recursive\" for all other volumes.\n\nThis field affects only Pods that have SELinux label set, either in PodSecurityContext or in SecurityContext of all containers.\n\nAll Pods that use the same volume should use the same seLinuxChangePolicy, otherwise some pods can get stuck in ContainerCreating state.\nNote that this field cannot be set when spec.os.name is windows.",
+    "seLinuxChangePolicy defines how the container's SELinux label is applied to all volumes used by the Pod.\nIt has no effect on nodes that do not support SELinux or to volumes does not support SELinux.\nValid values are \"MountOption\" and \"Recursive\".\n\n\"Recursive\" means relabeling of all files on all Pod volumes by the container runtime.\nThis may be slow for large volumes, but allows mixing privileged and unprivileged Pods sharing the same volume on the same node.\n\n\"MountOption\" mounts all eligible Pod volumes with `-o context` mount option.\nThis requires all Pods that share the same volume to use the same SELinux label.\nIt is not possible to share the same volume among privileged and unprivileged Pods.\nEligible volumes are in-tree FibreChannel and iSCSI volumes, and all CSI volumes\nwhose CSI driver announces SELinux support by setting spec.seLinuxMount: true in their\nCSIDriver instance. Other volumes are always re-labelled recursively.\n\nIf not specified, \"MountOption\" is used.\n\nThis field affects only Pods that have SELinux label set, either in PodSecurityContext or in SecurityContext of all containers.\n\nAll Pods that use the same volume should use the same seLinuxChangePolicy, otherwise some pods can get stuck in ContainerCreating state.\nNote that this field cannot be set when spec.os.name is windows.",
+    "defaultUser is Optional: The owner UID of the created files by default.\nThe defaultUser field is only used as a fallback when the item-level user field is unset.\n(Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.",
+    "user is Optional: The owner UID of the created file.\nIf specified, the item-level user field takes precedence over defaultUser.\n(Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.",
+    "mode specifies the permission bits for the emptyDir directory, in numeric\nnotation (e.g., 0755, 01777). Must be a value between 0000 and 01777.\nIf not specified, defaults to 0777.\nThis might be in conflict with other options that affect the file\nmode, like fsGroup. If fsGroup is specified, the fsGroup permissions\nwill override the mode specified here.\nThis field has no effect on Windows.\nThis field is alpha and requires EmptyDirVolumeMode featuregate to be enabled.",
+    "dataSource field can be used to specify either:\n* An existing VolumeSnapshot object (snapshot.storage.k8s.io/VolumeSnapshot)\n* An existing PVC (PersistentVolumeClaim)\nIf the provisioner or an external controller can support the specified data source,\nit will create a new volume based on the contents of the specified data source.\nWhen the AnyVolumeDataSource feature gate is enabled, dataSource contents will be copied to dataSourceRef,\nand dataSourceRef contents will be copied to dataSource when dataSourceRef.namespace is not specified.\nIf the namespace is specified, then dataSourceRef will not be copied to dataSource.",
+    "dataSource field can be used to specify either:\n* An existing VolumeSnapshot object (snapshot.storage.k8s.io/VolumeSnapshot)\n* An existing PVC (PersistentVolumeClaim)\nIf the provisioner or an external controller can support the specified data source,\nit will create a new volume based on the contents of the specified data source.\ndataSource contents will be copied to dataSourceRef, and dataSourceRef contents will be\ncopied to dataSource when dataSourceRef.namespace is not specified.\nIf the namespace is specified, then dataSourceRef will not be copied to dataSource.",
+    "dataSourceRef specifies the object from which to populate the volume with data, if a non-empty\nvolume is desired. This may be any object from a non-empty API group (non\ncore object) or a PersistentVolumeClaim object.\nWhen this field is specified, volume binding will only succeed if the type of\nthe specified object matches some installed volume populator or dynamic\nprovisioner.\nThis field will replace the functionality of the dataSource field and as such\nif both fields are non-empty, they must have the same value. For backwards\ncompatibility, when namespace isn't specified in dataSourceRef,\nboth fields (dataSource and dataSourceRef) will be set to the same\nvalue automatically if one of them is empty and the other is non-empty.\nWhen namespace is specified in dataSourceRef,\ndataSource isn't set to the same value and must be empty.\nThere are three important differences between dataSource and dataSourceRef:\n* While dataSource only allows two specific types of objects, dataSourceRef\n  allows any non-core object, as well as PersistentVolumeClaim objects.\n* While dataSource ignores disallowed values (dropping them), dataSourceRef\n  preserves all values, and generates an error if a disallowed value is\n  specified.\n* While dataSource only allows local objects, dataSourceRef allows objects\n  in any namespaces.\n(Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.\n(Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.",
+    "dataSourceRef specifies the object from which to populate the volume with data, if a non-empty\nvolume is desired. This may be any object from a non-empty API group (non\ncore object) or a PersistentVolumeClaim object.\nWhen this field is specified, volume binding will only succeed if the type of\nthe specified object matches some installed volume populator or dynamic\nprovisioner.\nThis field will replace the functionality of the dataSource field and as such\nif both fields are non-empty, they must have the same value. For backwards\ncompatibility, when namespace isn't specified in dataSourceRef,\nboth fields (dataSource and dataSourceRef) will be set to the same\nvalue automatically if one of them is empty and the other is non-empty.\nWhen namespace is specified in dataSourceRef,\ndataSource isn't set to the same value and must be empty.\nThere are three important differences between dataSource and dataSourceRef:\n* While dataSource only allows two specific types of objects, dataSourceRef\n  allows any non-core object, as well as PersistentVolumeClaim objects.\n* While dataSource ignores disallowed values (dropping them), dataSourceRef\n  preserves all values, and generates an error if a disallowed value is\n  specified.\n* While dataSource only allows local objects, dataSourceRef allows objects\n  in any namespaces.\n(Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.",
+    "Protocol selects the wire protocol for the probe connection.\nNil defaults to HTTP/1.1.",
+    "mode specifies the connection mode for the gRPC health probe.\nSet to \"TLS\" to use TLS without certificate verification.\nSet to \"Plaintext\" to use a plaintext (insecure) connection explicitly.\nIf not specified, the probe uses a plaintext (insecure) connection.",
+    "tolerance is the tolerance on the ratio between the current and desired\nmetric value under which no updates are made to the desired number of\nreplicas (e.g. 0.01 for 1%). Must be greater than or equal to zero. If not\nset, the default cluster-wide tolerance is applied (by default 10%).\n\nFor example, if autoscaling is configured with a memory consumption target of 100Mi,\nand scale-down and scale-up tolerances of 5% and 1% respectively, scaling will be\ntriggered when the actual consumption falls below 95Mi or exceeds 101Mi.\n\nThis is an beta field and requires the HPAConfigurableTolerance feature\ngate to be enabled.",
+    "tolerance is the tolerance on the ratio between the current and desired\nmetric value under which no updates are made to the desired number of\nreplicas (e.g. 0.01 for 1%). Must be greater than or equal to zero. If not\nset, the default cluster-wide tolerance is applied (by default 10%).\n\nFor example, if autoscaling is configured with a memory consumption target of 100Mi,\nand scale-down and scale-up tolerances of 5% and 1% respectively, scaling will be\ntriggered when the actual consumption falls below 95Mi or exceeds 101Mi.",
+    "MergeBackends configures cluster deduplication: routes that reference the same backend\nshare a single Envoy cluster instead of Envoy Gateway generating one cluster per route\nrule. This reduces xDS size, active health-check traffic, and stats cardinality, and\nimproves upstream connection pooling.\n\nDisabled when unset; specifying this field at all (even without further configuration)\nenables it. Mutually exclusive with MergeGateways.",
+    "MergeGateways defines if Gateway resources should be merged onto the same Envoy Proxy Infrastructure.\nSetting this field to true would merge all Gateway Listeners under the parent Gateway Class.\nThis means that the port, protocol and hostname tuple must be unique for every listener.\nIf a duplicate listener is detected, the newer listener (based on timestamp) will be rejected and its status will be updated with a \"Accepted=False\" condition.",
+    "MergeGateways defines if Gateway resources should be merged onto the same Envoy Proxy Infrastructure.\nSetting this field to true would merge all Gateway Listeners under the parent Gateway Class.\nThis means that the port, protocol and hostname tuple must be unique for every listener.\nIf a duplicate listener is detected, the newer listener (based on timestamp) will be rejected and its status will be updated with a \"Accepted=False\" condition.\n\nMutually exclusive with MergeBackends.",
+    "PreserveRouteOrder determines if the order of matching for HTTPRoutes is determined by Gateway-API\nspecification (https://gateway-api.sigs.k8s.io/reference/1.4/spec/#httprouterule)\nor preserves the order defined by users in the HTTPRoute's HTTPRouteRule list.\nDefault: False",
+    "PreserveRouteOrder determines if the order of matching for HTTPRoutes is determined by Gateway-API\nspecification (https://gateway-api.sigs.k8s.io/reference/api-spec/main/spec/#httprouterule)\nor preserves the order defined by users in the HTTPRoute's HTTPRouteRule list.\nDefault: False",
+    "Type is the type of resource provider to use. A resource provider provides\ninfrastructure resources for running the data plane, e.g. Envoy proxy, and\noptional auxiliary control planes. Supported types are \"Kubernetes\"and \"Host\".",
+    "Type is the type of resource provider to use. A resource provider provides\ninfrastructure resources for running the data plane, e.g. Envoy proxy, and\noptional auxiliary control planes. Supported types are \"Kubernetes\" and \"Host\".",
+    "HealthCheckFailureDelay defines the delay before failing health checks during the graceful drain process.\nIf unspecified, defaults to 0 seconds.",
+    "HealthCheckLog defines health check event logging configuration for this cluster.\nWhen set, HC probe outcomes are logged to the configured sinks.\nTakes precedence over the gateway-level EnvoyProxy.spec.telemetry.healthCheckLog.",
+    "RequestBody defines the HTTP request body payload sent during health checking.",
+    "OutOfBand enables out-of-band ORCA load reporting. When set, Envoy opens a\nserver-streaming gRPC connection to each endpoint's\nxds.service.orca.v3.OpenRcaService/StreamCoreMetrics and pulls load\nreports periodically, instead of relying on in-band ORCA metrics\ncarried in response headers/trailers.\n\nThe backend must implement OpenRcaService for this to take effect.",
+    "HealthCheckLog defines health check event logging for xRoute-backed clusters.",
+    "ClientSamplingFraction represents the fraction of requests that should be\nselected for tracing when requested by the client.\nIf unspecified, client-forced tracing is disabled by default and users must\nset this field to opt in.",
+    "OverallSamplingFraction represents the fraction of requests that should be\nselected for tracing after all other sampling checks have been applied.",
+    "EnvoyHpa defines the Horizontal Pod Autoscaler settings for Envoy Proxy Deployment.",
+    "EnvoyHpa defines the Horizontal Pod Autoscaler settings for Envoy Proxy Deployment.\nIf the HPA is set, the Replicas field from EnvoyDeployment will be ignored, and the\nnumber of replicas is solely managed by the HPA. Use MinReplicas to control the\nlower bound of the replica count instead.",
+    "procMount denotes the type of proc mount to use for the containers.\nThe default value is Default which uses the container runtime defaults for\nreadonly paths and masked paths.\nThis requires the ProcMountType feature flag to be enabled.\nNote that this field cannot be set when spec.os.name is windows.",
+    "procMount denotes the type of proc mount to use for the containers.\nThe default value is Default which uses the container runtime defaults for\nreadonly paths and masked paths.\nNote that this field cannot be set when spec.os.name is windows.",
+    "image represents an OCI object (a container image or artifact) pulled and mounted on the kubelet's host machine.\nThe volume is resolved at pod startup depending on which PullPolicy value is provided:\n\n- Always: the kubelet always attempts to pull the reference. Container creation will fail If the pull fails.\n- Never: the kubelet never pulls the reference and only uses a local image or artifact. Container creation will fail if the reference isn't present.\n- IfNotPresent: the kubelet pulls if the reference isn't already present on disk. Container creation will fail if the reference isn't present and the pull fails.\n\nThe volume gets re-resolved if the pod gets deleted and recreated, which means that new remote content will become available on pod recreation.\nA failure to resolve or pull the image during pod startup will block containers from starting and may add significant latency. Failures will be retried using normal volume backoff and will be reported on the pod reason and message.\nThe types of objects that may be mounted by this volume are defined by the container runtime implementation on a host machine and at minimum must include all valid types supported by the container image field.\nThe OCI object gets mounted in a single directory (spec.containers[*].volumeMounts.mountPath) by merging the manifest layers in the same way as for container images.\nThe volume will be mounted read-only (ro) and non-executable files (noexec).\nSub path mounts for containers are not supported (spec.containers[*].volumeMounts.subpath) before 1.33.\nThe field spec.securityContext.fsGroupChangePolicy has no effect on this volume type.",
+    "image represents an OCI object (a container image or artifact) pulled and mounted on the kubelet's host machine.\nThe volume is resolved at pod startup depending on which PullPolicy value is provided:\n\n- Always: the kubelet always attempts to pull the reference. Container creation will fail If the pull fails.\n- Never: the kubelet never pulls the reference and only uses a local image or artifact. Container creation will fail if the reference isn't present.\n- IfNotPresent: the kubelet pulls if the reference isn't already present on disk. Container creation will fail if the reference isn't present and the pull fails.\n\nThe volume gets re-resolved if the pod gets deleted and recreated, which means that new remote content will become available on pod recreation.\nA failure to resolve or pull the image during pod startup will block containers from starting and may add significant latency. Failures will be retried using normal volume backoff and will be reported on the pod reason and message.\nThe types of objects that may be mounted by this volume are defined by the container runtime implementation on a host machine and at minimum must include all valid types supported by the container image field.\nThe OCI object gets mounted in a single directory (spec.containers[*].volumeMounts.mountPath) by merging the manifest layers in the same way as for container images.\nThe volume will be mounted read-only (ro).\nSub path mounts for containers are not supported (spec.containers[*].volumeMounts.subpath) before 1.33.\nThe field spec.securityContext.fsGroupChangePolicy has no effect on this volume type.",
+    "portworxVolume represents a portworx volume attached and mounted on kubelets host machine.\nDeprecated: PortworxVolume is deprecated. All operations for the in-tree portworxVolume type\nare redirected to the pxd.portworx.com CSI driver when the CSIMigrationPortworx feature-gate\nis on.",
+    "portworxVolume represents a portworx volume attached and mounted on kubelets host machine.\nDeprecated: PortworxVolume is deprecated. All operations for the in-tree portworxVolume type\nare redirected to the pxd.portworx.com CSI driver.",
+    "Ciphers specifies the set of cipher suites supported when\nnegotiating TLS 1.0 - 1.2. This setting has no effect for TLS 1.3.\nFor the list of supported ciphers, please refer to the Envoy documentation:\nhttps://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/transport_sockets/tls/v3/common.proto#extensions-transport-sockets-tls-v3-tlsparameters\nIn non-FIPS Envoy Proxy builds the default cipher list is:\n- [ECDHE-ECDSA-AES128-GCM-SHA256|ECDHE-ECDSA-CHACHA20-POLY1305]\n- [ECDHE-RSA-AES128-GCM-SHA256|ECDHE-RSA-CHACHA20-POLY1305]\n- ECDHE-ECDSA-AES256-GCM-SHA384\n- ECDHE-RSA-AES256-GCM-SHA384\nIn builds using BoringSSL FIPS the default cipher list is:\n- ECDHE-ECDSA-AES128-GCM-SHA256\n- ECDHE-RSA-AES128-GCM-SHA256\n- ECDHE-ECDSA-AES256-GCM-SHA384\n- ECDHE-RSA-AES256-GCM-SHA384",
+    "Ciphers specifies the set of cipher suites supported when\nnegotiating TLS 1.0 - 1.2. This setting has no effect for TLS 1.3.\nFor Envoy TLS cipher suite configuration semantics and default cipher\nlists, see the Envoy documentation:\nhttps://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/transport_sockets/tls/v3/common.proto#extensions-transport-sockets-tls-v3-tlsparameters\nSupported cipher suite names:\n- ECDHE-ECDSA-AES128-GCM-SHA256\n- ECDHE-RSA-AES128-GCM-SHA256\n- ECDHE-ECDSA-AES256-GCM-SHA384\n- ECDHE-RSA-AES256-GCM-SHA384\n- ECDHE-ECDSA-CHACHA20-POLY1305\n- ECDHE-RSA-CHACHA20-POLY1305\n- ECDHE-ECDSA-AES128-SHA\n- ECDHE-RSA-AES128-SHA\n- AES128-GCM-SHA256\n- AES128-SHA\n- ECDHE-ECDSA-AES256-SHA\n- ECDHE-RSA-AES256-SHA\n- AES256-GCM-SHA384\n- AES256-SHA\nSupported IANA/RFC aliases:\n- TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256\n- TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256\n- TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384\n- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384\n- TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256\n- TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256\n- TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA\n- TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA\n- TLS_RSA_WITH_AES_128_GCM_SHA256\n- TLS_RSA_WITH_AES_128_CBC_SHA\n- TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA\n- TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA\n- TLS_RSA_WITH_AES_256_GCM_SHA384\n- TLS_RSA_WITH_AES_256_CBC_SHA\nIn non-FIPS Envoy Proxy builds the default cipher list is:\n- [ECDHE-ECDSA-AES128-GCM-SHA256|ECDHE-ECDSA-CHACHA20-POLY1305]\n- [ECDHE-RSA-AES128-GCM-SHA256|ECDHE-RSA-CHACHA20-POLY1305]\n- ECDHE-ECDSA-AES256-GCM-SHA384\n- ECDHE-RSA-AES256-GCM-SHA384\nIn builds using BoringSSL FIPS the default cipher list is:\n- ECDHE-ECDSA-AES128-GCM-SHA256\n- ECDHE-RSA-AES128-GCM-SHA256\n- ECDHE-ECDSA-AES256-GCM-SHA384\n- ECDHE-RSA-AES256-GCM-SHA384"
+  ]
+}

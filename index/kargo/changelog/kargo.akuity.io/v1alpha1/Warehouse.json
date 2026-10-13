@@ -1,0 +1,401 @@
+{
+  "versions": {
+    "v1.12.0": {
+      "added": {
+        "status.discoveredArtifacts.charts.subscriptionName": "string",
+        "status.discoveredArtifacts.git.subscriptionName": "string",
+        "status.discoveredArtifacts.images.subscriptionName": "string"
+      },
+      "descriptions": {
+        "status.discoveredArtifacts.charts.subscriptionName": [
+          null,
+          0
+        ],
+        "status.discoveredArtifacts.git.subscriptionName": [
+          null,
+          0
+        ],
+        "status.discoveredArtifacts.images.subscriptionName": [
+          null,
+          0
+        ]
+      }
+    },
+    "v1.11.0": {
+      "added": {
+        "status.discoveredArtifacts.git.observedRefs": "object"
+      },
+      "descriptions": {
+        "status.discoveredArtifacts.git.observedRefs": [
+          null,
+          1
+        ]
+      }
+    },
+    "v1.10.0": {
+      "descriptionChanged": [
+        "status.discoveredArtifacts.git.repoURL"
+      ],
+      "descriptions": {
+        "status.discoveredArtifacts.git.repoURL": [
+          2,
+          3
+        ]
+      }
+    },
+    "v1.9.0": {
+      "added": {
+        "status.discoveredArtifacts.results": "object[]"
+      },
+      "removed": {
+        "spec.subscriptions.chart": "object",
+        "spec.subscriptions.git": "object",
+        "spec.subscriptions.image": "object"
+      },
+      "descriptions": {
+        "status.discoveredArtifacts.results": [
+          null,
+          4
+        ],
+        "spec.subscriptions.chart": [
+          5,
+          null
+        ],
+        "spec.subscriptions.git": [
+          6,
+          null
+        ],
+        "spec.subscriptions.image": [
+          7,
+          null
+        ]
+      }
+    },
+    "v1.8.0": {
+      "added": {
+        "spec.freightCreationCriteria": "object"
+      },
+      "descriptions": {
+        "spec.freightCreationCriteria": [
+          null,
+          8
+        ]
+      }
+    },
+    "v1.7.0": {
+      "added": {
+        "spec.subscriptions.image.constraint": "string"
+      },
+      "descriptionChanged": [
+        "spec.subscriptions.image.semverConstraint"
+      ],
+      "removed": {
+        "spec.subscriptions.image.gitRepoURL": "string",
+        "status.discoveredArtifacts.images.references.gitRepoURL": "string"
+      },
+      "descriptions": {
+        "spec.subscriptions.image.constraint": [
+          null,
+          9
+        ],
+        "spec.subscriptions.image.semverConstraint": [
+          10,
+          11
+        ],
+        "spec.subscriptions.image.gitRepoURL": [
+          12,
+          null
+        ],
+        "status.discoveredArtifacts.images.references.gitRepoURL": [
+          13,
+          null
+        ]
+      }
+    },
+    "v1.6.0": {
+      "descriptionChanged": [
+        "spec.freightCreationPolicy",
+        "spec.subscriptions.git.commitSelectionStrategy",
+        "spec.subscriptions.git.includePaths",
+        "spec.subscriptions.image.imageSelectionStrategy"
+      ],
+      "added": {
+        "spec.subscriptions.git.expressionFilter": "string"
+      },
+      "descriptions": {
+        "spec.freightCreationPolicy": [
+          14,
+          15
+        ],
+        "spec.subscriptions.git.commitSelectionStrategy": [
+          16,
+          17
+        ],
+        "spec.subscriptions.git.expressionFilter": [
+          null,
+          18
+        ],
+        "spec.subscriptions.git.includePaths": [
+          19,
+          20
+        ],
+        "spec.subscriptions.image.imageSelectionStrategy": [
+          21,
+          22
+        ]
+      }
+    },
+    "v1.5.0": {
+      "descriptionChanged": [
+        "spec.subscriptions.image.gitRepoURL",
+        "status.discoveredArtifacts.images.references.gitRepoURL"
+      ],
+      "descriptions": {
+        "spec.subscriptions.image.gitRepoURL": [
+          23,
+          12
+        ],
+        "status.discoveredArtifacts.images.references.gitRepoURL": [
+          24,
+          13
+        ]
+      }
+    },
+    "v1.4.0": {
+      "added": {
+        "status.discoveredArtifacts.images.references.annotations": "map[string]string"
+      },
+      "descriptions": {
+        "status.discoveredArtifacts.images.references.annotations": [
+          null,
+          25
+        ]
+      }
+    },
+    "v1.1.2": {
+      "descriptionChanged": [
+        "spec.subscriptions.image.semverConstraint"
+      ],
+      "descriptions": {
+        "spec.subscriptions.image.semverConstraint": [
+          26,
+          10
+        ]
+      }
+    },
+    "v1.0.4": {
+      "descriptionChanged": [
+        "spec.freightCreationPolicy",
+        "spec.subscriptions.git.commitSelectionStrategy",
+        "spec.subscriptions.image.imageSelectionStrategy"
+      ],
+      "descriptions": {
+        "spec.freightCreationPolicy": [
+          27,
+          14
+        ],
+        "spec.subscriptions.git.commitSelectionStrategy": [
+          28,
+          16
+        ],
+        "spec.subscriptions.image.imageSelectionStrategy": [
+          29,
+          21
+        ]
+      }
+    },
+    "v0.9.0": {
+      "added": {
+        "spec.subscriptions.git.strictSemvers": "boolean",
+        "spec.subscriptions.image.strictSemvers": "boolean",
+        "status.conditions": "object[]",
+        "status.discoveredArtifacts.discoveredAt": "string"
+      },
+      "removed": {
+        "status.message": "string"
+      },
+      "descriptions": {
+        "spec.subscriptions.git.strictSemvers": [
+          null,
+          30
+        ],
+        "spec.subscriptions.image.strictSemvers": [
+          null,
+          31
+        ],
+        "status.conditions": [
+          null,
+          32
+        ],
+        "status.discoveredArtifacts.discoveredAt": [
+          null,
+          33
+        ],
+        "status.message": [
+          34,
+          null
+        ]
+      }
+    },
+    "v0.8.0": {
+      "optional": [
+        "spec.freightCreationPolicy"
+      ],
+      "descriptions": {
+        "spec.freightCreationPolicy": [
+          null,
+          27
+        ]
+      }
+    },
+    "v0.7.0": {
+      "added": {
+        "spec.freightCreationPolicy": "string",
+        "spec.interval": "string",
+        "spec.subscriptions.chart.discoveryLimit": "integer",
+        "spec.subscriptions.git.discoveryLimit": "integer",
+        "spec.subscriptions.image.discoveryLimit": "integer",
+        "status.discoveredArtifacts": "object",
+        "status.lastFreightID": "string"
+      },
+      "removed": {
+        "status.lastFreight": "object"
+      },
+      "descriptions": {
+        "spec.freightCreationPolicy": [
+          null,
+          27
+        ],
+        "spec.interval": [
+          null,
+          35
+        ],
+        "spec.subscriptions.chart.discoveryLimit": [
+          null,
+          36
+        ],
+        "spec.subscriptions.git.discoveryLimit": [
+          null,
+          37
+        ],
+        "spec.subscriptions.image.discoveryLimit": [
+          null,
+          38
+        ],
+        "status.discoveredArtifacts": [
+          null,
+          39
+        ],
+        "status.lastFreightID": [
+          null,
+          40
+        ],
+        "status.lastFreight": [
+          41,
+          null
+        ]
+      }
+    },
+    "v0.6.0": {
+      "descriptionChanged": [
+        "spec.subscriptions.git.excludePaths",
+        "spec.subscriptions.git.includePaths"
+      ],
+      "added": {
+        "status.lastFreight.verificationHistory.actor": "string",
+        "status.lastFreight.verificationHistory.finishTime": "string",
+        "status.lastFreight.verificationInfo.actor": "string",
+        "status.lastFreight.verificationInfo.finishTime": "string",
+        "status.lastHandledRefresh": "string"
+      },
+      "removed": {
+        "status.lastFreight.id": "string"
+      },
+      "descriptions": {
+        "spec.subscriptions.git.excludePaths": [
+          42,
+          43
+        ],
+        "spec.subscriptions.git.includePaths": [
+          44,
+          19
+        ],
+        "status.lastFreight.verificationHistory.actor": [
+          null,
+          45
+        ],
+        "status.lastFreight.verificationHistory.finishTime": [
+          null,
+          46
+        ],
+        "status.lastFreight.verificationInfo.actor": [
+          null,
+          45
+        ],
+        "status.lastFreight.verificationInfo.finishTime": [
+          null,
+          46
+        ],
+        "status.lastHandledRefresh": [
+          null,
+          47
+        ],
+        "status.lastFreight.id": [
+          48,
+          null
+        ]
+      }
+    }
+  },
+  "texts": [
+    "SubscriptionName is the optional human-readable name of the subscription\nthat produced this discovery result.",
+    "ObservedRefs records the raw remote ref state observed at the most recent\nsuccessful discovery, after name-based filtering but before path filtering\nor commit selection. The Warehouse uses it to short-circuit discovery: at\nthe start of a reconcile, a single git ls-remote call yields the current\nref state, and if it matches this field, nothing relevant has moved and the\npreviously selected Commits remain valid -- so an expensive clone and\nhistory walk can be skipped entirely. This field is optional; when absent\n(e.g. on a Warehouse that predates this feature), discovery falls through to\na full clone and repopulates it.",
+    "RepoURL is the repository URL of the GitSubscription.",
+    "RepoURL is the repository URL of the GitSubscription.\n",
+    "Results holds the artifact references discovered by the Warehouse.",
+    "Chart describes a subscription to a Helm chart repository.",
+    "Git describes a subscriptions to a Git repository.",
+    "Image describes a subscription to container image repository.",
+    "FreightCreationCriteria defines criteria that must be satisfied for Freight\nto be created automatically from new artifacts following discovery. This\nfield has no effect when the FreightCreationPolicy is `Manual`.",
+    "Constraint specifies constraints on what new image versions are\npermissible. Acceptable values for this field vary contextually by\nImageSelectionStrategy. The field is optional and is ignored by some\nstrategies. When non-empty, the value in this field takes precedence over\nthe value of the deprecated SemverConstraint field.",
+    "SemverConstraint specifies constraints on what new image versions are\npermissible. The value in this field only has any effect when the\nImageSelectionStrategy is SemVer or left unspecified (which is implicitly\nthe same as SemVer). This field is also optional. When left unspecified,\n(and the ImageSelectionStrategy is SemVer or unspecified), there will be no\nconstraints, which means the latest semantically tagged version of an image\nwill always be used. Care should be taken with leaving this field\nunspecified, as it can lead to the unanticipated rollout of breaking\nchanges.\nMore info: https://github.com/masterminds/semver#checking-version-constraints",
+    "SemverConstraint specifies constraints on what new image versions are\npermissible. The value in this field only has any effect when the\nImageSelectionStrategy is SemVer or left unspecified (which is implicitly\nthe same as SemVer). This field is also optional. When left unspecified,\n(and the ImageSelectionStrategy is SemVer or unspecified), there will be no\nconstraints, which means the latest semantically tagged version of an image\nwill always be used. Care should be taken with leaving this field\nunspecified, as it can lead to the unanticipated rollout of breaking\nchanges.\nMore info: https://github.com/masterminds/semver#checking-version-constraints\n\nDeprecated: Use Constraint instead. This field will be removed in v1.9.0",
+    "GitRepoURL optionally specifies the URL of a Git repository that contains\nthe source code for the image repository referenced by the RepoURL field.\nWhen this is specified, Kargo MAY be able to infer and link to the exact\nrevision of that source code that was used to build the image.\n\nDeprecated: Use OCI annotations instead. Will be removed in v1.7.0.",
+    "GitRepoURL is the URL of the Git repository that contains the source\ncode for this image. This field is optional, and only populated if the\nImageSubscription specifies a GitRepoURL.\n\nDeprecated: Use OCI annotations instead. Will be removed in v1.7.0.",
+    "FreightCreationPolicy describes how Freight is created by this Warehouse.\nThis field is optional. When left unspecified, the field is implicitly\ntreated as if its value were \"Automatic\".\nAccepted values: Automatic, Manual",
+    "FreightCreationPolicy describes how Freight is created by this Warehouse.\nThis field is optional. When left unspecified, the field is implicitly\ntreated as if its value were \"Automatic\".\n\nAccepted values:\n\n- \"Automatic\": New Freight is created automatically when any new artifact\n  is discovered.\n- \"Manual\": New Freight is never created automatically.",
+    "CommitSelectionStrategy specifies the rules for how to identify the newest\ncommit of interest in the repository specified by the RepoURL field. This\nfield is optional. When left unspecified, the field is implicitly treated\nas if its value were \"NewestFromBranch\".\nAccepted values: Lexical, NewestFromBranch, NewestTag, SemVer",
+    "CommitSelectionStrategy specifies the rules for how to identify the newest\ncommit of interest in the repository specified by the RepoURL field. This\nfield is optional. When left unspecified, the field is implicitly treated\nas if its value were \"NewestFromBranch\".\n\nAccepted values:\n\n- \"NewestFromBranch\": Selects the latest commit on the branch specified\n  by the Branch field or the default branch if none is specified. This is\n  the default strategy.\n\n- \"SemVer\": Selects the commit referenced by the semantically greatest\n  tag. The SemverConstraint field can optionally be used to narrow the set\n  of tags eligible for selection.\n\n- \"Lexical\": Selects the commit referenced by the lexicographically\n  greatest tag. Useful when tags embed a _leading_ date or timestamp. The\n  AllowTags and IgnoreTags fields can optionally be used to narrow the set\n  of tags eligible for selection.\n\n- \"NewestTag\": Selects the commit referenced by the most recently created\n  tag. The AllowTags and IgnoreTags fields can optionally be used to\n  narrow the set of tags eligible for selection.",
+    "ExpressionFilter is an expression that can optionally be used to limit\nthe commits or tags that are considered in determining the newest commit\nof interest based on their metadata.\n\nFor commit-based strategies (NewestFromBranch), the filter applies to\ncommits and has access to commit metadata variables.\nFor tag-based strategies (Lexical, NewestTag, SemVer), the filter applies\nto tags and has access to tag metadata variables. The filter is applied\nafter AllowTags, IgnoreTags, and SemverConstraint fields.\n\nThe expression should be a valid expr-lang expression that evaluates to\ntrue or false. When the expression evaluates to true, the commit/tag is\nincluded in the set that is considered. When the expression evaluates to\nfalse, the commit/tag is excluded.\n\nAvailable variables depend on the CommitSelectionStrategy:\n\nFor NewestFromBranch (commit filtering):\n  - `id`: The ID (sha) of the commit.\n  - `commitDate`: The commit date of the commit.\n  - `author`: The author of the commit message, in the format \"Name <email>\".\n  - `committer`: The person who committed the commit, in the format\n\t   \"Name <email>\".\n  - `subject`: The subject (first line) of the commit message.\n\nFor Lexical, NewestTag, SemVer (tag filtering):\n  - `tag`: The name of the tag.\n  - `id`: The ID (sha) of the commit associated with the tag.\n  - `creatorDate`: The creation date of an annotated tag, or the commit\n\t\tdate of a lightweight tag.\n  - `author`: The author of the commit message associated with the tag,\n\t   in the format \"Name <email>\".\n  - `committer`: The person who committed the commit associated with the\n\t   tag, in the format \"Name <email>\".\n  - `subject`: The subject (first line) of the commit message associated\n\t   with the tag.\n\t - `tagger`: The person who created the tag, in the format \"Name <email>\".\n\t   Only available for annotated tags.\n\t - `annotation`: The subject (first line) of the tag annotation. Only\n\t   available for annotated tags.\n\nRefer to the expr-lang documentation for more details on syntax and\ncapabilities of the expression language: https://expr-lang.org.",
+    "IncludePaths is a list of selectors that designate paths in the repository\nthat should trigger the production of new Freight when changes are detected\ntherein. When specified, only changes in the identified paths will trigger\nFreight production. When not specified, changes in any path will trigger\nFreight production. Selectors may be defined using:\n  1. Exact paths to files or directories (ex. \"charts/foo\")\n  2. Glob patterns (prefix the pattern with \"glob:\"; ex. \"glob:*.yaml\")\n  3. Regular expressions (prefix the pattern with \"regex:\" or \"regexp:\";\n     ex. \"regexp:^.*\\.yaml$\")\nPaths selected by IncludePaths may be unselected by ExcludePaths. This\nis a useful method for including a broad set of paths and then excluding a\nsubset of them.",
+    "IncludePaths is a list of selectors that designate paths in the repository\nthat should trigger the production of new Freight when changes are detected\ntherein. When specified, only changes in the identified paths will trigger\nFreight production. When not specified, changes in any path will trigger\nFreight production. Selectors may be defined using:\n  1. Exact paths to files or directories (ex. \"charts/foo\")\n  2. Glob patterns (prefix the pattern with \"glob:\"; ex. \"glob:*.yaml\")\n  3. Regular expressions (prefix the pattern with \"regex:\" or \"regexp:\";\n     ex. \"regexp:^.*\\.yaml$\")\n\nPaths selected by IncludePaths may be unselected by ExcludePaths. This\nis a useful method for including a broad set of paths and then excluding a\nsubset of them.",
+    "ImageSelectionStrategy specifies the rules for how to identify the newest version\nof the image specified by the RepoURL field. This field is optional. When\nleft unspecified, the field is implicitly treated as if its value were\n\"SemVer\".\nAccepted values: Digest, Lexical, NewestBuild, SemVer",
+    "ImageSelectionStrategy specifies the rules for how to identify the newest version\nof the image specified by the RepoURL field. This field is optional. When\nleft unspecified, the field is implicitly treated as if its value were\n\"SemVer\".\n\nAccepted values:\n\n- \"Digest\": Selects the image currently referenced by the tag specified\n  (unintuitively) by the SemverConstraint field.\n\n- \"Lexical\": Selects the image referenced by the lexicographically greatest\n  tag. Useful when tags embed a leading date or timestamp. The AllowTags\n  and IgnoreTags fields can optionally be used to narrow the set of tags\n  eligible for selection.\n\n- \"NewestBuild\": Selects the image that was most recently pushed to the\n  repository. The AllowTags and IgnoreTags fields can optionally be used\n  to narrow the set of tags eligible for selection. This is the least\n  efficient and is likely to cause rate limiting affecting this Warehouse\n  and possibly others. This strategy should be avoided.\n\n- \"SemVer\": Selects the image with the semantically greatest tag. The\n  AllowTags and IgnoreTags fields can optionally be used to narrow the set\n  of tags eligible for selection.",
+    "GitRepoURL optionally specifies the URL of a Git repository that contains\nthe source code for the image repository referenced by the RepoURL field.\nWhen this is specified, Kargo MAY be able to infer and link to the exact\nrevision of that source code that was used to build the image.",
+    "GitRepoURL is the URL of the Git repository that contains the source\ncode for this image. This field is optional, and only populated if the\nImageSubscription specifies a GitRepoURL.",
+    "Annotations is a map of key-value pairs that provide additional\ninformation about the image.",
+    "SemverConstraint specifies constraints on what new image versions are\npermissible. The value in this field only has any effect when the\nImageSelectionStrategy is SemVer or left unspecified (which is implicitly\nthe same as SemVer). This field is also optional. When left unspecified,\n(and the ImageSelectionStrategy is SemVer or unspecified), there will be no\nconstraints, which means the latest semantically tagged version of an image\nwill always be used. Care should be taken with leaving this field\nunspecified, as it can lead to the unanticipated rollout of breaking\nchanges. Refer to Image Updater documentation for more details.\nMore info: https://github.com/masterminds/semver#checking-version-constraints",
+    "FreightCreationPolicy describes how Freight is created by this Warehouse.\nThis field is optional. When left unspecified, the field is implicitly\ntreated as if its value were \"Automatic\".",
+    "CommitSelectionStrategy specifies the rules for how to identify the newest\ncommit of interest in the repository specified by the RepoURL field. This\nfield is optional. When left unspecified, the field is implicitly treated\nas if its value were \"NewestFromBranch\".",
+    "ImageSelectionStrategy specifies the rules for how to identify the newest version\nof the image specified by the RepoURL field. This field is optional. When\nleft unspecified, the field is implicitly treated as if its value were\n\"SemVer\".",
+    "StrictSemvers specifies whether only \"strict\" semver tags should be\nconsidered. A \"strict\" semver tag is one containing ALL of major, minor,\nand patch version components. This is enabled by default, but only has any\neffect when the CommitSelectionStrategy is SemVer. This should be disabled\ncautiously, as it creates the potential for any tag containing numeric\ncharacters only to be mistaken for a semver string containing the major\nversion number only.",
+    "StrictSemvers specifies whether only \"strict\" semver tags should be\nconsidered. A \"strict\" semver tag is one containing ALL of major, minor,\nand patch version components. This is enabled by default, but only has any\neffect when the ImageSelectionStrategy is SemVer. This should be disabled\ncautiously, as it is not uncommon to tag container images with short Git\ncommit hashes, which have the potential to contain numeric characters only\nand could be mistaken for a semver string containing the major version\nnumber only.",
+    "Conditions contains the last observations of the Warehouse's current\nstate.",
+    "DiscoveredAt is the time at which the Warehouse discovered the artifacts.",
+    "Message describes any errors that are preventing the Warehouse controller\nfrom polling repositories to discover new Freight.",
+    "Interval is the reconciliation interval for this Warehouse. On each\nreconciliation, the Warehouse will discover new artifacts and optionally\nproduce new Freight. This field is optional. When left unspecified, the\nfield is implicitly treated as if its value were \"5m0s\".",
+    "DiscoveryLimit is an optional limit on the number of chart versions that\ncan be discovered for this subscription. The limit is applied after\nfiltering charts based on the SemverConstraint field.\nWhen left unspecified, the field is implicitly treated as if its value\nwere \"20\". The upper limit for this field is 100.",
+    "DiscoveryLimit is an optional limit on the number of commits that can be\ndiscovered for this subscription. The limit is applied after filtering\ncommits based on the AllowTags and IgnoreTags fields.\nWhen left unspecified, the field is implicitly treated as if its value\nwere \"20\". The upper limit for this field is 100.",
+    "DiscoveryLimit is an optional limit on the number of image references\nthat can be discovered for this subscription. The limit is applied after\nfiltering images based on the AllowTags and IgnoreTags fields.\nWhen left unspecified, the field is implicitly treated as if its value\nwere \"20\". The upper limit for this field is 100.",
+    "DiscoveredArtifacts holds the artifacts discovered by the Warehouse.",
+    "LastFreightID is a reference to the system-assigned identifier (name) of\nthe most recent Freight produced by the Warehouse.",
+    "LastFreight refers to the last Freight produced by this Warehouse",
+    "ExcludePaths is an optional list of regular expressions used to specify paths\nin git repository, changes in which should never produce new freight. When used\nin conjuction with IncludePaths, both matching same path/paths, ExcludePaths takes\nprecedence over IncludePaths.",
+    "ExcludePaths is a list of selectors that designate paths in the repository\nthat should NOT trigger the production of new Freight when changes are\ndetected therein. When specified, changes in the identified paths will not\ntrigger Freight production. When not specified, paths that should trigger\nFreight production will be defined solely by IncludePaths. Selectors may be\ndefined using:\n  1. Exact paths to files or directories (ex. \"charts/foo\")\n  2. Glob patterns (prefix the pattern with \"glob:\"; ex. \"glob:*.yaml\")\n  3. Regular expressions (prefix the pattern with \"regex:\" or \"regexp:\";\n     ex. \"regexp:^.*\\.yaml$\")\nPaths selected by IncludePaths may be unselected by ExcludePaths. This\nis a useful method for including a broad set of paths and then excluding a\nsubset of them.",
+    "IncludePaths is a list of regular expressions that can optionally be used to\nlimit file paths in repository, changes in which will result in creation of\nnew freight. When not specified - changes in any path will produce new\nfreight, it is equivalent to having a IncludePaths with an entry of \".*\"\nWhen both IncludePaths and ExcludePaths are specified and match same path/paths,\nExcludePaths will prevail over IncludePaths.",
+    "Actor is the name of the entity that initiated or aborted the\nVerification process.",
+    "FinishTime is the time at which the Verification process finished.",
+    "LastHandledRefresh holds the value of the most recent AnnotationKeyRefresh\nannotation that was handled by the controller. This field can be used to\ndetermine whether the request to refresh the resource has been handled.",
+    "ID is the same as Name. It will be removed in v0.6.0."
+  ]
+}

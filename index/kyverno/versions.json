@@ -1,0 +1,2512 @@
+{
+  "name": "Kyverno",
+  "slug": "kyverno",
+  "repo": "kyverno/kyverno",
+  "logo": "https://avatars.githubusercontent.com/u/68448710?s=200&v=4",
+  "versions": [
+    {
+      "version": "v1.19.1",
+      "tag": "v1.19.1",
+      "date": "2026-09-10",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespaceddeletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedgeneratingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedimagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedmutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedvalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.1/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.19.0"
+    },
+    {
+      "version": "v1.19.0",
+      "tag": "v1.19.0",
+      "date": "2026-08-20",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespaceddeletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedgeneratingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedimagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedmutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedvalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.19.0/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.18.2"
+    },
+    {
+      "version": "v1.18.2",
+      "tag": "v1.18.2",
+      "date": "2026-07-10",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/policies.kyverno.io/policies.kyverno.io_namespaceddeletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedgeneratingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedimagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedmutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedvalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.2/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.18.1"
+    },
+    {
+      "version": "v1.18.1",
+      "tag": "v1.18.1",
+      "date": "2026-05-18",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespaceddeletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedgeneratingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedimagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedmutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedvalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.1/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.18.0"
+    },
+    {
+      "version": "v1.18.0",
+      "tag": "v1.18.0",
+      "date": "2026-04-29",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespaceddeletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedgeneratingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedimagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedmutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedvalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.18.0/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.17.2"
+    },
+    {
+      "version": "v1.17.2",
+      "tag": "v1.17.2",
+      "date": "2026-04-23",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/policies.kyverno.io/policies.kyverno.io_namespaceddeletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedgeneratingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedimagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedmutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedvalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.2/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.17.1"
+    },
+    {
+      "version": "v1.17.1",
+      "tag": "v1.17.1",
+      "date": "2026-02-19",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespaceddeletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedgeneratingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedimagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedmutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedvalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.1/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.17.0"
+    },
+    {
+      "version": "v1.17.0",
+      "tag": "v1.17.0",
+      "date": "2026-02-02",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespaceddeletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedgeneratingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedimagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedmutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedvalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.17.0/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.16.4",
+      "added": [
+        {
+          "apiVersion": "kyverno.io/v2",
+          "kind": "GlobalContextEntry",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1",
+          "kind": "DeletingPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1",
+          "kind": "GeneratingPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1",
+          "kind": "ImageValidatingPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1",
+          "kind": "MutatingPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1",
+          "kind": "NamespacedDeletingPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1",
+          "kind": "NamespacedGeneratingPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1",
+          "kind": "NamespacedImageValidatingPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1",
+          "kind": "NamespacedMutatingPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1",
+          "kind": "NamespacedValidatingPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1",
+          "kind": "PolicyException",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1",
+          "kind": "ValidatingPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1beta1",
+          "kind": "NamespacedGeneratingPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1beta1",
+          "kind": "NamespacedMutatingPolicy",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.16.4",
+      "tag": "v1.16.4",
+      "date": "2026-04-23",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/policies.kyverno.io/policies.kyverno.io_namespaceddeletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedimagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedvalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.4/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.16.3"
+    },
+    {
+      "version": "v1.16.3",
+      "tag": "v1.16.3",
+      "date": "2026-01-27",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/policies.kyverno.io/policies.kyverno.io_namespaceddeletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedimagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedvalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.3/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.16.2"
+    },
+    {
+      "version": "v1.16.2",
+      "tag": "v1.16.2",
+      "date": "2026-01-09",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/policies.kyverno.io/policies.kyverno.io_namespaceddeletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedimagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedvalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.2/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.16.1"
+    },
+    {
+      "version": "v1.16.1",
+      "tag": "v1.16.1",
+      "date": "2025-12-03",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespaceddeletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedimagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedvalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.1/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.16.0"
+    },
+    {
+      "version": "v1.16.0",
+      "tag": "v1.16.0",
+      "date": "2025-11-10",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespaceddeletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedimagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/policies.kyverno.io/policies.kyverno.io_namespacedvalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.16.0/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.15.20",
+      "added": [
+        {
+          "apiVersion": "kyverno.io/v2beta1",
+          "kind": "GlobalContextEntry",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1beta1",
+          "kind": "DeletingPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1beta1",
+          "kind": "GeneratingPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1beta1",
+          "kind": "ImageValidatingPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1beta1",
+          "kind": "MutatingPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1beta1",
+          "kind": "NamespacedDeletingPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1beta1",
+          "kind": "NamespacedImageValidatingPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1beta1",
+          "kind": "NamespacedValidatingPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1beta1",
+          "kind": "PolicyException",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1beta1",
+          "kind": "ValidatingPolicy",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.15.20",
+      "tag": "v1.15.20",
+      "date": "2025-11-05",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.20/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.15.3"
+    },
+    {
+      "version": "v1.15.3",
+      "tag": "v1.15.3",
+      "date": "2026-01-27",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.3/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.15.2"
+    },
+    {
+      "version": "v1.15.2",
+      "tag": "v1.15.2",
+      "date": "2025-09-18",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.2/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.15.1"
+    },
+    {
+      "version": "v1.15.1",
+      "tag": "v1.15.1",
+      "date": "2025-08-15",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.1/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.15.0"
+    },
+    {
+      "version": "v1.15.0",
+      "tag": "v1.15.0",
+      "date": "2025-07-31",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/policies.kyverno.io/policies.kyverno.io_deletingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/policies.kyverno.io/policies.kyverno.io_generatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/policies.kyverno.io/policies.kyverno.io_mutatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.15.0/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.14.5",
+      "added": [
+        {
+          "apiVersion": "policies.kyverno.io/v1alpha1",
+          "kind": "DeletingPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1alpha1",
+          "kind": "GeneratingPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1alpha1",
+          "kind": "MutatingPolicy",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.14.5",
+      "tag": "v1.14.5",
+      "date": "2025-11-05",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.5/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.5/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.5/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.5/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.5/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.5/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.5/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.5/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.5/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.5/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.5/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.5/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.5/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.5/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.14.4"
+    },
+    {
+      "version": "v1.14.4",
+      "tag": "v1.14.4",
+      "date": "2025-06-26",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.4/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.4/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.4/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.4/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.4/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.4/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.4/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.4/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.4/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.4/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.4/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.4/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.4/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.4/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.14.3"
+    },
+    {
+      "version": "v1.14.3",
+      "tag": "v1.14.3",
+      "date": "2025-06-19",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.3/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.3/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.3/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.3/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.3/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.3/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.3/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.3/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.3/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.3/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.3/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.3/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.3/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.3/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.14.2"
+    },
+    {
+      "version": "v1.14.2",
+      "tag": "v1.14.2",
+      "date": "2025-06-03",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.2/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.2/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.2/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.2/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.2/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.2/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.2/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.2/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.2/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.2/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.2/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.2/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.2/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.2/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.14.1"
+    },
+    {
+      "version": "v1.14.1",
+      "tag": "v1.14.1",
+      "date": "2025-04-30",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.1/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.1/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.1/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.1/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.1/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.1/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.1/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.1/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.1/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.1/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.1/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.1/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.1/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.1/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.14.0"
+    },
+    {
+      "version": "v1.14.0",
+      "tag": "v1.14.0",
+      "date": "2025-04-24",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.0/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.0/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.0/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.0/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.0/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.0/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.0/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.0/config/crds/policies.kyverno.io/policies.kyverno.io_imagevalidatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.0/config/crds/policies.kyverno.io/policies.kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.0/config/crds/policies.kyverno.io/policies.kyverno.io_validatingpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.0/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.0/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.0/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.14.0/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.13.6",
+      "added": [
+        {
+          "apiVersion": "policies.kyverno.io/v1alpha1",
+          "kind": "ImageValidatingPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1alpha1",
+          "kind": "PolicyException",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "policies.kyverno.io/v1alpha1",
+          "kind": "ValidatingPolicy",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v1.13.6",
+      "tag": "v1.13.6",
+      "date": "2025-05-08",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.6/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.6/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.6/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.6/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.6/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.6/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.6/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.6/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.6/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.6/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.6/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.13.5"
+    },
+    {
+      "version": "v1.13.5",
+      "tag": "v1.13.5",
+      "date": "2025-04-29",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.5/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.5/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.5/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.5/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.5/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.5/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.5/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.5/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.5/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.5/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.5/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.13.4"
+    },
+    {
+      "version": "v1.13.4",
+      "tag": "v1.13.4",
+      "date": "2025-02-08",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.4/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.4/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.4/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.4/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.4/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.4/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.4/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.4/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.4/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.4/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.4/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.13.3"
+    },
+    {
+      "version": "v1.13.3",
+      "tag": "v1.13.3",
+      "date": "2025-02-06",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.3/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.3/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.3/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.3/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.3/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.3/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.3/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.3/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.3/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.3/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.3/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.13.2"
+    },
+    {
+      "version": "v1.13.2",
+      "tag": "v1.13.2",
+      "date": "2024-12-10",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.2/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.2/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.2/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.2/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.2/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.2/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.2/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.2/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.2/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.2/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.2/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.13.1"
+    },
+    {
+      "version": "v1.13.1",
+      "tag": "v1.13.1",
+      "date": "2024-11-12",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.1/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.1/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.1/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.1/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.1/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.1/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.1/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.1/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.1/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.1/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.1/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.13.0"
+    },
+    {
+      "version": "v1.13.0",
+      "tag": "v1.13.0",
+      "date": "2024-10-29",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.0/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.0/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.0/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.0/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.0/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.0/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.0/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.0/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.0/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.0/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.13.0/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.12.7",
+      "removed": [
+        {
+          "apiVersion": "kyverno.io/v1alpha2",
+          "kind": "AdmissionReport",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "kyverno.io/v1alpha2",
+          "kind": "BackgroundScanReport",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "kyverno.io/v1alpha2",
+          "kind": "ClusterAdmissionReport",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v1alpha2",
+          "kind": "ClusterBackgroundScanReport",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v2",
+          "kind": "AdmissionReport",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "kyverno.io/v2",
+          "kind": "BackgroundScanReport",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "kyverno.io/v2",
+          "kind": "ClusterAdmissionReport",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v2",
+          "kind": "ClusterBackgroundScanReport",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v2alpha1",
+          "kind": "CleanupPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "kyverno.io/v2alpha1",
+          "kind": "ClusterCleanupPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v2alpha1",
+          "kind": "PolicyException",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.12.7",
+      "tag": "v1.12.7",
+      "date": "2025-01-16",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.7/config/crds/kyverno/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.7/config/crds/kyverno/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.7/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.7/config/crds/kyverno/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.7/config/crds/kyverno/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.7/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.7/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.7/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.7/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.7/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.7/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.7/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.7/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.7/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.7/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.12.6"
+    },
+    {
+      "version": "v1.12.6",
+      "tag": "v1.12.6",
+      "date": "2024-09-27",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.6/config/crds/kyverno/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.6/config/crds/kyverno/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.6/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.6/config/crds/kyverno/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.6/config/crds/kyverno/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.6/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.6/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.6/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.6/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.6/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.6/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.6/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.6/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.6/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.6/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.12.5"
+    },
+    {
+      "version": "v1.12.5",
+      "tag": "v1.12.5",
+      "date": "2024-07-12",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.5/config/crds/kyverno/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.5/config/crds/kyverno/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.5/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.5/config/crds/kyverno/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.5/config/crds/kyverno/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.5/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.5/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.5/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.5/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.5/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.5/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.5/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.5/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.5/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.5/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.12.4"
+    },
+    {
+      "version": "v1.12.4",
+      "tag": "v1.12.4",
+      "date": "2024-06-17",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.4/config/crds/kyverno/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.4/config/crds/kyverno/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.4/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.4/config/crds/kyverno/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.4/config/crds/kyverno/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.4/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.4/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.4/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.4/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.4/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.4/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.4/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.4/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.4/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.4/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.12.3"
+    },
+    {
+      "version": "v1.12.3",
+      "tag": "v1.12.3",
+      "date": "2024-05-31",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.3/config/crds/kyverno/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.3/config/crds/kyverno/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.3/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.3/config/crds/kyverno/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.3/config/crds/kyverno/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.3/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.3/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.3/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.3/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.3/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.3/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.3/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.3/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.3/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.3/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.12.2"
+    },
+    {
+      "version": "v1.12.2",
+      "tag": "v1.12.2",
+      "date": "2024-05-23",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.2/config/crds/kyverno/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.2/config/crds/kyverno/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.2/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.2/config/crds/kyverno/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.2/config/crds/kyverno/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.2/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.2/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.2/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.2/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.2/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.2/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.2/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.2/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.2/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.2/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.12.1"
+    },
+    {
+      "version": "v1.12.1",
+      "tag": "v1.12.1",
+      "date": "2024-05-03",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.1/config/crds/kyverno/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.1/config/crds/kyverno/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.1/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.1/config/crds/kyverno/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.1/config/crds/kyverno/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.1/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.1/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.1/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.1/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.1/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.1/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.1/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.1/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.1/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.1/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.12.0"
+    },
+    {
+      "version": "v1.12.0",
+      "tag": "v1.12.0",
+      "date": "2024-04-26",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.0/config/crds/kyverno/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.0/config/crds/kyverno/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.0/config/crds/kyverno/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.0/config/crds/kyverno/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.0/config/crds/kyverno/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.0/config/crds/kyverno/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.0/config/crds/kyverno/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.0/config/crds/kyverno/kyverno.io_globalcontextentries.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.0/config/crds/kyverno/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.0/config/crds/kyverno/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.0/config/crds/kyverno/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.0/config/crds/policyreport/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.0/config/crds/policyreport/wgpolicyk8s.io_policyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.0/config/crds/reports/reports.kyverno.io_clusterephemeralreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.12.0/config/crds/reports/reports.kyverno.io_ephemeralreports.yaml"
+      ],
+      "changelogBase": "v1.11.5",
+      "added": [
+        {
+          "apiVersion": "kyverno.io/v2",
+          "kind": "AdmissionReport",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "kyverno.io/v2",
+          "kind": "BackgroundScanReport",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "kyverno.io/v2",
+          "kind": "CleanupPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "kyverno.io/v2",
+          "kind": "ClusterAdmissionReport",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v2",
+          "kind": "ClusterBackgroundScanReport",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v2",
+          "kind": "ClusterCleanupPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v2",
+          "kind": "PolicyException",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "kyverno.io/v2",
+          "kind": "UpdateRequest",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "kyverno.io/v2alpha1",
+          "kind": "GlobalContextEntry",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "reports.kyverno.io/v1",
+          "kind": "ClusterEphemeralReport",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "reports.kyverno.io/v1",
+          "kind": "EphemeralReport",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.11.5",
+      "tag": "v1.11.5",
+      "date": "2024-05-09",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.5/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.5/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.5/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.5/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.5/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.5/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.5/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.5/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.5/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.5/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.5/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.5/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.11.4"
+    },
+    {
+      "version": "v1.11.4",
+      "tag": "v1.11.4",
+      "date": "2024-01-19",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.4/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.4/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.4/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.4/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.4/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.4/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.4/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.4/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.4/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.4/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.4/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.4/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.11.3"
+    },
+    {
+      "version": "v1.11.3",
+      "tag": "v1.11.3",
+      "date": "2024-01-05",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.3/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.3/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.3/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.3/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.3/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.3/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.3/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.3/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.3/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.3/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.3/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.3/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.11.2"
+    },
+    {
+      "version": "v1.11.2",
+      "tag": "v1.11.2",
+      "date": "2023-12-28",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.2/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.2/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.2/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.2/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.2/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.2/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.2/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.2/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.2/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.2/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.2/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.2/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.11.1"
+    },
+    {
+      "version": "v1.11.1",
+      "tag": "v1.11.1",
+      "date": "2023-11-28",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.1/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.1/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.1/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.1/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.1/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.1/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.1/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.1/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.1/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.1/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.1/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.1/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.11.0"
+    },
+    {
+      "version": "v1.11.0",
+      "tag": "v1.11.0",
+      "date": "2023-11-10",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.0/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.0/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.0/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.0/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.0/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.0/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.0/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.0/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.0/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.0/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.0/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.11.0/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.10.7",
+      "added": [
+        {
+          "apiVersion": "kyverno.io/v2beta1",
+          "kind": "CleanupPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "kyverno.io/v2beta1",
+          "kind": "ClusterCleanupPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v2beta1",
+          "kind": "PolicyException",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.10.7",
+      "tag": "v1.10.7",
+      "date": "2023-12-20",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.7/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.7/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.7/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.7/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.7/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.7/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.7/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.7/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.7/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.7/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.7/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.7/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.10.6"
+    },
+    {
+      "version": "v1.10.6",
+      "tag": "v1.10.6",
+      "date": "2023-11-28",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.6/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.6/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.6/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.6/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.6/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.6/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.6/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.6/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.6/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.6/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.6/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.6/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.10.5"
+    },
+    {
+      "version": "v1.10.5",
+      "tag": "v1.10.5",
+      "date": "2023-11-13",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.5/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.5/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.5/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.5/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.5/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.5/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.5/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.5/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.5/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.5/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.5/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.5/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.10.4"
+    },
+    {
+      "version": "v1.10.4",
+      "tag": "v1.10.4",
+      "date": "2023-11-01",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.4/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.4/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.4/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.4/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.4/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.4/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.4/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.4/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.4/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.4/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.4/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.4/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.10.3"
+    },
+    {
+      "version": "v1.10.3",
+      "tag": "v1.10.3",
+      "date": "2023-08-11",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.3/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.3/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.3/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.3/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.3/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.3/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.3/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.3/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.3/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.3/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.3/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.3/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.10.2"
+    },
+    {
+      "version": "v1.10.2",
+      "tag": "v1.10.2",
+      "date": "2023-07-28",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.2/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.2/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.2/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.2/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.2/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.2/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.2/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.2/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.2/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.2/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.2/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.2/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.10.1"
+    },
+    {
+      "version": "v1.10.1",
+      "tag": "v1.10.1",
+      "date": "2023-07-06",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.1/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.1/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.1/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.1/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.1/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.1/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.1/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.1/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.1/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.1/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.1/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.1/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.10.0"
+    },
+    {
+      "version": "v1.10.0",
+      "tag": "v1.10.0",
+      "date": "2023-05-30",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.0/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.0/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.0/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.0/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.0/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.0/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.0/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.0/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.0/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.0/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.0/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.10.0/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.9.5",
+      "removed": [
+        {
+          "apiVersion": "kyverno.io/v1",
+          "kind": "GenerateRequest",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.9.5",
+      "tag": "v1.9.5",
+      "date": "2023-05-29",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.5/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.5/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.5/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.5/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.5/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.5/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.5/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.5/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.5/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.5/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.5/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.5/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.5/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.9.4"
+    },
+    {
+      "version": "v1.9.4",
+      "tag": "v1.9.4",
+      "date": "2023-05-25",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.4/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.4/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.4/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.4/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.4/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.4/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.4/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.4/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.4/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.4/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.4/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.4/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.4/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.9.3"
+    },
+    {
+      "version": "v1.9.3",
+      "tag": "v1.9.3",
+      "date": "2023-05-09",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.3/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.3/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.3/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.3/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.3/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.3/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.3/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.3/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.3/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.3/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.3/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.3/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.3/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.9.2"
+    },
+    {
+      "version": "v1.9.2",
+      "tag": "v1.9.2",
+      "date": "2023-03-22",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.2/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.2/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.2/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.2/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.2/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.2/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.2/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.2/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.2/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.2/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.2/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.2/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.2/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.9.1"
+    },
+    {
+      "version": "v1.9.1",
+      "tag": "v1.9.1",
+      "date": "2023-03-10",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.1/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.1/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.1/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.1/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.1/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.1/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.1/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.1/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.1/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.1/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.1/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.1/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.1/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.9.0"
+    },
+    {
+      "version": "v1.9.0",
+      "tag": "v1.9.0",
+      "date": "2023-02-01",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.0/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.0/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.0/config/crds/kyverno.io_cleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.0/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.0/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.0/config/crds/kyverno.io_clustercleanuppolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.0/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.0/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.0/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.0/config/crds/kyverno.io_policyexceptions.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.0/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.0/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.9.0/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.8.5",
+      "added": [
+        {
+          "apiVersion": "kyverno.io/v2alpha1",
+          "kind": "CleanupPolicy",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "kyverno.io/v2alpha1",
+          "kind": "ClusterCleanupPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v2alpha1",
+          "kind": "PolicyException",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.8.5",
+      "tag": "v1.8.5",
+      "date": "2022-12-20",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.5/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.5/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.5/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.5/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.5/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.5/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.5/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.5/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.5/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.5/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.8.4"
+    },
+    {
+      "version": "v1.8.4",
+      "tag": "v1.8.4",
+      "date": "2022-12-09",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.4/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.4/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.4/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.4/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.4/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.4/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.4/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.4/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.4/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.4/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.8.3"
+    },
+    {
+      "version": "v1.8.3",
+      "tag": "v1.8.3",
+      "date": "2022-12-06",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.3/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.3/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.3/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.3/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.3/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.3/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.3/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.3/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.3/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.3/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.8.2"
+    },
+    {
+      "version": "v1.8.2",
+      "tag": "v1.8.2",
+      "date": "2022-11-21",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.2/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.2/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.2/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.2/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.2/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.2/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.2/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.2/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.2/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.2/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.8.1"
+    },
+    {
+      "version": "v1.8.1",
+      "tag": "v1.8.1",
+      "date": "2022-10-25",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.1/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.1/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.1/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.1/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.1/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.1/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.1/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.1/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.1/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.1/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.8.0"
+    },
+    {
+      "version": "v1.8.0",
+      "tag": "v1.8.0",
+      "date": "2022-10-10",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.0/config/crds/kyverno.io_admissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.0/config/crds/kyverno.io_backgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.0/config/crds/kyverno.io_clusteradmissionreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.0/config/crds/kyverno.io_clusterbackgroundscanreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.0/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.0/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.0/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.0/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.0/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.8.0/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.7.5",
+      "added": [
+        {
+          "apiVersion": "kyverno.io/v1alpha2",
+          "kind": "AdmissionReport",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "kyverno.io/v1alpha2",
+          "kind": "BackgroundScanReport",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "kyverno.io/v1alpha2",
+          "kind": "ClusterAdmissionReport",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v1alpha2",
+          "kind": "ClusterBackgroundScanReport",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v2beta1",
+          "kind": "ClusterPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v2beta1",
+          "kind": "Policy",
+          "scope": "Namespaced"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "kyverno.io/v1alpha2",
+          "kind": "ClusterReportChangeRequest",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v1alpha2",
+          "kind": "ReportChangeRequest",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.7.5",
+      "tag": "v1.7.5",
+      "date": "2022-10-11",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.5/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.5/config/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.5/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.5/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.5/config/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.5/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.5/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.5/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.7.4"
+    },
+    {
+      "version": "v1.7.4",
+      "tag": "v1.7.4",
+      "date": "2022-09-26",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.4/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.4/config/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.4/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.4/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.4/config/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.4/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.4/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.4/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.7.3"
+    },
+    {
+      "version": "v1.7.3",
+      "tag": "v1.7.3",
+      "date": "2022-08-24",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.3/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.3/config/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.3/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.3/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.3/config/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.3/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.3/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.3/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.7.2"
+    },
+    {
+      "version": "v1.7.2",
+      "tag": "v1.7.2",
+      "date": "2022-07-25",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.2/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.2/config/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.2/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.2/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.2/config/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.2/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.2/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.2/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.7.1"
+    },
+    {
+      "version": "v1.7.1",
+      "tag": "v1.7.1",
+      "date": "2022-06-17",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.1/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.1/config/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.1/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.1/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.1/config/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.1/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.1/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.1/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.7.0"
+    },
+    {
+      "version": "v1.7.0",
+      "tag": "v1.7.0",
+      "date": "2022-06-02",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.0/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.0/config/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.0/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.0/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.0/config/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.0/config/crds/kyverno.io_updaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.0/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.7.0/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.6.10",
+      "added": [
+        {
+          "apiVersion": "kyverno.io/v1beta1",
+          "kind": "UpdateRequest",
+          "scope": "Namespaced"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "kyverno.io/v1alpha1",
+          "kind": "ClusterReportChangeRequest",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v1alpha1",
+          "kind": "ReportChangeRequest",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "wgpolicyk8s.io/v1alpha1",
+          "kind": "ClusterPolicyReport",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "wgpolicyk8s.io/v1alpha1",
+          "kind": "PolicyReport",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.6.10",
+      "tag": "v1.6.10",
+      "date": "2022-02-25",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.10/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.10/config/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.10/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.10/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.10/config/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.10/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.10/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.6.3"
+    },
+    {
+      "version": "v1.6.3",
+      "tag": "v1.6.3",
+      "date": "2022-06-17",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.3/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.3/config/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.3/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.3/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.3/config/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.3/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.3/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.6.2"
+    },
+    {
+      "version": "v1.6.2",
+      "tag": "v1.6.2",
+      "date": "2022-03-31",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.2/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.2/config/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.2/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.2/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.2/config/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.2/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.2/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.6.1"
+    },
+    {
+      "version": "v1.6.1",
+      "tag": "v1.6.1",
+      "date": "2022-03-01",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.1/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.1/config/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.1/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.1/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.1/config/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.1/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.1/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.6.0"
+    },
+    {
+      "version": "v1.6.0",
+      "tag": "v1.6.0",
+      "date": "2022-02-08",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.0/config/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.0/config/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.0/config/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.0/config/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.0/config/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.0/config/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.6.0/config/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.5.8"
+    },
+    {
+      "version": "v1.5.8",
+      "tag": "v1.5.8",
+      "date": "2022-01-27",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.8/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.8/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.8/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.8/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.8/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.8/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.8/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.5.7"
+    },
+    {
+      "version": "v1.5.7",
+      "tag": "v1.5.7",
+      "date": "2022-01-25",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.7/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.7/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.7/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.7/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.7/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.7/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.7/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.5.6"
+    },
+    {
+      "version": "v1.5.6",
+      "tag": "v1.5.6",
+      "date": "2022-01-24",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.6/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.6/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.6/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.6/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.6/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.6/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.6/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.5.5"
+    },
+    {
+      "version": "v1.5.5",
+      "tag": "v1.5.5",
+      "date": "2022-01-21",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.5/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.5/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.5/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.5/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.5/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.5/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.5/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.5.4"
+    },
+    {
+      "version": "v1.5.4",
+      "tag": "v1.5.4",
+      "date": "2022-01-12",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.4/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.4/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.4/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.4/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.4/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.4/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.4/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.5.3"
+    },
+    {
+      "version": "v1.5.3",
+      "tag": "v1.5.3",
+      "date": "2022-01-07",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.3/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.3/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.3/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.3/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.3/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.3/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.3/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.5.2"
+    },
+    {
+      "version": "v1.5.2",
+      "tag": "v1.5.2",
+      "date": "2021-12-10",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.2/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.2/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.2/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.2/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.2/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.2/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.2/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.5.1"
+    },
+    {
+      "version": "v1.5.1",
+      "tag": "v1.5.1",
+      "date": "2021-10-25",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.1/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.1/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.1/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.1/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.1/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.1/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.1/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.5.0"
+    },
+    {
+      "version": "v1.5.0",
+      "tag": "v1.5.0",
+      "date": "2021-10-20",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.0/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.0/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.0/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.0/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.0/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.0/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.5.0/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.4.3"
+    },
+    {
+      "version": "v1.4.3",
+      "tag": "v1.4.3",
+      "date": "2021-09-16",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.3/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.3/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.3/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.3/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.3/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.3/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.3/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.4.2",
+      "added": [
+        {
+          "apiVersion": "kyverno.io/v1alpha2",
+          "kind": "ClusterReportChangeRequest",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v1alpha2",
+          "kind": "ReportChangeRequest",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "wgpolicyk8s.io/v1alpha2",
+          "kind": "ClusterPolicyReport",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "wgpolicyk8s.io/v1alpha2",
+          "kind": "PolicyReport",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.4.2",
+      "tag": "v1.4.2",
+      "date": "2021-08-11",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.2/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.2/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.2/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.2/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.2/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.2/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.2/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.4.1"
+    },
+    {
+      "version": "v1.4.1",
+      "tag": "v1.4.1",
+      "date": "2021-06-24",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.1/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.1/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.1/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.1/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.1/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.1/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.1/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.4.0"
+    },
+    {
+      "version": "v1.4.0",
+      "tag": "v1.4.0",
+      "date": "2021-06-18",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.0/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.0/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.0/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.0/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.0/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.0/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.4.0/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.3.6"
+    },
+    {
+      "version": "v1.3.6",
+      "tag": "v1.3.6",
+      "date": "2021-05-17",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.6/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.6/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.6/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.6/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.6/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.6/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.6/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.3.5"
+    },
+    {
+      "version": "v1.3.5",
+      "tag": "v1.3.5",
+      "date": "2021-04-16",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.5/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.5/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.5/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.5/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.5/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.5/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.5/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.3.4"
+    },
+    {
+      "version": "v1.3.4",
+      "tag": "v1.3.4",
+      "date": "2021-03-05",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.4/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.4/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.4/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.4/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.4/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.4/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.4/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.3.3"
+    },
+    {
+      "version": "v1.3.3",
+      "tag": "v1.3.3",
+      "date": "2021-02-16",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.3/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.3/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.3/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.3/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.3/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.3/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.3/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.3.2"
+    },
+    {
+      "version": "v1.3.2",
+      "tag": "v1.3.2",
+      "date": "2021-02-09",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.2/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.2/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.2/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.2/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.2/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.2/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.2/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.3.1"
+    },
+    {
+      "version": "v1.3.1",
+      "tag": "v1.3.1",
+      "date": "2021-01-19",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.1/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.1/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.1/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.1/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.1/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.1/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.1/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.3.0"
+    },
+    {
+      "version": "v1.3.0",
+      "tag": "v1.3.0",
+      "date": "2021-01-12",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.0/definitions/crds/kyverno.io_clusterpolicies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.0/definitions/crds/kyverno.io_clusterreportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.0/definitions/crds/kyverno.io_generaterequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.0/definitions/crds/kyverno.io_policies.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.0/definitions/crds/kyverno.io_reportchangerequests.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.0/definitions/crds/wgpolicyk8s.io_clusterpolicyreports.yaml",
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.3.0/definitions/crds/wgpolicyk8s.io_policyreports.yaml"
+      ],
+      "changelogBase": "v1.2.1",
+      "added": [
+        {
+          "apiVersion": "kyverno.io/v1alpha1",
+          "kind": "ClusterReportChangeRequest",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v1alpha1",
+          "kind": "ReportChangeRequest",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "wgpolicyk8s.io/v1alpha1",
+          "kind": "ClusterPolicyReport",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "wgpolicyk8s.io/v1alpha1",
+          "kind": "PolicyReport",
+          "scope": "Namespaced"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "kyverno.io/v1",
+          "kind": "ClusterPolicyViolation",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v1",
+          "kind": "PolicyViolation",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.2.1",
+      "tag": "v1.2.1",
+      "date": "2020-10-22",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.2.1/definitions/crds/crds.yaml"
+      ],
+      "changelogBase": "v1.2.0"
+    },
+    {
+      "version": "v1.2.0",
+      "tag": "v1.2.0",
+      "date": "2020-10-08",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.2.0/definitions/crds/crds.yaml"
+      ],
+      "changelogBase": "v1.1.12"
+    },
+    {
+      "version": "v1.1.12",
+      "tag": "v1.1.12",
+      "date": "2020-09-18",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.1.12/definitions/crds/crds.yaml"
+      ],
+      "changelogBase": "v1.1.11"
+    },
+    {
+      "version": "v1.1.11",
+      "tag": "v1.1.11",
+      "date": "2020-09-08",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.1.11/definitions/crds/crds.yaml"
+      ],
+      "changelogBase": "v1.1.10"
+    },
+    {
+      "version": "v1.1.10",
+      "tag": "v1.1.10",
+      "date": "2020-08-21",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.1.10/definitions/crds/crds.yaml"
+      ],
+      "changelogBase": "v1.1.9",
+      "added": [
+        {
+          "apiVersion": "kyverno.io/v1",
+          "kind": "Policy",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.1.9",
+      "tag": "v1.1.9",
+      "date": "2020-08-11",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.1.9/definitions/crds/crds.yaml"
+      ],
+      "changelogBase": "v1.1.8"
+    },
+    {
+      "version": "v1.1.8",
+      "tag": "v1.1.8",
+      "date": "2020-07-21",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.1.8/definitions/crds/crds.yaml"
+      ],
+      "changelogBase": "v1.1.7"
+    },
+    {
+      "version": "v1.1.7",
+      "tag": "v1.1.7",
+      "date": "2020-07-15",
+      "urls": [
+        "https://raw.githubusercontent.com/kyverno/kyverno/v1.1.7/definitions/crds/crds.yaml"
+      ],
+      "added": [
+        {
+          "apiVersion": "kyverno.io/v1",
+          "kind": "ClusterPolicy",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v1",
+          "kind": "ClusterPolicyViolation",
+          "scope": "Cluster"
+        },
+        {
+          "apiVersion": "kyverno.io/v1",
+          "kind": "GenerateRequest",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "kyverno.io/v1",
+          "kind": "PolicyViolation",
+          "scope": "Namespaced"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    "v1.1.6",
+    "v1.1.5",
+    "v1.1.4",
+    "v1.1.3",
+    "v1.1.2",
+    "v1.1.1",
+    "v1.1.0",
+    "v1.0.0",
+    "v0.11.0",
+    "v0.10.0",
+    "v0.9.1",
+    "v0.9.0",
+    "v0.8.0",
+    "v0.7.1",
+    "v0.7.0",
+    "v0.6.0",
+    "v0.5.0",
+    "v0.4.0",
+    "v0.3.0",
+    "v0.2.0",
+    "v0.1.0"
+  ]
+}

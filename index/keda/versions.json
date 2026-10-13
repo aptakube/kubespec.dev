@@ -1,0 +1,714 @@
+{
+  "name": "Keda",
+  "slug": "keda",
+  "repo": "kedacore/keda",
+  "logo": "https://avatars.githubusercontent.com/u/49917779?s=200&v=4",
+  "versions": [
+    {
+      "version": "v2.21.0",
+      "tag": "v2.21.0",
+      "date": "2026-09-23",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.21.0/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.21.0/config/crd/bases/eventing.keda.sh_clustercloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.21.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.21.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.21.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.21.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.20.2"
+    },
+    {
+      "version": "v2.20.2",
+      "tag": "v2.20.2",
+      "date": "2026-07-31",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.2/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.2/config/crd/bases/eventing.keda.sh_clustercloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.2/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.2/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.2/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.2/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.20.1"
+    },
+    {
+      "version": "v2.20.1",
+      "tag": "v2.20.1",
+      "date": "2026-06-08",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.1/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.1/config/crd/bases/eventing.keda.sh_clustercloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.1/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.1/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.1/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.1/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.20.0"
+    },
+    {
+      "version": "v2.20.0",
+      "tag": "v2.20.0",
+      "date": "2026-06-01",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.0/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.0/config/crd/bases/eventing.keda.sh_clustercloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.20.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.19.0"
+    },
+    {
+      "version": "v2.19.0",
+      "tag": "v2.19.0",
+      "date": "2026-02-02",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.19.0/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.19.0/config/crd/bases/eventing.keda.sh_clustercloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.19.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.19.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.19.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.19.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.18.3"
+    },
+    {
+      "version": "v2.18.3",
+      "tag": "v2.18.3",
+      "date": "2025-12-22",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.3/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.3/config/crd/bases/eventing.keda.sh_clustercloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.3/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.3/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.3/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.3/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.18.2"
+    },
+    {
+      "version": "v2.18.2",
+      "tag": "v2.18.2",
+      "date": "2025-12-08",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.2/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.2/config/crd/bases/eventing.keda.sh_clustercloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.2/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.2/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.2/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.2/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.18.1"
+    },
+    {
+      "version": "v2.18.1",
+      "tag": "v2.18.1",
+      "date": "2025-10-29",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.1/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.1/config/crd/bases/eventing.keda.sh_clustercloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.1/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.1/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.1/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.1/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.18.0"
+    },
+    {
+      "version": "v2.18.0",
+      "tag": "v2.18.0",
+      "date": "2025-10-08",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.0/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.0/config/crd/bases/eventing.keda.sh_clustercloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.18.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.17.3"
+    },
+    {
+      "version": "v2.17.3",
+      "tag": "v2.17.3",
+      "date": "2025-12-22",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.3/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.3/config/crd/bases/eventing.keda.sh_clustercloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.3/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.3/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.3/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.3/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.17.2"
+    },
+    {
+      "version": "v2.17.2",
+      "tag": "v2.17.2",
+      "date": "2025-06-18",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.2/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.2/config/crd/bases/eventing.keda.sh_clustercloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.2/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.2/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.2/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.2/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.17.1"
+    },
+    {
+      "version": "v2.17.1",
+      "tag": "v2.17.1",
+      "date": "2025-05-15",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.1/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.1/config/crd/bases/eventing.keda.sh_clustercloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.1/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.1/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.1/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.1/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.17.0"
+    },
+    {
+      "version": "v2.17.0",
+      "tag": "v2.17.0",
+      "date": "2025-04-07",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.0/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.0/config/crd/bases/eventing.keda.sh_clustercloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.17.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.16.1"
+    },
+    {
+      "version": "v2.16.1",
+      "tag": "v2.16.1",
+      "date": "2024-12-24",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.16.1/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.16.1/config/crd/bases/eventing.keda.sh_clustercloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.16.1/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.16.1/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.16.1/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.16.1/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.16.0"
+    },
+    {
+      "version": "v2.16.0",
+      "tag": "v2.16.0",
+      "date": "2024-11-07",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.16.0/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.16.0/config/crd/bases/eventing.keda.sh_clustercloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.16.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.16.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.16.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.16.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.15.1",
+      "added": [
+        {
+          "apiVersion": "eventing.keda.sh/v1alpha1",
+          "kind": "ClusterCloudEventSource",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v2.15.1",
+      "tag": "v2.15.1",
+      "date": "2024-08-12",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.15.1/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.15.1/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.15.1/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.15.1/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.15.1/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.15.0"
+    },
+    {
+      "version": "v2.15.0",
+      "tag": "v2.15.0",
+      "date": "2024-08-01",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.15.0/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.15.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.15.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.15.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.15.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.14.1"
+    },
+    {
+      "version": "v2.14.1",
+      "tag": "v2.14.1",
+      "date": "2024-07-31",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.14.1/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.14.1/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.14.1/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.14.1/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.14.1/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.14.0"
+    },
+    {
+      "version": "v2.14.0",
+      "tag": "v2.14.0",
+      "date": "2024-04-25",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.14.0/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.14.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.14.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.14.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.14.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.13.1"
+    },
+    {
+      "version": "v2.13.1",
+      "tag": "v2.13.1",
+      "date": "2024-02-29",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.13.1/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.13.1/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.13.1/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.13.1/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.13.1/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.13.0"
+    },
+    {
+      "version": "v2.13.0",
+      "tag": "v2.13.0",
+      "date": "2024-01-18",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.13.0/config/crd/bases/eventing.keda.sh_cloudeventsources.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.13.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.13.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.13.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.13.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.12.1",
+      "added": [
+        {
+          "apiVersion": "eventing.keda.sh/v1alpha1",
+          "kind": "CloudEventSource",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v2.12.1",
+      "tag": "v2.12.1",
+      "date": "2023-11-27",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.12.1/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.12.1/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.12.1/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.12.1/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.12.0"
+    },
+    {
+      "version": "v2.12.0",
+      "tag": "v2.12.0",
+      "date": "2023-09-28",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.12.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.12.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.12.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.12.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.11.2"
+    },
+    {
+      "version": "v2.11.2",
+      "tag": "v2.11.2",
+      "date": "2023-07-27",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.11.2/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.11.2/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.11.2/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.11.2/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.11.1"
+    },
+    {
+      "version": "v2.11.1",
+      "tag": "v2.11.1",
+      "date": "2023-06-29",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.11.1/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.11.1/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.11.1/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.11.1/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.11.0"
+    },
+    {
+      "version": "v2.11.0",
+      "tag": "v2.11.0",
+      "date": "2023-06-22",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.11.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.11.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.11.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.11.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.10.1"
+    },
+    {
+      "version": "v2.10.1",
+      "tag": "v2.10.1",
+      "date": "2023-04-13",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.10.1/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.10.1/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.10.1/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.10.1/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.10.0"
+    },
+    {
+      "version": "v2.10.0",
+      "tag": "v2.10.0",
+      "date": "2023-03-09",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.10.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.10.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.10.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.10.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.9.3"
+    },
+    {
+      "version": "v2.9.3",
+      "tag": "v2.9.3",
+      "date": "2023-01-31",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.3/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.3/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.3/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.3/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.9.2"
+    },
+    {
+      "version": "v2.9.2",
+      "tag": "v2.9.2",
+      "date": "2023-01-16",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.2/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.2/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.2/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.2/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.9.1"
+    },
+    {
+      "version": "v2.9.1",
+      "tag": "v2.9.1",
+      "date": "2022-12-16",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.1/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.1/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.1/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.1/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.9.0"
+    },
+    {
+      "version": "v2.9.0",
+      "tag": "v2.9.0",
+      "date": "2022-12-09",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.9.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.8.2"
+    },
+    {
+      "version": "v2.8.2",
+      "tag": "v2.8.2",
+      "date": "2023-01-19",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.8.2/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.8.2/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.8.2/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.8.2/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.8.1"
+    },
+    {
+      "version": "v2.8.1",
+      "tag": "v2.8.1",
+      "date": "2022-09-01",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.8.1/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.8.1/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.8.1/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.8.1/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.8.0"
+    },
+    {
+      "version": "v2.8.0",
+      "tag": "v2.8.0",
+      "date": "2022-08-10",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.8.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.8.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.8.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.8.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.7.1"
+    },
+    {
+      "version": "v2.7.1",
+      "tag": "v2.7.1",
+      "date": "2022-05-10",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.7.1/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.7.1/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.7.1/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.7.1/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.7.0"
+    },
+    {
+      "version": "v2.7.0",
+      "tag": "v2.7.0",
+      "date": "2022-05-05",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.7.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.7.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.7.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.7.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.6.1"
+    },
+    {
+      "version": "v2.6.1",
+      "tag": "v2.6.1",
+      "date": "2022-02-10",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.6.1/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.6.1/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.6.1/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.6.1/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.6.0"
+    },
+    {
+      "version": "v2.6.0",
+      "tag": "v2.6.0",
+      "date": "2022-01-31",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.6.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.6.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.6.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.6.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.5.0"
+    },
+    {
+      "version": "v2.5.0",
+      "tag": "v2.5.0",
+      "date": "2021-11-25",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.5.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.5.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.5.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.5.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.4.0"
+    },
+    {
+      "version": "v2.4.0",
+      "tag": "v2.4.0",
+      "date": "2021-08-06",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.4.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.4.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.4.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.4.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.3.0"
+    },
+    {
+      "version": "v2.3.0",
+      "tag": "v2.3.0",
+      "date": "2021-05-27",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.3.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.3.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.3.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.3.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.2.0"
+    },
+    {
+      "version": "v2.2.0",
+      "tag": "v2.2.0",
+      "date": "2021-03-18",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.2.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.2.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.2.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.2.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.1.0"
+    },
+    {
+      "version": "v2.1.0",
+      "tag": "v2.1.0",
+      "date": "2021-01-27",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.1.0/config/crd/bases/keda.sh_clustertriggerauthentications.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.1.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.1.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.1.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v2.0.0",
+      "added": [
+        {
+          "apiVersion": "keda.sh/v1alpha1",
+          "kind": "ClusterTriggerAuthentication",
+          "scope": "Cluster"
+        }
+      ]
+    },
+    {
+      "version": "v2.0.0",
+      "tag": "v2.0.0",
+      "date": "2020-11-04",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v2.0.0/config/crd/bases/keda.sh_scaledjobs.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.0.0/config/crd/bases/keda.sh_scaledobjects.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v2.0.0/config/crd/bases/keda.sh_triggerauthentications.yaml"
+      ],
+      "changelogBase": "v1.5.0",
+      "added": [
+        {
+          "apiVersion": "keda.sh/v1alpha1",
+          "kind": "ScaledJob",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "keda.sh/v1alpha1",
+          "kind": "ScaledObject",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "keda.sh/v1alpha1",
+          "kind": "TriggerAuthentication",
+          "scope": "Namespaced"
+        }
+      ],
+      "removed": [
+        {
+          "apiVersion": "keda.k8s.io/v1alpha1",
+          "kind": "ScaledObject",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "keda.k8s.io/v1alpha1",
+          "kind": "TriggerAuthentication",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
+      "version": "v1.5.0",
+      "tag": "v1.5.0",
+      "date": "2020-07-07",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v1.5.0/deploy/crds/keda.k8s.io_scaledobjects_crd.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v1.5.0/deploy/crds/keda.k8s.io_triggerauthentications_crd.yaml"
+      ],
+      "changelogBase": "v1.4.1"
+    },
+    {
+      "version": "v1.4.1",
+      "tag": "v1.4.1",
+      "date": "2020-04-27",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v1.4.1/deploy/crds/keda.k8s.io_scaledobjects_crd.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v1.4.1/deploy/crds/keda.k8s.io_triggerauthentications_crd.yaml"
+      ],
+      "changelogBase": "v1.4.0"
+    },
+    {
+      "version": "v1.4.0",
+      "tag": "v1.4.0",
+      "date": "2020-04-17",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v1.4.0/deploy/crds/keda.k8s.io_scaledobjects_crd.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v1.4.0/deploy/crds/keda.k8s.io_triggerauthentications_crd.yaml"
+      ],
+      "changelogBase": "v1.3.0"
+    },
+    {
+      "version": "v1.3.0",
+      "tag": "v1.3.0",
+      "date": "2020-03-13",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v1.3.0/deploy/crds/keda.k8s.io_scaledobjects_crd.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v1.3.0/deploy/crds/keda.k8s.io_triggerauthentications_crd.yaml"
+      ],
+      "changelogBase": "v1.2.0"
+    },
+    {
+      "version": "v1.2.0",
+      "tag": "v1.2.0",
+      "date": "2020-02-06",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v1.2.0/deploy/crds/keda.k8s.io_scaledobjects_crd.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v1.2.0/deploy/crds/keda.k8s.io_triggerauthentications_crd.yaml"
+      ],
+      "changelogBase": "v1.1.0"
+    },
+    {
+      "version": "v1.1.0",
+      "tag": "v1.1.0",
+      "date": "2020-01-16",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v1.1.0/deploy/crds/keda.k8s.io_scaledobjects_crd.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v1.1.0/deploy/crds/keda.k8s.io_triggerauthentications_crd.yaml"
+      ],
+      "changelogBase": "v1.0.0"
+    },
+    {
+      "version": "v1.0.0",
+      "tag": "v1.0.0",
+      "date": "2019-11-16",
+      "urls": [
+        "https://raw.githubusercontent.com/kedacore/keda/v1.0.0/deploy/crds/keda.k8s.io_scaledobjects_crd.yaml",
+        "https://raw.githubusercontent.com/kedacore/keda/v1.0.0/deploy/crds/keda.k8s.io_triggerauthentications_crd.yaml"
+      ],
+      "added": [
+        {
+          "apiVersion": "keda.k8s.io/v1alpha1",
+          "kind": "ScaledObject",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "keda.k8s.io/v1alpha1",
+          "kind": "TriggerAuthentication",
+          "scope": "Namespaced"
+        }
+      ]
+    }
+  ]
+}

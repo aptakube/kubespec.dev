@@ -1,0 +1,2821 @@
+{
+  "versions": {
+    "v1.13.0": {
+      "added": {
+        "spec.controlPlane.machineHealthCheck.unhealthyMachineConditions": "object[]",
+        "spec.controlPlane.taints": "object[]",
+        "spec.kubernetesVersions": "string[]",
+        "spec.upgrade": "object",
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyMachineConditions": "object[]",
+        "spec.workers.machineDeployments.taints": "object[]",
+        "spec.workers.machinePools.taints": "object[]"
+      },
+      "descriptions": {
+        "spec.controlPlane.machineHealthCheck.unhealthyMachineConditions": [
+          null,
+          0
+        ],
+        "spec.controlPlane.taints": [
+          null,
+          1
+        ],
+        "spec.kubernetesVersions": [
+          null,
+          2
+        ],
+        "spec.upgrade": [
+          null,
+          3
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyMachineConditions": [
+          null,
+          0
+        ],
+        "spec.workers.machineDeployments.taints": [
+          null,
+          1
+        ],
+        "spec.workers.machinePools.taints": [
+          null,
+          1
+        ]
+      }
+    },
+    "v1.10.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.controlPlane.machineHealthCheck.maxUnhealthy",
+        "spec.controlPlane.machineHealthCheck.unhealthyConditions.status",
+        "spec.controlPlane.machineHealthCheck.unhealthyConditions.timeout",
+        "spec.controlPlane.machineHealthCheck.unhealthyConditions.type",
+        "spec.controlPlane.machineHealthCheck.unhealthyRange",
+        "spec.controlPlane.metadata.labels",
+        "spec.variables.metadata.labels",
+        "spec.variables.schema.openAPIV3Schema.x-metadata.labels",
+        "spec.workers.machineDeployments.machineHealthCheck.maxUnhealthy",
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyConditions.status",
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyConditions.timeout",
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyConditions.type",
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyRange",
+        "spec.workers.machineDeployments.minReadySeconds",
+        "spec.workers.machineDeployments.strategy",
+        "spec.workers.machineDeployments.strategy.rollingUpdate",
+        "spec.workers.machineDeployments.strategy.rollingUpdate.maxSurge",
+        "spec.workers.machineDeployments.strategy.rollingUpdate.maxUnavailable",
+        "spec.workers.machineDeployments.template.metadata.labels",
+        "spec.workers.machinePools.minReadySeconds",
+        "spec.workers.machinePools.template.metadata.labels",
+        "status",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason",
+        "status.variables.definitions.metadata.labels",
+        "status.variables.definitions.schema.openAPIV3Schema.x-metadata.labels"
+      ],
+      "added": {
+        "spec.availabilityGates": "object[]",
+        "spec.controlPlane.readinessGates": "object[]",
+        "spec.infrastructureNamingStrategy": "object",
+        "spec.workers.machineDeployments.readinessGates": "object[]"
+      },
+      "descriptions": {
+        "spec": [
+          4,
+          5
+        ],
+        "spec.availabilityGates": [
+          null,
+          6
+        ],
+        "spec.controlPlane.machineHealthCheck.maxUnhealthy": [
+          7,
+          8
+        ],
+        "spec.controlPlane.machineHealthCheck.unhealthyConditions.status": [
+          null,
+          9
+        ],
+        "spec.controlPlane.machineHealthCheck.unhealthyConditions.timeout": [
+          null,
+          10
+        ],
+        "spec.controlPlane.machineHealthCheck.unhealthyConditions.type": [
+          null,
+          11
+        ],
+        "spec.controlPlane.machineHealthCheck.unhealthyRange": [
+          12,
+          13
+        ],
+        "spec.controlPlane.metadata.labels": [
+          14,
+          15
+        ],
+        "spec.controlPlane.readinessGates": [
+          null,
+          16
+        ],
+        "spec.infrastructureNamingStrategy": [
+          null,
+          17
+        ],
+        "spec.variables.metadata.labels": [
+          18,
+          19
+        ],
+        "spec.variables.schema.openAPIV3Schema.x-metadata.labels": [
+          18,
+          19
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.maxUnhealthy": [
+          7,
+          8
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyConditions.status": [
+          null,
+          9
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyConditions.timeout": [
+          null,
+          10
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyConditions.type": [
+          null,
+          11
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyRange": [
+          12,
+          13
+        ],
+        "spec.workers.machineDeployments.minReadySeconds": [
+          20,
+          21
+        ],
+        "spec.workers.machineDeployments.readinessGates": [
+          null,
+          22
+        ],
+        "spec.workers.machineDeployments.strategy": [
+          23,
+          24
+        ],
+        "spec.workers.machineDeployments.strategy.rollingUpdate": [
+          25,
+          26
+        ],
+        "spec.workers.machineDeployments.strategy.rollingUpdate.maxSurge": [
+          27,
+          28
+        ],
+        "spec.workers.machineDeployments.strategy.rollingUpdate.maxUnavailable": [
+          29,
+          30
+        ],
+        "spec.workers.machineDeployments.template.metadata.labels": [
+          14,
+          15
+        ],
+        "spec.workers.machinePools.minReadySeconds": [
+          31,
+          32
+        ],
+        "spec.workers.machinePools.template.metadata.labels": [
+          14,
+          15
+        ],
+        "status": [
+          33,
+          34
+        ],
+        "status.conditions.lastTransitionTime": [
+          35,
+          36
+        ],
+        "status.conditions.message": [
+          37,
+          38
+        ],
+        "status.conditions.reason": [
+          39,
+          40
+        ],
+        "status.variables.definitions.metadata.labels": [
+          18,
+          19
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.x-metadata.labels": [
+          18,
+          19
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.controlPlane",
+        "spec.controlPlane.machineHealthCheck",
+        "spec.controlPlane.machineHealthCheck.nodeStartupTimeout",
+        "spec.controlPlane.machineHealthCheck.remediationTemplate",
+        "spec.controlPlane.machineHealthCheck.remediationTemplate.fieldPath",
+        "spec.controlPlane.machineHealthCheck.unhealthyConditions",
+        "spec.controlPlane.machineInfrastructure",
+        "spec.controlPlane.machineInfrastructure.ref",
+        "spec.controlPlane.machineInfrastructure.ref.fieldPath",
+        "spec.controlPlane.metadata",
+        "spec.controlPlane.metadata.annotations",
+        "spec.controlPlane.namingStrategy",
+        "spec.controlPlane.namingStrategy.template",
+        "spec.controlPlane.nodeDeletionTimeout",
+        "spec.controlPlane.nodeDrainTimeout",
+        "spec.controlPlane.nodeVolumeDetachTimeout",
+        "spec.controlPlane.ref",
+        "spec.controlPlane.ref.fieldPath",
+        "spec.infrastructure",
+        "spec.infrastructure.ref",
+        "spec.infrastructure.ref.fieldPath",
+        "spec.patches",
+        "spec.patches.definitions",
+        "spec.patches.definitions.jsonPatches",
+        "spec.patches.definitions.jsonPatches.op",
+        "spec.patches.definitions.jsonPatches.path",
+        "spec.patches.definitions.jsonPatches.value",
+        "spec.patches.definitions.jsonPatches.valueFrom",
+        "spec.patches.definitions.jsonPatches.valueFrom.template",
+        "spec.patches.definitions.jsonPatches.valueFrom.variable",
+        "spec.patches.definitions.selector",
+        "spec.patches.definitions.selector.apiVersion",
+        "spec.patches.definitions.selector.kind",
+        "spec.patches.definitions.selector.matchResources",
+        "spec.patches.definitions.selector.matchResources.controlPlane",
+        "spec.patches.definitions.selector.matchResources.infrastructureCluster",
+        "spec.patches.definitions.selector.matchResources.machineDeploymentClass",
+        "spec.patches.definitions.selector.matchResources.machineDeploymentClass.names",
+        "spec.patches.definitions.selector.matchResources.machinePoolClass",
+        "spec.patches.definitions.selector.matchResources.machinePoolClass.names",
+        "spec.patches.description",
+        "spec.patches.enabledIf",
+        "spec.patches.external",
+        "spec.patches.external.discoverVariablesExtension",
+        "spec.patches.external.generateExtension",
+        "spec.patches.external.settings",
+        "spec.patches.external.validateExtension",
+        "spec.patches.name",
+        "spec.variables",
+        "spec.variables.metadata",
+        "spec.variables.metadata.annotations",
+        "spec.variables.name",
+        "spec.variables.required",
+        "spec.variables.schema",
+        "spec.variables.schema.openAPIV3Schema",
+        "spec.variables.schema.openAPIV3Schema.additionalProperties",
+        "spec.variables.schema.openAPIV3Schema.default",
+        "spec.variables.schema.openAPIV3Schema.description",
+        "spec.variables.schema.openAPIV3Schema.enum",
+        "spec.variables.schema.openAPIV3Schema.example",
+        "spec.variables.schema.openAPIV3Schema.exclusiveMaximum",
+        "spec.variables.schema.openAPIV3Schema.exclusiveMinimum",
+        "spec.variables.schema.openAPIV3Schema.format",
+        "spec.variables.schema.openAPIV3Schema.items",
+        "spec.variables.schema.openAPIV3Schema.maxItems",
+        "spec.variables.schema.openAPIV3Schema.maxLength",
+        "spec.variables.schema.openAPIV3Schema.maxProperties",
+        "spec.variables.schema.openAPIV3Schema.maximum",
+        "spec.variables.schema.openAPIV3Schema.minItems",
+        "spec.variables.schema.openAPIV3Schema.minLength",
+        "spec.variables.schema.openAPIV3Schema.minProperties",
+        "spec.variables.schema.openAPIV3Schema.minimum",
+        "spec.variables.schema.openAPIV3Schema.pattern",
+        "spec.variables.schema.openAPIV3Schema.properties",
+        "spec.variables.schema.openAPIV3Schema.required",
+        "spec.variables.schema.openAPIV3Schema.type",
+        "spec.variables.schema.openAPIV3Schema.uniqueItems",
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-preserve-unknown-fields",
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-validations",
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-validations.fieldPath",
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-validations.message",
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-validations.messageExpression",
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-validations.reason",
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-validations.rule",
+        "spec.variables.schema.openAPIV3Schema.x-metadata",
+        "spec.variables.schema.openAPIV3Schema.x-metadata.annotations",
+        "spec.workers",
+        "spec.workers.machineDeployments",
+        "spec.workers.machineDeployments.class",
+        "spec.workers.machineDeployments.failureDomain",
+        "spec.workers.machineDeployments.machineHealthCheck",
+        "spec.workers.machineDeployments.machineHealthCheck.nodeStartupTimeout",
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate",
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate.fieldPath",
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyConditions",
+        "spec.workers.machineDeployments.namingStrategy",
+        "spec.workers.machineDeployments.namingStrategy.template",
+        "spec.workers.machineDeployments.nodeDeletionTimeout",
+        "spec.workers.machineDeployments.nodeDrainTimeout",
+        "spec.workers.machineDeployments.nodeVolumeDetachTimeout",
+        "spec.workers.machineDeployments.strategy.remediation",
+        "spec.workers.machineDeployments.strategy.remediation.maxInFlight",
+        "spec.workers.machineDeployments.strategy.rollingUpdate.deletePolicy",
+        "spec.workers.machineDeployments.strategy.type",
+        "spec.workers.machineDeployments.template",
+        "spec.workers.machineDeployments.template.bootstrap",
+        "spec.workers.machineDeployments.template.bootstrap.ref",
+        "spec.workers.machineDeployments.template.bootstrap.ref.fieldPath",
+        "spec.workers.machineDeployments.template.infrastructure",
+        "spec.workers.machineDeployments.template.infrastructure.ref",
+        "spec.workers.machineDeployments.template.infrastructure.ref.fieldPath",
+        "spec.workers.machineDeployments.template.metadata",
+        "spec.workers.machineDeployments.template.metadata.annotations",
+        "spec.workers.machinePools",
+        "spec.workers.machinePools.class",
+        "spec.workers.machinePools.failureDomains",
+        "spec.workers.machinePools.namingStrategy",
+        "spec.workers.machinePools.namingStrategy.template",
+        "spec.workers.machinePools.nodeDeletionTimeout",
+        "spec.workers.machinePools.nodeDrainTimeout",
+        "spec.workers.machinePools.nodeVolumeDetachTimeout",
+        "spec.workers.machinePools.template",
+        "spec.workers.machinePools.template.bootstrap",
+        "spec.workers.machinePools.template.bootstrap.ref",
+        "spec.workers.machinePools.template.bootstrap.ref.fieldPath",
+        "spec.workers.machinePools.template.infrastructure",
+        "spec.workers.machinePools.template.infrastructure.ref",
+        "spec.workers.machinePools.template.infrastructure.ref.fieldPath",
+        "spec.workers.machinePools.template.metadata",
+        "spec.workers.machinePools.template.metadata.annotations",
+        "status.conditions",
+        "status.conditions.reason",
+        "status.conditions.severity",
+        "status.conditions.status",
+        "status.conditions.type",
+        "status.observedGeneration",
+        "status.variables",
+        "status.variables.definitions",
+        "status.variables.definitions.from",
+        "status.variables.definitions.metadata",
+        "status.variables.definitions.metadata.annotations",
+        "status.variables.definitions.required",
+        "status.variables.definitions.schema",
+        "status.variables.definitions.schema.openAPIV3Schema",
+        "status.variables.definitions.schema.openAPIV3Schema.additionalProperties",
+        "status.variables.definitions.schema.openAPIV3Schema.default",
+        "status.variables.definitions.schema.openAPIV3Schema.description",
+        "status.variables.definitions.schema.openAPIV3Schema.enum",
+        "status.variables.definitions.schema.openAPIV3Schema.example",
+        "status.variables.definitions.schema.openAPIV3Schema.exclusiveMaximum",
+        "status.variables.definitions.schema.openAPIV3Schema.exclusiveMinimum",
+        "status.variables.definitions.schema.openAPIV3Schema.format",
+        "status.variables.definitions.schema.openAPIV3Schema.items",
+        "status.variables.definitions.schema.openAPIV3Schema.maxItems",
+        "status.variables.definitions.schema.openAPIV3Schema.maxLength",
+        "status.variables.definitions.schema.openAPIV3Schema.maxProperties",
+        "status.variables.definitions.schema.openAPIV3Schema.maximum",
+        "status.variables.definitions.schema.openAPIV3Schema.minItems",
+        "status.variables.definitions.schema.openAPIV3Schema.minLength",
+        "status.variables.definitions.schema.openAPIV3Schema.minProperties",
+        "status.variables.definitions.schema.openAPIV3Schema.minimum",
+        "status.variables.definitions.schema.openAPIV3Schema.pattern",
+        "status.variables.definitions.schema.openAPIV3Schema.properties",
+        "status.variables.definitions.schema.openAPIV3Schema.required",
+        "status.variables.definitions.schema.openAPIV3Schema.type",
+        "status.variables.definitions.schema.openAPIV3Schema.uniqueItems",
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-preserve-unknown-fields",
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-validations",
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-validations.fieldPath",
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-validations.message",
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-validations.messageExpression",
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-validations.reason",
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-validations.rule",
+        "status.variables.definitions.schema.openAPIV3Schema.x-metadata",
+        "status.variables.definitions.schema.openAPIV3Schema.x-metadata.annotations",
+        "status.variables.definitionsConflict",
+        "status.variables.name"
+      ],
+      "added": {
+        "spec.variables.schema.openAPIV3Schema.allOf": "object",
+        "spec.variables.schema.openAPIV3Schema.anyOf": "object",
+        "spec.variables.schema.openAPIV3Schema.not": "object",
+        "spec.variables.schema.openAPIV3Schema.oneOf": "object",
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-int-or-string": "boolean",
+        "status.v1beta2": "object",
+        "status.variables.definitions.schema.openAPIV3Schema.allOf": "object",
+        "status.variables.definitions.schema.openAPIV3Schema.anyOf": "object",
+        "status.variables.definitions.schema.openAPIV3Schema.not": "object",
+        "status.variables.definitions.schema.openAPIV3Schema.oneOf": "object",
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-int-or-string": "boolean"
+      },
+      "optional": [
+        "spec.variables.schema.openAPIV3Schema.type",
+        "status.variables.definitions.schema.openAPIV3Schema.type"
+      ],
+      "descriptions": {
+        "spec.controlPlane": [
+          41,
+          42
+        ],
+        "spec.controlPlane.machineHealthCheck": [
+          43,
+          44
+        ],
+        "spec.controlPlane.machineHealthCheck.nodeStartupTimeout": [
+          45,
+          46
+        ],
+        "spec.controlPlane.machineHealthCheck.remediationTemplate": [
+          47,
+          48
+        ],
+        "spec.controlPlane.machineHealthCheck.remediationTemplate.fieldPath": [
+          49,
+          50
+        ],
+        "spec.controlPlane.machineHealthCheck.unhealthyConditions": [
+          51,
+          52
+        ],
+        "spec.controlPlane.machineInfrastructure": [
+          53,
+          54
+        ],
+        "spec.controlPlane.machineInfrastructure.ref": [
+          55,
+          56
+        ],
+        "spec.controlPlane.machineInfrastructure.ref.fieldPath": [
+          49,
+          50
+        ],
+        "spec.controlPlane.metadata": [
+          57,
+          58
+        ],
+        "spec.controlPlane.metadata.annotations": [
+          59,
+          60
+        ],
+        "spec.controlPlane.namingStrategy": [
+          61,
+          62
+        ],
+        "spec.controlPlane.namingStrategy.template": [
+          63,
+          64
+        ],
+        "spec.controlPlane.nodeDeletionTimeout": [
+          65,
+          66
+        ],
+        "spec.controlPlane.nodeDrainTimeout": [
+          67,
+          68
+        ],
+        "spec.controlPlane.nodeVolumeDetachTimeout": [
+          69,
+          70
+        ],
+        "spec.controlPlane.ref": [
+          55,
+          56
+        ],
+        "spec.controlPlane.ref.fieldPath": [
+          49,
+          50
+        ],
+        "spec.infrastructure": [
+          71,
+          72
+        ],
+        "spec.infrastructure.ref": [
+          55,
+          56
+        ],
+        "spec.infrastructure.ref.fieldPath": [
+          49,
+          50
+        ],
+        "spec.patches": [
+          73,
+          74
+        ],
+        "spec.patches.definitions": [
+          75,
+          76
+        ],
+        "spec.patches.definitions.jsonPatches": [
+          77,
+          78
+        ],
+        "spec.patches.definitions.jsonPatches.op": [
+          79,
+          80
+        ],
+        "spec.patches.definitions.jsonPatches.path": [
+          81,
+          82
+        ],
+        "spec.patches.definitions.jsonPatches.value": [
+          83,
+          84
+        ],
+        "spec.patches.definitions.jsonPatches.valueFrom": [
+          85,
+          86
+        ],
+        "spec.patches.definitions.jsonPatches.valueFrom.template": [
+          87,
+          88
+        ],
+        "spec.patches.definitions.jsonPatches.valueFrom.variable": [
+          89,
+          90
+        ],
+        "spec.patches.definitions.selector": [
+          91,
+          92
+        ],
+        "spec.patches.definitions.selector.apiVersion": [
+          93,
+          94
+        ],
+        "spec.patches.definitions.selector.kind": [
+          95,
+          96
+        ],
+        "spec.patches.definitions.selector.matchResources": [
+          97,
+          98
+        ],
+        "spec.patches.definitions.selector.matchResources.controlPlane": [
+          99,
+          100
+        ],
+        "spec.patches.definitions.selector.matchResources.infrastructureCluster": [
+          101,
+          102
+        ],
+        "spec.patches.definitions.selector.matchResources.machineDeploymentClass": [
+          103,
+          104
+        ],
+        "spec.patches.definitions.selector.matchResources.machineDeploymentClass.names": [
+          105,
+          106
+        ],
+        "spec.patches.definitions.selector.matchResources.machinePoolClass": [
+          107,
+          108
+        ],
+        "spec.patches.definitions.selector.matchResources.machinePoolClass.names": [
+          105,
+          106
+        ],
+        "spec.patches.description": [
+          109,
+          110
+        ],
+        "spec.patches.enabledIf": [
+          111,
+          112
+        ],
+        "spec.patches.external": [
+          113,
+          114
+        ],
+        "spec.patches.external.discoverVariablesExtension": [
+          115,
+          116
+        ],
+        "spec.patches.external.generateExtension": [
+          117,
+          118
+        ],
+        "spec.patches.external.settings": [
+          119,
+          120
+        ],
+        "spec.patches.external.validateExtension": [
+          121,
+          122
+        ],
+        "spec.patches.name": [
+          123,
+          124
+        ],
+        "spec.variables": [
+          125,
+          126
+        ],
+        "spec.variables.metadata": [
+          127,
+          128
+        ],
+        "spec.variables.metadata.annotations": [
+          129,
+          130
+        ],
+        "spec.variables.name": [
+          131,
+          132
+        ],
+        "spec.variables.required": [
+          133,
+          134
+        ],
+        "spec.variables.schema": [
+          135,
+          136
+        ],
+        "spec.variables.schema.openAPIV3Schema": [
+          137,
+          138
+        ],
+        "spec.variables.schema.openAPIV3Schema.additionalProperties": [
+          139,
+          140
+        ],
+        "spec.variables.schema.openAPIV3Schema.allOf": [
+          null,
+          141
+        ],
+        "spec.variables.schema.openAPIV3Schema.anyOf": [
+          null,
+          142
+        ],
+        "spec.variables.schema.openAPIV3Schema.default": [
+          143,
+          144
+        ],
+        "spec.variables.schema.openAPIV3Schema.description": [
+          145,
+          146
+        ],
+        "spec.variables.schema.openAPIV3Schema.enum": [
+          147,
+          148
+        ],
+        "spec.variables.schema.openAPIV3Schema.example": [
+          149,
+          150
+        ],
+        "spec.variables.schema.openAPIV3Schema.exclusiveMaximum": [
+          151,
+          152
+        ],
+        "spec.variables.schema.openAPIV3Schema.exclusiveMinimum": [
+          153,
+          154
+        ],
+        "spec.variables.schema.openAPIV3Schema.format": [
+          155,
+          156
+        ],
+        "spec.variables.schema.openAPIV3Schema.items": [
+          157,
+          158
+        ],
+        "spec.variables.schema.openAPIV3Schema.maxItems": [
+          159,
+          160
+        ],
+        "spec.variables.schema.openAPIV3Schema.maxLength": [
+          161,
+          162
+        ],
+        "spec.variables.schema.openAPIV3Schema.maxProperties": [
+          163,
+          164
+        ],
+        "spec.variables.schema.openAPIV3Schema.maximum": [
+          165,
+          166
+        ],
+        "spec.variables.schema.openAPIV3Schema.minItems": [
+          167,
+          168
+        ],
+        "spec.variables.schema.openAPIV3Schema.minLength": [
+          169,
+          170
+        ],
+        "spec.variables.schema.openAPIV3Schema.minProperties": [
+          171,
+          172
+        ],
+        "spec.variables.schema.openAPIV3Schema.minimum": [
+          173,
+          174
+        ],
+        "spec.variables.schema.openAPIV3Schema.not": [
+          null,
+          175
+        ],
+        "spec.variables.schema.openAPIV3Schema.oneOf": [
+          null,
+          176
+        ],
+        "spec.variables.schema.openAPIV3Schema.pattern": [
+          177,
+          178
+        ],
+        "spec.variables.schema.openAPIV3Schema.properties": [
+          179,
+          180
+        ],
+        "spec.variables.schema.openAPIV3Schema.required": [
+          181,
+          182
+        ],
+        "spec.variables.schema.openAPIV3Schema.type": [
+          183,
+          184
+        ],
+        "spec.variables.schema.openAPIV3Schema.uniqueItems": [
+          185,
+          186
+        ],
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-int-or-string": [
+          null,
+          187
+        ],
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-preserve-unknown-fields": [
+          188,
+          189
+        ],
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-validations": [
+          190,
+          191
+        ],
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-validations.fieldPath": [
+          192,
+          193
+        ],
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-validations.message": [
+          194,
+          195
+        ],
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-validations.messageExpression": [
+          196,
+          197
+        ],
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-validations.reason": [
+          198,
+          199
+        ],
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-validations.rule": [
+          200,
+          201
+        ],
+        "spec.variables.schema.openAPIV3Schema.x-metadata": [
+          202,
+          203
+        ],
+        "spec.variables.schema.openAPIV3Schema.x-metadata.annotations": [
+          129,
+          130
+        ],
+        "spec.workers": [
+          204,
+          205
+        ],
+        "spec.workers.machineDeployments": [
+          206,
+          207
+        ],
+        "spec.workers.machineDeployments.class": [
+          208,
+          209
+        ],
+        "spec.workers.machineDeployments.failureDomain": [
+          210,
+          211
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck": [
+          212,
+          213
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.nodeStartupTimeout": [
+          45,
+          46
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate": [
+          47,
+          48
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate.fieldPath": [
+          49,
+          50
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyConditions": [
+          51,
+          52
+        ],
+        "spec.workers.machineDeployments.namingStrategy": [
+          214,
+          215
+        ],
+        "spec.workers.machineDeployments.namingStrategy.template": [
+          216,
+          217
+        ],
+        "spec.workers.machineDeployments.nodeDeletionTimeout": [
+          218,
+          219
+        ],
+        "spec.workers.machineDeployments.nodeDrainTimeout": [
+          220,
+          221
+        ],
+        "spec.workers.machineDeployments.nodeVolumeDetachTimeout": [
+          222,
+          223
+        ],
+        "spec.workers.machineDeployments.strategy.remediation": [
+          224,
+          225
+        ],
+        "spec.workers.machineDeployments.strategy.remediation.maxInFlight": [
+          226,
+          227
+        ],
+        "spec.workers.machineDeployments.strategy.rollingUpdate.deletePolicy": [
+          228,
+          229
+        ],
+        "spec.workers.machineDeployments.strategy.type": [
+          230,
+          231
+        ],
+        "spec.workers.machineDeployments.template": [
+          232,
+          233
+        ],
+        "spec.workers.machineDeployments.template.bootstrap": [
+          234,
+          235
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref": [
+          55,
+          56
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref.fieldPath": [
+          49,
+          50
+        ],
+        "spec.workers.machineDeployments.template.infrastructure": [
+          236,
+          237
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref": [
+          55,
+          56
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref.fieldPath": [
+          49,
+          50
+        ],
+        "spec.workers.machineDeployments.template.metadata": [
+          238,
+          239
+        ],
+        "spec.workers.machineDeployments.template.metadata.annotations": [
+          59,
+          60
+        ],
+        "spec.workers.machinePools": [
+          240,
+          241
+        ],
+        "spec.workers.machinePools.class": [
+          242,
+          243
+        ],
+        "spec.workers.machinePools.failureDomains": [
+          244,
+          245
+        ],
+        "spec.workers.machinePools.namingStrategy": [
+          246,
+          247
+        ],
+        "spec.workers.machinePools.namingStrategy.template": [
+          248,
+          249
+        ],
+        "spec.workers.machinePools.nodeDeletionTimeout": [
+          250,
+          251
+        ],
+        "spec.workers.machinePools.nodeDrainTimeout": [
+          252,
+          253
+        ],
+        "spec.workers.machinePools.nodeVolumeDetachTimeout": [
+          254,
+          255
+        ],
+        "spec.workers.machinePools.template": [
+          256,
+          257
+        ],
+        "spec.workers.machinePools.template.bootstrap": [
+          258,
+          259
+        ],
+        "spec.workers.machinePools.template.bootstrap.ref": [
+          55,
+          56
+        ],
+        "spec.workers.machinePools.template.bootstrap.ref.fieldPath": [
+          49,
+          50
+        ],
+        "spec.workers.machinePools.template.infrastructure": [
+          260,
+          261
+        ],
+        "spec.workers.machinePools.template.infrastructure.ref": [
+          55,
+          56
+        ],
+        "spec.workers.machinePools.template.infrastructure.ref.fieldPath": [
+          49,
+          50
+        ],
+        "spec.workers.machinePools.template.metadata": [
+          262,
+          263
+        ],
+        "spec.workers.machinePools.template.metadata.annotations": [
+          59,
+          60
+        ],
+        "status.conditions": [
+          264,
+          265
+        ],
+        "status.conditions.reason": [
+          266,
+          39
+        ],
+        "status.conditions.severity": [
+          267,
+          268
+        ],
+        "status.conditions.status": [
+          269,
+          9
+        ],
+        "status.conditions.type": [
+          270,
+          271
+        ],
+        "status.observedGeneration": [
+          272,
+          273
+        ],
+        "status.v1beta2": [
+          null,
+          274
+        ],
+        "status.variables": [
+          275,
+          276
+        ],
+        "status.variables.definitions": [
+          277,
+          278
+        ],
+        "status.variables.definitions.from": [
+          279,
+          280
+        ],
+        "status.variables.definitions.metadata": [
+          281,
+          282
+        ],
+        "status.variables.definitions.metadata.annotations": [
+          129,
+          130
+        ],
+        "status.variables.definitions.required": [
+          133,
+          134
+        ],
+        "status.variables.definitions.schema": [
+          135,
+          136
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema": [
+          137,
+          138
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.additionalProperties": [
+          139,
+          140
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.allOf": [
+          null,
+          141
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.anyOf": [
+          null,
+          142
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.default": [
+          143,
+          144
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.description": [
+          145,
+          146
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.enum": [
+          147,
+          148
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.example": [
+          149,
+          150
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.exclusiveMaximum": [
+          151,
+          152
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.exclusiveMinimum": [
+          153,
+          154
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.format": [
+          155,
+          156
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.items": [
+          157,
+          158
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.maxItems": [
+          159,
+          160
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.maxLength": [
+          161,
+          162
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.maxProperties": [
+          163,
+          164
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.maximum": [
+          165,
+          166
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.minItems": [
+          167,
+          168
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.minLength": [
+          169,
+          170
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.minProperties": [
+          171,
+          172
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.minimum": [
+          173,
+          174
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.not": [
+          null,
+          175
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.oneOf": [
+          null,
+          176
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.pattern": [
+          177,
+          178
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.properties": [
+          179,
+          180
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.required": [
+          181,
+          182
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.type": [
+          183,
+          184
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.uniqueItems": [
+          185,
+          186
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-int-or-string": [
+          null,
+          187
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-preserve-unknown-fields": [
+          188,
+          189
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-validations": [
+          190,
+          191
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-validations.fieldPath": [
+          192,
+          193
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-validations.message": [
+          194,
+          195
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-validations.messageExpression": [
+          196,
+          197
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-validations.reason": [
+          198,
+          199
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-validations.rule": [
+          200,
+          201
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.x-metadata": [
+          202,
+          203
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.x-metadata.annotations": [
+          129,
+          130
+        ],
+        "status.variables.definitionsConflict": [
+          283,
+          284
+        ],
+        "status.variables.name": [
+          285,
+          286
+        ]
+      }
+    },
+    "v1.8.0": {
+      "descriptionChanged": [
+        "spec.variables.metadata",
+        "status.variables.definitions.metadata"
+      ],
+      "added": {
+        "spec.variables.schema.openAPIV3Schema.maxProperties": "integer",
+        "spec.variables.schema.openAPIV3Schema.minProperties": "integer",
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-validations": "object[]",
+        "spec.variables.schema.openAPIV3Schema.x-metadata": "object",
+        "status.variables.definitions.schema.openAPIV3Schema.maxProperties": "integer",
+        "status.variables.definitions.schema.openAPIV3Schema.minProperties": "integer",
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-validations": "object[]",
+        "status.variables.definitions.schema.openAPIV3Schema.x-metadata": "object"
+      },
+      "descriptions": {
+        "spec.variables.metadata": [
+          287,
+          127
+        ],
+        "spec.variables.schema.openAPIV3Schema.maxProperties": [
+          null,
+          163
+        ],
+        "spec.variables.schema.openAPIV3Schema.minProperties": [
+          null,
+          171
+        ],
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-validations": [
+          null,
+          190
+        ],
+        "spec.variables.schema.openAPIV3Schema.x-metadata": [
+          null,
+          202
+        ],
+        "status.variables.definitions.metadata": [
+          287,
+          281
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.maxProperties": [
+          null,
+          163
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.minProperties": [
+          null,
+          171
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-validations": [
+          null,
+          190
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.x-metadata": [
+          null,
+          202
+        ]
+      }
+    },
+    "v1.7.4": {
+      "descriptionChanged": [
+        "spec.controlPlane.machineHealthCheck.nodeStartupTimeout",
+        "spec.workers.machineDeployments.machineHealthCheck.nodeStartupTimeout"
+      ],
+      "added": {
+        "spec.workers.machineDeployments.strategy.remediation": "object"
+      },
+      "descriptions": {
+        "spec.controlPlane.machineHealthCheck.nodeStartupTimeout": [
+          288,
+          45
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.nodeStartupTimeout": [
+          288,
+          45
+        ],
+        "spec.workers.machineDeployments.strategy.remediation": [
+          null,
+          224
+        ]
+      }
+    },
+    "v1.7.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.controlPlane",
+        "spec.controlPlane.machineHealthCheck",
+        "spec.controlPlane.machineHealthCheck.maxUnhealthy",
+        "spec.controlPlane.machineHealthCheck.nodeStartupTimeout",
+        "spec.controlPlane.machineHealthCheck.remediationTemplate",
+        "spec.controlPlane.machineHealthCheck.remediationTemplate.fieldPath",
+        "spec.controlPlane.machineHealthCheck.remediationTemplate.kind",
+        "spec.controlPlane.machineHealthCheck.remediationTemplate.name",
+        "spec.controlPlane.machineHealthCheck.remediationTemplate.namespace",
+        "spec.controlPlane.machineHealthCheck.remediationTemplate.resourceVersion",
+        "spec.controlPlane.machineHealthCheck.remediationTemplate.uid",
+        "spec.controlPlane.machineHealthCheck.unhealthyConditions",
+        "spec.controlPlane.machineHealthCheck.unhealthyRange",
+        "spec.controlPlane.machineInfrastructure",
+        "spec.controlPlane.machineInfrastructure.ref",
+        "spec.controlPlane.machineInfrastructure.ref.fieldPath",
+        "spec.controlPlane.machineInfrastructure.ref.kind",
+        "spec.controlPlane.machineInfrastructure.ref.name",
+        "spec.controlPlane.machineInfrastructure.ref.namespace",
+        "spec.controlPlane.machineInfrastructure.ref.resourceVersion",
+        "spec.controlPlane.machineInfrastructure.ref.uid",
+        "spec.controlPlane.metadata",
+        "spec.controlPlane.metadata.annotations",
+        "spec.controlPlane.metadata.labels",
+        "spec.controlPlane.namingStrategy.template",
+        "spec.controlPlane.nodeDeletionTimeout",
+        "spec.controlPlane.nodeDrainTimeout",
+        "spec.controlPlane.nodeVolumeDetachTimeout",
+        "spec.controlPlane.ref",
+        "spec.controlPlane.ref.fieldPath",
+        "spec.controlPlane.ref.kind",
+        "spec.controlPlane.ref.name",
+        "spec.controlPlane.ref.namespace",
+        "spec.controlPlane.ref.resourceVersion",
+        "spec.controlPlane.ref.uid",
+        "spec.infrastructure",
+        "spec.infrastructure.ref",
+        "spec.infrastructure.ref.fieldPath",
+        "spec.infrastructure.ref.kind",
+        "spec.infrastructure.ref.name",
+        "spec.infrastructure.ref.namespace",
+        "spec.infrastructure.ref.resourceVersion",
+        "spec.infrastructure.ref.uid",
+        "spec.patches",
+        "spec.patches.definitions",
+        "spec.patches.definitions.jsonPatches",
+        "spec.patches.definitions.jsonPatches.op",
+        "spec.patches.definitions.jsonPatches.path",
+        "spec.patches.definitions.jsonPatches.value",
+        "spec.patches.definitions.jsonPatches.valueFrom",
+        "spec.patches.definitions.jsonPatches.valueFrom.template",
+        "spec.patches.definitions.jsonPatches.valueFrom.variable",
+        "spec.patches.definitions.selector.matchResources.controlPlane",
+        "spec.patches.definitions.selector.matchResources.machineDeploymentClass",
+        "spec.patches.definitions.selector.matchResources.machinePoolClass",
+        "spec.patches.enabledIf",
+        "spec.patches.external",
+        "spec.patches.external.settings",
+        "spec.variables",
+        "spec.variables.metadata",
+        "spec.variables.metadata.annotations",
+        "spec.variables.metadata.labels",
+        "spec.variables.required",
+        "spec.variables.schema.openAPIV3Schema",
+        "spec.variables.schema.openAPIV3Schema.additionalProperties",
+        "spec.variables.schema.openAPIV3Schema.default",
+        "spec.variables.schema.openAPIV3Schema.enum",
+        "spec.variables.schema.openAPIV3Schema.exclusiveMaximum",
+        "spec.variables.schema.openAPIV3Schema.exclusiveMinimum",
+        "spec.variables.schema.openAPIV3Schema.format",
+        "spec.variables.schema.openAPIV3Schema.items",
+        "spec.variables.schema.openAPIV3Schema.maxItems",
+        "spec.variables.schema.openAPIV3Schema.maxLength",
+        "spec.variables.schema.openAPIV3Schema.maximum",
+        "spec.variables.schema.openAPIV3Schema.minItems",
+        "spec.variables.schema.openAPIV3Schema.minLength",
+        "spec.variables.schema.openAPIV3Schema.minimum",
+        "spec.variables.schema.openAPIV3Schema.pattern",
+        "spec.variables.schema.openAPIV3Schema.properties",
+        "spec.variables.schema.openAPIV3Schema.required",
+        "spec.variables.schema.openAPIV3Schema.type",
+        "spec.variables.schema.openAPIV3Schema.uniqueItems",
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-preserve-unknown-fields",
+        "spec.workers",
+        "spec.workers.machineDeployments",
+        "spec.workers.machineDeployments.class",
+        "spec.workers.machineDeployments.failureDomain",
+        "spec.workers.machineDeployments.machineHealthCheck.maxUnhealthy",
+        "spec.workers.machineDeployments.machineHealthCheck.nodeStartupTimeout",
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate",
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate.fieldPath",
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate.kind",
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate.name",
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate.namespace",
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate.resourceVersion",
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate.uid",
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyConditions",
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyRange",
+        "spec.workers.machineDeployments.minReadySeconds",
+        "spec.workers.machineDeployments.namingStrategy.template",
+        "spec.workers.machineDeployments.nodeDeletionTimeout",
+        "spec.workers.machineDeployments.nodeDrainTimeout",
+        "spec.workers.machineDeployments.nodeVolumeDetachTimeout",
+        "spec.workers.machineDeployments.strategy",
+        "spec.workers.machineDeployments.strategy.rollingUpdate",
+        "spec.workers.machineDeployments.strategy.rollingUpdate.deletePolicy",
+        "spec.workers.machineDeployments.strategy.rollingUpdate.maxSurge",
+        "spec.workers.machineDeployments.strategy.rollingUpdate.maxUnavailable",
+        "spec.workers.machineDeployments.strategy.type",
+        "spec.workers.machineDeployments.template",
+        "spec.workers.machineDeployments.template.bootstrap",
+        "spec.workers.machineDeployments.template.bootstrap.ref",
+        "spec.workers.machineDeployments.template.bootstrap.ref.fieldPath",
+        "spec.workers.machineDeployments.template.bootstrap.ref.kind",
+        "spec.workers.machineDeployments.template.bootstrap.ref.name",
+        "spec.workers.machineDeployments.template.bootstrap.ref.namespace",
+        "spec.workers.machineDeployments.template.bootstrap.ref.resourceVersion",
+        "spec.workers.machineDeployments.template.bootstrap.ref.uid",
+        "spec.workers.machineDeployments.template.infrastructure",
+        "spec.workers.machineDeployments.template.infrastructure.ref",
+        "spec.workers.machineDeployments.template.infrastructure.ref.fieldPath",
+        "spec.workers.machineDeployments.template.infrastructure.ref.kind",
+        "spec.workers.machineDeployments.template.infrastructure.ref.name",
+        "spec.workers.machineDeployments.template.infrastructure.ref.namespace",
+        "spec.workers.machineDeployments.template.infrastructure.ref.resourceVersion",
+        "spec.workers.machineDeployments.template.infrastructure.ref.uid",
+        "spec.workers.machineDeployments.template.metadata",
+        "spec.workers.machineDeployments.template.metadata.annotations",
+        "spec.workers.machineDeployments.template.metadata.labels",
+        "spec.workers.machinePools",
+        "spec.workers.machinePools.class",
+        "spec.workers.machinePools.failureDomains",
+        "spec.workers.machinePools.minReadySeconds",
+        "spec.workers.machinePools.namingStrategy.template",
+        "spec.workers.machinePools.nodeDeletionTimeout",
+        "spec.workers.machinePools.nodeDrainTimeout",
+        "spec.workers.machinePools.nodeVolumeDetachTimeout",
+        "spec.workers.machinePools.template",
+        "spec.workers.machinePools.template.bootstrap",
+        "spec.workers.machinePools.template.bootstrap.ref",
+        "spec.workers.machinePools.template.bootstrap.ref.fieldPath",
+        "spec.workers.machinePools.template.bootstrap.ref.kind",
+        "spec.workers.machinePools.template.bootstrap.ref.name",
+        "spec.workers.machinePools.template.bootstrap.ref.namespace",
+        "spec.workers.machinePools.template.bootstrap.ref.resourceVersion",
+        "spec.workers.machinePools.template.bootstrap.ref.uid",
+        "spec.workers.machinePools.template.infrastructure",
+        "spec.workers.machinePools.template.infrastructure.ref",
+        "spec.workers.machinePools.template.infrastructure.ref.fieldPath",
+        "spec.workers.machinePools.template.infrastructure.ref.kind",
+        "spec.workers.machinePools.template.infrastructure.ref.name",
+        "spec.workers.machinePools.template.infrastructure.ref.namespace",
+        "spec.workers.machinePools.template.infrastructure.ref.resourceVersion",
+        "spec.workers.machinePools.template.infrastructure.ref.uid",
+        "spec.workers.machinePools.template.metadata",
+        "spec.workers.machinePools.template.metadata.annotations",
+        "spec.workers.machinePools.template.metadata.labels",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason",
+        "status.conditions.severity",
+        "status.conditions.type",
+        "status.variables.definitions.from",
+        "status.variables.definitions.metadata",
+        "status.variables.definitions.metadata.annotations",
+        "status.variables.definitions.metadata.labels",
+        "status.variables.definitions.required",
+        "status.variables.definitions.schema.openAPIV3Schema",
+        "status.variables.definitions.schema.openAPIV3Schema.additionalProperties",
+        "status.variables.definitions.schema.openAPIV3Schema.default",
+        "status.variables.definitions.schema.openAPIV3Schema.enum",
+        "status.variables.definitions.schema.openAPIV3Schema.exclusiveMaximum",
+        "status.variables.definitions.schema.openAPIV3Schema.exclusiveMinimum",
+        "status.variables.definitions.schema.openAPIV3Schema.format",
+        "status.variables.definitions.schema.openAPIV3Schema.items",
+        "status.variables.definitions.schema.openAPIV3Schema.maxItems",
+        "status.variables.definitions.schema.openAPIV3Schema.maxLength",
+        "status.variables.definitions.schema.openAPIV3Schema.maximum",
+        "status.variables.definitions.schema.openAPIV3Schema.minItems",
+        "status.variables.definitions.schema.openAPIV3Schema.minLength",
+        "status.variables.definitions.schema.openAPIV3Schema.minimum",
+        "status.variables.definitions.schema.openAPIV3Schema.pattern",
+        "status.variables.definitions.schema.openAPIV3Schema.properties",
+        "status.variables.definitions.schema.openAPIV3Schema.required",
+        "status.variables.definitions.schema.openAPIV3Schema.type",
+        "status.variables.definitions.schema.openAPIV3Schema.uniqueItems",
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-preserve-unknown-fields"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          289,
+          290
+        ],
+        "kind": [
+          291,
+          292
+        ],
+        "spec.controlPlane": [
+          293,
+          41
+        ],
+        "spec.controlPlane.machineHealthCheck": [
+          294,
+          43
+        ],
+        "spec.controlPlane.machineHealthCheck.maxUnhealthy": [
+          295,
+          7
+        ],
+        "spec.controlPlane.machineHealthCheck.nodeStartupTimeout": [
+          296,
+          288
+        ],
+        "spec.controlPlane.machineHealthCheck.remediationTemplate": [
+          297,
+          47
+        ],
+        "spec.controlPlane.machineHealthCheck.remediationTemplate.fieldPath": [
+          298,
+          49
+        ],
+        "spec.controlPlane.machineHealthCheck.remediationTemplate.kind": [
+          299,
+          300
+        ],
+        "spec.controlPlane.machineHealthCheck.remediationTemplate.name": [
+          301,
+          302
+        ],
+        "spec.controlPlane.machineHealthCheck.remediationTemplate.namespace": [
+          303,
+          304
+        ],
+        "spec.controlPlane.machineHealthCheck.remediationTemplate.resourceVersion": [
+          305,
+          306
+        ],
+        "spec.controlPlane.machineHealthCheck.remediationTemplate.uid": [
+          307,
+          308
+        ],
+        "spec.controlPlane.machineHealthCheck.unhealthyConditions": [
+          309,
+          51
+        ],
+        "spec.controlPlane.machineHealthCheck.unhealthyRange": [
+          310,
+          12
+        ],
+        "spec.controlPlane.machineInfrastructure": [
+          311,
+          53
+        ],
+        "spec.controlPlane.machineInfrastructure.ref": [
+          312,
+          55
+        ],
+        "spec.controlPlane.machineInfrastructure.ref.fieldPath": [
+          298,
+          49
+        ],
+        "spec.controlPlane.machineInfrastructure.ref.kind": [
+          299,
+          300
+        ],
+        "spec.controlPlane.machineInfrastructure.ref.name": [
+          301,
+          302
+        ],
+        "spec.controlPlane.machineInfrastructure.ref.namespace": [
+          303,
+          304
+        ],
+        "spec.controlPlane.machineInfrastructure.ref.resourceVersion": [
+          305,
+          306
+        ],
+        "spec.controlPlane.machineInfrastructure.ref.uid": [
+          307,
+          308
+        ],
+        "spec.controlPlane.metadata": [
+          313,
+          57
+        ],
+        "spec.controlPlane.metadata.annotations": [
+          314,
+          59
+        ],
+        "spec.controlPlane.metadata.labels": [
+          315,
+          14
+        ],
+        "spec.controlPlane.namingStrategy.template": [
+          316,
+          63
+        ],
+        "spec.controlPlane.nodeDeletionTimeout": [
+          317,
+          65
+        ],
+        "spec.controlPlane.nodeDrainTimeout": [
+          318,
+          67
+        ],
+        "spec.controlPlane.nodeVolumeDetachTimeout": [
+          319,
+          69
+        ],
+        "spec.controlPlane.ref": [
+          312,
+          55
+        ],
+        "spec.controlPlane.ref.fieldPath": [
+          298,
+          49
+        ],
+        "spec.controlPlane.ref.kind": [
+          299,
+          300
+        ],
+        "spec.controlPlane.ref.name": [
+          301,
+          302
+        ],
+        "spec.controlPlane.ref.namespace": [
+          303,
+          304
+        ],
+        "spec.controlPlane.ref.resourceVersion": [
+          305,
+          306
+        ],
+        "spec.controlPlane.ref.uid": [
+          307,
+          308
+        ],
+        "spec.infrastructure": [
+          320,
+          71
+        ],
+        "spec.infrastructure.ref": [
+          312,
+          55
+        ],
+        "spec.infrastructure.ref.fieldPath": [
+          298,
+          49
+        ],
+        "spec.infrastructure.ref.kind": [
+          299,
+          300
+        ],
+        "spec.infrastructure.ref.name": [
+          301,
+          302
+        ],
+        "spec.infrastructure.ref.namespace": [
+          303,
+          304
+        ],
+        "spec.infrastructure.ref.resourceVersion": [
+          305,
+          306
+        ],
+        "spec.infrastructure.ref.uid": [
+          307,
+          308
+        ],
+        "spec.patches": [
+          321,
+          73
+        ],
+        "spec.patches.definitions": [
+          322,
+          75
+        ],
+        "spec.patches.definitions.jsonPatches": [
+          323,
+          77
+        ],
+        "spec.patches.definitions.jsonPatches.op": [
+          324,
+          79
+        ],
+        "spec.patches.definitions.jsonPatches.path": [
+          325,
+          81
+        ],
+        "spec.patches.definitions.jsonPatches.value": [
+          326,
+          83
+        ],
+        "spec.patches.definitions.jsonPatches.valueFrom": [
+          327,
+          85
+        ],
+        "spec.patches.definitions.jsonPatches.valueFrom.template": [
+          328,
+          87
+        ],
+        "spec.patches.definitions.jsonPatches.valueFrom.variable": [
+          329,
+          89
+        ],
+        "spec.patches.definitions.selector.matchResources.controlPlane": [
+          330,
+          99
+        ],
+        "spec.patches.definitions.selector.matchResources.machineDeploymentClass": [
+          331,
+          103
+        ],
+        "spec.patches.definitions.selector.matchResources.machinePoolClass": [
+          332,
+          107
+        ],
+        "spec.patches.enabledIf": [
+          333,
+          111
+        ],
+        "spec.patches.external": [
+          334,
+          113
+        ],
+        "spec.patches.external.settings": [
+          335,
+          119
+        ],
+        "spec.variables": [
+          336,
+          125
+        ],
+        "spec.variables.metadata": [
+          337,
+          287
+        ],
+        "spec.variables.metadata.annotations": [
+          338,
+          129
+        ],
+        "spec.variables.metadata.labels": [
+          339,
+          18
+        ],
+        "spec.variables.required": [
+          340,
+          133
+        ],
+        "spec.variables.schema.openAPIV3Schema": [
+          341,
+          137
+        ],
+        "spec.variables.schema.openAPIV3Schema.additionalProperties": [
+          342,
+          139
+        ],
+        "spec.variables.schema.openAPIV3Schema.default": [
+          343,
+          143
+        ],
+        "spec.variables.schema.openAPIV3Schema.enum": [
+          344,
+          147
+        ],
+        "spec.variables.schema.openAPIV3Schema.exclusiveMaximum": [
+          345,
+          151
+        ],
+        "spec.variables.schema.openAPIV3Schema.exclusiveMinimum": [
+          346,
+          153
+        ],
+        "spec.variables.schema.openAPIV3Schema.format": [
+          347,
+          155
+        ],
+        "spec.variables.schema.openAPIV3Schema.items": [
+          348,
+          157
+        ],
+        "spec.variables.schema.openAPIV3Schema.maxItems": [
+          349,
+          159
+        ],
+        "spec.variables.schema.openAPIV3Schema.maxLength": [
+          350,
+          161
+        ],
+        "spec.variables.schema.openAPIV3Schema.maximum": [
+          351,
+          165
+        ],
+        "spec.variables.schema.openAPIV3Schema.minItems": [
+          352,
+          167
+        ],
+        "spec.variables.schema.openAPIV3Schema.minLength": [
+          353,
+          169
+        ],
+        "spec.variables.schema.openAPIV3Schema.minimum": [
+          354,
+          173
+        ],
+        "spec.variables.schema.openAPIV3Schema.pattern": [
+          355,
+          177
+        ],
+        "spec.variables.schema.openAPIV3Schema.properties": [
+          356,
+          179
+        ],
+        "spec.variables.schema.openAPIV3Schema.required": [
+          357,
+          181
+        ],
+        "spec.variables.schema.openAPIV3Schema.type": [
+          358,
+          183
+        ],
+        "spec.variables.schema.openAPIV3Schema.uniqueItems": [
+          359,
+          185
+        ],
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-preserve-unknown-fields": [
+          360,
+          188
+        ],
+        "spec.workers": [
+          361,
+          204
+        ],
+        "spec.workers.machineDeployments": [
+          362,
+          206
+        ],
+        "spec.workers.machineDeployments.class": [
+          363,
+          208
+        ],
+        "spec.workers.machineDeployments.failureDomain": [
+          364,
+          210
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.maxUnhealthy": [
+          295,
+          7
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.nodeStartupTimeout": [
+          296,
+          288
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate": [
+          297,
+          47
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate.fieldPath": [
+          298,
+          49
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate.kind": [
+          299,
+          300
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate.name": [
+          301,
+          302
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate.namespace": [
+          303,
+          304
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate.resourceVersion": [
+          305,
+          306
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.remediationTemplate.uid": [
+          307,
+          308
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyConditions": [
+          309,
+          51
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck.unhealthyRange": [
+          310,
+          12
+        ],
+        "spec.workers.machineDeployments.minReadySeconds": [
+          365,
+          20
+        ],
+        "spec.workers.machineDeployments.namingStrategy.template": [
+          366,
+          216
+        ],
+        "spec.workers.machineDeployments.nodeDeletionTimeout": [
+          367,
+          218
+        ],
+        "spec.workers.machineDeployments.nodeDrainTimeout": [
+          368,
+          220
+        ],
+        "spec.workers.machineDeployments.nodeVolumeDetachTimeout": [
+          369,
+          222
+        ],
+        "spec.workers.machineDeployments.strategy": [
+          370,
+          23
+        ],
+        "spec.workers.machineDeployments.strategy.rollingUpdate": [
+          371,
+          25
+        ],
+        "spec.workers.machineDeployments.strategy.rollingUpdate.deletePolicy": [
+          372,
+          228
+        ],
+        "spec.workers.machineDeployments.strategy.rollingUpdate.maxSurge": [
+          373,
+          27
+        ],
+        "spec.workers.machineDeployments.strategy.rollingUpdate.maxUnavailable": [
+          374,
+          29
+        ],
+        "spec.workers.machineDeployments.strategy.type": [
+          375,
+          230
+        ],
+        "spec.workers.machineDeployments.template": [
+          376,
+          232
+        ],
+        "spec.workers.machineDeployments.template.bootstrap": [
+          377,
+          234
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref": [
+          312,
+          55
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref.fieldPath": [
+          298,
+          49
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref.kind": [
+          299,
+          300
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref.name": [
+          301,
+          302
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref.namespace": [
+          303,
+          304
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref.resourceVersion": [
+          305,
+          306
+        ],
+        "spec.workers.machineDeployments.template.bootstrap.ref.uid": [
+          307,
+          308
+        ],
+        "spec.workers.machineDeployments.template.infrastructure": [
+          378,
+          236
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref": [
+          312,
+          55
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref.fieldPath": [
+          298,
+          49
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref.kind": [
+          299,
+          300
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref.name": [
+          301,
+          302
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref.namespace": [
+          303,
+          304
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref.resourceVersion": [
+          305,
+          306
+        ],
+        "spec.workers.machineDeployments.template.infrastructure.ref.uid": [
+          307,
+          308
+        ],
+        "spec.workers.machineDeployments.template.metadata": [
+          379,
+          238
+        ],
+        "spec.workers.machineDeployments.template.metadata.annotations": [
+          314,
+          59
+        ],
+        "spec.workers.machineDeployments.template.metadata.labels": [
+          315,
+          14
+        ],
+        "spec.workers.machinePools": [
+          380,
+          240
+        ],
+        "spec.workers.machinePools.class": [
+          381,
+          242
+        ],
+        "spec.workers.machinePools.failureDomains": [
+          382,
+          244
+        ],
+        "spec.workers.machinePools.minReadySeconds": [
+          383,
+          31
+        ],
+        "spec.workers.machinePools.namingStrategy.template": [
+          384,
+          248
+        ],
+        "spec.workers.machinePools.nodeDeletionTimeout": [
+          385,
+          250
+        ],
+        "spec.workers.machinePools.nodeDrainTimeout": [
+          386,
+          252
+        ],
+        "spec.workers.machinePools.nodeVolumeDetachTimeout": [
+          387,
+          254
+        ],
+        "spec.workers.machinePools.template": [
+          388,
+          256
+        ],
+        "spec.workers.machinePools.template.bootstrap": [
+          389,
+          258
+        ],
+        "spec.workers.machinePools.template.bootstrap.ref": [
+          312,
+          55
+        ],
+        "spec.workers.machinePools.template.bootstrap.ref.fieldPath": [
+          298,
+          49
+        ],
+        "spec.workers.machinePools.template.bootstrap.ref.kind": [
+          299,
+          300
+        ],
+        "spec.workers.machinePools.template.bootstrap.ref.name": [
+          301,
+          302
+        ],
+        "spec.workers.machinePools.template.bootstrap.ref.namespace": [
+          303,
+          304
+        ],
+        "spec.workers.machinePools.template.bootstrap.ref.resourceVersion": [
+          305,
+          306
+        ],
+        "spec.workers.machinePools.template.bootstrap.ref.uid": [
+          307,
+          308
+        ],
+        "spec.workers.machinePools.template.infrastructure": [
+          390,
+          260
+        ],
+        "spec.workers.machinePools.template.infrastructure.ref": [
+          312,
+          55
+        ],
+        "spec.workers.machinePools.template.infrastructure.ref.fieldPath": [
+          298,
+          49
+        ],
+        "spec.workers.machinePools.template.infrastructure.ref.kind": [
+          299,
+          300
+        ],
+        "spec.workers.machinePools.template.infrastructure.ref.name": [
+          301,
+          302
+        ],
+        "spec.workers.machinePools.template.infrastructure.ref.namespace": [
+          303,
+          304
+        ],
+        "spec.workers.machinePools.template.infrastructure.ref.resourceVersion": [
+          305,
+          306
+        ],
+        "spec.workers.machinePools.template.infrastructure.ref.uid": [
+          307,
+          308
+        ],
+        "spec.workers.machinePools.template.metadata": [
+          391,
+          262
+        ],
+        "spec.workers.machinePools.template.metadata.annotations": [
+          314,
+          59
+        ],
+        "spec.workers.machinePools.template.metadata.labels": [
+          315,
+          14
+        ],
+        "status.conditions.lastTransitionTime": [
+          392,
+          35
+        ],
+        "status.conditions.message": [
+          393,
+          37
+        ],
+        "status.conditions.reason": [
+          394,
+          266
+        ],
+        "status.conditions.severity": [
+          395,
+          267
+        ],
+        "status.conditions.type": [
+          396,
+          270
+        ],
+        "status.variables.definitions.from": [
+          397,
+          279
+        ],
+        "status.variables.definitions.metadata": [
+          337,
+          287
+        ],
+        "status.variables.definitions.metadata.annotations": [
+          338,
+          129
+        ],
+        "status.variables.definitions.metadata.labels": [
+          339,
+          18
+        ],
+        "status.variables.definitions.required": [
+          340,
+          133
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema": [
+          341,
+          137
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.additionalProperties": [
+          342,
+          139
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.default": [
+          343,
+          143
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.enum": [
+          344,
+          147
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.exclusiveMaximum": [
+          345,
+          151
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.exclusiveMinimum": [
+          346,
+          153
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.format": [
+          347,
+          155
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.items": [
+          348,
+          157
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.maxItems": [
+          349,
+          159
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.maxLength": [
+          350,
+          161
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.maximum": [
+          351,
+          165
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.minItems": [
+          352,
+          167
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.minLength": [
+          353,
+          169
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.minimum": [
+          354,
+          173
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.pattern": [
+          355,
+          177
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.properties": [
+          356,
+          179
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.required": [
+          357,
+          181
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.type": [
+          358,
+          183
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.uniqueItems": [
+          359,
+          185
+        ],
+        "status.variables.definitions.schema.openAPIV3Schema.x-kubernetes-preserve-unknown-fields": [
+          360,
+          188
+        ]
+      }
+    },
+    "v1.6.4": {
+      "added": {
+        "spec.variables.metadata": "object",
+        "status.variables.definitions.metadata": "object"
+      },
+      "descriptions": {
+        "spec.variables.metadata": [
+          null,
+          337
+        ],
+        "status.variables.definitions.metadata": [
+          null,
+          337
+        ]
+      }
+    },
+    "v1.6.0": {
+      "added": {
+        "spec.patches.definitions.selector.matchResources.machinePoolClass": "object",
+        "spec.workers.machinePools": "object[]"
+      },
+      "descriptionChanged": [
+        "spec.workers.machineDeployments.strategy.type"
+      ],
+      "descriptions": {
+        "spec.patches.definitions.selector.matchResources.machinePoolClass": [
+          null,
+          332
+        ],
+        "spec.workers.machineDeployments.strategy.type": [
+          398,
+          375
+        ],
+        "spec.workers.machinePools": [
+          null,
+          380
+        ]
+      }
+    },
+    "v1.5.2": {
+      "added": {
+        "spec.controlPlane.namingStrategy": "object",
+        "spec.workers.machineDeployments.namingStrategy": "object"
+      },
+      "descriptions": {
+        "spec.controlPlane.namingStrategy": [
+          null,
+          61
+        ],
+        "spec.workers.machineDeployments.namingStrategy": [
+          null,
+          214
+        ]
+      }
+    },
+    "v1.4.0": {
+      "descriptionChanged": [
+        "spec.controlPlane.metadata",
+        "spec.workers.machineDeployments.template.metadata"
+      ],
+      "added": {
+        "spec.patches.external.discoverVariablesExtension": "string",
+        "spec.patches.external.settings": "map[string]string",
+        "status.observedGeneration": "integer",
+        "status.variables": "object[]"
+      },
+      "descriptions": {
+        "spec.controlPlane.metadata": [
+          399,
+          313
+        ],
+        "spec.patches.external.discoverVariablesExtension": [
+          null,
+          115
+        ],
+        "spec.patches.external.settings": [
+          null,
+          335
+        ],
+        "spec.workers.machineDeployments.template.metadata": [
+          400,
+          379
+        ],
+        "status.observedGeneration": [
+          null,
+          272
+        ],
+        "status.variables": [
+          null,
+          275
+        ]
+      }
+    },
+    "v1.3.0": {
+      "added": {
+        "spec.controlPlane.nodeDeletionTimeout": "string",
+        "spec.controlPlane.nodeDrainTimeout": "string",
+        "spec.controlPlane.nodeVolumeDetachTimeout": "string",
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-preserve-unknown-fields": "boolean",
+        "spec.workers.machineDeployments.failureDomain": "string",
+        "spec.workers.machineDeployments.minReadySeconds": "integer",
+        "spec.workers.machineDeployments.nodeDeletionTimeout": "string",
+        "spec.workers.machineDeployments.nodeDrainTimeout": "string",
+        "spec.workers.machineDeployments.nodeVolumeDetachTimeout": "string",
+        "spec.workers.machineDeployments.strategy": "object",
+        "status": "object"
+      },
+      "descriptions": {
+        "spec.controlPlane.nodeDeletionTimeout": [
+          null,
+          317
+        ],
+        "spec.controlPlane.nodeDrainTimeout": [
+          null,
+          318
+        ],
+        "spec.controlPlane.nodeVolumeDetachTimeout": [
+          null,
+          319
+        ],
+        "spec.variables.schema.openAPIV3Schema.x-kubernetes-preserve-unknown-fields": [
+          null,
+          360
+        ],
+        "spec.workers.machineDeployments.failureDomain": [
+          null,
+          364
+        ],
+        "spec.workers.machineDeployments.minReadySeconds": [
+          null,
+          365
+        ],
+        "spec.workers.machineDeployments.nodeDeletionTimeout": [
+          null,
+          367
+        ],
+        "spec.workers.machineDeployments.nodeDrainTimeout": [
+          null,
+          368
+        ],
+        "spec.workers.machineDeployments.nodeVolumeDetachTimeout": [
+          null,
+          369
+        ],
+        "spec.workers.machineDeployments.strategy": [
+          null,
+          370
+        ],
+        "status": [
+          null,
+          33
+        ]
+      }
+    },
+    "v1.2.0": {
+      "optional": [
+        "spec.patches.definitions"
+      ],
+      "descriptionChanged": [
+        "spec.patches.definitions",
+        "spec.variables.schema.openAPIV3Schema.properties"
+      ],
+      "added": {
+        "spec.patches.external": "object",
+        "spec.variables.schema.openAPIV3Schema.additionalProperties": "object"
+      },
+      "descriptions": {
+        "spec.patches.definitions": [
+          401,
+          322
+        ],
+        "spec.patches.external": [
+          null,
+          334
+        ],
+        "spec.variables.schema.openAPIV3Schema.additionalProperties": [
+          null,
+          342
+        ],
+        "spec.variables.schema.openAPIV3Schema.properties": [
+          402,
+          356
+        ]
+      }
+    },
+    "v1.1.0": {
+      "added": {
+        "spec.controlPlane.machineHealthCheck": "object",
+        "spec.patches": "object[]",
+        "spec.variables": "object[]",
+        "spec.workers.machineDeployments.machineHealthCheck": "object"
+      },
+      "descriptionChanged": [
+        "spec.controlPlane.machineInfrastructure"
+      ],
+      "descriptions": {
+        "spec.controlPlane.machineHealthCheck": [
+          null,
+          294
+        ],
+        "spec.controlPlane.machineInfrastructure": [
+          403,
+          311
+        ],
+        "spec.patches": [
+          null,
+          321
+        ],
+        "spec.variables": [
+          null,
+          336
+        ],
+        "spec.workers.machineDeployments.machineHealthCheck": [
+          null,
+          212
+        ]
+      }
+    }
+  },
+  "texts": [
+    "unhealthyMachineConditions contains a list of the machine conditions that determine\nwhether a machine is considered unhealthy.  The conditions are combined in a\nlogical OR, i.e. if any of the conditions is met, the machine is unhealthy.",
+    "taints are the node taints that Cluster API will manage.\nThis list is not necessarily complete: other Kubernetes components may add or remove other taints from nodes,\ne.g. the node controller might add the node.kubernetes.io/not-ready taint.\nOnly those taints defined in this list will be added or removed by core Cluster API controllers.\n\nThere can be at most 64 taints.\nA pod would have to tolerate all existing taints to run on the corresponding node.\n\nNOTE: This list is implemented as a \"map\" type, meaning that individual elements can be managed by different owners.",
+    "kubernetesVersions is the list of Kubernetes versions that can be\nused for clusters using this ClusterClass.\nThe list of version must be ordered from the older to the newer version, and there should be\nat least one version for every minor in between the first and the last version.",
+    "upgrade defines the upgrade configuration for clusters using this ClusterClass.",
+    "ClusterClassSpec describes the desired state of the ClusterClass.",
+    "spec is the desired state of ClusterClass.",
+    "availabilityGates specifies additional conditions to include when evaluating Cluster Available condition.\n\nNOTE: this field is considered only for computing v1beta2 conditions.\nNOTE: If a Cluster is using this ClusterClass, and this Cluster defines a custom list of availabilityGates,\nsuch list overrides availabilityGates defined in this field.",
+    "Any further remediation is only allowed if at most \"MaxUnhealthy\" machines selected by\n\"selector\" are not healthy.",
+    "maxUnhealthy specifies the maximum number of unhealthy machines allowed.\nAny further remediation is only allowed if at most \"maxUnhealthy\" machines selected by\n\"selector\" are not healthy.",
+    "status of the condition, one of True, False, Unknown.",
+    "timeout is the duration that a node must be in a given status for,\nafter which the node is considered unhealthy.\nFor example, with a value of \"1h\", the node must match the status\nfor at least 1 hour before being considered unhealthy.",
+    "type of Node condition",
+    "Any further remediation is only allowed if the number of machines selected by \"selector\" as not healthy\nis within the range of \"UnhealthyRange\". Takes precedence over MaxUnhealthy.\nEg. \"[3-5]\" - This means that remediation will be allowed only when:\n(a) there are at least 3 unhealthy machines (and)\n(b) there are at most 5 unhealthy machines",
+    "unhealthyRange specifies the range of unhealthy machines allowed.\nAny further remediation is only allowed if the number of machines selected by \"selector\" as not healthy\nis within the range of \"unhealthyRange\". Takes precedence over maxUnhealthy.\nEg. \"[3-5]\" - This means that remediation will be allowed only when:\n(a) there are at least 3 unhealthy machines (and)\n(b) there are at most 5 unhealthy machines",
+    "Map of string keys and values that can be used to organize and categorize\n(scope and select) objects. May match selectors of replication controllers\nand services.\nMore info: http://kubernetes.io/docs/user-guide/labels",
+    "labels is a map of string keys and values that can be used to organize and categorize\n(scope and select) objects. May match selectors of replication controllers\nand services.\nMore info: http://kubernetes.io/docs/user-guide/labels",
+    "readinessGates specifies additional conditions to include when evaluating Machine Ready condition.\n\nThis field can be used e.g. to instruct the machine controller to include in the computation for Machine's ready\ncomputation a condition, managed by an external controllers, reporting the status of special software/hardware installed on the Machine.\n\nNOTE: This field is considered only for computing v1beta2 conditions.\nNOTE: If a Cluster defines a custom list of readinessGates for the control plane,\nsuch list overrides readinessGates defined in this field.\nNOTE: Specific control plane provider implementations might automatically extend the list of readinessGates;\ne.g. the kubeadm control provider adds ReadinessGates for the APIServerPodHealthy, SchedulerPodHealthy conditions, etc.",
+    "infrastructureNamingStrategy allows changing the naming pattern used when creating the infrastructure object.",
+    "Map of string keys and values that can be used to organize and categorize\n(scope and select) variables.",
+    "labels is a map of string keys and values that can be used to organize and categorize\n(scope and select) variables.",
+    "Minimum number of seconds for which a newly created machine should\nbe ready.\nDefaults to 0 (machine will be considered available as soon as it\nis ready)\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "minReadySeconds is the minimum number of seconds for which a newly created machine should\nbe ready.\nDefaults to 0 (machine will be considered available as soon as it\nis ready)\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "readinessGates specifies additional conditions to include when evaluating Machine Ready condition.\n\nThis field can be used e.g. to instruct the machine controller to include in the computation for Machine's ready\ncomputation a condition, managed by an external controllers, reporting the status of special software/hardware installed on the Machine.\n\nNOTE: This field is considered only for computing v1beta2 conditions.\nNOTE: If a Cluster defines a custom list of readinessGates for a MachineDeployment using this MachineDeploymentClass,\nsuch list overrides readinessGates defined in this field.",
+    "The deployment strategy to use to replace existing machines with\nnew ones.\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "strategy is the deployment strategy to use to replace existing machines with\nnew ones.\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "Rolling update config params. Present only if\nMachineDeploymentStrategyType = RollingUpdate.",
+    "rollingUpdate is the rolling update config params. Present only if\nMachineDeploymentStrategyType = RollingUpdate.",
+    "The maximum number of machines that can be scheduled above the\ndesired number of machines.\nValue can be an absolute number (ex: 5) or a percentage of\ndesired machines (ex: 10%).\nThis can not be 0 if MaxUnavailable is 0.\nAbsolute number is calculated from percentage by rounding up.\nDefaults to 1.\nExample: when this is set to 30%, the new MachineSet can be scaled\nup immediately when the rolling update starts, such that the total\nnumber of old and new machines do not exceed 130% of desired\nmachines. Once old machines have been killed, new MachineSet can\nbe scaled up further, ensuring that total number of machines running\nat any time during the update is at most 130% of desired machines.",
+    "maxSurge is the maximum number of machines that can be scheduled above the\ndesired number of machines.\nValue can be an absolute number (ex: 5) or a percentage of\ndesired machines (ex: 10%).\nThis can not be 0 if MaxUnavailable is 0.\nAbsolute number is calculated from percentage by rounding up.\nDefaults to 1.\nExample: when this is set to 30%, the new MachineSet can be scaled\nup immediately when the rolling update starts, such that the total\nnumber of old and new machines do not exceed 130% of desired\nmachines. Once old machines have been killed, new MachineSet can\nbe scaled up further, ensuring that total number of machines running\nat any time during the update is at most 130% of desired machines.",
+    "The maximum number of machines that can be unavailable during the update.\nValue can be an absolute number (ex: 5) or a percentage of desired\nmachines (ex: 10%).\nAbsolute number is calculated from percentage by rounding down.\nThis can not be 0 if MaxSurge is 0.\nDefaults to 0.\nExample: when this is set to 30%, the old MachineSet can be scaled\ndown to 70% of desired machines immediately when the rolling update\nstarts. Once new machines are ready, old MachineSet can be scaled\ndown further, followed by scaling up the new MachineSet, ensuring\nthat the total number of machines available at all times\nduring the update is at least 70% of desired machines.",
+    "maxUnavailable is the maximum number of machines that can be unavailable during the update.\nValue can be an absolute number (ex: 5) or a percentage of desired\nmachines (ex: 10%).\nAbsolute number is calculated from percentage by rounding down.\nThis can not be 0 if MaxSurge is 0.\nDefaults to 0.\nExample: when this is set to 30%, the old MachineSet can be scaled\ndown to 70% of desired machines immediately when the rolling update\nstarts. Once new machines are ready, old MachineSet can be scaled\ndown further, followed by scaling up the new MachineSet, ensuring\nthat the total number of machines available at all times\nduring the update is at least 70% of desired machines.",
+    "Minimum number of seconds for which a newly created machine pool should\nbe ready.\nDefaults to 0 (machine will be considered available as soon as it\nis ready)\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachinePoolClass.",
+    "minReadySeconds is the minimum number of seconds for which a newly created machine pool should\nbe ready.\nDefaults to 0 (machine will be considered available as soon as it\nis ready)\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachinePoolClass.",
+    "ClusterClassStatus defines the observed state of the ClusterClass.",
+    "status is the observed state of ClusterClass.",
+    "Last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed. If that is not known, then using the time when\nthe API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed. If that is not known, then using the time when\nthe API field changed is acceptable.",
+    "A human readable message indicating details about the transition.\nThis field may be empty.",
+    "message is a human readable message indicating details about the transition.\nThis field may be empty.",
+    "The reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may be empty.",
+    "reason is the reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may be empty.",
+    "ControlPlane is a reference to a local struct that holds the details\nfor provisioning the Control Plane for the Cluster.",
+    "controlPlane is a reference to a local struct that holds the details\nfor provisioning the Control Plane for the Cluster.",
+    "MachineHealthCheck defines a MachineHealthCheck for this ControlPlaneClass.\nThis field is supported if and only if the ControlPlane provider template\nreferenced above is Machine based and supports setting replicas.",
+    "machineHealthCheck defines a MachineHealthCheck for this ControlPlaneClass.\nThis field is supported if and only if the ControlPlane provider template\nreferenced above is Machine based and supports setting replicas.",
+    "NodeStartupTimeout allows to set the maximum time for MachineHealthCheck\nto consider a Machine unhealthy if a corresponding Node isn't associated\nthrough a `Spec.ProviderID` field.\n\n\nThe duration set in this field is compared to the greatest of:\n- Cluster's infrastructure ready condition timestamp (if and when available)\n- Control Plane's initialized condition timestamp (if and when available)\n- Machine's infrastructure ready condition timestamp (if and when available)\n- Machine's metadata creation timestamp\n\n\nDefaults to 10 minutes.\nIf you wish to disable this feature, set the value explicitly to 0.",
+    "nodeStartupTimeout allows to set the maximum time for MachineHealthCheck\nto consider a Machine unhealthy if a corresponding Node isn't associated\nthrough a `Spec.ProviderID` field.\n\nThe duration set in this field is compared to the greatest of:\n- Cluster's infrastructure ready condition timestamp (if and when available)\n- Control Plane's initialized condition timestamp (if and when available)\n- Machine's infrastructure ready condition timestamp (if and when available)\n- Machine's metadata creation timestamp\n\nDefaults to 10 minutes.\nIf you wish to disable this feature, set the value explicitly to 0.",
+    "RemediationTemplate is a reference to a remediation template\nprovided by an infrastructure provider.\n\n\nThis field is completely optional, when filled, the MachineHealthCheck controller\ncreates a new object from the template referenced and hands off remediation of the machine to\na controller that lives outside of Cluster API.",
+    "remediationTemplate is a reference to a remediation template\nprovided by an infrastructure provider.\n\nThis field is completely optional, when filled, the MachineHealthCheck controller\ncreates a new object from the template referenced and hands off remediation of the machine to\na controller that lives outside of Cluster API.",
+    "If referring to a piece of an object instead of an entire object, this string\nshould contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2].\nFor example, if the object reference is to a container within a pod, this would take on a value like:\n\"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered\nthe event) or if no container name is specified \"spec.containers[2]\" (container with\nindex 2 in this pod). This syntax is chosen only to have some well-defined way of\nreferencing a part of an object.\nTODO: this design is not final and this field is subject to change in the future.",
+    "If referring to a piece of an object instead of an entire object, this string\nshould contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2].\nFor example, if the object reference is to a container within a pod, this would take on a value like:\n\"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered\nthe event) or if no container name is specified \"spec.containers[2]\" (container with\nindex 2 in this pod). This syntax is chosen only to have some well-defined way of\nreferencing a part of an object.",
+    "UnhealthyConditions contains a list of the conditions that determine\nwhether a node is considered unhealthy. The conditions are combined in a\nlogical OR, i.e. if any of the conditions is met, the node is unhealthy.",
+    "unhealthyConditions contains a list of the conditions that determine\nwhether a node is considered unhealthy. The conditions are combined in a\nlogical OR, i.e. if any of the conditions is met, the node is unhealthy.",
+    "MachineInfrastructure defines the metadata and infrastructure information\nfor control plane machines.\n\n\nThis field is supported if and only if the control plane provider template\nreferenced above is Machine based and supports setting replicas.",
+    "machineInfrastructure defines the metadata and infrastructure information\nfor control plane machines.\n\nThis field is supported if and only if the control plane provider template\nreferenced above is Machine based and supports setting replicas.",
+    "Ref is a required reference to a custom resource\noffered by a provider.",
+    "ref is a required reference to a custom resource\noffered by a provider.",
+    "Metadata is the metadata applied to the ControlPlane and the Machines of the ControlPlane\nif the ControlPlaneTemplate referenced is machine based. If not, it is applied only to the\nControlPlane.\nAt runtime this metadata is merged with the corresponding metadata from the topology.\n\n\nThis field is supported if and only if the control plane provider template\nreferenced is Machine based.",
+    "metadata is the metadata applied to the ControlPlane and the Machines of the ControlPlane\nif the ControlPlaneTemplate referenced is machine based. If not, it is applied only to the\nControlPlane.\nAt runtime this metadata is merged with the corresponding metadata from the topology.\n\nThis field is supported if and only if the control plane provider template\nreferenced is Machine based.",
+    "Annotations is an unstructured key value map stored with a resource that may be\nset by external tools to store and retrieve arbitrary metadata. They are not\nqueryable and should be preserved when modifying objects.\nMore info: http://kubernetes.io/docs/user-guide/annotations",
+    "annotations is an unstructured key value map stored with a resource that may be\nset by external tools to store and retrieve arbitrary metadata. They are not\nqueryable and should be preserved when modifying objects.\nMore info: http://kubernetes.io/docs/user-guide/annotations",
+    "NamingStrategy allows changing the naming pattern used when creating the control plane provider object.",
+    "namingStrategy allows changing the naming pattern used when creating the control plane provider object.",
+    "Template defines the template to use for generating the name of the ControlPlane object.\nIf not defined, it will fallback to `{{ .cluster.name }}-{{ .random }}`.\nIf the templated string exceeds 63 characters, it will be trimmed to 58 characters and will\nget concatenated with a random suffix of length 5.\nThe templating mechanism provides the following arguments:\n* `.cluster.name`: The name of the cluster object.\n* `.random`: A random alphanumeric string, without vowels, of length 5.",
+    "template defines the template to use for generating the name of the ControlPlane object.\nIf not defined, it will fallback to `{{ .cluster.name }}-{{ .random }}`.\nIf the templated string exceeds 63 characters, it will be trimmed to 58 characters and will\nget concatenated with a random suffix of length 5.\nThe templating mechanism provides the following arguments:\n* `.cluster.name`: The name of the cluster object.\n* `.random`: A random alphanumeric string, without vowels, of length 5.",
+    "NodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine\nhosts after the Machine is marked for deletion. A duration of 0 will retry deletion indefinitely.\nDefaults to 10 seconds.\nNOTE: This value can be overridden while defining a Cluster.Topology.",
+    "nodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine\nhosts after the Machine is marked for deletion. A duration of 0 will retry deletion indefinitely.\nDefaults to 10 seconds.\nNOTE: This value can be overridden while defining a Cluster.Topology.",
+    "NodeDrainTimeout is the total amount of time that the controller will spend on draining a node.\nThe default value is 0, meaning that the node can be drained without any time limitations.\nNOTE: NodeDrainTimeout is different from `kubectl drain --timeout`\nNOTE: This value can be overridden while defining a Cluster.Topology.",
+    "nodeDrainTimeout is the total amount of time that the controller will spend on draining a node.\nThe default value is 0, meaning that the node can be drained without any time limitations.\nNOTE: NodeDrainTimeout is different from `kubectl drain --timeout`\nNOTE: This value can be overridden while defining a Cluster.Topology.",
+    "NodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes\nto be detached. The default value is 0, meaning that the volumes can be detached without any time limitations.\nNOTE: This value can be overridden while defining a Cluster.Topology.",
+    "nodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes\nto be detached. The default value is 0, meaning that the volumes can be detached without any time limitations.\nNOTE: This value can be overridden while defining a Cluster.Topology.",
+    "Infrastructure is a reference to a provider-specific template that holds\nthe details for provisioning infrastructure specific cluster\nfor the underlying provider.\nThe underlying provider is responsible for the implementation\nof the template to an infrastructure cluster.",
+    "infrastructure is a reference to a provider-specific template that holds\nthe details for provisioning infrastructure specific cluster\nfor the underlying provider.\nThe underlying provider is responsible for the implementation\nof the template to an infrastructure cluster.",
+    "Patches defines the patches which are applied to customize\nreferenced templates of a ClusterClass.\nNote: Patches will be applied in the order of the array.",
+    "patches defines the patches which are applied to customize\nreferenced templates of a ClusterClass.\nNote: Patches will be applied in the order of the array.",
+    "Definitions define inline patches.\nNote: Patches will be applied in the order of the array.\nNote: Exactly one of Definitions or External must be set.",
+    "definitions define inline patches.\nNote: Patches will be applied in the order of the array.\nNote: Exactly one of Definitions or External must be set.",
+    "JSONPatches defines the patches which should be applied on the templates\nmatching the selector.\nNote: Patches will be applied in the order of the array.",
+    "jsonPatches defines the patches which should be applied on the templates\nmatching the selector.\nNote: Patches will be applied in the order of the array.",
+    "Op defines the operation of the patch.\nNote: Only `add`, `replace` and `remove` are supported.",
+    "op defines the operation of the patch.\nNote: Only `add`, `replace` and `remove` are supported.",
+    "Path defines the path of the patch.\nNote: Only the spec of a template can be patched, thus the path has to start with /spec/.\nNote: For now the only allowed array modifications are `append` and `prepend`, i.e.:\n* for op: `add`: only index 0 (prepend) and - (append) are allowed\n* for op: `replace` or `remove`: no indexes are allowed",
+    "path defines the path of the patch.\nNote: Only the spec of a template can be patched, thus the path has to start with /spec/.\nNote: For now the only allowed array modifications are `append` and `prepend`, i.e.:\n* for op: `add`: only index 0 (prepend) and - (append) are allowed\n* for op: `replace` or `remove`: no indexes are allowed",
+    "Value defines the value of the patch.\nNote: Either Value or ValueFrom is required for add and replace\noperations. Only one of them is allowed to be set at the same time.\nNote: We have to use apiextensionsv1.JSON instead of our JSON type,\nbecause controller-tools has a hard-coded schema for apiextensionsv1.JSON\nwhich cannot be produced by another type (unset type field).\nRef: https://github.com/kubernetes-sigs/controller-tools/blob/d0e03a142d0ecdd5491593e941ee1d6b5d91dba6/pkg/crd/known_types.go#L106-L111",
+    "value defines the value of the patch.\nNote: Either Value or ValueFrom is required for add and replace\noperations. Only one of them is allowed to be set at the same time.\nNote: We have to use apiextensionsv1.JSON instead of our JSON type,\nbecause controller-tools has a hard-coded schema for apiextensionsv1.JSON\nwhich cannot be produced by another type (unset type field).\nRef: https://github.com/kubernetes-sigs/controller-tools/blob/d0e03a142d0ecdd5491593e941ee1d6b5d91dba6/pkg/crd/known_types.go#L106-L111",
+    "ValueFrom defines the value of the patch.\nNote: Either Value or ValueFrom is required for add and replace\noperations. Only one of them is allowed to be set at the same time.",
+    "valueFrom defines the value of the patch.\nNote: Either Value or ValueFrom is required for add and replace\noperations. Only one of them is allowed to be set at the same time.",
+    "Template is the Go template to be used to calculate the value.\nA template can reference variables defined in .spec.variables and builtin variables.\nNote: The template must evaluate to a valid YAML or JSON value.",
+    "template is the Go template to be used to calculate the value.\nA template can reference variables defined in .spec.variables and builtin variables.\nNote: The template must evaluate to a valid YAML or JSON value.",
+    "Variable is the variable to be used as value.\nVariable can be one of the variables defined in .spec.variables or a builtin variable.",
+    "variable is the variable to be used as value.\nVariable can be one of the variables defined in .spec.variables or a builtin variable.",
+    "Selector defines on which templates the patch should be applied.",
+    "selector defines on which templates the patch should be applied.",
+    "APIVersion filters templates by apiVersion.",
+    "apiVersion filters templates by apiVersion.",
+    "Kind filters templates by kind.",
+    "kind filters templates by kind.",
+    "MatchResources selects templates based on where they are referenced.",
+    "matchResources selects templates based on where they are referenced.",
+    "ControlPlane selects templates referenced in .spec.ControlPlane.\nNote: this will match the controlPlane and also the controlPlane\nmachineInfrastructure (depending on the kind and apiVersion).",
+    "controlPlane selects templates referenced in .spec.ControlPlane.\nNote: this will match the controlPlane and also the controlPlane\nmachineInfrastructure (depending on the kind and apiVersion).",
+    "InfrastructureCluster selects templates referenced in .spec.infrastructure.",
+    "infrastructureCluster selects templates referenced in .spec.infrastructure.",
+    "MachineDeploymentClass selects templates referenced in specific MachineDeploymentClasses in\n.spec.workers.machineDeployments.",
+    "machineDeploymentClass selects templates referenced in specific MachineDeploymentClasses in\n.spec.workers.machineDeployments.",
+    "Names selects templates by class names.",
+    "names selects templates by class names.",
+    "MachinePoolClass selects templates referenced in specific MachinePoolClasses in\n.spec.workers.machinePools.",
+    "machinePoolClass selects templates referenced in specific MachinePoolClasses in\n.spec.workers.machinePools.",
+    "Description is a human-readable description of this patch.",
+    "description is a human-readable description of this patch.",
+    "EnabledIf is a Go template to be used to calculate if a patch should be enabled.\nIt can reference variables defined in .spec.variables and builtin variables.\nThe patch will be enabled if the template evaluates to `true`, otherwise it will\nbe disabled.\nIf EnabledIf is not set, the patch will be enabled per default.",
+    "enabledIf is a Go template to be used to calculate if a patch should be enabled.\nIt can reference variables defined in .spec.variables and builtin variables.\nThe patch will be enabled if the template evaluates to `true`, otherwise it will\nbe disabled.\nIf EnabledIf is not set, the patch will be enabled per default.",
+    "External defines an external patch.\nNote: Exactly one of Definitions or External must be set.",
+    "external defines an external patch.\nNote: Exactly one of Definitions or External must be set.",
+    "DiscoverVariablesExtension references an extension which is called to discover variables.",
+    "discoverVariablesExtension references an extension which is called to discover variables.",
+    "GenerateExtension references an extension which is called to generate patches.",
+    "generateExtension references an extension which is called to generate patches.",
+    "Settings defines key value pairs to be passed to the extensions.\nValues defined here take precedence over the values defined in the\ncorresponding ExtensionConfig.",
+    "settings defines key value pairs to be passed to the extensions.\nValues defined here take precedence over the values defined in the\ncorresponding ExtensionConfig.",
+    "ValidateExtension references an extension which is called to validate the topology.",
+    "validateExtension references an extension which is called to validate the topology.",
+    "Name of the patch.",
+    "name of the patch.",
+    "Variables defines the variables which can be configured\nin the Cluster topology and are then used in patches.",
+    "variables defines the variables which can be configured\nin the Cluster topology and are then used in patches.",
+    "Metadata is the metadata of a variable.\nIt can be used to add additional data for higher level tools to\na ClusterClassVariable.\n\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion. Please use XMetadata in JSONSchemaProps instead.",
+    "metadata is the metadata of a variable.\nIt can be used to add additional data for higher level tools to\na ClusterClassVariable.\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion. Please use XMetadata in JSONSchemaProps instead.",
+    "Annotations is an unstructured key value map that can be used to store and\nretrieve arbitrary metadata.\nThey are not queryable.",
+    "annotations is an unstructured key value map that can be used to store and\nretrieve arbitrary metadata.\nThey are not queryable.",
+    "Name of the variable.",
+    "name of the variable.",
+    "Required specifies if the variable is required.\nNote: this applies to the variable as a whole and thus the\ntop-level object defined in the schema. If nested fields are\nrequired, this will be specified inside the schema.",
+    "required specifies if the variable is required.\nNote: this applies to the variable as a whole and thus the\ntop-level object defined in the schema. If nested fields are\nrequired, this will be specified inside the schema.",
+    "Schema defines the schema of the variable.",
+    "schema defines the schema of the variable.",
+    "OpenAPIV3Schema defines the schema of a variable via OpenAPI v3\nschema. The schema is a subset of the schema used in\nKubernetes CRDs.",
+    "openAPIV3Schema defines the schema of a variable via OpenAPI v3\nschema. The schema is a subset of the schema used in\nKubernetes CRDs.",
+    "AdditionalProperties specifies the schema of values in a map (keys are always strings).\nNOTE: Can only be set if type is object.\nNOTE: AdditionalProperties is mutually exclusive with Properties.\nNOTE: This field uses PreserveUnknownFields and Schemaless,\nbecause recursive validation is not possible.",
+    "additionalProperties specifies the schema of values in a map (keys are always strings).\nNOTE: Can only be set if type is object.\nNOTE: AdditionalProperties is mutually exclusive with Properties.\nNOTE: This field uses PreserveUnknownFields and Schemaless,\nbecause recursive validation is not possible.",
+    "allOf specifies that the variable must validate against all of the subschemas in the array.\nNOTE: This field uses PreserveUnknownFields and Schemaless,\nbecause recursive validation is not possible.",
+    "anyOf specifies that the variable must validate against one or more of the subschemas in the array.\nNOTE: This field uses PreserveUnknownFields and Schemaless,\nbecause recursive validation is not possible.",
+    "Default is the default value of the variable.\nNOTE: Can be set for all types.",
+    "default is the default value of the variable.\nNOTE: Can be set for all types.",
+    "Description is a human-readable description of this variable.",
+    "description is a human-readable description of this variable.",
+    "Enum is the list of valid values of the variable.\nNOTE: Can be set for all types.",
+    "enum is the list of valid values of the variable.\nNOTE: Can be set for all types.",
+    "Example is an example for this variable.",
+    "example is an example for this variable.",
+    "ExclusiveMaximum specifies if the Maximum is exclusive.\nNOTE: Can only be set if type is integer or number.",
+    "exclusiveMaximum specifies if the Maximum is exclusive.\nNOTE: Can only be set if type is integer or number.",
+    "ExclusiveMinimum specifies if the Minimum is exclusive.\nNOTE: Can only be set if type is integer or number.",
+    "exclusiveMinimum specifies if the Minimum is exclusive.\nNOTE: Can only be set if type is integer or number.",
+    "Format is an OpenAPI v3 format string. Unknown formats are ignored.\nFor a list of supported formats please see: (of the k8s.io/apiextensions-apiserver version we're currently using)\nhttps://github.com/kubernetes/apiextensions-apiserver/blob/master/pkg/apiserver/validation/formats.go\nNOTE: Can only be set if type is string.",
+    "format is an OpenAPI v3 format string. Unknown formats are ignored.\nFor a list of supported formats please see: (of the k8s.io/apiextensions-apiserver version we're currently using)\nhttps://github.com/kubernetes/apiextensions-apiserver/blob/master/pkg/apiserver/validation/formats.go\nNOTE: Can only be set if type is string.",
+    "Items specifies fields of an array.\nNOTE: Can only be set if type is array.\nNOTE: This field uses PreserveUnknownFields and Schemaless,\nbecause recursive validation is not possible.",
+    "items specifies fields of an array.\nNOTE: Can only be set if type is array.\nNOTE: This field uses PreserveUnknownFields and Schemaless,\nbecause recursive validation is not possible.",
+    "MaxItems is the max length of an array variable.\nNOTE: Can only be set if type is array.",
+    "maxItems is the max length of an array variable.\nNOTE: Can only be set if type is array.",
+    "MaxLength is the max length of a string variable.\nNOTE: Can only be set if type is string.",
+    "maxLength is the max length of a string variable.\nNOTE: Can only be set if type is string.",
+    "MaxProperties is the maximum amount of entries in a map or properties in an object.\nNOTE: Can only be set if type is object.",
+    "maxProperties is the maximum amount of entries in a map or properties in an object.\nNOTE: Can only be set if type is object.",
+    "Maximum is the maximum of an integer or number variable.\nIf ExclusiveMaximum is false, the variable is valid if it is lower than, or equal to, the value of Maximum.\nIf ExclusiveMaximum is true, the variable is valid if it is strictly lower than the value of Maximum.\nNOTE: Can only be set if type is integer or number.",
+    "maximum is the maximum of an integer or number variable.\nIf ExclusiveMaximum is false, the variable is valid if it is lower than, or equal to, the value of Maximum.\nIf ExclusiveMaximum is true, the variable is valid if it is strictly lower than the value of Maximum.\nNOTE: Can only be set if type is integer or number.",
+    "MinItems is the min length of an array variable.\nNOTE: Can only be set if type is array.",
+    "minItems is the min length of an array variable.\nNOTE: Can only be set if type is array.",
+    "MinLength is the min length of a string variable.\nNOTE: Can only be set if type is string.",
+    "minLength is the min length of a string variable.\nNOTE: Can only be set if type is string.",
+    "MinProperties is the minimum amount of entries in a map or properties in an object.\nNOTE: Can only be set if type is object.",
+    "minProperties is the minimum amount of entries in a map or properties in an object.\nNOTE: Can only be set if type is object.",
+    "Minimum is the minimum of an integer or number variable.\nIf ExclusiveMinimum is false, the variable is valid if it is greater than, or equal to, the value of Minimum.\nIf ExclusiveMinimum is true, the variable is valid if it is strictly greater than the value of Minimum.\nNOTE: Can only be set if type is integer or number.",
+    "minimum is the minimum of an integer or number variable.\nIf ExclusiveMinimum is false, the variable is valid if it is greater than, or equal to, the value of Minimum.\nIf ExclusiveMinimum is true, the variable is valid if it is strictly greater than the value of Minimum.\nNOTE: Can only be set if type is integer or number.",
+    "not specifies that the variable must not validate against the subschema.\nNOTE: This field uses PreserveUnknownFields and Schemaless,\nbecause recursive validation is not possible.",
+    "oneOf specifies that the variable must validate against exactly one of the subschemas in the array.\nNOTE: This field uses PreserveUnknownFields and Schemaless,\nbecause recursive validation is not possible.",
+    "Pattern is the regex which a string variable must match.\nNOTE: Can only be set if type is string.",
+    "pattern is the regex which a string variable must match.\nNOTE: Can only be set if type is string.",
+    "Properties specifies fields of an object.\nNOTE: Can only be set if type is object.\nNOTE: Properties is mutually exclusive with AdditionalProperties.\nNOTE: This field uses PreserveUnknownFields and Schemaless,\nbecause recursive validation is not possible.",
+    "properties specifies fields of an object.\nNOTE: Can only be set if type is object.\nNOTE: Properties is mutually exclusive with AdditionalProperties.\nNOTE: This field uses PreserveUnknownFields and Schemaless,\nbecause recursive validation is not possible.",
+    "Required specifies which fields of an object are required.\nNOTE: Can only be set if type is object.",
+    "required specifies which fields of an object are required.\nNOTE: Can only be set if type is object.",
+    "Type is the type of the variable.\nValid values are: object, array, string, integer, number or boolean.",
+    "type is the type of the variable.\nValid values are: object, array, string, integer, number or boolean.",
+    "UniqueItems specifies if items in an array must be unique.\nNOTE: Can only be set if type is array.",
+    "uniqueItems specifies if items in an array must be unique.\nNOTE: Can only be set if type is array.",
+    "x-kubernetes-int-or-string specifies that this value is\neither an integer or a string. If this is true, an empty\ntype is allowed and type as child of anyOf is permitted\nif following one of the following patterns:\n\n1) anyOf:\n   - type: integer\n   - type: string\n2) allOf:\n   - anyOf:\n     - type: integer\n     - type: string\n   - ... zero or more",
+    "XPreserveUnknownFields allows setting fields in a variable object\nwhich are not defined in the variable schema. This affects fields recursively,\nexcept if nested properties or additionalProperties are specified in the schema.",
+    "x-kubernetes-preserve-unknown-fields allows setting fields in a variable object\nwhich are not defined in the variable schema. This affects fields recursively,\nexcept if nested properties or additionalProperties are specified in the schema.",
+    "XValidations describes a list of validation rules written in the CEL expression language.",
+    "x-kubernetes-validations describes a list of validation rules written in the CEL expression language.",
+    "FieldPath represents the field path returned when the validation fails.\nIt must be a relative JSON path (i.e. with array notation) scoped to the location of this x-kubernetes-validations extension in the schema and refer to an existing field.\ne.g. when validation checks if a specific attribute `foo` under a map `testMap`, the fieldPath could be set to `.testMap.foo`\nIf the validation checks two lists must have unique attributes, the fieldPath could be set to either of the list: e.g. `.testList`\nIt does not support list numeric index.\nIt supports child operation to refer to an existing field currently. Refer to [JSONPath support in Kubernetes](https://kubernetes.io/docs/reference/kubectl/jsonpath/) for more info.\nNumeric index of array is not supported.\nFor field name which contains special characters, use `['specialName']` to refer the field name.\ne.g. for attribute `foo.34$` appears in a list `testList`, the fieldPath could be set to `.testList['foo.34$']`",
+    "fieldPath represents the field path returned when the validation fails.\nIt must be a relative JSON path (i.e. with array notation) scoped to the location of this x-kubernetes-validations extension in the schema and refer to an existing field.\ne.g. when validation checks if a specific attribute `foo` under a map `testMap`, the fieldPath could be set to `.testMap.foo`\nIf the validation checks two lists must have unique attributes, the fieldPath could be set to either of the list: e.g. `.testList`\nIt does not support list numeric index.\nIt supports child operation to refer to an existing field currently. Refer to [JSONPath support in Kubernetes](https://kubernetes.io/docs/reference/kubectl/jsonpath/) for more info.\nNumeric index of array is not supported.\nFor field name which contains special characters, use `['specialName']` to refer the field name.\ne.g. for attribute `foo.34$` appears in a list `testList`, the fieldPath could be set to `.testList['foo.34$']`",
+    "Message represents the message displayed when validation fails. The message is required if the Rule contains\nline breaks. The message must not contain line breaks.\nIf unset, the message is \"failed rule: {Rule}\".\ne.g. \"must be a URL with the host matching spec.host\"",
+    "message represents the message displayed when validation fails. The message is required if the Rule contains\nline breaks. The message must not contain line breaks.\nIf unset, the message is \"failed rule: {Rule}\".\ne.g. \"must be a URL with the host matching spec.host\"",
+    "MessageExpression declares a CEL expression that evaluates to the validation failure message that is returned when this rule fails.\nSince messageExpression is used as a failure message, it must evaluate to a string.\nIf both message and messageExpression are present on a rule, then messageExpression will be used if validation\nfails. If messageExpression results in a runtime error, the validation failure message is produced\nas if the messageExpression field were unset. If messageExpression evaluates to an empty string, a string with only spaces, or a string\nthat contains line breaks, then the validation failure message will also be produced as if the messageExpression field were unset.\nmessageExpression has access to all the same variables as the rule; the only difference is the return type.\nExample:\n\"x must be less than max (\"+string(self.max)+\")\"",
+    "messageExpression declares a CEL expression that evaluates to the validation failure message that is returned when this rule fails.\nSince messageExpression is used as a failure message, it must evaluate to a string.\nIf both message and messageExpression are present on a rule, then messageExpression will be used if validation\nfails. If messageExpression results in a runtime error, the validation failure message is produced\nas if the messageExpression field were unset. If messageExpression evaluates to an empty string, a string with only spaces, or a string\nthat contains line breaks, then the validation failure message will also be produced as if the messageExpression field were unset.\nmessageExpression has access to all the same variables as the rule; the only difference is the return type.\nExample:\n\"x must be less than max (\"+string(self.max)+\")\"",
+    "Reason provides a machine-readable validation failure reason that is returned to the caller when a request fails this validation rule.\nThe currently supported reasons are: \"FieldValueInvalid\", \"FieldValueForbidden\", \"FieldValueRequired\", \"FieldValueDuplicate\".\nIf not set, default to use \"FieldValueInvalid\".\nAll future added reasons must be accepted by clients when reading this value and unknown reasons should be treated as FieldValueInvalid.",
+    "reason provides a machine-readable validation failure reason that is returned to the caller when a request fails this validation rule.\nThe currently supported reasons are: \"FieldValueInvalid\", \"FieldValueForbidden\", \"FieldValueRequired\", \"FieldValueDuplicate\".\nIf not set, default to use \"FieldValueInvalid\".\nAll future added reasons must be accepted by clients when reading this value and unknown reasons should be treated as FieldValueInvalid.",
+    "Rule represents the expression which will be evaluated by CEL.\nref: https://github.com/google/cel-spec\nThe Rule is scoped to the location of the x-kubernetes-validations extension in the schema.\nThe `self` variable in the CEL expression is bound to the scoped value.\nIf the Rule is scoped to an object with properties, the accessible properties of the object are field selectable\nvia `self.field` and field presence can be checked via `has(self.field)`.\nIf the Rule is scoped to an object with additionalProperties (i.e. a map) the value of the map\nare accessible via `self[mapKey]`, map containment can be checked via `mapKey in self` and all entries of the map\nare accessible via CEL macros and functions such as `self.all(...)`.\nIf the Rule is scoped to an array, the elements of the array are accessible via `self[i]` and also by macros and\nfunctions.\nIf the Rule is scoped to a scalar, `self` is bound to the scalar value.\nExamples:\n- Rule scoped to a map of objects: {\"rule\": \"self.components['Widget'].priority < 10\"}\n- Rule scoped to a list of integers: {\"rule\": \"self.values.all(value, value >= 0 && value < 100)\"}\n- Rule scoped to a string value: {\"rule\": \"self.startsWith('kube')\"}\n\n\nUnknown data preserved in custom resources via x-kubernetes-preserve-unknown-fields is not accessible in CEL\nexpressions. This includes:\n- Unknown field values that are preserved by object schemas with x-kubernetes-preserve-unknown-fields.\n- Object properties where the property schema is of an \"unknown type\". An \"unknown type\" is recursively defined as:\n  - A schema with no type and x-kubernetes-preserve-unknown-fields set to true\n  - An array where the items schema is of an \"unknown type\"\n  - An object where the additionalProperties schema is of an \"unknown type\"\n\n\nOnly property names of the form `[a-zA-Z_.-/][a-zA-Z0-9_.-/]*` are accessible.\nAccessible property names are escaped according to the following rules when accessed in the expression:\n- '__' escapes to '__underscores__'\n- '.' escapes to '__dot__'\n- '-' escapes to '__dash__'\n- '/' escapes to '__slash__'\n- Property names that exactly match a CEL RESERVED keyword escape to '__{keyword}__'. The keywords are:\n\t  \"true\", \"false\", \"null\", \"in\", \"as\", \"break\", \"const\", \"continue\", \"else\", \"for\", \"function\", \"if\",\n\t  \"import\", \"let\", \"loop\", \"package\", \"namespace\", \"return\".\nExamples:\n  - Rule accessing a property named \"namespace\": {\"rule\": \"self.__namespace__ > 0\"}\n  - Rule accessing a property named \"x-prop\": {\"rule\": \"self.x__dash__prop > 0\"}\n  - Rule accessing a property named \"redact__d\": {\"rule\": \"self.redact__underscores__d > 0\"}\n\n\nIf `rule` makes use of the `oldSelf` variable it is implicitly a\n`transition rule`.\n\n\nBy default, the `oldSelf` variable is the same type as `self`.\n\n\nTransition rules by default are applied only on UPDATE requests and are\nskipped if an old value could not be found.",
+    "rule represents the expression which will be evaluated by CEL.\nref: https://github.com/google/cel-spec\nThe Rule is scoped to the location of the x-kubernetes-validations extension in the schema.\nThe `self` variable in the CEL expression is bound to the scoped value.\nIf the Rule is scoped to an object with properties, the accessible properties of the object are field selectable\nvia `self.field` and field presence can be checked via `has(self.field)`.\nIf the Rule is scoped to an object with additionalProperties (i.e. a map) the value of the map\nare accessible via `self[mapKey]`, map containment can be checked via `mapKey in self` and all entries of the map\nare accessible via CEL macros and functions such as `self.all(...)`.\nIf the Rule is scoped to an array, the elements of the array are accessible via `self[i]` and also by macros and\nfunctions.\nIf the Rule is scoped to a scalar, `self` is bound to the scalar value.\nExamples:\n- Rule scoped to a map of objects: {\"rule\": \"self.components['Widget'].priority < 10\"}\n- Rule scoped to a list of integers: {\"rule\": \"self.values.all(value, value >= 0 && value < 100)\"}\n- Rule scoped to a string value: {\"rule\": \"self.startsWith('kube')\"}\n\nUnknown data preserved in custom resources via x-kubernetes-preserve-unknown-fields is not accessible in CEL\nexpressions. This includes:\n- Unknown field values that are preserved by object schemas with x-kubernetes-preserve-unknown-fields.\n- Object properties where the property schema is of an \"unknown type\". An \"unknown type\" is recursively defined as:\n  - A schema with no type and x-kubernetes-preserve-unknown-fields set to true\n  - An array where the items schema is of an \"unknown type\"\n  - An object where the additionalProperties schema is of an \"unknown type\"\n\nOnly property names of the form `[a-zA-Z_.-/][a-zA-Z0-9_.-/]*` are accessible.\nAccessible property names are escaped according to the following rules when accessed in the expression:\n- '__' escapes to '__underscores__'\n- '.' escapes to '__dot__'\n- '-' escapes to '__dash__'\n- '/' escapes to '__slash__'\n- Property names that exactly match a CEL RESERVED keyword escape to '__{keyword}__'. The keywords are:\n\t  \"true\", \"false\", \"null\", \"in\", \"as\", \"break\", \"const\", \"continue\", \"else\", \"for\", \"function\", \"if\",\n\t  \"import\", \"let\", \"loop\", \"package\", \"namespace\", \"return\".\nExamples:\n  - Rule accessing a property named \"namespace\": {\"rule\": \"self.__namespace__ > 0\"}\n  - Rule accessing a property named \"x-prop\": {\"rule\": \"self.x__dash__prop > 0\"}\n  - Rule accessing a property named \"redact__d\": {\"rule\": \"self.redact__underscores__d > 0\"}\n\nIf `rule` makes use of the `oldSelf` variable it is implicitly a\n`transition rule`.\n\nBy default, the `oldSelf` variable is the same type as `self`.\n\nTransition rules by default are applied only on UPDATE requests and are\nskipped if an old value could not be found.",
+    "XMetadata is the metadata of a variable or a nested field within a variable.\nIt can be used to add additional data for higher level tools.",
+    "x-metadata is the metadata of a variable or a nested field within a variable.\nIt can be used to add additional data for higher level tools.",
+    "Workers describes the worker nodes for the cluster.\nIt is a collection of node types which can be used to create\nthe worker nodes of the cluster.",
+    "workers describes the worker nodes for the cluster.\nIt is a collection of node types which can be used to create\nthe worker nodes of the cluster.",
+    "MachineDeployments is a list of machine deployment classes that can be used to create\na set of worker nodes.",
+    "machineDeployments is a list of machine deployment classes that can be used to create\na set of worker nodes.",
+    "Class denotes a type of worker node present in the cluster,\nthis name MUST be unique within a ClusterClass and can be referenced\nin the Cluster to create a managed MachineDeployment.",
+    "class denotes a type of worker node present in the cluster,\nthis name MUST be unique within a ClusterClass and can be referenced\nin the Cluster to create a managed MachineDeployment.",
+    "FailureDomain is the failure domain the machines will be created in.\nMust match a key in the FailureDomains map stored on the cluster object.\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "failureDomain is the failure domain the machines will be created in.\nMust match a key in the FailureDomains map stored on the cluster object.\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "MachineHealthCheck defines a MachineHealthCheck for this MachineDeploymentClass.",
+    "machineHealthCheck defines a MachineHealthCheck for this MachineDeploymentClass.",
+    "NamingStrategy allows changing the naming pattern used when creating the MachineDeployment.",
+    "namingStrategy allows changing the naming pattern used when creating the MachineDeployment.",
+    "Template defines the template to use for generating the name of the MachineDeployment object.\nIf not defined, it will fallback to `{{ .cluster.name }}-{{ .machineDeployment.topologyName }}-{{ .random }}`.\nIf the templated string exceeds 63 characters, it will be trimmed to 58 characters and will\nget concatenated with a random suffix of length 5.\nThe templating mechanism provides the following arguments:\n* `.cluster.name`: The name of the cluster object.\n* `.random`: A random alphanumeric string, without vowels, of length 5.\n* `.machineDeployment.topologyName`: The name of the MachineDeployment topology (Cluster.spec.topology.workers.machineDeployments[].name).",
+    "template defines the template to use for generating the name of the MachineDeployment object.\nIf not defined, it will fallback to `{{ .cluster.name }}-{{ .machineDeployment.topologyName }}-{{ .random }}`.\nIf the templated string exceeds 63 characters, it will be trimmed to 58 characters and will\nget concatenated with a random suffix of length 5.\nThe templating mechanism provides the following arguments:\n* `.cluster.name`: The name of the cluster object.\n* `.random`: A random alphanumeric string, without vowels, of length 5.\n* `.machineDeployment.topologyName`: The name of the MachineDeployment topology (Cluster.spec.topology.workers.machineDeployments[].name).",
+    "NodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine\nhosts after the Machine is marked for deletion. A duration of 0 will retry deletion indefinitely.\nDefaults to 10 seconds.\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "nodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine\nhosts after the Machine is marked for deletion. A duration of 0 will retry deletion indefinitely.\nDefaults to 10 seconds.\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "NodeDrainTimeout is the total amount of time that the controller will spend on draining a node.\nThe default value is 0, meaning that the node can be drained without any time limitations.\nNOTE: NodeDrainTimeout is different from `kubectl drain --timeout`\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "nodeDrainTimeout is the total amount of time that the controller will spend on draining a node.\nThe default value is 0, meaning that the node can be drained without any time limitations.\nNOTE: NodeDrainTimeout is different from `kubectl drain --timeout`\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "NodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes\nto be detached. The default value is 0, meaning that the volumes can be detached without any time limitations.\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "nodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes\nto be detached. The default value is 0, meaning that the volumes can be detached without any time limitations.\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "Remediation controls the strategy of remediating unhealthy machines\nand how remediating operations should occur during the lifecycle of the dependant MachineSets.",
+    "remediation controls the strategy of remediating unhealthy machines\nand how remediating operations should occur during the lifecycle of the dependant MachineSets.",
+    "MaxInFlight determines how many in flight remediations should happen at the same time.\n\n\nRemediation only happens on the MachineSet with the most current revision, while\nolder MachineSets (usually present during rollout operations) aren't allowed to remediate.\n\n\nNote: In general (independent of remediations), unhealthy machines are always\nprioritized during scale down operations over healthy ones.\n\n\nMaxInFlight can be set to a fixed number or a percentage.\nExample: when this is set to 20%, the MachineSet controller deletes at most 20% of\nthe desired replicas.\n\n\nIf not set, remediation is limited to all machines (bounded by replicas)\nunder the active MachineSet's management.",
+    "maxInFlight determines how many in flight remediations should happen at the same time.\n\nRemediation only happens on the MachineSet with the most current revision, while\nolder MachineSets (usually present during rollout operations) aren't allowed to remediate.\n\nNote: In general (independent of remediations), unhealthy machines are always\nprioritized during scale down operations over healthy ones.\n\nMaxInFlight can be set to a fixed number or a percentage.\nExample: when this is set to 20%, the MachineSet controller deletes at most 20% of\nthe desired replicas.\n\nIf not set, remediation is limited to all machines (bounded by replicas)\nunder the active MachineSet's management.",
+    "DeletePolicy defines the policy used by the MachineDeployment to identify nodes to delete when downscaling.\nValid values are \"Random, \"Newest\", \"Oldest\"\nWhen no value is supplied, the default DeletePolicy of MachineSet is used",
+    "deletePolicy defines the policy used by the MachineDeployment to identify nodes to delete when downscaling.\nValid values are \"Random, \"Newest\", \"Oldest\"\nWhen no value is supplied, the default DeletePolicy of MachineSet is used",
+    "Type of deployment. Allowed values are RollingUpdate and OnDelete.\nThe default is RollingUpdate.",
+    "type of deployment. Allowed values are RollingUpdate and OnDelete.\nThe default is RollingUpdate.",
+    "Template is a local struct containing a collection of templates for creation of\nMachineDeployment objects representing a set of worker nodes.",
+    "template is a local struct containing a collection of templates for creation of\nMachineDeployment objects representing a set of worker nodes.",
+    "Bootstrap contains the bootstrap template reference to be used\nfor the creation of worker Machines.",
+    "bootstrap contains the bootstrap template reference to be used\nfor the creation of worker Machines.",
+    "Infrastructure contains the infrastructure template reference to be used\nfor the creation of worker Machines.",
+    "infrastructure contains the infrastructure template reference to be used\nfor the creation of worker Machines.",
+    "Metadata is the metadata applied to the MachineDeployment and the machines of the MachineDeployment.\nAt runtime this metadata is merged with the corresponding metadata from the topology.",
+    "metadata is the metadata applied to the MachineDeployment and the machines of the MachineDeployment.\nAt runtime this metadata is merged with the corresponding metadata from the topology.",
+    "MachinePools is a list of machine pool classes that can be used to create\na set of worker nodes.",
+    "machinePools is a list of machine pool classes that can be used to create\na set of worker nodes.",
+    "Class denotes a type of machine pool present in the cluster,\nthis name MUST be unique within a ClusterClass and can be referenced\nin the Cluster to create a managed MachinePool.",
+    "class denotes a type of machine pool present in the cluster,\nthis name MUST be unique within a ClusterClass and can be referenced\nin the Cluster to create a managed MachinePool.",
+    "FailureDomains is the list of failure domains the MachinePool should be attached to.\nMust match a key in the FailureDomains map stored on the cluster object.\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachinePoolClass.",
+    "failureDomains is the list of failure domains the MachinePool should be attached to.\nMust match a key in the FailureDomains map stored on the cluster object.\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachinePoolClass.",
+    "NamingStrategy allows changing the naming pattern used when creating the MachinePool.",
+    "namingStrategy allows changing the naming pattern used when creating the MachinePool.",
+    "Template defines the template to use for generating the name of the MachinePool object.\nIf not defined, it will fallback to `{{ .cluster.name }}-{{ .machinePool.topologyName }}-{{ .random }}`.\nIf the templated string exceeds 63 characters, it will be trimmed to 58 characters and will\nget concatenated with a random suffix of length 5.\nThe templating mechanism provides the following arguments:\n* `.cluster.name`: The name of the cluster object.\n* `.random`: A random alphanumeric string, without vowels, of length 5.\n* `.machinePool.topologyName`: The name of the MachinePool topology (Cluster.spec.topology.workers.machinePools[].name).",
+    "template defines the template to use for generating the name of the MachinePool object.\nIf not defined, it will fallback to `{{ .cluster.name }}-{{ .machinePool.topologyName }}-{{ .random }}`.\nIf the templated string exceeds 63 characters, it will be trimmed to 58 characters and will\nget concatenated with a random suffix of length 5.\nThe templating mechanism provides the following arguments:\n* `.cluster.name`: The name of the cluster object.\n* `.random`: A random alphanumeric string, without vowels, of length 5.\n* `.machinePool.topologyName`: The name of the MachinePool topology (Cluster.spec.topology.workers.machinePools[].name).",
+    "NodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine\nhosts after the Machine Pool is marked for deletion. A duration of 0 will retry deletion indefinitely.\nDefaults to 10 seconds.\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachinePoolClass.",
+    "nodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine\nhosts after the Machine Pool is marked for deletion. A duration of 0 will retry deletion indefinitely.\nDefaults to 10 seconds.\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachinePoolClass.",
+    "NodeDrainTimeout is the total amount of time that the controller will spend on draining a node.\nThe default value is 0, meaning that the node can be drained without any time limitations.\nNOTE: NodeDrainTimeout is different from `kubectl drain --timeout`\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachinePoolClass.",
+    "nodeDrainTimeout is the total amount of time that the controller will spend on draining a node.\nThe default value is 0, meaning that the node can be drained without any time limitations.\nNOTE: NodeDrainTimeout is different from `kubectl drain --timeout`\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachinePoolClass.",
+    "NodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes\nto be detached. The default value is 0, meaning that the volumes can be detached without any time limitations.\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachinePoolClass.",
+    "nodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes\nto be detached. The default value is 0, meaning that the volumes can be detached without any time limitations.\nNOTE: This value can be overridden while defining a Cluster.Topology using this MachinePoolClass.",
+    "Template is a local struct containing a collection of templates for creation of\nMachinePools objects representing a pool of worker nodes.",
+    "template is a local struct containing a collection of templates for creation of\nMachinePools objects representing a pool of worker nodes.",
+    "Bootstrap contains the bootstrap template reference to be used\nfor the creation of the Machines in the MachinePool.",
+    "bootstrap contains the bootstrap template reference to be used\nfor the creation of the Machines in the MachinePool.",
+    "Infrastructure contains the infrastructure template reference to be used\nfor the creation of the MachinePool.",
+    "infrastructure contains the infrastructure template reference to be used\nfor the creation of the MachinePool.",
+    "Metadata is the metadata applied to the MachinePool.\nAt runtime this metadata is merged with the corresponding metadata from the topology.",
+    "metadata is the metadata applied to the MachinePool.\nAt runtime this metadata is merged with the corresponding metadata from the topology.",
+    "Conditions defines current observed state of the ClusterClass.",
+    "conditions defines current observed state of the ClusterClass.",
+    "The reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may not be empty.",
+    "Severity provides an explicit classification of Reason code, so the users or machines can immediately\nunderstand the current situation and act accordingly.\nThe Severity field MUST be set only when Status=False.",
+    "severity provides an explicit classification of Reason code, so the users or machines can immediately\nunderstand the current situation and act accordingly.\nThe Severity field MUST be set only when Status=False.",
+    "Status of the condition, one of True, False, Unknown.",
+    "Type of condition in CamelCase or in foo.example.com/CamelCase.\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions\ncan be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions\ncan be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "ObservedGeneration is the latest generation observed by the controller.",
+    "observedGeneration is the latest generation observed by the controller.",
+    "v1beta2 groups all the fields that will be added or modified in ClusterClass's status with the V1Beta2 version.",
+    "Variables is a list of ClusterClassStatusVariable that are defined for the ClusterClass.",
+    "variables is a list of ClusterClassStatusVariable that are defined for the ClusterClass.",
+    "Definitions is a list of definitions for a variable.",
+    "definitions is a list of definitions for a variable.",
+    "From specifies the origin of the variable definition.\nThis will be `inline` for variables defined in the ClusterClass or the name of a patch defined in the ClusterClass\nfor variables discovered from a DiscoverVariables runtime extensions.",
+    "from specifies the origin of the variable definition.\nThis will be `inline` for variables defined in the ClusterClass or the name of a patch defined in the ClusterClass\nfor variables discovered from a DiscoverVariables runtime extensions.",
+    "Metadata is the metadata of a variable.\nIt can be used to add additional data for higher level tools to\na ClusterClassVariable.\n\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion.",
+    "metadata is the metadata of a variable.\nIt can be used to add additional data for higher level tools to\na ClusterClassVariable.\n\nDeprecated: This field is deprecated and is going to be removed in the next apiVersion.",
+    "DefinitionsConflict specifies whether or not there are conflicting definitions for a single variable name.",
+    "definitionsConflict specifies whether or not there are conflicting definitions for a single variable name.",
+    "Name is the name of the variable.",
+    "name is the name of the variable.",
+    "Metadata is the metadata of a variable.\nIt can be used to add additional data for higher level tools to\na ClusterClassVariable.",
+    "Machines older than this duration without a node will be considered to have\nfailed and will be remediated.\nIf you wish to disable this feature, set the value explicitly to 0.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "ControlPlane is a reference to a local struct that holds the details for provisioning the Control Plane for the Cluster.",
+    "MachineHealthCheck defines a MachineHealthCheck for this ControlPlaneClass. This field is supported if and only if the ControlPlane provider template referenced above is Machine based and supports setting replicas.",
+    "Any further remediation is only allowed if at most \"MaxUnhealthy\" machines selected by \"selector\" are not healthy.",
+    "Machines older than this duration without a node will be considered to have failed and will be remediated. If you wish to disable this feature, set the value explicitly to 0.",
+    "RemediationTemplate is a reference to a remediation template provided by an infrastructure provider. \n This field is completely optional, when filled, the MachineHealthCheck controller creates a new object from the template referenced and hands off remediation of the machine to a controller that lives outside of Cluster API.",
+    "If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future.",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind of the referent.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Name of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
+    "Namespace of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
+    "Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "Specific resourceVersion to which this reference is made, if any.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids",
+    "UID of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids",
+    "UnhealthyConditions contains a list of the conditions that determine whether a node is considered unhealthy. The conditions are combined in a logical OR, i.e. if any of the conditions is met, the node is unhealthy.",
+    "Any further remediation is only allowed if the number of machines selected by \"selector\" as not healthy is within the range of \"UnhealthyRange\". Takes precedence over MaxUnhealthy. Eg. \"[3-5]\" - This means that remediation will be allowed only when: (a) there are at least 3 unhealthy machines (and) (b) there are at most 5 unhealthy machines",
+    "MachineInfrastructure defines the metadata and infrastructure information for control plane machines. \n This field is supported if and only if the control plane provider template referenced above is Machine based and supports setting replicas.",
+    "Ref is a required reference to a custom resource offered by a provider.",
+    "Metadata is the metadata applied to the ControlPlane and the Machines of the ControlPlane if the ControlPlaneTemplate referenced is machine based. If not, it is applied only to the ControlPlane. At runtime this metadata is merged with the corresponding metadata from the topology. \n This field is supported if and only if the control plane provider template referenced is Machine based.",
+    "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels",
+    "Template defines the template to use for generating the name of the ControlPlane object. If not defined, it will fallback to `{{ .cluster.name }}-{{ .random }}`. If the templated string exceeds 63 characters, it will be trimmed to 58 characters and will get concatenated with a random suffix of length 5. The templating mechanism provides the following arguments: * `.cluster.name`: The name of the cluster object. * `.random`: A random alphanumeric string, without vowels, of length 5.",
+    "NodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine hosts after the Machine is marked for deletion. A duration of 0 will retry deletion indefinitely. Defaults to 10 seconds. NOTE: This value can be overridden while defining a Cluster.Topology.",
+    "NodeDrainTimeout is the total amount of time that the controller will spend on draining a node. The default value is 0, meaning that the node can be drained without any time limitations. NOTE: NodeDrainTimeout is different from `kubectl drain --timeout` NOTE: This value can be overridden while defining a Cluster.Topology.",
+    "NodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes to be detached. The default value is 0, meaning that the volumes can be detached without any time limitations. NOTE: This value can be overridden while defining a Cluster.Topology.",
+    "Infrastructure is a reference to a provider-specific template that holds the details for provisioning infrastructure specific cluster for the underlying provider. The underlying provider is responsible for the implementation of the template to an infrastructure cluster.",
+    "Patches defines the patches which are applied to customize referenced templates of a ClusterClass. Note: Patches will be applied in the order of the array.",
+    "Definitions define inline patches. Note: Patches will be applied in the order of the array. Note: Exactly one of Definitions or External must be set.",
+    "JSONPatches defines the patches which should be applied on the templates matching the selector. Note: Patches will be applied in the order of the array.",
+    "Op defines the operation of the patch. Note: Only `add`, `replace` and `remove` are supported.",
+    "Path defines the path of the patch. Note: Only the spec of a template can be patched, thus the path has to start with /spec/. Note: For now the only allowed array modifications are `append` and `prepend`, i.e.: * for op: `add`: only index 0 (prepend) and - (append) are allowed * for op: `replace` or `remove`: no indexes are allowed",
+    "Value defines the value of the patch. Note: Either Value or ValueFrom is required for add and replace operations. Only one of them is allowed to be set at the same time. Note: We have to use apiextensionsv1.JSON instead of our JSON type, because controller-tools has a hard-coded schema for apiextensionsv1.JSON which cannot be produced by another type (unset type field). Ref: https://github.com/kubernetes-sigs/controller-tools/blob/d0e03a142d0ecdd5491593e941ee1d6b5d91dba6/pkg/crd/known_types.go#L106-L111",
+    "ValueFrom defines the value of the patch. Note: Either Value or ValueFrom is required for add and replace operations. Only one of them is allowed to be set at the same time.",
+    "Template is the Go template to be used to calculate the value. A template can reference variables defined in .spec.variables and builtin variables. Note: The template must evaluate to a valid YAML or JSON value.",
+    "Variable is the variable to be used as value. Variable can be one of the variables defined in .spec.variables or a builtin variable.",
+    "ControlPlane selects templates referenced in .spec.ControlPlane. Note: this will match the controlPlane and also the controlPlane machineInfrastructure (depending on the kind and apiVersion).",
+    "MachineDeploymentClass selects templates referenced in specific MachineDeploymentClasses in .spec.workers.machineDeployments.",
+    "MachinePoolClass selects templates referenced in specific MachinePoolClasses in .spec.workers.machinePools.",
+    "EnabledIf is a Go template to be used to calculate if a patch should be enabled. It can reference variables defined in .spec.variables and builtin variables. The patch will be enabled if the template evaluates to `true`, otherwise it will be disabled. If EnabledIf is not set, the patch will be enabled per default.",
+    "External defines an external patch. Note: Exactly one of Definitions or External must be set.",
+    "Settings defines key value pairs to be passed to the extensions. Values defined here take precedence over the values defined in the corresponding ExtensionConfig.",
+    "Variables defines the variables which can be configured in the Cluster topology and are then used in patches.",
+    "Metadata is the metadata of a variable. It can be used to add additional data for higher level tools to a ClusterClassVariable.",
+    "Annotations is an unstructured key value map that can be used to store and retrieve arbitrary metadata. They are not queryable.",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) variables.",
+    "Required specifies if the variable is required. Note: this applies to the variable as a whole and thus the top-level object defined in the schema. If nested fields are required, this will be specified inside the schema.",
+    "OpenAPIV3Schema defines the schema of a variable via OpenAPI v3 schema. The schema is a subset of the schema used in Kubernetes CRDs.",
+    "AdditionalProperties specifies the schema of values in a map (keys are always strings). NOTE: Can only be set if type is object. NOTE: AdditionalProperties is mutually exclusive with Properties. NOTE: This field uses PreserveUnknownFields and Schemaless, because recursive validation is not possible.",
+    "Default is the default value of the variable. NOTE: Can be set for all types.",
+    "Enum is the list of valid values of the variable. NOTE: Can be set for all types.",
+    "ExclusiveMaximum specifies if the Maximum is exclusive. NOTE: Can only be set if type is integer or number.",
+    "ExclusiveMinimum specifies if the Minimum is exclusive. NOTE: Can only be set if type is integer or number.",
+    "Format is an OpenAPI v3 format string. Unknown formats are ignored. For a list of supported formats please see: (of the k8s.io/apiextensions-apiserver version we're currently using) https://github.com/kubernetes/apiextensions-apiserver/blob/master/pkg/apiserver/validation/formats.go NOTE: Can only be set if type is string.",
+    "Items specifies fields of an array. NOTE: Can only be set if type is array. NOTE: This field uses PreserveUnknownFields and Schemaless, because recursive validation is not possible.",
+    "MaxItems is the max length of an array variable. NOTE: Can only be set if type is array.",
+    "MaxLength is the max length of a string variable. NOTE: Can only be set if type is string.",
+    "Maximum is the maximum of an integer or number variable. If ExclusiveMaximum is false, the variable is valid if it is lower than, or equal to, the value of Maximum. If ExclusiveMaximum is true, the variable is valid if it is strictly lower than the value of Maximum. NOTE: Can only be set if type is integer or number.",
+    "MinItems is the min length of an array variable. NOTE: Can only be set if type is array.",
+    "MinLength is the min length of a string variable. NOTE: Can only be set if type is string.",
+    "Minimum is the minimum of an integer or number variable. If ExclusiveMinimum is false, the variable is valid if it is greater than, or equal to, the value of Minimum. If ExclusiveMinimum is true, the variable is valid if it is strictly greater than the value of Minimum. NOTE: Can only be set if type is integer or number.",
+    "Pattern is the regex which a string variable must match. NOTE: Can only be set if type is string.",
+    "Properties specifies fields of an object. NOTE: Can only be set if type is object. NOTE: Properties is mutually exclusive with AdditionalProperties. NOTE: This field uses PreserveUnknownFields and Schemaless, because recursive validation is not possible.",
+    "Required specifies which fields of an object are required. NOTE: Can only be set if type is object.",
+    "Type is the type of the variable. Valid values are: object, array, string, integer, number or boolean.",
+    "UniqueItems specifies if items in an array must be unique. NOTE: Can only be set if type is array.",
+    "XPreserveUnknownFields allows setting fields in a variable object which are not defined in the variable schema. This affects fields recursively, except if nested properties or additionalProperties are specified in the schema.",
+    "Workers describes the worker nodes for the cluster. It is a collection of node types which can be used to create the worker nodes of the cluster.",
+    "MachineDeployments is a list of machine deployment classes that can be used to create a set of worker nodes.",
+    "Class denotes a type of worker node present in the cluster, this name MUST be unique within a ClusterClass and can be referenced in the Cluster to create a managed MachineDeployment.",
+    "FailureDomain is the failure domain the machines will be created in. Must match a key in the FailureDomains map stored on the cluster object. NOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "Minimum number of seconds for which a newly created machine should be ready. Defaults to 0 (machine will be considered available as soon as it is ready) NOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "Template defines the template to use for generating the name of the MachineDeployment object. If not defined, it will fallback to `{{ .cluster.name }}-{{ .machineDeployment.topologyName }}-{{ .random }}`. If the templated string exceeds 63 characters, it will be trimmed to 58 characters and will get concatenated with a random suffix of length 5. The templating mechanism provides the following arguments: * `.cluster.name`: The name of the cluster object. * `.random`: A random alphanumeric string, without vowels, of length 5. * `.machineDeployment.topologyName`: The name of the MachineDeployment topology (Cluster.spec.topology.workers.machineDeployments[].name).",
+    "NodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine hosts after the Machine is marked for deletion. A duration of 0 will retry deletion indefinitely. Defaults to 10 seconds. NOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "NodeDrainTimeout is the total amount of time that the controller will spend on draining a node. The default value is 0, meaning that the node can be drained without any time limitations. NOTE: NodeDrainTimeout is different from `kubectl drain --timeout` NOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "NodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes to be detached. The default value is 0, meaning that the volumes can be detached without any time limitations. NOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "The deployment strategy to use to replace existing machines with new ones. NOTE: This value can be overridden while defining a Cluster.Topology using this MachineDeploymentClass.",
+    "Rolling update config params. Present only if MachineDeploymentStrategyType = RollingUpdate.",
+    "DeletePolicy defines the policy used by the MachineDeployment to identify nodes to delete when downscaling. Valid values are \"Random, \"Newest\", \"Oldest\" When no value is supplied, the default DeletePolicy of MachineSet is used",
+    "The maximum number of machines that can be scheduled above the desired number of machines. Value can be an absolute number (ex: 5) or a percentage of desired machines (ex: 10%). This can not be 0 if MaxUnavailable is 0. Absolute number is calculated from percentage by rounding up. Defaults to 1. Example: when this is set to 30%, the new MachineSet can be scaled up immediately when the rolling update starts, such that the total number of old and new machines do not exceed 130% of desired machines. Once old machines have been killed, new MachineSet can be scaled up further, ensuring that total number of machines running at any time during the update is at most 130% of desired machines.",
+    "The maximum number of machines that can be unavailable during the update. Value can be an absolute number (ex: 5) or a percentage of desired machines (ex: 10%). Absolute number is calculated from percentage by rounding down. This can not be 0 if MaxSurge is 0. Defaults to 0. Example: when this is set to 30%, the old MachineSet can be scaled down to 70% of desired machines immediately when the rolling update starts. Once new machines are ready, old MachineSet can be scaled down further, followed by scaling up the new MachineSet, ensuring that the total number of machines available at all times during the update is at least 70% of desired machines.",
+    "Type of deployment. Allowed values are RollingUpdate and OnDelete. The default is RollingUpdate.",
+    "Template is a local struct containing a collection of templates for creation of MachineDeployment objects representing a set of worker nodes.",
+    "Bootstrap contains the bootstrap template reference to be used for the creation of worker Machines.",
+    "Infrastructure contains the infrastructure template reference to be used for the creation of worker Machines.",
+    "Metadata is the metadata applied to the MachineDeployment and the machines of the MachineDeployment. At runtime this metadata is merged with the corresponding metadata from the topology.",
+    "MachinePools is a list of machine pool classes that can be used to create a set of worker nodes.",
+    "Class denotes a type of machine pool present in the cluster, this name MUST be unique within a ClusterClass and can be referenced in the Cluster to create a managed MachinePool.",
+    "FailureDomains is the list of failure domains the MachinePool should be attached to. Must match a key in the FailureDomains map stored on the cluster object. NOTE: This value can be overridden while defining a Cluster.Topology using this MachinePoolClass.",
+    "Minimum number of seconds for which a newly created machine pool should be ready. Defaults to 0 (machine will be considered available as soon as it is ready) NOTE: This value can be overridden while defining a Cluster.Topology using this MachinePoolClass.",
+    "Template defines the template to use for generating the name of the MachinePool object. If not defined, it will fallback to `{{ .cluster.name }}-{{ .machinePool.topologyName }}-{{ .random }}`. If the templated string exceeds 63 characters, it will be trimmed to 58 characters and will get concatenated with a random suffix of length 5. The templating mechanism provides the following arguments: * `.cluster.name`: The name of the cluster object. * `.random`: A random alphanumeric string, without vowels, of length 5. * `.machinePool.topologyName`: The name of the MachinePool topology (Cluster.spec.topology.workers.machinePools[].name).",
+    "NodeDeletionTimeout defines how long the controller will attempt to delete the Node that the Machine hosts after the Machine Pool is marked for deletion. A duration of 0 will retry deletion indefinitely. Defaults to 10 seconds. NOTE: This value can be overridden while defining a Cluster.Topology using this MachinePoolClass.",
+    "NodeDrainTimeout is the total amount of time that the controller will spend on draining a node. The default value is 0, meaning that the node can be drained without any time limitations. NOTE: NodeDrainTimeout is different from `kubectl drain --timeout` NOTE: This value can be overridden while defining a Cluster.Topology using this MachinePoolClass.",
+    "NodeVolumeDetachTimeout is the total amount of time that the controller will spend on waiting for all volumes to be detached. The default value is 0, meaning that the volumes can be detached without any time limitations. NOTE: This value can be overridden while defining a Cluster.Topology using this MachinePoolClass.",
+    "Template is a local struct containing a collection of templates for creation of MachinePools objects representing a pool of worker nodes.",
+    "Bootstrap contains the bootstrap template reference to be used for the creation of the Machines in the MachinePool.",
+    "Infrastructure contains the infrastructure template reference to be used for the creation of the MachinePool.",
+    "Metadata is the metadata applied to the MachinePool. At runtime this metadata is merged with the corresponding metadata from the topology.",
+    "Last time the condition transitioned from one status to another. This should be when the underlying condition changed. If that is not known, then using the time when the API field changed is acceptable.",
+    "A human readable message indicating details about the transition. This field may be empty.",
+    "The reason for the condition's last transition in CamelCase. The specific API may choose whether or not this field is considered a guaranteed API. This field may not be empty.",
+    "Severity provides an explicit classification of Reason code, so the users or machines can immediately understand the current situation and act accordingly. The Severity field MUST be set only when Status=False.",
+    "Type of condition in CamelCase or in foo.example.com/CamelCase. Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "From specifies the origin of the variable definition. This will be `inline` for variables defined in the ClusterClass or the name of a patch defined in the ClusterClass for variables discovered from a DiscoverVariables runtime extensions.",
+    "Type of deployment. Default is RollingUpdate.",
+    "Metadata is the metadata applied to the machines of the ControlPlane. At runtime this metadata is merged with the corresponding metadata from the topology. \n This field is supported if and only if the control plane provider template referenced is Machine based.",
+    "Metadata is the metadata applied to the machines of the MachineDeployment. At runtime this metadata is merged with the corresponding metadata from the topology.",
+    "Definitions define the patches inline. Note: Patches will be applied in the order of the array.",
+    "Properties specifies fields of an object. NOTE: Can only be set if type is object. NOTE: This field uses PreserveUnknownFields and Schemaless, because recursive validation is not possible.",
+    "MachineTemplate defines the metadata and infrastructure information for control plane machines. \n This field is supported if and only if the control plane provider template referenced above is Machine based and supports setting replicas."
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "versions": {
+    "v2.4.0": {
+      "required": [
+        "status.artifact.lastUpdateTime",
+        "status.includedArtifacts.lastUpdateTime"
+      ],
+      "descriptionChanged": [
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "status.artifact.lastUpdateTime": [
+          null,
+          0
+        ],
+        "status.conditions.type": [
+          1,
+          2
+        ],
+        "status.includedArtifacts.lastUpdateTime": [
+          null,
+          0
+        ]
+      }
+    },
+    "v2.3.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.accessFrom.namespaceSelectors",
+        "spec.accessFrom.namespaceSelectors.matchLabels",
+        "spec.gitImplementation",
+        "spec.ignore",
+        "spec.recurseSubmodules",
+        "spec.ref",
+        "spec.secretRef",
+        "status.artifact.lastUpdateTime",
+        "status.artifact.revision",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type",
+        "status.includedArtifacts.lastUpdateTime",
+        "status.includedArtifacts.revision",
+        "status.lastHandledReconcileAt",
+        "status.url"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          3,
+          4
+        ],
+        "kind": [
+          5,
+          6
+        ],
+        "spec.accessFrom.namespaceSelectors": [
+          7,
+          8
+        ],
+        "spec.accessFrom.namespaceSelectors.matchLabels": [
+          9,
+          10
+        ],
+        "spec.gitImplementation": [
+          11,
+          12
+        ],
+        "spec.ignore": [
+          13,
+          14
+        ],
+        "spec.recurseSubmodules": [
+          15,
+          16
+        ],
+        "spec.ref": [
+          17,
+          18
+        ],
+        "spec.secretRef": [
+          19,
+          20
+        ],
+        "status.artifact.lastUpdateTime": [
+          21,
+          0
+        ],
+        "status.artifact.revision": [
+          22,
+          23
+        ],
+        "status.conditions.lastTransitionTime": [
+          24,
+          25
+        ],
+        "status.conditions.message": [
+          26,
+          27
+        ],
+        "status.conditions.observedGeneration": [
+          28,
+          29
+        ],
+        "status.conditions.reason": [
+          30,
+          31
+        ],
+        "status.conditions.type": [
+          32,
+          1
+        ],
+        "status.includedArtifacts.lastUpdateTime": [
+          21,
+          0
+        ],
+        "status.includedArtifacts.revision": [
+          22,
+          23
+        ],
+        "status.lastHandledReconcileAt": [
+          33,
+          34
+        ],
+        "status.url": [
+          35,
+          36
+        ]
+      }
+    },
+    "v0.30.0": {
+      "descriptionChanged": [
+        "spec.secretRef"
+      ],
+      "descriptions": {
+        "spec.secretRef": [
+          37,
+          19
+        ]
+      }
+    },
+    "v0.28.0": {
+      "descriptionChanged": [
+        "spec.include.repository.name",
+        "spec.secretRef.name",
+        "spec.verify.secretRef.name",
+        "status.lastHandledReconcileAt"
+      ],
+      "descriptions": {
+        "spec.include.repository.name": [
+          38,
+          39
+        ],
+        "spec.secretRef.name": [
+          38,
+          39
+        ],
+        "spec.verify.secretRef.name": [
+          38,
+          39
+        ],
+        "status.lastHandledReconcileAt": [
+          40,
+          33
+        ]
+      }
+    },
+    "v0.26.2": {
+      "descriptionChanged": [
+        "spec.timeout"
+      ],
+      "descriptions": {
+        "spec.timeout": [
+          41,
+          42
+        ]
+      }
+    },
+    "v0.24.0": {
+      "added": {
+        "spec.accessFrom": "object"
+      },
+      "descriptions": {
+        "spec.accessFrom": [
+          null,
+          43
+        ]
+      }
+    },
+    "v0.23.0": {
+      "descriptionChanged": [
+        "status.artifact.checksum",
+        "status.includedArtifacts.checksum"
+      ],
+      "descriptions": {
+        "status.artifact.checksum": [
+          44,
+          45
+        ],
+        "status.includedArtifacts.checksum": [
+          44,
+          45
+        ]
+      }
+    },
+    "v0.14.0": {
+      "added": {
+        "spec.include": "object[]",
+        "status.includedArtifacts": "object[]"
+      },
+      "descriptions": {
+        "spec.include": [
+          null,
+          46
+        ],
+        "status.includedArtifacts": [
+          null,
+          47
+        ]
+      }
+    },
+    "v0.12.0": {
+      "added": {
+        "spec.recurseSubmodules": "boolean"
+      },
+      "descriptions": {
+        "spec.recurseSubmodules": [
+          null,
+          15
+        ]
+      }
+    },
+    "v0.7.0": {
+      "required": [
+        "spec.secretRef.name",
+        "spec.verify.secretRef.name"
+      ],
+      "descriptionChanged": [
+        "spec.secretRef.name",
+        "spec.verify.secretRef.name"
+      ],
+      "descriptions": {
+        "spec.secretRef.name": [
+          48,
+          38
+        ],
+        "spec.verify.secretRef.name": [
+          48,
+          38
+        ]
+      }
+    },
+    "v0.5.0": {
+      "added": {
+        "spec.gitImplementation": "string"
+      },
+      "descriptions": {
+        "spec.gitImplementation": [
+          null,
+          11
+        ]
+      }
+    }
+  },
+  "texts": [
+    "LastUpdateTime is the timestamp corresponding to the last update of this\nartifact.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "NamespaceSelectors is the list of namespace selectors to which this ACL applies. Items in this list are evaluated using a logical OR operation.",
+    "NamespaceSelectors is the list of namespace selectors to which this ACL applies.\nItems in this list are evaluated using a logical OR operation.",
+    "MatchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "MatchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "Determines which git client library to use. Defaults to go-git, valid values are ('go-git', 'libgit2').",
+    "Determines which git client library to use.\nDefaults to go-git, valid values are ('go-git', 'libgit2').",
+    "Ignore overrides the set of excluded patterns in the .sourceignore format (which is the same as .gitignore). If not provided, a default will be used, consult the documentation for your version to find out what those are.",
+    "Ignore overrides the set of excluded patterns in the .sourceignore format\n(which is the same as .gitignore). If not provided, a default will be used,\nconsult the documentation for your version to find out what those are.",
+    "When enabled, after the clone is created, initializes all submodules within, using their default settings. This option is available only when using the 'go-git' GitImplementation.",
+    "When enabled, after the clone is created, initializes all submodules within,\nusing their default settings.\nThis option is available only when using the 'go-git' GitImplementation.",
+    "The Git reference to checkout and monitor for changes, defaults to master branch.",
+    "The Git reference to checkout and monitor for changes, defaults to\nmaster branch.",
+    "The secret name containing the Git credentials. For HTTPS repositories the secret must contain username and password fields. For SSH repositories the secret must contain identity and known_hosts fields.",
+    "The secret name containing the Git credentials.\nFor HTTPS repositories the secret must contain username and password\nfields.\nFor SSH repositories the secret must contain identity and known_hosts\nfields.",
+    "LastUpdateTime is the timestamp corresponding to the last update of this artifact.",
+    "Revision is a human readable identifier traceable in the origin source system. It can be a Git commit SHA, Git tag, a Helm index timestamp, a Helm chart version, etc.",
+    "Revision is a human readable identifier traceable in the origin source\nsystem. It can be a Git commit SHA, Git tag, a Helm index timestamp, a Helm\nchart version, etc.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change of the annotation value can be detected.",
+    "LastHandledReconcileAt holds the value of the most recent\nreconcile request value, so a change of the annotation value\ncan be detected.",
+    "URL is the download link for the artifact output of the last repository sync.",
+    "URL is the download link for the artifact output of the last repository\nsync.",
+    "The secret name containing the Git credentials. For HTTPS repositories the secret must contain username and password fields. For SSH repositories the secret must contain identity, identity.pub and known_hosts fields.",
+    "Name of the referent",
+    "Name of the referent.",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change can be detected.",
+    "The timeout for remote Git operations like cloning, defaults to 20s.",
+    "The timeout for remote Git operations like cloning, defaults to 60s.",
+    "AccessFrom defines an Access Control List for allowing cross-namespace references to this object.",
+    "Checksum is the SHA1 checksum of the artifact.",
+    "Checksum is the SHA256 checksum of the artifact.",
+    "Extra git repositories to map into the repository",
+    "IncludedArtifacts represents the included artifacts from the last successful repository sync.",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?"
+  ]
+}

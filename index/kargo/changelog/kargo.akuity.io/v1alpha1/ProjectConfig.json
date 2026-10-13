@@ -1,0 +1,185 @@
+{
+  "versions": {
+    "v1.12.1": {
+      "descriptionChanged": [
+        "spec.promotionPolicies.autoPromotionEnabled"
+      ],
+      "descriptions": {
+        "spec.promotionPolicies.autoPromotionEnabled": [
+          0,
+          1
+        ]
+      }
+    },
+    "v1.12.0": {
+      "added": {
+        "spec.promotionWindows": "object[]"
+      },
+      "descriptions": {
+        "spec.promotionWindows": [
+          null,
+          2
+        ]
+      }
+    },
+    "v1.11.0": {
+      "added": {
+        "spec.freightLinks": "object[]",
+        "spec.promotionPolicies.autoRollback": "object",
+        "spec.stageLinks": "object[]"
+      },
+      "descriptions": {
+        "spec.freightLinks": [
+          null,
+          3
+        ],
+        "spec.promotionPolicies.autoRollback": [
+          null,
+          4
+        ],
+        "spec.stageLinks": [
+          null,
+          5
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.webhookReceivers.artifactory.secretRef",
+        "spec.webhookReceivers.azure.secretRef",
+        "spec.webhookReceivers.bitbucket.secretRef",
+        "spec.webhookReceivers.gitea.secretRef",
+        "spec.webhookReceivers.github.secretRef",
+        "spec.webhookReceivers.gitlab.secretRef",
+        "spec.webhookReceivers.harbor.secretRef",
+        "spec.webhookReceivers.quay.secretRef"
+      ],
+      "added": {
+        "spec.webhookReceivers.generic": "object"
+      },
+      "descriptions": {
+        "spec.webhookReceivers.artifactory.secretRef": [
+          6,
+          7
+        ],
+        "spec.webhookReceivers.azure.secretRef": [
+          8,
+          9
+        ],
+        "spec.webhookReceivers.bitbucket.secretRef": [
+          10,
+          11
+        ],
+        "spec.webhookReceivers.generic": [
+          null,
+          12
+        ],
+        "spec.webhookReceivers.gitea.secretRef": [
+          13,
+          14
+        ],
+        "spec.webhookReceivers.github.secretRef": [
+          15,
+          16
+        ],
+        "spec.webhookReceivers.gitlab.secretRef": [
+          17,
+          18
+        ],
+        "spec.webhookReceivers.harbor.secretRef": [
+          19,
+          20
+        ],
+        "spec.webhookReceivers.quay.secretRef": [
+          21,
+          22
+        ]
+      }
+    },
+    "v1.8.0": {
+      "added": {
+        "spec.webhookReceivers.artifactory.virtualRepoName": "string",
+        "spec.webhookReceivers.harbor": "object"
+      },
+      "descriptions": {
+        "spec.webhookReceivers.artifactory.virtualRepoName": [
+          null,
+          23
+        ],
+        "spec.webhookReceivers.harbor": [
+          null,
+          24
+        ]
+      }
+    },
+    "v1.7.0": {
+      "added": {
+        "spec.webhookReceivers.artifactory": "object",
+        "spec.webhookReceivers.azure": "object",
+        "spec.webhookReceivers.gitea": "object"
+      },
+      "descriptions": {
+        "spec.webhookReceivers.artifactory": [
+          null,
+          25
+        ],
+        "spec.webhookReceivers.azure": [
+          null,
+          26
+        ],
+        "spec.webhookReceivers.gitea": [
+          null,
+          27
+        ]
+      }
+    },
+    "v1.6.0": {
+      "added": {
+        "spec.webhookReceivers": "object[]",
+        "status": "object"
+      },
+      "descriptions": {
+        "spec.webhookReceivers": [
+          null,
+          28
+        ],
+        "status": [
+          null,
+          29
+        ]
+      }
+    }
+  },
+  "texts": [
+    "AutoPromotionEnabled indicates whether new Freight can automatically be\npromoted into the Stage referenced by the Stage field. Note: There are may\nbe other conditions also required for an auto-promotion to occur. This\nfield defaults to false, but is commonly set to true for Stages that\nsubscribe to Warehouses instead of other, upstream Stages. This allows\nusers to define Stages that are automatically updated as soon as new\nartifacts are detected.",
+    "AutoPromotionEnabled indicates whether new Freight can automatically be\npromoted into the Stage referenced by the Stage field. Note: There may\nbe other conditions also required for an auto-promotion to occur. This\nfield defaults to false, but is commonly set to true for Stages that\nsubscribe to Warehouses instead of other, upstream Stages. This allows\nusers to define Stages that are automatically updated as soon as new\nartifacts are detected.",
+    "PromotionWindows defines time windows that gate promotions for Stages in\nthis Project. A Stage's effective schedule is the union of matching windows\ndefined here and any cluster-level windows in ClusterConfig.\n\nKargo Enterprise only: This field is ignored in Kargo OSS.",
+    "FreightLinks defines deep links shown when viewing Freight resources\nwithin this project. These are shown in addition to any cluster-level\nFreightLinks defined in ClusterConfig.",
+    "AutoRollback describes the conditions under which this Stage should\nautomatically roll back to the last known-good (verified) Freight. When\nnil, auto-rollback is disabled.\n\nKargo Enterprise only: This field is ignored in Kargo OSS.",
+    "StageLinks defines deep links shown when viewing Stage resources within\nthis project. These are shown in addition to any cluster-level\nStageLinks defined in ClusterConfig.",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"cluster Secrets\" namespace.\n\nThe Secret's data map is expected to contain a `secret-token` key whose\nvalue is the shared secret used to authenticate the webhook requests sent\nby JFrog Artifactory. For more information please refer to the JFrog\nArtifactory documentation:\n  https://jfrog.com/help/r/jfrog-platform-administration-documentation/webhooks",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"system resources\" namespace.\n\nThe Secret's data map is expected to contain a `secret-token` key whose\nvalue is the shared secret used to authenticate the webhook requests sent\nby JFrog Artifactory. For more information please refer to the JFrog\nArtifactory documentation:\n  https://jfrog.com/help/r/jfrog-platform-administration-documentation/webhooks",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"cluster Secrets\" namespace.\n\nThe Secret's data map is expected to contain a `secret` key whose value\ndoes NOT need to be shared directly with Azure when registering a webhook.\nIt is used only by Kargo to create a complex, hard-to-guess URL,\nwhich implicitly serves as a shared secret. For more information about\nAzure webhooks, please refer to the Azure documentation:\n\n Azure Container Registry:\n\thttps://learn.microsoft.com/en-us/azure/container-registry/container-registry-repositories\n\n Azure DevOps:\n\thttp://learn.microsoft.com/en-us/azure/devops/service-hooks/services/webhooks?view=azure-devops",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"system resources\" namespace.\n\nThe Secret's data map is expected to contain a `secret` key whose value\ndoes NOT need to be shared directly with Azure when registering a webhook.\nIt is used only by Kargo to create a complex, hard-to-guess URL,\nwhich implicitly serves as a shared secret. For more information about\nAzure webhooks, please refer to the Azure documentation:\n\n Azure Container Registry:\n\thttps://learn.microsoft.com/en-us/azure/container-registry/container-registry-repositories\n\n Azure DevOps:\n\thttp://learn.microsoft.com/en-us/azure/devops/service-hooks/services/webhooks?view=azure-devops",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"cluster Secrets\" namespace.\n\nThe Secret's data map is expected to contain a `secret` key whose\nvalue is the shared secret used to authenticate the webhook requests sent\nby Bitbucket. For more information please refer to the Bitbucket\ndocumentation:\n  https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"system resources\" namespace.\n\nThe Secret's data map is expected to contain a `secret` key whose\nvalue is the shared secret used to authenticate the webhook requests sent\nby Bitbucket. For more information please refer to the Bitbucket\ndocumentation:\n  https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/",
+    "Generic contains the configuration for a generic webhook receiver.",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"cluster Secrets\" namespace.\n\nThe Secret's data map is expected to contain a `secret` key whose value is\nthe shared secret used to authenticate the webhook requests sent by Gitea.\nFor more information please refer to the Gitea documentation:\n  https://docs.gitea.io/en-us/webhooks/",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"system resources\" namespace.\n\nThe Secret's data map is expected to contain a `secret` key whose value is\nthe shared secret used to authenticate the webhook requests sent by Gitea.\nFor more information please refer to the Gitea documentation:\n  https://docs.gitea.io/en-us/webhooks/",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"cluster Secrets\" namespace.\n\nThe Secret's data map is expected to contain a `secret` key whose value is\nthe shared secret used to authenticate the webhook requests sent by GitHub.\nFor more information please refer to GitHub documentation:\n  https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"system resources\" namespace.\n\nThe Secret's data map is expected to contain a `secret` key whose value is\nthe shared secret used to authenticate the webhook requests sent by GitHub.\nFor more information please refer to GitHub documentation:\n  https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"cluster Secrets\" namespace.\n\nThe secret is expected to contain a `secret-token` key containing the\nshared secret specified when registering the webhook in GitLab. For more\ninformation about this token, please refer to the GitLab documentation:\n  https://docs.gitlab.com/user/project/integrations/webhooks/",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"system resources\" namespace.\n\nThe secret is expected to contain a `secret-token` key containing the\nshared secret specified when registering the webhook in GitLab. For more\ninformation about this token, please refer to the GitLab documentation:\n  https://docs.gitlab.com/user/project/integrations/webhooks/",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"cluster Secrets\" namespace.\n\nThe secret is expected to contain an `auth-header` key containing the \"auth\nheader\" specified when registering the webhook in Harbor. For more\ninformation, please refer to the Harbor documentation:\n  https://goharbor.io/docs/main/working-with-projects/project-configuration/configure-webhooks/",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"system resources\" namespace.\n\nThe secret is expected to contain an `auth-header` key containing the \"auth\nheader\" specified when registering the webhook in Harbor. For more\ninformation, please refer to the Harbor documentation:\n  https://goharbor.io/docs/main/working-with-projects/project-configuration/configure-webhooks/",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"cluster Secrets\" namespace.\n\nThe Secret's data map is expected to contain a `secret` key whose value\ndoes NOT need to be shared directly with Quay when registering a\nwebhook. It is used only by Kargo to create a complex, hard-to-guess URL,\nwhich implicitly serves as a shared secret. For more information about\nQuay webhooks, please refer to the Quay documentation:\n  https://docs.quay.io/guides/notifications.html",
+    "SecretRef contains a reference to a Secret. For Project-scoped webhook\nreceivers, the referenced Secret must be in the same namespace as the\nProjectConfig.\n\nFor cluster-scoped webhook receivers, the referenced Secret must be in the\ndesignated \"system resources\" namespace.\n\nThe Secret's data map is expected to contain a `secret` key whose value\ndoes NOT need to be shared directly with Quay when registering a\nwebhook. It is used only by Kargo to create a complex, hard-to-guess URL,\nwhich implicitly serves as a shared secret. For more information about\nQuay webhooks, please refer to the Quay documentation:\n  https://docs.quay.io/guides/notifications.html",
+    "VirtualRepoName is the name of an Artifactory virtual repository.\n\nWhen unspecified, the Artifactory webhook receiver depends on the value of\nthe webhook payload's `data.repo_key` field when inferring the URL of the\nrepository from which the webhook originated, which will always be an\nArtifactory \"local repository.\" In cases where a Warehouse subscribes to\nsuch a repository indirectly via a \"virtual repository,\" there will be a\ndiscrepancy between the inferred (local) repository URL and the URL\nactually used by the subscription, which can prevent the receiver from\nidentifying such a Warehouse as one in need of refreshing. When specified,\nthe value of the VirtualRepoName field supersedes the value of the webhook\npayload's `data.repo_key` field to compensate for that discrepancy.\n\nIn practice, when using virtual repositories, a separate Artifactory\nwebhook receiver should be configured for each, but one such receiver can\nhandle inbound webhooks from any number of local repositories that are\naggregated by that virtual repository. For example, if a virtual repository\n`proj-virtual` aggregates container images from all of the `proj`\nArtifactory project's local image repositories, with a single webhook\nconfigured to post to a single receiver configured for the `proj-virtual`\nvirtual repository, an image pushed to\n`example.frog.io/proj-<local-repo-name>/<path>/image`, will cause that\nreceiver to refresh all Warehouses subscribed to\n`example.frog.io/proj-virtual/<path>/image`.",
+    "Harbor contains the configuration for a webhook receiver that is compatible\nwith Harbor payloads.",
+    "Artifactory contains the configuration for a webhook receiver that is\ncompatible with JFrog Artifactory payloads.",
+    "Azure contains the configuration for a webhook receiver that is compatible\nwith Azure Container Registry (ACR) and Azure DevOps payloads.",
+    "Gitea contains the configuration for a webhook receiver that is compatible\nwith Gitea payloads.",
+    "WebhookReceivers describes Project-specific webhook receivers used for\nprocessing events from various external platforms",
+    "Status describes the current status of a ProjectConfig."
+  ]
+}

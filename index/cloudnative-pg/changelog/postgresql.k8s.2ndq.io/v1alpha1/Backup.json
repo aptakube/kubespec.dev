@@ -1,0 +1,48 @@
+{
+  "versions": {
+    "v0.4.0": {
+      "added": {
+        "status.backupId": "string",
+        "status.destinationPath": "string",
+        "status.encryption": "string",
+        "status.endpointURL": "string",
+        "status.s3Credentials": "object",
+        "status.serverName": "string"
+      },
+      "descriptions": {
+        "status.backupId": [
+          null,
+          0
+        ],
+        "status.destinationPath": [
+          null,
+          1
+        ],
+        "status.encryption": [
+          null,
+          2
+        ],
+        "status.endpointURL": [
+          null,
+          3
+        ],
+        "status.s3Credentials": [
+          null,
+          4
+        ],
+        "status.serverName": [
+          null,
+          5
+        ]
+      }
+    }
+  },
+  "texts": [
+    "The ID of the Barman backup",
+    "The path where to store the backup (i.e. s3://bucket/path/to/folder) this path, with different destination folders, will be used for WALs and for data",
+    "Encryption method required to S3 API",
+    "Endpoint to be used to upload data to the cloud, overriding the automatic endpoint discovery",
+    "The credentials to use to upload data to S3",
+    "The server name on S3, the cluster name is used if this parameter is omitted"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "versions": {
+    "v1.12.0": {
+      "added": {
+        "spec.checks.unhealthyMachineConditions": "object[]"
+      },
+      "descriptionChanged": [
+        "spec.checks.unhealthyNodeConditions.timeoutSeconds"
+      ],
+      "descriptions": {
+        "spec.checks.unhealthyMachineConditions": [
+          null,
+          0
+        ],
+        "spec.checks.unhealthyNodeConditions.timeoutSeconds": [
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "texts": [
+    "unhealthyMachineConditions contains a list of the machine conditions that determine\nwhether a machine is considered unhealthy.  The conditions are combined in a\nlogical OR, i.e. if any of the conditions is met, the machine is unhealthy.",
+    "timeoutSeconds is the duration that a node must be in a given status for,\nafter which the node is considered unhealthy.\nFor example, with a value of \"1h\", the node must match the status\nfor at least 1 hour before being considered unhealthy.",
+    "timeoutSeconds is the duration that a node must be in a given status for,\nafter which the node is considered unhealthy.\nFor example, with a value of \"3600\", the node must match the status\nfor at least 1 hour before being considered unhealthy."
+  ]
+}

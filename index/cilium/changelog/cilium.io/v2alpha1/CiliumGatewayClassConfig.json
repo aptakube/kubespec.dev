@@ -1,0 +1,58 @@
+{
+  "versions": {
+    "1.20.0": {
+      "added": {
+        "spec.envoy": "object",
+        "spec.httpOptions": "object"
+      },
+      "descriptions": {
+        "spec.envoy": [
+          null,
+          0
+        ],
+        "spec.httpOptions": [
+          null,
+          1
+        ]
+      }
+    },
+    "1.19.6": {
+      "added": {
+        "spec.telemetry": "object"
+      },
+      "descriptions": {
+        "spec.telemetry": [
+          null,
+          2
+        ]
+      }
+    },
+    "1.19.0": {
+      "removed": {
+        "spec.telemetry": "object"
+      },
+      "descriptions": {
+        "spec.telemetry": [
+          2,
+          null
+        ]
+      }
+    },
+    "1.18.12": {
+      "added": {
+        "spec.telemetry": "object"
+      },
+      "descriptions": {
+        "spec.telemetry": [
+          null,
+          2
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Envoy specifies proxy configuration options.\nThese settings control Envoy-specific behavior that is not part of the Gateway API standard.",
+    "HTTPOptions specifies HTTP connection manager options.",
+    "Telemetry specifies observability options for Gateways using this\nGatewayClass configuration."
+  ]
+}

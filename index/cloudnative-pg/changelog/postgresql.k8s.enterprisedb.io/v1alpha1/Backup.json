@@ -1,0 +1,141 @@
+{
+  "versions": {
+    "v1.8.0": {
+      "added": {
+        "status.azureCredentials": "object"
+      },
+      "optional": [
+        "status.s3Credentials"
+      ],
+      "descriptionChanged": [
+        "status.s3Credentials"
+      ],
+      "descriptions": {
+        "status.azureCredentials": [
+          null,
+          0
+        ],
+        "status.s3Credentials": [
+          1,
+          0
+        ]
+      }
+    },
+    "v1.5.0": {
+      "required": [
+        "spec.cluster.name",
+        "status.s3Credentials.accessKeyId.name",
+        "status.s3Credentials.secretAccessKey.name"
+      ],
+      "descriptionChanged": [
+        "spec.cluster.name",
+        "status.commandError",
+        "status.commandOutput",
+        "status.s3Credentials.accessKeyId.key",
+        "status.s3Credentials.accessKeyId.name",
+        "status.s3Credentials.secretAccessKey.key",
+        "status.s3Credentials.secretAccessKey.name"
+      ],
+      "added": {
+        "status.beginLSN": "string",
+        "status.beginWal": "string",
+        "status.endLSN": "string",
+        "status.endWal": "string"
+      },
+      "removed": {
+        "status.s3Credentials.accessKeyId.optional": "boolean",
+        "status.s3Credentials.secretAccessKey.optional": "boolean"
+      },
+      "descriptions": {
+        "spec.cluster.name": [
+          2,
+          3
+        ],
+        "status.beginLSN": [
+          null,
+          4
+        ],
+        "status.beginWal": [
+          null,
+          5
+        ],
+        "status.commandError": [
+          6,
+          7
+        ],
+        "status.commandOutput": [
+          6,
+          8
+        ],
+        "status.endLSN": [
+          null,
+          9
+        ],
+        "status.endWal": [
+          null,
+          10
+        ],
+        "status.s3Credentials.accessKeyId.key": [
+          11,
+          12
+        ],
+        "status.s3Credentials.accessKeyId.name": [
+          2,
+          3
+        ],
+        "status.s3Credentials.secretAccessKey.key": [
+          11,
+          12
+        ],
+        "status.s3Credentials.secretAccessKey.name": [
+          2,
+          3
+        ],
+        "status.s3Credentials.accessKeyId.optional": [
+          13,
+          null
+        ],
+        "status.s3Credentials.secretAccessKey.optional": [
+          13,
+          null
+        ]
+      }
+    },
+    "v0.6.0": {
+      "descriptionChanged": [
+        "spec",
+        "status"
+      ],
+      "descriptions": {
+        "spec": [
+          14,
+          15
+        ],
+        "status": [
+          16,
+          17
+        ]
+      }
+    }
+  },
+  "texts": [
+    "The credentials to be used to upload data to S3",
+    "The credentials to use to upload data to S3",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "Name of the referent.",
+    "The starting xlog",
+    "The starting WAL",
+    "The backup command output",
+    "The backup command output in case of error",
+    "Unused. Retained for compatibility with old versions.",
+    "The ending xlog",
+    "The ending WAL",
+    "The key of the secret to select from.  Must be a valid secret key.",
+    "The key to select",
+    "Specify whether the Secret or its key must be defined",
+    "BackupSpec defines the desired state of Backup",
+    "Specification of the desired behavior of the backup. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "BackupStatus defines the observed state of Backup",
+    "Most recently observed status of the backup. This data may not be up to date. Populated by the system. Read-only. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status"
+  ]
+}

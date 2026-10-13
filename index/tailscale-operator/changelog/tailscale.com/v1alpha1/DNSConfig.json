@@ -1,0 +1,270 @@
+{
+  "versions": {
+    "v1.104.0": {
+      "added": {
+        "spec.nameserver.pod.imagePullSecrets": "object[]"
+      },
+      "descriptionChanged": [
+        "spec.nameserver.pod.tolerations.operator"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec.nameserver.pod.imagePullSecrets": [
+          null,
+          0
+        ],
+        "spec.nameserver.pod.tolerations.operator": [
+          1,
+          2
+        ],
+        "": [
+          3,
+          4
+        ]
+      }
+    },
+    "v1.98.0": {
+      "added": {
+        "spec.nameserver.pod.affinity": "object",
+        "spec.nameserver.pod.nodeSelector": "map[string]string"
+      },
+      "descriptions": {
+        "spec.nameserver.pod.affinity": [
+          null,
+          5
+        ],
+        "spec.nameserver.pod.nodeSelector": [
+          null,
+          6
+        ]
+      }
+    },
+    "v1.90.0": {
+      "added": {
+        "spec.nameserver.pod": "object",
+        "spec.nameserver.replicas": "integer"
+      },
+      "description": true,
+      "descriptions": {
+        "spec.nameserver.pod": [
+          null,
+          7
+        ],
+        "spec.nameserver.replicas": [
+          null,
+          8
+        ],
+        "": [
+          9,
+          3
+        ]
+      }
+    },
+    "v1.86.0": {
+      "added": {
+        "spec.nameserver.service": "object"
+      },
+      "descriptionChanged": [
+        "status.nameserver.ip"
+      ],
+      "descriptions": {
+        "spec.nameserver.service": [
+          null,
+          10
+        ],
+        "status.nameserver.ip": [
+          11,
+          12
+        ]
+      }
+    },
+    "v1.74.0": {
+      "descriptionChanged": [
+        "spec.nameserver.image",
+        "spec.nameserver.image.tag"
+      ],
+      "descriptions": {
+        "spec.nameserver.image": [
+          13,
+          14
+        ],
+        "spec.nameserver.image.tag": [
+          15,
+          16
+        ]
+      }
+    },
+    "v1.70.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.nameserver",
+        "status",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.status",
+        "status.conditions.type",
+        "status.nameserver.ip"
+      ],
+      "required": [
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          17,
+          18
+        ],
+        "kind": [
+          19,
+          20
+        ],
+        "spec": [
+          21,
+          22
+        ],
+        "spec.nameserver": [
+          23,
+          24
+        ],
+        "status": [
+          25,
+          26
+        ],
+        "status.conditions.lastTransitionTime": [
+          27,
+          28
+        ],
+        "status.conditions.message": [
+          29,
+          30
+        ],
+        "status.conditions.observedGeneration": [
+          31,
+          32
+        ],
+        "status.conditions.reason": [
+          33,
+          34
+        ],
+        "status.conditions.status": [
+          35,
+          36
+        ],
+        "status.conditions.type": [
+          37,
+          38
+        ],
+        "status.nameserver.ip": [
+          39,
+          11
+        ],
+        "": [
+          40,
+          9
+        ]
+      }
+    },
+    "v1.68.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.nameserver",
+        "spec.nameserver.image",
+        "spec.nameserver.image.repo",
+        "spec.nameserver.image.tag",
+        "status",
+        "status.nameserver",
+        "status.nameserver.ip"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec": [
+          null,
+          21
+        ],
+        "spec.nameserver": [
+          null,
+          23
+        ],
+        "spec.nameserver.image": [
+          null,
+          13
+        ],
+        "spec.nameserver.image.repo": [
+          null,
+          41
+        ],
+        "spec.nameserver.image.tag": [
+          null,
+          15
+        ],
+        "status": [
+          null,
+          25
+        ],
+        "status.nameserver": [
+          null,
+          42
+        ],
+        "status.nameserver.ip": [
+          null,
+          39
+        ],
+        "": [
+          null,
+          40
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Nameserver Pod's image pull Secrets.\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#PodSpec",
+    "Operator represents a key's relationship to the value.\nValid operators are Exists and Equal. Defaults to Equal.\nExists is equivalent to wildcard for value, so that a pod can\ntolerate all taints of a particular category.",
+    "Operator represents a key's relationship to the value.\nValid operators are Exists, Equal, Lt, and Gt. Defaults to Equal.\nExists is equivalent to wildcard for value, so that a pod can\ntolerate all taints of a particular category.\nLt and Gt perform numeric comparisons (requires feature gate TaintTolerationComparisonOperators).",
+    "DNSConfig can be deployed to cluster to make a subset of Tailscale MagicDNS\nnames resolvable by cluster workloads. Use this if: A) you need to refer to\ntailnet services, exposed to cluster via Tailscale Kubernetes operator egress\nproxies by the MagicDNS names of those tailnet services (usually because the\nservices run over HTTPS)\nB) you have exposed a cluster workload to the tailnet using Tailscale Ingress\nand you also want to refer to the workload from within the cluster over the\nIngress's MagicDNS name (usually because you have some callback component\nthat needs to use the same URL as that used by a non-cluster client on\ntailnet).\nWhen a DNSConfig is applied to a cluster, Tailscale Kubernetes operator will\ndeploy a nameserver for ts.net DNS names and automatically populate it with records\nfor any Tailscale egress or Ingress proxies deployed to that cluster.\nCurrently you must manually update your cluster DNS configuration to add the\nIP address of the deployed nameserver as a ts.net stub nameserver.\nInstructions for how to do it:\nhttps://kubernetes.io/docs/tasks/administer-cluster/dns-custom-nameservers/#configuration-of-stub-domain-and-upstream-nameserver-using-coredns (for CoreDNS),\nhttps://cloud.google.com/kubernetes-engine/docs/how-to/kube-dns (for kube-dns).\nTailscale Kubernetes operator will write the address of a Service fronting\nthe nameserver to dsnconfig.status.nameserver.ip.\nDNSConfig is a singleton - you must not create more than one.\nNB: if you want cluster workloads to be able to refer to Tailscale Ingress\nusing its MagicDNS name, you must also annotate the Ingress resource with\ntailscale.com/experimental-forward-cluster-traffic-via-ingress annotation to\nensure that the proxy created for the Ingress listens on its Pod IP address.",
+    "DNSConfig can be deployed to cluster to make a subset of Tailscale MagicDNS\nnames resolvable by cluster workloads. Use this if: A) you need to refer to\ntailnet services, exposed to cluster via Tailscale Kubernetes operator egress\nproxies by the MagicDNS names of those tailnet services (usually because the\nservices run over HTTPS)\nB) you have exposed a cluster workload to the tailnet using Tailscale Ingress\nand you also want to refer to the workload from within the cluster over the\nIngress's MagicDNS name (usually because you have some callback component\nthat needs to use the same URL as that used by a non-cluster client on\ntailnet).\nWhen a DNSConfig is applied to a cluster, Tailscale Kubernetes operator will\ndeploy a nameserver for ts.net DNS names and automatically populate it with records\nfor any Tailscale egress or Ingress proxies deployed to that cluster.\nCurrently you must manually update your cluster DNS configuration to add the\nIP address of the deployed nameserver as a ts.net stub nameserver.\nInstructions for how to do it:\nhttps://kubernetes.io/docs/tasks/administer-cluster/dns-custom-nameservers/#configuration-of-stub-domain-and-upstream-nameserver-using-coredns (for CoreDNS),\nhttps://cloud.google.com/kubernetes-engine/docs/how-to/kube-dns (for kube-dns).\nTailscale Kubernetes operator will write the address of a Service fronting\nthe nameserver to dsnconfig.status.nameserver.ip.\nDNSConfig is a singleton - you must not create more than one.\nNB: if you want cluster workloads to be able to refer to Tailscale Ingress\nusing its MagicDNS name, you must also annotate the Ingress resource with\ntailscale.com/experimental-forward-cluster-traffic-via-ingress annotation to\nensure that the proxy created for the Ingress is available via its Pod IP\naddress. The annotation installs rules that DNAT traffic sent to the proxy's\nPod IP to its Tailscale IP, and allows the Serve listener on that Tailscale IP\nto accept packets arriving through the Pod interface. Traffic accepted via this\npath does not traverse the Tailscale tunnel and is not affected by tailnet\nACLs. Restrict access using Kubernetes network policy.",
+    "If specified, applies affinity rules to the pods deployed by the DNSConfig resource.",
+    "If specified, applies node selector rules to the pods deployed by the DNSConfig resource.",
+    "Pod configuration.",
+    "Replicas specifies how many Pods to create. Defaults to 1.",
+    "DNSConfig can be deployed to cluster to make a subset of Tailscale MagicDNS\nnames resolvable by cluster workloads. Use this if: A) you need to refer to\ntailnet services, exposed to cluster via Tailscale Kubernetes operator egress\nproxies by the MagicDNS names of those tailnet services (usually because the\nservices run over HTTPS)\nB) you have exposed a cluster workload to the tailnet using Tailscale Ingress\nand you also want to refer to the workload from within the cluster over the\nIngress's MagicDNS name (usually because you have some callback component\nthat needs to use the same URL as that used by a non-cluster client on\ntailnet).\nWhen a DNSConfig is applied to a cluster, Tailscale Kubernetes operator will\ndeploy a nameserver for ts.net DNS names and automatically populate it with records\nfor any Tailscale egress or Ingress proxies deployed to that cluster.\nCurrently you must manually update your cluster DNS configuration to add the\nIP address of the deployed nameserver as a ts.net stub nameserver.\nInstructions for how to do it:\nhttps://kubernetes.io/docs/tasks/administer-cluster/dns-custom-nameservers/#configuration-of-stub-domain-and-upstream-nameserver-using-coredns (for CoreDNS),\nhttps://cloud.google.com/kubernetes-engine/docs/how-to/kube-dns (for kube-dns).\nTailscale Kubernetes operator will write the address of a Service fronting\nthe nameserver to dsnconfig.status.nameserver.ip.\nDNSConfig is a singleton - you must not create more than one.\nNB: if you want cluster workloads to be able to refer to Tailscale Ingress\nusing its MagicDNS name, you must also annotate the Ingress resource with\ntailscale.com/experimental-forward-cluster-traffic-via-ingress annotation to\nensure that the proxy created for the Ingress listens on its Pod IP address.\nNB: Clusters where Pods get assigned IPv6 addresses only are currently not supported.",
+    "Service configuration.",
+    "IP is the ClusterIP of the Service fronting the deployed ts.net nameserver.\nCurrently you must manually update your cluster DNS config to add\nthis address as a stub nameserver for ts.net for cluster workloads to be\nable to resolve MagicDNS names associated with egress or Ingress\nproxies.\nThe IP address will change if you delete and recreate the DNSConfig.",
+    "IP is the ClusterIP of the Service fronting the deployed ts.net nameserver.\nCurrently, you must manually update your cluster DNS config to add\nthis address as a stub nameserver for ts.net for cluster workloads to be\nable to resolve MagicDNS names associated with egress or Ingress\nproxies.\nThe IP address will change if you delete and recreate the DNSConfig.",
+    "Nameserver image.",
+    "Nameserver image. Defaults to tailscale/k8s-nameserver:unstable.",
+    "Tag defaults to operator's own tag.",
+    "Tag defaults to unstable.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Spec describes the desired DNS configuration. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "Spec describes the desired DNS configuration.\nMore info:\nhttps://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "Configuration for a nameserver that can resolve ts.net DNS names associated with in-cluster proxies for Tailscale egress Services and Tailscale Ingresses. The operator will always deploy this nameserver when a DNSConfig is applied.",
+    "Configuration for a nameserver that can resolve ts.net DNS names\nassociated with in-cluster proxies for Tailscale egress Services and\nTailscale Ingresses. The operator will always deploy this nameserver\nwhen a DNSConfig is applied.",
+    "Status describes the status of the DNSConfig. This is set and managed by the Tailscale operator.",
+    "Status describes the status of the DNSConfig. This is set\nand managed by the Tailscale operator.",
+    "LastTransitionTime is the timestamp corresponding to the last status change of this condition.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "Message is a human readable description of the details of the last transition, complementing reason.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "If set, this represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.condition[x].observedGeneration is 9, the condition is out of date with respect to the current state of the Connector.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "Reason is a brief machine readable explanation for the condition's last transition.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "Status of the condition, one of ('True', 'False', 'Unknown').",
+    "status of the condition, one of True, False, Unknown.",
+    "Type of the condition, known values are (`SubnetRouterReady`).",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "IP is the ClusterIP of the Service fronting the deployed ts.net nameserver. Currently you must manually update your cluster DNS config to add this address as a stub nameserver for ts.net for cluster workloads to be able to resolve MagicDNS names associated with egress or Ingress proxies. The IP address will change if you delete and recreate the DNSConfig.",
+    "DNSConfig can be deployed to cluster to make a subset of Tailscale MagicDNS names resolvable by cluster workloads. Use this if: A) you need to refer to tailnet services, exposed to cluster via Tailscale Kubernetes operator egress proxies by the MagicDNS names of those tailnet services (usually because the services run over HTTPS) B) you have exposed a cluster workload to the tailnet using Tailscale Ingress and you also want to refer to the workload from within the cluster over the Ingress's MagicDNS name (usually because you have some callback component that needs to use the same URL as that used by a non-cluster client on tailnet). When a DNSConfig is applied to a cluster, Tailscale Kubernetes operator will deploy a nameserver for ts.net DNS names and automatically populate it with records for any Tailscale egress or Ingress proxies deployed to that cluster. Currently you must manually update your cluster DNS configuration to add the IP address of the deployed nameserver as a ts.net stub nameserver. Instructions for how to do it: https://kubernetes.io/docs/tasks/administer-cluster/dns-custom-nameservers/#configuration-of-stub-domain-and-upstream-nameserver-using-coredns (for CoreDNS), https://cloud.google.com/kubernetes-engine/docs/how-to/kube-dns (for kube-dns). Tailscale Kubernetes operator will write the address of a Service fronting the nameserver to dsnconfig.status.nameserver.ip. DNSConfig is a singleton - you must not create more than one. NB: if you want cluster workloads to be able to refer to Tailscale Ingress using its MagicDNS name, you must also annotate the Ingress resource with tailscale.com/experimental-forward-cluster-traffic-via-ingress annotation to ensure that the proxy created for the Ingress listens on its Pod IP address. NB: Clusters where Pods get assigned IPv6 addresses only are currently not supported.",
+    "Repo defaults to tailscale/k8s-nameserver.",
+    "Nameserver describes the status of nameserver cluster resources."
+  ]
+}

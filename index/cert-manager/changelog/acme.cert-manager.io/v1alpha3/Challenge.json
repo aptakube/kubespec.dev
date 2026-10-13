@@ -1,0 +1,563 @@
+{
+  "versions": {
+    "v1.6.0": {
+      "descriptionChanged": [
+        "spec.solver.dns01.azuredns.environment",
+        "spec.solver.dns01.azuredns.hostedZoneName",
+        "spec.solver.dns01.azuredns.resourceGroupName",
+        "spec.solver.dns01.azuredns.subscriptionID",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector"
+      ],
+      "added": {
+        "spec.solver.dns01.azuredns.managedIdentity": "object"
+      },
+      "descriptions": {
+        "spec.solver.dns01.azuredns.environment": [
+          null,
+          0
+        ],
+        "spec.solver.dns01.azuredns.hostedZoneName": [
+          null,
+          1
+        ],
+        "spec.solver.dns01.azuredns.managedIdentity": [
+          null,
+          2
+        ],
+        "spec.solver.dns01.azuredns.resourceGroupName": [
+          null,
+          3
+        ],
+        "spec.solver.dns01.azuredns.subscriptionID": [
+          null,
+          4
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          5,
+          6
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          5,
+          6
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          5,
+          6
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          5,
+          6
+        ]
+      }
+    },
+    "v1.5.2": {
+      "descriptionChanged": [
+        "spec.solver.http01.gatewayHTTPRoute.serviceType",
+        "spec.solver.http01.ingress.serviceType"
+      ],
+      "descriptions": {
+        "spec.solver.http01.gatewayHTTPRoute.serviceType": [
+          7,
+          8
+        ],
+        "spec.solver.http01.ingress.serviceType": [
+          9,
+          8
+        ]
+      }
+    },
+    "v1.5.0": {
+      "added": {
+        "spec.solver.http01.gatewayHTTPRoute": "object"
+      },
+      "descriptionChanged": [
+        "spec.solver.http01.ingress.podTemplate",
+        "spec.solver.http01.ingress.serviceType"
+      ],
+      "descriptions": {
+        "spec.solver.http01.gatewayHTTPRoute": [
+          null,
+          10
+        ],
+        "spec.solver.http01.ingress.podTemplate": [
+          11,
+          12
+        ],
+        "spec.solver.http01.ingress.serviceType": [
+          13,
+          9
+        ]
+      }
+    },
+    "v1.4.0": {
+      "added": {
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": "object",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": "object",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": "object",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": "object"
+      },
+      "descriptionChanged": [
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces"
+      ],
+      "descriptions": {
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          14,
+          15
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          14,
+          15
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          14,
+          15
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          null,
+          5
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          14,
+          15
+        ]
+      }
+    },
+    "v1.0.0": {
+      "descriptionChanged": [
+        "spec.solver.http01.ingress.podTemplate.spec"
+      ],
+      "added": {
+        "spec.solver.http01.ingress.podTemplate.spec.priorityClassName": "string",
+        "spec.solver.http01.ingress.podTemplate.spec.serviceAccountName": "string"
+      },
+      "descriptions": {
+        "spec.solver.http01.ingress.podTemplate.spec": [
+          16,
+          17
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.priorityClassName": [
+          null,
+          18
+        ],
+        "spec.solver.http01.ingress.podTemplate.spec.serviceAccountName": [
+          null,
+          19
+        ]
+      }
+    },
+    "v0.16.0": {
+      "descriptionChanged": [
+        "spec.issuerRef.group",
+        "spec.issuerRef.kind",
+        "spec.issuerRef.name",
+        "spec.solver.dns01",
+        "spec.solver.dns01.acmedns",
+        "spec.solver.dns01.acmedns.accountSecretRef",
+        "spec.solver.dns01.acmedns.accountSecretRef.key",
+        "spec.solver.dns01.acmedns.accountSecretRef.name",
+        "spec.solver.dns01.akamai",
+        "spec.solver.dns01.akamai.accessTokenSecretRef",
+        "spec.solver.dns01.akamai.accessTokenSecretRef.key",
+        "spec.solver.dns01.akamai.accessTokenSecretRef.name",
+        "spec.solver.dns01.akamai.clientSecretSecretRef",
+        "spec.solver.dns01.akamai.clientSecretSecretRef.key",
+        "spec.solver.dns01.akamai.clientSecretSecretRef.name",
+        "spec.solver.dns01.akamai.clientTokenSecretRef",
+        "spec.solver.dns01.akamai.clientTokenSecretRef.key",
+        "spec.solver.dns01.akamai.clientTokenSecretRef.name",
+        "spec.solver.dns01.azuredns",
+        "spec.solver.dns01.azuredns.clientSecretSecretRef.key",
+        "spec.solver.dns01.azuredns.clientSecretSecretRef.name",
+        "spec.solver.dns01.clouddns",
+        "spec.solver.dns01.clouddns.serviceAccountSecretRef",
+        "spec.solver.dns01.clouddns.serviceAccountSecretRef.key",
+        "spec.solver.dns01.clouddns.serviceAccountSecretRef.name",
+        "spec.solver.dns01.cloudflare",
+        "spec.solver.dns01.cloudflare.apiKeySecretRef",
+        "spec.solver.dns01.cloudflare.apiKeySecretRef.key",
+        "spec.solver.dns01.cloudflare.apiKeySecretRef.name",
+        "spec.solver.dns01.cloudflare.apiTokenSecretRef",
+        "spec.solver.dns01.cloudflare.apiTokenSecretRef.key",
+        "spec.solver.dns01.cloudflare.apiTokenSecretRef.name",
+        "spec.solver.dns01.cloudflare.email",
+        "spec.solver.dns01.digitalocean",
+        "spec.solver.dns01.digitalocean.tokenSecretRef",
+        "spec.solver.dns01.digitalocean.tokenSecretRef.key",
+        "spec.solver.dns01.digitalocean.tokenSecretRef.name",
+        "spec.solver.dns01.rfc2136",
+        "spec.solver.dns01.rfc2136.tsigSecretSecretRef.key",
+        "spec.solver.dns01.rfc2136.tsigSecretSecretRef.name",
+        "spec.solver.dns01.route53",
+        "spec.solver.dns01.route53.secretAccessKeySecretRef.key",
+        "spec.solver.dns01.route53.secretAccessKeySecretRef.name",
+        "spec.solver.dns01.webhook",
+        "spec.solver.http01",
+        "spec.solver.selector",
+        "spec.type"
+      ],
+      "added": {
+        "spec.solver.dns01.clouddns.hostedZoneName": "string"
+      },
+      "optional": [
+        "spec.solver.dns01.cloudflare.email"
+      ],
+      "descriptions": {
+        "spec.issuerRef.group": [
+          null,
+          20
+        ],
+        "spec.issuerRef.kind": [
+          null,
+          21
+        ],
+        "spec.issuerRef.name": [
+          null,
+          22
+        ],
+        "spec.solver.dns01": [
+          null,
+          23
+        ],
+        "spec.solver.dns01.acmedns": [
+          24,
+          25
+        ],
+        "spec.solver.dns01.acmedns.accountSecretRef": [
+          null,
+          26
+        ],
+        "spec.solver.dns01.acmedns.accountSecretRef.key": [
+          27,
+          28
+        ],
+        "spec.solver.dns01.acmedns.accountSecretRef.name": [
+          29,
+          30
+        ],
+        "spec.solver.dns01.akamai": [
+          31,
+          32
+        ],
+        "spec.solver.dns01.akamai.accessTokenSecretRef": [
+          null,
+          26
+        ],
+        "spec.solver.dns01.akamai.accessTokenSecretRef.key": [
+          27,
+          28
+        ],
+        "spec.solver.dns01.akamai.accessTokenSecretRef.name": [
+          29,
+          30
+        ],
+        "spec.solver.dns01.akamai.clientSecretSecretRef": [
+          null,
+          26
+        ],
+        "spec.solver.dns01.akamai.clientSecretSecretRef.key": [
+          27,
+          28
+        ],
+        "spec.solver.dns01.akamai.clientSecretSecretRef.name": [
+          29,
+          30
+        ],
+        "spec.solver.dns01.akamai.clientTokenSecretRef": [
+          null,
+          26
+        ],
+        "spec.solver.dns01.akamai.clientTokenSecretRef.key": [
+          27,
+          28
+        ],
+        "spec.solver.dns01.akamai.clientTokenSecretRef.name": [
+          29,
+          30
+        ],
+        "spec.solver.dns01.azuredns": [
+          33,
+          34
+        ],
+        "spec.solver.dns01.azuredns.clientSecretSecretRef.key": [
+          27,
+          28
+        ],
+        "spec.solver.dns01.azuredns.clientSecretSecretRef.name": [
+          29,
+          30
+        ],
+        "spec.solver.dns01.clouddns": [
+          35,
+          36
+        ],
+        "spec.solver.dns01.clouddns.hostedZoneName": [
+          null,
+          37
+        ],
+        "spec.solver.dns01.clouddns.serviceAccountSecretRef": [
+          null,
+          26
+        ],
+        "spec.solver.dns01.clouddns.serviceAccountSecretRef.key": [
+          27,
+          28
+        ],
+        "spec.solver.dns01.clouddns.serviceAccountSecretRef.name": [
+          29,
+          30
+        ],
+        "spec.solver.dns01.cloudflare": [
+          38,
+          39
+        ],
+        "spec.solver.dns01.cloudflare.apiKeySecretRef": [
+          null,
+          40
+        ],
+        "spec.solver.dns01.cloudflare.apiKeySecretRef.key": [
+          27,
+          28
+        ],
+        "spec.solver.dns01.cloudflare.apiKeySecretRef.name": [
+          29,
+          30
+        ],
+        "spec.solver.dns01.cloudflare.apiTokenSecretRef": [
+          null,
+          41
+        ],
+        "spec.solver.dns01.cloudflare.apiTokenSecretRef.key": [
+          27,
+          28
+        ],
+        "spec.solver.dns01.cloudflare.apiTokenSecretRef.name": [
+          29,
+          30
+        ],
+        "spec.solver.dns01.cloudflare.email": [
+          null,
+          42
+        ],
+        "spec.solver.dns01.digitalocean": [
+          43,
+          44
+        ],
+        "spec.solver.dns01.digitalocean.tokenSecretRef": [
+          null,
+          26
+        ],
+        "spec.solver.dns01.digitalocean.tokenSecretRef.key": [
+          27,
+          28
+        ],
+        "spec.solver.dns01.digitalocean.tokenSecretRef.name": [
+          29,
+          30
+        ],
+        "spec.solver.dns01.rfc2136": [
+          45,
+          46
+        ],
+        "spec.solver.dns01.rfc2136.tsigSecretSecretRef.key": [
+          27,
+          28
+        ],
+        "spec.solver.dns01.rfc2136.tsigSecretSecretRef.name": [
+          29,
+          30
+        ],
+        "spec.solver.dns01.route53": [
+          47,
+          48
+        ],
+        "spec.solver.dns01.route53.secretAccessKeySecretRef.key": [
+          27,
+          28
+        ],
+        "spec.solver.dns01.route53.secretAccessKeySecretRef.name": [
+          29,
+          30
+        ],
+        "spec.solver.dns01.webhook": [
+          49,
+          50
+        ],
+        "spec.solver.http01": [
+          51,
+          52
+        ],
+        "spec.solver.selector": [
+          53,
+          54
+        ],
+        "spec.type": [
+          55,
+          56
+        ]
+      }
+    },
+    "v0.15.0": {
+      "descriptionChanged": [
+        "spec.dnsName",
+        "spec.key",
+        "spec.solver.dns01.azuredns.clientID",
+        "spec.solver.dns01.azuredns.clientSecretSecretRef",
+        "spec.solver.dns01.azuredns.tenantID",
+        "spec.solver.dns01.rfc2136.nameserver",
+        "spec.token",
+        "spec.type",
+        "spec.wildcard"
+      ],
+      "required": [
+        "spec.solver"
+      ],
+      "optional": [
+        "spec.solver.dns01.azuredns.clientID",
+        "spec.solver.dns01.azuredns.clientSecretSecretRef",
+        "spec.solver.dns01.azuredns.tenantID"
+      ],
+      "added": {
+        "spec.solver.http01.ingress.ingressTemplate": "object"
+      },
+      "descriptions": {
+        "spec.dnsName": [
+          57,
+          58
+        ],
+        "spec.key": [
+          59,
+          60
+        ],
+        "spec.solver": [
+          null,
+          61
+        ],
+        "spec.solver.dns01.azuredns.clientID": [
+          null,
+          62
+        ],
+        "spec.solver.dns01.azuredns.clientSecretSecretRef": [
+          null,
+          63
+        ],
+        "spec.solver.dns01.azuredns.tenantID": [
+          null,
+          64
+        ],
+        "spec.solver.dns01.rfc2136.nameserver": [
+          65,
+          66
+        ],
+        "spec.solver.http01.ingress.ingressTemplate": [
+          null,
+          67
+        ],
+        "spec.token": [
+          68,
+          69
+        ],
+        "spec.type": [
+          70,
+          55
+        ],
+        "spec.wildcard": [
+          71,
+          72
+        ]
+      }
+    }
+  },
+  "texts": [
+    "name of the Azure environment (default AzurePublicCloud)",
+    "name of the DNS zone that should be used",
+    "managed identity configuration, can not be used at the same time as clientID, clientSecretSecretRef or tenantID",
+    "resource group the DNS zone is located in",
+    "ID of the Azure subscription",
+    "A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces. This field is alpha-level and is only honored when PodAffinityNamespaceSelector feature is enabled.",
+    "A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces. This field is beta-level and is only honored when PodAffinityNamespaceSelector feature is enabled.",
+    "Optional service type for Kubernetes solver service. Supported values are NodePort or ClusterIP.",
+    "Optional service type for Kubernetes solver service. Supported values are NodePort or ClusterIP. If unset, defaults to NodePort.",
+    "Optional service type for Kubernetes solver service. Supported values are NodePort or ClusterIP (default).",
+    "The Gateway API is a sig-network community API that models service networking in Kubernetes (https://gateway-api.sigs.k8s.io/). The Gateway solver will create HTTPRoutes with the specified labels in the same namespace as the challenge. This solver is experimental, and fields / behaviour may change in the future.",
+    "Optional pod template used to configure the ACME challenge solver pods used for HTTP01 challenges",
+    "Optional pod template used to configure the ACME challenge solver pods used for HTTP01 challenges.",
+    "Optional service type for Kubernetes solver service",
+    "namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means \"this pod's namespace\"",
+    "namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means \"this pod's namespace\"",
+    "PodSpec defines overrides for the HTTP01 challenge solver pod. Only the 'nodeSelector', 'affinity' and 'tolerations' fields are supported currently. All other fields will be ignored.",
+    "PodSpec defines overrides for the HTTP01 challenge solver pod. Only the 'priorityClassName', 'nodeSelector', 'affinity', 'serviceAccountName' and 'tolerations' fields are supported currently. All other fields will be ignored.",
+    "If specified, the pod's priorityClassName.",
+    "If specified, the pod's service account",
+    "Group of the resource being referred to.",
+    "Kind of the resource being referred to.",
+    "Name of the resource being referred to.",
+    "Configures cert-manager to attempt to complete authorizations by performing the DNS01 challenge flow.",
+    "ACMEIssuerDNS01ProviderAcmeDNS is a structure containing the configuration for ACME-DNS servers",
+    "Use the 'ACME DNS' (https://github.com/joohoi/acme-dns) API to manage DNS01 challenge records.",
+    "A reference to a specific 'key' within a Secret resource. In some instances, `key` is a required field.",
+    "The key of the secret to select from. Must be a valid secret key.",
+    "The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required.",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "ACMEIssuerDNS01ProviderAkamai is a structure containing the DNS configuration for Akamai DNS—Zone Record Management API",
+    "Use the Akamai DNS zone management API to manage DNS01 challenge records.",
+    "ACMEIssuerDNS01ProviderAzureDNS is a structure containing the configuration for Azure DNS",
+    "Use the Microsoft Azure DNS API to manage DNS01 challenge records.",
+    "ACMEIssuerDNS01ProviderCloudDNS is a structure containing the DNS configuration for Google Cloud DNS",
+    "Use the Google Cloud DNS API to manage DNS01 challenge records.",
+    "HostedZoneName is an optional field that tells cert-manager in which Cloud DNS zone the challenge record has to be created. If left empty cert-manager will automatically choose a zone.",
+    "ACMEIssuerDNS01ProviderCloudflare is a structure containing the DNS configuration for Cloudflare",
+    "Use the Cloudflare API to manage DNS01 challenge records.",
+    "API key to use to authenticate with Cloudflare. Note: using an API token to authenticate is now the recommended method as it allows greater control of permissions.",
+    "API token used to authenticate with Cloudflare.",
+    "Email of the account, only required when using API key based authentication.",
+    "ACMEIssuerDNS01ProviderDigitalOcean is a structure containing the DNS configuration for DigitalOcean Domains",
+    "Use the DigitalOcean DNS API to manage DNS01 challenge records.",
+    "ACMEIssuerDNS01ProviderRFC2136 is a structure containing the configuration for RFC2136 DNS",
+    "Use RFC2136 (\"Dynamic Updates in the Domain Name System\") (https://datatracker.ietf.org/doc/rfc2136/) to manage DNS01 challenge records.",
+    "ACMEIssuerDNS01ProviderRoute53 is a structure containing the Route 53 configuration for AWS",
+    "Use the AWS Route53 API to manage DNS01 challenge records.",
+    "ACMEIssuerDNS01ProviderWebhook specifies configuration for a webhook DNS01 provider, including where to POST ChallengePayload resources.",
+    "Configure an external webhook based DNS01 challenge solver to manage DNS01 challenge records.",
+    "ACMEChallengeSolverHTTP01 contains configuration detailing how to solve HTTP01 challenges within a Kubernetes cluster. Typically this is accomplished through creating 'routes' of some description that configure ingress controllers to direct traffic to 'solver pods', which are responsible for responding to the ACME server's HTTP requests.",
+    "Configures cert-manager to attempt to complete authorizations by performing the HTTP01 challenge flow. It is not possible to obtain certificates for wildcard domain names (e.g. `*.example.com`) using the HTTP01 challenge mechanism.",
+    "Selector selects a set of DNSNames on the Certificate resource that should be solved using this challenge solver.",
+    "Selector selects a set of DNSNames on the Certificate resource that should be solved using this challenge solver. If not specified, the solver will be treated as the 'default' solver with the lowest priority, i.e. if any other solver has a more specific match, it will be used instead.",
+    "Type is the type of ACME challenge this resource represents, e.g. \"dns01\" or \"http01\".",
+    "Type is the type of ACME challenge this resource represents. One of \"http-01\" or \"dns-01\".",
+    "DNSName is the identifier that this challenge is for, e.g. example.com.",
+    "DNSName is the identifier that this challenge is for, e.g. example.com. If the requested DNSName is a 'wildcard', this field MUST be set to the non-wildcard domain, e.g. for `*.example.com`, it must be `example.com`.",
+    "Key is the ACME challenge key for this challenge",
+    "Key is the ACME challenge key for this challenge For HTTP01 challenges, this is the value that must be responded with to complete the HTTP01 challenge in the format: `<private key JWK thumbprint>.<key from acme server for challenge>`. For DNS01 challenges, this is the base64 encoded SHA256 sum of the `<private key JWK thumbprint>.<key from acme server for challenge>` text that must be set as the TXT record content.",
+    "Solver contains the domain solving configuration that should be used to solve this challenge resource.",
+    "if both this and ClientSecret are left unset MSI will be used",
+    "if both this and ClientID are left unset MSI will be used",
+    "when specifying ClientID and ClientSecret then this field is also needed",
+    "The IP address of the DNS supporting RFC2136. Required. Note: FQDN is not a valid value, only IP.",
+    "The IP address or hostname of an authoritative DNS server supporting RFC2136 in the form host:port. If the host is an IPv6 address it must be enclosed in square brackets (e.g [2001:db8::1]) ; port is optional. This field is required.",
+    "Optional ingress template used to configure the ACME challenge solver ingress used for HTTP01 challenges",
+    "Token is the ACME challenge token for this challenge.",
+    "Token is the ACME challenge token for this challenge. This is the raw value returned from the ACME server.",
+    "Type is the type of ACME challenge this resource represents, e.g. \"dns01\" or \"http01\"",
+    "Wildcard will be true if this challenge is for a wildcard identifier, for example '*.example.com'",
+    "Wildcard will be true if this challenge is for a wildcard identifier, for example '*.example.com'."
+  ]
+}

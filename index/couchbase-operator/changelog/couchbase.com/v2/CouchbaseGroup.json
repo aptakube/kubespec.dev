@@ -1,0 +1,206 @@
+{
+  "versions": {
+    "couchbase-operator-2.70.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.roles.bucket",
+        "spec.roles.buckets",
+        "spec.roles.buckets.resources",
+        "spec.roles.buckets.resources.kind",
+        "spec.roles.buckets.selector",
+        "spec.roles.buckets.selector.matchExpressions.operator",
+        "spec.roles.buckets.selector.matchExpressions.values",
+        "spec.roles.buckets.selector.matchLabels",
+        "spec.roles.collections",
+        "spec.roles.collections.resources",
+        "spec.roles.collections.resources.kind",
+        "spec.roles.collections.resources.name",
+        "spec.roles.collections.selector",
+        "spec.roles.collections.selector.matchExpressions.operator",
+        "spec.roles.collections.selector.matchExpressions.values",
+        "spec.roles.collections.selector.matchLabels",
+        "spec.roles.scopes",
+        "spec.roles.scopes.resources",
+        "spec.roles.scopes.resources.kind",
+        "spec.roles.scopes.resources.name",
+        "spec.roles.scopes.selector",
+        "spec.roles.scopes.selector.matchExpressions.operator",
+        "spec.roles.scopes.selector.matchExpressions.values",
+        "spec.roles.scopes.selector.matchLabels"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          0,
+          1
+        ],
+        "kind": [
+          2,
+          3
+        ],
+        "spec.roles.bucket": [
+          4,
+          5
+        ],
+        "spec.roles.buckets": [
+          6,
+          7
+        ],
+        "spec.roles.buckets.resources": [
+          8,
+          9
+        ],
+        "spec.roles.buckets.resources.kind": [
+          10,
+          11
+        ],
+        "spec.roles.buckets.selector": [
+          12,
+          13
+        ],
+        "spec.roles.buckets.selector.matchExpressions.operator": [
+          14,
+          15
+        ],
+        "spec.roles.buckets.selector.matchExpressions.values": [
+          16,
+          17
+        ],
+        "spec.roles.buckets.selector.matchLabels": [
+          18,
+          19
+        ],
+        "spec.roles.collections": [
+          20,
+          21
+        ],
+        "spec.roles.collections.resources": [
+          22,
+          23
+        ],
+        "spec.roles.collections.resources.kind": [
+          24,
+          25
+        ],
+        "spec.roles.collections.resources.name": [
+          26,
+          27
+        ],
+        "spec.roles.collections.selector": [
+          28,
+          29
+        ],
+        "spec.roles.collections.selector.matchExpressions.operator": [
+          14,
+          15
+        ],
+        "spec.roles.collections.selector.matchExpressions.values": [
+          16,
+          17
+        ],
+        "spec.roles.collections.selector.matchLabels": [
+          18,
+          19
+        ],
+        "spec.roles.scopes": [
+          30,
+          31
+        ],
+        "spec.roles.scopes.resources": [
+          32,
+          33
+        ],
+        "spec.roles.scopes.resources.kind": [
+          34,
+          35
+        ],
+        "spec.roles.scopes.resources.name": [
+          36,
+          37
+        ],
+        "spec.roles.scopes.selector": [
+          38,
+          39
+        ],
+        "spec.roles.scopes.selector.matchExpressions.operator": [
+          14,
+          15
+        ],
+        "spec.roles.scopes.selector.matchExpressions.values": [
+          16,
+          17
+        ],
+        "spec.roles.scopes.selector.matchLabels": [
+          18,
+          19
+        ]
+      }
+    },
+    "couchbase-operator-2.60.0": {
+      "descriptionChanged": [
+        "spec.roles.buckets.selector",
+        "spec.roles.collections.selector",
+        "spec.roles.scopes.selector"
+      ],
+      "descriptions": {
+        "spec.roles.buckets.selector": [
+          40,
+          12
+        ],
+        "spec.roles.collections.selector": [
+          41,
+          28
+        ],
+        "spec.roles.scopes.selector": [
+          42,
+          38
+        ]
+      }
+    }
+  },
+  "texts": [
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Bucket name for bucket admin roles.  When not specified for a role that can be scoped to a specific bucket, the role will apply to all buckets in the cluster. Deprecated:  Couchbase Autonomous Operator 2.3",
+    "Bucket name for bucket admin roles.  When not specified for a role that can be scoped\nto a specific bucket, the role will apply to all buckets in the cluster.\nDeprecated:  Couchbase Autonomous Operator 2.3",
+    "Bucket level access to apply to specified role. The bucket must exist.  When not specified, the bucket field will be checked. If both are empty and the role can be scoped to a specific bucket, the role will apply to all buckets in the cluster",
+    "Bucket level access to apply to specified role. The bucket must exist.  When not specified,\nthe bucket field will be checked. If both are empty and the role can be scoped to a specific bucket, the role\nwill apply to all buckets in the cluster",
+    "Resources is an explicit list of named bucket resources that will be considered for inclusion in this role.  If a resource reference doesn't match a resource, then no error conditions are raised due to undefined resource creation ordering and eventual consistency.",
+    "Resources is an explicit list of named bucket resources that will be considered\nfor inclusion in this role.  If a resource reference doesn't\nmatch a resource, then no error conditions are raised due to undefined\nresource creation ordering and eventual consistency.",
+    "Kind indicates the kind of resource that is being referenced.  A Role can only reference `CouchbaseBucket` kind.  This field defaults to `CouchbaseBucket` if not specified.",
+    "Kind indicates the kind of resource that is being referenced.  A Role\ncan only reference `CouchbaseBucket` kind.  This field defaults\nto `CouchbaseBucket` if not specified.",
+    "Selector allows resources to be implicitly considered for inclusion in this role.  More info: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/#labelselector-v1-meta",
+    "Selector allows resources to be implicitly considered for inclusion in this\nrole.  More info:\nhttps://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/#labelselector-v1-meta",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "Collection level access to apply to the specified role.  The collection must exist. When not specified, the role is subject to scope or bucket level access.",
+    "Collection level access to apply to the specified role.  The collection must exist.\nWhen not specified, the role is subject to scope or bucket level access.",
+    "Resources is an explicit list of named resources that will be considered for inclusion in this collection or collections.  If a resource reference doesn't match a resource, then no error conditions are raised due to undefined resource creation ordering and eventual consistency.",
+    "Resources is an explicit list of named resources that will be considered\nfor inclusion in this collection or collections.  If a resource reference doesn't\nmatch a resource, then no error conditions are raised due to undefined\nresource creation ordering and eventual consistency.",
+    "Kind indicates the kind of resource that is being referenced.  A scope can only reference `CouchbaseCollection` and `CouchbaseCollectionGroup` resource kinds.  This field defaults to `CouchbaseCollection` if not specified.",
+    "Kind indicates the kind of resource that is being referenced.  A scope\ncan only reference `CouchbaseCollection` and `CouchbaseCollectionGroup`\nresource kinds.  This field defaults to `CouchbaseCollection` if not\nspecified.",
+    "Name is the name of the Kubernetes resource name that is being referenced. Legal collection names have a maximum length of 251 characters and may be composed of any character from \"a-z\", \"A-Z\", \"0-9\" and \"_-%\".",
+    "Name is the name of the Kubernetes resource name that is being referenced.\nLegal collection names have a maximum length of 251\ncharacters and may be composed of any character from \"a-z\", \"A-Z\", \"0-9\" and \"_-%\".",
+    "Selector allows resources to be implicitly considered for inclusion in this collection or collections.  More info: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/#labelselector-v1-meta",
+    "Selector allows resources to be implicitly considered for inclusion in this\ncollection or collections.  More info:\nhttps://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/#labelselector-v1-meta",
+    "Scope level access to apply to specified role.  The scope must exist.  When not specified, the role will apply to selected bucket or all buckets in the cluster.",
+    "Scope level access to apply to specified role.  The scope must exist.  When not specified,\nthe role will apply to selected bucket or all buckets in the cluster.",
+    "Resources is an explicit list of named resources that will be considered for inclusion in this scope or scopes.  If a resource reference doesn't match a resource, then no error conditions are raised due to undefined resource creation ordering and eventual consistency.",
+    "Resources is an explicit list of named resources that will be considered\nfor inclusion in this scope or scopes.  If a resource reference doesn't\nmatch a resource, then no error conditions are raised due to undefined\nresource creation ordering and eventual consistency.",
+    "Kind indicates the kind of resource that is being referenced.  A scope can only reference `CouchbaseScope` and `CouchbaseScopeGroup` resource kinds.  This field defaults to `CouchbaseScope` if not specified.",
+    "Kind indicates the kind of resource that is being referenced.  A scope\ncan only reference `CouchbaseScope` and `CouchbaseScopeGroup`\nresource kinds.  This field defaults to `CouchbaseScope` if not\nspecified.",
+    "Name is the name of the Kubernetes resource name that is being referenced. Legal scope names have a maximum length of 251 characters and may be composed of any character from \"a-z\", \"A-Z\", \"0-9\" and \"_-%\".",
+    "Name is the name of the Kubernetes resource name that is being referenced.\nLegal scope names have a maximum length of 251\ncharacters and may be composed of any character from \"a-z\", \"A-Z\", \"0-9\" and \"_-%\".",
+    "Selector allows resources to be implicitly considered for inclusion in this scope or scopes.  More info: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/#labelselector-v1-meta",
+    "Selector allows resources to be implicitly considered for inclusion in this\nscope or scopes.  More info:\nhttps://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/#labelselector-v1-meta",
+    "Selector allows resources to be implicitly considered for inclusion in this role.  More info: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#labelselector-v1-meta",
+    "Selector allows resources to be implicitly considered for inclusion in this collection or collections.  More info: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#labelselector-v1-meta",
+    "Selector allows resources to be implicitly considered for inclusion in this scope or scopes.  More info: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#labelselector-v1-meta"
+  ]
+}

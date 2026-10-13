@@ -1,0 +1,308 @@
+{
+  "versions": {
+    "v1.96.0": {
+      "added": {
+        "spec.tailnet": "string"
+      },
+      "descriptions": {
+        "spec.tailnet": [
+          null,
+          0
+        ]
+      }
+    },
+    "v1.88.0": {
+      "descriptionChanged": [
+        "spec.hostname",
+        "status.hostname"
+      ],
+      "added": {
+        "spec.hostnamePrefix": "string",
+        "spec.replicas": "integer",
+        "status.devices": "object[]"
+      },
+      "descriptions": {
+        "spec.hostname": [
+          1,
+          2
+        ],
+        "spec.hostnamePrefix": [
+          null,
+          3
+        ],
+        "spec.replicas": [
+          null,
+          4
+        ],
+        "status.devices": [
+          null,
+          5
+        ],
+        "status.hostname": [
+          6,
+          7
+        ]
+      }
+    },
+    "v1.78.0": {
+      "added": {
+        "spec.appConnector": "object",
+        "status.isAppConnector": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.exitNode",
+        "spec.subnetRouter"
+      ],
+      "descriptions": {
+        "spec.appConnector": [
+          null,
+          8
+        ],
+        "spec.exitNode": [
+          9,
+          10
+        ],
+        "spec.subnetRouter": [
+          11,
+          12
+        ],
+        "status.isAppConnector": [
+          null,
+          13
+        ]
+      }
+    },
+    "v1.76.0": {
+      "descriptionChanged": [
+        "spec.tags"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec.tags": [
+          14,
+          15
+        ],
+        "": [
+          16,
+          17
+        ]
+      }
+    },
+    "v1.70.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.exitNode",
+        "spec.hostname",
+        "spec.proxyClass",
+        "spec.subnetRouter",
+        "spec.subnetRouter.advertiseRoutes",
+        "spec.tags",
+        "status",
+        "status.conditions",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.status",
+        "status.conditions.type",
+        "status.hostname",
+        "status.subnetRoutes",
+        "status.tailnetIPs"
+      ],
+      "required": [
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          18,
+          19
+        ],
+        "kind": [
+          20,
+          21
+        ],
+        "spec": [
+          22,
+          23
+        ],
+        "spec.exitNode": [
+          24,
+          9
+        ],
+        "spec.hostname": [
+          25,
+          1
+        ],
+        "spec.proxyClass": [
+          26,
+          27
+        ],
+        "spec.subnetRouter": [
+          28,
+          11
+        ],
+        "spec.subnetRouter.advertiseRoutes": [
+          29,
+          30
+        ],
+        "spec.tags": [
+          31,
+          14
+        ],
+        "status": [
+          32,
+          33
+        ],
+        "status.conditions": [
+          34,
+          35
+        ],
+        "status.conditions.lastTransitionTime": [
+          36,
+          37
+        ],
+        "status.conditions.message": [
+          38,
+          39
+        ],
+        "status.conditions.observedGeneration": [
+          40,
+          41
+        ],
+        "status.conditions.reason": [
+          42,
+          43
+        ],
+        "status.conditions.status": [
+          44,
+          45
+        ],
+        "status.conditions.type": [
+          46,
+          47
+        ],
+        "status.hostname": [
+          48,
+          6
+        ],
+        "status.subnetRoutes": [
+          49,
+          50
+        ],
+        "status.tailnetIPs": [
+          51,
+          52
+        ],
+        "": [
+          53,
+          16
+        ]
+      }
+    },
+    "v1.68.0": {
+      "added": {
+        "status.hostname": "string",
+        "status.tailnetIPs": "string[]"
+      },
+      "descriptions": {
+        "status.hostname": [
+          null,
+          48
+        ],
+        "status.tailnetIPs": [
+          null,
+          51
+        ]
+      }
+    },
+    "v1.66.0": {
+      "descriptionChanged": [
+        "spec"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec": [
+          54,
+          22
+        ],
+        "": [
+          null,
+          53
+        ]
+      }
+    },
+    "v1.60.0": {
+      "added": {
+        "spec.proxyClass": "string"
+      },
+      "descriptions": {
+        "spec.proxyClass": [
+          null,
+          26
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Tailnet specifies the tailnet this Connector should join. If blank, the default tailnet is used. When set, this\nname must match that of a valid Tailnet resource. This field is immutable and cannot be changed once set.",
+    "Hostname is the tailnet hostname that should be assigned to the\nConnector node. If unset, hostname defaults to <connector\nname>-connector. Hostname can contain lower case letters, numbers and\ndashes, it must not start or end with a dash and must be between 2\nand 63 characters long.",
+    "Hostname is the tailnet hostname that should be assigned to the\nConnector node. If unset, hostname defaults to <connector\nname>-connector. Hostname can contain lower case letters, numbers and\ndashes, it must not start or end with a dash and must be between 2\nand 63 characters long. This field should only be used when creating a connector\nwith an unspecified number of replicas, or a single replica.",
+    "HostnamePrefix specifies the hostname prefix for each\nreplica. Each device will have the integer number\nfrom its StatefulSet pod appended to this prefix to form the full hostname.\nHostnamePrefix can contain lower case letters, numbers and dashes, it\nmust not start with a dash and must be between 1 and 62 characters long.",
+    "Replicas specifies how many devices to create. Set this to enable\nhigh availability for app connectors, subnet routers, or exit nodes.\nhttps://tailscale.com/kb/1115/high-availability. Defaults to 1.",
+    "Devices contains information on each device managed by the Connector resource.",
+    "Hostname is the fully qualified domain name of the Connector node.\nIf MagicDNS is enabled in your tailnet, it is the MagicDNS name of the\nnode.",
+    "Hostname is the fully qualified domain name of the Connector node.\nIf MagicDNS is enabled in your tailnet, it is the MagicDNS name of the\nnode. When using multiple replicas, this field will be populated with the\nfirst replica's hostname. Use the Hostnames field for the full list\nof hostnames.",
+    "AppConnector defines whether the Connector device should act as a Tailscale app connector. A Connector that is\nconfigured as an app connector cannot be a subnet router or an exit node. If this field is unset, the\nConnector does not act as an app connector.\nNote that you will need to manually configure the permissions and the domains for the app connector via the\nAdmin panel.\nNote also that the main tested and supported use case of this config option is to deploy an app connector on\nKubernetes to access SaaS applications available on the public internet. Using the app connector to expose\ncluster workloads or other internal workloads to tailnet might work, but this is not a use case that we have\ntested or optimised for.\nIf you are using the app connector to access SaaS applications because you need a predictable egress IP that\ncan be whitelisted, it is also your responsibility to ensure that cluster traffic from the connector flows\nvia that predictable IP, for example by enforcing that cluster egress traffic is routed via an egress NAT\ndevice with a static IP address.\nhttps://tailscale.com/kb/1281/app-connectors",
+    "ExitNode defines whether the Connector node should act as a\nTailscale exit node. Defaults to false.\nhttps://tailscale.com/kb/1103/exit-nodes",
+    "ExitNode defines whether the Connector device should act as a Tailscale exit node. Defaults to false.\nThis field is mutually exclusive with the appConnector field.\nhttps://tailscale.com/kb/1103/exit-nodes",
+    "SubnetRouter defines subnet routes that the Connector node should\nexpose to tailnet. If unset, none are exposed.\nhttps://tailscale.com/kb/1019/subnets/",
+    "SubnetRouter defines subnet routes that the Connector device should\nexpose to tailnet as a Tailscale subnet router.\nhttps://tailscale.com/kb/1019/subnets/\nIf this field is unset, the device does not get configured as a Tailscale subnet router.\nThis field is mutually exclusive with the appConnector field.",
+    "IsAppConnector is set to true if the Connector acts as an app connector.",
+    "Tags that the Tailscale node will be tagged with.\nDefaults to [tag:k8s].\nTo autoapprove the subnet routes or exit node defined by a Connector,\nyou can configure Tailscale ACLs to give these tags the necessary\npermissions.\nSee https://tailscale.com/kb/1018/acls/#auto-approvers-for-routes-and-exit-nodes.\nIf you specify custom tags here, you must also make the operator an owner of these tags.\nSee  https://tailscale.com/kb/1236/kubernetes-operator/#setting-up-the-kubernetes-operator.\nTags cannot be changed once a Connector node has been created.\nTag values must be in form ^tag:[a-zA-Z][a-zA-Z0-9-]*$.",
+    "Tags that the Tailscale node will be tagged with.\nDefaults to [tag:k8s].\nTo autoapprove the subnet routes or exit node defined by a Connector,\nyou can configure Tailscale ACLs to give these tags the necessary\npermissions.\nSee https://tailscale.com/kb/1337/acl-syntax#autoapprovers.\nIf you specify custom tags here, you must also make the operator an owner of these tags.\nSee  https://tailscale.com/kb/1236/kubernetes-operator/#setting-up-the-kubernetes-operator.\nTags cannot be changed once a Connector node has been created.\nTag values must be in form ^tag:[a-zA-Z][a-zA-Z0-9-]*$.",
+    "Connector defines a Tailscale node that will be deployed in the cluster. The\nnode can be configured to act as a Tailscale subnet router and/or a Tailscale\nexit node.\nConnector is a cluster-scoped resource.\nMore info:\nhttps://tailscale.com/kb/1236/kubernetes-operator#deploying-exit-nodes-and-subnet-routers-on-kubernetes-using-connector-custom-resource",
+    "Connector defines a Tailscale node that will be deployed in the cluster. The\nnode can be configured to act as a Tailscale subnet router and/or a Tailscale\nexit node.\nConnector is a cluster-scoped resource.\nMore info:\nhttps://tailscale.com/kb/1441/kubernetes-operator-connector",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "ConnectorSpec describes the desired Tailscale component. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "ConnectorSpec describes the desired Tailscale component.\nMore info:\nhttps://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "ExitNode defines whether the Connector node should act as a Tailscale exit node. Defaults to false. https://tailscale.com/kb/1103/exit-nodes",
+    "Hostname is the tailnet hostname that should be assigned to the Connector node. If unset, hostname defaults to <connector name>-connector. Hostname can contain lower case letters, numbers and dashes, it must not start or end with a dash and must be between 2 and 63 characters long.",
+    "ProxyClass is the name of the ProxyClass custom resource that contains configuration options that should be applied to the resources created for this Connector. If unset, the operator will create resources with the default configuration.",
+    "ProxyClass is the name of the ProxyClass custom resource that\ncontains configuration options that should be applied to the\nresources created for this Connector. If unset, the operator will\ncreate resources with the default configuration.",
+    "SubnetRouter defines subnet routes that the Connector node should expose to tailnet. If unset, none are exposed. https://tailscale.com/kb/1019/subnets/",
+    "AdvertiseRoutes refer to CIDRs that the subnet router should make available. Route values must be strings that represent a valid IPv4 or IPv6 CIDR range. Values can be Tailscale 4via6 subnet routes. https://tailscale.com/kb/1201/4via6-subnets/",
+    "AdvertiseRoutes refer to CIDRs that the subnet router should make\navailable. Route values must be strings that represent a valid IPv4\nor IPv6 CIDR range. Values can be Tailscale 4via6 subnet routes.\nhttps://tailscale.com/kb/1201/4via6-subnets/",
+    "Tags that the Tailscale node will be tagged with. Defaults to [tag:k8s]. To autoapprove the subnet routes or exit node defined by a Connector, you can configure Tailscale ACLs to give these tags the necessary permissions. See https://tailscale.com/kb/1018/acls/#auto-approvers-for-routes-and-exit-nodes. If you specify custom tags here, you must also make the operator an owner of these tags. See  https://tailscale.com/kb/1236/kubernetes-operator/#setting-up-the-kubernetes-operator. Tags cannot be changed once a Connector node has been created. Tag values must be in form ^tag:[a-zA-Z][a-zA-Z0-9-]*$.",
+    "ConnectorStatus describes the status of the Connector. This is set and managed by the Tailscale operator.",
+    "ConnectorStatus describes the status of the Connector. This is set\nand managed by the Tailscale operator.",
+    "List of status conditions to indicate the status of the Connector. Known condition types are `ConnectorReady`.",
+    "List of status conditions to indicate the status of the Connector.\nKnown condition types are `ConnectorReady`.",
+    "LastTransitionTime is the timestamp corresponding to the last status change of this condition.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "Message is a human readable description of the details of the last transition, complementing reason.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "If set, this represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.condition[x].observedGeneration is 9, the condition is out of date with respect to the current state of the Connector.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "Reason is a brief machine readable explanation for the condition's last transition.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "Status of the condition, one of ('True', 'False', 'Unknown').",
+    "status of the condition, one of True, False, Unknown.",
+    "Type of the condition, known values are (`SubnetRouterReady`).",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "Hostname is the fully qualified domain name of the Connector node. If MagicDNS is enabled in your tailnet, it is the MagicDNS name of the node.",
+    "SubnetRoutes are the routes currently exposed to tailnet via this Connector instance.",
+    "SubnetRoutes are the routes currently exposed to tailnet via this\nConnector instance.",
+    "TailnetIPs is the set of tailnet IP addresses (both IPv4 and IPv6) assigned to the Connector node.",
+    "TailnetIPs is the set of tailnet IP addresses (both IPv4 and IPv6)\nassigned to the Connector node.",
+    "Connector defines a Tailscale node that will be deployed in the cluster. The node can be configured to act as a Tailscale subnet router and/or a Tailscale exit node. Connector is a cluster-scoped resource. More info: https://tailscale.com/kb/1236/kubernetes-operator#deploying-exit-nodes-and-subnet-routers-on-kubernetes-using-connector-custom-resource",
+    "ConnectorSpec describes the desired Tailscale component."
+  ]
+}

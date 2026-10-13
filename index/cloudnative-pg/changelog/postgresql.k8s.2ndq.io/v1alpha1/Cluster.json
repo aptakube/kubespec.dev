@@ -1,0 +1,208 @@
+{
+  "versions": {
+    "v0.4.0": {
+      "added": {
+        "spec.bootstrap": "object",
+        "spec.imagePullSecrets": "object[]",
+        "spec.superuserSecret": "object"
+      },
+      "typeChanged": {
+        "spec.storage.size": [
+          "int | string",
+          "string"
+        ]
+      },
+      "descriptionChanged": [
+        "status.danglingPVC"
+      ],
+      "removed": {
+        "spec.applicationConfiguration": "object"
+      },
+      "description": true,
+      "descriptions": {
+        "spec.bootstrap": [
+          null,
+          0
+        ],
+        "spec.imagePullSecrets": [
+          null,
+          1
+        ],
+        "spec.storage.size": [
+          null,
+          2
+        ],
+        "spec.superuserSecret": [
+          null,
+          3
+        ],
+        "status.danglingPVC": [
+          4,
+          5
+        ],
+        "spec.applicationConfiguration": [
+          6,
+          null
+        ],
+        "": [
+          7,
+          8
+        ]
+      }
+    },
+    "v0.3.0": {
+      "added": {
+        "spec.nodeMaintenanceWindow": "object"
+      },
+      "optional": [
+        "spec.postgresql",
+        "spec.postgresql.parameters",
+        "spec.postgresql.pg_hba"
+      ],
+      "typeChanged": {
+        "spec.postgresql.parameters": [
+          "string[]",
+          "map[string]string"
+        ]
+      },
+      "required": [
+        "spec.storage.size"
+      ],
+      "descriptionChanged": [
+        "spec.storage.storageClass"
+      ],
+      "removed": {
+        "spec.imagePullSecret": "string"
+      },
+      "descriptions": {
+        "spec.nodeMaintenanceWindow": [
+          null,
+          9
+        ],
+        "spec.postgresql": [
+          null,
+          10
+        ],
+        "spec.postgresql.parameters": [
+          null,
+          11
+        ],
+        "spec.postgresql.pg_hba": [
+          null,
+          12
+        ],
+        "spec.storage.size": [
+          null,
+          2
+        ],
+        "spec.storage.storageClass": [
+          13,
+          14
+        ],
+        "spec.imagePullSecret": [
+          15,
+          null
+        ]
+      }
+    },
+    "v0.2.0": {
+      "added": {
+        "spec.backup": "object"
+      },
+      "descriptions": {
+        "spec.backup": [
+          null,
+          16
+        ]
+      }
+    },
+    "v0.1.0": {
+      "added": {
+        "spec.primaryUpdateStrategy": "string",
+        "status.danglingPVC": "string[]"
+      },
+      "typeChanged": {
+        "spec.resources.limits": [
+          "map[string]string",
+          "map[string]int | string"
+        ],
+        "spec.resources.requests": [
+          "map[string]string",
+          "map[string]int | string"
+        ],
+        "spec.storage.pvcTemplate.resources.limits": [
+          "map[string]string",
+          "map[string]int | string"
+        ],
+        "spec.storage.pvcTemplate.resources.requests": [
+          "map[string]string",
+          "map[string]int | string"
+        ],
+        "spec.storage.size": [
+          "string",
+          "int | string"
+        ]
+      },
+      "removed": {
+        "status.imageName": "string"
+      },
+      "descriptions": {
+        "spec.primaryUpdateStrategy": [
+          null,
+          17
+        ],
+        "spec.resources.limits": [
+          null,
+          18
+        ],
+        "spec.resources.requests": [
+          null,
+          19
+        ],
+        "spec.storage.pvcTemplate.resources.limits": [
+          null,
+          18
+        ],
+        "spec.storage.pvcTemplate.resources.requests": [
+          null,
+          19
+        ],
+        "spec.storage.size": [
+          null,
+          2
+        ],
+        "status.danglingPVC": [
+          null,
+          4
+        ],
+        "status.imageName": [
+          20,
+          null
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Instructions to bootstrap this cluster",
+    "The list of pull secrets to be used to pull the images",
+    "Size of the storage. Required if not already specified in the PVC template.",
+    "The secret containing the superuser password, if empty a new secret will be created with a randomly generated password",
+    "List of all the PVCs created by this bdrGroup and still available which are not attached to a Pod",
+    "List of all the PVCs created by this cluster and still available which are not attached to a Pod",
+    "Configuration from the application point of view",
+    "Cluster is the Schema for the postgresqls API",
+    "Cluster is the Schema for the postgresql API",
+    "Define a maintenance window for the Kubernetes nodes",
+    "Configuration of the PostgreSQL server",
+    "PostgreSQL configuration options (postgresql.conf)",
+    "PostgreSQL Host Based Authentication rules (lines to be appended to the pg_hba.conf file)",
+    "StorageClass to use for database data (PGDATA). Applied after evaluating the PVC template, if available.",
+    "StorageClass to use for database data (PGDATA). Applied after evaluating the PVC template, if available. If not specified, generated PVCs will be satisfied by the default storage class",
+    "Secret for pulling the image. If empty no secret will be used",
+    "The configuration to be used for backups",
+    "Strategy to follow to upgrade the primary server during a rolling update procedure, after all replicas have been successfully updated: it can be automated (`unsupervised` - default) or manual (`supervised`)",
+    "Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/",
+    "Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/",
+    "Name of the image used"
+  ]
+}

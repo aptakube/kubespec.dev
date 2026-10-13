@@ -1,0 +1,137 @@
+{
+  "versions": {
+    "1.18.0": {
+      "added": {
+        "spec.bgpInstances.localPort": "integer"
+      },
+      "descriptions": {
+        "spec.bgpInstances.localPort": [
+          null,
+          0
+        ]
+      }
+    },
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.bgpInstances",
+        "spec.bgpInstances.localASN",
+        "spec.bgpInstances.name",
+        "spec.bgpInstances.peers.peerASN",
+        "spec.bgpInstances.peers.peerAddress",
+        "spec.bgpInstances.peers.peerConfigRef",
+        "spec.bgpInstances.peers.peerConfigRef.group",
+        "spec.bgpInstances.peers.peerConfigRef.kind",
+        "spec.bgpInstances.peers.peerConfigRef.name",
+        "spec.nodeSelector",
+        "spec.nodeSelector.matchExpressions.operator",
+        "spec.nodeSelector.matchExpressions.values",
+        "spec.nodeSelector.matchLabels"
+      ],
+      "added": {
+        "status": "object"
+      },
+      "descriptions": {
+        "apiVersion": [
+          1,
+          2
+        ],
+        "kind": [
+          3,
+          4
+        ],
+        "spec.bgpInstances": [
+          5,
+          6
+        ],
+        "spec.bgpInstances.localASN": [
+          7,
+          8
+        ],
+        "spec.bgpInstances.name": [
+          9,
+          10
+        ],
+        "spec.bgpInstances.peers.peerASN": [
+          11,
+          12
+        ],
+        "spec.bgpInstances.peers.peerAddress": [
+          13,
+          14
+        ],
+        "spec.bgpInstances.peers.peerConfigRef": [
+          15,
+          16
+        ],
+        "spec.bgpInstances.peers.peerConfigRef.group": [
+          17,
+          18
+        ],
+        "spec.bgpInstances.peers.peerConfigRef.kind": [
+          19,
+          20
+        ],
+        "spec.bgpInstances.peers.peerConfigRef.name": [
+          21,
+          22
+        ],
+        "spec.nodeSelector": [
+          23,
+          24
+        ],
+        "spec.nodeSelector.matchExpressions.operator": [
+          25,
+          26
+        ],
+        "spec.nodeSelector.matchExpressions.values": [
+          27,
+          28
+        ],
+        "spec.nodeSelector.matchLabels": [
+          29,
+          30
+        ],
+        "status": [
+          null,
+          31
+        ]
+      }
+    }
+  },
+  "texts": [
+    "LocalPort is the port on which the BGP daemon listens for incoming connections.\n\nIf not specified, BGP instance will not listen for incoming connections.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "A list of CiliumBGPInstance(s) which instructs the BGP control plane how to instantiate virtual BGP routers.",
+    "A list of CiliumBGPInstance(s) which instructs\nthe BGP control plane how to instantiate virtual BGP routers.",
+    "LocalASN is the ASN of this BGP instance. Supports extended 32bit ASNs.",
+    "LocalASN is the ASN of this BGP instance.\nSupports extended 32bit ASNs.",
+    "Name is the name of the BGP instance. It is a unique identifier for the BGP instance within the cluster configuration.",
+    "Name is the name of the BGP instance. It is a unique identifier for the BGP instance\nwithin the cluster configuration.",
+    "PeerASN is the ASN of the peer BGP router. Supports extended 32bit ASNs.",
+    "PeerASN is the ASN of the peer BGP router.\nSupports extended 32bit ASNs.\n\nIf peerASN is 0, the BGP OPEN message validation of ASN will be disabled and\nASN will be determined based on peer's OPEN message.",
+    "PeerAddress is the IP address of the neighbor. Supports IPv4 and IPv6 addresses.",
+    "PeerAddress is the IP address of the neighbor.\nSupports IPv4 and IPv6 addresses.",
+    "PeerConfigRef is a reference to a peer configuration resource. If not specified, the default BGP configuration is used for this peer.",
+    "PeerConfigRef is a reference to a peer configuration resource.\nIf not specified, the default BGP configuration is used for this peer.",
+    "Group is the group of the peer config resource. If not specified, the default of \"cilium.io\" is used.",
+    "Group is the group of the peer config resource.\nIf not specified, the default of \"cilium.io\" is used.",
+    "Kind is the kind of the peer config resource. If not specified, the default of \"CiliumBGPPeerConfig\" is used.",
+    "Kind is the kind of the peer config resource.\nIf not specified, the default of \"CiliumBGPPeerConfig\" is used.",
+    "Name is the name of the peer config resource. Name refers to the name of a Kubernetes object (typically a CiliumBGPPeerConfig).",
+    "Name is the name of the peer config resource.\nName refers to the name of a Kubernetes object (typically a CiliumBGPPeerConfig).",
+    "NodeSelector selects a group of nodes where this BGP Cluster config applies. If empty / nil this config applies to all nodes.",
+    "NodeSelector selects a group of nodes where this BGP Cluster\nconfig applies.\nIf empty / nil this config applies to all nodes.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "Status is a running status of the cluster configuration"
+  ]
+}

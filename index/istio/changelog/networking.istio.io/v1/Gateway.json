@@ -1,0 +1,109 @@
+{
+  "versions": {
+    "1.31.0": {
+      "added": {
+        "spec.servers.tls.insecureSkipVerify": "boolean"
+      },
+      "descriptions": {
+        "spec.servers.tls.insecureSkipVerify": [
+          null,
+          0
+        ]
+      }
+    },
+    "1.28.0": {
+      "added": {
+        "spec.servers.tls.caCertCredentialName": "string"
+      },
+      "descriptions": {
+        "spec.servers.tls.caCertCredentialName": [
+          null,
+          1
+        ]
+      }
+    },
+    "1.27.0": {
+      "descriptionChanged": [
+        "spec.servers.tls.tlsCertificates",
+        "spec.servers.tls.tlsCertificates.caCertificates"
+      ],
+      "descriptions": {
+        "spec.servers.tls.tlsCertificates": [
+          2,
+          3
+        ],
+        "spec.servers.tls.tlsCertificates.caCertificates": [
+          4,
+          null
+        ]
+      }
+    },
+    "1.26.0": {
+      "added": {
+        "spec.servers.tls.credentialNames": "string[]",
+        "spec.servers.tls.tlsCertificates": "object[]"
+      },
+      "descriptions": {
+        "spec.servers.tls.credentialNames": [
+          null,
+          5
+        ],
+        "spec.servers.tls.tlsCertificates": [
+          null,
+          2
+        ]
+      }
+    },
+    "1.25.0": {
+      "added": {
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "status.conditions.observedGeneration": [
+          null,
+          6
+        ],
+        "status.observedGeneration": [
+          7,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "status.conditions": [
+          null,
+          8
+        ],
+        "status.observedGeneration": [
+          null,
+          7
+        ],
+        "status.validationMessages": [
+          null,
+          9
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Optional: If set to true, the proxy will try to validate the certificate, but even if the validation fails, it will allow the connection through.",
+    "For mutual TLS, the name of the secret or the configmap that holds CA certificates.",
+    "Only one of `server_certificate`, `private_key`, `ca_certificates` or `credential_name` or `credential_names` or `tls_certificates` should be specified.",
+    "Only one of `server_certificate`, `private_key` or `credential_name` or `credential_names` or `tls_certificates` should be specified.",
+    "REQUIRED if mode is `MUTUAL` or `OPTIONAL_MUTUAL`.",
+    "Same as CredentialName but for multiple certificates.",
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers."
+  ]
+}

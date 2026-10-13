@@ -1,0 +1,594 @@
+{
+  "versions": {
+    "v1.10.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.minReadySeconds",
+        "spec.replicas",
+        "spec.template.metadata",
+        "spec.template.metadata.labels",
+        "spec.template.spec",
+        "status",
+        "status.availableReplicas",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason",
+        "status.readyReplicas",
+        "status.unavailableReplicas"
+      ],
+      "descriptions": {
+        "spec": [
+          0,
+          1
+        ],
+        "spec.minReadySeconds": [
+          2,
+          3
+        ],
+        "spec.replicas": [
+          4,
+          5
+        ],
+        "spec.template.metadata": [
+          6,
+          7
+        ],
+        "spec.template.metadata.labels": [
+          8,
+          9
+        ],
+        "spec.template.spec": [
+          10,
+          11
+        ],
+        "status": [
+          12,
+          13
+        ],
+        "status.availableReplicas": [
+          14,
+          15
+        ],
+        "status.conditions.lastTransitionTime": [
+          16,
+          17
+        ],
+        "status.conditions.message": [
+          18,
+          19
+        ],
+        "status.conditions.reason": [
+          20,
+          21
+        ],
+        "status.readyReplicas": [
+          22,
+          23
+        ],
+        "status.unavailableReplicas": [
+          24,
+          25
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.clusterName",
+        "spec.failureDomains",
+        "spec.providerIDList",
+        "spec.template",
+        "spec.template.metadata.annotations",
+        "spec.template.spec.bootstrap",
+        "spec.template.spec.bootstrap.configRef",
+        "spec.template.spec.bootstrap.configRef.fieldPath",
+        "spec.template.spec.bootstrap.dataSecretName",
+        "spec.template.spec.clusterName",
+        "spec.template.spec.failureDomain",
+        "spec.template.spec.infrastructureRef",
+        "spec.template.spec.infrastructureRef.fieldPath",
+        "spec.template.spec.nodeDrainTimeout",
+        "spec.template.spec.providerID",
+        "spec.template.spec.version",
+        "status.bootstrapReady",
+        "status.conditions",
+        "status.conditions.severity",
+        "status.conditions.status",
+        "status.conditions.type",
+        "status.failureMessage",
+        "status.failureReason",
+        "status.infrastructureReady",
+        "status.nodeRefs",
+        "status.nodeRefs.fieldPath",
+        "status.observedGeneration",
+        "status.phase",
+        "status.replicas"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec.clusterName": [
+          26,
+          27
+        ],
+        "spec.failureDomains": [
+          28,
+          29
+        ],
+        "spec.providerIDList": [
+          30,
+          31
+        ],
+        "spec.template": [
+          32,
+          33
+        ],
+        "spec.template.metadata.annotations": [
+          34,
+          35
+        ],
+        "spec.template.spec.bootstrap": [
+          36,
+          37
+        ],
+        "spec.template.spec.bootstrap.configRef": [
+          38,
+          39
+        ],
+        "spec.template.spec.bootstrap.configRef.fieldPath": [
+          40,
+          41
+        ],
+        "spec.template.spec.bootstrap.dataSecretName": [
+          42,
+          43
+        ],
+        "spec.template.spec.clusterName": [
+          26,
+          27
+        ],
+        "spec.template.spec.failureDomain": [
+          44,
+          45
+        ],
+        "spec.template.spec.infrastructureRef": [
+          46,
+          47
+        ],
+        "spec.template.spec.infrastructureRef.fieldPath": [
+          40,
+          41
+        ],
+        "spec.template.spec.nodeDrainTimeout": [
+          48,
+          49
+        ],
+        "spec.template.spec.providerID": [
+          50,
+          51
+        ],
+        "spec.template.spec.version": [
+          52,
+          53
+        ],
+        "status.bootstrapReady": [
+          54,
+          55
+        ],
+        "status.conditions": [
+          56,
+          57
+        ],
+        "status.conditions.severity": [
+          58,
+          59
+        ],
+        "status.conditions.status": [
+          60,
+          61
+        ],
+        "status.conditions.type": [
+          62,
+          63
+        ],
+        "status.failureMessage": [
+          64,
+          65
+        ],
+        "status.failureReason": [
+          66,
+          67
+        ],
+        "status.infrastructureReady": [
+          68,
+          69
+        ],
+        "status.nodeRefs": [
+          70,
+          71
+        ],
+        "status.nodeRefs.fieldPath": [
+          40,
+          41
+        ],
+        "status.observedGeneration": [
+          72,
+          73
+        ],
+        "status.phase": [
+          74,
+          75
+        ],
+        "status.replicas": [
+          76,
+          77
+        ],
+        "": [
+          78,
+          79
+        ]
+      }
+    },
+    "v1.7.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.minReadySeconds",
+        "spec.providerIDList",
+        "spec.replicas",
+        "spec.template.metadata",
+        "spec.template.metadata.annotations",
+        "spec.template.metadata.labels",
+        "spec.template.spec",
+        "spec.template.spec.bootstrap",
+        "spec.template.spec.bootstrap.configRef",
+        "spec.template.spec.bootstrap.configRef.fieldPath",
+        "spec.template.spec.bootstrap.configRef.kind",
+        "spec.template.spec.bootstrap.configRef.name",
+        "spec.template.spec.bootstrap.configRef.namespace",
+        "spec.template.spec.bootstrap.configRef.resourceVersion",
+        "spec.template.spec.bootstrap.configRef.uid",
+        "spec.template.spec.bootstrap.dataSecretName",
+        "spec.template.spec.failureDomain",
+        "spec.template.spec.infrastructureRef",
+        "spec.template.spec.infrastructureRef.fieldPath",
+        "spec.template.spec.infrastructureRef.kind",
+        "spec.template.spec.infrastructureRef.name",
+        "spec.template.spec.infrastructureRef.namespace",
+        "spec.template.spec.infrastructureRef.resourceVersion",
+        "spec.template.spec.infrastructureRef.uid",
+        "spec.template.spec.nodeDrainTimeout",
+        "spec.template.spec.providerID",
+        "spec.template.spec.version",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason",
+        "status.conditions.severity",
+        "status.conditions.type",
+        "status.failureMessage",
+        "status.failureReason",
+        "status.nodeRefs.fieldPath",
+        "status.nodeRefs.kind",
+        "status.nodeRefs.name",
+        "status.nodeRefs.namespace",
+        "status.nodeRefs.resourceVersion",
+        "status.nodeRefs.uid",
+        "status.phase",
+        "status.unavailableReplicas"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          80,
+          81
+        ],
+        "kind": [
+          82,
+          83
+        ],
+        "spec.minReadySeconds": [
+          84,
+          2
+        ],
+        "spec.providerIDList": [
+          85,
+          30
+        ],
+        "spec.replicas": [
+          86,
+          4
+        ],
+        "spec.template.metadata": [
+          87,
+          6
+        ],
+        "spec.template.metadata.annotations": [
+          88,
+          34
+        ],
+        "spec.template.metadata.labels": [
+          89,
+          8
+        ],
+        "spec.template.spec": [
+          90,
+          10
+        ],
+        "spec.template.spec.bootstrap": [
+          91,
+          36
+        ],
+        "spec.template.spec.bootstrap.configRef": [
+          92,
+          38
+        ],
+        "spec.template.spec.bootstrap.configRef.fieldPath": [
+          93,
+          40
+        ],
+        "spec.template.spec.bootstrap.configRef.kind": [
+          94,
+          95
+        ],
+        "spec.template.spec.bootstrap.configRef.name": [
+          96,
+          97
+        ],
+        "spec.template.spec.bootstrap.configRef.namespace": [
+          98,
+          99
+        ],
+        "spec.template.spec.bootstrap.configRef.resourceVersion": [
+          100,
+          101
+        ],
+        "spec.template.spec.bootstrap.configRef.uid": [
+          102,
+          103
+        ],
+        "spec.template.spec.bootstrap.dataSecretName": [
+          104,
+          42
+        ],
+        "spec.template.spec.failureDomain": [
+          105,
+          44
+        ],
+        "spec.template.spec.infrastructureRef": [
+          106,
+          46
+        ],
+        "spec.template.spec.infrastructureRef.fieldPath": [
+          93,
+          40
+        ],
+        "spec.template.spec.infrastructureRef.kind": [
+          94,
+          95
+        ],
+        "spec.template.spec.infrastructureRef.name": [
+          96,
+          97
+        ],
+        "spec.template.spec.infrastructureRef.namespace": [
+          98,
+          99
+        ],
+        "spec.template.spec.infrastructureRef.resourceVersion": [
+          100,
+          101
+        ],
+        "spec.template.spec.infrastructureRef.uid": [
+          102,
+          103
+        ],
+        "spec.template.spec.nodeDrainTimeout": [
+          107,
+          48
+        ],
+        "spec.template.spec.providerID": [
+          108,
+          50
+        ],
+        "spec.template.spec.version": [
+          109,
+          52
+        ],
+        "status.conditions.lastTransitionTime": [
+          110,
+          16
+        ],
+        "status.conditions.message": [
+          111,
+          18
+        ],
+        "status.conditions.reason": [
+          112,
+          20
+        ],
+        "status.conditions.severity": [
+          113,
+          58
+        ],
+        "status.conditions.type": [
+          114,
+          62
+        ],
+        "status.failureMessage": [
+          115,
+          64
+        ],
+        "status.failureReason": [
+          116,
+          66
+        ],
+        "status.nodeRefs.fieldPath": [
+          93,
+          40
+        ],
+        "status.nodeRefs.kind": [
+          94,
+          95
+        ],
+        "status.nodeRefs.name": [
+          96,
+          97
+        ],
+        "status.nodeRefs.namespace": [
+          98,
+          99
+        ],
+        "status.nodeRefs.resourceVersion": [
+          100,
+          101
+        ],
+        "status.nodeRefs.uid": [
+          102,
+          103
+        ],
+        "status.phase": [
+          117,
+          74
+        ],
+        "status.unavailableReplicas": [
+          118,
+          24
+        ],
+        "": [
+          119,
+          78
+        ]
+      }
+    },
+    "v1.4.0": {
+      "description": true,
+      "descriptions": {
+        "": [
+          120,
+          119
+        ]
+      }
+    }
+  },
+  "texts": [
+    "MachinePoolSpec defines the desired state of MachinePool.",
+    "spec is the desired state of MachinePool.",
+    "Minimum number of seconds for which a newly created machine instances should\nbe ready.\nDefaults to 0 (machine instance will be considered available as soon as it\nis ready)",
+    "minReadySeconds is the minimum number of seconds for which a newly created machine instances should\nbe ready.\nDefaults to 0 (machine instance will be considered available as soon as it\nis ready)",
+    "Number of desired machines. Defaults to 1.\nThis is a pointer to distinguish between explicit zero and not specified.",
+    "replicas is the number of desired machines. Defaults to 1.\nThis is a pointer to distinguish between explicit zero and not specified.",
+    "Standard object's metadata.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "metadata is the standard object's metadata.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "Map of string keys and values that can be used to organize and categorize\n(scope and select) objects. May match selectors of replication controllers\nand services.\nMore info: http://kubernetes.io/docs/user-guide/labels",
+    "labels is a map of string keys and values that can be used to organize and categorize\n(scope and select) objects. May match selectors of replication controllers\nand services.\nMore info: http://kubernetes.io/docs/user-guide/labels",
+    "Specification of the desired behavior of the machine.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "spec is the specification of the desired behavior of the machine.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "MachinePoolStatus defines the observed state of MachinePool.",
+    "status is the observed state of MachinePool.",
+    "The number of available replicas (ready for at least minReadySeconds) for this MachinePool.",
+    "availableReplicas is the number of available replicas (ready for at least minReadySeconds) for this MachinePool.",
+    "Last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed. If that is not known, then using the time when\nthe API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed. If that is not known, then using the time when\nthe API field changed is acceptable.",
+    "A human readable message indicating details about the transition.\nThis field may be empty.",
+    "message is a human readable message indicating details about the transition.\nThis field may be empty.",
+    "The reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may not be empty.",
+    "reason is the reason for the condition's last transition in CamelCase.\nThe specific API may choose whether or not this field is considered a guaranteed API.\nThis field may not be empty.",
+    "The number of ready replicas for this MachinePool. A machine is considered ready when the node has been created and is \"Ready\".",
+    "readyReplicas is the number of ready replicas for this MachinePool. A machine is considered ready when the node has been created and is \"Ready\".",
+    "Total number of unavailable machine instances targeted by this machine pool.\nThis is the total number of machine instances that are still required for\nthe machine pool to have 100% available capacity. They may either\nbe machine instances that are running but not yet available or machine instances\nthat still have not been created.",
+    "unavailableReplicas is the total number of unavailable machine instances targeted by this machine pool.\nThis is the total number of machine instances that are still required for\nthe machine pool to have 100% available capacity. They may either\nbe machine instances that are running but not yet available or machine instances\nthat still have not been created.",
+    "ClusterName is the name of the Cluster this object belongs to.",
+    "clusterName is the name of the Cluster this object belongs to.",
+    "FailureDomains is the list of failure domains this MachinePool should be attached to.",
+    "failureDomains is the list of failure domains this MachinePool should be attached to.",
+    "ProviderIDList are the identification IDs of machine instances provided by the provider.\nThis field must match the provider IDs as seen on the node objects corresponding to a machine pool's machine instances.",
+    "providerIDList are the identification IDs of machine instances provided by the provider.\nThis field must match the provider IDs as seen on the node objects corresponding to a machine pool's machine instances.",
+    "Template describes the machines that will be created.",
+    "template describes the machines that will be created.",
+    "Annotations is an unstructured key value map stored with a resource that may be\nset by external tools to store and retrieve arbitrary metadata. They are not\nqueryable and should be preserved when modifying objects.\nMore info: http://kubernetes.io/docs/user-guide/annotations",
+    "annotations is an unstructured key value map stored with a resource that may be\nset by external tools to store and retrieve arbitrary metadata. They are not\nqueryable and should be preserved when modifying objects.\nMore info: http://kubernetes.io/docs/user-guide/annotations",
+    "Bootstrap is a reference to a local struct which encapsulates\nfields to configure the Machine’s bootstrapping mechanism.",
+    "bootstrap is a reference to a local struct which encapsulates\nfields to configure the Machine’s bootstrapping mechanism.",
+    "ConfigRef is a reference to a bootstrap provider-specific resource\nthat holds configuration details. The reference is optional to\nallow users/operators to specify Bootstrap.DataSecretName without\nthe need of a controller.",
+    "configRef is a reference to a bootstrap provider-specific resource\nthat holds configuration details. The reference is optional to\nallow users/operators to specify Bootstrap.DataSecretName without\nthe need of a controller.",
+    "If referring to a piece of an object instead of an entire object, this string\nshould contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2].\nFor example, if the object reference is to a container within a pod, this would take on a value like:\n\"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered\nthe event) or if no container name is specified \"spec.containers[2]\" (container with\nindex 2 in this pod). This syntax is chosen only to have some well-defined way of\nreferencing a part of an object.\nTODO: this design is not final and this field is subject to change in the future.",
+    "If referring to a piece of an object instead of an entire object, this string\nshould contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2].\nFor example, if the object reference is to a container within a pod, this would take on a value like:\n\"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered\nthe event) or if no container name is specified \"spec.containers[2]\" (container with\nindex 2 in this pod). This syntax is chosen only to have some well-defined way of\nreferencing a part of an object.",
+    "DataSecretName is the name of the secret that stores the bootstrap data script.\nIf nil, the Machine should remain in the Pending state.",
+    "dataSecretName is the name of the secret that stores the bootstrap data script.\nIf nil, the Machine should remain in the Pending state.",
+    "FailureDomain is the failure domain the machine will be created in.\nMust match a key in the FailureDomains map stored on the cluster object.",
+    "failureDomain is the failure domain the machine will be created in.\nMust match a key in the FailureDomains map stored on the cluster object.",
+    "InfrastructureRef is a required reference to a custom resource\noffered by an infrastructure provider.",
+    "infrastructureRef is a required reference to a custom resource\noffered by an infrastructure provider.",
+    "NodeDrainTimeout is the total amount of time that the controller will spend on draining a node.\nThe default value is 0, meaning that the node can be drained without any time limitations.\nNOTE: NodeDrainTimeout is different from `kubectl drain --timeout`",
+    "nodeDrainTimeout is the total amount of time that the controller will spend on draining a node.\nThe default value is 0, meaning that the node can be drained without any time limitations.\nNOTE: NodeDrainTimeout is different from `kubectl drain --timeout`",
+    "ProviderID is the identification ID of the machine provided by the provider.\nThis field must match the provider ID as seen on the node object corresponding to this machine.\nThis field is required by higher level consumers of cluster-api. Example use case is cluster autoscaler\nwith cluster-api as provider. Clean-up logic in the autoscaler compares machines to nodes to find out\nmachines at provider which could not get registered as Kubernetes nodes. With cluster-api as a\ngeneric out-of-tree provider for autoscaler, this field is required by autoscaler to be\nable to have a provider view of the list of machines. Another list of nodes is queried from the k8s apiserver\nand then a comparison is done to find out unregistered machines and are marked for delete.\nThis field will be set by the actuators and consumed by higher level entities like autoscaler that will\nbe interfacing with cluster-api as generic provider.",
+    "providerID is the identification ID of the machine provided by the provider.\nThis field must match the provider ID as seen on the node object corresponding to this machine.\nThis field is required by higher level consumers of cluster-api. Example use case is cluster autoscaler\nwith cluster-api as provider. Clean-up logic in the autoscaler compares machines to nodes to find out\nmachines at provider which could not get registered as Kubernetes nodes. With cluster-api as a\ngeneric out-of-tree provider for autoscaler, this field is required by autoscaler to be\nable to have a provider view of the list of machines. Another list of nodes is queried from the k8s apiserver\nand then a comparison is done to find out unregistered machines and are marked for delete.\nThis field will be set by the actuators and consumed by higher level entities like autoscaler that will\nbe interfacing with cluster-api as generic provider.",
+    "Version defines the desired Kubernetes version.\nThis field is meant to be optionally used by bootstrap providers.",
+    "version defines the desired Kubernetes version.\nThis field is meant to be optionally used by bootstrap providers.",
+    "BootstrapReady is the state of the bootstrap provider.",
+    "bootstrapReady is the state of the bootstrap provider.",
+    "Conditions define the current service state of the MachinePool.",
+    "conditions define the current service state of the MachinePool.",
+    "Severity provides an explicit classification of Reason code, so the users or machines can immediately\nunderstand the current situation and act accordingly.\nThe Severity field MUST be set only when Status=False.",
+    "severity provides an explicit classification of Reason code, so the users or machines can immediately\nunderstand the current situation and act accordingly.\nThe Severity field MUST be set only when Status=False.",
+    "Status of the condition, one of True, False, Unknown.",
+    "status of the condition, one of True, False, Unknown.",
+    "Type of condition in CamelCase or in foo.example.com/CamelCase.\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions\ncan be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions\ncan be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "FailureMessage indicates that there is a problem reconciling the state,\nand will be set to a descriptive error message.",
+    "failureMessage indicates that there is a problem reconciling the state,\nand will be set to a descriptive error message.",
+    "FailureReason indicates that there is a problem reconciling the state, and\nwill be set to a token value suitable for programmatic interpretation.",
+    "failureReason indicates that there is a problem reconciling the state, and\nwill be set to a token value suitable for programmatic interpretation.",
+    "InfrastructureReady is the state of the infrastructure provider.",
+    "infrastructureReady is the state of the infrastructure provider.",
+    "NodeRefs will point to the corresponding Nodes if it they exist.",
+    "nodeRefs will point to the corresponding Nodes if it they exist.",
+    "ObservedGeneration is the latest generation observed by the controller.",
+    "observedGeneration is the latest generation observed by the controller.",
+    "Phase represents the current phase of cluster actuation.\nE.g. Pending, Running, Terminating, Failed etc.",
+    "phase represents the current phase of cluster actuation.\nE.g. Pending, Running, Terminating, Failed etc.",
+    "Replicas is the most recently observed number of replicas.",
+    "replicas is the most recently observed number of replicas.",
+    "MachinePool is the Schema for the machinepools API.\n\n\nDeprecated: This type will be removed in one of the next releases.",
+    "MachinePool is the Schema for the machinepools API.\n\nDeprecated: This type will be removed in one of the next releases.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Minimum number of seconds for which a newly created machine instances should be ready. Defaults to 0 (machine instance will be considered available as soon as it is ready)",
+    "ProviderIDList are the identification IDs of machine instances provided by the provider. This field must match the provider IDs as seen on the node objects corresponding to a machine pool's machine instances.",
+    "Number of desired machines. Defaults to 1. This is a pointer to distinguish between explicit zero and not specified.",
+    "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels",
+    "Specification of the desired behavior of the machine. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "Bootstrap is a reference to a local struct which encapsulates fields to configure the Machine’s bootstrapping mechanism.",
+    "ConfigRef is a reference to a bootstrap provider-specific resource that holds configuration details. The reference is optional to allow users/operators to specify Bootstrap.DataSecretName without the need of a controller.",
+    "If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future.",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind of the referent.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Name of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
+    "Namespace of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
+    "Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "Specific resourceVersion to which this reference is made, if any.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids",
+    "UID of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids",
+    "DataSecretName is the name of the secret that stores the bootstrap data script. If nil, the Machine should remain in the Pending state.",
+    "FailureDomain is the failure domain the machine will be created in. Must match a key in the FailureDomains map stored on the cluster object.",
+    "InfrastructureRef is a required reference to a custom resource offered by an infrastructure provider.",
+    "NodeDrainTimeout is the total amount of time that the controller will spend on draining a node. The default value is 0, meaning that the node can be drained without any time limitations. NOTE: NodeDrainTimeout is different from `kubectl drain --timeout`",
+    "ProviderID is the identification ID of the machine provided by the provider. This field must match the provider ID as seen on the node object corresponding to this machine. This field is required by higher level consumers of cluster-api. Example use case is cluster autoscaler with cluster-api as provider. Clean-up logic in the autoscaler compares machines to nodes to find out machines at provider which could not get registered as Kubernetes nodes. With cluster-api as a generic out-of-tree provider for autoscaler, this field is required by autoscaler to be able to have a provider view of the list of machines. Another list of nodes is queried from the k8s apiserver and then a comparison is done to find out unregistered machines and are marked for delete. This field will be set by the actuators and consumed by higher level entities like autoscaler that will be interfacing with cluster-api as generic provider.",
+    "Version defines the desired Kubernetes version. This field is meant to be optionally used by bootstrap providers.",
+    "Last time the condition transitioned from one status to another. This should be when the underlying condition changed. If that is not known, then using the time when the API field changed is acceptable.",
+    "A human readable message indicating details about the transition. This field may be empty.",
+    "The reason for the condition's last transition in CamelCase. The specific API may choose whether or not this field is considered a guaranteed API. This field may not be empty.",
+    "Severity provides an explicit classification of Reason code, so the users or machines can immediately understand the current situation and act accordingly. The Severity field MUST be set only when Status=False.",
+    "Type of condition in CamelCase or in foo.example.com/CamelCase. Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important.",
+    "FailureMessage indicates that there is a problem reconciling the state, and will be set to a descriptive error message.",
+    "FailureReason indicates that there is a problem reconciling the state, and will be set to a token value suitable for programmatic interpretation.",
+    "Phase represents the current phase of cluster actuation. E.g. Pending, Running, Terminating, Failed etc.",
+    "Total number of unavailable machine instances targeted by this machine pool. This is the total number of machine instances that are still required for the machine pool to have 100% available capacity. They may either be machine instances that are running but not yet available or machine instances that still have not been created.",
+    "MachinePool is the Schema for the machinepools API. \n Deprecated: This type will be removed in one of the next releases.",
+    "MachinePool is the Schema for the machinepools API."
+  ]
+}

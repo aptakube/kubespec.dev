@@ -1,0 +1,68 @@
+{
+  "versions": {
+    "1.17.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.defaults",
+        "spec.nodeSelector",
+        "spec.nodeSelector.matchExpressions.operator",
+        "spec.nodeSelector.matchExpressions.values",
+        "spec.nodeSelector.matchLabels"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          0,
+          1
+        ],
+        "kind": [
+          2,
+          3
+        ],
+        "spec.defaults": [
+          4,
+          5
+        ],
+        "spec.nodeSelector": [
+          6,
+          7
+        ],
+        "spec.nodeSelector.matchExpressions.operator": [
+          8,
+          9
+        ],
+        "spec.nodeSelector.matchExpressions.values": [
+          10,
+          11
+        ],
+        "spec.nodeSelector.matchLabels": [
+          12,
+          13
+        ],
+        "": [
+          14,
+          15
+        ]
+      }
+    }
+  },
+  "texts": [
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Defaults is treated the same as the cilium-config ConfigMap - a set of key-value pairs parsed by the agent and operator processes. Each key must be a valid config-map data field (i.e. a-z, A-Z, -, _, and .)",
+    "Defaults is treated the same as the cilium-config ConfigMap - a set\nof key-value pairs parsed by the agent and operator processes.\nEach key must be a valid config-map data field (i.e. a-z, A-Z, -, _, and .)",
+    "NodeSelector is a label selector that determines to which nodes this configuration applies. If not supplied, then this config applies to no nodes. If empty, then it applies to all nodes.",
+    "NodeSelector is a label selector that determines to which nodes\nthis configuration applies.\nIf not supplied, then this config applies to no nodes. If\nempty, then it applies to all nodes.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "CiliumNodeConfig is a list of configuration key-value pairs. It is applied to nodes indicated by a label selector. \n If multiple overrides apply to the same node, they will be ordered by name with later Overrides overwriting any conflicting keys.",
+    "CiliumNodeConfig is a list of configuration key-value pairs. It is applied to\nnodes indicated by a label selector.\n\nIf multiple overrides apply to the same node, they will be ordered by name\nwith later Overrides overwriting any conflicting keys."
+  ]
+}

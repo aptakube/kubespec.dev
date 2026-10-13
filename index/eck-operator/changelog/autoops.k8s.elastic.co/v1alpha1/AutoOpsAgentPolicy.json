@@ -1,0 +1,140 @@
+{
+  "versions": {
+    "v3.5.0": {
+      "added": {
+        "spec.config": "object",
+        "spec.configRef": "object",
+        "spec.podTemplate.spec.schedulingGroup": "object",
+        "spec.resources": "object",
+        "status.conditions": "object[]"
+      },
+      "descriptionChanged": [
+        "spec.podTemplate",
+        "spec.podTemplate.spec.containers.securityContext.procMount",
+        "spec.podTemplate.spec.ephemeralContainers.securityContext.procMount",
+        "spec.podTemplate.spec.hostUsers",
+        "spec.podTemplate.spec.initContainers.securityContext.procMount",
+        "spec.podTemplate.spec.resourceClaims.resourceClaimTemplateName",
+        "spec.podTemplate.spec.volumes.image",
+        "spec.podTemplate.spec.volumes.portworxVolume"
+      ],
+      "removed": {
+        "spec.podTemplate.spec.workloadRef": "object"
+      },
+      "descriptions": {
+        "spec.config": [
+          null,
+          0
+        ],
+        "spec.configRef": [
+          null,
+          1
+        ],
+        "spec.podTemplate": [
+          2,
+          3
+        ],
+        "spec.podTemplate.spec.containers.securityContext.procMount": [
+          4,
+          5
+        ],
+        "spec.podTemplate.spec.ephemeralContainers.securityContext.procMount": [
+          4,
+          5
+        ],
+        "spec.podTemplate.spec.hostUsers": [
+          6,
+          7
+        ],
+        "spec.podTemplate.spec.initContainers.securityContext.procMount": [
+          4,
+          5
+        ],
+        "spec.podTemplate.spec.resourceClaims.resourceClaimTemplateName": [
+          8,
+          9
+        ],
+        "spec.podTemplate.spec.schedulingGroup": [
+          null,
+          10
+        ],
+        "spec.podTemplate.spec.volumes.image": [
+          11,
+          12
+        ],
+        "spec.podTemplate.spec.volumes.portworxVolume": [
+          13,
+          14
+        ],
+        "spec.resources": [
+          null,
+          15
+        ],
+        "status.conditions": [
+          null,
+          16
+        ],
+        "spec.podTemplate.spec.workloadRef": [
+          17,
+          null
+        ]
+      }
+    },
+    "v3.4.0": {
+      "added": {
+        "status.details": "map[string]object",
+        "status.readyCount": "string",
+        "status.skipped": "integer"
+      },
+      "descriptions": {
+        "status.details": [
+          null,
+          18
+        ],
+        "status.readyCount": [
+          null,
+          19
+        ],
+        "status.skipped": [
+          null,
+          20
+        ]
+      }
+    },
+    "v3.3.1": {
+      "added": {
+        "spec.namespaceSelector": "object"
+      },
+      "descriptions": {
+        "spec.namespaceSelector": [
+          null,
+          21
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Config holds additional OpenTelemetry collector configuration for the AutoOps agent.\nUser-supplied settings are merged between the operator baseline defaults and the\noperator-owned mandatory settings, which always take final precedence. This allows\ntuning knobs such as the sending_queue sizing, appending custom metricbeat modules,\nor defining additional exporters and pipelines. Supplying at least one autoops_es\nmodule replaces the operator's built-in modules entirely, giving full control over\nwhich metricsets are collected and at what period. Elasticsearch connection details\n(hosts, SSL), OTLP endpoint and authorization, and the healthcheck extension are\nalways injected by the operator and cannot be overridden.\nAt most one of [`config`, `configRef`] can be specified.",
+    "ConfigRef references a Kubernetes Secret holding the AutoOps agent configuration\nunder the `autoops_es.yml` key. Applies the same merge semantics as `config`.\nAt most one of [`config`, `configRef`] can be specified.",
+    "PodTemplate provides customisation options (labels, annotations, affinity rules, resource requests, and so on) for the Agent pods",
+    "PodTemplate provides customization options (labels, annotations, affinity rules, resource requests, and so on) for the Agent pods",
+    "procMount denotes the type of proc mount to use for the containers.\nThe default value is Default which uses the container runtime defaults for\nreadonly paths and masked paths.\nThis requires the ProcMountType feature flag to be enabled.\nNote that this field cannot be set when spec.os.name is windows.",
+    "procMount denotes the type of proc mount to use for the containers.\nThe default value is Default which uses the container runtime defaults for\nreadonly paths and masked paths.\nNote that this field cannot be set when spec.os.name is windows.",
+    "Use the host's user namespace.\nOptional: Default to true.\nIf set to true or not present, the pod will be run in the host user namespace, useful\nfor when the pod needs a feature only available to the host user namespace, such as\nloading a kernel module with CAP_SYS_MODULE.\nWhen set to false, a new userns is created for the pod. Setting false is useful for\nmitigating container breakout vulnerabilities even allowing users to run their\ncontainers as root without actually having root privileges on the host.\nThis field is alpha-level and is only honored by servers that enable the UserNamespacesSupport feature.",
+    "Use the host's user namespace.\nOptional: Default to true.\nIf set to true or not present, the pod will be run in the host user namespace, useful\nfor when the pod needs a feature only available to the host user namespace, such as\nloading a kernel module with CAP_SYS_MODULE.\nWhen set to false, a new userns is created for the pod. Setting false is useful for\nmitigating container breakout vulnerabilities even allowing users to run their\ncontainers as root without actually having root privileges on the host.",
+    "ResourceClaimTemplateName is the name of a ResourceClaimTemplate\nobject in the same namespace as this pod.\n\nThe template will be used to create a new ResourceClaim, which will\nbe bound to this pod. When this pod is deleted, the ResourceClaim\nwill also be deleted. The pod name and resource name, along with a\ngenerated component, will be used to form a unique name for the\nResourceClaim, which will be recorded in pod.status.resourceClaimStatuses.\n\nThis field is immutable and no changes will be made to the\ncorresponding ResourceClaim by the control plane after creating the\nResourceClaim.\n\nExactly one of ResourceClaimName and ResourceClaimTemplateName must\nbe set.",
+    "ResourceClaimTemplateName is the name of a ResourceClaimTemplate\nobject in the same namespace as this pod.\n\nThe template will be used to create a new ResourceClaim, which will\nbe bound to this pod. When this pod is deleted, the ResourceClaim\nwill also be deleted. The pod name and resource name, along with a\ngenerated component, will be used to form a unique name for the\nResourceClaim, which will be recorded in pod.status.resourceClaimStatuses.\n\nWhen the DRAWorkloadResourceClaims feature gate is enabled and the pod\nbelongs to a PodGroup that defines a PodGroupResourceClaim with the same\nName and ResourceClaimTemplateName, this PodResourceClaim resolves to the\nResourceClaim generated for the PodGroup. All pods in the group that\ndefine an equivalent PodResourceClaim matching the\nPodGroupResourceClaim's Name and ResourceClaimTemplateName share the same\ngenerated ResourceClaim. ResourceClaims generated for a PodGroup are\nowned by the PodGroup and their lifecycles are tied to the PodGroup\ninstead of any individual pod.\n\nThis field is immutable and no changes will be made to the\ncorresponding ResourceClaim by the control plane after creating the\nResourceClaim.\n\nExactly one of ResourceClaimName and ResourceClaimTemplateName must\nbe set.",
+    "SchedulingGroup provides a reference to the immediate scheduling runtime\ngrouping object that this Pod belongs to.\nThis field is used by the scheduler to identify the group and apply the\ncorrect group scheduling policies. The association with a group also\nimpacts other lifecycle aspects of a Pod that are relevant in a wider context\nof scheduling like preemption, resource attachment, etc. If not specified,\nthe Pod is treated as a single unit in all of these aspects.\nThe group object referenced by this field may not exist at the time the\nPod is created.\nThis field is immutable, but a group object with the same name may be\nrecreated with different policies. Doing this during pod scheduling\nmay result in the placement not conforming to the expected policies.",
+    "image represents an OCI object (a container image or artifact) pulled and mounted on the kubelet's host machine.\nThe volume is resolved at pod startup depending on which PullPolicy value is provided:\n\n- Always: the kubelet always attempts to pull the reference. Container creation will fail If the pull fails.\n- Never: the kubelet never pulls the reference and only uses a local image or artifact. Container creation will fail if the reference isn't present.\n- IfNotPresent: the kubelet pulls if the reference isn't already present on disk. Container creation will fail if the reference isn't present and the pull fails.\n\nThe volume gets re-resolved if the pod gets deleted and recreated, which means that new remote content will become available on pod recreation.\nA failure to resolve or pull the image during pod startup will block containers from starting and may add significant latency. Failures will be retried using normal volume backoff and will be reported on the pod reason and message.\nThe types of objects that may be mounted by this volume are defined by the container runtime implementation on a host machine and at minimum must include all valid types supported by the container image field.\nThe OCI object gets mounted in a single directory (spec.containers[*].volumeMounts.mountPath) by merging the manifest layers in the same way as for container images.\nThe volume will be mounted read-only (ro) and non-executable files (noexec).\nSub path mounts for containers are not supported (spec.containers[*].volumeMounts.subpath) before 1.33.\nThe field spec.securityContext.fsGroupChangePolicy has no effect on this volume type.",
+    "image represents an OCI object (a container image or artifact) pulled and mounted on the kubelet's host machine.\nThe volume is resolved at pod startup depending on which PullPolicy value is provided:\n\n- Always: the kubelet always attempts to pull the reference. Container creation will fail If the pull fails.\n- Never: the kubelet never pulls the reference and only uses a local image or artifact. Container creation will fail if the reference isn't present.\n- IfNotPresent: the kubelet pulls if the reference isn't already present on disk. Container creation will fail if the reference isn't present and the pull fails.\n\nThe volume gets re-resolved if the pod gets deleted and recreated, which means that new remote content will become available on pod recreation.\nA failure to resolve or pull the image during pod startup will block containers from starting and may add significant latency. Failures will be retried using normal volume backoff and will be reported on the pod reason and message.\nThe types of objects that may be mounted by this volume are defined by the container runtime implementation on a host machine and at minimum must include all valid types supported by the container image field.\nThe OCI object gets mounted in a single directory (spec.containers[*].volumeMounts.mountPath) by merging the manifest layers in the same way as for container images.\nThe volume will be mounted read-only (ro).\nSub path mounts for containers are not supported (spec.containers[*].volumeMounts.subpath) before 1.33.\nThe field spec.securityContext.fsGroupChangePolicy has no effect on this volume type.",
+    "portworxVolume represents a portworx volume attached and mounted on kubelets host machine.\nDeprecated: PortworxVolume is deprecated. All operations for the in-tree portworxVolume type\nare redirected to the pxd.portworx.com CSI driver when the CSIMigrationPortworx feature-gate\nis on.",
+    "portworxVolume represents a portworx volume attached and mounted on kubelets host machine.\nDeprecated: PortworxVolume is deprecated. All operations for the in-tree portworxVolume type\nare redirected to the pxd.portworx.com CSI driver.",
+    "Resources provides a shorthand to set CPU and Memory resources on the AutoOps Agent container.\nWhen set, these values override any CPU or memory resource settings specified in the PodTemplate for\nthe primary AutoOps Agent container. To set resources on other containers, use the PodTemplate.",
+    "Conditions holds the current service state of the deployment.",
+    "WorkloadRef provides a reference to the Workload object that this Pod belongs to.\nThis field is used by the scheduler to identify the PodGroup and apply the\ncorrect group scheduling policies. The Workload object referenced\nby this field may not exist at the time the Pod is created.\nThis field is immutable, but a Workload object with the same name\nmay be recreated with different policies. Doing this during pod scheduling\nmay result in the placement not conforming to the expected policies.",
+    "Details contains lightweight per-resource details.",
+    "ReadyCount is a human readable string of ready monitored resources vs all monitored resources, Ready/Resources.",
+    "Skipped is the number of resources that are skipped from monitoring due to rbac permissions.",
+    "NamespaceSelector is a namespace selector for the resources to be configured.\nAny Elasticsearch instances that belong to the selected namespaces will be configured to send data to AutoOps."
+  ]
+}

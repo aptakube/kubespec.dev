@@ -1,0 +1,44 @@
+{
+  "versions": {
+    "v2.9.2": {
+      "descriptionChanged": [
+        "status.url"
+      ],
+      "descriptions": {
+        "status.url": [
+          0,
+          1
+        ]
+      }
+    },
+    "v2.7.0": {
+      "required": [
+        "status.artifact.digest"
+      ],
+      "descriptions": {
+        "status.artifact.digest": [
+          null,
+          2
+        ]
+      }
+    },
+    "v2.4.0": {
+      "descriptionChanged": [
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "status.conditions.type": [
+          3,
+          4
+        ]
+      }
+    }
+  },
+  "texts": [
+    "URL is the dynamic fetch link for the latest Artifact.\nIt is provided on a \"best effort\" basis, and using the precise\nBucketStatus.Artifact data is recommended.",
+    "URL is the dynamic fetch link for the latest Artifact.\nIt is provided on a \"best effort\" basis, and using the precise\nHelmChartStatus.Artifact data is recommended.",
+    "Digest is the digest of the file in the form of '<algorithm>:<checksum>'.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase."
+  ]
+}

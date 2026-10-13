@@ -1,0 +1,1457 @@
+{
+  "versions": {
+    "v1.104.0": {
+      "descriptionChanged": [
+        "spec.statefulSet.pod.securityContext.seLinuxChangePolicy",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.procMount",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.procMount",
+        "spec.statefulSet.pod.tolerations.operator"
+      ],
+      "descriptions": {
+        "spec.statefulSet.pod.securityContext.seLinuxChangePolicy": [
+          0,
+          1
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.procMount": [
+          2,
+          3
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.procMount": [
+          2,
+          3
+        ],
+        "spec.statefulSet.pod.tolerations.operator": [
+          4,
+          5
+        ]
+      }
+    },
+    "v1.94.0": {
+      "descriptionChanged": [
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys",
+        "spec.statefulSet.pod.tailscaleContainer.resources.claims",
+        "spec.statefulSet.pod.tailscaleInitContainer.resources.claims",
+        "spec.statefulSet.pod.topologySpreadConstraints.nodeAffinityPolicy",
+        "spec.statefulSet.pod.topologySpreadConstraints.nodeTaintsPolicy"
+      ],
+      "descriptions": {
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": [
+          6,
+          7
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": [
+          8,
+          9
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": [
+          6,
+          7
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": [
+          8,
+          9
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
+          10,
+          11
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": [
+          6,
+          7
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": [
+          8,
+          9
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": [
+          6,
+          7
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": [
+          8,
+          9
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.resources.claims": [
+          12,
+          13
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.resources.claims": [
+          12,
+          13
+        ],
+        "spec.statefulSet.pod.topologySpreadConstraints.nodeAffinityPolicy": [
+          14,
+          15
+        ],
+        "spec.statefulSet.pod.topologySpreadConstraints.nodeTaintsPolicy": [
+          16,
+          17
+        ]
+      }
+    },
+    "v1.90.0": {
+      "added": {
+        "spec.statefulSet.pod.dnsConfig": "object",
+        "spec.statefulSet.pod.dnsPolicy": "string"
+      },
+      "descriptions": {
+        "spec.statefulSet.pod.dnsConfig": [
+          null,
+          18
+        ],
+        "spec.statefulSet.pod.dnsPolicy": [
+          null,
+          19
+        ]
+      }
+    },
+    "v1.88.0": {
+      "added": {
+        "spec.statefulSet.pod.priorityClassName": "string"
+      },
+      "descriptions": {
+        "spec.statefulSet.pod.priorityClassName": [
+          null,
+          20
+        ]
+      }
+    },
+    "v1.86.0": {
+      "descriptionChanged": [
+        "spec.statefulSet.pod.tailscaleContainer.image",
+        "spec.statefulSet.pod.tailscaleInitContainer",
+        "spec.statefulSet.pod.tailscaleInitContainer.image"
+      ],
+      "added": {
+        "spec.staticEndpoints": "object"
+      },
+      "descriptions": {
+        "spec.statefulSet.pod.tailscaleContainer.image": [
+          21,
+          22
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer": [
+          23,
+          24
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.image": [
+          21,
+          22
+        ],
+        "spec.staticEndpoints": [
+          null,
+          25
+        ]
+      }
+    },
+    "v1.82.0": {
+      "added": {
+        "spec.useLetsEncryptStagingEnvironment": "boolean"
+      },
+      "descriptions": {
+        "spec.useLetsEncryptStagingEnvironment": [
+          null,
+          26
+        ]
+      }
+    },
+    "v1.80.0": {
+      "added": {
+        "spec.metrics.serviceMonitor.labels": "map[string]string",
+        "spec.statefulSet.pod.securityContext.seLinuxChangePolicy": "string",
+        "spec.statefulSet.pod.securityContext.supplementalGroupsPolicy": "string",
+        "spec.statefulSet.pod.tailscaleContainer.resources.claims.request": "string",
+        "spec.statefulSet.pod.tailscaleInitContainer.resources.claims.request": "string"
+      },
+      "descriptionChanged": [
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys",
+        "spec.statefulSet.pod.securityContext.supplementalGroups",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.procMount",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.procMount"
+      ],
+      "descriptions": {
+        "spec.metrics.serviceMonitor.labels": [
+          null,
+          27
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": [
+          28,
+          6
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": [
+          29,
+          8
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": [
+          28,
+          6
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": [
+          29,
+          8
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": [
+          28,
+          6
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": [
+          29,
+          8
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": [
+          28,
+          6
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": [
+          29,
+          8
+        ],
+        "spec.statefulSet.pod.securityContext.seLinuxChangePolicy": [
+          null,
+          0
+        ],
+        "spec.statefulSet.pod.securityContext.supplementalGroups": [
+          30,
+          31
+        ],
+        "spec.statefulSet.pod.securityContext.supplementalGroupsPolicy": [
+          null,
+          32
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.resources.claims.request": [
+          null,
+          33
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.procMount": [
+          34,
+          2
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.resources.claims.request": [
+          null,
+          33
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.procMount": [
+          34,
+          2
+        ]
+      }
+    },
+    "v1.78.0": {
+      "descriptionChanged": [
+        "spec.metrics.enable",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext"
+      ],
+      "added": {
+        "spec.metrics.serviceMonitor": "object",
+        "spec.statefulSet.pod.tailscaleContainer.debug": "object",
+        "spec.statefulSet.pod.tailscaleInitContainer.debug": "object",
+        "spec.statefulSet.pod.topologySpreadConstraints": "object[]"
+      },
+      "descriptions": {
+        "spec.metrics.enable": [
+          35,
+          36
+        ],
+        "spec.metrics.serviceMonitor": [
+          null,
+          37
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.debug": [
+          null,
+          38
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext": [
+          39,
+          40
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.debug": [
+          null,
+          38
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext": [
+          39,
+          40
+        ],
+        "spec.statefulSet.pod.topologySpreadConstraints": [
+          null,
+          41
+        ]
+      }
+    },
+    "v1.76.0": {
+      "descriptionChanged": [
+        "spec.tailscale.acceptRoutes"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec.tailscale.acceptRoutes": [
+          42,
+          43
+        ],
+        "": [
+          44,
+          45
+        ]
+      }
+    },
+    "v1.70.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.metrics",
+        "spec.metrics.enable",
+        "spec.statefulSet",
+        "spec.statefulSet.annotations",
+        "spec.statefulSet.labels",
+        "spec.statefulSet.pod.affinity",
+        "spec.statefulSet.pod.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution",
+        "spec.statefulSet.pod.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.operator",
+        "spec.statefulSet.pod.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.values",
+        "spec.statefulSet.pod.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.operator",
+        "spec.statefulSet.pod.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.values",
+        "spec.statefulSet.pod.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution",
+        "spec.statefulSet.pod.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.operator",
+        "spec.statefulSet.pod.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.values",
+        "spec.statefulSet.pod.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.operator",
+        "spec.statefulSet.pod.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.values",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey",
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey",
+        "spec.statefulSet.pod.annotations",
+        "spec.statefulSet.pod.imagePullSecrets",
+        "spec.statefulSet.pod.imagePullSecrets.name",
+        "spec.statefulSet.pod.labels",
+        "spec.statefulSet.pod.nodeName",
+        "spec.statefulSet.pod.nodeSelector",
+        "spec.statefulSet.pod.securityContext",
+        "spec.statefulSet.pod.securityContext.fsGroup",
+        "spec.statefulSet.pod.securityContext.fsGroupChangePolicy",
+        "spec.statefulSet.pod.securityContext.runAsGroup",
+        "spec.statefulSet.pod.securityContext.runAsNonRoot",
+        "spec.statefulSet.pod.securityContext.runAsUser",
+        "spec.statefulSet.pod.securityContext.seLinuxOptions",
+        "spec.statefulSet.pod.securityContext.seccompProfile",
+        "spec.statefulSet.pod.securityContext.seccompProfile.localhostProfile",
+        "spec.statefulSet.pod.securityContext.seccompProfile.type",
+        "spec.statefulSet.pod.securityContext.supplementalGroups",
+        "spec.statefulSet.pod.securityContext.sysctls",
+        "spec.statefulSet.pod.securityContext.windowsOptions",
+        "spec.statefulSet.pod.securityContext.windowsOptions.gmsaCredentialSpec",
+        "spec.statefulSet.pod.securityContext.windowsOptions.hostProcess",
+        "spec.statefulSet.pod.securityContext.windowsOptions.runAsUserName",
+        "spec.statefulSet.pod.tailscaleContainer.env",
+        "spec.statefulSet.pod.tailscaleContainer.env.value",
+        "spec.statefulSet.pod.tailscaleContainer.image",
+        "spec.statefulSet.pod.tailscaleContainer.imagePullPolicy",
+        "spec.statefulSet.pod.tailscaleContainer.resources",
+        "spec.statefulSet.pod.tailscaleContainer.resources.claims",
+        "spec.statefulSet.pod.tailscaleContainer.resources.claims.name",
+        "spec.statefulSet.pod.tailscaleContainer.resources.limits",
+        "spec.statefulSet.pod.tailscaleContainer.resources.requests",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.allowPrivilegeEscalation",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.capabilities",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.privileged",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.procMount",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.readOnlyRootFilesystem",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.runAsGroup",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.runAsNonRoot",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.runAsUser",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.seLinuxOptions",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.seccompProfile",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.seccompProfile.localhostProfile",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.seccompProfile.type",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.windowsOptions",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.windowsOptions.gmsaCredentialSpec",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.windowsOptions.hostProcess",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.windowsOptions.runAsUserName",
+        "spec.statefulSet.pod.tailscaleInitContainer.env",
+        "spec.statefulSet.pod.tailscaleInitContainer.env.value",
+        "spec.statefulSet.pod.tailscaleInitContainer.image",
+        "spec.statefulSet.pod.tailscaleInitContainer.imagePullPolicy",
+        "spec.statefulSet.pod.tailscaleInitContainer.resources",
+        "spec.statefulSet.pod.tailscaleInitContainer.resources.claims",
+        "spec.statefulSet.pod.tailscaleInitContainer.resources.claims.name",
+        "spec.statefulSet.pod.tailscaleInitContainer.resources.limits",
+        "spec.statefulSet.pod.tailscaleInitContainer.resources.requests",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.allowPrivilegeEscalation",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.capabilities",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.privileged",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.procMount",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.readOnlyRootFilesystem",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.runAsGroup",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.runAsNonRoot",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.runAsUser",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.seLinuxOptions",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.seccompProfile",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.seccompProfile.localhostProfile",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.seccompProfile.type",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.windowsOptions",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.windowsOptions.gmsaCredentialSpec",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.windowsOptions.hostProcess",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.windowsOptions.runAsUserName",
+        "spec.statefulSet.pod.tolerations",
+        "spec.statefulSet.pod.tolerations.effect",
+        "spec.statefulSet.pod.tolerations.key",
+        "spec.statefulSet.pod.tolerations.operator",
+        "spec.statefulSet.pod.tolerations.tolerationSeconds",
+        "spec.statefulSet.pod.tolerations.value",
+        "spec.tailscale",
+        "spec.tailscale.acceptRoutes",
+        "status",
+        "status.conditions",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.status",
+        "status.conditions.type"
+      ],
+      "added": {
+        "spec.statefulSet.pod.securityContext.appArmorProfile": "object",
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.appArmorProfile": "object",
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.appArmorProfile": "object"
+      },
+      "required": [
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.reason"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          46,
+          47
+        ],
+        "kind": [
+          48,
+          49
+        ],
+        "spec": [
+          50,
+          51
+        ],
+        "spec.metrics": [
+          52,
+          53
+        ],
+        "spec.metrics.enable": [
+          54,
+          35
+        ],
+        "spec.statefulSet": [
+          55,
+          56
+        ],
+        "spec.statefulSet.annotations": [
+          57,
+          58
+        ],
+        "spec.statefulSet.labels": [
+          59,
+          60
+        ],
+        "spec.statefulSet.pod.affinity": [
+          61,
+          62
+        ],
+        "spec.statefulSet.pod.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
+          63,
+          64
+        ],
+        "spec.statefulSet.pod.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.operator": [
+          65,
+          66
+        ],
+        "spec.statefulSet.pod.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.values": [
+          67,
+          68
+        ],
+        "spec.statefulSet.pod.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.operator": [
+          65,
+          66
+        ],
+        "spec.statefulSet.pod.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.values": [
+          67,
+          68
+        ],
+        "spec.statefulSet.pod.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
+          69,
+          70
+        ],
+        "spec.statefulSet.pod.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.operator": [
+          65,
+          66
+        ],
+        "spec.statefulSet.pod.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.values": [
+          67,
+          68
+        ],
+        "spec.statefulSet.pod.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.operator": [
+          65,
+          66
+        ],
+        "spec.statefulSet.pod.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.values": [
+          67,
+          68
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
+          71,
+          72
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector": [
+          73,
+          74
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator": [
+          75,
+          76
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values": [
+          77,
+          78
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels": [
+          79,
+          80
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": [
+          81,
+          28
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": [
+          82,
+          29
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          83,
+          84
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator": [
+          75,
+          76
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values": [
+          77,
+          78
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels": [
+          79,
+          80
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          85,
+          86
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey": [
+          87,
+          88
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
+          89,
+          90
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
+          91,
+          92
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector": [
+          73,
+          74
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator": [
+          75,
+          76
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values": [
+          77,
+          78
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels": [
+          79,
+          80
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": [
+          81,
+          28
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": [
+          82,
+          29
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          83,
+          84
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator": [
+          75,
+          76
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values": [
+          77,
+          78
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels": [
+          79,
+          80
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          85,
+          86
+        ],
+        "spec.statefulSet.pod.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey": [
+          87,
+          88
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
+          93,
+          10
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector": [
+          73,
+          74
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator": [
+          75,
+          76
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values": [
+          77,
+          78
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels": [
+          79,
+          80
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": [
+          81,
+          28
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": [
+          82,
+          29
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          83,
+          84
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator": [
+          75,
+          76
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values": [
+          77,
+          78
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels": [
+          79,
+          80
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          85,
+          86
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey": [
+          87,
+          88
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
+          89,
+          90
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
+          94,
+          95
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector": [
+          73,
+          74
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator": [
+          75,
+          76
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values": [
+          77,
+          78
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels": [
+          79,
+          80
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": [
+          81,
+          28
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": [
+          82,
+          29
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          83,
+          84
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator": [
+          75,
+          76
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values": [
+          77,
+          78
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels": [
+          79,
+          80
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          85,
+          86
+        ],
+        "spec.statefulSet.pod.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey": [
+          87,
+          88
+        ],
+        "spec.statefulSet.pod.annotations": [
+          96,
+          97
+        ],
+        "spec.statefulSet.pod.imagePullSecrets": [
+          98,
+          99
+        ],
+        "spec.statefulSet.pod.imagePullSecrets.name": [
+          100,
+          101
+        ],
+        "spec.statefulSet.pod.labels": [
+          102,
+          103
+        ],
+        "spec.statefulSet.pod.nodeName": [
+          104,
+          105
+        ],
+        "spec.statefulSet.pod.nodeSelector": [
+          106,
+          107
+        ],
+        "spec.statefulSet.pod.securityContext": [
+          108,
+          109
+        ],
+        "spec.statefulSet.pod.securityContext.appArmorProfile": [
+          null,
+          110
+        ],
+        "spec.statefulSet.pod.securityContext.fsGroup": [
+          111,
+          112
+        ],
+        "spec.statefulSet.pod.securityContext.fsGroupChangePolicy": [
+          113,
+          114
+        ],
+        "spec.statefulSet.pod.securityContext.runAsGroup": [
+          115,
+          116
+        ],
+        "spec.statefulSet.pod.securityContext.runAsNonRoot": [
+          117,
+          118
+        ],
+        "spec.statefulSet.pod.securityContext.runAsUser": [
+          119,
+          120
+        ],
+        "spec.statefulSet.pod.securityContext.seLinuxOptions": [
+          121,
+          122
+        ],
+        "spec.statefulSet.pod.securityContext.seccompProfile": [
+          123,
+          124
+        ],
+        "spec.statefulSet.pod.securityContext.seccompProfile.localhostProfile": [
+          125,
+          126
+        ],
+        "spec.statefulSet.pod.securityContext.seccompProfile.type": [
+          127,
+          128
+        ],
+        "spec.statefulSet.pod.securityContext.supplementalGroups": [
+          129,
+          30
+        ],
+        "spec.statefulSet.pod.securityContext.sysctls": [
+          130,
+          131
+        ],
+        "spec.statefulSet.pod.securityContext.windowsOptions": [
+          132,
+          133
+        ],
+        "spec.statefulSet.pod.securityContext.windowsOptions.gmsaCredentialSpec": [
+          134,
+          135
+        ],
+        "spec.statefulSet.pod.securityContext.windowsOptions.hostProcess": [
+          136,
+          137
+        ],
+        "spec.statefulSet.pod.securityContext.windowsOptions.runAsUserName": [
+          138,
+          139
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.env": [
+          140,
+          141
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.env.value": [
+          142,
+          143
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.image": [
+          144,
+          21
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.imagePullPolicy": [
+          145,
+          146
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.resources": [
+          147,
+          148
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.resources.claims": [
+          149,
+          12
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.resources.claims.name": [
+          150,
+          151
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.resources.limits": [
+          152,
+          153
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.resources.requests": [
+          154,
+          155
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext": [
+          156,
+          39
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.allowPrivilegeEscalation": [
+          157,
+          158
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.appArmorProfile": [
+          null,
+          159
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.capabilities": [
+          160,
+          161
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.privileged": [
+          162,
+          163
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.procMount": [
+          164,
+          34
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.readOnlyRootFilesystem": [
+          165,
+          166
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.runAsGroup": [
+          167,
+          168
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.runAsNonRoot": [
+          169,
+          170
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.runAsUser": [
+          171,
+          172
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.seLinuxOptions": [
+          173,
+          174
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.seccompProfile": [
+          175,
+          176
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.seccompProfile.localhostProfile": [
+          125,
+          126
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.seccompProfile.type": [
+          127,
+          128
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.windowsOptions": [
+          177,
+          178
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.windowsOptions.gmsaCredentialSpec": [
+          134,
+          135
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.windowsOptions.hostProcess": [
+          136,
+          137
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.securityContext.windowsOptions.runAsUserName": [
+          138,
+          139
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.env": [
+          140,
+          141
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.env.value": [
+          142,
+          143
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.image": [
+          144,
+          21
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.imagePullPolicy": [
+          145,
+          146
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.resources": [
+          147,
+          148
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.resources.claims": [
+          149,
+          12
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.resources.claims.name": [
+          150,
+          151
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.resources.limits": [
+          152,
+          153
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.resources.requests": [
+          154,
+          155
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext": [
+          156,
+          39
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.allowPrivilegeEscalation": [
+          157,
+          158
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.appArmorProfile": [
+          null,
+          159
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.capabilities": [
+          160,
+          161
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.privileged": [
+          162,
+          163
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.procMount": [
+          164,
+          34
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.readOnlyRootFilesystem": [
+          165,
+          166
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.runAsGroup": [
+          167,
+          168
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.runAsNonRoot": [
+          169,
+          170
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.runAsUser": [
+          171,
+          172
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.seLinuxOptions": [
+          173,
+          174
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.seccompProfile": [
+          175,
+          176
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.seccompProfile.localhostProfile": [
+          125,
+          126
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.seccompProfile.type": [
+          127,
+          128
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.windowsOptions": [
+          177,
+          178
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.windowsOptions.gmsaCredentialSpec": [
+          134,
+          135
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.windowsOptions.hostProcess": [
+          136,
+          137
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.securityContext.windowsOptions.runAsUserName": [
+          138,
+          139
+        ],
+        "spec.statefulSet.pod.tolerations": [
+          179,
+          180
+        ],
+        "spec.statefulSet.pod.tolerations.effect": [
+          181,
+          182
+        ],
+        "spec.statefulSet.pod.tolerations.key": [
+          183,
+          184
+        ],
+        "spec.statefulSet.pod.tolerations.operator": [
+          185,
+          4
+        ],
+        "spec.statefulSet.pod.tolerations.tolerationSeconds": [
+          186,
+          187
+        ],
+        "spec.statefulSet.pod.tolerations.value": [
+          188,
+          189
+        ],
+        "spec.tailscale": [
+          190,
+          191
+        ],
+        "spec.tailscale.acceptRoutes": [
+          192,
+          42
+        ],
+        "status": [
+          193,
+          194
+        ],
+        "status.conditions": [
+          195,
+          196
+        ],
+        "status.conditions.lastTransitionTime": [
+          197,
+          198
+        ],
+        "status.conditions.message": [
+          199,
+          200
+        ],
+        "status.conditions.observedGeneration": [
+          201,
+          202
+        ],
+        "status.conditions.reason": [
+          203,
+          204
+        ],
+        "status.conditions.status": [
+          205,
+          206
+        ],
+        "status.conditions.type": [
+          207,
+          208
+        ],
+        "": [
+          209,
+          44
+        ]
+      }
+    },
+    "v1.68.0": {
+      "added": {
+        "spec.statefulSet.pod.tailscaleContainer.image": "string",
+        "spec.statefulSet.pod.tailscaleContainer.imagePullPolicy": "string",
+        "spec.statefulSet.pod.tailscaleInitContainer.image": "string",
+        "spec.statefulSet.pod.tailscaleInitContainer.imagePullPolicy": "string",
+        "spec.tailscale": "object"
+      },
+      "descriptions": {
+        "spec.statefulSet.pod.tailscaleContainer.image": [
+          null,
+          144
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.imagePullPolicy": [
+          null,
+          145
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.image": [
+          null,
+          144
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.imagePullPolicy": [
+          null,
+          145
+        ],
+        "spec.tailscale": [
+          null,
+          190
+        ]
+      }
+    },
+    "v1.66.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.statefulSet",
+        "status"
+      ],
+      "added": {
+        "spec.metrics": "object",
+        "spec.statefulSet.pod.affinity": "object",
+        "spec.statefulSet.pod.tailscaleContainer.env": "object[]",
+        "spec.statefulSet.pod.tailscaleInitContainer.env": "object[]"
+      },
+      "optional": [
+        "spec.statefulSet"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec": [
+          null,
+          50
+        ],
+        "spec.metrics": [
+          null,
+          52
+        ],
+        "spec.statefulSet": [
+          210,
+          55
+        ],
+        "spec.statefulSet.pod.affinity": [
+          null,
+          61
+        ],
+        "spec.statefulSet.pod.tailscaleContainer.env": [
+          null,
+          140
+        ],
+        "spec.statefulSet.pod.tailscaleInitContainer.env": [
+          null,
+          140
+        ],
+        "status": [
+          null,
+          193
+        ],
+        "": [
+          null,
+          209
+        ]
+      }
+    }
+  },
+  "texts": [
+    "seLinuxChangePolicy defines how the container's SELinux label is applied to all volumes used by the Pod.\nIt has no effect on nodes that do not support SELinux or to volumes does not support SELinux.\nValid values are \"MountOption\" and \"Recursive\".\n\n\"Recursive\" means relabeling of all files on all Pod volumes by the container runtime.\nThis may be slow for large volumes, but allows mixing privileged and unprivileged Pods sharing the same volume on the same node.\n\n\"MountOption\" mounts all eligible Pod volumes with `-o context` mount option.\nThis requires all Pods that share the same volume to use the same SELinux label.\nIt is not possible to share the same volume among privileged and unprivileged Pods.\nEligible volumes are in-tree FibreChannel and iSCSI volumes, and all CSI volumes\nwhose CSI driver announces SELinux support by setting spec.seLinuxMount: true in their\nCSIDriver instance. Other volumes are always re-labelled recursively.\n\"MountOption\" value is allowed only when SELinuxMount feature gate is enabled.\n\nIf not specified and SELinuxMount feature gate is enabled, \"MountOption\" is used.\nIf not specified and SELinuxMount feature gate is disabled, \"MountOption\" is used for ReadWriteOncePod volumes\nand \"Recursive\" for all other volumes.\n\nThis field affects only Pods that have SELinux label set, either in PodSecurityContext or in SecurityContext of all containers.\n\nAll Pods that use the same volume should use the same seLinuxChangePolicy, otherwise some pods can get stuck in ContainerCreating state.\nNote that this field cannot be set when spec.os.name is windows.",
+    "seLinuxChangePolicy defines how the container's SELinux label is applied to all volumes used by the Pod.\nIt has no effect on nodes that do not support SELinux or to volumes does not support SELinux.\nValid values are \"MountOption\" and \"Recursive\".\n\n\"Recursive\" means relabeling of all files on all Pod volumes by the container runtime.\nThis may be slow for large volumes, but allows mixing privileged and unprivileged Pods sharing the same volume on the same node.\n\n\"MountOption\" mounts all eligible Pod volumes with `-o context` mount option.\nThis requires all Pods that share the same volume to use the same SELinux label.\nIt is not possible to share the same volume among privileged and unprivileged Pods.\nEligible volumes are in-tree FibreChannel and iSCSI volumes, and all CSI volumes\nwhose CSI driver announces SELinux support by setting spec.seLinuxMount: true in their\nCSIDriver instance. Other volumes are always re-labelled recursively.\n\nIf not specified, \"MountOption\" is used.\n\nThis field affects only Pods that have SELinux label set, either in PodSecurityContext or in SecurityContext of all containers.\n\nAll Pods that use the same volume should use the same seLinuxChangePolicy, otherwise some pods can get stuck in ContainerCreating state.\nNote that this field cannot be set when spec.os.name is windows.",
+    "procMount denotes the type of proc mount to use for the containers.\nThe default value is Default which uses the container runtime defaults for\nreadonly paths and masked paths.\nThis requires the ProcMountType feature flag to be enabled.\nNote that this field cannot be set when spec.os.name is windows.",
+    "procMount denotes the type of proc mount to use for the containers.\nThe default value is Default which uses the container runtime defaults for\nreadonly paths and masked paths.\nNote that this field cannot be set when spec.os.name is windows.",
+    "Operator represents a key's relationship to the value.\nValid operators are Exists and Equal. Defaults to Equal.\nExists is equivalent to wildcard for value, so that a pod can\ntolerate all taints of a particular category.",
+    "Operator represents a key's relationship to the value.\nValid operators are Exists, Equal, Lt, and Gt. Defaults to Equal.\nExists is equivalent to wildcard for value, so that a pod can\ntolerate all taints of a particular category.\nLt and Gt perform numeric comparisons (requires feature gate TaintTolerationComparisonOperators).",
+    "MatchLabelKeys is a set of pod label keys to select which pods will\nbe taken into consideration. The keys are used to lookup values from the\nincoming pod labels, those key-value labels are merged with `labelSelector` as `key in (value)`\nto select the group of existing pods which pods will be taken into consideration\nfor the incoming pod's pod (anti) affinity. Keys that don't exist in the incoming\npod labels will be ignored. The default value is empty.\nThe same key is forbidden to exist in both matchLabelKeys and labelSelector.\nAlso, matchLabelKeys cannot be set when labelSelector isn't set.\nThis is a beta field and requires enabling MatchLabelKeysInPodAffinity feature gate (enabled by default).",
+    "MatchLabelKeys is a set of pod label keys to select which pods will\nbe taken into consideration. The keys are used to lookup values from the\nincoming pod labels, those key-value labels are merged with `labelSelector` as `key in (value)`\nto select the group of existing pods which pods will be taken into consideration\nfor the incoming pod's pod (anti) affinity. Keys that don't exist in the incoming\npod labels will be ignored. The default value is empty.\nThe same key is forbidden to exist in both matchLabelKeys and labelSelector.\nAlso, matchLabelKeys cannot be set when labelSelector isn't set.",
+    "MismatchLabelKeys is a set of pod label keys to select which pods will\nbe taken into consideration. The keys are used to lookup values from the\nincoming pod labels, those key-value labels are merged with `labelSelector` as `key notin (value)`\nto select the group of existing pods which pods will be taken into consideration\nfor the incoming pod's pod (anti) affinity. Keys that don't exist in the incoming\npod labels will be ignored. The default value is empty.\nThe same key is forbidden to exist in both mismatchLabelKeys and labelSelector.\nAlso, mismatchLabelKeys cannot be set when labelSelector isn't set.\nThis is a beta field and requires enabling MatchLabelKeysInPodAffinity feature gate (enabled by default).",
+    "MismatchLabelKeys is a set of pod label keys to select which pods will\nbe taken into consideration. The keys are used to lookup values from the\nincoming pod labels, those key-value labels are merged with `labelSelector` as `key notin (value)`\nto select the group of existing pods which pods will be taken into consideration\nfor the incoming pod's pod (anti) affinity. Keys that don't exist in the incoming\npod labels will be ignored. The default value is empty.\nThe same key is forbidden to exist in both mismatchLabelKeys and labelSelector.\nAlso, mismatchLabelKeys cannot be set when labelSelector isn't set.",
+    "The scheduler will prefer to schedule pods to nodes that satisfy\nthe anti-affinity expressions specified by this field, but it may choose\na node that violates one or more of the expressions. The node that is\nmost preferred is the one with the greatest sum of weights, i.e.\nfor each node that meets all of the scheduling requirements (resource\nrequest, requiredDuringScheduling anti-affinity expressions, etc.),\ncompute a sum by iterating through the elements of this field and adding\n\"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the\nnode(s) with the highest sum are the most preferred.",
+    "The scheduler will prefer to schedule pods to nodes that satisfy\nthe anti-affinity expressions specified by this field, but it may choose\na node that violates one or more of the expressions. The node that is\nmost preferred is the one with the greatest sum of weights, i.e.\nfor each node that meets all of the scheduling requirements (resource\nrequest, requiredDuringScheduling anti-affinity expressions, etc.),\ncompute a sum by iterating through the elements of this field and subtracting\n\"weight\" from the sum if the node has pods which matches the corresponding podAffinityTerm; the\nnode(s) with the highest sum are the most preferred.",
+    "Claims lists the names of resources, defined in spec.resourceClaims,\nthat are used by this container.\n\nThis is an alpha field and requires enabling the\nDynamicResourceAllocation feature gate.\n\nThis field is immutable. It can only be set for containers.",
+    "Claims lists the names of resources, defined in spec.resourceClaims,\nthat are used by this container.\n\nThis field depends on the\nDynamicResourceAllocation feature gate.\n\nThis field is immutable. It can only be set for containers.",
+    "NodeAffinityPolicy indicates how we will treat Pod's nodeAffinity/nodeSelector\nwhen calculating pod topology spread skew. Options are:\n- Honor: only nodes matching nodeAffinity/nodeSelector are included in the calculations.\n- Ignore: nodeAffinity/nodeSelector are ignored. All nodes are included in the calculations.\n\nIf this value is nil, the behavior is equivalent to the Honor policy.\nThis is a beta-level feature default enabled by the NodeInclusionPolicyInPodTopologySpread feature flag.",
+    "NodeAffinityPolicy indicates how we will treat Pod's nodeAffinity/nodeSelector\nwhen calculating pod topology spread skew. Options are:\n- Honor: only nodes matching nodeAffinity/nodeSelector are included in the calculations.\n- Ignore: nodeAffinity/nodeSelector are ignored. All nodes are included in the calculations.\n\nIf this value is nil, the behavior is equivalent to the Honor policy.",
+    "NodeTaintsPolicy indicates how we will treat node taints when calculating\npod topology spread skew. Options are:\n- Honor: nodes without taints, along with tainted nodes for which the incoming pod\nhas a toleration, are included.\n- Ignore: node taints are ignored. All nodes are included.\n\nIf this value is nil, the behavior is equivalent to the Ignore policy.\nThis is a beta-level feature default enabled by the NodeInclusionPolicyInPodTopologySpread feature flag.",
+    "NodeTaintsPolicy indicates how we will treat node taints when calculating\npod topology spread skew. Options are:\n- Honor: nodes without taints, along with tainted nodes for which the incoming pod\nhas a toleration, are included.\n- Ignore: node taints are ignored. All nodes are included.\n\nIf this value is nil, the behavior is equivalent to the Ignore policy.",
+    "DNSConfig defines DNS parameters for the proxy Pod in addition to those generated from DNSPolicy.\nWhen DNSPolicy is set to \"None\", DNSConfig must be specified.\nhttps://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-dns-config",
+    "DNSPolicy defines how DNS will be configured for the proxy Pod.\nBy default the Tailscale Kubernetes Operator does not set a DNS policy (uses cluster default).\nhttps://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy",
+    "PriorityClassName for the proxy Pod.\nBy default Tailscale Kubernetes operator does not apply any priority class.\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#scheduling",
+    "Container image name. By default images are pulled from\ndocker.io/tailscale/tailscale, but the official images are also\navailable at ghcr.io/tailscale/tailscale. Specifying image name here\nwill override any proxy image values specified via the Kubernetes\noperator's Helm chart values or PROXY_IMAGE env var in the operator\nDeployment.\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#image",
+    "Container image name. By default images are pulled from docker.io/tailscale,\nbut the official images are also available at ghcr.io/tailscale.\n\nFor all uses except on ProxyGroups of type \"kube-apiserver\", this image must\nbe either tailscale/tailscale, or an equivalent mirror of that image.\nTo apply to ProxyGroups of type \"kube-apiserver\", this image must be\ntailscale/k8s-proxy or a mirror of that image.\n\nFor \"tailscale/tailscale\"-based proxies, specifying image name here will\noverride any proxy image values specified via the Kubernetes operator's\nHelm chart values or PROXY_IMAGE env var in the operator Deployment.\nFor \"tailscale/k8s-proxy\"-based proxies, there is currently no way to\nconfigure your own default, and this field is the only way to use a\ncustom image.\n\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#image",
+    "Configuration for the proxy init container that enables forwarding.",
+    "Configuration for the proxy init container that enables forwarding.\nNot valid to apply to ProxyGroups of type \"kube-apiserver\".",
+    "Configuration for 'static endpoints' on proxies in order to facilitate\ndirect connections from other devices on the tailnet.\nSee https://tailscale.com/kb/1445/kubernetes-operator-customization#static-endpoints.",
+    "Set UseLetsEncryptStagingEnvironment to true to issue TLS\ncertificates for any HTTPS endpoints exposed to the tailnet from\nLetsEncrypt's staging environment.\nhttps://letsencrypt.org/docs/staging-environment/\nThis setting only affects Tailscale Ingress resources.\nBy default Ingress TLS certificates are issued from LetsEncrypt's\nproduction environment.\nChanging this setting true -> false, will result in any\nexisting certs being re-issued from the production environment.\nChanging this setting false (default) -> true, when certs have already\nbeen provisioned from production environment will NOT result in certs\nbeing re-issued from the staging environment before they need to be\nrenewed.",
+    "Labels to add to the ServiceMonitor.\nLabels must be valid Kubernetes labels.\nhttps://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#syntax-and-character-set",
+    "MatchLabelKeys is a set of pod label keys to select which pods will\nbe taken into consideration. The keys are used to lookup values from the\nincoming pod labels, those key-value labels are merged with `labelSelector` as `key in (value)`\nto select the group of existing pods which pods will be taken into consideration\nfor the incoming pod's pod (anti) affinity. Keys that don't exist in the incoming\npod labels will be ignored. The default value is empty.\nThe same key is forbidden to exist in both matchLabelKeys and labelSelector.\nAlso, matchLabelKeys cannot be set when labelSelector isn't set.\nThis is an alpha field and requires enabling MatchLabelKeysInPodAffinity feature gate.",
+    "MismatchLabelKeys is a set of pod label keys to select which pods will\nbe taken into consideration. The keys are used to lookup values from the\nincoming pod labels, those key-value labels are merged with `labelSelector` as `key notin (value)`\nto select the group of existing pods which pods will be taken into consideration\nfor the incoming pod's pod (anti) affinity. Keys that don't exist in the incoming\npod labels will be ignored. The default value is empty.\nThe same key is forbidden to exist in both mismatchLabelKeys and labelSelector.\nAlso, mismatchLabelKeys cannot be set when labelSelector isn't set.\nThis is an alpha field and requires enabling MatchLabelKeysInPodAffinity feature gate.",
+    "A list of groups applied to the first process run in each container, in addition\nto the container's primary GID, the fsGroup (if specified), and group memberships\ndefined in the container image for the uid of the container process. If unspecified,\nno additional groups are added to any container. Note that group memberships\ndefined in the container image for the uid of the container process are still effective,\neven if they are not included in this list.\nNote that this field cannot be set when spec.os.name is windows.",
+    "A list of groups applied to the first process run in each container, in\naddition to the container's primary GID and fsGroup (if specified).  If\nthe SupplementalGroupsPolicy feature is enabled, the\nsupplementalGroupsPolicy field determines whether these are in addition\nto or instead of any group memberships defined in the container image.\nIf unspecified, no additional groups are added, though group memberships\ndefined in the container image may still be used, depending on the\nsupplementalGroupsPolicy field.\nNote that this field cannot be set when spec.os.name is windows.",
+    "Defines how supplemental groups of the first container processes are calculated.\nValid values are \"Merge\" and \"Strict\". If not specified, \"Merge\" is used.\n(Alpha) Using the field requires the SupplementalGroupsPolicy feature gate to be enabled\nand the container runtime must implement support for this feature.\nNote that this field cannot be set when spec.os.name is windows.",
+    "Request is the name chosen for a request in the referenced claim.\nIf empty, everything from the claim is made available, otherwise\nonly the result of this request.",
+    "procMount denotes the type of proc mount to use for the containers.\nThe default is DefaultProcMount which uses the container runtime defaults for\nreadonly paths and masked paths.\nThis requires the ProcMountType feature flag to be enabled.\nNote that this field cannot be set when spec.os.name is windows.",
+    "Setting enable to true will make the proxy serve Tailscale metrics\nat <pod-ip>:9001/debug/metrics.\nDefaults to false.",
+    "Setting enable to true will make the proxy serve Tailscale metrics\nat <pod-ip>:9002/metrics.\nA metrics Service named <proxy-statefulset>-metrics will also be created in the operator's namespace and will\nserve the metrics at <service-ip>:9002/metrics.\n\nIn 1.78.x and 1.80.x, this field also serves as the default value for\n.spec.statefulSet.pod.tailscaleContainer.debug.enable. From 1.82.0, both\nfields will independently default to false.\n\nDefaults to false.",
+    "Enable to create a Prometheus ServiceMonitor for scraping the proxy's Tailscale metrics.\nThe ServiceMonitor will select the metrics Service that gets created when metrics are enabled.\nThe ingested metrics for each Service monitor will have labels to identify the proxy:\nts_proxy_type: ingress_service|ingress_resource|connector|proxygroup\nts_proxy_parent_name: name of the parent resource (i.e name of the Connector, Tailscale Ingress, Tailscale Service or ProxyGroup)\nts_proxy_parent_namespace: namespace of the parent resource (if the parent resource is not cluster scoped)\njob: ts_<proxy type>_[<parent namespace>]_<parent_name>",
+    "Configuration for enabling extra debug information in the container.\nNot recommended for production use.",
+    "Container security context.\nSecurity context specified here will override the security context by the operator.\nBy default the operator:\n- sets 'privileged: true' for the init container\n- set NET_ADMIN capability for tailscale container for proxies that\nare created for Services or Connector.\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#security-context",
+    "Container security context.\nSecurity context specified here will override the security context set by the operator.\nBy default the operator sets the Tailscale container and the Tailscale init container to privileged\nfor proxies created for Tailscale ingress and egress Service, Connector and ProxyGroup.\nYou can reduce the permissions of the Tailscale container to cap NET_ADMIN by\ninstalling device plugin in your cluster and configuring the proxies tun device to be created\nby the device plugin, see  https://github.com/tailscale/tailscale/issues/10814#issuecomment-2479977752\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#security-context",
+    "Proxy Pod's topology spread constraints.\nBy default Tailscale Kubernetes operator does not apply any topology spread constraints.\nhttps://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/",
+    "AcceptRoutes can be set to true to make the proxy instance accept\nroutes advertized by other nodes on the tailnet, such as subnet\nroutes.\nThis is equivalent of passing --accept-routes flag to a tailscale Linux client.\nhttps://tailscale.com/kb/1019/subnets#use-your-subnet-routes-from-other-machines\nDefaults to false.",
+    "AcceptRoutes can be set to true to make the proxy instance accept\nroutes advertized by other nodes on the tailnet, such as subnet\nroutes.\nThis is equivalent of passing --accept-routes flag to a tailscale Linux client.\nhttps://tailscale.com/kb/1019/subnets#use-your-subnet-routes-from-other-devices\nDefaults to false.",
+    "ProxyClass describes a set of configuration parameters that can be applied to\nproxy resources created by the Tailscale Kubernetes operator.\nTo apply a given ProxyClass to resources created for a tailscale Ingress or\nService, use tailscale.com/proxy-class=<proxyclass-name> label. To apply a\ngiven ProxyClass to resources created for a Connector, use\nconnector.spec.proxyClass field.\nProxyClass is a cluster scoped resource.\nMore info:\nhttps://tailscale.com/kb/1236/kubernetes-operator#cluster-resource-customization-using-proxyclass-custom-resource.",
+    "ProxyClass describes a set of configuration parameters that can be applied to\nproxy resources created by the Tailscale Kubernetes operator.\nTo apply a given ProxyClass to resources created for a tailscale Ingress or\nService, use tailscale.com/proxy-class=<proxyclass-name> label. To apply a\ngiven ProxyClass to resources created for a Connector, use\nconnector.spec.proxyClass field.\nProxyClass is a cluster scoped resource.\nMore info:\nhttps://tailscale.com/kb/1445/kubernetes-operator-customization#cluster-resource-customization-using-proxyclass-custom-resource",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Specification of the desired state of the ProxyClass resource. https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "Specification of the desired state of the ProxyClass resource.\nhttps://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "Configuration for proxy metrics. Metrics are currently not supported for egress proxies and for Ingress proxies that have been configured with tailscale.com/experimental-forward-cluster-traffic-via-ingress annotation. Note that the metrics are currently considered unstable and will likely change in breaking ways in the future - we only recommend that you use those for debugging purposes.",
+    "Configuration for proxy metrics. Metrics are currently not supported\nfor egress proxies and for Ingress proxies that have been configured\nwith tailscale.com/experimental-forward-cluster-traffic-via-ingress\nannotation. Note that the metrics are currently considered unstable\nand will likely change in breaking ways in the future - we only\nrecommend that you use those for debugging purposes.",
+    "Setting enable to true will make the proxy serve Tailscale metrics at <pod-ip>:9001/debug/metrics. Defaults to false.",
+    "Configuration parameters for the proxy's StatefulSet. Tailscale Kubernetes operator deploys a StatefulSet for each of the user configured proxies (Tailscale Ingress, Tailscale Service, Connector).",
+    "Configuration parameters for the proxy's StatefulSet. Tailscale\nKubernetes operator deploys a StatefulSet for each of the user\nconfigured proxies (Tailscale Ingress, Tailscale Service, Connector).",
+    "Annotations that will be added to the StatefulSet created for the proxy. Any Annotations specified here will be merged with the default annotations applied to the StatefulSet by the Tailscale Kubernetes operator as well as any other annotations that might have been applied by other actors. Annotations must be valid Kubernetes annotations. https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/#syntax-and-character-set",
+    "Annotations that will be added to the StatefulSet created for the proxy.\nAny Annotations specified here will be merged with the default annotations\napplied to the StatefulSet by the Tailscale Kubernetes operator as\nwell as any other annotations that might have been applied by other\nactors.\nAnnotations must be valid Kubernetes annotations.\nhttps://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/#syntax-and-character-set",
+    "Labels that will be added to the StatefulSet created for the proxy. Any labels specified here will be merged with the default labels applied to the StatefulSet by the Tailscale Kubernetes operator as well as any other labels that might have been applied by other actors. Label keys and values must be valid Kubernetes label keys and values. https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#syntax-and-character-set",
+    "Labels that will be added to the StatefulSet created for the proxy.\nAny labels specified here will be merged with the default labels\napplied to the StatefulSet by the Tailscale Kubernetes operator as\nwell as any other labels that might have been applied by other\nactors.\nLabel keys and values must be valid Kubernetes label keys and values.\nhttps://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#syntax-and-character-set",
+    "Proxy Pod's affinity rules. By default, the Tailscale Kubernetes operator does not apply any affinity rules. https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#affinity",
+    "Proxy Pod's affinity rules.\nBy default, the Tailscale Kubernetes operator does not apply any affinity rules.\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#affinity",
+    "The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred.",
+    "The scheduler will prefer to schedule pods to nodes that satisfy\nthe affinity expressions specified by this field, but it may choose\na node that violates one or more of the expressions. The node that is\nmost preferred is the one with the greatest sum of weights, i.e.\nfor each node that meets all of the scheduling requirements (resource\nrequest, requiredDuringScheduling affinity expressions, etc.),\ncompute a sum by iterating through the elements of this field and adding\n\"weight\" to the sum if the node matches the corresponding matchExpressions; the\nnode(s) with the highest sum are the most preferred.",
+    "Represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.",
+    "Represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.",
+    "An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.",
+    "An array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. If the operator is Gt or Lt, the values\narray must have a single element, which will be interpreted as an integer.\nThis array is replaced during a strategic merge patch.",
+    "If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to an update), the system may or may not try to eventually evict the pod from its node.",
+    "If the affinity requirements specified by this field are not met at\nscheduling time, the pod will not be scheduled onto the node.\nIf the affinity requirements specified by this field cease to be met\nat some point during pod execution (e.g. due to an update), the system\nmay or may not try to eventually evict the pod from its node.",
+    "The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.",
+    "The scheduler will prefer to schedule pods to nodes that satisfy\nthe affinity expressions specified by this field, but it may choose\na node that violates one or more of the expressions. The node that is\nmost preferred is the one with the greatest sum of weights, i.e.\nfor each node that meets all of the scheduling requirements (resource\nrequest, requiredDuringScheduling affinity expressions, etc.),\ncompute a sum by iterating through the elements of this field and adding\n\"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the\nnode(s) with the highest sum are the most preferred.",
+    "A label query over a set of resources, in this case pods. If it's null, this PodAffinityTerm matches with no Pods.",
+    "A label query over a set of resources, in this case pods.\nIf it's null, this PodAffinityTerm matches with no Pods.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "MatchLabelKeys is a set of pod label keys to select which pods will be taken into consideration. The keys are used to lookup values from the incoming pod labels, those key-value labels are merged with `LabelSelector` as `key in (value)` to select the group of existing pods which pods will be taken into consideration for the incoming pod's pod (anti) affinity. Keys that don't exist in the incoming pod labels will be ignored. The default value is empty. The same key is forbidden to exist in both MatchLabelKeys and LabelSelector. Also, MatchLabelKeys cannot be set when LabelSelector isn't set. This is an alpha field and requires enabling MatchLabelKeysInPodAffinity feature gate.",
+    "MismatchLabelKeys is a set of pod label keys to select which pods will be taken into consideration. The keys are used to lookup values from the incoming pod labels, those key-value labels are merged with `LabelSelector` as `key notin (value)` to select the group of existing pods which pods will be taken into consideration for the incoming pod's pod (anti) affinity. Keys that don't exist in the incoming pod labels will be ignored. The default value is empty. The same key is forbidden to exist in both MismatchLabelKeys and LabelSelector. Also, MismatchLabelKeys cannot be set when LabelSelector isn't set. This is an alpha field and requires enabling MatchLabelKeysInPodAffinity feature gate.",
+    "A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces.",
+    "A label query over the set of namespaces that the term applies to.\nThe term is applied to the union of the namespaces selected by this field\nand the ones listed in the namespaces field.\nnull selector and null or empty namespaces list means \"this pod's namespace\".\nAn empty selector ({}) matches all namespaces.",
+    "namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means \"this pod's namespace\".",
+    "namespaces specifies a static list of namespace names that the term applies to.\nThe term is applied to the union of the namespaces listed in this field\nand the ones selected by namespaceSelector.\nnull or empty namespaces list and null namespaceSelector means \"this pod's namespace\".",
+    "This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching the labelSelector in the specified namespaces, where co-located is defined as running on a node whose value of the label with key topologyKey matches that of any node on which any of the selected pods is running. Empty topologyKey is not allowed.",
+    "This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching\nthe labelSelector in the specified namespaces, where co-located is defined as running on a node\nwhose value of the label with key topologyKey matches that of any node on which any of the\nselected pods is running.\nEmpty topologyKey is not allowed.",
+    "weight associated with matching the corresponding podAffinityTerm, in the range 1-100.",
+    "weight associated with matching the corresponding podAffinityTerm,\nin the range 1-100.",
+    "If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.",
+    "If the affinity requirements specified by this field are not met at\nscheduling time, the pod will not be scheduled onto the node.\nIf the affinity requirements specified by this field cease to be met\nat some point during pod execution (e.g. due to a pod label update), the\nsystem may or may not try to eventually evict the pod from its node.\nWhen there are multiple elements, the lists of nodes corresponding to each\npodAffinityTerm are intersected, i.e. all terms must be satisfied.",
+    "The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.",
+    "If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.",
+    "If the anti-affinity requirements specified by this field are not met at\nscheduling time, the pod will not be scheduled onto the node.\nIf the anti-affinity requirements specified by this field cease to be met\nat some point during pod execution (e.g. due to a pod label update), the\nsystem may or may not try to eventually evict the pod from its node.\nWhen there are multiple elements, the lists of nodes corresponding to each\npodAffinityTerm are intersected, i.e. all terms must be satisfied.",
+    "Annotations that will be added to the proxy Pod. Any annotations specified here will be merged with the default annotations applied to the Pod by the Tailscale Kubernetes operator. Annotations must be valid Kubernetes annotations. https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/#syntax-and-character-set",
+    "Annotations that will be added to the proxy Pod.\nAny annotations specified here will be merged with the default\nannotations applied to the Pod by the Tailscale Kubernetes operator.\nAnnotations must be valid Kubernetes annotations.\nhttps://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/#syntax-and-character-set",
+    "Proxy Pod's image pull Secrets. https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#PodSpec",
+    "Proxy Pod's image pull Secrets.\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#PodSpec",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "Name of the referent.\nThis field is effectively required, but due to backwards compatibility is\nallowed to be empty. Instances of this type with an empty value here are\nalmost certainly wrong.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Labels that will be added to the proxy Pod. Any labels specified here will be merged with the default labels applied to the Pod by the Tailscale Kubernetes operator. Label keys and values must be valid Kubernetes label keys and values. https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#syntax-and-character-set",
+    "Labels that will be added to the proxy Pod.\nAny labels specified here will be merged with the default labels\napplied to the Pod by the Tailscale Kubernetes operator.\nLabel keys and values must be valid Kubernetes label keys and values.\nhttps://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#syntax-and-character-set",
+    "Proxy Pod's node name. https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#scheduling",
+    "Proxy Pod's node name.\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#scheduling",
+    "Proxy Pod's node selector. By default Tailscale Kubernetes operator does not apply any node selector. https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#scheduling",
+    "Proxy Pod's node selector.\nBy default Tailscale Kubernetes operator does not apply any node\nselector.\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#scheduling",
+    "Proxy Pod's security context. By default Tailscale Kubernetes operator does not apply any Pod security context. https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#security-context-2",
+    "Proxy Pod's security context.\nBy default Tailscale Kubernetes operator does not apply any Pod\nsecurity context.\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#security-context-2",
+    "appArmorProfile is the AppArmor options to use by the containers in this pod.\nNote that this field cannot be set when spec.os.name is windows.",
+    "A special supplemental group that applies to all containers in a pod. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod: \n 1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw---- \n If unset, the Kubelet will not modify the ownership and permissions of any volume. Note that this field cannot be set when spec.os.name is windows.",
+    "A special supplemental group that applies to all containers in a pod.\nSome volume types allow the Kubelet to change the ownership of that volume\nto be owned by the pod:\n\n1. The owning GID will be the FSGroup\n2. The setgid bit is set (new files created in the volume will be owned by FSGroup)\n3. The permission bits are OR'd with rw-rw----\n\nIf unset, the Kubelet will not modify the ownership and permissions of any volume.\nNote that this field cannot be set when spec.os.name is windows.",
+    "fsGroupChangePolicy defines behavior of changing ownership and permission of the volume before being exposed inside Pod. This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir. Valid values are \"OnRootMismatch\" and \"Always\". If not specified, \"Always\" is used. Note that this field cannot be set when spec.os.name is windows.",
+    "fsGroupChangePolicy defines behavior of changing ownership and permission of the volume\nbefore being exposed inside Pod. This field will only apply to\nvolume types which support fsGroup based ownership(and permissions).\nIt will have no effect on ephemeral volume types such as: secret, configmaps\nand emptydir.\nValid values are \"OnRootMismatch\" and \"Always\". If not specified, \"Always\" is used.\nNote that this field cannot be set when spec.os.name is windows.",
+    "The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container. Note that this field cannot be set when spec.os.name is windows.",
+    "The GID to run the entrypoint of the container process.\nUses runtime default if unset.\nMay also be set in SecurityContext.  If set in both SecurityContext and\nPodSecurityContext, the value specified in SecurityContext takes precedence\nfor that container.\nNote that this field cannot be set when spec.os.name is windows.",
+    "Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.",
+    "Indicates that the container must run as a non-root user.\nIf true, the Kubelet will validate the image at runtime to ensure that it\ndoes not run as UID 0 (root) and fail to start the container if it does.\nIf unset or false, no such validation will be performed.\nMay also be set in SecurityContext.  If set in both SecurityContext and\nPodSecurityContext, the value specified in SecurityContext takes precedence.",
+    "The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container. Note that this field cannot be set when spec.os.name is windows.",
+    "The UID to run the entrypoint of the container process.\nDefaults to user specified in image metadata if unspecified.\nMay also be set in SecurityContext.  If set in both SecurityContext and\nPodSecurityContext, the value specified in SecurityContext takes precedence\nfor that container.\nNote that this field cannot be set when spec.os.name is windows.",
+    "The SELinux context to be applied to all containers. If unspecified, the container runtime will allocate a random SELinux context for each container.  May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container. Note that this field cannot be set when spec.os.name is windows.",
+    "The SELinux context to be applied to all containers.\nIf unspecified, the container runtime will allocate a random SELinux context for each\ncontainer.  May also be set in SecurityContext.  If set in\nboth SecurityContext and PodSecurityContext, the value specified in SecurityContext\ntakes precedence for that container.\nNote that this field cannot be set when spec.os.name is windows.",
+    "The seccomp options to use by the containers in this pod. Note that this field cannot be set when spec.os.name is windows.",
+    "The seccomp options to use by the containers in this pod.\nNote that this field cannot be set when spec.os.name is windows.",
+    "localhostProfile indicates a profile defined in a file on the node should be used. The profile must be preconfigured on the node to work. Must be a descending path, relative to the kubelet's configured seccomp profile location. Must be set if type is \"Localhost\". Must NOT be set for any other type.",
+    "localhostProfile indicates a profile defined in a file on the node should be used.\nThe profile must be preconfigured on the node to work.\nMust be a descending path, relative to the kubelet's configured seccomp profile location.\nMust be set if type is \"Localhost\". Must NOT be set for any other type.",
+    "type indicates which kind of seccomp profile will be applied. Valid options are: \n Localhost - a profile defined in a file on the node should be used. RuntimeDefault - the container runtime default profile should be used. Unconfined - no profile should be applied.",
+    "type indicates which kind of seccomp profile will be applied.\nValid options are:\n\nLocalhost - a profile defined in a file on the node should be used.\nRuntimeDefault - the container runtime default profile should be used.\nUnconfined - no profile should be applied.",
+    "A list of groups applied to the first process run in each container, in addition to the container's primary GID, the fsGroup (if specified), and group memberships defined in the container image for the uid of the container process. If unspecified, no additional groups are added to any container. Note that group memberships defined in the container image for the uid of the container process are still effective, even if they are not included in this list. Note that this field cannot be set when spec.os.name is windows.",
+    "Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch. Note that this field cannot be set when spec.os.name is windows.",
+    "Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported\nsysctls (by the container runtime) might fail to launch.\nNote that this field cannot be set when spec.os.name is windows.",
+    "The Windows specific settings applied to all containers. If unspecified, the options within a container's SecurityContext will be used. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is linux.",
+    "The Windows specific settings applied to all containers.\nIf unspecified, the options within a container's SecurityContext will be used.\nIf set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.\nNote that this field cannot be set when spec.os.name is linux.",
+    "GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.",
+    "GMSACredentialSpec is where the GMSA admission webhook\n(https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the\nGMSA credential spec named by the GMSACredentialSpecName field.",
+    "HostProcess determines if a container should be run as a 'Host Process' container. All of a Pod's containers must have the same effective HostProcess value (it is not allowed to have a mix of HostProcess containers and non-HostProcess containers). In addition, if HostProcess is true then HostNetwork must also be set to true.",
+    "HostProcess determines if a container should be run as a 'Host Process' container.\nAll of a Pod's containers must have the same effective HostProcess value\n(it is not allowed to have a mix of HostProcess containers and non-HostProcess containers).\nIn addition, if HostProcess is true then HostNetwork must also be set to true.",
+    "The UserName in Windows to run the entrypoint of the container process. Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.",
+    "The UserName in Windows to run the entrypoint of the container process.\nDefaults to the user specified in image metadata if unspecified.\nMay also be set in PodSecurityContext. If set in both SecurityContext and\nPodSecurityContext, the value specified in SecurityContext takes precedence.",
+    "List of environment variables to set in the container. https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#environment-variables Note that environment variables provided here will take precedence over Tailscale-specific environment variables set by the operator, however running proxies with custom values for Tailscale environment variables (i.e TS_USERSPACE) is not recommended and might break in the future.",
+    "List of environment variables to set in the container.\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#environment-variables\nNote that environment variables provided here will take precedence\nover Tailscale-specific environment variables set by the operator,\nhowever running proxies with custom values for Tailscale environment\nvariables (i.e TS_USERSPACE) is not recommended and might break in\nthe future.",
+    "Variable references $(VAR_NAME) are expanded using the previously defined environment variables in the container and any service environment variables. If a variable cannot be resolved, the reference in the input string will be unchanged. Double $$ are reduced to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e. \"$$(VAR_NAME)\" will produce the string literal \"$(VAR_NAME)\". Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to \"\".",
+    "Variable references $(VAR_NAME) are expanded using the previously defined\n environment variables in the container and any service environment\nvariables. If a variable cannot be resolved, the reference in the input\nstring will be unchanged. Double $$ are reduced to a single $, which\nallows for escaping the $(VAR_NAME) syntax: i.e. \"$$(VAR_NAME)\" will\nproduce the string literal \"$(VAR_NAME)\". Escaped references will never\nbe expanded, regardless of whether the variable exists or not. Defaults\nto \"\".",
+    "Container image name. By default images are pulled from docker.io/tailscale/tailscale, but the official images are also available at ghcr.io/tailscale/tailscale. Specifying image name here will override any proxy image values specified via the Kubernetes operator's Helm chart values or PROXY_IMAGE env var in the operator Deployment. https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#image",
+    "Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always. https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#image",
+    "Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always.\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#image",
+    "Container resource requirements. By default Tailscale Kubernetes operator does not apply any resource requirements. The amount of resources required wil depend on the amount of resources the operator needs to parse, usage patterns and cluster size. https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#resources",
+    "Container resource requirements.\nBy default Tailscale Kubernetes operator does not apply any resource\nrequirements. The amount of resources required wil depend on the\namount of resources the operator needs to parse, usage patterns and\ncluster size.\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#resources",
+    "Claims lists the names of resources, defined in spec.resourceClaims, that are used by this container. \n This is an alpha field and requires enabling the DynamicResourceAllocation feature gate. \n This field is immutable. It can only be set for containers.",
+    "Name must match the name of one entry in pod.spec.resourceClaims of the Pod where this field is used. It makes that resource available inside a container.",
+    "Name must match the name of one entry in pod.spec.resourceClaims of\nthe Pod where this field is used. It makes that resource available\ninside a container.",
+    "Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+    "Limits describes the maximum amount of compute resources allowed.\nMore info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+    "Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. Requests cannot exceed Limits. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+    "Requests describes the minimum amount of compute resources required.\nIf Requests is omitted for a container, it defaults to Limits if that is explicitly specified,\notherwise to an implementation-defined value. Requests cannot exceed Limits.\nMore info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+    "Container security context. Security context specified here will override the security context by the operator. By default the operator: - sets 'privileged: true' for the init container - set NET_ADMIN capability for tailscale container for proxies that are created for Services or Connector. https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#security-context",
+    "AllowPrivilegeEscalation controls whether a process can gain more privileges than its parent process. This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN Note that this field cannot be set when spec.os.name is windows.",
+    "AllowPrivilegeEscalation controls whether a process can gain more\nprivileges than its parent process. This bool directly controls if\nthe no_new_privs flag will be set on the container process.\nAllowPrivilegeEscalation is true always when the container is:\n1) run as Privileged\n2) has CAP_SYS_ADMIN\nNote that this field cannot be set when spec.os.name is windows.",
+    "appArmorProfile is the AppArmor options to use by this container. If set, this profile\noverrides the pod's appArmorProfile.\nNote that this field cannot be set when spec.os.name is windows.",
+    "The capabilities to add/drop when running containers. Defaults to the default set of capabilities granted by the container runtime. Note that this field cannot be set when spec.os.name is windows.",
+    "The capabilities to add/drop when running containers.\nDefaults to the default set of capabilities granted by the container runtime.\nNote that this field cannot be set when spec.os.name is windows.",
+    "Run container in privileged mode. Processes in privileged containers are essentially equivalent to root on the host. Defaults to false. Note that this field cannot be set when spec.os.name is windows.",
+    "Run container in privileged mode.\nProcesses in privileged containers are essentially equivalent to root on the host.\nDefaults to false.\nNote that this field cannot be set when spec.os.name is windows.",
+    "procMount denotes the type of proc mount to use for the containers. The default is DefaultProcMount which uses the container runtime defaults for readonly paths and masked paths. This requires the ProcMountType feature flag to be enabled. Note that this field cannot be set when spec.os.name is windows.",
+    "Whether this container has a read-only root filesystem. Default is false. Note that this field cannot be set when spec.os.name is windows.",
+    "Whether this container has a read-only root filesystem.\nDefault is false.\nNote that this field cannot be set when spec.os.name is windows.",
+    "The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is windows.",
+    "The GID to run the entrypoint of the container process.\nUses runtime default if unset.\nMay also be set in PodSecurityContext.  If set in both SecurityContext and\nPodSecurityContext, the value specified in SecurityContext takes precedence.\nNote that this field cannot be set when spec.os.name is windows.",
+    "Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.",
+    "Indicates that the container must run as a non-root user.\nIf true, the Kubelet will validate the image at runtime to ensure that it\ndoes not run as UID 0 (root) and fail to start the container if it does.\nIf unset or false, no such validation will be performed.\nMay also be set in PodSecurityContext.  If set in both SecurityContext and\nPodSecurityContext, the value specified in SecurityContext takes precedence.",
+    "The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is windows.",
+    "The UID to run the entrypoint of the container process.\nDefaults to user specified in image metadata if unspecified.\nMay also be set in PodSecurityContext.  If set in both SecurityContext and\nPodSecurityContext, the value specified in SecurityContext takes precedence.\nNote that this field cannot be set when spec.os.name is windows.",
+    "The SELinux context to be applied to the container. If unspecified, the container runtime will allocate a random SELinux context for each container.  May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is windows.",
+    "The SELinux context to be applied to the container.\nIf unspecified, the container runtime will allocate a random SELinux context for each\ncontainer.  May also be set in PodSecurityContext.  If set in both SecurityContext and\nPodSecurityContext, the value specified in SecurityContext takes precedence.\nNote that this field cannot be set when spec.os.name is windows.",
+    "The seccomp options to use by this container. If seccomp options are provided at both the pod & container level, the container options override the pod options. Note that this field cannot be set when spec.os.name is windows.",
+    "The seccomp options to use by this container. If seccomp options are\nprovided at both the pod & container level, the container options\noverride the pod options.\nNote that this field cannot be set when spec.os.name is windows.",
+    "The Windows specific settings applied to all containers. If unspecified, the options from the PodSecurityContext will be used. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is linux.",
+    "The Windows specific settings applied to all containers.\nIf unspecified, the options from the PodSecurityContext will be used.\nIf set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.\nNote that this field cannot be set when spec.os.name is linux.",
+    "Proxy Pod's tolerations. By default Tailscale Kubernetes operator does not apply any tolerations. https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#scheduling",
+    "Proxy Pod's tolerations.\nBy default Tailscale Kubernetes operator does not apply any\ntolerations.\nhttps://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#scheduling",
+    "Effect indicates the taint effect to match. Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.",
+    "Effect indicates the taint effect to match. Empty means match all taint effects.\nWhen specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.",
+    "Key is the taint key that the toleration applies to. Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys.",
+    "Key is the taint key that the toleration applies to. Empty means match all taint keys.\nIf the key is empty, operator must be Exists; this combination means to match all values and all keys.",
+    "Operator represents a key's relationship to the value. Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.",
+    "TolerationSeconds represents the period of time the toleration (which must be of effect NoExecute, otherwise this field is ignored) tolerates the taint. By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.",
+    "TolerationSeconds represents the period of time the toleration (which must be\nof effect NoExecute, otherwise this field is ignored) tolerates the taint. By default,\nit is not set, which means tolerate the taint forever (do not evict). Zero and\nnegative values will be treated as 0 (evict immediately) by the system.",
+    "Value is the taint value the toleration matches to. If the operator is Exists, the value should be empty, otherwise just a regular string.",
+    "Value is the taint value the toleration matches to.\nIf the operator is Exists, the value should be empty, otherwise just a regular string.",
+    "TailscaleConfig contains options to configure the tailscale-specific parameters of proxies.",
+    "TailscaleConfig contains options to configure the tailscale-specific\nparameters of proxies.",
+    "AcceptRoutes can be set to true to make the proxy instance accept routes advertized by other nodes on the tailnet, such as subnet routes. This is equivalent of passing --accept-routes flag to a tailscale Linux client. https://tailscale.com/kb/1019/subnets#use-your-subnet-routes-from-other-machines Defaults to false.",
+    "Status of the ProxyClass. This is set and managed automatically. https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "Status of the ProxyClass. This is set and managed automatically.\nhttps://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "List of status conditions to indicate the status of the ProxyClass. Known condition types are `ProxyClassReady`.",
+    "List of status conditions to indicate the status of the ProxyClass.\nKnown condition types are `ProxyClassReady`.",
+    "LastTransitionTime is the timestamp corresponding to the last status change of this condition.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "Message is a human readable description of the details of the last transition, complementing reason.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "If set, this represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.condition[x].observedGeneration is 9, the condition is out of date with respect to the current state of the Connector.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "Reason is a brief machine readable explanation for the condition's last transition.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "Status of the condition, one of ('True', 'False', 'Unknown').",
+    "status of the condition, one of True, False, Unknown.",
+    "Type of the condition, known values are (`SubnetRouterReady`).",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "ProxyClass describes a set of configuration parameters that can be applied to proxy resources created by the Tailscale Kubernetes operator. To apply a given ProxyClass to resources created for a tailscale Ingress or Service, use tailscale.com/proxy-class=<proxyclass-name> label. To apply a given ProxyClass to resources created for a Connector, use connector.spec.proxyClass field. ProxyClass is a cluster scoped resource. More info: https://tailscale.com/kb/1236/kubernetes-operator#cluster-resource-customization-using-proxyclass-custom-resource.",
+    "Proxy's StatefulSet spec."
+  ]
+}

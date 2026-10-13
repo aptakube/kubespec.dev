@@ -1,0 +1,805 @@
+{
+  "versions": {
+    "v1.9.2": {
+      "added": {
+        "status.currentPrimaryTimestamp": "string",
+        "status.targetPrimaryTimestamp": "string"
+      },
+      "descriptions": {
+        "status.currentPrimaryTimestamp": [
+          null,
+          0
+        ],
+        "status.targetPrimaryTimestamp": [
+          null,
+          1
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.affinity.additionalPodAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.affinity.additionalPodAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector",
+        "spec.affinity.additionalPodAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.affinity.additionalPodAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector",
+        "spec.storage.pvcTemplate.dataSource"
+      ],
+      "added": {
+        "spec.storage.pvcTemplate.dataSourceRef": "object",
+        "status.cloudNativePostgresqlCommitHash": "string"
+      },
+      "descriptions": {
+        "spec.affinity.additionalPodAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          2,
+          3
+        ],
+        "spec.affinity.additionalPodAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          2,
+          3
+        ],
+        "spec.affinity.additionalPodAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          2,
+          3
+        ],
+        "spec.affinity.additionalPodAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          2,
+          3
+        ],
+        "spec.storage.pvcTemplate.dataSource": [
+          4,
+          5
+        ],
+        "spec.storage.pvcTemplate.dataSourceRef": [
+          null,
+          6
+        ],
+        "status.cloudNativePostgresqlCommitHash": [
+          null,
+          7
+        ]
+      }
+    },
+    "v1.8.0": {
+      "added": {
+        "spec.backup.barmanObjectStore.azureCredentials": "object",
+        "spec.bootstrap.recovery.source": "string",
+        "spec.enableSuperuserAccess": "boolean",
+        "spec.externalClusters.barmanObjectStore": "object",
+        "spec.imagePullPolicy": "string",
+        "spec.logLevel": "string"
+      },
+      "optional": [
+        "spec.backup.barmanObjectStore.s3Credentials",
+        "spec.bootstrap.recovery.backup"
+      ],
+      "descriptionChanged": [
+        "spec.externalClusters",
+        "spec.replica.source"
+      ],
+      "descriptions": {
+        "spec.backup.barmanObjectStore.azureCredentials": [
+          null,
+          8
+        ],
+        "spec.backup.barmanObjectStore.s3Credentials": [
+          null,
+          8
+        ],
+        "spec.bootstrap.recovery.backup": [
+          null,
+          9
+        ],
+        "spec.bootstrap.recovery.source": [
+          null,
+          10
+        ],
+        "spec.enableSuperuserAccess": [
+          null,
+          11
+        ],
+        "spec.externalClusters": [
+          12,
+          13
+        ],
+        "spec.externalClusters.barmanObjectStore": [
+          null,
+          14
+        ],
+        "spec.imagePullPolicy": [
+          null,
+          15
+        ],
+        "spec.logLevel": [
+          null,
+          16
+        ],
+        "spec.replica.source": [
+          17,
+          18
+        ]
+      }
+    },
+    "v1.7.1": {
+      "added": {
+        "spec.bootstrap.initdb.postInitSQL": "string[]"
+      },
+      "descriptions": {
+        "spec.bootstrap.initdb.postInitSQL": [
+          null,
+          19
+        ]
+      }
+    },
+    "v1.7.0": {
+      "added": {
+        "spec.affinity.additionalPodAffinity": "object",
+        "spec.affinity.additionalPodAntiAffinity": "object",
+        "spec.backup.barmanObjectStore.endpointCA": "object",
+        "spec.certificates.clientCASecret": "string",
+        "spec.certificates.replicationTLSSecret": "string",
+        "status.configMapResourceVersion": "object",
+        "status.secretsResourceVersion.barmanEndpointCA": "string",
+        "status.secretsResourceVersion.metrics": "map[string]string"
+      },
+      "descriptionChanged": [
+        "spec.certificates.serverCASecret",
+        "status.certificates.clientCASecret",
+        "status.certificates.replicationTLSSecret",
+        "status.certificates.serverCASecret",
+        "status.secretsResourceVersion.replicationSecretVersion"
+      ],
+      "descriptions": {
+        "spec.affinity.additionalPodAffinity": [
+          null,
+          20
+        ],
+        "spec.affinity.additionalPodAntiAffinity": [
+          null,
+          21
+        ],
+        "spec.backup.barmanObjectStore.endpointCA": [
+          null,
+          22
+        ],
+        "spec.certificates.clientCASecret": [
+          null,
+          23
+        ],
+        "spec.certificates.replicationTLSSecret": [
+          null,
+          24
+        ],
+        "spec.certificates.serverCASecret": [
+          25,
+          26
+        ],
+        "status.certificates.clientCASecret": [
+          27,
+          23
+        ],
+        "status.certificates.replicationTLSSecret": [
+          28,
+          24
+        ],
+        "status.certificates.serverCASecret": [
+          25,
+          26
+        ],
+        "status.configMapResourceVersion": [
+          null,
+          29
+        ],
+        "status.secretsResourceVersion.barmanEndpointCA": [
+          null,
+          30
+        ],
+        "status.secretsResourceVersion.metrics": [
+          null,
+          31
+        ],
+        "status.secretsResourceVersion.replicationSecretVersion": [
+          32,
+          33
+        ]
+      }
+    },
+    "v1.6.0": {
+      "added": {
+        "spec.affinity.podAntiAffinityType": "string",
+        "spec.postgresql.promotionTimeout": "integer",
+        "spec.postgresql.shared_preload_libraries": "string[]",
+        "spec.replica": "object",
+        "status.healthyPVC": "string[]"
+      },
+      "descriptions": {
+        "spec.affinity.podAntiAffinityType": [
+          null,
+          34
+        ],
+        "spec.postgresql.promotionTimeout": [
+          null,
+          35
+        ],
+        "spec.postgresql.shared_preload_libraries": [
+          null,
+          36
+        ],
+        "spec.replica": [
+          null,
+          37
+        ],
+        "status.healthyPVC": [
+          null,
+          38
+        ]
+      }
+    },
+    "v1.5.1": {
+      "descriptionChanged": [
+        "spec.resources.limits",
+        "spec.resources.requests",
+        "spec.storage.pvcTemplate.resources.limits",
+        "spec.storage.pvcTemplate.resources.requests"
+      ],
+      "added": {
+        "status.initializingPVC": "string[]"
+      },
+      "optional": [
+        "status.secretsResourceVersion.applicationSecretVersion",
+        "status.secretsResourceVersion.clientCaSecretVersion",
+        "status.secretsResourceVersion.replicationSecretVersion",
+        "status.secretsResourceVersion.serverCaSecretVersion",
+        "status.secretsResourceVersion.serverSecretVersion",
+        "status.secretsResourceVersion.superuserSecretVersion"
+      ],
+      "descriptions": {
+        "spec.resources.limits": [
+          39,
+          40
+        ],
+        "spec.resources.requests": [
+          41,
+          42
+        ],
+        "spec.storage.pvcTemplate.resources.limits": [
+          39,
+          40
+        ],
+        "spec.storage.pvcTemplate.resources.requests": [
+          41,
+          42
+        ],
+        "status.initializingPVC": [
+          null,
+          43
+        ],
+        "status.secretsResourceVersion.applicationSecretVersion": [
+          null,
+          44
+        ],
+        "status.secretsResourceVersion.clientCaSecretVersion": [
+          null,
+          45
+        ],
+        "status.secretsResourceVersion.replicationSecretVersion": [
+          null,
+          32
+        ],
+        "status.secretsResourceVersion.serverCaSecretVersion": [
+          null,
+          46
+        ],
+        "status.secretsResourceVersion.serverSecretVersion": [
+          null,
+          47
+        ],
+        "status.secretsResourceVersion.superuserSecretVersion": [
+          null,
+          48
+        ]
+      }
+    },
+    "v1.5.0": {
+      "added": {
+        "spec.affinity.tolerations": "object[]",
+        "spec.bootstrap.pg_basebackup": "object",
+        "spec.certificates": "object",
+        "spec.externalClusters": "object[]",
+        "status.certificates": "object",
+        "status.secretsResourceVersion.clientCaSecretVersion": "string",
+        "status.secretsResourceVersion.serverCaSecretVersion": "string"
+      },
+      "descriptionChanged": [
+        "spec.backup.barmanObjectStore.s3Credentials.accessKeyId.key",
+        "spec.backup.barmanObjectStore.s3Credentials.accessKeyId.name",
+        "spec.backup.barmanObjectStore.s3Credentials.secretAccessKey.key",
+        "spec.backup.barmanObjectStore.s3Credentials.secretAccessKey.name",
+        "spec.bootstrap.initdb.secret.name",
+        "spec.bootstrap.recovery.backup.name",
+        "spec.bootstrap.recovery.recoveryTarget",
+        "spec.imagePullSecrets.name",
+        "spec.monitoring.customQueriesConfigMap.key",
+        "spec.monitoring.customQueriesConfigMap.name",
+        "spec.monitoring.customQueriesSecret.key",
+        "spec.monitoring.customQueriesSecret.name",
+        "spec.superuserSecret",
+        "spec.superuserSecret.name",
+        "status.secretsResourceVersion.caSecretVersion"
+      ],
+      "required": [
+        "spec.backup.barmanObjectStore.s3Credentials.accessKeyId.name",
+        "spec.backup.barmanObjectStore.s3Credentials.secretAccessKey.name",
+        "spec.bootstrap.initdb.secret.name",
+        "spec.bootstrap.recovery.backup.name",
+        "spec.imagePullSecrets.name",
+        "spec.monitoring.customQueriesConfigMap.name",
+        "spec.monitoring.customQueriesSecret.name",
+        "spec.superuserSecret.name"
+      ],
+      "optional": [
+        "status.secretsResourceVersion.caSecretVersion"
+      ],
+      "removed": {
+        "spec.backup.barmanObjectStore.s3Credentials.accessKeyId.optional": "boolean",
+        "spec.backup.barmanObjectStore.s3Credentials.secretAccessKey.optional": "boolean",
+        "spec.monitoring.customQueriesConfigMap.optional": "boolean",
+        "spec.monitoring.customQueriesSecret.optional": "boolean"
+      },
+      "descriptions": {
+        "spec.affinity.tolerations": [
+          null,
+          49
+        ],
+        "spec.backup.barmanObjectStore.s3Credentials.accessKeyId.key": [
+          50,
+          51
+        ],
+        "spec.backup.barmanObjectStore.s3Credentials.accessKeyId.name": [
+          52,
+          53
+        ],
+        "spec.backup.barmanObjectStore.s3Credentials.secretAccessKey.key": [
+          50,
+          51
+        ],
+        "spec.backup.barmanObjectStore.s3Credentials.secretAccessKey.name": [
+          52,
+          53
+        ],
+        "spec.bootstrap.initdb.secret.name": [
+          52,
+          53
+        ],
+        "spec.bootstrap.pg_basebackup": [
+          null,
+          54
+        ],
+        "spec.bootstrap.recovery.backup.name": [
+          52,
+          53
+        ],
+        "spec.bootstrap.recovery.recoveryTarget": [
+          55,
+          56
+        ],
+        "spec.certificates": [
+          null,
+          57
+        ],
+        "spec.externalClusters": [
+          null,
+          12
+        ],
+        "spec.imagePullSecrets.name": [
+          52,
+          53
+        ],
+        "spec.monitoring.customQueriesConfigMap.key": [
+          58,
+          51
+        ],
+        "spec.monitoring.customQueriesConfigMap.name": [
+          52,
+          53
+        ],
+        "spec.monitoring.customQueriesSecret.key": [
+          50,
+          51
+        ],
+        "spec.monitoring.customQueriesSecret.name": [
+          52,
+          53
+        ],
+        "spec.superuserSecret": [
+          59,
+          60
+        ],
+        "spec.superuserSecret.name": [
+          52,
+          53
+        ],
+        "status.certificates": [
+          null,
+          61
+        ],
+        "status.secretsResourceVersion.caSecretVersion": [
+          62,
+          63
+        ],
+        "status.secretsResourceVersion.clientCaSecretVersion": [
+          null,
+          45
+        ],
+        "status.secretsResourceVersion.serverCaSecretVersion": [
+          null,
+          46
+        ],
+        "spec.backup.barmanObjectStore.s3Credentials.accessKeyId.optional": [
+          64,
+          null
+        ],
+        "spec.backup.barmanObjectStore.s3Credentials.secretAccessKey.optional": [
+          64,
+          null
+        ],
+        "spec.monitoring.customQueriesConfigMap.optional": [
+          65,
+          null
+        ],
+        "spec.monitoring.customQueriesSecret.optional": [
+          64,
+          null
+        ]
+      }
+    },
+    "v1.3.0": {
+      "optional": [
+        "spec.monitoring.customQueriesConfigMap",
+        "spec.monitoring.customQueriesSecret"
+      ],
+      "added": {
+        "status.secretsResourceVersion": "object"
+      },
+      "descriptions": {
+        "spec.monitoring.customQueriesConfigMap": [
+          null,
+          66
+        ],
+        "spec.monitoring.customQueriesSecret": [
+          null,
+          67
+        ],
+        "status.secretsResourceVersion": [
+          null,
+          68
+        ]
+      }
+    },
+    "v1.2.0": {
+      "added": {
+        "spec.monitoring": "object"
+      },
+      "descriptions": {
+        "spec.monitoring": [
+          null,
+          69
+        ]
+      }
+    },
+    "v0.8.0": {
+      "optional": [
+        "spec.affinity.enablePodAntiAffinity"
+      ],
+      "descriptionChanged": [
+        "spec.affinity.enablePodAntiAffinity",
+        "spec.storage.pvcTemplate.dataSource",
+        "spec.storage.pvcTemplate.volumeMode"
+      ],
+      "added": {
+        "spec.affinity.nodeSelector": "map[string]string"
+      },
+      "description": true,
+      "descriptions": {
+        "spec.affinity.enablePodAntiAffinity": [
+          70,
+          71
+        ],
+        "spec.affinity.nodeSelector": [
+          null,
+          72
+        ],
+        "spec.storage.pvcTemplate.dataSource": [
+          73,
+          4
+        ],
+        "spec.storage.pvcTemplate.volumeMode": [
+          74,
+          75
+        ],
+        "": [
+          76,
+          77
+        ]
+      }
+    },
+    "v0.7.0": {
+      "added": {
+        "spec.storage.resizeInUseVolumes": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.storage.size"
+      ],
+      "descriptions": {
+        "spec.storage.resizeInUseVolumes": [
+          null,
+          78
+        ],
+        "spec.storage.size": [
+          79,
+          80
+        ]
+      }
+    },
+    "v0.6.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.backup.barmanObjectStore.data",
+        "spec.backup.barmanObjectStore.data.compression",
+        "spec.backup.barmanObjectStore.data.encryption",
+        "spec.backup.barmanObjectStore.data.immediateCheckpoint",
+        "spec.backup.barmanObjectStore.data.jobs",
+        "spec.backup.barmanObjectStore.wal",
+        "spec.backup.barmanObjectStore.wal.compression",
+        "spec.backup.barmanObjectStore.wal.encryption",
+        "spec.bootstrap.initdb.database",
+        "spec.bootstrap.initdb.owner",
+        "spec.postgresGID",
+        "spec.postgresUID",
+        "spec.resources",
+        "spec.storage.storageClass",
+        "spec.superuserSecret",
+        "status",
+        "status.phase",
+        "status.phaseReason"
+      ],
+      "added": {
+        "spec.bootstrap.initdb.options": "string[]",
+        "spec.bootstrap.recovery": "object",
+        "spec.maxSyncReplicas": "integer",
+        "spec.minSyncReplicas": "integer",
+        "status.jobCount": "integer",
+        "status.pvcCount": "integer"
+      },
+      "removed": {
+        "spec.bootstrap.fullRecovery": "object"
+      },
+      "descriptions": {
+        "spec": [
+          81,
+          82
+        ],
+        "spec.backup.barmanObjectStore.data": [
+          83,
+          84
+        ],
+        "spec.backup.barmanObjectStore.data.compression": [
+          85,
+          86
+        ],
+        "spec.backup.barmanObjectStore.data.encryption": [
+          87,
+          88
+        ],
+        "spec.backup.barmanObjectStore.data.immediateCheckpoint": [
+          89,
+          90
+        ],
+        "spec.backup.barmanObjectStore.data.jobs": [
+          91,
+          92
+        ],
+        "spec.backup.barmanObjectStore.wal": [
+          93,
+          94
+        ],
+        "spec.backup.barmanObjectStore.wal.compression": [
+          85,
+          95
+        ],
+        "spec.backup.barmanObjectStore.wal.encryption": [
+          87,
+          88
+        ],
+        "spec.bootstrap.initdb.database": [
+          96,
+          97
+        ],
+        "spec.bootstrap.initdb.options": [
+          null,
+          98
+        ],
+        "spec.bootstrap.initdb.owner": [
+          99,
+          100
+        ],
+        "spec.bootstrap.recovery": [
+          null,
+          101
+        ],
+        "spec.maxSyncReplicas": [
+          null,
+          102
+        ],
+        "spec.minSyncReplicas": [
+          null,
+          103
+        ],
+        "spec.postgresGID": [
+          104,
+          105
+        ],
+        "spec.postgresUID": [
+          106,
+          107
+        ],
+        "spec.resources": [
+          108,
+          109
+        ],
+        "spec.storage.storageClass": [
+          110,
+          111
+        ],
+        "spec.superuserSecret": [
+          112,
+          59
+        ],
+        "status": [
+          113,
+          114
+        ],
+        "status.jobCount": [
+          null,
+          115
+        ],
+        "status.phase": [
+          null,
+          116
+        ],
+        "status.phaseReason": [
+          null,
+          117
+        ],
+        "status.pvcCount": [
+          null,
+          118
+        ],
+        "spec.bootstrap.fullRecovery": [
+          101,
+          null
+        ]
+      }
+    }
+  },
+  "texts": [
+    "The timestamp of the current primary",
+    "The timestamp of the target primary",
+    "A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces. This field is alpha-level and is only honored when PodAffinityNamespaceSelector feature is enabled.",
+    "A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces. This field is beta-level and is only honored when PodAffinityNamespaceSelector feature is enabled.",
+    "This field can be used to specify either: * An existing VolumeSnapshot object (snapshot.storage.k8s.io/VolumeSnapshot) * An existing PVC (PersistentVolumeClaim) * An existing custom resource that implements data population (Alpha) In order to use custom resource types that implement data population, the AnyVolumeDataSource feature gate must be enabled. If the provisioner or an external controller can support the specified data source, it will create a new volume based on the contents of the specified data source.",
+    "This field can be used to specify either: * An existing VolumeSnapshot object (snapshot.storage.k8s.io/VolumeSnapshot) * An existing PVC (PersistentVolumeClaim) If the provisioner or an external controller can support the specified data source, it will create a new volume based on the contents of the specified data source. If the AnyVolumeDataSource feature gate is enabled, this field will always have the same contents as the DataSourceRef field.",
+    "Specifies the object from which to populate the volume with data, if a non-empty volume is desired. This may be any local object from a non-empty API group (non core object) or a PersistentVolumeClaim object. When this field is specified, volume binding will only succeed if the type of the specified object matches some installed volume populator or dynamic provisioner. This field will replace the functionality of the DataSource field and as such if both fields are non-empty, they must have the same value. For backwards compatibility, both fields (DataSource and DataSourceRef) will be set to the same value automatically if one of them is empty and the other is non-empty. There are two important differences between DataSource and DataSourceRef: * While DataSource only allows two specific types of objects, DataSourceRef   allows any non-core object, as well as PersistentVolumeClaim objects. * While DataSource ignores disallowed values (dropping them), DataSourceRef   preserves all values, and generates an error if a disallowed value is   specified. (Alpha) Using this field requires the AnyVolumeDataSource feature gate to be enabled.",
+    "The commit hash number of which this operator running",
+    "The credentials to use to upload data to S3",
+    "The backup we need to restore",
+    "The external cluster whose backup we will restore",
+    "When this option is enabled, the operator will use the `SuperuserSecret` to update the `postgres` user password (if the secret is not present, the operator will automatically create one). When this option is disabled, the operator will ignore the `SuperuserSecret` content, delete it when automatically created, and then blank the password of the `postgres` user by setting it to `NULL`. Enabled by default.",
+    "The list of external server which are used in the cluster configuration",
+    "The list of external clusters which are used in the other sections of the configuration",
+    "The configuration for the barman-cloud tool suite",
+    "Image pull policy. One of `Always`, `Never` or `IfNotPresent`. If not defined, it defaults to `IfNotPresent`. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images#updating-images",
+    "The instances' log level, one of the following values: error, info (default), debug, trace",
+    "The name of the external server which is the replication origin",
+    "The name of the external cluster which is the replication origin",
+    "List of SQL queries to be executed as a superuser immediately after the cluster has been created - to be used with extreme care (by default empty)",
+    "AdditionalPodAffinity allows to specify pod affinity terms to be passed to all the cluster's pods.",
+    "AdditionalPodAntiAffinity allows to specify pod anti-affinity terms to be added to the ones generated by the operator if EnablePodAntiAffinity is set to true (default) or to be used exclusively if set to false.",
+    "EndpointCA store the CA bundle of the barman endpoint. Useful when using self-signed certificates to avoid errors with certificate issuer and barman-cloud-wal-archive",
+    "The secret containing the Client CA certificate. If not defined, a new secret will be created with a self-signed CA and will be used to generate all the client certificates.<br /> <br /> Contains:<br /> <br /> - `ca.crt`: CA that should be used to validate the client certificates, used as `ssl_ca_file` of all the instances.<br /> - `ca.key`: key used to generate client certificates, if ReplicationTLSSecret is provided, this can be omitted.<br />",
+    "The secret of type kubernetes.io/tls containing the client certificate to authenticate as the `streaming_replica` user If not defined, ClientCASecret must provide also `ca.key` and a new secret will be created using the provided CA.",
+    "The secret containing the Server CA certificate. If not defined, a new secret will be created with a self-signed CA and will be used to generate the TLS certificate ServerTLSSecret. \n Contains: \n - `ca.crt`: CA that should be used to validate the server certificate,   used as `sslrootcert` in client connection strings. - `ca.key`: key used to generate Server SSL certs, if ServerTLSSecret is provided,   this can be omitted.",
+    "The secret containing the Server CA certificate. If not defined, a new secret will be created with a self-signed CA and will be used to generate the TLS certificate ServerTLSSecret.<br /> <br /> Contains:<br /> <br /> - `ca.crt`: CA that should be used to validate the server certificate, used as `sslrootcert` in client connection strings.<br /> - `ca.key`: key used to generate Server SSL certs, if ServerTLSSecret is provided, this can be omitted.<br />",
+    "The secret containing the Client CA certificate. This secret contains a self-signed CA and is used to sign TLS certificates used for client authentication. \n Contains: \n - `ca.crt`: CA that should be used to validate the client certificate, used as `ssl_ca_file`. - `ca.key`: key used to sign client SSL certs.",
+    "The secret of type kubernetes.io/tls containing the TLS client certificate to authenticate as `streaming_replica` user.",
+    "The list of resource versions of the configmaps managed by the operator. Every change here is done in the interest of the instance manager, which will refresh the configmap data",
+    "The resource version of the Barman Endpoint CA if provided",
+    "The versions of all the secrets used to pass metrics",
+    "The resource version of the \"streaming_replication\" user secret",
+    "The resource version of the \"streaming_replica\" user secret",
+    "PodAntiAffinityType allows the user to decide whether pod anti-affinity between cluster instance has to be considered a strong requirement during scheduling or not. Allowed values are: \"preferred\" (default if empty) or \"required\". Setting it to \"required\", could lead to instances remaining pending until new kubernetes nodes are added if all the existing nodes don't match the required pod anti-affinity rule. More info: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity",
+    "Specifies the maximum number of seconds to wait when promoting an instance to primary",
+    "Lists of shared preload libraries to add to the default ones",
+    "Replica cluster configuration",
+    "List of all the PVCs not dangling nor initializing",
+    "Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/",
+    "Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+    "Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/",
+    "Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+    "List of all the PVCs that are being initialized by this cluster",
+    "The resource version of the \"app\" user secret",
+    "The resource version of the PostgreSQL client-side CA secret version",
+    "The resource version of the PostgreSQL server-side CA secret version",
+    "The resource version of the PostgreSQL server-side secret version",
+    "The resource version of the \"postgres\" user secret",
+    "Tolerations is a list of Tolerations that should be set to all the pods for this cluster. More info: https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/",
+    "The key of the secret to select from.  Must be a valid secret key.",
+    "The key to select",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "Name of the referent.",
+    "Bootstrap the cluster taking a physical backup of another compatible PostgreSQL instance",
+    "By default the recovery will end as soon as a consistent state is reached: in this case that means at the end of a backup. This option allows to fine tune the recovery process",
+    "By default, the recovery will end as soon as a consistent state is reached: in this case, that means at the end of a backup. This option allows to fine tune the recovery process",
+    "The configuration for the CA and related certificates",
+    "The key to select.",
+    "The secret containing the superuser password. If not defined a new secret will be created with a randomly generated password",
+    "The secret containing the superuser password. If not defined, a new secret will be created with a randomly generated password",
+    "The configuration for the CA and related certificates, initialized with defaults.",
+    "The resource version of the \"ca\" secret version",
+    "Unused. Retained for compatibility with old versions.",
+    "Specify whether the Secret or its key must be defined",
+    "Specify whether the ConfigMap or its key must be defined",
+    "The list of config maps containing the custom queries",
+    "The list of secrets containing the custom queries",
+    "The list of resource versions of the secrets managed by the operator. Every change here is done in the interest of the instance manager, which will refresh the secret data",
+    "The configuration of the monitoring infrastructure of this cluster",
+    "Should we enable anti affinity or not?",
+    "Activates anti-affinity for the pods. The operator will define pods anti-affinity unless this field is explicitly set to false",
+    "NodeSelector is map of key-value pairs used to define the nodes on which the pods can run. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/",
+    "This field requires the VolumeSnapshotDataSource alpha feature gate to be enabled and currently VolumeSnapshot is the only supported data source. If the provisioner can support VolumeSnapshot data source, it will create a new volume and data will be restored to the volume at the same time. If the provisioner does not support VolumeSnapshot data source, volume will not be created and the failure will be reported as an event. In the future, we plan to support more data source types and the behavior of the provisioner may change.",
+    "volumeMode defines what type of volume is required by the claim. Value of Filesystem is implied when not included in claim spec. This is a beta feature.",
+    "volumeMode defines what type of volume is required by the claim. Value of Filesystem is implied when not included in claim spec.",
+    "Cluster is the Schema for the postgresql API",
+    "Cluster is the Schema for the PostgreSQL API",
+    "Resize existent PVCs, defaults to true",
+    "Size of the storage. Required if not already specified in the PVC template.",
+    "Size of the storage. Required if not already specified in the PVC template. Changes to this field are automatically reapplied to the created PVCs. Size cannot be decreased.",
+    "ClusterSpec defines the desired state of Cluster",
+    "Specification of the desired behavior of the cluster. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "The configuration to be used to backup the data files",
+    "The configuration to be used to backup the data files When not defined, base backups files will be stored uncompressed and may be unencrypted in the object store, according to the bucket default policy.",
+    "Whenever to compress files or not",
+    "Compress a backup file (a tar file per tablespace) while streaming it to the object store. Available options are empty string (no compression, default), `gzip` or `bzip2`.",
+    "Whenever to force the encryption of files (if the bucket is not already configured for that)",
+    "Whenever to force the encryption of files (if the bucket is not already configured for that). Allowed options are empty string (use the bucket policy, default), `AES256` and `aws:kms`",
+    "Whenever to force the initial checkpoint to be done as quickly as possible",
+    "Control whether the I/O workload for the backup initial checkpoint will be limited, according to the `checkpoint_completion_target` setting on the PostgreSQL server. If set to true, an immediate checkpoint will be used, meaning PostgreSQL will complete the checkpoint as soon as possible. `false` by default.",
+    "The number of jobs to be used to upload the backup, defaults to 2",
+    "The number of parallel jobs to be used to upload the backup, defaults to 2",
+    "The configuration for the backup of the WAL stream",
+    "The configuration for the backup of the WAL stream. When not defined, WAL files will be stored uncompressed and may be unencrypted in the object store, according to the bucket default policy.",
+    "Compress a WAL file before sending it to the object store. Available options are empty string (no compression, default), `gzip` or `bzip2`.",
+    "Name of the database used by the application.",
+    "Name of the database used by the application. Default: `app`.",
+    "The list of options that must be passed to initdb when creating the cluster",
+    "Name of the owner of the database in the instance to be used by applications.",
+    "Name of the owner of the database in the instance to be used by applications. Defaults to the value of the `database` key.",
+    "Bootstrap the cluster from a backup",
+    "The target value for the synchronous replication quorum, that can be decreased if the number of ready standbys is lower than this. Undefined or 0 disable synchronous replication.",
+    "Minimum number of instances required in synchronous replication with the primary. Undefined or 0 allow writes to complete when no standby is available.",
+    "The GID of the \"postgres\" user inside the image, defaults to \"26\"",
+    "The GID of the `postgres` user inside the image, defaults to `26`",
+    "The UID of the \"postgres\" user inside the image, defaults to \"26\"",
+    "The UID of the `postgres` user inside the image, defaults to `26`",
+    "Resources requirements of every generated Pod",
+    "Resources requirements of every generated Pod. Please refer to https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/ for more information.",
+    "StorageClass to use for database data (PGDATA). Applied after evaluating the PVC template, if available. If not specified, generated PVCs will be satisfied by the default storage class",
+    "StorageClass to use for database data (`PGDATA`). Applied after evaluating the PVC template, if available. If not specified, generated PVCs will be satisfied by the default storage class",
+    "The secret containing the superuser password, if empty a new secret will be created with a randomly generated password",
+    "ClusterStatus defines the observed state of Cluster",
+    "Most recently observed status of the cluster. This data may not be up to date. Populated by the system. Read-only. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "How many Jobs have been created by this cluster",
+    "Current phase of the cluster",
+    "Reason for the current phase",
+    "How many PVCs have been created by this cluster"
+  ]
+}

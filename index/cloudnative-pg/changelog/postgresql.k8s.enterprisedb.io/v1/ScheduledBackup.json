@@ -1,0 +1,43 @@
+{
+  "versions": {
+    "v1.8.0": {
+      "added": {
+        "spec.immediate": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.suspend"
+      ],
+      "descriptions": {
+        "spec.immediate": [
+          null,
+          0
+        ],
+        "spec.suspend": [
+          1,
+          2
+        ]
+      }
+    },
+    "v1.5.0": {
+      "required": [
+        "spec.cluster.name"
+      ],
+      "descriptionChanged": [
+        "spec.cluster.name"
+      ],
+      "descriptions": {
+        "spec.cluster.name": [
+          3,
+          4
+        ]
+      }
+    }
+  },
+  "texts": [
+    "If the first backup has to be immediately start after creation or not",
+    "If this backup is suspended of not",
+    "If this backup is suspended or not",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "Name of the referent."
+  ]
+}

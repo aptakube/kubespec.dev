@@ -1,0 +1,132 @@
+{
+  "versions": {
+    "v0.3.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.template.metadata.ownerReferences.kind",
+        "spec.template.spec.bootstrap.configRef.kind",
+        "spec.template.spec.bootstrap.configRef.resourceVersion",
+        "spec.template.spec.infrastructureRef.kind",
+        "spec.template.spec.infrastructureRef.resourceVersion",
+        "spec.template.spec.metadata.ownerReferences.kind"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          0,
+          1
+        ],
+        "kind": [
+          2,
+          3
+        ],
+        "spec.template.metadata.ownerReferences.kind": [
+          4,
+          5
+        ],
+        "spec.template.spec.bootstrap.configRef.kind": [
+          4,
+          5
+        ],
+        "spec.template.spec.bootstrap.configRef.resourceVersion": [
+          6,
+          7
+        ],
+        "spec.template.spec.infrastructureRef.kind": [
+          4,
+          5
+        ],
+        "spec.template.spec.infrastructureRef.resourceVersion": [
+          6,
+          7
+        ],
+        "spec.template.spec.metadata.ownerReferences.kind": [
+          4,
+          5
+        ]
+      }
+    },
+    "v0.2.4": {
+      "descriptionChanged": [
+        "spec.template.metadata",
+        "spec.template.metadata.generateName",
+        "spec.template.spec",
+        "spec.template.spec.metadata.generateName"
+      ],
+      "descriptions": {
+        "spec.template.metadata": [
+          8,
+          9
+        ],
+        "spec.template.metadata.generateName": [
+          10,
+          11
+        ],
+        "spec.template.spec": [
+          12,
+          13
+        ],
+        "spec.template.spec.metadata.generateName": [
+          10,
+          11
+        ]
+      }
+    },
+    "v0.2.3": {
+      "descriptionChanged": [
+        "spec.template.spec.metadata"
+      ],
+      "descriptions": {
+        "spec.template.spec.metadata": [
+          14,
+          15
+        ]
+      }
+    },
+    "v0.2.1": {
+      "descriptionChanged": [
+        "spec",
+        "status"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec": [
+          16,
+          17
+        ],
+        "status": [
+          18,
+          19
+        ],
+        "": [
+          20,
+          21
+        ]
+      }
+    }
+  },
+  "texts": [
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency",
+    "Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+    "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server. \n If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header). \n Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server. \n If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header). \n Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency",
+    "Specification of the desired behavior of the machine. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status",
+    "Specification of the desired behavior of the machine. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "ObjectMeta will autopopulate the Node created. Use this to indicate what labels, annotations, name prefix, etc., should be used when creating the Node.",
+    "DEPRECATED: ObjectMeta has no function and isn't used anywhere.",
+    "/ [MachineSetSpec] MachineSetSpec defines the desired state of MachineSet",
+    "MachineSetSpec defines the desired state of MachineSet",
+    "/ [MachineSetStatus] MachineSetStatus defines the observed state of MachineSet",
+    "MachineSetStatus defines the observed state of MachineSet",
+    "/ [MachineSet] MachineSet is the Schema for the machinesets API",
+    "MachineSet is the Schema for the machinesets API"
+  ]
+}

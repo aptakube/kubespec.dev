@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+/*
+ * Themes: follows the system setting, unless the theme toggle sets data-theme="light" or "dark"
+ * on <html> (see app/theme-toggle.tsx). color-scheme decides which side of each light-dark() is used.
+ */
+:root {
+  color-scheme: light dark;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/*
+ * Instead of a dark: variant on every class, the gray scale (and white) is flipped in dark mode:
+ * white is the darkest surface, gray-900 the lightest text, and so on. Accent colors move to
+ * lighter shades so they stay readable on dark backgrounds. Light values are Tailwind's defaults.
+ * Use dark: only for things the flip can't express, like an image that needs inverting.
+ */
+:root {
+  --color-white: light-dark(#fff, oklch(16% 0.02 262));
+  --color-gray-50: light-dark(oklch(98.5% 0.002 247.839), oklch(20% 0.022 262));
+  --color-gray-100: light-dark(oklch(96.7% 0.003 264.542), oklch(24% 0.025 262));
+  --color-gray-200: light-dark(oklch(92.8% 0.006 264.531), oklch(30% 0.028 260));
+  --color-gray-300: light-dark(oklch(87.2% 0.01 258.338), oklch(38% 0.03 259));
+  --color-gray-400: light-dark(oklch(70.7% 0.022 261.325), oklch(56% 0.027 262));
+  --color-gray-500: light-dark(oklch(55.1% 0.027 264.364), oklch(66% 0.022 262));
+  --color-gray-600: light-dark(oklch(44.6% 0.03 256.802), oklch(74% 0.018 262));
+  --color-gray-700: light-dark(oklch(37.3% 0.034 259.733), oklch(82% 0.012 262));
+  --color-gray-800: light-dark(oklch(27.8% 0.033 256.848), oklch(88% 0.008 262));
+  --color-gray-900: light-dark(oklch(21% 0.034 264.665), oklch(94% 0.005 262));
+  --color-gray-950: light-dark(oklch(13% 0.028 261.692), oklch(98.5% 0.002 248));
+
+  --color-orange-600: light-dark(oklch(64.6% 0.222 41.116), oklch(75% 0.183 55.934));
+  --color-sky-600: light-dark(oklch(58.8% 0.158 241.966), oklch(74.6% 0.16 232.661));
+  --color-pink-600: light-dark(oklch(59.2% 0.249 0.584), oklch(71.8% 0.202 349.761));
+  --color-blue-600: light-dark(oklch(54.6% 0.245 262.881), oklch(70.7% 0.165 254.624));
+  --color-red-600: light-dark(oklch(57.7% 0.245 27.325), oklch(70.4% 0.191 22.216));
+
+  /* changelog: added (green), removed (red) and changed (yellow); the 50s are diff highlights, dark in dark mode */
+  --color-green-50: light-dark(oklch(98.2% 0.018 155.826), oklch(26.6% 0.065 152.934));
+  --color-green-700: light-dark(oklch(52.7% 0.154 150.069), oklch(87.1% 0.15 154.449));
+  --color-red-50: light-dark(oklch(97.1% 0.013 17.38), oklch(25.8% 0.092 26.042));
+  --color-red-700: light-dark(oklch(50.5% 0.213 27.518), oklch(80.8% 0.114 19.571));
+  --color-yellow-600: light-dark(oklch(68.1% 0.162 75.834), oklch(90.5% 0.182 98.111));
+}
+
+/* dark: matches the same choice: an explicit dark theme, or the system one when not forced to light */
+@custom-variant dark {
+  &:where([data-theme="dark"] *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme="light"]) *) {
+      @slot;
+    }
+  }
+}
+
+/*
+ * Tabler icons (tabler.io/icons) drawn as a mask over the text color, so size-* and text-* style them.
+ * Used by the field tree classes below, where an inline <svg> per row added megabytes to big kinds.
+ */
+@utility icon-chevron-down {
+  display: inline-block;
+  background-color: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6l6 -6'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+@utility icon-copy {
+  display: inline-block;
+  background-color: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 9.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z'/%3E%3Cpath d='M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+@utility icon-check {
+  display: inline-block;
+  background-color: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5l10 -10'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+
+/*
+ * Field tree rows (app/field-tree.tsx). Kept as classes instead of utilities on each element,
+ * since a big kind renders over a thousand rows and the repeated class lists added up to megabytes.
+ */
+@layer components {
+  .ft-line {
+    @apply flex items-center;
+  }
+  .ft-row {
+    @apply flex cursor-default items-baseline rounded pr-1 text-left outline-none hover:bg-gray-100 focus-visible:bg-gray-100;
+  }
+  .ft-row[aria-expanded] {
+    @apply cursor-pointer;
+  }
+  /* fixed-width slots, so names line up whether or not a field has children or is required */
+  .ft-chevron {
+    @apply ml-px flex w-3.5 shrink-0 self-center;
+  }
+  .ft-chevron[data-children]::before {
+    @apply icon-chevron-down size-3.5 text-gray-400 transition-transform;
+    content: "";
+  }
+  .ft-row[aria-expanded="true"] .ft-chevron::before {
+    @apply rotate-180;
+  }
+  .ft-required {
+    @apply w-3 shrink-0 text-center text-red-600;
+  }
+  .ft-name {
+    @apply font-semibold text-gray-900;
+  }
+  .ft-type {
+    @apply ml-1.5 font-medium;
+  }
+  .ft-body {
+    @apply ml-[6.5px] border-l border-gray-200 pl-2;
+  }
+  .ft-description {
+    @apply max-w-2xl py-0.5 pl-2.5 font-sans text-[13px] leading-relaxed whitespace-pre-line text-gray-500;
+  }
+  /* copies the field's path, only visible while hovering the row */
+  .ft-copy {
+    @apply ml-0.5 flex size-5 shrink-0 cursor-pointer items-center justify-center rounded text-gray-400 opacity-0 hover:bg-gray-100 hover:text-gray-900 focus-visible:opacity-100;
+  }
+  .ft-line:hover .ft-copy {
+    @apply opacity-100;
+  }
+  .ft-copy::before {
+    @apply icon-copy size-3.5;
+    content: "";
+  }
+  .ft-copy[data-copied] {
+    @apply text-green-700 opacity-100;
+  }
+  .ft-copy[data-copied]::before {
+    @apply icon-check;
+  }
+  /* filtering: matches are highlighted, the fields leading to them stay as they are, and the rest fade */
+  li[data-filter="match"] > .ft-line .ft-name {
+    @apply rounded-sm bg-yellow-600/25;
+  }
+  li[data-filter="parent"] > .ft-body > .ft-description,
+  li[data-filter="dim"] {
+    @apply opacity-40;
+  }
+}

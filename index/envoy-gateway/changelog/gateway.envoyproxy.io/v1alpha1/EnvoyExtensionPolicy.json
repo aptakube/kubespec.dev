@@ -1,0 +1,101 @@
+{
+  "versions": {
+    "v1.9.1": {
+      "descriptionChanged": [
+        "spec.wasm.code.http.tls",
+        "spec.wasm.code.image.tls"
+      ],
+      "descriptions": {
+        "spec.wasm.code.http.tls": [
+          0,
+          1
+        ],
+        "spec.wasm.code.image.tls": [
+          0,
+          2
+        ]
+      }
+    },
+    "v1.9.0": {
+      "added": {
+        "spec.extProc.backendSettings.healthCheck.active.healthCheckLog": "object",
+        "spec.extProc.backendSettings.healthCheck.active.http.requestBody": "object",
+        "spec.extProc.backendSettings.loadBalancer.backendUtilization.outOfBand": "object",
+        "spec.extProc.shadowMode": "boolean",
+        "spec.extProc.statusOnError": "integer",
+        "spec.lua.filterContext": "object",
+        "spec.mergeType": "string"
+      },
+      "descriptionChanged": [
+        "spec.wasm.code.http.tls",
+        "spec.wasm.code.image.tls"
+      ],
+      "descriptions": {
+        "spec.extProc.backendSettings.healthCheck.active.healthCheckLog": [
+          null,
+          3
+        ],
+        "spec.extProc.backendSettings.healthCheck.active.http.requestBody": [
+          null,
+          4
+        ],
+        "spec.extProc.backendSettings.loadBalancer.backendUtilization.outOfBand": [
+          null,
+          5
+        ],
+        "spec.extProc.shadowMode": [
+          null,
+          6
+        ],
+        "spec.extProc.statusOnError": [
+          null,
+          7
+        ],
+        "spec.lua.filterContext": [
+          null,
+          8
+        ],
+        "spec.mergeType": [
+          null,
+          9
+        ],
+        "spec.wasm.code.http.tls": [
+          1,
+          0
+        ],
+        "spec.wasm.code.image.tls": [
+          2,
+          0
+        ]
+      }
+    },
+    "v1.8.4": {
+      "descriptionChanged": [
+        "spec.wasm.code.http.tls",
+        "spec.wasm.code.image.tls"
+      ],
+      "descriptions": {
+        "spec.wasm.code.http.tls": [
+          0,
+          1
+        ],
+        "spec.wasm.code.image.tls": [
+          0,
+          2
+        ]
+      }
+    }
+  },
+  "texts": [
+    "TLS configuration when connecting to the Wasm code source.",
+    "TLS configuration when connecting to the Wasm code source.\nIf unset, system trust store is used for HTTPS url.",
+    "TLS configuration when connecting to the Wasm code source.\nIf unset, system trust store is used.",
+    "HealthCheckLog defines health check event logging configuration for this cluster.\nWhen set, HC probe outcomes are logged to the configured sinks.\nTakes precedence over the gateway-level EnvoyProxy.spec.telemetry.healthCheckLog.",
+    "RequestBody defines the HTTP request body payload sent during health checking.",
+    "OutOfBand enables out-of-band ORCA load reporting. When set, Envoy opens a\nserver-streaming gRPC connection to each endpoint's\nxds.service.orca.v3.OpenRcaService/StreamCoreMetrics and pulls load\nreports periodically, instead of relying on in-band ORCA metrics\ncarried in response headers/trailers.\n\nThe backend must implement OpenRcaService for this to take effect.",
+    "ShadowMode sets if envoy gateway should treat this external processor as \"send and go\".\nWhen enabled, Envoy forwards request/response data to the external processor but does\nnot wait for or apply any response from it. This maps to Envoy's `observability_mode`\non the ext_proc filter.\nDefaults to false.",
+    "Sets the HTTP status that is returned to the client when the external processor returns an error\nor cannot be reached. Defaults to 500 Internal Server Error.\nOnly 4xx and 5xx status codes are supported.",
+    "FilterContext is the filter context configuration for the Lua script.\nThis must be a JSON object (key/value pairs). The values are made available\nto the Lua script via request_handle:filterContext(). This allows a shared\nscript to be parameterized differently per EnvoyExtensionPolicy/route.",
+    "MergeType determines how this configuration is merged with existing EnvoyExtensionPolicy\nconfigurations targeting a parent resource. When set, this configuration will be merged\ninto the closest parent EnvoyExtensionPolicy in the route's attachment hierarchy (for\nexample, one targeting a Gateway, Gateway listener, ListenerSet, or ListenerSet\nlistener).\nCurrently, this field can only be set when targeting xRoute resources.\nIf unset, no merging occurs, and only the most specific configuration takes effect."
+  ]
+}

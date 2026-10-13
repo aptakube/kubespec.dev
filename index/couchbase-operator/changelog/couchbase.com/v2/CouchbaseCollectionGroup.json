@@ -1,0 +1,91 @@
+{
+  "versions": {
+    "couchbase-operator-2.82.0": {
+      "descriptionChanged": [
+        "spec.maxTTL"
+      ],
+      "descriptions": {
+        "spec.maxTTL": [
+          0,
+          1
+        ]
+      }
+    },
+    "couchbase-operator-2.80.0": {
+      "added": {
+        "spec.history": "boolean"
+      },
+      "descriptionChanged": [
+        "spec.maxTTL"
+      ],
+      "descriptions": {
+        "spec.history": [
+          null,
+          2
+        ],
+        "spec.maxTTL": [
+          3,
+          0
+        ]
+      }
+    },
+    "couchbase-operator-2.71.0": {
+      "descriptionChanged": [
+        "spec.maxTTL"
+      ],
+      "descriptions": {
+        "spec.maxTTL": [
+          4,
+          3
+        ]
+      }
+    },
+    "couchbase-operator-2.70.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.maxTTL",
+        "spec.names"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          5,
+          6
+        ],
+        "kind": [
+          7,
+          8
+        ],
+        "spec.maxTTL": [
+          9,
+          4
+        ],
+        "spec.names": [
+          10,
+          11
+        ],
+        "": [
+          12,
+          13
+        ]
+      }
+    }
+  },
+  "texts": [
+    "MaxTTL defines how long a document is permitted to exist for, without\nmodification, until it is automatically deleted.  This field takes precedence over\nany TTL defined at the bucket level.  This is a default, and maximum\ntime-to-live and may be set to a lower value by the client.  If the client specifies\na higher value, then it is truncated to the maximum durability.  Documents are\nremoved by Couchbase, after they have expired, when either accessed, the expiry\npager is run, or the bucket is compacted.  When set to 0, then documents are not\nexpired by default.  This field must either be a duration in the range 0-2147483648s or \"-1\",\ndefaulting to 0. If set to \"-1\", the collection's bucket will be prevented from setting a\ndefault expiration on the collection's documents. More info:\nhttps://golang.org/pkg/time/#ParseDuration",
+    "MaxTTL defines how long a document is permitted to exist for, without\nmodification, until it is automatically deleted.  This field takes precedence over\nany TTL defined at the bucket level.  This is a default, and maximum\ntime-to-live and may be set to a lower value by the client.  If the client specifies\na higher value, then it is truncated to the maximum durability.  Documents are\nremoved by Couchbase, after they have expired, when either accessed, the expiry\npager is run, or the bucket is compacted.  When set to 0, then documents are not\nexpired by default.  This field must either be a duration in the range 0-2147483648s or \"-1\",\ndefaulting to 0. If set to \"-1\", the collection's bucket will be prevented from setting a\ndefault expiration on the collection's documents. While this field can be changed on the CRD,\nit will not be updated on the collection if the Couchbase Server version is pre 7.6.0.\nMore info: https://golang.org/pkg/time/#ParseDuration.",
+    "History defines whether change history is retained for the collection.\nIf this field is set, it will override the historyRetention.collectionDefault bucket level value.\nThis is only supported with storageBackend=magma at the bucket level.",
+    "MaxTTL defines how long a document is permitted to exist for, without\nmodification, until it is automatically deleted.  This field takes precedence over\nany TTL defined at the bucket level.  This is a default, and maximum\ntime-to-live and may be set to a lower value by the client.  If the client specifies\na higher value, then it is truncated to the maximum durability.  Documents are\nremoved by Couchbase, after they have expired, when either accessed, the expiry\npager is run, or the bucket is compacted.  When set to 0, then documents are not\nexpired by default.  This field must be a duration in the range 0-2147483648s,\ndefaulting to 0. While this field can be changed on the CRD,\nit will not be updated on the collection if the Couchbase Server version is pre 7.6.0.\nMore info: https://golang.org/pkg/time/#ParseDuration.",
+    "MaxTTL defines how long a document is permitted to exist for, without\nmodification, until it is automatically deleted.  This field takes precedence over\nany TTL defined at the bucket level.  This is a default, and maximum\ntime-to-live and may be set to a lower value by the client.  If the client specifies\na higher value, then it is truncated to the maximum durability.  Documents are\nremoved by Couchbase, after they have expired, when either accessed, the expiry\npager is run, or the bucket is compacted.  When set to 0, then documents are not\nexpired by default.  This field must be a duration in the range 0-2147483648s,\ndefaulting to 0.  More info:\nhttps://golang.org/pkg/time/#ParseDuration",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "MaxTTL defines how long a document is permitted to exist for, without modification, until it is automatically deleted.  This field takes precedence over any TTL defined at the bucket level.  This is a default, and maximum time-to-live and may be set to a lower value by the client.  If the client specifies a higher value, then it is truncated to the maximum durability.  Documents are removed by Couchbase, after they have expired, when either accessed, the expiry pager is run, or the bucket is compacted.  When set to 0, then documents are not expired by default.  This field must be a duration in the range 0-2147483648s, defaulting to 0.  More info: https://golang.org/pkg/time/#ParseDuration",
+    "Names specifies the names of the collections.  Unlike CouchbaseCollection, which specifies a single collection, a collection group specifies multiple, and the collection group must specify at least one collection name. Any collection names specified must be unique. Collection names must be 1-251 characters in length, contain only [a-zA-Z0-9_-%] and not start with either _ or %.",
+    "Names specifies the names of the collections.  Unlike CouchbaseCollection, which\nspecifies a single collection, a collection group specifies multiple, and the\ncollection group must specify at least one collection name.\nAny collection names specified must be unique.\nCollection names must be 1-251 characters in length, contain only [a-zA-Z0-9_-%]\nand not start with either _ or %.",
+    "CouchbaseCollectionGroup represent the finest grained size of data storage in Couchbase. Collections contain all documents and indexes in the system.  Collections also form the finest grain basis for role-based access control (RBAC) and cross-datacenter replication (XDCR).  In order to be considered by the Operator, every collection group must be referenced by a `CouchbaseScope` or `CouchbaseScopeGroup` resource.  Unlike the CouchbaseCollection resource, a collection group represents multiple collections, with common configuration parameters, to be expressed as a single resource, minimizing required configuration and Kubernetes API traffic.  It also forms the basis of Couchbase RBAC security boundaries.",
+    "CouchbaseCollectionGroup represent the finest grained size of data storage in Couchbase.\nCollections contain all documents and indexes in the system.  Collections also form\nthe finest grain basis for role-based access control (RBAC) and cross-datacenter\nreplication (XDCR).  In order to be considered by the Operator, every collection group\nmust be referenced by a `CouchbaseScope` or `CouchbaseScopeGroup` resource.  Unlike the\nCouchbaseCollection resource, a collection group represents multiple collections, with\ncommon configuration parameters, to be expressed as a single resource, minimizing required\nconfiguration and Kubernetes API traffic.  It also forms the basis of Couchbase RBAC\nsecurity boundaries."
+  ]
+}

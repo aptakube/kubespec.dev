@@ -1,0 +1,231 @@
+{
+  "versions": {
+    "v2.7.0": {
+      "added": {
+        "spec.suspend": "boolean",
+        "status.lastHandledReconcileAt": "string"
+      },
+      "removed": {
+        "status.latestImage": "string",
+        "status.observedPreviousImage": "string"
+      },
+      "descriptions": {
+        "spec.suspend": [
+          null,
+          0
+        ],
+        "status.lastHandledReconcileAt": [
+          null,
+          1
+        ],
+        "status.latestImage": [
+          2,
+          null
+        ],
+        "status.observedPreviousImage": [
+          3,
+          null
+        ]
+      }
+    },
+    "v2.6.0": {
+      "added": {
+        "spec.digestReflectionPolicy": "string",
+        "spec.interval": "string",
+        "status.latestRef": "object",
+        "status.observedPreviousRef": "object"
+      },
+      "descriptionChanged": [
+        "status.latestImage",
+        "status.observedPreviousImage"
+      ],
+      "descriptions": {
+        "spec.digestReflectionPolicy": [
+          null,
+          4
+        ],
+        "spec.interval": [
+          null,
+          5
+        ],
+        "status.latestImage": [
+          6,
+          2
+        ],
+        "status.latestRef": [
+          null,
+          7
+        ],
+        "status.observedPreviousImage": [
+          8,
+          3
+        ],
+        "status.observedPreviousRef": [
+          null,
+          9
+        ]
+      }
+    },
+    "v2.4.0": {
+      "descriptionChanged": [
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "status.conditions.type": [
+          10,
+          11
+        ]
+      }
+    },
+    "v2.3.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.filterTags",
+        "spec.filterTags.extract",
+        "spec.filterTags.pattern",
+        "spec.imageRepositoryRef",
+        "spec.policy",
+        "spec.policy.alphabetical.order",
+        "spec.policy.numerical.order",
+        "spec.policy.semver",
+        "spec.policy.semver.range",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type",
+        "status.latestImage",
+        "status.observedPreviousImage"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          12,
+          13
+        ],
+        "kind": [
+          14,
+          15
+        ],
+        "spec": [
+          16,
+          17
+        ],
+        "spec.filterTags": [
+          18,
+          19
+        ],
+        "spec.filterTags.extract": [
+          20,
+          21
+        ],
+        "spec.filterTags.pattern": [
+          22,
+          23
+        ],
+        "spec.imageRepositoryRef": [
+          24,
+          25
+        ],
+        "spec.policy": [
+          26,
+          27
+        ],
+        "spec.policy.alphabetical.order": [
+          28,
+          29
+        ],
+        "spec.policy.numerical.order": [
+          30,
+          31
+        ],
+        "spec.policy.semver": [
+          32,
+          33
+        ],
+        "spec.policy.semver.range": [
+          34,
+          35
+        ],
+        "status.conditions.lastTransitionTime": [
+          36,
+          37
+        ],
+        "status.conditions.message": [
+          38,
+          39
+        ],
+        "status.conditions.observedGeneration": [
+          40,
+          41
+        ],
+        "status.conditions.reason": [
+          42,
+          43
+        ],
+        "status.conditions.type": [
+          44,
+          10
+        ],
+        "status.latestImage": [
+          45,
+          6
+        ],
+        "status.observedPreviousImage": [
+          46,
+          8
+        ]
+      }
+    }
+  },
+  "texts": [
+    "This flag tells the controller to suspend subsequent policy reconciliations.\nIt does not apply to already started reconciliations. Defaults to false.",
+    "LastHandledReconcileAt holds the value of the most recent\nreconcile request value, so a change of the annotation value\ncan be detected.",
+    "LatestImage gives the first in the list of images scanned by\nthe image repository, when filtered and ordered according to\nthe policy.\n\nDeprecated: Replaced by the composite \"latestRef\" field.",
+    "ObservedPreviousImage is the observed previous LatestImage. It is used\nto keep track of the previous and current images.\n\nDeprecated: Replaced by the composite \"observedPreviousRef\" field.",
+    "DigestReflectionPolicy governs the setting of the `.status.latestRef.digest` field.\n\nNever: The digest field will always be set to the empty string.\n\nIfNotPresent: The digest field will be set to the digest of the elected\nlatest image if the field is empty and the image did not change.\n\nAlways: The digest field will always be set to the digest of the elected\nlatest image.\n\nDefault: Never.",
+    "Interval is the length of time to wait between\nrefreshing the digest of the latest tag when the\nreflection policy is set to \"Always\".\n\nDefaults to 10m.",
+    "LatestImage gives the first in the list of images scanned by\nthe image repository, when filtered and ordered according to\nthe policy.",
+    "LatestRef gives the first in the list of images scanned by\nthe image repository, when filtered and ordered according\nto the policy.",
+    "ObservedPreviousImage is the observed previous LatestImage. It is used\nto keep track of the previous and current images.",
+    "ObservedPreviousRef is the observed previous LatestRef. It is used\nto keep track of the previous and current images.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "ImagePolicySpec defines the parameters for calculating the ImagePolicy.",
+    "ImagePolicySpec defines the parameters for calculating the\nImagePolicy.",
+    "FilterTags enables filtering for only a subset of tags based on a set of rules. If no rules are provided, all the tags from the repository will be ordered and compared.",
+    "FilterTags enables filtering for only a subset of tags based on a set of\nrules. If no rules are provided, all the tags from the repository will be\nordered and compared.",
+    "Extract allows a capture group to be extracted from the specified regular expression pattern, useful before tag evaluation.",
+    "Extract allows a capture group to be extracted from the specified regular\nexpression pattern, useful before tag evaluation.",
+    "Pattern specifies a regular expression pattern used to filter for image tags.",
+    "Pattern specifies a regular expression pattern used to filter for image\ntags.",
+    "ImageRepositoryRef points at the object specifying the image being scanned",
+    "ImageRepositoryRef points at the object specifying the image\nbeing scanned",
+    "Policy gives the particulars of the policy to be followed in selecting the most recent image",
+    "Policy gives the particulars of the policy to be followed in\nselecting the most recent image",
+    "Order specifies the sorting order of the tags. Given the letters of the alphabet as tags, ascending order would select Z, and descending order would select A.",
+    "Order specifies the sorting order of the tags. Given the letters of the\nalphabet as tags, ascending order would select Z, and descending order\nwould select A.",
+    "Order specifies the sorting order of the tags. Given the integer values from 0 to 9 as tags, ascending order would select 9, and descending order would select 0.",
+    "Order specifies the sorting order of the tags. Given the integer values\nfrom 0 to 9 as tags, ascending order would select 9, and descending order\nwould select 0.",
+    "SemVer gives a semantic version range to check against the tags available.",
+    "SemVer gives a semantic version range to check against the tags\navailable.",
+    "Range gives a semver range for the image tag; the highest version within the range that's a tag yields the latest image.",
+    "Range gives a semver range for the image tag; the highest\nversion within the range that's a tag yields the latest image.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "LatestImage gives the first in the list of images scanned by the image repository, when filtered and ordered according to the policy.",
+    "ObservedPreviousImage is the observed previous LatestImage. It is used to keep track of the previous and current images."
+  ]
+}

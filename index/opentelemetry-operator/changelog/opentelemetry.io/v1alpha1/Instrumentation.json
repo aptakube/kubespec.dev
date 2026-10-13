@@ -1,0 +1,2550 @@
+{
+  "versions": {
+    "v0.150.0": {
+      "added": {
+        "spec.go.securityContext": "object",
+        "spec.initContainerSecurityContext": "object",
+        "status.upgradeBlockedVersions": "map[string]string"
+      }
+    },
+    "v0.142.0": {
+      "added": {
+        "spec.apacheHttpd.attrs.valueFrom.fileKeyRef": "object",
+        "spec.apacheHttpd.env.valueFrom.fileKeyRef": "object",
+        "spec.dotnet.env.valueFrom.fileKeyRef": "object",
+        "spec.env.valueFrom.fileKeyRef": "object",
+        "spec.go.env.valueFrom.fileKeyRef": "object",
+        "spec.java.env.valueFrom.fileKeyRef": "object",
+        "spec.nginx.attrs.valueFrom.fileKeyRef": "object",
+        "spec.nginx.env.valueFrom.fileKeyRef": "object",
+        "spec.nodejs.env.valueFrom.fileKeyRef": "object",
+        "spec.python.env.valueFrom.fileKeyRef": "object"
+      }
+    },
+    "v0.121.0": {
+      "added": {
+        "spec.imagePullPolicy": "string"
+      }
+    },
+    "v0.112.0": {
+      "added": {
+        "spec.apacheHttpd.volumeClaimTemplate": "object",
+        "spec.dotnet.volumeClaimTemplate": "object",
+        "spec.go.volumeClaimTemplate": "object",
+        "spec.java.volumeClaimTemplate": "object",
+        "spec.nginx.volumeClaimTemplate": "object",
+        "spec.nodejs.volumeClaimTemplate": "object",
+        "spec.python.volumeClaimTemplate": "object"
+      }
+    },
+    "v0.111.0": {
+      "added": {
+        "spec.exporter.tls": "object"
+      }
+    },
+    "v0.110.0": {
+      "added": {
+        "spec.defaults": "object"
+      }
+    },
+    "v0.108.0": {
+      "added": {
+        "spec.apacheHttpd.resourceRequirements.claims.request": "string",
+        "spec.dotnet.resourceRequirements.claims.request": "string",
+        "spec.go.resourceRequirements.claims.request": "string",
+        "spec.java.resources.claims.request": "string",
+        "spec.nginx.resourceRequirements.claims.request": "string",
+        "spec.nodejs.resourceRequirements.claims.request": "string",
+        "spec.python.resourceRequirements.claims.request": "string"
+      }
+    },
+    "v0.99.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.apacheHttpd",
+        "spec.apacheHttpd.attrs",
+        "spec.apacheHttpd.attrs.name",
+        "spec.apacheHttpd.attrs.value",
+        "spec.apacheHttpd.attrs.valueFrom",
+        "spec.apacheHttpd.attrs.valueFrom.configMapKeyRef",
+        "spec.apacheHttpd.attrs.valueFrom.configMapKeyRef.key",
+        "spec.apacheHttpd.attrs.valueFrom.configMapKeyRef.name",
+        "spec.apacheHttpd.attrs.valueFrom.configMapKeyRef.optional",
+        "spec.apacheHttpd.attrs.valueFrom.fieldRef",
+        "spec.apacheHttpd.attrs.valueFrom.fieldRef.apiVersion",
+        "spec.apacheHttpd.attrs.valueFrom.fieldRef.fieldPath",
+        "spec.apacheHttpd.attrs.valueFrom.resourceFieldRef",
+        "spec.apacheHttpd.attrs.valueFrom.resourceFieldRef.containerName",
+        "spec.apacheHttpd.attrs.valueFrom.resourceFieldRef.divisor",
+        "spec.apacheHttpd.attrs.valueFrom.resourceFieldRef.resource",
+        "spec.apacheHttpd.attrs.valueFrom.secretKeyRef",
+        "spec.apacheHttpd.attrs.valueFrom.secretKeyRef.key",
+        "spec.apacheHttpd.attrs.valueFrom.secretKeyRef.name",
+        "spec.apacheHttpd.attrs.valueFrom.secretKeyRef.optional",
+        "spec.apacheHttpd.configPath",
+        "spec.apacheHttpd.env",
+        "spec.apacheHttpd.env.name",
+        "spec.apacheHttpd.env.value",
+        "spec.apacheHttpd.env.valueFrom",
+        "spec.apacheHttpd.env.valueFrom.configMapKeyRef",
+        "spec.apacheHttpd.env.valueFrom.configMapKeyRef.key",
+        "spec.apacheHttpd.env.valueFrom.configMapKeyRef.name",
+        "spec.apacheHttpd.env.valueFrom.configMapKeyRef.optional",
+        "spec.apacheHttpd.env.valueFrom.fieldRef",
+        "spec.apacheHttpd.env.valueFrom.fieldRef.apiVersion",
+        "spec.apacheHttpd.env.valueFrom.fieldRef.fieldPath",
+        "spec.apacheHttpd.env.valueFrom.resourceFieldRef",
+        "spec.apacheHttpd.env.valueFrom.resourceFieldRef.containerName",
+        "spec.apacheHttpd.env.valueFrom.resourceFieldRef.divisor",
+        "spec.apacheHttpd.env.valueFrom.resourceFieldRef.resource",
+        "spec.apacheHttpd.env.valueFrom.secretKeyRef",
+        "spec.apacheHttpd.env.valueFrom.secretKeyRef.key",
+        "spec.apacheHttpd.env.valueFrom.secretKeyRef.name",
+        "spec.apacheHttpd.env.valueFrom.secretKeyRef.optional",
+        "spec.apacheHttpd.image",
+        "spec.apacheHttpd.resourceRequirements",
+        "spec.apacheHttpd.resourceRequirements.claims",
+        "spec.apacheHttpd.resourceRequirements.claims.name",
+        "spec.apacheHttpd.resourceRequirements.limits",
+        "spec.apacheHttpd.resourceRequirements.requests",
+        "spec.apacheHttpd.version",
+        "spec.apacheHttpd.volumeLimitSize",
+        "spec.dotnet",
+        "spec.dotnet.env",
+        "spec.dotnet.env.name",
+        "spec.dotnet.env.value",
+        "spec.dotnet.env.valueFrom",
+        "spec.dotnet.env.valueFrom.configMapKeyRef",
+        "spec.dotnet.env.valueFrom.configMapKeyRef.key",
+        "spec.dotnet.env.valueFrom.configMapKeyRef.name",
+        "spec.dotnet.env.valueFrom.configMapKeyRef.optional",
+        "spec.dotnet.env.valueFrom.fieldRef",
+        "spec.dotnet.env.valueFrom.fieldRef.apiVersion",
+        "spec.dotnet.env.valueFrom.fieldRef.fieldPath",
+        "spec.dotnet.env.valueFrom.resourceFieldRef",
+        "spec.dotnet.env.valueFrom.resourceFieldRef.containerName",
+        "spec.dotnet.env.valueFrom.resourceFieldRef.divisor",
+        "spec.dotnet.env.valueFrom.resourceFieldRef.resource",
+        "spec.dotnet.env.valueFrom.secretKeyRef",
+        "spec.dotnet.env.valueFrom.secretKeyRef.key",
+        "spec.dotnet.env.valueFrom.secretKeyRef.name",
+        "spec.dotnet.env.valueFrom.secretKeyRef.optional",
+        "spec.dotnet.image",
+        "spec.dotnet.resourceRequirements",
+        "spec.dotnet.resourceRequirements.claims",
+        "spec.dotnet.resourceRequirements.claims.name",
+        "spec.dotnet.resourceRequirements.limits",
+        "spec.dotnet.resourceRequirements.requests",
+        "spec.dotnet.volumeLimitSize",
+        "spec.env",
+        "spec.env.name",
+        "spec.env.value",
+        "spec.env.valueFrom",
+        "spec.env.valueFrom.configMapKeyRef",
+        "spec.env.valueFrom.configMapKeyRef.key",
+        "spec.env.valueFrom.configMapKeyRef.name",
+        "spec.env.valueFrom.configMapKeyRef.optional",
+        "spec.env.valueFrom.fieldRef",
+        "spec.env.valueFrom.fieldRef.apiVersion",
+        "spec.env.valueFrom.fieldRef.fieldPath",
+        "spec.env.valueFrom.resourceFieldRef",
+        "spec.env.valueFrom.resourceFieldRef.containerName",
+        "spec.env.valueFrom.resourceFieldRef.divisor",
+        "spec.env.valueFrom.resourceFieldRef.resource",
+        "spec.env.valueFrom.secretKeyRef",
+        "spec.env.valueFrom.secretKeyRef.key",
+        "spec.env.valueFrom.secretKeyRef.name",
+        "spec.env.valueFrom.secretKeyRef.optional",
+        "spec.exporter",
+        "spec.exporter.endpoint",
+        "spec.go",
+        "spec.go.env",
+        "spec.go.env.name",
+        "spec.go.env.value",
+        "spec.go.env.valueFrom",
+        "spec.go.env.valueFrom.configMapKeyRef",
+        "spec.go.env.valueFrom.configMapKeyRef.key",
+        "spec.go.env.valueFrom.configMapKeyRef.name",
+        "spec.go.env.valueFrom.configMapKeyRef.optional",
+        "spec.go.env.valueFrom.fieldRef",
+        "spec.go.env.valueFrom.fieldRef.apiVersion",
+        "spec.go.env.valueFrom.fieldRef.fieldPath",
+        "spec.go.env.valueFrom.resourceFieldRef",
+        "spec.go.env.valueFrom.resourceFieldRef.containerName",
+        "spec.go.env.valueFrom.resourceFieldRef.divisor",
+        "spec.go.env.valueFrom.resourceFieldRef.resource",
+        "spec.go.env.valueFrom.secretKeyRef",
+        "spec.go.env.valueFrom.secretKeyRef.key",
+        "spec.go.env.valueFrom.secretKeyRef.name",
+        "spec.go.env.valueFrom.secretKeyRef.optional",
+        "spec.go.image",
+        "spec.go.resourceRequirements",
+        "spec.go.resourceRequirements.claims",
+        "spec.go.resourceRequirements.claims.name",
+        "spec.go.resourceRequirements.limits",
+        "spec.go.resourceRequirements.requests",
+        "spec.go.volumeLimitSize",
+        "spec.java",
+        "spec.java.env",
+        "spec.java.env.name",
+        "spec.java.env.value",
+        "spec.java.env.valueFrom",
+        "spec.java.env.valueFrom.configMapKeyRef",
+        "spec.java.env.valueFrom.configMapKeyRef.key",
+        "spec.java.env.valueFrom.configMapKeyRef.name",
+        "spec.java.env.valueFrom.configMapKeyRef.optional",
+        "spec.java.env.valueFrom.fieldRef",
+        "spec.java.env.valueFrom.fieldRef.apiVersion",
+        "spec.java.env.valueFrom.fieldRef.fieldPath",
+        "spec.java.env.valueFrom.resourceFieldRef",
+        "spec.java.env.valueFrom.resourceFieldRef.containerName",
+        "spec.java.env.valueFrom.resourceFieldRef.divisor",
+        "spec.java.env.valueFrom.resourceFieldRef.resource",
+        "spec.java.env.valueFrom.secretKeyRef",
+        "spec.java.env.valueFrom.secretKeyRef.key",
+        "spec.java.env.valueFrom.secretKeyRef.name",
+        "spec.java.env.valueFrom.secretKeyRef.optional",
+        "spec.java.extensions",
+        "spec.java.extensions.dir",
+        "spec.java.extensions.image",
+        "spec.java.image",
+        "spec.java.resources",
+        "spec.java.resources.claims",
+        "spec.java.resources.claims.name",
+        "spec.java.resources.limits",
+        "spec.java.resources.requests",
+        "spec.java.volumeLimitSize",
+        "spec.nginx",
+        "spec.nginx.attrs",
+        "spec.nginx.attrs.name",
+        "spec.nginx.attrs.value",
+        "spec.nginx.attrs.valueFrom",
+        "spec.nginx.attrs.valueFrom.configMapKeyRef",
+        "spec.nginx.attrs.valueFrom.configMapKeyRef.key",
+        "spec.nginx.attrs.valueFrom.configMapKeyRef.name",
+        "spec.nginx.attrs.valueFrom.configMapKeyRef.optional",
+        "spec.nginx.attrs.valueFrom.fieldRef",
+        "spec.nginx.attrs.valueFrom.fieldRef.apiVersion",
+        "spec.nginx.attrs.valueFrom.fieldRef.fieldPath",
+        "spec.nginx.attrs.valueFrom.resourceFieldRef",
+        "spec.nginx.attrs.valueFrom.resourceFieldRef.containerName",
+        "spec.nginx.attrs.valueFrom.resourceFieldRef.divisor",
+        "spec.nginx.attrs.valueFrom.resourceFieldRef.resource",
+        "spec.nginx.attrs.valueFrom.secretKeyRef",
+        "spec.nginx.attrs.valueFrom.secretKeyRef.key",
+        "spec.nginx.attrs.valueFrom.secretKeyRef.name",
+        "spec.nginx.attrs.valueFrom.secretKeyRef.optional",
+        "spec.nginx.configFile",
+        "spec.nginx.env",
+        "spec.nginx.env.name",
+        "spec.nginx.env.value",
+        "spec.nginx.env.valueFrom",
+        "spec.nginx.env.valueFrom.configMapKeyRef",
+        "spec.nginx.env.valueFrom.configMapKeyRef.key",
+        "spec.nginx.env.valueFrom.configMapKeyRef.name",
+        "spec.nginx.env.valueFrom.configMapKeyRef.optional",
+        "spec.nginx.env.valueFrom.fieldRef",
+        "spec.nginx.env.valueFrom.fieldRef.apiVersion",
+        "spec.nginx.env.valueFrom.fieldRef.fieldPath",
+        "spec.nginx.env.valueFrom.resourceFieldRef",
+        "spec.nginx.env.valueFrom.resourceFieldRef.containerName",
+        "spec.nginx.env.valueFrom.resourceFieldRef.divisor",
+        "spec.nginx.env.valueFrom.resourceFieldRef.resource",
+        "spec.nginx.env.valueFrom.secretKeyRef",
+        "spec.nginx.env.valueFrom.secretKeyRef.key",
+        "spec.nginx.env.valueFrom.secretKeyRef.name",
+        "spec.nginx.env.valueFrom.secretKeyRef.optional",
+        "spec.nginx.image",
+        "spec.nginx.resourceRequirements",
+        "spec.nginx.resourceRequirements.claims",
+        "spec.nginx.resourceRequirements.claims.name",
+        "spec.nginx.resourceRequirements.limits",
+        "spec.nginx.resourceRequirements.requests",
+        "spec.nginx.volumeLimitSize",
+        "spec.nodejs",
+        "spec.nodejs.env",
+        "spec.nodejs.env.name",
+        "spec.nodejs.env.value",
+        "spec.nodejs.env.valueFrom",
+        "spec.nodejs.env.valueFrom.configMapKeyRef",
+        "spec.nodejs.env.valueFrom.configMapKeyRef.key",
+        "spec.nodejs.env.valueFrom.configMapKeyRef.name",
+        "spec.nodejs.env.valueFrom.configMapKeyRef.optional",
+        "spec.nodejs.env.valueFrom.fieldRef",
+        "spec.nodejs.env.valueFrom.fieldRef.apiVersion",
+        "spec.nodejs.env.valueFrom.fieldRef.fieldPath",
+        "spec.nodejs.env.valueFrom.resourceFieldRef",
+        "spec.nodejs.env.valueFrom.resourceFieldRef.containerName",
+        "spec.nodejs.env.valueFrom.resourceFieldRef.divisor",
+        "spec.nodejs.env.valueFrom.resourceFieldRef.resource",
+        "spec.nodejs.env.valueFrom.secretKeyRef",
+        "spec.nodejs.env.valueFrom.secretKeyRef.key",
+        "spec.nodejs.env.valueFrom.secretKeyRef.name",
+        "spec.nodejs.env.valueFrom.secretKeyRef.optional",
+        "spec.nodejs.image",
+        "spec.nodejs.resourceRequirements",
+        "spec.nodejs.resourceRequirements.claims",
+        "spec.nodejs.resourceRequirements.claims.name",
+        "spec.nodejs.resourceRequirements.limits",
+        "spec.nodejs.resourceRequirements.requests",
+        "spec.nodejs.volumeLimitSize",
+        "spec.propagators",
+        "spec.python",
+        "spec.python.env",
+        "spec.python.env.name",
+        "spec.python.env.value",
+        "spec.python.env.valueFrom",
+        "spec.python.env.valueFrom.configMapKeyRef",
+        "spec.python.env.valueFrom.configMapKeyRef.key",
+        "spec.python.env.valueFrom.configMapKeyRef.name",
+        "spec.python.env.valueFrom.configMapKeyRef.optional",
+        "spec.python.env.valueFrom.fieldRef",
+        "spec.python.env.valueFrom.fieldRef.apiVersion",
+        "spec.python.env.valueFrom.fieldRef.fieldPath",
+        "spec.python.env.valueFrom.resourceFieldRef",
+        "spec.python.env.valueFrom.resourceFieldRef.containerName",
+        "spec.python.env.valueFrom.resourceFieldRef.divisor",
+        "spec.python.env.valueFrom.resourceFieldRef.resource",
+        "spec.python.env.valueFrom.secretKeyRef",
+        "spec.python.env.valueFrom.secretKeyRef.key",
+        "spec.python.env.valueFrom.secretKeyRef.name",
+        "spec.python.env.valueFrom.secretKeyRef.optional",
+        "spec.python.image",
+        "spec.python.resourceRequirements",
+        "spec.python.resourceRequirements.claims",
+        "spec.python.resourceRequirements.claims.name",
+        "spec.python.resourceRequirements.limits",
+        "spec.python.resourceRequirements.requests",
+        "spec.python.volumeLimitSize",
+        "spec.resource",
+        "spec.resource.addK8sUIDAttributes",
+        "spec.resource.resourceAttributes",
+        "spec.sampler",
+        "spec.sampler.argument",
+        "spec.sampler.type",
+        "status"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          0,
+          null
+        ],
+        "kind": [
+          1,
+          null
+        ],
+        "spec": [
+          2,
+          null
+        ],
+        "spec.apacheHttpd": [
+          3,
+          null
+        ],
+        "spec.apacheHttpd.attrs": [
+          4,
+          null
+        ],
+        "spec.apacheHttpd.attrs.name": [
+          5,
+          null
+        ],
+        "spec.apacheHttpd.attrs.value": [
+          6,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom": [
+          7,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.configMapKeyRef": [
+          8,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.configMapKeyRef.key": [
+          9,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.configMapKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.configMapKeyRef.optional": [
+          11,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.fieldRef": [
+          12,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.fieldRef.apiVersion": [
+          13,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.fieldRef.fieldPath": [
+          14,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.resourceFieldRef": [
+          15,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.resourceFieldRef.containerName": [
+          16,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.resourceFieldRef.divisor": [
+          17,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.resourceFieldRef.resource": [
+          18,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.secretKeyRef": [
+          19,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.secretKeyRef.key": [
+          20,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.secretKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.secretKeyRef.optional": [
+          21,
+          null
+        ],
+        "spec.apacheHttpd.configPath": [
+          22,
+          null
+        ],
+        "spec.apacheHttpd.env": [
+          23,
+          null
+        ],
+        "spec.apacheHttpd.env.name": [
+          5,
+          null
+        ],
+        "spec.apacheHttpd.env.value": [
+          6,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom": [
+          7,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom.configMapKeyRef": [
+          8,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom.configMapKeyRef.key": [
+          9,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom.configMapKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom.configMapKeyRef.optional": [
+          11,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom.fieldRef": [
+          12,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom.fieldRef.apiVersion": [
+          13,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom.fieldRef.fieldPath": [
+          14,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom.resourceFieldRef": [
+          15,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom.resourceFieldRef.containerName": [
+          16,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom.resourceFieldRef.divisor": [
+          17,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom.resourceFieldRef.resource": [
+          18,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom.secretKeyRef": [
+          19,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom.secretKeyRef.key": [
+          20,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom.secretKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.apacheHttpd.env.valueFrom.secretKeyRef.optional": [
+          21,
+          null
+        ],
+        "spec.apacheHttpd.image": [
+          24,
+          null
+        ],
+        "spec.apacheHttpd.resourceRequirements": [
+          25,
+          null
+        ],
+        "spec.apacheHttpd.resourceRequirements.claims": [
+          26,
+          null
+        ],
+        "spec.apacheHttpd.resourceRequirements.claims.name": [
+          27,
+          null
+        ],
+        "spec.apacheHttpd.resourceRequirements.limits": [
+          28,
+          null
+        ],
+        "spec.apacheHttpd.resourceRequirements.requests": [
+          29,
+          null
+        ],
+        "spec.apacheHttpd.version": [
+          30,
+          null
+        ],
+        "spec.apacheHttpd.volumeLimitSize": [
+          31,
+          null
+        ],
+        "spec.dotnet": [
+          32,
+          null
+        ],
+        "spec.dotnet.env": [
+          33,
+          null
+        ],
+        "spec.dotnet.env.name": [
+          5,
+          null
+        ],
+        "spec.dotnet.env.value": [
+          6,
+          null
+        ],
+        "spec.dotnet.env.valueFrom": [
+          7,
+          null
+        ],
+        "spec.dotnet.env.valueFrom.configMapKeyRef": [
+          8,
+          null
+        ],
+        "spec.dotnet.env.valueFrom.configMapKeyRef.key": [
+          9,
+          null
+        ],
+        "spec.dotnet.env.valueFrom.configMapKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.dotnet.env.valueFrom.configMapKeyRef.optional": [
+          11,
+          null
+        ],
+        "spec.dotnet.env.valueFrom.fieldRef": [
+          12,
+          null
+        ],
+        "spec.dotnet.env.valueFrom.fieldRef.apiVersion": [
+          13,
+          null
+        ],
+        "spec.dotnet.env.valueFrom.fieldRef.fieldPath": [
+          14,
+          null
+        ],
+        "spec.dotnet.env.valueFrom.resourceFieldRef": [
+          15,
+          null
+        ],
+        "spec.dotnet.env.valueFrom.resourceFieldRef.containerName": [
+          16,
+          null
+        ],
+        "spec.dotnet.env.valueFrom.resourceFieldRef.divisor": [
+          17,
+          null
+        ],
+        "spec.dotnet.env.valueFrom.resourceFieldRef.resource": [
+          18,
+          null
+        ],
+        "spec.dotnet.env.valueFrom.secretKeyRef": [
+          19,
+          null
+        ],
+        "spec.dotnet.env.valueFrom.secretKeyRef.key": [
+          20,
+          null
+        ],
+        "spec.dotnet.env.valueFrom.secretKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.dotnet.env.valueFrom.secretKeyRef.optional": [
+          21,
+          null
+        ],
+        "spec.dotnet.image": [
+          34,
+          null
+        ],
+        "spec.dotnet.resourceRequirements": [
+          25,
+          null
+        ],
+        "spec.dotnet.resourceRequirements.claims": [
+          26,
+          null
+        ],
+        "spec.dotnet.resourceRequirements.claims.name": [
+          27,
+          null
+        ],
+        "spec.dotnet.resourceRequirements.limits": [
+          28,
+          null
+        ],
+        "spec.dotnet.resourceRequirements.requests": [
+          29,
+          null
+        ],
+        "spec.dotnet.volumeLimitSize": [
+          31,
+          null
+        ],
+        "spec.env": [
+          35,
+          null
+        ],
+        "spec.env.name": [
+          5,
+          null
+        ],
+        "spec.env.value": [
+          6,
+          null
+        ],
+        "spec.env.valueFrom": [
+          7,
+          null
+        ],
+        "spec.env.valueFrom.configMapKeyRef": [
+          8,
+          null
+        ],
+        "spec.env.valueFrom.configMapKeyRef.key": [
+          9,
+          null
+        ],
+        "spec.env.valueFrom.configMapKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.env.valueFrom.configMapKeyRef.optional": [
+          11,
+          null
+        ],
+        "spec.env.valueFrom.fieldRef": [
+          12,
+          null
+        ],
+        "spec.env.valueFrom.fieldRef.apiVersion": [
+          13,
+          null
+        ],
+        "spec.env.valueFrom.fieldRef.fieldPath": [
+          14,
+          null
+        ],
+        "spec.env.valueFrom.resourceFieldRef": [
+          15,
+          null
+        ],
+        "spec.env.valueFrom.resourceFieldRef.containerName": [
+          16,
+          null
+        ],
+        "spec.env.valueFrom.resourceFieldRef.divisor": [
+          17,
+          null
+        ],
+        "spec.env.valueFrom.resourceFieldRef.resource": [
+          18,
+          null
+        ],
+        "spec.env.valueFrom.secretKeyRef": [
+          19,
+          null
+        ],
+        "spec.env.valueFrom.secretKeyRef.key": [
+          20,
+          null
+        ],
+        "spec.env.valueFrom.secretKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.env.valueFrom.secretKeyRef.optional": [
+          21,
+          null
+        ],
+        "spec.exporter": [
+          36,
+          null
+        ],
+        "spec.exporter.endpoint": [
+          37,
+          null
+        ],
+        "spec.go": [
+          38,
+          null
+        ],
+        "spec.go.env": [
+          39,
+          null
+        ],
+        "spec.go.env.name": [
+          5,
+          null
+        ],
+        "spec.go.env.value": [
+          6,
+          null
+        ],
+        "spec.go.env.valueFrom": [
+          7,
+          null
+        ],
+        "spec.go.env.valueFrom.configMapKeyRef": [
+          8,
+          null
+        ],
+        "spec.go.env.valueFrom.configMapKeyRef.key": [
+          9,
+          null
+        ],
+        "spec.go.env.valueFrom.configMapKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.go.env.valueFrom.configMapKeyRef.optional": [
+          11,
+          null
+        ],
+        "spec.go.env.valueFrom.fieldRef": [
+          12,
+          null
+        ],
+        "spec.go.env.valueFrom.fieldRef.apiVersion": [
+          13,
+          null
+        ],
+        "spec.go.env.valueFrom.fieldRef.fieldPath": [
+          14,
+          null
+        ],
+        "spec.go.env.valueFrom.resourceFieldRef": [
+          15,
+          null
+        ],
+        "spec.go.env.valueFrom.resourceFieldRef.containerName": [
+          16,
+          null
+        ],
+        "spec.go.env.valueFrom.resourceFieldRef.divisor": [
+          17,
+          null
+        ],
+        "spec.go.env.valueFrom.resourceFieldRef.resource": [
+          18,
+          null
+        ],
+        "spec.go.env.valueFrom.secretKeyRef": [
+          19,
+          null
+        ],
+        "spec.go.env.valueFrom.secretKeyRef.key": [
+          20,
+          null
+        ],
+        "spec.go.env.valueFrom.secretKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.go.env.valueFrom.secretKeyRef.optional": [
+          21,
+          null
+        ],
+        "spec.go.image": [
+          40,
+          null
+        ],
+        "spec.go.resourceRequirements": [
+          25,
+          null
+        ],
+        "spec.go.resourceRequirements.claims": [
+          26,
+          null
+        ],
+        "spec.go.resourceRequirements.claims.name": [
+          27,
+          null
+        ],
+        "spec.go.resourceRequirements.limits": [
+          28,
+          null
+        ],
+        "spec.go.resourceRequirements.requests": [
+          29,
+          null
+        ],
+        "spec.go.volumeLimitSize": [
+          31,
+          null
+        ],
+        "spec.java": [
+          41,
+          null
+        ],
+        "spec.java.env": [
+          42,
+          null
+        ],
+        "spec.java.env.name": [
+          5,
+          null
+        ],
+        "spec.java.env.value": [
+          6,
+          null
+        ],
+        "spec.java.env.valueFrom": [
+          7,
+          null
+        ],
+        "spec.java.env.valueFrom.configMapKeyRef": [
+          8,
+          null
+        ],
+        "spec.java.env.valueFrom.configMapKeyRef.key": [
+          9,
+          null
+        ],
+        "spec.java.env.valueFrom.configMapKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.java.env.valueFrom.configMapKeyRef.optional": [
+          11,
+          null
+        ],
+        "spec.java.env.valueFrom.fieldRef": [
+          12,
+          null
+        ],
+        "spec.java.env.valueFrom.fieldRef.apiVersion": [
+          13,
+          null
+        ],
+        "spec.java.env.valueFrom.fieldRef.fieldPath": [
+          14,
+          null
+        ],
+        "spec.java.env.valueFrom.resourceFieldRef": [
+          15,
+          null
+        ],
+        "spec.java.env.valueFrom.resourceFieldRef.containerName": [
+          16,
+          null
+        ],
+        "spec.java.env.valueFrom.resourceFieldRef.divisor": [
+          17,
+          null
+        ],
+        "spec.java.env.valueFrom.resourceFieldRef.resource": [
+          18,
+          null
+        ],
+        "spec.java.env.valueFrom.secretKeyRef": [
+          19,
+          null
+        ],
+        "spec.java.env.valueFrom.secretKeyRef.key": [
+          20,
+          null
+        ],
+        "spec.java.env.valueFrom.secretKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.java.env.valueFrom.secretKeyRef.optional": [
+          21,
+          null
+        ],
+        "spec.java.extensions": [
+          43,
+          null
+        ],
+        "spec.java.extensions.dir": [
+          44,
+          null
+        ],
+        "spec.java.extensions.image": [
+          45,
+          null
+        ],
+        "spec.java.image": [
+          46,
+          null
+        ],
+        "spec.java.resources": [
+          25,
+          null
+        ],
+        "spec.java.resources.claims": [
+          26,
+          null
+        ],
+        "spec.java.resources.claims.name": [
+          27,
+          null
+        ],
+        "spec.java.resources.limits": [
+          28,
+          null
+        ],
+        "spec.java.resources.requests": [
+          29,
+          null
+        ],
+        "spec.java.volumeLimitSize": [
+          31,
+          null
+        ],
+        "spec.nginx": [
+          47,
+          null
+        ],
+        "spec.nginx.attrs": [
+          48,
+          null
+        ],
+        "spec.nginx.attrs.name": [
+          5,
+          null
+        ],
+        "spec.nginx.attrs.value": [
+          6,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom": [
+          7,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom.configMapKeyRef": [
+          8,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom.configMapKeyRef.key": [
+          9,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom.configMapKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom.configMapKeyRef.optional": [
+          11,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom.fieldRef": [
+          12,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom.fieldRef.apiVersion": [
+          13,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom.fieldRef.fieldPath": [
+          14,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom.resourceFieldRef": [
+          15,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom.resourceFieldRef.containerName": [
+          16,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom.resourceFieldRef.divisor": [
+          17,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom.resourceFieldRef.resource": [
+          18,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom.secretKeyRef": [
+          19,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom.secretKeyRef.key": [
+          20,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom.secretKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.nginx.attrs.valueFrom.secretKeyRef.optional": [
+          21,
+          null
+        ],
+        "spec.nginx.configFile": [
+          49,
+          null
+        ],
+        "spec.nginx.env": [
+          50,
+          null
+        ],
+        "spec.nginx.env.name": [
+          5,
+          null
+        ],
+        "spec.nginx.env.value": [
+          6,
+          null
+        ],
+        "spec.nginx.env.valueFrom": [
+          7,
+          null
+        ],
+        "spec.nginx.env.valueFrom.configMapKeyRef": [
+          8,
+          null
+        ],
+        "spec.nginx.env.valueFrom.configMapKeyRef.key": [
+          9,
+          null
+        ],
+        "spec.nginx.env.valueFrom.configMapKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.nginx.env.valueFrom.configMapKeyRef.optional": [
+          11,
+          null
+        ],
+        "spec.nginx.env.valueFrom.fieldRef": [
+          12,
+          null
+        ],
+        "spec.nginx.env.valueFrom.fieldRef.apiVersion": [
+          13,
+          null
+        ],
+        "spec.nginx.env.valueFrom.fieldRef.fieldPath": [
+          14,
+          null
+        ],
+        "spec.nginx.env.valueFrom.resourceFieldRef": [
+          15,
+          null
+        ],
+        "spec.nginx.env.valueFrom.resourceFieldRef.containerName": [
+          16,
+          null
+        ],
+        "spec.nginx.env.valueFrom.resourceFieldRef.divisor": [
+          17,
+          null
+        ],
+        "spec.nginx.env.valueFrom.resourceFieldRef.resource": [
+          18,
+          null
+        ],
+        "spec.nginx.env.valueFrom.secretKeyRef": [
+          19,
+          null
+        ],
+        "spec.nginx.env.valueFrom.secretKeyRef.key": [
+          20,
+          null
+        ],
+        "spec.nginx.env.valueFrom.secretKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.nginx.env.valueFrom.secretKeyRef.optional": [
+          21,
+          null
+        ],
+        "spec.nginx.image": [
+          51,
+          null
+        ],
+        "spec.nginx.resourceRequirements": [
+          25,
+          null
+        ],
+        "spec.nginx.resourceRequirements.claims": [
+          26,
+          null
+        ],
+        "spec.nginx.resourceRequirements.claims.name": [
+          27,
+          null
+        ],
+        "spec.nginx.resourceRequirements.limits": [
+          28,
+          null
+        ],
+        "spec.nginx.resourceRequirements.requests": [
+          29,
+          null
+        ],
+        "spec.nginx.volumeLimitSize": [
+          31,
+          null
+        ],
+        "spec.nodejs": [
+          52,
+          null
+        ],
+        "spec.nodejs.env": [
+          53,
+          null
+        ],
+        "spec.nodejs.env.name": [
+          5,
+          null
+        ],
+        "spec.nodejs.env.value": [
+          6,
+          null
+        ],
+        "spec.nodejs.env.valueFrom": [
+          7,
+          null
+        ],
+        "spec.nodejs.env.valueFrom.configMapKeyRef": [
+          8,
+          null
+        ],
+        "spec.nodejs.env.valueFrom.configMapKeyRef.key": [
+          9,
+          null
+        ],
+        "spec.nodejs.env.valueFrom.configMapKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.nodejs.env.valueFrom.configMapKeyRef.optional": [
+          11,
+          null
+        ],
+        "spec.nodejs.env.valueFrom.fieldRef": [
+          12,
+          null
+        ],
+        "spec.nodejs.env.valueFrom.fieldRef.apiVersion": [
+          13,
+          null
+        ],
+        "spec.nodejs.env.valueFrom.fieldRef.fieldPath": [
+          14,
+          null
+        ],
+        "spec.nodejs.env.valueFrom.resourceFieldRef": [
+          15,
+          null
+        ],
+        "spec.nodejs.env.valueFrom.resourceFieldRef.containerName": [
+          16,
+          null
+        ],
+        "spec.nodejs.env.valueFrom.resourceFieldRef.divisor": [
+          17,
+          null
+        ],
+        "spec.nodejs.env.valueFrom.resourceFieldRef.resource": [
+          18,
+          null
+        ],
+        "spec.nodejs.env.valueFrom.secretKeyRef": [
+          19,
+          null
+        ],
+        "spec.nodejs.env.valueFrom.secretKeyRef.key": [
+          20,
+          null
+        ],
+        "spec.nodejs.env.valueFrom.secretKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.nodejs.env.valueFrom.secretKeyRef.optional": [
+          21,
+          null
+        ],
+        "spec.nodejs.image": [
+          54,
+          null
+        ],
+        "spec.nodejs.resourceRequirements": [
+          25,
+          null
+        ],
+        "spec.nodejs.resourceRequirements.claims": [
+          26,
+          null
+        ],
+        "spec.nodejs.resourceRequirements.claims.name": [
+          27,
+          null
+        ],
+        "spec.nodejs.resourceRequirements.limits": [
+          28,
+          null
+        ],
+        "spec.nodejs.resourceRequirements.requests": [
+          29,
+          null
+        ],
+        "spec.nodejs.volumeLimitSize": [
+          31,
+          null
+        ],
+        "spec.propagators": [
+          55,
+          null
+        ],
+        "spec.python": [
+          56,
+          null
+        ],
+        "spec.python.env": [
+          57,
+          null
+        ],
+        "spec.python.env.name": [
+          5,
+          null
+        ],
+        "spec.python.env.value": [
+          6,
+          null
+        ],
+        "spec.python.env.valueFrom": [
+          7,
+          null
+        ],
+        "spec.python.env.valueFrom.configMapKeyRef": [
+          8,
+          null
+        ],
+        "spec.python.env.valueFrom.configMapKeyRef.key": [
+          9,
+          null
+        ],
+        "spec.python.env.valueFrom.configMapKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.python.env.valueFrom.configMapKeyRef.optional": [
+          11,
+          null
+        ],
+        "spec.python.env.valueFrom.fieldRef": [
+          12,
+          null
+        ],
+        "spec.python.env.valueFrom.fieldRef.apiVersion": [
+          13,
+          null
+        ],
+        "spec.python.env.valueFrom.fieldRef.fieldPath": [
+          14,
+          null
+        ],
+        "spec.python.env.valueFrom.resourceFieldRef": [
+          15,
+          null
+        ],
+        "spec.python.env.valueFrom.resourceFieldRef.containerName": [
+          16,
+          null
+        ],
+        "spec.python.env.valueFrom.resourceFieldRef.divisor": [
+          17,
+          null
+        ],
+        "spec.python.env.valueFrom.resourceFieldRef.resource": [
+          18,
+          null
+        ],
+        "spec.python.env.valueFrom.secretKeyRef": [
+          19,
+          null
+        ],
+        "spec.python.env.valueFrom.secretKeyRef.key": [
+          20,
+          null
+        ],
+        "spec.python.env.valueFrom.secretKeyRef.name": [
+          10,
+          null
+        ],
+        "spec.python.env.valueFrom.secretKeyRef.optional": [
+          21,
+          null
+        ],
+        "spec.python.image": [
+          58,
+          null
+        ],
+        "spec.python.resourceRequirements": [
+          25,
+          null
+        ],
+        "spec.python.resourceRequirements.claims": [
+          26,
+          null
+        ],
+        "spec.python.resourceRequirements.claims.name": [
+          27,
+          null
+        ],
+        "spec.python.resourceRequirements.limits": [
+          28,
+          null
+        ],
+        "spec.python.resourceRequirements.requests": [
+          29,
+          null
+        ],
+        "spec.python.volumeLimitSize": [
+          31,
+          null
+        ],
+        "spec.resource": [
+          59,
+          null
+        ],
+        "spec.resource.addK8sUIDAttributes": [
+          60,
+          null
+        ],
+        "spec.resource.resourceAttributes": [
+          61,
+          null
+        ],
+        "spec.sampler": [
+          62,
+          null
+        ],
+        "spec.sampler.argument": [
+          63,
+          null
+        ],
+        "spec.sampler.type": [
+          64,
+          null
+        ],
+        "status": [
+          65,
+          null
+        ],
+        "": [
+          66,
+          null
+        ]
+      }
+    },
+    "v0.98.0": {
+      "added": {
+        "spec.java.extensions": "object[]"
+      },
+      "descriptions": {
+        "spec.java.extensions": [
+          null,
+          43
+        ]
+      }
+    },
+    "v0.97.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.apacheHttpd.attrs",
+        "spec.apacheHttpd.attrs.value",
+        "spec.apacheHttpd.attrs.valueFrom.configMapKeyRef.name",
+        "spec.apacheHttpd.attrs.valueFrom.fieldRef",
+        "spec.apacheHttpd.attrs.valueFrom.resourceFieldRef",
+        "spec.apacheHttpd.attrs.valueFrom.secretKeyRef.name",
+        "spec.apacheHttpd.configPath",
+        "spec.apacheHttpd.env.value",
+        "spec.apacheHttpd.env.valueFrom.configMapKeyRef.name",
+        "spec.apacheHttpd.env.valueFrom.fieldRef",
+        "spec.apacheHttpd.env.valueFrom.resourceFieldRef",
+        "spec.apacheHttpd.env.valueFrom.secretKeyRef.name",
+        "spec.apacheHttpd.resourceRequirements.claims",
+        "spec.apacheHttpd.resourceRequirements.claims.name",
+        "spec.apacheHttpd.resourceRequirements.limits",
+        "spec.apacheHttpd.volumeLimitSize",
+        "spec.dotnet.env.value",
+        "spec.dotnet.env.valueFrom.configMapKeyRef.name",
+        "spec.dotnet.env.valueFrom.fieldRef",
+        "spec.dotnet.env.valueFrom.resourceFieldRef",
+        "spec.dotnet.env.valueFrom.secretKeyRef.name",
+        "spec.dotnet.resourceRequirements.claims",
+        "spec.dotnet.resourceRequirements.claims.name",
+        "spec.dotnet.resourceRequirements.limits",
+        "spec.dotnet.volumeLimitSize",
+        "spec.env.value",
+        "spec.env.valueFrom.configMapKeyRef.name",
+        "spec.env.valueFrom.fieldRef",
+        "spec.env.valueFrom.resourceFieldRef",
+        "spec.env.valueFrom.secretKeyRef.name",
+        "spec.go.env.value",
+        "spec.go.env.valueFrom.configMapKeyRef.name",
+        "spec.go.env.valueFrom.fieldRef",
+        "spec.go.env.valueFrom.resourceFieldRef",
+        "spec.go.env.valueFrom.secretKeyRef.name",
+        "spec.go.resourceRequirements.claims",
+        "spec.go.resourceRequirements.claims.name",
+        "spec.go.resourceRequirements.limits",
+        "spec.go.volumeLimitSize",
+        "spec.java.env.value",
+        "spec.java.env.valueFrom.configMapKeyRef.name",
+        "spec.java.env.valueFrom.fieldRef",
+        "spec.java.env.valueFrom.resourceFieldRef",
+        "spec.java.env.valueFrom.secretKeyRef.name",
+        "spec.java.resources.claims",
+        "spec.java.resources.claims.name",
+        "spec.java.resources.limits",
+        "spec.java.volumeLimitSize",
+        "spec.nginx.attrs",
+        "spec.nginx.attrs.value",
+        "spec.nginx.attrs.valueFrom.configMapKeyRef.name",
+        "spec.nginx.attrs.valueFrom.fieldRef",
+        "spec.nginx.attrs.valueFrom.resourceFieldRef",
+        "spec.nginx.attrs.valueFrom.secretKeyRef.name",
+        "spec.nginx.configFile",
+        "spec.nginx.env.value",
+        "spec.nginx.env.valueFrom.configMapKeyRef.name",
+        "spec.nginx.env.valueFrom.fieldRef",
+        "spec.nginx.env.valueFrom.resourceFieldRef",
+        "spec.nginx.env.valueFrom.secretKeyRef.name",
+        "spec.nginx.resourceRequirements.claims",
+        "spec.nginx.resourceRequirements.claims.name",
+        "spec.nginx.resourceRequirements.limits",
+        "spec.nginx.volumeLimitSize",
+        "spec.nodejs.env.value",
+        "spec.nodejs.env.valueFrom.configMapKeyRef.name",
+        "spec.nodejs.env.valueFrom.fieldRef",
+        "spec.nodejs.env.valueFrom.resourceFieldRef",
+        "spec.nodejs.env.valueFrom.secretKeyRef.name",
+        "spec.nodejs.resourceRequirements.claims",
+        "spec.nodejs.resourceRequirements.claims.name",
+        "spec.nodejs.resourceRequirements.limits",
+        "spec.nodejs.volumeLimitSize",
+        "spec.propagators",
+        "spec.python.env.value",
+        "spec.python.env.valueFrom.configMapKeyRef.name",
+        "spec.python.env.valueFrom.fieldRef",
+        "spec.python.env.valueFrom.resourceFieldRef",
+        "spec.python.env.valueFrom.secretKeyRef.name",
+        "spec.python.resourceRequirements.claims",
+        "spec.python.resourceRequirements.claims.name",
+        "spec.python.resourceRequirements.limits",
+        "spec.python.volumeLimitSize",
+        "spec.resource.resourceAttributes",
+        "spec.sampler.argument",
+        "spec.sampler.type"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          67,
+          0
+        ],
+        "kind": [
+          68,
+          1
+        ],
+        "spec.apacheHttpd.attrs": [
+          69,
+          4
+        ],
+        "spec.apacheHttpd.attrs.value": [
+          70,
+          6
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.configMapKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.fieldRef": [
+          72,
+          12
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.resourceFieldRef": [
+          73,
+          15
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.secretKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.apacheHttpd.configPath": [
+          74,
+          22
+        ],
+        "spec.apacheHttpd.env.value": [
+          70,
+          6
+        ],
+        "spec.apacheHttpd.env.valueFrom.configMapKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.apacheHttpd.env.valueFrom.fieldRef": [
+          72,
+          12
+        ],
+        "spec.apacheHttpd.env.valueFrom.resourceFieldRef": [
+          73,
+          15
+        ],
+        "spec.apacheHttpd.env.valueFrom.secretKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.apacheHttpd.resourceRequirements.claims": [
+          75,
+          26
+        ],
+        "spec.apacheHttpd.resourceRequirements.claims.name": [
+          76,
+          27
+        ],
+        "spec.apacheHttpd.resourceRequirements.limits": [
+          77,
+          28
+        ],
+        "spec.apacheHttpd.volumeLimitSize": [
+          78,
+          31
+        ],
+        "spec.dotnet.env.value": [
+          70,
+          6
+        ],
+        "spec.dotnet.env.valueFrom.configMapKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.dotnet.env.valueFrom.fieldRef": [
+          72,
+          12
+        ],
+        "spec.dotnet.env.valueFrom.resourceFieldRef": [
+          73,
+          15
+        ],
+        "spec.dotnet.env.valueFrom.secretKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.dotnet.resourceRequirements.claims": [
+          75,
+          26
+        ],
+        "spec.dotnet.resourceRequirements.claims.name": [
+          76,
+          27
+        ],
+        "spec.dotnet.resourceRequirements.limits": [
+          77,
+          28
+        ],
+        "spec.dotnet.volumeLimitSize": [
+          78,
+          31
+        ],
+        "spec.env.value": [
+          70,
+          6
+        ],
+        "spec.env.valueFrom.configMapKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.env.valueFrom.fieldRef": [
+          72,
+          12
+        ],
+        "spec.env.valueFrom.resourceFieldRef": [
+          73,
+          15
+        ],
+        "spec.env.valueFrom.secretKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.go.env.value": [
+          70,
+          6
+        ],
+        "spec.go.env.valueFrom.configMapKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.go.env.valueFrom.fieldRef": [
+          72,
+          12
+        ],
+        "spec.go.env.valueFrom.resourceFieldRef": [
+          73,
+          15
+        ],
+        "spec.go.env.valueFrom.secretKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.go.resourceRequirements.claims": [
+          75,
+          26
+        ],
+        "spec.go.resourceRequirements.claims.name": [
+          76,
+          27
+        ],
+        "spec.go.resourceRequirements.limits": [
+          77,
+          28
+        ],
+        "spec.go.volumeLimitSize": [
+          78,
+          31
+        ],
+        "spec.java.env.value": [
+          70,
+          6
+        ],
+        "spec.java.env.valueFrom.configMapKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.java.env.valueFrom.fieldRef": [
+          72,
+          12
+        ],
+        "spec.java.env.valueFrom.resourceFieldRef": [
+          73,
+          15
+        ],
+        "spec.java.env.valueFrom.secretKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.java.resources.claims": [
+          75,
+          26
+        ],
+        "spec.java.resources.claims.name": [
+          76,
+          27
+        ],
+        "spec.java.resources.limits": [
+          77,
+          28
+        ],
+        "spec.java.volumeLimitSize": [
+          78,
+          31
+        ],
+        "spec.nginx.attrs": [
+          79,
+          48
+        ],
+        "spec.nginx.attrs.value": [
+          70,
+          6
+        ],
+        "spec.nginx.attrs.valueFrom.configMapKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.nginx.attrs.valueFrom.fieldRef": [
+          72,
+          12
+        ],
+        "spec.nginx.attrs.valueFrom.resourceFieldRef": [
+          73,
+          15
+        ],
+        "spec.nginx.attrs.valueFrom.secretKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.nginx.configFile": [
+          80,
+          49
+        ],
+        "spec.nginx.env.value": [
+          70,
+          6
+        ],
+        "spec.nginx.env.valueFrom.configMapKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.nginx.env.valueFrom.fieldRef": [
+          72,
+          12
+        ],
+        "spec.nginx.env.valueFrom.resourceFieldRef": [
+          73,
+          15
+        ],
+        "spec.nginx.env.valueFrom.secretKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.nginx.resourceRequirements.claims": [
+          75,
+          26
+        ],
+        "spec.nginx.resourceRequirements.claims.name": [
+          76,
+          27
+        ],
+        "spec.nginx.resourceRequirements.limits": [
+          77,
+          28
+        ],
+        "spec.nginx.volumeLimitSize": [
+          78,
+          31
+        ],
+        "spec.nodejs.env.value": [
+          70,
+          6
+        ],
+        "spec.nodejs.env.valueFrom.configMapKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.nodejs.env.valueFrom.fieldRef": [
+          72,
+          12
+        ],
+        "spec.nodejs.env.valueFrom.resourceFieldRef": [
+          73,
+          15
+        ],
+        "spec.nodejs.env.valueFrom.secretKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.nodejs.resourceRequirements.claims": [
+          75,
+          26
+        ],
+        "spec.nodejs.resourceRequirements.claims.name": [
+          76,
+          27
+        ],
+        "spec.nodejs.resourceRequirements.limits": [
+          77,
+          28
+        ],
+        "spec.nodejs.volumeLimitSize": [
+          78,
+          31
+        ],
+        "spec.propagators": [
+          81,
+          55
+        ],
+        "spec.python.env.value": [
+          70,
+          6
+        ],
+        "spec.python.env.valueFrom.configMapKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.python.env.valueFrom.fieldRef": [
+          72,
+          12
+        ],
+        "spec.python.env.valueFrom.resourceFieldRef": [
+          73,
+          15
+        ],
+        "spec.python.env.valueFrom.secretKeyRef.name": [
+          71,
+          10
+        ],
+        "spec.python.resourceRequirements.claims": [
+          75,
+          26
+        ],
+        "spec.python.resourceRequirements.claims.name": [
+          76,
+          27
+        ],
+        "spec.python.resourceRequirements.limits": [
+          77,
+          28
+        ],
+        "spec.python.volumeLimitSize": [
+          78,
+          31
+        ],
+        "spec.resource.resourceAttributes": [
+          82,
+          61
+        ],
+        "spec.sampler.argument": [
+          83,
+          63
+        ],
+        "spec.sampler.type": [
+          84,
+          64
+        ]
+      }
+    },
+    "v0.88.0": {
+      "descriptionChanged": [
+        "spec.apacheHttpd.volumeLimitSize",
+        "spec.dotnet.volumeLimitSize",
+        "spec.go.volumeLimitSize",
+        "spec.java.volumeLimitSize",
+        "spec.nginx.volumeLimitSize",
+        "spec.nodejs.volumeLimitSize",
+        "spec.python.volumeLimitSize"
+      ],
+      "descriptions": {
+        "spec.apacheHttpd.volumeLimitSize": [
+          85,
+          78
+        ],
+        "spec.dotnet.volumeLimitSize": [
+          85,
+          78
+        ],
+        "spec.go.volumeLimitSize": [
+          85,
+          78
+        ],
+        "spec.java.volumeLimitSize": [
+          85,
+          78
+        ],
+        "spec.nginx.volumeLimitSize": [
+          85,
+          78
+        ],
+        "spec.nodejs.volumeLimitSize": [
+          85,
+          78
+        ],
+        "spec.python.volumeLimitSize": [
+          85,
+          78
+        ]
+      }
+    },
+    "v0.84.0": {
+      "added": {
+        "spec.apacheHttpd.volumeLimitSize": "int | string",
+        "spec.dotnet.volumeLimitSize": "int | string",
+        "spec.go.volumeLimitSize": "int | string",
+        "spec.java.volumeLimitSize": "int | string",
+        "spec.nginx.volumeLimitSize": "int | string",
+        "spec.nodejs.volumeLimitSize": "int | string",
+        "spec.python.volumeLimitSize": "int | string"
+      },
+      "descriptions": {
+        "spec.apacheHttpd.volumeLimitSize": [
+          null,
+          85
+        ],
+        "spec.dotnet.volumeLimitSize": [
+          null,
+          85
+        ],
+        "spec.go.volumeLimitSize": [
+          null,
+          85
+        ],
+        "spec.java.volumeLimitSize": [
+          null,
+          85
+        ],
+        "spec.nginx.volumeLimitSize": [
+          null,
+          85
+        ],
+        "spec.nodejs.volumeLimitSize": [
+          null,
+          85
+        ],
+        "spec.python.volumeLimitSize": [
+          null,
+          85
+        ]
+      }
+    },
+    "v0.83.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.apacheHttpd.attrs",
+        "spec.apacheHttpd.attrs.value",
+        "spec.apacheHttpd.attrs.valueFrom.fieldRef",
+        "spec.apacheHttpd.attrs.valueFrom.resourceFieldRef",
+        "spec.apacheHttpd.env",
+        "spec.apacheHttpd.env.value",
+        "spec.apacheHttpd.env.valueFrom.fieldRef",
+        "spec.apacheHttpd.env.valueFrom.resourceFieldRef",
+        "spec.apacheHttpd.resourceRequirements.claims",
+        "spec.apacheHttpd.resourceRequirements.requests",
+        "spec.dotnet.env",
+        "spec.dotnet.env.value",
+        "spec.dotnet.env.valueFrom.fieldRef",
+        "spec.dotnet.env.valueFrom.resourceFieldRef",
+        "spec.dotnet.resourceRequirements.claims",
+        "spec.dotnet.resourceRequirements.requests",
+        "spec.env",
+        "spec.env.value",
+        "spec.env.valueFrom.fieldRef",
+        "spec.env.valueFrom.resourceFieldRef",
+        "spec.go",
+        "spec.go.env",
+        "spec.go.env.value",
+        "spec.go.env.valueFrom.fieldRef",
+        "spec.go.env.valueFrom.resourceFieldRef",
+        "spec.go.resourceRequirements.claims",
+        "spec.go.resourceRequirements.requests",
+        "spec.java.env",
+        "spec.java.env.value",
+        "spec.java.env.valueFrom.fieldRef",
+        "spec.java.env.valueFrom.resourceFieldRef",
+        "spec.java.resources.claims",
+        "spec.java.resources.requests",
+        "spec.nginx.attrs",
+        "spec.nginx.attrs.value",
+        "spec.nginx.attrs.valueFrom.fieldRef",
+        "spec.nginx.attrs.valueFrom.resourceFieldRef",
+        "spec.nginx.env",
+        "spec.nginx.env.value",
+        "spec.nginx.env.valueFrom.fieldRef",
+        "spec.nginx.env.valueFrom.resourceFieldRef",
+        "spec.nginx.resourceRequirements.claims",
+        "spec.nginx.resourceRequirements.requests",
+        "spec.nodejs.env",
+        "spec.nodejs.env.value",
+        "spec.nodejs.env.valueFrom.fieldRef",
+        "spec.nodejs.env.valueFrom.resourceFieldRef",
+        "spec.nodejs.resourceRequirements.claims",
+        "spec.nodejs.resourceRequirements.requests",
+        "spec.python.env",
+        "spec.python.env.value",
+        "spec.python.env.valueFrom.fieldRef",
+        "spec.python.env.valueFrom.resourceFieldRef",
+        "spec.python.resourceRequirements.claims",
+        "spec.python.resourceRequirements.requests",
+        "spec.sampler.argument"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          86,
+          67
+        ],
+        "kind": [
+          87,
+          68
+        ],
+        "spec.apacheHttpd.attrs": [
+          88,
+          69
+        ],
+        "spec.apacheHttpd.attrs.value": [
+          89,
+          70
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.fieldRef": [
+          90,
+          72
+        ],
+        "spec.apacheHttpd.attrs.valueFrom.resourceFieldRef": [
+          91,
+          73
+        ],
+        "spec.apacheHttpd.env": [
+          92,
+          23
+        ],
+        "spec.apacheHttpd.env.value": [
+          89,
+          70
+        ],
+        "spec.apacheHttpd.env.valueFrom.fieldRef": [
+          90,
+          72
+        ],
+        "spec.apacheHttpd.env.valueFrom.resourceFieldRef": [
+          91,
+          73
+        ],
+        "spec.apacheHttpd.resourceRequirements.claims": [
+          93,
+          75
+        ],
+        "spec.apacheHttpd.resourceRequirements.requests": [
+          94,
+          29
+        ],
+        "spec.dotnet.env": [
+          95,
+          33
+        ],
+        "spec.dotnet.env.value": [
+          89,
+          70
+        ],
+        "spec.dotnet.env.valueFrom.fieldRef": [
+          90,
+          72
+        ],
+        "spec.dotnet.env.valueFrom.resourceFieldRef": [
+          91,
+          73
+        ],
+        "spec.dotnet.resourceRequirements.claims": [
+          93,
+          75
+        ],
+        "spec.dotnet.resourceRequirements.requests": [
+          94,
+          29
+        ],
+        "spec.env": [
+          96,
+          35
+        ],
+        "spec.env.value": [
+          89,
+          70
+        ],
+        "spec.env.valueFrom.fieldRef": [
+          90,
+          72
+        ],
+        "spec.env.valueFrom.resourceFieldRef": [
+          91,
+          73
+        ],
+        "spec.go": [
+          97,
+          38
+        ],
+        "spec.go.env": [
+          98,
+          39
+        ],
+        "spec.go.env.value": [
+          89,
+          70
+        ],
+        "spec.go.env.valueFrom.fieldRef": [
+          90,
+          72
+        ],
+        "spec.go.env.valueFrom.resourceFieldRef": [
+          91,
+          73
+        ],
+        "spec.go.resourceRequirements.claims": [
+          93,
+          75
+        ],
+        "spec.go.resourceRequirements.requests": [
+          94,
+          29
+        ],
+        "spec.java.env": [
+          99,
+          42
+        ],
+        "spec.java.env.value": [
+          89,
+          70
+        ],
+        "spec.java.env.valueFrom.fieldRef": [
+          90,
+          72
+        ],
+        "spec.java.env.valueFrom.resourceFieldRef": [
+          91,
+          73
+        ],
+        "spec.java.resources.claims": [
+          93,
+          75
+        ],
+        "spec.java.resources.requests": [
+          94,
+          29
+        ],
+        "spec.nginx.attrs": [
+          100,
+          79
+        ],
+        "spec.nginx.attrs.value": [
+          89,
+          70
+        ],
+        "spec.nginx.attrs.valueFrom.fieldRef": [
+          90,
+          72
+        ],
+        "spec.nginx.attrs.valueFrom.resourceFieldRef": [
+          91,
+          73
+        ],
+        "spec.nginx.env": [
+          101,
+          50
+        ],
+        "spec.nginx.env.value": [
+          89,
+          70
+        ],
+        "spec.nginx.env.valueFrom.fieldRef": [
+          90,
+          72
+        ],
+        "spec.nginx.env.valueFrom.resourceFieldRef": [
+          91,
+          73
+        ],
+        "spec.nginx.resourceRequirements.claims": [
+          93,
+          75
+        ],
+        "spec.nginx.resourceRequirements.requests": [
+          94,
+          29
+        ],
+        "spec.nodejs.env": [
+          102,
+          53
+        ],
+        "spec.nodejs.env.value": [
+          89,
+          70
+        ],
+        "spec.nodejs.env.valueFrom.fieldRef": [
+          90,
+          72
+        ],
+        "spec.nodejs.env.valueFrom.resourceFieldRef": [
+          91,
+          73
+        ],
+        "spec.nodejs.resourceRequirements.claims": [
+          93,
+          75
+        ],
+        "spec.nodejs.resourceRequirements.requests": [
+          94,
+          29
+        ],
+        "spec.python.env": [
+          103,
+          57
+        ],
+        "spec.python.env.value": [
+          89,
+          70
+        ],
+        "spec.python.env.valueFrom.fieldRef": [
+          90,
+          72
+        ],
+        "spec.python.env.valueFrom.resourceFieldRef": [
+          91,
+          73
+        ],
+        "spec.python.resourceRequirements.claims": [
+          93,
+          75
+        ],
+        "spec.python.resourceRequirements.requests": [
+          94,
+          29
+        ],
+        "spec.sampler.argument": [
+          104,
+          83
+        ]
+      }
+    },
+    "v0.80.0": {
+      "descriptionChanged": [
+        "spec.apacheHttpd"
+      ],
+      "added": {
+        "spec.nginx": "object"
+      },
+      "descriptions": {
+        "spec.apacheHttpd": [
+          105,
+          3
+        ],
+        "spec.nginx": [
+          null,
+          47
+        ]
+      }
+    },
+    "v0.78.0": {
+      "descriptionChanged": [
+        "spec.apacheHttpd.resourceRequirements.requests",
+        "spec.dotnet.resourceRequirements.requests",
+        "spec.java.resources.requests",
+        "spec.nodejs.resourceRequirements.requests",
+        "spec.python.resourceRequirements.requests"
+      ],
+      "added": {
+        "spec.go.resourceRequirements": "object"
+      },
+      "descriptions": {
+        "spec.apacheHttpd.resourceRequirements.requests": [
+          106,
+          94
+        ],
+        "spec.dotnet.resourceRequirements.requests": [
+          106,
+          94
+        ],
+        "spec.go.resourceRequirements": [
+          null,
+          25
+        ],
+        "spec.java.resources.requests": [
+          106,
+          94
+        ],
+        "spec.nodejs.resourceRequirements.requests": [
+          106,
+          94
+        ],
+        "spec.python.resourceRequirements.requests": [
+          106,
+          94
+        ]
+      }
+    },
+    "v0.77.0": {
+      "added": {
+        "spec.apacheHttpd.resourceRequirements": "object",
+        "spec.dotnet.resourceRequirements": "object",
+        "spec.go": "object",
+        "spec.java.resources": "object",
+        "spec.nodejs.resourceRequirements": "object",
+        "spec.python.resourceRequirements": "object"
+      },
+      "descriptions": {
+        "spec.apacheHttpd.resourceRequirements": [
+          null,
+          25
+        ],
+        "spec.dotnet.resourceRequirements": [
+          null,
+          25
+        ],
+        "spec.go": [
+          null,
+          97
+        ],
+        "spec.java.resources": [
+          null,
+          25
+        ],
+        "spec.nodejs.resourceRequirements": [
+          null,
+          25
+        ],
+        "spec.python.resourceRequirements": [
+          null,
+          25
+        ]
+      }
+    },
+    "v0.71.0": {
+      "descriptionChanged": [
+        "spec.propagators",
+        "spec.sampler.argument",
+        "spec.sampler.type"
+      ],
+      "descriptions": {
+        "spec.propagators": [
+          107,
+          81
+        ],
+        "spec.sampler.argument": [
+          83,
+          104
+        ],
+        "spec.sampler.type": [
+          108,
+          84
+        ]
+      }
+    },
+    "v0.69.0": {
+      "added": {
+        "spec.apacheHttpd": "object"
+      },
+      "descriptions": {
+        "spec.apacheHttpd": [
+          null,
+          105
+        ]
+      }
+    },
+    "v0.57.2": {
+      "added": {
+        "spec.dotnet": "object"
+      },
+      "descriptions": {
+        "spec.dotnet": [
+          null,
+          32
+        ]
+      }
+    },
+    "v0.43.0": {
+      "added": {
+        "spec.env": "object[]",
+        "spec.java.env": "object[]",
+        "spec.nodejs.env": "object[]",
+        "spec.python.env": "object[]"
+      },
+      "descriptions": {
+        "spec.env": [
+          null,
+          96
+        ],
+        "spec.java.env": [
+          null,
+          99
+        ],
+        "spec.nodejs.env": [
+          null,
+          102
+        ],
+        "spec.python.env": [
+          null,
+          103
+        ]
+      }
+    },
+    "v0.39.0": {
+      "descriptionChanged": [
+        "spec.java.image"
+      ],
+      "added": {
+        "spec.nodejs": "object",
+        "spec.propagators": "string[]",
+        "spec.python": "object",
+        "spec.resource": "object",
+        "spec.sampler": "object"
+      },
+      "description": true,
+      "descriptions": {
+        "spec.java.image": [
+          109,
+          46
+        ],
+        "spec.nodejs": [
+          null,
+          52
+        ],
+        "spec.propagators": [
+          null,
+          107
+        ],
+        "spec.python": [
+          null,
+          56
+        ],
+        "spec.resource": [
+          null,
+          59
+        ],
+        "spec.sampler": [
+          null,
+          62
+        ],
+        "": [
+          110,
+          66
+        ]
+      }
+    }
+  },
+  "texts": [
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.",
+    "InstrumentationSpec defines the desired state of OpenTelemetry SDK and instrumentation.",
+    "ApacheHttpd defines configuration for Apache HTTPD auto-instrumentation.",
+    "Attrs defines Apache HTTPD agent specific attributes. The precedence is:\n`agent default attributes` > `instrument spec attributes` .\nAttributes are documented at https://github.",
+    "Name of the environment variable. Must be a C_IDENTIFIER.",
+    "Variable references $(VAR_NAME) are expanded\nusing the previously defined environment variables in the container and\nany service environment variables.",
+    "Source for the environment variable's value. Cannot be used if value is not empty.",
+    "Selects a key of a ConfigMap.",
+    "The key to select.",
+    "Name of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names\nTODO: Add other useful fields. apiVersion, kind, uid?",
+    "Specify whether the ConfigMap or its key must be defined",
+    "Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`,\nspec.nodeName, spec.serviceAccountName, status.hostIP, status.",
+    "Version of the schema the FieldPath is written in terms of, defaults to \"v1\".",
+    "Path of the field to select in the specified API version.",
+    "Selects a resource of the container: only resources limits and requests\n(limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.",
+    "Container name: required for volumes, optional for env vars",
+    "Specifies the output format of the exposed resources, defaults to \"1\"",
+    "Required: resource to select",
+    "Selects a key of a secret in the pod's namespace",
+    "The key of the secret to select from.  Must be a valid secret key.",
+    "Specify whether the Secret or its key must be defined",
+    "Location of Apache HTTPD server configuration.\nNeeded only if different from default \"/usr/local/apache2/conf\"",
+    "Env defines Apache HTTPD specific env vars.",
+    "Image is a container image with Apache SDK and auto-instrumentation.",
+    "Resources describes the compute resource requirements.",
+    "Claims lists the names of resources, defined in spec.resourceClaims,\nthat are used by this container.\n\n\nThis is an alpha field and requires enabling the\nDynamicResourceAllocation feature gate.",
+    "Name must match the name of one entry in pod.spec.resourceClaims of\nthe Pod where this field is used. It makes that resource available\ninside a container.",
+    "Limits describes the maximum amount of compute resources allowed.\nMore info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+    "Requests describes the minimum amount of compute resources required.",
+    "Apache HTTPD server version. One of 2.4 or 2.2. Default is 2.4",
+    "VolumeSizeLimit defines size limit for volume used for auto-instrumentation.\nThe default size is 200Mi.",
+    "DotNet defines configuration for DotNet auto-instrumentation.",
+    "Env defines DotNet specific env vars.",
+    "Image is a container image with DotNet SDK and auto-instrumentation.",
+    "Env defines common env vars.",
+    "Exporter defines exporter configuration.",
+    "Endpoint is address of the collector with OTLP endpoint.",
+    "Go defines configuration for Go auto-instrumentation.",
+    "Env defines Go specific env vars.",
+    "Image is a container image with Go SDK and auto-instrumentation.",
+    "Java defines configuration for java auto-instrumentation.",
+    "Env defines java specific env vars.",
+    "Extensions defines java specific extensions.\nAll extensions are copied to a single directory; if a JAR with the same name exists, it will be overwritten.",
+    "Dir is a directory with extensions auto-instrumentation JAR.",
+    "Image is a container image with extensions auto-instrumentation JAR.",
+    "Image is a container image with javaagent auto-instrumentation JAR.",
+    "Nginx defines configuration for Nginx auto-instrumentation.",
+    "Attrs defines Nginx agent specific attributes. The precedence order is:\n`agent default attributes` > `instrument spec attributes` .\nAttributes are documented at https://github.",
+    "Location of Nginx configuration file.\nNeeded only if different from default \"/etx/nginx/nginx.conf\"",
+    "Env defines Nginx specific env vars.",
+    "Image is a container image with Nginx SDK and auto-instrumentation.",
+    "NodeJS defines configuration for nodejs auto-instrumentation.",
+    "Env defines nodejs specific env vars.",
+    "Image is a container image with NodeJS SDK and auto-instrumentation.",
+    "Propagators defines inter-process context propagation configuration.\nValues in this list will be set in the OTEL_PROPAGATORS env var.\nEnum=tracecontext;baggage;b3;b3multi;jaeger;xray;ottrace;none",
+    "Python defines configuration for python auto-instrumentation.",
+    "Env defines python specific env vars.",
+    "Image is a container image with Python SDK and auto-instrumentation.",
+    "Resource defines the configuration for the resource attributes, as defined by the OpenTelemetry specification.",
+    "AddK8sUIDAttributes defines whether K8s UID attributes should be collected (e.g. k8s.deployment.uid).",
+    "Attributes defines attributes that are added to the resource.\nFor example environment: dev",
+    "Sampler defines sampling configuration.",
+    "Argument defines sampler argument.\nThe value depends on the sampler type.\nFor instance for parentbased_traceidratio sampler type it is a number in range [0..1] e.g. 0.25.",
+    "Type defines sampler type.\nThe value will be set in the OTEL_TRACES_SAMPLER env var.\nThe value can be for instance parentbased_always_on, parentbased_always_off, parentbased_traceidratio...",
+    "InstrumentationStatus defines status of the instrumentation.",
+    "Instrumentation is the spec for OpenTelemetry instrumentation.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values.",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase.",
+    "Attrs defines Apache HTTPD agent specific attributes. The precedence is: `agent default attributes` > `instrument spec attributes` . Attributes are documented at https://github.",
+    "Variable references $(VAR_NAME) are expanded using the previously defined environment variables in the container and any service environment variables.",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`, spec.nodeName, spec.serviceAccountName, status.hostIP, status.",
+    "Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.",
+    "Location of Apache HTTPD server configuration. Needed only if different from default \"/usr/local/apache2/conf\"",
+    "Claims lists the names of resources, defined in spec.resourceClaims, that are used by this container. \n This is an alpha field and requires enabling the DynamicResourceAllocation feature gate.",
+    "Name must match the name of one entry in pod.spec.resourceClaims of the Pod where this field is used. It makes that resource available inside a container.",
+    "Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+    "VolumeSizeLimit defines size limit for volume used for auto-instrumentation. The default size is 200Mi.",
+    "Attrs defines Nginx agent specific attributes. The precedence order is: `agent default attributes` > `instrument spec attributes` . Attributes are documented at https://github.",
+    "Location of Nginx configuration file. Needed only if different from default \"/etx/nginx/nginx.conf\"",
+    "Propagators defines inter-process context propagation configuration. Values in this list will be set in the OTEL_PROPAGATORS env var. Enum=tracecontext;baggage;b3;b3multi;jaeger;xray;ottrace;none",
+    "Attributes defines attributes that are added to the resource. For example environment: dev",
+    "Argument defines sampler argument. The value depends on the sampler type. For instance for parentbased_traceidratio sampler type it is a number in range [0..1] e.g. 0.25.",
+    "Type defines sampler type. The value will be set in the OTEL_TRACES_SAMPLER env var. The value can be for instance parentbased_always_on, parentbased_always_off, parentbased_traceidratio...",
+    "VolumeSizeLimit defines size limit for volume used for auto-instrumentation. The default size is 150Mi.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Attrs defines Apache HTTPD agent specific attributes. The precedence is: `agent default attributes` > `instrument spec attributes` . Attributes are documented at https://github.com/open-telemetry/opentelemetry-cpp-contrib/tree/main/instrumentation/otel-webserver-module",
+    "Variable references $(VAR_NAME) are expanded using the previously defined environment variables in the container and any service environment variables. If a variable cannot be resolved, the reference in the input string will be unchanged. Double $$ are reduced to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e. \"$$(VAR_NAME)\" will produce the string literal \"$(VAR_NAME)\". Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to \"\".",
+    "Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.",
+    "Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.",
+    "Env defines Apache HTTPD specific env vars. There are four layers for env vars' definitions and the precedence order is: `original container env vars` > `language specific env vars` > `common env vars` > `instrument spec configs' vars`. If the former var had been defined, then the other vars would be ignored.",
+    "Claims lists the names of resources, defined in spec.resourceClaims, that are used by this container. \n This is an alpha field and requires enabling the DynamicResourceAllocation feature gate. \n This field is immutable. It can only be set for containers.",
+    "Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. Requests cannot exceed Limits. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+    "Env defines DotNet specific env vars. There are four layers for env vars' definitions and the precedence order is: `original container env vars` > `language specific env vars` > `common env vars` > `instrument spec configs' vars`. If the former var had been defined, then the other vars would be ignored.",
+    "Env defines common env vars. There are four layers for env vars' definitions and the precedence order is: `original container env vars` > `language specific env vars` > `common env vars` > `instrument spec configs' vars`. If the former var had been defined, then the other vars would be ignored.",
+    "Go defines configuration for Go auto-instrumentation. When using Go auto-instrumenetation you must provide a value for the OTEL_GO_AUTO_TARGET_EXE env var via the Instrumentation env vars or via the instrumentation.opentelemetry.io/otel-go-auto-target-exe pod annotation. Failure to set this value causes instrumentation injection to abort, leaving the original pod unchanged.",
+    "Env defines Go specific env vars. There are four layers for env vars' definitions and the precedence order is: `original container env vars` > `language specific env vars` > `common env vars` > `instrument spec configs' vars`. If the former var had been defined, then the other vars would be ignored.",
+    "Env defines java specific env vars. There are four layers for env vars' definitions and the precedence order is: `original container env vars` > `language specific env vars` > `common env vars` > `instrument spec configs' vars`. If the former var had been defined, then the other vars would be ignored.",
+    "Attrs defines Nginx agent specific attributes. The precedence order is: `agent default attributes` > `instrument spec attributes` . Attributes are documented at https://github.com/open-telemetry/opentelemetry-cpp-contrib/tree/main/instrumentation/otel-webserver-module",
+    "Env defines Nginx specific env vars. There are four layers for env vars' definitions and the precedence order is: `original container env vars` > `language specific env vars` > `common env vars` > `instrument spec configs' vars`. If the former var had been defined, then the other vars would be ignored.",
+    "Env defines nodejs specific env vars. There are four layers for env vars' definitions and the precedence order is: `original container env vars` > `language specific env vars` > `common env vars` > `instrument spec configs' vars`. If the former var had been defined, then the other vars would be ignored.",
+    "Env defines python specific env vars. There are four layers for env vars' definitions and the precedence order is: `original container env vars` > `language specific env vars` > `common env vars` > `instrument spec configs' vars`. If the former var had been defined, then the other vars would be ignored.",
+    "Argument defines sampler argument. The value depends on the sampler type. For instance for parentbased_traceidratio sampler type it is a number in range [0..1] e.g. 0.25. The value will be set in the OTEL_TRACES_SAMPLER_ARG env var.",
+    "Apache defines configuration for Apache HTTPD auto-instrumentation.",
+    "Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+    "Propagators defines inter-process context propagation configuration.",
+    "Type defines sampler type. The value can be for instance parentbased_always_on, parentbased_always_off, parentbased_traceidratio...",
+    "Image is a container image with javaagent JAR.",
+    "Instrumentation is the spec for OpenTelemetry instrumentation. nolint: maligned"
+  ]
+}

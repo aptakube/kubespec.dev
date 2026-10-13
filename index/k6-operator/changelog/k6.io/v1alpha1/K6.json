@@ -1,0 +1,2982 @@
+{
+  "versions": {
+    "v0.0.17": {
+      "added": {
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.initializer.containerSecurityContext.appArmorProfile": "object",
+        "spec.initializer.initContainers.volumeMounts.recursiveReadOnly": "string",
+        "spec.initializer.resources.claims.request": "string",
+        "spec.initializer.securityContext.appArmorProfile": "object",
+        "spec.initializer.securityContext.supplementalGroupsPolicy": "string",
+        "spec.initializer.volumeMounts.recursiveReadOnly": "string",
+        "spec.initializer.volumes.ephemeral.volumeClaimTemplate.spec.volumeAttributesClassName": "string",
+        "spec.initializer.volumes.image": "object",
+        "spec.initializer.volumes.projected.sources.clusterTrustBundle": "object",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.runner.containerSecurityContext.appArmorProfile": "object",
+        "spec.runner.initContainers.volumeMounts.recursiveReadOnly": "string",
+        "spec.runner.resources.claims.request": "string",
+        "spec.runner.securityContext.appArmorProfile": "object",
+        "spec.runner.securityContext.supplementalGroupsPolicy": "string",
+        "spec.runner.volumeMounts.recursiveReadOnly": "string",
+        "spec.runner.volumes.ephemeral.volumeClaimTemplate.spec.volumeAttributesClassName": "string",
+        "spec.runner.volumes.image": "object",
+        "spec.runner.volumes.projected.sources.clusterTrustBundle": "object",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.starter.containerSecurityContext.appArmorProfile": "object",
+        "spec.starter.initContainers.volumeMounts.recursiveReadOnly": "string",
+        "spec.starter.resources.claims.request": "string",
+        "spec.starter.securityContext.appArmorProfile": "object",
+        "spec.starter.securityContext.supplementalGroupsPolicy": "string",
+        "spec.starter.volumeMounts.recursiveReadOnly": "string",
+        "spec.starter.volumes.ephemeral.volumeClaimTemplate.spec.volumeAttributesClassName": "string",
+        "spec.starter.volumes.image": "object",
+        "spec.starter.volumes.projected.sources.clusterTrustBundle": "object"
+      },
+      "removed": {
+        "spec.initializer.volumes.ephemeral.volumeClaimTemplate.spec.resources.claims": "object[]",
+        "spec.runner.volumes.ephemeral.volumeClaimTemplate.spec.resources.claims": "object[]",
+        "spec.starter.volumes.ephemeral.volumeClaimTemplate.spec.resources.claims": "object[]"
+      }
+    },
+    "v0.0.15": {
+      "added": {
+        "spec.script.volumeClaim.readOnly": "boolean"
+      }
+    },
+    "v0.0.13": {
+      "added": {
+        "spec.initializer.containerSecurityContext": "object",
+        "spec.runner.containerSecurityContext": "object",
+        "spec.starter.containerSecurityContext": "object"
+      }
+    },
+    "v0.0.12": {
+      "added": {
+        "spec.initializer.topologySpreadConstraints": "object[]",
+        "spec.runner.topologySpreadConstraints": "object[]",
+        "spec.starter.topologySpreadConstraints": "object[]"
+      }
+    },
+    "v0.0.11": {
+      "added": {
+        "spec.initializer.nodeSelector": "map[string]string",
+        "spec.runner.nodeSelector": "map[string]string",
+        "spec.starter.nodeSelector": "map[string]string"
+      },
+      "removed": {
+        "spec.initializer.nodeselector": "map[string]string",
+        "spec.runner.nodeselector": "map[string]string",
+        "spec.starter.nodeselector": "map[string]string"
+      }
+    },
+    "v0.0.10": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec",
+        "spec.cleanup",
+        "spec.initializer.affinity",
+        "spec.initializer.affinity.nodeAffinity",
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution",
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference",
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions",
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.key",
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.operator",
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.values",
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields",
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.key",
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.operator",
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.values",
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight",
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution",
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms",
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions",
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.key",
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.operator",
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.values",
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields",
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.key",
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.operator",
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.values",
+        "spec.initializer.affinity.podAffinity",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.key",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.key",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.key",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.key",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey",
+        "spec.initializer.affinity.podAntiAffinity",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.key",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.key",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.key",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.key",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey",
+        "spec.initializer.env.name",
+        "spec.initializer.env.value",
+        "spec.initializer.env.valueFrom",
+        "spec.initializer.env.valueFrom.configMapKeyRef",
+        "spec.initializer.env.valueFrom.configMapKeyRef.key",
+        "spec.initializer.env.valueFrom.configMapKeyRef.name",
+        "spec.initializer.env.valueFrom.configMapKeyRef.optional",
+        "spec.initializer.env.valueFrom.fieldRef",
+        "spec.initializer.env.valueFrom.fieldRef.apiVersion",
+        "spec.initializer.env.valueFrom.fieldRef.fieldPath",
+        "spec.initializer.env.valueFrom.resourceFieldRef",
+        "spec.initializer.env.valueFrom.resourceFieldRef.containerName",
+        "spec.initializer.env.valueFrom.resourceFieldRef.divisor",
+        "spec.initializer.env.valueFrom.resourceFieldRef.resource",
+        "spec.initializer.env.valueFrom.secretKeyRef",
+        "spec.initializer.env.valueFrom.secretKeyRef.key",
+        "spec.initializer.env.valueFrom.secretKeyRef.name",
+        "spec.initializer.env.valueFrom.secretKeyRef.optional",
+        "spec.initializer.envFrom.configMapRef",
+        "spec.initializer.envFrom.configMapRef.name",
+        "spec.initializer.envFrom.configMapRef.optional",
+        "spec.initializer.envFrom.prefix",
+        "spec.initializer.envFrom.secretRef",
+        "spec.initializer.envFrom.secretRef.name",
+        "spec.initializer.envFrom.secretRef.optional",
+        "spec.initializer.imagePullPolicy",
+        "spec.initializer.imagePullSecrets.name",
+        "spec.initializer.resources",
+        "spec.initializer.resources.claims",
+        "spec.initializer.resources.claims.name",
+        "spec.initializer.resources.limits",
+        "spec.initializer.resources.requests",
+        "spec.initializer.securityContext",
+        "spec.initializer.securityContext.fsGroup",
+        "spec.initializer.securityContext.fsGroupChangePolicy",
+        "spec.initializer.securityContext.runAsGroup",
+        "spec.initializer.securityContext.runAsNonRoot",
+        "spec.initializer.securityContext.runAsUser",
+        "spec.initializer.securityContext.seLinuxOptions",
+        "spec.initializer.securityContext.seLinuxOptions.level",
+        "spec.initializer.securityContext.seLinuxOptions.role",
+        "spec.initializer.securityContext.seLinuxOptions.type",
+        "spec.initializer.securityContext.seLinuxOptions.user",
+        "spec.initializer.securityContext.seccompProfile",
+        "spec.initializer.securityContext.seccompProfile.localhostProfile",
+        "spec.initializer.securityContext.seccompProfile.type",
+        "spec.initializer.securityContext.supplementalGroups",
+        "spec.initializer.securityContext.sysctls",
+        "spec.initializer.securityContext.sysctls.name",
+        "spec.initializer.securityContext.sysctls.value",
+        "spec.initializer.securityContext.windowsOptions",
+        "spec.initializer.securityContext.windowsOptions.gmsaCredentialSpec",
+        "spec.initializer.securityContext.windowsOptions.gmsaCredentialSpecName",
+        "spec.initializer.securityContext.windowsOptions.hostProcess",
+        "spec.initializer.securityContext.windowsOptions.runAsUserName",
+        "spec.initializer.tolerations.effect",
+        "spec.initializer.tolerations.key",
+        "spec.initializer.tolerations.operator",
+        "spec.initializer.tolerations.tolerationSeconds",
+        "spec.initializer.tolerations.value",
+        "spec.ports.containerPort",
+        "spec.ports.hostIP",
+        "spec.ports.hostPort",
+        "spec.ports.name",
+        "spec.ports.protocol",
+        "spec.runner.affinity",
+        "spec.runner.affinity.nodeAffinity",
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution",
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference",
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions",
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.key",
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.operator",
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.values",
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields",
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.key",
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.operator",
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.values",
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight",
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution",
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms",
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions",
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.key",
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.operator",
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.values",
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields",
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.key",
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.operator",
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.values",
+        "spec.runner.affinity.podAffinity",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.key",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.key",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.key",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.key",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey",
+        "spec.runner.affinity.podAntiAffinity",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.key",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.key",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.key",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.key",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey",
+        "spec.runner.env.name",
+        "spec.runner.env.value",
+        "spec.runner.env.valueFrom",
+        "spec.runner.env.valueFrom.configMapKeyRef",
+        "spec.runner.env.valueFrom.configMapKeyRef.key",
+        "spec.runner.env.valueFrom.configMapKeyRef.name",
+        "spec.runner.env.valueFrom.configMapKeyRef.optional",
+        "spec.runner.env.valueFrom.fieldRef",
+        "spec.runner.env.valueFrom.fieldRef.apiVersion",
+        "spec.runner.env.valueFrom.fieldRef.fieldPath",
+        "spec.runner.env.valueFrom.resourceFieldRef",
+        "spec.runner.env.valueFrom.resourceFieldRef.containerName",
+        "spec.runner.env.valueFrom.resourceFieldRef.divisor",
+        "spec.runner.env.valueFrom.resourceFieldRef.resource",
+        "spec.runner.env.valueFrom.secretKeyRef",
+        "spec.runner.env.valueFrom.secretKeyRef.key",
+        "spec.runner.env.valueFrom.secretKeyRef.name",
+        "spec.runner.env.valueFrom.secretKeyRef.optional",
+        "spec.runner.envFrom.configMapRef",
+        "spec.runner.envFrom.configMapRef.name",
+        "spec.runner.envFrom.configMapRef.optional",
+        "spec.runner.envFrom.prefix",
+        "spec.runner.envFrom.secretRef",
+        "spec.runner.envFrom.secretRef.name",
+        "spec.runner.envFrom.secretRef.optional",
+        "spec.runner.imagePullPolicy",
+        "spec.runner.imagePullSecrets.name",
+        "spec.runner.resources",
+        "spec.runner.resources.claims",
+        "spec.runner.resources.claims.name",
+        "spec.runner.resources.limits",
+        "spec.runner.resources.requests",
+        "spec.runner.securityContext",
+        "spec.runner.securityContext.fsGroup",
+        "spec.runner.securityContext.fsGroupChangePolicy",
+        "spec.runner.securityContext.runAsGroup",
+        "spec.runner.securityContext.runAsNonRoot",
+        "spec.runner.securityContext.runAsUser",
+        "spec.runner.securityContext.seLinuxOptions",
+        "spec.runner.securityContext.seLinuxOptions.level",
+        "spec.runner.securityContext.seLinuxOptions.role",
+        "spec.runner.securityContext.seLinuxOptions.type",
+        "spec.runner.securityContext.seLinuxOptions.user",
+        "spec.runner.securityContext.seccompProfile",
+        "spec.runner.securityContext.seccompProfile.localhostProfile",
+        "spec.runner.securityContext.seccompProfile.type",
+        "spec.runner.securityContext.supplementalGroups",
+        "spec.runner.securityContext.sysctls",
+        "spec.runner.securityContext.sysctls.name",
+        "spec.runner.securityContext.sysctls.value",
+        "spec.runner.securityContext.windowsOptions",
+        "spec.runner.securityContext.windowsOptions.gmsaCredentialSpec",
+        "spec.runner.securityContext.windowsOptions.gmsaCredentialSpecName",
+        "spec.runner.securityContext.windowsOptions.hostProcess",
+        "spec.runner.securityContext.windowsOptions.runAsUserName",
+        "spec.runner.tolerations.effect",
+        "spec.runner.tolerations.key",
+        "spec.runner.tolerations.operator",
+        "spec.runner.tolerations.tolerationSeconds",
+        "spec.runner.tolerations.value",
+        "spec.script",
+        "spec.script.configMap",
+        "spec.script.volumeClaim",
+        "spec.starter.affinity",
+        "spec.starter.affinity.nodeAffinity",
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution",
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference",
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions",
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.key",
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.operator",
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.values",
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields",
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.key",
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.operator",
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.values",
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight",
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution",
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms",
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions",
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.key",
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.operator",
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.values",
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields",
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.key",
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.operator",
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.values",
+        "spec.starter.affinity.podAffinity",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.key",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.key",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.key",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.key",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey",
+        "spec.starter.affinity.podAntiAffinity",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.key",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.key",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.key",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.key",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey",
+        "spec.starter.env.name",
+        "spec.starter.env.value",
+        "spec.starter.env.valueFrom",
+        "spec.starter.env.valueFrom.configMapKeyRef",
+        "spec.starter.env.valueFrom.configMapKeyRef.key",
+        "spec.starter.env.valueFrom.configMapKeyRef.name",
+        "spec.starter.env.valueFrom.configMapKeyRef.optional",
+        "spec.starter.env.valueFrom.fieldRef",
+        "spec.starter.env.valueFrom.fieldRef.apiVersion",
+        "spec.starter.env.valueFrom.fieldRef.fieldPath",
+        "spec.starter.env.valueFrom.resourceFieldRef",
+        "spec.starter.env.valueFrom.resourceFieldRef.containerName",
+        "spec.starter.env.valueFrom.resourceFieldRef.divisor",
+        "spec.starter.env.valueFrom.resourceFieldRef.resource",
+        "spec.starter.env.valueFrom.secretKeyRef",
+        "spec.starter.env.valueFrom.secretKeyRef.key",
+        "spec.starter.env.valueFrom.secretKeyRef.name",
+        "spec.starter.env.valueFrom.secretKeyRef.optional",
+        "spec.starter.envFrom.configMapRef",
+        "spec.starter.envFrom.configMapRef.name",
+        "spec.starter.envFrom.configMapRef.optional",
+        "spec.starter.envFrom.prefix",
+        "spec.starter.envFrom.secretRef",
+        "spec.starter.envFrom.secretRef.name",
+        "spec.starter.envFrom.secretRef.optional",
+        "spec.starter.imagePullPolicy",
+        "spec.starter.imagePullSecrets.name",
+        "spec.starter.resources",
+        "spec.starter.resources.claims",
+        "spec.starter.resources.claims.name",
+        "spec.starter.resources.limits",
+        "spec.starter.resources.requests",
+        "spec.starter.securityContext",
+        "spec.starter.securityContext.fsGroup",
+        "spec.starter.securityContext.fsGroupChangePolicy",
+        "spec.starter.securityContext.runAsGroup",
+        "spec.starter.securityContext.runAsNonRoot",
+        "spec.starter.securityContext.runAsUser",
+        "spec.starter.securityContext.seLinuxOptions",
+        "spec.starter.securityContext.seLinuxOptions.level",
+        "spec.starter.securityContext.seLinuxOptions.role",
+        "spec.starter.securityContext.seLinuxOptions.type",
+        "spec.starter.securityContext.seLinuxOptions.user",
+        "spec.starter.securityContext.seccompProfile",
+        "spec.starter.securityContext.seccompProfile.localhostProfile",
+        "spec.starter.securityContext.seccompProfile.type",
+        "spec.starter.securityContext.supplementalGroups",
+        "spec.starter.securityContext.sysctls",
+        "spec.starter.securityContext.sysctls.name",
+        "spec.starter.securityContext.sysctls.value",
+        "spec.starter.securityContext.windowsOptions",
+        "spec.starter.securityContext.windowsOptions.gmsaCredentialSpec",
+        "spec.starter.securityContext.windowsOptions.gmsaCredentialSpecName",
+        "spec.starter.securityContext.windowsOptions.hostProcess",
+        "spec.starter.securityContext.windowsOptions.runAsUserName",
+        "spec.starter.tolerations.effect",
+        "spec.starter.tolerations.key",
+        "spec.starter.tolerations.operator",
+        "spec.starter.tolerations.tolerationSeconds",
+        "spec.starter.tolerations.value",
+        "status",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.status",
+        "status.conditions.type",
+        "status.stage"
+      ],
+      "added": {
+        "spec.initializer.initContainers": "object[]",
+        "spec.initializer.livenessProbe": "object",
+        "spec.initializer.readinessProbe": "object",
+        "spec.initializer.volumeMounts": "object[]",
+        "spec.initializer.volumes": "object[]",
+        "spec.runner.initContainers": "object[]",
+        "spec.runner.livenessProbe": "object",
+        "spec.runner.readinessProbe": "object",
+        "spec.runner.volumeMounts": "object[]",
+        "spec.runner.volumes": "object[]",
+        "spec.starter.initContainers": "object[]",
+        "spec.starter.livenessProbe": "object",
+        "spec.starter.readinessProbe": "object",
+        "spec.starter.volumeMounts": "object[]",
+        "spec.starter.volumes": "object[]",
+        "spec.testRunId": "string",
+        "spec.token": "string",
+        "status.aggregationVars": "string"
+      },
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          0,
+          null
+        ],
+        "kind": [
+          1,
+          null
+        ],
+        "spec": [
+          2,
+          null
+        ],
+        "spec.cleanup": [
+          3,
+          null
+        ],
+        "spec.initializer.affinity": [
+          4,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity": [
+          5,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
+          6,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference": [
+          7,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions": [
+          8,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.key": [
+          9,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.operator": [
+          10,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.values": [
+          11,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields": [
+          12,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.key": [
+          9,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.operator": [
+          10,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.values": [
+          11,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
+          13,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
+          14,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms": [
+          15,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions": [
+          8,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.key": [
+          9,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.operator": [
+          10,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.values": [
+          11,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields": [
+          12,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.key": [
+          9,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.operator": [
+          10,
+          null
+        ],
+        "spec.initializer.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.values": [
+          11,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity": [
+          16,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
+          17,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm": [
+          18,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector": [
+          19,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          25,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          26,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey": [
+          27,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
+          28,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
+          29,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector": [
+          19,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          25,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          26,
+          null
+        ],
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey": [
+          27,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity": [
+          30,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
+          31,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm": [
+          18,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector": [
+          19,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          25,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          26,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey": [
+          27,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
+          28,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
+          32,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector": [
+          19,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          25,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          26,
+          null
+        ],
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey": [
+          27,
+          null
+        ],
+        "spec.initializer.env.name": [
+          33,
+          null
+        ],
+        "spec.initializer.env.value": [
+          34,
+          null
+        ],
+        "spec.initializer.env.valueFrom": [
+          35,
+          null
+        ],
+        "spec.initializer.env.valueFrom.configMapKeyRef": [
+          36,
+          null
+        ],
+        "spec.initializer.env.valueFrom.configMapKeyRef.key": [
+          37,
+          null
+        ],
+        "spec.initializer.env.valueFrom.configMapKeyRef.name": [
+          38,
+          null
+        ],
+        "spec.initializer.env.valueFrom.configMapKeyRef.optional": [
+          39,
+          null
+        ],
+        "spec.initializer.env.valueFrom.fieldRef": [
+          40,
+          null
+        ],
+        "spec.initializer.env.valueFrom.fieldRef.apiVersion": [
+          41,
+          null
+        ],
+        "spec.initializer.env.valueFrom.fieldRef.fieldPath": [
+          42,
+          null
+        ],
+        "spec.initializer.env.valueFrom.resourceFieldRef": [
+          43,
+          null
+        ],
+        "spec.initializer.env.valueFrom.resourceFieldRef.containerName": [
+          44,
+          null
+        ],
+        "spec.initializer.env.valueFrom.resourceFieldRef.divisor": [
+          45,
+          null
+        ],
+        "spec.initializer.env.valueFrom.resourceFieldRef.resource": [
+          46,
+          null
+        ],
+        "spec.initializer.env.valueFrom.secretKeyRef": [
+          47,
+          null
+        ],
+        "spec.initializer.env.valueFrom.secretKeyRef.key": [
+          48,
+          null
+        ],
+        "spec.initializer.env.valueFrom.secretKeyRef.name": [
+          38,
+          null
+        ],
+        "spec.initializer.env.valueFrom.secretKeyRef.optional": [
+          49,
+          null
+        ],
+        "spec.initializer.envFrom.configMapRef": [
+          50,
+          null
+        ],
+        "spec.initializer.envFrom.configMapRef.name": [
+          38,
+          null
+        ],
+        "spec.initializer.envFrom.configMapRef.optional": [
+          51,
+          null
+        ],
+        "spec.initializer.envFrom.prefix": [
+          52,
+          null
+        ],
+        "spec.initializer.envFrom.secretRef": [
+          53,
+          null
+        ],
+        "spec.initializer.envFrom.secretRef.name": [
+          38,
+          null
+        ],
+        "spec.initializer.envFrom.secretRef.optional": [
+          54,
+          null
+        ],
+        "spec.initializer.imagePullPolicy": [
+          55,
+          null
+        ],
+        "spec.initializer.imagePullSecrets.name": [
+          38,
+          null
+        ],
+        "spec.initializer.resources": [
+          56,
+          null
+        ],
+        "spec.initializer.resources.claims": [
+          57,
+          null
+        ],
+        "spec.initializer.resources.claims.name": [
+          58,
+          null
+        ],
+        "spec.initializer.resources.limits": [
+          59,
+          null
+        ],
+        "spec.initializer.resources.requests": [
+          60,
+          null
+        ],
+        "spec.initializer.securityContext": [
+          61,
+          null
+        ],
+        "spec.initializer.securityContext.fsGroup": [
+          62,
+          null
+        ],
+        "spec.initializer.securityContext.fsGroupChangePolicy": [
+          63,
+          null
+        ],
+        "spec.initializer.securityContext.runAsGroup": [
+          64,
+          null
+        ],
+        "spec.initializer.securityContext.runAsNonRoot": [
+          65,
+          null
+        ],
+        "spec.initializer.securityContext.runAsUser": [
+          66,
+          null
+        ],
+        "spec.initializer.securityContext.seLinuxOptions": [
+          67,
+          null
+        ],
+        "spec.initializer.securityContext.seLinuxOptions.level": [
+          68,
+          null
+        ],
+        "spec.initializer.securityContext.seLinuxOptions.role": [
+          69,
+          null
+        ],
+        "spec.initializer.securityContext.seLinuxOptions.type": [
+          70,
+          null
+        ],
+        "spec.initializer.securityContext.seLinuxOptions.user": [
+          71,
+          null
+        ],
+        "spec.initializer.securityContext.seccompProfile": [
+          72,
+          null
+        ],
+        "spec.initializer.securityContext.seccompProfile.localhostProfile": [
+          73,
+          null
+        ],
+        "spec.initializer.securityContext.seccompProfile.type": [
+          74,
+          null
+        ],
+        "spec.initializer.securityContext.supplementalGroups": [
+          75,
+          null
+        ],
+        "spec.initializer.securityContext.sysctls": [
+          76,
+          null
+        ],
+        "spec.initializer.securityContext.sysctls.name": [
+          77,
+          null
+        ],
+        "spec.initializer.securityContext.sysctls.value": [
+          78,
+          null
+        ],
+        "spec.initializer.securityContext.windowsOptions": [
+          79,
+          null
+        ],
+        "spec.initializer.securityContext.windowsOptions.gmsaCredentialSpec": [
+          80,
+          null
+        ],
+        "spec.initializer.securityContext.windowsOptions.gmsaCredentialSpecName": [
+          81,
+          null
+        ],
+        "spec.initializer.securityContext.windowsOptions.hostProcess": [
+          82,
+          null
+        ],
+        "spec.initializer.securityContext.windowsOptions.runAsUserName": [
+          83,
+          null
+        ],
+        "spec.initializer.tolerations.effect": [
+          84,
+          null
+        ],
+        "spec.initializer.tolerations.key": [
+          85,
+          null
+        ],
+        "spec.initializer.tolerations.operator": [
+          86,
+          null
+        ],
+        "spec.initializer.tolerations.tolerationSeconds": [
+          87,
+          null
+        ],
+        "spec.initializer.tolerations.value": [
+          88,
+          null
+        ],
+        "spec.ports.containerPort": [
+          89,
+          null
+        ],
+        "spec.ports.hostIP": [
+          90,
+          null
+        ],
+        "spec.ports.hostPort": [
+          91,
+          null
+        ],
+        "spec.ports.name": [
+          92,
+          null
+        ],
+        "spec.ports.protocol": [
+          93,
+          null
+        ],
+        "spec.runner.affinity": [
+          4,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity": [
+          5,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
+          6,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference": [
+          7,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions": [
+          8,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.key": [
+          9,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.operator": [
+          10,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.values": [
+          11,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields": [
+          12,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.key": [
+          9,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.operator": [
+          10,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.values": [
+          11,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
+          13,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
+          14,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms": [
+          15,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions": [
+          8,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.key": [
+          9,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.operator": [
+          10,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.values": [
+          11,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields": [
+          12,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.key": [
+          9,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.operator": [
+          10,
+          null
+        ],
+        "spec.runner.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.values": [
+          11,
+          null
+        ],
+        "spec.runner.affinity.podAffinity": [
+          16,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
+          17,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm": [
+          18,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector": [
+          19,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          25,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          26,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey": [
+          27,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
+          28,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
+          29,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector": [
+          19,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          25,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          26,
+          null
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey": [
+          27,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity": [
+          30,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
+          31,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm": [
+          18,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector": [
+          19,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          25,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          26,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey": [
+          27,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
+          28,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
+          32,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector": [
+          19,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          25,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          26,
+          null
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey": [
+          27,
+          null
+        ],
+        "spec.runner.env.name": [
+          33,
+          null
+        ],
+        "spec.runner.env.value": [
+          34,
+          null
+        ],
+        "spec.runner.env.valueFrom": [
+          35,
+          null
+        ],
+        "spec.runner.env.valueFrom.configMapKeyRef": [
+          36,
+          null
+        ],
+        "spec.runner.env.valueFrom.configMapKeyRef.key": [
+          37,
+          null
+        ],
+        "spec.runner.env.valueFrom.configMapKeyRef.name": [
+          38,
+          null
+        ],
+        "spec.runner.env.valueFrom.configMapKeyRef.optional": [
+          39,
+          null
+        ],
+        "spec.runner.env.valueFrom.fieldRef": [
+          40,
+          null
+        ],
+        "spec.runner.env.valueFrom.fieldRef.apiVersion": [
+          41,
+          null
+        ],
+        "spec.runner.env.valueFrom.fieldRef.fieldPath": [
+          42,
+          null
+        ],
+        "spec.runner.env.valueFrom.resourceFieldRef": [
+          43,
+          null
+        ],
+        "spec.runner.env.valueFrom.resourceFieldRef.containerName": [
+          44,
+          null
+        ],
+        "spec.runner.env.valueFrom.resourceFieldRef.divisor": [
+          45,
+          null
+        ],
+        "spec.runner.env.valueFrom.resourceFieldRef.resource": [
+          46,
+          null
+        ],
+        "spec.runner.env.valueFrom.secretKeyRef": [
+          47,
+          null
+        ],
+        "spec.runner.env.valueFrom.secretKeyRef.key": [
+          48,
+          null
+        ],
+        "spec.runner.env.valueFrom.secretKeyRef.name": [
+          38,
+          null
+        ],
+        "spec.runner.env.valueFrom.secretKeyRef.optional": [
+          49,
+          null
+        ],
+        "spec.runner.envFrom.configMapRef": [
+          50,
+          null
+        ],
+        "spec.runner.envFrom.configMapRef.name": [
+          38,
+          null
+        ],
+        "spec.runner.envFrom.configMapRef.optional": [
+          51,
+          null
+        ],
+        "spec.runner.envFrom.prefix": [
+          52,
+          null
+        ],
+        "spec.runner.envFrom.secretRef": [
+          53,
+          null
+        ],
+        "spec.runner.envFrom.secretRef.name": [
+          38,
+          null
+        ],
+        "spec.runner.envFrom.secretRef.optional": [
+          54,
+          null
+        ],
+        "spec.runner.imagePullPolicy": [
+          55,
+          null
+        ],
+        "spec.runner.imagePullSecrets.name": [
+          38,
+          null
+        ],
+        "spec.runner.resources": [
+          56,
+          null
+        ],
+        "spec.runner.resources.claims": [
+          57,
+          null
+        ],
+        "spec.runner.resources.claims.name": [
+          58,
+          null
+        ],
+        "spec.runner.resources.limits": [
+          59,
+          null
+        ],
+        "spec.runner.resources.requests": [
+          60,
+          null
+        ],
+        "spec.runner.securityContext": [
+          61,
+          null
+        ],
+        "spec.runner.securityContext.fsGroup": [
+          62,
+          null
+        ],
+        "spec.runner.securityContext.fsGroupChangePolicy": [
+          63,
+          null
+        ],
+        "spec.runner.securityContext.runAsGroup": [
+          64,
+          null
+        ],
+        "spec.runner.securityContext.runAsNonRoot": [
+          65,
+          null
+        ],
+        "spec.runner.securityContext.runAsUser": [
+          66,
+          null
+        ],
+        "spec.runner.securityContext.seLinuxOptions": [
+          67,
+          null
+        ],
+        "spec.runner.securityContext.seLinuxOptions.level": [
+          68,
+          null
+        ],
+        "spec.runner.securityContext.seLinuxOptions.role": [
+          69,
+          null
+        ],
+        "spec.runner.securityContext.seLinuxOptions.type": [
+          70,
+          null
+        ],
+        "spec.runner.securityContext.seLinuxOptions.user": [
+          71,
+          null
+        ],
+        "spec.runner.securityContext.seccompProfile": [
+          72,
+          null
+        ],
+        "spec.runner.securityContext.seccompProfile.localhostProfile": [
+          73,
+          null
+        ],
+        "spec.runner.securityContext.seccompProfile.type": [
+          74,
+          null
+        ],
+        "spec.runner.securityContext.supplementalGroups": [
+          75,
+          null
+        ],
+        "spec.runner.securityContext.sysctls": [
+          76,
+          null
+        ],
+        "spec.runner.securityContext.sysctls.name": [
+          77,
+          null
+        ],
+        "spec.runner.securityContext.sysctls.value": [
+          78,
+          null
+        ],
+        "spec.runner.securityContext.windowsOptions": [
+          79,
+          null
+        ],
+        "spec.runner.securityContext.windowsOptions.gmsaCredentialSpec": [
+          80,
+          null
+        ],
+        "spec.runner.securityContext.windowsOptions.gmsaCredentialSpecName": [
+          81,
+          null
+        ],
+        "spec.runner.securityContext.windowsOptions.hostProcess": [
+          82,
+          null
+        ],
+        "spec.runner.securityContext.windowsOptions.runAsUserName": [
+          83,
+          null
+        ],
+        "spec.runner.tolerations.effect": [
+          84,
+          null
+        ],
+        "spec.runner.tolerations.key": [
+          85,
+          null
+        ],
+        "spec.runner.tolerations.operator": [
+          86,
+          null
+        ],
+        "spec.runner.tolerations.tolerationSeconds": [
+          87,
+          null
+        ],
+        "spec.runner.tolerations.value": [
+          88,
+          null
+        ],
+        "spec.script": [
+          94,
+          null
+        ],
+        "spec.script.configMap": [
+          95,
+          null
+        ],
+        "spec.script.volumeClaim": [
+          96,
+          null
+        ],
+        "spec.starter.affinity": [
+          4,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity": [
+          5,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
+          6,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference": [
+          7,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions": [
+          8,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.key": [
+          9,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.operator": [
+          10,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.values": [
+          11,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields": [
+          12,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.key": [
+          9,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.operator": [
+          10,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.values": [
+          11,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
+          13,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
+          14,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms": [
+          15,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions": [
+          8,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.key": [
+          9,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.operator": [
+          10,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.values": [
+          11,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields": [
+          12,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.key": [
+          9,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.operator": [
+          10,
+          null
+        ],
+        "spec.starter.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.values": [
+          11,
+          null
+        ],
+        "spec.starter.affinity.podAffinity": [
+          16,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
+          17,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm": [
+          18,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector": [
+          19,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          25,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          26,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey": [
+          27,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
+          28,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
+          29,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector": [
+          19,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          25,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          26,
+          null
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey": [
+          27,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity": [
+          30,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
+          31,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm": [
+          18,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector": [
+          19,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          25,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          26,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey": [
+          27,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
+          28,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
+          32,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector": [
+          19,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          25,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions": [
+          20,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.key": [
+          21,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator": [
+          22,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values": [
+          23,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels": [
+          24,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          26,
+          null
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey": [
+          27,
+          null
+        ],
+        "spec.starter.env.name": [
+          33,
+          null
+        ],
+        "spec.starter.env.value": [
+          34,
+          null
+        ],
+        "spec.starter.env.valueFrom": [
+          35,
+          null
+        ],
+        "spec.starter.env.valueFrom.configMapKeyRef": [
+          36,
+          null
+        ],
+        "spec.starter.env.valueFrom.configMapKeyRef.key": [
+          37,
+          null
+        ],
+        "spec.starter.env.valueFrom.configMapKeyRef.name": [
+          38,
+          null
+        ],
+        "spec.starter.env.valueFrom.configMapKeyRef.optional": [
+          39,
+          null
+        ],
+        "spec.starter.env.valueFrom.fieldRef": [
+          40,
+          null
+        ],
+        "spec.starter.env.valueFrom.fieldRef.apiVersion": [
+          41,
+          null
+        ],
+        "spec.starter.env.valueFrom.fieldRef.fieldPath": [
+          42,
+          null
+        ],
+        "spec.starter.env.valueFrom.resourceFieldRef": [
+          43,
+          null
+        ],
+        "spec.starter.env.valueFrom.resourceFieldRef.containerName": [
+          44,
+          null
+        ],
+        "spec.starter.env.valueFrom.resourceFieldRef.divisor": [
+          45,
+          null
+        ],
+        "spec.starter.env.valueFrom.resourceFieldRef.resource": [
+          46,
+          null
+        ],
+        "spec.starter.env.valueFrom.secretKeyRef": [
+          47,
+          null
+        ],
+        "spec.starter.env.valueFrom.secretKeyRef.key": [
+          48,
+          null
+        ],
+        "spec.starter.env.valueFrom.secretKeyRef.name": [
+          38,
+          null
+        ],
+        "spec.starter.env.valueFrom.secretKeyRef.optional": [
+          49,
+          null
+        ],
+        "spec.starter.envFrom.configMapRef": [
+          50,
+          null
+        ],
+        "spec.starter.envFrom.configMapRef.name": [
+          38,
+          null
+        ],
+        "spec.starter.envFrom.configMapRef.optional": [
+          51,
+          null
+        ],
+        "spec.starter.envFrom.prefix": [
+          52,
+          null
+        ],
+        "spec.starter.envFrom.secretRef": [
+          53,
+          null
+        ],
+        "spec.starter.envFrom.secretRef.name": [
+          38,
+          null
+        ],
+        "spec.starter.envFrom.secretRef.optional": [
+          54,
+          null
+        ],
+        "spec.starter.imagePullPolicy": [
+          55,
+          null
+        ],
+        "spec.starter.imagePullSecrets.name": [
+          38,
+          null
+        ],
+        "spec.starter.resources": [
+          56,
+          null
+        ],
+        "spec.starter.resources.claims": [
+          57,
+          null
+        ],
+        "spec.starter.resources.claims.name": [
+          58,
+          null
+        ],
+        "spec.starter.resources.limits": [
+          59,
+          null
+        ],
+        "spec.starter.resources.requests": [
+          60,
+          null
+        ],
+        "spec.starter.securityContext": [
+          61,
+          null
+        ],
+        "spec.starter.securityContext.fsGroup": [
+          62,
+          null
+        ],
+        "spec.starter.securityContext.fsGroupChangePolicy": [
+          63,
+          null
+        ],
+        "spec.starter.securityContext.runAsGroup": [
+          64,
+          null
+        ],
+        "spec.starter.securityContext.runAsNonRoot": [
+          65,
+          null
+        ],
+        "spec.starter.securityContext.runAsUser": [
+          66,
+          null
+        ],
+        "spec.starter.securityContext.seLinuxOptions": [
+          67,
+          null
+        ],
+        "spec.starter.securityContext.seLinuxOptions.level": [
+          68,
+          null
+        ],
+        "spec.starter.securityContext.seLinuxOptions.role": [
+          69,
+          null
+        ],
+        "spec.starter.securityContext.seLinuxOptions.type": [
+          70,
+          null
+        ],
+        "spec.starter.securityContext.seLinuxOptions.user": [
+          71,
+          null
+        ],
+        "spec.starter.securityContext.seccompProfile": [
+          72,
+          null
+        ],
+        "spec.starter.securityContext.seccompProfile.localhostProfile": [
+          73,
+          null
+        ],
+        "spec.starter.securityContext.seccompProfile.type": [
+          74,
+          null
+        ],
+        "spec.starter.securityContext.supplementalGroups": [
+          75,
+          null
+        ],
+        "spec.starter.securityContext.sysctls": [
+          76,
+          null
+        ],
+        "spec.starter.securityContext.sysctls.name": [
+          77,
+          null
+        ],
+        "spec.starter.securityContext.sysctls.value": [
+          78,
+          null
+        ],
+        "spec.starter.securityContext.windowsOptions": [
+          79,
+          null
+        ],
+        "spec.starter.securityContext.windowsOptions.gmsaCredentialSpec": [
+          80,
+          null
+        ],
+        "spec.starter.securityContext.windowsOptions.gmsaCredentialSpecName": [
+          81,
+          null
+        ],
+        "spec.starter.securityContext.windowsOptions.hostProcess": [
+          82,
+          null
+        ],
+        "spec.starter.securityContext.windowsOptions.runAsUserName": [
+          83,
+          null
+        ],
+        "spec.starter.tolerations.effect": [
+          84,
+          null
+        ],
+        "spec.starter.tolerations.key": [
+          85,
+          null
+        ],
+        "spec.starter.tolerations.operator": [
+          86,
+          null
+        ],
+        "spec.starter.tolerations.tolerationSeconds": [
+          87,
+          null
+        ],
+        "spec.starter.tolerations.value": [
+          88,
+          null
+        ],
+        "status": [
+          97,
+          null
+        ],
+        "status.conditions.lastTransitionTime": [
+          98,
+          null
+        ],
+        "status.conditions.message": [
+          99,
+          null
+        ],
+        "status.conditions.observedGeneration": [
+          100,
+          null
+        ],
+        "status.conditions.reason": [
+          101,
+          null
+        ],
+        "status.conditions.status": [
+          102,
+          null
+        ],
+        "status.conditions.type": [
+          103,
+          null
+        ],
+        "status.stage": [
+          104,
+          null
+        ],
+        "": [
+          105,
+          null
+        ]
+      }
+    },
+    "v0.0.9": {
+      "added": {
+        "spec.initializer": "object",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": "object",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": "object",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": "object",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": "object",
+        "spec.runner.imagePullPolicy": "string",
+        "spec.runner.resources.claims": "object[]",
+        "spec.runner.securityContext.seccompProfile": "object",
+        "spec.runner.securityContext.windowsOptions.hostProcess": "boolean",
+        "spec.scuttle.disableLogging": "boolean",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": "object",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": "object",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": "object",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": "object",
+        "spec.starter.imagePullPolicy": "string",
+        "spec.starter.resources.claims": "object[]",
+        "spec.starter.securityContext.seccompProfile": "object",
+        "spec.starter.securityContext.windowsOptions.hostProcess": "boolean",
+        "status.conditions": "object[]",
+        "status.testRunId": "string"
+      },
+      "descriptionChanged": [
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.runner.env.value",
+        "spec.runner.env.valueFrom.fieldRef",
+        "spec.runner.resources.limits",
+        "spec.runner.resources.requests",
+        "spec.runner.securityContext.fsGroup",
+        "spec.runner.securityContext.fsGroupChangePolicy",
+        "spec.runner.securityContext.runAsGroup",
+        "spec.runner.securityContext.runAsUser",
+        "spec.runner.securityContext.seLinuxOptions",
+        "spec.runner.securityContext.supplementalGroups",
+        "spec.runner.securityContext.sysctls",
+        "spec.runner.securityContext.windowsOptions",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces",
+        "spec.starter.env.value",
+        "spec.starter.env.valueFrom.fieldRef",
+        "spec.starter.resources.limits",
+        "spec.starter.resources.requests",
+        "spec.starter.securityContext.fsGroup",
+        "spec.starter.securityContext.fsGroupChangePolicy",
+        "spec.starter.securityContext.runAsGroup",
+        "spec.starter.securityContext.runAsUser",
+        "spec.starter.securityContext.seLinuxOptions",
+        "spec.starter.securityContext.supplementalGroups",
+        "spec.starter.securityContext.sysctls",
+        "spec.starter.securityContext.windowsOptions"
+      ],
+      "removed": {
+        "spec.scuttle.scuttleLogging": "boolean"
+      },
+      "descriptions": {
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          null,
+          25
+        ],
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          106,
+          26
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          null,
+          25
+        ],
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          106,
+          26
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          null,
+          25
+        ],
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          106,
+          26
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          null,
+          25
+        ],
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          106,
+          26
+        ],
+        "spec.runner.env.value": [
+          107,
+          34
+        ],
+        "spec.runner.env.valueFrom.fieldRef": [
+          108,
+          40
+        ],
+        "spec.runner.imagePullPolicy": [
+          null,
+          55
+        ],
+        "spec.runner.resources.claims": [
+          null,
+          57
+        ],
+        "spec.runner.resources.limits": [
+          109,
+          59
+        ],
+        "spec.runner.resources.requests": [
+          110,
+          60
+        ],
+        "spec.runner.securityContext.fsGroup": [
+          111,
+          62
+        ],
+        "spec.runner.securityContext.fsGroupChangePolicy": [
+          112,
+          63
+        ],
+        "spec.runner.securityContext.runAsGroup": [
+          113,
+          64
+        ],
+        "spec.runner.securityContext.runAsUser": [
+          114,
+          66
+        ],
+        "spec.runner.securityContext.seLinuxOptions": [
+          115,
+          67
+        ],
+        "spec.runner.securityContext.seccompProfile": [
+          null,
+          72
+        ],
+        "spec.runner.securityContext.supplementalGroups": [
+          116,
+          75
+        ],
+        "spec.runner.securityContext.sysctls": [
+          117,
+          76
+        ],
+        "spec.runner.securityContext.windowsOptions": [
+          118,
+          79
+        ],
+        "spec.runner.securityContext.windowsOptions.hostProcess": [
+          null,
+          82
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          null,
+          25
+        ],
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          106,
+          26
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          null,
+          25
+        ],
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          106,
+          26
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
+          null,
+          25
+        ],
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
+          106,
+          26
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
+          null,
+          25
+        ],
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
+          106,
+          26
+        ],
+        "spec.starter.env.value": [
+          107,
+          34
+        ],
+        "spec.starter.env.valueFrom.fieldRef": [
+          108,
+          40
+        ],
+        "spec.starter.imagePullPolicy": [
+          null,
+          55
+        ],
+        "spec.starter.resources.claims": [
+          null,
+          57
+        ],
+        "spec.starter.resources.limits": [
+          109,
+          59
+        ],
+        "spec.starter.resources.requests": [
+          110,
+          60
+        ],
+        "spec.starter.securityContext.fsGroup": [
+          111,
+          62
+        ],
+        "spec.starter.securityContext.fsGroupChangePolicy": [
+          112,
+          63
+        ],
+        "spec.starter.securityContext.runAsGroup": [
+          113,
+          64
+        ],
+        "spec.starter.securityContext.runAsUser": [
+          114,
+          66
+        ],
+        "spec.starter.securityContext.seLinuxOptions": [
+          115,
+          67
+        ],
+        "spec.starter.securityContext.seccompProfile": [
+          null,
+          72
+        ],
+        "spec.starter.securityContext.supplementalGroups": [
+          116,
+          75
+        ],
+        "spec.starter.securityContext.sysctls": [
+          117,
+          76
+        ],
+        "spec.starter.securityContext.windowsOptions": [
+          118,
+          79
+        ],
+        "spec.starter.securityContext.windowsOptions.hostProcess": [
+          null,
+          82
+        ]
+      }
+    },
+    "v0.0.8": {
+      "added": {
+        "spec.runner.envFrom": "object[]",
+        "spec.runner.imagePullSecrets": "object[]",
+        "spec.runner.tolerations": "object[]",
+        "spec.starter.envFrom": "object[]",
+        "spec.starter.imagePullSecrets": "object[]",
+        "spec.starter.tolerations": "object[]"
+      }
+    },
+    "v0.0.7": {
+      "added": {
+        "spec.cleanup": "string",
+        "spec.paused": "string",
+        "spec.quiet": "string",
+        "spec.runner.automountServiceAccountToken": "string",
+        "spec.runner.image": "string",
+        "spec.runner.resources": "object",
+        "spec.runner.securityContext": "object",
+        "spec.runner.serviceAccountName": "string",
+        "spec.script.localFile": "string",
+        "spec.scuttle": "object",
+        "spec.starter.automountServiceAccountToken": "string",
+        "spec.starter.image": "string",
+        "spec.starter.resources": "object",
+        "spec.starter.securityContext": "object",
+        "spec.starter.serviceAccountName": "string"
+      },
+      "removed": {
+        "spec.image": "string"
+      },
+      "descriptions": {
+        "spec.cleanup": [
+          null,
+          3
+        ],
+        "spec.runner.resources": [
+          null,
+          56
+        ],
+        "spec.runner.securityContext": [
+          null,
+          61
+        ],
+        "spec.starter.resources": [
+          null,
+          56
+        ],
+        "spec.starter.securityContext": [
+          null,
+          61
+        ]
+      }
+    },
+    "v0.0.6": {
+      "added": {
+        "spec.runner.affinity": "object",
+        "spec.runner.env": "object[]",
+        "spec.runner.metadata": "object",
+        "spec.runner.nodeselector": "map[string]string",
+        "spec.starter.affinity": "object",
+        "spec.starter.env": "object[]",
+        "spec.starter.metadata": "object",
+        "spec.starter.nodeselector": "map[string]string"
+      },
+      "removed": {
+        "spec.runner.annotations": "map[string]string",
+        "spec.runner.labels": "map[string]string",
+        "spec.starter.annotations": "map[string]string",
+        "spec.starter.labels": "map[string]string"
+      },
+      "descriptions": {
+        "spec.runner.affinity": [
+          null,
+          4
+        ],
+        "spec.starter.affinity": [
+          null,
+          4
+        ]
+      }
+    },
+    "v0.0.5": {
+      "added": {
+        "spec.runner": "object",
+        "spec.script.configMap": "object",
+        "spec.script.volumeClaim": "object",
+        "spec.starter": "object"
+      },
+      "typeChanged": {
+        "spec.script": [
+          "string",
+          "object"
+        ]
+      },
+      "descriptionChanged": [
+        "spec.script"
+      ],
+      "descriptions": {
+        "spec.script": [
+          null,
+          94
+        ],
+        "spec.script.configMap": [
+          null,
+          95
+        ],
+        "spec.script.volumeClaim": [
+          null,
+          96
+        ]
+      }
+    },
+    "v0.0.4": {
+      "descriptionChanged": [
+        "spec.arguments"
+      ],
+      "added": {
+        "spec.image": "string",
+        "spec.ports": "object[]"
+      },
+      "descriptions": {
+        "spec.arguments": [
+          119,
+          null
+        ]
+      }
+    },
+    "v0.0.2": {
+      "added": {
+        "spec.arguments": "string",
+        "status.stage": "string"
+      },
+      "descriptions": {
+        "spec.arguments": [
+          null,
+          119
+        ],
+        "status.stage": [
+          null,
+          104
+        ]
+      }
+    }
+  },
+  "texts": [
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "K6Spec defines the desired state of K6",
+    "Cleanup allows for automatic cleanup of resources post execution",
+    "Affinity is a group of affinity scheduling rules.",
+    "Describes node affinity scheduling rules for the pod.",
+    "The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred.",
+    "A node selector term, associated with the corresponding weight.",
+    "A list of node selector requirements by node's labels.",
+    "The label key that the selector applies to.",
+    "Represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.",
+    "An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.",
+    "A list of node selector requirements by node's fields.",
+    "Weight associated with matching the corresponding nodeSelectorTerm, in the range 1-100.",
+    "If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to an update), the system may or may not try to eventually evict the pod from its node.",
+    "Required. A list of node selector terms. The terms are ORed.",
+    "Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s)).",
+    "The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.",
+    "Required. A pod affinity term, associated with the corresponding weight.",
+    "A label query over a set of resources, in this case pods.",
+    "matchExpressions is a list of label selector requirements. The requirements are ANDed.",
+    "key is the label key that the selector applies to.",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces.",
+    "namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means \"this pod's namespace\".",
+    "This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching the labelSelector in the specified namespaces, where co-located is defined as running on a node whose value of the label with key topologyKey matches that of any node on which any of the selected pods is running. Empty topologyKey is not allowed.",
+    "weight associated with matching the corresponding podAffinityTerm, in the range 1-100.",
+    "If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.",
+    "Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s)).",
+    "The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.",
+    "If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.",
+    "Name of the environment variable. Must be a C_IDENTIFIER.",
+    "Variable references $(VAR_NAME) are expanded using the previously defined environment variables in the container and any service environment variables. If a variable cannot be resolved, the reference in the input string will be unchanged. Double $$ are reduced to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e. \"$$(VAR_NAME)\" will produce the string literal \"$(VAR_NAME)\". Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to \"\".",
+    "Source for the environment variable's value. Cannot be used if value is not empty.",
+    "Selects a key of a ConfigMap.",
+    "The key to select.",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?",
+    "Specify whether the ConfigMap or its key must be defined",
+    "Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.",
+    "Version of the schema the FieldPath is written in terms of, defaults to \"v1\".",
+    "Path of the field to select in the specified API version.",
+    "Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.",
+    "Container name: required for volumes, optional for env vars",
+    "Specifies the output format of the exposed resources, defaults to \"1\"",
+    "Required: resource to select",
+    "Selects a key of a secret in the pod's namespace",
+    "The key of the secret to select from.  Must be a valid secret key.",
+    "Specify whether the Secret or its key must be defined",
+    "The ConfigMap to select from",
+    "Specify whether the ConfigMap must be defined",
+    "An optional identifier to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.",
+    "The Secret to select from",
+    "Specify whether the Secret must be defined",
+    "PullPolicy describes a policy for if/when to pull a container image",
+    "ResourceRequirements describes the compute resource requirements.",
+    "Claims lists the names of resources, defined in spec.resourceClaims, that are used by this container. \n This is an alpha field and requires enabling the DynamicResourceAllocation feature gate. \n This field is immutable.",
+    "Name must match the name of one entry in pod.spec.resourceClaims of the Pod where this field is used. It makes that resource available inside a container.",
+    "Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+    "Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+    "PodSecurityContext holds pod-level security attributes and common container settings. Some fields are also present in container.securityContext.  Field values of container.securityContext take precedence over field values of PodSecurityContext.",
+    "A special supplemental group that applies to all containers in a pod. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod: \n 1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw---- \n If unset, the Kubelet will not modify the ownership and permissions of any volume. Note that this field cannot be set when spec.os.name is windows.",
+    "fsGroupChangePolicy defines behavior of changing ownership and permission of the volume before being exposed inside Pod. This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir. Valid values are \"OnRootMismatch\" and \"Always\". If not specified, \"Always\" is used. Note that this field cannot be set when spec.os.name is windows.",
+    "The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container. Note that this field cannot be set when spec.os.name is windows.",
+    "Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.",
+    "The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container. Note that this field cannot be set when spec.os.name is windows.",
+    "The SELinux context to be applied to all containers. If unspecified, the container runtime will allocate a random SELinux context for each container.  May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container. Note that this field cannot be set when spec.os.name is windows.",
+    "Level is SELinux level label that applies to the container.",
+    "Role is a SELinux role label that applies to the container.",
+    "Type is a SELinux type label that applies to the container.",
+    "User is a SELinux user label that applies to the container.",
+    "The seccomp options to use by the containers in this pod. Note that this field cannot be set when spec.os.name is windows.",
+    "localhostProfile indicates a profile defined in a file on the node should be used. The profile must be preconfigured on the node to work. Must be a descending path, relative to the kubelet's configured seccomp profile location. Must only be set if type is \"Localhost\".",
+    "type indicates which kind of seccomp profile will be applied. Valid options are: \n Localhost - a profile defined in a file on the node should be used. RuntimeDefault - the container runtime default profile should be used. Unconfined - no profile should be applied.",
+    "A list of groups applied to the first process run in each container, in addition to the container's primary GID, the fsGroup (if specified), and group memberships defined in the container image for the uid of the container process. If unspecified, no additional groups are added to any container. Note that group memberships defined in the container image for the uid of the container process are still effective, even if they are not included in this list. Note that this field cannot be set when spec.os.name is windows.",
+    "Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch. Note that this field cannot be set when spec.os.name is windows.",
+    "Name of a property to set",
+    "Value of a property to set",
+    "The Windows specific settings applied to all containers. If unspecified, the options within a container's SecurityContext will be used. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is linux.",
+    "GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.",
+    "GMSACredentialSpecName is the name of the GMSA credential spec to use.",
+    "HostProcess determines if a container should be run as a 'Host Process' container. This field is alpha-level and will only be honored by components that enable the WindowsHostProcessContainers feature flag. Setting this field without the feature flag will result in errors when validating the Pod. All of a Pod's containers must have the same effective HostProcess value (it is not allowed to have a mix of HostProcess containers and non-HostProcess containers).  In addition, if HostProcess is true then HostNetwork must also be set to true.",
+    "The UserName in Windows to run the entrypoint of the container process. Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.",
+    "Effect indicates the taint effect to match. Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.",
+    "Key is the taint key that the toleration applies to. Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys.",
+    "Operator represents a key's relationship to the value. Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.",
+    "TolerationSeconds represents the period of time the toleration (which must be of effect NoExecute, otherwise this field is ignored) tolerates the taint. By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.",
+    "Value is the taint value the toleration matches to. If the operator is Exists, the value should be empty, otherwise just a regular string.",
+    "Number of port to expose on the pod's IP address. This must be a valid port number, 0 < x < 65536.",
+    "What host IP to bind the external port to.",
+    "Number of port to expose on the host. If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.",
+    "If specified, this must be an IANA_SVC_NAME and unique within the pod. Each named port in a pod must have a unique name. Name for the port that can be referred to by services.",
+    "Protocol for port. Must be UDP, TCP, or SCTP. Defaults to \"TCP\".",
+    "K6Script describes where the script to execute the tests is found",
+    "K6Configmap describes the config map script location",
+    "K6VolumeClaim describes the volume claim script location",
+    "K6Status defines the observed state of K6",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "status of the condition, one of True, False, Unknown.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "Stage describes which stage of the test execution lifecycle our runners are in",
+    "K6 is the Schema for the k6s API",
+    "namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means \"this pod's namespace\"",
+    "Variable references $(VAR_NAME) are expanded using the previous defined environment variables in the container and any service environment variables. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to \"\".",
+    "Selects a field of the pod: supports metadata.name, metadata.namespace, metadata.labels, metadata.annotations, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.",
+    "Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/",
+    "Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/",
+    "A special supplemental group that applies to all containers in a pod. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod: \n 1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw---- \n If unset, the Kubelet will not modify the ownership and permissions of any volume.",
+    "fsGroupChangePolicy defines behavior of changing ownership and permission of the volume before being exposed inside Pod. This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir. Valid values are \"OnRootMismatch\" and \"Always\". If not specified defaults to \"Always\".",
+    "The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.",
+    "The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.",
+    "The SELinux context to be applied to all containers. If unspecified, the container runtime will allocate a random SELinux context for each container.  May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.",
+    "A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container.",
+    "Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch.",
+    "The Windows specific settings applied to all containers. If unspecified, the options within a container's SecurityContext will be used. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.",
+    "\tCleanup     Cleanup `json:\"cleanup,omitempty\"` // TODO"
+  ]
+}

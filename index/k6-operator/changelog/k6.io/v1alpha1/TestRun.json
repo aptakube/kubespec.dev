@@ -1,0 +1,143 @@
+{
+  "versions": {
+    "v1.6.0": {
+      "added": {
+        "spec.args": "string[]",
+        "spec.initializer.volumes.projected.sources.podCertificate.userAnnotations": "map[string]string",
+        "spec.runner.volumes.projected.sources.podCertificate.userAnnotations": "map[string]string",
+        "spec.starter.volumes.projected.sources.podCertificate.userAnnotations": "map[string]string"
+      }
+    },
+    "v1.5.0": {
+      "added": {
+        "spec.initializer.schedulerName": "string",
+        "spec.runner.schedulerName": "string",
+        "spec.starter.schedulerName": "string"
+      }
+    },
+    "v1.3.0": {
+      "added": {
+        "spec.initializer.disabled": "boolean",
+        "spec.runner.disabled": "boolean",
+        "spec.starter.disabled": "boolean"
+      }
+    },
+    "v1.1.0": {
+      "added": {
+        "spec.initializer.initContainers.resources": "object",
+        "spec.initializer.priorityClassName": "string",
+        "spec.runner.initContainers.resources": "object",
+        "spec.runner.priorityClassName": "string",
+        "spec.starter.initContainers.resources": "object",
+        "spec.starter.priorityClassName": "string"
+      }
+    },
+    "v1.0.0": {
+      "added": {
+        "spec.initializer.env.valueFrom.fileKeyRef": "object",
+        "spec.initializer.initContainers.env.valueFrom.fileKeyRef": "object",
+        "spec.initializer.volumes.projected.sources.podCertificate": "object",
+        "spec.runner.env.valueFrom.fileKeyRef": "object",
+        "spec.runner.initContainers.env.valueFrom.fileKeyRef": "object",
+        "spec.runner.volumes.projected.sources.podCertificate": "object",
+        "spec.starter.env.valueFrom.fileKeyRef": "object",
+        "spec.starter.initContainers.env.valueFrom.fileKeyRef": "object",
+        "spec.starter.volumes.projected.sources.podCertificate": "object"
+      }
+    },
+    "v0.0.22": {
+      "added": {
+        "spec.initializer.initContainers.restartPolicy": "string",
+        "spec.runner.initContainers.restartPolicy": "string",
+        "spec.starter.initContainers.restartPolicy": "string"
+      }
+    },
+    "v0.0.20": {
+      "added": {
+        "spec.initializer.securityContext.seLinuxChangePolicy": "string",
+        "spec.runner.securityContext.seLinuxChangePolicy": "string",
+        "spec.starter.securityContext.seLinuxChangePolicy": "string"
+      }
+    },
+    "v0.0.17": {
+      "added": {
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.initializer.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.initializer.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.initializer.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.initializer.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.initializer.containerSecurityContext.appArmorProfile": "object",
+        "spec.initializer.initContainers.volumeMounts.recursiveReadOnly": "string",
+        "spec.initializer.resources.claims.request": "string",
+        "spec.initializer.securityContext.appArmorProfile": "object",
+        "spec.initializer.securityContext.supplementalGroupsPolicy": "string",
+        "spec.initializer.volumeMounts.recursiveReadOnly": "string",
+        "spec.initializer.volumes.ephemeral.volumeClaimTemplate.spec.volumeAttributesClassName": "string",
+        "spec.initializer.volumes.image": "object",
+        "spec.initializer.volumes.projected.sources.clusterTrustBundle": "object",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.runner.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.runner.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.runner.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.runner.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.runner.containerSecurityContext.appArmorProfile": "object",
+        "spec.runner.initContainers.volumeMounts.recursiveReadOnly": "string",
+        "spec.runner.resources.claims.request": "string",
+        "spec.runner.securityContext.appArmorProfile": "object",
+        "spec.runner.securityContext.supplementalGroupsPolicy": "string",
+        "spec.runner.volumeMounts.recursiveReadOnly": "string",
+        "spec.runner.volumes.ephemeral.volumeClaimTemplate.spec.volumeAttributesClassName": "string",
+        "spec.runner.volumes.image": "object",
+        "spec.runner.volumes.projected.sources.clusterTrustBundle": "object",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.starter.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.starter.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.starter.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.starter.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.starter.containerSecurityContext.appArmorProfile": "object",
+        "spec.starter.initContainers.volumeMounts.recursiveReadOnly": "string",
+        "spec.starter.resources.claims.request": "string",
+        "spec.starter.securityContext.appArmorProfile": "object",
+        "spec.starter.securityContext.supplementalGroupsPolicy": "string",
+        "spec.starter.volumeMounts.recursiveReadOnly": "string",
+        "spec.starter.volumes.ephemeral.volumeClaimTemplate.spec.volumeAttributesClassName": "string",
+        "spec.starter.volumes.image": "object",
+        "spec.starter.volumes.projected.sources.clusterTrustBundle": "object"
+      },
+      "removed": {
+        "spec.initializer.volumes.ephemeral.volumeClaimTemplate.spec.resources.claims": "object[]",
+        "spec.runner.volumes.ephemeral.volumeClaimTemplate.spec.resources.claims": "object[]",
+        "spec.starter.volumes.ephemeral.volumeClaimTemplate.spec.resources.claims": "object[]"
+      }
+    },
+    "v0.0.15": {
+      "added": {
+        "spec.script.volumeClaim.readOnly": "boolean"
+      }
+    },
+    "v0.0.13": {
+      "added": {
+        "spec.initializer.containerSecurityContext": "object",
+        "spec.runner.containerSecurityContext": "object",
+        "spec.starter.containerSecurityContext": "object"
+      }
+    },
+    "v0.0.12": {
+      "added": {
+        "spec.initializer.topologySpreadConstraints": "object[]",
+        "spec.runner.topologySpreadConstraints": "object[]",
+        "spec.starter.topologySpreadConstraints": "object[]"
+      }
+    }
+  },
+  "texts": []
+}

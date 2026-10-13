@@ -1,0 +1,65 @@
+{
+  "versions": {
+    "v3.5.0": {
+      "descriptionChanged": [
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "status.conditions.type": [
+          0,
+          1
+        ]
+      }
+    },
+    "v2.15.0": {
+      "required": [
+        "spec.elasticsearchRef"
+      ],
+      "descriptions": {
+        "spec.elasticsearchRef": [
+          null,
+          2
+        ]
+      }
+    },
+    "v2.12.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.policies.resources",
+        "status.policies.resources"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          3,
+          4
+        ],
+        "kind": [
+          5,
+          6
+        ],
+        "spec.policies.resources": [
+          7,
+          8
+        ],
+        "status.policies.resources": [
+          9,
+          10
+        ]
+      }
+    }
+  },
+  "texts": [
+    "ConditionType defines the condition of an Elasticsearch resource.",
+    "ConditionType defines the condition of a resource.",
+    "ElasticsearchRef is a reference to an Elasticsearch cluster that exists in the same namespace.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "AutoscalingResources model the limits, submitted by the user, for the supported resources in an autoscaling policy. Only the node count range is mandatory. For other resources, a limit range is required only if the Elasticsearch autoscaling capacity API returns a requirement for a given resource. For example, the memory limit range is only required if the autoscaling API response contains a memory requirement. If there is no limit range for a resource, and if that resource is not mandatory, then the resources in the NodeSets managed by the autoscaling policy are left untouched.",
+    "AutoscalingResources model the limits, submitted by the user, for the supported resources in an autoscaling policy.\nOnly the node count range is mandatory. For other resources, a limit range is required only\nif the Elasticsearch autoscaling capacity API returns a requirement for a given resource.\nFor example, the memory limit range is only required if the autoscaling API response contains a memory requirement.\nIf there is no limit range for a resource, and if that resource is not mandatory, then the resources in the NodeSets\nmanaged by the autoscaling policy are left untouched.",
+    "ResourcesSpecification holds the resource values common to all the nodeSets managed by a same autoscaling policy. Only the resources managed by the autoscaling controller are saved in the Status.",
+    "ResourcesSpecification holds the resource values common to all the nodeSets managed by a same autoscaling policy.\nOnly the resources managed by the autoscaling controller are saved in the Status."
+  ]
+}

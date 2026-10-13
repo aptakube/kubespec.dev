@@ -1,0 +1,700 @@
+{
+  "versions": {
+    "v1.10.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.template.metadata",
+        "spec.template.metadata.labels",
+        "spec.template.metadata.ownerReferences",
+        "spec.template.spec",
+        "status",
+        "status.availableReplicas",
+        "status.failureMessage",
+        "status.failureReason",
+        "status.fullyLabeledReplicas",
+        "status.readyReplicas"
+      ],
+      "descriptions": {
+        "spec": [
+          0,
+          1
+        ],
+        "spec.template.metadata": [
+          2,
+          3
+        ],
+        "spec.template.metadata.labels": [
+          4,
+          5
+        ],
+        "spec.template.metadata.ownerReferences": [
+          6,
+          7
+        ],
+        "spec.template.spec": [
+          8,
+          9
+        ],
+        "status": [
+          10,
+          11
+        ],
+        "status.availableReplicas": [
+          12,
+          13
+        ],
+        "status.failureMessage": [
+          null,
+          14
+        ],
+        "status.failureReason": [
+          15,
+          16
+        ],
+        "status.fullyLabeledReplicas": [
+          17,
+          18
+        ],
+        "status.readyReplicas": [
+          19,
+          20
+        ]
+      }
+    },
+    "v1.9.0": {
+      "descriptionChanged": [
+        "spec.clusterName",
+        "spec.deletePolicy",
+        "spec.minReadySeconds",
+        "spec.replicas",
+        "spec.selector",
+        "spec.template",
+        "spec.template.metadata.annotations",
+        "spec.template.metadata.generateName",
+        "spec.template.metadata.name",
+        "spec.template.metadata.namespace",
+        "spec.template.metadata.ownerReferences",
+        "spec.template.spec.bootstrap",
+        "spec.template.spec.bootstrap.configRef",
+        "spec.template.spec.bootstrap.configRef.fieldPath",
+        "spec.template.spec.bootstrap.data",
+        "spec.template.spec.bootstrap.dataSecretName",
+        "spec.template.spec.clusterName",
+        "spec.template.spec.failureDomain",
+        "spec.template.spec.infrastructureRef",
+        "spec.template.spec.infrastructureRef.fieldPath",
+        "spec.template.spec.nodeDrainTimeout",
+        "spec.template.spec.providerID",
+        "spec.template.spec.version",
+        "status.failureReason",
+        "status.observedGeneration",
+        "status.replicas",
+        "status.selector"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec.clusterName": [
+          21,
+          22
+        ],
+        "spec.deletePolicy": [
+          23,
+          24
+        ],
+        "spec.minReadySeconds": [
+          25,
+          26
+        ],
+        "spec.replicas": [
+          27,
+          28
+        ],
+        "spec.selector": [
+          29,
+          30
+        ],
+        "spec.template": [
+          31,
+          32
+        ],
+        "spec.template.metadata.annotations": [
+          33,
+          34
+        ],
+        "spec.template.metadata.generateName": [
+          35,
+          36
+        ],
+        "spec.template.metadata.name": [
+          37,
+          38
+        ],
+        "spec.template.metadata.namespace": [
+          39,
+          40
+        ],
+        "spec.template.metadata.ownerReferences": [
+          41,
+          6
+        ],
+        "spec.template.spec.bootstrap": [
+          42,
+          43
+        ],
+        "spec.template.spec.bootstrap.configRef": [
+          44,
+          45
+        ],
+        "spec.template.spec.bootstrap.configRef.fieldPath": [
+          46,
+          47
+        ],
+        "spec.template.spec.bootstrap.data": [
+          48,
+          49
+        ],
+        "spec.template.spec.bootstrap.dataSecretName": [
+          50,
+          51
+        ],
+        "spec.template.spec.clusterName": [
+          21,
+          22
+        ],
+        "spec.template.spec.failureDomain": [
+          52,
+          53
+        ],
+        "spec.template.spec.infrastructureRef": [
+          54,
+          55
+        ],
+        "spec.template.spec.infrastructureRef.fieldPath": [
+          46,
+          47
+        ],
+        "spec.template.spec.nodeDrainTimeout": [
+          56,
+          57
+        ],
+        "spec.template.spec.providerID": [
+          58,
+          59
+        ],
+        "spec.template.spec.version": [
+          60,
+          61
+        ],
+        "status.failureReason": [
+          62,
+          15
+        ],
+        "status.observedGeneration": [
+          63,
+          64
+        ],
+        "status.replicas": [
+          65,
+          66
+        ],
+        "status.selector": [
+          67,
+          68
+        ],
+        "": [
+          69,
+          70
+        ]
+      }
+    },
+    "v1.7.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.deletePolicy",
+        "spec.minReadySeconds",
+        "spec.replicas",
+        "spec.selector",
+        "spec.selector.matchExpressions.operator",
+        "spec.selector.matchExpressions.values",
+        "spec.selector.matchLabels",
+        "spec.template",
+        "spec.template.metadata",
+        "spec.template.metadata.annotations",
+        "spec.template.metadata.generateName",
+        "spec.template.metadata.labels",
+        "spec.template.metadata.name",
+        "spec.template.metadata.namespace",
+        "spec.template.metadata.ownerReferences",
+        "spec.template.metadata.ownerReferences.blockOwnerDeletion",
+        "spec.template.metadata.ownerReferences.kind",
+        "spec.template.metadata.ownerReferences.name",
+        "spec.template.metadata.ownerReferences.uid",
+        "spec.template.spec",
+        "spec.template.spec.bootstrap",
+        "spec.template.spec.bootstrap.configRef",
+        "spec.template.spec.bootstrap.configRef.fieldPath",
+        "spec.template.spec.bootstrap.configRef.kind",
+        "spec.template.spec.bootstrap.configRef.name",
+        "spec.template.spec.bootstrap.configRef.namespace",
+        "spec.template.spec.bootstrap.configRef.resourceVersion",
+        "spec.template.spec.bootstrap.configRef.uid",
+        "spec.template.spec.bootstrap.data",
+        "spec.template.spec.bootstrap.dataSecretName",
+        "spec.template.spec.failureDomain",
+        "spec.template.spec.infrastructureRef",
+        "spec.template.spec.infrastructureRef.fieldPath",
+        "spec.template.spec.infrastructureRef.kind",
+        "spec.template.spec.infrastructureRef.name",
+        "spec.template.spec.infrastructureRef.namespace",
+        "spec.template.spec.infrastructureRef.resourceVersion",
+        "spec.template.spec.infrastructureRef.uid",
+        "spec.template.spec.nodeDrainTimeout",
+        "spec.template.spec.providerID",
+        "spec.template.spec.version",
+        "status.failureReason",
+        "status.selector"
+      ],
+      "description": true,
+      "descriptions": {
+        "apiVersion": [
+          71,
+          72
+        ],
+        "kind": [
+          73,
+          74
+        ],
+        "spec.deletePolicy": [
+          75,
+          23
+        ],
+        "spec.minReadySeconds": [
+          76,
+          25
+        ],
+        "spec.replicas": [
+          77,
+          27
+        ],
+        "spec.selector": [
+          78,
+          29
+        ],
+        "spec.selector.matchExpressions.operator": [
+          79,
+          80
+        ],
+        "spec.selector.matchExpressions.values": [
+          81,
+          82
+        ],
+        "spec.selector.matchLabels": [
+          83,
+          84
+        ],
+        "spec.template": [
+          85,
+          31
+        ],
+        "spec.template.metadata": [
+          86,
+          2
+        ],
+        "spec.template.metadata.annotations": [
+          87,
+          33
+        ],
+        "spec.template.metadata.generateName": [
+          88,
+          35
+        ],
+        "spec.template.metadata.labels": [
+          89,
+          4
+        ],
+        "spec.template.metadata.name": [
+          90,
+          37
+        ],
+        "spec.template.metadata.namespace": [
+          91,
+          39
+        ],
+        "spec.template.metadata.ownerReferences": [
+          92,
+          41
+        ],
+        "spec.template.metadata.ownerReferences.blockOwnerDeletion": [
+          93,
+          94
+        ],
+        "spec.template.metadata.ownerReferences.kind": [
+          95,
+          96
+        ],
+        "spec.template.metadata.ownerReferences.name": [
+          97,
+          98
+        ],
+        "spec.template.metadata.ownerReferences.uid": [
+          99,
+          100
+        ],
+        "spec.template.spec": [
+          101,
+          8
+        ],
+        "spec.template.spec.bootstrap": [
+          102,
+          42
+        ],
+        "spec.template.spec.bootstrap.configRef": [
+          103,
+          44
+        ],
+        "spec.template.spec.bootstrap.configRef.fieldPath": [
+          104,
+          46
+        ],
+        "spec.template.spec.bootstrap.configRef.kind": [
+          95,
+          96
+        ],
+        "spec.template.spec.bootstrap.configRef.name": [
+          105,
+          106
+        ],
+        "spec.template.spec.bootstrap.configRef.namespace": [
+          107,
+          108
+        ],
+        "spec.template.spec.bootstrap.configRef.resourceVersion": [
+          109,
+          110
+        ],
+        "spec.template.spec.bootstrap.configRef.uid": [
+          111,
+          112
+        ],
+        "spec.template.spec.bootstrap.data": [
+          113,
+          48
+        ],
+        "spec.template.spec.bootstrap.dataSecretName": [
+          114,
+          50
+        ],
+        "spec.template.spec.failureDomain": [
+          115,
+          52
+        ],
+        "spec.template.spec.infrastructureRef": [
+          116,
+          54
+        ],
+        "spec.template.spec.infrastructureRef.fieldPath": [
+          104,
+          46
+        ],
+        "spec.template.spec.infrastructureRef.kind": [
+          95,
+          96
+        ],
+        "spec.template.spec.infrastructureRef.name": [
+          105,
+          106
+        ],
+        "spec.template.spec.infrastructureRef.namespace": [
+          107,
+          108
+        ],
+        "spec.template.spec.infrastructureRef.resourceVersion": [
+          109,
+          110
+        ],
+        "spec.template.spec.infrastructureRef.uid": [
+          111,
+          112
+        ],
+        "spec.template.spec.nodeDrainTimeout": [
+          117,
+          56
+        ],
+        "spec.template.spec.providerID": [
+          118,
+          58
+        ],
+        "spec.template.spec.version": [
+          119,
+          60
+        ],
+        "status.failureReason": [
+          120,
+          62
+        ],
+        "status.selector": [
+          121,
+          67
+        ],
+        "": [
+          122,
+          69
+        ]
+      }
+    },
+    "v1.5.0": {
+      "descriptionChanged": [
+        "spec.template.metadata.ownerReferences.name",
+        "spec.template.metadata.ownerReferences.uid"
+      ],
+      "descriptions": {
+        "spec.template.metadata.ownerReferences.name": [
+          123,
+          97
+        ],
+        "spec.template.metadata.ownerReferences.uid": [
+          124,
+          99
+        ]
+      }
+    },
+    "v1.4.0": {
+      "description": true,
+      "descriptions": {
+        "": [
+          125,
+          122
+        ]
+      }
+    },
+    "v1.3.0": {
+      "descriptionChanged": [
+        "spec.template"
+      ],
+      "descriptions": {
+        "spec.template": [
+          126,
+          85
+        ]
+      }
+    },
+    "v1.2.0": {
+      "descriptionChanged": [
+        "spec.template.metadata.ownerReferences.blockOwnerDeletion"
+      ],
+      "descriptions": {
+        "spec.template.metadata.ownerReferences.blockOwnerDeletion": [
+          127,
+          93
+        ]
+      }
+    },
+    "v0.4.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.template.metadata.generateName",
+        "spec.template.metadata.name",
+        "spec.template.metadata.namespace",
+        "spec.template.metadata.ownerReferences",
+        "spec.template.spec.bootstrap.data",
+        "status"
+      ],
+      "description": true,
+      "descriptions": {
+        "spec": [
+          128,
+          0
+        ],
+        "spec.template.metadata.generateName": [
+          129,
+          88
+        ],
+        "spec.template.metadata.name": [
+          130,
+          90
+        ],
+        "spec.template.metadata.namespace": [
+          131,
+          91
+        ],
+        "spec.template.metadata.ownerReferences": [
+          132,
+          92
+        ],
+        "spec.template.spec.bootstrap.data": [
+          133,
+          113
+        ],
+        "status": [
+          134,
+          10
+        ],
+        "": [
+          135,
+          125
+        ]
+      }
+    },
+    "v0.3.10": {
+      "added": {
+        "spec.template.spec.nodeDrainTimeout": "string"
+      },
+      "descriptions": {
+        "spec.template.spec.nodeDrainTimeout": [
+          null,
+          117
+        ]
+      }
+    },
+    "v0.3.4": {
+      "optional": [
+        "status.replicas"
+      ],
+      "descriptions": {
+        "status.replicas": [
+          null,
+          65
+        ]
+      }
+    }
+  },
+  "texts": [
+    "MachineSetSpec defines the desired state of MachineSet.",
+    "spec is the desired state of MachineSet.",
+    "Standard object's metadata.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "metadata is the standard object's metadata.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "Map of string keys and values that can be used to organize and categorize\n(scope and select) objects. May match selectors of replication controllers\nand services.\nMore info: http://kubernetes.io/docs/user-guide/labels",
+    "labels is a map of string keys and values that can be used to organize and categorize\n(scope and select) objects. May match selectors of replication controllers\nand services.\nMore info: http://kubernetes.io/docs/user-guide/labels",
+    "List of objects depended by this object. If ALL objects in the list have\nbeen deleted, this object will be garbage collected. If this object is managed by a controller,\nthen an entry in this list will point to this controller, with the controller field set to true.\nThere cannot be more than one managing controller.\n\nDeprecated: This field has no function and is going to be removed in a next release.",
+    "ownerReferences is the list of objects depended by this object. If ALL objects in the list have\nbeen deleted, this object will be garbage collected. If this object is managed by a controller,\nthen an entry in this list will point to this controller, with the controller field set to true.\nThere cannot be more than one managing controller.\n\nDeprecated: This field has no function and is going to be removed in a next release.",
+    "Specification of the desired behavior of the machine.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "spec is the specification of the desired behavior of the machine.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "MachineSetStatus defines the observed state of MachineSet.",
+    "status is the observed state of MachineSet.",
+    "The number of available replicas (ready for at least minReadySeconds) for this MachineSet.",
+    "availableReplicas is the number of available replicas (ready for at least minReadySeconds) for this MachineSet.",
+    "failureMessage will be set in the event that there is a terminal problem\nreconciling the Machine and will contain a more verbose string suitable\nfor logging and human consumption.",
+    "In the event that there is a terminal problem reconciling the\nreplicas, both FailureReason and FailureMessage will be set. FailureReason\nwill be populated with a succinct value suitable for machine\ninterpretation, while FailureMessage will contain a more verbose\nstring suitable for logging and human consumption.\n\nThese fields should not be set for transitive errors that a\ncontroller faces that are expected to be fixed automatically over\ntime (like service outages), but instead indicate that something is\nfundamentally wrong with the MachineTemplate's spec or the configuration of\nthe machine controller, and that manual intervention is required. Examples\nof terminal errors would be invalid combinations of settings in the\nspec, values that are unsupported by the machine controller, or the\nresponsible machine controller itself being critically misconfigured.\n\nAny transient errors that occur during the reconciliation of Machines\ncan be added as events to the MachineSet object and/or logged in the\ncontroller's output.",
+    "failureReason will be set in the event that there is a terminal problem\nreconciling the Machine and will contain a succinct value suitable\nfor machine interpretation.\n\nIn the event that there is a terminal problem reconciling the\nreplicas, both FailureReason and FailureMessage will be set. FailureReason\nwill be populated with a succinct value suitable for machine\ninterpretation, while FailureMessage will contain a more verbose\nstring suitable for logging and human consumption.\n\nThese fields should not be set for transitive errors that a\ncontroller faces that are expected to be fixed automatically over\ntime (like service outages), but instead indicate that something is\nfundamentally wrong with the MachineTemplate's spec or the configuration of\nthe machine controller, and that manual intervention is required. Examples\nof terminal errors would be invalid combinations of settings in the\nspec, values that are unsupported by the machine controller, or the\nresponsible machine controller itself being critically misconfigured.\n\nAny transient errors that occur during the reconciliation of Machines\ncan be added as events to the MachineSet object and/or logged in the\ncontroller's output.",
+    "The number of replicas that have labels matching the labels of the machine template of the MachineSet.",
+    "fullyLabeledReplicas is the number of replicas that have labels matching the labels of the machine template of the MachineSet.",
+    "The number of ready replicas for this MachineSet. A machine is considered ready when the node has been created and is \"Ready\".",
+    "readyReplicas is the number of ready replicas for this MachineSet. A machine is considered ready when the node has been created and is \"Ready\".",
+    "ClusterName is the name of the Cluster this object belongs to.",
+    "clusterName is the name of the Cluster this object belongs to.",
+    "DeletePolicy defines the policy used to identify nodes to delete when downscaling.\nDefaults to \"Random\".  Valid values are \"Random, \"Newest\", \"Oldest\"",
+    "deletePolicy defines the policy used to identify nodes to delete when downscaling.\nDefaults to \"Random\".  Valid values are \"Random, \"Newest\", \"Oldest\"",
+    "MinReadySeconds is the minimum number of seconds for which a newly created machine should be ready.\nDefaults to 0 (machine will be considered available as soon as it is ready)",
+    "minReadySeconds is the minimum number of seconds for which a newly created machine should be ready.\nDefaults to 0 (machine will be considered available as soon as it is ready)",
+    "Replicas is the number of desired replicas.\nThis is a pointer to distinguish between explicit zero and unspecified.\nDefaults to 1.",
+    "replicas is the number of desired replicas.\nThis is a pointer to distinguish between explicit zero and unspecified.\nDefaults to 1.",
+    "Selector is a label query over machines that should match the replica count.\nLabel keys and values that must match in order to be controlled by this MachineSet.\nIt must match the machine template's labels.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors",
+    "selector is a label query over machines that should match the replica count.\nLabel keys and values that must match in order to be controlled by this MachineSet.\nIt must match the machine template's labels.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors",
+    "Template is the object that describes the machine that will be created if\ninsufficient replicas are detected.\nObject references to custom resources are treated as templates.",
+    "template is the object that describes the machine that will be created if\ninsufficient replicas are detected.\nObject references to custom resources are treated as templates.",
+    "Annotations is an unstructured key value map stored with a resource that may be\nset by external tools to store and retrieve arbitrary metadata. They are not\nqueryable and should be preserved when modifying objects.\nMore info: http://kubernetes.io/docs/user-guide/annotations",
+    "annotations is an unstructured key value map stored with a resource that may be\nset by external tools to store and retrieve arbitrary metadata. They are not\nqueryable and should be preserved when modifying objects.\nMore info: http://kubernetes.io/docs/user-guide/annotations",
+    "GenerateName is an optional prefix, used by the server, to generate a unique\nname ONLY IF the Name field has not been provided.\nIf this field is used, the name returned to the client will be different\nthan the name passed. This value will also be combined with a unique suffix.\nThe provided value has the same validation rules as the Name field,\nand may be truncated by the length of the suffix required to make the value\nunique on the server.\n\n\nIf this field is specified and the generated name exists, the server will\nNOT return a 409 - instead, it will either return 201 Created or 500 with Reason\nServerTimeout indicating a unique name could not be found in the time allotted, and the client\nshould retry (optionally after the time indicated in the Retry-After header).\n\n\nApplied only if Name is not specified.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency\n\n\nDeprecated: This field has no function and is going to be removed in a next release.",
+    "generateName is an optional prefix, used by the server, to generate a unique\nname ONLY IF the Name field has not been provided.\nIf this field is used, the name returned to the client will be different\nthan the name passed. This value will also be combined with a unique suffix.\nThe provided value has the same validation rules as the Name field,\nand may be truncated by the length of the suffix required to make the value\nunique on the server.\n\nIf this field is specified and the generated name exists, the server will\nNOT return a 409 - instead, it will either return 201 Created or 500 with Reason\nServerTimeout indicating a unique name could not be found in the time allotted, and the client\nshould retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency\n\nDeprecated: This field has no function and is going to be removed in a next release.",
+    "Name must be unique within a namespace. Is required when creating resources, although\nsome resources may allow a client to request the generation of an appropriate name\nautomatically. Name is primarily intended for creation idempotence and configuration\ndefinition.\nCannot be updated.\nMore info: http://kubernetes.io/docs/user-guide/identifiers#names\n\n\nDeprecated: This field has no function and is going to be removed in a next release.",
+    "name must be unique within a namespace. Is required when creating resources, although\nsome resources may allow a client to request the generation of an appropriate name\nautomatically. Name is primarily intended for creation idempotence and configuration\ndefinition.\nCannot be updated.\nMore info: http://kubernetes.io/docs/user-guide/identifiers#names\n\nDeprecated: This field has no function and is going to be removed in a next release.",
+    "Namespace defines the space within each name must be unique. An empty namespace is\nequivalent to the \"default\" namespace, but \"default\" is the canonical representation.\nNot all objects are required to be scoped to a namespace - the value of this field for\nthose objects will be empty.\n\n\nMust be a DNS_LABEL.\nCannot be updated.\nMore info: http://kubernetes.io/docs/user-guide/namespaces\n\n\nDeprecated: This field has no function and is going to be removed in a next release.",
+    "namespace defines the space within each name must be unique. An empty namespace is\nequivalent to the \"default\" namespace, but \"default\" is the canonical representation.\nNot all objects are required to be scoped to a namespace - the value of this field for\nthose objects will be empty.\n\nMust be a DNS_LABEL.\nCannot be updated.\nMore info: http://kubernetes.io/docs/user-guide/namespaces\n\nDeprecated: This field has no function and is going to be removed in a next release.",
+    "List of objects depended by this object. If ALL objects in the list have\nbeen deleted, this object will be garbage collected. If this object is managed by a controller,\nthen an entry in this list will point to this controller, with the controller field set to true.\nThere cannot be more than one managing controller.\n\n\nDeprecated: This field has no function and is going to be removed in a next release.",
+    "Bootstrap is a reference to a local struct which encapsulates\nfields to configure the Machine’s bootstrapping mechanism.",
+    "bootstrap is a reference to a local struct which encapsulates\nfields to configure the Machine’s bootstrapping mechanism.",
+    "ConfigRef is a reference to a bootstrap provider-specific resource\nthat holds configuration details. The reference is optional to\nallow users/operators to specify Bootstrap.Data without\nthe need of a controller.",
+    "configRef is a reference to a bootstrap provider-specific resource\nthat holds configuration details. The reference is optional to\nallow users/operators to specify Bootstrap.Data without\nthe need of a controller.",
+    "If referring to a piece of an object instead of an entire object, this string\nshould contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2].\nFor example, if the object reference is to a container within a pod, this would take on a value like:\n\"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered\nthe event) or if no container name is specified \"spec.containers[2]\" (container with\nindex 2 in this pod). This syntax is chosen only to have some well-defined way of\nreferencing a part of an object.\nTODO: this design is not final and this field is subject to change in the future.",
+    "If referring to a piece of an object instead of an entire object, this string\nshould contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2].\nFor example, if the object reference is to a container within a pod, this would take on a value like:\n\"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered\nthe event) or if no container name is specified \"spec.containers[2]\" (container with\nindex 2 in this pod). This syntax is chosen only to have some well-defined way of\nreferencing a part of an object.",
+    "Data contains the bootstrap data, such as cloud-init details scripts.\nIf nil, the Machine should remain in the Pending state.\n\n\nDeprecated: Switch to DataSecretName.",
+    "data contains the bootstrap data, such as cloud-init details scripts.\nIf nil, the Machine should remain in the Pending state.\n\nDeprecated: Switch to DataSecretName.",
+    "DataSecretName is the name of the secret that stores the bootstrap data script.\nIf nil, the Machine should remain in the Pending state.",
+    "dataSecretName is the name of the secret that stores the bootstrap data script.\nIf nil, the Machine should remain in the Pending state.",
+    "FailureDomain is the failure domain the machine will be created in.\nMust match a key in the FailureDomains map stored on the cluster object.",
+    "failureDomain is the failure domain the machine will be created in.\nMust match a key in the FailureDomains map stored on the cluster object.",
+    "InfrastructureRef is a required reference to a custom resource\noffered by an infrastructure provider.",
+    "infrastructureRef is a required reference to a custom resource\noffered by an infrastructure provider.",
+    "NodeDrainTimeout is the total amount of time that the controller will spend on draining a node.\nThe default value is 0, meaning that the node can be drained without any time limitations.\nNOTE: NodeDrainTimeout is different from `kubectl drain --timeout`",
+    "nodeDrainTimeout is the total amount of time that the controller will spend on draining a node.\nThe default value is 0, meaning that the node can be drained without any time limitations.\nNOTE: NodeDrainTimeout is different from `kubectl drain --timeout`",
+    "ProviderID is the identification ID of the machine provided by the provider.\nThis field must match the provider ID as seen on the node object corresponding to this machine.\nThis field is required by higher level consumers of cluster-api. Example use case is cluster autoscaler\nwith cluster-api as provider. Clean-up logic in the autoscaler compares machines to nodes to find out\nmachines at provider which could not get registered as Kubernetes nodes. With cluster-api as a\ngeneric out-of-tree provider for autoscaler, this field is required by autoscaler to be\nable to have a provider view of the list of machines. Another list of nodes is queried from the k8s apiserver\nand then a comparison is done to find out unregistered machines and are marked for delete.\nThis field will be set by the actuators and consumed by higher level entities like autoscaler that will\nbe interfacing with cluster-api as generic provider.",
+    "providerID is the identification ID of the machine provided by the provider.\nThis field must match the provider ID as seen on the node object corresponding to this machine.\nThis field is required by higher level consumers of cluster-api. Example use case is cluster autoscaler\nwith cluster-api as provider. Clean-up logic in the autoscaler compares machines to nodes to find out\nmachines at provider which could not get registered as Kubernetes nodes. With cluster-api as a\ngeneric out-of-tree provider for autoscaler, this field is required by autoscaler to be\nable to have a provider view of the list of machines. Another list of nodes is queried from the k8s apiserver\nand then a comparison is done to find out unregistered machines and are marked for delete.\nThis field will be set by the actuators and consumed by higher level entities like autoscaler that will\nbe interfacing with cluster-api as generic provider.",
+    "Version defines the desired Kubernetes version.\nThis field is meant to be optionally used by bootstrap providers.",
+    "version defines the desired Kubernetes version.\nThis field is meant to be optionally used by bootstrap providers.",
+    "In the event that there is a terminal problem reconciling the\nreplicas, both FailureReason and FailureMessage will be set. FailureReason\nwill be populated with a succinct value suitable for machine\ninterpretation, while FailureMessage will contain a more verbose\nstring suitable for logging and human consumption.\n\n\nThese fields should not be set for transitive errors that a\ncontroller faces that are expected to be fixed automatically over\ntime (like service outages), but instead indicate that something is\nfundamentally wrong with the MachineTemplate's spec or the configuration of\nthe machine controller, and that manual intervention is required. Examples\nof terminal errors would be invalid combinations of settings in the\nspec, values that are unsupported by the machine controller, or the\nresponsible machine controller itself being critically misconfigured.\n\n\nAny transient errors that occur during the reconciliation of Machines\ncan be added as events to the MachineSet object and/or logged in the\ncontroller's output.",
+    "ObservedGeneration reflects the generation of the most recently observed MachineSet.",
+    "observedGeneration reflects the generation of the most recently observed MachineSet.",
+    "Replicas is the most recently observed number of replicas.",
+    "replicas is the most recently observed number of replicas.",
+    "Selector is the same as the label selector but in the string format to avoid introspection\nby clients. The string will be in the same format as the query-param syntax.\nMore info about label selectors: http://kubernetes.io/docs/user-guide/labels#label-selectors",
+    "selector is the same as the label selector but in the string format to avoid introspection\nby clients. The string will be in the same format as the query-param syntax.\nMore info about label selectors: http://kubernetes.io/docs/user-guide/labels#label-selectors",
+    "MachineSet is the Schema for the machinesets API.\n\n\nDeprecated: This type will be removed in one of the next releases.",
+    "MachineSet is the Schema for the machinesets API.\n\nDeprecated: This type will be removed in one of the next releases.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "DeletePolicy defines the policy used to identify nodes to delete when downscaling. Defaults to \"Random\".  Valid values are \"Random, \"Newest\", \"Oldest\"",
+    "MinReadySeconds is the minimum number of seconds for which a newly created machine should be ready. Defaults to 0 (machine will be considered available as soon as it is ready)",
+    "Replicas is the number of desired replicas. This is a pointer to distinguish between explicit zero and unspecified. Defaults to 1.",
+    "Selector is a label query over machines that should match the replica count. Label keys and values that must match in order to be controlled by this MachineSet. It must match the machine template's labels. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors",
+    "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.",
+    "operator represents a key's relationship to a set of values.\nValid operators are In, NotIn, Exists and DoesNotExist.",
+    "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+    "values is an array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. This array is replaced during a strategic\nmerge patch.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+    "Template is the object that describes the machine that will be created if insufficient replicas are detected. Object references to custom resources are treated as templates.",
+    "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata",
+    "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server. \n If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header). \n Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency \n Deprecated: This field has no function and is going to be removed in a next release.",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels",
+    "Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names \n Deprecated: This field has no function and is going to be removed in a next release.",
+    "Namespace defines the space within each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty. \n Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces \n Deprecated: This field has no function and is going to be removed in a next release.",
+    "List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller. \n Deprecated: This field has no function and is going to be removed in a next release.",
+    "If true, AND if the owner has the \"foregroundDeletion\" finalizer, then the owner cannot be deleted from the key-value store until this reference is removed. See https://kubernetes.io/docs/concepts/architecture/garbage-collection/#foreground-deletion for how the garbage collector interacts with this field and enforces the foreground deletion. Defaults to false. To set this field, a user needs \"delete\" permission of the owner, otherwise 422 (Unprocessable Entity) will be returned.",
+    "If true, AND if the owner has the \"foregroundDeletion\" finalizer, then\nthe owner cannot be deleted from the key-value store until this\nreference is removed.\nSee https://kubernetes.io/docs/concepts/architecture/garbage-collection/#foreground-deletion\nfor how the garbage collector interacts with this field and enforces the foreground deletion.\nDefaults to false.\nTo set this field, a user needs \"delete\" permission of the owner,\notherwise 422 (Unprocessable Entity) will be returned.",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind of the referent.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names",
+    "Name of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names",
+    "UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids",
+    "UID of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids",
+    "Specification of the desired behavior of the machine. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "Bootstrap is a reference to a local struct which encapsulates fields to configure the Machine’s bootstrapping mechanism.",
+    "ConfigRef is a reference to a bootstrap provider-specific resource that holds configuration details. The reference is optional to allow users/operators to specify Bootstrap.Data without the need of a controller.",
+    "If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future.",
+    "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Name of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+    "Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
+    "Namespace of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
+    "Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "Specific resourceVersion to which this reference is made, if any.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids",
+    "UID of the referent.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids",
+    "Data contains the bootstrap data, such as cloud-init details scripts. If nil, the Machine should remain in the Pending state. \n Deprecated: Switch to DataSecretName.",
+    "DataSecretName is the name of the secret that stores the bootstrap data script. If nil, the Machine should remain in the Pending state.",
+    "FailureDomain is the failure domain the machine will be created in. Must match a key in the FailureDomains map stored on the cluster object.",
+    "InfrastructureRef is a required reference to a custom resource offered by an infrastructure provider.",
+    "NodeDrainTimeout is the total amount of time that the controller will spend on draining a node. The default value is 0, meaning that the node can be drained without any time limitations. NOTE: NodeDrainTimeout is different from `kubectl drain --timeout`",
+    "ProviderID is the identification ID of the machine provided by the provider. This field must match the provider ID as seen on the node object corresponding to this machine. This field is required by higher level consumers of cluster-api. Example use case is cluster autoscaler with cluster-api as provider. Clean-up logic in the autoscaler compares machines to nodes to find out machines at provider which could not get registered as Kubernetes nodes. With cluster-api as a generic out-of-tree provider for autoscaler, this field is required by autoscaler to be able to have a provider view of the list of machines. Another list of nodes is queried from the k8s apiserver and then a comparison is done to find out unregistered machines and are marked for delete. This field will be set by the actuators and consumed by higher level entities like autoscaler that will be interfacing with cluster-api as generic provider.",
+    "Version defines the desired Kubernetes version. This field is meant to be optionally used by bootstrap providers.",
+    "In the event that there is a terminal problem reconciling the replicas, both FailureReason and FailureMessage will be set. FailureReason will be populated with a succinct value suitable for machine interpretation, while FailureMessage will contain a more verbose string suitable for logging and human consumption. \n These fields should not be set for transitive errors that a controller faces that are expected to be fixed automatically over time (like service outages), but instead indicate that something is fundamentally wrong with the MachineTemplate's spec or the configuration of the machine controller, and that manual intervention is required. Examples of terminal errors would be invalid combinations of settings in the spec, values that are unsupported by the machine controller, or the responsible machine controller itself being critically misconfigured. \n Any transient errors that occur during the reconciliation of Machines can be added as events to the MachineSet object and/or logged in the controller's output.",
+    "Selector is the same as the label selector but in the string format to avoid introspection by clients. The string will be in the same format as the query-param syntax. More info about label selectors: http://kubernetes.io/docs/user-guide/labels#label-selectors",
+    "MachineSet is the Schema for the machinesets API. \n Deprecated: This type will be removed in one of the next releases.",
+    "Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names",
+    "UID of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#uids",
+    "MachineSet is the Schema for the machinesets API.",
+    "Template is the object that describes the machine that will be created if insufficient replicas are detected. Object references to custom resources resources are treated as templates.",
+    "If true, AND if the owner has the \"foregroundDeletion\" finalizer, then the owner cannot be deleted from the key-value store until this reference is removed. Defaults to false. To set this field, a user needs \"delete\" permission of the owner, otherwise 422 (Unprocessable Entity) will be returned.",
+    "MachineSetSpec defines the desired state of MachineSet",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server. \n If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header). \n Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency",
+    "Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names",
+    "Namespace defines the space within each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty. \n Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces",
+    "List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.",
+    "Data contains the bootstrap data, such as cloud-init details scripts. If nil, the Machine should remain in the Pending state. \n Deprecated: This field has been deprecated in v1alpha3 and will be removed in a future version. Switch to DataSecretName.",
+    "MachineSetStatus defines the observed state of MachineSet",
+    "MachineSet is the Schema for the machinesets API"
+  ]
+}

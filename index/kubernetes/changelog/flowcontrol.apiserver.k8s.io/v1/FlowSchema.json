@@ -1,0 +1,33 @@
+{
+  "versions": {
+    "v1.37.0": {
+      "required": [
+        "spec",
+        "status.conditions.type"
+      ],
+      "descriptionChanged": [
+        "status.conditions.status"
+      ],
+      "descriptions": {
+        "spec": [
+          null,
+          0
+        ],
+        "status.conditions.status": [
+          1,
+          2
+        ],
+        "status.conditions.type": [
+          null,
+          3
+        ]
+      }
+    }
+  },
+  "texts": [
+    "`spec` is the specification of the desired behavior of a FlowSchema. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "`status` is the status of the condition. Can be True, False, Unknown. Required.",
+    "`status` is the status of the condition. Should be specified and set to one of True, False, Unknown.",
+    "`type` is the type of the condition. Required."
+  ]
+}

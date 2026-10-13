@@ -1,0 +1,611 @@
+{
+  "versions": {
+    "v0.86.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.groups",
+        "spec.groups.interval",
+        "spec.groups.labels",
+        "spec.groups.limit",
+        "spec.groups.name",
+        "spec.groups.partial_response_strategy",
+        "spec.groups.query_offset",
+        "spec.groups.rules",
+        "spec.groups.rules.alert",
+        "spec.groups.rules.annotations",
+        "spec.groups.rules.expr",
+        "spec.groups.rules.for",
+        "spec.groups.rules.keep_firing_for",
+        "spec.groups.rules.labels",
+        "spec.groups.rules.record"
+      ],
+      "added": {
+        "status": "object"
+      },
+      "descriptions": {
+        "spec": [
+          0,
+          1
+        ],
+        "spec.groups": [
+          2,
+          3
+        ],
+        "spec.groups.interval": [
+          4,
+          5
+        ],
+        "spec.groups.labels": [
+          6,
+          7
+        ],
+        "spec.groups.limit": [
+          8,
+          9
+        ],
+        "spec.groups.name": [
+          10,
+          11
+        ],
+        "spec.groups.partial_response_strategy": [
+          12,
+          13
+        ],
+        "spec.groups.query_offset": [
+          14,
+          15
+        ],
+        "spec.groups.rules": [
+          16,
+          17
+        ],
+        "spec.groups.rules.alert": [
+          18,
+          19
+        ],
+        "spec.groups.rules.annotations": [
+          20,
+          21
+        ],
+        "spec.groups.rules.expr": [
+          22,
+          23
+        ],
+        "spec.groups.rules.for": [
+          24,
+          25
+        ],
+        "spec.groups.rules.keep_firing_for": [
+          26,
+          27
+        ],
+        "spec.groups.rules.labels": [
+          28,
+          29
+        ],
+        "spec.groups.rules.record": [
+          30,
+          31
+        ],
+        "status": [
+          null,
+          32
+        ]
+      }
+    },
+    "v0.79.0": {
+      "added": {
+        "spec.groups.labels": "map[string]string"
+      },
+      "descriptions": {
+        "spec.groups.labels": [
+          null,
+          6
+        ]
+      }
+    },
+    "v0.78.0": {
+      "added": {
+        "spec.groups.query_offset": "string"
+      },
+      "descriptions": {
+        "spec.groups.query_offset": [
+          null,
+          14
+        ]
+      }
+    },
+    "v0.77.0": {
+      "description": true,
+      "descriptions": {
+        "": [
+          33,
+          34
+        ]
+      }
+    },
+    "v0.76.0": {
+      "description": true,
+      "descriptions": {
+        "": [
+          35,
+          33
+        ]
+      }
+    },
+    "v0.74.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.groups.limit",
+        "spec.groups.partial_response_strategy",
+        "spec.groups.rules.alert",
+        "spec.groups.rules.annotations",
+        "spec.groups.rules.record"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          36,
+          37
+        ],
+        "kind": [
+          38,
+          39
+        ],
+        "spec.groups.limit": [
+          40,
+          8
+        ],
+        "spec.groups.partial_response_strategy": [
+          41,
+          12
+        ],
+        "spec.groups.rules.alert": [
+          42,
+          18
+        ],
+        "spec.groups.rules.annotations": [
+          43,
+          20
+        ],
+        "spec.groups.rules.record": [
+          44,
+          30
+        ]
+      }
+    },
+    "v0.66.0": {
+      "added": {
+        "spec.groups.rules.keep_firing_for": "string"
+      },
+      "descriptions": {
+        "spec.groups.rules.keep_firing_for": [
+          null,
+          26
+        ]
+      }
+    },
+    "v0.65.0": {
+      "added": {
+        "spec.groups.limit": "integer"
+      },
+      "optional": [
+        "spec.groups.rules"
+      ],
+      "descriptions": {
+        "spec.groups.limit": [
+          null,
+          40
+        ],
+        "spec.groups.rules": [
+          null,
+          16
+        ]
+      }
+    },
+    "v0.61.0": {
+      "descriptionChanged": [
+        "spec.groups.interval",
+        "spec.groups.name",
+        "spec.groups.partial_response_strategy",
+        "spec.groups.rules",
+        "spec.groups.rules.alert",
+        "spec.groups.rules.annotations",
+        "spec.groups.rules.expr",
+        "spec.groups.rules.for",
+        "spec.groups.rules.labels",
+        "spec.groups.rules.record"
+      ],
+      "descriptions": {
+        "spec.groups.interval": [
+          null,
+          4
+        ],
+        "spec.groups.name": [
+          null,
+          10
+        ],
+        "spec.groups.partial_response_strategy": [
+          null,
+          41
+        ],
+        "spec.groups.rules": [
+          null,
+          16
+        ],
+        "spec.groups.rules.alert": [
+          null,
+          42
+        ],
+        "spec.groups.rules.annotations": [
+          null,
+          43
+        ],
+        "spec.groups.rules.expr": [
+          null,
+          22
+        ],
+        "spec.groups.rules.for": [
+          null,
+          24
+        ],
+        "spec.groups.rules.labels": [
+          null,
+          28
+        ],
+        "spec.groups.rules.record": [
+          null,
+          44
+        ]
+      }
+    },
+    "v0.44.0": {
+      "description": true,
+      "descriptions": {
+        "": [
+          45,
+          35
+        ]
+      }
+    },
+    "v0.36.0": {
+      "added": {
+        "spec.groups.partial_response_strategy": "string"
+      }
+    },
+    "v0.35.0": {
+      "descriptionChanged": [
+        "metadata",
+        "spec"
+      ],
+      "required": [
+        "spec"
+      ],
+      "typeChanged": {
+        "spec.groups.rules.annotations": [
+          "object",
+          "map[string]string"
+        ],
+        "spec.groups.rules.expr": [
+          "object",
+          "int | string"
+        ],
+        "spec.groups.rules.labels": [
+          "object",
+          "map[string]string"
+        ]
+      },
+      "removed": {
+        "metadata.annotations": "object",
+        "metadata.clusterName": "string",
+        "metadata.creationTimestamp": "string",
+        "metadata.deletionGracePeriodSeconds": "integer",
+        "metadata.deletionTimestamp": "string",
+        "metadata.finalizers": "string[]",
+        "metadata.generateName": "string",
+        "metadata.generation": "integer",
+        "metadata.labels": "object",
+        "metadata.managedFields": "object[]",
+        "metadata.name": "string",
+        "metadata.namespace": "string",
+        "metadata.ownerReferences": "object[]",
+        "metadata.resourceVersion": "string",
+        "metadata.selfLink": "string",
+        "metadata.uid": "string"
+      },
+      "description": true,
+      "descriptions": {
+        "metadata": [
+          46,
+          null
+        ],
+        "spec": [
+          47,
+          0
+        ],
+        "metadata.annotations": [
+          48,
+          null
+        ],
+        "metadata.clusterName": [
+          49,
+          null
+        ],
+        "metadata.creationTimestamp": [
+          50,
+          null
+        ],
+        "metadata.deletionGracePeriodSeconds": [
+          51,
+          null
+        ],
+        "metadata.deletionTimestamp": [
+          50,
+          null
+        ],
+        "metadata.finalizers": [
+          52,
+          null
+        ],
+        "metadata.generateName": [
+          53,
+          null
+        ],
+        "metadata.generation": [
+          54,
+          null
+        ],
+        "metadata.labels": [
+          55,
+          null
+        ],
+        "metadata.managedFields": [
+          56,
+          null
+        ],
+        "metadata.name": [
+          57,
+          null
+        ],
+        "metadata.namespace": [
+          58,
+          null
+        ],
+        "metadata.ownerReferences": [
+          59,
+          null
+        ],
+        "metadata.resourceVersion": [
+          60,
+          null
+        ],
+        "metadata.selfLink": [
+          61,
+          null
+        ],
+        "metadata.uid": [
+          62,
+          null
+        ],
+        "": [
+          null,
+          45
+        ]
+      }
+    },
+    "v0.34.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "metadata.generateName",
+        "metadata.managedFields",
+        "metadata.ownerReferences.kind",
+        "metadata.resourceVersion",
+        "metadata.selfLink"
+      ],
+      "added": {
+        "metadata.managedFields.fieldsType": "string",
+        "metadata.managedFields.fieldsV1": "object"
+      },
+      "removed": {
+        "metadata.initializers": "object",
+        "metadata.managedFields.fields": "object"
+      },
+      "descriptions": {
+        "apiVersion": [
+          63,
+          36
+        ],
+        "kind": [
+          64,
+          38
+        ],
+        "metadata.generateName": [
+          65,
+          53
+        ],
+        "metadata.managedFields": [
+          66,
+          56
+        ],
+        "metadata.managedFields.fieldsType": [
+          null,
+          67
+        ],
+        "metadata.managedFields.fieldsV1": [
+          null,
+          68
+        ],
+        "metadata.ownerReferences.kind": [
+          69,
+          70
+        ],
+        "metadata.resourceVersion": [
+          71,
+          60
+        ],
+        "metadata.selfLink": [
+          72,
+          61
+        ],
+        "metadata.initializers": [
+          73,
+          null
+        ],
+        "metadata.managedFields.fields": [
+          74,
+          null
+        ]
+      }
+    },
+    "v0.32.0": {
+      "added": {
+        "metadata.initializers.result.metadata.remainingItemCount": "integer"
+      },
+      "descriptions": {
+        "metadata.initializers.result.metadata.remainingItemCount": [
+          null,
+          75
+        ]
+      }
+    },
+    "v0.30.0": {
+      "added": {
+        "metadata.managedFields": "object[]"
+      },
+      "descriptions": {
+        "metadata.managedFields": [
+          null,
+          66
+        ]
+      }
+    },
+    "v0.25.0": {
+      "descriptionChanged": [
+        "metadata.initializers.result.metadata.continue"
+      ],
+      "descriptions": {
+        "metadata.initializers.result.metadata.continue": [
+          76,
+          77
+        ]
+      }
+    },
+    "v0.24.0": {
+      "typeChanged": {
+        "spec.groups.rules.expr": [
+          "string",
+          "object"
+        ]
+      }
+    },
+    "v0.22.0": {
+      "descriptionChanged": [
+        "metadata.creationTimestamp",
+        "metadata.deletionTimestamp"
+      ],
+      "optional": [
+        "spec"
+      ],
+      "description": true,
+      "descriptions": {
+        "metadata.creationTimestamp": [
+          null,
+          50
+        ],
+        "metadata.deletionTimestamp": [
+          null,
+          50
+        ],
+        "spec": [
+          null,
+          47
+        ],
+        "": [
+          45,
+          null
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Specification of desired alerting rule definitions for Prometheus.",
+    "spec defines the specification of desired alerting rule definitions for Prometheus.",
+    "Content of Prometheus rule file",
+    "groups defines the content of Prometheus rule file",
+    "Interval determines how often rules in the group are evaluated.",
+    "interval defines how often rules in the group are evaluated.",
+    "Labels to add or overwrite before storing the result for its rules.\nThe labels defined at the rule level take precedence.\n\nIt requires Prometheus >= 3.0.0.\nThe field is ignored for Thanos Ruler.",
+    "labels define the labels to add or overwrite before storing the result for its rules.\nThe labels defined at the rule level take precedence.\n\nIt requires Prometheus >= 3.0.0.\nThe field is ignored for Thanos Ruler.",
+    "Limit the number of alerts an alerting rule and series a recording\nrule can produce.\nLimit is supported starting with Prometheus >= 2.31 and Thanos Ruler >= 0.24.",
+    "limit defines the number of alerts an alerting rule and series a recording\nrule can produce.\nLimit is supported starting with Prometheus >= 2.31 and Thanos Ruler >= 0.24.",
+    "Name of the rule group.",
+    "name defines the name of the rule group.",
+    "PartialResponseStrategy is only used by ThanosRuler and will\nbe ignored by Prometheus instances.\nMore info: https://github.com/thanos-io/thanos/blob/main/docs/components/rule.md#partial-response",
+    "partial_response_strategy is only used by ThanosRuler and will\nbe ignored by Prometheus instances.\nMore info: https://github.com/thanos-io/thanos/blob/main/docs/components/rule.md#partial-response",
+    "Defines the offset the rule evaluation timestamp of this particular group by the specified duration into the past.\n\nIt requires Prometheus >= v2.53.0.\nIt is not supported for ThanosRuler.",
+    "query_offset defines the offset the rule evaluation timestamp of this particular group by the specified duration into the past.\n\nIt requires Prometheus >= v2.53.0.\nIt is not supported for ThanosRuler.",
+    "List of alerting and recording rules.",
+    "rules defines the list of alerting and recording rules.",
+    "Name of the alert. Must be a valid label value.\nOnly one of `record` and `alert` must be set.",
+    "alert defines the name of the alert. Must be a valid label value.\nOnly one of `record` and `alert` must be set.",
+    "Annotations to add to each alert.\nOnly valid for alerting rules.",
+    "annotations defines annotations to add to each alert.\nOnly valid for alerting rules.",
+    "PromQL expression to evaluate.",
+    "expr defines the PromQL expression to evaluate.",
+    "Alerts are considered firing once they have been returned for this long.",
+    "for defines how alerts are considered firing once they have been returned for this long.",
+    "KeepFiringFor defines how long an alert will continue firing after the condition that triggered it has cleared.",
+    "keep_firing_for defines how long an alert will continue firing after the condition that triggered it has cleared.",
+    "Labels to add or overwrite.",
+    "labels defines labels to add or overwrite.",
+    "Name of the time series to output to. Must be a valid metric name.\nOnly one of `record` and `alert` must be set.",
+    "record defines the name of the time series to output to. Must be a valid metric name.\nOnly one of `record` and `alert` must be set.",
+    "status defines the status subresource. It is under active development and is updated only when the\n\"StatusForConfigurationResources\" feature gate is enabled.\n\nMost recent observed status of the PrometheusRule. Read-only.\nMore info:\nhttps://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+    "The `PrometheusRule` custom resource definition (CRD) defines [alerting](https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/) and [recording](https://prometheus.io/docs/prometheus/latest/configuration/recording_rules/) rules to be evaluated by `Prometheus` or `ThanosRuler` objects.\n\n\n`Prometheus` and `ThanosRuler` objects select `PrometheusRule` objects using label and namespace selectors.",
+    "The `PrometheusRule` custom resource definition (CRD) defines [alerting](https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/) and [recording](https://prometheus.io/docs/prometheus/latest/configuration/recording_rules/) rules to be evaluated by `Prometheus` or `ThanosRuler` objects.\n\n`Prometheus` and `ThanosRuler` objects select `PrometheusRule` objects using label and namespace selectors.",
+    "PrometheusRule defines recording and alerting rules for a Prometheus instance",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Limit the number of alerts an alerting rule and series a recording rule can produce. Limit is supported starting with Prometheus >= 2.31 and Thanos Ruler >= 0.24.",
+    "PartialResponseStrategy is only used by ThanosRuler and will be ignored by Prometheus instances. More info: https://github.com/thanos-io/thanos/blob/main/docs/components/rule.md#partial-response",
+    "Name of the alert. Must be a valid label value. Only one of `record` and `alert` must be set.",
+    "Annotations to add to each alert. Only valid for alerting rules.",
+    "Name of the time series to output to. Must be a valid metric name. Only one of `record` and `alert` must be set.",
+    "PrometheusRule defines alerting rules for a Prometheus instance",
+    "ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create.",
+    "PrometheusRuleSpec contains specification parameters for a Rule.",
+    "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations",
+    "The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request.",
+    "Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.",
+    "Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only.",
+    "Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed.",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency",
+    "A sequence number representing a specific generation of the desired state. Populated by the system. Read-only.",
+    "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels",
+    "ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.",
+    "Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names",
+    "Namespace defines the space within each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces",
+    "List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.",
+    "An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency",
+    "SelfLink is a URL representing this object. Populated by the system. Read-only.\n\nDEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is planned to be removed in 1.21 release.",
+    "UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.\n\nPopulated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency",
+    "ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.\n\nThis field is alpha and can be changed or removed without notice.",
+    "FieldsType is the discriminator for the different fields format and version. There is currently only one possible value: \"FieldsV1\"",
+    "FieldsV1 stores a set of fields in a data structure like a Trie, in JSON format.\n\nEach key is either a '.' representing the field itself, and will always map to an empty set, or a string representing a sub-field or item. The string will follow one of these four formats: 'f:<name>', where <name> is the name of a field in a struct, or key in a map 'v:<value>', where <value> is the exact json formatted value of a list item 'i:<index>', where <index> is position of a item in a list 'k:<keys>', where <keys> is a map of  a list item's key fields to their unique values If a key maps to an empty Fields value, the field that key represents is part of the set.\n\nThe exact format is defined in sigs.k8s.io/structured-merge-diff",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+    "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency",
+    "SelfLink is a URL representing this object. Populated by the system. Read-only.",
+    "Initializers tracks the progress of initialization.",
+    "Fields stores a set of fields in a data structure like a Trie. To understand how this is used, see: https://github.com/kubernetes-sigs/structured-merge-diff",
+    "remainingItemCount is the number of subsequent items in the list which are not included in this list response. If the list request contained label or field selectors, then the number of remaining items is unknown and the field will be left unset and omitted during serialization. If the list is complete (either because it is not chunking or because this is the last chunk), then there are no more remaining items and this field will be left unset and omitted during serialization. Servers older than v1.15 do not set this field. The intended use of the remainingItemCount is *estimating* the size of a collection. Clients should not rely on the remainingItemCount to be set or to be exact.\n\nThis field is alpha and can be changed or removed without notice.",
+    "continue may be set if the user set a limit on the number of items returned, and indicates that the server has more data available. The value is opaque and may be used to issue another request to the endpoint that served this list to retrieve the next set of available objects. Continuing a list may not be possible if the server configuration has changed or more than a few minutes have passed. The resourceVersion field returned when using this continue value will be identical to the value in the first response.",
+    "continue may be set if the user set a limit on the number of items returned, and indicates that the server has more data available. The value is opaque and may be used to issue another request to the endpoint that served this list to retrieve the next set of available objects. Continuing a consistent list may not be possible if the server configuration has changed or more than a few minutes have passed. The resourceVersion field returned when using this continue value will be identical to the value in the first response, unless you have received this token from an error message."
+  ]
+}

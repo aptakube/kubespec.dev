@@ -1,0 +1,168 @@
+{
+  "versions": {
+    "1.31.0": {
+      "added": {
+        "spec.http.redirect.prefixRewrite": "string"
+      },
+      "descriptions": {
+        "spec.http.redirect.prefixRewrite": [
+          null,
+          0
+        ]
+      }
+    },
+    "1.26.0": {
+      "added": {
+        "spec.http.retries.backoff": "string",
+        "spec.http.retries.retryIgnorePreviousHosts": "boolean"
+      },
+      "descriptions": {
+        "spec.http.retries.backoff": [
+          null,
+          1
+        ],
+        "spec.http.retries.retryIgnorePreviousHosts": [
+          null,
+          2
+        ]
+      }
+    },
+    "1.25.0": {
+      "added": {
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "status.conditions.observedGeneration": [
+          null,
+          3
+        ],
+        "status.observedGeneration": [
+          4,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "status.conditions": [
+          null,
+          5
+        ],
+        "status.observedGeneration": [
+          null,
+          4
+        ],
+        "status.validationMessages": [
+          null,
+          6
+        ]
+      }
+    },
+    "1.23.0": {
+      "descriptionChanged": [
+        "spec.http.corsPolicy.allowOrigins.regex",
+        "spec.http.match.authority",
+        "spec.http.match.authority.regex",
+        "spec.http.match.headers.regex",
+        "spec.http.match.method",
+        "spec.http.match.method.regex",
+        "spec.http.match.queryParams.regex",
+        "spec.http.match.scheme",
+        "spec.http.match.scheme.regex",
+        "spec.http.match.uri",
+        "spec.http.match.uri.regex",
+        "spec.http.match.withoutHeaders.regex",
+        "spec.http.rewrite.uriRegexRewrite.match"
+      ],
+      "added": {
+        "spec.http.corsPolicy.unmatchedPreflights": "string"
+      },
+      "descriptions": {
+        "spec.http.corsPolicy.allowOrigins.regex": [
+          7,
+          8
+        ],
+        "spec.http.corsPolicy.unmatchedPreflights": [
+          null,
+          9
+        ],
+        "spec.http.match.authority": [
+          10,
+          11
+        ],
+        "spec.http.match.authority.regex": [
+          7,
+          8
+        ],
+        "spec.http.match.headers.regex": [
+          7,
+          8
+        ],
+        "spec.http.match.method": [
+          12,
+          13
+        ],
+        "spec.http.match.method.regex": [
+          7,
+          8
+        ],
+        "spec.http.match.queryParams.regex": [
+          7,
+          8
+        ],
+        "spec.http.match.scheme": [
+          14,
+          15
+        ],
+        "spec.http.match.scheme.regex": [
+          7,
+          8
+        ],
+        "spec.http.match.uri": [
+          16,
+          17
+        ],
+        "spec.http.match.uri.regex": [
+          7,
+          8
+        ],
+        "spec.http.match.withoutHeaders.regex": [
+          7,
+          8
+        ],
+        "spec.http.rewrite.uriRegexRewrite.match": [
+          7,
+          8
+        ]
+      }
+    }
+  },
+  "texts": [
+    "On a redirect, replace the matched prefix with this value.",
+    "Specifies the minimum duration between retry attempts.",
+    "Flag to specify whether the retries should ignore previously tried hosts during retry.",
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers.",
+    "RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax).",
+    "[RE2 style regex-based match](https://github.com/google/re2/wiki/Syntax).",
+    "Indicates whether preflight requests not matching the configured allowed origin shouldn't be forwarded to the upstream.\n\nValid Options: FORWARD, IGNORE",
+    "HTTP Authority values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax).",
+    "HTTP Authority values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for [RE2 style regex-based match](https://github.com/google/re2/wiki/Syntax).",
+    "HTTP Method values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax).",
+    "HTTP Method values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for [RE2 style regex-based match](https://github.com/google/re2/wiki/Syntax).",
+    "URI Scheme values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax).",
+    "URI Scheme values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for [RE2 style regex-based match](https://github.com/google/re2/wiki/Syntax).",
+    "URI to match values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax).",
+    "URI to match values are case-sensitive and formatted as follows: - `exact: \"value\"` for exact string match - `prefix: \"value\"` for prefix-based match - `regex: \"value\"` for [RE2 style regex-based match](https://github.com/google/re2/wiki/Syntax)."
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "versions": {
+    "v1.12.0": {
+      "added": {
+        "status.stats.targets": "object"
+      },
+      "descriptions": {
+        "status.stats.targets": [
+          null,
+          0
+        ]
+      }
+    },
+    "v1.7.0": {
+      "removed": {
+        "spec": "object"
+      },
+      "descriptions": {
+        "spec": [
+          1,
+          null
+        ]
+      }
+    },
+    "v1.6.0": {
+      "added": {
+        "spec.webhookReceivers": "object[]"
+      },
+      "descriptions": {
+        "spec.webhookReceivers": [
+          null,
+          2
+        ]
+      }
+    },
+    "v1.5.0": {
+      "descriptionChanged": [
+        "spec",
+        "spec.promotionPolicies",
+        "spec.promotionPolicies.stage"
+      ],
+      "optional": [
+        "spec.promotionPolicies.stage"
+      ],
+      "added": {
+        "spec.promotionPolicies.stageSelector": "object",
+        "status.stats": "object"
+      },
+      "removed": {
+        "status.message": "string",
+        "status.phase": "string"
+      },
+      "descriptions": {
+        "spec": [
+          3,
+          1
+        ],
+        "spec.promotionPolicies": [
+          4,
+          5
+        ],
+        "spec.promotionPolicies.stage": [
+          null,
+          6
+        ],
+        "spec.promotionPolicies.stageSelector": [
+          null,
+          7
+        ],
+        "status.stats": [
+          null,
+          8
+        ],
+        "status.message": [
+          9,
+          null
+        ],
+        "status.phase": [
+          10,
+          null
+        ]
+      }
+    },
+    "v1.0.0": {
+      "added": {
+        "status.conditions": "object[]"
+      },
+      "descriptionChanged": [
+        "status.message",
+        "status.phase"
+      ],
+      "descriptions": {
+        "status.conditions": [
+          null,
+          11
+        ],
+        "status.message": [
+          12,
+          9
+        ],
+        "status.phase": [
+          13,
+          10
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Targets contains a summary of the collective state of the Project's\nTargets. It is absent for a Project with no Targets.",
+    "Spec describes a Project.\n\nDeprecated: Create a ProjectConfig resource with the same name as the\nProject resource in the Project's namespace. The ProjectConfig resource\ncan be used to configure the Project.",
+    "WebhookReceivers describes Project-specific webhook receivers used for\nprocessing events from various external platforms",
+    "Spec describes a Project.",
+    "PromotionPolicies defines policies governing the promotion of Freight to\nspecific Stages within this Project.",
+    "PromotionPolicies defines policies governing the promotion of Freight to\nspecific Stages within the Project.",
+    "Stage is the name of the Stage to which this policy applies.\n\nDeprecated: Use StageSelector instead.",
+    "StageSelector is a selector that matches the Stage resource to which\nthis policy applies.",
+    "Stats contains a summary of the collective state of a Project's\nconstituent resources.",
+    "Message is a display message about the Project, including any errors\npreventing the Project from being reconciled. i.e. If the Phase field has a\nvalue of CreationFailed, this field can be expected to explain why.\n\nDeprecated: Use the Conditions field instead.",
+    "Phase describes the Project's current phase.\n\nDeprecated: Use the Conditions field instead.",
+    "Conditions contains the last observations of the Project's current\nstate.",
+    "Message is a display message about the Project, including any errors\npreventing the Project from being reconciled. i.e. If the Phase field has a\nvalue of CreationFailed, this field can be expected to explain why.",
+    "Phase describes the Project's current phase."
+  ]
+}

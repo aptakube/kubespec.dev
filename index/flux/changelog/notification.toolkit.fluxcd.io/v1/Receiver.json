@@ -1,0 +1,200 @@
+{
+  "versions": {
+    "v2.9.0": {
+      "added": {
+        "spec.oidcProviders": "object[]",
+        "spec.resources.filter": "string"
+      },
+      "descriptionChanged": [
+        "spec.resourceFilter",
+        "spec.secretRef"
+      ],
+      "optional": [
+        "spec.secretRef"
+      ],
+      "descriptions": {
+        "spec.oidcProviders": [
+          null,
+          0
+        ],
+        "spec.resourceFilter": [
+          1,
+          2
+        ],
+        "spec.resources.filter": [
+          null,
+          3
+        ],
+        "spec.secretRef": [
+          4,
+          5
+        ]
+      }
+    },
+    "v2.8.6": {
+      "descriptionChanged": [
+        "spec.secretRef"
+      ],
+      "descriptions": {
+        "spec.secretRef": [
+          6,
+          4
+        ]
+      }
+    },
+    "v2.8.5": {
+      "descriptionChanged": [
+        "spec.secretRef"
+      ],
+      "descriptions": {
+        "spec.secretRef": [
+          7,
+          6
+        ]
+      }
+    },
+    "v2.5.0": {
+      "added": {
+        "spec.resourceFilter": "string"
+      },
+      "descriptions": {
+        "spec.resourceFilter": [
+          null,
+          1
+        ]
+      }
+    },
+    "v2.4.0": {
+      "descriptionChanged": [
+        "status.conditions.type"
+      ],
+      "descriptions": {
+        "status.conditions.type": [
+          8,
+          9
+        ]
+      }
+    },
+    "v2.3.0": {
+      "descriptionChanged": [
+        "apiVersion",
+        "kind",
+        "spec.events",
+        "spec.resources.matchLabels",
+        "spec.resources.name",
+        "spec.secretRef",
+        "spec.suspend",
+        "spec.type",
+        "status.conditions.lastTransitionTime",
+        "status.conditions.message",
+        "status.conditions.observedGeneration",
+        "status.conditions.reason",
+        "status.conditions.type",
+        "status.lastHandledReconcileAt",
+        "status.webhookPath"
+      ],
+      "descriptions": {
+        "apiVersion": [
+          10,
+          11
+        ],
+        "kind": [
+          12,
+          13
+        ],
+        "spec.events": [
+          14,
+          15
+        ],
+        "spec.resources.matchLabels": [
+          16,
+          17
+        ],
+        "spec.resources.name": [
+          18,
+          19
+        ],
+        "spec.secretRef": [
+          20,
+          7
+        ],
+        "spec.suspend": [
+          21,
+          22
+        ],
+        "spec.type": [
+          23,
+          24
+        ],
+        "status.conditions.lastTransitionTime": [
+          25,
+          26
+        ],
+        "status.conditions.message": [
+          27,
+          28
+        ],
+        "status.conditions.observedGeneration": [
+          29,
+          30
+        ],
+        "status.conditions.reason": [
+          31,
+          32
+        ],
+        "status.conditions.type": [
+          33,
+          8
+        ],
+        "status.lastHandledReconcileAt": [
+          34,
+          35
+        ],
+        "status.webhookPath": [
+          36,
+          37
+        ]
+      }
+    }
+  },
+  "texts": [
+    "OIDCProviders specifies the OIDC providers used to authenticate incoming\nrequests when Type is 'generic-oidc'. The provider whose IssuerURL matches\nthe token's 'iss' claim is used to verify the token signature, expiration\nand audience, and to evaluate the configured CEL validations against the\ntoken claims.",
+    "ResourceFilter is a CEL expression expected to return a boolean that is\nevaluated for each resource referenced in the Resources field when a\nwebhook is received. If the expression returns false then the controller\nwill not request a reconciliation for the resource.\nWhen the expression is specified the controller will parse it and mark\nthe object as terminally failed if the expression is invalid or does not\nreturn a boolean.",
+    "ResourceFilter is a CEL expression expected to return a boolean that is\nevaluated for each resource referenced in the Resources field when a\nwebhook is received. If the expression returns false then the controller\nwill not request a reconciliation for the resource.\nThe expression can read the resource metadata via 'res' and the webhook\nrequest body via 'req'. For generic-oidc receivers, the verified OIDC\ntoken claims are also available via 'claims'.\nWhen the expression is specified the controller will parse it and mark\nthe object as terminally failed if the expression is invalid or does not\nreturn a boolean.",
+    "Filter is a CEL expression expected to return a boolean that is evaluated\nfor each resource matched by this reference when a webhook is received,\nin addition to the top-level resourceFilter. A reconciliation is requested\nonly when both expressions (when set) return true.\nThe expression can read the resource metadata via 'res' and the webhook\nrequest body via 'req'. For generic-oidc receivers, the verified OIDC\ntoken claims are also available via 'claims'.\nWhen the expression is specified the controller will parse it and mark\nthe object as terminally failed if the expression is invalid or does not\nreturn a boolean.",
+    "SecretRef specifies the Secret containing the token used\nto validate the payload authenticity. The Secret must contain a 'token'\nkey. For GCR receivers, the Secret must also contain an 'email' key\nwith the IAM service account email configured on the Pub/Sub push\nsubscription, and an 'audience' key with the expected OIDC token audience.",
+    "SecretRef specifies the Secret containing the token used\nto validate the payload authenticity. The Secret must contain a 'token'\nkey. For GCR receivers, the Secret must also contain an 'email' key\nwith the IAM service account email configured on the Pub/Sub push\nsubscription, and an 'audience' key with the expected OIDC token audience.\n\nRequired for all receiver types except 'generic-oidc', which authenticates\nrequests using the OIDC token instead and must not set this field.",
+    "SecretRef specifies the Secret containing the token used\nto validate the payload authenticity. The Secret must contain a 'token'\nkey. For GCR receivers, the Secret must also contain an 'email' key\nwith the IAM service account email configured on the Pub/Sub push\nsubscription, and may optionally contain an 'audience' key with the\nexpected OIDC token audience.",
+    "SecretRef specifies the Secret containing the token used\nto validate the payload authenticity.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "type of condition in CamelCase or in foo.example.com/CamelCase.",
+    "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "APIVersion defines the versioned schema of this representation of an object.\nServers should convert recognized schemas to the latest internal value, and\nmay reject unrecognized values.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+    "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Kind is a string value representing the REST resource this object represents.\nServers may infer this from the endpoint the client submits requests to.\nCannot be updated.\nIn CamelCase.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+    "Events specifies the list of event types to handle, e.g. 'push' for GitHub or 'Push Hook' for GitLab.",
+    "Events specifies the list of event types to handle,\ne.g. 'push' for GitHub or 'Push Hook' for GitLab.",
+    "MatchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed. MatchLabels requires the name to be set to `*`.",
+    "MatchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels\nmap is equivalent to an element of matchExpressions, whose key field is \"key\", the\noperator is \"In\", and the values array contains only \"value\". The requirements are ANDed.\nMatchLabels requires the name to be set to `*`.",
+    "Name of the referent If multiple resources are targeted `*` may be set.",
+    "Name of the referent\nIf multiple resources are targeted `*` may be set.",
+    "SecretRef specifies the Secret containing the token used to validate the payload authenticity.",
+    "Suspend tells the controller to suspend subsequent events handling for this receiver.",
+    "Suspend tells the controller to suspend subsequent\nevents handling for this receiver.",
+    "Type of webhook sender, used to determine the validation procedure and payload deserialization.",
+    "Type of webhook sender, used to determine\nthe validation procedure and payload deserialization.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "lastTransitionTime is the last time the condition transitioned from one status to another.\nThis should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.",
+    "message is a human readable message indicating details about the transition. This may be an empty string.",
+    "message is a human readable message indicating details about the transition.\nThis may be an empty string.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.",
+    "observedGeneration represents the .metadata.generation that the condition was set based upon.\nFor instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date\nwith respect to the current state of the instance.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.",
+    "reason contains a programmatic identifier indicating the reason for the condition's last transition.\nProducers of specific condition types may define expected values and meanings for this field,\nand whether the values are considered a guaranteed API.\nThe value should be a CamelCase string.\nThis field may not be empty.",
+    "type of condition in CamelCase or in foo.example.com/CamelCase. --- Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be useful (see .node.status.conditions), the ability to deconflict is important. The regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
+    "LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change of the annotation value can be detected.",
+    "LastHandledReconcileAt holds the value of the most recent\nreconcile request value, so a change of the annotation value\ncan be detected.",
+    "WebhookPath is the generated incoming webhook address in the format of '/hook/sha256sum(token+name+namespace)'.",
+    "WebhookPath is the generated incoming webhook address in the format\nof '/hook/sha256sum(token+name+namespace)'."
+  ]
+}

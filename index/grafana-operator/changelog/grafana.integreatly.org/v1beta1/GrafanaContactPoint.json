@@ -1,0 +1,78 @@
+{
+  "versions": {
+    "v5.21.4": {
+      "descriptionChanged": [
+        "status.conditions"
+      ],
+      "descriptions": {
+        "status.conditions": [
+          0,
+          1
+        ]
+      }
+    },
+    "v5.21.0": {
+      "descriptionChanged": [
+        "spec.disableResolveMessage",
+        "spec.name",
+        "spec.settings",
+        "spec.type",
+        "spec.uid",
+        "spec.valuesFrom"
+      ],
+      "added": {
+        "spec.editable": "boolean",
+        "spec.receivers": "object[]"
+      },
+      "optional": [
+        "spec.name",
+        "spec.settings",
+        "spec.type"
+      ],
+      "descriptions": {
+        "spec.disableResolveMessage": [
+          null,
+          2
+        ],
+        "spec.editable": [
+          null,
+          3
+        ],
+        "spec.name": [
+          null,
+          4
+        ],
+        "spec.receivers": [
+          null,
+          5
+        ],
+        "spec.settings": [
+          null,
+          2
+        ],
+        "spec.type": [
+          null,
+          2
+        ],
+        "spec.uid": [
+          6,
+          7
+        ],
+        "spec.valuesFrom": [
+          null,
+          2
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Results when synchonizing resource with Grafana instances",
+    "Results when synchronizing resource with Grafana instances",
+    "Deprecated: define the receiver under .spec.receivers[]\nWill be removed in a later version",
+    "Whether to enable or disable editing of the contact point in Grafana UI",
+    "Receivers are grouped under the same ContactPoint using the Name\nDefaults to the name of the CR",
+    "List of receivers that Grafana will fan out notifications to",
+    "Manually specify the UID the Contact Point is created with. Can be any string consisting of alphanumeric characters, - and _ with a maximum length of 40",
+    "Deprecated: define the receiver under .spec.receivers[]\nManually specify the UID the Contact Point is created with. Can be any string consisting of alphanumeric characters, - and _ with a maximum length of 40"
+  ]
+}

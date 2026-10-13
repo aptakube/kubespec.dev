@@ -1,0 +1,153 @@
+{
+  "versions": {
+    "1.25.0": {
+      "added": {
+        "spec.probe.grpc": "object",
+        "status.conditions.observedGeneration": "int | string"
+      },
+      "descriptionChanged": [
+        "status.observedGeneration"
+      ],
+      "descriptions": {
+        "spec.probe.grpc": [
+          null,
+          0
+        ],
+        "status.conditions.observedGeneration": [
+          null,
+          1
+        ],
+        "status.observedGeneration": [
+          2,
+          null
+        ]
+      }
+    },
+    "1.24.0": {
+      "required": [
+        "spec",
+        "spec.probe.exec.command"
+      ],
+      "added": {
+        "status.conditions": "object[]",
+        "status.observedGeneration": "int | string",
+        "status.validationMessages": "object[]"
+      },
+      "descriptions": {
+        "spec": [
+          null,
+          3
+        ],
+        "spec.probe.exec.command": [
+          null,
+          4
+        ],
+        "status.conditions": [
+          null,
+          5
+        ],
+        "status.observedGeneration": [
+          null,
+          2
+        ],
+        "status.validationMessages": [
+          null,
+          6
+        ]
+      }
+    },
+    "1.20.0": {
+      "descriptionChanged": [
+        "spec.probe.httpGet",
+        "spec.template.address",
+        "spec.template.network",
+        "spec.template.serviceAccount"
+      ],
+      "required": [
+        "spec.probe.httpGet.port",
+        "spec.probe.tcpSocket.port",
+        "spec.template"
+      ],
+      "descriptions": {
+        "spec.probe.httpGet": [
+          null,
+          7
+        ],
+        "spec.probe.httpGet.port": [
+          null,
+          8
+        ],
+        "spec.template": [
+          null,
+          9
+        ],
+        "spec.template.address": [
+          null,
+          10
+        ],
+        "spec.template.network": [
+          null,
+          11
+        ],
+        "spec.template.serviceAccount": [
+          null,
+          12
+        ]
+      }
+    },
+    "1.9.0": {
+      "descriptionChanged": [
+        "spec.probe.exec",
+        "spec.probe.exec.command",
+        "spec.probe.httpGet.httpHeaders",
+        "spec.probe.httpGet.port",
+        "spec.probe.tcpSocket"
+      ],
+      "descriptions": {
+        "spec.probe.exec": [
+          13,
+          14
+        ],
+        "spec.probe.exec.command": [
+          15,
+          4
+        ],
+        "spec.probe.httpGet.httpHeaders": [
+          16,
+          17
+        ],
+        "spec.probe.httpGet.port": [
+          18,
+          8
+        ],
+        "spec.probe.tcpSocket": [
+          19,
+          20
+        ]
+      }
+    }
+  },
+  "texts": [
+    "GRPC call is made and response/error is used to determine health.",
+    "Resource Generation to which the Condition refers.",
+    "Resource Generation to which the Reconciled Condition refers.",
+    "Describes a collection of workload instances. See more details at: https://istio.io/docs/reference/config/networking/workload-group.html",
+    "Command to run.",
+    "Current service state of the resource.",
+    "Includes any errors or warnings detected by Istio's analyzers.",
+    "`httpGet` is performed to a given endpoint and the status/able to connect determines health.",
+    "Port on which the endpoint lives.",
+    "Template to be used for the generation of `WorkloadEntry` resources that belong to this `WorkloadGroup`.",
+    "Address associated with the network endpoint without the port.",
+    "Network enables Istio to group endpoints resident in the same L3 domain/network.",
+    "The service account associated with the workload if a sidecar is present in the workload.",
+    "health is determined by how the command that is executed exited.",
+    "Health is determined by how the command that is executed exited.",
+    "command to run.",
+    "headers the proxy will pass on to make the request.",
+    "Headers the proxy will pass on to make the request.",
+    "port on which the endpoint lives.",
+    "health is determined by if the proxy is able to connect.",
+    "Health is determined by if the proxy is able to connect."
+  ]
+}

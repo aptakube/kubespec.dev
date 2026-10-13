@@ -1,0 +1,520 @@
+{
+  "versions": {
+    "v1.6.0": {
+      "descriptionChanged": [
+        "spec.baseURL",
+        "spec.custom.backendRef.group",
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tls.caCertificateRefs",
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tls.caCertificateRefs",
+        "spec.policies.promptGuard.request.openAIModeration.policies.tls.caCertificateRefs",
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tls.caCertificateRefs",
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tls.caCertificateRefs",
+        "spec.policies.tls.caCertificateRefs"
+      ],
+      "added": {
+        "spec.bedrock.endpointPreference": "string",
+        "spec.policies.auth.aws.assumeRole.externalId": "string",
+        "spec.policies.auth.azure.scopes": "string[]",
+        "spec.policies.promptGuard.request.bedrockGuardrails.failureMode": "string",
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.auth.aws.assumeRole.externalId": "string",
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tls.caCertificateRefs.key": "string",
+        "spec.policies.promptGuard.request.googleModelArmor.failureMode": "string",
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tls.caCertificateRefs.key": "string",
+        "spec.policies.promptGuard.request.openAIModeration.failureMode": "string",
+        "spec.policies.promptGuard.request.openAIModeration.policies.tls.caCertificateRefs.key": "string",
+        "spec.policies.promptGuard.response.bedrockGuardrails.failureMode": "string",
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.auth.aws.assumeRole.externalId": "string",
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tls.caCertificateRefs.key": "string",
+        "spec.policies.promptGuard.response.googleModelArmor.failureMode": "string",
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tls.caCertificateRefs.key": "string",
+        "spec.policies.tls.caCertificateRefs.key": "string"
+      },
+      "descriptions": {
+        "spec.baseURL": [
+          0,
+          1
+        ],
+        "spec.bedrock.endpointPreference": [
+          null,
+          2
+        ],
+        "spec.custom.backendRef.group": [
+          3,
+          4
+        ],
+        "spec.policies.auth.aws.assumeRole.externalId": [
+          null,
+          5
+        ],
+        "spec.policies.auth.azure.scopes": [
+          null,
+          6
+        ],
+        "spec.policies.promptGuard.request.bedrockGuardrails.failureMode": [
+          null,
+          7
+        ],
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.auth.aws.assumeRole.externalId": [
+          null,
+          5
+        ],
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tls.caCertificateRefs": [
+          8,
+          9
+        ],
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tls.caCertificateRefs.key": [
+          null,
+          10
+        ],
+        "spec.policies.promptGuard.request.googleModelArmor.failureMode": [
+          null,
+          7
+        ],
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tls.caCertificateRefs": [
+          8,
+          9
+        ],
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tls.caCertificateRefs.key": [
+          null,
+          10
+        ],
+        "spec.policies.promptGuard.request.openAIModeration.failureMode": [
+          null,
+          7
+        ],
+        "spec.policies.promptGuard.request.openAIModeration.policies.tls.caCertificateRefs": [
+          8,
+          9
+        ],
+        "spec.policies.promptGuard.request.openAIModeration.policies.tls.caCertificateRefs.key": [
+          null,
+          10
+        ],
+        "spec.policies.promptGuard.response.bedrockGuardrails.failureMode": [
+          null,
+          7
+        ],
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.auth.aws.assumeRole.externalId": [
+          null,
+          5
+        ],
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tls.caCertificateRefs": [
+          8,
+          9
+        ],
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tls.caCertificateRefs.key": [
+          null,
+          10
+        ],
+        "spec.policies.promptGuard.response.googleModelArmor.failureMode": [
+          null,
+          7
+        ],
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tls.caCertificateRefs": [
+          8,
+          9
+        ],
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tls.caCertificateRefs.key": [
+          null,
+          10
+        ],
+        "spec.policies.tls.caCertificateRefs": [
+          8,
+          9
+        ],
+        "spec.policies.tls.caCertificateRefs.key": [
+          null,
+          10
+        ]
+      }
+    },
+    "v1.5.0": {
+      "added": {
+        "spec.custom.providerOverride": "string",
+        "spec.policies.auth.oauthTokenExchange.url": "string",
+        "spec.policies.finalTransformations": "object[]",
+        "spec.policies.promptGuard.request.bedrockGuardrails.action": "string",
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tls.caCertificateRefs.kind": "string",
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tls.certificateSource": "string",
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tunnel.mode": "string",
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tunnel.url": "string",
+        "spec.policies.promptGuard.request.googleModelArmor.action": "string",
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tls.caCertificateRefs.kind": "string",
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tls.certificateSource": "string",
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tunnel.mode": "string",
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tunnel.url": "string",
+        "spec.policies.promptGuard.request.openAIModeration.action": "string",
+        "spec.policies.promptGuard.request.openAIModeration.policies.tls.caCertificateRefs.kind": "string",
+        "spec.policies.promptGuard.request.openAIModeration.policies.tls.certificateSource": "string",
+        "spec.policies.promptGuard.request.openAIModeration.policies.tunnel.mode": "string",
+        "spec.policies.promptGuard.request.openAIModeration.policies.tunnel.url": "string",
+        "spec.policies.promptGuard.request.scope": "string[]",
+        "spec.policies.promptGuard.request.webhook.action": "string",
+        "spec.policies.promptGuard.response.bedrockGuardrails.action": "string",
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tls.caCertificateRefs.kind": "string",
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tls.certificateSource": "string",
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tunnel.mode": "string",
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tunnel.url": "string",
+        "spec.policies.promptGuard.response.googleModelArmor.action": "string",
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tls.caCertificateRefs.kind": "string",
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tls.certificateSource": "string",
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tunnel.mode": "string",
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tunnel.url": "string",
+        "spec.policies.promptGuard.response.webhook.action": "string",
+        "spec.policies.tls.caCertificateRefs.kind": "string",
+        "spec.policies.tls.certificateSource": "string",
+        "spec.policies.tunnel.mode": "string",
+        "spec.policies.tunnel.url": "string"
+      },
+      "descriptionChanged": [
+        "spec.parentRefs",
+        "spec.policies.auth.azure.managedIdentity",
+        "spec.policies.auth.azure.managedIdentity.clientId",
+        "spec.policies.auth.azure.managedIdentity.objectId",
+        "spec.policies.auth.azure.managedIdentity.resourceId",
+        "spec.policies.auth.oauthTokenExchange.backendRef",
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tls.caCertificateRefs",
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tls.caCertificateRefs.name",
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tunnel.backendRef",
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tls.caCertificateRefs",
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tls.caCertificateRefs.name",
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tunnel.backendRef",
+        "spec.policies.promptGuard.request.openAIModeration.policies.tls.caCertificateRefs",
+        "spec.policies.promptGuard.request.openAIModeration.policies.tls.caCertificateRefs.name",
+        "spec.policies.promptGuard.request.openAIModeration.policies.tunnel.backendRef",
+        "spec.policies.promptGuard.request.regex.action",
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tls.caCertificateRefs",
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tls.caCertificateRefs.name",
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tunnel.backendRef",
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tls.caCertificateRefs",
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tls.caCertificateRefs.name",
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tunnel.backendRef",
+        "spec.policies.promptGuard.response.regex.action",
+        "spec.policies.tls.caCertificateRefs",
+        "spec.policies.tls.caCertificateRefs.name",
+        "spec.policies.tunnel.backendRef"
+      ],
+      "optional": [
+        "spec.policies.auth.azure.managedIdentity.clientId",
+        "spec.policies.auth.azure.managedIdentity.objectId",
+        "spec.policies.auth.azure.managedIdentity.resourceId",
+        "spec.policies.auth.oauthTokenExchange.backendRef",
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tunnel.backendRef",
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tunnel.backendRef",
+        "spec.policies.promptGuard.request.openAIModeration.policies.tunnel.backendRef",
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tunnel.backendRef",
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tunnel.backendRef",
+        "spec.policies.tunnel.backendRef"
+      ],
+      "required": [
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tls.caCertificateRefs.name",
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tls.caCertificateRefs.name",
+        "spec.policies.promptGuard.request.openAIModeration.policies.tls.caCertificateRefs.name",
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tls.caCertificateRefs.name",
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tls.caCertificateRefs.name",
+        "spec.policies.tls.caCertificateRefs.name"
+      ],
+      "descriptions": {
+        "spec.custom.providerOverride": [
+          null,
+          11
+        ],
+        "spec.parentRefs": [
+          12,
+          13
+        ],
+        "spec.policies.auth.azure.managedIdentity": [
+          14,
+          15
+        ],
+        "spec.policies.auth.azure.managedIdentity.clientId": [
+          null,
+          16
+        ],
+        "spec.policies.auth.azure.managedIdentity.objectId": [
+          null,
+          17
+        ],
+        "spec.policies.auth.azure.managedIdentity.resourceId": [
+          null,
+          18
+        ],
+        "spec.policies.auth.oauthTokenExchange.backendRef": [
+          19,
+          20
+        ],
+        "spec.policies.auth.oauthTokenExchange.url": [
+          null,
+          21
+        ],
+        "spec.policies.finalTransformations": [
+          null,
+          22
+        ],
+        "spec.policies.promptGuard.request.bedrockGuardrails.action": [
+          null,
+          23
+        ],
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tls.caCertificateRefs": [
+          24,
+          8
+        ],
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tls.caCertificateRefs.kind": [
+          null,
+          25
+        ],
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tls.caCertificateRefs.name": [
+          26,
+          27
+        ],
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tls.certificateSource": [
+          null,
+          28
+        ],
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tunnel.backendRef": [
+          29,
+          20
+        ],
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tunnel.mode": [
+          null,
+          30
+        ],
+        "spec.policies.promptGuard.request.bedrockGuardrails.policies.tunnel.url": [
+          null,
+          21
+        ],
+        "spec.policies.promptGuard.request.googleModelArmor.action": [
+          null,
+          31
+        ],
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tls.caCertificateRefs": [
+          24,
+          8
+        ],
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tls.caCertificateRefs.kind": [
+          null,
+          25
+        ],
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tls.caCertificateRefs.name": [
+          26,
+          27
+        ],
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tls.certificateSource": [
+          null,
+          28
+        ],
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tunnel.backendRef": [
+          29,
+          20
+        ],
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tunnel.mode": [
+          null,
+          30
+        ],
+        "spec.policies.promptGuard.request.googleModelArmor.policies.tunnel.url": [
+          null,
+          21
+        ],
+        "spec.policies.promptGuard.request.openAIModeration.action": [
+          null,
+          31
+        ],
+        "spec.policies.promptGuard.request.openAIModeration.policies.tls.caCertificateRefs": [
+          24,
+          8
+        ],
+        "spec.policies.promptGuard.request.openAIModeration.policies.tls.caCertificateRefs.kind": [
+          null,
+          25
+        ],
+        "spec.policies.promptGuard.request.openAIModeration.policies.tls.caCertificateRefs.name": [
+          26,
+          27
+        ],
+        "spec.policies.promptGuard.request.openAIModeration.policies.tls.certificateSource": [
+          null,
+          28
+        ],
+        "spec.policies.promptGuard.request.openAIModeration.policies.tunnel.backendRef": [
+          29,
+          20
+        ],
+        "spec.policies.promptGuard.request.openAIModeration.policies.tunnel.mode": [
+          null,
+          30
+        ],
+        "spec.policies.promptGuard.request.openAIModeration.policies.tunnel.url": [
+          null,
+          21
+        ],
+        "spec.policies.promptGuard.request.regex.action": [
+          32,
+          33
+        ],
+        "spec.policies.promptGuard.request.scope": [
+          null,
+          34
+        ],
+        "spec.policies.promptGuard.request.webhook.action": [
+          null,
+          35
+        ],
+        "spec.policies.promptGuard.response.bedrockGuardrails.action": [
+          null,
+          23
+        ],
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tls.caCertificateRefs": [
+          24,
+          8
+        ],
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tls.caCertificateRefs.kind": [
+          null,
+          25
+        ],
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tls.caCertificateRefs.name": [
+          26,
+          27
+        ],
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tls.certificateSource": [
+          null,
+          28
+        ],
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tunnel.backendRef": [
+          29,
+          20
+        ],
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tunnel.mode": [
+          null,
+          30
+        ],
+        "spec.policies.promptGuard.response.bedrockGuardrails.policies.tunnel.url": [
+          null,
+          21
+        ],
+        "spec.policies.promptGuard.response.googleModelArmor.action": [
+          null,
+          31
+        ],
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tls.caCertificateRefs": [
+          24,
+          8
+        ],
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tls.caCertificateRefs.kind": [
+          null,
+          25
+        ],
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tls.caCertificateRefs.name": [
+          26,
+          27
+        ],
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tls.certificateSource": [
+          null,
+          28
+        ],
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tunnel.backendRef": [
+          29,
+          20
+        ],
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tunnel.mode": [
+          null,
+          30
+        ],
+        "spec.policies.promptGuard.response.googleModelArmor.policies.tunnel.url": [
+          null,
+          21
+        ],
+        "spec.policies.promptGuard.response.regex.action": [
+          32,
+          33
+        ],
+        "spec.policies.promptGuard.response.webhook.action": [
+          null,
+          35
+        ],
+        "spec.policies.tls.caCertificateRefs": [
+          24,
+          8
+        ],
+        "spec.policies.tls.caCertificateRefs.kind": [
+          null,
+          25
+        ],
+        "spec.policies.tls.caCertificateRefs.name": [
+          26,
+          27
+        ],
+        "spec.policies.tls.certificateSource": [
+          null,
+          28
+        ],
+        "spec.policies.tunnel.backendRef": [
+          29,
+          20
+        ],
+        "spec.policies.tunnel.mode": [
+          null,
+          30
+        ],
+        "spec.policies.tunnel.url": [
+          null,
+          21
+        ]
+      }
+    },
+    "v1.4.1": {
+      "added": {
+        "spec.policies.promptGuard.request.webhook.headers": "map[string]string",
+        "spec.policies.promptGuard.response.webhook.headers": "map[string]string"
+      },
+      "descriptions": {
+        "spec.policies.promptGuard.request.webhook.headers": [
+          null,
+          36
+        ],
+        "spec.policies.promptGuard.response.webhook.headers": [
+          null,
+          36
+        ]
+      }
+    }
+  },
+  "texts": [
+    "BaseURL overrides the provider address and base path prefix. It must use the\nhttp or https scheme. Backend policies may override the default TLS\nconfiguration. Query parameters, fragments, and user info are not supported.",
+    "BaseURL overrides the provider address and base path prefix. It must use the\nhttp or https scheme. Backend policies may override the default TLS\nconfiguration. Query parameters, fragments, and user info are not supported.\nThe URL path is the upstream base path and defaults to / when omitted.\nProvider-specific endpoint paths are appended to this base path.\nFor example, `https://api.openai.com/v1` sends completions to `/v1/chat/completions`,\nwhile `https://api.openai.com` sends them to `/chat/completions`.",
+    "EndpointPreference selects which Bedrock API surface to prefer.\nDefaults to `RuntimePreferred`, preferring runtime over mantle.\nDecides which endpoint to pick mainly based on the catalog tags\n`mantle` and `runtime`.",
+    "API group of the referenced resource. For example, `gateway.networking.k8s.io`.\nWhen unspecified or empty string, core API group is inferred.",
+    "API group of the referenced resource. For example, `gateway.networking.k8s.io`.\nDefaults to the empty string, which identifies the core API group.",
+    "ExternalID is set when the role's trust policy requires sts:ExternalId.",
+    "Scopes requested for the Azure access token. When omitted, the scope is\ninferred from the backend hostname. Managed Identity supports exactly one\nscope.",
+    "Behavior when the provider is unavailable or returns an error.\n`FailOpen` allows the request to continue; `FailClosed` (default) rejects it.",
+    "CA certificate source to use to verify the server certificate. Omitted kind\nand `ConfigMap` select a ConfigMap; `Secret` selects a Secret. The `ca.crt`\nkey is required. If unset, the system's trusted certificates are used.",
+    "CA certificate source to use to verify the server certificate. Omitted kind\nand `ConfigMap` select a ConfigMap; `Secret` selects a Secret. The bundle is\nread from the `ca.crt` key unless `key` names a different one. If unset, the\nsystem's trusted certificates are used.",
+    "Key within the referenced source holding the PEM-encoded CA bundle.\nOmitted defaults to `ca.crt`.",
+    "Provider identity used for cost-catalog lookup and telemetry.\nDefaults to \"custom\" when unset.",
+    "Gateways and listeners to which this model attaches.",
+    "Parent resources to which this model attaches. Supported parent kinds are\nGateway, ListenerSet, and HTTPRoute.\n\nA Gateway or ListenerSet parent attaches the model directly to its\nlisteners. An HTTPRoute parent attaches the model to the referenced rule;\nsectionName selects a named rule, or the HTTPRoute must contain exactly\none rule when sectionName is omitted. The selected rule must use exactly\none AgentgatewayModel backend with name \"*\". If the rule has path matches,\nthey must use PathPrefix matching.",
+    "Managed identity authentication settings.",
+    "Managed identity authentication settings. Leave this object empty to use\nthe system-assigned identity. To use a user-assigned identity, set one of\n`clientId`, `objectId`, or `resourceId`.",
+    "Client ID of the user-assigned managed identity.",
+    "Object ID of the user-assigned managed identity.",
+    "Resource ID of the user-assigned managed identity.",
+    "RFC 8693 token endpoint backend.",
+    "`backendRef` selects a backend for this policy.\nMutually exclusive with `url`.",
+    "`url` directly specifies the HTTP(S) endpoint for this policy.\nWhen the scheme is `https`, backend TLS is enabled automatically.\nMutually exclusive with `backendRef`.\nURLs are opaque; referencing a Kubernetes service hostname like `hello.ns.svc.cluster.local`\nwill not apply Service policies or load balancing.",
+    "CEL transformations applied to fields in the provider request body.\nAfter conversion from one provider format to another, these transformations are applied to the converted request body.",
+    "Action controls whether the guardrail's verdict is enforced or only\nobserved. `Reject` (the default) enforces the guardrail: a blocked\nassessment rejects the request/response and an anonymized assessment masks\nthe matched content. `Audit` runs the guardrail in observe mode: it is\ninvoked and its assessment recorded (metrics + structured log), but the\nrequest/response is never blocked or masked.",
+    "CA certificate `ConfigMap` to use to\nverify the server certificate.\nIf unset, the system's trusted certificates are used.",
+    "Kind of the referenced CA certificate source. Omitted defaults to ConfigMap.",
+    "Name of the referent",
+    "Name of the referenced CA certificate source.",
+    "Source for the gateway's client identity and trust roots (`Inline` default, or `SPIFFE`).",
+    "Proxy server to reach.\nSupported types: `Service` and `Backend`.",
+    "How requests are sent through the proxy.\nDefaults to `Auto`.",
+    "Action controls whether flagged content is rejected or only observed.\n`Reject` (the default) rejects flagged content; `Audit` records the\nwould-be rejection without blocking.",
+    "The action to take if a regex pattern is matched in a request or response.\nThis setting applies only to request matches. `PromptguardResponse`\nmatches are always masked by default.\nDefaults to `Mask`.",
+    "The action to take if a regex pattern is matched in a request or response.\nThe action applies to request and response matches alike. Note that\n`Mask` is not applied to streamed responses: matched content in a\nstreamed response is passed through unmodified.\nDefaults to `Mask`.",
+    "Which parts of the request this guard inspects. When unset, defaults to\n`SystemPrompt` and `Messages`. Tool call inputs and outputs are not\ninspected unless `ToolInput`/`ToolOutput` are listed explicitly.\nIn APIs that send tool arguments as opaque JSON, such as Completions, the\narguments are masked as a single string, meaning a prompt guard has the\npotential to rewrite the arguments into invalid JSON.",
+    "Action controls whether the webhook's verdict is enforced or only observed.\n`Reject` (the default) enforces it; `Audit` records the would-be action\nwithout blocking or masking.",
+    "CEL-computed headers to include in webhook requests."
+  ]
+}
