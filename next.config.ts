@@ -12,12 +12,17 @@ const nextConfig: NextConfig = {
     "/": ["./index/*/changelog/**/*.json"],
     "/\\[project\\]": ["./index/*/changelog/**/*.json"],
     "/\\[project\\]/\\[version\\]": ["./index/*/changelog/**/*.json"],
+    "/sitemaps/\\[project\\]": ["./index/*/changelog/**/*.json"],
     // and the examples and links of each kind, read by getKindMetadata
     "/\\[project\\]/\\[version\\]/\\[\\.\\.\\.kind\\]": ["./index/*/changelog/**/*.json", "./index/*/examples/**/*.md", "./index/*/links/**/*.json"],
   },
   redirects() {
     // the home project's latest version is the home page; its older versions keep their /{project}/{version} URLs
     return [{ source: `/${HOME_PROJECT}`, destination: "/", permanent: true }];
+  },
+  rewrites() {
+    // see app/sitemaps/[project]/route.ts
+    return [{ source: "/:project/sitemap.xml", destination: "/sitemaps/:project" }];
   },
 };
 
