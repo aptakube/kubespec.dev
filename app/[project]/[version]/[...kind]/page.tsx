@@ -90,7 +90,6 @@ async function KindDetails({ params }: Pick<PageProps<"/[project]/[version]/[...
   ]);
   const latest = project.versions[0].version;
   const lastChanged = lastChangedIn(found, changelog);
-  const topLevel = schema?.types[schema.root] ?? [];
   const url = `${SITE_URL}${urls(found).self}`;
   const listUrl = `${SITE_URL}${projectHref(project.slug, version.version, latest)}`;
 
@@ -177,9 +176,7 @@ async function KindDetails({ params }: Pick<PageProps<"/[project]/[version]/[...
               </p>
             )}
             <p className="mt-4 text-sm text-gray-500">
-              {topLevel.length} top-level {topLevel.length === 1 ? "field" : "fields"}
-              {topLevel.some((f) => f.required) && <>, {topLevel.filter((f) => f.required).length} required</>} ·{" "}
-              {lastChanged === found.introducedIn ? "unchanged since " : "last changed in "}
+              {lastChanged === found.introducedIn ? "Unchanged since " : "Last changed in "}
               <a href="#changelog" className="underline hover:text-gray-900">
                 {project.name} {lastChanged.version}
               </a>
