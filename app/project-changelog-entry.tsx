@@ -5,7 +5,6 @@ import { useState, useTransition } from "react";
 import type { KindRef, VersionChanges } from "@/lib/types";
 import { kindHref } from "@/lib/urls";
 import { ChangeCountsBadge } from "./change-counts";
-import { loadVersionChanges } from "./changelog-actions";
 
 type Props = {
   slug: string;
@@ -27,9 +26,10 @@ export function VersionEntry({ slug, tag, version, latestVersion, title, footer 
   const onToggle = (e: React.ToggleEvent<HTMLDetailsElement>) => {
     if (!e.currentTarget.open || loaded || loading) return;
     startLoading(async () => {
-      const result = await loadVersionChanges(slug, tag);
+      const query = new URLSearchParams({ project: slug, tag });
+      const result: VersionChanges | null = await fetch(`/api/version-changes?${query}`).then((r) => r.json());
       startLoading(() => {
-        setChanges(result);
+        setChanges(result ?? undefined);
         setLoaded(true);
       });
     });
@@ -66,34 +66,36 @@ type ChangesProps = { slug: string; version: string; latestVersion: string; chan
 // Kinds link to the version where they exist: removed ones to the version before, changed ones to their changelog
 function Changes({ slug, version, latestVersion, changes: { olderVersion, added, removed, moved, changed } }: ChangesProps) {
   const href = (v: string, apiVersion: string, kind: string, hash = "") => kindHref(slug, v, apiVersion, kind, latestVersion) + hash;
+  // older versions are noindex, so crawlers needn't follow links to them
+  const rel = (v: string) => (v === latestVersion ? undefined : "nofollow");
 
   return (
     <>
       {added.length > 0 && (
         <Group title={`${plural(added.length, "kind has", "kinds have")} been added`}>
           {added.map((k) => (
-            <KindLink key={key(k)} href={href(version, k.apiVersion, k.kind)} kind={k.kind} apiVersion={k.apiVersion} color="text-green-700" />
+            <KindLink key={key(k)} href={href(version, k.apiVersion, k.kind)} rel={rel(version)} kind={k.kind} apiVersion={k.apiVersion} color="text-green-700" />
           ))}
         </Group>
       )}
       {removed.length > 0 && (
         <Group title={`${plural(removed.length, "kind has", "kinds have")} been removed`}>
           {removed.map((k) => (
-            <KindLink key={key(k)} href={href(olderVersion, k.apiVersion, k.kind)} kind={k.kind} apiVersion={k.apiVersion} color="text-red-700" />
+            <KindLink key={key(k)} href={href(olderVersion, k.apiVersion, k.kind)} rel={rel(olderVersion)} kind={k.kind} apiVersion={k.apiVersion} color="text-red-700" />
           ))}
         </Group>
       )}
       {moved.length > 0 && (
         <Group title={`${plural(moved.length, "kind has", "kinds have")} moved to another apiVersion`}>
           {moved.map((m) => (
-            <KindLink key={`${m.from}/${m.kind}`} href={href(version, m.to, m.kind)} kind={m.kind} apiVersion={`${m.from} → ${m.to}`} color="text-yellow-600" />
+            <KindLink key={`${m.from}/${m.kind}`} href={href(version, m.to, m.kind)} rel={rel(version)} kind={m.kind} apiVersion={`${m.from} → ${m.to}`} color="text-yellow-600" />
           ))}
         </Group>
       )}
       {changed.length > 0 && (
         <Group title={`${plural(changed.length, "kind has", "kinds have")} changed`}>
           {changed.map((c) => (
-            <KindLink key={key(c)} href={href(version, c.apiVersion, c.kind, "#changelog")} kind={c.kind} apiVersion={c.apiVersion} color="text-yellow-600">
+            <KindLink key={key(c)} href={href(version, c.apiVersion, c.kind, "#changelog")} rel={rel(version)} kind={c.kind} apiVersion={c.apiVersion} color="text-yellow-600">
               <ChangeCountsBadge {...c} />
             </KindLink>
           ))}
@@ -103,12 +105,12 @@ function Changes({ slug, version, latestVersion, changes: { olderVersion, added,
   );
 }
 
-type KindLinkProps = { href: string; kind: string; apiVersion: string; color: string; children?: React.ReactNode };
+type KindLinkProps = { href: string; rel?: string; kind: string; apiVersion: string; color: string; children?: React.ReactNode };
 
-function KindLink({ href, kind, apiVersion, color, children }: KindLinkProps) {
+function KindLink({ href, rel, kind, apiVersion, color, children }: KindLinkProps) {
   return (
     <li>
-      <Link href={href} className="-mx-1 inline-flex items-baseline rounded px-1 hover:bg-gray-100">
+      <Link href={href} rel={rel} prefetch={false} className="-mx-1 inline-flex items-baseline rounded px-1 hover:bg-gray-100">
         <span className={`font-medium ${color}`}>{kind}</span>
         <span className="ml-1.5 font-mono text-xs text-gray-500">{apiVersion}</span>
         {children}

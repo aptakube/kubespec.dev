@@ -1,11 +1,11 @@
 import { cacheLife } from "next/cache";
 import { GITHUB_REPO } from "./urls";
 
-// The repo's star count, refreshed every few hours. Undefined when GitHub can't be reached,
-// so a failed lookup never breaks the page (or the build).
+// The repo's star count, refreshed on each deploy: a shorter cache life would make every page that shows it
+// render again when it expires. Undefined when GitHub can't be reached, so a failed lookup never breaks the page (or the build).
 export async function getStarCount(): Promise<number | undefined> {
   "use cache";
-  cacheLife({ revalidate: 6 * 60 * 60 });
+  cacheLife("max");
 
   try {
     const response = await fetch(`https://api.github.com/repos/${GITHUB_REPO}`, {

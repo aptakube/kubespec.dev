@@ -48,6 +48,7 @@ export function TopBar({ projects, versions, project, version, stars }: Props) {
           items={versions.map((v) => ({
             key: v.version,
             href: projectHref(project, v.version, latest),
+            rel: v.version === latest ? undefined : "nofollow",
             content: (
               <>
                 {v.version}

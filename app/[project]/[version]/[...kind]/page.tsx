@@ -57,6 +57,8 @@ export async function generateMetadata({ params }: PageProps<"/[project]/[versio
     title,
     description,
     alternates: { canonical },
+    // older versions aren't worth indexing, nor crawling the kinds they link to
+    ...(version !== project.versions[0] && { robots: { index: false, follow: false } }),
     openGraph: { type: "article", siteName: SITE_NAME, title, description, url: canonical, images: ogImages(self, title) },
     twitter: { card: "summary_large_image", title, description },
   };
@@ -222,6 +224,7 @@ async function KindDetails({ params }: Pick<PageProps<"/[project]/[version]/[...
               {related.map((k) => (
                 <li key={k.kind}>
                   <Link
+                    prefetch={false}
                     href={kindHref(project.slug, version.version, k.apiVersion, k.kind, latest)}
                     className="block rounded-md border border-gray-200 px-2.5 py-1 hover:border-gray-300 hover:bg-gray-50"
                   >

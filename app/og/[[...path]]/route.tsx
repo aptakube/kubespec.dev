@@ -1,6 +1,6 @@
 import { getProjectIndex, getProjectVersion, listProjectIndexes } from "@/lib/index";
 import { resolveKindRoute } from "@/lib/kind-route";
-import { HOME_PROJECT } from "@/lib/urls";
+import { CDN_MAX_AGE, HOME_PROJECT } from "@/lib/urls";
 import { ogImage } from "../../og-image";
 
 // Social preview images. The path mirrors the page's: /og is the home page, /og/{project} a project,
@@ -10,8 +10,8 @@ export async function GET(_request: Request, { params }: RouteContext<"/og/[[...
   const path = (await params).path ?? [];
   const image = await render(path);
   if (!image) return new Response("Not Found", { status: 404 });
-  // the content only changes with a new release
-  image.headers.set("Cache-Control", "public, max-age=86400, s-maxage=86400, stale-while-revalidate=604800");
+  // the content only changes with a new release, and a deploy purges the CDN cache anyway
+  image.headers.set("Cache-Control", `public, max-age=${CDN_MAX_AGE}`);
   return image;
 }
 

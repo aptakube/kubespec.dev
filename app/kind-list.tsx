@@ -120,6 +120,7 @@ export function KindList({ groups, project, version, latestVersion }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       {/* the link covers the whole card; version chips sit above it */}
                       <Link
+                        prefetch={false}
                         href={kindHref(project, version, k.apiVersions[0], k.kind, latestVersion)}
                         className="truncate font-medium after:absolute after:inset-0"
                       >
@@ -131,6 +132,7 @@ export function KindList({ groups, project, version, latestVersion }: Props) {
                       {k.apiVersions.map((apiVersion, i) => (
                         <Link
                           key={apiVersion}
+                          prefetch={false}
                           href={kindHref(project, version, apiVersion, k.kind, latestVersion)}
                           className={`relative rounded px-1.5 py-0.5 font-mono text-[11px] hover:bg-gray-200 ${i === 0 ? "bg-gray-100 text-gray-700" : "text-gray-400"}`}
                         >

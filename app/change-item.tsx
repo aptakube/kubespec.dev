@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { loadChangeDescription, type ChangeDescription } from "./changelog-actions";
+import type { ChangeDescription } from "@/lib/types";
 
 type Props = {
   slug: string;
@@ -24,7 +24,8 @@ export function ChangeItem({ slug, apiVersion, kind, tag, field, children }: Pro
     setOpen((o) => !o);
     if (!description && !loading) {
       startLoading(async () => {
-        const loaded = await loadChangeDescription(slug, apiVersion, kind, tag, field);
+        const query = new URLSearchParams({ project: slug, apiVersion, kind, tag, field });
+        const loaded: ChangeDescription = await fetch(`/api/change-description?${query}`).then((r) => r.json());
         startLoading(() => setDescription(loaded));
       });
     }

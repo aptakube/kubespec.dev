@@ -1,3 +1,5 @@
+import type { DiffPart } from "./word-diff";
+
 export type ProjectIndex = {
   name: string;
   slug: string;
@@ -79,3 +81,6 @@ export type KindChangelogFile = {
   versions: KindChangelog;
   texts: string[];
 };
+
+// A changed field's description, as a word diff when it changed (see app/api/change-description)
+export type ChangeDescription = { text?: string; diff?: DiffPart[] };

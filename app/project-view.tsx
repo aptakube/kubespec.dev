@@ -50,6 +50,8 @@ export function projectMetadata(project: ProjectIndex, version: ProjectVersion):
     title,
     description,
     alternates: { canonical },
+    // older versions aren't worth indexing, nor crawling the kinds they link to
+    ...(version !== project.versions[0] && { robots: { index: false, follow: false } }),
     openGraph: { type: "website", siteName: SITE_NAME, title, description, url: canonical, images: ogImages(canonical, title) },
     twitter: { card: "summary_large_image", title, description },
   };

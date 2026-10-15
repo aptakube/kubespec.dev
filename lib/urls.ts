@@ -17,4 +17,7 @@ export function kindHref(project: string, version: string, apiVersion: string, k
 
 export const SITE_URL = "https://kubespec.dev";
 
+// 30 days, how long the CDN keeps responses that only change with a deploy (which purges them anyway)
+export const CDN_MAX_AGE = 30 * 24 * 60 * 60;
+
 export const GITHUB_REPO = "aptakube/kubespec.dev";

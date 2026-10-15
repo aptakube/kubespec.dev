@@ -9,6 +9,7 @@ export type DropdownItem = {
   href: string;
   content: ReactNode;
   selected?: boolean;
+  rel?: string;
   // matched against the search query, when the dropdown is searchable
   searchText?: string;
 };
@@ -120,6 +121,8 @@ export function Dropdown({ label, value, items, searchable }: Props) {
               <li key={item.key}>
                 <Link
                   href={item.href}
+                  rel={item.rel}
+                  prefetch={false}
                   aria-current={item.selected ? "page" : undefined}
                   onClick={close}
                   className="flex items-center gap-2 whitespace-nowrap rounded px-2.5 py-1.5 outline-none hover:bg-gray-100 focus-visible:bg-gray-100 aria-[current=page]:bg-gray-100 aria-[current=page]:font-medium"

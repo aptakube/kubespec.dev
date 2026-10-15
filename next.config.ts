@@ -3,7 +3,9 @@ import { HOME_PROJECT } from "./lib/urls.ts";
 
 const nextConfig: NextConfig = {
   cacheComponents: true,
-  partialPrefetching: true,
+  // Off to keep ISR writes down: it caches each page's prefetch data as separate segments.
+  // It becomes the default in the next major, so revisit then.
+  partialPrefetching: false,
   outputFileTracingIncludes: {
     // read at startup by lib/index.ts
     "/**": ["./index/*/versions.json"],
@@ -13,6 +15,9 @@ const nextConfig: NextConfig = {
     "/\\[project\\]": ["./index/*/changelog/**/*.json"],
     "/\\[project\\]/\\[version\\]": ["./index/*/changelog/**/*.json"],
     "/sitemaps/\\[project\\]": ["./index/*/changelog/**/*.json"],
+    // read by the changelog endpoints, called when a change or a version is expanded
+    "/api/change-description": ["./index/*/changelog/**/*.json"],
+    "/api/version-changes": ["./index/*/changelog/**/*.json"],
     // and the examples and links of each kind, read by getKindMetadata
     "/\\[project\\]/\\[version\\]/\\[\\.\\.\\.kind\\]": ["./index/*/changelog/**/*.json", "./index/*/examples/**/*.md", "./index/*/links/**/*.json"],
   },

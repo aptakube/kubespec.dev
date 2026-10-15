@@ -87,7 +87,7 @@ export function KindChangelogSection({ project, version, apiVersion, kind, chang
                   )}
                   <p className="text-xs text-gray-500">
                     Released <LocalDate date={row.version.date} /> ·{" "}
-                    <Link href={href(row.version)} className="underline hover:text-gray-900">
+                    <Link href={href(row.version)} rel={row.version.version === latest ? undefined : "nofollow"} prefetch={false} className="underline hover:text-gray-900">
                       View {kind} in {row.version.version}
                     </Link>
                   </p>
