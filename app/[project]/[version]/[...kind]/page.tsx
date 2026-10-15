@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import { notFound, permanentRedirect } from "next/navigation";
-import { getKindChangelog, getProjectIndex } from "@/lib/index";
+import { getKindChangelog, listProjectIndexes } from "@/lib/index";
 import { lastChangedIn, resolveKindRoute, type KindRoute } from "@/lib/kind-route";
 import { getKindSchema, type KindSchema } from "@/lib/kind-schema";
 import { groupOf, resolveKinds, versionRank } from "@/lib/kinds";
 import { getKindMetadata } from "@/lib/metadata";
 import { NOT_FOUND_METADATA, SITE_NAME, firstSentence, ogImages, truncate } from "@/lib/seo";
-import { HOME_PROJECT, SITE_URL, kindHref, projectHref } from "@/lib/urls";
+import { SITE_URL, kindHref, projectHref } from "@/lib/urls";
 import { FieldTree } from "../../../field-tree";
 import { JsonLd } from "../../../json-ld";
 import { KindChangelogSection } from "../../../kind-changelog";
@@ -19,16 +19,18 @@ import { ProjectTopBar } from "../../../project-view";
 // wait for the complete page instead of streaming a shell, so notFound() returns a real 404
 export const ensureStatic = "navigation";
 
-// Too many kinds to prerender: each page renders on its first visit and is cached from then on.
-// Cache Components requires at least one prerendered path, so the build renders the first kind
-// of the home project's latest version.
+// Every kind of each project's latest version is prerendered: those are the pages in the sitemap and most of the traffic.
+// Older versions have too many kinds to prerender, so each renders on its first visit and is cached from then on.
 export function generateStaticParams() {
-  const project = getProjectIndex(HOME_PROJECT)!;
-  const latest = project.versions[0];
-  const kind = resolveKinds(project.versions).get(latest.tag)![0];
-  // the latest version has no version segment, so the URL's segments shift left by one
-  const [first, ...rest] = [...kind.apiVersion.split("/"), kind.kind];
-  return [{ project: project.slug, version: first, kind: rest }];
+  return listProjectIndexes().flatMap((project) =>
+    resolveKinds(project.versions)
+      .get(project.versions[0].tag)!
+      .map((kind) => {
+        // the latest version has no version segment, so the URL's segments shift left by one
+        const [first, ...rest] = [...kind.apiVersion.split("/"), kind.kind];
+        return { project: project.slug, version: first, kind: rest };
+      }),
+  );
 }
 
 // the page's own URL; older versions of a kind that still exists point search engines at the latest one
