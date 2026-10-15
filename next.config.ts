@@ -3,9 +3,7 @@ import { HOME_PROJECT } from "./lib/urls.ts";
 
 const nextConfig: NextConfig = {
   cacheComponents: true,
-  // Off to keep ISR writes down: it caches each page's prefetch data as separate segments.
-  // It becomes the default in the next major, so revisit then.
-  partialPrefetching: false,
+  partialPrefetching: true,
   outputFileTracingIncludes: {
     // read at startup by lib/index.ts
     "/**": ["./index/*/versions.json"],
