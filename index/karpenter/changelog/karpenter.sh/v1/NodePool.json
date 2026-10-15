@@ -1,13 +1,37 @@
 {
   "versions": {
+    "v1.15.0": {
+      "descriptionChanged": [
+        "spec.disruption.budgets.reasons",
+        "spec.disruption.consolidateAfter",
+        "spec.disruption.consolidationPolicy"
+      ],
+      "optional": [
+        "spec.disruption.consolidateAfter"
+      ],
+      "descriptions": {
+        "spec.disruption.budgets.reasons": [
+          0,
+          1
+        ],
+        "spec.disruption.consolidateAfter": [
+          2,
+          3
+        ],
+        "spec.disruption.consolidationPolicy": [
+          4,
+          5
+        ]
+      }
+    },
     "v1.14.0": {
       "descriptionChanged": [
         "spec.disruption.consolidationPolicy"
       ],
       "descriptions": {
         "spec.disruption.consolidationPolicy": [
-          0,
-          1
+          6,
+          4
         ]
       }
     },
@@ -21,24 +45,24 @@
       ],
       "descriptions": {
         "spec.disruption.budgets.reasons": [
-          2,
-          3
+          7,
+          0
         ],
         "spec.template.metadata.annotations": [
-          4,
-          5
-        ],
-        "spec.template.metadata.labels": [
-          6,
-          7
-        ],
-        "spec.template.spec.startupTaints": [
           8,
           9
         ],
-        "spec.template.spec.taints": [
+        "spec.template.metadata.labels": [
           10,
           11
+        ],
+        "spec.template.spec.startupTaints": [
+          12,
+          13
+        ],
+        "spec.template.spec.taints": [
+          14,
+          15
         ]
       }
     },
@@ -49,12 +73,12 @@
       ],
       "descriptions": {
         "spec.template.spec.requirements.operator": [
-          12,
-          13
+          16,
+          17
         ],
         "spec.template.spec.requirements.values": [
-          14,
-          15
+          18,
+          19
         ]
       }
     },
@@ -71,28 +95,28 @@
       },
       "descriptions": {
         "spec.disruption.consolidateAfter": [
-          16,
-          17
+          20,
+          2
         ],
         "spec.disruption.consolidationPolicy": [
-          18,
-          0
+          21,
+          6
         ],
         "spec.limits": [
-          19,
-          20
-        ],
-        "spec.replicas": [
-          null,
-          21
-        ],
-        "spec.weight": [
           22,
           23
         ],
-        "status.nodes": [
+        "spec.replicas": [
           null,
           24
+        ],
+        "spec.weight": [
+          25,
+          26
+        ],
+        "status.nodes": [
+          null,
+          27
         ]
       }
     },
@@ -103,12 +127,12 @@
       ],
       "descriptions": {
         "spec.template.spec.startupTaints.timeAdded": [
-          25,
-          26
+          28,
+          29
         ],
         "spec.template.spec.taints.timeAdded": [
-          25,
-          26
+          28,
+          29
         ]
       }
     },
@@ -119,7 +143,7 @@
       "descriptions": {
         "status.nodeClassObservedGeneration": [
           null,
-          27
+          30
         ]
       }
     },
@@ -130,12 +154,12 @@
       ],
       "descriptions": {
         "spec.template.spec.terminationGracePeriod": [
-          28,
-          29
+          31,
+          32
         ],
         "status.conditions.type": [
-          30,
-          31
+          33,
+          34
         ]
       }
     },
@@ -147,16 +171,16 @@
       ],
       "descriptions": {
         "spec.disruption.consolidationPolicy": [
-          32,
-          18
+          35,
+          21
         ],
         "spec.template.spec.terminationGracePeriod": [
-          29,
-          28
+          32,
+          31
         ],
         "status.conditions.type": [
-          31,
-          30
+          34,
+          33
         ]
       }
     },
@@ -167,12 +191,12 @@
       ],
       "descriptions": {
         "spec.template.spec.terminationGracePeriod": [
-          28,
-          29
+          31,
+          32
         ],
         "status.conditions.type": [
-          30,
-          31
+          33,
+          34
         ]
       }
     },
@@ -183,12 +207,12 @@
       ],
       "descriptions": {
         "spec.template.spec.terminationGracePeriod": [
-          28,
-          29
+          31,
+          32
         ],
         "status.conditions.type": [
-          30,
-          31
+          33,
+          34
         ]
       }
     },
@@ -199,12 +223,12 @@
       ],
       "descriptions": {
         "spec.template.spec.terminationGracePeriod": [
-          28,
-          29
+          31,
+          32
         ],
         "status.conditions.type": [
-          30,
-          31
+          33,
+          34
         ]
       }
     },
@@ -215,12 +239,12 @@
       ],
       "descriptions": {
         "spec.template.spec.terminationGracePeriod": [
-          28,
-          29
+          31,
+          32
         ],
         "status.conditions.type": [
-          30,
-          31
+          33,
+          34
         ]
       }
     },
@@ -231,21 +255,25 @@
       ],
       "descriptions": {
         "spec.template.spec.terminationGracePeriod": [
-          28,
-          29
+          31,
+          32
         ],
         "status.conditions.type": [
-          30,
-          31
+          33,
+          34
         ]
       }
     }
   },
   "texts": [
-    "ConsolidationPolicy describes which nodes Karpenter can disrupt through its consolidation\nalgorithm. This policy defaults to \"WhenEmptyOrUnderutilized\" if not specified\nWhen replicas is set, ConsolidationPolicy is simply ignored",
-    "ConsolidationPolicy describes which nodes Karpenter can disrupt through its consolidation\nalgorithm. This policy defaults to \"WhenEmptyOrUnderutilized\" if not specified.\nValid values: \"WhenEmpty\", \"WhenEmptyOrUnderutilized\", \"Balanced\".\nWhen replicas is set, ConsolidationPolicy is simply ignored.",
-    "Reasons is a list of disruption methods that this budget applies to. If Reasons is not set, this budget applies to all methods.\nOtherwise, this will apply to each reason defined.\nallowed reasons are Underutilized, Empty, and Drifted.",
     "reasons is a list of disruption methods that this budget applies to. If Reasons is not set, this budget applies to all methods.\nOtherwise, this will apply to each reason defined.\nallowed reasons are Underutilized, Empty, and Drifted.",
+    "reasons is a list of disruption methods that this budget applies to. If Reasons is not set, this budget applies to all methods.\nOtherwise, this will apply to each reason defined.\nallowed reasons are Underutilized, Empty, Drifted, and Unhealthy.",
+    "ConsolidateAfter is the duration the controller will wait\nbefore attempting to terminate nodes that are underutilized.\nRefer to ConsolidationPolicy for how underutilization is considered.\nWhen replicas is set, ConsolidateAfter is simply ignored",
+    "ConsolidateAfter is the duration the controller will wait\nbefore attempting to terminate nodes that are underutilized.\nRefer to ConsolidationPolicy for how underutilization is considered.\nWhen replicas is set, ConsolidateAfter is simply ignored.",
+    "ConsolidationPolicy describes which nodes Karpenter can disrupt through its consolidation\nalgorithm. This policy defaults to \"WhenEmptyOrUnderutilized\" if not specified.\nValid values: \"WhenEmpty\", \"WhenEmptyOrUnderutilized\", \"Balanced\".\nWhen replicas is set, ConsolidationPolicy is simply ignored.",
+    "ConsolidationPolicy describes which nodes Karpenter can disrupt through its consolidation\nalgorithm.\nValid values: \"WhenEmpty\", \"WhenEmptyOrUnderutilized\", \"Balanced\".\nWhen replicas is set, ConsolidationPolicy is simply ignored.",
+    "ConsolidationPolicy describes which nodes Karpenter can disrupt through its consolidation\nalgorithm. This policy defaults to \"WhenEmptyOrUnderutilized\" if not specified\nWhen replicas is set, ConsolidationPolicy is simply ignored",
+    "Reasons is a list of disruption methods that this budget applies to. If Reasons is not set, this budget applies to all methods.\nOtherwise, this will apply to each reason defined.\nallowed reasons are Underutilized, Empty, and Drifted.",
     "Annotations is an unstructured key value map stored with a resource that may be\nset by external tools to store and retrieve arbitrary metadata. They are not\nqueryable and should be preserved when modifying objects.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations",
     "annotations is an unstructured key value map stored with a resource that may be\nset by external tools to store and retrieve arbitrary metadata. They are not\nqueryable and should be preserved when modifying objects.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations",
     "Map of string keys and values that can be used to organize and categorize\n(scope and select) objects. May match selectors of replication controllers\nand services.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels",
@@ -259,7 +287,6 @@
     "An array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. If the operator is Gt or Lt, the values\narray must have a single element, which will be interpreted as an integer.\nThis array is replaced during a strategic merge patch.",
     "An array of string values. If the operator is In or NotIn,\nthe values array must be non-empty. If the operator is Exists or DoesNotExist,\nthe values array must be empty. If the operator is Gt, Lt, Gte, or Lte, the values\narray must have a single element, which will be interpreted as an integer.\nThis array is replaced during a strategic merge patch.",
     "ConsolidateAfter is the duration the controller will wait\nbefore attempting to terminate nodes that are underutilized.\nRefer to ConsolidationPolicy for how underutilization is considered.",
-    "ConsolidateAfter is the duration the controller will wait\nbefore attempting to terminate nodes that are underutilized.\nRefer to ConsolidationPolicy for how underutilization is considered.\nWhen replicas is set, ConsolidateAfter is simply ignored",
     "ConsolidationPolicy describes which nodes Karpenter can disrupt through its consolidation\nalgorithm. This policy defaults to \"WhenEmptyOrUnderutilized\" if not specified",
     "Limits define a set of bounds for provisioning capacity.",
     "Limits define a set of bounds for provisioning capacity.\nLimits other than limits.nodes is not supported when replicas is set.",
