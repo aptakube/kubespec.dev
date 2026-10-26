@@ -1,5 +1,37 @@
 {
   "versions": {
+    "v2.14.0": {
+      "optional": [
+        "spec.generator.githubAccessTokenSpec.appID",
+        "spec.generator.githubAccessTokenSpec.installID"
+      ],
+      "descriptionChanged": [
+        "spec.generator.githubAccessTokenSpec.appID",
+        "spec.generator.githubAccessTokenSpec.installID"
+      ],
+      "added": {
+        "spec.generator.githubAccessTokenSpec.appIDRef": "object",
+        "spec.generator.githubAccessTokenSpec.installIDRef": "object"
+      },
+      "descriptions": {
+        "spec.generator.githubAccessTokenSpec.appID": [
+          null,
+          0
+        ],
+        "spec.generator.githubAccessTokenSpec.appIDRef": [
+          null,
+          1
+        ],
+        "spec.generator.githubAccessTokenSpec.installID": [
+          null,
+          2
+        ],
+        "spec.generator.githubAccessTokenSpec.installIDRef": [
+          null,
+          3
+        ]
+      }
+    },
     "v2.12.0": {
       "added": {
         "spec.generator.passwordSpec.prefix": "string",
@@ -8,11 +40,11 @@
       "descriptions": {
         "spec.generator.passwordSpec.prefix": [
           null,
-          0
+          4
         ],
         "spec.generator.passwordSpec.suffix": [
           null,
-          1
+          5
         ]
       }
     },
@@ -33,52 +65,52 @@
       ],
       "descriptions": {
         "spec.generator.acrAccessTokenSpec.auth.workloadIdentity.serviceAccountRef.audiences": [
-          2,
-          3
+          6,
+          7
         ],
         "spec.generator.cloudsmithAccessTokenSpec.serviceAccountRef.audiences": [
-          2,
-          3
+          6,
+          7
         ],
         "spec.generator.ecrAuthorizationTokenSpec.auth.jwt.serviceAccountRef.audiences": [
-          2,
-          3
+          6,
+          7
         ],
         "spec.generator.gcrAccessTokenSpec.auth.workloadIdentity.serviceAccountRef.audiences": [
-          2,
-          3
+          6,
+          7
         ],
         "spec.generator.gcrAccessTokenSpec.auth.workloadIdentityFederation.serviceAccountRef.audiences": [
-          2,
-          3
+          6,
+          7
         ],
         "spec.generator.quayAccessTokenSpec.serviceAccountRef.audiences": [
-          2,
-          3
+          6,
+          7
         ],
         "spec.generator.stsSessionTokenSpec.auth.jwt.serviceAccountRef.audiences": [
-          2,
-          3
+          6,
+          7
         ],
         "spec.generator.vaultDynamicSecretSpec.provider.auth.gcp.serviceAccountRef.audiences": [
-          2,
-          3
+          6,
+          7
         ],
         "spec.generator.vaultDynamicSecretSpec.provider.auth.gcp.workloadIdentity.serviceAccountRef.audiences": [
-          2,
-          3
+          6,
+          7
         ],
         "spec.generator.vaultDynamicSecretSpec.provider.auth.iam.jwt.serviceAccountRef.audiences": [
-          2,
-          3
+          6,
+          7
         ],
         "spec.generator.vaultDynamicSecretSpec.provider.auth.jwt.kubernetesServiceAccountToken.serviceAccountRef.audiences": [
-          2,
-          3
+          6,
+          7
         ],
         "spec.generator.vaultDynamicSecretSpec.provider.auth.kubernetes.serviceAccountRef.audiences": [
-          2,
-          3
+          6,
+          7
         ]
       }
     },
@@ -90,11 +122,11 @@
       "descriptions": {
         "spec.generator.gitlabDeployTokenSpec": [
           null,
-          4
+          8
         ],
         "spec.generator.grafanaSpec.serviceAccount.secondsToLive": [
           null,
-          5
+          9
         ]
       }
     },
@@ -105,7 +137,7 @@
       "descriptions": {
         "spec.generator.beyondtrustWorkloadCredentialsDynamicSecretSpec": [
           null,
-          6
+          10
         ]
       }
     },
@@ -116,7 +148,7 @@
       "descriptions": {
         "spec.generator.gcrAccessTokenSpec.auth.workloadIdentityFederation.gcpServiceAccountEmail": [
           null,
-          7
+          11
         ]
       }
     },
@@ -127,7 +159,7 @@
       "descriptions": {
         "spec.generator.vaultDynamicSecretSpec.getParameters": [
           null,
-          8
+          12
         ]
       }
     },
@@ -138,7 +170,7 @@
       "descriptions": {
         "spec.generator.vaultDynamicSecretSpec.provider.auth.cert.vaultRole": [
           null,
-          9
+          13
         ]
       }
     },
@@ -149,12 +181,12 @@
       ],
       "descriptions": {
         "spec.generator.vaultDynamicSecretSpec.provider.auth.jwt.kubernetesServiceAccountToken.audiences": [
-          10,
-          11
+          14,
+          15
         ],
         "spec.generator.vaultDynamicSecretSpec.provider.auth.jwt.kubernetesServiceAccountToken.expirationSeconds": [
-          12,
-          13
+          16,
+          17
         ]
       }
     },
@@ -165,7 +197,7 @@
       "descriptions": {
         "spec.generator.passwordSpec.secretKeys": [
           null,
-          14
+          18
         ]
       }
     },
@@ -179,16 +211,16 @@
       },
       "descriptions": {
         "spec.generator.sshKeySpec.keySize": [
-          15,
-          16
+          19,
+          20
         ],
         "spec.generator.sshKeySpec.keyType": [
-          17,
-          18
+          21,
+          22
         ],
         "spec.generator.vaultDynamicSecretSpec.provider.auth.gcp": [
           null,
-          19
+          23
         ]
       }
     },
@@ -226,107 +258,107 @@
       "descriptions": {
         "spec": [
           null,
-          20
+          24
         ],
         "spec.generator.acrAccessTokenSpec.auth": [
           null,
-          21
+          25
         ],
         "spec.generator.acrAccessTokenSpec.auth.servicePrincipal.secretRef": [
-          22,
-          23
+          26,
+          27
         ],
         "spec.generator.acrAccessTokenSpec.environmentType": [
-          24,
-          25
+          28,
+          29
         ],
         "spec.generator.cloudsmithAccessTokenSpec": [
           null,
-          26
+          30
         ],
         "spec.generator.ecrAuthorizationTokenSpec": [
           null,
-          27
+          31
         ],
         "spec.generator.ecrAuthorizationTokenSpec.auth.jwt": [
-          28,
-          29
+          32,
+          33
         ],
         "spec.generator.ecrAuthorizationTokenSpec.auth.jwt.serviceAccountRef": [
-          30,
-          31
+          34,
+          35
         ],
         "spec.generator.gcrAccessTokenSpec": [
           null,
-          32
+          36
         ],
         "spec.generator.gcrAccessTokenSpec.auth.secretRef": [
           null,
-          33
+          37
         ],
         "spec.generator.gcrAccessTokenSpec.auth.workloadIdentity": [
           null,
-          34
+          38
         ],
         "spec.generator.gcrAccessTokenSpec.auth.workloadIdentity.serviceAccountRef": [
-          30,
-          31
+          34,
+          35
         ],
         "spec.generator.githubAccessTokenSpec": [
           null,
-          35
+          39
         ],
         "spec.generator.githubAccessTokenSpec.auth.privateKey": [
           null,
-          36
+          40
         ],
         "spec.generator.githubAccessTokenSpec.auth.privateKey.secretRef": [
-          37,
-          38
+          41,
+          42
         ],
         "spec.generator.githubAccessTokenSpec.url": [
-          39,
-          40
+          43,
+          44
         ],
         "spec.generator.passwordSpec.encoding": [
           null,
-          41
+          45
         ],
         "spec.generator.quayAccessTokenSpec": [
           null,
-          42
+          46
         ],
         "spec.generator.stsSessionTokenSpec": [
           null,
-          43
+          47
         ],
         "spec.generator.stsSessionTokenSpec.auth.jwt": [
-          28,
-          29
+          32,
+          33
         ],
         "spec.generator.stsSessionTokenSpec.auth.jwt.serviceAccountRef": [
-          30,
-          31
+          34,
+          35
         ],
         "spec.generator.vaultDynamicSecretSpec": [
           null,
-          44
+          48
         ],
         "spec.generator.vaultDynamicSecretSpec.provider.auth.iam.jwt.serviceAccountRef": [
-          30,
-          31
+          34,
+          35
         ],
         "spec.generator.vaultDynamicSecretSpec.resultType": [
-          45,
-          46
+          49,
+          50
         ],
         "spec.generator.webhookSpec.auth.ntlm.passwordSecret": [
-          37,
-          38
+          41,
+          42
         ],
         "spec.generator.webhookSpec.auth.ntlm.usernameSecret": [
-          37,
-          38
+          41,
+          42
         ]
       }
     },
@@ -337,7 +369,7 @@
       "descriptions": {
         "spec.generator.vaultDynamicSecretSpec.provider.auth.cert.path": [
           null,
-          47
+          51
         ]
       }
     },
@@ -350,11 +382,11 @@
       "descriptions": {
         "spec.generator.gcrAccessTokenSpec.auth.workloadIdentityFederation": [
           null,
-          48
+          52
         ],
         "spec.generator.vaultDynamicSecretSpec.provider.checkAndSet": [
           null,
-          49
+          53
         ]
       }
     },
@@ -365,7 +397,7 @@
       "descriptions": {
         "spec.generator.sshKeySpec": [
           null,
-          50
+          54
         ]
       }
     },
@@ -379,10 +411,10 @@
       "descriptions": {
         "spec.generator.mfaSpec": [
           null,
-          51
+          55
         ],
         "spec.generator.stsSessionTokenSpec.requestParameters.sessionDuration": [
-          52,
+          56,
           null
         ]
       }
@@ -394,7 +426,7 @@
       "descriptions": {
         "spec.generator.webhookSpec.auth": [
           null,
-          53
+          57
         ]
       }
     },
@@ -408,11 +440,11 @@
       "descriptions": {
         "spec.generator.grafanaSpec.auth.basic": [
           null,
-          54
+          58
         ],
         "spec.generator.grafanaSpec.auth.token": [
           null,
-          55
+          59
         ]
       }
     },
@@ -423,7 +455,7 @@
       "descriptions": {
         "spec.generator.vaultDynamicSecretSpec.provider.auth": [
           null,
-          56
+          60
         ]
       }
     },
@@ -435,16 +467,16 @@
       ],
       "descriptions": {
         "spec.generator.vaultDynamicSecretSpec.provider.auth.ldap.username": [
-          57,
-          58
-        ],
-        "spec.generator.vaultDynamicSecretSpec.provider.auth.userPass.path": [
-          59,
-          60
-        ],
-        "spec.generator.vaultDynamicSecretSpec.provider.auth.userPass.username": [
           61,
           62
+        ],
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.userPass.path": [
+          63,
+          64
+        ],
+        "spec.generator.vaultDynamicSecretSpec.provider.auth.userPass.username": [
+          65,
+          66
         ]
       }
     },
@@ -454,8 +486,8 @@
       ],
       "descriptions": {
         "spec.generator.vaultDynamicSecretSpec.resultType": [
-          63,
-          45
+          67,
+          49
         ]
       }
     },
@@ -466,7 +498,7 @@
       "descriptions": {
         "spec.generator.grafanaSpec": [
           null,
-          64
+          68
         ]
       }
     },
@@ -478,7 +510,7 @@
       "descriptions": {
         "spec.generator.vaultDynamicSecretSpec.allowEmptyResponse": [
           null,
-          65
+          69
         ]
       }
     },
@@ -492,6 +524,10 @@
     }
   },
   "texts": [
+    "AppID is the GitHub App ID. Exactly one of AppID or AppIDRef must be set.",
+    "AppIDRef references a secret key containing the GitHub App ID. Exactly one of AppID or AppIDRef must be set.",
+    "InstallID is the GitHub App installation ID. Exactly one of InstallID or InstallIDRef must be set.",
+    "InstallIDRef references a secret key containing the GitHub App installation ID. Exactly one of InstallID or\nInstallIDRef must be set.",
     "Prefix is prepended to every generated password after encoding.\nIt is not counted in length or subject to the character settings.",
     "Suffix is appended to every generated password after encoding.\nIt is not counted in length or subject to the character settings.",
     "Audience specifies the `aud` claim for the service account token\nIf the service account uses a well-known annotation for e.g. IRSA or GCP Workload Identity\nthen this audiences will be appended to the list",

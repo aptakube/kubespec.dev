@@ -1,5 +1,16 @@
 {
   "versions": {
+    "v1.21.3": {
+      "added": {
+        "status.acme.ari.certID": "string"
+      },
+      "descriptions": {
+        "status.acme.ari.certID": [
+          null,
+          0
+        ]
+      }
+    },
     "v1.21.0": {
       "descriptionChanged": [
         "spec.keystores.pkcs12.profile"
@@ -10,16 +21,16 @@
       },
       "descriptions": {
         "spec.keystores.pkcs12.profile": [
-          0,
-          1
+          1,
+          2
         ],
         "spec.renewal": [
           null,
-          2
+          3
         ],
         "status.acme": [
           null,
-          3
+          4
         ]
       }
     },
@@ -29,8 +40,8 @@
       ],
       "descriptions": {
         "spec.privateKey.rotationPolicy": [
-          4,
-          5
+          5,
+          6
         ]
       }
     },
@@ -41,12 +52,12 @@
       ],
       "descriptions": {
         "spec.issuerRef.group": [
-          6,
-          7
+          7,
+          8
         ],
         "spec.issuerRef.kind": [
-          8,
-          9
+          9,
+          10
         ]
       }
     },
@@ -58,16 +69,16 @@
       ],
       "descriptions": {
         "spec.issuerRef.group": [
-          10,
-          6
+          11,
+          7
         ],
         "spec.issuerRef.kind": [
-          11,
-          8
+          12,
+          9
         ],
         "spec.issuerRef.name": [
-          12,
-          13
+          13,
+          14
         ]
       }
     },
@@ -83,24 +94,24 @@
       },
       "descriptions": {
         "spec.additionalOutputFormats": [
-          14,
-          15
+          15,
+          16
         ],
         "spec.keystores.pkcs12.profile": [
-          16,
-          0
+          17,
+          1
         ],
         "spec.privateKey.rotationPolicy": [
-          17,
-          4
+          18,
+          5
         ],
         "spec.revisionHistoryLimit": [
-          18,
-          19
+          19,
+          20
         ],
         "spec.signatureAlgorithm": [
           null,
-          20
+          21
         ]
       }
     },
@@ -121,28 +132,28 @@
       ],
       "descriptions": {
         "spec.keystores.jks.create": [
-          21,
-          22
+          22,
+          23
         ],
         "spec.keystores.jks.password": [
           null,
-          23
+          24
         ],
         "spec.keystores.jks.passwordSecretRef": [
-          24,
-          25
+          25,
+          26
         ],
         "spec.keystores.pkcs12.create": [
-          26,
-          27
+          27,
+          28
         ],
         "spec.keystores.pkcs12.password": [
           null,
-          28
+          29
         ],
         "spec.keystores.pkcs12.passwordSecretRef": [
-          29,
-          30
+          30,
+          31
         ]
       }
     },
@@ -174,88 +185,88 @@
       "description": true,
       "descriptions": {
         "spec.additionalOutputFormats": [
-          31,
-          14
+          32,
+          15
         ],
         "spec.commonName": [
-          32,
-          33
+          33,
+          34
         ],
         "spec.duration": [
-          34,
-          35
+          35,
+          36
         ],
         "spec.encodeUsagesInRequest": [
-          36,
-          37
+          37,
+          38
         ],
         "spec.isCA": [
-          38,
-          39
+          39,
+          40
         ],
         "spec.issuerRef": [
-          40,
-          41
+          41,
+          42
         ],
         "spec.keystores.pkcs12.profile": [
-          42,
-          16
-        ],
-        "spec.literalSubject": [
           43,
-          44
-        ],
-        "spec.nameConstraints": [
-          45,
-          46
-        ],
-        "spec.privateKey.algorithm": [
-          47,
-          48
-        ],
-        "spec.privateKey.encoding": [
-          49,
-          50
-        ],
-        "spec.privateKey.rotationPolicy": [
-          51,
           17
         ],
-        "spec.privateKey.size": [
+        "spec.literalSubject": [
+          44,
+          45
+        ],
+        "spec.nameConstraints": [
+          46,
+          47
+        ],
+        "spec.privateKey.algorithm": [
+          48,
+          49
+        ],
+        "spec.privateKey.encoding": [
+          50,
+          51
+        ],
+        "spec.privateKey.rotationPolicy": [
           52,
-          53
+          18
+        ],
+        "spec.privateKey.size": [
+          53,
+          54
         ],
         "spec.renewBefore": [
-          54,
-          55
+          55,
+          56
         ],
         "spec.renewBeforePercentage": [
           null,
-          56
+          57
         ],
         "spec.revisionHistoryLimit": [
-          57,
-          18
+          58,
+          19
         ],
         "spec.subject": [
-          58,
-          59
+          59,
+          60
         ],
         "spec.usages": [
-          60,
-          61
+          61,
+          62
         ],
         "status.lastFailureTime": [
-          62,
-          63
+          63,
+          64
         ],
         "status.revision": [
-          64,
-          65
+          65,
+          66
         ],
         "": [
-          66,
-          67
+          67,
+          68
         ]
       }
     },
@@ -321,224 +332,224 @@
       "description": true,
       "descriptions": {
         "apiVersion": [
-          68,
-          69
+          69,
+          70
         ],
         "kind": [
-          70,
-          71
+          71,
+          72
         ],
         "spec": [
-          72,
-          73
+          73,
+          74
         ],
         "spec.additionalOutputFormats": [
-          74,
-          31
-        ],
-        "spec.additionalOutputFormats.type": [
           75,
-          76
-        ],
-        "spec.commonName": [
-          77,
           32
         ],
-        "spec.duration": [
+        "spec.additionalOutputFormats.type": [
+          76,
+          77
+        ],
+        "spec.commonName": [
           78,
-          34
+          33
+        ],
+        "spec.duration": [
+          79,
+          35
         ],
         "spec.encodeUsagesInRequest": [
-          79,
-          36
+          80,
+          37
         ],
         "spec.isCA": [
-          80,
-          38
+          81,
+          39
         ],
         "spec.issuerRef": [
-          81,
-          40
+          82,
+          41
         ],
         "spec.keystores.jks": [
-          82,
-          83
+          83,
+          84
         ],
         "spec.keystores.jks.alias": [
           null,
-          84
+          85
         ],
         "spec.keystores.jks.create": [
-          85,
-          21
+          86,
+          22
         ],
         "spec.keystores.jks.passwordSecretRef": [
-          86,
-          24
+          87,
+          25
         ],
         "spec.keystores.jks.passwordSecretRef.key": [
-          87,
-          88
+          88,
+          89
         ],
         "spec.keystores.jks.passwordSecretRef.name": [
-          89,
-          90
+          90,
+          91
         ],
         "spec.keystores.pkcs12": [
-          91,
-          92
+          92,
+          93
         ],
         "spec.keystores.pkcs12.create": [
-          93,
-          26
+          94,
+          27
         ],
         "spec.keystores.pkcs12.passwordSecretRef": [
-          94,
-          29
+          95,
+          30
         ],
         "spec.keystores.pkcs12.passwordSecretRef.key": [
-          87,
-          88
+          88,
+          89
         ],
         "spec.keystores.pkcs12.passwordSecretRef.name": [
-          89,
-          90
+          90,
+          91
         ],
         "spec.keystores.pkcs12.profile": [
-          95,
-          42
-        ],
-        "spec.literalSubject": [
           96,
           43
         ],
-        "spec.nameConstraints": [
+        "spec.literalSubject": [
           97,
-          45
+          44
+        ],
+        "spec.nameConstraints": [
+          98,
+          46
         ],
         "spec.nameConstraints.excluded": [
-          98,
-          99
+          99,
+          100
         ],
         "spec.nameConstraints.excluded.ipRanges": [
-          100,
-          101
+          101,
+          102
         ],
         "spec.nameConstraints.permitted.ipRanges": [
-          100,
-          101
+          101,
+          102
         ],
         "spec.otherNames": [
-          102,
-          103
+          103,
+          104
         ],
         "spec.otherNames.oid": [
-          104,
-          105
+          105,
+          106
         ],
         "spec.otherNames.utf8Value": [
-          106,
-          107
+          107,
+          108
         ],
         "spec.privateKey": [
-          108,
-          109
+          109,
+          110
         ],
         "spec.privateKey.algorithm": [
-          110,
-          47
+          111,
+          48
         ],
         "spec.privateKey.encoding": [
-          111,
-          49
+          112,
+          50
         ],
         "spec.privateKey.rotationPolicy": [
-          112,
-          51
-        ],
-        "spec.privateKey.size": [
           113,
           52
         ],
-        "spec.renewBefore": [
+        "spec.privateKey.size": [
           114,
-          54
+          53
+        ],
+        "spec.renewBefore": [
+          115,
+          55
         ],
         "spec.revisionHistoryLimit": [
-          115,
-          57
-        ],
-        "spec.secretName": [
           116,
-          117
-        ],
-        "spec.secretTemplate": [
-          118,
-          119
-        ],
-        "spec.subject": [
-          120,
           58
         ],
-        "spec.usages": [
+        "spec.secretName": [
+          117,
+          118
+        ],
+        "spec.secretTemplate": [
+          119,
+          120
+        ],
+        "spec.subject": [
           121,
-          60
+          59
+        ],
+        "spec.usages": [
+          122,
+          61
         ],
         "status": [
-          122,
-          123
+          123,
+          124
         ],
         "status.conditions": [
-          124,
-          125
+          125,
+          126
         ],
         "status.conditions.lastTransitionTime": [
-          126,
-          127
+          127,
+          128
         ],
         "status.conditions.message": [
-          128,
-          129
+          129,
+          130
         ],
         "status.conditions.observedGeneration": [
-          130,
-          131
+          131,
+          132
         ],
         "status.conditions.reason": [
-          132,
-          133
+          133,
+          134
         ],
         "status.failedIssuanceAttempts": [
-          134,
-          135
+          135,
+          136
         ],
         "status.lastFailureTime": [
-          136,
-          62
+          137,
+          63
         ],
         "status.nextPrivateKeySecretName": [
-          137,
-          138
+          138,
+          139
         ],
         "status.notAfter": [
-          139,
-          140
+          140,
+          141
         ],
         "status.notBefore": [
-          141,
-          142
+          142,
+          143
         ],
         "status.renewalTime": [
-          143,
-          144
+          144,
+          145
         ],
         "status.revision": [
-          145,
-          64
+          146,
+          65
         ],
         "": [
-          146,
-          66
+          147,
+          67
         ]
       }
     },
@@ -551,15 +562,15 @@
       "descriptions": {
         "spec.keystores.pkcs12.profile": [
           null,
-          95
+          96
         ],
         "spec.nameConstraints": [
           null,
-          97
+          98
         ],
         "spec.otherNames": [
           null,
-          102
+          103
         ]
       }
     },
@@ -622,208 +633,208 @@
       "description": true,
       "descriptions": {
         "apiVersion": [
-          69,
-          68
+          70,
+          69
         ],
         "kind": [
-          71,
-          70
+          72,
+          71
         ],
         "spec": [
-          147,
-          72
+          148,
+          73
         ],
         "spec.additionalOutputFormats": [
-          148,
-          74
-        ],
-        "spec.additionalOutputFormats.type": [
-          76,
+          149,
           75
         ],
+        "spec.additionalOutputFormats.type": [
+          77,
+          76
+        ],
         "spec.commonName": [
-          149,
-          77
-        ],
-        "spec.dnsNames": [
           150,
-          151
-        ],
-        "spec.duration": [
-          152,
           78
         ],
-        "spec.emailAddresses": [
-          153,
-          154
+        "spec.dnsNames": [
+          151,
+          152
         ],
-        "spec.encodeUsagesInRequest": [
-          155,
+        "spec.duration": [
+          153,
           79
         ],
-        "spec.ipAddresses": [
-          156,
-          157
+        "spec.emailAddresses": [
+          154,
+          155
         ],
-        "spec.isCA": [
-          158,
+        "spec.encodeUsagesInRequest": [
+          156,
           80
         ],
-        "spec.issuerRef": [
+        "spec.ipAddresses": [
+          157,
+          158
+        ],
+        "spec.isCA": [
           159,
           81
         ],
-        "spec.keystores": [
+        "spec.issuerRef": [
           160,
-          161
-        ],
-        "spec.keystores.jks": [
-          83,
           82
         ],
-        "spec.keystores.jks.create": [
-          21,
-          85
+        "spec.keystores": [
+          161,
+          162
         ],
-        "spec.keystores.jks.passwordSecretRef": [
-          24,
+        "spec.keystores.jks": [
+          84,
+          83
+        ],
+        "spec.keystores.jks.create": [
+          22,
           86
         ],
-        "spec.keystores.jks.passwordSecretRef.key": [
-          88,
+        "spec.keystores.jks.passwordSecretRef": [
+          25,
           87
+        ],
+        "spec.keystores.jks.passwordSecretRef.key": [
+          89,
+          88
         ],
         "spec.keystores.jks.passwordSecretRef.name": [
-          90,
-          89
+          91,
+          90
         ],
         "spec.keystores.pkcs12": [
-          92,
-          91
+          93,
+          92
         ],
         "spec.keystores.pkcs12.create": [
-          26,
-          93
-        ],
-        "spec.keystores.pkcs12.passwordSecretRef": [
-          29,
+          27,
           94
         ],
+        "spec.keystores.pkcs12.passwordSecretRef": [
+          30,
+          95
+        ],
         "spec.keystores.pkcs12.passwordSecretRef.key": [
-          88,
-          87
+          89,
+          88
         ],
         "spec.keystores.pkcs12.passwordSecretRef.name": [
-          90,
-          89
+          91,
+          90
         ],
         "spec.literalSubject": [
-          162,
-          96
+          163,
+          97
         ],
         "spec.privateKey": [
-          163,
-          108
+          164,
+          109
         ],
         "spec.privateKey.algorithm": [
-          164,
-          110
-        ],
-        "spec.privateKey.encoding": [
           165,
           111
         ],
-        "spec.privateKey.rotationPolicy": [
+        "spec.privateKey.encoding": [
           166,
           112
         ],
-        "spec.privateKey.size": [
+        "spec.privateKey.rotationPolicy": [
           167,
           113
         ],
-        "spec.renewBefore": [
+        "spec.privateKey.size": [
           168,
           114
         ],
-        "spec.revisionHistoryLimit": [
+        "spec.renewBefore": [
           169,
           115
         ],
-        "spec.secretName": [
+        "spec.revisionHistoryLimit": [
           170,
           116
         ],
-        "spec.secretTemplate": [
+        "spec.secretName": [
           171,
-          118
+          117
+        ],
+        "spec.secretTemplate": [
+          172,
+          119
         ],
         "spec.subject": [
-          172,
-          120
-        ],
-        "spec.uris": [
           173,
-          174
-        ],
-        "spec.usages": [
-          175,
           121
         ],
-        "status": [
+        "spec.uris": [
+          174,
+          175
+        ],
+        "spec.usages": [
           176,
           122
         ],
+        "status": [
+          177,
+          123
+        ],
         "status.conditions": [
-          125,
-          124
+          126,
+          125
         ],
         "status.conditions.lastTransitionTime": [
-          127,
-          126
+          128,
+          127
         ],
         "status.conditions.message": [
-          129,
-          128
+          130,
+          129
         ],
         "status.conditions.observedGeneration": [
-          131,
-          130
+          132,
+          131
         ],
         "status.conditions.reason": [
-          133,
-          132
+          134,
+          133
         ],
         "status.failedIssuanceAttempts": [
-          135,
-          134
+          136,
+          135
         ],
         "status.lastFailureTime": [
-          62,
-          136
-        ],
-        "status.nextPrivateKeySecretName": [
-          138,
+          63,
           137
         ],
+        "status.nextPrivateKeySecretName": [
+          139,
+          138
+        ],
         "status.notAfter": [
-          140,
-          139
+          141,
+          140
         ],
         "status.notBefore": [
-          177,
-          141
+          178,
+          142
         ],
         "status.renewalTime": [
-          144,
-          143
+          145,
+          144
         ],
         "status.revision": [
-          65,
-          145
+          66,
+          146
         ],
         "": [
-          178,
-          146
+          179,
+          147
         ]
       }
     },
@@ -875,176 +886,176 @@
       "description": true,
       "descriptions": {
         "apiVersion": [
-          68,
-          69
+          69,
+          70
         ],
         "kind": [
-          70,
-          71
+          71,
+          72
         ],
         "spec.additionalOutputFormats": [
-          179,
-          148
-        ],
-        "spec.additionalOutputFormats.type": [
-          75,
-          76
-        ],
-        "spec.commonName": [
           180,
           149
         ],
-        "spec.duration": [
+        "spec.additionalOutputFormats.type": [
+          76,
+          77
+        ],
+        "spec.commonName": [
           181,
-          152
+          150
+        ],
+        "spec.duration": [
+          182,
+          153
         ],
         "spec.encodeUsagesInRequest": [
-          182,
-          155
+          183,
+          156
         ],
         "spec.isCA": [
-          183,
-          158
-        ],
-        "spec.issuerRef": [
           184,
           159
         ],
-        "spec.keystores": [
+        "spec.issuerRef": [
           185,
           160
         ],
+        "spec.keystores": [
+          186,
+          161
+        ],
         "spec.keystores.jks": [
-          82,
-          83
+          83,
+          84
         ],
         "spec.keystores.jks.create": [
-          85,
-          21
+          86,
+          22
         ],
         "spec.keystores.jks.passwordSecretRef": [
-          86,
-          24
+          87,
+          25
         ],
         "spec.keystores.jks.passwordSecretRef.key": [
-          87,
-          88
+          88,
+          89
         ],
         "spec.keystores.jks.passwordSecretRef.name": [
-          89,
-          90
+          90,
+          91
         ],
         "spec.keystores.pkcs12": [
-          91,
-          92
+          92,
+          93
         ],
         "spec.keystores.pkcs12.create": [
-          93,
-          26
+          94,
+          27
         ],
         "spec.keystores.pkcs12.passwordSecretRef": [
-          94,
-          29
+          95,
+          30
         ],
         "spec.keystores.pkcs12.passwordSecretRef.key": [
-          87,
-          88
+          88,
+          89
         ],
         "spec.keystores.pkcs12.passwordSecretRef.name": [
-          89,
-          90
+          90,
+          91
         ],
         "spec.literalSubject": [
-          186,
-          162
+          187,
+          163
         ],
         "spec.privateKey.algorithm": [
-          187,
-          164
-        ],
-        "spec.privateKey.encoding": [
           188,
           165
         ],
-        "spec.privateKey.rotationPolicy": [
+        "spec.privateKey.encoding": [
           189,
           166
         ],
-        "spec.privateKey.size": [
+        "spec.privateKey.rotationPolicy": [
           190,
           167
         ],
-        "spec.renewBefore": [
+        "spec.privateKey.size": [
           191,
           168
         ],
-        "spec.revisionHistoryLimit": [
+        "spec.renewBefore": [
           192,
           169
         ],
-        "spec.secretName": [
+        "spec.revisionHistoryLimit": [
           193,
           170
         ],
-        "spec.secretTemplate": [
+        "spec.secretName": [
           194,
           171
         ],
-        "spec.usages": [
+        "spec.secretTemplate": [
           195,
-          175
+          172
+        ],
+        "spec.usages": [
+          196,
+          176
         ],
         "status.conditions": [
-          124,
-          125
+          125,
+          126
         ],
         "status.conditions.lastTransitionTime": [
-          126,
-          127
+          127,
+          128
         ],
         "status.conditions.message": [
-          128,
-          129
+          129,
+          130
         ],
         "status.conditions.observedGeneration": [
-          130,
-          131
+          131,
+          132
         ],
         "status.conditions.reason": [
-          132,
-          133
+          133,
+          134
         ],
         "status.failedIssuanceAttempts": [
-          134,
-          135
+          135,
+          136
         ],
         "status.lastFailureTime": [
-          136,
-          62
+          137,
+          63
         ],
         "status.nextPrivateKeySecretName": [
-          137,
-          138
+          138,
+          139
         ],
         "status.notAfter": [
-          139,
-          140
+          140,
+          141
         ],
         "status.notBefore": [
-          196,
-          177
-        ],
-        "status.renewalTime": [
-          143,
-          144
-        ],
-        "status.revision": [
-          145,
-          65
-        ],
-        "": [
           197,
           178
+        ],
+        "status.renewalTime": [
+          144,
+          145
+        ],
+        "status.revision": [
+          146,
+          66
+        ],
+        "": [
+          198,
+          179
         ]
       }
     },
@@ -1056,16 +1067,16 @@
       ],
       "descriptions": {
         "spec.keystores.jks.create": [
-          198,
-          85
+          199,
+          86
         ],
         "spec.keystores.pkcs12.create": [
-          199,
-          93
+          200,
+          94
         ],
         "status.lastFailureTime": [
-          200,
-          136
+          201,
+          137
         ]
       }
     },
@@ -1076,12 +1087,12 @@
       ],
       "descriptions": {
         "spec.keystores.jks.create": [
-          201,
-          198
-        ],
-        "spec.keystores.pkcs12.create": [
           202,
           199
+        ],
+        "spec.keystores.pkcs12.create": [
+          203,
+          200
         ]
       }
     },
@@ -1092,7 +1103,7 @@
       "descriptions": {
         "spec.literalSubject": [
           null,
-          186
+          187
         ]
       }
     },
@@ -1103,7 +1114,7 @@
       "descriptions": {
         "status.failedIssuanceAttempts": [
           null,
-          134
+          135
         ]
       }
     },
@@ -1113,8 +1124,8 @@
       ],
       "descriptions": {
         "spec.additionalOutputFormats": [
-          203,
-          179
+          204,
+          180
         ]
       }
     },
@@ -1128,11 +1139,11 @@
       "descriptions": {
         "spec.additionalOutputFormats": [
           null,
-          203
+          204
         ],
         "spec.secretTemplate": [
-          204,
-          194
+          205,
+          195
         ]
       }
     },
@@ -1146,16 +1157,16 @@
       },
       "descriptions": {
         "spec.privateKey.algorithm": [
-          205,
-          187
+          206,
+          188
         ],
         "spec.privateKey.size": [
-          206,
-          190
+          207,
+          191
         ],
         "spec.secretTemplate": [
           null,
-          204
+          205
         ]
       }
     },
@@ -1166,12 +1177,12 @@
       ],
       "descriptions": {
         "spec.duration": [
-          207,
-          181
+          208,
+          182
         ],
         "spec.renewBefore": [
-          208,
-          191
+          209,
+          192
         ]
       }
     },
@@ -1186,20 +1197,20 @@
       },
       "descriptions": {
         "spec.duration": [
-          209,
-          207
-        ],
-        "spec.renewBefore": [
           210,
           208
         ],
+        "spec.renewBefore": [
+          211,
+          209
+        ],
         "spec.revisionHistoryLimit": [
           null,
-          192
+          193
         ],
         "status.conditions.observedGeneration": [
           null,
-          130
+          131
         ]
       }
     },
@@ -1215,32 +1226,32 @@
       ],
       "descriptions": {
         "spec.issuerRef": [
-          211,
-          184
+          212,
+          185
         ],
         "spec.keystores.jks.create": [
-          212,
-          201
-        ],
-        "spec.keystores.pkcs12.create": [
           213,
           202
         ],
-        "spec.privateKey.algorithm": [
+        "spec.keystores.pkcs12.create": [
           214,
-          205
+          203
+        ],
+        "spec.privateKey.algorithm": [
+          215,
+          206
         ],
         "spec.privateKey.encoding": [
-          215,
-          188
+          216,
+          189
         ],
         "status.conditions.status": [
-          216,
-          217
+          217,
+          218
         ],
         "status.conditions.type": [
-          218,
-          219
+          219,
+          220
         ]
       }
     },
@@ -1251,12 +1262,13 @@
       "descriptions": {
         "spec.encodeUsagesInRequest": [
           null,
-          182
+          183
         ]
       }
     }
   },
   "texts": [
+    "CertID is the ARI CertID (RFC 9773) of the certificate this renewal information was\nfetched for. This is used to determine if we need to re-fetch the renewal information\nas changed cert id means that ARI fetched before is stale.",
     "Profile specifies the key and certificate encryption algorithms and the HMAC algorithm\nused to create the PKCS12 keystore. Default value is `LegacyRC2` for backward compatibility.\n\nIf provided, allowed values are:\n`LegacyRC2`: Deprecated. Not supported by default in OpenSSL 3 or Java 20.\n`LegacyDES`: Less secure algorithm. Use this option for maximal compatibility.\n`Modern2023`: Secure algorithm. Use this option in case you have to always use secure algorithms\n(e.g., because of company policy). Please note that the security of the algorithm is not that important\nin reality, because the unencrypted certificate and private key are also stored in the Secret.",
     "Profile specifies the key and certificate encryption algorithms and the HMAC algorithm\nused to create the PKCS12 keystore. Default value is `LegacyRC2` for backward compatibility.\n\nIf provided, allowed values are:\n`LegacyRC2`: Deprecated. Not supported by default in OpenSSL 3 or Java 20.\n`LegacyDES`: Less secure algorithm. Use this option for maximal compatibility.\n`Modern2023`: Secure algorithm. Use this option in case you have to always use secure algorithms\n(e.g., because of company policy). Please note that the security of the algorithm is not that important\nin reality, because the unencrypted certificate and private key are also stored in the Secret.\n`Modern2026`: Encodes PKCS#12 files using algorithms that are considered modern as of 2026.\nPrivate keys and certificates are encrypted using PBES2 with PBKDF2-HMAC-SHA-256 and AES-256-CBC.\nThe MAC algorithm is PBMAC1 with PBKDF2-HMAC-SHA-256 and HMAC-SHA256.\nFiles produced with this profile can be read by OpenSSL 3.4.0 and higher, Java 26 and higher,\nor with Java using compatible versions of Bouncy Castle. Meets FIPS 140-3 requirements.",
     "`renewal` allows configuration of how your certificate is renewed. If the policy mentioned is\n`RenewBefore` then the controller respects `renewBefore` and `renewBeforePercentage`.",

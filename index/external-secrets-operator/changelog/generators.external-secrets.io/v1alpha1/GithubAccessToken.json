@@ -1,5 +1,37 @@
 {
   "versions": {
+    "v2.14.0": {
+      "optional": [
+        "spec.appID",
+        "spec.installID"
+      ],
+      "descriptionChanged": [
+        "spec.appID",
+        "spec.installID"
+      ],
+      "added": {
+        "spec.appIDRef": "object",
+        "spec.installIDRef": "object"
+      },
+      "descriptions": {
+        "spec.appID": [
+          null,
+          0
+        ],
+        "spec.appIDRef": [
+          null,
+          1
+        ],
+        "spec.installID": [
+          null,
+          2
+        ],
+        "spec.installIDRef": [
+          null,
+          3
+        ]
+      }
+    },
     "v0.20.4": {
       "descriptionChanged": [
         "spec",
@@ -10,19 +42,19 @@
       "descriptions": {
         "spec": [
           null,
-          0
+          4
         ],
         "spec.auth.privateKey": [
           null,
-          1
+          5
         ],
         "spec.auth.privateKey.secretRef": [
-          2,
-          3
+          6,
+          7
         ],
         "spec.url": [
-          4,
-          5
+          8,
+          9
         ]
       }
     },
@@ -34,16 +66,16 @@
       ],
       "descriptions": {
         "spec.auth.privateKey.secretRef": [
-          6,
-          2
+          10,
+          6
         ],
         "spec.auth.privateKey.secretRef.key": [
-          7,
-          8
+          11,
+          12
         ],
         "spec.auth.privateKey.secretRef.namespace": [
-          9,
-          10
+          13,
+          14
         ]
       }
     },
@@ -55,11 +87,11 @@
       "descriptions": {
         "spec.permissions": [
           null,
-          11
+          15
         ],
         "spec.repositories": [
           null,
-          12
+          16
         ]
       }
     },
@@ -73,6 +105,10 @@
     }
   },
   "texts": [
+    "AppID is the GitHub App ID. Exactly one of AppID or AppIDRef must be set.",
+    "AppIDRef references a secret key containing the GitHub App ID. Exactly one of AppID or AppIDRef must be set.",
+    "InstallID is the GitHub App installation ID. Exactly one of InstallID or InstallIDRef must be set.",
+    "InstallIDRef references a secret key containing the GitHub App installation ID. Exactly one of InstallID or\nInstallIDRef must be set.",
     "GithubAccessTokenSpec defines the desired state to generate a GitHub access token.",
     "GithubSecretRef references a secret containing GitHub credentials.",
     "A reference to a specific 'key' within a Secret resource.\nIn some instances, `key` is a required field.",
