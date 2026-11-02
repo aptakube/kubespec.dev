@@ -1,5 +1,21 @@
 {
   "versions": {
+    "v2.10.0": {
+      "descriptionChanged": [
+        "spec.kubeConfig",
+        "spec.kubeConfig.configMapRef"
+      ],
+      "descriptions": {
+        "spec.kubeConfig": [
+          0,
+          1
+        ],
+        "spec.kubeConfig.configMapRef": [
+          2,
+          3
+        ]
+      }
+    },
     "v2.9.0": {
       "added": {
         "spec.buildMetadata": "string[]",
@@ -15,23 +31,23 @@
       "descriptions": {
         "spec.buildMetadata": [
           null,
-          0
+          4
         ],
         "spec.dependsOn.namespace": [
-          1,
-          2
+          5,
+          6
         ],
         "spec.healthCheckExprs.kind": [
           null,
-          3
+          7
         ],
         "spec.ignore": [
           null,
-          4
+          8
         ],
         "spec.postBuild.substituteStrategy": [
           null,
-          5
+          9
         ]
       }
     },
@@ -53,36 +69,36 @@
       ],
       "descriptions": {
         "spec.components": [
-          6,
-          7
+          10,
+          11
         ],
         "spec.dependsOn": [
-          8,
-          9
+          12,
+          13
         ],
         "spec.dependsOn.namespace": [
-          10,
-          1
+          14,
+          5
         ],
         "spec.dependsOn.readyExpr": [
           null,
-          11
+          15
         ],
         "spec.ignoreMissingComponents": [
           null,
-          12
+          16
         ],
         "spec.kubeConfig.configMapRef": [
           null,
-          13
+          2
         ],
         "spec.kubeConfig.secretRef": [
-          14,
-          15
+          17,
+          18
         ],
         "status.history": [
           null,
-          16
+          19
         ]
       }
     },
@@ -96,16 +112,16 @@
       },
       "descriptions": {
         "spec.decryption.secretRef": [
-          17,
-          18
+          20,
+          21
         ],
         "spec.decryption.serviceAccountName": [
           null,
-          19
+          22
         ],
         "spec.deletionPolicy": [
-          20,
-          21
+          23,
+          24
         ]
       }
     },
@@ -118,15 +134,15 @@
       "descriptions": {
         "spec.deletionPolicy": [
           null,
-          20
+          23
         ],
         "spec.healthCheckExprs": [
           null,
-          22
+          25
         ],
         "status.lastAppliedOriginRevision": [
           null,
-          23
+          26
         ]
       }
     },
@@ -136,8 +152,8 @@
       ],
       "descriptions": {
         "status.conditions.type": [
-          24,
-          25
+          27,
+          28
         ]
       }
     },
@@ -190,172 +206,172 @@
       },
       "descriptions": {
         "apiVersion": [
-          26,
-          27
+          29,
+          30
         ],
         "kind": [
-          28,
-          29
+          31,
+          32
         ],
         "spec": [
-          30,
-          31
+          33,
+          34
         ],
         "spec.commonMetadata": [
-          32,
-          33
-        ],
-        "spec.dependsOn": [
-          34,
-          8
-        ],
-        "spec.force": [
           35,
           36
         ],
-        "spec.images": [
+        "spec.dependsOn": [
           37,
-          38
+          12
+        ],
+        "spec.force": [
+          38,
+          39
+        ],
+        "spec.images": [
+          40,
+          41
         ],
         "spec.images.digest": [
-          39,
-          40
+          42,
+          43
         ],
         "spec.interval": [
-          41,
-          42
+          44,
+          45
         ],
         "spec.kubeConfig": [
-          43,
-          44
+          46,
+          0
         ],
         "spec.kubeConfig.secretRef": [
-          45,
-          14
+          47,
+          17
         ],
         "spec.namePrefix": [
           null,
-          46
+          48
         ],
         "spec.nameSuffix": [
           null,
-          47
-        ],
-        "spec.patches": [
-          48,
           49
         ],
-        "spec.patches.patch": [
+        "spec.patches": [
           50,
           51
         ],
-        "spec.patches.target.annotationSelector": [
+        "spec.patches.patch": [
           52,
           53
         ],
-        "spec.patches.target.group": [
+        "spec.patches.target.annotationSelector": [
           54,
           55
         ],
-        "spec.patches.target.kind": [
+        "spec.patches.target.group": [
           56,
           57
         ],
-        "spec.patches.target.labelSelector": [
+        "spec.patches.target.kind": [
           58,
           59
         ],
-        "spec.patches.target.version": [
+        "spec.patches.target.labelSelector": [
           60,
           61
         ],
-        "spec.path": [
+        "spec.patches.target.version": [
           62,
           63
         ],
-        "spec.postBuild": [
+        "spec.path": [
           64,
           65
         ],
-        "spec.postBuild.substitute": [
+        "spec.postBuild": [
           66,
           67
         ],
-        "spec.postBuild.substituteFrom": [
+        "spec.postBuild.substitute": [
           68,
           69
         ],
-        "spec.postBuild.substituteFrom.name": [
+        "spec.postBuild.substituteFrom": [
           70,
           71
         ],
-        "spec.postBuild.substituteFrom.optional": [
+        "spec.postBuild.substituteFrom.name": [
           72,
           73
         ],
-        "spec.retryInterval": [
+        "spec.postBuild.substituteFrom.optional": [
           74,
           75
         ],
-        "spec.serviceAccountName": [
+        "spec.retryInterval": [
           76,
           77
         ],
-        "spec.sourceRef.namespace": [
+        "spec.serviceAccountName": [
           78,
           79
         ],
-        "spec.suspend": [
+        "spec.sourceRef.namespace": [
           80,
           81
         ],
-        "spec.targetNamespace": [
+        "spec.suspend": [
           82,
           83
         ],
-        "spec.timeout": [
+        "spec.targetNamespace": [
           84,
           85
         ],
-        "spec.wait": [
+        "spec.timeout": [
           86,
           87
         ],
-        "status.conditions.lastTransitionTime": [
+        "spec.wait": [
           88,
           89
         ],
-        "status.conditions.message": [
+        "status.conditions.lastTransitionTime": [
           90,
           91
         ],
-        "status.conditions.observedGeneration": [
+        "status.conditions.message": [
           92,
           93
         ],
-        "status.conditions.reason": [
+        "status.conditions.observedGeneration": [
           94,
           95
         ],
-        "status.conditions.type": [
+        "status.conditions.reason": [
           96,
-          24
+          97
+        ],
+        "status.conditions.type": [
+          98,
+          27
         ],
         "status.inventory": [
-          97,
-          98
-        ],
-        "status.inventory.entries.id": [
           99,
           100
         ],
-        "status.lastAppliedRevision": [
+        "status.inventory.entries.id": [
           101,
           102
         ],
-        "status.lastHandledReconcileAt": [
+        "status.lastAppliedRevision": [
           103,
           104
+        ],
+        "status.lastHandledReconcileAt": [
+          105,
+          106
         ]
       }
     },
@@ -365,13 +381,17 @@
       ],
       "descriptions": {
         "spec.interval": [
-          105,
-          41
+          107,
+          44
         ]
       }
     }
   },
   "texts": [
+    "The KubeConfig for reconciling the Kustomization on a remote cluster.\nWhen used in combination with KustomizationSpec.ServiceAccountName,\nforces the controller to act on behalf of that Service Account at the\ntarget cluster.\nIf the --default-service-account flag is set, its value will be used as\na controller level fallback for when KustomizationSpec.ServiceAccountName\nis empty.",
+    "The KubeConfig for reconciling the Kustomization on a remote cluster.\nWhen used in combination with KustomizationSpec.ServiceAccountName,\nforces the controller to act on behalf of that Service Account at the\ntarget cluster.\nIf the --default-service-account flag is set, its value will be used as\nthe default for KustomizationSpec.ServiceAccountName when it is empty.",
+    "ConfigMapRef holds an optional name of a ConfigMap that contains\nthe following keys:\n\n- `provider`: the provider to use. One of `aws`, `azure`, `gcp`, or\n   `generic`. Required.\n- `cluster`: the fully qualified resource name of the Kubernetes\n   cluster in the cloud provider API. Not used by the `generic`\n   provider. Required when one of `address` or `ca.crt` is not set.\n- `address`: the address of the Kubernetes API server. Required\n   for `generic`. For the other providers, if not specified, the\n   first address in the cluster resource will be used, and if\n   specified, it must match one of the addresses in the cluster\n   resource.\n   If audiences is not set, will be used as the audience for the\n   `generic` provider.\n- `ca.crt`: the optional PEM-encoded CA certificate for the\n   Kubernetes API server. If not set, the controller will use the\n   CA certificate from the cluster resource.\n- `audiences`: the optional audiences as a list of\n   line-break-separated strings for the Kubernetes ServiceAccount\n   token. Defaults to the `address` for the `generic` provider, or\n   to specific values for the other providers depending on the\n   provider.\n-  `serviceAccountName`: the optional name of the Kubernetes\n   ServiceAccount in the same namespace that should be used\n   for authentication. If not specified, the controller\n   ServiceAccount will be used.\n\nMutually exclusive with SecretRef.",
+    "ConfigMapRef holds an optional name of a ConfigMap that contains\nthe following keys:\n\n- `provider`: the provider to use. One of `aws`, `azure`, `gcp`, or\n   `generic`. Required.\n- `cluster`: the fully qualified resource name of the Kubernetes\n   cluster in the cloud provider API. Not used by the `generic`\n   provider. Required when one of `address` or `ca.crt` is not set.\n- `address`: the address of the Kubernetes API server. Required\n   for `generic`. For the other providers, if not specified, the\n   first address in the cluster resource will be used, and if\n   specified, it must match one of the addresses in the cluster\n   resource.\n   If audiences is not set, will be used as the audience for the\n   `generic` provider.\n- `ca.crt`: the optional PEM-encoded CA certificate for the\n   Kubernetes API server. If not set, the controller will use the\n   CA certificate from the cluster resource.\n-  `serviceAccountName`: the optional name of the Kubernetes\n   ServiceAccount in the same namespace that should be used\n   for authentication. If not specified, the controller\n   ServiceAccount will be used.\n- `audiences`: the optional audiences as a list of string separated by\n   commas and/or whitespaces/newlines for the Kubernetes ServiceAccount\n   token. Defaults to the `address` for the `generic` provider, or\n   to specific values for the other providers depending on the\n   provider.\n\nMutually exclusive with SecretRef.",
     "BuildMetadata specifies which kustomize build metadata should be added\nto the built resources. The allowed values are 'originAnnotations' to\nannotate resources with their source origin, and 'transformerAnnotations'\nto annotate resources with the transformers that produced them.",
     "Namespace of the referent, defaults to the namespace of the Kustomization\nresource object that contains the reference.",
     "Namespace of the referent, defaults to the namespace of the resource\nobject that contains the reference.",
@@ -385,7 +405,6 @@
     "Namespace of the referent, when not specified it acts as LocalObjectReference.",
     "ReadyExpr is a CEL expression that can be used to assess the readiness\nof a dependency. When specified, the built-in readiness check\nis replaced by the logic defined in the CEL expression.\nTo make the CEL expression additive to the built-in readiness check,\nthe feature gate `AdditiveCELDependencyCheck` must be set to `true`.",
     "IgnoreMissingComponents instructs the controller to ignore Components paths\nnot found in source by removing them from the generated kustomization.yaml\nbefore running kustomize build.",
-    "ConfigMapRef holds an optional name of a ConfigMap that contains\nthe following keys:\n\n- `provider`: the provider to use. One of `aws`, `azure`, `gcp`, or\n   `generic`. Required.\n- `cluster`: the fully qualified resource name of the Kubernetes\n   cluster in the cloud provider API. Not used by the `generic`\n   provider. Required when one of `address` or `ca.crt` is not set.\n- `address`: the address of the Kubernetes API server. Required\n   for `generic`. For the other providers, if not specified, the\n   first address in the cluster resource will be used, and if\n   specified, it must match one of the addresses in the cluster\n   resource.\n   If audiences is not set, will be used as the audience for the\n   `generic` provider.\n- `ca.crt`: the optional PEM-encoded CA certificate for the\n   Kubernetes API server. If not set, the controller will use the\n   CA certificate from the cluster resource.\n- `audiences`: the optional audiences as a list of\n   line-break-separated strings for the Kubernetes ServiceAccount\n   token. Defaults to the `address` for the `generic` provider, or\n   to specific values for the other providers depending on the\n   provider.\n-  `serviceAccountName`: the optional name of the Kubernetes\n   ServiceAccount in the same namespace that should be used\n   for authentication. If not specified, the controller\n   ServiceAccount will be used.\n\nMutually exclusive with SecretRef.",
     "SecretRef holds the name of a secret that contains a key with\nthe kubeconfig file as the value. If no key is set, the key will default\nto 'value'.\nIt is recommended that the kubeconfig is self-contained, and the secret\nis regularly updated if credentials such as a cloud-access-token expire.\nCloud specific `cmd-path` auth helpers will not function without adding\nbinaries and credentials to the Pod that is responsible for reconciling\nKubernetes resources.",
     "SecretRef holds an optional name of a secret that contains a key with\nthe kubeconfig file as the value. If no key is set, the key will default\nto 'value'. Mutually exclusive with ConfigMapRef.\nIt is recommended that the kubeconfig is self-contained, and the secret\nis regularly updated if credentials such as a cloud-access-token expire.\nCloud specific `cmd-path` auth helpers will not function without adding\nbinaries and credentials to the Pod that is responsible for reconciling\nKubernetes resources. Supported only for the generic provider.",
     "History contains a set of snapshots of the last reconciliation attempts\ntracking the revision, the state and the duration of each attempt.",
@@ -416,7 +435,6 @@
     "The interval at which to reconcile the Kustomization. This interval is approximate and may be subject to jitter to ensure efficient use of resources.",
     "The interval at which to reconcile the Kustomization.\nThis interval is approximate and may be subject to jitter to ensure\nefficient use of resources.",
     "The KubeConfig for reconciling the Kustomization on a remote cluster. When used in combination with KustomizationSpec.ServiceAccountName, forces the controller to act on behalf of that Service Account at the target cluster. If the --default-service-account flag is set, its value will be used as a controller level fallback for when KustomizationSpec.ServiceAccountName is empty.",
-    "The KubeConfig for reconciling the Kustomization on a remote cluster.\nWhen used in combination with KustomizationSpec.ServiceAccountName,\nforces the controller to act on behalf of that Service Account at the\ntarget cluster.\nIf the --default-service-account flag is set, its value will be used as\na controller level fallback for when KustomizationSpec.ServiceAccountName\nis empty.",
     "SecretRef holds the name of a secret that contains a key with the kubeconfig file as the value. If no key is set, the key will default to 'value'. It is recommended that the kubeconfig is self-contained, and the secret is regularly updated if credentials such as a cloud-access-token expire. Cloud specific `cmd-path` auth helpers will not function without adding binaries and credentials to the Pod that is responsible for reconciling Kubernetes resources.",
     "NamePrefix will prefix the names of all managed resources.",
     "NameSuffix will suffix the names of all managed resources.",

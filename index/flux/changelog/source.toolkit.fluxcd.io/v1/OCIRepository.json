@@ -1,5 +1,35 @@
 {
   "versions": {
+    "v2.10.0": {
+      "optional": [
+        "spec.interval",
+        "spec.url"
+      ],
+      "descriptionChanged": [
+        "spec.serviceAccountName"
+      ],
+      "added": {
+        "status.sourceVerificationFingerprint": "string"
+      },
+      "descriptions": {
+        "spec.interval": [
+          null,
+          0
+        ],
+        "spec.serviceAccountName": [
+          1,
+          2
+        ],
+        "spec.url": [
+          null,
+          3
+        ],
+        "status.sourceVerificationFingerprint": [
+          null,
+          4
+        ]
+      }
+    },
     "v2.9.0": {
       "added": {
         "spec.verify.trustedRootSecretRef": "object"
@@ -7,7 +37,7 @@
       "descriptions": {
         "spec.verify.trustedRootSecretRef": [
           null,
-          0
+          5
         ]
       }
     },
@@ -18,12 +48,17 @@
       "descriptions": {
         "status.artifact.digest": [
           null,
-          1
+          6
         ]
       }
     }
   },
   "texts": [
+    "Interval at which the OCIRepository URL is checked for updates.\nThis interval is approximate and may be subject to jitter to ensure\nefficient use of resources.",
+    "ServiceAccountName is the name of the Kubernetes ServiceAccount used to authenticate\nthe image pull if the service account has attached pull secrets. For more information:\nhttps://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#add-imagepullsecrets-to-a-service-account",
+    "ServiceAccountName is the name of the Kubernetes ServiceAccount used to authenticate\nthe image pull, either with the pull secrets attached to the service account or with\nan object identity.\nFor more information about object identity:\nhttps://fluxcd.io/flux/integrations/object-identity/\nFor more information about image pull secrets:\nhttps://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#add-imagepullsecrets-to-a-service-account",
+    "URL is a reference to an OCI artifact repository hosted\non a remote container registry.",
+    "SourceVerificationFingerprint is the fingerprint of the verification\nmaterial used to verify the signature of the current Artifact. It is\nused to detect changes to the verification policy, such as a key\nrotation, that require the current revision to be verified again.",
     "TrustedRootSecretRef specifies the Kubernetes Secret containing a\nSigstore trusted_root.json file. This enables verification against\nself-hosted Sigstore infrastructure (custom Fulcio CA, self-hosted\nRekor instance). The Secret must contain a key named \"trusted_root.json\".",
     "Digest is the digest of the file in the form of '<algorithm>:<checksum>'."
   ]

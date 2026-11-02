@@ -1,18 +1,31 @@
 {
   "versions": {
+    "v1.7.0": {
+      "descriptionChanged": [
+        "spec.hostnames"
+      ],
+      "descriptions": {
+        "spec.hostnames": [
+          0,
+          1
+        ]
+      }
+    },
     "v1.6.0": {
       "descriptionChanged": [
         "spec.rules.backendRefs"
       ],
       "descriptions": {
         "spec.rules.backendRefs": [
-          0,
-          1
+          2,
+          3
         ]
       }
     }
   },
   "texts": [
+    "Hostnames defines a set of SNI hostnames that should match against the\nSNI attribute of TLS ClientHello message in TLS handshake. This matches\nthe RFC 1123 definition of a hostname with 2 notable exceptions:\n\n1. IPs are not allowed in SNI hostnames per RFC 6066.\n2. A hostname may be prefixed with a wildcard label (`*.`). The wildcard\n   label must appear by itself as the first label.",
+    "Hostnames defines a set of SNI hostnames that should match against the\nSNI attribute of TLS ClientHello message in TLS handshake. This matches\nthe RFC 1123 definition of a hostname with 2 notable exceptions:\n\n1. IPs are not allowed in SNI hostnames per RFC 6066.\n2. A hostname may be prefixed with a wildcard label (`*.`). The wildcard\n   label must appear by itself as the first label.\n\n\nIn the event that multiple TLSRoutes specify intersecting hostnames (e.g.\noverlapping wildcard matching and exact matching hostnames), precedence must\nbe given to rules from the TLSRoute with the largest number of:\n\n* Characters in a matching non-wildcard hostname.\n* Characters in a matching hostname.\n\nWhen multiple TLSRoutes attach to the same Listener and yield identical\nListener/Route intersected hostnames, implementations SHOULD evaluate\nprecedence using the original hostnames configured on the Route, not the\ncalculated Listener/Route hostname intersection.\n\nResolving Route precedence using original Route hostname specificity is an\nExtended feature. Implementations that support this behavior SHOULD claim\nsupport for the `GatewayRouteHostnameIntersectionPrecedence` feature.\nImplementations that do not support this feature MAY evaluate precedence\nusing the calculated Listener/Route hostname intersection.",
     "BackendRefs defines the backend(s) where matching requests should be\nsent. If unspecified or invalid (refers to a nonexistent resource or\na Service with no endpoints), the rule performs no forwarding; if no\nfilters are specified that would result in a response being sent, the\nunderlying implementation must actively reject request attempts to this\nbackend, by rejecting the connection. Request rejections must respect\nweight; if an invalid backend is requested to have 80% of requests, then\n80% of requests must be rejected instead.\n\nSupport: Core for Kubernetes Service\n\nSupport: Extended for Kubernetes ServiceImport\n\nSupport: Implementation-specific for any other resource\n\nSupport for weight: Extended",
     "BackendRefs defines the backend(s) where matching requests should be\nsent. If unspecified or invalid (refers to a nonexistent resource or\na Service with no endpoints), the rule performs no forwarding; if no\nfilters are specified that would result in a response being sent, the\nunderlying implementation must actively reject request attempts to this\nbackend, by rejecting the connection. Request rejections must respect\nweight; if an invalid backend is requested to have 80% of requests, then\n80% of requests must be rejected instead.\n\nWhen a TLSRoute is attached to a listener in Terminate mode, a BackendTLSPolicy\ncan be used to enable re-encryption of the traffic to the backends.\n\nSupport: Core for Kubernetes Service\n\nSupport: Extended for Kubernetes ServiceImport\n\nSupport: Implementation-specific for any other resource\n\nSupport for weight: Extended\n\nSupport for BackendTLSPolicy: Extended"
   ]

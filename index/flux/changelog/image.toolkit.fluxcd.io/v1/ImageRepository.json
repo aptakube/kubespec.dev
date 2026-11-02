@@ -1,18 +1,31 @@
 {
   "versions": {
+    "v2.10.0": {
+      "descriptionChanged": [
+        "spec.serviceAccountName"
+      ],
+      "descriptions": {
+        "spec.serviceAccountName": [
+          0,
+          1
+        ]
+      }
+    },
     "v2.9.2": {
       "descriptionChanged": [
         "status.observedExclusionList"
       ],
       "descriptions": {
         "status.observedExclusionList": [
-          0,
-          1
+          2,
+          3
         ]
       }
     }
   },
   "texts": [
+    "ServiceAccountName is the name of the Kubernetes ServiceAccount used to authenticate\nthe image pull if the service account has attached pull secrets.",
+    "ServiceAccountName is the name of the Kubernetes ServiceAccount used to authenticate\nthe image pull, either with the pull secrets attached to the service account or with\nan object identity.\nFor more information about object identity:\nhttps://fluxcd.io/flux/integrations/object-identity/",
     "ObservedExclusionList is a list of observed exclusion list. It reflects\nthe exclusion rules used for the observed scan result in\nspec.lastScanResult.",
     "ObservedExclusionList is a list of observed exclusion list. It reflects\nthe exclusion rules used for the observed scan result in\nstatus.lastScanResult."
   ]

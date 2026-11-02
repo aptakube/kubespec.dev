@@ -1,5 +1,16 @@
 {
   "versions": {
+    "couchbase-operator-2.94.0": {
+      "descriptionChanged": [
+        "spec.buckets.enableBucketMigrationRoutines"
+      ],
+      "descriptions": {
+        "spec.buckets.enableBucketMigrationRoutines": [
+          0,
+          1
+        ]
+      }
+    },
     "couchbase-operator-2.93.0": {
       "descriptionChanged": [
         "spec.networking.addressFamily",
@@ -8,16 +19,16 @@
       ],
       "descriptions": {
         "spec.networking.addressFamily": [
-          0,
-          1
-        ],
-        "spec.networking.cloudNativeGateway.terminationGracePeriodSeconds": [
           2,
           3
         ],
-        "spec.xdcr.globalSettings.mobile": [
+        "spec.networking.cloudNativeGateway.terminationGracePeriodSeconds": [
           4,
           5
+        ],
+        "spec.xdcr.globalSettings.mobile": [
+          6,
+          7
         ]
       }
     },
@@ -27,8 +38,8 @@
       ],
       "descriptions": {
         "spec.servers.services": [
-          6,
-          7
+          8,
+          9
         ]
       }
     },
@@ -94,163 +105,163 @@
       "descriptions": {
         "spec.autoResourceAllocation.overheadMemory": [
           null,
-          8
+          10
         ],
         "spec.buckets.enableBucketMigrationRoutines": [
           null,
-          9
+          0
         ],
         "spec.cluster.allowFailoverEphemeralNoReplicas": [
           null,
-          10
+          11
         ],
         "spec.cluster.analytics": [
           null,
-          11
+          12
         ],
         "spec.cluster.appTelemetry": [
           null,
-          12
+          13
         ],
         "spec.cluster.autoCompaction.magmaFragmentationPercentage": [
           null,
-          13
+          14
         ],
         "spec.cluster.data.diskUsageLimit": [
           null,
-          14
+          15
         ],
         "spec.cluster.data.readerThreads": [
-          15,
-          16
+          16,
+          17
         ],
         "spec.cluster.data.tcpKeepAliveIdle": [
           null,
-          17
+          18
         ],
         "spec.cluster.data.tcpKeepAliveInterval": [
           null,
-          18
+          19
         ],
         "spec.cluster.data.tcpKeepAliveProbes": [
           null,
-          19
+          20
         ],
         "spec.cluster.data.tcpUserTimeout": [
           null,
-          20
+          21
         ],
         "spec.cluster.data.writerThreads": [
-          21,
-          22
+          22,
+          23
         ],
         "spec.cluster.indexer.deferBuild": [
           null,
-          23
+          24
         ],
         "spec.cluster.query.completedStreamSize": [
           null,
-          24
+          25
         ],
         "spec.cluster.query.completedThreshold": [
           null,
-          25
+          26
         ],
         "spec.cluster.query.completedTrackingAllRequests": [
-          26,
-          27
+          27,
+          28
         ],
         "spec.cluster.query.completedTrackingEnabled": [
-          28,
-          29
+          29,
+          30
         ],
         "spec.cluster.query.completedTrackingThreshold": [
-          30,
-          31
+          31,
+          32
         ],
         "spec.logging.server.sidecar.tls": [
           null,
-          32
+          33
         ],
         "spec.mirWatchdog": [
           null,
-          33
+          34
         ],
         "spec.networking.addressFamily": [
-          34,
-          0
+          35,
+          2
         ],
         "spec.networking.allowExternallyUnreachablePods": [
           null,
-          35
+          36
         ],
         "spec.networking.cloudNativeGateway.serviceTemplate": [
           null,
-          36
+          37
         ],
         "spec.networking.improvedHostNetwork": [
           null,
-          37
+          38
         ],
         "spec.networking.initPodsWithNodeHostname": [
           null,
-          38
+          39
         ],
         "spec.networking.tls.validateBareHostnames": [
           null,
-          39
+          40
         ],
         "spec.networking.waitForAddressReachable": [
-          40,
-          41
+          41,
+          42
         ],
         "spec.networking.waitForAddressReachableDelay": [
-          42,
-          43
+          43,
+          44
         ],
         "spec.rollingUpgrade": [
-          44,
-          45
+          45,
+          46
         ],
         "spec.security.encryptionAtRest": [
           null,
-          46
+          47
         ],
         "spec.security.passwordPolicy": [
           null,
-          47
+          48
         ],
         "spec.servers.image": [
-          48,
-          49
+          49,
+          50
         ],
         "spec.upgrade": [
           null,
-          50
+          51
         ],
         "spec.upgradeProcess": [
-          51,
-          52
+          52,
+          53
         ],
         "spec.upgradeStrategy": [
-          53,
-          54
+          54,
+          55
         ],
         "spec.xdcr.globalSettings": [
           null,
-          55
+          56
         ],
         "spec.xdcr.remoteClusters.uuid": [
           null,
-          56
+          57
         ],
         "status.buckets.numVBuckets": [
           null,
-          57
+          58
         ],
         "status.rebalanceAttempts": [
           null,
-          58
+          59
         ]
       }
     },
@@ -290,128 +301,128 @@
       ],
       "descriptions": {
         "spec.autoscaleStabilizationPeriod": [
-          59,
-          60
+          60,
+          61
         ],
         "spec.backup.imagePullSecrets.name": [
-          61,
-          62
+          62,
+          63
         ],
         "spec.backup.resources.claims": [
-          63,
-          64
+          64,
+          65
         ],
         "spec.enableOnlineVolumeExpansion": [
-          65,
-          66
+          66,
+          67
         ],
         "spec.logging.audit.garbageCollection.sidecar.resources.claims": [
-          63,
-          64
+          64,
+          65
         ],
         "spec.logging.server.sidecar.resources.claims": [
-          63,
-          64
+          64,
+          65
         ],
         "spec.monitoring.prometheus.resources.claims": [
-          63,
-          64
+          64,
+          65
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.clusterIPs": [
-          67,
-          68
+          68,
+          69
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.ipFamilies": [
-          69,
-          70
+          70,
+          71
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.clusterIPs": [
-          67,
-          68
+          68,
+          69
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.ipFamilies": [
-          69,
-          70
+          70,
+          71
         ],
         "spec.security.podSecurityContext.fsGroup": [
-          71,
-          72
+          72,
+          73
         ],
         "spec.security.podSecurityContext.seccompProfile.type": [
-          73,
-          74
+          74,
+          75
         ],
         "spec.security.securityContext.seccompProfile.type": [
-          73,
-          74
+          74,
+          75
         ],
         "spec.securityContext.fsGroup": [
-          71,
-          72
+          72,
+          73
         ],
         "spec.securityContext.seccompProfile.type": [
-          73,
-          74
+          74,
+          75
         ],
         "spec.servers.env.valueFrom.configMapKeyRef.name": [
-          61,
-          62
+          62,
+          63
         ],
         "spec.servers.env.valueFrom.secretKeyRef.name": [
-          61,
-          62
+          62,
+          63
         ],
         "spec.servers.envFrom.configMapRef.name": [
-          61,
-          62
+          62,
+          63
         ],
         "spec.servers.envFrom.secretRef.name": [
-          61,
-          62
+          62,
+          63
         ],
         "spec.servers.pod.spec.imagePullSecrets.name": [
-          61,
-          62
+          62,
+          63
         ],
         "spec.servers.pod.spec.os": [
-          75,
-          76
+          76,
+          77
         ],
         "spec.servers.pod.spec.resourceClaims": [
-          77,
-          78
+          78,
+          79
         ],
         "spec.servers.pod.spec.resourceClaims.source.resourceClaimTemplateName": [
-          79,
-          80
+          80,
+          81
         ],
         "spec.servers.pod.spec.schedulingGates": [
-          81,
-          82
+          82,
+          83
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.matchLabelKeys": [
-          83,
-          84
+          84,
+          85
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.minDomains": [
-          85,
-          86
+          86,
+          87
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.nodeAffinityPolicy": [
-          87,
-          88
+          88,
+          89
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.nodeTaintsPolicy": [
-          89,
-          90
+          90,
+          91
         ],
         "spec.servers.resources.claims": [
-          63,
-          64
+          64,
+          65
         ],
         "spec.volumeClaimTemplates.spec.resources.claims": [
-          63,
-          64
+          64,
+          65
         ]
       }
     },
@@ -426,20 +437,20 @@
       },
       "descriptions": {
         "spec.cluster.autoCompaction.databaseFragmentationThreshold": [
-          91,
-          92
+          92,
+          93
         ],
         "spec.migration.migrationOrderOverride": [
           null,
-          93
+          94
         ],
         "spec.perServiceClassPDB": [
-          94,
-          95
+          95,
+          96
         ],
         "spec.servers.services": [
-          96,
-          6
+          97,
+          8
         ]
       }
     },
@@ -461,48 +472,48 @@
       },
       "descriptions": {
         "spec.buckets.managed": [
-          97,
-          98
+          98,
+          99
         ],
         "spec.cluster.autoCompaction": [
-          99,
-          100
+          100,
+          101
         ],
         "spec.cluster.autoCompaction.timeWindow.abortCompactionOutsideWindow": [
-          101,
-          102
+          102,
+          103
         ],
         "spec.cluster.data.minReplicasCount": [
-          103,
-          104
+          104,
+          105
         ],
         "spec.cluster.indexer.enablePageBloomFilter": [
           null,
-          105
+          106
         ],
         "spec.cluster.indexer.numReplica": [
-          106,
-          107
+          107,
+          108
         ],
         "spec.migration": [
           null,
-          108
+          109
         ],
         "spec.networking.cloudNativeGateway.image": [
-          109,
-          110
+          110,
+          111
         ],
         "spec.perServiceClassPDB": [
           null,
-          94
+          95
         ],
         "spec.servers.services": [
-          111,
-          96
+          112,
+          97
         ],
         "status.lastUpdateTime": [
           null,
-          112
+          113
         ]
       }
     },
@@ -512,8 +523,8 @@
       ],
       "descriptions": {
         "spec.logging.audit.garbageCollection.sidecar": [
-          113,
-          114
+          114,
+          115
         ]
       }
     },
@@ -1012,1956 +1023,1956 @@
       "description": true,
       "descriptions": {
         "apiVersion": [
-          115,
-          116
+          116,
+          117
         ],
         "kind": [
-          117,
-          118
+          118,
+          119
         ],
         "spec": [
-          119,
-          120
+          120,
+          121
         ],
         "spec.antiAffinity": [
-          121,
-          122
+          122,
+          123
         ],
         "spec.autoResourceAllocation": [
-          123,
-          124
+          124,
+          125
         ],
         "spec.autoResourceAllocation.cpuLimits": [
-          125,
-          126
+          126,
+          127
         ],
         "spec.autoResourceAllocation.cpuRequests": [
-          127,
-          128
+          128,
+          129
         ],
         "spec.autoResourceAllocation.overheadPercent": [
-          129,
-          130
+          130,
+          131
         ],
         "spec.autoscaleStabilizationPeriod": [
-          131,
-          59
+          132,
+          60
         ],
         "spec.backup": [
-          132,
-          133
+          133,
+          134
         ],
         "spec.backup.imagePullSecrets": [
-          134,
-          135
+          135,
+          136
         ],
         "spec.backup.imagePullSecrets.name": [
-          136,
-          61
+          137,
+          62
         ],
         "spec.backup.nodeSelector": [
-          137,
-          138
+          138,
+          139
         ],
         "spec.backup.objectEndpoint": [
-          139,
-          140
+          140,
+          141
         ],
         "spec.backup.objectEndpoint.secret": [
-          141,
-          142
+          142,
+          143
         ],
         "spec.backup.objectEndpoint.useVirtualPath": [
-          143,
-          144
+          144,
+          145
         ],
         "spec.backup.resources": [
-          145,
-          146
+          146,
+          147
         ],
         "spec.backup.resources.claims": [
-          147,
-          63
+          148,
+          64
         ],
         "spec.backup.resources.claims.name": [
-          148,
-          149
+          149,
+          150
         ],
         "spec.backup.resources.limits": [
-          150,
-          151
+          151,
+          152
         ],
         "spec.backup.resources.requests": [
-          152,
-          153
+          153,
+          154
         ],
         "spec.backup.s3Secret": [
-          154,
-          155
+          155,
+          156
         ],
         "spec.backup.selector": [
-          156,
-          157
+          157,
+          158
         ],
         "spec.backup.selector.matchExpressions.operator": [
-          158,
-          159
+          159,
+          160
         ],
         "spec.backup.selector.matchExpressions.values": [
-          160,
-          161
+          161,
+          162
         ],
         "spec.backup.selector.matchLabels": [
-          162,
-          163
+          163,
+          164
         ],
         "spec.backup.serviceAccountName": [
-          164,
-          165
+          165,
+          166
         ],
         "spec.backup.tolerations.effect": [
-          166,
-          167
+          167,
+          168
         ],
         "spec.backup.tolerations.key": [
-          168,
-          169
+          169,
+          170
         ],
         "spec.backup.tolerations.operator": [
-          170,
-          171
+          171,
+          172
         ],
         "spec.backup.tolerations.tolerationSeconds": [
-          172,
-          173
+          173,
+          174
         ],
         "spec.backup.tolerations.value": [
-          174,
-          175
+          175,
+          176
         ],
         "spec.backup.useIAMRole": [
-          176,
-          177
+          177,
+          178
         ],
         "spec.buckets": [
-          178,
-          179
+          179,
+          180
         ],
         "spec.buckets.managed": [
-          180,
-          97
+          181,
+          98
         ],
         "spec.buckets.selector": [
-          181,
-          182
+          182,
+          183
         ],
         "spec.buckets.selector.matchExpressions.operator": [
-          158,
-          159
+          159,
+          160
         ],
         "spec.buckets.selector.matchExpressions.values": [
-          160,
-          161
+          161,
+          162
         ],
         "spec.buckets.selector.matchLabels": [
-          162,
-          163
+          163,
+          164
         ],
         "spec.buckets.synchronize": [
-          183,
-          184
+          184,
+          185
         ],
         "spec.cluster": [
-          185,
-          186
+          186,
+          187
         ],
         "spec.cluster.analyticsServiceMemoryQuota": [
-          187,
-          188
+          188,
+          189
         ],
         "spec.cluster.autoCompaction": [
-          189,
-          99
+          190,
+          100
         ],
         "spec.cluster.autoCompaction.databaseFragmentationThreshold.percent": [
-          190,
-          191
+          191,
+          192
         ],
         "spec.cluster.autoCompaction.databaseFragmentationThreshold.size": [
-          192,
-          193
+          193,
+          194
         ],
         "spec.cluster.autoCompaction.parallelCompaction": [
-          194,
-          195
+          195,
+          196
         ],
         "spec.cluster.autoCompaction.timeWindow.abortCompactionOutsideWindow": [
-          196,
-          101
+          197,
+          102
         ],
         "spec.cluster.autoCompaction.tombstonePurgeInterval": [
-          197,
-          198
+          198,
+          199
         ],
         "spec.cluster.autoCompaction.viewFragmentationThreshold.percent": [
-          190,
-          191
+          191,
+          192
         ],
         "spec.cluster.autoCompaction.viewFragmentationThreshold.size": [
-          192,
-          193
+          193,
+          194
         ],
         "spec.cluster.autoFailoverMaxCount": [
-          199,
-          200
+          200,
+          201
         ],
         "spec.cluster.autoFailoverOnDataDiskIssues": [
-          201,
-          202
+          202,
+          203
         ],
         "spec.cluster.autoFailoverOnDataDiskIssuesTimePeriod": [
-          203,
-          204
+          204,
+          205
         ],
         "spec.cluster.autoFailoverServerGroup": [
-          205,
-          206
+          206,
+          207
         ],
         "spec.cluster.autoFailoverTimeout": [
-          207,
-          208
+          208,
+          209
         ],
         "spec.cluster.clusterName": [
-          209,
-          210
+          210,
+          211
         ],
         "spec.cluster.data.auxIOThreads": [
-          211,
-          212
+          212,
+          213
         ],
         "spec.cluster.data.minReplicasCount": [
           null,
-          103
+          104
         ],
         "spec.cluster.data.nonIOThreads": [
-          213,
-          214
+          214,
+          215
         ],
         "spec.cluster.data.readerThreads": [
-          215,
-          15
+          216,
+          16
         ],
         "spec.cluster.data.writerThreads": [
-          216,
-          21
+          217,
+          22
         ],
         "spec.cluster.dataServiceMemoryQuota": [
-          217,
-          218
+          218,
+          219
         ],
         "spec.cluster.eventingServiceMemoryQuota": [
-          219,
-          220
+          220,
+          221
         ],
         "spec.cluster.indexServiceMemoryQuota": [
-          221,
-          222
+          222,
+          223
         ],
         "spec.cluster.indexStorageSetting": [
-          223,
-          224
+          224,
+          225
         ],
         "spec.cluster.indexer.enableShardAffinity": [
           null,
-          225
+          226
         ],
         "spec.cluster.indexer.logLevel": [
-          226,
-          227
+          227,
+          228
         ],
         "spec.cluster.indexer.maxRollbackPoints": [
-          228,
-          229
+          229,
+          230
         ],
         "spec.cluster.indexer.memorySnapshotInterval": [
-          230,
-          231
+          231,
+          232
         ],
         "spec.cluster.indexer.numReplica": [
-          232,
-          106
+          233,
+          107
         ],
         "spec.cluster.indexer.redistributeIndexes": [
-          233,
-          234
+          234,
+          235
         ],
         "spec.cluster.indexer.stableSnapshotInterval": [
-          235,
-          236
+          236,
+          237
         ],
         "spec.cluster.indexer.storageMode": [
-          237,
-          238
+          238,
+          239
         ],
         "spec.cluster.indexer.threads": [
-          239,
-          240
+          240,
+          241
         ],
         "spec.cluster.query.cboEnabled": [
           null,
-          241
+          242
         ],
         "spec.cluster.query.cleanupClientAttemptsEnabled": [
           null,
-          242
+          243
         ],
         "spec.cluster.query.cleanupLostAttemptsEnabled": [
           null,
-          243
+          244
         ],
         "spec.cluster.query.cleanupWindow": [
           null,
-          244
+          245
         ],
         "spec.cluster.query.completedLimit": [
           null,
-          245
+          246
         ],
         "spec.cluster.query.completedMaxPlanSize": [
           null,
-          246
+          247
         ],
         "spec.cluster.query.completedTrackingAllRequests": [
           null,
-          26
+          27
         ],
         "spec.cluster.query.completedTrackingEnabled": [
           null,
-          28
+          29
         ],
         "spec.cluster.query.completedTrackingThreshold": [
           null,
-          30
+          31
         ],
         "spec.cluster.query.logLevel": [
           null,
-          247
+          248
         ],
         "spec.cluster.query.maxParallelism": [
           null,
-          248
+          249
         ],
         "spec.cluster.query.memoryQuota": [
           null,
-          249
+          250
         ],
         "spec.cluster.query.nodeQuotaValPercent": [
           null,
-          250
+          251
         ],
         "spec.cluster.query.numActiveTransactionRecords": [
           null,
-          251
+          252
         ],
         "spec.cluster.query.numCpus": [
           null,
-          252
+          253
         ],
         "spec.cluster.query.pipelineBatch": [
           null,
-          253
+          254
         ],
         "spec.cluster.query.pipelineCap": [
           null,
-          254
+          255
         ],
         "spec.cluster.query.preparedLimit": [
           null,
-          255
+          256
         ],
         "spec.cluster.query.scanCap": [
           null,
-          256
+          257
         ],
         "spec.cluster.query.temporarySpace": [
-          257,
-          258
+          258,
+          259
         ],
         "spec.cluster.query.temporarySpaceUnlimited": [
-          259,
-          260
+          260,
+          261
         ],
         "spec.cluster.query.timeout": [
           null,
-          261
+          262
         ],
         "spec.cluster.query.txTimeout": [
           null,
-          262
+          263
         ],
         "spec.cluster.query.useReplica": [
           null,
-          263
+          264
         ],
         "spec.cluster.queryServiceMemoryQuota": [
-          264,
-          265
+          265,
+          266
         ],
         "spec.cluster.searchServiceMemoryQuota": [
-          266,
-          267
+          267,
+          268
         ],
         "spec.enableOnlineVolumeExpansion": [
-          268,
-          65
+          269,
+          66
         ],
         "spec.enablePreviewScaling": [
-          269,
-          270
+          270,
+          271
         ],
         "spec.envImagePrecedence": [
-          271,
-          272
+          272,
+          273
         ],
         "spec.hibernationStrategy": [
-          273,
-          274
+          274,
+          275
         ],
         "spec.image": [
-          275,
-          276
+          276,
+          277
         ],
         "spec.logging.audit.disabledEvents": [
-          277,
-          278
+          278,
+          279
         ],
         "spec.logging.audit.disabledUsers": [
-          279,
-          280
+          280,
+          281
         ],
         "spec.logging.audit.garbageCollection": [
-          281,
-          282
+          282,
+          283
         ],
         "spec.logging.audit.garbageCollection.sidecar": [
-          283,
-          113
+          284,
+          114
         ],
         "spec.logging.audit.garbageCollection.sidecar.image": [
-          284,
-          285
+          285,
+          286
         ],
         "spec.logging.audit.garbageCollection.sidecar.resources": [
-          286,
-          287
+          287,
+          288
         ],
         "spec.logging.audit.garbageCollection.sidecar.resources.claims": [
-          147,
-          63
+          148,
+          64
         ],
         "spec.logging.audit.garbageCollection.sidecar.resources.claims.name": [
-          148,
-          149
+          149,
+          150
         ],
         "spec.logging.audit.garbageCollection.sidecar.resources.limits": [
-          150,
-          151
+          151,
+          152
         ],
         "spec.logging.audit.garbageCollection.sidecar.resources.requests": [
-          152,
-          153
+          153,
+          154
         ],
         "spec.logging.audit.rotation": [
-          288,
-          289
+          289,
+          290
         ],
         "spec.logging.audit.rotation.pruneAge": [
           null,
-          290
+          291
         ],
         "spec.logging.audit.rotation.size": [
-          291,
-          292
+          292,
+          293
         ],
         "spec.logging.server.configurationName": [
-          293,
-          294
+          294,
+          295
         ],
         "spec.logging.server.manageConfiguration": [
-          295,
-          296
+          296,
+          297
         ],
         "spec.logging.server.sidecar.configurationMountPath": [
-          297,
-          298
+          298,
+          299
         ],
         "spec.logging.server.sidecar.image": [
-          299,
-          300
+          300,
+          301
         ],
         "spec.logging.server.sidecar.resources": [
-          301,
-          302
+          302,
+          303
         ],
         "spec.logging.server.sidecar.resources.claims": [
-          147,
-          63
+          148,
+          64
         ],
         "spec.logging.server.sidecar.resources.claims.name": [
-          148,
-          149
+          149,
+          150
         ],
         "spec.logging.server.sidecar.resources.limits": [
-          150,
-          151
+          151,
+          152
         ],
         "spec.logging.server.sidecar.resources.requests": [
-          152,
-          153
+          153,
+          154
         ],
         "spec.monitoring": [
-          303,
-          304
+          304,
+          305
         ],
         "spec.monitoring.prometheus": [
-          305,
-          306
+          306,
+          307
         ],
         "spec.monitoring.prometheus.authorizationSecret": [
-          307,
-          308
+          308,
+          309
         ],
         "spec.monitoring.prometheus.enabled": [
-          309,
-          310
+          310,
+          311
         ],
         "spec.monitoring.prometheus.image": [
-          311,
-          312
+          312,
+          313
         ],
         "spec.monitoring.prometheus.refreshRate": [
-          313,
-          314
+          314,
+          315
         ],
         "spec.monitoring.prometheus.resources": [
-          315,
-          316
+          316,
+          317
         ],
         "spec.monitoring.prometheus.resources.claims": [
-          147,
-          63
+          148,
+          64
         ],
         "spec.monitoring.prometheus.resources.claims.name": [
-          148,
-          149
+          149,
+          150
         ],
         "spec.monitoring.prometheus.resources.limits": [
-          150,
-          151
+          151,
+          152
         ],
         "spec.monitoring.prometheus.resources.requests": [
-          152,
-          153
+          153,
+          154
         ],
         "spec.networking": [
-          317,
-          318
+          318,
+          319
         ],
         "spec.networking.addressFamily": [
-          319,
-          34
+          320,
+          35
         ],
         "spec.networking.adminConsoleServiceTemplate": [
-          320,
-          321
+          321,
+          322
         ],
         "spec.networking.adminConsoleServiceTemplate.metadata": [
-          322,
-          323
+          323,
+          324
         ],
         "spec.networking.adminConsoleServiceTemplate.metadata.annotations": [
-          324,
-          325
+          325,
+          326
         ],
         "spec.networking.adminConsoleServiceTemplate.metadata.labels": [
-          326,
-          327
+          327,
+          328
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.allocateLoadBalancerNodePorts": [
-          328,
-          329
+          329,
+          330
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.clusterIP": [
-          330,
-          331
+          331,
+          332
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.clusterIPs": [
-          332,
-          67
+          333,
+          68
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.externalIPs": [
-          333,
-          334
+          334,
+          335
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.externalName": [
-          335,
-          336
+          336,
+          337
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.externalTrafficPolicy": [
-          337,
-          338
+          338,
+          339
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.healthCheckNodePort": [
-          339,
-          340
+          340,
+          341
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.internalTrafficPolicy": [
-          341,
-          342
+          342,
+          343
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.ipFamilies": [
-          343,
-          69
+          344,
+          70
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.ipFamilyPolicy": [
-          344,
-          345
+          345,
+          346
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.loadBalancerClass": [
-          346,
-          347
+          347,
+          348
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.loadBalancerIP": [
-          348,
-          349
+          349,
+          350
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.loadBalancerSourceRanges": [
-          350,
-          351
+          351,
+          352
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.sessionAffinity": [
-          352,
-          353
+          353,
+          354
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.sessionAffinityConfig.clientIP.timeoutSeconds": [
-          354,
-          355
+          355,
+          356
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.type": [
-          356,
-          357
+          357,
+          358
         ],
         "spec.networking.adminConsoleServiceType": [
-          358,
-          359
+          359,
+          360
         ],
         "spec.networking.adminConsoleServices": [
-          360,
-          361
+          361,
+          362
         ],
         "spec.networking.cloudNativeGateway": [
-          362,
-          363
+          363,
+          364
         ],
         "spec.networking.cloudNativeGateway.image": [
-          364,
-          109
+          365,
+          110
         ],
         "spec.networking.cloudNativeGateway.logLevel": [
           null,
-          365
+          366
         ],
         "spec.networking.cloudNativeGateway.terminationGracePeriodSeconds": [
           null,
-          2
+          4
         ],
         "spec.networking.cloudNativeGateway.tls": [
-          366,
-          367
+          367,
+          368
         ],
         "spec.networking.cloudNativeGateway.tls.serverSecretName": [
-          368,
-          369
+          369,
+          370
         ],
         "spec.networking.disableUIOverHTTP": [
-          370,
-          371
+          371,
+          372
         ],
         "spec.networking.disableUIOverHTTPS": [
-          372,
-          373
+          373,
+          374
         ],
         "spec.networking.dns.domain": [
-          374,
-          375
+          375,
+          376
         ],
         "spec.networking.exposeAdminConsole": [
-          376,
-          377
+          377,
+          378
         ],
         "spec.networking.exposedFeatureServiceTemplate": [
-          378,
-          379
+          379,
+          380
         ],
         "spec.networking.exposedFeatureServiceTemplate.metadata": [
-          322,
-          323
+          323,
+          324
         ],
         "spec.networking.exposedFeatureServiceTemplate.metadata.annotations": [
-          324,
-          325
+          325,
+          326
         ],
         "spec.networking.exposedFeatureServiceTemplate.metadata.labels": [
-          326,
-          327
+          327,
+          328
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.allocateLoadBalancerNodePorts": [
-          328,
-          329
+          329,
+          330
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.clusterIP": [
-          330,
-          331
+          331,
+          332
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.clusterIPs": [
-          332,
-          67
+          333,
+          68
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.externalIPs": [
-          333,
-          334
+          334,
+          335
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.externalName": [
-          335,
-          336
+          336,
+          337
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.externalTrafficPolicy": [
-          337,
-          338
+          338,
+          339
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.healthCheckNodePort": [
-          339,
-          340
+          340,
+          341
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.internalTrafficPolicy": [
-          341,
-          342
+          342,
+          343
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.ipFamilies": [
-          343,
-          69
+          344,
+          70
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.ipFamilyPolicy": [
-          344,
-          345
+          345,
+          346
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.loadBalancerClass": [
-          346,
-          347
+          347,
+          348
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.loadBalancerIP": [
-          348,
-          349
+          349,
+          350
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.loadBalancerSourceRanges": [
-          350,
-          351
+          351,
+          352
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.sessionAffinity": [
-          352,
-          353
+          353,
+          354
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.sessionAffinityConfig.clientIP.timeoutSeconds": [
-          354,
-          355
+          355,
+          356
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.type": [
-          356,
-          357
+          357,
+          358
         ],
         "spec.networking.exposedFeatureServiceType": [
-          380,
-          381
+          381,
+          382
         ],
         "spec.networking.exposedFeatureTrafficPolicy": [
-          382,
-          383
+          383,
+          384
         ],
         "spec.networking.exposedFeatures": [
-          384,
-          385
+          385,
+          386
         ],
         "spec.networking.loadBalancerSourceRanges": [
-          386,
-          387
+          387,
+          388
         ],
         "spec.networking.networkPlatform": [
-          388,
-          389
+          389,
+          390
         ],
         "spec.networking.serviceAnnotations": [
-          390,
-          391
+          391,
+          392
         ],
         "spec.networking.tls": [
-          392,
-          393
+          393,
+          394
         ],
         "spec.networking.tls.allowPlainTextCertReload": [
-          394,
-          395
+          395,
+          396
         ],
         "spec.networking.tls.cipherSuites": [
-          396,
-          397
+          397,
+          398
         ],
         "spec.networking.tls.clientCertificatePaths": [
-          398,
-          399
+          399,
+          400
         ],
         "spec.networking.tls.clientCertificatePaths.delimiter": [
-          400,
-          401
+          401,
+          402
         ],
         "spec.networking.tls.clientCertificatePaths.path": [
-          402,
-          403
+          403,
+          404
         ],
         "spec.networking.tls.clientCertificatePaths.prefix": [
-          404,
-          405
+          405,
+          406
         ],
         "spec.networking.tls.clientCertificatePolicy": [
-          406,
-          407
+          407,
+          408
         ],
         "spec.networking.tls.nodeToNodeEncryption": [
-          408,
-          409
+          409,
+          410
         ],
         "spec.networking.tls.passphrase": [
-          410,
-          411
+          411,
+          412
         ],
         "spec.networking.tls.passphrase.rest": [
-          412,
-          413
+          413,
+          414
         ],
         "spec.networking.tls.passphrase.rest.url": [
-          414,
-          415
+          415,
+          416
         ],
         "spec.networking.tls.passphrase.script": [
-          416,
-          417
+          417,
+          418
         ],
         "spec.networking.tls.passphrase.script.secret": [
-          418,
-          419
+          419,
+          420
         ],
         "spec.networking.tls.rootCAs": [
-          420,
-          421
+          421,
+          422
         ],
         "spec.networking.tls.secretSource": [
-          422,
-          423
+          423,
+          424
         ],
         "spec.networking.tls.secretSource.clientSecretName": [
-          424,
-          425
+          425,
+          426
         ],
         "spec.networking.tls.secretSource.serverSecretName": [
-          426,
-          427
+          427,
+          428
         ],
         "spec.networking.tls.static": [
-          428,
-          429
+          429,
+          430
         ],
         "spec.networking.tls.static.operatorSecret": [
-          430,
-          431
+          431,
+          432
         ],
         "spec.networking.tls.static.serverSecret": [
-          432,
-          433
+          433,
+          434
         ],
         "spec.networking.tls.tlsMinimumVersion": [
-          434,
-          435
+          435,
+          436
         ],
         "spec.networking.waitForAddressReachable": [
-          436,
-          40
+          437,
+          41
         ],
         "spec.networking.waitForAddressReachableDelay": [
-          437,
-          42
+          438,
+          43
         ],
         "spec.onlineVolumeExpansionTimeoutInMins": [
-          438,
-          439
+          439,
+          440
         ],
         "spec.paused": [
-          440,
-          441
+          441,
+          442
         ],
         "spec.platform": [
-          442,
-          443
+          443,
+          444
         ],
         "spec.recoveryPolicy": [
-          444,
-          445
+          445,
+          446
         ],
         "spec.rollingUpgrade": [
-          446,
-          44
+          447,
+          45
         ],
         "spec.rollingUpgrade.maxUpgradable": [
-          447,
-          448
+          448,
+          449
         ],
         "spec.rollingUpgrade.maxUpgradablePercent": [
-          449,
-          450
+          450,
+          451
         ],
         "spec.security": [
-          451,
-          452
+          452,
+          453
         ],
         "spec.security.adminSecret": [
-          453,
-          454
+          454,
+          455
         ],
         "spec.security.ldap": [
-          455,
-          456
+          456,
+          457
         ],
         "spec.security.ldap.authenticationEnabled": [
-          457,
-          458
+          458,
+          459
         ],
         "spec.security.ldap.authorizationEnabled": [
-          459,
-          460
+          460,
+          461
         ],
         "spec.security.ldap.bindDN": [
-          461,
-          462
+          462,
+          463
         ],
         "spec.security.ldap.bindSecret": [
-          463,
-          464
+          464,
+          465
         ],
         "spec.security.ldap.cacert": [
-          465,
-          466
+          466,
+          467
         ],
         "spec.security.ldap.cacheValueLifetime": [
-          467,
-          468
+          468,
+          469
         ],
         "spec.security.ldap.encryption": [
-          469,
-          470
+          470,
+          471
         ],
         "spec.security.ldap.groupsQuery": [
-          471,
-          472
+          472,
+          473
         ],
         "spec.security.ldap.hosts": [
-          473,
-          474
+          474,
+          475
         ],
         "spec.security.ldap.middleboxCompMode": [
           null,
-          475
+          476
         ],
         "spec.security.ldap.nestedGroupsEnabled": [
-          476,
-          477
+          477,
+          478
         ],
         "spec.security.ldap.nestedGroupsMaxDepth": [
-          478,
-          479
+          479,
+          480
         ],
         "spec.security.ldap.port": [
-          480,
-          481
+          481,
+          482
         ],
         "spec.security.ldap.tlsSecret": [
-          482,
-          483
+          483,
+          484
         ],
         "spec.security.ldap.userDNMapping": [
-          484,
-          485
+          485,
+          486
         ],
         "spec.security.ldap.userDNMapping.template": [
-          486,
-          487
+          487,
+          488
         ],
         "spec.security.podSecurityContext": [
-          488,
-          489
+          489,
+          490
         ],
         "spec.security.podSecurityContext.fsGroup": [
-          490,
-          71
+          491,
+          72
         ],
         "spec.security.podSecurityContext.fsGroupChangePolicy": [
-          491,
-          492
+          492,
+          493
         ],
         "spec.security.podSecurityContext.runAsGroup": [
-          493,
-          494
+          494,
+          495
         ],
         "spec.security.podSecurityContext.runAsNonRoot": [
-          495,
-          496
+          496,
+          497
         ],
         "spec.security.podSecurityContext.runAsUser": [
-          497,
-          498
+          498,
+          499
         ],
         "spec.security.podSecurityContext.seLinuxOptions": [
-          499,
-          500
+          500,
+          501
         ],
         "spec.security.podSecurityContext.seccompProfile": [
-          501,
-          502
+          502,
+          503
         ],
         "spec.security.podSecurityContext.seccompProfile.localhostProfile": [
-          503,
-          504
+          504,
+          505
         ],
         "spec.security.podSecurityContext.seccompProfile.type": [
-          505,
-          73
+          506,
+          74
         ],
         "spec.security.podSecurityContext.supplementalGroups": [
-          506,
-          507
+          507,
+          508
         ],
         "spec.security.podSecurityContext.sysctls": [
-          508,
-          509
+          509,
+          510
         ],
         "spec.security.podSecurityContext.windowsOptions": [
-          510,
-          511
+          511,
+          512
         ],
         "spec.security.podSecurityContext.windowsOptions.gmsaCredentialSpec": [
-          512,
-          513
+          513,
+          514
         ],
         "spec.security.podSecurityContext.windowsOptions.hostProcess": [
-          514,
-          515
+          515,
+          516
         ],
         "spec.security.podSecurityContext.windowsOptions.runAsUserName": [
-          516,
-          517
+          517,
+          518
         ],
         "spec.security.rbac.selector": [
-          518,
-          519
+          519,
+          520
         ],
         "spec.security.rbac.selector.matchExpressions.operator": [
-          158,
-          159
+          159,
+          160
         ],
         "spec.security.rbac.selector.matchExpressions.values": [
-          160,
-          161
+          161,
+          162
         ],
         "spec.security.rbac.selector.matchLabels": [
-          162,
-          163
+          163,
+          164
         ],
         "spec.security.securityContext": [
-          520,
-          521
+          521,
+          522
         ],
         "spec.security.securityContext.allowPrivilegeEscalation": [
-          522,
-          523
+          523,
+          524
         ],
         "spec.security.securityContext.capabilities": [
-          524,
-          525
+          525,
+          526
         ],
         "spec.security.securityContext.privileged": [
-          526,
-          527
+          527,
+          528
         ],
         "spec.security.securityContext.procMount": [
-          528,
-          529
+          529,
+          530
         ],
         "spec.security.securityContext.readOnlyRootFilesystem": [
-          530,
-          531
+          531,
+          532
         ],
         "spec.security.securityContext.runAsGroup": [
-          532,
-          533
+          533,
+          534
         ],
         "spec.security.securityContext.runAsNonRoot": [
-          534,
-          535
+          535,
+          536
         ],
         "spec.security.securityContext.runAsUser": [
-          536,
-          537
+          537,
+          538
         ],
         "spec.security.securityContext.seLinuxOptions": [
-          538,
-          539
+          539,
+          540
         ],
         "spec.security.securityContext.seccompProfile": [
-          540,
-          541
+          541,
+          542
         ],
         "spec.security.securityContext.seccompProfile.localhostProfile": [
-          503,
-          504
+          504,
+          505
         ],
         "spec.security.securityContext.seccompProfile.type": [
-          505,
-          73
+          506,
+          74
         ],
         "spec.security.securityContext.windowsOptions": [
-          542,
-          543
+          543,
+          544
         ],
         "spec.security.securityContext.windowsOptions.gmsaCredentialSpec": [
-          512,
-          513
+          513,
+          514
         ],
         "spec.security.securityContext.windowsOptions.hostProcess": [
-          514,
-          515
+          515,
+          516
         ],
         "spec.security.securityContext.windowsOptions.runAsUserName": [
-          516,
-          517
+          517,
+          518
         ],
         "spec.security.uiSessionTimeout": [
-          544,
-          545
+          545,
+          546
         ],
         "spec.securityContext": [
-          546,
-          547
+          547,
+          548
         ],
         "spec.securityContext.fsGroup": [
-          490,
-          71
+          491,
+          72
         ],
         "spec.securityContext.fsGroupChangePolicy": [
-          491,
-          492
+          492,
+          493
         ],
         "spec.securityContext.runAsGroup": [
-          493,
-          494
+          494,
+          495
         ],
         "spec.securityContext.runAsNonRoot": [
-          495,
-          496
+          496,
+          497
         ],
         "spec.securityContext.runAsUser": [
-          497,
-          498
+          498,
+          499
         ],
         "spec.securityContext.seLinuxOptions": [
-          499,
-          500
+          500,
+          501
         ],
         "spec.securityContext.seccompProfile": [
-          501,
-          502
+          502,
+          503
         ],
         "spec.securityContext.seccompProfile.localhostProfile": [
-          503,
-          504
+          504,
+          505
         ],
         "spec.securityContext.seccompProfile.type": [
-          505,
-          73
+          506,
+          74
         ],
         "spec.securityContext.supplementalGroups": [
-          506,
-          507
+          507,
+          508
         ],
         "spec.securityContext.sysctls": [
-          508,
-          509
+          509,
+          510
         ],
         "spec.securityContext.windowsOptions": [
-          510,
-          511
+          511,
+          512
         ],
         "spec.securityContext.windowsOptions.gmsaCredentialSpec": [
-          512,
-          513
+          513,
+          514
         ],
         "spec.securityContext.windowsOptions.hostProcess": [
-          514,
-          515
+          515,
+          516
         ],
         "spec.securityContext.windowsOptions.runAsUserName": [
-          516,
-          517
+          517,
+          518
         ],
         "spec.serverGroups": [
-          548,
-          549
+          549,
+          550
         ],
         "spec.servers": [
-          550,
-          551
+          551,
+          552
         ],
         "spec.servers.autoscaleEnabled": [
-          552,
-          553
+          553,
+          554
         ],
         "spec.servers.env.value": [
-          554,
-          555
+          555,
+          556
         ],
         "spec.servers.env.valueFrom.configMapKeyRef.name": [
-          136,
-          61
+          137,
+          62
         ],
         "spec.servers.env.valueFrom.fieldRef": [
-          556,
-          557
+          557,
+          558
         ],
         "spec.servers.env.valueFrom.resourceFieldRef": [
-          558,
-          559
+          559,
+          560
         ],
         "spec.servers.env.valueFrom.secretKeyRef.name": [
-          136,
-          61
+          137,
+          62
         ],
         "spec.servers.envFrom.configMapRef.name": [
-          136,
-          61
+          137,
+          62
         ],
         "spec.servers.envFrom.secretRef.name": [
-          136,
-          61
+          137,
+          62
         ],
         "spec.servers.image": [
           null,
-          48
+          49
         ],
         "spec.servers.name": [
-          560,
-          561
+          561,
+          562
         ],
         "spec.servers.pod": [
-          562,
-          563
+          563,
+          564
         ],
         "spec.servers.pod.metadata": [
-          322,
-          323
+          323,
+          324
         ],
         "spec.servers.pod.metadata.annotations": [
-          324,
-          325
+          325,
+          326
         ],
         "spec.servers.pod.metadata.labels": [
-          326,
-          327
+          327,
+          328
         ],
         "spec.servers.pod.spec.activeDeadlineSeconds": [
-          564,
-          565
+          565,
+          566
         ],
         "spec.servers.pod.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
-          566,
-          567
+          567,
+          568
         ],
         "spec.servers.pod.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.operator": [
-          568,
-          569
+          569,
+          570
         ],
         "spec.servers.pod.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.values": [
-          570,
-          571
+          571,
+          572
         ],
         "spec.servers.pod.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.operator": [
-          568,
-          569
+          569,
+          570
         ],
         "spec.servers.pod.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.values": [
-          570,
-          571
+          571,
+          572
         ],
         "spec.servers.pod.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
-          572,
-          573
+          573,
+          574
         ],
         "spec.servers.pod.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.operator": [
-          568,
-          569
+          569,
+          570
         ],
         "spec.servers.pod.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.values": [
-          570,
-          571
+          571,
+          572
         ],
         "spec.servers.pod.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.operator": [
-          568,
-          569
+          569,
+          570
         ],
         "spec.servers.pod.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.values": [
-          570,
-          571
+          571,
+          572
         ],
         "spec.servers.pod.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
-          574,
-          575
+          575,
+          576
         ],
         "spec.servers.pod.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator": [
-          158,
-          159
+          159,
+          160
         ],
         "spec.servers.pod.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values": [
-          160,
-          161
+          161,
+          162
         ],
         "spec.servers.pod.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels": [
-          162,
-          163
+          163,
+          164
         ],
         "spec.servers.pod.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
-          576,
-          577
+          577,
+          578
         ],
         "spec.servers.pod.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator": [
-          158,
-          159
+          159,
+          160
         ],
         "spec.servers.pod.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values": [
-          160,
-          161
+          161,
+          162
         ],
         "spec.servers.pod.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels": [
-          162,
-          163
+          163,
+          164
         ],
         "spec.servers.pod.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
-          578,
-          579
+          579,
+          580
         ],
         "spec.servers.pod.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey": [
-          580,
-          581
+          581,
+          582
         ],
         "spec.servers.pod.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
-          582,
-          583
+          583,
+          584
         ],
         "spec.servers.pod.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
-          584,
-          585
+          585,
+          586
         ],
         "spec.servers.pod.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator": [
-          158,
-          159
+          159,
+          160
         ],
         "spec.servers.pod.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values": [
-          160,
-          161
+          161,
+          162
         ],
         "spec.servers.pod.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels": [
-          162,
-          163
+          163,
+          164
         ],
         "spec.servers.pod.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
-          576,
-          577
+          577,
+          578
         ],
         "spec.servers.pod.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator": [
-          158,
-          159
+          159,
+          160
         ],
         "spec.servers.pod.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values": [
-          160,
-          161
+          161,
+          162
         ],
         "spec.servers.pod.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels": [
-          162,
-          163
+          163,
+          164
         ],
         "spec.servers.pod.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
-          578,
-          579
+          579,
+          580
         ],
         "spec.servers.pod.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey": [
-          580,
-          581
+          581,
+          582
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
-          586,
-          587
+          587,
+          588
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator": [
-          158,
-          159
+          159,
+          160
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values": [
-          160,
-          161
+          161,
+          162
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels": [
-          162,
-          163
+          163,
+          164
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
-          576,
-          577
+          577,
+          578
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator": [
-          158,
-          159
+          159,
+          160
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values": [
-          160,
-          161
+          161,
+          162
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels": [
-          162,
-          163
+          163,
+          164
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
-          578,
-          579
+          579,
+          580
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey": [
-          580,
-          581
+          581,
+          582
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
-          582,
-          583
+          583,
+          584
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
-          588,
-          589
+          589,
+          590
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator": [
-          158,
-          159
+          159,
+          160
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values": [
-          160,
-          161
+          161,
+          162
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels": [
-          162,
-          163
+          163,
+          164
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
-          576,
-          577
+          577,
+          578
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator": [
-          158,
-          159
+          159,
+          160
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values": [
-          160,
-          161
+          161,
+          162
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels": [
-          162,
-          163
+          163,
+          164
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
-          578,
-          579
+          579,
+          580
         ],
         "spec.servers.pod.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey": [
-          580,
-          581
+          581,
+          582
         ],
         "spec.servers.pod.spec.dnsConfig": [
-          590,
-          591
+          591,
+          592
         ],
         "spec.servers.pod.spec.dnsConfig.nameservers": [
-          592,
-          593
+          593,
+          594
         ],
         "spec.servers.pod.spec.dnsConfig.options": [
-          594,
-          595
+          595,
+          596
         ],
         "spec.servers.pod.spec.dnsConfig.searches": [
-          596,
-          597
+          597,
+          598
         ],
         "spec.servers.pod.spec.dnsPolicy": [
-          598,
-          599
+          599,
+          600
         ],
         "spec.servers.pod.spec.enableServiceLinks": [
-          600,
-          601
+          601,
+          602
         ],
         "spec.servers.pod.spec.hostIPC": [
-          602,
-          603
+          603,
+          604
         ],
         "spec.servers.pod.spec.hostNetwork": [
-          604,
-          605
+          605,
+          606
         ],
         "spec.servers.pod.spec.hostPID": [
-          606,
-          607
+          607,
+          608
         ],
         "spec.servers.pod.spec.hostUsers": [
-          608,
-          609
+          609,
+          610
         ],
         "spec.servers.pod.spec.imagePullSecrets": [
-          610,
-          611
+          611,
+          612
         ],
         "spec.servers.pod.spec.imagePullSecrets.name": [
-          136,
-          61
+          137,
+          62
         ],
         "spec.servers.pod.spec.nodeName": [
-          612,
-          613
+          613,
+          614
         ],
         "spec.servers.pod.spec.nodeSelector": [
-          614,
-          615
+          615,
+          616
         ],
         "spec.servers.pod.spec.os": [
-          616,
-          75
+          617,
+          76
         ],
         "spec.servers.pod.spec.os.name": [
-          617,
-          618
+          618,
+          619
         ],
         "spec.servers.pod.spec.overhead": [
-          619,
-          620
+          620,
+          621
         ],
         "spec.servers.pod.spec.preemptionPolicy": [
-          621,
-          622
+          622,
+          623
         ],
         "spec.servers.pod.spec.priority": [
-          623,
-          624
+          624,
+          625
         ],
         "spec.servers.pod.spec.priorityClassName": [
-          625,
-          626
+          626,
+          627
         ],
         "spec.servers.pod.spec.resourceClaims": [
-          627,
-          77
+          628,
+          78
         ],
         "spec.servers.pod.spec.resourceClaims.name": [
-          628,
-          629
+          629,
+          630
         ],
         "spec.servers.pod.spec.resourceClaims.source.resourceClaimName": [
-          630,
-          631
+          631,
+          632
         ],
         "spec.servers.pod.spec.resourceClaims.source.resourceClaimTemplateName": [
-          632,
-          79
+          633,
+          80
         ],
         "spec.servers.pod.spec.runtimeClassName": [
-          633,
-          634
+          634,
+          635
         ],
         "spec.servers.pod.spec.schedulerName": [
-          635,
-          636
+          636,
+          637
         ],
         "spec.servers.pod.spec.schedulingGates": [
-          637,
-          81
+          638,
+          82
         ],
         "spec.servers.pod.spec.schedulingGates.name": [
-          638,
-          639
+          639,
+          640
         ],
         "spec.servers.pod.spec.serviceAccount": [
-          640,
-          641
+          641,
+          642
         ],
         "spec.servers.pod.spec.serviceAccountName": [
-          642,
-          643
+          643,
+          644
         ],
         "spec.servers.pod.spec.setHostnameAsFQDN": [
-          644,
-          645
+          645,
+          646
         ],
         "spec.servers.pod.spec.shareProcessNamespace": [
-          646,
-          647
+          647,
+          648
         ],
         "spec.servers.pod.spec.terminationGracePeriodSeconds": [
-          648,
-          649
+          649,
+          650
         ],
         "spec.servers.pod.spec.tolerations.effect": [
-          166,
-          167
+          167,
+          168
         ],
         "spec.servers.pod.spec.tolerations.key": [
-          168,
-          169
+          169,
+          170
         ],
         "spec.servers.pod.spec.tolerations.operator": [
-          170,
-          171
+          171,
+          172
         ],
         "spec.servers.pod.spec.tolerations.tolerationSeconds": [
-          172,
-          173
+          173,
+          174
         ],
         "spec.servers.pod.spec.tolerations.value": [
-          174,
-          175
+          175,
+          176
         ],
         "spec.servers.pod.spec.topologySpreadConstraints": [
-          650,
-          651
+          651,
+          652
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.labelSelector": [
-          652,
-          653
+          653,
+          654
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.labelSelector.matchExpressions.operator": [
-          158,
-          159
+          159,
+          160
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.labelSelector.matchExpressions.values": [
-          160,
-          161
+          161,
+          162
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.labelSelector.matchLabels": [
-          162,
-          163
+          163,
+          164
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.matchLabelKeys": [
-          654,
-          83
+          655,
+          84
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.maxSkew": [
-          655,
-          656
+          656,
+          657
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.minDomains": [
-          657,
-          85
+          658,
+          86
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.nodeAffinityPolicy": [
-          658,
-          87
+          659,
+          88
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.nodeTaintsPolicy": [
-          659,
-          89
+          660,
+          90
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.topologyKey": [
-          660,
-          661
+          661,
+          662
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.whenUnsatisfiable": [
-          662,
-          663
+          663,
+          664
         ],
         "spec.servers.resources": [
-          664,
-          665
+          665,
+          666
         ],
         "spec.servers.resources.claims": [
-          147,
-          63
+          148,
+          64
         ],
         "spec.servers.resources.claims.name": [
-          148,
-          149
+          149,
+          150
         ],
         "spec.servers.resources.limits": [
-          150,
-          151
+          151,
+          152
         ],
         "spec.servers.resources.requests": [
-          152,
-          153
+          153,
+          154
         ],
         "spec.servers.serverGroups": [
-          548,
-          549
+          549,
+          550
         ],
         "spec.servers.services": [
-          666,
-          111
+          667,
+          112
         ],
         "spec.servers.size": [
-          667,
-          668
+          668,
+          669
         ],
         "spec.servers.volumeMounts.analytics": [
-          669,
-          670
+          670,
+          671
         ],
         "spec.servers.volumeMounts.data": [
-          671,
-          672
+          672,
+          673
         ],
         "spec.servers.volumeMounts.default": [
-          673,
-          674
+          674,
+          675
         ],
         "spec.servers.volumeMounts.index": [
-          675,
-          676
+          676,
+          677
         ],
         "spec.servers.volumeMounts.logs": [
-          677,
-          678
+          678,
+          679
         ],
         "spec.softwareUpdateNotifications": [
-          679,
-          680
+          680,
+          681
         ],
         "spec.upgradeProcess": [
-          681,
-          51
+          682,
+          52
         ],
         "spec.upgradeStrategy": [
-          682,
-          53
+          683,
+          54
         ],
         "spec.volumeClaimTemplates": [
-          683,
-          684
+          684,
+          685
         ],
         "spec.volumeClaimTemplates.metadata": [
-          322,
-          323
+          323,
+          324
         ],
         "spec.volumeClaimTemplates.metadata.annotations": [
-          324,
-          325
+          325,
+          326
         ],
         "spec.volumeClaimTemplates.metadata.labels": [
-          326,
-          327
+          327,
+          328
         ],
         "spec.volumeClaimTemplates.metadata.name": [
-          685,
-          686
+          686,
+          687
         ],
         "spec.volumeClaimTemplates.spec": [
-          687,
-          688
+          688,
+          689
         ],
         "spec.volumeClaimTemplates.spec.accessModes": [
-          689,
-          690
+          690,
+          691
         ],
         "spec.volumeClaimTemplates.spec.dataSourceRef": [
-          691,
-          692
+          692,
+          693
         ],
         "spec.volumeClaimTemplates.spec.dataSourceRef.apiGroup": [
-          693,
-          694
+          694,
+          695
         ],
         "spec.volumeClaimTemplates.spec.dataSourceRef.namespace": [
-          695,
-          696
+          696,
+          697
         ],
         "spec.volumeClaimTemplates.spec.resources": [
-          697,
-          698
+          698,
+          699
         ],
         "spec.volumeClaimTemplates.spec.resources.claims": [
-          147,
-          63
+          148,
+          64
         ],
         "spec.volumeClaimTemplates.spec.resources.claims.name": [
-          148,
-          149
+          149,
+          150
         ],
         "spec.volumeClaimTemplates.spec.resources.limits": [
-          150,
-          151
+          151,
+          152
         ],
         "spec.volumeClaimTemplates.spec.resources.requests": [
-          152,
-          153
+          153,
+          154
         ],
         "spec.volumeClaimTemplates.spec.selector.matchExpressions.operator": [
-          158,
-          159
+          159,
+          160
         ],
         "spec.volumeClaimTemplates.spec.selector.matchExpressions.values": [
-          160,
-          161
+          161,
+          162
         ],
         "spec.volumeClaimTemplates.spec.selector.matchLabels": [
-          162,
-          163
+          163,
+          164
         ],
         "spec.volumeClaimTemplates.spec.storageClassName": [
-          699,
-          700
+          700,
+          701
         ],
         "spec.volumeClaimTemplates.spec.volumeMode": [
-          701,
-          702
+          702,
+          703
         ],
         "spec.xdcr": [
-          703,
-          704
+          704,
+          705
         ],
         "spec.xdcr.remoteClusters.authenticationSecret": [
-          705,
-          706
+          706,
+          707
         ],
         "spec.xdcr.remoteClusters.name": [
-          707,
-          708
+          708,
+          709
         ],
         "spec.xdcr.remoteClusters.replications": [
-          709,
-          710
+          710,
+          711
         ],
         "spec.xdcr.remoteClusters.replications.selector": [
-          711,
-          712
+          712,
+          713
         ],
         "spec.xdcr.remoteClusters.replications.selector.matchExpressions.operator": [
-          158,
-          159
+          159,
+          160
         ],
         "spec.xdcr.remoteClusters.replications.selector.matchExpressions.values": [
-          160,
-          161
+          161,
+          162
         ],
         "spec.xdcr.remoteClusters.replications.selector.matchLabels": [
-          162,
-          163
+          163,
+          164
         ],
         "spec.xdcr.remoteClusters.tls": [
-          713,
-          714
+          714,
+          715
         ],
         "spec.xdcr.remoteClusters.tls.secret": [
-          715,
-          716
+          716,
+          717
         ],
         "spec.xdcr.remoteClusters.uuid": [
-          717,
-          56
+          718,
+          57
         ],
         "status.allocations.allocatedMemory": [
-          718,
-          719
+          719,
+          720
         ],
         "status.allocations.allocatedMemoryPercent": [
-          720,
-          721
+          721,
+          722
         ],
         "status.allocations.analyticsServiceAllocation": [
-          722,
-          723
+          723,
+          724
         ],
         "status.allocations.dataServiceAllocation": [
-          724,
-          725
+          725,
+          726
         ],
         "status.allocations.eventingServiceAllocation": [
-          726,
-          727
+          727,
+          728
         ],
         "status.allocations.indexServiceAllocation": [
-          728,
-          729
+          729,
+          730
         ],
         "status.allocations.requestedMemory": [
-          730,
-          731
+          731,
+          732
         ],
         "status.allocations.searchServiceAllocation": [
-          732,
-          733
+          733,
+          734
         ],
         "status.allocations.unusedMemory": [
-          734,
-          735
+          735,
+          736
         ],
         "status.allocations.unusedMemoryPercent": [
-          736,
-          737
+          737,
+          738
         ],
         "status.buckets.conflictResolution": [
-          738,
-          739
+          739,
+          740
         ],
         "status.buckets.evictionPolicy": [
-          740,
-          741
+          741,
+          742
         ],
         "status.buckets.ioPriority": [
-          742,
-          743
+          743,
+          744
         ],
         "status.clusterId": [
-          744,
-          745
+          745,
+          746
         ],
         "status.controlPaused": [
-          746,
-          747
+          747,
+          748
         ],
         "status.currentVersion": [
-          748,
-          749
+          749,
+          750
         ],
         "status.members.ready": [
-          750,
-          751
+          751,
+          752
         ],
         "status.members.unready": [
-          752,
-          753
+          753,
+          754
         ],
         "status.size": [
-          754,
-          755
+          755,
+          756
         ],
         "": [
-          756,
-          757
+          757,
+          758
         ]
       }
     },
@@ -3012,159 +3023,159 @@
       "descriptions": {
         "spec.backup.resources.claims": [
           null,
-          147
+          148
         ],
         "spec.backup.resources.requests": [
-          758,
-          152
+          759,
+          153
         ],
         "spec.cluster.data.auxIOThreads": [
-          759,
-          211
+          760,
+          212
         ],
         "spec.cluster.data.nonIOThreads": [
-          760,
-          213
+          761,
+          214
         ],
         "spec.cluster.data.readerThreads": [
-          761,
-          215
-        ],
-        "spec.cluster.data.writerThreads": [
           762,
           216
         ],
+        "spec.cluster.data.writerThreads": [
+          763,
+          217
+        ],
         "spec.logging.audit.garbageCollection.sidecar.resources.claims": [
           null,
-          147
+          148
         ],
         "spec.logging.audit.garbageCollection.sidecar.resources.requests": [
-          758,
-          152
+          759,
+          153
         ],
         "spec.logging.server.sidecar.resources.claims": [
           null,
-          147
+          148
         ],
         "spec.logging.server.sidecar.resources.requests": [
-          758,
-          152
+          759,
+          153
         ],
         "spec.monitoring.prometheus.resources.claims": [
           null,
-          147
+          148
         ],
         "spec.monitoring.prometheus.resources.requests": [
-          758,
-          152
+          759,
+          153
         ],
         "spec.networking.adminConsoleServiceTemplate": [
-          763,
-          320
+          764,
+          321
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.loadBalancerIP": [
-          764,
-          348
+          765,
+          349
         ],
         "spec.networking.cloudNativeGateway.tls": [
-          765,
-          366
+          766,
+          367
         ],
         "spec.networking.exposedFeatureServiceTemplate": [
-          766,
-          378
+          767,
+          379
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.loadBalancerIP": [
-          764,
-          348
+          765,
+          349
         ],
         "spec.onlineVolumeExpansionTimeoutInMins": [
           null,
-          438
+          439
         ],
         "spec.security.podSecurityContext.seccompProfile.localhostProfile": [
-          767,
-          503
+          768,
+          504
         ],
         "spec.security.podSecurityContext.supplementalGroups": [
-          768,
-          506
+          769,
+          507
         ],
         "spec.security.podSecurityContext.windowsOptions.hostProcess": [
-          769,
-          514
+          770,
+          515
         ],
         "spec.security.securityContext.seccompProfile.localhostProfile": [
-          767,
-          503
+          768,
+          504
         ],
         "spec.security.securityContext.windowsOptions.hostProcess": [
-          769,
-          514
+          770,
+          515
         ],
         "spec.securityContext.seccompProfile.localhostProfile": [
-          767,
-          503
+          768,
+          504
         ],
         "spec.securityContext.supplementalGroups": [
-          768,
-          506
+          769,
+          507
         ],
         "spec.securityContext.windowsOptions.hostProcess": [
-          769,
-          514
+          770,
+          515
         ],
         "spec.servers.pod": [
-          770,
-          562
+          771,
+          563
         ],
         "spec.servers.pod.spec.resourceClaims": [
           null,
-          627
+          628
         ],
         "spec.servers.pod.spec.schedulingGates": [
           null,
-          637
+          638
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.matchLabelKeys": [
-          771,
-          654
+          772,
+          655
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.nodeAffinityPolicy": [
-          772,
-          658
-        ],
-        "spec.servers.pod.spec.topologySpreadConstraints.nodeTaintsPolicy": [
           773,
           659
         ],
+        "spec.servers.pod.spec.topologySpreadConstraints.nodeTaintsPolicy": [
+          774,
+          660
+        ],
         "spec.servers.resources.claims": [
           null,
-          147
+          148
         ],
         "spec.servers.resources.requests": [
-          758,
-          152
+          759,
+          153
         ],
         "spec.upgradeProcess": [
           null,
-          681
+          682
         ],
         "spec.volumeClaimTemplates.spec.dataSourceRef": [
-          774,
-          691
+          775,
+          692
         ],
         "spec.volumeClaimTemplates.spec.dataSourceRef.namespace": [
           null,
-          695
+          696
         ],
         "spec.volumeClaimTemplates.spec.resources.claims": [
           null,
-          147
+          148
         ],
         "spec.volumeClaimTemplates.spec.resources.requests": [
-          758,
-          152
+          759,
+          153
         ]
       }
     },
@@ -3186,48 +3197,48 @@
       },
       "descriptions": {
         "spec.cluster.autoFailoverMaxCount": [
-          775,
-          199
+          776,
+          200
         ],
         "spec.cluster.data.auxIOThreads": [
           null,
-          759
+          760
         ],
         "spec.cluster.data.nonIOThreads": [
           null,
-          760
+          761
         ],
         "spec.cluster.data.writerThreads": [
-          776,
-          762
+          777,
+          763
         ],
         "spec.monitoring.prometheus.enabled": [
-          777,
-          309
+          778,
+          310
         ],
         "spec.monitoring.prometheus.image": [
-          778,
-          311
+          779,
+          312
         ],
         "spec.networking.cloudNativeGateway": [
           null,
-          362
+          363
         ],
         "spec.security.podSecurityContext": [
           null,
-          488
+          489
         ],
         "spec.security.securityContext": [
           null,
-          520
+          521
         ],
         "spec.securityContext": [
-          779,
-          546
+          780,
+          547
         ],
         "spec.xdcr.remoteClusters.name": [
-          780,
-          707
+          781,
+          708
         ]
       }
     },
@@ -3238,7 +3249,7 @@
       "descriptions": {
         "spec.networking.tls.allowPlainTextCertReload": [
           null,
-          394
+          395
         ]
       }
     },
@@ -3300,208 +3311,210 @@
       "descriptions": {
         "spec.backup.annotations": [
           null,
-          781
+          782
         ],
         "spec.backup.labels": [
           null,
-          782
+          783
         ],
         "spec.backup.objectEndpoint": [
-          783,
-          139
+          784,
+          140
         ],
         "spec.backup.objectEndpoint.secret": [
-          784,
-          141
+          785,
+          142
         ],
         "spec.backup.objectEndpoint.useVirtualPath": [
-          785,
-          143
+          786,
+          144
         ],
         "spec.backup.s3Secret": [
-          786,
-          154
+          787,
+          155
         ],
         "spec.backup.useIAMRole": [
-          787,
-          176
+          788,
+          177
         ],
         "spec.cluster.autoFailoverMaxCount": [
-          788,
-          775
+          789,
+          776
         ],
         "spec.cluster.autoFailoverServerGroup": [
-          789,
-          205
+          790,
+          206
         ],
         "spec.cluster.indexer.numReplica": [
           null,
-          232
+          233
         ],
         "spec.cluster.indexer.redistributeIndexes": [
           null,
-          233
+          234
         ],
         "spec.envImagePrecedence": [
           null,
-          271
+          272
         ],
         "spec.monitoring.prometheus.refreshRate": [
           null,
-          313
+          314
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.allocateLoadBalancerNodePorts": [
-          790,
-          328
+          791,
+          329
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.externalTrafficPolicy": [
-          791,
-          337
+          792,
+          338
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.healthCheckNodePort": [
-          792,
-          339
+          793,
+          340
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.internalTrafficPolicy": [
-          793,
-          341
+          794,
+          342
         ],
         "spec.networking.adminConsoleServiceTemplate.spec.loadBalancerIP": [
-          794,
-          764
+          795,
+          765
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.allocateLoadBalancerNodePorts": [
-          790,
-          328
+          791,
+          329
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.externalTrafficPolicy": [
-          791,
-          337
+          792,
+          338
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.healthCheckNodePort": [
-          792,
-          339
+          793,
+          340
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.internalTrafficPolicy": [
-          793,
-          341
+          794,
+          342
         ],
         "spec.networking.exposedFeatureServiceTemplate.spec.loadBalancerIP": [
-          794,
-          764
+          795,
+          765
         ],
         "spec.networking.tls.allowPlainTextCertReload": [
           null,
-          394
+          395
         ],
         "spec.networking.tls.passphrase": [
           null,
-          410
+          411
         ],
         "spec.networking.tls.secretSource": [
-          795,
-          422
+          796,
+          423
         ],
         "spec.networking.tls.secretSource.serverSecretName": [
-          796,
-          426
+          797,
+          427
         ],
         "spec.networking.tls.static.serverSecret": [
-          797,
-          432
+          798,
+          433
         ],
         "spec.security.ldap.tlsSecret": [
-          798,
-          482
+          799,
+          483
         ],
         "spec.security.uiSessionTimeout": [
           null,
-          544
+          545
         ],
         "spec.servers.pod.spec.affinity": [
           null,
-          799
+          800
         ],
         "spec.servers.pod.spec.hostUsers": [
           null,
-          608
+          609
         ],
         "spec.servers.pod.spec.imagePullSecrets": [
-          800,
-          610
+          801,
+          611
         ],
         "spec.servers.pod.spec.os": [
-          801,
-          616
+          802,
+          617
         ],
         "spec.servers.pod.spec.overhead": [
-          802,
-          619
+          803,
+          620
         ],
         "spec.servers.pod.spec.preemptionPolicy": [
-          803,
-          621
+          804,
+          622
         ],
         "spec.servers.pod.spec.runtimeClassName": [
-          804,
-          633
+          805,
+          634
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.matchLabelKeys": [
           null,
-          771
+          772
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.maxSkew": [
-          805,
-          655
+          806,
+          656
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.minDomains": [
           null,
-          657
+          658
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.nodeAffinityPolicy": [
           null,
-          772
+          773
         ],
         "spec.servers.pod.spec.topologySpreadConstraints.nodeTaintsPolicy": [
           null,
-          773
-        ],
-        "spec.servers.pod.spec.topologySpreadConstraints.topologyKey": [
-          806,
-          660
-        ],
-        "spec.volumeClaimTemplates.spec.accessModes": [
-          807,
-          689
-        ],
-        "spec.volumeClaimTemplates.spec.dataSourceRef": [
-          808,
           774
         ],
-        "spec.volumeClaimTemplates.spec.resources": [
+        "spec.servers.pod.spec.topologySpreadConstraints.topologyKey": [
+          807,
+          661
+        ],
+        "spec.volumeClaimTemplates.spec.accessModes": [
+          808,
+          690
+        ],
+        "spec.volumeClaimTemplates.spec.dataSourceRef": [
           809,
-          697
+          775
+        ],
+        "spec.volumeClaimTemplates.spec.resources": [
+          810,
+          698
         ],
         "spec.volumeClaimTemplates.spec.selector": [
-          810,
-          811
+          811,
+          812
         ],
         "spec.volumeClaimTemplates.spec.storageClassName": [
-          812,
-          699
+          813,
+          700
         ],
         "spec.volumeClaimTemplates.spec.volumeName": [
-          813,
-          814
+          814,
+          815
         ],
         "status.buckets.storageBackend": [
           null,
-          815
+          816
         ]
       }
     }
   },
   "texts": [
+    "Used to define whether managed bucket storage backend migration routines should be enabled.\nThis value defaults to false.",
+    "Used to define whether bucket migration routines should be enabled.\nWhen true, the operator cycles nodes that have per-node overrides for storage backend or\neviction policy that differ from the bucket spec, by swap rebalance or, when the upgrade\nprocess is InPlaceUpgrade, by failover and recovery.\nThis value defaults to false.",
     "AddressFamily allows the manual selection of the address family to use.\nSetting this field to either IPv4Only or IPv6Only will exclusively use that address family.\nSetting this field to IPv4Priority or IPv6Priority will allow dual stack networking with\nthe given address family being prioritised.\nWhen this field is not set, Couchbase server will default to using IPv4\nfor internal communication and also support IPv6 on dual stack systems.\nThis is only supported in Couchbase Server 7.0.2+.",
     "AddressFamily allows the manual selection of the address family to use.\nSetting this to either IPv4Only or IPv6Only will restrict the cluster to only using that address family for internal communication.\nAlternatively, set this to IPv4Priority or IPv6Priority to allow dual stack networking with the given address family being prioritised.\nIf this field changes the address family (IPv4Only/Priority to IPv6Only/Priority), all couchbase services hosted on each node other than the Data service will be restarted.\nWhen this field is not set, Couchbase server will default to IPv4Priority.\nThis is only supported in Couchbase Server 7.0.2+.",
     "TerminationGracePeriodSeconds specifies the grace period for the container to\nterminate. Defaults to 75 seconds.",
@@ -3511,7 +3524,6 @@
     "Services is the set of Couchbase services to run on this server class.\nAt least one class must contain the data service.  The field may contain\nany of \"data\", \"index\", \"query\", \"search\", \"eventing\" or \"analytics\".\nEach service may only be specified once. An empty list can also be specified\nfor a serviceless class (\"[]\") if Couchbase version is 7.6.0 or greater.",
     "Services is the set of Couchbase services to run on this server class.\nAt least one class must contain the data service.  The field may contain\nany of \"data\", \"index\", \"query\", \"search\", \"eventing\" or \"analytics\".\nEach service may only be specified once. An empty list can also be specified\nfor an Arbiter class (\"[]\") if Couchbase version is 7.6.0 or greater.",
     "OverheadMemory defines a static amount of memory above that required for\nindividual services on a pod. This will override `overheadPercent` if both\nare specified.",
-    "Used to define whether managed bucket storage backend migration routines should be enabled.\nThis value defaults to false.",
     "AllowFailoverEphemeralNoReplicas allows failover of ephemeral buckets with no replicas.\nThis is only supported on Couchbase Server 8.0+.",
     "Analytics allows the analytics service to be configured.",
     "AppTelemetry allows the configuration of application telemetry.\nThis is only supported on Couchbase Server 8.0+.",

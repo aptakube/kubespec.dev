@@ -1,5 +1,16 @@
 {
   "versions": {
+    "v2.10.0": {
+      "descriptionChanged": [
+        "spec.serviceAccountName"
+      ],
+      "descriptions": {
+        "spec.serviceAccountName": [
+          0,
+          1
+        ]
+      }
+    },
     "v2.7.0": {
       "descriptionChanged": [
         "spec.certSecretRef",
@@ -11,20 +22,20 @@
       },
       "descriptions": {
         "spec.certSecretRef": [
-          0,
-          1
-        ],
-        "spec.proxy": [
           2,
           3
         ],
+        "spec.proxy": [
+          4,
+          5
+        ],
         "spec.proxySecretRef": [
           null,
-          4
+          6
         ],
         "spec.serviceAccountName": [
-          5,
-          6
+          7,
+          0
         ]
       }
     },
@@ -36,11 +47,11 @@
       "descriptions": {
         "spec.commitStatusExpr": [
           null,
-          7
+          8
         ],
         "spec.serviceAccountName": [
           null,
-          5
+          7
         ]
       }
     },
@@ -50,8 +61,8 @@
       ],
       "descriptions": {
         "spec.certSecretRef": [
-          8,
-          0
+          9,
+          2
         ]
       }
     },
@@ -67,32 +78,32 @@
       ],
       "descriptions": {
         "apiVersion": [
-          9,
-          10
+          10,
+          11
         ],
         "kind": [
-          11,
-          12
+          12,
+          13
         ],
         "spec.address": [
-          13,
-          14
+          14,
+          15
         ],
         "spec.certSecretRef": [
-          15,
-          8
+          16,
+          9
         ],
         "spec.interval": [
-          16,
-          17
+          17,
+          18
         ],
         "spec.secretRef": [
-          18,
-          19
+          19,
+          20
         ],
         "spec.suspend": [
-          20,
-          21
+          21,
+          22
         ]
       }
     },
@@ -103,19 +114,20 @@
       "descriptions": {
         "spec.interval": [
           null,
-          16
+          17
         ]
       }
     }
   },
   "texts": [
+    "ServiceAccountName is the name of the Kubernetes ServiceAccount used to\nauthenticate with cloud provider services through workload identity.\nThis enables multi-tenant authentication without storing static credentials.\n\nSupported provider types: azureeventhub, azuredevops, googlepubsub\n\nWhen specified, the controller will:\n1. Create an OIDC token for the specified ServiceAccount\n2. Exchange it for cloud provider credentials via STS\n3. Use the obtained credentials for API authentication\n\nWhen unspecified, controller-level authentication is used (single-tenant).\n\nAn error is thrown if static credentials are also defined in SecretRef.\nThis field requires the ObjectLevelWorkloadIdentity feature gate to be enabled.",
+    "ServiceAccountName is the name of the Kubernetes ServiceAccount used to\nauthenticate with cloud provider services through workload identity.\nThis enables multi-tenant authentication without storing static credentials.\n\nSupported provider types: azureeventhub, azuredevops, googlepubsub\n\nWhen specified, the controller will:\n1. Create an OIDC token for the specified ServiceAccount\n2. Exchange it for cloud provider credentials via STS\n3. Use the obtained credentials for API authentication\n\nWhen unspecified, controller-level authentication is used (single-tenant).\n\nAn error is thrown if static credentials are also defined in SecretRef.",
     "CertSecretRef specifies the Secret containing\na PEM-encoded CA certificate (in the `ca.crt` key).\n\nNote: Support for the `caFile` key has\nbeen deprecated.",
     "CertSecretRef specifies the Secret containing TLS certificates\nfor secure communication.\n\nSupported configurations:\n- CA-only: Server authentication (provide ca.crt only)\n- mTLS: Mutual authentication (provide ca.crt + tls.crt + tls.key)\n- Client-only: Client authentication with system CA (provide tls.crt + tls.key only)\n\nLegacy keys \"caFile\", \"certFile\", \"keyFile\" are supported but deprecated. Use \"ca.crt\", \"tls.crt\", \"tls.key\" instead.",
     "Proxy the HTTP/S address of the proxy server.",
     "Proxy the HTTP/S address of the proxy server.\nDeprecated: Use ProxySecretRef instead. Will be removed in v1.",
     "ProxySecretRef specifies the Secret containing the proxy configuration\nfor this Provider. The Secret should contain an 'address' key with the\nHTTP/S address of the proxy server. Optional 'username' and 'password'\nkeys can be provided for proxy authentication.",
     "ServiceAccountName is the name of the service account used to\nauthenticate with services from cloud providers. An error is thrown if a\nstatic credential is also defined inside the Secret referenced by the\nSecretRef.",
-    "ServiceAccountName is the name of the Kubernetes ServiceAccount used to\nauthenticate with cloud provider services through workload identity.\nThis enables multi-tenant authentication without storing static credentials.\n\nSupported provider types: azureeventhub, azuredevops, googlepubsub\n\nWhen specified, the controller will:\n1. Create an OIDC token for the specified ServiceAccount\n2. Exchange it for cloud provider credentials via STS\n3. Use the obtained credentials for API authentication\n\nWhen unspecified, controller-level authentication is used (single-tenant).\n\nAn error is thrown if static credentials are also defined in SecretRef.\nThis field requires the ObjectLevelWorkloadIdentity feature gate to be enabled.",
     "CommitStatusExpr is a CEL expression that evaluates to a string value\nthat can be used to generate a custom commit status message for use\nwith eligible Provider types (github, gitlab, gitea, bitbucketserver,\nbitbucket, azuredevops). Supported variables are: event, provider,\nand alert.",
     "CertSecretRef specifies the Secret containing\na PEM-encoded CA certificate (in the `ca.crt` key).\n\n\nNote: Support for the `caFile` key has\nbeen deprecated.",
     "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",

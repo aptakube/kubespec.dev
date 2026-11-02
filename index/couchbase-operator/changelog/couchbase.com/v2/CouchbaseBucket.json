@@ -1,5 +1,16 @@
 {
   "versions": {
+    "couchbase-operator-2.94.0": {
+      "descriptionChanged": [
+        "spec.onlineEvictionPolicyChange"
+      ],
+      "descriptions": {
+        "spec.onlineEvictionPolicyChange": [
+          0,
+          1
+        ]
+      }
+    },
     "couchbase-operator-2.90.0": {
       "added": {
         "spec.accessScannerEnabled": "boolean",
@@ -22,59 +33,59 @@
       "descriptions": {
         "spec.accessScannerEnabled": [
           null,
-          0
+          2
         ],
         "spec.autoCompaction.magmaFragmentationPercentage": [
           null,
-          1
+          3
         ],
         "spec.durabilityImpossibleFallback": [
           null,
-          2
+          4
         ],
         "spec.enableCrossClusterVersioning": [
           null,
-          3
+          5
         ],
         "spec.encryptionAtRest": [
           null,
-          4
+          6
         ],
         "spec.expiryPagerSleepTime": [
           null,
-          5
+          7
         ],
         "spec.memoryHighWatermark": [
           null,
-          6
+          8
         ],
         "spec.memoryLowWatermark": [
           null,
-          7
+          9
         ],
         "spec.numVBuckets": [
           null,
-          8
+          10
         ],
         "spec.onlineEvictionPolicyChange": [
           null,
-          9
+          0
         ],
         "spec.rank": [
-          10,
-          11
+          11,
+          12
         ],
         "spec.storageBackend": [
-          12,
-          13
+          13,
+          14
         ],
         "spec.versionPruningWindowHrs": [
           null,
-          14
+          15
         ],
         "spec.warmupBehavior": [
           null,
-          15
+          16
         ]
       }
     },
@@ -88,24 +99,24 @@
       ],
       "descriptions": {
         "spec.autoCompaction.databaseFragmentationThreshold": [
-          16,
-          17
+          17,
+          18
         ],
         "spec.autoCompaction.databaseFragmentationThreshold.percent": [
-          18,
-          19
+          19,
+          20
         ],
         "spec.autoCompaction.timeWindow": [
-          20,
-          21
+          21,
+          22
         ],
         "spec.autoCompaction.viewFragmentationThreshold": [
-          22,
-          23
+          23,
+          24
         ],
         "spec.autoCompaction.viewFragmentationThreshold.percent": [
-          24,
-          25
+          25,
+          26
         ]
       }
     },
@@ -117,11 +128,11 @@
       "descriptions": {
         "spec.autoCompaction": [
           null,
-          26
+          27
         ],
         "spec.historyRetention": [
           null,
-          27
+          28
         ]
       }
     },
@@ -158,108 +169,108 @@
       "description": true,
       "descriptions": {
         "apiVersion": [
-          28,
-          29
+          29,
+          30
         ],
         "kind": [
-          30,
-          31
+          31,
+          32
         ],
         "spec": [
-          32,
-          33
+          33,
+          34
         ],
         "spec.compressionMode": [
-          34,
-          35
+          35,
+          36
         ],
         "spec.conflictResolution": [
-          36,
-          37
+          37,
+          38
         ],
         "spec.enableFlush": [
-          38,
-          39
+          39,
+          40
         ],
         "spec.enableIndexReplica": [
-          40,
-          41
+          41,
+          42
         ],
         "spec.evictionPolicy": [
-          42,
-          43
+          43,
+          44
         ],
         "spec.ioPriority": [
-          44,
-          45
+          45,
+          46
         ],
         "spec.maxTTL": [
-          46,
-          47
+          47,
+          48
         ],
         "spec.memoryQuota": [
-          48,
-          49
+          49,
+          50
         ],
         "spec.minimumDurability": [
-          50,
-          51
+          51,
+          52
         ],
         "spec.name": [
-          52,
-          53
+          53,
+          54
         ],
         "spec.rank": [
           null,
-          10
+          11
         ],
         "spec.replicas": [
-          54,
-          55
+          55,
+          56
         ],
         "spec.scopes": [
-          56,
-          57
+          57,
+          58
         ],
         "spec.scopes.managed": [
-          58,
-          59
+          59,
+          60
         ],
         "spec.scopes.resources": [
-          60,
-          61
+          61,
+          62
         ],
         "spec.scopes.resources.kind": [
-          62,
-          63
+          63,
+          64
         ],
         "spec.scopes.resources.name": [
-          64,
-          65
+          65,
+          66
         ],
         "spec.scopes.selector": [
-          66,
-          67
+          67,
+          68
         ],
         "spec.scopes.selector.matchExpressions.operator": [
-          68,
-          69
+          69,
+          70
         ],
         "spec.scopes.selector.matchExpressions.values": [
-          70,
-          71
+          71,
+          72
         ],
         "spec.scopes.selector.matchLabels": [
-          72,
-          73
+          73,
+          74
         ],
         "spec.storageBackend": [
-          74,
-          12
+          75,
+          13
         ],
         "": [
-          75,
-          76
+          76,
+          77
         ]
       }
     },
@@ -269,8 +280,8 @@
       ],
       "descriptions": {
         "spec.scopes.selector": [
-          77,
-          66
+          78,
+          67
         ]
       }
     },
@@ -281,12 +292,14 @@
       "descriptions": {
         "spec.storageBackend": [
           null,
-          74
+          75
         ]
       }
     }
   },
   "texts": [
+    "OnlineEvictionPolicyChange controls whether eviction policy changes can be made online\nwithout requiring a bucket restart. If set the eviction policy change will only take effect\non the bucket nodes after a swap rebalance, delta recovery, or full recovery. If EnableBucketMigrationRoutines is set to true,\non the cluster the operator will perform the swap rebalances. This field defaults to false.\nThis field is only supported for Couchbase Server 8.0.0+.\nDEVELOPER PREVIEW: This feature is in developer preview and should not be used in production clusters.",
+    "OnlineEvictionPolicyChange controls whether eviction policy changes can be made online\nwithout requiring a bucket restart. When set to true, the operator sends the eviction policy\nchange to Couchbase Server with noRestart=true, which changes the bucket-level setting but\nleaves per-node overrides with the old policy. To apply the new policy to all nodes, either\nset this field back to false (the operator will trigger a bucket restart that clears all\nper-node overrides) or set enableBucketMigrationRoutines to true (the operator will cycle\nnodes to converge them to the new policy). This field defaults to false.\nThis field is only supported for Couchbase Server 8.0.0+.\nDEVELOPER PREVIEW: This feature is in developer preview and should not be used in production clusters.",
     "AccessScannerEnabled allows the bucket to be configured to allow enabling and disabling the access scanner.\nThis feature is only supported for Couchbase Server 8.0.0+. It is set to true by default.",
     "MagmaFragmentationThresholdPercentage defines the percentage of magma fragmentation level to determine the point when compaction is triggered for buckets with a magma storage backend. This field will be ignored if the bucket has a couchstore storage backend.",
     "DurabilityImpossibleFallback defines whether to report writes as durable even if not enough replicas are written to.\nThis feature is only supported for Couchbase Server 8.0.0+. Defaults to disabled.",
@@ -296,7 +309,6 @@
     "MemoryHighWatermark defines the memory high watermark for the bucket.\nIt must be between 51 and 90. It must also be greater than spec.memoryLowWatermark.\nIt defaults to 85. This field is only supported for Couchbase Server 8.0.0+.",
     "MemoryLowWatermark defines the memory low watermark for the bucket.\nIt must be between 50 and 89. It must also be less than spec.memoryHighWatermark.\nIt defaults to 75. This field is only supported for Couchbase Server 8.0.0+.",
     "NumVBuckets defines the number of virtual buckets (vBuckets) to be used by the bucket.\nCan be either 128 or 1024 and is only configurable for magma buckets on server versions 8.0.0 and onward. If migrating from a couchstore\nto magma bucket, this must be set to 1024.",
-    "OnlineEvictionPolicyChange controls whether eviction policy changes can be made online\nwithout requiring a bucket restart. If set the eviction policy change will only take effect\non the bucket nodes after a swap rebalance, delta recovery, or full recovery. If EnableBucketMigrationRoutines is set to true,\non the cluster the operator will perform the swap rebalances. This field defaults to false.\nThis field is only supported for Couchbase Server 8.0.0+.\nDEVELOPER PREVIEW: This feature is in developer preview and should not be used in production clusters.",
     "Rank determines the bucket’s place in the order in which the rebalance process\nhandles the buckets on the cluster. The higher a bucket’s assigned integer\n(in relation to the integers assigned other buckets), the sooner in the\nrebalance process the bucket is handled. This assignment of rank allows a\ncluster’s most mission-critical data to be rebalanced with top priority.\nThis option is only supported for Couchbase Server 7.6.0+.",
     "Rank determines the bucket's place in the order in which the rebalance process\nhandles the buckets on the cluster. The higher a bucket's assigned integer\n(in relation to the integers assigned other buckets), the sooner in the\nrebalance process the bucket is handled. This assignment of rank allows a\ncluster's most mission-critical data to be rebalanced with top priority.\nThis option is only supported for Couchbase Server 7.6.0+.",
     "StorageBackend to be assigned to and used by the bucket. Only valid for Couchbase Server 7.0.0 onward.\nTwo different backend storage mechanisms can be used - \"couchstore\" or \"magma\", defaulting to \"couchstore\".\nNote: \"magma\" is only valid for Couchbase Server 7.1.0 onward.",

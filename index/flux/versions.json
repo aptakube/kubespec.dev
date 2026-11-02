@@ -5,6 +5,27 @@
   "logo": "https://avatars.githubusercontent.com/u/52158677?s=48&v=4",
   "versions": [
     {
+      "version": "v2.10.0",
+      "tag": "v2.10.0",
+      "date": "2026-10-26",
+      "urls": [
+        "https://github.com/fluxcd/flux2/releases/download/v2.10.0/install.yaml"
+      ],
+      "changelogBase": "v2.9.6",
+      "added": [
+        {
+          "apiVersion": "notification.toolkit.fluxcd.io/v1",
+          "kind": "Alert",
+          "scope": "Namespaced"
+        },
+        {
+          "apiVersion": "notification.toolkit.fluxcd.io/v1",
+          "kind": "Provider",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
       "version": "v2.9.6",
       "tag": "v2.9.6",
       "date": "2026-10-01",

@@ -1,5 +1,16 @@
 {
   "versions": {
+    "v1.7.0": {
+      "descriptionChanged": [
+        "status.conditions"
+      ],
+      "descriptions": {
+        "status.conditions": [
+          0,
+          1
+        ]
+      }
+    },
     "v1.6.0": {
       "descriptionChanged": [
         "spec.listeners"
@@ -7,12 +18,12 @@
       "description": true,
       "descriptions": {
         "spec.listeners": [
-          0,
-          1
-        ],
-        "": [
           2,
           3
+        ],
+        "": [
+          4,
+          5
         ]
       }
     },
@@ -33,27 +44,27 @@
       "descriptions": {
         "spec.allowedListeners": [
           null,
-          4
+          6
         ],
         "spec.listeners.hostname": [
-          5,
-          6
+          7,
+          8
         ],
         "spec.tls": [
           null,
-          7
+          9
         ],
         "status.attachedListenerSets": [
           null,
-          8
-        ],
-        "status.listeners.attachedRoutes": [
-          9,
           10
         ],
-        "status.listeners.supportedKinds": [
+        "status.listeners.attachedRoutes": [
           11,
           12
+        ],
+        "status.listeners.supportedKinds": [
+          13,
+          14
         ]
       }
     },
@@ -64,12 +75,12 @@
       ],
       "descriptions": {
         "spec.addresses": [
-          13,
-          14
-        ],
-        "spec.listeners.tls": [
           15,
           16
+        ],
+        "spec.listeners.tls": [
+          17,
+          18
         ]
       }
     },
@@ -87,28 +98,28 @@
       ],
       "descriptions": {
         "spec.addresses": [
-          17,
-          13
+          19,
+          15
         ],
         "spec.addresses.value": [
-          18,
-          19
-        ],
-        "spec.infrastructure.parametersRef": [
           20,
           21
         ],
-        "spec.listeners": [
+        "spec.infrastructure.parametersRef": [
           22,
-          0
+          23
+        ],
+        "spec.listeners": [
+          24,
+          2
         ],
         "spec.listeners.hostname": [
-          23,
-          5
+          25,
+          7
         ],
         "status.addresses": [
-          24,
-          25
+          26,
+          27
         ]
       }
     },
@@ -144,104 +155,104 @@
       },
       "descriptions": {
         "spec.addresses": [
-          26,
-          17
+          28,
+          19
         ],
         "spec.addresses.value": [
-          27,
-          18
+          29,
+          20
         ],
         "spec.infrastructure": [
           null,
-          28
+          30
         ],
         "spec.listeners": [
-          29,
-          22
+          31,
+          24
         ],
         "spec.listeners.allowedRoutes": [
-          30,
-          31
-        ],
-        "spec.listeners.allowedRoutes.kinds": [
           32,
           33
         ],
-        "spec.listeners.allowedRoutes.namespaces": [
+        "spec.listeners.allowedRoutes.kinds": [
           34,
           35
         ],
-        "spec.listeners.allowedRoutes.namespaces.from": [
+        "spec.listeners.allowedRoutes.namespaces": [
           36,
           37
         ],
-        "spec.listeners.allowedRoutes.namespaces.selector": [
+        "spec.listeners.allowedRoutes.namespaces.from": [
           38,
           39
         ],
-        "spec.listeners.hostname": [
+        "spec.listeners.allowedRoutes.namespaces.selector": [
           40,
-          23
+          41
+        ],
+        "spec.listeners.hostname": [
+          42,
+          25
         ],
         "spec.listeners.name": [
-          41,
-          42
-        ],
-        "spec.listeners.port": [
           43,
           44
         ],
-        "spec.listeners.protocol": [
+        "spec.listeners.port": [
           45,
           46
         ],
-        "spec.listeners.tls": [
+        "spec.listeners.protocol": [
           47,
-          15
+          48
+        ],
+        "spec.listeners.tls": [
+          49,
+          17
         ],
         "spec.listeners.tls.certificateRefs": [
-          48,
-          49
-        ],
-        "spec.listeners.tls.certificateRefs.namespace": [
           50,
           51
         ],
-        "spec.listeners.tls.mode": [
+        "spec.listeners.tls.certificateRefs.namespace": [
           52,
           53
         ],
-        "spec.listeners.tls.options": [
+        "spec.listeners.tls.mode": [
           54,
           55
         ],
-        "status.addresses": [
+        "spec.listeners.tls.options": [
           56,
-          24
+          57
+        ],
+        "status.addresses": [
+          58,
+          26
         ],
         "status.addresses.value": [
-          27,
-          18
+          29,
+          20
         ],
         "status.conditions": [
-          57,
-          58
+          59,
+          0
         ],
         "status.conditions.type": [
-          59,
-          60
+          60,
+          61
         ],
         "status.listeners.attachedRoutes": [
-          61,
-          9
-        ],
-        "status.listeners.conditions.type": [
-          59,
-          60
-        ],
-        "status.listeners.supportedKinds": [
           62,
           11
+        ],
+        "status.listeners.conditions.type": [
+          60,
+          61
+        ],
+        "status.listeners.supportedKinds": [
+          63,
+          13
         ]
       }
     },
@@ -290,169 +301,171 @@
       "description": true,
       "descriptions": {
         "apiVersion": [
-          63,
-          64
+          64,
+          65
         ],
         "kind": [
-          65,
-          66
+          66,
+          67
         ],
         "spec.addresses": [
-          67,
-          26
+          68,
+          28
         ],
         "spec.addresses.value": [
-          68,
-          27
-        ],
-        "spec.gatewayClassName": [
           69,
-          70
-        ],
-        "spec.listeners": [
-          71,
           29
         ],
-        "spec.listeners.allowedRoutes": [
-          72,
-          30
+        "spec.gatewayClassName": [
+          70,
+          71
         ],
-        "spec.listeners.allowedRoutes.kinds": [
+        "spec.listeners": [
+          72,
+          31
+        ],
+        "spec.listeners.allowedRoutes": [
           73,
           32
         ],
-        "spec.listeners.allowedRoutes.namespaces": [
+        "spec.listeners.allowedRoutes.kinds": [
           74,
           34
         ],
-        "spec.listeners.allowedRoutes.namespaces.from": [
+        "spec.listeners.allowedRoutes.namespaces": [
           75,
           36
         ],
-        "spec.listeners.allowedRoutes.namespaces.selector": [
+        "spec.listeners.allowedRoutes.namespaces.from": [
           76,
           38
         ],
-        "spec.listeners.allowedRoutes.namespaces.selector.matchExpressions.operator": [
+        "spec.listeners.allowedRoutes.namespaces.selector": [
           77,
-          78
-        ],
-        "spec.listeners.allowedRoutes.namespaces.selector.matchExpressions.values": [
-          79,
-          80
-        ],
-        "spec.listeners.allowedRoutes.namespaces.selector.matchLabels": [
-          81,
-          82
-        ],
-        "spec.listeners.hostname": [
-          83,
           40
         ],
-        "spec.listeners.name": [
-          84,
-          41
+        "spec.listeners.allowedRoutes.namespaces.selector.matchExpressions.operator": [
+          78,
+          79
         ],
-        "spec.listeners.port": [
+        "spec.listeners.allowedRoutes.namespaces.selector.matchExpressions.values": [
+          80,
+          81
+        ],
+        "spec.listeners.allowedRoutes.namespaces.selector.matchLabels": [
+          82,
+          83
+        ],
+        "spec.listeners.hostname": [
+          84,
+          42
+        ],
+        "spec.listeners.name": [
           85,
           43
         ],
-        "spec.listeners.protocol": [
+        "spec.listeners.port": [
           86,
           45
         ],
-        "spec.listeners.tls": [
+        "spec.listeners.protocol": [
           87,
           47
         ],
-        "spec.listeners.tls.certificateRefs": [
+        "spec.listeners.tls": [
           88,
-          48
+          49
         ],
-        "spec.listeners.tls.certificateRefs.group": [
+        "spec.listeners.tls.certificateRefs": [
           89,
-          90
-        ],
-        "spec.listeners.tls.certificateRefs.namespace": [
-          91,
           50
         ],
-        "spec.listeners.tls.mode": [
+        "spec.listeners.tls.certificateRefs.group": [
+          90,
+          91
+        ],
+        "spec.listeners.tls.certificateRefs.namespace": [
           92,
           52
         ],
-        "spec.listeners.tls.options": [
+        "spec.listeners.tls.mode": [
           93,
           54
         ],
-        "status.addresses": [
+        "spec.listeners.tls.options": [
           94,
           56
         ],
+        "status.addresses": [
+          95,
+          58
+        ],
         "status.addresses.value": [
-          68,
-          27
+          69,
+          29
         ],
         "status.conditions": [
-          95,
-          57
+          96,
+          59
         ],
         "status.conditions.lastTransitionTime": [
-          96,
-          97
+          97,
+          98
         ],
         "status.conditions.message": [
-          98,
-          99
+          99,
+          100
         ],
         "status.conditions.observedGeneration": [
-          100,
-          101
+          101,
+          102
         ],
         "status.conditions.reason": [
-          102,
-          103
+          103,
+          104
         ],
         "status.conditions.type": [
-          104,
-          59
+          105,
+          60
         ],
         "status.listeners.attachedRoutes": [
-          105,
-          61
-        ],
-        "status.listeners.conditions.lastTransitionTime": [
-          96,
-          97
-        ],
-        "status.listeners.conditions.message": [
-          98,
-          99
-        ],
-        "status.listeners.conditions.observedGeneration": [
-          100,
-          101
-        ],
-        "status.listeners.conditions.reason": [
-          102,
-          103
-        ],
-        "status.listeners.conditions.type": [
-          104,
-          59
-        ],
-        "status.listeners.supportedKinds": [
           106,
           62
         ],
-        "": [
+        "status.listeners.conditions.lastTransitionTime": [
+          97,
+          98
+        ],
+        "status.listeners.conditions.message": [
+          99,
+          100
+        ],
+        "status.listeners.conditions.observedGeneration": [
+          101,
+          102
+        ],
+        "status.listeners.conditions.reason": [
+          103,
+          104
+        ],
+        "status.listeners.conditions.type": [
+          105,
+          60
+        ],
+        "status.listeners.supportedKinds": [
           107,
-          2
+          63
+        ],
+        "": [
+          108,
+          4
         ]
       }
     }
   },
   "texts": [
+    "Conditions describe the current conditions of the Gateway.\n\nImplementations should prefer to express Gateway conditions\nusing the `GatewayConditionType` and `GatewayConditionReason`\nconstants so that operators and tools can converge on a common\nvocabulary to describe Gateway state.\n\nKnown condition types are:\n\n* \"Accepted\"\n* \"Programmed\"\n* \"Ready\"",
+    "Conditions describe the current conditions of the Gateway.\n\nImplementations should prefer to express Gateway conditions\nusing the `GatewayConditionType` and `GatewayConditionReason`\nconstants so that operators and tools can converge on a common\nvocabulary to describe Gateway state.\n\nKnown condition types are:\n\n* \"Accepted\"\n* \"Programmed\"\n* \"Ready\"\n* \"AddressesAssigned\"",
     "Listeners associated with this Gateway. Listeners define\nlogical endpoints that are bound on this Gateway's addresses.\nAt least one Listener MUST be specified.\n\n## Distinct Listeners\n\nEach Listener in a set of Listeners (for example, in a single Gateway)\nMUST be _distinct_, in that a traffic flow MUST be able to be assigned to\nexactly one listener. (This section uses \"set of Listeners\" rather than\n\"Listeners in a single Gateway\" because implementations MAY merge configuration\nfrom multiple Gateways onto a single data plane, and these rules _also_\napply in that case).\n\nPractically, this means that each listener in a set MUST have a unique\ncombination of Port, Protocol, and, if supported by the protocol, Hostname.\n\nSome combinations of port, protocol, and TLS settings are considered\nCore support and MUST be supported by implementations based on the objects\nthey support:\n\nHTTPRoute\n\n1. HTTPRoute, Port: 80, Protocol: HTTP\n2. HTTPRoute, Port: 443, Protocol: HTTPS, TLS Mode: Terminate, TLS keypair provided\n\nTLSRoute\n\n1. TLSRoute, Port: 443, Protocol: TLS, TLS Mode: Passthrough\n\n\"Distinct\" Listeners have the following property:\n\n**The implementation can match inbound requests to a single distinct\nListener**.\n\nWhen multiple Listeners share values for fields (for\nexample, two Listeners with the same Port value), the implementation\ncan match requests to only one of the Listeners using other\nListener fields.\n\nWhen multiple listeners have the same value for the Protocol field, then\neach of the Listeners with matching Protocol values MUST have different\nvalues for other fields.\n\nThe set of fields that MUST be different for a Listener differs per protocol.\nThe following rules define the rules for what fields MUST be considered for\nListeners to be distinct with each protocol currently defined in the\nGateway API spec.\n\nThe set of listeners that all share a protocol value MUST have _different_\nvalues for _at least one_ of these fields to be distinct:\n\n* **HTTP, HTTPS, TLS**: Port, Hostname\n* **TCP, UDP**: Port\n\nOne **very** important rule to call out involves what happens when an\nimplementation:\n\n* Supports TCP protocol Listeners, as well as HTTP, HTTPS, or TLS protocol\n  Listeners, and\n* sees HTTP, HTTPS, or TLS protocols with the same `port` as one with TCP\n  Protocol.\n\nIn this case all the Listeners that share a port with the\nTCP Listener are not distinct and so MUST NOT be accepted.\n\nIf an implementation does not support TCP Protocol Listeners, then the\nprevious rule does not apply, and the TCP Listeners SHOULD NOT be\naccepted.\n\nNote that the `tls` field is not used for determining if a listener is distinct, because\nListeners that _only_ differ on TLS config will still conflict in all cases.\n\n### Listeners that are distinct only by Hostname\n\nWhen the Listeners are distinct based only on Hostname, inbound request\nhostnames MUST match from the most specific to least specific Hostname\nvalues to choose the correct Listener and its associated set of Routes.\n\nExact matches MUST be processed before wildcard matches, and wildcard\nmatches MUST be processed before fallback (empty Hostname value)\nmatches. For example, `\"foo.example.com\"` takes precedence over\n`\"*.example.com\"`, and `\"*.example.com\"` takes precedence over `\"\"`.\n\nAdditionally, if there are multiple wildcard entries, more specific\nwildcard entries must be processed before less specific wildcard entries.\nFor example, `\"*.foo.example.com\"` takes precedence over `\"*.example.com\"`.\n\nThe precise definition here is that the higher the number of dots in the\nhostname to the right of the wildcard character, the higher the precedence.\n\nThe wildcard character will match any number of characters _and dots_ to\nthe left, however, so `\"*.example.com\"` will match both\n`\"foo.bar.example.com\"` _and_ `\"bar.example.com\"`.\n\n## Handling indistinct Listeners\n\nIf a set of Listeners contains Listeners that are not distinct, then those\nListeners are _Conflicted_, and the implementation MUST set the \"Conflicted\"\ncondition in the Listener Status to \"True\".\n\nThe words \"indistinct\" and \"conflicted\" are considered equivalent for the\npurpose of this documentation.\n\nImplementations MAY choose to accept a Gateway with some Conflicted\nListeners only if they only accept the partial Listener set that contains\nno Conflicted Listeners.\n\nSpecifically, an implementation MAY accept a partial Listener set subject to\nthe following rules:\n\n* The implementation MUST NOT pick one conflicting Listener as the winner.\n  ALL indistinct Listeners must not be accepted for processing.\n* At least one distinct Listener MUST be present, or else the Gateway effectively\n  contains _no_ Listeners, and must be rejected from processing as a whole.\n\nThe implementation MUST set a \"ListenersNotValid\" condition on the\nGateway Status when the Gateway contains Conflicted Listeners whether or\nnot they accept the Gateway. That Condition SHOULD clearly\nindicate in the Message which Listeners are conflicted, and which are\nAccepted. Additionally, the Listener status for those listeners SHOULD\nindicate which Listeners are conflicted and not Accepted.\n\n## General Listener behavior\n\nNote that, for all distinct Listeners, requests SHOULD match at most one Listener.\nFor example, if Listeners are defined for \"foo.example.com\" and \"*.example.com\", a\nrequest to \"foo.example.com\" SHOULD only be routed using routes attached\nto the \"foo.example.com\" Listener (and not the \"*.example.com\" Listener).\n\nThis concept is known as \"Listener Isolation\", and it is an Extended feature\nof Gateway API. Implementations that do not support Listener Isolation MUST\nclearly document this, and MUST NOT claim support for the\n`GatewayHTTPListenerIsolation` feature.\n\nImplementations that _do_ support Listener Isolation SHOULD claim support\nfor the Extended `GatewayHTTPListenerIsolation` feature and pass the associated\nconformance tests.\n\n## Compatible Listeners\n\nA Gateway's Listeners are considered _compatible_ if:\n\n1. They are distinct.\n2. The implementation can serve them in compliance with the Addresses\n   requirement that all Listeners are available on all assigned\n   addresses.\n\nCompatible combinations in Extended support are expected to vary across\nimplementations. A combination that is compatible for one implementation\nmay not be compatible for another.\n\nFor example, an implementation that cannot serve both TCP and UDP listeners\non the same address, or cannot mix HTTPS and generic TLS listens on the same port\nwould not consider those cases compatible, even though they are distinct.\n\nImplementations MAY merge separate Gateways onto a single set of\nAddresses if all Listeners across all Gateways are compatible.\n\nIn a future release the MinItems=1 requirement MAY be dropped.\n\nSupport: Core",
     "Listeners associated with this Gateway. Listeners define\nlogical endpoints that are bound on this Gateway's addresses.\nAt least one Listener MUST be specified.\n\n## Distinct Listeners\n\nEach Listener in a set of Listeners (for example, in a single Gateway)\nMUST be _distinct_, in that a traffic flow MUST be able to be assigned to\nexactly one listener. (This section uses \"set of Listeners\" rather than\n\"Listeners in a single Gateway\" because implementations MAY merge configuration\nfrom multiple Gateways onto a single data plane, and these rules _also_\napply in that case).\n\nPractically, this means that each listener in a set MUST have a unique\ncombination of Port, Protocol, and, if supported by the protocol, Hostname.\n\nSome combinations of port, protocol, and TLS settings are considered\nCore support and MUST be supported by implementations based on the objects\nthey support:\n\nHTTPRoute\n\n1. HTTPRoute, Port: 80, Protocol: HTTP\n2. HTTPRoute, Port: 443, Protocol: HTTPS, TLS Mode: Terminate, TLS keypair provided\n\nTLSRoute\n\n1. TLSRoute, Port: 443, Protocol: TLS, TLS Mode: Passthrough\n\n\"Distinct\" Listeners have the following property:\n\n**The implementation can match inbound requests to a single distinct\nListener**.\n\nWhen multiple Listeners share values for fields (for\nexample, two Listeners with the same Port value), the implementation\ncan match requests to only one of the Listeners using other\nListener fields.\n\nWhen multiple listeners have the same value for the Protocol field, then\neach of the Listeners with matching Protocol values MUST have different\nvalues for other fields.\n\nThe set of fields that MUST be different for a Listener differs per protocol.\nThe following rules define the rules for what fields MUST be considered for\nListeners to be distinct with each protocol currently defined in the\nGateway API spec.\n\nThe set of listeners that all share a protocol value MUST have _different_\nvalues for _at least one_ of these fields to be distinct:\n\n* **HTTP, HTTPS, TLS**: Port, Hostname\n* **TCP, UDP**: Port\n\nOne **very** important rule to call out involves what happens when an\nimplementation:\n\n* Supports TCP protocol Listeners, as well as HTTP, HTTPS, or TLS protocol\n  Listeners, and\n* sees HTTP, HTTPS, or TLS protocols with the same `port` as one with TCP\n  Protocol.\n\nIn this case all the Listeners that share a port with the\nTCP Listener are not distinct and so MUST NOT be accepted.\n\nIf an implementation does not support TCP Protocol Listeners, then the\nprevious rule does not apply, and the TCP Listeners SHOULD NOT be\naccepted.\n\nNote that the `tls` field is not used for determining if a listener is distinct, because\nListeners that _only_ differ on TLS config will still conflict in all cases.\n\n### Listeners that are distinct only by Hostname\n\nWhen the Listeners are distinct based only on Hostname, inbound request\nhostnames MUST match from the most specific to least specific Hostname\nvalues to choose the correct Listener and its associated set of Routes.\n\nExact matches MUST be processed before wildcard matches, and wildcard\nmatches MUST be processed before fallback (empty Hostname value)\nmatches. For example, `\"foo.example.com\"` takes precedence over\n`\"*.example.com\"`, and `\"*.example.com\"` takes precedence over `\"\"`.\n\nAdditionally, if there are multiple wildcard entries, more specific\nwildcard entries must be processed before less specific wildcard entries.\nFor example, `\"*.foo.example.com\"` takes precedence over `\"*.example.com\"`.\n\nThe precise definition here is that the higher the number of dots in the\nhostname to the right of the wildcard character, the higher the precedence.\n\nThe wildcard character will match any number of characters _and dots_ to\nthe left, however, so `\"*.example.com\"` will match both\n`\"foo.bar.example.com\"` _and_ `\"bar.example.com\"`.\n\n## Handling indistinct Listeners\n\nIf a set of Listeners contains Listeners that are not distinct, then those\nListeners are _Conflicted_, and the implementation MUST set the \"Conflicted\"\ncondition in the Listener Status to \"True\".\n\nThe words \"indistinct\" and \"conflicted\" are considered equivalent for the\npurpose of this documentation.\n\nImplementations MAY choose to accept a Gateway with some Conflicted\nListeners only if they only accept the partial Listener set that contains\nno Conflicted Listeners.\n\nSpecifically, an implementation MAY accept a partial Listener set subject to\nthe following rules:\n\n* The implementation MUST NOT pick one conflicting Listener as the winner.\n  ALL indistinct Listeners must not be accepted for processing.\n* At least one distinct Listener MUST be present, or else the Gateway effectively\n  contains _no_ Listeners, and must be rejected from processing as a whole.\n\nThe implementation MUST set a \"ListenersNotValid\" condition on the\nGateway Status when the Gateway contains Conflicted Listeners whether or\nnot they accept the Gateway. That Condition SHOULD clearly\nindicate in the Message which Listeners are conflicted, and which are\nAccepted. Additionally, the Listener status for those listeners SHOULD\nindicate which Listeners are conflicted and not Accepted.\n\n## General Listener behavior\n\nNote that, for all distinct Listeners, requests SHOULD match at most one Listener.\nFor example, if Listeners are defined for \"foo.example.com\" and \"*.example.com\", a\nrequest to \"foo.example.com\" SHOULD only be routed using routes attached\nto the \"foo.example.com\" Listener (and not the \"*.example.com\" Listener).\n\nIf traffic to a Gateway does not match any Listener's hostname (or if\nthe Listener does not specify a hostname and the request does not match\nany attached Route), the request MUST be rejected. The specific mechanism\nfor rejection depends on the protocol: HTTP returns a 404 status code,\nwhile gRPC returns an Unimplemented status code.\n\nThis concept is known as \"Listener Isolation\", and it is an Extended feature\nof Gateway API. Implementations that do not support Listener Isolation MUST\nclearly document this, and MUST NOT claim support for the\n`GatewayHTTPListenerIsolation` feature.\n\nImplementations that _do_ support Listener Isolation SHOULD claim support\nfor the Extended `GatewayHTTPListenerIsolation` feature and pass the associated\nconformance tests.\n\n## Compatible Listeners\n\nA Gateway's Listeners are considered _compatible_ if:\n\n1. They are distinct.\n2. The implementation can serve them in compliance with the Addresses\n   requirement that all Listeners are available on all assigned\n   addresses.\n\nCompatible combinations in Extended support are expected to vary across\nimplementations. A combination that is compatible for one implementation\nmay not be compatible for another.\n\nFor example, an implementation that cannot serve both TCP and UDP listeners\non the same address, or cannot mix HTTPS and generic TLS listens on the same port\nwould not consider those cases compatible, even though they are distinct.\n\nImplementations MAY merge separate Gateways onto a single set of\nAddresses if all Listeners across all Gateways are compatible.\n\nIn a future release the MinItems=1 requirement MAY be dropped.\n\nSupport: Core",
     "Gateway represents an instance of a service-traffic handling infrastructure\nby binding Listeners to a set of IP addresses.",
@@ -511,7 +524,6 @@
     "Options are a list of key/value pairs to enable extended TLS\nconfiguration for each implementation. For example, configuring the\nminimum TLS version or supported cipher suites.\n\nA set of common keys MAY be defined by the API in the future. To avoid\nany ambiguity, implementation-specific definitions MUST use\ndomain-prefixed names, such as `example.com/my-custom-option`.\nUn-prefixed names are reserved for key names defined by Gateway API.\n\nSupport: Implementation-specific",
     "Addresses lists the network addresses that have been bound to the\nGateway.\n\n\nThis list may differ from the addresses provided in the spec under some\nconditions:\n\n\n  * no addresses are specified, all addresses are dynamically assigned\n  * a combination of specified and dynamic addresses are assigned\n  * a specified address was unusable (e.g. already in use)\n\n\n",
     "Conditions describe the current conditions of the Gateway.\n\n\nImplementations should prefer to express Gateway conditions\nusing the `GatewayConditionType` and `GatewayConditionReason`\nconstants so that operators and tools can converge on a common\nvocabulary to describe Gateway state.\n\n\nKnown condition types are:\n\n\n* \"Accepted\"\n* \"Programmed\"\n* \"Ready\"",
-    "Conditions describe the current conditions of the Gateway.\n\nImplementations should prefer to express Gateway conditions\nusing the `GatewayConditionType` and `GatewayConditionReason`\nconstants so that operators and tools can converge on a common\nvocabulary to describe Gateway state.\n\nKnown condition types are:\n\n* \"Accepted\"\n* \"Programmed\"\n* \"Ready\"",
     "type of condition in CamelCase or in foo.example.com/CamelCase.\n---\nMany .condition.type values are consistent across resources like Available, but because arbitrary conditions can be\nuseful (see .node.status.conditions), the ability to deconflict is important.\nThe regex it matches is (dns1123SubdomainFmt/)?(qualifiedNameFmt)",
     "type of condition in CamelCase or in foo.example.com/CamelCase.",
     "AttachedRoutes represents the total number of Routes that have been\nsuccessfully attached to this Listener.\n\n\nSuccessful attachment of a Route to a Listener is based solely on the\ncombination of the AllowedRoutes field on the corresponding Listener\nand the Route's ParentRefs field. A Route is successfully attached to\na Listener when it is selected by the Listener's AllowedRoutes field\nAND the Route has a valid ParentRef selecting the whole Gateway\nresource or a specific Listener as a parent resource (more detail on\nattachment semantics can be found in the documentation on the various\nRoute kinds ParentRefs fields). Listener or Route status does not impact\nsuccessful attachment, i.e. the AttachedRoutes field count MUST be set\nfor Listeners with condition Accepted: false and MUST count successfully\nattached Routes that may themselves have Accepted: false conditions.\n\n\nUses for this field include troubleshooting Route attachment and\nmeasuring blast radius/impact of changes to a Listener.",

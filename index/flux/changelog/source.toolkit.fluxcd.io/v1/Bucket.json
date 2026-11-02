@@ -1,5 +1,16 @@
 {
   "versions": {
+    "v2.10.0": {
+      "descriptionChanged": [
+        "spec.serviceAccountName"
+      ],
+      "descriptions": {
+        "spec.serviceAccountName": [
+          0,
+          1
+        ]
+      }
+    },
     "v2.7.0": {
       "added": {
         "spec.serviceAccountName": "string"
@@ -14,13 +25,14 @@
         ],
         "status.artifact.digest": [
           null,
-          1
+          2
         ]
       }
     }
   },
   "texts": [
     "ServiceAccountName is the name of the Kubernetes ServiceAccount used to authenticate\nthe bucket. This field is only supported for the 'gcp' and 'aws' providers.\nFor more information about workload identity:\nhttps://fluxcd.io/flux/components/source/buckets/#workload-identity",
+    "ServiceAccountName is the name of the Kubernetes ServiceAccount used to authenticate\nthe bucket. This field is only supported for the 'gcp' and 'aws' providers.\nFor more information about object identity:\nhttps://fluxcd.io/flux/integrations/object-identity/",
     "Digest is the digest of the file in the form of '<algorithm>:<checksum>'."
   ]
 }

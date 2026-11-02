@@ -1,5 +1,23 @@
 {
   "versions": {
+    "v1.7.0": {
+      "descriptionChanged": [
+        "spec.hostnames"
+      ],
+      "added": {
+        "spec.rules.retry": "object"
+      },
+      "descriptions": {
+        "spec.hostnames": [
+          0,
+          1
+        ],
+        "spec.rules.retry": [
+          null,
+          2
+        ]
+      }
+    },
     "v1.6.2": {
       "descriptionChanged": [
         "spec.rules.backendRefs.filters.requestRedirect.statusCode",
@@ -7,12 +25,12 @@
       ],
       "descriptions": {
         "spec.rules.backendRefs.filters.requestRedirect.statusCode": [
-          0,
-          1
+          3,
+          4
         ],
         "spec.rules.filters.requestRedirect.statusCode": [
-          0,
-          1
+          3,
+          4
         ]
       }
     },
@@ -31,44 +49,44 @@
       ],
       "descriptions": {
         "spec.rules.backendRefs.filters.cors.allowHeaders": [
-          2,
-          3
+          5,
+          6
         ],
         "spec.rules.backendRefs.filters.cors.allowMethods": [
-          4,
-          5
+          7,
+          8
         ],
         "spec.rules.backendRefs.filters.cors.allowOrigins": [
-          6,
-          7
+          9,
+          10
         ],
         "spec.rules.backendRefs.filters.cors.exposeHeaders": [
-          8,
-          9
+          11,
+          12
         ],
         "spec.rules.backendRefs.filters.requestMirror.backendRef": [
-          10,
-          11
+          13,
+          14
         ],
         "spec.rules.filters.cors.allowHeaders": [
-          2,
-          3
+          5,
+          6
         ],
         "spec.rules.filters.cors.allowMethods": [
-          4,
-          5
+          7,
+          8
         ],
         "spec.rules.filters.cors.allowOrigins": [
-          6,
-          7
+          9,
+          10
         ],
         "spec.rules.filters.cors.exposeHeaders": [
-          8,
-          9
+          11,
+          12
         ],
         "spec.rules.filters.requestMirror.backendRef": [
-          10,
-          11
+          13,
+          14
         ]
       }
     },
@@ -83,15 +101,15 @@
       "descriptions": {
         "spec.rules.backendRefs.filters.cors": [
           null,
-          12
+          15
         ],
         "spec.rules.filters.cors": [
           null,
-          12
+          15
         ],
         "status.parents.conditions": [
-          13,
-          14
+          16,
+          17
         ]
       }
     },
@@ -105,11 +123,11 @@
       "descriptions": {
         "spec.rules.name": [
           null,
-          15
+          18
         ],
         "status.parents.conditions": [
           null,
-          13
+          16
         ]
       }
     },
@@ -143,96 +161,96 @@
       },
       "descriptions": {
         "spec.parentRefs": [
-          16,
-          17
+          19,
+          20
         ],
         "spec.parentRefs.namespace": [
-          18,
-          19
+          21,
+          22
         ],
         "spec.parentRefs.port": [
-          20,
-          21
+          23,
+          24
         ],
         "spec.rules": [
-          22,
-          23
+          25,
+          26
         ],
         "spec.rules.backendRefs.filters.requestHeaderModifier.add.name": [
-          24,
-          25
+          27,
+          28
         ],
         "spec.rules.backendRefs.filters.requestHeaderModifier.set.name": [
-          24,
-          25
+          27,
+          28
         ],
         "spec.rules.backendRefs.filters.requestMirror": [
-          26,
-          27
+          29,
+          30
         ],
         "spec.rules.backendRefs.filters.requestMirror.fraction": [
           null,
-          28
+          31
         ],
         "spec.rules.backendRefs.filters.requestMirror.percent": [
           null,
-          29
+          32
         ],
         "spec.rules.backendRefs.filters.responseHeaderModifier.add.name": [
-          24,
-          25
+          27,
+          28
         ],
         "spec.rules.backendRefs.filters.responseHeaderModifier.set.name": [
-          24,
-          25
+          27,
+          28
         ],
         "spec.rules.filters": [
-          30,
-          31
+          33,
+          34
         ],
         "spec.rules.filters.requestHeaderModifier.add.name": [
-          24,
-          25
+          27,
+          28
         ],
         "spec.rules.filters.requestHeaderModifier.set.name": [
-          24,
-          25
+          27,
+          28
         ],
         "spec.rules.filters.requestMirror": [
-          26,
-          27
+          29,
+          30
         ],
         "spec.rules.filters.requestMirror.fraction": [
           null,
-          28
+          31
         ],
         "spec.rules.filters.requestMirror.percent": [
           null,
-          29
+          32
         ],
         "spec.rules.filters.responseHeaderModifier.add.name": [
-          24,
-          25
+          27,
+          28
         ],
         "spec.rules.filters.responseHeaderModifier.set.name": [
-          24,
-          25
+          27,
+          28
         ],
         "spec.rules.matches.headers.name": [
-          32,
-          33
+          35,
+          36
         ],
         "status.parents.conditions": [
-          34,
-          13
+          37,
+          16
         ],
         "status.parents.parentRef.namespace": [
-          18,
-          19
+          21,
+          22
         ],
         "status.parents.parentRef.port": [
-          20,
-          21
+          23,
+          24
         ]
       }
     },
@@ -339,388 +357,388 @@
       },
       "descriptions": {
         "spec.hostnames": [
-          35,
-          36
+          38,
+          0
         ],
         "spec.parentRefs": [
-          37,
-          16
+          39,
+          19
         ],
         "spec.parentRefs.group": [
-          38,
-          39
-        ],
-        "spec.parentRefs.kind": [
           40,
           41
         ],
-        "spec.parentRefs.name": [
+        "spec.parentRefs.kind": [
           42,
           43
         ],
-        "spec.parentRefs.namespace": [
+        "spec.parentRefs.name": [
           44,
-          18
+          45
+        ],
+        "spec.parentRefs.namespace": [
+          46,
+          21
         ],
         "spec.parentRefs.port": [
-          45,
-          20
+          47,
+          23
         ],
         "spec.parentRefs.sectionName": [
-          46,
-          47
-        ],
-        "spec.rules": [
-          23,
-          22
-        ],
-        "spec.rules.backendRefs": [
           48,
           49
         ],
-        "spec.rules.backendRefs.filters": [
+        "spec.rules": [
+          26,
+          25
+        ],
+        "spec.rules.backendRefs": [
           50,
           51
         ],
-        "spec.rules.backendRefs.filters.extensionRef": [
+        "spec.rules.backendRefs.filters": [
           52,
           53
         ],
-        "spec.rules.backendRefs.filters.requestHeaderModifier": [
+        "spec.rules.backendRefs.filters.extensionRef": [
           54,
           55
         ],
-        "spec.rules.backendRefs.filters.requestHeaderModifier.add": [
+        "spec.rules.backendRefs.filters.requestHeaderModifier": [
           56,
           57
         ],
-        "spec.rules.backendRefs.filters.requestHeaderModifier.add.name": [
+        "spec.rules.backendRefs.filters.requestHeaderModifier.add": [
           58,
-          24
+          59
+        ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier.add.name": [
+          60,
+          27
         ],
         "spec.rules.backendRefs.filters.requestHeaderModifier.remove": [
-          59,
-          60
-        ],
-        "spec.rules.backendRefs.filters.requestHeaderModifier.set": [
           61,
           62
         ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier.set": [
+          63,
+          64
+        ],
         "spec.rules.backendRefs.filters.requestHeaderModifier.set.name": [
-          58,
-          24
+          60,
+          27
         ],
         "spec.rules.backendRefs.filters.requestMirror": [
-          63,
-          26
+          65,
+          29
         ],
         "spec.rules.backendRefs.filters.requestMirror.backendRef": [
-          64,
-          10
+          66,
+          13
         ],
         "spec.rules.backendRefs.filters.requestMirror.backendRef.kind": [
-          65,
-          66
-        ],
-        "spec.rules.backendRefs.filters.requestMirror.backendRef.namespace": [
           67,
           68
         ],
-        "spec.rules.backendRefs.filters.requestRedirect": [
+        "spec.rules.backendRefs.filters.requestMirror.backendRef.namespace": [
           69,
           70
         ],
-        "spec.rules.backendRefs.filters.requestRedirect.hostname": [
+        "spec.rules.backendRefs.filters.requestRedirect": [
           71,
           72
         ],
-        "spec.rules.backendRefs.filters.requestRedirect.path": [
+        "spec.rules.backendRefs.filters.requestRedirect.hostname": [
           73,
           74
         ],
-        "spec.rules.backendRefs.filters.requestRedirect.path.replacePrefixMatch": [
+        "spec.rules.backendRefs.filters.requestRedirect.path": [
           75,
           76
         ],
-        "spec.rules.backendRefs.filters.requestRedirect.path.type": [
+        "spec.rules.backendRefs.filters.requestRedirect.path.replacePrefixMatch": [
           77,
           78
         ],
-        "spec.rules.backendRefs.filters.requestRedirect.port": [
+        "spec.rules.backendRefs.filters.requestRedirect.path.type": [
           79,
           80
         ],
-        "spec.rules.backendRefs.filters.requestRedirect.scheme": [
+        "spec.rules.backendRefs.filters.requestRedirect.port": [
           81,
           82
         ],
-        "spec.rules.backendRefs.filters.requestRedirect.statusCode": [
+        "spec.rules.backendRefs.filters.requestRedirect.scheme": [
           83,
-          0
+          84
+        ],
+        "spec.rules.backendRefs.filters.requestRedirect.statusCode": [
+          85,
+          3
         ],
         "spec.rules.backendRefs.filters.responseHeaderModifier": [
-          84,
-          85
-        ],
-        "spec.rules.backendRefs.filters.responseHeaderModifier.add": [
-          56,
-          57
-        ],
-        "spec.rules.backendRefs.filters.responseHeaderModifier.add.name": [
-          58,
-          24
-        ],
-        "spec.rules.backendRefs.filters.responseHeaderModifier.remove": [
-          59,
-          60
-        ],
-        "spec.rules.backendRefs.filters.responseHeaderModifier.set": [
-          61,
-          62
-        ],
-        "spec.rules.backendRefs.filters.responseHeaderModifier.set.name": [
-          58,
-          24
-        ],
-        "spec.rules.backendRefs.filters.type": [
           86,
           87
         ],
-        "spec.rules.backendRefs.filters.urlRewrite": [
+        "spec.rules.backendRefs.filters.responseHeaderModifier.add": [
+          58,
+          59
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.add.name": [
+          60,
+          27
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.remove": [
+          61,
+          62
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.set": [
+          63,
+          64
+        ],
+        "spec.rules.backendRefs.filters.responseHeaderModifier.set.name": [
+          60,
+          27
+        ],
+        "spec.rules.backendRefs.filters.type": [
           88,
           89
         ],
-        "spec.rules.backendRefs.filters.urlRewrite.hostname": [
+        "spec.rules.backendRefs.filters.urlRewrite": [
           90,
           91
         ],
-        "spec.rules.backendRefs.filters.urlRewrite.path": [
+        "spec.rules.backendRefs.filters.urlRewrite.hostname": [
           92,
           93
         ],
-        "spec.rules.backendRefs.filters.urlRewrite.path.replacePrefixMatch": [
-          75,
-          76
-        ],
-        "spec.rules.backendRefs.filters.urlRewrite.path.type": [
-          77,
-          78
-        ],
-        "spec.rules.backendRefs.kind": [
-          65,
-          66
-        ],
-        "spec.rules.backendRefs.namespace": [
-          67,
-          68
-        ],
-        "spec.rules.backendRefs.weight": [
+        "spec.rules.backendRefs.filters.urlRewrite.path": [
           94,
           95
         ],
-        "spec.rules.filters": [
-          96,
-          30
-        ],
-        "spec.rules.filters.extensionRef": [
-          52,
-          53
-        ],
-        "spec.rules.filters.requestHeaderModifier": [
-          54,
-          55
-        ],
-        "spec.rules.filters.requestHeaderModifier.add": [
-          56,
-          57
-        ],
-        "spec.rules.filters.requestHeaderModifier.add.name": [
-          58,
-          24
-        ],
-        "spec.rules.filters.requestHeaderModifier.remove": [
-          59,
-          60
-        ],
-        "spec.rules.filters.requestHeaderModifier.set": [
-          61,
-          62
-        ],
-        "spec.rules.filters.requestHeaderModifier.set.name": [
-          58,
-          24
-        ],
-        "spec.rules.filters.requestMirror": [
-          63,
-          26
-        ],
-        "spec.rules.filters.requestMirror.backendRef": [
-          64,
-          10
-        ],
-        "spec.rules.filters.requestMirror.backendRef.kind": [
-          65,
-          66
-        ],
-        "spec.rules.filters.requestMirror.backendRef.namespace": [
-          67,
-          68
-        ],
-        "spec.rules.filters.requestRedirect": [
-          69,
-          70
-        ],
-        "spec.rules.filters.requestRedirect.hostname": [
-          71,
-          72
-        ],
-        "spec.rules.filters.requestRedirect.path": [
-          73,
-          74
-        ],
-        "spec.rules.filters.requestRedirect.path.replacePrefixMatch": [
-          75,
-          76
-        ],
-        "spec.rules.filters.requestRedirect.path.type": [
+        "spec.rules.backendRefs.filters.urlRewrite.path.replacePrefixMatch": [
           77,
           78
         ],
-        "spec.rules.filters.requestRedirect.port": [
+        "spec.rules.backendRefs.filters.urlRewrite.path.type": [
           79,
           80
         ],
-        "spec.rules.filters.requestRedirect.scheme": [
-          81,
-          82
+        "spec.rules.backendRefs.kind": [
+          67,
+          68
         ],
-        "spec.rules.filters.requestRedirect.statusCode": [
-          83,
-          0
+        "spec.rules.backendRefs.namespace": [
+          69,
+          70
         ],
-        "spec.rules.filters.responseHeaderModifier": [
-          84,
-          85
+        "spec.rules.backendRefs.weight": [
+          96,
+          97
         ],
-        "spec.rules.filters.responseHeaderModifier.add": [
+        "spec.rules.filters": [
+          98,
+          33
+        ],
+        "spec.rules.filters.extensionRef": [
+          54,
+          55
+        ],
+        "spec.rules.filters.requestHeaderModifier": [
           56,
           57
         ],
-        "spec.rules.filters.responseHeaderModifier.add.name": [
+        "spec.rules.filters.requestHeaderModifier.add": [
           58,
-          24
+          59
         ],
-        "spec.rules.filters.responseHeaderModifier.remove": [
-          59,
-          60
+        "spec.rules.filters.requestHeaderModifier.add.name": [
+          60,
+          27
         ],
-        "spec.rules.filters.responseHeaderModifier.set": [
+        "spec.rules.filters.requestHeaderModifier.remove": [
           61,
           62
         ],
-        "spec.rules.filters.responseHeaderModifier.set.name": [
-          58,
-          24
+        "spec.rules.filters.requestHeaderModifier.set": [
+          63,
+          64
         ],
-        "spec.rules.filters.type": [
-          86,
-          87
+        "spec.rules.filters.requestHeaderModifier.set.name": [
+          60,
+          27
         ],
-        "spec.rules.filters.urlRewrite": [
-          88,
-          89
+        "spec.rules.filters.requestMirror": [
+          65,
+          29
         ],
-        "spec.rules.filters.urlRewrite.hostname": [
-          90,
-          91
+        "spec.rules.filters.requestMirror.backendRef": [
+          66,
+          13
         ],
-        "spec.rules.filters.urlRewrite.path": [
-          92,
-          93
+        "spec.rules.filters.requestMirror.backendRef.kind": [
+          67,
+          68
         ],
-        "spec.rules.filters.urlRewrite.path.replacePrefixMatch": [
+        "spec.rules.filters.requestMirror.backendRef.namespace": [
+          69,
+          70
+        ],
+        "spec.rules.filters.requestRedirect": [
+          71,
+          72
+        ],
+        "spec.rules.filters.requestRedirect.hostname": [
+          73,
+          74
+        ],
+        "spec.rules.filters.requestRedirect.path": [
           75,
           76
         ],
-        "spec.rules.filters.urlRewrite.path.type": [
+        "spec.rules.filters.requestRedirect.path.replacePrefixMatch": [
           77,
           78
         ],
+        "spec.rules.filters.requestRedirect.path.type": [
+          79,
+          80
+        ],
+        "spec.rules.filters.requestRedirect.port": [
+          81,
+          82
+        ],
+        "spec.rules.filters.requestRedirect.scheme": [
+          83,
+          84
+        ],
+        "spec.rules.filters.requestRedirect.statusCode": [
+          85,
+          3
+        ],
+        "spec.rules.filters.responseHeaderModifier": [
+          86,
+          87
+        ],
+        "spec.rules.filters.responseHeaderModifier.add": [
+          58,
+          59
+        ],
+        "spec.rules.filters.responseHeaderModifier.add.name": [
+          60,
+          27
+        ],
+        "spec.rules.filters.responseHeaderModifier.remove": [
+          61,
+          62
+        ],
+        "spec.rules.filters.responseHeaderModifier.set": [
+          63,
+          64
+        ],
+        "spec.rules.filters.responseHeaderModifier.set.name": [
+          60,
+          27
+        ],
+        "spec.rules.filters.type": [
+          88,
+          89
+        ],
+        "spec.rules.filters.urlRewrite": [
+          90,
+          91
+        ],
+        "spec.rules.filters.urlRewrite.hostname": [
+          92,
+          93
+        ],
+        "spec.rules.filters.urlRewrite.path": [
+          94,
+          95
+        ],
+        "spec.rules.filters.urlRewrite.path.replacePrefixMatch": [
+          77,
+          78
+        ],
+        "spec.rules.filters.urlRewrite.path.type": [
+          79,
+          80
+        ],
         "spec.rules.matches": [
-          97,
-          98
+          99,
+          100
         ],
         "spec.rules.matches.headers.name": [
-          99,
-          32
+          101,
+          35
         ],
         "spec.rules.matches.headers.type": [
-          100,
-          101
-        ],
-        "spec.rules.matches.method": [
           102,
           103
         ],
-        "spec.rules.matches.path.type": [
+        "spec.rules.matches.method": [
           104,
           105
         ],
-        "spec.rules.matches.queryParams": [
+        "spec.rules.matches.path.type": [
           106,
           107
         ],
-        "spec.rules.matches.queryParams.name": [
+        "spec.rules.matches.queryParams": [
           108,
           109
         ],
-        "spec.rules.matches.queryParams.type": [
+        "spec.rules.matches.queryParams.name": [
           110,
           111
         ],
+        "spec.rules.matches.queryParams.type": [
+          112,
+          113
+        ],
         "spec.rules.timeouts": [
           null,
-          112
-        ],
-        "status.parents": [
-          113,
           114
         ],
-        "status.parents.conditions": [
+        "status.parents": [
           115,
-          34
+          116
+        ],
+        "status.parents.conditions": [
+          117,
+          37
         ],
         "status.parents.conditions.type": [
-          116,
-          117
-        ],
-        "status.parents.controllerName": [
           118,
           119
         ],
-        "status.parents.parentRef.group": [
-          38,
-          39
+        "status.parents.controllerName": [
+          120,
+          121
         ],
-        "status.parents.parentRef.kind": [
+        "status.parents.parentRef.group": [
           40,
           41
         ],
-        "status.parents.parentRef.name": [
+        "status.parents.parentRef.kind": [
           42,
           43
         ],
-        "status.parents.parentRef.namespace": [
+        "status.parents.parentRef.name": [
           44,
-          18
+          45
+        ],
+        "status.parents.parentRef.namespace": [
+          46,
+          21
         ],
         "status.parents.parentRef.port": [
-          45,
-          20
+          47,
+          23
         ],
         "status.parents.parentRef.sectionName": [
-          46,
-          47
+          48,
+          49
         ]
       }
     },
@@ -847,468 +865,468 @@
       "description": true,
       "descriptions": {
         "apiVersion": [
-          120,
-          121
-        ],
-        "kind": [
           122,
           123
         ],
-        "spec.hostnames": [
+        "kind": [
           124,
-          35
+          125
         ],
-        "spec.parentRefs": [
-          125,
-          37
-        ],
-        "spec.parentRefs.group": [
+        "spec.hostnames": [
           126,
           38
         ],
-        "spec.parentRefs.kind": [
+        "spec.parentRefs": [
           127,
+          39
+        ],
+        "spec.parentRefs.group": [
+          128,
           40
         ],
-        "spec.parentRefs.name": [
-          128,
+        "spec.parentRefs.kind": [
+          129,
           42
         ],
-        "spec.parentRefs.namespace": [
-          129,
+        "spec.parentRefs.name": [
+          130,
           44
+        ],
+        "spec.parentRefs.namespace": [
+          131,
+          46
         ],
         "spec.parentRefs.port": [
           null,
-          45
+          47
         ],
         "spec.parentRefs.sectionName": [
-          130,
-          46
-        ],
-        "spec.rules.backendRefs": [
-          131,
+          132,
           48
         ],
-        "spec.rules.backendRefs.filters": [
-          132,
+        "spec.rules.backendRefs": [
+          133,
           50
         ],
-        "spec.rules.backendRefs.filters.extensionRef": [
-          133,
+        "spec.rules.backendRefs.filters": [
+          134,
           52
+        ],
+        "spec.rules.backendRefs.filters.extensionRef": [
+          135,
+          54
         ],
         "spec.rules.backendRefs.filters.extensionRef.group": [
-          134,
-          135
+          136,
+          137
         ],
         "spec.rules.backendRefs.filters.requestHeaderModifier": [
-          136,
-          54
+          138,
+          56
         ],
         "spec.rules.backendRefs.filters.requestHeaderModifier.add": [
-          137,
-          56
+          139,
+          58
         ],
         "spec.rules.backendRefs.filters.requestHeaderModifier.add.name": [
-          138,
-          58
+          140,
+          60
         ],
         "spec.rules.backendRefs.filters.requestHeaderModifier.remove": [
-          139,
-          59
+          141,
+          61
         ],
         "spec.rules.backendRefs.filters.requestHeaderModifier.set": [
-          140,
-          61
+          142,
+          63
         ],
         "spec.rules.backendRefs.filters.requestHeaderModifier.set.name": [
-          138,
-          58
+          140,
+          60
         ],
         "spec.rules.backendRefs.filters.requestMirror": [
-          141,
-          63
+          143,
+          65
         ],
         "spec.rules.backendRefs.filters.requestMirror.backendRef": [
-          142,
-          64
+          144,
+          66
         ],
         "spec.rules.backendRefs.filters.requestMirror.backendRef.group": [
-          134,
-          135
+          136,
+          137
         ],
         "spec.rules.backendRefs.filters.requestMirror.backendRef.kind": [
-          143,
-          65
+          145,
+          67
         ],
         "spec.rules.backendRefs.filters.requestMirror.backendRef.namespace": [
-          144,
-          67
+          146,
+          69
         ],
         "spec.rules.backendRefs.filters.requestMirror.backendRef.port": [
-          145,
-          146
+          147,
+          148
         ],
         "spec.rules.backendRefs.filters.requestRedirect": [
-          147,
-          69
+          149,
+          71
         ],
         "spec.rules.backendRefs.filters.requestRedirect.hostname": [
-          148,
-          71
+          150,
+          73
         ],
         "spec.rules.backendRefs.filters.requestRedirect.path": [
-          149,
-          73
+          151,
+          75
         ],
         "spec.rules.backendRefs.filters.requestRedirect.path.replaceFullPath": [
-          150,
-          151
+          152,
+          153
         ],
         "spec.rules.backendRefs.filters.requestRedirect.path.replacePrefixMatch": [
-          152,
-          75
+          154,
+          77
         ],
         "spec.rules.backendRefs.filters.requestRedirect.path.type": [
-          153,
-          77
+          155,
+          79
         ],
         "spec.rules.backendRefs.filters.requestRedirect.port": [
-          154,
-          79
+          156,
+          81
         ],
         "spec.rules.backendRefs.filters.requestRedirect.scheme": [
-          155,
-          81
+          157,
+          83
         ],
         "spec.rules.backendRefs.filters.requestRedirect.statusCode": [
-          156,
-          83
+          158,
+          85
         ],
         "spec.rules.backendRefs.filters.responseHeaderModifier": [
-          157,
-          84
+          159,
+          86
         ],
         "spec.rules.backendRefs.filters.responseHeaderModifier.add": [
-          137,
-          56
+          139,
+          58
         ],
         "spec.rules.backendRefs.filters.responseHeaderModifier.add.name": [
-          138,
-          58
+          140,
+          60
         ],
         "spec.rules.backendRefs.filters.responseHeaderModifier.remove": [
-          139,
-          59
+          141,
+          61
         ],
         "spec.rules.backendRefs.filters.responseHeaderModifier.set": [
-          140,
-          61
-        ],
-        "spec.rules.backendRefs.filters.responseHeaderModifier.set.name": [
-          138,
-          58
-        ],
-        "spec.rules.backendRefs.filters.type": [
-          158,
-          86
-        ],
-        "spec.rules.backendRefs.filters.urlRewrite": [
-          159,
-          88
-        ],
-        "spec.rules.backendRefs.filters.urlRewrite.hostname": [
-          160,
-          90
-        ],
-        "spec.rules.backendRefs.filters.urlRewrite.path": [
-          161,
-          92
-        ],
-        "spec.rules.backendRefs.filters.urlRewrite.path.replaceFullPath": [
-          150,
-          151
-        ],
-        "spec.rules.backendRefs.filters.urlRewrite.path.replacePrefixMatch": [
-          152,
-          75
-        ],
-        "spec.rules.backendRefs.filters.urlRewrite.path.type": [
-          153,
-          77
-        ],
-        "spec.rules.backendRefs.group": [
-          134,
-          135
-        ],
-        "spec.rules.backendRefs.kind": [
-          143,
-          65
-        ],
-        "spec.rules.backendRefs.namespace": [
-          144,
-          67
-        ],
-        "spec.rules.backendRefs.port": [
-          145,
-          146
-        ],
-        "spec.rules.backendRefs.weight": [
-          162,
-          94
-        ],
-        "spec.rules.filters": [
-          163,
-          96
-        ],
-        "spec.rules.filters.extensionRef": [
-          133,
-          52
-        ],
-        "spec.rules.filters.extensionRef.group": [
-          134,
-          135
-        ],
-        "spec.rules.filters.requestHeaderModifier": [
-          136,
-          54
-        ],
-        "spec.rules.filters.requestHeaderModifier.add": [
-          137,
-          56
-        ],
-        "spec.rules.filters.requestHeaderModifier.add.name": [
-          138,
-          58
-        ],
-        "spec.rules.filters.requestHeaderModifier.remove": [
-          139,
-          59
-        ],
-        "spec.rules.filters.requestHeaderModifier.set": [
-          140,
-          61
-        ],
-        "spec.rules.filters.requestHeaderModifier.set.name": [
-          138,
-          58
-        ],
-        "spec.rules.filters.requestMirror": [
-          141,
+          142,
           63
         ],
-        "spec.rules.filters.requestMirror.backendRef": [
+        "spec.rules.backendRefs.filters.responseHeaderModifier.set.name": [
+          140,
+          60
+        ],
+        "spec.rules.backendRefs.filters.type": [
+          160,
+          88
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite": [
+          161,
+          90
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite.hostname": [
+          162,
+          92
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite.path": [
+          163,
+          94
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite.path.replaceFullPath": [
+          152,
+          153
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite.path.replacePrefixMatch": [
+          154,
+          77
+        ],
+        "spec.rules.backendRefs.filters.urlRewrite.path.type": [
+          155,
+          79
+        ],
+        "spec.rules.backendRefs.group": [
+          136,
+          137
+        ],
+        "spec.rules.backendRefs.kind": [
+          145,
+          67
+        ],
+        "spec.rules.backendRefs.namespace": [
+          146,
+          69
+        ],
+        "spec.rules.backendRefs.port": [
+          147,
+          148
+        ],
+        "spec.rules.backendRefs.weight": [
+          164,
+          96
+        ],
+        "spec.rules.filters": [
+          165,
+          98
+        ],
+        "spec.rules.filters.extensionRef": [
+          135,
+          54
+        ],
+        "spec.rules.filters.extensionRef.group": [
+          136,
+          137
+        ],
+        "spec.rules.filters.requestHeaderModifier": [
+          138,
+          56
+        ],
+        "spec.rules.filters.requestHeaderModifier.add": [
+          139,
+          58
+        ],
+        "spec.rules.filters.requestHeaderModifier.add.name": [
+          140,
+          60
+        ],
+        "spec.rules.filters.requestHeaderModifier.remove": [
+          141,
+          61
+        ],
+        "spec.rules.filters.requestHeaderModifier.set": [
           142,
-          64
+          63
         ],
-        "spec.rules.filters.requestMirror.backendRef.group": [
-          134,
-          135
+        "spec.rules.filters.requestHeaderModifier.set.name": [
+          140,
+          60
         ],
-        "spec.rules.filters.requestMirror.backendRef.kind": [
+        "spec.rules.filters.requestMirror": [
           143,
           65
         ],
-        "spec.rules.filters.requestMirror.backendRef.namespace": [
+        "spec.rules.filters.requestMirror.backendRef": [
           144,
+          66
+        ],
+        "spec.rules.filters.requestMirror.backendRef.group": [
+          136,
+          137
+        ],
+        "spec.rules.filters.requestMirror.backendRef.kind": [
+          145,
           67
         ],
-        "spec.rules.filters.requestMirror.backendRef.port": [
-          145,
-          146
-        ],
-        "spec.rules.filters.requestRedirect": [
-          147,
+        "spec.rules.filters.requestMirror.backendRef.namespace": [
+          146,
           69
         ],
-        "spec.rules.filters.requestRedirect.hostname": [
-          148,
+        "spec.rules.filters.requestMirror.backendRef.port": [
+          147,
+          148
+        ],
+        "spec.rules.filters.requestRedirect": [
+          149,
           71
         ],
-        "spec.rules.filters.requestRedirect.path": [
-          149,
+        "spec.rules.filters.requestRedirect.hostname": [
+          150,
           73
         ],
+        "spec.rules.filters.requestRedirect.path": [
+          151,
+          75
+        ],
         "spec.rules.filters.requestRedirect.path.replaceFullPath": [
-          150,
-          151
+          152,
+          153
         ],
         "spec.rules.filters.requestRedirect.path.replacePrefixMatch": [
-          152,
-          75
+          154,
+          77
         ],
         "spec.rules.filters.requestRedirect.path.type": [
-          153,
-          77
-        ],
-        "spec.rules.filters.requestRedirect.port": [
-          154,
+          155,
           79
         ],
-        "spec.rules.filters.requestRedirect.scheme": [
-          155,
+        "spec.rules.filters.requestRedirect.port": [
+          156,
           81
         ],
-        "spec.rules.filters.requestRedirect.statusCode": [
-          156,
+        "spec.rules.filters.requestRedirect.scheme": [
+          157,
           83
         ],
-        "spec.rules.filters.responseHeaderModifier": [
-          157,
-          84
-        ],
-        "spec.rules.filters.responseHeaderModifier.add": [
-          137,
-          56
-        ],
-        "spec.rules.filters.responseHeaderModifier.add.name": [
-          138,
-          58
-        ],
-        "spec.rules.filters.responseHeaderModifier.remove": [
-          139,
-          59
-        ],
-        "spec.rules.filters.responseHeaderModifier.set": [
-          140,
-          61
-        ],
-        "spec.rules.filters.responseHeaderModifier.set.name": [
-          138,
-          58
-        ],
-        "spec.rules.filters.type": [
+        "spec.rules.filters.requestRedirect.statusCode": [
           158,
+          85
+        ],
+        "spec.rules.filters.responseHeaderModifier": [
+          159,
           86
         ],
-        "spec.rules.filters.urlRewrite": [
-          159,
+        "spec.rules.filters.responseHeaderModifier.add": [
+          139,
+          58
+        ],
+        "spec.rules.filters.responseHeaderModifier.add.name": [
+          140,
+          60
+        ],
+        "spec.rules.filters.responseHeaderModifier.remove": [
+          141,
+          61
+        ],
+        "spec.rules.filters.responseHeaderModifier.set": [
+          142,
+          63
+        ],
+        "spec.rules.filters.responseHeaderModifier.set.name": [
+          140,
+          60
+        ],
+        "spec.rules.filters.type": [
+          160,
           88
         ],
-        "spec.rules.filters.urlRewrite.hostname": [
-          160,
+        "spec.rules.filters.urlRewrite": [
+          161,
           90
         ],
-        "spec.rules.filters.urlRewrite.path": [
-          161,
+        "spec.rules.filters.urlRewrite.hostname": [
+          162,
           92
         ],
+        "spec.rules.filters.urlRewrite.path": [
+          163,
+          94
+        ],
         "spec.rules.filters.urlRewrite.path.replaceFullPath": [
-          150,
-          151
+          152,
+          153
         ],
         "spec.rules.filters.urlRewrite.path.replacePrefixMatch": [
-          152,
-          75
-        ],
-        "spec.rules.filters.urlRewrite.path.type": [
-          153,
+          154,
           77
         ],
+        "spec.rules.filters.urlRewrite.path.type": [
+          155,
+          79
+        ],
         "spec.rules.matches": [
-          164,
-          97
-        ],
-        "spec.rules.matches.headers": [
-          165,
-          166
-        ],
-        "spec.rules.matches.headers.name": [
-          167,
+          166,
           99
         ],
-        "spec.rules.matches.headers.type": [
-          168,
-          100
+        "spec.rules.matches.headers": [
+          167,
+          168
         ],
-        "spec.rules.matches.method": [
+        "spec.rules.matches.headers.name": [
           169,
+          101
+        ],
+        "spec.rules.matches.headers.type": [
+          170,
           102
         ],
-        "spec.rules.matches.path": [
-          170,
-          171
-        ],
-        "spec.rules.matches.path.type": [
-          172,
+        "spec.rules.matches.method": [
+          171,
           104
         ],
-        "spec.rules.matches.queryParams": [
-          173,
+        "spec.rules.matches.path": [
+          172,
+          173
+        ],
+        "spec.rules.matches.path.type": [
+          174,
           106
         ],
-        "spec.rules.matches.queryParams.name": [
-          174,
+        "spec.rules.matches.queryParams": [
+          175,
           108
         ],
-        "spec.rules.matches.queryParams.type": [
-          175,
+        "spec.rules.matches.queryParams.name": [
+          176,
           110
         ],
-        "status.parents": [
-          176,
-          113
-        ],
-        "status.parents.conditions": [
+        "spec.rules.matches.queryParams.type": [
           177,
+          112
+        ],
+        "status.parents": [
+          178,
           115
         ],
-        "status.parents.conditions.lastTransitionTime": [
-          178,
-          179
+        "status.parents.conditions": [
+          179,
+          117
         ],
-        "status.parents.conditions.message": [
+        "status.parents.conditions.lastTransitionTime": [
           180,
           181
         ],
-        "status.parents.conditions.observedGeneration": [
+        "status.parents.conditions.message": [
           182,
           183
         ],
-        "status.parents.conditions.reason": [
+        "status.parents.conditions.observedGeneration": [
           184,
           185
         ],
-        "status.parents.conditions.type": [
+        "status.parents.conditions.reason": [
           186,
-          116
+          187
         ],
-        "status.parents.controllerName": [
-          187,
+        "status.parents.conditions.type": [
+          188,
           118
         ],
+        "status.parents.controllerName": [
+          189,
+          120
+        ],
         "status.parents.parentRef": [
-          188,
-          189
+          190,
+          191
         ],
         "status.parents.parentRef.group": [
-          126,
-          38
-        ],
-        "status.parents.parentRef.kind": [
-          127,
+          128,
           40
         ],
-        "status.parents.parentRef.name": [
-          128,
+        "status.parents.parentRef.kind": [
+          129,
           42
         ],
-        "status.parents.parentRef.namespace": [
-          129,
+        "status.parents.parentRef.name": [
+          130,
           44
+        ],
+        "status.parents.parentRef.namespace": [
+          131,
+          46
         ],
         "status.parents.parentRef.port": [
           null,
-          45
+          47
         ],
         "status.parents.parentRef.sectionName": [
-          130,
-          46
+          132,
+          48
         ],
         "": [
-          190,
-          191
+          192,
+          193
         ]
       }
     },
@@ -1318,8 +1336,8 @@
       ],
       "descriptions": {
         "spec.parentRefs": [
-          192,
-          125
+          194,
+          127
         ]
       }
     },
@@ -1331,16 +1349,16 @@
       ],
       "descriptions": {
         "spec.parentRefs": [
-          193,
-          192
+          195,
+          194
         ],
         "spec.parentRefs.namespace": [
-          194,
-          129
+          196,
+          131
         ],
         "status.parents.parentRef.namespace": [
-          194,
-          129
+          196,
+          131
         ]
       }
     },
@@ -1368,80 +1386,80 @@
       ],
       "descriptions": {
         "spec.hostnames": [
-          195,
-          124
+          197,
+          126
         ],
         "spec.parentRefs": [
-          196,
-          193
+          198,
+          195
         ],
         "spec.parentRefs.kind": [
-          197,
-          127
+          199,
+          129
         ],
         "spec.parentRefs.namespace": [
-          198,
-          194
+          200,
+          196
         ],
         "spec.parentRefs.sectionName": [
-          199,
-          130
+          201,
+          132
         ],
         "spec.rules.backendRefs.filters.extensionRef": [
-          200,
-          133
+          202,
+          135
         ],
         "spec.rules.backendRefs.filters.requestMirror": [
-          201,
-          141
+          203,
+          143
         ],
         "spec.rules.backendRefs.filters.requestMirror.backendRef": [
-          202,
-          142
+          204,
+          144
         ],
         "spec.rules.backendRefs.filters.requestRedirect.path.replacePrefixMatch": [
-          203,
-          152
+          205,
+          154
         ],
         "spec.rules.backendRefs.filters.urlRewrite.path.replacePrefixMatch": [
-          203,
-          152
+          205,
+          154
         ],
         "spec.rules.filters": [
-          204,
-          163
+          206,
+          165
         ],
         "spec.rules.filters.extensionRef": [
-          200,
-          133
+          202,
+          135
         ],
         "spec.rules.filters.requestMirror": [
-          201,
-          141
+          203,
+          143
         ],
         "spec.rules.filters.requestMirror.backendRef": [
-          202,
-          142
+          204,
+          144
         ],
         "spec.rules.filters.requestRedirect.path.replacePrefixMatch": [
-          203,
-          152
+          205,
+          154
         ],
         "spec.rules.filters.urlRewrite.path.replacePrefixMatch": [
-          203,
-          152
+          205,
+          154
         ],
         "status.parents.parentRef.kind": [
-          197,
-          127
+          199,
+          129
         ],
         "status.parents.parentRef.namespace": [
-          198,
-          194
+          200,
+          196
         ],
         "status.parents.parentRef.sectionName": [
-          199,
-          130
+          201,
+          132
         ]
       }
     },
@@ -1455,24 +1473,24 @@
       ],
       "descriptions": {
         "spec.hostnames": [
-          205,
-          195
+          207,
+          197
         ],
         "spec.rules.backendRefs.filters.requestMirror.backendRef.namespace": [
-          206,
-          144
+          208,
+          146
         ],
         "spec.rules.backendRefs.namespace": [
-          206,
-          144
+          208,
+          146
         ],
         "spec.rules.filters.requestMirror.backendRef.namespace": [
-          206,
-          144
+          208,
+          146
         ],
         "spec.rules.matches": [
-          207,
-          164
+          209,
+          166
         ]
       }
     },
@@ -1510,112 +1528,112 @@
       },
       "descriptions": {
         "spec.hostnames": [
-          208,
-          205
+          210,
+          207
         ],
         "spec.rules.backendRefs": [
-          209,
-          131
+          211,
+          133
         ],
         "spec.rules.backendRefs.filters.requestHeaderModifier.add": [
-          210,
-          137
-        ],
-        "spec.rules.backendRefs.filters.requestHeaderModifier.remove": [
-          211,
+          212,
           139
         ],
+        "spec.rules.backendRefs.filters.requestHeaderModifier.remove": [
+          213,
+          141
+        ],
         "spec.rules.backendRefs.filters.requestHeaderModifier.set": [
-          212,
-          140
+          214,
+          142
         ],
         "spec.rules.backendRefs.filters.requestMirror.backendRef.kind": [
-          213,
-          143
+          215,
+          145
         ],
         "spec.rules.backendRefs.filters.requestRedirect.hostname": [
-          214,
-          148
+          216,
+          150
         ],
         "spec.rules.backendRefs.filters.requestRedirect.path": [
           null,
-          149
+          151
         ],
         "spec.rules.backendRefs.filters.requestRedirect.port": [
-          215,
-          154
+          217,
+          156
         ],
         "spec.rules.backendRefs.filters.requestRedirect.scheme": [
-          216,
-          155
+          218,
+          157
         ],
         "spec.rules.backendRefs.filters.responseHeaderModifier": [
           null,
-          157
+          159
         ],
         "spec.rules.backendRefs.filters.type": [
-          217,
-          158
+          219,
+          160
         ],
         "spec.rules.backendRefs.filters.urlRewrite": [
           null,
-          159
+          161
         ],
         "spec.rules.backendRefs.kind": [
-          213,
-          143
+          215,
+          145
         ],
         "spec.rules.filters": [
-          218,
-          204
+          220,
+          206
         ],
         "spec.rules.filters.requestHeaderModifier.add": [
-          210,
-          137
-        ],
-        "spec.rules.filters.requestHeaderModifier.remove": [
-          211,
+          212,
           139
         ],
+        "spec.rules.filters.requestHeaderModifier.remove": [
+          213,
+          141
+        ],
         "spec.rules.filters.requestHeaderModifier.set": [
-          212,
-          140
+          214,
+          142
         ],
         "spec.rules.filters.requestMirror.backendRef.kind": [
-          213,
-          143
+          215,
+          145
         ],
         "spec.rules.filters.requestRedirect.hostname": [
-          214,
-          148
+          216,
+          150
         ],
         "spec.rules.filters.requestRedirect.path": [
           null,
-          149
+          151
         ],
         "spec.rules.filters.requestRedirect.port": [
-          215,
-          154
+          217,
+          156
         ],
         "spec.rules.filters.requestRedirect.scheme": [
-          216,
-          155
+          218,
+          157
         ],
         "spec.rules.filters.responseHeaderModifier": [
           null,
-          157
+          159
         ],
         "spec.rules.filters.type": [
-          217,
-          158
+          219,
+          160
         ],
         "spec.rules.filters.urlRewrite": [
           null,
-          159
+          161
         ],
         "spec.rules.matches": [
-          219,
-          207
+          221,
+          209
         ]
       }
     },
@@ -1656,132 +1674,132 @@
       ],
       "descriptions": {
         "spec.hostnames": [
-          220,
-          208
+          222,
+          210
         ],
         "spec.parentRefs": [
-          221,
-          196
-        ],
-        "spec.parentRefs.group": [
-          222,
-          126
-        ],
-        "spec.parentRefs.kind": [
           223,
-          197
-        ],
-        "spec.parentRefs.namespace": [
-          224,
           198
         ],
-        "spec.rules.backendRefs": [
+        "spec.parentRefs.group": [
+          224,
+          128
+        ],
+        "spec.parentRefs.kind": [
           225,
-          209
+          199
+        ],
+        "spec.parentRefs.namespace": [
+          226,
+          200
+        ],
+        "spec.rules.backendRefs": [
+          227,
+          211
         ],
         "spec.rules.backendRefs.filters": [
-          226,
-          132
+          228,
+          134
         ],
         "spec.rules.backendRefs.filters.extensionRef.group": [
-          227,
-          134
+          229,
+          136
         ],
         "spec.rules.backendRefs.filters.requestHeaderModifier.add": [
-          228,
-          210
+          230,
+          212
         ],
         "spec.rules.backendRefs.filters.requestMirror.backendRef": [
-          229,
-          202
+          231,
+          204
         ],
         "spec.rules.backendRefs.filters.requestMirror.backendRef.group": [
-          227,
-          134
+          229,
+          136
         ],
         "spec.rules.backendRefs.filters.requestRedirect.scheme": [
-          230,
-          216
-        ],
-        "spec.rules.backendRefs.filters.requestRedirect.statusCode": [
-          231,
-          156
-        ],
-        "spec.rules.backendRefs.filters.type": [
           232,
-          217
-        ],
-        "spec.rules.backendRefs.group": [
-          227,
-          134
-        ],
-        "spec.rules.filters": [
-          233,
           218
         ],
-        "spec.rules.filters.extensionRef.group": [
-          227,
-          134
+        "spec.rules.backendRefs.filters.requestRedirect.statusCode": [
+          233,
+          158
         ],
-        "spec.rules.filters.requestHeaderModifier.add": [
-          228,
-          210
-        ],
-        "spec.rules.filters.requestMirror.backendRef": [
-          229,
-          202
-        ],
-        "spec.rules.filters.requestMirror.backendRef.group": [
-          227,
-          134
-        ],
-        "spec.rules.filters.requestRedirect.scheme": [
-          230,
-          216
-        ],
-        "spec.rules.filters.requestRedirect.statusCode": [
-          231,
-          156
-        ],
-        "spec.rules.filters.type": [
-          232,
-          217
-        ],
-        "spec.rules.matches": [
+        "spec.rules.backendRefs.filters.type": [
           234,
           219
         ],
-        "spec.rules.matches.headers.type": [
+        "spec.rules.backendRefs.group": [
+          229,
+          136
+        ],
+        "spec.rules.filters": [
           235,
-          168
+          220
+        ],
+        "spec.rules.filters.extensionRef.group": [
+          229,
+          136
+        ],
+        "spec.rules.filters.requestHeaderModifier.add": [
+          230,
+          212
+        ],
+        "spec.rules.filters.requestMirror.backendRef": [
+          231,
+          204
+        ],
+        "spec.rules.filters.requestMirror.backendRef.group": [
+          229,
+          136
+        ],
+        "spec.rules.filters.requestRedirect.scheme": [
+          232,
+          218
+        ],
+        "spec.rules.filters.requestRedirect.statusCode": [
+          233,
+          158
+        ],
+        "spec.rules.filters.type": [
+          234,
+          219
+        ],
+        "spec.rules.matches": [
+          236,
+          221
+        ],
+        "spec.rules.matches.headers.type": [
+          237,
+          170
         ],
         "spec.rules.matches.path.type": [
-          236,
-          172
-        ],
-        "spec.rules.matches.queryParams": [
-          237,
-          173
-        ],
-        "spec.rules.matches.queryParams.name": [
           238,
           174
         ],
-        "spec.rules.matches.queryParams.type": [
+        "spec.rules.matches.queryParams": [
           239,
           175
         ],
+        "spec.rules.matches.queryParams.name": [
+          240,
+          176
+        ],
+        "spec.rules.matches.queryParams.type": [
+          241,
+          177
+        ],
         "status.parents.parentRef.group": [
-          222,
-          126
+          224,
+          128
         ],
         "status.parents.parentRef.kind": [
-          223,
-          197
+          225,
+          199
         ],
         "status.parents.parentRef.namespace": [
-          224,
-          198
+          226,
+          200
         ]
       }
     },
@@ -1799,45 +1817,48 @@
       ],
       "descriptions": {
         "spec.rules.backendRefs.filters.requestMirror.backendRef.port": [
-          240,
-          145
+          242,
+          147
         ],
         "spec.rules.backendRefs.filters.requestRedirect.scheme": [
-          241,
-          230
+          243,
+          232
         ],
         "spec.rules.backendRefs.filters.requestRedirect.statusCode": [
-          242,
-          231
+          244,
+          233
         ],
         "spec.rules.backendRefs.filters.type": [
-          243,
-          232
+          245,
+          234
         ],
         "spec.rules.backendRefs.port": [
-          240,
-          145
+          242,
+          147
         ],
         "spec.rules.filters.requestMirror.backendRef.port": [
-          240,
-          145
+          242,
+          147
         ],
         "spec.rules.filters.requestRedirect.scheme": [
-          241,
-          230
-        ],
-        "spec.rules.filters.requestRedirect.statusCode": [
-          242,
-          231
-        ],
-        "spec.rules.filters.type": [
           243,
           232
+        ],
+        "spec.rules.filters.requestRedirect.statusCode": [
+          244,
+          233
+        ],
+        "spec.rules.filters.type": [
+          245,
+          234
         ]
       }
     }
   },
   "texts": [
+    "Hostnames defines a set of hostnames that should match against the HTTP Host\nheader to select a HTTPRoute used to process the request. Implementations\nMUST ignore any port value specified in the HTTP Host header while\nperforming a match and (absent of any applicable header modification\nconfiguration) MUST forward this header unmodified to the backend.\n\nValid values for Hostnames are determined by RFC 1123 definition of a\nhostname with 2 notable exceptions:\n\n1. IPs are not allowed.\n2. A hostname may be prefixed with a wildcard label (`*.`). The wildcard\n   label must appear by itself as the first label.\n\nIf a hostname is specified by both the Listener and HTTPRoute, there\nmust be at least one intersecting hostname for the HTTPRoute to be\nattached to the Listener. For example:\n\n* A Listener with `test.example.com` as the hostname matches HTTPRoutes\n  that have either not specified any hostnames, or have specified at\n  least one of `test.example.com` or `*.example.com`.\n* A Listener with `*.example.com` as the hostname matches HTTPRoutes\n  that have either not specified any hostnames or have specified at least\n  one hostname that matches the Listener hostname. For example,\n  `*.example.com`, `test.example.com`, and `foo.test.example.com` would\n  all match. On the other hand, `example.com` and `test.example.net` would\n  not match.\n\nHostnames that are prefixed with a wildcard label (`*.`) are interpreted\nas a suffix match. That means that a match for `*.example.com` would match\nboth `test.example.com`, and `foo.test.example.com`, but not `example.com`.\n\nIf both the Listener and HTTPRoute have specified hostnames, any\nHTTPRoute hostnames that do not match the Listener hostname MUST be\nignored. For example, if a Listener specified `*.example.com`, and the\nHTTPRoute specified `test.example.com` and `test.example.net`,\n`test.example.net` must not be considered for a match.\n\nIf both the Listener and HTTPRoute have specified hostnames, and none\nmatch with the criteria above, then the HTTPRoute is not accepted. The\nimplementation must raise an 'Accepted' Condition with a status of\n`False` in the corresponding RouteParentStatus.\n\nIn the event that multiple HTTPRoutes specify intersecting hostnames (e.g.\noverlapping wildcard matching and exact matching hostnames), precedence must\nbe given to rules from the HTTPRoute with the largest number of:\n\n* Characters in a matching non-wildcard hostname.\n* Characters in a matching hostname.\n\nIf ties exist across multiple Routes, the matching precedence rules for\nHTTPRouteMatches takes over.\n\nSupport: Core",
+    "Hostnames defines a set of hostnames that should match against the HTTP Host\nheader to select a HTTPRoute used to process the request. Implementations\nMUST ignore any port value specified in the HTTP Host header while\nperforming a match and (absent of any applicable header modification\nconfiguration) MUST forward this header unmodified to the backend.\n\nValid values for Hostnames are determined by RFC 1123 definition of a\nhostname with 2 notable exceptions:\n\n1. IPs are not allowed.\n2. A hostname may be prefixed with a wildcard label (`*.`). The wildcard\n   label must appear by itself as the first label.\n\nIf a hostname is specified by both the Listener and HTTPRoute, there\nmust be at least one intersecting hostname for the HTTPRoute to be\nattached to the Listener. For example:\n\n* A Listener with `test.example.com` as the hostname matches HTTPRoutes\n  that have either not specified any hostnames, or have specified at\n  least one of `test.example.com` or `*.example.com`.\n* A Listener with `*.example.com` as the hostname matches HTTPRoutes\n  that have either not specified any hostnames or have specified at least\n  one hostname that matches the Listener hostname. For example,\n  `*.example.com`, `test.example.com`, and `foo.test.example.com` would\n  all match. On the other hand, `example.com` and `test.example.net` would\n  not match.\n\nHostnames that are prefixed with a wildcard label (`*.`) are interpreted\nas a suffix match. That means that a match for `*.example.com` would match\nboth `test.example.com`, and `foo.test.example.com`, but not `example.com`.\n\nIf both the Listener and HTTPRoute have specified hostnames, any\nHTTPRoute hostnames that do not match the Listener hostname MUST be\nignored. For example, if a Listener specified `*.example.com`, and the\nHTTPRoute specified `test.example.com` and `test.example.net`,\n`test.example.net` must not be considered for a match.\n\nIf both the Listener and HTTPRoute have specified hostnames, and none\nmatch with the criteria above, then the HTTPRoute is not accepted. The\nimplementation must raise an 'Accepted' Condition with a status of\n`False` in the corresponding RouteParentStatus.\n\nIn the event that multiple HTTPRoutes specify intersecting hostnames (e.g.\noverlapping wildcard matching and exact matching hostnames), precedence must\nbe given to rules from the HTTPRoute with the largest number of:\n\n* Characters in a matching non-wildcard hostname.\n* Characters in a matching hostname.\n\nWhen multiple HTTPRoutes attach to the same Listener and yield identical\nListener/Route intersected hostnames, implementations SHOULD evaluate\nprecedence using the original hostnames configured on the Route, not the\ncalculated Listener/Route hostname intersection.\n\nResolving Route precedence using original Route hostname specificity is an\nExtended feature. Implementations that support this behavior SHOULD claim\nsupport for the `GatewayRouteHostnameIntersectionPrecedence` feature.\nImplementations that do not support this feature MAY evaluate precedence\nusing the calculated Listener/Route hostname intersection.\n\nSupport: Core",
+    "Retry defines the configuration for when to retry an HTTP request.\n\nA request is retried when attempts is greater than 0 and the backend did\nnot process it. This is the case when the connection could not be\nestablished, or when the backend explicitly rejected the request, either\nbefore processing it or with one of the configured status codes.\n\nSupport: Extended",
     "StatusCode is the HTTP status code to be used in response.\n\nNote that values may be added to this enum, implementations\nmust ensure that unknown values will not cause a crash.\n\nUnknown values here must result in the implementation setting the\nAccepted Condition for the Route to `status: False`, with a\nReason of `UnsupportedValue`.\n\nSupport: Core",
     "StatusCode is the HTTP status code to be used in response.\n\nNote that values may be added to this enum, implementations\nmust ensure that unknown values will not cause a crash.\n\nUnknown values here must result in the implementation setting the\nAccepted Condition for the Route to `status: False`, with a\nReason of `UnsupportedValue`.\n\nSupport: statusCode 301 and 302 are Core; all others are Extended.",
     "AllowHeaders indicates which HTTP request headers are supported for\naccessing the requested resource.\n\nHeader names are not case-sensitive.\n\nMultiple header names in the value of the `Access-Control-Allow-Headers`\nresponse header are separated by a comma (\",\").\n\nWhen the `AllowHeaders` field is configured with one or more headers, the\ngateway must return the `Access-Control-Allow-Headers` response header\nwhich value is present in the `AllowHeaders` field.\n\nIf any header name in the `Access-Control-Request-Headers` request header\nis not included in the list of header names specified by the response\nheader `Access-Control-Allow-Headers`, it will present an error on the\nclient side.\n\nIf any header name in the `Access-Control-Allow-Headers` response header\ndoes not recognize by the client, it will also occur an error on the\nclient side.\n\nA wildcard indicates that the requests with all HTTP headers are allowed.\nIf config contains the wildcard \"*\" in allowHeaders and the request is\nnot credentialed, the `Access-Control-Allow-Headers` response header\ncan either use the `*` wildcard or the value of\nAccess-Control-Request-Headers from the request.\n\nWhen the request is credentialed, the gateway must not specify the `*`\nwildcard in the `Access-Control-Allow-Headers` response header. When\nalso the `AllowCredentials` field is true and `AllowHeaders` field\nis specified with the `*` wildcard, the gateway must specify one or more\nHTTP headers in the value of the `Access-Control-Allow-Headers` response\nheader. The value of the header `Access-Control-Allow-Headers` is same as\nthe `Access-Control-Request-Headers` header provided by the client. If\nthe header `Access-Control-Request-Headers` is not included in the\nrequest, the gateway will omit the `Access-Control-Allow-Headers`\nresponse header, instead of specifying the `*` wildcard.\n\nSupport: Extended",
@@ -1874,7 +1895,6 @@
     "Name is the name of the HTTP Header to be matched. Name matching MUST be\ncase-insensitive. (See https://tools.ietf.org/html/rfc7230#section-3.2).\n\nIf multiple entries specify equivalent header names, only the first\nentry with an equivalent name MUST be considered for a match. Subsequent\nentries with an equivalent header name MUST be ignored. Due to the\ncase-insensitivity of header names, \"foo\" and \"Foo\" are considered\nequivalent.\n\nWhen a header is repeated in an HTTP request, it is\nimplementation-specific behavior as to how this is represented.\nGenerally, proxies should follow the guidance from the RFC:\nhttps://www.rfc-editor.org/rfc/rfc7230.html#section-3.2.2 regarding\nprocessing a repeated header, with special handling for \"Set-Cookie\".",
     "Conditions describes the status of the route with respect to the Gateway.\nNote that the route's availability is also subject to the Gateway's own\nstatus conditions and listener status.\n\nIf the Route's ParentRef specifies an existing Gateway that supports\nRoutes of this kind AND that Gateway's controller has sufficient access,\nthen that Gateway's controller MUST set the \"Accepted\" condition on the\nRoute, to indicate whether the route has been accepted or rejected by the\nGateway, and why.\n\nA Route MUST be considered \"Accepted\" if at least one of the Route's\nrules is implemented by the Gateway.\n\nThere are a number of cases where the \"Accepted\" condition may not be set\ndue to lack of controller visibility, that includes when:\n\n* The Route refers to a non-existent parent.\n* The Route is of a type that the controller does not support.\n* The Route is in a namespace the controller does not have access to.",
     "Hostnames defines a set of hostnames that should match against the HTTP Host\nheader to select a HTTPRoute used to process the request. Implementations\nMUST ignore any port value specified in the HTTP Host header while\nperforming a match and (absent of any applicable header modification\nconfiguration) MUST forward this header unmodified to the backend.\n\n\nValid values for Hostnames are determined by RFC 1123 definition of a\nhostname with 2 notable exceptions:\n\n\n1. IPs are not allowed.\n2. A hostname may be prefixed with a wildcard label (`*.`). The wildcard\n   label must appear by itself as the first label.\n\n\nIf a hostname is specified by both the Listener and HTTPRoute, there\nmust be at least one intersecting hostname for the HTTPRoute to be\nattached to the Listener. For example:\n\n\n* A Listener with `test.example.com` as the hostname matches HTTPRoutes\n  that have either not specified any hostnames, or have specified at\n  least one of `test.example.com` or `*.example.com`.\n* A Listener with `*.example.com` as the hostname matches HTTPRoutes\n  that have either not specified any hostnames or have specified at least\n  one hostname that matches the Listener hostname. For example,\n  `*.example.com`, `test.example.com`, and `foo.test.example.com` would\n  all match. On the other hand, `example.com` and `test.example.net` would\n  not match.\n\n\nHostnames that are prefixed with a wildcard label (`*.`) are interpreted\nas a suffix match. That means that a match for `*.example.com` would match\nboth `test.example.com`, and `foo.test.example.com`, but not `example.com`.\n\n\nIf both the Listener and HTTPRoute have specified hostnames, any\nHTTPRoute hostnames that do not match the Listener hostname MUST be\nignored. For example, if a Listener specified `*.example.com`, and the\nHTTPRoute specified `test.example.com` and `test.example.net`,\n`test.example.net` must not be considered for a match.\n\n\nIf both the Listener and HTTPRoute have specified hostnames, and none\nmatch with the criteria above, then the HTTPRoute is not accepted. The\nimplementation must raise an 'Accepted' Condition with a status of\n`False` in the corresponding RouteParentStatus.\n\n\nIn the event that multiple HTTPRoutes specify intersecting hostnames (e.g.\noverlapping wildcard matching and exact matching hostnames), precedence must\nbe given to rules from the HTTPRoute with the largest number of:\n\n\n* Characters in a matching non-wildcard hostname.\n* Characters in a matching hostname.\n\n\nIf ties exist across multiple Routes, the matching precedence rules for\nHTTPRouteMatches takes over.\n\n\nSupport: Core",
-    "Hostnames defines a set of hostnames that should match against the HTTP Host\nheader to select a HTTPRoute used to process the request. Implementations\nMUST ignore any port value specified in the HTTP Host header while\nperforming a match and (absent of any applicable header modification\nconfiguration) MUST forward this header unmodified to the backend.\n\nValid values for Hostnames are determined by RFC 1123 definition of a\nhostname with 2 notable exceptions:\n\n1. IPs are not allowed.\n2. A hostname may be prefixed with a wildcard label (`*.`). The wildcard\n   label must appear by itself as the first label.\n\nIf a hostname is specified by both the Listener and HTTPRoute, there\nmust be at least one intersecting hostname for the HTTPRoute to be\nattached to the Listener. For example:\n\n* A Listener with `test.example.com` as the hostname matches HTTPRoutes\n  that have either not specified any hostnames, or have specified at\n  least one of `test.example.com` or `*.example.com`.\n* A Listener with `*.example.com` as the hostname matches HTTPRoutes\n  that have either not specified any hostnames or have specified at least\n  one hostname that matches the Listener hostname. For example,\n  `*.example.com`, `test.example.com`, and `foo.test.example.com` would\n  all match. On the other hand, `example.com` and `test.example.net` would\n  not match.\n\nHostnames that are prefixed with a wildcard label (`*.`) are interpreted\nas a suffix match. That means that a match for `*.example.com` would match\nboth `test.example.com`, and `foo.test.example.com`, but not `example.com`.\n\nIf both the Listener and HTTPRoute have specified hostnames, any\nHTTPRoute hostnames that do not match the Listener hostname MUST be\nignored. For example, if a Listener specified `*.example.com`, and the\nHTTPRoute specified `test.example.com` and `test.example.net`,\n`test.example.net` must not be considered for a match.\n\nIf both the Listener and HTTPRoute have specified hostnames, and none\nmatch with the criteria above, then the HTTPRoute is not accepted. The\nimplementation must raise an 'Accepted' Condition with a status of\n`False` in the corresponding RouteParentStatus.\n\nIn the event that multiple HTTPRoutes specify intersecting hostnames (e.g.\noverlapping wildcard matching and exact matching hostnames), precedence must\nbe given to rules from the HTTPRoute with the largest number of:\n\n* Characters in a matching non-wildcard hostname.\n* Characters in a matching hostname.\n\nIf ties exist across multiple Routes, the matching precedence rules for\nHTTPRouteMatches takes over.\n\nSupport: Core",
     "ParentRefs references the resources (usually Gateways) that a Route wants\nto be attached to. Note that the referenced parent resource needs to\nallow this for the attachment to be complete. For Gateways, that means\nthe Gateway needs to allow attachment from Routes of this kind and\nnamespace. For Services, that means the Service must either be in the same\nnamespace for a \"producer\" route, or the mesh implementation must support\nand allow \"consumer\" routes for the referenced Service. ReferenceGrant is\nnot applicable for governing ParentRefs to Services - it is not possible to\ncreate a \"producer\" route for a Service in a different namespace from the\nRoute.\n\n\nThere are two kinds of parent resources with \"Core\" support:\n\n\n* Gateway (Gateway conformance profile)\n* Service (Mesh conformance profile, ClusterIP Services only)\n\n\nThis API may be extended in the future to support additional kinds of parent\nresources.\n\n\nParentRefs must be _distinct_. This means either that:\n\n\n* They select different objects.  If this is the case, then parentRef\n  entries are distinct. In terms of fields, this means that the\n  multi-part key defined by `group`, `kind`, `namespace`, and `name` must\n  be unique across all parentRef entries in the Route.\n* They do not select different objects, but for each optional field used,\n  each ParentRef that selects the same object must set the same set of\n  optional fields to different values. If one ParentRef sets a\n  combination of optional fields, all must set the same combination.\n\n\nSome examples:\n\n\n* If one ParentRef sets `sectionName`, all ParentRefs referencing the\n  same object must also set `sectionName`.\n* If one ParentRef sets `port`, all ParentRefs referencing the same\n  object must also set `port`.\n* If one ParentRef sets `sectionName` and `port`, all ParentRefs\n  referencing the same object must also set `sectionName` and `port`.\n\n\nIt is possible to separately reference multiple distinct objects that may\nbe collapsed by an implementation. For example, some implementations may\nchoose to merge compatible Gateway Listeners together. If that is the\ncase, the list of routes attached to those resources should also be\nmerged.\n\n\nNote that for ParentRefs that cross namespace boundaries, there are specific\nrules. Cross-namespace references are only valid if they are explicitly\nallowed by something in the namespace they are referring to. For example,\nGateway has the AllowedRoutes field, and ReferenceGrant provides a\ngeneric way to enable other kinds of cross-namespace reference.\n\n\n\n\n\n\n\n\n",
     "Group is the group of the referent.\nWhen unspecified, \"gateway.networking.k8s.io\" is inferred.\nTo set the core API group (such as for a \"Service\" kind referent),\nGroup must be explicitly set to \"\" (empty string).\n\n\nSupport: Core",
     "Group is the group of the referent.\nWhen unspecified, \"gateway.networking.k8s.io\" is inferred.\nTo set the core API group (such as for a \"Service\" kind referent),\nGroup must be explicitly set to \"\" (empty string).\n\nSupport: Core",
