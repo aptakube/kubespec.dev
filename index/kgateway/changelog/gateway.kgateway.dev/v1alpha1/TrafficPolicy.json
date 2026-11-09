@@ -1,5 +1,53 @@
 {
   "versions": {
+    "v2.5.0": {
+      "descriptionChanged": [
+        "spec.acl",
+        "spec.buffer.filterStage",
+        "spec.rateLimit.local.tokenBucket",
+        "spec.rateLimit.local.tokenBucket.fillInterval",
+        "spec.rateLimit.local.tokenBucket.tokensPerFill"
+      ],
+      "added": {
+        "spec.httpUpgrade": "object[]",
+        "spec.rateLimit.local.shareAcrossGateway": "boolean",
+        "spec.requestMirror": "object"
+      },
+      "descriptions": {
+        "spec.acl": [
+          0,
+          1
+        ],
+        "spec.buffer.filterStage": [
+          2,
+          3
+        ],
+        "spec.httpUpgrade": [
+          null,
+          4
+        ],
+        "spec.rateLimit.local.shareAcrossGateway": [
+          null,
+          5
+        ],
+        "spec.rateLimit.local.tokenBucket": [
+          6,
+          7
+        ],
+        "spec.rateLimit.local.tokenBucket.fillInterval": [
+          8,
+          9
+        ],
+        "spec.rateLimit.local.tokenBucket.tokensPerFill": [
+          10,
+          11
+        ],
+        "spec.requestMirror": [
+          null,
+          12
+        ]
+      }
+    },
     "v2.4.5": {
       "added": {
         "spec.buffer.filterStage": "object"
@@ -7,7 +55,7 @@
       "descriptions": {
         "spec.buffer.filterStage": [
           null,
-          0
+          2
         ]
       }
     },
@@ -61,136 +109,136 @@
       ],
       "descriptions": {
         "spec.acl": [
-          1,
-          2
+          13,
+          0
         ],
         "spec.autoHostRewrite": [
-          3,
-          4
+          14,
+          15
         ],
         "spec.compression.requestDecompression": [
-          5,
-          6
+          16,
+          17
         ],
         "spec.compression.requestDecompression.libraries": [
           null,
-          7
+          18
         ],
         "spec.compression.responseCompression": [
-          8,
-          9
+          19,
+          20
         ],
         "spec.compression.responseCompression.libraries": [
           null,
-          10
+          21
         ],
         "spec.cors.allowHeaders": [
-          11,
-          12
+          22,
+          23
         ],
         "spec.cors.allowMethods": [
-          13,
-          14
+          24,
+          25
         ],
         "spec.cors.allowOrigins": [
-          15,
-          16
+          26,
+          27
         ],
         "spec.cors.exposeHeaders": [
-          17,
-          18
+          28,
+          29
         ],
         "spec.headerModifiers.request.add": [
-          19,
-          20
+          30,
+          31
         ],
         "spec.headerModifiers.request.add.name": [
-          21,
-          22
+          32,
+          33
         ],
         "spec.headerModifiers.request.add.secretRef": [
           null,
-          23
+          34
         ],
         "spec.headerModifiers.request.add.value": [
-          24,
-          25
+          35,
+          36
         ],
         "spec.headerModifiers.request.remove": [
-          26,
-          27
+          37,
+          38
         ],
         "spec.headerModifiers.request.set": [
-          28,
-          29
+          39,
+          40
         ],
         "spec.headerModifiers.request.set.name": [
-          21,
-          22
+          32,
+          33
         ],
         "spec.headerModifiers.request.set.secretRef": [
           null,
-          23
+          34
         ],
         "spec.headerModifiers.request.set.value": [
-          24,
-          25
+          35,
+          36
         ],
         "spec.headerModifiers.response.add": [
-          19,
-          20
+          30,
+          31
         ],
         "spec.headerModifiers.response.add.name": [
-          21,
-          22
+          32,
+          33
         ],
         "spec.headerModifiers.response.add.secretRef": [
           null,
-          23
+          34
         ],
         "spec.headerModifiers.response.add.value": [
-          24,
-          25
+          35,
+          36
         ],
         "spec.headerModifiers.response.remove": [
-          26,
-          27
+          37,
+          38
         ],
         "spec.headerModifiers.response.set": [
-          28,
-          29
+          39,
+          40
         ],
         "spec.headerModifiers.response.set.name": [
-          21,
-          22
+          32,
+          33
         ],
         "spec.headerModifiers.response.set.secretRef": [
           null,
-          23
+          34
         ],
         "spec.headerModifiers.response.set.value": [
-          24,
-          25
+          35,
+          36
         ],
         "spec.internalRedirect": [
           null,
-          30
+          41
         ],
         "spec.retry": [
-          31,
-          32
+          42,
+          43
         ],
         "spec.retry.perTryTimeout": [
-          33,
-          34
+          44,
+          45
         ],
         "spec.statPrefix": [
           null,
-          35
+          46
         ],
         "spec.timeouts": [
-          36,
-          37
+          47,
+          48
         ]
       }
     },
@@ -225,95 +273,95 @@
       "descriptions": {
         "spec.acl": [
           null,
-          1
-        ],
-        "spec.cors.allowHeaders": [
-          38,
-          11
-        ],
-        "spec.cors.allowMethods": [
-          39,
           13
         ],
+        "spec.cors.allowHeaders": [
+          49,
+          22
+        ],
+        "spec.cors.allowMethods": [
+          50,
+          24
+        ],
         "spec.cors.allowOrigins": [
-          40,
-          15
+          51,
+          26
         ],
         "spec.cors.exposeHeaders": [
-          41,
-          17
+          52,
+          28
         ],
         "spec.cors.maxAge": [
-          42,
-          43
+          53,
+          54
         ],
         "spec.faultInjection": [
           null,
-          44
+          55
         ],
         "spec.headerModifiers.request.add.value": [
-          45,
-          24
+          56,
+          35
         ],
         "spec.headerModifiers.request.set.value": [
-          45,
-          24
+          56,
+          35
         ],
         "spec.headerModifiers.response.add.value": [
-          45,
-          24
+          56,
+          35
         ],
         "spec.headerModifiers.response.set.value": [
-          45,
-          24
+          56,
+          35
         ],
         "spec.rateLimit.local.percentEnabled": [
           null,
-          46
+          57
         ],
         "spec.rateLimit.local.percentEnforced": [
           null,
-          47
+          58
         ],
         "spec.retry": [
-          48,
-          31
+          59,
+          42
         ],
         "spec.tracing": [
           null,
-          49
+          60
         ],
         "spec.transformation.request.add": [
-          50,
-          51
+          61,
+          62
         ],
         "spec.transformation.request.body.parseAs": [
-          52,
-          53
+          63,
+          64
         ],
         "spec.transformation.request.body.value": [
-          54,
-          55
+          65,
+          66
         ],
         "spec.transformation.request.dynamicMetadata": [
           null,
-          56
+          67
         ],
         "spec.transformation.response.add": [
-          50,
-          51
+          61,
+          62
         ],
         "spec.transformation.response.body.parseAs": [
-          52,
-          53
+          63,
+          64
         ],
         "spec.transformation.response.body.value": [
-          54,
-          55
+          65,
+          66
         ],
         "spec.transformation.response.dynamicMetadata": [
           null,
-          56
+          67
         ]
       }
     },
@@ -487,603 +535,603 @@
       "descriptions": {
         "apiVersion": [
           null,
-          57
+          68
         ],
         "kind": [
           null,
-          58
+          69
         ],
         "spec": [
           null,
-          59
+          70
         ],
         "spec.apiKeyAuth": [
           null,
-          60
+          71
         ],
         "spec.autoHostRewrite": [
           null,
-          3
+          14
         ],
         "spec.basicAuth": [
           null,
-          61
+          72
         ],
         "spec.buffer": [
           null,
-          62
+          73
         ],
         "spec.buffer.disable": [
           null,
-          63
+          74
         ],
         "spec.buffer.maxRequestSize": [
           null,
-          64
+          75
         ],
         "spec.compression": [
           null,
-          65
+          76
         ],
         "spec.cors": [
           null,
-          66
+          77
         ],
         "spec.cors.allowCredentials": [
           null,
-          67
+          78
         ],
         "spec.cors.allowHeaders": [
           null,
-          38
+          49
         ],
         "spec.cors.allowMethods": [
           null,
-          39
+          50
         ],
         "spec.cors.allowOrigins": [
           null,
-          40
+          51
         ],
         "spec.cors.disable": [
           null,
-          68
+          79
         ],
         "spec.cors.exposeHeaders": [
           null,
-          41
+          52
         ],
         "spec.cors.maxAge": [
           null,
-          42
+          53
         ],
         "spec.csrf": [
           null,
-          69
+          80
         ],
         "spec.csrf.additionalOrigins": [
           null,
-          70
+          81
         ],
         "spec.csrf.additionalOrigins.contains": [
           null,
-          71
+          82
         ],
         "spec.csrf.additionalOrigins.exact": [
           null,
-          72
+          83
         ],
         "spec.csrf.additionalOrigins.ignoreCase": [
           null,
-          73
+          84
         ],
         "spec.csrf.additionalOrigins.prefix": [
           null,
-          74
+          85
         ],
         "spec.csrf.additionalOrigins.safeRegex": [
           null,
-          75
+          86
         ],
         "spec.csrf.additionalOrigins.suffix": [
           null,
-          76
+          87
         ],
         "spec.csrf.percentageEnabled": [
           null,
-          77
+          88
         ],
         "spec.csrf.percentageShadowed": [
           null,
-          78
+          89
         ],
         "spec.extAuth": [
           null,
-          79
+          90
         ],
         "spec.extAuth.contextExtensions": [
           null,
-          80
+          91
         ],
         "spec.extAuth.disable": [
           null,
-          81
+          92
         ],
         "spec.extAuth.extensionRef": [
           null,
-          82
+          93
         ],
         "spec.extAuth.extensionRef.name": [
           null,
-          83
+          94
         ],
         "spec.extAuth.extensionRef.namespace": [
           null,
-          84
+          95
         ],
         "spec.extAuth.withRequestBody": [
           null,
-          85
+          96
         ],
         "spec.extAuth.withRequestBody.allowPartialMessage": [
           null,
-          86
+          97
         ],
         "spec.extAuth.withRequestBody.maxRequestBytes": [
           null,
-          87
+          98
         ],
         "spec.extAuth.withRequestBody.packAsBytes": [
           null,
-          88
+          99
         ],
         "spec.extProc": [
           null,
-          89
+          100
         ],
         "spec.extProc.disable": [
           null,
-          90
+          101
         ],
         "spec.extProc.extensionRef": [
           null,
-          91
+          102
         ],
         "spec.extProc.extensionRef.name": [
           null,
-          83
+          94
         ],
         "spec.extProc.extensionRef.namespace": [
           null,
-          84
+          95
         ],
         "spec.extProc.processingMode": [
           null,
-          92
+          103
         ],
         "spec.extProc.processingMode.requestBodyMode": [
           null,
-          93
+          104
         ],
         "spec.extProc.processingMode.requestHeaderMode": [
           null,
-          94
+          105
         ],
         "spec.extProc.processingMode.requestTrailerMode": [
           null,
-          95
+          106
         ],
         "spec.extProc.processingMode.responseBodyMode": [
           null,
-          96
+          107
         ],
         "spec.extProc.processingMode.responseHeaderMode": [
           null,
-          97
+          108
         ],
         "spec.extProc.processingMode.responseTrailerMode": [
           null,
-          98
+          109
         ],
         "spec.headerModifiers": [
           null,
-          99
+          110
         ],
         "spec.headerModifiers.request": [
           null,
-          100
+          111
         ],
         "spec.headerModifiers.request.add": [
           null,
-          19
+          30
         ],
         "spec.headerModifiers.request.add.name": [
           null,
-          21
+          32
         ],
         "spec.headerModifiers.request.add.value": [
           null,
-          45
+          56
         ],
         "spec.headerModifiers.request.remove": [
           null,
-          26
+          37
         ],
         "spec.headerModifiers.request.set": [
           null,
-          28
+          39
         ],
         "spec.headerModifiers.request.set.name": [
           null,
-          21
+          32
         ],
         "spec.headerModifiers.request.set.value": [
           null,
-          45
+          56
         ],
         "spec.headerModifiers.response": [
           null,
-          101
+          112
         ],
         "spec.headerModifiers.response.add": [
           null,
-          19
+          30
         ],
         "spec.headerModifiers.response.add.name": [
           null,
-          21
+          32
         ],
         "spec.headerModifiers.response.add.value": [
           null,
-          45
+          56
         ],
         "spec.headerModifiers.response.remove": [
           null,
-          26
+          37
         ],
         "spec.headerModifiers.response.set": [
           null,
-          28
+          39
         ],
         "spec.headerModifiers.response.set.name": [
           null,
-          21
+          32
         ],
         "spec.headerModifiers.response.set.value": [
           null,
-          45
+          56
         ],
         "spec.jwtAuth": [
           null,
-          102
+          113
         ],
         "spec.oauth2": [
           null,
-          103
+          114
         ],
         "spec.rateLimit": [
           null,
-          104
+          115
         ],
         "spec.rateLimit.global": [
           null,
-          105
+          116
         ],
         "spec.rateLimit.global.descriptors": [
           null,
-          106
+          117
         ],
         "spec.rateLimit.global.descriptors.entries": [
           null,
-          107
+          118
         ],
         "spec.rateLimit.global.descriptors.entries.generic": [
           null,
-          108
+          119
         ],
         "spec.rateLimit.global.descriptors.entries.generic.key": [
           null,
-          109
+          120
         ],
         "spec.rateLimit.global.descriptors.entries.generic.value": [
           null,
-          110
+          121
         ],
         "spec.rateLimit.global.descriptors.entries.header": [
           null,
-          111
+          122
         ],
         "spec.rateLimit.global.descriptors.entries.type": [
           null,
-          112
+          123
         ],
         "spec.rateLimit.global.extensionRef": [
           null,
-          113
+          124
         ],
         "spec.rateLimit.global.extensionRef.name": [
           null,
-          83
+          94
         ],
         "spec.rateLimit.global.extensionRef.namespace": [
           null,
-          84
+          95
         ],
         "spec.rateLimit.local": [
           null,
-          114
+          125
         ],
         "spec.rateLimit.local.tokenBucket": [
           null,
-          115
+          6
         ],
         "spec.rateLimit.local.tokenBucket.fillInterval": [
           null,
-          116
+          8
         ],
         "spec.rateLimit.local.tokenBucket.maxTokens": [
           null,
-          117
+          126
         ],
         "spec.rateLimit.local.tokenBucket.tokensPerFill": [
           null,
-          118
+          10
         ],
         "spec.rbac": [
           null,
-          119
+          127
         ],
         "spec.rbac.action": [
           null,
-          120
+          128
         ],
         "spec.rbac.policy": [
           null,
-          121
+          129
         ],
         "spec.rbac.policy.matchExpressions": [
           null,
-          122
+          130
         ],
         "spec.retry": [
           null,
-          48
+          59
         ],
         "spec.retry.attempts": [
           null,
-          123
+          131
         ],
         "spec.retry.backoffBaseInterval": [
           null,
-          124
+          132
         ],
         "spec.retry.perTryTimeout": [
           null,
-          33
+          44
         ],
         "spec.retry.retryOn": [
           null,
-          125
+          133
         ],
         "spec.retry.statusCodes": [
           null,
-          126
+          134
         ],
         "spec.targetRefs": [
           null,
-          127
+          135
         ],
         "spec.targetRefs.group": [
           null,
-          128
+          136
         ],
         "spec.targetRefs.kind": [
           null,
-          129
+          137
         ],
         "spec.targetRefs.name": [
           null,
-          83
+          94
         ],
         "spec.targetRefs.sectionName": [
           null,
-          130
+          138
         ],
         "spec.targetSelectors": [
           null,
-          131
+          139
         ],
         "spec.targetSelectors.group": [
           null,
-          128
+          136
         ],
         "spec.targetSelectors.kind": [
           null,
-          129
+          137
         ],
         "spec.targetSelectors.matchLabels": [
           null,
-          132
+          140
         ],
         "spec.targetSelectors.sectionName": [
           null,
-          130
+          138
         ],
         "spec.timeouts": [
           null,
-          36
+          47
         ],
         "spec.timeouts.request": [
           null,
-          133
+          141
         ],
         "spec.timeouts.streamIdle": [
           null,
-          134
+          142
         ],
         "spec.transformation": [
           null,
-          135
+          143
         ],
         "spec.transformation.request": [
           null,
-          136
+          144
         ],
         "spec.transformation.request.add": [
           null,
-          50
+          61
         ],
         "spec.transformation.request.add.name": [
           null,
-          137
+          145
         ],
         "spec.transformation.request.add.value": [
           null,
-          138
+          146
         ],
         "spec.transformation.request.body": [
           null,
-          139
+          147
         ],
         "spec.transformation.request.body.parseAs": [
           null,
-          52
+          63
         ],
         "spec.transformation.request.body.value": [
           null,
-          54
+          65
         ],
         "spec.transformation.request.remove": [
           null,
-          140
+          148
         ],
         "spec.transformation.request.set": [
           null,
-          141
+          149
         ],
         "spec.transformation.request.set.name": [
           null,
-          137
+          145
         ],
         "spec.transformation.request.set.value": [
           null,
-          138
+          146
         ],
         "spec.transformation.response": [
           null,
-          142
+          150
         ],
         "spec.transformation.response.add": [
           null,
-          50
+          61
         ],
         "spec.transformation.response.add.name": [
           null,
-          137
+          145
         ],
         "spec.transformation.response.add.value": [
           null,
-          138
+          146
         ],
         "spec.transformation.response.body": [
           null,
-          139
+          147
         ],
         "spec.transformation.response.body.parseAs": [
           null,
-          52
+          63
         ],
         "spec.transformation.response.body.value": [
           null,
-          54
+          65
         ],
         "spec.transformation.response.remove": [
           null,
-          140
+          148
         ],
         "spec.transformation.response.set": [
           null,
-          141
+          149
         ],
         "spec.transformation.response.set.name": [
           null,
-          137
+          145
         ],
         "spec.transformation.response.set.value": [
           null,
-          138
+          146
         ],
         "spec.urlRewrite": [
           null,
-          143
+          151
         ],
         "status": [
           null,
-          144
+          152
         ],
         "status.ancestors": [
           null,
-          145
+          153
         ],
         "status.ancestors.ancestorRef": [
           null,
-          146
+          154
         ],
         "status.ancestors.ancestorRef.group": [
           null,
-          147
+          155
         ],
         "status.ancestors.ancestorRef.kind": [
           null,
-          148
+          156
         ],
         "status.ancestors.ancestorRef.name": [
           null,
-          149
+          157
         ],
         "status.ancestors.ancestorRef.namespace": [
           null,
-          150
+          158
         ],
         "status.ancestors.ancestorRef.port": [
           null,
-          151
+          159
         ],
         "status.ancestors.ancestorRef.sectionName": [
           null,
-          152
+          160
         ],
         "status.ancestors.conditions": [
           null,
-          153
+          161
         ],
         "status.ancestors.conditions.lastTransitionTime": [
           null,
-          154
+          162
         ],
         "status.ancestors.conditions.message": [
           null,
-          155
+          163
         ],
         "status.ancestors.conditions.observedGeneration": [
           null,
-          156
+          164
         ],
         "status.ancestors.conditions.reason": [
           null,
-          157
+          165
         ],
         "status.ancestors.conditions.status": [
           null,
-          158
+          166
         ],
         "status.ancestors.conditions.type": [
           null,
-          159
+          167
         ],
         "status.ancestors.controllerName": [
           null,
-          160
+          168
         ]
       }
     },
@@ -1147,9 +1195,20 @@
     }
   },
   "texts": [
-    "FilterStage specifies where in the HTTP filter chain the buffer filter is placed.\nBy default the buffer filter runs late in the chain, after authentication, authorization\nand rate limiting, so that a request that is going to be rejected outright is rejected\nbefore its body is buffered.\n\n`maxRequestSize` is only enforced while the buffer filter is the filter accumulating the\nrequest body. A filter placed ahead of it that reads or holds the body first - for example\nan ext_proc that waits on its server, or a body transformation - consumes the body before\nthe buffer filter ever sees it, and the limit is then inert. Move the buffer filter ahead\nof such a filter to make the limit enforce, at the cost of buffering bodies that a later\nauthentication or authorization filter may go on to reject.\n\nThe placement is a property of the whole filter chain rather than of a single route, and\nsetting it here affects every route on the listener. Envoy resolves the per-route buffer\nconfig by filter name, and that name-based lookup is what lets a route-level policy override\na Gateway-level one, so the gateway installs exactly one buffer filter per filter chain. If\nTrafficPolicies attached to the same listener ask for different stages, the earliest\nrequested stage is used for the whole chain. A policy that only sets `disable` takes no part\nin that: it keeps its per-route override and leaves the placement to the policies that\nactually buffer, so turning buffering off on one route never moves the buffer filter for the\nothers.\n\nSetting it therefore relaxes, never tightens, what the other routes on the listener do:\na route that asked for the default placement will have its bodies buffered before\nauthentication and authorization run, spending memory on requests those filters would go on\nto reject. Keep buffer policies on a listener consistent, or split the listener, if that\nmatters for a route. The per-route `maxRequestSize` is unaffected and continues to apply\nper route.\n\nWhen request decompression is configured on the same filter chain, the decompressor filters\nstay ahead of the buffer filter, so that `maxRequestSize` is measured against the\ndecompressed body rather than the encoded bytes - otherwise a small compressed body would\nsatisfy the limit and expand past it upstream. Their default placement is already ahead of\nevery stage except `Fault`, so this only moves them when the buffer filter is staged at\n`Fault`, and then it moves them for every route on the listener: request decompression on\nthose routes runs ahead of fault injection, CORS, and any ext_proc staged at `Fault`.\n\n`filterStage.weight` must be 0: it breaks ties between several filters of the same type at\none stage, and a filter chain carries at most one buffer filter.",
-    "ACL configures IP-based access control for HTTP requests.\nRules are evaluated using longest-prefix matching on the effictive client IP\nfrom envoy base on settings. See the UseRemoteAddress, XffTrustedCIDRs,\nXffNumTrustedHops settings under ListenerPolicy -> HttpSettings for details.",
     "ACL configures IP-based access control for HTTP requests.\nRules are evaluated using longest-prefix matching on the effictive client IP\nfrom envoy base on settings. See the UseRemoteAddress, XffTrustedCIDRs,\nXffNumTrustedHops settings under ListenerPolicy -> HttpSettings for details.\n\nWhen multiple TrafficPolicy objects target the same route, their ACL fields are\ndeep-merged by default: rules are unioned (higher-priority policy's rules first),\nand singleton fields (defaultAction, denyResponse) are taken from the higher-priority\npolicy. If singleton fields conflict between policies, the merge falls back to\nshallow (higher-priority policy wins entirely). Gateway-level and route-level ACL\npolicies are kept in separate merge groups and are never combined with each other;\na route-level ACL completely replaces the gateway-level ACL for that route.",
+    "ACL configures IP-based access control for HTTP requests.\nRules are evaluated using longest-prefix matching on the effective client IP\nfrom envoy base on settings. See the UseRemoteAddress, XffTrustedCIDRs,\nXffNumTrustedHops settings under ListenerPolicy -> HttpSettings for details.\n\nWhen multiple TrafficPolicy objects target the same route, their ACL fields are\ndeep-merged by default: rules are unioned (higher-priority policy's rules first),\nand singleton fields (defaultAction, denyResponse) are taken from the higher-priority\npolicy. If singleton fields conflict between policies, the merge falls back to\nshallow (higher-priority policy wins entirely). Gateway-level and route-level ACL\npolicies are kept in separate merge groups and are never combined with each other;\na route-level ACL completely replaces the gateway-level ACL for that route.",
+    "FilterStage specifies where in the HTTP filter chain the buffer filter is placed.\nBy default the buffer filter runs late in the chain, after authentication, authorization\nand rate limiting, so that a request that is going to be rejected outright is rejected\nbefore its body is buffered.\n\n`maxRequestSize` is only enforced while the buffer filter is the filter accumulating the\nrequest body. A filter placed ahead of it that reads or holds the body first - for example\nan ext_proc that waits on its server, or a body transformation - consumes the body before\nthe buffer filter ever sees it, and the limit is then inert. Move the buffer filter ahead\nof such a filter to make the limit enforce, at the cost of buffering bodies that a later\nauthentication or authorization filter may go on to reject.\n\nThe placement is a property of the whole filter chain rather than of a single route, and\nsetting it here affects every route on the listener. Envoy resolves the per-route buffer\nconfig by filter name, and that name-based lookup is what lets a route-level policy override\na Gateway-level one, so the gateway installs exactly one buffer filter per filter chain. If\nTrafficPolicies attached to the same listener ask for different stages, the earliest\nrequested stage is used for the whole chain. A policy that only sets `disable` takes no part\nin that: it keeps its per-route override and leaves the placement to the policies that\nactually buffer, so turning buffering off on one route never moves the buffer filter for the\nothers.\n\nSetting it therefore relaxes, never tightens, what the other routes on the listener do:\na route that asked for the default placement will have its bodies buffered before\nauthentication and authorization run, spending memory on requests those filters would go on\nto reject. Keep buffer policies on a listener consistent, or split the listener, if that\nmatters for a route. The per-route `maxRequestSize` is unaffected and continues to apply\nper route.\n\nWhen request decompression is configured on the same filter chain, the decompressor filters\nstay ahead of the buffer filter, so that `maxRequestSize` is measured against the\ndecompressed body rather than the encoded bytes - otherwise a small compressed body would\nsatisfy the limit and expand past it upstream. Their default placement is already ahead of\nevery stage except `Fault`, so this only moves them when the buffer filter is staged at\n`Fault`, and then it moves them for every route on the listener: request decompression on\nthose routes runs ahead of fault injection, CORS, and any ext_proc staged at `Fault`.\n\n`filterStage.weight` must be 0: it breaks ties between several filters of the same type at\none stage, and a filter chain carries at most one buffer filter.",
+    "FilterStage sets the buffer filter's position in the HTTP filter chain.\nBy default, it runs after authentication, authorization, and rate limiting.\nPlace it before filters that read or hold the body, such as ext_proc or body\ntransformations, to enforce maxRequestSize before those filters consume it.\nEarlier buffering uses memory even for requests that later filters reject.\n\nPlacement affects every route on the listener. If policies request different\nstages, the earliest wins. Policies that only set disable do not affect\nplacement. Per-route maxRequestSize and disable overrides still apply.\nKeep stages consistent or use separate listeners to avoid moving buffering\nearlier for other routes.\n\nRequest decompressors stay ahead of the buffer so maxRequestSize applies to\nthe decompressed body. Placing the buffer at Fault also moves decompression\nahead of fault injection, CORS, and ext_proc filters staged at Fault for all\nroutes on the listener.\n\nfilterStage.weight must be 0.",
+    "HTTPUpgrade configures HTTP protocol upgrades on the targeted routes.\nRoute-level upgrade settings override the matching upgrade type configured\non the listener. CONNECT termination is applied per route and cannot be\nconfigured on a listener. After an upgrade is established, tunneled payload\nis not inspected by HTTP filters. Authenticate and authorize the initial\nupgrade request, enable upgrades only for trusted clients, and avoid request\nbuffering.",
+    "ShareAcrossGateway applies the token bucket to the Gateway as a whole rather than to each\nproxy replica individually. Each replica is given an even share of the bucket based on the\ncurrent number of replicas of the Gateway, so the configured rate is the total rate admitted\nby all replicas combined. For example, with tokensPerFill=100 and fillInterval=1s, a Gateway\nwith 4 replicas admits 25 requests per second per gateway. Because the allocation is divided,\nmaxTokens must be greater than or equal to the number of replicas, otherwise no requests are\nadmitted.\n\nDefaults to false.",
+    "TokenBucket represents the configuration for a token bucket local rate-limiting mechanism.\nIt defines the parameters for controlling the rate at which requests are allowed.",
+    "TokenBucket configures the local rate limiter's token bucket.",
+    "FillInterval defines the time duration between consecutive token fills.\nThis value must be a valid duration string (e.g., \"1s\", \"500ms\").\nIt determines the frequency of token replenishment.",
+    "FillInterval defines the time duration between consecutive token fills.\nThis value must be a valid duration string (e.g., \"1s\", \"500ms\").",
+    "TokensPerFill specifies the number of tokens added to the bucket during each fill interval.\nIf not specified, it defaults to 1.\nThis controls the steady-state rate of token generation.",
+    "TokensPerFill specifies the number of tokens added to the bucket during each fill interval.\nIf not specified, it defaults to 1.",
+    "RequestMirror configures the behavior of request mirrors defined by\nHTTPRoute or GRPCRoute RequestMirror filters. It does not create request mirrors.\nIt can target HTTPRoutes, GRPCRoutes, or Gateways (including individual Gateway listeners\nvia sectionName). When attached above the route level it applies to every mirror on the\nroutes it covers, and a more-specific policy wins the whole block: its settings are not\ncombined field-by-field with a less-specific policy. If a covered route has no request\nmirror, this has no effect.",
+    "ACL configures IP-based access control for HTTP requests.\nRules are evaluated using longest-prefix matching on the effictive client IP\nfrom envoy base on settings. See the UseRemoteAddress, XffTrustedCIDRs,\nXffNumTrustedHops settings under ListenerPolicy -> HttpSettings for details.",
     "AutoHostRewrite rewrites the Host header to the DNS name of the selected upstream.\nNOTE: This field is only honored for HTTPRoute targets.\nNOTE: If `autoHostRewrite` is set on a route that also has a [URLRewrite filter](https://gateway-api.sigs.k8s.io/reference/spec/#httpurlrewritefilter)\nconfigured to override the `hostname`, the `hostname` value will be used and `autoHostRewrite` will be ignored.",
     "AutoHostRewrite rewrites the Host header to the DNS name of the selected upstream.\nNOTE: This field is only honored for HTTPRoute targets.\nNOTE: If `autoHostRewrite` is set on a route that also has a [URLRewrite filter](https://gateway-api.sigs.k8s.io/reference/api-spec/main/spec/#httpurlrewritefilter)\nconfigured to override the `hostname`, the `hostname` value will be used and `autoHostRewrite` will be ignored.",
     "RequestDecompression controls request decompression.\nIf set, gzip requests will be decompressed.",
@@ -1262,10 +1321,7 @@
     "Type specifies what kind of rate limit descriptor entry this is.",
     "ExtensionRef references a GatewayExtension that provides the global rate limit service.",
     "Local defines a local rate limiting policy.",
-    "TokenBucket represents the configuration for a token bucket local rate-limiting mechanism.\nIt defines the parameters for controlling the rate at which requests are allowed.",
-    "FillInterval defines the time duration between consecutive token fills.\nThis value must be a valid duration string (e.g., \"1s\", \"500ms\").\nIt determines the frequency of token replenishment.",
     "MaxTokens specifies the maximum number of tokens that the bucket can hold.\nThis value must be greater than or equal to 1.\nIt determines the burst capacity of the rate limiter.",
-    "TokensPerFill specifies the number of tokens added to the bucket during each fill interval.\nIf not specified, it defaults to 1.\nThis controls the steady-state rate of token generation.",
     "RBAC specifies the role-based access control configuration for the policy.\nThis defines the rules for authorization based on roles and permissions.\nRBAC policies applied at different attachment points in the configuration\nhierarchy are not cumulative, and only the most specific policy is enforced. This means an RBAC policy\nattached to a route will override any RBAC policies applied to the gateway or listener.",
     "Action defines whether the rule allows or denies the request if matched.\nIf unspecified, the default is \"Allow\".",
     "Policy specifies the Authorization rule to evaluate.\nA policy matches when **any** of the conditions evaluates to true.",

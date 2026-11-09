@@ -1,5 +1,318 @@
 {
   "versions": {
+    "v1.10.0": {
+      "descriptionChanged": [
+        "spec.backendTLS.clientCertificateRef",
+        "spec.filterOrder",
+        "spec.luaValidation",
+        "spec.mergeBackends",
+        "spec.telemetry.accessLog.settings.sinks.als.backendRef",
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.loadBalancer.consistentHash.header",
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendRef",
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.loadBalancer.consistentHash.header",
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.host",
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.port",
+        "spec.telemetry.metrics.sinks.openTelemetry.backendRef",
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.loadBalancer.consistentHash.header",
+        "spec.telemetry.metrics.sinks.openTelemetry.host",
+        "spec.telemetry.metrics.sinks.openTelemetry.port",
+        "spec.telemetry.tracing.provider.backendRef",
+        "spec.telemetry.tracing.provider.backendSettings.loadBalancer.consistentHash.header",
+        "spec.telemetry.tracing.provider.host",
+        "spec.telemetry.tracing.provider.port"
+      ],
+      "added": {
+        "spec.lua": "object",
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.healthCheck.active.disableConnectionReuse": "boolean",
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.healthCheck.active.grpc.hostname": "string",
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.healthCheck.active.http.protocol": "string",
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.http1": "object",
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.http3": "object",
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": "boolean",
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.healthCheck.active.disableConnectionReuse": "boolean",
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.healthCheck.active.grpc.hostname": "string",
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.healthCheck.active.http.protocol": "string",
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.http1": "object",
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.http3": "object",
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": "boolean",
+        "spec.telemetry.metrics.enableCircuitBreakerRemainingStats": "boolean",
+        "spec.telemetry.metrics.prometheus.compression.brotli.chunkSize": "integer",
+        "spec.telemetry.metrics.prometheus.compression.brotli.disableLiteralContextModeling": "boolean",
+        "spec.telemetry.metrics.prometheus.compression.brotli.encoderMode": "string",
+        "spec.telemetry.metrics.prometheus.compression.brotli.inputBlockBits": "integer",
+        "spec.telemetry.metrics.prometheus.compression.brotli.quality": "integer",
+        "spec.telemetry.metrics.prometheus.compression.brotli.windowBits": "integer",
+        "spec.telemetry.metrics.prometheus.compression.gzip.chunkSize": "integer",
+        "spec.telemetry.metrics.prometheus.compression.gzip.compressionLevel": "integer",
+        "spec.telemetry.metrics.prometheus.compression.gzip.compressionStrategy": "string",
+        "spec.telemetry.metrics.prometheus.compression.gzip.memoryLevel": "integer",
+        "spec.telemetry.metrics.prometheus.compression.gzip.windowBits": "integer",
+        "spec.telemetry.metrics.prometheus.compression.zstd.chunkSize": "integer",
+        "spec.telemetry.metrics.prometheus.compression.zstd.compressionLevel": "integer",
+        "spec.telemetry.metrics.prometheus.compression.zstd.enableChecksum": "boolean",
+        "spec.telemetry.metrics.prometheus.compression.zstd.strategy": "string",
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.healthCheck.active.disableConnectionReuse": "boolean",
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.healthCheck.active.grpc.hostname": "string",
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.healthCheck.active.http.protocol": "string",
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.http1": "object",
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.http3": "object",
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": "boolean",
+        "spec.telemetry.metrics.sinks.openTelemetry.prefix": "string",
+        "spec.telemetry.tracing.provider.backendSettings.healthCheck.active.disableConnectionReuse": "boolean",
+        "spec.telemetry.tracing.provider.backendSettings.healthCheck.active.grpc.hostname": "string",
+        "spec.telemetry.tracing.provider.backendSettings.healthCheck.active.http.protocol": "string",
+        "spec.telemetry.tracing.provider.backendSettings.http1": "object",
+        "spec.telemetry.tracing.provider.backendSettings.http3": "object",
+        "spec.telemetry.tracing.provider.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": "boolean",
+        "spec.wasmModules": "object[]"
+      },
+      "descriptions": {
+        "spec.backendTLS.clientCertificateRef": [
+          0,
+          1
+        ],
+        "spec.filterOrder": [
+          2,
+          3
+        ],
+        "spec.lua": [
+          null,
+          4
+        ],
+        "spec.luaValidation": [
+          5,
+          6
+        ],
+        "spec.mergeBackends": [
+          7,
+          8
+        ],
+        "spec.telemetry.accessLog.settings.sinks.als.backendRef": [
+          9,
+          10
+        ],
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.healthCheck.active.disableConnectionReuse": [
+          null,
+          11
+        ],
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.healthCheck.active.grpc.hostname": [
+          null,
+          12
+        ],
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.healthCheck.active.http.protocol": [
+          null,
+          13
+        ],
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.http1": [
+          null,
+          14
+        ],
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.http3": [
+          null,
+          15
+        ],
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.loadBalancer.consistentHash.header": [
+          16,
+          17
+        ],
+        "spec.telemetry.accessLog.settings.sinks.als.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": [
+          null,
+          18
+        ],
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendRef": [
+          9,
+          10
+        ],
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.healthCheck.active.disableConnectionReuse": [
+          null,
+          11
+        ],
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.healthCheck.active.grpc.hostname": [
+          null,
+          12
+        ],
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.healthCheck.active.http.protocol": [
+          null,
+          13
+        ],
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.http1": [
+          null,
+          14
+        ],
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.http3": [
+          null,
+          15
+        ],
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.loadBalancer.consistentHash.header": [
+          16,
+          17
+        ],
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": [
+          null,
+          18
+        ],
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.host": [
+          19,
+          20
+        ],
+        "spec.telemetry.accessLog.settings.sinks.openTelemetry.port": [
+          21,
+          22
+        ],
+        "spec.telemetry.metrics.enableCircuitBreakerRemainingStats": [
+          null,
+          23
+        ],
+        "spec.telemetry.metrics.prometheus.compression.brotli.chunkSize": [
+          null,
+          24
+        ],
+        "spec.telemetry.metrics.prometheus.compression.brotli.disableLiteralContextModeling": [
+          null,
+          25
+        ],
+        "spec.telemetry.metrics.prometheus.compression.brotli.encoderMode": [
+          null,
+          26
+        ],
+        "spec.telemetry.metrics.prometheus.compression.brotli.inputBlockBits": [
+          null,
+          27
+        ],
+        "spec.telemetry.metrics.prometheus.compression.brotli.quality": [
+          null,
+          28
+        ],
+        "spec.telemetry.metrics.prometheus.compression.brotli.windowBits": [
+          null,
+          29
+        ],
+        "spec.telemetry.metrics.prometheus.compression.gzip.chunkSize": [
+          null,
+          30
+        ],
+        "spec.telemetry.metrics.prometheus.compression.gzip.compressionLevel": [
+          null,
+          31
+        ],
+        "spec.telemetry.metrics.prometheus.compression.gzip.compressionStrategy": [
+          null,
+          32
+        ],
+        "spec.telemetry.metrics.prometheus.compression.gzip.memoryLevel": [
+          null,
+          33
+        ],
+        "spec.telemetry.metrics.prometheus.compression.gzip.windowBits": [
+          null,
+          34
+        ],
+        "spec.telemetry.metrics.prometheus.compression.zstd.chunkSize": [
+          null,
+          24
+        ],
+        "spec.telemetry.metrics.prometheus.compression.zstd.compressionLevel": [
+          null,
+          35
+        ],
+        "spec.telemetry.metrics.prometheus.compression.zstd.enableChecksum": [
+          null,
+          36
+        ],
+        "spec.telemetry.metrics.prometheus.compression.zstd.strategy": [
+          null,
+          37
+        ],
+        "spec.telemetry.metrics.sinks.openTelemetry.backendRef": [
+          9,
+          10
+        ],
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.healthCheck.active.disableConnectionReuse": [
+          null,
+          11
+        ],
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.healthCheck.active.grpc.hostname": [
+          null,
+          12
+        ],
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.healthCheck.active.http.protocol": [
+          null,
+          13
+        ],
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.http1": [
+          null,
+          14
+        ],
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.http3": [
+          null,
+          15
+        ],
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.loadBalancer.consistentHash.header": [
+          16,
+          17
+        ],
+        "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": [
+          null,
+          18
+        ],
+        "spec.telemetry.metrics.sinks.openTelemetry.host": [
+          38,
+          39
+        ],
+        "spec.telemetry.metrics.sinks.openTelemetry.port": [
+          40,
+          41
+        ],
+        "spec.telemetry.metrics.sinks.openTelemetry.prefix": [
+          null,
+          42
+        ],
+        "spec.telemetry.tracing.provider.backendRef": [
+          9,
+          10
+        ],
+        "spec.telemetry.tracing.provider.backendSettings.healthCheck.active.disableConnectionReuse": [
+          null,
+          11
+        ],
+        "spec.telemetry.tracing.provider.backendSettings.healthCheck.active.grpc.hostname": [
+          null,
+          12
+        ],
+        "spec.telemetry.tracing.provider.backendSettings.healthCheck.active.http.protocol": [
+          null,
+          13
+        ],
+        "spec.telemetry.tracing.provider.backendSettings.http1": [
+          null,
+          14
+        ],
+        "spec.telemetry.tracing.provider.backendSettings.http3": [
+          null,
+          15
+        ],
+        "spec.telemetry.tracing.provider.backendSettings.loadBalancer.consistentHash.header": [
+          16,
+          17
+        ],
+        "spec.telemetry.tracing.provider.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": [
+          null,
+          18
+        ],
+        "spec.telemetry.tracing.provider.host": [
+          43,
+          44
+        ],
+        "spec.telemetry.tracing.provider.port": [
+          45,
+          46
+        ],
+        "spec.wasmModules": [
+          null,
+          47
+        ]
+      }
+    },
     "v1.9.2": {
       "descriptionChanged": [
         "spec.provider.kubernetes.envoyDaemonSet.container.env.valueFrom.configMapKeyRef.key",
@@ -60,216 +373,216 @@
       },
       "descriptions": {
         "spec.provider.kubernetes.envoyDaemonSet.container.env.valueFrom.configMapKeyRef.key": [
-          0,
-          1
+          48,
+          49
         ],
         "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.bindMountOptions": [
           null,
-          2
+          50
         ],
         "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.mountPath": [
-          3,
-          4
+          51,
+          52
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.securityContext.seLinuxChangePolicy": [
-          5,
-          6
+          53,
+          54
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.emptyDir.mode": [
           null,
-          9
+          57
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource": [
-          10,
-          11
+          58,
+          59
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef": [
-          12,
-          13
+          60,
+          61
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.clusterTrustBundle.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.configMap.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.downwardAPI.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.podCertificate.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.secret.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.serviceAccountToken.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.container.env.valueFrom.configMapKeyRef.key": [
-          0,
-          1
+          48,
+          49
         ],
         "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.bindMountOptions": [
           null,
-          2
+          50
         ],
         "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.mountPath": [
-          3,
-          4
+          51,
+          52
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.env.valueFrom.configMapKeyRef.key": [
-          0,
-          1
+          48,
+          49
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.postStart.httpGet.protocol": [
           null,
-          14
+          62
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.preStop.httpGet.protocol": [
           null,
-          14
+          62
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.grpc.mode": [
           null,
-          15
+          63
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.httpGet.protocol": [
           null,
-          14
+          62
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.grpc.mode": [
           null,
-          15
+          63
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.httpGet.protocol": [
           null,
-          14
+          62
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.grpc.mode": [
           null,
-          15
+          63
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.httpGet.protocol": [
           null,
-          14
+          62
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.bindMountOptions": [
           null,
-          2
+          50
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.mountPath": [
-          3,
-          4
+          51,
+          52
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.securityContext.seLinuxChangePolicy": [
-          5,
-          6
+          53,
+          54
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.emptyDir.mode": [
           null,
-          9
+          57
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource": [
-          10,
-          11
+          58,
+          59
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef": [
-          12,
-          13
+          60,
+          61
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.clusterTrustBundle.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.configMap.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.downwardAPI.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.podCertificate.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.secret.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.serviceAccountToken.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyHpa.behavior.scaleDown.tolerance": [
-          16,
-          17
+          64,
+          65
         ],
         "spec.provider.kubernetes.envoyHpa.behavior.scaleUp.tolerance": [
-          16,
-          17
+          64,
+          65
         ]
       }
     },
@@ -356,294 +669,294 @@
       "descriptions": {
         "spec.mergeBackends": [
           null,
-          18
+          7
         ],
         "spec.mergeGateways": [
-          19,
-          20
+          66,
+          67
         ],
         "spec.preserveRouteOrder": [
-          21,
-          22
+          68,
+          69
         ],
         "spec.provider.kubernetes.envoyDaemonSet.container.env.valueFrom.configMapKeyRef.key": [
-          1,
-          0
+          49,
+          48
         ],
         "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.mountPath": [
-          4,
-          3
+          52,
+          51
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.securityContext.seLinuxChangePolicy": [
-          6,
-          5
+          54,
+          53
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource": [
-          11,
-          10
+          59,
+          58
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef": [
-          13,
-          12
+          61,
+          60
         ],
         "spec.provider.kubernetes.envoyDeployment.container.env.valueFrom.configMapKeyRef.key": [
-          1,
-          0
+          49,
+          48
         ],
         "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.mountPath": [
-          4,
-          3
+          52,
+          51
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.env.valueFrom.configMapKeyRef.key": [
-          1,
-          0
+          49,
+          48
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.mountPath": [
-          4,
-          3
+          52,
+          51
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.securityContext.seLinuxChangePolicy": [
-          6,
-          5
+          54,
+          53
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource": [
-          11,
-          10
+          59,
+          58
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef": [
-          13,
-          12
+          61,
+          60
         ],
         "spec.provider.kubernetes.envoyHpa.behavior.scaleDown.tolerance": [
-          17,
-          16
+          65,
+          64
         ],
         "spec.provider.kubernetes.envoyHpa.behavior.scaleUp.tolerance": [
-          17,
-          16
+          65,
+          64
         ],
         "spec.provider.type": [
-          23,
-          24
+          70,
+          71
         ],
         "spec.shutdown.healthCheckFailureDelay": [
           null,
-          25
+          72
         ],
         "spec.telemetry.accessLog.settings.sinks.als.backendSettings.healthCheck.active.healthCheckLog": [
           null,
-          26
+          73
         ],
         "spec.telemetry.accessLog.settings.sinks.als.backendSettings.healthCheck.active.http.requestBody": [
           null,
-          27
+          74
         ],
         "spec.telemetry.accessLog.settings.sinks.als.backendSettings.loadBalancer.backendUtilization.outOfBand": [
           null,
-          28
+          75
         ],
         "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.healthCheck.active.healthCheckLog": [
           null,
-          26
+          73
         ],
         "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.healthCheck.active.http.requestBody": [
           null,
-          27
+          74
         ],
         "spec.telemetry.accessLog.settings.sinks.openTelemetry.backendSettings.loadBalancer.backendUtilization.outOfBand": [
           null,
-          28
+          75
         ],
         "spec.telemetry.healthCheckLog": [
           null,
-          29
+          76
         ],
         "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.healthCheck.active.healthCheckLog": [
           null,
-          26
+          73
         ],
         "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.healthCheck.active.http.requestBody": [
           null,
-          27
+          74
         ],
         "spec.telemetry.metrics.sinks.openTelemetry.backendSettings.loadBalancer.backendUtilization.outOfBand": [
           null,
-          28
+          75
         ],
         "spec.telemetry.tracing.clientSamplingFraction": [
           null,
-          30
+          77
         ],
         "spec.telemetry.tracing.overallSamplingFraction": [
           null,
-          31
+          78
         ],
         "spec.telemetry.tracing.provider.backendSettings.healthCheck.active.healthCheckLog": [
           null,
-          26
+          73
         ],
         "spec.telemetry.tracing.provider.backendSettings.healthCheck.active.http.requestBody": [
           null,
-          27
+          74
         ],
         "spec.telemetry.tracing.provider.backendSettings.loadBalancer.backendUtilization.outOfBand": [
           null,
-          28
+          75
         ],
         "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.bindMountOptions": [
-          2,
+          50,
           null
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.defaultUser": [
-          7,
+          55,
           null
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.items.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.defaultUser": [
-          7,
+          55,
           null
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.items.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.emptyDir.mode": [
-          9,
+          57,
           null
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.defaultUser": [
-          7,
+          55,
           null
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.clusterTrustBundle.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.configMap.items.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.downwardAPI.items.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.podCertificate.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.secret.items.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.serviceAccountToken.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.defaultUser": [
-          7,
+          55,
           null
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.items.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.bindMountOptions": [
-          2,
+          50,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.postStart.httpGet.protocol": [
-          14,
+          62,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.preStop.httpGet.protocol": [
-          14,
+          62,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.grpc.mode": [
-          15,
+          63,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.httpGet.protocol": [
-          14,
+          62,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.grpc.mode": [
-          15,
+          63,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.httpGet.protocol": [
-          14,
+          62,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.grpc.mode": [
-          15,
+          63,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.httpGet.protocol": [
-          14,
+          62,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.bindMountOptions": [
-          2,
+          50,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.defaultUser": [
-          7,
+          55,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.items.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.defaultUser": [
-          7,
+          55,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.items.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.emptyDir.mode": [
-          9,
+          57,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.defaultUser": [
-          7,
+          55,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.clusterTrustBundle.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.configMap.items.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.downwardAPI.items.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.podCertificate.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.secret.items.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.serviceAccountToken.user": [
-          8,
+          56,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.defaultUser": [
-          7,
+          55,
           null
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.items.user": [
-          8,
+          56,
           null
         ]
       }
@@ -708,216 +1021,216 @@
       },
       "descriptions": {
         "spec.provider.kubernetes.envoyDaemonSet.container.env.valueFrom.configMapKeyRef.key": [
-          0,
-          1
+          48,
+          49
         ],
         "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.bindMountOptions": [
           null,
-          2
+          50
         ],
         "spec.provider.kubernetes.envoyDaemonSet.container.volumeMounts.mountPath": [
-          3,
-          4
+          51,
+          52
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.securityContext.seLinuxChangePolicy": [
-          5,
-          6
+          53,
+          54
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.configMap.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.downwardAPI.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.emptyDir.mode": [
           null,
-          9
+          57
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource": [
-          10,
-          11
+          58,
+          59
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef": [
-          12,
-          13
+          60,
+          61
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.clusterTrustBundle.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.configMap.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.downwardAPI.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.podCertificate.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.secret.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.projected.sources.serviceAccountToken.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.secret.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.container.env.valueFrom.configMapKeyRef.key": [
-          0,
-          1
+          48,
+          49
         ],
         "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.bindMountOptions": [
           null,
-          2
+          50
         ],
         "spec.provider.kubernetes.envoyDeployment.container.volumeMounts.mountPath": [
-          3,
-          4
+          51,
+          52
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.env.valueFrom.configMapKeyRef.key": [
-          0,
-          1
+          48,
+          49
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.postStart.httpGet.protocol": [
           null,
-          14
+          62
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.lifecycle.preStop.httpGet.protocol": [
           null,
-          14
+          62
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.grpc.mode": [
           null,
-          15
+          63
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.livenessProbe.httpGet.protocol": [
           null,
-          14
+          62
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.grpc.mode": [
           null,
-          15
+          63
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.readinessProbe.httpGet.protocol": [
           null,
-          14
+          62
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.grpc.mode": [
           null,
-          15
+          63
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.startupProbe.httpGet.protocol": [
           null,
-          14
+          62
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.bindMountOptions": [
           null,
-          2
+          50
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.volumeMounts.mountPath": [
-          3,
-          4
+          51,
+          52
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.securityContext.seLinuxChangePolicy": [
-          5,
-          6
+          53,
+          54
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.configMap.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.downwardAPI.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.emptyDir.mode": [
           null,
-          9
+          57
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSource": [
-          10,
-          11
+          58,
+          59
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef": [
-          12,
-          13
+          60,
+          61
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.clusterTrustBundle.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.configMap.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.downwardAPI.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.podCertificate.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.secret.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.projected.sources.serviceAccountToken.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.defaultUser": [
           null,
-          7
+          55
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.secret.items.user": [
           null,
-          8
+          56
         ],
         "spec.provider.kubernetes.envoyHpa.behavior.scaleDown.tolerance": [
-          16,
-          17
+          64,
+          65
         ],
         "spec.provider.kubernetes.envoyHpa.behavior.scaleUp.tolerance": [
-          16,
-          17
+          64,
+          65
         ]
       }
     },
@@ -927,8 +1240,8 @@
       ],
       "descriptions": {
         "spec.provider.kubernetes.envoyHpa": [
-          32,
-          33
+          79,
+          80
         ]
       }
     },
@@ -944,32 +1257,32 @@
       ],
       "descriptions": {
         "spec.provider.kubernetes.envoyDaemonSet.container.securityContext.procMount": [
-          34,
-          35
+          81,
+          82
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.image": [
-          36,
-          37
+          83,
+          84
         ],
         "spec.provider.kubernetes.envoyDaemonSet.pod.volumes.portworxVolume": [
-          38,
-          39
+          85,
+          86
         ],
         "spec.provider.kubernetes.envoyDeployment.container.securityContext.procMount": [
-          34,
-          35
+          81,
+          82
         ],
         "spec.provider.kubernetes.envoyDeployment.initContainers.securityContext.procMount": [
-          34,
-          35
+          81,
+          82
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.image": [
-          36,
-          37
+          83,
+          84
         ],
         "spec.provider.kubernetes.envoyDeployment.pod.volumes.portworxVolume": [
-          38,
-          39
+          85,
+          86
         ]
       }
     },
@@ -979,13 +1292,61 @@
       ],
       "descriptions": {
         "spec.backendTLS.ciphers": [
-          40,
-          41
+          87,
+          88
         ]
       }
     }
   },
   "texts": [
+    "ClientCertificateRef defines the reference to a Kubernetes Secret that contains\nthe client certificate and private key for Envoy to use when connecting to\nbackend services and external services, such as ExtAuth, ALS, OpenTelemetry, etc.\nThis secret should be located within the same namespace as the Envoy proxy resource that references it.",
+    "ClientCertificateRef defines the reference to a Kubernetes Secret that contains\nthe client certificate and private key for Envoy to use when connecting to\nbackend services and external services, such as ExtAuth, ALS, OpenTelemetry, etc.\nThe Secret must be in the same namespace as the EnvoyProxy or Backend resource\nthat references it.\nCross-namespace references are not supported, even with a ReferenceGrant.\nThe ReferenceGrant requirement in the namespace field's description is inherited\nfrom the Gateway API SecretObjectReference type and does not apply to this field.",
+    "FilterOrder defines the order of filters in the Envoy proxy's HTTP filter chain.\nThe FilterPosition in the list will be applied in the order they are defined.\nIf unspecified, the default filter order is applied.\nDefault filter order is:\n\n- envoy.filters.http.custom_response\n\n- envoy.filters.http.health_check\n\n- envoy.filters.http.fault\n\n- envoy.filters.http.cors\n\n- envoy.filters.http.header_mutation\n\n- envoy.filters.http.ext_authz\n\n- envoy.filters.http.api_key_auth\n\n- envoy.filters.http.basic_auth\n\n- envoy.filters.http.oauth2\n\n- envoy.filters.http.jwt_authn\n\n- envoy.filters.http.stateful_session\n\n- envoy.filters.http.buffer\n\n- envoy.filters.http.lua\n\n- envoy.filters.http.ext_proc\n\n- envoy.filters.http.wasm\n\n- envoy.filters.http.dynamic_modules\n\n- envoy.filters.http.geoip\n\n- envoy.filters.http.rbac\n\n- envoy.filters.http.local_ratelimit\n\n- envoy.filters.http.ratelimit\n\n- envoy.filters.http.bandwidth_limit\n\n- envoy.filters.http.grpc_web\n\n- envoy.filters.http.grpc_stats\n\n- envoy.filters.http.credential_injector\n\n- envoy.filters.http.compressor\n\n- envoy.filters.http.dynamic_forward_proxy\n\n- envoy.filters.http.router\n\nNote: \"envoy.filters.http.router\" cannot be reordered, it's always the last filter in the chain.",
+    "FilterOrder defines the order of filters in the Envoy proxy's HTTP filter chain.\nThe FilterPosition in the list will be applied in the order they are defined.\nIf unspecified, the default filter order is applied.\nDefault filter order is:\n\n- envoy.filters.http.custom_response\n\n- envoy.filters.http.health_check\n\n- envoy.filters.http.fault\n\n- envoy.filters.http.cors\n\n- envoy.filters.http.header_mutation\n\n- envoy.filters.http.ext_authz\n\n- envoy.filters.http.api_key_auth\n\n- envoy.filters.http.basic_auth\n\n- envoy.filters.http.oauth2\n\n- envoy.filters.http.jwt_authn\n\n- envoy.filters.http.stateful_session\n\n- envoy.filters.http.buffer\n\n- envoy.filters.http.lua\n\n- envoy.filters.http.ext_proc\n\n- envoy.filters.http.wasm\n\n- envoy.filters.http.dynamic_modules\n\n- envoy.filters.http.geoip\n\n- envoy.filters.http.rbac\n\n- envoy.filters.http.local_ratelimit\n\n- envoy.filters.http.ratelimit\n\n- envoy.filters.http.bandwidth_limit\n\n- envoy.filters.http.grpc_web\n\n- envoy.filters.http.grpc_json_transcoder\n\n- envoy.filters.http.grpc_stats\n\n- envoy.filters.http.credential_injector\n\n- envoy.filters.http.compressor\n\n- envoy.filters.http.dynamic_forward_proxy\n\n- envoy.filters.http.alternate_protocols_cache\n\n- envoy.filters.http.router\n\nNote: \"envoy.filters.http.router\" cannot be reordered, it's always the last filter in the chain.",
+    "Lua configures how Lua scripts from EnvoyExtensionPolicy resources are\nvalidated in the gateway controller. It selects the validation mode and, for the Strict\nmode, defines the filesystem paths and environment variables the scripts are permitted to\naccess during validation.",
+    "LuaValidation determines strictness of the Lua script validation for Lua EnvoyExtensionPolicies\nDefault: Strict",
+    "LuaValidation determines strictness of the Lua script validation for Lua EnvoyExtensionPolicies\nDefault: Strict\n\nDeprecated: Use Lua.ValidationType instead. This field will be removed in a future release.",
+    "MergeBackends configures cluster deduplication: routes that reference the same backend\nshare a single Envoy cluster instead of Envoy Gateway generating one cluster per route\nrule. This reduces xDS size, active health-check traffic, and stats cardinality, and\nimproves upstream connection pooling.\n\nDisabled when unset; specifying this field at all (even without further configuration)\nenables it. Mutually exclusive with MergeGateways.",
+    "MergeBackends configures cluster deduplication: routes that reference the same backend\nshare a single Envoy cluster instead of Envoy Gateway generating one cluster per route\nrule. This reduces xDS size, active health-check traffic, and stats cardinality, and\nimproves upstream connection pooling.\n\nOnly a route's own backendRefs (HTTPRoute, GRPCRoute, TLSRoute, TCPRoute, UDPRoute) are\nconsidered. A backend used any other way, such as a RequestMirror filter or an external\nservice of a SecurityPolicy or EnvoyExtensionPolicy, is never merged. A BackendTrafficPolicy\nthat targets a backend only reports status for Gateways where the backend is used as a route\nbackendRef.\n\nDisabled when unset; specifying this field at all (even without further configuration)\nenables it. Mutually exclusive with MergeGateways.",
+    "BackendRef references a Kubernetes object that represents the\nbackend server to which the authorization request will be sent.\n\nDeprecated: Use BackendRefs instead.",
+    "BackendRef references a Kubernetes object that represents the\nbackend server to which the authorization request will be sent.\n\nDeprecated: Use BackendRefs instead. This field will be removed in v1.11.",
+    "DisableConnectionReuse determines whether the active health check connection to a\nbackend host is closed after each health check probe. When set to true, Envoy opens a\nnew connection for each health check, which is useful for backends (such as\nhaproxy-style agent checks) that do not expect a reused connection.\nDefaults to false, which reuses the connection across probes.",
+    "Hostname defines the value of the :authority header sent with active gRPC\nhealth checks. Authority selection uses this order: this field, the\nassociated Backend endpoint hostname if available, then the effective Route\nhostname. If none of them is set, Envoy falls back to the name of the\ncluster, which is not a valid authority and is rejected by some gRPC\nservers.",
+    "Protocol is the HTTP protocol that active health check requests are sent with.\n\nDefaults to Auto, which uses the same protocol as regular requests to the backend:\n\n  - HTTP2 for a backend configured for HTTP/2, through a `kubernetes.io/h2c`,\n    `gateway.envoyproxy.io/h2c` or `grpc` appProtocol, or as the backend of a\n    GRPCRoute.\n  - The protocol negotiated through ALPN for a TLS backend that negotiates it,\n    with HTTP1 as the fallback when nothing is negotiated.\n  - HTTP1 otherwise.\n\nSet HTTP1 or HTTP2 when the health check endpoint speaks a different protocol than\nthe application, for example a backend that serves HTTP/1.1 traffic but only\naccepts HTTP/2 health checks. An explicit protocol is always used as is.",
+    "HTTP1 provides HTTP/1 configuration for backend connections.\nWhen both this field and the deprecated HTTP1 field on ClientTrafficPolicy are set,\nthis field takes precedence for backend (upstream) traffic.\n\nBehavior when targeting route kinds that do not use HTTP/1:\n  - GRPCRoute, TCPRoute, TLSRoute, UDPRoute: targeting these route kinds\n    directly adds a Warning condition on the policy; the field is ignored.\n  - Gateway / ListenerSet / sectionName targets: this field is silently\n    ignored for any GRPCRoute, TCPRoute, TLSRoute, or UDPRoute destinations\n    beneath that target; no warning is emitted.\n  - gRPC-only external services (ExtProc, gRPC ExtAuth, ALS, OpenTelemetry\n    access log/metrics, tracing providers): rejected at admission on their\n    own BackendSettings via separate validation rules.",
+    "HTTP3 enables HTTP/3 for backend connections.\nHTTP/3 always runs over TLS, so the backend must be configured\nwith TLS through a BackendTLSPolicy or the Backend's spec.tls.\nHTTP/3 is only supported for the backends of a route, through\nBackendTrafficPolicy. It is rejected for the backends of other\nresources, such as the external services of a SecurityPolicy\nor EnvoyExtensionPolicy and the sinks of an EnvoyProxy.",
+    "Header configures the header hash policy when the consistent hash type is set to Header.\n\nDeprecated: use Headers instead",
+    "Header configures the header hash policy when the consistent hash type is set to Header.\n\nDeprecated: use Headers instead. This field will be removed in v1.11.",
+    "FailTrafficOnPanic rejects traffic instead of routing to all endpoints when the\ncluster is in panic mode. Panic mode is entered when the share of healthy endpoints\ndrops below HealthCheck.PanicThreshold, and by default Envoy then load balances\nacross every endpoint, healthy or not. Setting this to true makes Envoy fail the\nrequests instead, applying backpressure to clients and giving the backend room to\nrecover.\nDefaults to false.",
+    "Host define the extension service hostname.\n\nDeprecated: Use BackendRefs instead.",
+    "Host define the extension service hostname.\n\nDeprecated: Use BackendRefs instead. This field will be removed in v1.11.",
+    "Port defines the port the extension service is exposed on.\n\nDeprecated: Use BackendRefs instead.",
+    "Port defines the port the extension service is exposed on.\n\nDeprecated: Use BackendRefs instead. This field will be removed in v1.11.",
+    "EnableCircuitBreakerRemainingStats enables Envoy's circuit breaker `remaining_*` gauges,\nwhich expose the number of resources remaining before each circuit breaker opens.\nEnabling this adds 5 additional gauges per cluster, see:\nhttps://www.envoyproxy.io/docs/envoy/latest/configuration/upstream/cluster_manager/cluster_stats#circuit-breakers-statistics",
+    "ChunkSize is the size in bytes of the compressor's next output buffer, from\n4096 to 65536. If not set, defaults to 4096.",
+    "DisableLiteralContextModeling disables the \"literal context modeling\" format\nfeature. This flag is a \"decoding-speed vs compression ratio\" trade-off.\nIf not set, defaults to false.",
+    "EncoderMode tunes the encoder for a specific input.\nIf not set, defaults to Default.",
+    "InputBlockBits represents the base two logarithm of the compressor's input block\nsize, from 16 to 24. Larger input block results in better compression at the\nexpense of memory usage. If not set, defaults to 24.",
+    "Quality controls the main compression speed-density lever, from 0 to 11.\nThe higher the quality, the slower the compression. If not set, defaults to 3.",
+    "WindowBits represents the base two logarithm of the compressor's window size,\nfrom 10 to 24. Larger window results in better compression at the expense of\nmemory usage. If not set, defaults to 18.",
+    "ChunkSize is the size in bytes of zlib's next output buffer, from 4096 to 65536.\nIf not set, defaults to 4096.",
+    "CompressionLevel sets the zlib compression level, from 1 (fastest compression,\nlowest compression ratio) to 9 (slowest compression, best compression ratio).\nIf not set, Envoy uses the zlib default level, which is equivalent to level 6.",
+    "CompressionStrategy selects the zlib compression strategy, which is directly\nrelated to the characteristics of the content. Most of the time \"Default\" is\nthe best choice. If not set, defaults to Default.",
+    "MemoryLevel controls the amount of internal memory used by zlib, from 1 to 9.\nHigher values use more memory, but are faster and produce better compression\nresults. If not set, defaults to 5.",
+    "WindowBits represents the base two logarithm of the compressor's window size,\nfrom 9 to 15. Larger window results in better compression at the expense of\nmemory usage. If not set, defaults to 12, which will produce a 4096 bytes window.",
+    "CompressionLevel sets the compression parameters according to the pre-defined\nzstd compression level table, from 1 to 22. Note that the exact compression\nparameters are dynamically determined, depending on both compression level and\nsource content size (when known). If not set, defaults to 3.",
+    "EnableChecksum specifies whether a 32-bits checksum of the content is written\nat the end of the frame. If not set, defaults to false.",
+    "Strategy selects the zstd compression strategy. The higher the value of the\nselected strategy, the more complex it is, resulting in stronger and slower\ncompression. If not set, defaults to Default.",
+    "Host define the service hostname.\n\nDeprecated: Use BackendRefs instead.",
+    "Host define the service hostname.\n\nDeprecated: Use BackendRefs instead. This field will be removed in v1.11.",
+    "Port defines the port the service is exposed on.\n\nDeprecated: Use BackendRefs instead.",
+    "Port defines the port the service is exposed on.\n\nDeprecated: Use BackendRefs instead. This field will be removed in v1.11.",
+    "Prefix configures the OpenTelemetry sink to prepend the given prefix to emitted stat names,\nthe full stat name will be `<prefix>.<stat_name>`.",
+    "Host define the provider service hostname.\n\nDeprecated: Use BackendRefs instead.",
+    "Host define the provider service hostname.\n\nDeprecated: Use BackendRefs instead. This field will be removed in v1.11.",
+    "Port defines the port the provider service is exposed on.\n\nDeprecated: Use BackendRefs instead.",
+    "Port defines the port the provider service is exposed on.\n\nDeprecated: Use BackendRefs instead. This field will be removed in v1.11.",
+    "WasmModules defines the set of Wasm modules that are allowed to be used by\nEnvoyExtensionPolicy resources. Each entry registers a module by a logical\nname and a source (currently Local path).\n\nWhen EnvoyExtensionPolicy.wasm[].code is omitted, wasm[].name is looked up\nin this list.\n\nThe EnvoyProxy owner is responsible for ensuring Local modules are available\non the proxy container's filesystem (e.g., via init containers, custom images,\nor shared volumes). EnvoyExtensionPolicy never carries a raw filesystem path.",
     "The key to select.",
     "The key to select from the ConfigMap's Data field.\nKeys in the BinaryData field are not currently propagated to container env vars.",
     "bindMountOptions is the list of additional bind mount options to apply when\nmounting this volume into the container. Allowed values are noexec,\nnodev, and nosuid. These are Linux mount options and have no effect on\nWindows nodes.\nThis field is not supported with image volumes.\nThis is an alpha field and requires enabling the VolumeBindMountOptions feature gate.",
@@ -1004,7 +1365,6 @@
     "mode specifies the connection mode for the gRPC health probe.\nSet to \"TLS\" to use TLS without certificate verification.\nSet to \"Plaintext\" to use a plaintext (insecure) connection explicitly.\nIf not specified, the probe uses a plaintext (insecure) connection.",
     "tolerance is the tolerance on the ratio between the current and desired\nmetric value under which no updates are made to the desired number of\nreplicas (e.g. 0.01 for 1%). Must be greater than or equal to zero. If not\nset, the default cluster-wide tolerance is applied (by default 10%).\n\nFor example, if autoscaling is configured with a memory consumption target of 100Mi,\nand scale-down and scale-up tolerances of 5% and 1% respectively, scaling will be\ntriggered when the actual consumption falls below 95Mi or exceeds 101Mi.\n\nThis is an beta field and requires the HPAConfigurableTolerance feature\ngate to be enabled.",
     "tolerance is the tolerance on the ratio between the current and desired\nmetric value under which no updates are made to the desired number of\nreplicas (e.g. 0.01 for 1%). Must be greater than or equal to zero. If not\nset, the default cluster-wide tolerance is applied (by default 10%).\n\nFor example, if autoscaling is configured with a memory consumption target of 100Mi,\nand scale-down and scale-up tolerances of 5% and 1% respectively, scaling will be\ntriggered when the actual consumption falls below 95Mi or exceeds 101Mi.",
-    "MergeBackends configures cluster deduplication: routes that reference the same backend\nshare a single Envoy cluster instead of Envoy Gateway generating one cluster per route\nrule. This reduces xDS size, active health-check traffic, and stats cardinality, and\nimproves upstream connection pooling.\n\nDisabled when unset; specifying this field at all (even without further configuration)\nenables it. Mutually exclusive with MergeGateways.",
     "MergeGateways defines if Gateway resources should be merged onto the same Envoy Proxy Infrastructure.\nSetting this field to true would merge all Gateway Listeners under the parent Gateway Class.\nThis means that the port, protocol and hostname tuple must be unique for every listener.\nIf a duplicate listener is detected, the newer listener (based on timestamp) will be rejected and its status will be updated with a \"Accepted=False\" condition.",
     "MergeGateways defines if Gateway resources should be merged onto the same Envoy Proxy Infrastructure.\nSetting this field to true would merge all Gateway Listeners under the parent Gateway Class.\nThis means that the port, protocol and hostname tuple must be unique for every listener.\nIf a duplicate listener is detected, the newer listener (based on timestamp) will be rejected and its status will be updated with a \"Accepted=False\" condition.\n\nMutually exclusive with MergeBackends.",
     "PreserveRouteOrder determines if the order of matching for HTTPRoutes is determined by Gateway-API\nspecification (https://gateway-api.sigs.k8s.io/reference/1.4/spec/#httprouterule)\nor preserves the order defined by users in the HTTPRoute's HTTPRouteRule list.\nDefault: False",

@@ -1,5 +1,277 @@
 {
   "versions": {
+    "v1.10.0": {
+      "descriptionChanged": [
+        "spec.authorization.rules.principal.clientCIDRs",
+        "spec.authorization.rules.principal.clientIPGeoLocations",
+        "spec.authorization.rules.principal.jwt.provider",
+        "spec.extAuth.bodyToExtAuth.maxRequestBytes",
+        "spec.extAuth.grpc.backendRef",
+        "spec.extAuth.grpc.backendSettings.loadBalancer.consistentHash.header",
+        "spec.extAuth.http.backendRef",
+        "spec.extAuth.http.backendSettings.loadBalancer.consistentHash.header",
+        "spec.jwt.providers.claimToHeaders.claim",
+        "spec.jwt.providers.remoteJWKS.backendRef",
+        "spec.jwt.providers.remoteJWKS.backendSettings.loadBalancer.consistentHash.header",
+        "spec.oidc.cookieNames",
+        "spec.oidc.cookieNames.accessToken",
+        "spec.oidc.cookieNames.idToken",
+        "spec.oidc.provider.backendRef",
+        "spec.oidc.provider.backendSettings.loadBalancer.consistentHash.header",
+        "spec.targetRef"
+      ],
+      "added": {
+        "spec.cors.allowOriginRegexes": "string[]",
+        "spec.extAuth.bodyToExtAuth.packAsBytes": "boolean",
+        "spec.extAuth.grpc.backendSettings.healthCheck.active.disableConnectionReuse": "boolean",
+        "spec.extAuth.grpc.backendSettings.healthCheck.active.grpc.hostname": "string",
+        "spec.extAuth.grpc.backendSettings.healthCheck.active.http.protocol": "string",
+        "spec.extAuth.grpc.backendSettings.http1": "object",
+        "spec.extAuth.grpc.backendSettings.http3": "object",
+        "spec.extAuth.grpc.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": "boolean",
+        "spec.extAuth.http.backendSettings.healthCheck.active.disableConnectionReuse": "boolean",
+        "spec.extAuth.http.backendSettings.healthCheck.active.grpc.hostname": "string",
+        "spec.extAuth.http.backendSettings.healthCheck.active.http.protocol": "string",
+        "spec.extAuth.http.backendSettings.http1": "object",
+        "spec.extAuth.http.backendSettings.http3": "object",
+        "spec.extAuth.http.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": "boolean",
+        "spec.jwt.providers.claimToHeaders.claimPath": "string[]",
+        "spec.jwt.providers.remoteJWKS.backendSettings.healthCheck.active.disableConnectionReuse": "boolean",
+        "spec.jwt.providers.remoteJWKS.backendSettings.healthCheck.active.grpc.hostname": "string",
+        "spec.jwt.providers.remoteJWKS.backendSettings.healthCheck.active.http.protocol": "string",
+        "spec.jwt.providers.remoteJWKS.backendSettings.http1": "object",
+        "spec.jwt.providers.remoteJWKS.backendSettings.http3": "object",
+        "spec.jwt.providers.remoteJWKS.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": "boolean",
+        "spec.oidc.codeVerifierTTL": "string",
+        "spec.oidc.cookieNames.codeVerifier": "string",
+        "spec.oidc.cookieNames.oauthExpires": "string",
+        "spec.oidc.cookieNames.oauthHmac": "string",
+        "spec.oidc.cookieNames.oauthNonce": "string",
+        "spec.oidc.cookieNames.refreshToken": "string",
+        "spec.oidc.cookieNames.suffix": "string",
+        "spec.oidc.postLogoutRedirect": "object",
+        "spec.oidc.provider.backendSettings.healthCheck.active.disableConnectionReuse": "boolean",
+        "spec.oidc.provider.backendSettings.healthCheck.active.grpc.hostname": "string",
+        "spec.oidc.provider.backendSettings.healthCheck.active.http.protocol": "string",
+        "spec.oidc.provider.backendSettings.http1": "object",
+        "spec.oidc.provider.backendSettings.http3": "object",
+        "spec.oidc.provider.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": "boolean"
+      },
+      "optional": [
+        "spec.extAuth.bodyToExtAuth.maxRequestBytes",
+        "spec.jwt.providers.claimToHeaders.claim"
+      ],
+      "descriptions": {
+        "spec.authorization.rules.principal.clientCIDRs": [
+          0,
+          1
+        ],
+        "spec.authorization.rules.principal.clientIPGeoLocations": [
+          2,
+          3
+        ],
+        "spec.authorization.rules.principal.jwt.provider": [
+          4,
+          5
+        ],
+        "spec.cors.allowOriginRegexes": [
+          null,
+          6
+        ],
+        "spec.extAuth.bodyToExtAuth.maxRequestBytes": [
+          7,
+          8
+        ],
+        "spec.extAuth.bodyToExtAuth.packAsBytes": [
+          null,
+          9
+        ],
+        "spec.extAuth.grpc.backendRef": [
+          10,
+          11
+        ],
+        "spec.extAuth.grpc.backendSettings.healthCheck.active.disableConnectionReuse": [
+          null,
+          12
+        ],
+        "spec.extAuth.grpc.backendSettings.healthCheck.active.grpc.hostname": [
+          null,
+          13
+        ],
+        "spec.extAuth.grpc.backendSettings.healthCheck.active.http.protocol": [
+          null,
+          14
+        ],
+        "spec.extAuth.grpc.backendSettings.http1": [
+          null,
+          15
+        ],
+        "spec.extAuth.grpc.backendSettings.http3": [
+          null,
+          16
+        ],
+        "spec.extAuth.grpc.backendSettings.loadBalancer.consistentHash.header": [
+          17,
+          18
+        ],
+        "spec.extAuth.grpc.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": [
+          null,
+          19
+        ],
+        "spec.extAuth.http.backendRef": [
+          10,
+          11
+        ],
+        "spec.extAuth.http.backendSettings.healthCheck.active.disableConnectionReuse": [
+          null,
+          12
+        ],
+        "spec.extAuth.http.backendSettings.healthCheck.active.grpc.hostname": [
+          null,
+          13
+        ],
+        "spec.extAuth.http.backendSettings.healthCheck.active.http.protocol": [
+          null,
+          14
+        ],
+        "spec.extAuth.http.backendSettings.http1": [
+          null,
+          15
+        ],
+        "spec.extAuth.http.backendSettings.http3": [
+          null,
+          16
+        ],
+        "spec.extAuth.http.backendSettings.loadBalancer.consistentHash.header": [
+          17,
+          18
+        ],
+        "spec.extAuth.http.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": [
+          null,
+          19
+        ],
+        "spec.jwt.providers.claimToHeaders.claim": [
+          20,
+          21
+        ],
+        "spec.jwt.providers.claimToHeaders.claimPath": [
+          null,
+          22
+        ],
+        "spec.jwt.providers.remoteJWKS.backendRef": [
+          10,
+          11
+        ],
+        "spec.jwt.providers.remoteJWKS.backendSettings.healthCheck.active.disableConnectionReuse": [
+          null,
+          12
+        ],
+        "spec.jwt.providers.remoteJWKS.backendSettings.healthCheck.active.grpc.hostname": [
+          null,
+          13
+        ],
+        "spec.jwt.providers.remoteJWKS.backendSettings.healthCheck.active.http.protocol": [
+          null,
+          14
+        ],
+        "spec.jwt.providers.remoteJWKS.backendSettings.http1": [
+          null,
+          15
+        ],
+        "spec.jwt.providers.remoteJWKS.backendSettings.http3": [
+          null,
+          16
+        ],
+        "spec.jwt.providers.remoteJWKS.backendSettings.loadBalancer.consistentHash.header": [
+          17,
+          18
+        ],
+        "spec.jwt.providers.remoteJWKS.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": [
+          null,
+          19
+        ],
+        "spec.oidc.codeVerifierTTL": [
+          null,
+          23
+        ],
+        "spec.oidc.cookieNames": [
+          24,
+          25
+        ],
+        "spec.oidc.cookieNames.accessToken": [
+          26,
+          27
+        ],
+        "spec.oidc.cookieNames.codeVerifier": [
+          null,
+          28
+        ],
+        "spec.oidc.cookieNames.idToken": [
+          29,
+          30
+        ],
+        "spec.oidc.cookieNames.oauthExpires": [
+          null,
+          31
+        ],
+        "spec.oidc.cookieNames.oauthHmac": [
+          null,
+          32
+        ],
+        "spec.oidc.cookieNames.oauthNonce": [
+          null,
+          33
+        ],
+        "spec.oidc.cookieNames.refreshToken": [
+          null,
+          34
+        ],
+        "spec.oidc.cookieNames.suffix": [
+          null,
+          35
+        ],
+        "spec.oidc.postLogoutRedirect": [
+          null,
+          36
+        ],
+        "spec.oidc.provider.backendRef": [
+          10,
+          11
+        ],
+        "spec.oidc.provider.backendSettings.healthCheck.active.disableConnectionReuse": [
+          null,
+          12
+        ],
+        "spec.oidc.provider.backendSettings.healthCheck.active.grpc.hostname": [
+          null,
+          13
+        ],
+        "spec.oidc.provider.backendSettings.healthCheck.active.http.protocol": [
+          null,
+          14
+        ],
+        "spec.oidc.provider.backendSettings.http1": [
+          null,
+          15
+        ],
+        "spec.oidc.provider.backendSettings.http3": [
+          null,
+          16
+        ],
+        "spec.oidc.provider.backendSettings.loadBalancer.consistentHash.header": [
+          17,
+          18
+        ],
+        "spec.oidc.provider.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": [
+          null,
+          19
+        ],
+        "spec.targetRef": [
+          37,
+          38
+        ]
+      }
+    },
     "v1.9.0": {
       "added": {
         "spec.authorization.rules.cel": "string",
@@ -34,99 +306,99 @@
       "descriptions": {
         "spec.authorization.rules.cel": [
           null,
-          0
+          39
         ],
         "spec.authorization.rules.operation.methods": [
           null,
-          1
+          40
         ],
         "spec.authorization.rules.operation.path": [
           null,
-          2
+          41
         ],
         "spec.authorization.rules.principal": [
           null,
-          3
+          42
         ],
         "spec.authorization.rules.principal.clientIPGeoLocations": [
-          4,
-          5
+          43,
+          2
         ],
         "spec.csrf": [
           null,
-          6
+          44
         ],
         "spec.extAuth.grpc.backendSettings.healthCheck.active.healthCheckLog": [
           null,
-          7
+          45
         ],
         "spec.extAuth.grpc.backendSettings.healthCheck.active.http.requestBody": [
           null,
-          8
+          46
         ],
         "spec.extAuth.grpc.backendSettings.loadBalancer.backendUtilization.outOfBand": [
           null,
-          9
+          47
         ],
         "spec.extAuth.http.backendSettings.healthCheck.active.healthCheckLog": [
           null,
-          7
+          45
         ],
         "spec.extAuth.http.backendSettings.healthCheck.active.http.requestBody": [
           null,
-          8
+          46
         ],
         "spec.extAuth.http.backendSettings.loadBalancer.backendUtilization.outOfBand": [
           null,
-          9
+          47
         ],
         "spec.jwt.failOpen": [
           null,
-          10
+          48
         ],
         "spec.jwt.optional": [
-          11,
-          12
+          49,
+          50
         ],
         "spec.jwt.providers.remoteJWKS.backendSettings.healthCheck.active.healthCheckLog": [
           null,
-          7
+          45
         ],
         "spec.jwt.providers.remoteJWKS.backendSettings.healthCheck.active.http.requestBody": [
           null,
-          8
+          46
         ],
         "spec.jwt.providers.remoteJWKS.backendSettings.loadBalancer.backendUtilization.outOfBand": [
           null,
-          9
+          47
         ],
         "spec.jwt.providers.remoteJWKS.failedRefetchDuration": [
           null,
-          13
+          51
         ],
         "spec.mergeType": [
-          14,
-          15
+          52,
+          53
         ],
         "spec.oidc.forwardIDToken": [
-          16,
-          17
+          54,
+          55
         ],
         "spec.oidc.forwardIDToken.header": [
-          18,
-          19
+          56,
+          57
         ],
         "spec.oidc.provider.backendSettings.healthCheck.active.healthCheckLog": [
           null,
-          7
+          45
         ],
         "spec.oidc.provider.backendSettings.healthCheck.active.http.requestBody": [
           null,
-          8
+          46
         ],
         "spec.oidc.provider.backendSettings.loadBalancer.backendUtilization.outOfBand": [
           null,
-          9
+          47
         ]
       }
     },
@@ -138,27 +410,65 @@
       ],
       "descriptions": {
         "spec.apiKeyAuth.extractFrom.cookies": [
-          20,
-          21
+          58,
+          59
         ],
         "spec.apiKeyAuth.extractFrom.headers": [
-          22,
-          23
+          60,
+          61
         ],
         "spec.apiKeyAuth.extractFrom.params": [
-          24,
-          25
+          62,
+          63
         ]
       }
     }
   },
   "texts": [
+    "ClientCIDRs are the IP CIDR ranges of the client.\nValid examples are \"192.168.1.0/24\" or \"2001:db8::/64\"\n\nIf multiple CIDR ranges are specified, one of the CIDR ranges must match\nthe client IP for the rule to match.\n\nThe client IP is inferred from the X-Forwarded-For header, a custom header,\nor the proxy protocol.\nYou can use the `ClientIPDetection` or the `ProxyProtocol` field in\nthe `ClientTrafficPolicy` to configure how the client IP is detected.\n\nFor TCPRoute targets (raw TCP connections), HTTP headers such as\nX-Forwarded-For are not available. The client IP is obtained from the\nTCP connection's peer address. If intermediaries (load balancers, NAT)\nterminate or proxy TCP, the original client IP will only be available\nif the intermediary preserves the source address (for example by\nenabling the PROXY protocol or avoiding SNAT). Ensure your L4 proxy is\nconfigured to preserve the source IP to enable correct client-IP\nmatching for TCPRoute targets.",
+    "ClientCIDRs are the IP CIDR ranges of the client.\nValid examples are \"192.168.1.0/24\" or \"2001:db8::/64\"\n\nIf multiple CIDR ranges are specified, one of the CIDR ranges must match\nthe client IP for the rule to match.\n\nThe client IP is inferred from the X-Forwarded-For header, a custom header,\nor the proxy protocol.\nYou can use the `ClientIPDetection` or the `ProxyProtocol` field in\nthe `ClientTrafficPolicy` to configure how the client IP is detected.\n\nFor TCPRoute and UDPRoute targets (raw L4 traffic), HTTP headers such as\nX-Forwarded-For are not available. The client IP is obtained from the\nTCP connection's peer address, or from the source address of the UDP\ndatagram. If intermediaries (load balancers, NAT) terminate or proxy the\ntraffic, the original client IP will only be available if the\nintermediary preserves the source address (for example by enabling the\nPROXY protocol or avoiding SNAT). Note that the PROXY protocol is not\navailable on the UDP path, so a UDPRoute target relies entirely on the\ndatagram source address being preserved. Ensure your L4 proxy is\nconfigured to preserve the source IP to enable correct client-IP\nmatching for TCPRoute and UDPRoute targets.",
+    "ClientIPGeoLocations authorizes the request based on geolocation metadata derived from the client IP.\nThis field is supported for HTTPRoute and GRPCRoute authorization.\nIt is not supported for TCPRoute targets.\n\nIf multiple entries are specified,  one of the ClientIPGeoLocation entries must match for the rule to match.\n\nThe client IP is inferred from the X-Forwarded-For header, a custom header, or the\ndirect downstream connection source address (the TCP peer of the connection terminated by Envoy).\nYou can use the `ClientIPDetection` field in the `ClientTrafficPolicy` to configure the client IP detection.",
+    "ClientIPGeoLocations authorizes the request based on geolocation metadata derived from the client IP.\nThis field is supported for HTTPRoute and GRPCRoute authorization.\nIt is not supported for TCPRoute or UDPRoute targets.\n\nIf multiple entries are specified,  one of the ClientIPGeoLocation entries must match for the rule to match.\n\nThe client IP is inferred from the X-Forwarded-For header, a custom header, or the\ndirect downstream connection source address (the TCP peer of the connection terminated by Envoy).\nYou can use the `ClientIPDetection` field in the `ClientTrafficPolicy` to configure the client IP detection.",
+    "Provider is the name of the JWT provider that used to verify the JWT token.\nIn order to use JWT claims for authorization, you must configure the JWT\nauthentication with the same provider in the same `SecurityPolicy`.",
+    "Provider is the name of the JWT provider that used to verify the JWT token.\nIn order to use JWT claims for authorization, you must configure the JWT\nauthentication with the same provider in the same `SecurityPolicy`, or,\nwhen `mergeType` is set, in the parent `SecurityPolicy` this policy is\nmerged into.",
+    "AllowOriginRegexes defines regular expressions that are matched against the Origin header.\nIt specifies additional allowed origins in the Access-Control-Allow-Origin CORS response header.\nAn origin is allowed when it matches any entry in AllowOrigins or AllowOriginRegexes.",
+    "MaxRequestBytes is the maximum size of a message body that the filter will hold in memory.\nEnvoy will return HTTP 413 and will not initiate the authorization process when buffer\nreaches the number set in this field.\nNote that this setting will have precedence over failOpen mode.",
+    "MaxRequestBytes is the maximum size of a message body that the filter will hold in memory.\nEnvoy will return HTTP 413 and will not initiate the authorization process when buffer\nreaches the number set in this field.\nNote that this setting will have precedence over failOpen mode.\nDefaults to 32768 bytes (32KiB), which matches the default per-connection buffer limit.",
+    "PackAsBytes, when true, sends the request body to the external authorization\nservice as raw bytes, populating the raw_body field of the HTTP request\nattribute context. Otherwise, the body is sent as a UTF-8 string in the body field.\nThis field is only supported for gRPC external authorization services.\nDefaults to false.",
+    "BackendRef references a Kubernetes object that represents the\nbackend server to which the authorization request will be sent.\n\nDeprecated: Use BackendRefs instead.",
+    "BackendRef references a Kubernetes object that represents the\nbackend server to which the authorization request will be sent.\n\nDeprecated: Use BackendRefs instead. This field will be removed in v1.11.",
+    "DisableConnectionReuse determines whether the active health check connection to a\nbackend host is closed after each health check probe. When set to true, Envoy opens a\nnew connection for each health check, which is useful for backends (such as\nhaproxy-style agent checks) that do not expect a reused connection.\nDefaults to false, which reuses the connection across probes.",
+    "Hostname defines the value of the :authority header sent with active gRPC\nhealth checks. Authority selection uses this order: this field, the\nassociated Backend endpoint hostname if available, then the effective Route\nhostname. If none of them is set, Envoy falls back to the name of the\ncluster, which is not a valid authority and is rejected by some gRPC\nservers.",
+    "Protocol is the HTTP protocol that active health check requests are sent with.\n\nDefaults to Auto, which uses the same protocol as regular requests to the backend:\n\n  - HTTP2 for a backend configured for HTTP/2, through a `kubernetes.io/h2c`,\n    `gateway.envoyproxy.io/h2c` or `grpc` appProtocol, or as the backend of a\n    GRPCRoute.\n  - The protocol negotiated through ALPN for a TLS backend that negotiates it,\n    with HTTP1 as the fallback when nothing is negotiated.\n  - HTTP1 otherwise.\n\nSet HTTP1 or HTTP2 when the health check endpoint speaks a different protocol than\nthe application, for example a backend that serves HTTP/1.1 traffic but only\naccepts HTTP/2 health checks. An explicit protocol is always used as is.",
+    "HTTP1 provides HTTP/1 configuration for backend connections.\nWhen both this field and the deprecated HTTP1 field on ClientTrafficPolicy are set,\nthis field takes precedence for backend (upstream) traffic.\n\nBehavior when targeting route kinds that do not use HTTP/1:\n  - GRPCRoute, TCPRoute, TLSRoute, UDPRoute: targeting these route kinds\n    directly adds a Warning condition on the policy; the field is ignored.\n  - Gateway / ListenerSet / sectionName targets: this field is silently\n    ignored for any GRPCRoute, TCPRoute, TLSRoute, or UDPRoute destinations\n    beneath that target; no warning is emitted.\n  - gRPC-only external services (ExtProc, gRPC ExtAuth, ALS, OpenTelemetry\n    access log/metrics, tracing providers): rejected at admission on their\n    own BackendSettings via separate validation rules.",
+    "HTTP3 enables HTTP/3 for backend connections.\nHTTP/3 always runs over TLS, so the backend must be configured\nwith TLS through a BackendTLSPolicy or the Backend's spec.tls.\nHTTP/3 is only supported for the backends of a route, through\nBackendTrafficPolicy. It is rejected for the backends of other\nresources, such as the external services of a SecurityPolicy\nor EnvoyExtensionPolicy and the sinks of an EnvoyProxy.",
+    "Header configures the header hash policy when the consistent hash type is set to Header.\n\nDeprecated: use Headers instead",
+    "Header configures the header hash policy when the consistent hash type is set to Header.\n\nDeprecated: use Headers instead. This field will be removed in v1.11.",
+    "FailTrafficOnPanic rejects traffic instead of routing to all endpoints when the\ncluster is in panic mode. Panic mode is entered when the share of healthy endpoints\ndrops below HealthCheck.PanicThreshold, and by default Envoy then load balances\nacross every endpoint, healthy or not. Setting this to true makes Envoy fail the\nrequests instead, applying backpressure to clients and giving the backend room to\nrecover.\nDefaults to false.",
+    "Claim is the JWT Claim that should be saved into the header : it can be a nested claim of type\n(eg. \"claim.nested.key\", \"sub\"). The nested claim name must use dot \".\"\nto separate the JSON name path.",
+    "Claim is the JWT Claim that should be saved into the header : it can be a nested claim of type\n(eg. \"claim.nested.key\", \"sub\"). The nested claim name must use dot \".\"\nto separate the JSON name path.\n\nBecause the name is always split on \".\", a claim whose own name contains a dot -- a\nURI-namespaced claim such as \"https://example.com/claims/tenant_name\" commonly emitted by\nOIDC providers -- cannot be addressed this way. Use ClaimPath for those claims instead.\n\nExactly one of Claim or ClaimPath must be specified.",
+    "ClaimPath is the path to the claim to copy, given as an explicit list of segments. Each\nsegment is matched in full against a key of the enclosing JSON object, so claim names\ncontaining dots are addressable. For example, a top-level claim named\n\"https://example.com/claims/tenant_name\" is selected with:\n\n\tclaimPath:\n\t- \"https://example.com/claims/tenant_name\"\n\nand a nested claim `{\"nested\": {\"claim\": {\"key\": \"value\"}}}` is selected with:\n\n\tclaimPath:\n\t- nested\n\t- claim\n\t- key\n\nExactly one of Claim or ClaimPath must be specified.",
+    "CodeVerifierTTL defines how long the PKCE code verifier generated during the OAuth2\nauthorization flow remains valid.\n\nThis duration determines the lifetime of the code verifier cookie, which is exchanged\nfor the access token when the provider redirects back to the callback endpoint.\n\nBoth this cookie and the CSRF cookie are only consumed on the callback endpoint, so an\nauthorization flow that is started but never completed leaves them behind until they\nexpire. Lowering this value along with csrfTokenTTL bounds how many such cookies a\nbrowser can accumulate. It must stay long enough for a user to complete the login,\nincluding any multi-factor prompt: once it elapses the browser drops the cookie and\nthe callback fails.\n\nIf omitted, Envoy Gateway defaults the code verifier expiration to 10 minutes.",
+    "The optional cookie name overrides to be used for Bearer and IdToken cookies in the\n[Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest).\nIf not specified, uses a randomly generated suffix",
+    "CookieNames configures the names of the cookies that Envoy sets for the\n[Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest).\n\nBy default, every cookie is named \"<Purpose>-<suffix>\", where the suffix is\nderived from the identity of this SecurityPolicy. Set \"suffix\" to pin that\nsuffix for all cookies at once, or set a per-cookie field to name a single\ncookie outright.",
+    "The name of the cookie used to store the AccessToken in the\n[Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest).\nIf not specified, defaults to \"AccessToken-(randomly generated uid)\"",
+    "The name of the cookie used to store the AccessToken in the\n[Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest).\nIf not specified, defaults to \"AccessToken-<suffix>\", see the \"suffix\" field.",
+    "The name of the cookie used to store the PKCE code verifier.\nIf not specified, defaults to \"CodeVerifier-<suffix>\", see the \"suffix\" field.",
+    "The name of the cookie used to store the IdToken in the\n[Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest).\nIf not specified, defaults to \"IdToken-(randomly generated uid)\"",
+    "The name of the cookie used to store the IdToken in the\n[Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest).\nIf not specified, defaults to \"IdToken-<suffix>\", see the \"suffix\" field.",
+    "The name of the cookie used to store the OAuth expires value.\nIf not specified, defaults to \"OauthExpires-<suffix>\", see the \"suffix\" field.",
+    "The name of the cookie used to store the OAuth HMAC value.\nIf not specified, defaults to \"OauthHMAC-<suffix>\", see the \"suffix\" field.",
+    "The name of the cookie used to store the OAuth nonce value.\nIf not specified, defaults to \"OauthNonce-<suffix>\", see the \"suffix\" field.",
+    "The name of the cookie used to store the RefreshToken.\nIf not specified, defaults to \"RefreshToken-<suffix>\", see the \"suffix\" field.",
+    "Suffix replaces the generated suffix in the default name of every OAuth2\ncookie, for example \"AccessToken-<suffix>\" and \"IdToken-<suffix>\".\n\nThe generated suffix is derived from the identity of the SecurityPolicy, so\nit changes when the policy is deleted and recreated, which logs users out.\nSet this field to keep the cookie names stable across the lifetime of the\npolicy, or to share a session between policies that authenticate the same\nusers against the same provider. Policies sharing a suffix must also agree\non the OIDC provider, the client, and the cookieDomain.\n\nIf not specified, the generated suffix is used.",
+    "PostLogoutRedirect configures the `post_logout_redirect_uri` parameter that EG sends to the\nOIDC Provider's end session endpoint when a user accesses the logout path.\n\nThis only applies when the OIDC Provider's end session endpoint is configured or discovered,\ni.e. when RP-Initiated Logout is in use. It is ignored otherwise.\n\nIf not specified, Envoy sends the root of the request's host, \"<scheme>://<host>/\".\nNote that many OIDC Providers require the post logout redirect URI to be pre-registered for\nthe client and reject the logout request otherwise. If the default value is not registered,\nset an explicit uri here, or set disabled to true to omit the parameter altogether.",
+    "TargetRef is the name of the resource this policy is being attached to.\nThis policy and the TargetRef MUST be in the same namespace for this\nPolicy to have effect\n\nDeprecated: use targetRefs/targetSelectors instead",
+    "TargetRef is the name of the resource this policy is being attached to.\nThis policy and the TargetRef MUST be in the same namespace for this\nPolicy to have effect\n\nDeprecated: use targetRefs/targetSelectors instead. This field will be removed in v1.11.",
     "CEL specifies a Common Expression Language expression to evaluate for the\nrequest. If specified, the expression must evaluate to true for the rule to match.\n\nThe expression can use Envoy attributes exposed to the CEL runtime.\nRequest attributes, such as request.path, request.url_path, request.host,\nrequest.scheme, request.method, request.headers, and request.query, are\ngenerally available during authorization. Connection attributes, such as\nsource.address, source.port, destination.address, destination.port,\nconnection.mtls, and connection.requested_server_name, may also be used.\nDynamic metadata and filter state produced by earlier filters may also be\navailable through attributes such as metadata and filter_state.\nResponse attributes are only available after the request completes and\nshould not be used for authorization decisions.\n\nFor more details, see:\nhttps://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/advanced/attributes\n\nThe rule matches only when the expression evaluates to a boolean true.\nNon-boolean results, false, null, and CEL evaluation errors are treated as\nno match.\n\nExamples:\n`request.headers['x-tenant'] == 'team-a'`\n`request.method == 'POST' && request.path.startsWith('/admin')`",
     "Methods are the HTTP methods of the request.\nIf multiple methods are specified, all specified methods are allowed or denied, based on the action of the rule.",
     "Path is the HTTP path of the request.\nSupport Exact, PathPrefix and RegularExpression match types.",
     "Principal specifies the client identity of a request.\nIf there are multiple principal types, all principals must match for the rule to match.\nFor example, if there are two principals: one for client IP and one for JWT claim,\nthe rule will match only if both the client IP and the JWT claim match.",
     "ClientIPGeoLocations authorizes the request based on geolocation metadata derived from the client IP.\nThis field is supported for HTTPRoute and GRPCRoute authorization.\nIt is not supported for TCPRoute targets.\n\nIf multiple entries are specified,  one of the ClientIPGeoLocation entries must match for the rule to match.\n\nThe client IP is inferred from the X-Forwarded-For header or a custom header.\nYou can use the `ClientIPDetection` field in the `ClientTrafficPolicy` to configure the client IP detection.",
-    "ClientIPGeoLocations authorizes the request based on geolocation metadata derived from the client IP.\nThis field is supported for HTTPRoute and GRPCRoute authorization.\nIt is not supported for TCPRoute targets.\n\nIf multiple entries are specified,  one of the ClientIPGeoLocation entries must match for the rule to match.\n\nThe client IP is inferred from the X-Forwarded-For header, a custom header, or the\ndirect downstream connection source address (the TCP peer of the connection terminated by Envoy).\nYou can use the `ClientIPDetection` field in the `ClientTrafficPolicy` to configure the client IP detection.",
     "CSRF defines the configuration for Cross-Site Request Forgery (CSRF) protection.\nWhen enabled, the CSRF filter checks that the Origin header matches the destination\nor one of the additional allowed origins on mutating requests (POST, PUT, DELETE, PATCH).",
     "HealthCheckLog defines health check event logging configuration for this cluster.\nWhen set, HC probe outcomes are logged to the configured sinks.\nTakes precedence over the gateway-level EnvoyProxy.spec.telemetry.healthCheckLog.",
     "RequestBody defines the HTTP request body payload sent during health checking.",

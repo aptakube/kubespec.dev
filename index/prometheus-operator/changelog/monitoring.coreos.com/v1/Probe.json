@@ -1,5 +1,16 @@
 {
   "versions": {
+    "v0.95.0": {
+      "added": {
+        "spec.extraScrapeMetrics": "boolean"
+      },
+      "descriptions": {
+        "spec.extraScrapeMetrics": [
+          null,
+          0
+        ]
+      }
+    },
     "v0.94.0": {
       "descriptionChanged": [
         "spec.oauth2.clientId.configMap.key",
@@ -10,24 +21,24 @@
       ],
       "descriptions": {
         "spec.oauth2.clientId.configMap.key": [
-          0,
-          1
+          1,
+          2
         ],
         "spec.oauth2.tlsConfig.ca.configMap.key": [
-          0,
-          1
+          1,
+          2
         ],
         "spec.oauth2.tlsConfig.cert.configMap.key": [
-          0,
-          1
+          1,
+          2
         ],
         "spec.tlsConfig.ca.configMap.key": [
-          0,
-          1
+          1,
+          2
         ],
         "spec.tlsConfig.cert.configMap.key": [
-          0,
-          1
+          1,
+          2
         ]
       }
     },
@@ -46,36 +57,36 @@
       },
       "descriptions": {
         "spec.authorization": [
-          2,
-          3
+          3,
+          4
         ],
         "spec.basicAuth": [
-          4,
-          5
+          5,
+          6
         ],
         "spec.bearerTokenSecret": [
-          6,
-          7
+          7,
+          8
         ],
         "spec.enableHttp2": [
           null,
-          8
+          9
         ],
         "spec.followRedirects": [
           null,
-          9
+          10
         ],
         "spec.oauth2": [
-          10,
-          11
+          11,
+          12
         ],
         "spec.scrapeNativeHistograms": [
           null,
-          12
+          13
         ],
         "spec.tlsConfig": [
-          13,
-          14
+          14,
+          15
         ]
       }
     },
@@ -86,12 +97,12 @@
       ],
       "descriptions": {
         "spec.prober.scheme": [
-          15,
-          16
+          16,
+          17
         ],
         "spec.prober.url": [
-          17,
-          18
+          18,
+          19
         ]
       }
     },
@@ -206,420 +217,420 @@
       },
       "descriptions": {
         "spec": [
-          19,
-          20
+          20,
+          21
         ],
         "spec.authorization": [
-          21,
-          2
+          22,
+          3
         ],
         "spec.authorization.credentials": [
-          22,
-          23
+          23,
+          24
         ],
         "spec.authorization.type": [
-          24,
-          25
+          25,
+          26
         ],
         "spec.basicAuth": [
-          26,
-          4
+          27,
+          5
         ],
         "spec.basicAuth.password": [
-          27,
-          28
+          28,
+          29
         ],
         "spec.basicAuth.username": [
-          29,
-          30
+          30,
+          31
         ],
         "spec.bearerTokenSecret": [
-          31,
-          6
+          32,
+          7
         ],
         "spec.convertClassicHistogramsToNHCB": [
-          32,
-          33
+          33,
+          34
         ],
         "spec.fallbackScrapeProtocol": [
-          34,
-          35
+          35,
+          36
         ],
         "spec.interval": [
-          36,
-          37
+          37,
+          38
         ],
         "spec.jobName": [
-          38,
-          39
+          39,
+          40
         ],
         "spec.keepDroppedTargets": [
-          40,
-          41
+          41,
+          42
         ],
         "spec.labelLimit": [
-          42,
-          43
+          43,
+          44
         ],
         "spec.labelNameLengthLimit": [
-          44,
-          45
+          45,
+          46
         ],
         "spec.labelValueLengthLimit": [
-          46,
-          47
+          47,
+          48
         ],
         "spec.metricRelabelings": [
-          48,
-          49
+          49,
+          50
         ],
         "spec.metricRelabelings.action": [
-          50,
-          51
+          51,
+          52
         ],
         "spec.metricRelabelings.modulus": [
-          52,
-          53
+          53,
+          54
         ],
         "spec.metricRelabelings.regex": [
-          54,
-          55
+          55,
+          56
         ],
         "spec.metricRelabelings.replacement": [
-          56,
-          57
+          57,
+          58
         ],
         "spec.metricRelabelings.separator": [
-          58,
-          59
+          59,
+          60
         ],
         "spec.metricRelabelings.sourceLabels": [
-          60,
-          61
+          61,
+          62
         ],
         "spec.metricRelabelings.targetLabel": [
-          62,
-          63
+          63,
+          64
         ],
         "spec.module": [
-          64,
-          65
+          65,
+          66
         ],
         "spec.nativeHistogramBucketLimit": [
-          66,
-          67
+          67,
+          68
         ],
         "spec.nativeHistogramMinBucketFactor": [
-          68,
-          69
+          69,
+          70
         ],
         "spec.oauth2": [
-          70,
-          10
+          71,
+          11
         ],
         "spec.oauth2.clientId": [
-          71,
-          72
+          72,
+          73
         ],
         "spec.oauth2.clientId.configMap": [
-          73,
-          74
+          74,
+          75
         ],
         "spec.oauth2.clientId.secret": [
-          75,
-          76
+          76,
+          77
         ],
         "spec.oauth2.clientSecret": [
-          77,
-          78
+          78,
+          79
         ],
         "spec.oauth2.endpointParams": [
-          79,
-          80
+          80,
+          81
         ],
         "spec.oauth2.noProxy": [
-          81,
-          82
+          82,
+          83
         ],
         "spec.oauth2.proxyConnectHeader": [
-          83,
-          84
+          84,
+          85
         ],
         "spec.oauth2.proxyFromEnvironment": [
-          85,
-          86
+          86,
+          87
         ],
         "spec.oauth2.proxyUrl": [
-          87,
-          88
+          88,
+          89
         ],
         "spec.oauth2.scopes": [
-          89,
-          90
+          90,
+          91
         ],
         "spec.oauth2.tlsConfig": [
-          91,
-          92
+          92,
+          93
         ],
         "spec.oauth2.tlsConfig.ca": [
-          93,
-          94
+          94,
+          95
         ],
         "spec.oauth2.tlsConfig.ca.configMap": [
-          73,
-          74
+          74,
+          75
         ],
         "spec.oauth2.tlsConfig.ca.secret": [
-          75,
-          76
+          76,
+          77
         ],
         "spec.oauth2.tlsConfig.cert": [
-          95,
-          96
+          96,
+          97
         ],
         "spec.oauth2.tlsConfig.cert.configMap": [
-          73,
-          74
+          74,
+          75
         ],
         "spec.oauth2.tlsConfig.cert.secret": [
-          75,
-          76
+          76,
+          77
         ],
         "spec.oauth2.tlsConfig.insecureSkipVerify": [
-          97,
-          98
+          98,
+          99
         ],
         "spec.oauth2.tlsConfig.keySecret": [
-          99,
-          100
+          100,
+          101
         ],
         "spec.oauth2.tlsConfig.maxVersion": [
-          101,
-          102
+          102,
+          103
         ],
         "spec.oauth2.tlsConfig.minVersion": [
-          103,
-          104
+          104,
+          105
         ],
         "spec.oauth2.tlsConfig.serverName": [
-          105,
-          106
+          106,
+          107
         ],
         "spec.oauth2.tokenUrl": [
-          107,
-          108
+          108,
+          109
         ],
         "spec.params": [
-          109,
-          110
+          110,
+          111
         ],
         "spec.params.name": [
-          111,
-          112
+          112,
+          113
         ],
         "spec.params.values": [
-          113,
-          114
+          114,
+          115
         ],
         "spec.prober": [
-          115,
-          116
+          116,
+          117
         ],
         "spec.prober.noProxy": [
-          81,
-          82
+          82,
+          83
         ],
         "spec.prober.path": [
-          117,
-          118
+          118,
+          119
         ],
         "spec.prober.proxyConnectHeader": [
-          83,
-          84
+          84,
+          85
         ],
         "spec.prober.proxyFromEnvironment": [
-          85,
-          86
+          86,
+          87
         ],
         "spec.prober.proxyUrl": [
-          87,
-          88
+          88,
+          89
         ],
         "spec.prober.scheme": [
-          119,
-          15
+          120,
+          16
         ],
         "spec.prober.url": [
-          120,
-          17
+          121,
+          18
         ],
         "spec.sampleLimit": [
-          121,
-          122
+          122,
+          123
         ],
         "spec.scrapeClass": [
-          123,
-          124
+          124,
+          125
         ],
         "spec.scrapeClassicHistograms": [
-          125,
-          126
+          126,
+          127
         ],
         "spec.scrapeProtocols": [
-          127,
-          128
+          128,
+          129
         ],
         "spec.scrapeTimeout": [
-          129,
-          130
+          130,
+          131
         ],
         "spec.targetLimit": [
-          131,
-          132
+          132,
+          133
         ],
         "spec.targets": [
-          133,
-          134
+          134,
+          135
         ],
         "spec.targets.ingress.namespaceSelector": [
-          135,
-          136
+          136,
+          137
         ],
         "spec.targets.ingress.namespaceSelector.any": [
-          137,
-          138
+          138,
+          139
         ],
         "spec.targets.ingress.namespaceSelector.matchNames": [
-          139,
-          140
+          140,
+          141
         ],
         "spec.targets.ingress.relabelingConfigs": [
-          141,
-          142
+          142,
+          143
         ],
         "spec.targets.ingress.relabelingConfigs.action": [
-          50,
-          51
+          51,
+          52
         ],
         "spec.targets.ingress.relabelingConfigs.modulus": [
-          52,
-          53
+          53,
+          54
         ],
         "spec.targets.ingress.relabelingConfigs.regex": [
-          54,
-          55
+          55,
+          56
         ],
         "spec.targets.ingress.relabelingConfigs.replacement": [
-          56,
-          57
+          57,
+          58
         ],
         "spec.targets.ingress.relabelingConfigs.separator": [
-          58,
-          59
+          59,
+          60
         ],
         "spec.targets.ingress.relabelingConfigs.sourceLabels": [
-          60,
-          61
+          61,
+          62
         ],
         "spec.targets.ingress.relabelingConfigs.targetLabel": [
-          62,
-          63
+          63,
+          64
         ],
         "spec.targets.ingress.selector": [
-          143,
-          144
+          144,
+          145
         ],
         "spec.targets.staticConfig.labels": [
-          145,
-          146
+          146,
+          147
         ],
         "spec.targets.staticConfig.relabelingConfigs": [
-          147,
-          148
+          148,
+          149
         ],
         "spec.targets.staticConfig.relabelingConfigs.action": [
-          50,
-          51
+          51,
+          52
         ],
         "spec.targets.staticConfig.relabelingConfigs.modulus": [
-          52,
-          53
+          53,
+          54
         ],
         "spec.targets.staticConfig.relabelingConfigs.regex": [
-          54,
-          55
+          55,
+          56
         ],
         "spec.targets.staticConfig.relabelingConfigs.replacement": [
-          56,
-          57
+          57,
+          58
         ],
         "spec.targets.staticConfig.relabelingConfigs.separator": [
-          58,
-          59
+          59,
+          60
         ],
         "spec.targets.staticConfig.relabelingConfigs.sourceLabels": [
-          60,
-          61
+          61,
+          62
         ],
         "spec.targets.staticConfig.relabelingConfigs.targetLabel": [
-          62,
-          63
+          63,
+          64
         ],
         "spec.targets.staticConfig.static": [
-          149,
-          150
+          150,
+          151
         ],
         "spec.tlsConfig": [
-          151,
-          13
+          152,
+          14
         ],
         "spec.tlsConfig.ca": [
-          93,
-          94
+          94,
+          95
         ],
         "spec.tlsConfig.ca.configMap": [
-          73,
-          74
+          74,
+          75
         ],
         "spec.tlsConfig.ca.secret": [
-          75,
-          76
+          76,
+          77
         ],
         "spec.tlsConfig.cert": [
-          95,
-          96
+          96,
+          97
         ],
         "spec.tlsConfig.cert.configMap": [
-          73,
-          74
+          74,
+          75
         ],
         "spec.tlsConfig.cert.secret": [
-          75,
-          76
+          76,
+          77
         ],
         "spec.tlsConfig.insecureSkipVerify": [
-          97,
-          98
+          98,
+          99
         ],
         "spec.tlsConfig.keySecret": [
-          99,
-          100
+          100,
+          101
         ],
         "spec.tlsConfig.maxVersion": [
-          101,
-          102
+          102,
+          103
         ],
         "spec.tlsConfig.minVersion": [
-          103,
-          104
+          104,
+          105
         ],
         "spec.tlsConfig.serverName": [
-          105,
-          106
+          106,
+          107
         ],
         "status": [
           null,
-          152
+          153
         ]
       }
     },
@@ -633,11 +644,11 @@
       "descriptions": {
         "spec.params": [
           null,
-          109
+          110
         ],
         "spec.scrapeClassicHistograms": [
-          153,
-          125
+          154,
+          126
         ]
       }
     },
@@ -653,19 +664,19 @@
       "descriptions": {
         "spec.prober.noProxy": [
           null,
-          81
+          82
         ],
         "spec.prober.proxyConnectHeader": [
           null,
-          83
+          84
         ],
         "spec.prober.proxyFromEnvironment": [
           null,
-          85
+          86
         ],
         "spec.prober.proxyUrl": [
-          154,
-          87
+          155,
+          88
         ]
       }
     },
@@ -685,35 +696,35 @@
       "descriptions": {
         "spec.convertClassicHistogramsToNHCB": [
           null,
-          32
+          33
         ],
         "spec.oauth2.noProxy": [
-          155,
-          81
+          156,
+          82
         ],
         "spec.oauth2.proxyConnectHeader": [
-          156,
-          83
+          157,
+          84
         ],
         "spec.oauth2.proxyFromEnvironment": [
-          157,
-          85
+          158,
+          86
         ],
         "spec.oauth2.tlsConfig.maxVersion": [
-          158,
-          101
+          159,
+          102
         ],
         "spec.oauth2.tlsConfig.minVersion": [
-          159,
-          103
+          160,
+          104
         ],
         "spec.tlsConfig.maxVersion": [
-          158,
-          101
+          159,
+          102
         ],
         "spec.tlsConfig.minVersion": [
-          159,
-          103
+          160,
+          104
         ]
       }
     },
@@ -723,8 +734,8 @@
       ],
       "descriptions": {
         "spec.scrapeTimeout": [
-          160,
-          129
+          161,
+          130
         ]
       }
     },
@@ -738,10 +749,10 @@
       "descriptions": {
         "spec.fallbackScrapeProtocol": [
           null,
-          34
+          35
         ],
         "spec.scrapeFallbackProtocol": [
-          34,
+          35,
           null
         ]
       }
@@ -753,7 +764,7 @@
       "descriptions": {
         "spec.scrapeFallbackProtocol": [
           null,
-          34
+          35
         ]
       }
     },
@@ -766,15 +777,15 @@
       "descriptions": {
         "spec.nativeHistogramBucketLimit": [
           null,
-          66
+          67
         ],
         "spec.nativeHistogramMinBucketFactor": [
           null,
-          68
+          69
         ],
         "spec.scrapeClassicHistograms": [
           null,
-          153
+          154
         ]
       }
     },
@@ -825,172 +836,172 @@
       "description": true,
       "descriptions": {
         "spec.authorization.credentials.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.authorization.type": [
-          163,
-          24
+          164,
+          25
         ],
         "spec.basicAuth.password.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.basicAuth.username.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.bearerTokenSecret.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.keepDroppedTargets": [
-          164,
-          40
+          165,
+          41
         ],
         "spec.metricRelabelings.action": [
-          165,
-          50
+          166,
+          51
         ],
         "spec.metricRelabelings.modulus": [
-          166,
-          52
+          167,
+          53
         ],
         "spec.metricRelabelings.replacement": [
-          167,
-          56
+          168,
+          57
         ],
         "spec.metricRelabelings.targetLabel": [
-          168,
-          62
+          169,
+          63
         ],
         "spec.oauth2.clientId.configMap.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.oauth2.clientId.secret.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.oauth2.clientSecret.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.oauth2.noProxy": [
-          169,
-          155
-        ],
-        "spec.oauth2.proxyConnectHeader": [
           170,
           156
         ],
-        "spec.oauth2.proxyConnectHeader.name": [
-          161,
-          162
-        ],
-        "spec.oauth2.proxyFromEnvironment": [
+        "spec.oauth2.proxyConnectHeader": [
           171,
           157
         ],
-        "spec.oauth2.proxyUrl": [
+        "spec.oauth2.proxyConnectHeader.name": [
+          162,
+          163
+        ],
+        "spec.oauth2.proxyFromEnvironment": [
           172,
-          87
+          158
+        ],
+        "spec.oauth2.proxyUrl": [
+          173,
+          88
         ],
         "spec.oauth2.tlsConfig.ca.configMap.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.oauth2.tlsConfig.ca.secret.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.oauth2.tlsConfig.cert.configMap.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.oauth2.tlsConfig.cert.secret.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.oauth2.tlsConfig.keySecret.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.oauth2.tlsConfig.maxVersion": [
-          173,
-          158
+          174,
+          159
         ],
         "spec.oauth2.tlsConfig.minVersion": [
-          174,
-          159
+          175,
+          160
         ],
         "spec.scrapeProtocols": [
-          175,
-          127
+          176,
+          128
         ],
         "spec.targets.ingress.relabelingConfigs.action": [
-          165,
-          50
+          166,
+          51
         ],
         "spec.targets.ingress.relabelingConfigs.modulus": [
-          166,
-          52
+          167,
+          53
         ],
         "spec.targets.ingress.relabelingConfigs.replacement": [
-          167,
-          56
+          168,
+          57
         ],
         "spec.targets.ingress.relabelingConfigs.targetLabel": [
-          168,
-          62
+          169,
+          63
         ],
         "spec.targets.staticConfig.relabelingConfigs.action": [
-          165,
-          50
+          166,
+          51
         ],
         "spec.targets.staticConfig.relabelingConfigs.modulus": [
-          166,
-          52
+          167,
+          53
         ],
         "spec.targets.staticConfig.relabelingConfigs.replacement": [
-          167,
-          56
+          168,
+          57
         ],
         "spec.targets.staticConfig.relabelingConfigs.targetLabel": [
-          168,
-          62
+          169,
+          63
         ],
         "spec.tlsConfig.ca.configMap.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.tlsConfig.ca.secret.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.tlsConfig.cert.configMap.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.tlsConfig.cert.secret.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.tlsConfig.keySecret.name": [
-          161,
-          162
+          162,
+          163
         ],
         "spec.tlsConfig.maxVersion": [
-          173,
-          158
-        ],
-        "spec.tlsConfig.minVersion": [
           174,
           159
         ],
+        "spec.tlsConfig.minVersion": [
+          175,
+          160
+        ],
         "": [
-          176,
-          177
+          177,
+          178
         ]
       }
     },
@@ -1008,35 +1019,35 @@
       "descriptions": {
         "spec.oauth2.noProxy": [
           null,
-          169
+          170
         ],
         "spec.oauth2.proxyConnectHeader": [
           null,
-          170
+          171
         ],
         "spec.oauth2.proxyFromEnvironment": [
           null,
-          171
+          172
         ],
         "spec.oauth2.proxyUrl": [
           null,
-          172
+          173
         ],
         "spec.oauth2.tlsConfig": [
           null,
-          91
+          92
         ],
         "spec.tlsConfig.maxVersion": [
           null,
-          173
+          174
         ],
         "spec.tlsConfig.minVersion": [
           null,
-          174
+          175
         ],
         "": [
-          178,
-          176
+          179,
+          177
         ]
       }
     },
@@ -1057,52 +1068,52 @@
       ],
       "descriptions": {
         "spec.authorization.credentials.name": [
-          179,
-          161
+          180,
+          162
         ],
         "spec.basicAuth.password.name": [
-          179,
-          161
+          180,
+          162
         ],
         "spec.basicAuth.username.name": [
-          179,
-          161
+          180,
+          162
         ],
         "spec.bearerTokenSecret.name": [
-          179,
-          161
+          180,
+          162
         ],
         "spec.oauth2.clientId.configMap.name": [
-          179,
-          161
+          180,
+          162
         ],
         "spec.oauth2.clientId.secret.name": [
-          179,
-          161
+          180,
+          162
         ],
         "spec.oauth2.clientSecret.name": [
-          179,
-          161
+          180,
+          162
         ],
         "spec.tlsConfig.ca.configMap.name": [
-          179,
-          161
+          180,
+          162
         ],
         "spec.tlsConfig.ca.secret.name": [
-          179,
-          161
+          180,
+          162
         ],
         "spec.tlsConfig.cert.configMap.name": [
-          179,
-          161
+          180,
+          162
         ],
         "spec.tlsConfig.cert.secret.name": [
-          179,
-          161
+          180,
+          162
         ],
         "spec.tlsConfig.keySecret.name": [
-          179,
-          161
+          180,
+          162
         ]
       }
     },
@@ -1167,228 +1178,228 @@
       ],
       "descriptions": {
         "apiVersion": [
-          180,
-          181
+          181,
+          182
         ],
         "kind": [
-          182,
-          183
+          183,
+          184
         ],
         "spec.authorization.credentials.name": [
-          184,
-          179
+          185,
+          180
         ],
         "spec.authorization.type": [
-          185,
-          163
+          186,
+          164
         ],
         "spec.basicAuth": [
-          186,
-          26
-        ],
-        "spec.basicAuth.password": [
           187,
           27
         ],
+        "spec.basicAuth.password": [
+          188,
+          28
+        ],
         "spec.basicAuth.password.name": [
-          184,
-          179
+          185,
+          180
         ],
         "spec.basicAuth.username": [
-          188,
-          29
+          189,
+          30
         ],
         "spec.basicAuth.username.name": [
-          184,
-          179
+          185,
+          180
         ],
         "spec.bearerTokenSecret": [
-          189,
-          31
+          190,
+          32
         ],
         "spec.bearerTokenSecret.name": [
-          184,
-          179
+          185,
+          180
         ],
         "spec.interval": [
-          190,
-          36
+          191,
+          37
         ],
         "spec.keepDroppedTargets": [
-          191,
-          164
+          192,
+          165
         ],
         "spec.labelLimit": [
-          192,
-          42
+          193,
+          43
         ],
         "spec.labelNameLengthLimit": [
-          193,
-          44
+          194,
+          45
         ],
         "spec.labelValueLengthLimit": [
-          194,
-          46
+          195,
+          47
         ],
         "spec.metricRelabelings.action": [
-          195,
-          165
+          196,
+          166
         ],
         "spec.metricRelabelings.modulus": [
-          196,
-          166
+          197,
+          167
         ],
         "spec.metricRelabelings.replacement": [
-          197,
-          167
+          198,
+          168
         ],
         "spec.metricRelabelings.sourceLabels": [
-          198,
-          60
+          199,
+          61
         ],
         "spec.metricRelabelings.targetLabel": [
-          199,
-          168
+          200,
+          169
         ],
         "spec.module": [
-          200,
-          64
+          201,
+          65
         ],
         "spec.oauth2.clientId": [
-          201,
-          71
+          202,
+          72
         ],
         "spec.oauth2.clientId.configMap.name": [
-          184,
-          179
+          185,
+          180
         ],
         "spec.oauth2.clientId.secret.name": [
-          184,
-          179
+          185,
+          180
         ],
         "spec.oauth2.clientSecret": [
-          202,
-          77
+          203,
+          78
         ],
         "spec.oauth2.clientSecret.name": [
-          184,
-          179
+          185,
+          180
         ],
         "spec.oauth2.endpointParams": [
-          203,
-          79
+          204,
+          80
         ],
         "spec.prober": [
-          204,
-          115
+          205,
+          116
         ],
         "spec.prober.path": [
-          205,
-          117
+          206,
+          118
         ],
         "spec.prober.scheme": [
-          206,
-          119
+          207,
+          120
         ],
         "spec.scrapeProtocols": [
-          207,
-          175
+          208,
+          176
         ],
         "spec.scrapeTimeout": [
-          208,
-          160
+          209,
+          161
         ],
         "spec.targets.ingress": [
-          209,
-          210
+          210,
+          211
         ],
         "spec.targets.ingress.namespaceSelector.any": [
-          211,
-          137
+          212,
+          138
         ],
         "spec.targets.ingress.relabelingConfigs": [
-          212,
-          141
+          213,
+          142
         ],
         "spec.targets.ingress.relabelingConfigs.action": [
-          195,
-          165
+          196,
+          166
         ],
         "spec.targets.ingress.relabelingConfigs.modulus": [
-          196,
-          166
+          197,
+          167
         ],
         "spec.targets.ingress.relabelingConfigs.replacement": [
-          197,
-          167
-        ],
-        "spec.targets.ingress.relabelingConfigs.sourceLabels": [
           198,
-          60
-        ],
-        "spec.targets.ingress.relabelingConfigs.targetLabel": [
-          199,
           168
         ],
+        "spec.targets.ingress.relabelingConfigs.sourceLabels": [
+          199,
+          61
+        ],
+        "spec.targets.ingress.relabelingConfigs.targetLabel": [
+          200,
+          169
+        ],
         "spec.targets.ingress.selector.matchExpressions.operator": [
-          213,
-          214
+          214,
+          215
         ],
         "spec.targets.ingress.selector.matchExpressions.values": [
-          215,
-          216
+          216,
+          217
         ],
         "spec.targets.ingress.selector.matchLabels": [
-          217,
-          218
+          218,
+          219
         ],
         "spec.targets.staticConfig": [
-          219,
-          220
+          220,
+          221
         ],
         "spec.targets.staticConfig.relabelingConfigs": [
-          221,
-          147
+          222,
+          148
         ],
         "spec.targets.staticConfig.relabelingConfigs.action": [
-          195,
-          165
-        ],
-        "spec.targets.staticConfig.relabelingConfigs.modulus": [
           196,
           166
         ],
-        "spec.targets.staticConfig.relabelingConfigs.replacement": [
+        "spec.targets.staticConfig.relabelingConfigs.modulus": [
           197,
           167
         ],
-        "spec.targets.staticConfig.relabelingConfigs.sourceLabels": [
+        "spec.targets.staticConfig.relabelingConfigs.replacement": [
           198,
-          60
-        ],
-        "spec.targets.staticConfig.relabelingConfigs.targetLabel": [
-          199,
           168
         ],
+        "spec.targets.staticConfig.relabelingConfigs.sourceLabels": [
+          199,
+          61
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.targetLabel": [
+          200,
+          169
+        ],
         "spec.tlsConfig.ca.configMap.name": [
-          184,
-          179
+          185,
+          180
         ],
         "spec.tlsConfig.ca.secret.name": [
-          184,
-          179
+          185,
+          180
         ],
         "spec.tlsConfig.cert.configMap.name": [
-          184,
-          179
+          185,
+          180
         ],
         "spec.tlsConfig.cert.secret.name": [
-          184,
-          179
+          185,
+          180
         ],
         "spec.tlsConfig.keySecret.name": [
-          184,
-          179
+          185,
+          180
         ]
       }
     },
@@ -1400,11 +1411,11 @@
       "descriptions": {
         "spec.scrapeClass": [
           null,
-          123
+          124
         ],
         "spec.scrapeProtocols": [
           null,
-          207
+          208
         ]
       }
     },
@@ -1420,32 +1431,32 @@
       ],
       "descriptions": {
         "spec.basicAuth.password": [
-          222,
-          187
-        ],
-        "spec.basicAuth.username": [
           223,
           188
         ],
-        "spec.oauth2.clientId": [
+        "spec.basicAuth.username": [
           224,
-          201
+          189
         ],
-        "spec.oauth2.clientSecret": [
+        "spec.oauth2.clientId": [
           225,
           202
         ],
-        "spec.oauth2.endpointParams": [
+        "spec.oauth2.clientSecret": [
           226,
           203
         ],
-        "spec.oauth2.scopes": [
+        "spec.oauth2.endpointParams": [
           227,
-          89
+          204
+        ],
+        "spec.oauth2.scopes": [
+          228,
+          90
         ],
         "spec.oauth2.tokenUrl": [
-          228,
-          107
+          229,
+          108
         ]
       }
     },
@@ -1456,7 +1467,7 @@
       "descriptions": {
         "spec.keepDroppedTargets": [
           null,
-          191
+          192
         ]
       }
     },
@@ -1488,96 +1499,96 @@
       ],
       "descriptions": {
         "spec.authorization.credentials": [
-          229,
-          22
+          230,
+          23
         ],
         "spec.authorization.type": [
-          230,
-          185
+          231,
+          186
         ],
         "spec.metricRelabelings.action": [
-          231,
-          195
+          232,
+          196
         ],
         "spec.metricRelabelings.modulus": [
-          232,
-          196
+          233,
+          197
         ],
         "spec.metricRelabelings.regex": [
-          233,
-          54
+          234,
+          55
         ],
         "spec.metricRelabelings.replacement": [
-          234,
-          197
+          235,
+          198
         ],
         "spec.metricRelabelings.separator": [
-          235,
-          58
+          236,
+          59
         ],
         "spec.metricRelabelings.sourceLabels": [
-          236,
-          198
+          237,
+          199
         ],
         "spec.metricRelabelings.targetLabel": [
-          237,
-          199
+          238,
+          200
         ],
         "spec.targets.ingress.relabelingConfigs.action": [
-          231,
-          195
+          232,
+          196
         ],
         "spec.targets.ingress.relabelingConfigs.modulus": [
-          232,
-          196
+          233,
+          197
         ],
         "spec.targets.ingress.relabelingConfigs.regex": [
-          233,
-          54
+          234,
+          55
         ],
         "spec.targets.ingress.relabelingConfigs.replacement": [
-          234,
-          197
-        ],
-        "spec.targets.ingress.relabelingConfigs.separator": [
           235,
-          58
-        ],
-        "spec.targets.ingress.relabelingConfigs.sourceLabels": [
-          236,
           198
         ],
-        "spec.targets.ingress.relabelingConfigs.targetLabel": [
+        "spec.targets.ingress.relabelingConfigs.separator": [
+          236,
+          59
+        ],
+        "spec.targets.ingress.relabelingConfigs.sourceLabels": [
           237,
           199
         ],
-        "spec.targets.staticConfig.relabelingConfigs.action": [
-          231,
-          195
+        "spec.targets.ingress.relabelingConfigs.targetLabel": [
+          238,
+          200
         ],
-        "spec.targets.staticConfig.relabelingConfigs.modulus": [
+        "spec.targets.staticConfig.relabelingConfigs.action": [
           232,
           196
         ],
-        "spec.targets.staticConfig.relabelingConfigs.regex": [
+        "spec.targets.staticConfig.relabelingConfigs.modulus": [
           233,
-          54
-        ],
-        "spec.targets.staticConfig.relabelingConfigs.replacement": [
-          234,
           197
         ],
-        "spec.targets.staticConfig.relabelingConfigs.separator": [
-          235,
-          58
+        "spec.targets.staticConfig.relabelingConfigs.regex": [
+          234,
+          55
         ],
-        "spec.targets.staticConfig.relabelingConfigs.sourceLabels": [
-          236,
+        "spec.targets.staticConfig.relabelingConfigs.replacement": [
+          235,
           198
         ],
-        "spec.targets.staticConfig.relabelingConfigs.targetLabel": [
+        "spec.targets.staticConfig.relabelingConfigs.separator": [
+          236,
+          59
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.sourceLabels": [
           237,
           199
+        ],
+        "spec.targets.staticConfig.relabelingConfigs.targetLabel": [
+          238,
+          200
         ]
       }
     },
@@ -1588,12 +1599,12 @@
       ],
       "descriptions": {
         "spec.prober.scheme": [
-          238,
-          206
+          239,
+          207
         ],
         "spec.scrapeTimeout": [
-          239,
-          208
+          240,
+          209
         ]
       }
     },
@@ -1604,12 +1615,12 @@
       ],
       "descriptions": {
         "spec.tlsConfig.ca": [
-          240,
-          93
+          241,
+          94
         ],
         "spec.tlsConfig.cert": [
-          241,
-          95
+          242,
+          96
         ]
       }
     },
@@ -1621,16 +1632,16 @@
       ],
       "descriptions": {
         "spec.metricRelabelings.action": [
-          242,
-          231
+          243,
+          232
         ],
         "spec.targets.ingress.relabelingConfigs.action": [
-          242,
-          231
+          243,
+          232
         ],
         "spec.targets.staticConfig.relabelingConfigs.action": [
-          242,
-          231
+          243,
+          232
         ]
       }
     },
@@ -1640,8 +1651,8 @@
       ],
       "descriptions": {
         "spec.scrapeTimeout": [
-          243,
-          239
+          244,
+          240
         ]
       }
     },
@@ -1659,40 +1670,40 @@
       ],
       "descriptions": {
         "spec.targets": [
-          244,
-          133
+          245,
+          134
         ],
         "spec.targets.ingress": [
-          245,
-          209
+          246,
+          210
         ],
         "spec.targets.ingress.namespaceSelector": [
-          246,
-          135
+          247,
+          136
         ],
         "spec.targets.ingress.namespaceSelector.matchNames": [
-          247,
-          139
+          248,
+          140
         ],
         "spec.targets.ingress.relabelingConfigs": [
-          248,
-          212
+          249,
+          213
         ],
         "spec.targets.ingress.selector": [
-          249,
-          143
+          250,
+          144
         ],
         "spec.targets.staticConfig": [
-          250,
-          219
+          251,
+          220
         ],
         "spec.targets.staticConfig.relabelingConfigs": [
-          248,
-          221
+          249,
+          222
         ],
         "spec.targets.staticConfig.static": [
-          251,
-          149
+          252,
+          150
         ]
       }
     },
@@ -1703,7 +1714,7 @@
       "descriptions": {
         "spec.metricRelabelings": [
           null,
-          48
+          49
         ]
       }
     },
@@ -1720,31 +1731,31 @@
       "descriptions": {
         "spec.authorization": [
           null,
-          21
+          22
         ],
         "spec.labelLimit": [
           null,
-          192
+          193
         ],
         "spec.labelNameLengthLimit": [
           null,
-          193
+          194
         ],
         "spec.labelValueLengthLimit": [
           null,
-          194
+          195
         ],
         "spec.oauth2": [
           null,
-          70
+          71
         ],
         "spec.sampleLimit": [
           null,
-          121
+          122
         ],
         "spec.targetLimit": [
           null,
-          131
+          132
         ]
       }
     },
@@ -1755,7 +1766,7 @@
       "descriptions": {
         "spec.prober.proxyUrl": [
           null,
-          154
+          155
         ]
       }
     },
@@ -1768,15 +1779,15 @@
       "descriptions": {
         "spec.basicAuth": [
           null,
-          186
+          187
         ],
         "spec.bearerTokenSecret": [
           null,
-          189
+          190
         ],
         "spec.tlsConfig": [
           null,
-          151
+          152
         ]
       }
     },
@@ -1787,12 +1798,13 @@
       "descriptions": {
         "spec.targets.staticConfig.relabelingConfigs": [
           null,
-          248
+          249
         ]
       }
     }
   },
   "texts": [
+    "extraScrapeMetrics defines whether to store additional time series for each scrape:\n`scrape_timeout_seconds`, `scrape_sample_limit` and `scrape_body_size_bytes`.\nThese metrics help monitor how close targets are to their configured limits.\n\nIt requires Prometheus >= v3.10.0.",
     "The key to select.",
     "The key to select from the ConfigMap's Data field.\nKeys in the BinaryData field are not currently propagated to container env vars.",
     "authorization section for this endpoint",

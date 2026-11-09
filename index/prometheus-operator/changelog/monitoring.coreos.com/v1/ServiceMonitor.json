@@ -1,5 +1,28 @@
 {
   "versions": {
+    "v0.95.0": {
+      "descriptionChanged": [
+        "spec.endpoints.targetPort"
+      ],
+      "added": {
+        "spec.extraScrapeMetrics": "boolean"
+      },
+      "description": true,
+      "descriptions": {
+        "spec.endpoints.targetPort": [
+          0,
+          1
+        ],
+        "spec.extraScrapeMetrics": [
+          null,
+          2
+        ],
+        "": [
+          3,
+          4
+        ]
+      }
+    },
     "v0.94.0": {
       "descriptionChanged": [
         "spec.endpoints.oauth2.clientId.configMap.key",
@@ -10,24 +33,24 @@
       ],
       "descriptions": {
         "spec.endpoints.oauth2.clientId.configMap.key": [
-          0,
-          1
+          5,
+          6
         ],
         "spec.endpoints.oauth2.tlsConfig.ca.configMap.key": [
-          0,
-          1
+          5,
+          6
         ],
         "spec.endpoints.oauth2.tlsConfig.cert.configMap.key": [
-          0,
-          1
+          5,
+          6
         ],
         "spec.endpoints.tlsConfig.ca.configMap.key": [
-          0,
-          1
+          5,
+          6
         ],
         "spec.endpoints.tlsConfig.cert.configMap.key": [
-          0,
-          1
+          5,
+          6
         ]
       }
     },
@@ -39,16 +62,16 @@
       ],
       "descriptions": {
         "spec.attachMetadata.node": [
-          2,
-          3
+          7,
+          8
         ],
         "spec.endpoints.port": [
-          4,
-          5
+          9,
+          10
         ],
         "spec.endpoints.targetPort": [
-          6,
-          7
+          11,
+          0
         ]
       }
     },
@@ -67,36 +90,36 @@
       },
       "descriptions": {
         "spec.endpoints.authorization": [
-          8,
-          9
-        ],
-        "spec.endpoints.basicAuth": [
-          10,
-          11
-        ],
-        "spec.endpoints.bearerTokenSecret": [
           12,
           13
         ],
-        "spec.endpoints.enableHttp2": [
+        "spec.endpoints.basicAuth": [
           14,
           15
         ],
-        "spec.endpoints.followRedirects": [
+        "spec.endpoints.bearerTokenSecret": [
           16,
           17
         ],
-        "spec.endpoints.oauth2": [
+        "spec.endpoints.enableHttp2": [
           18,
           19
         ],
-        "spec.endpoints.tlsConfig": [
+        "spec.endpoints.followRedirects": [
           20,
           21
         ],
+        "spec.endpoints.oauth2": [
+          22,
+          23
+        ],
+        "spec.endpoints.tlsConfig": [
+          24,
+          25
+        ],
         "spec.scrapeNativeHistograms": [
           null,
-          22
+          26
         ]
       }
     },
@@ -106,8 +129,8 @@
       ],
       "descriptions": {
         "spec.endpoints.scheme": [
-          23,
-          24
+          27,
+          28
         ]
       }
     },
@@ -237,480 +260,480 @@
       },
       "descriptions": {
         "spec": [
-          25,
-          26
+          29,
+          30
         ],
         "spec.attachMetadata": [
-          27,
-          28
+          31,
+          32
         ],
         "spec.attachMetadata.node": [
-          29,
-          2
+          33,
+          7
         ],
         "spec.bodySizeLimit": [
-          30,
-          31
-        ],
-        "spec.convertClassicHistogramsToNHCB": [
-          32,
-          33
-        ],
-        "spec.endpoints": [
           34,
           35
         ],
-        "spec.endpoints.authorization": [
+        "spec.convertClassicHistogramsToNHCB": [
           36,
-          8
+          37
+        ],
+        "spec.endpoints": [
+          38,
+          39
+        ],
+        "spec.endpoints.authorization": [
+          40,
+          12
         ],
         "spec.endpoints.authorization.credentials": [
-          37,
-          38
+          41,
+          42
         ],
         "spec.endpoints.authorization.type": [
-          39,
-          40
+          43,
+          44
         ],
         "spec.endpoints.basicAuth": [
-          41,
-          10
+          45,
+          14
         ],
         "spec.endpoints.basicAuth.password": [
-          42,
-          43
-        ],
-        "spec.endpoints.basicAuth.username": [
-          44,
-          45
-        ],
-        "spec.endpoints.bearerTokenFile": [
           46,
           47
         ],
-        "spec.endpoints.bearerTokenSecret": [
+        "spec.endpoints.basicAuth.username": [
           48,
-          12
+          49
         ],
-        "spec.endpoints.enableHttp2": [
-          49,
-          14
-        ],
-        "spec.endpoints.filterRunning": [
+        "spec.endpoints.bearerTokenFile": [
           50,
           51
         ],
-        "spec.endpoints.followRedirects": [
+        "spec.endpoints.bearerTokenSecret": [
           52,
           16
         ],
-        "spec.endpoints.honorLabels": [
+        "spec.endpoints.enableHttp2": [
           53,
-          54
+          18
         ],
-        "spec.endpoints.honorTimestamps": [
-          55,
-          56
+        "spec.endpoints.filterRunning": [
+          54,
+          55
         ],
-        "spec.endpoints.interval": [
+        "spec.endpoints.followRedirects": [
+          56,
+          20
+        ],
+        "spec.endpoints.honorLabels": [
           57,
           58
         ],
-        "spec.endpoints.metricRelabelings": [
+        "spec.endpoints.honorTimestamps": [
           59,
           60
         ],
-        "spec.endpoints.metricRelabelings.action": [
+        "spec.endpoints.interval": [
           61,
           62
         ],
-        "spec.endpoints.metricRelabelings.modulus": [
+        "spec.endpoints.metricRelabelings": [
           63,
           64
         ],
-        "spec.endpoints.metricRelabelings.regex": [
+        "spec.endpoints.metricRelabelings.action": [
           65,
           66
         ],
-        "spec.endpoints.metricRelabelings.replacement": [
+        "spec.endpoints.metricRelabelings.modulus": [
           67,
           68
         ],
-        "spec.endpoints.metricRelabelings.separator": [
+        "spec.endpoints.metricRelabelings.regex": [
           69,
           70
         ],
-        "spec.endpoints.metricRelabelings.sourceLabels": [
+        "spec.endpoints.metricRelabelings.replacement": [
           71,
           72
         ],
-        "spec.endpoints.metricRelabelings.targetLabel": [
+        "spec.endpoints.metricRelabelings.separator": [
           73,
           74
         ],
-        "spec.endpoints.noProxy": [
+        "spec.endpoints.metricRelabelings.sourceLabels": [
           75,
           76
         ],
-        "spec.endpoints.oauth2": [
+        "spec.endpoints.metricRelabelings.targetLabel": [
           77,
-          18
+          78
+        ],
+        "spec.endpoints.noProxy": [
+          79,
+          80
+        ],
+        "spec.endpoints.oauth2": [
+          81,
+          22
         ],
         "spec.endpoints.oauth2.clientId": [
-          78,
-          79
-        ],
-        "spec.endpoints.oauth2.clientId.configMap": [
-          80,
-          81
-        ],
-        "spec.endpoints.oauth2.clientId.secret": [
           82,
           83
         ],
-        "spec.endpoints.oauth2.clientSecret": [
+        "spec.endpoints.oauth2.clientId.configMap": [
           84,
           85
         ],
-        "spec.endpoints.oauth2.endpointParams": [
+        "spec.endpoints.oauth2.clientId.secret": [
           86,
           87
         ],
-        "spec.endpoints.oauth2.noProxy": [
-          75,
-          76
-        ],
-        "spec.endpoints.oauth2.proxyConnectHeader": [
+        "spec.endpoints.oauth2.clientSecret": [
           88,
           89
         ],
-        "spec.endpoints.oauth2.proxyFromEnvironment": [
+        "spec.endpoints.oauth2.endpointParams": [
           90,
           91
         ],
-        "spec.endpoints.oauth2.proxyUrl": [
+        "spec.endpoints.oauth2.noProxy": [
+          79,
+          80
+        ],
+        "spec.endpoints.oauth2.proxyConnectHeader": [
           92,
           93
         ],
-        "spec.endpoints.oauth2.scopes": [
+        "spec.endpoints.oauth2.proxyFromEnvironment": [
           94,
           95
         ],
-        "spec.endpoints.oauth2.tlsConfig": [
+        "spec.endpoints.oauth2.proxyUrl": [
           96,
           97
         ],
-        "spec.endpoints.oauth2.tlsConfig.ca": [
+        "spec.endpoints.oauth2.scopes": [
           98,
           99
         ],
-        "spec.endpoints.oauth2.tlsConfig.ca.configMap": [
-          80,
-          81
-        ],
-        "spec.endpoints.oauth2.tlsConfig.ca.secret": [
-          82,
-          83
-        ],
-        "spec.endpoints.oauth2.tlsConfig.cert": [
+        "spec.endpoints.oauth2.tlsConfig": [
           100,
           101
         ],
-        "spec.endpoints.oauth2.tlsConfig.cert.configMap": [
-          80,
-          81
-        ],
-        "spec.endpoints.oauth2.tlsConfig.cert.secret": [
-          82,
-          83
-        ],
-        "spec.endpoints.oauth2.tlsConfig.insecureSkipVerify": [
+        "spec.endpoints.oauth2.tlsConfig.ca": [
           102,
           103
         ],
-        "spec.endpoints.oauth2.tlsConfig.keySecret": [
+        "spec.endpoints.oauth2.tlsConfig.ca.configMap": [
+          84,
+          85
+        ],
+        "spec.endpoints.oauth2.tlsConfig.ca.secret": [
+          86,
+          87
+        ],
+        "spec.endpoints.oauth2.tlsConfig.cert": [
           104,
           105
         ],
-        "spec.endpoints.oauth2.tlsConfig.maxVersion": [
+        "spec.endpoints.oauth2.tlsConfig.cert.configMap": [
+          84,
+          85
+        ],
+        "spec.endpoints.oauth2.tlsConfig.cert.secret": [
+          86,
+          87
+        ],
+        "spec.endpoints.oauth2.tlsConfig.insecureSkipVerify": [
           106,
           107
         ],
-        "spec.endpoints.oauth2.tlsConfig.minVersion": [
+        "spec.endpoints.oauth2.tlsConfig.keySecret": [
           108,
           109
         ],
-        "spec.endpoints.oauth2.tlsConfig.serverName": [
+        "spec.endpoints.oauth2.tlsConfig.maxVersion": [
           110,
           111
         ],
-        "spec.endpoints.oauth2.tokenUrl": [
+        "spec.endpoints.oauth2.tlsConfig.minVersion": [
           112,
           113
         ],
-        "spec.endpoints.path": [
+        "spec.endpoints.oauth2.tlsConfig.serverName": [
           114,
           115
         ],
-        "spec.endpoints.port": [
+        "spec.endpoints.oauth2.tokenUrl": [
           116,
-          4
+          117
+        ],
+        "spec.endpoints.path": [
+          118,
+          119
+        ],
+        "spec.endpoints.port": [
+          120,
+          9
         ],
         "spec.endpoints.proxyConnectHeader": [
-          88,
-          89
-        ],
-        "spec.endpoints.proxyFromEnvironment": [
-          90,
-          91
-        ],
-        "spec.endpoints.proxyUrl": [
           92,
           93
         ],
+        "spec.endpoints.proxyFromEnvironment": [
+          94,
+          95
+        ],
+        "spec.endpoints.proxyUrl": [
+          96,
+          97
+        ],
         "spec.endpoints.relabelings": [
-          117,
-          118
+          121,
+          122
         ],
         "spec.endpoints.relabelings.action": [
-          61,
-          62
-        ],
-        "spec.endpoints.relabelings.modulus": [
-          63,
-          64
-        ],
-        "spec.endpoints.relabelings.regex": [
           65,
           66
         ],
-        "spec.endpoints.relabelings.replacement": [
+        "spec.endpoints.relabelings.modulus": [
           67,
           68
         ],
-        "spec.endpoints.relabelings.separator": [
+        "spec.endpoints.relabelings.regex": [
           69,
           70
         ],
-        "spec.endpoints.relabelings.sourceLabels": [
+        "spec.endpoints.relabelings.replacement": [
           71,
           72
         ],
-        "spec.endpoints.relabelings.targetLabel": [
+        "spec.endpoints.relabelings.separator": [
           73,
           74
         ],
+        "spec.endpoints.relabelings.sourceLabels": [
+          75,
+          76
+        ],
+        "spec.endpoints.relabelings.targetLabel": [
+          77,
+          78
+        ],
         "spec.endpoints.scheme": [
-          119,
-          23
+          123,
+          27
         ],
         "spec.endpoints.scrapeTimeout": [
-          120,
-          121
-        ],
-        "spec.endpoints.targetPort": [
-          122,
-          6
-        ],
-        "spec.endpoints.tlsConfig": [
-          123,
-          20
-        ],
-        "spec.endpoints.tlsConfig.ca": [
-          98,
-          99
-        ],
-        "spec.endpoints.tlsConfig.ca.configMap": [
-          80,
-          81
-        ],
-        "spec.endpoints.tlsConfig.ca.secret": [
-          82,
-          83
-        ],
-        "spec.endpoints.tlsConfig.caFile": [
           124,
           125
         ],
-        "spec.endpoints.tlsConfig.cert": [
-          100,
-          101
-        ],
-        "spec.endpoints.tlsConfig.cert.configMap": [
-          80,
-          81
-        ],
-        "spec.endpoints.tlsConfig.cert.secret": [
-          82,
-          83
-        ],
-        "spec.endpoints.tlsConfig.certFile": [
+        "spec.endpoints.targetPort": [
           126,
-          127
+          11
         ],
-        "spec.endpoints.tlsConfig.insecureSkipVerify": [
+        "spec.endpoints.tlsConfig": [
+          127,
+          24
+        ],
+        "spec.endpoints.tlsConfig.ca": [
           102,
           103
         ],
-        "spec.endpoints.tlsConfig.keyFile": [
+        "spec.endpoints.tlsConfig.ca.configMap": [
+          84,
+          85
+        ],
+        "spec.endpoints.tlsConfig.ca.secret": [
+          86,
+          87
+        ],
+        "spec.endpoints.tlsConfig.caFile": [
           128,
           129
         ],
-        "spec.endpoints.tlsConfig.keySecret": [
+        "spec.endpoints.tlsConfig.cert": [
           104,
           105
         ],
-        "spec.endpoints.tlsConfig.maxVersion": [
-          106,
-          107
+        "spec.endpoints.tlsConfig.cert.configMap": [
+          84,
+          85
         ],
-        "spec.endpoints.tlsConfig.minVersion": [
-          108,
-          109
+        "spec.endpoints.tlsConfig.cert.secret": [
+          86,
+          87
         ],
-        "spec.endpoints.tlsConfig.serverName": [
-          110,
-          111
-        ],
-        "spec.endpoints.trackTimestampsStaleness": [
+        "spec.endpoints.tlsConfig.certFile": [
           130,
           131
         ],
-        "spec.fallbackScrapeProtocol": [
+        "spec.endpoints.tlsConfig.insecureSkipVerify": [
+          106,
+          107
+        ],
+        "spec.endpoints.tlsConfig.keyFile": [
           132,
           133
         ],
-        "spec.jobLabel": [
+        "spec.endpoints.tlsConfig.keySecret": [
+          108,
+          109
+        ],
+        "spec.endpoints.tlsConfig.maxVersion": [
+          110,
+          111
+        ],
+        "spec.endpoints.tlsConfig.minVersion": [
+          112,
+          113
+        ],
+        "spec.endpoints.tlsConfig.serverName": [
+          114,
+          115
+        ],
+        "spec.endpoints.trackTimestampsStaleness": [
           134,
           135
         ],
-        "spec.keepDroppedTargets": [
+        "spec.fallbackScrapeProtocol": [
           136,
           137
         ],
-        "spec.labelLimit": [
+        "spec.jobLabel": [
           138,
           139
         ],
-        "spec.labelNameLengthLimit": [
+        "spec.keepDroppedTargets": [
           140,
           141
         ],
-        "spec.labelValueLengthLimit": [
+        "spec.labelLimit": [
           142,
           143
         ],
-        "spec.namespaceSelector": [
+        "spec.labelNameLengthLimit": [
           144,
           145
         ],
-        "spec.namespaceSelector.any": [
+        "spec.labelValueLengthLimit": [
           146,
           147
         ],
-        "spec.namespaceSelector.matchNames": [
+        "spec.namespaceSelector": [
           148,
           149
         ],
-        "spec.nativeHistogramBucketLimit": [
+        "spec.namespaceSelector.any": [
           150,
           151
         ],
-        "spec.nativeHistogramMinBucketFactor": [
+        "spec.namespaceSelector.matchNames": [
           152,
           153
         ],
-        "spec.podTargetLabels": [
+        "spec.nativeHistogramBucketLimit": [
           154,
           155
         ],
-        "spec.sampleLimit": [
+        "spec.nativeHistogramMinBucketFactor": [
           156,
           157
         ],
-        "spec.scrapeClass": [
+        "spec.podTargetLabels": [
           158,
           159
         ],
-        "spec.scrapeClassicHistograms": [
+        "spec.sampleLimit": [
           160,
           161
         ],
-        "spec.scrapeProtocols": [
+        "spec.scrapeClass": [
           162,
           163
         ],
-        "spec.selector": [
+        "spec.scrapeClassicHistograms": [
           164,
           165
         ],
-        "spec.selectorMechanism": [
+        "spec.scrapeProtocols": [
           166,
           167
         ],
+        "spec.selector": [
+          168,
+          169
+        ],
+        "spec.selectorMechanism": [
+          170,
+          171
+        ],
         "spec.serviceDiscoveryRole": [
           null,
-          168
-        ],
-        "spec.targetLabels": [
-          169,
-          170
-        ],
-        "spec.targetLimit": [
-          171,
           172
         ],
-        "status": [
+        "spec.targetLabels": [
           173,
           174
         ],
-        "status.bindings": [
+        "spec.targetLimit": [
           175,
           176
         ],
-        "status.bindings.conditions": [
+        "status": [
           177,
           178
         ],
-        "status.bindings.conditions.lastTransitionTime": [
+        "status.bindings": [
           179,
           180
         ],
-        "status.bindings.conditions.message": [
+        "status.bindings.conditions": [
           181,
           182
         ],
-        "status.bindings.conditions.observedGeneration": [
+        "status.bindings.conditions.lastTransitionTime": [
           183,
           184
         ],
-        "status.bindings.conditions.reason": [
+        "status.bindings.conditions.message": [
           185,
           186
         ],
-        "status.bindings.conditions.status": [
+        "status.bindings.conditions.observedGeneration": [
           187,
           188
         ],
-        "status.bindings.conditions.type": [
+        "status.bindings.conditions.reason": [
           189,
           190
         ],
-        "status.bindings.group": [
+        "status.bindings.conditions.status": [
           191,
           192
         ],
-        "status.bindings.name": [
+        "status.bindings.conditions.type": [
           193,
           194
         ],
-        "status.bindings.namespace": [
+        "status.bindings.group": [
           195,
           196
         ],
-        "status.bindings.resource": [
+        "status.bindings.name": [
           197,
           198
+        ],
+        "status.bindings.namespace": [
+          199,
+          200
+        ],
+        "status.bindings.resource": [
+          201,
+          202
         ]
       }
     },
@@ -720,8 +743,8 @@
       ],
       "descriptions": {
         "spec.scrapeClassicHistograms": [
-          199,
-          160
+          203,
+          164
         ]
       }
     },
@@ -738,23 +761,23 @@
       "descriptions": {
         "spec.endpoints.noProxy": [
           null,
-          75
+          79
         ],
         "spec.endpoints.proxyConnectHeader": [
           null,
-          88
+          92
         ],
         "spec.endpoints.proxyFromEnvironment": [
           null,
-          90
+          94
         ],
         "spec.endpoints.proxyUrl": [
-          200,
-          92
+          204,
+          96
         ],
         "status": [
           null,
-          173
+          177
         ]
       }
     },
@@ -774,35 +797,35 @@
       "descriptions": {
         "spec.convertClassicHistogramsToNHCB": [
           null,
-          32
+          36
         ],
         "spec.endpoints.oauth2.noProxy": [
-          201,
-          75
+          205,
+          79
         ],
         "spec.endpoints.oauth2.proxyConnectHeader": [
-          202,
-          88
+          206,
+          92
         ],
         "spec.endpoints.oauth2.proxyFromEnvironment": [
-          203,
-          90
+          207,
+          94
         ],
         "spec.endpoints.oauth2.tlsConfig.maxVersion": [
-          204,
-          106
+          208,
+          110
         ],
         "spec.endpoints.oauth2.tlsConfig.minVersion": [
-          205,
-          108
+          209,
+          112
         ],
         "spec.endpoints.tlsConfig.maxVersion": [
-          204,
-          106
+          208,
+          110
         ],
         "spec.endpoints.tlsConfig.minVersion": [
-          205,
-          108
+          209,
+          112
         ]
       }
     },
@@ -812,8 +835,8 @@
       ],
       "descriptions": {
         "spec.endpoints.scrapeTimeout": [
-          206,
-          120
+          210,
+          124
         ]
       }
     },
@@ -827,10 +850,10 @@
       "descriptions": {
         "spec.fallbackScrapeProtocol": [
           null,
-          132
+          136
         ],
         "spec.scrapeFallbackProtocol": [
-          132,
+          136,
           null
         ]
       }
@@ -843,11 +866,11 @@
       "descriptions": {
         "spec.scrapeFallbackProtocol": [
           null,
-          132
+          136
         ],
         "spec.selectorMechanism": [
           null,
-          166
+          170
         ]
       }
     },
@@ -860,15 +883,15 @@
       "descriptions": {
         "spec.nativeHistogramBucketLimit": [
           null,
-          150
+          154
         ],
         "spec.nativeHistogramMinBucketFactor": [
           null,
-          152
+          156
         ],
         "spec.scrapeClassicHistograms": [
           null,
-          199
+          203
         ]
       }
     },
@@ -935,236 +958,236 @@
       "description": true,
       "descriptions": {
         "spec.attachMetadata": [
-          207,
-          27
+          211,
+          31
         ],
         "spec.attachMetadata.node": [
-          208,
-          29
+          212,
+          33
         ],
         "spec.bodySizeLimit": [
-          209,
-          30
+          213,
+          34
         ],
         "spec.endpoints.authorization": [
-          210,
-          36
+          214,
+          40
         ],
         "spec.endpoints.authorization.credentials.name": [
-          211,
-          212
+          215,
+          216
         ],
         "spec.endpoints.authorization.type": [
-          213,
-          39
+          217,
+          43
         ],
         "spec.endpoints.basicAuth": [
-          214,
-          41
+          218,
+          45
         ],
         "spec.endpoints.basicAuth.password.name": [
-          211,
-          212
+          215,
+          216
         ],
         "spec.endpoints.basicAuth.username.name": [
-          211,
-          212
+          215,
+          216
         ],
         "spec.endpoints.bearerTokenFile": [
-          215,
-          46
-        ],
-        "spec.endpoints.bearerTokenSecret": [
-          216,
-          48
-        ],
-        "spec.endpoints.bearerTokenSecret.name": [
-          211,
-          212
-        ],
-        "spec.endpoints.filterRunning": [
-          217,
+          219,
           50
         ],
+        "spec.endpoints.bearerTokenSecret": [
+          220,
+          52
+        ],
+        "spec.endpoints.bearerTokenSecret.name": [
+          215,
+          216
+        ],
+        "spec.endpoints.filterRunning": [
+          221,
+          54
+        ],
         "spec.endpoints.interval": [
-          218,
-          57
+          222,
+          61
         ],
         "spec.endpoints.metricRelabelings.action": [
-          219,
-          61
+          223,
+          65
         ],
         "spec.endpoints.metricRelabelings.modulus": [
-          220,
-          63
+          224,
+          67
         ],
         "spec.endpoints.metricRelabelings.replacement": [
-          221,
-          67
+          225,
+          71
         ],
         "spec.endpoints.metricRelabelings.targetLabel": [
-          222,
-          73
-        ],
-        "spec.endpoints.oauth2": [
-          223,
+          226,
           77
         ],
+        "spec.endpoints.oauth2": [
+          227,
+          81
+        ],
         "spec.endpoints.oauth2.clientId.configMap.name": [
-          211,
-          212
+          215,
+          216
         ],
         "spec.endpoints.oauth2.clientId.secret.name": [
-          211,
-          212
+          215,
+          216
         ],
         "spec.endpoints.oauth2.clientSecret.name": [
-          211,
-          212
+          215,
+          216
         ],
         "spec.endpoints.oauth2.noProxy": [
-          224,
-          201
+          228,
+          205
         ],
         "spec.endpoints.oauth2.proxyConnectHeader": [
-          225,
-          202
-        ],
-        "spec.endpoints.oauth2.proxyConnectHeader.name": [
-          211,
-          212
-        ],
-        "spec.endpoints.oauth2.proxyFromEnvironment": [
-          226,
-          203
-        ],
-        "spec.endpoints.oauth2.proxyUrl": [
-          227,
-          92
-        ],
-        "spec.endpoints.oauth2.tlsConfig.ca.configMap.name": [
-          211,
-          212
-        ],
-        "spec.endpoints.oauth2.tlsConfig.ca.secret.name": [
-          211,
-          212
-        ],
-        "spec.endpoints.oauth2.tlsConfig.cert.configMap.name": [
-          211,
-          212
-        ],
-        "spec.endpoints.oauth2.tlsConfig.cert.secret.name": [
-          211,
-          212
-        ],
-        "spec.endpoints.oauth2.tlsConfig.keySecret.name": [
-          211,
-          212
-        ],
-        "spec.endpoints.oauth2.tlsConfig.maxVersion": [
-          228,
-          204
-        ],
-        "spec.endpoints.oauth2.tlsConfig.minVersion": [
           229,
-          205
-        ],
-        "spec.endpoints.path": [
-          230,
-          114
-        ],
-        "spec.endpoints.port": [
-          231,
-          116
-        ],
-        "spec.endpoints.relabelings": [
-          232,
-          117
-        ],
-        "spec.endpoints.relabelings.action": [
-          219,
-          61
-        ],
-        "spec.endpoints.relabelings.modulus": [
-          220,
-          63
-        ],
-        "spec.endpoints.relabelings.replacement": [
-          221,
-          67
-        ],
-        "spec.endpoints.relabelings.targetLabel": [
-          222,
-          73
-        ],
-        "spec.endpoints.scheme": [
-          233,
-          119
-        ],
-        "spec.endpoints.scrapeTimeout": [
-          234,
           206
         ],
+        "spec.endpoints.oauth2.proxyConnectHeader.name": [
+          215,
+          216
+        ],
+        "spec.endpoints.oauth2.proxyFromEnvironment": [
+          230,
+          207
+        ],
+        "spec.endpoints.oauth2.proxyUrl": [
+          231,
+          96
+        ],
+        "spec.endpoints.oauth2.tlsConfig.ca.configMap.name": [
+          215,
+          216
+        ],
+        "spec.endpoints.oauth2.tlsConfig.ca.secret.name": [
+          215,
+          216
+        ],
+        "spec.endpoints.oauth2.tlsConfig.cert.configMap.name": [
+          215,
+          216
+        ],
+        "spec.endpoints.oauth2.tlsConfig.cert.secret.name": [
+          215,
+          216
+        ],
+        "spec.endpoints.oauth2.tlsConfig.keySecret.name": [
+          215,
+          216
+        ],
+        "spec.endpoints.oauth2.tlsConfig.maxVersion": [
+          232,
+          208
+        ],
+        "spec.endpoints.oauth2.tlsConfig.minVersion": [
+          233,
+          209
+        ],
+        "spec.endpoints.path": [
+          234,
+          118
+        ],
+        "spec.endpoints.port": [
+          235,
+          120
+        ],
+        "spec.endpoints.relabelings": [
+          236,
+          121
+        ],
+        "spec.endpoints.relabelings.action": [
+          223,
+          65
+        ],
+        "spec.endpoints.relabelings.modulus": [
+          224,
+          67
+        ],
+        "spec.endpoints.relabelings.replacement": [
+          225,
+          71
+        ],
+        "spec.endpoints.relabelings.targetLabel": [
+          226,
+          77
+        ],
+        "spec.endpoints.scheme": [
+          237,
+          123
+        ],
+        "spec.endpoints.scrapeTimeout": [
+          238,
+          210
+        ],
         "spec.endpoints.tlsConfig.ca.configMap.name": [
-          211,
-          212
+          215,
+          216
         ],
         "spec.endpoints.tlsConfig.ca.secret.name": [
-          211,
-          212
+          215,
+          216
         ],
         "spec.endpoints.tlsConfig.cert.configMap.name": [
-          211,
-          212
+          215,
+          216
         ],
         "spec.endpoints.tlsConfig.cert.secret.name": [
-          211,
-          212
+          215,
+          216
         ],
         "spec.endpoints.tlsConfig.keySecret.name": [
-          211,
-          212
+          215,
+          216
         ],
         "spec.endpoints.tlsConfig.maxVersion": [
-          228,
-          204
+          232,
+          208
         ],
         "spec.endpoints.tlsConfig.minVersion": [
-          229,
-          205
+          233,
+          209
         ],
         "spec.endpoints.trackTimestampsStaleness": [
-          235,
-          130
-        ],
-        "spec.jobLabel": [
-          236,
+          239,
           134
         ],
-        "spec.keepDroppedTargets": [
-          237,
-          136
-        ],
-        "spec.labelLimit": [
-          238,
+        "spec.jobLabel": [
+          240,
           138
         ],
-        "spec.labelNameLengthLimit": [
-          239,
+        "spec.keepDroppedTargets": [
+          241,
           140
         ],
-        "spec.labelValueLengthLimit": [
-          240,
+        "spec.labelLimit": [
+          242,
           142
         ],
+        "spec.labelNameLengthLimit": [
+          243,
+          144
+        ],
+        "spec.labelValueLengthLimit": [
+          244,
+          146
+        ],
         "spec.scrapeProtocols": [
-          241,
-          162
+          245,
+          166
         ],
         "": [
-          242,
-          243
+          246,
+          3
         ]
       }
     },
@@ -1190,52 +1213,52 @@
       "description": true,
       "descriptions": {
         "spec.attachMetadata.node": [
-          244,
-          208
+          247,
+          212
         ],
         "spec.endpoints": [
-          245,
-          34
+          248,
+          38
         ],
         "spec.endpoints.oauth2.noProxy": [
           null,
-          224
+          228
         ],
         "spec.endpoints.oauth2.proxyConnectHeader": [
           null,
-          225
+          229
         ],
         "spec.endpoints.oauth2.proxyFromEnvironment": [
           null,
-          226
+          230
         ],
         "spec.endpoints.oauth2.proxyUrl": [
           null,
-          227
+          231
         ],
         "spec.endpoints.oauth2.tlsConfig": [
           null,
-          96
+          100
         ],
         "spec.endpoints.tlsConfig.maxVersion": [
           null,
-          228
+          232
         ],
         "spec.endpoints.tlsConfig.minVersion": [
           null,
-          229
+          233
         ],
         "spec.namespaceSelector": [
-          246,
-          144
+          249,
+          148
         ],
         "spec.selector": [
-          247,
-          164
+          250,
+          168
         ],
         "": [
-          248,
-          242
+          251,
+          246
         ]
       }
     },
@@ -1256,52 +1279,52 @@
       ],
       "descriptions": {
         "spec.endpoints.authorization.credentials.name": [
-          249,
-          211
+          252,
+          215
         ],
         "spec.endpoints.basicAuth.password.name": [
-          249,
-          211
+          252,
+          215
         ],
         "spec.endpoints.basicAuth.username.name": [
-          249,
-          211
+          252,
+          215
         ],
         "spec.endpoints.bearerTokenSecret.name": [
-          249,
-          211
+          252,
+          215
         ],
         "spec.endpoints.oauth2.clientId.configMap.name": [
-          249,
-          211
+          252,
+          215
         ],
         "spec.endpoints.oauth2.clientId.secret.name": [
-          249,
-          211
+          252,
+          215
         ],
         "spec.endpoints.oauth2.clientSecret.name": [
-          249,
-          211
+          252,
+          215
         ],
         "spec.endpoints.tlsConfig.ca.configMap.name": [
-          249,
-          211
+          252,
+          215
         ],
         "spec.endpoints.tlsConfig.ca.secret.name": [
-          249,
-          211
+          252,
+          215
         ],
         "spec.endpoints.tlsConfig.cert.configMap.name": [
-          249,
-          211
+          252,
+          215
         ],
         "spec.endpoints.tlsConfig.cert.secret.name": [
-          249,
-          211
+          252,
+          215
         ],
         "spec.endpoints.tlsConfig.keySecret.name": [
-          249,
-          211
+          252,
+          215
         ]
       }
     },
@@ -1378,276 +1401,276 @@
       ],
       "descriptions": {
         "apiVersion": [
-          250,
-          251
+          253,
+          254
         ],
         "kind": [
-          252,
-          253
+          255,
+          256
         ],
         "spec": [
-          254,
-          25
+          257,
+          29
         ],
         "spec.attachMetadata": [
-          255,
-          207
+          258,
+          211
         ],
         "spec.attachMetadata.node": [
-          256,
-          244
+          259,
+          247
         ],
         "spec.bodySizeLimit": [
-          257,
-          209
-        ],
-        "spec.endpoints.authorization": [
-          258,
-          210
-        ],
-        "spec.endpoints.authorization.credentials.name": [
-          259,
-          249
-        ],
-        "spec.endpoints.authorization.type": [
           260,
           213
         ],
-        "spec.endpoints.basicAuth": [
+        "spec.endpoints.authorization": [
           261,
           214
         ],
-        "spec.endpoints.basicAuth.password": [
+        "spec.endpoints.authorization.credentials.name": [
           262,
-          42
+          252
         ],
-        "spec.endpoints.basicAuth.password.name": [
-          259,
-          249
-        ],
-        "spec.endpoints.basicAuth.username": [
+        "spec.endpoints.authorization.type": [
           263,
-          44
-        ],
-        "spec.endpoints.basicAuth.username.name": [
-          259,
-          249
-        ],
-        "spec.endpoints.bearerTokenFile": [
-          264,
-          215
-        ],
-        "spec.endpoints.bearerTokenSecret": [
-          265,
-          216
-        ],
-        "spec.endpoints.bearerTokenSecret.name": [
-          259,
-          249
-        ],
-        "spec.endpoints.filterRunning": [
-          266,
           217
         ],
-        "spec.endpoints.followRedirects": [
-          267,
-          52
-        ],
-        "spec.endpoints.honorLabels": [
-          268,
-          53
-        ],
-        "spec.endpoints.honorTimestamps": [
-          269,
-          55
-        ],
-        "spec.endpoints.interval": [
-          270,
+        "spec.endpoints.basicAuth": [
+          264,
           218
         ],
-        "spec.endpoints.metricRelabelings": [
+        "spec.endpoints.basicAuth.password": [
+          265,
+          46
+        ],
+        "spec.endpoints.basicAuth.password.name": [
+          262,
+          252
+        ],
+        "spec.endpoints.basicAuth.username": [
+          266,
+          48
+        ],
+        "spec.endpoints.basicAuth.username.name": [
+          262,
+          252
+        ],
+        "spec.endpoints.bearerTokenFile": [
+          267,
+          219
+        ],
+        "spec.endpoints.bearerTokenSecret": [
+          268,
+          220
+        ],
+        "spec.endpoints.bearerTokenSecret.name": [
+          262,
+          252
+        ],
+        "spec.endpoints.filterRunning": [
+          269,
+          221
+        ],
+        "spec.endpoints.followRedirects": [
+          270,
+          56
+        ],
+        "spec.endpoints.honorLabels": [
           271,
+          57
+        ],
+        "spec.endpoints.honorTimestamps": [
+          272,
           59
         ],
-        "spec.endpoints.metricRelabelings.action": [
-          272,
-          219
-        ],
-        "spec.endpoints.metricRelabelings.modulus": [
+        "spec.endpoints.interval": [
           273,
-          220
-        ],
-        "spec.endpoints.metricRelabelings.replacement": [
-          274,
-          221
-        ],
-        "spec.endpoints.metricRelabelings.sourceLabels": [
-          275,
-          71
-        ],
-        "spec.endpoints.metricRelabelings.targetLabel": [
-          276,
           222
         ],
-        "spec.endpoints.oauth2": [
-          277,
+        "spec.endpoints.metricRelabelings": [
+          274,
+          63
+        ],
+        "spec.endpoints.metricRelabelings.action": [
+          275,
           223
         ],
-        "spec.endpoints.oauth2.clientId": [
+        "spec.endpoints.metricRelabelings.modulus": [
+          276,
+          224
+        ],
+        "spec.endpoints.metricRelabelings.replacement": [
+          277,
+          225
+        ],
+        "spec.endpoints.metricRelabelings.sourceLabels": [
           278,
-          78
+          75
+        ],
+        "spec.endpoints.metricRelabelings.targetLabel": [
+          279,
+          226
+        ],
+        "spec.endpoints.oauth2": [
+          280,
+          227
+        ],
+        "spec.endpoints.oauth2.clientId": [
+          281,
+          82
         ],
         "spec.endpoints.oauth2.clientId.configMap.name": [
-          259,
-          249
+          262,
+          252
         ],
         "spec.endpoints.oauth2.clientId.secret.name": [
-          259,
-          249
+          262,
+          252
         ],
         "spec.endpoints.oauth2.clientSecret": [
-          279,
-          84
+          282,
+          88
         ],
         "spec.endpoints.oauth2.clientSecret.name": [
-          259,
-          249
+          262,
+          252
         ],
         "spec.endpoints.oauth2.endpointParams": [
-          280,
-          86
+          283,
+          90
         ],
         "spec.endpoints.path": [
-          281,
-          230
-        ],
-        "spec.endpoints.port": [
-          282,
-          231
-        ],
-        "spec.endpoints.proxyUrl": [
-          283,
-          200
-        ],
-        "spec.endpoints.relabelings": [
           284,
-          232
-        ],
-        "spec.endpoints.relabelings.action": [
-          272,
-          219
-        ],
-        "spec.endpoints.relabelings.modulus": [
-          273,
-          220
-        ],
-        "spec.endpoints.relabelings.replacement": [
-          274,
-          221
-        ],
-        "spec.endpoints.relabelings.sourceLabels": [
-          275,
-          71
-        ],
-        "spec.endpoints.relabelings.targetLabel": [
-          276,
-          222
-        ],
-        "spec.endpoints.scheme": [
-          285,
-          233
-        ],
-        "spec.endpoints.scrapeTimeout": [
-          286,
           234
         ],
-        "spec.endpoints.targetPort": [
-          287,
-          122
-        ],
-        "spec.endpoints.tlsConfig.ca.configMap.name": [
-          259,
-          249
-        ],
-        "spec.endpoints.tlsConfig.ca.secret.name": [
-          259,
-          249
-        ],
-        "spec.endpoints.tlsConfig.cert.configMap.name": [
-          259,
-          249
-        ],
-        "spec.endpoints.tlsConfig.cert.secret.name": [
-          259,
-          249
-        ],
-        "spec.endpoints.tlsConfig.keySecret.name": [
-          259,
-          249
-        ],
-        "spec.endpoints.trackTimestampsStaleness": [
-          288,
+        "spec.endpoints.port": [
+          285,
           235
         ],
-        "spec.jobLabel": [
-          289,
+        "spec.endpoints.proxyUrl": [
+          286,
+          204
+        ],
+        "spec.endpoints.relabelings": [
+          287,
           236
         ],
-        "spec.keepDroppedTargets": [
-          290,
+        "spec.endpoints.relabelings.action": [
+          275,
+          223
+        ],
+        "spec.endpoints.relabelings.modulus": [
+          276,
+          224
+        ],
+        "spec.endpoints.relabelings.replacement": [
+          277,
+          225
+        ],
+        "spec.endpoints.relabelings.sourceLabels": [
+          278,
+          75
+        ],
+        "spec.endpoints.relabelings.targetLabel": [
+          279,
+          226
+        ],
+        "spec.endpoints.scheme": [
+          288,
           237
         ],
-        "spec.labelLimit": [
-          291,
+        "spec.endpoints.scrapeTimeout": [
+          289,
           238
         ],
-        "spec.labelNameLengthLimit": [
-          292,
+        "spec.endpoints.targetPort": [
+          290,
+          126
+        ],
+        "spec.endpoints.tlsConfig.ca.configMap.name": [
+          262,
+          252
+        ],
+        "spec.endpoints.tlsConfig.ca.secret.name": [
+          262,
+          252
+        ],
+        "spec.endpoints.tlsConfig.cert.configMap.name": [
+          262,
+          252
+        ],
+        "spec.endpoints.tlsConfig.cert.secret.name": [
+          262,
+          252
+        ],
+        "spec.endpoints.tlsConfig.keySecret.name": [
+          262,
+          252
+        ],
+        "spec.endpoints.trackTimestampsStaleness": [
+          291,
           239
         ],
-        "spec.labelValueLengthLimit": [
-          293,
+        "spec.jobLabel": [
+          292,
           240
         ],
-        "spec.namespaceSelector": [
-          294,
-          246
-        ],
-        "spec.namespaceSelector.any": [
-          295,
-          146
-        ],
-        "spec.podTargetLabels": [
-          296,
-          154
-        ],
-        "spec.sampleLimit": [
-          297,
-          156
-        ],
-        "spec.scrapeProtocols": [
-          298,
+        "spec.keepDroppedTargets": [
+          293,
           241
         ],
-        "spec.selector.matchExpressions.operator": [
+        "spec.labelLimit": [
+          294,
+          242
+        ],
+        "spec.labelNameLengthLimit": [
+          295,
+          243
+        ],
+        "spec.labelValueLengthLimit": [
+          296,
+          244
+        ],
+        "spec.namespaceSelector": [
+          297,
+          249
+        ],
+        "spec.namespaceSelector.any": [
+          298,
+          150
+        ],
+        "spec.podTargetLabels": [
           299,
-          300
+          158
+        ],
+        "spec.sampleLimit": [
+          300,
+          160
+        ],
+        "spec.scrapeProtocols": [
+          301,
+          245
+        ],
+        "spec.selector.matchExpressions.operator": [
+          302,
+          303
         ],
         "spec.selector.matchExpressions.values": [
-          301,
-          302
+          304,
+          305
         ],
         "spec.selector.matchLabels": [
-          303,
-          304
+          306,
+          307
         ],
         "spec.targetLabels": [
-          305,
-          169
+          308,
+          173
         ],
         "spec.targetLimit": [
-          306,
-          171
+          309,
+          175
         ]
       }
     },
@@ -1658,7 +1681,7 @@
       "descriptions": {
         "spec.bodySizeLimit": [
           null,
-          257
+          260
         ]
       }
     },
@@ -1672,16 +1695,16 @@
       },
       "descriptions": {
         "spec.endpoints.targetPort": [
-          307,
-          287
+          310,
+          290
         ],
         "spec.scrapeClass": [
           null,
-          158
+          162
         ],
         "spec.scrapeProtocols": [
           null,
-          298
+          301
         ]
       }
     },
@@ -1737,172 +1760,172 @@
       },
       "descriptions": {
         "spec.attachMetadata": [
-          308,
-          255
-        ],
-        "spec.attachMetadata.node": [
-          309,
-          256
-        ],
-        "spec.endpoints": [
-          310,
-          245
-        ],
-        "spec.endpoints.authorization": [
           311,
           258
         ],
-        "spec.endpoints.basicAuth": [
+        "spec.attachMetadata.node": [
           312,
+          259
+        ],
+        "spec.endpoints": [
+          313,
+          248
+        ],
+        "spec.endpoints.authorization": [
+          314,
           261
         ],
-        "spec.endpoints.basicAuth.password": [
-          313,
-          262
-        ],
-        "spec.endpoints.basicAuth.username": [
-          314,
-          263
-        ],
-        "spec.endpoints.bearerTokenFile": [
+        "spec.endpoints.basicAuth": [
           315,
           264
         ],
-        "spec.endpoints.bearerTokenSecret": [
+        "spec.endpoints.basicAuth.password": [
           316,
           265
         ],
-        "spec.endpoints.enableHttp2": [
+        "spec.endpoints.basicAuth.username": [
           317,
-          49
-        ],
-        "spec.endpoints.filterRunning": [
-          318,
           266
         ],
-        "spec.endpoints.followRedirects": [
-          319,
+        "spec.endpoints.bearerTokenFile": [
+          318,
           267
         ],
-        "spec.endpoints.honorLabels": [
-          320,
+        "spec.endpoints.bearerTokenSecret": [
+          319,
           268
         ],
-        "spec.endpoints.honorTimestamps": [
+        "spec.endpoints.enableHttp2": [
+          320,
+          53
+        ],
+        "spec.endpoints.filterRunning": [
           321,
           269
         ],
-        "spec.endpoints.interval": [
+        "spec.endpoints.followRedirects": [
           322,
           270
         ],
-        "spec.endpoints.metricRelabelings": [
+        "spec.endpoints.honorLabels": [
           323,
           271
         ],
-        "spec.endpoints.oauth2": [
+        "spec.endpoints.honorTimestamps": [
           324,
-          277
+          272
         ],
-        "spec.endpoints.oauth2.clientId": [
+        "spec.endpoints.interval": [
           325,
-          278
+          273
         ],
-        "spec.endpoints.oauth2.clientSecret": [
+        "spec.endpoints.metricRelabelings": [
           326,
-          279
+          274
         ],
-        "spec.endpoints.oauth2.endpointParams": [
+        "spec.endpoints.oauth2": [
           327,
           280
         ],
-        "spec.endpoints.oauth2.scopes": [
+        "spec.endpoints.oauth2.clientId": [
           328,
-          94
-        ],
-        "spec.endpoints.oauth2.tokenUrl": [
-          329,
-          112
-        ],
-        "spec.endpoints.params": [
-          330,
-          331
-        ],
-        "spec.endpoints.path": [
-          332,
           281
         ],
-        "spec.endpoints.port": [
-          333,
+        "spec.endpoints.oauth2.clientSecret": [
+          329,
           282
         ],
-        "spec.endpoints.proxyUrl": [
-          334,
+        "spec.endpoints.oauth2.endpointParams": [
+          330,
           283
         ],
-        "spec.endpoints.relabelings": [
+        "spec.endpoints.oauth2.scopes": [
+          331,
+          98
+        ],
+        "spec.endpoints.oauth2.tokenUrl": [
+          332,
+          116
+        ],
+        "spec.endpoints.params": [
+          333,
+          334
+        ],
+        "spec.endpoints.path": [
           335,
           284
         ],
-        "spec.endpoints.scheme": [
+        "spec.endpoints.port": [
           336,
           285
         ],
-        "spec.endpoints.scrapeTimeout": [
+        "spec.endpoints.proxyUrl": [
           337,
           286
         ],
-        "spec.endpoints.targetPort": [
+        "spec.endpoints.relabelings": [
           338,
-          307
+          287
         ],
-        "spec.endpoints.tlsConfig": [
+        "spec.endpoints.scheme": [
           339,
-          123
-        ],
-        "spec.endpoints.trackTimestampsStaleness": [
-          null,
           288
         ],
-        "spec.jobLabel": [
+        "spec.endpoints.scrapeTimeout": [
           340,
           289
         ],
-        "spec.labelLimit": [
+        "spec.endpoints.targetPort": [
           341,
+          310
+        ],
+        "spec.endpoints.tlsConfig": [
+          342,
+          127
+        ],
+        "spec.endpoints.trackTimestampsStaleness": [
+          null,
           291
         ],
-        "spec.labelNameLengthLimit": [
-          342,
+        "spec.jobLabel": [
+          343,
           292
         ],
-        "spec.labelValueLengthLimit": [
-          343,
-          293
-        ],
-        "spec.namespaceSelector": [
+        "spec.labelLimit": [
           344,
           294
         ],
-        "spec.podTargetLabels": [
+        "spec.labelNameLengthLimit": [
           345,
+          295
+        ],
+        "spec.labelValueLengthLimit": [
+          346,
           296
         ],
-        "spec.sampleLimit": [
-          346,
+        "spec.namespaceSelector": [
+          347,
           297
         ],
+        "spec.podTargetLabels": [
+          348,
+          299
+        ],
+        "spec.sampleLimit": [
+          349,
+          300
+        ],
         "spec.selector": [
-          347,
-          247
+          350,
+          250
         ],
         "spec.targetLabels": [
-          348,
-          305
+          351,
+          308
         ],
         "spec.targetLimit": [
-          349,
-          306
+          352,
+          309
         ]
       }
     },
@@ -1913,7 +1936,7 @@
       "descriptions": {
         "spec.keepDroppedTargets": [
           null,
-          290
+          293
         ]
       }
     },
@@ -1938,68 +1961,68 @@
       ],
       "descriptions": {
         "spec.endpoints.authorization.credentials": [
-          350,
-          37
+          353,
+          41
         ],
         "spec.endpoints.authorization.type": [
-          351,
-          260
+          354,
+          263
         ],
         "spec.endpoints.metricRelabelings.action": [
-          352,
-          272
+          355,
+          275
         ],
         "spec.endpoints.metricRelabelings.modulus": [
-          353,
-          273
+          356,
+          276
         ],
         "spec.endpoints.metricRelabelings.regex": [
-          354,
-          65
+          357,
+          69
         ],
         "spec.endpoints.metricRelabelings.replacement": [
-          355,
-          274
+          358,
+          277
         ],
         "spec.endpoints.metricRelabelings.separator": [
-          356,
-          69
+          359,
+          73
         ],
         "spec.endpoints.metricRelabelings.sourceLabels": [
-          357,
-          275
+          360,
+          278
         ],
         "spec.endpoints.metricRelabelings.targetLabel": [
-          358,
-          276
+          361,
+          279
         ],
         "spec.endpoints.relabelings.action": [
-          352,
-          272
-        ],
-        "spec.endpoints.relabelings.modulus": [
-          353,
-          273
-        ],
-        "spec.endpoints.relabelings.regex": [
-          354,
-          65
-        ],
-        "spec.endpoints.relabelings.replacement": [
           355,
-          274
-        ],
-        "spec.endpoints.relabelings.separator": [
-          356,
-          69
-        ],
-        "spec.endpoints.relabelings.sourceLabels": [
-          357,
           275
         ],
-        "spec.endpoints.relabelings.targetLabel": [
-          358,
+        "spec.endpoints.relabelings.modulus": [
+          356,
           276
+        ],
+        "spec.endpoints.relabelings.regex": [
+          357,
+          69
+        ],
+        "spec.endpoints.relabelings.replacement": [
+          358,
+          277
+        ],
+        "spec.endpoints.relabelings.separator": [
+          359,
+          73
+        ],
+        "spec.endpoints.relabelings.sourceLabels": [
+          360,
+          278
+        ],
+        "spec.endpoints.relabelings.targetLabel": [
+          361,
+          279
         ]
       }
     },
@@ -2009,8 +2032,8 @@
       ],
       "descriptions": {
         "spec.endpoints.scheme": [
-          359,
-          336
+          362,
+          339
         ]
       }
     },
@@ -2026,19 +2049,19 @@
       "descriptions": {
         "spec.attachMetadata": [
           null,
-          308
+          311
         ],
         "spec.endpoints.filterRunning": [
           null,
-          318
+          321
         ],
         "spec.endpoints.tlsConfig.ca": [
-          360,
-          98
+          363,
+          102
         ],
         "spec.endpoints.tlsConfig.cert": [
-          361,
-          100
+          364,
+          104
         ]
       }
     },
@@ -2055,23 +2078,23 @@
       "descriptions": {
         "spec.endpoints.enableHttp2": [
           null,
-          317
+          320
         ],
         "spec.endpoints.metricRelabelings.action": [
-          362,
-          352
+          365,
+          355
         ],
         "spec.endpoints.path": [
-          363,
-          332
+          366,
+          335
         ],
         "spec.endpoints.relabelings.action": [
-          362,
-          352
+          365,
+          355
         ],
         "spec.jobLabel": [
-          364,
-          340
+          367,
+          343
         ]
       }
     },
@@ -2082,12 +2105,12 @@
       ],
       "descriptions": {
         "spec.endpoints.interval": [
-          365,
-          322
+          368,
+          325
         ],
         "spec.endpoints.scrapeTimeout": [
-          366,
-          337
+          369,
+          340
         ]
       }
     },
@@ -2103,19 +2126,19 @@
       "descriptions": {
         "spec.endpoints.followRedirects": [
           null,
-          319
+          322
         ],
         "spec.endpoints.relabelings": [
-          367,
-          335
+          370,
+          338
         ],
         "spec.namespaceSelector.matchNames": [
-          368,
-          148
+          371,
+          152
         ],
         "spec.targetLabels": [
-          369,
-          348
+          372,
+          351
         ]
       }
     },
@@ -2130,23 +2153,23 @@
       "descriptions": {
         "spec.endpoints.authorization": [
           null,
-          311
+          314
         ],
         "spec.endpoints.oauth2": [
           null,
-          324
+          327
         ],
         "spec.labelLimit": [
           null,
-          341
+          344
         ],
         "spec.labelNameLengthLimit": [
           null,
-          342
+          345
         ],
         "spec.labelValueLengthLimit": [
           null,
-          343
+          346
         ]
       }
     },
@@ -2159,20 +2182,20 @@
       ],
       "descriptions": {
         "spec.jobLabel": [
-          370,
-          364
+          373,
+          367
         ],
         "spec.namespaceSelector": [
-          371,
-          344
+          374,
+          347
         ],
         "spec.podTargetLabels": [
-          372,
-          345
+          375,
+          348
         ],
         "spec.targetLabels": [
-          373,
-          369
+          376,
+          372
         ]
       }
     },
@@ -2182,8 +2205,8 @@
       ],
       "descriptions": {
         "spec.endpoints.relabelings": [
-          374,
-          367
+          377,
+          370
         ]
       }
     },
@@ -2196,12 +2219,12 @@
       },
       "descriptions": {
         "spec.endpoints.tlsConfig.ca": [
-          375,
-          360
+          378,
+          363
         ],
         "spec.targetLimit": [
           null,
-          349
+          352
         ]
       }
     },
@@ -2211,8 +2234,8 @@
       ],
       "descriptions": {
         "spec.endpoints.targetPort": [
-          376,
-          338
+          379,
+          341
         ]
       }
     },
@@ -2222,8 +2245,8 @@
       ],
       "descriptions": {
         "spec.endpoints.targetPort": [
-          377,
-          376
+          380,
+          379
         ]
       }
     },
@@ -2274,100 +2297,100 @@
       "description": true,
       "descriptions": {
         "spec": [
-          378,
-          254
+          381,
+          257
         ],
         "spec.endpoints.basicAuth.password": [
-          379,
-          313
-        ],
-        "spec.endpoints.basicAuth.password.name": [
-          380,
-          259
-        ],
-        "spec.endpoints.basicAuth.username": [
-          379,
-          314
-        ],
-        "spec.endpoints.basicAuth.username.name": [
-          380,
-          259
-        ],
-        "spec.endpoints.bearerTokenSecret": [
-          379,
+          382,
           316
         ],
+        "spec.endpoints.basicAuth.password.name": [
+          383,
+          262
+        ],
+        "spec.endpoints.basicAuth.username": [
+          382,
+          317
+        ],
+        "spec.endpoints.basicAuth.username.name": [
+          383,
+          262
+        ],
+        "spec.endpoints.bearerTokenSecret": [
+          382,
+          319
+        ],
         "spec.endpoints.bearerTokenSecret.name": [
-          380,
-          259
+          383,
+          262
         ],
         "spec.endpoints.metricRelabelings.regex": [
-          381,
-          354
+          384,
+          357
         ],
         "spec.endpoints.params": [
           null,
-          330
+          333
         ],
         "spec.endpoints.relabelings.regex": [
-          381,
-          354
+          384,
+          357
         ],
         "spec.endpoints.targetPort": [
           null,
-          377
+          380
         ],
         "spec.endpoints.tlsConfig": [
-          382,
-          339
+          385,
+          342
         ],
         "spec.endpoints.tlsConfig.ca": [
           null,
-          375
+          378
         ],
         "spec.endpoints.tlsConfig.ca.configMap": [
           null,
-          80
+          84
         ],
         "spec.endpoints.tlsConfig.ca.secret": [
           null,
-          82
+          86
         ],
         "spec.endpoints.tlsConfig.cert": [
           null,
-          361
+          364
         ],
         "spec.endpoints.tlsConfig.cert.configMap": [
           null,
-          80
+          84
         ],
         "spec.endpoints.tlsConfig.cert.secret": [
           null,
-          82
+          86
         ],
         "spec.endpoints.tlsConfig.keySecret": [
-          379,
-          104
+          382,
+          108
         ],
         "spec.endpoints.tlsConfig.keySecret.name": [
-          380,
-          259
+          383,
+          262
         ],
         "spec.namespaceSelector": [
-          383,
-          371
+          386,
+          374
         ],
         "spec.selector": [
-          384,
-          347
+          387,
+          350
         ],
         "spec.selector.matchLabels": [
           null,
-          303
+          306
         ],
         "": [
           null,
-          248
+          251
         ]
       }
     },
@@ -2388,36 +2411,36 @@
       },
       "descriptions": {
         "apiVersion": [
-          385,
-          250
+          388,
+          253
         ],
         "kind": [
-          386,
-          252
+          389,
+          255
         ],
         "spec.endpoints.bearerTokenSecret": [
           null,
-          379
+          382
         ],
         "spec.endpoints.honorTimestamps": [
           null,
-          321
+          324
         ],
         "spec.endpoints.tlsConfig.caFile": [
-          387,
-          124
+          390,
+          128
         ],
         "spec.endpoints.tlsConfig.certFile": [
-          388,
-          126
+          391,
+          130
         ],
         "spec.endpoints.tlsConfig.keyFile": [
-          389,
-          128
+          392,
+          132
         ],
         "spec.endpoints.tlsConfig.keySecret": [
           null,
-          379
+          382
         ]
       }
     },
@@ -2429,16 +2452,16 @@
       ],
       "descriptions": {
         "spec.endpoints.basicAuth.password.optional": [
-          390,
-          391
+          393,
+          394
         ],
         "spec.endpoints.basicAuth.username.optional": [
-          390,
-          391
+          393,
+          394
         ],
         "spec.endpoints.relabelings": [
-          392,
-          374
+          395,
+          377
         ]
       }
     },
@@ -2448,8 +2471,8 @@
       ],
       "descriptions": {
         "spec.endpoints.relabelings": [
-          393,
-          392
+          396,
+          395
         ]
       }
     },
@@ -2462,15 +2485,15 @@
       "descriptions": {
         "spec.endpoints.relabelings": [
           null,
-          393
+          396
         ],
         "spec.podTargetLabels": [
           null,
-          372
+          375
         ],
         "spec.sampleLimit": [
           null,
-          346
+          349
         ]
       }
     },
@@ -2480,8 +2503,8 @@
       ],
       "descriptions": {
         "spec.namespaceSelector": [
-          394,
-          383
+          397,
+          386
         ]
       }
     },
@@ -2493,10 +2516,10 @@
       "descriptions": {
         "spec": [
           null,
-          378
+          381
         ],
         "": [
-          248,
+          251,
           null
         ]
       }
@@ -2508,7 +2531,7 @@
       "descriptions": {
         "spec.endpoints.proxyUrl": [
           null,
-          334
+          337
         ]
       }
     },
@@ -2523,20 +2546,25 @@
       "descriptions": {
         "spec.endpoints.metricRelabelings.replacement": [
           null,
-          355
+          358
         ],
         "spec.endpoints.metricRelabelings.sourceLabels": [
           null,
-          357
+          360
         ],
         "spec.targetLabels": [
           null,
-          373
+          376
         ]
       }
     }
   },
   "texts": [
+    "targetPort defines the name or number of a container port on Pods selected\nby the Service.\nIf a name, it matches against `.spec.containers[].ports[].name` of the Pods.\nIf a number, it matches against `.spec.containers[].ports[].containerPort` of the Pods.",
+    "targetPort defines the name or number of a container port on Pods selected\nby the Service.\nIf a name, it matches against `.spec.containers[].ports[].name` of the Pods.\nIf a number, it matches against `.spec.containers[].ports[].containerPort` of the Pods.\n\nBecause it relies on Pod metadata, endpoints which aren't backed by Pods\nare never scraped when `targetPort` is used.",
+    "extraScrapeMetrics defines whether to store additional time series for each scrape:\n`scrape_timeout_seconds`, `scrape_sample_limit` and `scrape_body_size_bytes`.\nThese metrics help monitor how close targets are to their configured limits.\n\nIt requires Prometheus >= v3.10.0.",
+    "The `ServiceMonitor` custom resource definition (CRD) defines how `Prometheus` and `PrometheusAgent` can scrape metrics from a group of services.\nAmong other things, it allows to specify:\n* The services to scrape via label selectors.\n* The container ports to scrape.\n* Authentication credentials to use.\n* Target and metric relabeling.\n\n`Prometheus` and `PrometheusAgent` objects select `ServiceMonitor` objects using label and namespace selectors.",
+    "The `ServiceMonitor` custom resource definition (CRD) defines how `Prometheus` and `PrometheusAgent` can scrape metrics from a group of services.\nAmong other things, it allows to specify:\n* The services to scrape via label selectors.\n* The container ports to scrape.\n* Authentication credentials to use.\n* Target and metric relabeling.\n\n`Prometheus` and `PrometheusAgent` objects select `ServiceMonitor` objects using label and namespace selectors.\n\nService targets that aren't backed by Pods (for instance manually managed\nEndpoints or EndpointSlices) can only be scraped when the endpoint selects\nthe service port with `port` instead of `targetPort` and `filterRunning` is\nset to `false`. Manually created Pods have no such restriction.\n\nFor targets that aren't backed by Pods, you can also consider using the\n`ScrapeConfig` CRD.",
     "The key to select.",
     "The key to select from the ConfigMap's Data field.\nKeys in the BinaryData field are not currently propagated to container env vars.",
     "node when set to true, Prometheus attaches node metadata to the discovered\ntargets.\n\nThe Prometheus service account must have the `list` and `watch`\npermissions on the `Nodes` objects.",
@@ -2544,7 +2572,6 @@
     "port defines the name of the Service port which this endpoint refers to.\n\nIt takes precedence over `targetPort`.",
     "port defines the name of the Service port which this endpoint refers to\n(e.g. `.spec.ports[].name`).\n\nIt takes precedence over `targetPort`.",
     "targetPort defines the name or number of the target port of the `Pod` object behind the\nService. The port must be specified with the container's port property.",
-    "targetPort defines the name or number of a container port on Pods selected\nby the Service.\nIf a name, it matches against `.spec.containers[].ports[].name` of the Pods.\nIf a number, it matches against `.spec.containers[].ports[].containerPort` of the Pods.",
     "authorization configures the Authorization header credentials to use when\nscraping the target.\n\nCannot be set at the same time as `basicAuth`, or `oauth2`.",
     "authorization configures the Authorization header credentials used by\nthe client.\n\nCannot be set at the same time as `basicAuth`, `bearerTokenSecret` or `oauth2`.",
     "basicAuth defines the Basic Authentication credentials to use when\nscraping the target.\n\nCannot be set at the same time as `authorization`, or `oauth2`.",
@@ -2780,7 +2807,6 @@
     "Per-scrape limit on length of labels value that will be accepted for a sample.\n\n\nIt requires Prometheus >= v2.27.0.",
     "`scrapeProtocols` defines the protocols to negotiate during a scrape. It tells clients the\nprotocols supported by Prometheus in order of preference (from most to least preferred).\n\n\nIf unset, Prometheus uses its default value.\n\n\nIt requires Prometheus >= v2.49.0.",
     "The `ServiceMonitor` custom resource definition (CRD) defines how `Prometheus` and `PrometheusAgent` can scrape metrics from a group of services.\nAmong other things, it allows to specify:\n* The services to scrape via label selectors.\n* The container ports to scrape.\n* Authentication credentials to use.\n* Target and metric relabeling.\n\n\n`Prometheus` and `PrometheusAgent` objects select `ServiceMonitor` objects using label and namespace selectors.",
-    "The `ServiceMonitor` custom resource definition (CRD) defines how `Prometheus` and `PrometheusAgent` can scrape metrics from a group of services.\nAmong other things, it allows to specify:\n* The services to scrape via label selectors.\n* The container ports to scrape.\n* Authentication credentials to use.\n* Target and metric relabeling.\n\n`Prometheus` and `PrometheusAgent` objects select `ServiceMonitor` objects using label and namespace selectors.",
     "When set to true, Prometheus must have the `get` permission on the\n`Nodes` objects.",
     "List of endpoints part of this ServiceMonitor.",
     "Selector to select which namespaces the Kubernetes `Endpoints` objects\nare discovered from.",

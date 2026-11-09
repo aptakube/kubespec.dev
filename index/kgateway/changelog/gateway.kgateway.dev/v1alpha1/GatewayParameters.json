@@ -1,5 +1,224 @@
 {
   "versions": {
+    "v2.5.1": {
+      "descriptionChanged": [
+        "spec.kube.envoyContainer.bootstrap.maxDownstreamConnections"
+      ],
+      "descriptions": {
+        "spec.kube.envoyContainer.bootstrap.maxDownstreamConnections": [
+          0,
+          1
+        ]
+      }
+    },
+    "v2.5.0": {
+      "added": {
+        "spec.kube.envoyContainer.bootstrap.maxDownstreamConnections": "integer",
+        "spec.kube.envoyContainer.extraVolumeMounts.bindMountOptions": "string[]",
+        "spec.kube.istio.customSidecars.lifecycle.postStart.httpGet.protocol": "string",
+        "spec.kube.istio.customSidecars.lifecycle.preStop.httpGet.protocol": "string",
+        "spec.kube.istio.customSidecars.livenessProbe.grpc.mode": "string",
+        "spec.kube.istio.customSidecars.livenessProbe.httpGet.protocol": "string",
+        "spec.kube.istio.customSidecars.readinessProbe.grpc.mode": "string",
+        "spec.kube.istio.customSidecars.readinessProbe.httpGet.protocol": "string",
+        "spec.kube.istio.customSidecars.startupProbe.grpc.mode": "string",
+        "spec.kube.istio.customSidecars.startupProbe.httpGet.protocol": "string",
+        "spec.kube.istio.customSidecars.volumeMounts.bindMountOptions": "string[]",
+        "spec.kube.podTemplate.extraVolumes.configMap.defaultUser": "integer",
+        "spec.kube.podTemplate.extraVolumes.configMap.items.user": "integer",
+        "spec.kube.podTemplate.extraVolumes.downwardAPI.defaultUser": "integer",
+        "spec.kube.podTemplate.extraVolumes.downwardAPI.items.user": "integer",
+        "spec.kube.podTemplate.extraVolumes.emptyDir.mode": "integer",
+        "spec.kube.podTemplate.extraVolumes.projected.defaultUser": "integer",
+        "spec.kube.podTemplate.extraVolumes.projected.sources.clusterTrustBundle.user": "integer",
+        "spec.kube.podTemplate.extraVolumes.projected.sources.configMap.items.user": "integer",
+        "spec.kube.podTemplate.extraVolumes.projected.sources.downwardAPI.items.user": "integer",
+        "spec.kube.podTemplate.extraVolumes.projected.sources.podCertificate.user": "integer",
+        "spec.kube.podTemplate.extraVolumes.projected.sources.secret.items.user": "integer",
+        "spec.kube.podTemplate.extraVolumes.projected.sources.serviceAccountToken.user": "integer",
+        "spec.kube.podTemplate.extraVolumes.secret.defaultUser": "integer",
+        "spec.kube.podTemplate.extraVolumes.secret.items.user": "integer",
+        "spec.kube.podTemplate.livenessProbe.grpc.mode": "string",
+        "spec.kube.podTemplate.livenessProbe.httpGet.protocol": "string",
+        "spec.kube.podTemplate.readinessProbe.grpc.mode": "string",
+        "spec.kube.podTemplate.readinessProbe.httpGet.protocol": "string",
+        "spec.kube.podTemplate.startupProbe.grpc.mode": "string",
+        "spec.kube.podTemplate.startupProbe.httpGet.protocol": "string",
+        "spec.kube.service.ipFamilies": "string[]",
+        "spec.kube.service.ipFamilyPolicy": "string"
+      },
+      "descriptionChanged": [
+        "spec.kube.envoyContainer.env.valueFrom.configMapKeyRef.key",
+        "spec.kube.envoyContainer.extraVolumeMounts.mountPath",
+        "spec.kube.istio.customSidecars.env.valueFrom.configMapKeyRef.key",
+        "spec.kube.istio.customSidecars.volumeMounts.mountPath",
+        "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.dataSource",
+        "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef",
+        "spec.kube.podTemplate.securityContext.seLinuxChangePolicy"
+      ],
+      "descriptions": {
+        "spec.kube.envoyContainer.bootstrap.maxDownstreamConnections": [
+          null,
+          0
+        ],
+        "spec.kube.envoyContainer.env.valueFrom.configMapKeyRef.key": [
+          2,
+          3
+        ],
+        "spec.kube.envoyContainer.extraVolumeMounts.bindMountOptions": [
+          null,
+          4
+        ],
+        "spec.kube.envoyContainer.extraVolumeMounts.mountPath": [
+          5,
+          6
+        ],
+        "spec.kube.istio.customSidecars.env.valueFrom.configMapKeyRef.key": [
+          2,
+          3
+        ],
+        "spec.kube.istio.customSidecars.lifecycle.postStart.httpGet.protocol": [
+          null,
+          7
+        ],
+        "spec.kube.istio.customSidecars.lifecycle.preStop.httpGet.protocol": [
+          null,
+          7
+        ],
+        "spec.kube.istio.customSidecars.livenessProbe.grpc.mode": [
+          null,
+          8
+        ],
+        "spec.kube.istio.customSidecars.livenessProbe.httpGet.protocol": [
+          null,
+          7
+        ],
+        "spec.kube.istio.customSidecars.readinessProbe.grpc.mode": [
+          null,
+          8
+        ],
+        "spec.kube.istio.customSidecars.readinessProbe.httpGet.protocol": [
+          null,
+          7
+        ],
+        "spec.kube.istio.customSidecars.startupProbe.grpc.mode": [
+          null,
+          8
+        ],
+        "spec.kube.istio.customSidecars.startupProbe.httpGet.protocol": [
+          null,
+          7
+        ],
+        "spec.kube.istio.customSidecars.volumeMounts.bindMountOptions": [
+          null,
+          4
+        ],
+        "spec.kube.istio.customSidecars.volumeMounts.mountPath": [
+          5,
+          6
+        ],
+        "spec.kube.podTemplate.extraVolumes.configMap.defaultUser": [
+          null,
+          9
+        ],
+        "spec.kube.podTemplate.extraVolumes.configMap.items.user": [
+          null,
+          10
+        ],
+        "spec.kube.podTemplate.extraVolumes.downwardAPI.defaultUser": [
+          null,
+          9
+        ],
+        "spec.kube.podTemplate.extraVolumes.downwardAPI.items.user": [
+          null,
+          10
+        ],
+        "spec.kube.podTemplate.extraVolumes.emptyDir.mode": [
+          null,
+          11
+        ],
+        "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.dataSource": [
+          12,
+          13
+        ],
+        "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef": [
+          14,
+          15
+        ],
+        "spec.kube.podTemplate.extraVolumes.projected.defaultUser": [
+          null,
+          9
+        ],
+        "spec.kube.podTemplate.extraVolumes.projected.sources.clusterTrustBundle.user": [
+          null,
+          10
+        ],
+        "spec.kube.podTemplate.extraVolumes.projected.sources.configMap.items.user": [
+          null,
+          10
+        ],
+        "spec.kube.podTemplate.extraVolumes.projected.sources.downwardAPI.items.user": [
+          null,
+          10
+        ],
+        "spec.kube.podTemplate.extraVolumes.projected.sources.podCertificate.user": [
+          null,
+          10
+        ],
+        "spec.kube.podTemplate.extraVolumes.projected.sources.secret.items.user": [
+          null,
+          10
+        ],
+        "spec.kube.podTemplate.extraVolumes.projected.sources.serviceAccountToken.user": [
+          null,
+          10
+        ],
+        "spec.kube.podTemplate.extraVolumes.secret.defaultUser": [
+          null,
+          9
+        ],
+        "spec.kube.podTemplate.extraVolumes.secret.items.user": [
+          null,
+          10
+        ],
+        "spec.kube.podTemplate.livenessProbe.grpc.mode": [
+          null,
+          8
+        ],
+        "spec.kube.podTemplate.livenessProbe.httpGet.protocol": [
+          null,
+          7
+        ],
+        "spec.kube.podTemplate.readinessProbe.grpc.mode": [
+          null,
+          8
+        ],
+        "spec.kube.podTemplate.readinessProbe.httpGet.protocol": [
+          null,
+          7
+        ],
+        "spec.kube.podTemplate.securityContext.seLinuxChangePolicy": [
+          16,
+          17
+        ],
+        "spec.kube.podTemplate.startupProbe.grpc.mode": [
+          null,
+          8
+        ],
+        "spec.kube.podTemplate.startupProbe.httpGet.protocol": [
+          null,
+          7
+        ],
+        "spec.kube.service.ipFamilies": [
+          null,
+          18
+        ],
+        "spec.kube.service.ipFamilyPolicy": [
+          null,
+          19
+        ]
+      }
+    },
     "v2.4.0": {
       "added": {
         "spec.kube.envoyContainer.bootstrap.enableReadinessProbeProxyProtocol": "boolean"
@@ -17,39 +236,39 @@
       "descriptions": {
         "spec.kube.envoyContainer.bootstrap.enableReadinessProbeProxyProtocol": [
           null,
-          0
+          20
         ],
         "spec.kube.envoyContainer.image.digest": [
-          1,
-          2
+          21,
+          22
         ],
         "spec.kube.envoyContainer.image.tag": [
-          3,
-          4
+          23,
+          24
         ],
         "spec.kube.istio.istioProxyContainer.image.digest": [
-          1,
-          2
+          21,
+          22
         ],
         "spec.kube.istio.istioProxyContainer.image.tag": [
-          3,
-          4
+          23,
+          24
         ],
         "spec.kube.podTemplate.nodeSelector": [
-          5,
-          6
+          25,
+          26
         ],
         "spec.kube.podTemplate.tolerations": [
-          7,
-          8
+          27,
+          28
         ],
         "spec.kube.sdsContainer.image.digest": [
-          1,
-          2
+          21,
+          22
         ],
         "spec.kube.sdsContainer.image.tag": [
-          3,
-          4
+          23,
+          24
         ]
       }
     },
@@ -64,28 +283,28 @@
       ],
       "descriptions": {
         "spec.kube.envoyContainer.securityContext.procMount": [
-          9,
-          10
+          29,
+          30
         ],
         "spec.kube.istio.customSidecars.securityContext.procMount": [
-          9,
-          10
+          29,
+          30
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.procMount": [
-          9,
-          10
+          29,
+          30
         ],
         "spec.kube.podTemplate.extraVolumes.image": [
-          11,
-          12
+          31,
+          32
         ],
         "spec.kube.podTemplate.extraVolumes.portworxVolume": [
-          13,
-          14
+          33,
+          34
         ],
         "spec.kube.sdsContainer.securityContext.procMount": [
-          9,
-          10
+          29,
+          30
         ]
       }
     },
@@ -118,84 +337,84 @@
       "description": true,
       "descriptions": {
         "spec.kube": [
-          15,
-          16
+          35,
+          36
         ],
         "spec.kube.deploymentOverlay": [
           null,
-          17
+          37
         ],
         "spec.kube.envoyContainer.bootstrap.dnsResolver": [
           null,
-          18
+          38
         ],
         "spec.kube.envoyContainer.bootstrap.logFormat": [
           null,
-          19
+          39
         ],
         "spec.kube.envoyContainer.extraArgs": [
           null,
-          20
+          40
         ],
         "spec.kube.horizontalPodAutoscaler": [
           null,
-          21
+          41
         ],
         "spec.kube.istio.customSidecars": [
-          22,
-          23
+          42,
+          43
         ],
         "spec.kube.istio.customSidecars.resizePolicy": [
-          24,
-          25
+          44,
+          45
         ],
         "spec.kube.podDisruptionBudget": [
           null,
-          26
+          46
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.resources": [
-          27,
-          28
+          47,
+          48
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.podCertificate.userAnnotations": [
           null,
-          29
+          49
         ],
         "spec.kube.podTemplate.gracefulShutdown.enabled": [
-          30,
-          31
+          50,
+          51
         ],
         "spec.kube.podTemplate.tolerations.operator": [
-          32,
-          33
+          52,
+          53
         ],
         "spec.kube.service.loadBalancerClass": [
           null,
-          34
+          54
         ],
         "spec.kube.service.loadBalancerSourceRanges": [
           null,
-          35
+          55
         ],
         "spec.kube.serviceAccountOverlay": [
           null,
-          36
+          56
         ],
         "spec.kube.serviceOverlay": [
           null,
-          37
+          57
         ],
         "spec.kube.verticalPodAutoscaler": [
           null,
-          38
+          58
         ],
         "spec.kube.agentgateway": [
-          39,
+          59,
           null
         ],
         "": [
-          40,
-          41
+          60,
+          61
         ]
       }
     },
@@ -1165,3803 +1384,3803 @@
       "descriptions": {
         "apiVersion": [
           null,
-          42
+          62
         ],
         "kind": [
           null,
-          43
+          63
         ],
         "spec": [
           null,
-          44
+          64
         ],
         "spec.kube": [
           null,
-          15
+          35
         ],
         "spec.kube.agentgateway": [
           null,
-          39
+          59
         ],
         "spec.kube.agentgateway.enabled": [
           null,
-          45
+          65
         ],
         "spec.kube.agentgateway.env": [
           null,
-          46
+          66
         ],
         "spec.kube.agentgateway.env.name": [
           null,
-          47
+          67
         ],
         "spec.kube.agentgateway.env.value": [
           null,
-          48
+          68
         ],
         "spec.kube.agentgateway.env.valueFrom": [
           null,
-          49
+          69
         ],
         "spec.kube.agentgateway.env.valueFrom.configMapKeyRef": [
           null,
-          50
+          70
         ],
         "spec.kube.agentgateway.env.valueFrom.configMapKeyRef.key": [
           null,
-          51
+          2
         ],
         "spec.kube.agentgateway.env.valueFrom.configMapKeyRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.agentgateway.env.valueFrom.configMapKeyRef.optional": [
           null,
-          53
+          72
         ],
         "spec.kube.agentgateway.env.valueFrom.fieldRef": [
           null,
-          54
+          73
         ],
         "spec.kube.agentgateway.env.valueFrom.fieldRef.apiVersion": [
           null,
-          55
+          74
         ],
         "spec.kube.agentgateway.env.valueFrom.fieldRef.fieldPath": [
           null,
-          56
+          75
         ],
         "spec.kube.agentgateway.env.valueFrom.fileKeyRef": [
           null,
-          57
+          76
         ],
         "spec.kube.agentgateway.env.valueFrom.fileKeyRef.key": [
           null,
-          58
+          77
         ],
         "spec.kube.agentgateway.env.valueFrom.fileKeyRef.optional": [
           null,
-          59
+          78
         ],
         "spec.kube.agentgateway.env.valueFrom.fileKeyRef.path": [
           null,
-          60
+          79
         ],
         "spec.kube.agentgateway.env.valueFrom.fileKeyRef.volumeName": [
           null,
-          61
+          80
         ],
         "spec.kube.agentgateway.env.valueFrom.resourceFieldRef": [
           null,
-          62
+          81
         ],
         "spec.kube.agentgateway.env.valueFrom.resourceFieldRef.containerName": [
           null,
-          63
+          82
         ],
         "spec.kube.agentgateway.env.valueFrom.resourceFieldRef.divisor": [
           null,
-          64
+          83
         ],
         "spec.kube.agentgateway.env.valueFrom.resourceFieldRef.resource": [
           null,
-          65
+          84
         ],
         "spec.kube.agentgateway.env.valueFrom.secretKeyRef": [
           null,
-          66
+          85
         ],
         "spec.kube.agentgateway.env.valueFrom.secretKeyRef.key": [
           null,
-          67
+          86
         ],
         "spec.kube.agentgateway.env.valueFrom.secretKeyRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.agentgateway.env.valueFrom.secretKeyRef.optional": [
           null,
-          68
+          87
         ],
         "spec.kube.agentgateway.extraVolumeMounts": [
           null,
-          69
+          88
         ],
         "spec.kube.agentgateway.extraVolumeMounts.mountPath": [
           null,
-          70
+          5
         ],
         "spec.kube.agentgateway.extraVolumeMounts.mountPropagation": [
           null,
-          71
+          89
         ],
         "spec.kube.agentgateway.extraVolumeMounts.name": [
           null,
-          72
+          90
         ],
         "spec.kube.agentgateway.extraVolumeMounts.readOnly": [
           null,
-          73
+          91
         ],
         "spec.kube.agentgateway.extraVolumeMounts.recursiveReadOnly": [
           null,
-          74
+          92
         ],
         "spec.kube.agentgateway.extraVolumeMounts.subPath": [
           null,
-          75
+          93
         ],
         "spec.kube.agentgateway.extraVolumeMounts.subPathExpr": [
           null,
-          76
+          94
         ],
         "spec.kube.agentgateway.image": [
           null,
-          77
+          95
         ],
         "spec.kube.agentgateway.image.digest": [
           null,
-          1
+          21
         ],
         "spec.kube.agentgateway.image.pullPolicy": [
           null,
-          78
+          96
         ],
         "spec.kube.agentgateway.image.registry": [
           null,
-          79
+          97
         ],
         "spec.kube.agentgateway.image.repository": [
           null,
-          80
+          98
         ],
         "spec.kube.agentgateway.image.tag": [
           null,
-          3
+          23
         ],
         "spec.kube.agentgateway.logLevel": [
           null,
-          81
+          99
         ],
         "spec.kube.agentgateway.resources": [
           null,
-          82
+          100
         ],
         "spec.kube.agentgateway.resources.claims": [
           null,
-          83
+          101
         ],
         "spec.kube.agentgateway.resources.claims.name": [
           null,
-          84
+          102
         ],
         "spec.kube.agentgateway.resources.claims.request": [
           null,
-          85
+          103
         ],
         "spec.kube.agentgateway.resources.limits": [
           null,
-          86
+          104
         ],
         "spec.kube.agentgateway.resources.requests": [
           null,
-          87
+          105
         ],
         "spec.kube.agentgateway.securityContext": [
           null,
-          88
+          106
         ],
         "spec.kube.agentgateway.securityContext.allowPrivilegeEscalation": [
           null,
-          89
+          107
         ],
         "spec.kube.agentgateway.securityContext.appArmorProfile": [
           null,
-          90
+          108
         ],
         "spec.kube.agentgateway.securityContext.appArmorProfile.localhostProfile": [
           null,
-          91
+          109
         ],
         "spec.kube.agentgateway.securityContext.appArmorProfile.type": [
           null,
-          92
+          110
         ],
         "spec.kube.agentgateway.securityContext.capabilities": [
           null,
-          93
+          111
         ],
         "spec.kube.agentgateway.securityContext.capabilities.add": [
           null,
-          94
+          112
         ],
         "spec.kube.agentgateway.securityContext.capabilities.drop": [
           null,
-          95
+          113
         ],
         "spec.kube.agentgateway.securityContext.privileged": [
           null,
-          96
+          114
         ],
         "spec.kube.agentgateway.securityContext.procMount": [
           null,
-          9
+          29
         ],
         "spec.kube.agentgateway.securityContext.readOnlyRootFilesystem": [
           null,
-          97
+          115
         ],
         "spec.kube.agentgateway.securityContext.runAsGroup": [
           null,
-          98
+          116
         ],
         "spec.kube.agentgateway.securityContext.runAsNonRoot": [
           null,
-          99
+          117
         ],
         "spec.kube.agentgateway.securityContext.runAsUser": [
           null,
-          100
+          118
         ],
         "spec.kube.agentgateway.securityContext.seLinuxOptions": [
           null,
-          101
+          119
         ],
         "spec.kube.agentgateway.securityContext.seLinuxOptions.level": [
           null,
-          102
+          120
         ],
         "spec.kube.agentgateway.securityContext.seLinuxOptions.role": [
           null,
-          103
+          121
         ],
         "spec.kube.agentgateway.securityContext.seLinuxOptions.type": [
           null,
-          104
+          122
         ],
         "spec.kube.agentgateway.securityContext.seLinuxOptions.user": [
           null,
-          105
+          123
         ],
         "spec.kube.agentgateway.securityContext.seccompProfile": [
           null,
-          106
+          124
         ],
         "spec.kube.agentgateway.securityContext.seccompProfile.localhostProfile": [
           null,
-          107
+          125
         ],
         "spec.kube.agentgateway.securityContext.seccompProfile.type": [
           null,
-          108
+          126
         ],
         "spec.kube.agentgateway.securityContext.windowsOptions": [
           null,
-          109
+          127
         ],
         "spec.kube.agentgateway.securityContext.windowsOptions.gmsaCredentialSpec": [
           null,
-          110
+          128
         ],
         "spec.kube.agentgateway.securityContext.windowsOptions.gmsaCredentialSpecName": [
           null,
-          111
+          129
         ],
         "spec.kube.agentgateway.securityContext.windowsOptions.hostProcess": [
           null,
-          112
+          130
         ],
         "spec.kube.agentgateway.securityContext.windowsOptions.runAsUserName": [
           null,
-          113
+          131
         ],
         "spec.kube.deployment": [
           null,
-          114
+          132
         ],
         "spec.kube.deployment.replicas": [
           null,
-          115
+          133
         ],
         "spec.kube.deployment.strategy": [
           null,
-          116
+          134
         ],
         "spec.kube.deployment.strategy.rollingUpdate": [
           null,
-          117
+          135
         ],
         "spec.kube.deployment.strategy.rollingUpdate.maxSurge": [
           null,
-          118
+          136
         ],
         "spec.kube.deployment.strategy.rollingUpdate.maxUnavailable": [
           null,
-          119
+          137
         ],
         "spec.kube.deployment.strategy.type": [
           null,
-          120
+          138
         ],
         "spec.kube.envoyContainer": [
           null,
-          121
+          139
         ],
         "spec.kube.envoyContainer.bootstrap": [
           null,
-          122
+          140
         ],
         "spec.kube.envoyContainer.bootstrap.componentLogLevels": [
           null,
-          123
+          141
         ],
         "spec.kube.envoyContainer.bootstrap.logLevel": [
           null,
-          124
+          142
         ],
         "spec.kube.envoyContainer.env": [
           null,
-          46
+          66
         ],
         "spec.kube.envoyContainer.env.name": [
           null,
-          47
+          67
         ],
         "spec.kube.envoyContainer.env.value": [
           null,
-          48
+          68
         ],
         "spec.kube.envoyContainer.env.valueFrom": [
           null,
-          49
+          69
         ],
         "spec.kube.envoyContainer.env.valueFrom.configMapKeyRef": [
           null,
-          50
+          70
         ],
         "spec.kube.envoyContainer.env.valueFrom.configMapKeyRef.key": [
           null,
-          51
+          2
         ],
         "spec.kube.envoyContainer.env.valueFrom.configMapKeyRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.envoyContainer.env.valueFrom.configMapKeyRef.optional": [
           null,
-          53
+          72
         ],
         "spec.kube.envoyContainer.env.valueFrom.fieldRef": [
           null,
-          54
+          73
         ],
         "spec.kube.envoyContainer.env.valueFrom.fieldRef.apiVersion": [
           null,
-          55
+          74
         ],
         "spec.kube.envoyContainer.env.valueFrom.fieldRef.fieldPath": [
           null,
-          56
+          75
         ],
         "spec.kube.envoyContainer.env.valueFrom.fileKeyRef": [
           null,
-          57
+          76
         ],
         "spec.kube.envoyContainer.env.valueFrom.fileKeyRef.key": [
           null,
-          58
+          77
         ],
         "spec.kube.envoyContainer.env.valueFrom.fileKeyRef.optional": [
           null,
-          59
+          78
         ],
         "spec.kube.envoyContainer.env.valueFrom.fileKeyRef.path": [
           null,
-          60
+          79
         ],
         "spec.kube.envoyContainer.env.valueFrom.fileKeyRef.volumeName": [
           null,
-          61
+          80
         ],
         "spec.kube.envoyContainer.env.valueFrom.resourceFieldRef": [
           null,
-          62
+          81
         ],
         "spec.kube.envoyContainer.env.valueFrom.resourceFieldRef.containerName": [
           null,
-          63
+          82
         ],
         "spec.kube.envoyContainer.env.valueFrom.resourceFieldRef.divisor": [
           null,
-          64
+          83
         ],
         "spec.kube.envoyContainer.env.valueFrom.resourceFieldRef.resource": [
           null,
-          65
+          84
         ],
         "spec.kube.envoyContainer.env.valueFrom.secretKeyRef": [
           null,
-          66
+          85
         ],
         "spec.kube.envoyContainer.env.valueFrom.secretKeyRef.key": [
           null,
-          67
+          86
         ],
         "spec.kube.envoyContainer.env.valueFrom.secretKeyRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.envoyContainer.env.valueFrom.secretKeyRef.optional": [
           null,
-          68
+          87
         ],
         "spec.kube.envoyContainer.extraVolumeMounts": [
           null,
-          69
+          88
         ],
         "spec.kube.envoyContainer.extraVolumeMounts.mountPath": [
           null,
-          70
+          5
         ],
         "spec.kube.envoyContainer.extraVolumeMounts.mountPropagation": [
           null,
-          71
+          89
         ],
         "spec.kube.envoyContainer.extraVolumeMounts.name": [
           null,
-          72
+          90
         ],
         "spec.kube.envoyContainer.extraVolumeMounts.readOnly": [
           null,
-          73
+          91
         ],
         "spec.kube.envoyContainer.extraVolumeMounts.recursiveReadOnly": [
           null,
-          74
+          92
         ],
         "spec.kube.envoyContainer.extraVolumeMounts.subPath": [
           null,
-          75
+          93
         ],
         "spec.kube.envoyContainer.extraVolumeMounts.subPathExpr": [
           null,
-          76
+          94
         ],
         "spec.kube.envoyContainer.image": [
           null,
-          125
+          143
         ],
         "spec.kube.envoyContainer.image.digest": [
           null,
-          1
+          21
         ],
         "spec.kube.envoyContainer.image.pullPolicy": [
           null,
-          78
+          96
         ],
         "spec.kube.envoyContainer.image.registry": [
           null,
-          79
+          97
         ],
         "spec.kube.envoyContainer.image.repository": [
           null,
-          80
+          98
         ],
         "spec.kube.envoyContainer.image.tag": [
           null,
-          3
+          23
         ],
         "spec.kube.envoyContainer.resources": [
           null,
-          82
+          100
         ],
         "spec.kube.envoyContainer.resources.claims": [
           null,
-          83
+          101
         ],
         "spec.kube.envoyContainer.resources.claims.name": [
           null,
-          84
+          102
         ],
         "spec.kube.envoyContainer.resources.claims.request": [
           null,
-          85
+          103
         ],
         "spec.kube.envoyContainer.resources.limits": [
           null,
-          86
+          104
         ],
         "spec.kube.envoyContainer.resources.requests": [
           null,
-          87
+          105
         ],
         "spec.kube.envoyContainer.securityContext": [
           null,
-          88
+          106
         ],
         "spec.kube.envoyContainer.securityContext.allowPrivilegeEscalation": [
           null,
-          89
+          107
         ],
         "spec.kube.envoyContainer.securityContext.appArmorProfile": [
           null,
-          90
+          108
         ],
         "spec.kube.envoyContainer.securityContext.appArmorProfile.localhostProfile": [
           null,
-          91
+          109
         ],
         "spec.kube.envoyContainer.securityContext.appArmorProfile.type": [
           null,
-          92
+          110
         ],
         "spec.kube.envoyContainer.securityContext.capabilities": [
           null,
-          93
+          111
         ],
         "spec.kube.envoyContainer.securityContext.capabilities.add": [
           null,
-          94
+          112
         ],
         "spec.kube.envoyContainer.securityContext.capabilities.drop": [
           null,
-          95
+          113
         ],
         "spec.kube.envoyContainer.securityContext.privileged": [
           null,
-          96
+          114
         ],
         "spec.kube.envoyContainer.securityContext.procMount": [
           null,
-          9
+          29
         ],
         "spec.kube.envoyContainer.securityContext.readOnlyRootFilesystem": [
           null,
-          97
+          115
         ],
         "spec.kube.envoyContainer.securityContext.runAsGroup": [
           null,
-          98
+          116
         ],
         "spec.kube.envoyContainer.securityContext.runAsNonRoot": [
           null,
-          99
+          117
         ],
         "spec.kube.envoyContainer.securityContext.runAsUser": [
           null,
-          100
+          118
         ],
         "spec.kube.envoyContainer.securityContext.seLinuxOptions": [
           null,
-          101
+          119
         ],
         "spec.kube.envoyContainer.securityContext.seLinuxOptions.level": [
           null,
-          102
+          120
         ],
         "spec.kube.envoyContainer.securityContext.seLinuxOptions.role": [
           null,
-          103
+          121
         ],
         "spec.kube.envoyContainer.securityContext.seLinuxOptions.type": [
           null,
-          104
+          122
         ],
         "spec.kube.envoyContainer.securityContext.seLinuxOptions.user": [
           null,
-          105
+          123
         ],
         "spec.kube.envoyContainer.securityContext.seccompProfile": [
           null,
-          106
+          124
         ],
         "spec.kube.envoyContainer.securityContext.seccompProfile.localhostProfile": [
           null,
-          107
+          125
         ],
         "spec.kube.envoyContainer.securityContext.seccompProfile.type": [
           null,
-          108
+          126
         ],
         "spec.kube.envoyContainer.securityContext.windowsOptions": [
           null,
-          109
+          127
         ],
         "spec.kube.envoyContainer.securityContext.windowsOptions.gmsaCredentialSpec": [
           null,
-          110
+          128
         ],
         "spec.kube.envoyContainer.securityContext.windowsOptions.gmsaCredentialSpecName": [
           null,
-          111
+          129
         ],
         "spec.kube.envoyContainer.securityContext.windowsOptions.hostProcess": [
           null,
-          112
+          130
         ],
         "spec.kube.envoyContainer.securityContext.windowsOptions.runAsUserName": [
           null,
-          113
+          131
         ],
         "spec.kube.istio": [
           null,
-          126
+          144
         ],
         "spec.kube.istio.customSidecars": [
           null,
-          22
+          42
         ],
         "spec.kube.istio.customSidecars.args": [
           null,
-          127
+          145
         ],
         "spec.kube.istio.customSidecars.command": [
           null,
-          128
+          146
         ],
         "spec.kube.istio.customSidecars.env": [
           null,
-          129
+          147
         ],
         "spec.kube.istio.customSidecars.env.name": [
           null,
-          47
+          67
         ],
         "spec.kube.istio.customSidecars.env.value": [
           null,
-          48
+          68
         ],
         "spec.kube.istio.customSidecars.env.valueFrom": [
           null,
-          49
+          69
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.configMapKeyRef": [
           null,
-          50
+          70
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.configMapKeyRef.key": [
           null,
-          51
+          2
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.configMapKeyRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.configMapKeyRef.optional": [
           null,
-          53
+          72
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.fieldRef": [
           null,
-          54
+          73
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.fieldRef.apiVersion": [
           null,
-          55
+          74
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.fieldRef.fieldPath": [
           null,
-          56
+          75
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.fileKeyRef": [
           null,
-          57
+          76
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.fileKeyRef.key": [
           null,
-          58
+          77
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.fileKeyRef.optional": [
           null,
-          59
+          78
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.fileKeyRef.path": [
           null,
-          60
+          79
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.fileKeyRef.volumeName": [
           null,
-          61
+          80
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.resourceFieldRef": [
           null,
-          62
+          81
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.resourceFieldRef.containerName": [
           null,
-          63
+          82
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.resourceFieldRef.divisor": [
           null,
-          64
+          83
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.resourceFieldRef.resource": [
           null,
-          65
+          84
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.secretKeyRef": [
           null,
-          66
+          85
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.secretKeyRef.key": [
           null,
-          67
+          86
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.secretKeyRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.istio.customSidecars.env.valueFrom.secretKeyRef.optional": [
           null,
-          68
+          87
         ],
         "spec.kube.istio.customSidecars.envFrom": [
           null,
-          130
+          148
         ],
         "spec.kube.istio.customSidecars.envFrom.configMapRef": [
           null,
-          131
+          149
         ],
         "spec.kube.istio.customSidecars.envFrom.configMapRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.istio.customSidecars.envFrom.configMapRef.optional": [
           null,
-          132
+          150
         ],
         "spec.kube.istio.customSidecars.envFrom.prefix": [
           null,
-          133
+          151
         ],
         "spec.kube.istio.customSidecars.envFrom.secretRef": [
           null,
-          134
+          152
         ],
         "spec.kube.istio.customSidecars.envFrom.secretRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.istio.customSidecars.envFrom.secretRef.optional": [
           null,
-          135
+          153
         ],
         "spec.kube.istio.customSidecars.image": [
           null,
-          136
+          154
         ],
         "spec.kube.istio.customSidecars.imagePullPolicy": [
           null,
-          137
+          155
         ],
         "spec.kube.istio.customSidecars.lifecycle": [
           null,
-          138
+          156
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart": [
           null,
-          139
+          157
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart.exec": [
           null,
-          140
+          158
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart.exec.command": [
           null,
-          141
+          159
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart.httpGet": [
           null,
-          142
+          160
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart.httpGet.host": [
           null,
-          143
+          161
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart.httpGet.httpHeaders": [
           null,
-          144
+          162
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart.httpGet.httpHeaders.name": [
           null,
-          145
+          163
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart.httpGet.httpHeaders.value": [
           null,
-          146
+          164
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart.httpGet.path": [
           null,
-          147
+          165
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart.httpGet.port": [
           null,
-          148
+          166
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart.httpGet.scheme": [
           null,
-          149
+          167
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart.sleep": [
           null,
-          150
+          168
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart.sleep.seconds": [
           null,
-          151
+          169
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart.tcpSocket": [
           null,
-          152
+          170
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart.tcpSocket.host": [
           null,
-          153
+          171
         ],
         "spec.kube.istio.customSidecars.lifecycle.postStart.tcpSocket.port": [
           null,
-          154
+          172
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop": [
           null,
-          155
+          173
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop.exec": [
           null,
-          140
+          158
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop.exec.command": [
           null,
-          141
+          159
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop.httpGet": [
           null,
-          142
+          160
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop.httpGet.host": [
           null,
-          143
+          161
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop.httpGet.httpHeaders": [
           null,
-          144
+          162
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop.httpGet.httpHeaders.name": [
           null,
-          145
+          163
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop.httpGet.httpHeaders.value": [
           null,
-          146
+          164
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop.httpGet.path": [
           null,
-          147
+          165
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop.httpGet.port": [
           null,
-          148
+          166
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop.httpGet.scheme": [
           null,
-          149
+          167
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop.sleep": [
           null,
-          150
+          168
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop.sleep.seconds": [
           null,
-          151
+          169
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop.tcpSocket": [
           null,
-          152
+          170
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop.tcpSocket.host": [
           null,
-          153
+          171
         ],
         "spec.kube.istio.customSidecars.lifecycle.preStop.tcpSocket.port": [
           null,
-          154
+          172
         ],
         "spec.kube.istio.customSidecars.lifecycle.stopSignal": [
           null,
-          156
+          174
         ],
         "spec.kube.istio.customSidecars.livenessProbe": [
           null,
-          157
+          175
         ],
         "spec.kube.istio.customSidecars.livenessProbe.exec": [
           null,
-          140
+          158
         ],
         "spec.kube.istio.customSidecars.livenessProbe.exec.command": [
           null,
-          141
+          159
         ],
         "spec.kube.istio.customSidecars.livenessProbe.failureThreshold": [
           null,
-          158
+          176
         ],
         "spec.kube.istio.customSidecars.livenessProbe.grpc": [
           null,
-          159
+          177
         ],
         "spec.kube.istio.customSidecars.livenessProbe.grpc.port": [
           null,
-          160
+          178
         ],
         "spec.kube.istio.customSidecars.livenessProbe.grpc.service": [
           null,
-          161
+          179
         ],
         "spec.kube.istio.customSidecars.livenessProbe.httpGet": [
           null,
-          142
+          160
         ],
         "spec.kube.istio.customSidecars.livenessProbe.httpGet.host": [
           null,
-          143
+          161
         ],
         "spec.kube.istio.customSidecars.livenessProbe.httpGet.httpHeaders": [
           null,
-          144
+          162
         ],
         "spec.kube.istio.customSidecars.livenessProbe.httpGet.httpHeaders.name": [
           null,
-          145
+          163
         ],
         "spec.kube.istio.customSidecars.livenessProbe.httpGet.httpHeaders.value": [
           null,
-          146
+          164
         ],
         "spec.kube.istio.customSidecars.livenessProbe.httpGet.path": [
           null,
-          147
+          165
         ],
         "spec.kube.istio.customSidecars.livenessProbe.httpGet.port": [
           null,
-          148
+          166
         ],
         "spec.kube.istio.customSidecars.livenessProbe.httpGet.scheme": [
           null,
-          149
+          167
         ],
         "spec.kube.istio.customSidecars.livenessProbe.initialDelaySeconds": [
           null,
-          162
+          180
         ],
         "spec.kube.istio.customSidecars.livenessProbe.periodSeconds": [
           null,
-          163
+          181
         ],
         "spec.kube.istio.customSidecars.livenessProbe.successThreshold": [
           null,
-          164
+          182
         ],
         "spec.kube.istio.customSidecars.livenessProbe.tcpSocket": [
           null,
-          165
+          183
         ],
         "spec.kube.istio.customSidecars.livenessProbe.tcpSocket.host": [
           null,
-          153
+          171
         ],
         "spec.kube.istio.customSidecars.livenessProbe.tcpSocket.port": [
           null,
-          154
+          172
         ],
         "spec.kube.istio.customSidecars.livenessProbe.terminationGracePeriodSeconds": [
           null,
-          166
+          184
         ],
         "spec.kube.istio.customSidecars.livenessProbe.timeoutSeconds": [
           null,
-          167
+          185
         ],
         "spec.kube.istio.customSidecars.name": [
           null,
-          168
+          186
         ],
         "spec.kube.istio.customSidecars.ports": [
           null,
-          169
+          187
         ],
         "spec.kube.istio.customSidecars.ports.containerPort": [
           null,
-          170
+          188
         ],
         "spec.kube.istio.customSidecars.ports.hostIP": [
           null,
-          171
+          189
         ],
         "spec.kube.istio.customSidecars.ports.hostPort": [
           null,
-          172
+          190
         ],
         "spec.kube.istio.customSidecars.ports.name": [
           null,
-          173
+          191
         ],
         "spec.kube.istio.customSidecars.ports.protocol": [
           null,
-          174
+          192
         ],
         "spec.kube.istio.customSidecars.readinessProbe": [
           null,
-          175
+          193
         ],
         "spec.kube.istio.customSidecars.readinessProbe.exec": [
           null,
-          140
+          158
         ],
         "spec.kube.istio.customSidecars.readinessProbe.exec.command": [
           null,
-          141
+          159
         ],
         "spec.kube.istio.customSidecars.readinessProbe.failureThreshold": [
           null,
-          158
+          176
         ],
         "spec.kube.istio.customSidecars.readinessProbe.grpc": [
           null,
-          159
+          177
         ],
         "spec.kube.istio.customSidecars.readinessProbe.grpc.port": [
           null,
-          160
+          178
         ],
         "spec.kube.istio.customSidecars.readinessProbe.grpc.service": [
           null,
-          161
+          179
         ],
         "spec.kube.istio.customSidecars.readinessProbe.httpGet": [
           null,
-          142
+          160
         ],
         "spec.kube.istio.customSidecars.readinessProbe.httpGet.host": [
           null,
-          143
+          161
         ],
         "spec.kube.istio.customSidecars.readinessProbe.httpGet.httpHeaders": [
           null,
-          144
+          162
         ],
         "spec.kube.istio.customSidecars.readinessProbe.httpGet.httpHeaders.name": [
           null,
-          145
+          163
         ],
         "spec.kube.istio.customSidecars.readinessProbe.httpGet.httpHeaders.value": [
           null,
-          146
+          164
         ],
         "spec.kube.istio.customSidecars.readinessProbe.httpGet.path": [
           null,
-          147
+          165
         ],
         "spec.kube.istio.customSidecars.readinessProbe.httpGet.port": [
           null,
-          148
+          166
         ],
         "spec.kube.istio.customSidecars.readinessProbe.httpGet.scheme": [
           null,
-          149
+          167
         ],
         "spec.kube.istio.customSidecars.readinessProbe.initialDelaySeconds": [
           null,
-          162
+          180
         ],
         "spec.kube.istio.customSidecars.readinessProbe.periodSeconds": [
           null,
-          163
+          181
         ],
         "spec.kube.istio.customSidecars.readinessProbe.successThreshold": [
           null,
-          164
+          182
         ],
         "spec.kube.istio.customSidecars.readinessProbe.tcpSocket": [
           null,
-          165
+          183
         ],
         "spec.kube.istio.customSidecars.readinessProbe.tcpSocket.host": [
           null,
-          153
+          171
         ],
         "spec.kube.istio.customSidecars.readinessProbe.tcpSocket.port": [
           null,
-          154
+          172
         ],
         "spec.kube.istio.customSidecars.readinessProbe.terminationGracePeriodSeconds": [
           null,
-          166
+          184
         ],
         "spec.kube.istio.customSidecars.readinessProbe.timeoutSeconds": [
           null,
-          167
+          185
         ],
         "spec.kube.istio.customSidecars.resizePolicy": [
           null,
-          24
+          44
         ],
         "spec.kube.istio.customSidecars.resizePolicy.resourceName": [
           null,
-          176
+          194
         ],
         "spec.kube.istio.customSidecars.resizePolicy.restartPolicy": [
           null,
-          177
+          195
         ],
         "spec.kube.istio.customSidecars.resources": [
           null,
-          178
+          196
         ],
         "spec.kube.istio.customSidecars.resources.claims": [
           null,
-          83
+          101
         ],
         "spec.kube.istio.customSidecars.resources.claims.name": [
           null,
-          84
+          102
         ],
         "spec.kube.istio.customSidecars.resources.claims.request": [
           null,
-          85
+          103
         ],
         "spec.kube.istio.customSidecars.resources.limits": [
           null,
-          86
+          104
         ],
         "spec.kube.istio.customSidecars.resources.requests": [
           null,
-          87
+          105
         ],
         "spec.kube.istio.customSidecars.restartPolicy": [
           null,
-          179
+          197
         ],
         "spec.kube.istio.customSidecars.restartPolicyRules": [
           null,
-          180
+          198
         ],
         "spec.kube.istio.customSidecars.restartPolicyRules.action": [
           null,
-          181
+          199
         ],
         "spec.kube.istio.customSidecars.restartPolicyRules.exitCodes": [
           null,
-          182
+          200
         ],
         "spec.kube.istio.customSidecars.restartPolicyRules.exitCodes.operator": [
           null,
-          183
+          201
         ],
         "spec.kube.istio.customSidecars.restartPolicyRules.exitCodes.values": [
           null,
-          184
+          202
         ],
         "spec.kube.istio.customSidecars.securityContext": [
           null,
-          185
+          203
         ],
         "spec.kube.istio.customSidecars.securityContext.allowPrivilegeEscalation": [
           null,
-          89
+          107
         ],
         "spec.kube.istio.customSidecars.securityContext.appArmorProfile": [
           null,
-          90
+          108
         ],
         "spec.kube.istio.customSidecars.securityContext.appArmorProfile.localhostProfile": [
           null,
-          91
+          109
         ],
         "spec.kube.istio.customSidecars.securityContext.appArmorProfile.type": [
           null,
-          92
+          110
         ],
         "spec.kube.istio.customSidecars.securityContext.capabilities": [
           null,
-          93
+          111
         ],
         "spec.kube.istio.customSidecars.securityContext.capabilities.add": [
           null,
-          94
+          112
         ],
         "spec.kube.istio.customSidecars.securityContext.capabilities.drop": [
           null,
-          95
+          113
         ],
         "spec.kube.istio.customSidecars.securityContext.privileged": [
           null,
-          96
+          114
         ],
         "spec.kube.istio.customSidecars.securityContext.procMount": [
           null,
-          9
+          29
         ],
         "spec.kube.istio.customSidecars.securityContext.readOnlyRootFilesystem": [
           null,
-          97
+          115
         ],
         "spec.kube.istio.customSidecars.securityContext.runAsGroup": [
           null,
-          98
+          116
         ],
         "spec.kube.istio.customSidecars.securityContext.runAsNonRoot": [
           null,
-          99
+          117
         ],
         "spec.kube.istio.customSidecars.securityContext.runAsUser": [
           null,
-          100
+          118
         ],
         "spec.kube.istio.customSidecars.securityContext.seLinuxOptions": [
           null,
-          101
+          119
         ],
         "spec.kube.istio.customSidecars.securityContext.seLinuxOptions.level": [
           null,
-          102
+          120
         ],
         "spec.kube.istio.customSidecars.securityContext.seLinuxOptions.role": [
           null,
-          103
+          121
         ],
         "spec.kube.istio.customSidecars.securityContext.seLinuxOptions.type": [
           null,
-          104
+          122
         ],
         "spec.kube.istio.customSidecars.securityContext.seLinuxOptions.user": [
           null,
-          105
+          123
         ],
         "spec.kube.istio.customSidecars.securityContext.seccompProfile": [
           null,
-          106
+          124
         ],
         "spec.kube.istio.customSidecars.securityContext.seccompProfile.localhostProfile": [
           null,
-          107
+          125
         ],
         "spec.kube.istio.customSidecars.securityContext.seccompProfile.type": [
           null,
-          108
+          126
         ],
         "spec.kube.istio.customSidecars.securityContext.windowsOptions": [
           null,
-          109
+          127
         ],
         "spec.kube.istio.customSidecars.securityContext.windowsOptions.gmsaCredentialSpec": [
           null,
-          110
+          128
         ],
         "spec.kube.istio.customSidecars.securityContext.windowsOptions.gmsaCredentialSpecName": [
           null,
-          111
+          129
         ],
         "spec.kube.istio.customSidecars.securityContext.windowsOptions.hostProcess": [
           null,
-          112
+          130
         ],
         "spec.kube.istio.customSidecars.securityContext.windowsOptions.runAsUserName": [
           null,
-          113
+          131
         ],
         "spec.kube.istio.customSidecars.startupProbe": [
           null,
-          186
+          204
         ],
         "spec.kube.istio.customSidecars.startupProbe.exec": [
           null,
-          140
+          158
         ],
         "spec.kube.istio.customSidecars.startupProbe.exec.command": [
           null,
-          141
+          159
         ],
         "spec.kube.istio.customSidecars.startupProbe.failureThreshold": [
           null,
-          158
+          176
         ],
         "spec.kube.istio.customSidecars.startupProbe.grpc": [
           null,
-          159
+          177
         ],
         "spec.kube.istio.customSidecars.startupProbe.grpc.port": [
           null,
-          160
+          178
         ],
         "spec.kube.istio.customSidecars.startupProbe.grpc.service": [
           null,
-          161
+          179
         ],
         "spec.kube.istio.customSidecars.startupProbe.httpGet": [
           null,
-          142
+          160
         ],
         "spec.kube.istio.customSidecars.startupProbe.httpGet.host": [
           null,
-          143
+          161
         ],
         "spec.kube.istio.customSidecars.startupProbe.httpGet.httpHeaders": [
           null,
-          144
+          162
         ],
         "spec.kube.istio.customSidecars.startupProbe.httpGet.httpHeaders.name": [
           null,
-          145
+          163
         ],
         "spec.kube.istio.customSidecars.startupProbe.httpGet.httpHeaders.value": [
           null,
-          146
+          164
         ],
         "spec.kube.istio.customSidecars.startupProbe.httpGet.path": [
           null,
-          147
+          165
         ],
         "spec.kube.istio.customSidecars.startupProbe.httpGet.port": [
           null,
-          148
+          166
         ],
         "spec.kube.istio.customSidecars.startupProbe.httpGet.scheme": [
           null,
-          149
+          167
         ],
         "spec.kube.istio.customSidecars.startupProbe.initialDelaySeconds": [
           null,
-          162
+          180
         ],
         "spec.kube.istio.customSidecars.startupProbe.periodSeconds": [
           null,
-          163
+          181
         ],
         "spec.kube.istio.customSidecars.startupProbe.successThreshold": [
           null,
-          164
+          182
         ],
         "spec.kube.istio.customSidecars.startupProbe.tcpSocket": [
           null,
-          165
+          183
         ],
         "spec.kube.istio.customSidecars.startupProbe.tcpSocket.host": [
           null,
-          153
+          171
         ],
         "spec.kube.istio.customSidecars.startupProbe.tcpSocket.port": [
           null,
-          154
+          172
         ],
         "spec.kube.istio.customSidecars.startupProbe.terminationGracePeriodSeconds": [
           null,
-          166
+          184
         ],
         "spec.kube.istio.customSidecars.startupProbe.timeoutSeconds": [
           null,
-          167
+          185
         ],
         "spec.kube.istio.customSidecars.stdin": [
           null,
-          187
+          205
         ],
         "spec.kube.istio.customSidecars.stdinOnce": [
           null,
-          188
+          206
         ],
         "spec.kube.istio.customSidecars.terminationMessagePath": [
           null,
-          189
+          207
         ],
         "spec.kube.istio.customSidecars.terminationMessagePolicy": [
           null,
-          190
+          208
         ],
         "spec.kube.istio.customSidecars.tty": [
           null,
-          191
+          209
         ],
         "spec.kube.istio.customSidecars.volumeDevices": [
           null,
-          192
+          210
         ],
         "spec.kube.istio.customSidecars.volumeDevices.devicePath": [
           null,
-          193
+          211
         ],
         "spec.kube.istio.customSidecars.volumeDevices.name": [
           null,
-          194
+          212
         ],
         "spec.kube.istio.customSidecars.volumeMounts": [
           null,
-          195
+          213
         ],
         "spec.kube.istio.customSidecars.volumeMounts.mountPath": [
           null,
-          70
+          5
         ],
         "spec.kube.istio.customSidecars.volumeMounts.mountPropagation": [
           null,
-          71
+          89
         ],
         "spec.kube.istio.customSidecars.volumeMounts.name": [
           null,
-          72
+          90
         ],
         "spec.kube.istio.customSidecars.volumeMounts.readOnly": [
           null,
-          73
+          91
         ],
         "spec.kube.istio.customSidecars.volumeMounts.recursiveReadOnly": [
           null,
-          74
+          92
         ],
         "spec.kube.istio.customSidecars.volumeMounts.subPath": [
           null,
-          75
+          93
         ],
         "spec.kube.istio.customSidecars.volumeMounts.subPathExpr": [
           null,
-          76
+          94
         ],
         "spec.kube.istio.customSidecars.workingDir": [
           null,
-          196
+          214
         ],
         "spec.kube.istio.istioProxyContainer": [
           null,
-          197
+          215
         ],
         "spec.kube.istio.istioProxyContainer.image": [
           null,
-          198
+          216
         ],
         "spec.kube.istio.istioProxyContainer.image.digest": [
           null,
-          1
+          21
         ],
         "spec.kube.istio.istioProxyContainer.image.pullPolicy": [
           null,
-          78
+          96
         ],
         "spec.kube.istio.istioProxyContainer.image.registry": [
           null,
-          79
+          97
         ],
         "spec.kube.istio.istioProxyContainer.image.repository": [
           null,
-          80
+          98
         ],
         "spec.kube.istio.istioProxyContainer.image.tag": [
           null,
-          3
+          23
         ],
         "spec.kube.istio.istioProxyContainer.istioDiscoveryAddress": [
           null,
-          199
+          217
         ],
         "spec.kube.istio.istioProxyContainer.istioMetaClusterId": [
           null,
-          200
+          218
         ],
         "spec.kube.istio.istioProxyContainer.istioMetaMeshId": [
           null,
-          201
+          219
         ],
         "spec.kube.istio.istioProxyContainer.logLevel": [
           null,
-          202
+          220
         ],
         "spec.kube.istio.istioProxyContainer.resources": [
           null,
-          82
+          100
         ],
         "spec.kube.istio.istioProxyContainer.resources.claims": [
           null,
-          83
+          101
         ],
         "spec.kube.istio.istioProxyContainer.resources.claims.name": [
           null,
-          84
+          102
         ],
         "spec.kube.istio.istioProxyContainer.resources.claims.request": [
           null,
-          85
+          103
         ],
         "spec.kube.istio.istioProxyContainer.resources.limits": [
           null,
-          86
+          104
         ],
         "spec.kube.istio.istioProxyContainer.resources.requests": [
           null,
-          87
+          105
         ],
         "spec.kube.istio.istioProxyContainer.securityContext": [
           null,
-          88
+          106
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.allowPrivilegeEscalation": [
           null,
-          89
+          107
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.appArmorProfile": [
           null,
-          90
+          108
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.appArmorProfile.localhostProfile": [
           null,
-          91
+          109
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.appArmorProfile.type": [
           null,
-          92
+          110
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.capabilities": [
           null,
-          93
+          111
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.capabilities.add": [
           null,
-          94
+          112
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.capabilities.drop": [
           null,
-          95
+          113
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.privileged": [
           null,
-          96
+          114
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.procMount": [
           null,
-          9
+          29
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.readOnlyRootFilesystem": [
           null,
-          97
+          115
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.runAsGroup": [
           null,
-          98
+          116
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.runAsNonRoot": [
           null,
-          99
+          117
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.runAsUser": [
           null,
-          100
+          118
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.seLinuxOptions": [
           null,
-          101
+          119
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.seLinuxOptions.level": [
           null,
-          102
+          120
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.seLinuxOptions.role": [
           null,
-          103
+          121
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.seLinuxOptions.type": [
           null,
-          104
+          122
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.seLinuxOptions.user": [
           null,
-          105
+          123
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.seccompProfile": [
           null,
-          106
+          124
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.seccompProfile.localhostProfile": [
           null,
-          107
+          125
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.seccompProfile.type": [
           null,
-          108
+          126
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.windowsOptions": [
           null,
-          109
+          127
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.windowsOptions.gmsaCredentialSpec": [
           null,
-          110
+          128
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.windowsOptions.gmsaCredentialSpecName": [
           null,
-          111
+          129
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.windowsOptions.hostProcess": [
           null,
-          112
+          130
         ],
         "spec.kube.istio.istioProxyContainer.securityContext.windowsOptions.runAsUserName": [
           null,
-          113
+          131
         ],
         "spec.kube.omitDefaultSecurityContext": [
           null,
-          203
+          221
         ],
         "spec.kube.podTemplate": [
           null,
-          204
+          222
         ],
         "spec.kube.podTemplate.affinity": [
           null,
-          205
+          223
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity": [
           null,
-          206
+          224
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
           null,
-          207
+          225
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference": [
           null,
-          208
+          226
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions": [
           null,
-          209
+          227
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.key": [
           null,
-          210
+          228
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.operator": [
           null,
-          211
+          229
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.values": [
           null,
-          212
+          230
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields": [
           null,
-          213
+          231
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.key": [
           null,
-          210
+          228
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.operator": [
           null,
-          211
+          229
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.values": [
           null,
-          212
+          230
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
           null,
-          214
+          232
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
           null,
-          215
+          233
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms": [
           null,
-          216
+          234
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions": [
           null,
-          209
+          227
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.key": [
           null,
-          210
+          228
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.operator": [
           null,
-          211
+          229
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.values": [
           null,
-          212
+          230
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields": [
           null,
-          213
+          231
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.key": [
           null,
-          210
+          228
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.operator": [
           null,
-          211
+          229
         ],
         "spec.kube.podTemplate.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.values": [
           null,
-          212
+          230
         ],
         "spec.kube.podTemplate.affinity.podAffinity": [
           null,
-          217
+          235
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
           null,
-          218
+          236
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm": [
           null,
-          219
+          237
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector": [
           null,
-          220
+          238
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions": [
           null,
-          221
+          239
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.key": [
           null,
-          222
+          240
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator": [
           null,
-          223
+          241
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values": [
           null,
-          224
+          242
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels": [
           null,
-          225
+          243
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": [
           null,
-          226
+          244
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": [
           null,
-          227
+          245
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
           null,
-          228
+          246
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions": [
           null,
-          221
+          239
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.key": [
           null,
-          222
+          240
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator": [
           null,
-          223
+          241
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values": [
           null,
-          224
+          242
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels": [
           null,
-          225
+          243
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
           null,
-          229
+          247
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey": [
           null,
-          230
+          248
         ],
         "spec.kube.podTemplate.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
           null,
-          231
+          249
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
           null,
-          232
+          250
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector": [
           null,
-          220
+          238
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions": [
           null,
-          221
+          239
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.key": [
           null,
-          222
+          240
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator": [
           null,
-          223
+          241
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values": [
           null,
-          224
+          242
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels": [
           null,
-          225
+          243
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": [
           null,
-          226
+          244
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": [
           null,
-          227
+          245
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
           null,
-          228
+          246
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions": [
           null,
-          221
+          239
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.key": [
           null,
-          222
+          240
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator": [
           null,
-          223
+          241
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values": [
           null,
-          224
+          242
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels": [
           null,
-          225
+          243
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
           null,
-          229
+          247
         ],
         "spec.kube.podTemplate.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey": [
           null,
-          230
+          248
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity": [
           null,
-          233
+          251
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution": [
           null,
-          234
+          252
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm": [
           null,
-          219
+          237
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector": [
           null,
-          220
+          238
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions": [
           null,
-          221
+          239
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.key": [
           null,
-          222
+          240
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.operator": [
           null,
-          223
+          241
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.values": [
           null,
-          224
+          242
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchLabels": [
           null,
-          225
+          243
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": [
           null,
-          226
+          244
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": [
           null,
-          227
+          245
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector": [
           null,
-          228
+          246
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions": [
           null,
-          221
+          239
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.key": [
           null,
-          222
+          240
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.operator": [
           null,
-          223
+          241
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.values": [
           null,
-          224
+          242
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchLabels": [
           null,
-          225
+          243
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaces": [
           null,
-          229
+          247
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.topologyKey": [
           null,
-          230
+          248
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.weight": [
           null,
-          231
+          249
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution": [
           null,
-          235
+          253
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector": [
           null,
-          220
+          238
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions": [
           null,
-          221
+          239
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.key": [
           null,
-          222
+          240
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.operator": [
           null,
-          223
+          241
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.values": [
           null,
-          224
+          242
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchLabels": [
           null,
-          225
+          243
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": [
           null,
-          226
+          244
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": [
           null,
-          227
+          245
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector": [
           null,
-          228
+          246
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions": [
           null,
-          221
+          239
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.key": [
           null,
-          222
+          240
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.operator": [
           null,
-          223
+          241
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.values": [
           null,
-          224
+          242
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchLabels": [
           null,
-          225
+          243
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaces": [
           null,
-          229
+          247
         ],
         "spec.kube.podTemplate.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.topologyKey": [
           null,
-          230
+          248
         ],
         "spec.kube.podTemplate.extraAnnotations": [
           null,
-          236
+          254
         ],
         "spec.kube.podTemplate.extraLabels": [
           null,
-          237
+          255
         ],
         "spec.kube.podTemplate.extraVolumes": [
           null,
-          238
+          256
         ],
         "spec.kube.podTemplate.extraVolumes.awsElasticBlockStore": [
           null,
-          239
+          257
         ],
         "spec.kube.podTemplate.extraVolumes.awsElasticBlockStore.fsType": [
           null,
-          240
+          258
         ],
         "spec.kube.podTemplate.extraVolumes.awsElasticBlockStore.partition": [
           null,
-          241
+          259
         ],
         "spec.kube.podTemplate.extraVolumes.awsElasticBlockStore.readOnly": [
           null,
-          242
+          260
         ],
         "spec.kube.podTemplate.extraVolumes.awsElasticBlockStore.volumeID": [
           null,
-          243
+          261
         ],
         "spec.kube.podTemplate.extraVolumes.azureDisk": [
           null,
-          244
+          262
         ],
         "spec.kube.podTemplate.extraVolumes.azureDisk.cachingMode": [
           null,
-          245
+          263
         ],
         "spec.kube.podTemplate.extraVolumes.azureDisk.diskName": [
           null,
-          246
+          264
         ],
         "spec.kube.podTemplate.extraVolumes.azureDisk.diskURI": [
           null,
-          247
+          265
         ],
         "spec.kube.podTemplate.extraVolumes.azureDisk.fsType": [
           null,
-          248
+          266
         ],
         "spec.kube.podTemplate.extraVolumes.azureDisk.kind": [
           null,
-          249
+          267
         ],
         "spec.kube.podTemplate.extraVolumes.azureDisk.readOnly": [
           null,
-          250
+          268
         ],
         "spec.kube.podTemplate.extraVolumes.azureFile": [
           null,
-          251
+          269
         ],
         "spec.kube.podTemplate.extraVolumes.azureFile.readOnly": [
           null,
-          252
+          270
         ],
         "spec.kube.podTemplate.extraVolumes.azureFile.secretName": [
           null,
-          253
+          271
         ],
         "spec.kube.podTemplate.extraVolumes.azureFile.shareName": [
           null,
-          254
+          272
         ],
         "spec.kube.podTemplate.extraVolumes.cephfs": [
           null,
-          255
+          273
         ],
         "spec.kube.podTemplate.extraVolumes.cephfs.monitors": [
           null,
-          256
+          274
         ],
         "spec.kube.podTemplate.extraVolumes.cephfs.path": [
           null,
-          257
+          275
         ],
         "spec.kube.podTemplate.extraVolumes.cephfs.readOnly": [
           null,
-          258
+          276
         ],
         "spec.kube.podTemplate.extraVolumes.cephfs.secretFile": [
           null,
-          259
+          277
         ],
         "spec.kube.podTemplate.extraVolumes.cephfs.secretRef": [
           null,
-          260
+          278
         ],
         "spec.kube.podTemplate.extraVolumes.cephfs.secretRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.podTemplate.extraVolumes.cephfs.user": [
           null,
-          261
+          279
         ],
         "spec.kube.podTemplate.extraVolumes.cinder": [
           null,
-          262
+          280
         ],
         "spec.kube.podTemplate.extraVolumes.cinder.fsType": [
           null,
-          263
+          281
         ],
         "spec.kube.podTemplate.extraVolumes.cinder.readOnly": [
           null,
-          264
+          282
         ],
         "spec.kube.podTemplate.extraVolumes.cinder.secretRef": [
           null,
-          265
+          283
         ],
         "spec.kube.podTemplate.extraVolumes.cinder.secretRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.podTemplate.extraVolumes.cinder.volumeID": [
           null,
-          266
+          284
         ],
         "spec.kube.podTemplate.extraVolumes.configMap": [
           null,
-          267
+          285
         ],
         "spec.kube.podTemplate.extraVolumes.configMap.defaultMode": [
           null,
-          268
+          286
         ],
         "spec.kube.podTemplate.extraVolumes.configMap.items": [
           null,
-          269
+          287
         ],
         "spec.kube.podTemplate.extraVolumes.configMap.items.key": [
           null,
-          270
+          288
         ],
         "spec.kube.podTemplate.extraVolumes.configMap.items.mode": [
           null,
-          271
+          289
         ],
         "spec.kube.podTemplate.extraVolumes.configMap.items.path": [
           null,
-          272
+          290
         ],
         "spec.kube.podTemplate.extraVolumes.configMap.name": [
           null,
-          52
+          71
         ],
         "spec.kube.podTemplate.extraVolumes.configMap.optional": [
           null,
-          273
+          291
         ],
         "spec.kube.podTemplate.extraVolumes.csi": [
           null,
-          274
+          292
         ],
         "spec.kube.podTemplate.extraVolumes.csi.driver": [
           null,
-          275
+          293
         ],
         "spec.kube.podTemplate.extraVolumes.csi.fsType": [
           null,
-          276
+          294
         ],
         "spec.kube.podTemplate.extraVolumes.csi.nodePublishSecretRef": [
           null,
-          277
+          295
         ],
         "spec.kube.podTemplate.extraVolumes.csi.nodePublishSecretRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.podTemplate.extraVolumes.csi.readOnly": [
           null,
-          278
+          296
         ],
         "spec.kube.podTemplate.extraVolumes.csi.volumeAttributes": [
           null,
-          279
+          297
         ],
         "spec.kube.podTemplate.extraVolumes.downwardAPI": [
           null,
-          280
+          298
         ],
         "spec.kube.podTemplate.extraVolumes.downwardAPI.defaultMode": [
           null,
-          281
+          299
         ],
         "spec.kube.podTemplate.extraVolumes.downwardAPI.items": [
           null,
-          282
+          300
         ],
         "spec.kube.podTemplate.extraVolumes.downwardAPI.items.fieldRef": [
           null,
-          283
+          301
         ],
         "spec.kube.podTemplate.extraVolumes.downwardAPI.items.fieldRef.apiVersion": [
           null,
-          55
+          74
         ],
         "spec.kube.podTemplate.extraVolumes.downwardAPI.items.fieldRef.fieldPath": [
           null,
-          56
+          75
         ],
         "spec.kube.podTemplate.extraVolumes.downwardAPI.items.mode": [
           null,
-          284
+          302
         ],
         "spec.kube.podTemplate.extraVolumes.downwardAPI.items.path": [
           null,
-          285
+          303
         ],
         "spec.kube.podTemplate.extraVolumes.downwardAPI.items.resourceFieldRef": [
           null,
-          286
+          304
         ],
         "spec.kube.podTemplate.extraVolumes.downwardAPI.items.resourceFieldRef.containerName": [
           null,
-          63
+          82
         ],
         "spec.kube.podTemplate.extraVolumes.downwardAPI.items.resourceFieldRef.divisor": [
           null,
-          64
+          83
         ],
         "spec.kube.podTemplate.extraVolumes.downwardAPI.items.resourceFieldRef.resource": [
           null,
-          65
+          84
         ],
         "spec.kube.podTemplate.extraVolumes.emptyDir": [
           null,
-          287
+          305
         ],
         "spec.kube.podTemplate.extraVolumes.emptyDir.medium": [
           null,
-          288
+          306
         ],
         "spec.kube.podTemplate.extraVolumes.emptyDir.sizeLimit": [
           null,
-          289
+          307
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral": [
           null,
-          290
+          308
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate": [
           null,
-          291
+          309
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.metadata": [
           null,
-          292
+          310
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec": [
           null,
-          293
+          311
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.accessModes": [
           null,
-          294
+          312
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.dataSource": [
           null,
-          295
+          12
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.dataSource.apiGroup": [
           null,
-          296
+          313
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.dataSource.kind": [
           null,
-          297
+          314
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.dataSource.name": [
           null,
-          298
+          315
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef": [
           null,
-          299
+          14
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef.apiGroup": [
           null,
-          296
+          313
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef.kind": [
           null,
-          297
+          314
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef.name": [
           null,
-          298
+          315
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef.namespace": [
           null,
-          300
+          316
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.resources": [
           null,
-          27
+          47
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.resources.limits": [
           null,
-          86
+          104
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.resources.requests": [
           null,
-          87
+          105
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.selector": [
           null,
-          301
+          317
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.selector.matchExpressions": [
           null,
-          221
+          239
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.selector.matchExpressions.key": [
           null,
-          222
+          240
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.selector.matchExpressions.operator": [
           null,
-          223
+          241
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.selector.matchExpressions.values": [
           null,
-          224
+          242
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.selector.matchLabels": [
           null,
-          225
+          243
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.storageClassName": [
           null,
-          302
+          318
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.volumeAttributesClassName": [
           null,
-          303
+          319
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.volumeMode": [
           null,
-          304
+          320
         ],
         "spec.kube.podTemplate.extraVolumes.ephemeral.volumeClaimTemplate.spec.volumeName": [
           null,
-          305
+          321
         ],
         "spec.kube.podTemplate.extraVolumes.fc": [
           null,
-          306
+          322
         ],
         "spec.kube.podTemplate.extraVolumes.fc.fsType": [
           null,
-          307
+          323
         ],
         "spec.kube.podTemplate.extraVolumes.fc.lun": [
           null,
-          308
+          324
         ],
         "spec.kube.podTemplate.extraVolumes.fc.readOnly": [
           null,
-          309
+          325
         ],
         "spec.kube.podTemplate.extraVolumes.fc.targetWWNs": [
           null,
-          310
+          326
         ],
         "spec.kube.podTemplate.extraVolumes.fc.wwids": [
           null,
-          311
+          327
         ],
         "spec.kube.podTemplate.extraVolumes.flexVolume": [
           null,
-          312
+          328
         ],
         "spec.kube.podTemplate.extraVolumes.flexVolume.driver": [
           null,
-          313
+          329
         ],
         "spec.kube.podTemplate.extraVolumes.flexVolume.fsType": [
           null,
-          314
+          330
         ],
         "spec.kube.podTemplate.extraVolumes.flexVolume.options": [
           null,
-          315
+          331
         ],
         "spec.kube.podTemplate.extraVolumes.flexVolume.readOnly": [
           null,
-          316
+          332
         ],
         "spec.kube.podTemplate.extraVolumes.flexVolume.secretRef": [
           null,
-          317
+          333
         ],
         "spec.kube.podTemplate.extraVolumes.flexVolume.secretRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.podTemplate.extraVolumes.flocker": [
           null,
-          318
+          334
         ],
         "spec.kube.podTemplate.extraVolumes.flocker.datasetName": [
           null,
-          319
+          335
         ],
         "spec.kube.podTemplate.extraVolumes.flocker.datasetUUID": [
           null,
-          320
+          336
         ],
         "spec.kube.podTemplate.extraVolumes.gcePersistentDisk": [
           null,
-          321
+          337
         ],
         "spec.kube.podTemplate.extraVolumes.gcePersistentDisk.fsType": [
           null,
-          322
+          338
         ],
         "spec.kube.podTemplate.extraVolumes.gcePersistentDisk.partition": [
           null,
-          323
+          339
         ],
         "spec.kube.podTemplate.extraVolumes.gcePersistentDisk.pdName": [
           null,
-          324
+          340
         ],
         "spec.kube.podTemplate.extraVolumes.gcePersistentDisk.readOnly": [
           null,
-          325
+          341
         ],
         "spec.kube.podTemplate.extraVolumes.gitRepo": [
           null,
-          326
+          342
         ],
         "spec.kube.podTemplate.extraVolumes.gitRepo.directory": [
           null,
-          327
+          343
         ],
         "spec.kube.podTemplate.extraVolumes.gitRepo.repository": [
           null,
-          328
+          344
         ],
         "spec.kube.podTemplate.extraVolumes.gitRepo.revision": [
           null,
-          329
+          345
         ],
         "spec.kube.podTemplate.extraVolumes.glusterfs": [
           null,
-          330
+          346
         ],
         "spec.kube.podTemplate.extraVolumes.glusterfs.endpoints": [
           null,
-          331
+          347
         ],
         "spec.kube.podTemplate.extraVolumes.glusterfs.path": [
           null,
-          332
+          348
         ],
         "spec.kube.podTemplate.extraVolumes.glusterfs.readOnly": [
           null,
-          333
+          349
         ],
         "spec.kube.podTemplate.extraVolumes.hostPath": [
           null,
-          334
+          350
         ],
         "spec.kube.podTemplate.extraVolumes.hostPath.path": [
           null,
-          335
+          351
         ],
         "spec.kube.podTemplate.extraVolumes.hostPath.type": [
           null,
-          336
+          352
         ],
         "spec.kube.podTemplate.extraVolumes.image": [
           null,
-          11
+          31
         ],
         "spec.kube.podTemplate.extraVolumes.image.pullPolicy": [
           null,
-          337
+          353
         ],
         "spec.kube.podTemplate.extraVolumes.image.reference": [
           null,
-          338
+          354
         ],
         "spec.kube.podTemplate.extraVolumes.iscsi": [
           null,
-          339
+          355
         ],
         "spec.kube.podTemplate.extraVolumes.iscsi.chapAuthDiscovery": [
           null,
-          340
+          356
         ],
         "spec.kube.podTemplate.extraVolumes.iscsi.chapAuthSession": [
           null,
-          341
+          357
         ],
         "spec.kube.podTemplate.extraVolumes.iscsi.fsType": [
           null,
-          342
+          358
         ],
         "spec.kube.podTemplate.extraVolumes.iscsi.initiatorName": [
           null,
-          343
+          359
         ],
         "spec.kube.podTemplate.extraVolumes.iscsi.iqn": [
           null,
-          344
+          360
         ],
         "spec.kube.podTemplate.extraVolumes.iscsi.iscsiInterface": [
           null,
-          345
+          361
         ],
         "spec.kube.podTemplate.extraVolumes.iscsi.lun": [
           null,
-          346
+          362
         ],
         "spec.kube.podTemplate.extraVolumes.iscsi.portals": [
           null,
-          347
+          363
         ],
         "spec.kube.podTemplate.extraVolumes.iscsi.readOnly": [
           null,
-          348
+          364
         ],
         "spec.kube.podTemplate.extraVolumes.iscsi.secretRef": [
           null,
-          349
+          365
         ],
         "spec.kube.podTemplate.extraVolumes.iscsi.secretRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.podTemplate.extraVolumes.iscsi.targetPortal": [
           null,
-          350
+          366
         ],
         "spec.kube.podTemplate.extraVolumes.name": [
           null,
-          351
+          367
         ],
         "spec.kube.podTemplate.extraVolumes.nfs": [
           null,
-          352
+          368
         ],
         "spec.kube.podTemplate.extraVolumes.nfs.path": [
           null,
-          353
+          369
         ],
         "spec.kube.podTemplate.extraVolumes.nfs.readOnly": [
           null,
-          354
+          370
         ],
         "spec.kube.podTemplate.extraVolumes.nfs.server": [
           null,
-          355
+          371
         ],
         "spec.kube.podTemplate.extraVolumes.persistentVolumeClaim": [
           null,
-          356
+          372
         ],
         "spec.kube.podTemplate.extraVolumes.persistentVolumeClaim.claimName": [
           null,
-          357
+          373
         ],
         "spec.kube.podTemplate.extraVolumes.persistentVolumeClaim.readOnly": [
           null,
-          358
+          374
         ],
         "spec.kube.podTemplate.extraVolumes.photonPersistentDisk": [
           null,
-          359
+          375
         ],
         "spec.kube.podTemplate.extraVolumes.photonPersistentDisk.fsType": [
           null,
-          307
+          323
         ],
         "spec.kube.podTemplate.extraVolumes.photonPersistentDisk.pdID": [
           null,
-          360
+          376
         ],
         "spec.kube.podTemplate.extraVolumes.portworxVolume": [
           null,
-          13
+          33
         ],
         "spec.kube.podTemplate.extraVolumes.portworxVolume.fsType": [
           null,
-          361
+          377
         ],
         "spec.kube.podTemplate.extraVolumes.portworxVolume.readOnly": [
           null,
-          252
+          270
         ],
         "spec.kube.podTemplate.extraVolumes.portworxVolume.volumeID": [
           null,
-          362
+          378
         ],
         "spec.kube.podTemplate.extraVolumes.projected": [
           null,
-          363
+          379
         ],
         "spec.kube.podTemplate.extraVolumes.projected.defaultMode": [
           null,
-          364
+          380
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources": [
           null,
-          365
+          381
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.clusterTrustBundle": [
           null,
-          366
+          382
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.clusterTrustBundle.labelSelector": [
           null,
-          367
+          383
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.clusterTrustBundle.labelSelector.matchExpressions": [
           null,
-          221
+          239
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.clusterTrustBundle.labelSelector.matchExpressions.key": [
           null,
-          222
+          240
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.clusterTrustBundle.labelSelector.matchExpressions.operator": [
           null,
-          223
+          241
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.clusterTrustBundle.labelSelector.matchExpressions.values": [
           null,
-          224
+          242
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.clusterTrustBundle.labelSelector.matchLabels": [
           null,
-          225
+          243
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.clusterTrustBundle.name": [
           null,
-          368
+          384
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.clusterTrustBundle.optional": [
           null,
-          369
+          385
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.clusterTrustBundle.path": [
           null,
-          370
+          386
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.clusterTrustBundle.signerName": [
           null,
-          371
+          387
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.configMap": [
           null,
-          372
+          388
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.configMap.items": [
           null,
-          269
+          287
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.configMap.items.key": [
           null,
-          270
+          288
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.configMap.items.mode": [
           null,
-          271
+          289
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.configMap.items.path": [
           null,
-          272
+          290
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.configMap.name": [
           null,
-          52
+          71
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.configMap.optional": [
           null,
-          273
+          291
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.downwardAPI": [
           null,
-          373
+          389
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.downwardAPI.items": [
           null,
-          374
+          390
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.downwardAPI.items.fieldRef": [
           null,
-          283
+          301
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.downwardAPI.items.fieldRef.apiVersion": [
           null,
-          55
+          74
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.downwardAPI.items.fieldRef.fieldPath": [
           null,
-          56
+          75
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.downwardAPI.items.mode": [
           null,
-          284
+          302
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.downwardAPI.items.path": [
           null,
-          285
+          303
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.downwardAPI.items.resourceFieldRef": [
           null,
-          286
+          304
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.downwardAPI.items.resourceFieldRef.containerName": [
           null,
-          63
+          82
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.downwardAPI.items.resourceFieldRef.divisor": [
           null,
-          64
+          83
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.downwardAPI.items.resourceFieldRef.resource": [
           null,
-          65
+          84
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.podCertificate": [
           null,
-          375
+          391
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.podCertificate.certificateChainPath": [
           null,
-          376
+          392
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.podCertificate.credentialBundlePath": [
           null,
-          377
+          393
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.podCertificate.keyPath": [
           null,
-          378
+          394
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.podCertificate.keyType": [
           null,
-          379
+          395
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.podCertificate.maxExpirationSeconds": [
           null,
-          380
+          396
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.podCertificate.signerName": [
           null,
-          381
+          397
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.secret": [
           null,
-          382
+          398
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.secret.items": [
           null,
-          383
+          399
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.secret.items.key": [
           null,
-          270
+          288
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.secret.items.mode": [
           null,
-          271
+          289
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.secret.items.path": [
           null,
-          272
+          290
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.secret.name": [
           null,
-          52
+          71
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.secret.optional": [
           null,
-          384
+          400
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.serviceAccountToken": [
           null,
-          385
+          401
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.serviceAccountToken.audience": [
           null,
-          386
+          402
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.serviceAccountToken.expirationSeconds": [
           null,
-          387
+          403
         ],
         "spec.kube.podTemplate.extraVolumes.projected.sources.serviceAccountToken.path": [
           null,
-          388
+          404
         ],
         "spec.kube.podTemplate.extraVolumes.quobyte": [
           null,
-          389
+          405
         ],
         "spec.kube.podTemplate.extraVolumes.quobyte.group": [
           null,
-          390
+          406
         ],
         "spec.kube.podTemplate.extraVolumes.quobyte.readOnly": [
           null,
-          391
+          407
         ],
         "spec.kube.podTemplate.extraVolumes.quobyte.registry": [
           null,
-          392
+          408
         ],
         "spec.kube.podTemplate.extraVolumes.quobyte.tenant": [
           null,
-          393
+          409
         ],
         "spec.kube.podTemplate.extraVolumes.quobyte.user": [
           null,
-          394
+          410
         ],
         "spec.kube.podTemplate.extraVolumes.quobyte.volume": [
           null,
-          395
+          411
         ],
         "spec.kube.podTemplate.extraVolumes.rbd": [
           null,
-          396
+          412
         ],
         "spec.kube.podTemplate.extraVolumes.rbd.fsType": [
           null,
-          397
+          413
         ],
         "spec.kube.podTemplate.extraVolumes.rbd.image": [
           null,
-          398
+          414
         ],
         "spec.kube.podTemplate.extraVolumes.rbd.keyring": [
           null,
-          399
+          415
         ],
         "spec.kube.podTemplate.extraVolumes.rbd.monitors": [
           null,
-          400
+          416
         ],
         "spec.kube.podTemplate.extraVolumes.rbd.pool": [
           null,
-          401
+          417
         ],
         "spec.kube.podTemplate.extraVolumes.rbd.readOnly": [
           null,
-          402
+          418
         ],
         "spec.kube.podTemplate.extraVolumes.rbd.secretRef": [
           null,
-          403
+          419
         ],
         "spec.kube.podTemplate.extraVolumes.rbd.secretRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.podTemplate.extraVolumes.rbd.user": [
           null,
-          404
+          420
         ],
         "spec.kube.podTemplate.extraVolumes.scaleIO": [
           null,
-          405
+          421
         ],
         "spec.kube.podTemplate.extraVolumes.scaleIO.fsType": [
           null,
-          406
+          422
         ],
         "spec.kube.podTemplate.extraVolumes.scaleIO.gateway": [
           null,
-          407
+          423
         ],
         "spec.kube.podTemplate.extraVolumes.scaleIO.protectionDomain": [
           null,
-          408
+          424
         ],
         "spec.kube.podTemplate.extraVolumes.scaleIO.readOnly": [
           null,
-          250
+          268
         ],
         "spec.kube.podTemplate.extraVolumes.scaleIO.secretRef": [
           null,
-          409
+          425
         ],
         "spec.kube.podTemplate.extraVolumes.scaleIO.secretRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.podTemplate.extraVolumes.scaleIO.sslEnabled": [
           null,
-          410
+          426
         ],
         "spec.kube.podTemplate.extraVolumes.scaleIO.storageMode": [
           null,
-          411
+          427
         ],
         "spec.kube.podTemplate.extraVolumes.scaleIO.storagePool": [
           null,
-          412
+          428
         ],
         "spec.kube.podTemplate.extraVolumes.scaleIO.system": [
           null,
-          413
+          429
         ],
         "spec.kube.podTemplate.extraVolumes.scaleIO.volumeName": [
           null,
-          414
+          430
         ],
         "spec.kube.podTemplate.extraVolumes.secret": [
           null,
-          415
+          431
         ],
         "spec.kube.podTemplate.extraVolumes.secret.defaultMode": [
           null,
-          416
+          432
         ],
         "spec.kube.podTemplate.extraVolumes.secret.items": [
           null,
-          417
+          433
         ],
         "spec.kube.podTemplate.extraVolumes.secret.items.key": [
           null,
-          270
+          288
         ],
         "spec.kube.podTemplate.extraVolumes.secret.items.mode": [
           null,
-          271
+          289
         ],
         "spec.kube.podTemplate.extraVolumes.secret.items.path": [
           null,
-          272
+          290
         ],
         "spec.kube.podTemplate.extraVolumes.secret.optional": [
           null,
-          418
+          434
         ],
         "spec.kube.podTemplate.extraVolumes.secret.secretName": [
           null,
-          419
+          435
         ],
         "spec.kube.podTemplate.extraVolumes.storageos": [
           null,
-          420
+          436
         ],
         "spec.kube.podTemplate.extraVolumes.storageos.fsType": [
           null,
-          307
+          323
         ],
         "spec.kube.podTemplate.extraVolumes.storageos.readOnly": [
           null,
-          252
+          270
         ],
         "spec.kube.podTemplate.extraVolumes.storageos.secretRef": [
           null,
-          421
+          437
         ],
         "spec.kube.podTemplate.extraVolumes.storageos.secretRef.name": [
           null,
-          52
+          71
         ],
         "spec.kube.podTemplate.extraVolumes.storageos.volumeName": [
           null,
-          422
+          438
         ],
         "spec.kube.podTemplate.extraVolumes.storageos.volumeNamespace": [
           null,
-          423
+          439
         ],
         "spec.kube.podTemplate.extraVolumes.vsphereVolume": [
           null,
-          424
+          440
         ],
         "spec.kube.podTemplate.extraVolumes.vsphereVolume.fsType": [
           null,
-          425
+          441
         ],
         "spec.kube.podTemplate.extraVolumes.vsphereVolume.storagePolicyID": [
           null,
-          426
+          442
         ],
         "spec.kube.podTemplate.extraVolumes.vsphereVolume.storagePolicyName": [
           null,
-          427
+          443
         ],
         "spec.kube.podTemplate.extraVolumes.vsphereVolume.volumePath": [
           null,
-          428
+          444
         ],
         "spec.kube.podTemplate.gracefulShutdown": [
           null,
-          429
+          445
         ],
         "spec.kube.podTemplate.gracefulShutdown.enabled": [
           null,
-          30
+          50
         ],
         "spec.kube.podTemplate.gracefulShutdown.sleepTimeSeconds": [
           null,
-          430
+          446
         ],
         "spec.kube.podTemplate.imagePullSecrets": [
           null,
-          431
+          447
         ],
         "spec.kube.podTemplate.imagePullSecrets.name": [
           null,
-          52
+          71
         ],
         "spec.kube.podTemplate.livenessProbe": [
           null,
-          432
+          448
         ],
         "spec.kube.podTemplate.livenessProbe.exec": [
           null,
-          140
+          158
         ],
         "spec.kube.podTemplate.livenessProbe.exec.command": [
           null,
-          141
+          159
         ],
         "spec.kube.podTemplate.livenessProbe.failureThreshold": [
           null,
-          158
+          176
         ],
         "spec.kube.podTemplate.livenessProbe.grpc": [
           null,
-          159
+          177
         ],
         "spec.kube.podTemplate.livenessProbe.grpc.port": [
           null,
-          160
+          178
         ],
         "spec.kube.podTemplate.livenessProbe.grpc.service": [
           null,
-          161
+          179
         ],
         "spec.kube.podTemplate.livenessProbe.httpGet": [
           null,
-          142
+          160
         ],
         "spec.kube.podTemplate.livenessProbe.httpGet.host": [
           null,
-          143
+          161
         ],
         "spec.kube.podTemplate.livenessProbe.httpGet.httpHeaders": [
           null,
-          144
+          162
         ],
         "spec.kube.podTemplate.livenessProbe.httpGet.httpHeaders.name": [
           null,
-          145
+          163
         ],
         "spec.kube.podTemplate.livenessProbe.httpGet.httpHeaders.value": [
           null,
-          146
+          164
         ],
         "spec.kube.podTemplate.livenessProbe.httpGet.path": [
           null,
-          147
+          165
         ],
         "spec.kube.podTemplate.livenessProbe.httpGet.port": [
           null,
-          148
+          166
         ],
         "spec.kube.podTemplate.livenessProbe.httpGet.scheme": [
           null,
-          149
+          167
         ],
         "spec.kube.podTemplate.livenessProbe.initialDelaySeconds": [
           null,
-          162
+          180
         ],
         "spec.kube.podTemplate.livenessProbe.periodSeconds": [
           null,
-          163
+          181
         ],
         "spec.kube.podTemplate.livenessProbe.successThreshold": [
           null,
-          164
+          182
         ],
         "spec.kube.podTemplate.livenessProbe.tcpSocket": [
           null,
-          165
+          183
         ],
         "spec.kube.podTemplate.livenessProbe.tcpSocket.host": [
           null,
-          153
+          171
         ],
         "spec.kube.podTemplate.livenessProbe.tcpSocket.port": [
           null,
-          154
+          172
         ],
         "spec.kube.podTemplate.livenessProbe.terminationGracePeriodSeconds": [
           null,
-          166
+          184
         ],
         "spec.kube.podTemplate.livenessProbe.timeoutSeconds": [
           null,
-          167
+          185
         ],
         "spec.kube.podTemplate.nodeSelector": [
           null,
-          5
+          25
         ],
         "spec.kube.podTemplate.priorityClassName": [
           null,
-          433
+          449
         ],
         "spec.kube.podTemplate.readinessProbe": [
           null,
-          434
+          450
         ],
         "spec.kube.podTemplate.readinessProbe.exec": [
           null,
-          140
+          158
         ],
         "spec.kube.podTemplate.readinessProbe.exec.command": [
           null,
-          141
+          159
         ],
         "spec.kube.podTemplate.readinessProbe.failureThreshold": [
           null,
-          158
+          176
         ],
         "spec.kube.podTemplate.readinessProbe.grpc": [
           null,
-          159
+          177
         ],
         "spec.kube.podTemplate.readinessProbe.grpc.port": [
           null,
-          160
+          178
         ],
         "spec.kube.podTemplate.readinessProbe.grpc.service": [
           null,
-          161
+          179
         ],
         "spec.kube.podTemplate.readinessProbe.httpGet": [
           null,
-          142
+          160
         ],
         "spec.kube.podTemplate.readinessProbe.httpGet.host": [
           null,
-          143
+          161
         ],
         "spec.kube.podTemplate.readinessProbe.httpGet.httpHeaders": [
           null,
-          144
+          162
         ],
         "spec.kube.podTemplate.readinessProbe.httpGet.httpHeaders.name": [
           null,
-          145
+          163
         ],
         "spec.kube.podTemplate.readinessProbe.httpGet.httpHeaders.value": [
           null,
-          146
+          164
         ],
         "spec.kube.podTemplate.readinessProbe.httpGet.path": [
           null,
-          147
+          165
         ],
         "spec.kube.podTemplate.readinessProbe.httpGet.port": [
           null,
-          148
+          166
         ],
         "spec.kube.podTemplate.readinessProbe.httpGet.scheme": [
           null,
-          149
+          167
         ],
         "spec.kube.podTemplate.readinessProbe.initialDelaySeconds": [
           null,
-          162
+          180
         ],
         "spec.kube.podTemplate.readinessProbe.periodSeconds": [
           null,
-          163
+          181
         ],
         "spec.kube.podTemplate.readinessProbe.successThreshold": [
           null,
-          164
+          182
         ],
         "spec.kube.podTemplate.readinessProbe.tcpSocket": [
           null,
-          165
+          183
         ],
         "spec.kube.podTemplate.readinessProbe.tcpSocket.host": [
           null,
-          153
+          171
         ],
         "spec.kube.podTemplate.readinessProbe.tcpSocket.port": [
           null,
-          154
+          172
         ],
         "spec.kube.podTemplate.readinessProbe.terminationGracePeriodSeconds": [
           null,
-          166
+          184
         ],
         "spec.kube.podTemplate.readinessProbe.timeoutSeconds": [
           null,
-          167
+          185
         ],
         "spec.kube.podTemplate.securityContext": [
           null,
-          435
+          451
         ],
         "spec.kube.podTemplate.securityContext.appArmorProfile": [
           null,
-          436
+          452
         ],
         "spec.kube.podTemplate.securityContext.appArmorProfile.localhostProfile": [
           null,
-          91
+          109
         ],
         "spec.kube.podTemplate.securityContext.appArmorProfile.type": [
           null,
-          92
+          110
         ],
         "spec.kube.podTemplate.securityContext.fsGroup": [
           null,
-          437
+          453
         ],
         "spec.kube.podTemplate.securityContext.fsGroupChangePolicy": [
           null,
-          438
+          454
         ],
         "spec.kube.podTemplate.securityContext.runAsGroup": [
           null,
-          439
+          455
         ],
         "spec.kube.podTemplate.securityContext.runAsNonRoot": [
           null,
-          440
+          456
         ],
         "spec.kube.podTemplate.securityContext.runAsUser": [
           null,
-          441
+          457
         ],
         "spec.kube.podTemplate.securityContext.seLinuxChangePolicy": [
           null,
-          442
+          16
         ],
         "spec.kube.podTemplate.securityContext.seLinuxOptions": [
           null,
-          443
+          458
         ],
         "spec.kube.podTemplate.securityContext.seLinuxOptions.level": [
           null,
-          102
+          120
         ],
         "spec.kube.podTemplate.securityContext.seLinuxOptions.role": [
           null,
-          103
+          121
         ],
         "spec.kube.podTemplate.securityContext.seLinuxOptions.type": [
           null,
-          104
+          122
         ],
         "spec.kube.podTemplate.securityContext.seLinuxOptions.user": [
           null,
-          105
+          123
         ],
         "spec.kube.podTemplate.securityContext.seccompProfile": [
           null,
-          444
+          459
         ],
         "spec.kube.podTemplate.securityContext.seccompProfile.localhostProfile": [
           null,
-          107
+          125
         ],
         "spec.kube.podTemplate.securityContext.seccompProfile.type": [
           null,
-          108
+          126
         ],
         "spec.kube.podTemplate.securityContext.supplementalGroups": [
           null,
-          445
+          460
         ],
         "spec.kube.podTemplate.securityContext.supplementalGroupsPolicy": [
           null,
-          446
+          461
         ],
         "spec.kube.podTemplate.securityContext.sysctls": [
           null,
-          447
+          462
         ],
         "spec.kube.podTemplate.securityContext.sysctls.name": [
           null,
-          448
+          463
         ],
         "spec.kube.podTemplate.securityContext.sysctls.value": [
           null,
-          449
+          464
         ],
         "spec.kube.podTemplate.securityContext.windowsOptions": [
           null,
-          450
+          465
         ],
         "spec.kube.podTemplate.securityContext.windowsOptions.gmsaCredentialSpec": [
           null,
-          110
+          128
         ],
         "spec.kube.podTemplate.securityContext.windowsOptions.gmsaCredentialSpecName": [
           null,
-          111
+          129
         ],
         "spec.kube.podTemplate.securityContext.windowsOptions.hostProcess": [
           null,
-          112
+          130
         ],
         "spec.kube.podTemplate.securityContext.windowsOptions.runAsUserName": [
           null,
-          113
+          131
         ],
         "spec.kube.podTemplate.startupProbe": [
           null,
-          451
+          466
         ],
         "spec.kube.podTemplate.startupProbe.exec": [
           null,
-          140
+          158
         ],
         "spec.kube.podTemplate.startupProbe.exec.command": [
           null,
-          141
+          159
         ],
         "spec.kube.podTemplate.startupProbe.failureThreshold": [
           null,
-          158
+          176
         ],
         "spec.kube.podTemplate.startupProbe.grpc": [
           null,
-          159
+          177
         ],
         "spec.kube.podTemplate.startupProbe.grpc.port": [
           null,
-          160
+          178
         ],
         "spec.kube.podTemplate.startupProbe.grpc.service": [
           null,
-          161
+          179
         ],
         "spec.kube.podTemplate.startupProbe.httpGet": [
           null,
-          142
+          160
         ],
         "spec.kube.podTemplate.startupProbe.httpGet.host": [
           null,
-          143
+          161
         ],
         "spec.kube.podTemplate.startupProbe.httpGet.httpHeaders": [
           null,
-          144
+          162
         ],
         "spec.kube.podTemplate.startupProbe.httpGet.httpHeaders.name": [
           null,
-          145
+          163
         ],
         "spec.kube.podTemplate.startupProbe.httpGet.httpHeaders.value": [
           null,
-          146
+          164
         ],
         "spec.kube.podTemplate.startupProbe.httpGet.path": [
           null,
-          147
+          165
         ],
         "spec.kube.podTemplate.startupProbe.httpGet.port": [
           null,
-          148
+          166
         ],
         "spec.kube.podTemplate.startupProbe.httpGet.scheme": [
           null,
-          149
+          167
         ],
         "spec.kube.podTemplate.startupProbe.initialDelaySeconds": [
           null,
-          162
+          180
         ],
         "spec.kube.podTemplate.startupProbe.periodSeconds": [
           null,
-          163
+          181
         ],
         "spec.kube.podTemplate.startupProbe.successThreshold": [
           null,
-          164
+          182
         ],
         "spec.kube.podTemplate.startupProbe.tcpSocket": [
           null,
-          165
+          183
         ],
         "spec.kube.podTemplate.startupProbe.tcpSocket.host": [
           null,
-          153
+          171
         ],
         "spec.kube.podTemplate.startupProbe.tcpSocket.port": [
           null,
-          154
+          172
         ],
         "spec.kube.podTemplate.startupProbe.terminationGracePeriodSeconds": [
           null,
-          166
+          184
         ],
         "spec.kube.podTemplate.startupProbe.timeoutSeconds": [
           null,
-          167
+          185
         ],
         "spec.kube.podTemplate.terminationGracePeriodSeconds": [
           null,
-          452
+          467
         ],
         "spec.kube.podTemplate.tolerations": [
           null,
-          7
+          27
         ],
         "spec.kube.podTemplate.tolerations.effect": [
           null,
-          453
+          468
         ],
         "spec.kube.podTemplate.tolerations.key": [
           null,
-          454
+          469
         ],
         "spec.kube.podTemplate.tolerations.operator": [
           null,
-          32
+          52
         ],
         "spec.kube.podTemplate.tolerations.tolerationSeconds": [
           null,
-          455
+          470
         ],
         "spec.kube.podTemplate.tolerations.value": [
           null,
-          456
+          471
         ],
         "spec.kube.podTemplate.topologySpreadConstraints": [
           null,
-          457
+          472
         ],
         "spec.kube.podTemplate.topologySpreadConstraints.labelSelector": [
           null,
-          458
+          473
         ],
         "spec.kube.podTemplate.topologySpreadConstraints.labelSelector.matchExpressions": [
           null,
-          221
+          239
         ],
         "spec.kube.podTemplate.topologySpreadConstraints.labelSelector.matchExpressions.key": [
           null,
-          222
+          240
         ],
         "spec.kube.podTemplate.topologySpreadConstraints.labelSelector.matchExpressions.operator": [
           null,
-          223
+          241
         ],
         "spec.kube.podTemplate.topologySpreadConstraints.labelSelector.matchExpressions.values": [
           null,
-          224
+          242
         ],
         "spec.kube.podTemplate.topologySpreadConstraints.labelSelector.matchLabels": [
           null,
-          225
+          243
         ],
         "spec.kube.podTemplate.topologySpreadConstraints.matchLabelKeys": [
           null,
-          459
+          474
         ],
         "spec.kube.podTemplate.topologySpreadConstraints.maxSkew": [
           null,
-          460
+          475
         ],
         "spec.kube.podTemplate.topologySpreadConstraints.minDomains": [
           null,
-          461
+          476
         ],
         "spec.kube.podTemplate.topologySpreadConstraints.nodeAffinityPolicy": [
           null,
-          462
+          477
         ],
         "spec.kube.podTemplate.topologySpreadConstraints.nodeTaintsPolicy": [
           null,
-          463
+          478
         ],
         "spec.kube.podTemplate.topologySpreadConstraints.topologyKey": [
           null,
-          464
+          479
         ],
         "spec.kube.podTemplate.topologySpreadConstraints.whenUnsatisfiable": [
           null,
-          465
+          480
         ],
         "spec.kube.sdsContainer": [
           null,
-          466
+          481
         ],
         "spec.kube.sdsContainer.bootstrap": [
           null,
-          467
+          482
         ],
         "spec.kube.sdsContainer.bootstrap.logLevel": [
           null,
-          468
+          483
         ],
         "spec.kube.sdsContainer.image": [
           null,
-          469
+          484
         ],
         "spec.kube.sdsContainer.image.digest": [
           null,
-          1
+          21
         ],
         "spec.kube.sdsContainer.image.pullPolicy": [
           null,
-          78
+          96
         ],
         "spec.kube.sdsContainer.image.registry": [
           null,
-          79
+          97
         ],
         "spec.kube.sdsContainer.image.repository": [
           null,
-          80
+          98
         ],
         "spec.kube.sdsContainer.image.tag": [
           null,
-          3
+          23
         ],
         "spec.kube.sdsContainer.resources": [
           null,
-          82
+          100
         ],
         "spec.kube.sdsContainer.resources.claims": [
           null,
-          83
+          101
         ],
         "spec.kube.sdsContainer.resources.claims.name": [
           null,
-          84
+          102
         ],
         "spec.kube.sdsContainer.resources.claims.request": [
           null,
-          85
+          103
         ],
         "spec.kube.sdsContainer.resources.limits": [
           null,
-          86
+          104
         ],
         "spec.kube.sdsContainer.resources.requests": [
           null,
-          87
+          105
         ],
         "spec.kube.sdsContainer.securityContext": [
           null,
-          88
+          106
         ],
         "spec.kube.sdsContainer.securityContext.allowPrivilegeEscalation": [
           null,
-          89
+          107
         ],
         "spec.kube.sdsContainer.securityContext.appArmorProfile": [
           null,
-          90
+          108
         ],
         "spec.kube.sdsContainer.securityContext.appArmorProfile.localhostProfile": [
           null,
-          91
+          109
         ],
         "spec.kube.sdsContainer.securityContext.appArmorProfile.type": [
           null,
-          92
+          110
         ],
         "spec.kube.sdsContainer.securityContext.capabilities": [
           null,
-          93
+          111
         ],
         "spec.kube.sdsContainer.securityContext.capabilities.add": [
           null,
-          94
+          112
         ],
         "spec.kube.sdsContainer.securityContext.capabilities.drop": [
           null,
-          95
+          113
         ],
         "spec.kube.sdsContainer.securityContext.privileged": [
           null,
-          96
+          114
         ],
         "spec.kube.sdsContainer.securityContext.procMount": [
           null,
-          9
+          29
         ],
         "spec.kube.sdsContainer.securityContext.readOnlyRootFilesystem": [
           null,
-          97
+          115
         ],
         "spec.kube.sdsContainer.securityContext.runAsGroup": [
           null,
-          98
+          116
         ],
         "spec.kube.sdsContainer.securityContext.runAsNonRoot": [
           null,
-          99
+          117
         ],
         "spec.kube.sdsContainer.securityContext.runAsUser": [
           null,
-          100
+          118
         ],
         "spec.kube.sdsContainer.securityContext.seLinuxOptions": [
           null,
-          101
+          119
         ],
         "spec.kube.sdsContainer.securityContext.seLinuxOptions.level": [
           null,
-          102
+          120
         ],
         "spec.kube.sdsContainer.securityContext.seLinuxOptions.role": [
           null,
-          103
+          121
         ],
         "spec.kube.sdsContainer.securityContext.seLinuxOptions.type": [
           null,
-          104
+          122
         ],
         "spec.kube.sdsContainer.securityContext.seLinuxOptions.user": [
           null,
-          105
+          123
         ],
         "spec.kube.sdsContainer.securityContext.seccompProfile": [
           null,
-          106
+          124
         ],
         "spec.kube.sdsContainer.securityContext.seccompProfile.localhostProfile": [
           null,
-          107
+          125
         ],
         "spec.kube.sdsContainer.securityContext.seccompProfile.type": [
           null,
-          108
+          126
         ],
         "spec.kube.sdsContainer.securityContext.windowsOptions": [
           null,
-          109
+          127
         ],
         "spec.kube.sdsContainer.securityContext.windowsOptions.gmsaCredentialSpec": [
           null,
-          110
+          128
         ],
         "spec.kube.sdsContainer.securityContext.windowsOptions.gmsaCredentialSpecName": [
           null,
-          111
+          129
         ],
         "spec.kube.sdsContainer.securityContext.windowsOptions.hostProcess": [
           null,
-          112
+          130
         ],
         "spec.kube.sdsContainer.securityContext.windowsOptions.runAsUserName": [
           null,
-          113
+          131
         ],
         "spec.kube.service": [
           null,
-          470
+          485
         ],
         "spec.kube.service.clusterIP": [
           null,
-          471
+          486
         ],
         "spec.kube.service.externalTrafficPolicy": [
           null,
-          472
+          487
         ],
         "spec.kube.service.extraAnnotations": [
           null,
-          473
+          488
         ],
         "spec.kube.service.extraLabels": [
           null,
-          474
+          489
         ],
         "spec.kube.service.ports": [
           null,
-          475
+          490
         ],
         "spec.kube.service.ports.nodePort": [
           null,
-          476
+          491
         ],
         "spec.kube.service.ports.port": [
           null,
-          477
+          492
         ],
         "spec.kube.service.type": [
           null,
-          478
+          493
         ],
         "spec.kube.serviceAccount": [
           null,
-          479
+          494
         ],
         "spec.kube.serviceAccount.extraAnnotations": [
           null,
-          480
+          495
         ],
         "spec.kube.serviceAccount.extraLabels": [
           null,
-          481
+          496
         ],
         "spec.kube.stats": [
           null,
-          482
+          497
         ],
         "spec.kube.stats.enableStatsRoute": [
           null,
-          483
+          498
         ],
         "spec.kube.stats.enabled": [
           null,
-          484
+          499
         ],
         "spec.kube.stats.matcher": [
           null,
-          485
+          500
         ],
         "spec.kube.stats.routePrefixRewrite": [
           null,
-          486
+          501
         ],
         "spec.kube.stats.statsRoutePrefixRewrite": [
           null,
-          487
+          502
         ],
         "spec.selfManaged": [
           null,
-          488
+          503
         ],
         "status": [
           null,
-          489
+          504
         ],
         "": [
           null,
-          40
+          60
         ]
       }
     },
@@ -4994,6 +5213,26 @@
     }
   },
   "texts": [
+    "MaxDownstreamConnections caps active downstream connections across all listeners. Unset by default (no limit).\nThis is bootstrap configuration, so changing it restarts the proxy.",
+    "MaxDownstreamConnections caps active downstream connections across all listeners. Unset by default (no limit).\nThis is bootstrap configuration, so changing it restarts the proxy.\n\nMust be at most 9007199254740991 (2^53-1).",
+    "The key to select.",
+    "The key to select from the ConfigMap's Data field.\nKeys in the BinaryData field are not currently propagated to container env vars.",
+    "bindMountOptions is the list of additional bind mount options to apply when\nmounting this volume into the container. Allowed values are noexec,\nnodev, and nosuid. These are Linux mount options and have no effect on\nWindows nodes.\nThis field is not supported with image volumes.\nThis is an alpha field and requires enabling the VolumeBindMountOptions feature gate.",
+    "Path within the container at which the volume should be mounted.  Must\nnot contain ':'.",
+    "Path within the container at which the volume should be mounted.",
+    "Protocol selects the wire protocol for the probe connection.\nNil defaults to HTTP/1.1.",
+    "mode specifies the connection mode for the gRPC health probe.\nSet to \"TLS\" to use TLS without certificate verification.\nSet to \"Plaintext\" to use a plaintext (insecure) connection explicitly.\nIf not specified, the probe uses a plaintext (insecure) connection.",
+    "defaultUser is Optional: The owner UID of the created files by default.\nThe defaultUser field is only used as a fallback when the item-level user field is unset.\n(Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.",
+    "user is Optional: The owner UID of the created file.\nIf specified, the item-level user field takes precedence over defaultUser.\n(Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.",
+    "mode specifies the permission bits for the emptyDir directory, in numeric\nnotation (e.g., 0755, 01777). Must be a value between 0000 and 01777.\nIf not specified, defaults to 0777.\nThis might be in conflict with other options that affect the file\nmode, like fsGroup. If fsGroup is specified, the fsGroup permissions\nwill override the mode specified here.\nThis field has no effect on Windows.\nThis field is alpha and requires EmptyDirVolumeMode featuregate to be enabled.",
+    "dataSource field can be used to specify either:\n* An existing VolumeSnapshot object (snapshot.storage.k8s.io/VolumeSnapshot)\n* An existing PVC (PersistentVolumeClaim)\nIf the provisioner or an external controller can support the specified data source,\nit will create a new volume based on the contents of the specified data source.\nWhen the AnyVolumeDataSource feature gate is enabled, dataSource contents will be copied to dataSourceRef,\nand dataSourceRef contents will be copied to dataSource when dataSourceRef.namespace is not specified.\nIf the namespace is specified, then dataSourceRef will not be copied to dataSource.",
+    "dataSource field can be used to specify either:\n* An existing VolumeSnapshot object (snapshot.storage.k8s.io/VolumeSnapshot)\n* An existing PVC (PersistentVolumeClaim)\nIf the provisioner or an external controller can support the specified data source,\nit will create a new volume based on the contents of the specified data source.\ndataSource contents will be copied to dataSourceRef, and dataSourceRef contents will be\ncopied to dataSource when dataSourceRef.namespace is not specified.\nIf the namespace is specified, then dataSourceRef will not be copied to dataSource.",
+    "dataSourceRef specifies the object from which to populate the volume with data, if a non-empty\nvolume is desired. This may be any object from a non-empty API group (non\ncore object) or a PersistentVolumeClaim object.\nWhen this field is specified, volume binding will only succeed if the type of\nthe specified object matches some installed volume populator or dynamic\nprovisioner.\nThis field will replace the functionality of the dataSource field and as such\nif both fields are non-empty, they must have the same value. For backwards\ncompatibility, when namespace isn't specified in dataSourceRef,\nboth fields (dataSource and dataSourceRef) will be set to the same\nvalue automatically if one of them is empty and the other is non-empty.\nWhen namespace is specified in dataSourceRef,\ndataSource isn't set to the same value and must be empty.\nThere are three important differences between dataSource and dataSourceRef:\n* While dataSource only allows two specific types of objects, dataSourceRef\n  allows any non-core object, as well as PersistentVolumeClaim objects.\n* While dataSource ignores disallowed values (dropping them), dataSourceRef\n  preserves all values, and generates an error if a disallowed value is\n  specified.\n* While dataSource only allows local objects, dataSourceRef allows objects\n  in any namespaces.\n(Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.\n(Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.",
+    "dataSourceRef specifies the object from which to populate the volume with data, if a non-empty\nvolume is desired. This may be any object from a non-empty API group (non\ncore object) or a PersistentVolumeClaim object.\nWhen this field is specified, volume binding will only succeed if the type of\nthe specified object matches some installed volume populator or dynamic\nprovisioner.\nThis field will replace the functionality of the dataSource field and as such\nif both fields are non-empty, they must have the same value. For backwards\ncompatibility, when namespace isn't specified in dataSourceRef,\nboth fields (dataSource and dataSourceRef) will be set to the same\nvalue automatically if one of them is empty and the other is non-empty.\nWhen namespace is specified in dataSourceRef,\ndataSource isn't set to the same value and must be empty.\nThere are three important differences between dataSource and dataSourceRef:\n* While dataSource only allows two specific types of objects, dataSourceRef\n  allows any non-core object, as well as PersistentVolumeClaim objects.\n* While dataSource ignores disallowed values (dropping them), dataSourceRef\n  preserves all values, and generates an error if a disallowed value is\n  specified.\n* While dataSource only allows local objects, dataSourceRef allows objects\n  in any namespaces.\n(Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.",
+    "seLinuxChangePolicy defines how the container's SELinux label is applied to all volumes used by the Pod.\nIt has no effect on nodes that do not support SELinux or to volumes does not support SELinux.\nValid values are \"MountOption\" and \"Recursive\".\n\n\"Recursive\" means relabeling of all files on all Pod volumes by the container runtime.\nThis may be slow for large volumes, but allows mixing privileged and unprivileged Pods sharing the same volume on the same node.\n\n\"MountOption\" mounts all eligible Pod volumes with `-o context` mount option.\nThis requires all Pods that share the same volume to use the same SELinux label.\nIt is not possible to share the same volume among privileged and unprivileged Pods.\nEligible volumes are in-tree FibreChannel and iSCSI volumes, and all CSI volumes\nwhose CSI driver announces SELinux support by setting spec.seLinuxMount: true in their\nCSIDriver instance. Other volumes are always re-labelled recursively.\n\"MountOption\" value is allowed only when SELinuxMount feature gate is enabled.\n\nIf not specified and SELinuxMount feature gate is enabled, \"MountOption\" is used.\nIf not specified and SELinuxMount feature gate is disabled, \"MountOption\" is used for ReadWriteOncePod volumes\nand \"Recursive\" for all other volumes.\n\nThis field affects only Pods that have SELinux label set, either in PodSecurityContext or in SecurityContext of all containers.\n\nAll Pods that use the same volume should use the same seLinuxChangePolicy, otherwise some pods can get stuck in ContainerCreating state.\nNote that this field cannot be set when spec.os.name is windows.",
+    "seLinuxChangePolicy defines how the container's SELinux label is applied to all volumes used by the Pod.\nIt has no effect on nodes that do not support SELinux or to volumes does not support SELinux.\nValid values are \"MountOption\" and \"Recursive\".\n\n\"Recursive\" means relabeling of all files on all Pod volumes by the container runtime.\nThis may be slow for large volumes, but allows mixing privileged and unprivileged Pods sharing the same volume on the same node.\n\n\"MountOption\" mounts all eligible Pod volumes with `-o context` mount option.\nThis requires all Pods that share the same volume to use the same SELinux label.\nIt is not possible to share the same volume among privileged and unprivileged Pods.\nEligible volumes are in-tree FibreChannel and iSCSI volumes, and all CSI volumes\nwhose CSI driver announces SELinux support by setting spec.seLinuxMount: true in their\nCSIDriver instance. Other volumes are always re-labelled recursively.\n\nIf not specified, \"MountOption\" is used.\n\nThis field affects only Pods that have SELinux label set, either in PodSecurityContext or in SecurityContext of all containers.\n\nAll Pods that use the same volume should use the same seLinuxChangePolicy, otherwise some pods can get stuck in ContainerCreating state.\nNote that this field cannot be set when spec.os.name is windows.",
+    "IPFamilies is the list of IP families (IPv4 and/or IPv6) assigned to the Service,\nin order of preference. If unset, the cluster's default is used. See\nhttps://kubernetes.io/docs/concepts/services-networking/dual-stack/\nThis field is only honored for Services that allocate a cluster IP, and the\nfamilies requested here must be configured on the cluster.\n\nKubernetes does not allow the first family to change on an existing Service:\nthe second family can be added or dropped, but a change to the first one,\nincluding setting it on a Gateway whose Service took a different cluster\ndefault, is rejected. The proxy Service then stops being updated, and so do\nthe resources applied after it, such as the Deployment. To change the first\nfamily, delete the proxy Service or recreate the Gateway; either gives the\nService new cluster and LoadBalancer addresses.\n\nNote: This feature is experimental and subject to breaking changes in future releases.",
+    "IPFamilyPolicy represents the dual-stack preference of the Service.\n`SingleStack` allocates one family, `PreferDualStack` allocates two when the\ncluster has dual-stack configured and falls back to one when it does not, and\n`RequireDualStack` fails allocation unless two families are available.\nIf unset, the cluster's default is used.\n\nNote: This feature is experimental and subject to breaking changes in future releases.",
     "EnableReadinessProbeProxyProtocol enables the PROXY protocol listener filter\non the kgateway readiness listener (port 8082).\nSet this to true if and only if the load balancer in front of the gateway\nprepends PROXY protocol headers to incoming TCP connections targeting the\nreadiness port. For example, when using an AWS NLB with proxy protocol v2\nenabled at the target group level\n(`service.beta.kubernetes.io/aws-load-balancer-proxy-protocol: \"*\"`).\nDefaults to false.",
     "The hash digest of the image, e.g. `sha256:12345...`",
     "The hash digest of the image, e.g. `sha256:12345...`\n\nTag and Digest are coupled at merge time: specifying a non-empty Digest\nwithout also specifying a Tag clears any inherited Tag, so the rendered\nimage reference is `repo@digest`. To keep both an inherited (or\noverridden) tag and digest, specify non-empty values for both fields.\nTo clear an inherited Digest while keeping an inherited Tag, set Digest\nto the empty string.",
@@ -5045,7 +5284,6 @@
     "Variable references $(VAR_NAME) are expanded\nusing the previously defined environment variables in the container and\nany service environment variables. If a variable cannot be resolved,\nthe reference in the input string will be unchanged. Double $$ are reduced\nto a single $, which allows for escaping the $(VAR_NAME) syntax: i.e.\n\"$$(VAR_NAME)\" will produce the string literal \"$(VAR_NAME)\".\nEscaped references will never be expanded, regardless of whether the variable\nexists or not.\nDefaults to \"\".",
     "Source for the environment variable's value. Cannot be used if value is not empty.",
     "Selects a key of a ConfigMap.",
-    "The key to select.",
     "Name of the referent.\nThis field is effectively required, but due to backwards compatibility is\nallowed to be empty. Instances of this type with an empty value here are\nalmost certainly wrong.\nMore info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
     "Specify whether the ConfigMap or its key must be defined",
     "Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`,\nspec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.",
@@ -5064,7 +5302,6 @@
     "The key of the secret to select from.  Must be a valid secret key.",
     "Specify whether the Secret or its key must be defined",
     "Additional volume mounts to add to the container. See\nhttps://kubernetes.io/docs/reference/generated/kubernetes-api/v1.26/#volumemount-v1-core\nfor details.",
-    "Path within the container at which the volume should be mounted.  Must\nnot contain ':'.",
     "mountPropagation determines how mounts are propagated from the host\nto container and the other way around.\nWhen not set, MountPropagationNone is used.\nThis field is beta in 1.10.\nWhen RecursiveReadOnly is set to IfPossible or to Enabled, MountPropagation must be None or unspecified\n(which defaults to None).",
     "This must match the Name of a Volume.",
     "Mounted read-only if true, read-write otherwise (false or unspecified).\nDefaults to false.",
@@ -5289,11 +5526,9 @@
     "May contain labels and annotations that will be copied into the PVC\nwhen creating it. No other fields are allowed and will be rejected during\nvalidation.",
     "The specification for the PersistentVolumeClaim. The entire content is\ncopied unchanged into the PVC that gets created from this\ntemplate. The same fields as in a PersistentVolumeClaim\nare also valid here.",
     "accessModes contains the desired access modes the volume should have.\nMore info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1",
-    "dataSource field can be used to specify either:\n* An existing VolumeSnapshot object (snapshot.storage.k8s.io/VolumeSnapshot)\n* An existing PVC (PersistentVolumeClaim)\nIf the provisioner or an external controller can support the specified data source,\nit will create a new volume based on the contents of the specified data source.\nWhen the AnyVolumeDataSource feature gate is enabled, dataSource contents will be copied to dataSourceRef,\nand dataSourceRef contents will be copied to dataSource when dataSourceRef.namespace is not specified.\nIf the namespace is specified, then dataSourceRef will not be copied to dataSource.",
     "APIGroup is the group for the resource being referenced.\nIf APIGroup is not specified, the specified Kind must be in the core API group.\nFor any other third-party types, APIGroup is required.",
     "Kind is the type of resource being referenced",
     "Name is the name of resource being referenced",
-    "dataSourceRef specifies the object from which to populate the volume with data, if a non-empty\nvolume is desired. This may be any object from a non-empty API group (non\ncore object) or a PersistentVolumeClaim object.\nWhen this field is specified, volume binding will only succeed if the type of\nthe specified object matches some installed volume populator or dynamic\nprovisioner.\nThis field will replace the functionality of the dataSource field and as such\nif both fields are non-empty, they must have the same value. For backwards\ncompatibility, when namespace isn't specified in dataSourceRef,\nboth fields (dataSource and dataSourceRef) will be set to the same\nvalue automatically if one of them is empty and the other is non-empty.\nWhen namespace is specified in dataSourceRef,\ndataSource isn't set to the same value and must be empty.\nThere are three important differences between dataSource and dataSourceRef:\n* While dataSource only allows two specific types of objects, dataSourceRef\n  allows any non-core object, as well as PersistentVolumeClaim objects.\n* While dataSource ignores disallowed values (dropping them), dataSourceRef\n  preserves all values, and generates an error if a disallowed value is\n  specified.\n* While dataSource only allows local objects, dataSourceRef allows objects\n  in any namespaces.\n(Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.\n(Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.",
     "Namespace is the namespace of resource being referenced\nNote that when a namespace is specified, a gateway.networking.k8s.io/ReferenceGrant object is required in the referent namespace to allow that namespace's owner to accept the reference. See the ReferenceGrant documentation for details.\n(Alpha) This field requires the CrossNamespaceVolumeDataSource feature gate to be enabled.",
     "selector is a label query over volumes to consider for binding.",
     "storageClassName is the name of the StorageClass required by the claim.\nMore info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#class-1",
@@ -5436,7 +5671,6 @@
     "The GID to run the entrypoint of the container process.\nUses runtime default if unset.\nMay also be set in SecurityContext.  If set in both SecurityContext and\nPodSecurityContext, the value specified in SecurityContext takes precedence\nfor that container.\nNote that this field cannot be set when spec.os.name is windows.",
     "Indicates that the container must run as a non-root user.\nIf true, the Kubelet will validate the image at runtime to ensure that it\ndoes not run as UID 0 (root) and fail to start the container if it does.\nIf unset or false, no such validation will be performed.\nMay also be set in SecurityContext.  If set in both SecurityContext and\nPodSecurityContext, the value specified in SecurityContext takes precedence.",
     "The UID to run the entrypoint of the container process.\nDefaults to user specified in image metadata if unspecified.\nMay also be set in SecurityContext.  If set in both SecurityContext and\nPodSecurityContext, the value specified in SecurityContext takes precedence\nfor that container.\nNote that this field cannot be set when spec.os.name is windows.",
-    "seLinuxChangePolicy defines how the container's SELinux label is applied to all volumes used by the Pod.\nIt has no effect on nodes that do not support SELinux or to volumes does not support SELinux.\nValid values are \"MountOption\" and \"Recursive\".\n\n\"Recursive\" means relabeling of all files on all Pod volumes by the container runtime.\nThis may be slow for large volumes, but allows mixing privileged and unprivileged Pods sharing the same volume on the same node.\n\n\"MountOption\" mounts all eligible Pod volumes with `-o context` mount option.\nThis requires all Pods that share the same volume to use the same SELinux label.\nIt is not possible to share the same volume among privileged and unprivileged Pods.\nEligible volumes are in-tree FibreChannel and iSCSI volumes, and all CSI volumes\nwhose CSI driver announces SELinux support by setting spec.seLinuxMount: true in their\nCSIDriver instance. Other volumes are always re-labelled recursively.\n\"MountOption\" value is allowed only when SELinuxMount feature gate is enabled.\n\nIf not specified and SELinuxMount feature gate is enabled, \"MountOption\" is used.\nIf not specified and SELinuxMount feature gate is disabled, \"MountOption\" is used for ReadWriteOncePod volumes\nand \"Recursive\" for all other volumes.\n\nThis field affects only Pods that have SELinux label set, either in PodSecurityContext or in SecurityContext of all containers.\n\nAll Pods that use the same volume should use the same seLinuxChangePolicy, otherwise some pods can get stuck in ContainerCreating state.\nNote that this field cannot be set when spec.os.name is windows.",
     "The SELinux context to be applied to all containers.\nIf unspecified, the container runtime will allocate a random SELinux context for each\ncontainer.  May also be set in SecurityContext.  If set in\nboth SecurityContext and PodSecurityContext, the value specified in SecurityContext\ntakes precedence for that container.\nNote that this field cannot be set when spec.os.name is windows.",
     "The seccomp options to use by the containers in this pod.\nNote that this field cannot be set when spec.os.name is windows.",
     "A list of groups applied to the first process run in each container, in\naddition to the container's primary GID and fsGroup (if specified).  If\nthe SupplementalGroupsPolicy feature is enabled, the\nsupplementalGroupsPolicy field determines whether these are in addition\nto or instead of any group memberships defined in the container image.\nIf unspecified, no additional groups are added, though group memberships\ndefined in the container image may still be used, depending on the\nsupplementalGroupsPolicy field.\nNote that this field cannot be set when spec.os.name is windows.",

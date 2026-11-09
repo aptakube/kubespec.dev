@@ -1,5 +1,219 @@
 {
   "versions": {
+    "v2.5.1": {
+      "descriptionChanged": [
+        "spec.default.httpSettings.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval",
+        "spec.default.httpSettings.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval",
+        "spec.default.httpSettings.localReplies.mappers.statusCode",
+        "spec.default.httpSettings.tracing.provider.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval",
+        "spec.default.tcpSettings.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval",
+        "spec.default.tcpSettings.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval",
+        "spec.perPort.listener.httpSettings.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval",
+        "spec.perPort.listener.httpSettings.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval",
+        "spec.perPort.listener.httpSettings.localReplies.mappers.statusCode",
+        "spec.perPort.listener.httpSettings.tracing.provider.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval",
+        "spec.perPort.listener.tcpSettings.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval",
+        "spec.perPort.listener.tcpSettings.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval"
+      ],
+      "descriptions": {
+        "spec.default.httpSettings.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval": [
+          0,
+          1
+        ],
+        "spec.default.httpSettings.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
+          0,
+          1
+        ],
+        "spec.default.httpSettings.localReplies.mappers.statusCode": [
+          2,
+          3
+        ],
+        "spec.default.httpSettings.tracing.provider.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
+          0,
+          1
+        ],
+        "spec.default.tcpSettings.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval": [
+          0,
+          1
+        ],
+        "spec.default.tcpSettings.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
+          0,
+          1
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval": [
+          0,
+          1
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
+          0,
+          1
+        ],
+        "spec.perPort.listener.httpSettings.localReplies.mappers.statusCode": [
+          2,
+          3
+        ],
+        "spec.perPort.listener.httpSettings.tracing.provider.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
+          0,
+          1
+        ],
+        "spec.perPort.listener.tcpSettings.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval": [
+          0,
+          1
+        ],
+        "spec.perPort.listener.tcpSettings.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
+          0,
+          1
+        ]
+      }
+    },
+    "v2.5.0": {
+      "descriptionChanged": [
+        "spec.default.httpSettings.accessLog.filter.andFilter.runtimeFilter.runtimeKey",
+        "spec.default.httpSettings.accessLog.filter.orFilter.runtimeFilter.runtimeKey",
+        "spec.default.httpSettings.accessLog.filter.runtimeFilter.runtimeKey",
+        "spec.default.httpSettings.localReplies.mappers.filter.andFilter.runtimeFilter.runtimeKey",
+        "spec.default.httpSettings.localReplies.mappers.filter.orFilter.runtimeFilter.runtimeKey",
+        "spec.default.httpSettings.localReplies.mappers.filter.runtimeFilter.runtimeKey",
+        "spec.default.httpSettings.upgradeConfig",
+        "spec.default.httpSettings.upgradeConfig.enabledUpgrades",
+        "spec.perPort.listener.httpSettings.accessLog.filter.andFilter.runtimeFilter.runtimeKey",
+        "spec.perPort.listener.httpSettings.accessLog.filter.orFilter.runtimeFilter.runtimeKey",
+        "spec.perPort.listener.httpSettings.accessLog.filter.runtimeFilter.runtimeKey",
+        "spec.perPort.listener.httpSettings.localReplies.mappers.filter.andFilter.runtimeFilter.runtimeKey",
+        "spec.perPort.listener.httpSettings.localReplies.mappers.filter.orFilter.runtimeFilter.runtimeKey",
+        "spec.perPort.listener.httpSettings.localReplies.mappers.filter.runtimeFilter.runtimeKey",
+        "spec.perPort.listener.httpSettings.upgradeConfig",
+        "spec.perPort.listener.httpSettings.upgradeConfig.enabledUpgrades"
+      ],
+      "added": {
+        "spec.default.httpSettings.grpcStats": "object",
+        "spec.default.httpSettings.maxConnectionDuration": "string",
+        "spec.default.httpSettings.pathWithEscapedSlashesAction": "string",
+        "spec.default.httpSettings.proxy100Continue": "boolean",
+        "spec.default.httpSettings.stripTrailingHostDot": "boolean",
+        "spec.default.tcpSettings": "object",
+        "spec.perPort.listener.httpSettings.grpcStats": "object",
+        "spec.perPort.listener.httpSettings.maxConnectionDuration": "string",
+        "spec.perPort.listener.httpSettings.pathWithEscapedSlashesAction": "string",
+        "spec.perPort.listener.httpSettings.proxy100Continue": "boolean",
+        "spec.perPort.listener.httpSettings.stripTrailingHostDot": "boolean",
+        "spec.perPort.listener.tcpSettings": "object"
+      },
+      "descriptions": {
+        "spec.default.httpSettings.accessLog.filter.andFilter.runtimeFilter.runtimeKey": [
+          4,
+          5
+        ],
+        "spec.default.httpSettings.accessLog.filter.orFilter.runtimeFilter.runtimeKey": [
+          4,
+          5
+        ],
+        "spec.default.httpSettings.accessLog.filter.runtimeFilter.runtimeKey": [
+          4,
+          5
+        ],
+        "spec.default.httpSettings.grpcStats": [
+          null,
+          6
+        ],
+        "spec.default.httpSettings.localReplies.mappers.filter.andFilter.runtimeFilter.runtimeKey": [
+          4,
+          5
+        ],
+        "spec.default.httpSettings.localReplies.mappers.filter.orFilter.runtimeFilter.runtimeKey": [
+          4,
+          5
+        ],
+        "spec.default.httpSettings.localReplies.mappers.filter.runtimeFilter.runtimeKey": [
+          4,
+          5
+        ],
+        "spec.default.httpSettings.maxConnectionDuration": [
+          null,
+          7
+        ],
+        "spec.default.httpSettings.pathWithEscapedSlashesAction": [
+          null,
+          8
+        ],
+        "spec.default.httpSettings.proxy100Continue": [
+          null,
+          9
+        ],
+        "spec.default.httpSettings.stripTrailingHostDot": [
+          null,
+          10
+        ],
+        "spec.default.httpSettings.upgradeConfig": [
+          11,
+          12
+        ],
+        "spec.default.httpSettings.upgradeConfig.enabledUpgrades": [
+          13,
+          14
+        ],
+        "spec.default.tcpSettings": [
+          null,
+          15
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.filter.andFilter.runtimeFilter.runtimeKey": [
+          4,
+          5
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.filter.orFilter.runtimeFilter.runtimeKey": [
+          4,
+          5
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.filter.runtimeFilter.runtimeKey": [
+          4,
+          5
+        ],
+        "spec.perPort.listener.httpSettings.grpcStats": [
+          null,
+          6
+        ],
+        "spec.perPort.listener.httpSettings.localReplies.mappers.filter.andFilter.runtimeFilter.runtimeKey": [
+          4,
+          5
+        ],
+        "spec.perPort.listener.httpSettings.localReplies.mappers.filter.orFilter.runtimeFilter.runtimeKey": [
+          4,
+          5
+        ],
+        "spec.perPort.listener.httpSettings.localReplies.mappers.filter.runtimeFilter.runtimeKey": [
+          4,
+          5
+        ],
+        "spec.perPort.listener.httpSettings.maxConnectionDuration": [
+          null,
+          7
+        ],
+        "spec.perPort.listener.httpSettings.pathWithEscapedSlashesAction": [
+          null,
+          8
+        ],
+        "spec.perPort.listener.httpSettings.proxy100Continue": [
+          null,
+          9
+        ],
+        "spec.perPort.listener.httpSettings.stripTrailingHostDot": [
+          null,
+          10
+        ],
+        "spec.perPort.listener.httpSettings.upgradeConfig": [
+          11,
+          12
+        ],
+        "spec.perPort.listener.httpSettings.upgradeConfig.enabledUpgrades": [
+          13,
+          14
+        ],
+        "spec.perPort.listener.tcpSettings": [
+          null,
+          15
+        ]
+      }
+    },
     "v2.4.5": {
       "added": {
         "spec.default.httpSettings.mergeSlashes": "boolean",
@@ -10,19 +224,19 @@
       "descriptions": {
         "spec.default.httpSettings.mergeSlashes": [
           null,
-          0
+          16
         ],
         "spec.default.httpSettings.normalizePath": [
           null,
-          1
+          17
         ],
         "spec.perPort.listener.httpSettings.mergeSlashes": [
           null,
-          0
+          16
         ],
         "spec.perPort.listener.httpSettings.normalizePath": [
           null,
-          1
+          17
         ]
       }
     },
@@ -48,59 +262,59 @@
       "descriptions": {
         "spec.default.httpSettings.forwardClientCertDetails": [
           null,
-          2
+          18
         ],
         "spec.default.httpSettings.http2ProtocolOptions.allowConnect": [
           null,
-          3
+          19
         ],
         "spec.default.httpSettings.idleTimeout": [
-          4,
-          5
+          20,
+          21
         ],
         "spec.default.httpSettings.localReplies": [
           null,
-          6
+          22
         ],
         "spec.default.httpSettings.maxRequestsPerConnection": [
           null,
-          7
+          23
         ],
         "spec.default.httpSettings.serverName": [
           null,
-          8
+          24
         ],
         "spec.default.transportSocketConnectTimeout": [
           null,
-          9
+          25
         ],
         "spec.perPort.listener.httpSettings.forwardClientCertDetails": [
           null,
-          2
+          18
         ],
         "spec.perPort.listener.httpSettings.http2ProtocolOptions.allowConnect": [
           null,
-          3
+          19
         ],
         "spec.perPort.listener.httpSettings.idleTimeout": [
-          4,
-          5
+          20,
+          21
         ],
         "spec.perPort.listener.httpSettings.localReplies": [
           null,
-          6
+          22
         ],
         "spec.perPort.listener.httpSettings.maxRequestsPerConnection": [
           null,
-          7
+          23
         ],
         "spec.perPort.listener.httpSettings.serverName": [
           null,
-          8
+          24
         ],
         "spec.perPort.listener.transportSocketConnectTimeout": [
           null,
-          9
+          25
         ]
       }
     },
@@ -112,11 +326,11 @@
       "descriptions": {
         "spec.default.httpSettings.maxHeadersCount": [
           null,
-          10
+          26
         ],
         "spec.perPort.listener.httpSettings.maxHeadersCount": [
           null,
-          10
+          26
         ]
       }
     },
@@ -128,11 +342,11 @@
       "descriptions": {
         "spec.default.httpSettings.stripHostPortMode": [
           null,
-          11
+          27
         ],
         "spec.perPort.listener.httpSettings.stripHostPortMode": [
           null,
-          11
+          27
         ]
       }
     },
@@ -191,182 +405,182 @@
       "descriptions": {
         "spec.default.clientCertificateValidation": [
           null,
-          12
+          28
         ],
         "spec.default.httpSettings": [
-          13,
-          14
+          29,
+          30
         ],
         "spec.default.httpSettings.accessLog.filter.andFilter.headerFilter.header.value": [
-          15,
-          16
+          31,
+          32
         ],
         "spec.default.httpSettings.accessLog.filter.andFilter.runtimeFilter": [
           null,
-          17
+          33
         ],
         "spec.default.httpSettings.accessLog.filter.headerFilter.header.value": [
-          15,
-          16
+          31,
+          32
         ],
         "spec.default.httpSettings.accessLog.filter.orFilter.headerFilter.header.value": [
-          15,
-          16
+          31,
+          32
         ],
         "spec.default.httpSettings.accessLog.filter.orFilter.runtimeFilter": [
           null,
-          17
+          33
         ],
         "spec.default.httpSettings.accessLog.filter.runtimeFilter": [
           null,
-          17
+          33
         ],
         "spec.default.httpSettings.earlyRequestHeaderModifier.add.value": [
-          15,
-          16
+          31,
+          32
         ],
         "spec.default.httpSettings.earlyRequestHeaderModifier.set.value": [
-          15,
-          16
+          31,
+          32
         ],
         "spec.default.httpSettings.http2ProtocolOptions": [
           null,
-          18
+          34
         ],
         "spec.default.httpSettings.skipXFFAppend": [
           null,
-          19
+          35
         ],
         "spec.default.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector": [
-          20,
-          21
+          36,
+          37
         ],
         "spec.default.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector.enable": [
           null,
-          22
+          38
         ],
         "spec.default.httpSettings.useRemoteAddress": [
-          23,
-          24
+          39,
+          40
         ],
         "spec.default.httpSettings.uuidRequestIdConfig": [
           null,
-          25
+          41
         ],
         "spec.default.httpSettings.xffNumTrustedHops": [
-          26,
-          27
+          42,
+          43
         ],
         "spec.default.httpSettings.xffTrustedCIDRs": [
           null,
-          28
+          44
         ],
         "spec.default.proxyProtocol": [
-          29,
-          30
+          45,
+          46
         ],
         "spec.default.proxyProtocol.allowRequestsWithoutProxyProtocol": [
           null,
-          31
+          47
         ],
         "spec.default.tcpKeepalive": [
           null,
-          32
+          48
         ],
         "spec.perPort.listener.httpSettings": [
-          13,
-          14
-        ],
-        "spec.perPort.listener.httpSettings.accessLog.filter.andFilter.headerFilter.header.value": [
-          15,
-          16
-        ],
-        "spec.perPort.listener.httpSettings.accessLog.filter.andFilter.runtimeFilter": [
-          null,
-          17
-        ],
-        "spec.perPort.listener.httpSettings.accessLog.filter.headerFilter.header.value": [
-          15,
-          16
-        ],
-        "spec.perPort.listener.httpSettings.accessLog.filter.orFilter.headerFilter.header.value": [
-          15,
-          16
-        ],
-        "spec.perPort.listener.httpSettings.accessLog.filter.orFilter.runtimeFilter": [
-          null,
-          17
-        ],
-        "spec.perPort.listener.httpSettings.accessLog.filter.runtimeFilter": [
-          null,
-          17
-        ],
-        "spec.perPort.listener.httpSettings.earlyRequestHeaderModifier.add.value": [
-          15,
-          16
-        ],
-        "spec.perPort.listener.httpSettings.earlyRequestHeaderModifier.set.value": [
-          15,
-          16
-        ],
-        "spec.perPort.listener.httpSettings.http2ProtocolOptions": [
-          null,
-          18
-        ],
-        "spec.perPort.listener.httpSettings.skipXFFAppend": [
-          null,
-          19
-        ],
-        "spec.perPort.listener.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector": [
-          20,
-          21
-        ],
-        "spec.perPort.listener.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector.enable": [
-          null,
-          22
-        ],
-        "spec.perPort.listener.httpSettings.useRemoteAddress": [
-          23,
-          24
-        ],
-        "spec.perPort.listener.httpSettings.uuidRequestIdConfig": [
-          null,
-          25
-        ],
-        "spec.perPort.listener.httpSettings.xffNumTrustedHops": [
-          26,
-          27
-        ],
-        "spec.perPort.listener.httpSettings.xffTrustedCIDRs": [
-          null,
-          28
-        ],
-        "spec.perPort.listener.proxyProtocol": [
           29,
           30
         ],
+        "spec.perPort.listener.httpSettings.accessLog.filter.andFilter.headerFilter.header.value": [
+          31,
+          32
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.filter.andFilter.runtimeFilter": [
+          null,
+          33
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.filter.headerFilter.header.value": [
+          31,
+          32
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.filter.orFilter.headerFilter.header.value": [
+          31,
+          32
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.filter.orFilter.runtimeFilter": [
+          null,
+          33
+        ],
+        "spec.perPort.listener.httpSettings.accessLog.filter.runtimeFilter": [
+          null,
+          33
+        ],
+        "spec.perPort.listener.httpSettings.earlyRequestHeaderModifier.add.value": [
+          31,
+          32
+        ],
+        "spec.perPort.listener.httpSettings.earlyRequestHeaderModifier.set.value": [
+          31,
+          32
+        ],
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions": [
+          null,
+          34
+        ],
+        "spec.perPort.listener.httpSettings.skipXFFAppend": [
+          null,
+          35
+        ],
+        "spec.perPort.listener.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector": [
+          36,
+          37
+        ],
+        "spec.perPort.listener.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector.enable": [
+          null,
+          38
+        ],
+        "spec.perPort.listener.httpSettings.useRemoteAddress": [
+          39,
+          40
+        ],
+        "spec.perPort.listener.httpSettings.uuidRequestIdConfig": [
+          null,
+          41
+        ],
+        "spec.perPort.listener.httpSettings.xffNumTrustedHops": [
+          42,
+          43
+        ],
+        "spec.perPort.listener.httpSettings.xffTrustedCIDRs": [
+          null,
+          44
+        ],
+        "spec.perPort.listener.proxyProtocol": [
+          45,
+          46
+        ],
         "spec.perPort.listener.proxyProtocol.allowRequestsWithoutProxyProtocol": [
           null,
-          31
+          47
         ],
         "spec.perPort.listener.tcpKeepalive": [
           null,
-          32
+          48
         ],
         "spec.targetRefs.sectionName": [
           null,
-          33
+          49
         ],
         "spec.targetSelectors.sectionName": [
           null,
-          33
+          49
         ],
         "spec.default.httpSettings.maxHeadersCount": [
-          10,
+          26,
           null
         ],
         "spec.perPort.listener.httpSettings.maxHeadersCount": [
-          10,
+          26,
           null
         ]
       }
@@ -379,16 +593,32 @@
       "descriptions": {
         "spec.default.httpSettings.maxHeadersCount": [
           null,
-          10
+          26
         ],
         "spec.perPort.listener.httpSettings.maxHeadersCount": [
           null,
-          10
+          26
         ]
       }
     }
   },
   "texts": [
+    "The base interval to be used for the next back off computation. It should be greater than zero and less than or equal to max_interval.",
+    "The base interval to be used for the next back off computation. Must be at least 1ms and less than or equal to max_interval.",
+    "New response status code for the reply if specified.",
+    "New response status code for the reply if specified. Must be between 200 and 599.",
+    "The runtime key to look up in the runtime implementation. This key determines whether\nthe access log is enabled. When the runtime key value is set, the filter checks this key\nat runtime to decide whether to log each request.",
+    "RuntimeKey identifies the runtime setting used to decide whether to log each request.",
+    "GrpcStats configures Envoy's gRPC statistics filter for per-service/method\ngRPC metrics (including grpc-status) on this listener.",
+    "MaxConnectionDuration is the maximum duration of a connection, measured from\nwhen the connection was established. When this duration is reached, Envoy starts\nthe drain sequence. If unset, there is no maximum connection duration.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/protocol.proto#envoy-v3-api-field-config-core-v3-httpprotocoloptions-max-connection-duration",
+    "PathWithEscapedSlashesAction determines how the connection manager handles requests whose\npath contains escaped slash sequences (%2F, %2f, %5C, %5c). This runs before path\nnormalization and slash merging. If unset, Envoy's implementation specific default applies,\nwhich is currently KeepUnchanged: the escaped sequences are passed through to routing as-is,\nso a request for /foo%2Fbar does not match a /foo/ prefix.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-path-with-escaped-slashes-action",
+    "Proxy100Continue determines whether Envoy forwards requests with an\nExpect: 100-continue header upstream and proxies upstream 100 Continue\nresponses downstream. When unset or false, Envoy handles the response locally.",
+    "StripTrailingHostDot determines whether Envoy strips the trailing dot from the\nHost/authority header before any filter processing or route matching. Without this,\na request whose host is a fully qualified domain name with a trailing dot (for example\n\"example.com.\") does not match routes configured for the hostname \"example.com\".\nThe stripped value is also what gets forwarded upstream.\nIf unset, the trailing dot is kept (Envoy's default).\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-strip-trailing-host-dot",
+    "UpgradeConfig contains configuration for HTTP upgrades like WebSocket.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/v1.34.1/intro/arch_overview/http/upgrades.html",
+    "UpgradeConfig contains configuration for HTTP upgrades like WebSocket.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/v1.34.1/intro/arch_overview/http/upgrades",
+    "List of upgrade types to enable (e.g. \"websocket\", \"CONNECT\", etc.)",
+    "EnabledUpgrades lists the HTTP upgrade types to enable, such as \"websocket\"\nand \"CONNECT\". Enabling \"CONNECT\" allows CONNECT requests to be proxied\nupstream without termination. To terminate CONNECT and forward its payload\nas raw TCP data, configure httpUpgrade in a TrafficPolicy.",
+    "TCPSettings is intended to be used for configuring the Envoy `TcpProxy` network filter that serves\nTCP listeners and TLS listeners (both Terminate and Passthrough), such as those backing TCPRoutes and TLSRoutes.",
     "MergeSlashes determines whether the connection manager merges adjacent slashes in the request\npath before routing. This defaults to true. Disable this if a backend (e.g. an S3-compatible\nobject store) relies on repeated slashes in the path having meaning, such as object keys that\ncontain \"//\".\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-merge-slashes",
     "NormalizePath determines whether the connection manager normalizes the path per RFC 3986 before\nrouting, e.g. collapsing `.` and `..` segments and decoding percent-encoded characters. This\ndefaults to true. Disable this if a backend (e.g. an S3-compatible object store) needs to see\nthe original, unnormalized request path.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-normalize-path",
     "ForwardClientCertDetails configures how Envoy handles the x-forwarded-client-cert (XFCC)\nheader and which parts of the downstream client certificate are forwarded to upstream\nbackends. Most modes only have effect on listeners where mTLS is configured. The exceptions\nare Sanitize, which strips XFCC unconditionally, and AlwaysForwardOnly, which forwards XFCC\nunconditionally; on a non-mTLS listener under any other mode the setting is a no-op.\nSee: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-forward-client-cert-details",

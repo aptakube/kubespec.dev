@@ -1,5 +1,238 @@
 {
   "versions": {
+    "v1.10.0": {
+      "descriptionChanged": [
+        "spec.compression",
+        "spec.httpUpgrade",
+        "spec.loadBalancer.consistentHash.header",
+        "spec.mergeType",
+        "spec.requestBuffer",
+        "spec.requestBuffer.limit",
+        "spec.targetRef"
+      ],
+      "added": {
+        "spec.compression.brotli.chunkSize": "integer",
+        "spec.compression.brotli.disableLiteralContextModeling": "boolean",
+        "spec.compression.brotli.encoderMode": "string",
+        "spec.compression.brotli.inputBlockBits": "integer",
+        "spec.compression.brotli.quality": "integer",
+        "spec.compression.brotli.windowBits": "integer",
+        "spec.compression.gzip.chunkSize": "integer",
+        "spec.compression.gzip.compressionLevel": "integer",
+        "spec.compression.gzip.compressionStrategy": "string",
+        "spec.compression.gzip.memoryLevel": "integer",
+        "spec.compression.gzip.windowBits": "integer",
+        "spec.compression.zstd.chunkSize": "integer",
+        "spec.compression.zstd.compressionLevel": "integer",
+        "spec.compression.zstd.enableChecksum": "boolean",
+        "spec.compression.zstd.strategy": "string",
+        "spec.compressor.brotli.chunkSize": "integer",
+        "spec.compressor.brotli.disableLiteralContextModeling": "boolean",
+        "spec.compressor.brotli.encoderMode": "string",
+        "spec.compressor.brotli.inputBlockBits": "integer",
+        "spec.compressor.brotli.quality": "integer",
+        "spec.compressor.brotli.windowBits": "integer",
+        "spec.compressor.gzip.chunkSize": "integer",
+        "spec.compressor.gzip.compressionLevel": "integer",
+        "spec.compressor.gzip.compressionStrategy": "string",
+        "spec.compressor.gzip.memoryLevel": "integer",
+        "spec.compressor.gzip.windowBits": "integer",
+        "spec.compressor.zstd.chunkSize": "integer",
+        "spec.compressor.zstd.compressionLevel": "integer",
+        "spec.compressor.zstd.enableChecksum": "boolean",
+        "spec.compressor.zstd.strategy": "string",
+        "spec.healthCheck.active.disableConnectionReuse": "boolean",
+        "spec.healthCheck.active.grpc.hostname": "string",
+        "spec.healthCheck.active.http.protocol": "string",
+        "spec.http1": "object",
+        "spec.http3": "object",
+        "spec.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": "boolean",
+        "spec.requestBuffer.mode": "string",
+        "spec.responseOverride.match.requestHeaders": "object[]"
+      },
+      "descriptions": {
+        "spec.compression": [
+          0,
+          1
+        ],
+        "spec.compression.brotli.chunkSize": [
+          null,
+          2
+        ],
+        "spec.compression.brotli.disableLiteralContextModeling": [
+          null,
+          3
+        ],
+        "spec.compression.brotli.encoderMode": [
+          null,
+          4
+        ],
+        "spec.compression.brotli.inputBlockBits": [
+          null,
+          5
+        ],
+        "spec.compression.brotli.quality": [
+          null,
+          6
+        ],
+        "spec.compression.brotli.windowBits": [
+          null,
+          7
+        ],
+        "spec.compression.gzip.chunkSize": [
+          null,
+          8
+        ],
+        "spec.compression.gzip.compressionLevel": [
+          null,
+          9
+        ],
+        "spec.compression.gzip.compressionStrategy": [
+          null,
+          10
+        ],
+        "spec.compression.gzip.memoryLevel": [
+          null,
+          11
+        ],
+        "spec.compression.gzip.windowBits": [
+          null,
+          12
+        ],
+        "spec.compression.zstd.chunkSize": [
+          null,
+          2
+        ],
+        "spec.compression.zstd.compressionLevel": [
+          null,
+          13
+        ],
+        "spec.compression.zstd.enableChecksum": [
+          null,
+          14
+        ],
+        "spec.compression.zstd.strategy": [
+          null,
+          15
+        ],
+        "spec.compressor.brotli.chunkSize": [
+          null,
+          2
+        ],
+        "spec.compressor.brotli.disableLiteralContextModeling": [
+          null,
+          3
+        ],
+        "spec.compressor.brotli.encoderMode": [
+          null,
+          4
+        ],
+        "spec.compressor.brotli.inputBlockBits": [
+          null,
+          5
+        ],
+        "spec.compressor.brotli.quality": [
+          null,
+          6
+        ],
+        "spec.compressor.brotli.windowBits": [
+          null,
+          7
+        ],
+        "spec.compressor.gzip.chunkSize": [
+          null,
+          8
+        ],
+        "spec.compressor.gzip.compressionLevel": [
+          null,
+          9
+        ],
+        "spec.compressor.gzip.compressionStrategy": [
+          null,
+          10
+        ],
+        "spec.compressor.gzip.memoryLevel": [
+          null,
+          11
+        ],
+        "spec.compressor.gzip.windowBits": [
+          null,
+          12
+        ],
+        "spec.compressor.zstd.chunkSize": [
+          null,
+          2
+        ],
+        "spec.compressor.zstd.compressionLevel": [
+          null,
+          13
+        ],
+        "spec.compressor.zstd.enableChecksum": [
+          null,
+          14
+        ],
+        "spec.compressor.zstd.strategy": [
+          null,
+          15
+        ],
+        "spec.healthCheck.active.disableConnectionReuse": [
+          null,
+          16
+        ],
+        "spec.healthCheck.active.grpc.hostname": [
+          null,
+          17
+        ],
+        "spec.healthCheck.active.http.protocol": [
+          null,
+          18
+        ],
+        "spec.http1": [
+          null,
+          19
+        ],
+        "spec.http3": [
+          null,
+          20
+        ],
+        "spec.httpUpgrade": [
+          21,
+          22
+        ],
+        "spec.loadBalancer.consistentHash.header": [
+          23,
+          24
+        ],
+        "spec.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": [
+          null,
+          25
+        ],
+        "spec.mergeType": [
+          26,
+          27
+        ],
+        "spec.requestBuffer": [
+          28,
+          29
+        ],
+        "spec.requestBuffer.limit": [
+          30,
+          31
+        ],
+        "spec.requestBuffer.mode": [
+          null,
+          32
+        ],
+        "spec.responseOverride.match.requestHeaders": [
+          null,
+          33
+        ],
+        "spec.targetRef": [
+          34,
+          35
+        ]
+      }
+    },
     "v1.9.0": {
       "added": {
         "spec.healthCheck.active.healthCheckLog": "object",
@@ -22,61 +255,96 @@
       "descriptions": {
         "spec.healthCheck.active.healthCheckLog": [
           null,
-          0
+          36
         ],
         "spec.healthCheck.active.http.requestBody": [
           null,
-          1
+          37
         ],
         "spec.loadBalancer.backendUtilization.outOfBand": [
           null,
-          2
+          38
         ],
         "spec.mergeType": [
-          3,
-          4
+          39,
+          26
         ],
         "spec.rateLimit.global.rules.limit.fromMetadata": [
           null,
-          5
+          40
         ],
         "spec.rateLimit.global.rules.limit.unit": [
-          6,
-          7
+          41,
+          42
         ],
         "spec.rateLimit.local.rules.limit.fromMetadata": [
           null,
-          5
+          40
         ],
         "spec.rateLimit.local.rules.limit.unit": [
-          6,
-          7
+          41,
+          42
         ],
         "spec.responseOverride.match.responseHeaders": [
           null,
-          8
+          43
         ],
         "spec.responseOverride.match.statusCodes": [
           null,
-          9
+          44
         ],
         "spec.telemetry.tracing.clientSamplingFraction": [
           null,
-          10
+          45
         ],
         "spec.telemetry.tracing.overallSamplingFraction": [
           null,
-          11
+          46
         ]
       }
     }
   },
   "texts": [
+    "The compression config for the http streams.\n\nDeprecated: Use Compressor instead.",
+    "The compression config for the http streams.\n\nDeprecated: Use Compressor instead. This field will be removed in v1.11.",
+    "ChunkSize is the size in bytes of the compressor's next output buffer, from\n4096 to 65536. If not set, defaults to 4096.",
+    "DisableLiteralContextModeling disables the \"literal context modeling\" format\nfeature. This flag is a \"decoding-speed vs compression ratio\" trade-off.\nIf not set, defaults to false.",
+    "EncoderMode tunes the encoder for a specific input.\nIf not set, defaults to Default.",
+    "InputBlockBits represents the base two logarithm of the compressor's input block\nsize, from 16 to 24. Larger input block results in better compression at the\nexpense of memory usage. If not set, defaults to 24.",
+    "Quality controls the main compression speed-density lever, from 0 to 11.\nThe higher the quality, the slower the compression. If not set, defaults to 3.",
+    "WindowBits represents the base two logarithm of the compressor's window size,\nfrom 10 to 24. Larger window results in better compression at the expense of\nmemory usage. If not set, defaults to 18.",
+    "ChunkSize is the size in bytes of zlib's next output buffer, from 4096 to 65536.\nIf not set, defaults to 4096.",
+    "CompressionLevel sets the zlib compression level, from 1 (fastest compression,\nlowest compression ratio) to 9 (slowest compression, best compression ratio).\nIf not set, Envoy uses the zlib default level, which is equivalent to level 6.",
+    "CompressionStrategy selects the zlib compression strategy, which is directly\nrelated to the characteristics of the content. Most of the time \"Default\" is\nthe best choice. If not set, defaults to Default.",
+    "MemoryLevel controls the amount of internal memory used by zlib, from 1 to 9.\nHigher values use more memory, but are faster and produce better compression\nresults. If not set, defaults to 5.",
+    "WindowBits represents the base two logarithm of the compressor's window size,\nfrom 9 to 15. Larger window results in better compression at the expense of\nmemory usage. If not set, defaults to 12, which will produce a 4096 bytes window.",
+    "CompressionLevel sets the compression parameters according to the pre-defined\nzstd compression level table, from 1 to 22. Note that the exact compression\nparameters are dynamically determined, depending on both compression level and\nsource content size (when known). If not set, defaults to 3.",
+    "EnableChecksum specifies whether a 32-bits checksum of the content is written\nat the end of the frame. If not set, defaults to false.",
+    "Strategy selects the zstd compression strategy. The higher the value of the\nselected strategy, the more complex it is, resulting in stronger and slower\ncompression. If not set, defaults to Default.",
+    "DisableConnectionReuse determines whether the active health check connection to a\nbackend host is closed after each health check probe. When set to true, Envoy opens a\nnew connection for each health check, which is useful for backends (such as\nhaproxy-style agent checks) that do not expect a reused connection.\nDefaults to false, which reuses the connection across probes.",
+    "Hostname defines the value of the :authority header sent with active gRPC\nhealth checks. Authority selection uses this order: this field, the\nassociated Backend endpoint hostname if available, then the effective Route\nhostname. If none of them is set, Envoy falls back to the name of the\ncluster, which is not a valid authority and is rejected by some gRPC\nservers.",
+    "Protocol is the HTTP protocol that active health check requests are sent with.\n\nDefaults to Auto, which uses the same protocol as regular requests to the backend:\n\n  - HTTP2 for a backend configured for HTTP/2, through a `kubernetes.io/h2c`,\n    `gateway.envoyproxy.io/h2c` or `grpc` appProtocol, or as the backend of a\n    GRPCRoute.\n  - The protocol negotiated through ALPN for a TLS backend that negotiates it,\n    with HTTP1 as the fallback when nothing is negotiated.\n  - HTTP1 otherwise.\n\nSet HTTP1 or HTTP2 when the health check endpoint speaks a different protocol than\nthe application, for example a backend that serves HTTP/1.1 traffic but only\naccepts HTTP/2 health checks. An explicit protocol is always used as is.",
+    "HTTP1 provides HTTP/1 configuration for backend connections.\nWhen both this field and the deprecated HTTP1 field on ClientTrafficPolicy are set,\nthis field takes precedence for backend (upstream) traffic.\n\nBehavior when targeting route kinds that do not use HTTP/1:\n  - GRPCRoute, TCPRoute, TLSRoute, UDPRoute: targeting these route kinds\n    directly adds a Warning condition on the policy; the field is ignored.\n  - Gateway / ListenerSet / sectionName targets: this field is silently\n    ignored for any GRPCRoute, TCPRoute, TLSRoute, or UDPRoute destinations\n    beneath that target; no warning is emitted.\n  - gRPC-only external services (ExtProc, gRPC ExtAuth, ALS, OpenTelemetry\n    access log/metrics, tracing providers): rejected at admission on their\n    own BackendSettings via separate validation rules.",
+    "HTTP3 enables HTTP/3 for backend connections.\nHTTP/3 always runs over TLS, so the backend must be configured\nwith TLS through a BackendTLSPolicy or the Backend's spec.tls.\nHTTP/3 is only supported for the backends of a route, through\nBackendTrafficPolicy. It is rejected for the backends of other\nresources, such as the external services of a SecurityPolicy\nor EnvoyExtensionPolicy and the sinks of an EnvoyProxy.",
+    "HTTPUpgrade defines the configuration for HTTP protocol upgrades.\nIf not specified, the default upgrade configuration (websocket) will be used.\nHowever, if requestBuffer is configured, the default upgrade configuration\nwill be ignored.",
+    "HTTPUpgrade defines the configuration for HTTP protocol upgrades.\nIf not specified, the default upgrade configuration (websocket) will be used.\nHowever, if requestBuffer is configured with mode BufferAndLimit, the default\nupgrade configuration will be ignored.",
+    "Header configures the header hash policy when the consistent hash type is set to Header.\n\nDeprecated: use Headers instead",
+    "Header configures the header hash policy when the consistent hash type is set to Header.\n\nDeprecated: use Headers instead. This field will be removed in v1.11.",
+    "FailTrafficOnPanic rejects traffic instead of routing to all endpoints when the\ncluster is in panic mode. Panic mode is entered when the share of healthy endpoints\ndrops below HealthCheck.PanicThreshold, and by default Envoy then load balances\nacross every endpoint, healthy or not. Setting this to true makes Envoy fail the\nrequests instead, applying backpressure to clients and giving the backend room to\nrecover.\nDefaults to false.",
+    "MergeType determines how this configuration is merged with existing BackendTrafficPolicy\nconfigurations targeting a parent resource. When set, this configuration will be merged\ninto the closest parent BackendTrafficPolicy in the route's attachment hierarchy (for\nexample, one targeting a Gateway, Gateway listener, ListenerSet, or ListenerSet listener).\nCurrently, this field can only be set when targeting xRoute resources.\nIf unset, no merging occurs, and only the most specific configuration takes effect.",
+    "MergeType determines how this configuration is merged with existing BackendTrafficPolicy\nconfigurations targeting a parent resource. When set, this configuration will be merged\ninto the closest parent BackendTrafficPolicy in the route's attachment hierarchy (for\nexample, one targeting a Gateway, Gateway listener, ListenerSet, or ListenerSet listener).\nThis field can only be set when targeting xRoute or backend (Service/ServiceImport/Backend)\nresources, and is required when targeting a backend.\nIf unset, no merging occurs, and only the most specific configuration takes effect.",
+    "RequestBuffer allows the gateway to buffer and fully receive each request from a client before continuing to send the request\nupstream to the backends. This can be helpful to shield your backend servers from slow clients, and also to enforce a maximum size per request\nas any requests larger than the buffer size will be rejected.\n\nThis can have a negative performance impact so should only be enabled when necessary.\n\nWhen enabling this option, you should also configure your connection buffer size to account for these request buffers. There will also be an\nincrease in memory usage for Envoy that should be accounted for in your deployment settings.\n\nRequest buffering is incompatible with streaming APIs and protocol upgrades such as gRPC streaming and WebSocket. Do not enable this option\non routes that need those protocols, because requests can hang instead of being forwarded upstream.",
+    "RequestBuffer configures how much of a request body Envoy is allowed to buffer for a route,\nand whether the gateway fully buffers each request before forwarding it upstream.\n\nA request whose buffered body exceeds the configured limit is rejected with HTTP 413 Content Too\nLarge. How much of a request is buffered, and therefore whether the limit acts as a maximum request\nbody size, depends on the mode: see the mode field.\n\nBuffering increases memory usage for Envoy that should be accounted for in your deployment settings.",
+    "Limit specifies the maximum allowed size in bytes for each incoming request buffer.\nIf exceeded, the request will be rejected with HTTP 413 Content Too Large.\n\nAccepts values in resource.Quantity format (e.g., \"10Mi\", \"500Ki\").",
+    "Limit specifies the maximum size in bytes that Envoy may buffer for an incoming request body.\nIf a request's buffered body exceeds this limit, the request is rejected with HTTP 413 Content\nToo Large.\n\nIn BufferAndLimit mode the entire body is always buffered, so this acts as a maximum request body size.\nIn LimitOnly mode only what a filter later in the chain actually buffers counts against the limit,\nso a streamed request that nothing buffers can exceed it and still be forwarded upstream.\n\nAccepts values in resource.Quantity format (e.g., \"10Mi\", \"500Ki\").",
+    "Mode determines how Limit is enforced. Defaults to BufferAndLimit.\n\nLimit applies in both modes: it is always set as the request body buffer limit for the route. Mode\nonly controls whether the gateway additionally buffers the whole request body itself, which is what\nmakes Limit a guaranteed maximum request body size.\n\nBufferAndLimit makes the gateway receive each request from the client in full before it starts sending\nthe request upstream to the backends. This can be helpful to shield your backend servers from slow\nclients, and Limit acts as a maximum request body size for the route.\nBuffering whole request bodies costs memory and adds latency, so this mode should only be used when\nnecessary. It is also incompatible with streaming APIs and protocol upgrades such as gRPC streaming\nand WebSocket: HTTP upgrades are disabled on routes using this mode, and a request whose body is\nnever completed is never forwarded upstream. Do not use this mode on routes that need those\nprotocols.\n\nLimitOnly only raises how much of a request body the gateway is allowed to buffer, without buffering\nrequests itself. Use this mode when something later in the request path (ext_proc, Lua, Wasm, ...)\nbuffers the request body and the default limit is too small. Unlike BufferAndLimit, this mode is\ncompatible with streaming APIs and protocol upgrades, because the gateway does not wait for the whole\nrequest body before forwarding it upstream.\n\nIn both modes, Limit applies to an individual request body and is separate from the connection buffer\nlimits configured by ClientTrafficPolicy and BackendTrafficPolicy, which control per-connection\nread/write buffering and back pressure. There is no need to raise the connection buffer limits for\nLimit to take effect.",
+    "Request headers to match on. The match evaluates to true if all matches are successful.\nNote that the request headers are not available for all Envoy-generated responses,\nin which case a request header match never evaluates to true.",
+    "TargetRef is the name of the resource this policy is being attached to.\nThis policy and the TargetRef MUST be in the same namespace for this\nPolicy to have effect\n\nDeprecated: use targetRefs/targetSelectors instead",
+    "TargetRef is the name of the resource this policy is being attached to.\nThis policy and the TargetRef MUST be in the same namespace for this\nPolicy to have effect\n\nDeprecated: use targetRefs/targetSelectors instead. This field will be removed in v1.11.",
     "HealthCheckLog defines health check event logging configuration for this cluster.\nWhen set, HC probe outcomes are logged to the configured sinks.\nTakes precedence over the gateway-level EnvoyProxy.spec.telemetry.healthCheckLog.",
     "RequestBody defines the HTTP request body payload sent during health checking.",
     "OutOfBand enables out-of-band ORCA load reporting. When set, Envoy opens a\nserver-streaming gRPC connection to each endpoint's\nxds.service.orca.v3.OpenRcaService/StreamCoreMetrics and pulls load\nreports periodically, instead of relying on in-band ORCA metrics\ncarried in response headers/trailers.\n\nThe backend must implement OpenRcaService for this to take effect.",
     "MergeType determines how this configuration is merged with existing BackendTrafficPolicy\nconfigurations targeting a parent resource. When set, this configuration will be merged\ninto a parent BackendTrafficPolicy (i.e. the one targeting a Gateway or Listener).\nThis field cannot be set when targeting a parent resource (Gateway).\nIf unset, no merging occurs, and only the most specific configuration takes effect.",
-    "MergeType determines how this configuration is merged with existing BackendTrafficPolicy\nconfigurations targeting a parent resource. When set, this configuration will be merged\ninto the closest parent BackendTrafficPolicy in the route's attachment hierarchy (for\nexample, one targeting a Gateway, Gateway listener, ListenerSet, or ListenerSet listener).\nCurrently, this field can only be set when targeting xRoute resources.\nIf unset, no merging occurs, and only the most specific configuration takes effect.",
     "FromMetadata sources the limit value from per-request dynamic metadata.\nWhen the referenced metadata value is present, it overrides Requests/Unit for that\nrequest; otherwise Requests/Unit are used as the default.\n\nThe referenced metadata value must be a struct containing an integer \"requests_per_unit\"\nproperty and a \"unit\" property with a value parseable to a RateLimitUnit. An upstream\nfilter (e.g. ext_proc) is responsible for writing this struct into dynamic metadata.\n\nOnly supported for Global Rate Limits.",
     "RateLimitUnit specifies the intervals for setting rate limits.\nValid RateLimitUnit values are \"Second\", \"Minute\", \"Hour\", \"Day\", \"Month\" and \"Year\".",
     "RateLimitUnit specifies the intervals for setting rate limits.\nValid RateLimitUnit values are \"Second\", \"Minute\", \"Hour\", \"Day\", \"Week\", \"Month\" and \"Year\".",

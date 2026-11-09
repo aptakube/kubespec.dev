@@ -1,5 +1,93 @@
 {
   "versions": {
+    "v1.10.0": {
+      "added": {
+        "spec.connection.connectionLimit.maxConnectionDurationJitter": "integer",
+        "spec.headers.disableRetryAfterHeader": "boolean",
+        "spec.headers.earlyRequestHeaders.mutations": "object[]",
+        "spec.headers.lateResponseHeaders.mutations": "object[]",
+        "spec.headers.maxRequestHeaderLimit": "int | string",
+        "spec.http3.advertisedPort": "integer",
+        "spec.proxyProtocol.forwardProtoConfig": "object"
+      },
+      "descriptionChanged": [
+        "spec.enableProxyProtocol",
+        "spec.headers.preserveXRequestID",
+        "spec.http1.enableTrailers",
+        "spec.http1.http10",
+        "spec.http1.preserveHeaderCase",
+        "spec.targetRef",
+        "spec.tls.clientValidation.certificateHashes",
+        "spec.tls.clientValidation.spkiHashes",
+        "spec.tls.clientValidation.subjectAltNames"
+      ],
+      "descriptions": {
+        "spec.connection.connectionLimit.maxConnectionDurationJitter": [
+          null,
+          0
+        ],
+        "spec.enableProxyProtocol": [
+          1,
+          2
+        ],
+        "spec.headers.disableRetryAfterHeader": [
+          null,
+          3
+        ],
+        "spec.headers.earlyRequestHeaders.mutations": [
+          null,
+          4
+        ],
+        "spec.headers.lateResponseHeaders.mutations": [
+          null,
+          4
+        ],
+        "spec.headers.maxRequestHeaderLimit": [
+          null,
+          5
+        ],
+        "spec.headers.preserveXRequestID": [
+          6,
+          7
+        ],
+        "spec.http1.enableTrailers": [
+          8,
+          9
+        ],
+        "spec.http1.http10": [
+          10,
+          11
+        ],
+        "spec.http1.preserveHeaderCase": [
+          12,
+          13
+        ],
+        "spec.http3.advertisedPort": [
+          null,
+          14
+        ],
+        "spec.proxyProtocol.forwardProtoConfig": [
+          null,
+          15
+        ],
+        "spec.targetRef": [
+          16,
+          17
+        ],
+        "spec.tls.clientValidation.certificateHashes": [
+          18,
+          19
+        ],
+        "spec.tls.clientValidation.spkiHashes": [
+          20,
+          21
+        ],
+        "spec.tls.clientValidation.subjectAltNames": [
+          22,
+          23
+        ]
+      }
+    },
     "v1.9.0": {
       "added": {
         "spec.clientIPDetection.directSourceIP": "object",
@@ -13,31 +101,31 @@
       "descriptions": {
         "spec.clientIPDetection.directSourceIP": [
           null,
-          0
+          24
         ],
         "spec.clientIPDetection.xForwardedFor.disableXForwardedForAppend": [
           null,
-          1
+          25
         ],
         "spec.headers.host": [
           null,
-          2
+          26
         ],
         "spec.timeout.http.requestHeadersReceivedTimeout": [
           null,
-          3
+          27
         ],
         "spec.timeout.tcp.connectionInspectionTimeout": [
           null,
-          4
+          28
         ],
         "spec.timeout.tcp.tlsHandshakeTimeout": [
           null,
-          5
+          29
         ],
         "spec.tls.clientValidation.allowExpiredCertificate": [
           null,
-          6
+          30
         ]
       }
     },
@@ -47,13 +135,37 @@
       ],
       "descriptions": {
         "spec.tls.ciphers": [
-          7,
-          8
+          31,
+          32
         ]
       }
     }
   },
   "texts": [
+    "MaxConnectionDurationJitter adds a random extra amount of time to each connection's\nMaxConnectionDuration, up to this percentage of that duration. This keeps connections\nopened together from expiring at the same moment. Requires MaxConnectionDuration.\nIf not specified, no jitter is added.",
+    "EnableProxyProtocol interprets the ProxyProtocol header and adds the\nClient Address into the X-Forwarded-For header.\nNote Proxy Protocol must be present when this field is set, else the connection\nis closed.\n\nDeprecated: Use ProxyProtocol instead.",
+    "EnableProxyProtocol interprets the ProxyProtocol header and adds the\nClient Address into the X-Forwarded-For header.\nNote Proxy Protocol must be present when this field is set, else the connection\nis closed.\n\nDeprecated: Use ProxyProtocol instead. This field will be removed in v1.11.",
+    "DisableRetryAfterHeader configures Envoy Proxy to omit the \"Retry-After\" response header\non rate-limited 429 responses.",
+    "Mutations is an ordered list of header operations that are applied in\nexactly the order specified. Use this field when the sequence of\noperations matters, for example setting a header and then appending to\nit, or removing a header and then re-adding it.\n\nMutations are always applied FIRST, in list order. The Set, Add,\nAddIfAbsent, Remove and RemoveOnMatch fields below are then applied after\nthe mutations, preserving their existing ordering (Add, then Set, then\nAddIfAbsent, then Remove, then RemoveOnMatch).",
+    "MaxRequestHeaderLimit provides configuration for the maximum size of the\nrequest headers allowed for incoming connections, mapping to the Envoy\n`max_request_headers_kb` HTTP connection manager setting. Requests whose\nheaders exceed this limit receive a 431 (Request Header Fields Too Large)\nresponse. The value is rounded up to the nearest KiB, must be at least 1Ki,\nand cannot exceed 8192Ki (the maximum Envoy supports).\nFor example, 60Ki, 96Ki, 128Ki etc.\nNote that when the suffix is not provided, the value is interpreted as bytes.\nDefault: 60Ki bytes.",
+    "PreserveXRequestID configures Envoy to keep the X-Request-ID header if passed for a request that is edge\n(Edge request is the request from external clients to front Envoy) and not reset it, which is the current Envoy behaviour.\nDefaults to false and cannot be combined with RequestID.\n\nDeprecated: use RequestID=PreserveOrGenerate instead",
+    "PreserveXRequestID configures Envoy to keep the X-Request-ID header if passed for a request that is edge\n(Edge request is the request from external clients to front Envoy) and not reset it, which is the current Envoy behaviour.\nDefaults to false and cannot be combined with RequestID.\n\nDeprecated: use RequestID=PreserveOrGenerate instead. This field will be removed in v1.11.",
+    "EnableTrailers defines if HTTP/1 trailers should be proxied by Envoy.",
+    "EnableTrailers defines if HTTP/1 trailers should be proxied by Envoy.\n\nNote: this field currently configures both the client connection and the backend HTTP/1\nprotocol settings. In a future release it will be restricted to the client connection only.\nUse BackendTrafficPolicy.http1.enableTrailers for backend settings.\nEnable the EnvoyGateway runtimeFlag ApplyClientTrafficPolicyHTTP1SettingsToClientsOnly\nto opt in to the new behavior now.",
+    "HTTP10 turns on support for HTTP/1.0 and HTTP/0.9 requests.",
+    "HTTP10 turns on support for HTTP/1.0 and HTTP/0.9 requests.\n\nNote: this field currently forces explicit HTTP/1 for backend connections when other\nbackend-relevant HTTP/1 fields like EnableTrailers and PreserveHeaderCase are absent.\nIn a future release it will no longer force explicit HTTP/1 on backend connections.\nUse BackendTrafficPolicy.http1: {} to force HTTP/1 on a backend cluster explicitly.",
+    "PreserveHeaderCase defines if Envoy should preserve the letter case of headers.\nBy default, Envoy will lowercase all the headers.",
+    "PreserveHeaderCase defines if Envoy should preserve the letter case of headers.\nBy default, Envoy will lowercase all the headers.\n\nNote: this field currently configures both the client connection and the backend HTTP/1\nprotocol settings. In a future release it will be restricted to the client connection only.\nUse BackendTrafficPolicy.http1.preserveHeaderCase for backend settings.\nEnable the EnvoyGateway runtimeFlag ApplyClientTrafficPolicyHTTP1SettingsToClientsOnly\nto opt in to the new behavior now.",
+    "AdvertisedPort specifies the port advertised to clients in the HTTP/3\n`alt-svc` response header. It does not change the listener or Service port.\nIf unset, the Gateway listener port is advertised.",
+    "ForwardProtoConfig infers the x-forwarded-proto header from the PROXY protocol\ndestination port. Only takes effect when PROXY protocol is enabled.\n\nThis is useful when a Layer 4 load balancer (such as AWS NLB) terminates TLS and\nforwards traffic to Envoy over PROXY protocol, so that Envoy can set the correct\nscheme for the forwarded request.",
+    "TargetRef is the name of the resource this policy is being attached to.\nThis policy and the TargetRef MUST be in the same namespace for this\nPolicy to have effect\n\nDeprecated: use targetRefs/targetSelectors instead",
+    "TargetRef is the name of the resource this policy is being attached to.\nThis policy and the TargetRef MUST be in the same namespace for this\nPolicy to have effect\n\nDeprecated: use targetRefs/targetSelectors instead. This field will be removed in v1.11.",
+    "An optional list of hex-encoded SHA-256 hashes. If specified, Envoy will\nverify that the SHA-256 of the DER-encoded presented certificate matches\none of the specified values.",
+    "An optional list of hex-encoded SHA-256 hashes. If specified, Envoy will\nverify that the SHA-256 of the DER-encoded presented certificate matches\none of the specified values.\nSetting this requires a client certificate, so it cannot be combined with\nmode VerifyIfGiven or the deprecated optional: true.",
+    "An optional list of base64-encoded SHA-256 hashes. If specified, Envoy will\nverify that the SHA-256 of the DER-encoded Subject Public Key Information\n(SPKI) of the presented certificate matches one of the specified values.",
+    "An optional list of base64-encoded SHA-256 hashes. If specified, Envoy will\nverify that the SHA-256 of the DER-encoded Subject Public Key Information\n(SPKI) of the presented certificate matches one of the specified values.\nSetting this requires a client certificate, so it cannot be combined with\nmode VerifyIfGiven or the deprecated optional: true.",
+    "An optional list of Subject Alternative name matchers. If specified, Envoy\nwill verify that the Subject Alternative Name of the presented certificate\nmatches one of the specified matchers",
+    "An optional list of Subject Alternative name matchers. If specified, Envoy\nwill verify that the Subject Alternative Name of the presented certificate\nmatches one of the specified matchers.\nSetting this requires a client certificate, so it cannot be combined with\nmode VerifyIfGiven or the deprecated optional: true.",
     "DirectSourceIP configures the geoip filter to use the downstream connection\nsource address (the TCP peer of the connection terminated by Envoy) as the client IP.\n\nUse this in L4-transparent topologies where a load balancer preserves the original\nclient source IP at TCP level and does not populate XFF or a custom header — for\nexample, AWS NLB with target-type=instance + externalTrafficPolicy=Local, or\nAzure Standard Load Balancer.\n\nMutually exclusive with XForwardedFor and CustomHeader.",
     "DisableXForwardedForAppend configures Envoy Proxy to stop appending the downstream address\nto the X-Forwarded-For header.\n\nThis only disables the automatic append behavior. It does not remove or sanitize\nan incoming X-Forwarded-For header.",
     "Host enables managing how the Host/Authority header set by clients can be normalized.",

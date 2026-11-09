@@ -1,5 +1,26 @@
 {
   "versions": {
+    "v1.10.0": {
+      "added": {
+        "spec.backendPriority": "integer",
+        "spec.grpcJSONTranscoder": "object",
+        "spec.requestMirror": "object"
+      },
+      "descriptions": {
+        "spec.backendPriority": [
+          null,
+          0
+        ],
+        "spec.grpcJSONTranscoder": [
+          null,
+          1
+        ],
+        "spec.requestMirror": [
+          null,
+          2
+        ]
+      }
+    },
     "v1.9.0": {
       "descriptionChanged": [
         "spec.directResponse",
@@ -10,21 +31,24 @@
       },
       "descriptions": {
         "spec.directResponse": [
-          0,
-          1
+          3,
+          4
         ],
         "spec.directResponse.statusCode": [
-          2,
-          3
+          5,
+          6
         ],
         "spec.urlRewrite.hostname.pathRegex": [
           null,
-          4
+          7
         ]
       }
     }
   },
   "texts": [
+    "BackendPriority sets the Envoy locality priority of the endpoints belonging to the\nbackendRef this filter is attached to, enabling priority-based failover between the\nbackendRefs of a single route rule. 0 is the highest priority.\n\nEnvoy sends traffic to the lowest priority value that has enough healthy endpoints,\nand only spills over to the next value as that health degrades. It is highly\nrecommended to configure active or passive health checks so that failover can be\ndetected when the higher priority backends become unhealthy.\n\nThis overrides the priority derived from the referenced Backend's fallback field.\nFor additional details, see\nhttps://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/upstream/load_balancing/priority\n\nThis filter is only valid when referenced from a backendRef's filters. Referencing it\nfrom a route rule's filters is rejected: a rule-level filter applies uniformly to every\nbackendRef of the rule, and a uniform priority carries no failover meaning.",
+    "GRPCJSONTranscoder converts a JSON/HTTP request to a gRPC request, and the gRPC\nresponse back to JSON.\n\nIt can only be used in the rule filters of an HTTPRoute. It is not supported in a\nGRPCRoute or in the filters of a backendRef.",
+    "RequestMirror defines configuration for request mirroring modifiers.\nThis configuration works together with the Gateway API RequestMirror filter\non the attached HTTPRoute rule.",
     "HTTPDirectResponseFilter defines the configuration to return a fixed response.",
     "DirectResponse returns a fixed response for matching requests.\n\nWhen this filter is referenced from a GRPCRoute, only a non-2xx status code\nis supported. gRPC signals success with a grpc-status trailer and a response\nmessage, which a direct response cannot produce, so a 2xx status code (which\nmaps to the gRPC OK status) yields an invalid response for gRPC clients. Use a\nnon-2xx status code to deny or block gRPC requests (e.g. 403 maps to\nPERMISSION_DENIED, 404 to UNIMPLEMENTED, 429/503 to UNAVAILABLE).",
     "Status Code of the HTTP response\nIf unset, defaults to 200.",

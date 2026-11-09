@@ -1,5 +1,28 @@
 {
   "versions": {
+    "v1.10.0": {
+      "descriptionChanged": [
+        "spec.appProtocols",
+        "spec.tls.clientCertificateRef"
+      ],
+      "added": {
+        "spec.kubernetesService": "object"
+      },
+      "descriptions": {
+        "spec.appProtocols": [
+          0,
+          1
+        ],
+        "spec.kubernetesService": [
+          null,
+          2
+        ],
+        "spec.tls.clientCertificateRef": [
+          3,
+          4
+        ]
+      }
+    },
     "v1.9.0": {
       "added": {
         "spec.tls.autoSNIFromEndpointHostname": "boolean"
@@ -10,11 +33,11 @@
       "descriptions": {
         "spec.tls.autoSNIFromEndpointHostname": [
           null,
-          0
+          5
         ],
         "spec.tls.sni": [
-          1,
-          2
+          6,
+          7
         ]
       }
     },
@@ -24,13 +47,18 @@
       ],
       "descriptions": {
         "spec.tls.ciphers": [
-          3,
-          4
+          8,
+          9
         ]
       }
     }
   },
   "texts": [
+    "AppProtocols defines the application protocols to be supported when connecting to the backend.",
+    "AppProtocols defines the application protocols to be supported when connecting to the backend.\nFor a KubernetesService backend, this takes precedence over the appProtocol of the Service port.",
+    "KubernetesService defines the Kubernetes Service to be used when connecting to the backend.\nIt must be set when Type is KubernetesService, and must not be set otherwise.\n\nThe endpoints of the Service are discovered from its EndpointSlices, exactly as they\nare for a Service backendRef, so the resulting cluster keeps pod-level load balancing,\nhealth checking, session persistence, endpoint draining and zone awareness.",
+    "ClientCertificateRef defines the reference to a Kubernetes Secret that contains\nthe client certificate and private key for Envoy to use when connecting to\nbackend services and external services, such as ExtAuth, ALS, OpenTelemetry, etc.\nThis secret should be located within the same namespace as the Envoy proxy resource that references it.",
+    "ClientCertificateRef defines the reference to a Kubernetes Secret that contains\nthe client certificate and private key for Envoy to use when connecting to\nbackend services and external services, such as ExtAuth, ALS, OpenTelemetry, etc.\nThe Secret must be in the same namespace as the EnvoyProxy or Backend resource\nthat references it.\nCross-namespace references are not supported, even with a ReferenceGrant.\nThe ReferenceGrant requirement in the namespace field's description is inherited\nfrom the Gateway API SecretObjectReference type and does not apply to this field.",
     "AutoSNIFromEndpointHostname indicates whether the upstream endpoint's hostname should be used as the SNI value\nwhen establishing a TLS connection to the backend.\nThis uses the resolved hostname of the upstream endpoint (e.g., from the Backend Endpoints list),\nrather than a static value.\n\nMutually exclusive with SNI. When a BackendTLSPolicy is attached, its Hostname value takes\nprecedence and AutoSNIFromEndpointHostname is ignored.",
     "SNI is specifies the SNI value used when establishing an upstream TLS connection to the backend.\n\nEnvoy Gateway will use the HTTP host header value for SNI, when all resources referenced in BackendRefs are:\n1. Backend resources that do not set SNI, or\n2. Service/ServiceImport resources that do not have a BackendTLSPolicy attached to them\n\nWhen a BackendTLSPolicy attaches to a Backend resource, the BackendTLSPolicy's Hostname value takes precedence\nover this value.",
     "SNI specifies the fixed SNI value used when establishing an upstream TLS connection to the backend.\n\nEnvoy Gateway will use the HTTP host header value for SNI, when all resources referenced in BackendRefs are:\n1. Backend resources that do not set SNI, or\n2. Service/ServiceImport resources that do not have a BackendTLSPolicy attached to them\n\nIf a BackendTLSPolicy is attached to the Backend resource, the BackendTLSPolicy's validation.hostname\nvalue takes precedence over this field.\n\nIf no BackendTLSPolicy validation.hostname applies and both this field and AutoSNIFromEndpointHostname\nare unset, Envoy Gateway configures Envoy to set the upstream SNI from the downstream HTTP host/authority header.",

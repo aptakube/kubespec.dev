@@ -1,5 +1,81 @@
 {
   "versions": {
+    "v1.10.0": {
+      "added": {
+        "spec.backends": "object[]",
+        "spec.extProc.backendSettings.healthCheck.active.disableConnectionReuse": "boolean",
+        "spec.extProc.backendSettings.healthCheck.active.grpc.hostname": "string",
+        "spec.extProc.backendSettings.healthCheck.active.http.protocol": "string",
+        "spec.extProc.backendSettings.http1": "object",
+        "spec.extProc.backendSettings.http3": "object",
+        "spec.extProc.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": "boolean",
+        "spec.wasm.vmSharingScope": "string"
+      },
+      "descriptionChanged": [
+        "spec.extProc.backendRef",
+        "spec.extProc.backendSettings.loadBalancer.consistentHash.header",
+        "spec.targetRef",
+        "spec.wasm.code",
+        "spec.wasm.name"
+      ],
+      "optional": [
+        "spec.wasm.code"
+      ],
+      "descriptions": {
+        "spec.backends": [
+          null,
+          0
+        ],
+        "spec.extProc.backendRef": [
+          1,
+          2
+        ],
+        "spec.extProc.backendSettings.healthCheck.active.disableConnectionReuse": [
+          null,
+          3
+        ],
+        "spec.extProc.backendSettings.healthCheck.active.grpc.hostname": [
+          null,
+          4
+        ],
+        "spec.extProc.backendSettings.healthCheck.active.http.protocol": [
+          null,
+          5
+        ],
+        "spec.extProc.backendSettings.http1": [
+          null,
+          6
+        ],
+        "spec.extProc.backendSettings.http3": [
+          null,
+          7
+        ],
+        "spec.extProc.backendSettings.loadBalancer.consistentHash.header": [
+          8,
+          9
+        ],
+        "spec.extProc.backendSettings.loadBalancer.zoneAware.preferLocal.failTrafficOnPanic": [
+          null,
+          10
+        ],
+        "spec.targetRef": [
+          11,
+          12
+        ],
+        "spec.wasm.code": [
+          13,
+          14
+        ],
+        "spec.wasm.name": [
+          15,
+          16
+        ],
+        "spec.wasm.vmSharingScope": [
+          null,
+          17
+        ]
+      }
+    },
     "v1.9.1": {
       "descriptionChanged": [
         "spec.wasm.code.http.tls",
@@ -7,12 +83,12 @@
       ],
       "descriptions": {
         "spec.wasm.code.http.tls": [
-          0,
-          1
+          18,
+          19
         ],
         "spec.wasm.code.image.tls": [
-          0,
-          2
+          18,
+          20
         ]
       }
     },
@@ -33,39 +109,39 @@
       "descriptions": {
         "spec.extProc.backendSettings.healthCheck.active.healthCheckLog": [
           null,
-          3
+          21
         ],
         "spec.extProc.backendSettings.healthCheck.active.http.requestBody": [
           null,
-          4
+          22
         ],
         "spec.extProc.backendSettings.loadBalancer.backendUtilization.outOfBand": [
           null,
-          5
+          23
         ],
         "spec.extProc.shadowMode": [
           null,
-          6
+          24
         ],
         "spec.extProc.statusOnError": [
           null,
-          7
+          25
         ],
         "spec.lua.filterContext": [
           null,
-          8
+          26
         ],
         "spec.mergeType": [
           null,
-          9
+          27
         ],
         "spec.wasm.code.http.tls": [
-          1,
-          0
+          19,
+          18
         ],
         "spec.wasm.code.image.tls": [
-          2,
-          0
+          20,
+          18
         ]
       }
     },
@@ -76,17 +152,35 @@
       ],
       "descriptions": {
         "spec.wasm.code.http.tls": [
-          0,
-          1
+          18,
+          19
         ],
         "spec.wasm.code.image.tls": [
-          0,
-          2
+          18,
+          20
         ]
       }
     }
   },
   "texts": [
+    "Backends declares HTTP callout dependencies for Lua, Wasm and dynamic modules.\nRequires extensionApis.enableExtensionBackends to be set to true in the\nEnvoyGateway configuration.\nEach name is an alias in this policy. Extensions read the generated cluster\nname from route metadata during a request. Initialization and independent\nbackground callbacks have no request route. Asynchronous callbacks can use\nbindings resolved for their request.\nWhen merging policies, a nonempty list replaces the parent's list.\nInherited references keep the namespace of the policy that declared them.",
+    "BackendRef references a Kubernetes object that represents the\nbackend server to which the authorization request will be sent.\n\nDeprecated: Use BackendRefs instead.",
+    "BackendRef references a Kubernetes object that represents the\nbackend server to which the authorization request will be sent.\n\nDeprecated: Use BackendRefs instead. This field will be removed in v1.11.",
+    "DisableConnectionReuse determines whether the active health check connection to a\nbackend host is closed after each health check probe. When set to true, Envoy opens a\nnew connection for each health check, which is useful for backends (such as\nhaproxy-style agent checks) that do not expect a reused connection.\nDefaults to false, which reuses the connection across probes.",
+    "Hostname defines the value of the :authority header sent with active gRPC\nhealth checks. Authority selection uses this order: this field, the\nassociated Backend endpoint hostname if available, then the effective Route\nhostname. If none of them is set, Envoy falls back to the name of the\ncluster, which is not a valid authority and is rejected by some gRPC\nservers.",
+    "Protocol is the HTTP protocol that active health check requests are sent with.\n\nDefaults to Auto, which uses the same protocol as regular requests to the backend:\n\n  - HTTP2 for a backend configured for HTTP/2, through a `kubernetes.io/h2c`,\n    `gateway.envoyproxy.io/h2c` or `grpc` appProtocol, or as the backend of a\n    GRPCRoute.\n  - The protocol negotiated through ALPN for a TLS backend that negotiates it,\n    with HTTP1 as the fallback when nothing is negotiated.\n  - HTTP1 otherwise.\n\nSet HTTP1 or HTTP2 when the health check endpoint speaks a different protocol than\nthe application, for example a backend that serves HTTP/1.1 traffic but only\naccepts HTTP/2 health checks. An explicit protocol is always used as is.",
+    "HTTP1 provides HTTP/1 configuration for backend connections.\nWhen both this field and the deprecated HTTP1 field on ClientTrafficPolicy are set,\nthis field takes precedence for backend (upstream) traffic.\n\nBehavior when targeting route kinds that do not use HTTP/1:\n  - GRPCRoute, TCPRoute, TLSRoute, UDPRoute: targeting these route kinds\n    directly adds a Warning condition on the policy; the field is ignored.\n  - Gateway / ListenerSet / sectionName targets: this field is silently\n    ignored for any GRPCRoute, TCPRoute, TLSRoute, or UDPRoute destinations\n    beneath that target; no warning is emitted.\n  - gRPC-only external services (ExtProc, gRPC ExtAuth, ALS, OpenTelemetry\n    access log/metrics, tracing providers): rejected at admission on their\n    own BackendSettings via separate validation rules.",
+    "HTTP3 enables HTTP/3 for backend connections.\nHTTP/3 always runs over TLS, so the backend must be configured\nwith TLS through a BackendTLSPolicy or the Backend's spec.tls.\nHTTP/3 is only supported for the backends of a route, through\nBackendTrafficPolicy. It is rejected for the backends of other\nresources, such as the external services of a SecurityPolicy\nor EnvoyExtensionPolicy and the sinks of an EnvoyProxy.",
+    "Header configures the header hash policy when the consistent hash type is set to Header.\n\nDeprecated: use Headers instead",
+    "Header configures the header hash policy when the consistent hash type is set to Header.\n\nDeprecated: use Headers instead. This field will be removed in v1.11.",
+    "FailTrafficOnPanic rejects traffic instead of routing to all endpoints when the\ncluster is in panic mode. Panic mode is entered when the share of healthy endpoints\ndrops below HealthCheck.PanicThreshold, and by default Envoy then load balances\nacross every endpoint, healthy or not. Setting this to true makes Envoy fail the\nrequests instead, applying backpressure to clients and giving the backend room to\nrecover.\nDefaults to false.",
+    "TargetRef is the name of the resource this policy is being attached to.\nThis policy and the TargetRef MUST be in the same namespace for this\nPolicy to have effect\n\nDeprecated: use targetRefs/targetSelectors instead",
+    "TargetRef is the name of the resource this policy is being attached to.\nThis policy and the TargetRef MUST be in the same namespace for this\nPolicy to have effect\n\nDeprecated: use targetRefs/targetSelectors instead. This field will be removed in v1.11.",
+    "Code is the Wasm code for the extension.",
+    "Code is the Wasm code for the extension.\nWhen omitted, Name must match a module in EnvoyProxy.spec.wasmModules.",
+    "Name is a unique name for this Wasm extension. It is used to identify the\nWasm extension if multiple extensions are handled by the same vm_id and root_id.\nIt's also used for logging/debugging.\nIf not specified, EG will generate a unique name for the Wasm extension.",
+    "Name is a unique name for this Wasm extension. It is used to identify the\nWasm extension if multiple extensions are handled by the same vm_id and root_id.\nIt's also used for logging/debugging.\nIf not specified, EG will generate a unique name for the Wasm extension.\n\nWhen Code is omitted, Name is required and must match a module registered\nin EnvoyProxy.spec.wasmModules.",
+    "VMSharingScope defines the scope within which this extension may share a Wasm VM.\nIf Policy or unset, each policy's Wasm entry uses its own VM ID. The same\nentry may reuse its VM across routes; different entries do not share a VM.\nIf Namespace, this extension may share a VM with other extensions that specify\nNamespace in the same EnvoyExtensionPolicy namespace. Envoy determines VM\ncompatibility using the Wasm code and VM configuration, including environment\nvariables. Each Envoy worker has its own VM.\n\nSharing a VM shares module-level state and VM failures. Plugin names and root\nIDs are not changed; matching plugin identities may also share a root context.",
     "TLS configuration when connecting to the Wasm code source.",
     "TLS configuration when connecting to the Wasm code source.\nIf unset, system trust store is used for HTTPS url.",
     "TLS configuration when connecting to the Wasm code source.\nIf unset, system trust store is used.",

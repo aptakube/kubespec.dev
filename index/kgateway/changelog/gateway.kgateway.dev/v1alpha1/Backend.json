@@ -1,5 +1,21 @@
 {
   "versions": {
+    "v2.5.1": {
+      "descriptionChanged": [
+        "spec.aws.ec2.port",
+        "spec.static.hosts.port"
+      ],
+      "descriptions": {
+        "spec.aws.ec2.port": [
+          0,
+          1
+        ],
+        "spec.static.hosts.port": [
+          2,
+          3
+        ]
+      }
+    },
     "v2.4.0": {
       "optional": [
         "spec.aws.accountId",
@@ -18,32 +34,32 @@
       },
       "descriptions": {
         "spec.aws.accountId": [
-          0,
-          1
+          4,
+          5
         ],
         "spec.aws.auth.assumeRole": [
           null,
-          2
+          6
         ],
         "spec.aws.auth.secretRef": [
-          3,
-          4
+          7,
+          8
         ],
         "spec.aws.ec2": [
           null,
-          5
+          9
         ],
         "spec.aws.lambda": [
-          6,
-          7
+          10,
+          11
         ],
         "spec.aws.lambda.accountId": [
           null,
-          8
+          12
         ],
         "spec.priorityGroups": [
           null,
-          9
+          13
         ]
       }
     },
@@ -56,12 +72,12 @@
       },
       "descriptions": {
         "spec.aws": [
-          10,
-          11
+          14,
+          15
         ],
         "spec.gcp": [
           null,
-          12
+          16
         ]
       }
     },
@@ -113,131 +129,131 @@
       "descriptions": {
         "apiVersion": [
           null,
-          13
+          17
         ],
         "kind": [
           null,
-          14
+          18
         ],
         "spec": [
           null,
-          15
+          19
         ],
         "spec.aws": [
           null,
-          10
+          14
         ],
         "spec.aws.accountId": [
           null,
-          0
+          4
         ],
         "spec.aws.auth": [
           null,
-          16
+          20
         ],
         "spec.aws.auth.secretRef": [
           null,
-          3
+          7
         ],
         "spec.aws.auth.secretRef.name": [
           null,
-          17
+          21
         ],
         "spec.aws.auth.type": [
           null,
-          18
+          22
         ],
         "spec.aws.lambda": [
           null,
-          6
+          10
         ],
         "spec.aws.lambda.endpointURL": [
           null,
-          19
+          23
         ],
         "spec.aws.lambda.functionName": [
           null,
-          20
+          24
         ],
         "spec.aws.lambda.invocationMode": [
           null,
-          21
+          25
         ],
         "spec.aws.lambda.payloadTransformMode": [
           null,
-          22
+          26
         ],
         "spec.aws.lambda.qualifier": [
           null,
-          23
+          27
         ],
         "spec.aws.region": [
           null,
-          24
+          28
         ],
         "spec.dynamicForwardProxy": [
           null,
-          25
+          29
         ],
         "spec.dynamicForwardProxy.enableTls": [
           null,
-          26
+          30
         ],
         "spec.static": [
           null,
-          27
+          31
         ],
         "spec.static.appProtocol": [
           null,
-          28
+          32
         ],
         "spec.static.hosts": [
           null,
-          29
+          33
         ],
         "spec.static.hosts.host": [
           null,
-          30
+          34
         ],
         "spec.static.hosts.port": [
           null,
-          31
+          2
         ],
         "spec.type": [
           null,
-          32
+          35
         ],
         "status": [
           null,
-          33
+          36
         ],
         "status.conditions": [
           null,
-          34
+          37
         ],
         "status.conditions.lastTransitionTime": [
           null,
-          35
+          38
         ],
         "status.conditions.message": [
           null,
-          36
+          39
         ],
         "status.conditions.observedGeneration": [
           null,
-          37
+          40
         ],
         "status.conditions.reason": [
           null,
-          38
+          41
         ],
         "status.conditions.status": [
           null,
-          39
+          42
         ],
         "status.conditions.type": [
           null,
-          40
+          43
         ]
       }
     },
@@ -285,6 +301,10 @@
     }
   },
   "texts": [
+    "Port is the port to use for discovered instances.\nDefaults to 80.",
+    "Port is the port to use for discovered instances.\nDefaults to 80. A value of 0 also uses 80.",
+    "Port is the port to use for the backend.",
+    "Port is the port to use for the backend. Must be between 1 and 65535.",
     "AccountId is the AWS account ID to use for the backend.",
     "AccountId is the AWS account ID to use for the backend.\nDeprecated: Set accountId on spec.aws.lambda instead. This field is kept for backward compatibility.\nWhen both fields are set, spec.aws.lambda.accountId takes precedence.",
     "AssumeRole configures STS role chaining. The backend's ambient credentials\n(the gateway ServiceAccount's IRSA identity for Lambda request signing, or the\ncontroller's identity for EC2 discovery; more generally any credential resolved\nby the default provider chain) are used to assume the target role. The resulting\ntemporary credentials are then used to sign requests to the backend (Lambda) or\nto list instances (EC2). This enables per-backend, least-privilege roles without\ngranting the gateway/controller role direct access to every target.\nRequired when type is 'AssumeRole'.",
@@ -316,7 +336,6 @@
     "AppProtocol is the application protocol to use when communicating with the backend.",
     "Hosts is a list of hosts to use for the backend.",
     "Host is the host name to use for the backend.",
-    "Port is the port to use for the backend.",
     "Type indicates the type of the backend to be used.\nDeprecated: The Type field is deprecated and will be removed in a future release.\nThe backend type is inferred from the configuration.",
     "BackendStatus defines the observed state of Backend.",
     "Conditions is the list of conditions for the backend.",
