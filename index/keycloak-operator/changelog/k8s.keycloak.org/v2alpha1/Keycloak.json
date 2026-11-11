@@ -1,0 +1,784 @@
+{
+  "versions": {
+    "26.8.0": {
+      "added": {
+        "spec.unsupported.podTemplate.spec.schedulingGroup": "object",
+        "spec.unsupported.podTemplate.spec.volumes.projected.sources.podCertificate.userAnnotations": "map[string]string"
+      }
+    },
+    "26.6.0": {
+      "added": {
+        "spec.admin": "object",
+        "spec.http.serviceHttpPort": "integer",
+        "spec.http.serviceHttpsPort": "integer",
+        "spec.http.serviceName": "string",
+        "spec.serviceMonitor.annotations": "map[string]string",
+        "spec.serviceMonitor.labels": "map[string]string",
+        "spec.telemetry": "object",
+        "spec.unsupported.podTemplate.spec.containers.env.valueFrom.fileKeyRef": "object",
+        "spec.unsupported.podTemplate.spec.containers.restartPolicyRules": "object[]",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.env.valueFrom.fileKeyRef": "object",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.restartPolicyRules": "object[]",
+        "spec.unsupported.podTemplate.spec.hostnameOverride": "string",
+        "spec.unsupported.podTemplate.spec.initContainers.env.valueFrom.fileKeyRef": "object",
+        "spec.unsupported.podTemplate.spec.initContainers.restartPolicyRules": "object[]",
+        "spec.unsupported.podTemplate.spec.volumes.projected.sources.podCertificate": "object"
+      },
+      "descriptionChanged": [
+        "spec.tracing.resourceAttributes",
+        "spec.tracing.serviceName"
+      ],
+      "descriptions": {
+        "spec.admin": [
+          null,
+          0
+        ],
+        "spec.http.serviceHttpPort": [
+          null,
+          1
+        ],
+        "spec.http.serviceHttpsPort": [
+          null,
+          2
+        ],
+        "spec.http.serviceName": [
+          null,
+          3
+        ],
+        "spec.serviceMonitor.annotations": [
+          null,
+          4
+        ],
+        "spec.serviceMonitor.labels": [
+          null,
+          5
+        ],
+        "spec.telemetry": [
+          null,
+          6
+        ],
+        "spec.tracing.resourceAttributes": [
+          7,
+          8
+        ],
+        "spec.tracing.serviceName": [
+          9,
+          10
+        ]
+      }
+    },
+    "26.5.0": {
+      "added": {
+        "spec.automountServiceAccountToken": "boolean",
+        "spec.update.labels": "map[string]string"
+      },
+      "descriptions": {
+        "spec.automountServiceAccountToken": [
+          null,
+          11
+        ],
+        "spec.update.labels": [
+          null,
+          12
+        ]
+      }
+    },
+    "26.4.0": {
+      "descriptionChanged": [
+        "spec.bootstrapAdmin",
+        "spec.truststores.secret"
+      ],
+      "added": {
+        "spec.env": "object[]",
+        "spec.import": "object",
+        "spec.ingress.labels": "map[string]string",
+        "spec.ingress.tlsSecret": "string",
+        "spec.serviceMonitor": "object",
+        "spec.truststores.configMap": "object",
+        "spec.unsupported.podTemplate.spec.containers.lifecycle.stopSignal": "string",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.lifecycle.stopSignal": "string",
+        "spec.unsupported.podTemplate.spec.initContainers.lifecycle.stopSignal": "string",
+        "spec.update.scheduling": "object"
+      },
+      "optional": [
+        "spec.truststores.secret"
+      ],
+      "descriptions": {
+        "spec.bootstrapAdmin": [
+          13,
+          14
+        ],
+        "spec.env": [
+          null,
+          15
+        ],
+        "spec.import": [
+          null,
+          16
+        ],
+        "spec.ingress.labels": [
+          null,
+          17
+        ],
+        "spec.ingress.tlsSecret": [
+          null,
+          18
+        ],
+        "spec.serviceMonitor": [
+          null,
+          19
+        ],
+        "spec.truststores.configMap": [
+          null,
+          20
+        ],
+        "spec.truststores.secret": [
+          null,
+          21
+        ],
+        "spec.update.scheduling": [
+          null,
+          22
+        ]
+      }
+    },
+    "26.3.0": {
+      "added": {
+        "spec.http.annotations": "map[string]string",
+        "spec.http.labels": "map[string]string",
+        "spec.livenessProbe": "object",
+        "spec.readinessProbe": "object",
+        "spec.startupProbe": "object"
+      },
+      "descriptions": {
+        "spec.http.annotations": [
+          null,
+          4
+        ],
+        "spec.http.labels": [
+          null,
+          5
+        ],
+        "spec.livenessProbe": [
+          null,
+          23
+        ],
+        "spec.readinessProbe": [
+          null,
+          24
+        ],
+        "spec.startupProbe": [
+          null,
+          25
+        ]
+      }
+    },
+    "26.2.0": {
+      "descriptionChanged": [
+        "spec.networkPolicy.enabled"
+      ],
+      "added": {
+        "spec.resources.claims.request": "string",
+        "spec.unsupported.podTemplate.spec.containers.resources.claims.request": "string",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.resources.claims.request": "string",
+        "spec.unsupported.podTemplate.spec.initContainers.resources.claims.request": "string",
+        "spec.unsupported.podTemplate.spec.resourceClaims.resourceClaimName": "string",
+        "spec.unsupported.podTemplate.spec.resourceClaims.resourceClaimTemplateName": "string",
+        "spec.unsupported.podTemplate.spec.resources": "object",
+        "spec.unsupported.podTemplate.spec.securityContext.seLinuxChangePolicy": "string",
+        "spec.unsupported.podTemplate.spec.securityContext.supplementalGroupsPolicy": "string",
+        "spec.unsupported.podTemplate.spec.volumes.image": "object",
+        "spec.update": "object"
+      },
+      "removed": {
+        "spec.unsupported.podTemplate.spec.resourceClaims.source": "object"
+      },
+      "descriptions": {
+        "spec.networkPolicy.enabled": [
+          26,
+          27
+        ],
+        "spec.update": [
+          null,
+          28
+        ]
+      }
+    },
+    "26.1.5": {
+      "descriptionChanged": [
+        "spec.tracing.samplerRatio"
+      ],
+      "descriptions": {
+        "spec.tracing.samplerRatio": [
+          29,
+          30
+        ]
+      }
+    },
+    "26.1.0": {
+      "added": {
+        "spec.networkPolicy": "object",
+        "spec.tracing": "object"
+      },
+      "descriptions": {
+        "spec.networkPolicy": [
+          null,
+          31
+        ],
+        "spec.tracing": [
+          null,
+          32
+        ]
+      }
+    },
+    "26.0.0": {
+      "added": {
+        "spec.bootstrapAdmin": "object",
+        "spec.scheduling": "object",
+        "spec.unsupported.podTemplate.spec.containers.securityContext.appArmorProfile": "object",
+        "spec.unsupported.podTemplate.spec.containers.volumeMounts.recursiveReadOnly": "string",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.securityContext.appArmorProfile": "object",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.volumeMounts.recursiveReadOnly": "string",
+        "spec.unsupported.podTemplate.spec.initContainers.securityContext.appArmorProfile": "object",
+        "spec.unsupported.podTemplate.spec.initContainers.volumeMounts.recursiveReadOnly": "string",
+        "spec.unsupported.podTemplate.spec.securityContext.appArmorProfile": "object"
+      },
+      "descriptionChanged": [
+        "spec.instances"
+      ],
+      "descriptions": {
+        "spec.bootstrapAdmin": [
+          null,
+          13
+        ],
+        "spec.instances": [
+          33,
+          34
+        ],
+        "spec.scheduling": [
+          null,
+          35
+        ]
+      }
+    },
+    "25.0.4": {
+      "added": {
+        "spec.cache": "object",
+        "spec.hostname.backchannelDynamic": "boolean",
+        "spec.httpManagement": "object",
+        "spec.proxy": "object",
+        "spec.resources": "object",
+        "spec.startOptimized": "boolean",
+        "spec.truststores": "map[string]object",
+        "spec.unsupported.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.containers.lifecycle.postStart.sleep": "object",
+        "spec.unsupported.podTemplate.spec.containers.lifecycle.preStop.sleep": "object",
+        "spec.unsupported.podTemplate.spec.containers.resizePolicy": "object[]",
+        "spec.unsupported.podTemplate.spec.containers.restartPolicy": "string",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.lifecycle.postStart.sleep": "object",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.lifecycle.preStop.sleep": "object",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.resizePolicy": "object[]",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.restartPolicy": "string",
+        "spec.unsupported.podTemplate.spec.initContainers.lifecycle.postStart.sleep": "object",
+        "spec.unsupported.podTemplate.spec.initContainers.lifecycle.preStop.sleep": "object",
+        "spec.unsupported.podTemplate.spec.initContainers.resizePolicy": "object[]",
+        "spec.unsupported.podTemplate.spec.initContainers.restartPolicy": "string",
+        "spec.unsupported.podTemplate.spec.volumes.ephemeral.volumeClaimTemplate.spec.volumeAttributesClassName": "string",
+        "spec.unsupported.podTemplate.spec.volumes.projected.sources.clusterTrustBundle": "object"
+      },
+      "descriptionChanged": [
+        "spec.hostname.admin",
+        "spec.hostname.adminUrl",
+        "spec.hostname.hostname",
+        "spec.hostname.strict",
+        "spec.hostname.strictBackchannel"
+      ],
+      "removed": {
+        "spec.unsupported.podTemplate.spec.volumes.ephemeral.volumeClaimTemplate.spec.resources.claims": "object[]"
+      },
+      "descriptions": {
+        "spec.cache": [
+          null,
+          36
+        ],
+        "spec.hostname.admin": [
+          37,
+          38
+        ],
+        "spec.hostname.adminUrl": [
+          39,
+          40
+        ],
+        "spec.hostname.backchannelDynamic": [
+          null,
+          41
+        ],
+        "spec.hostname.hostname": [
+          42,
+          43
+        ],
+        "spec.hostname.strict": [
+          44,
+          45
+        ],
+        "spec.hostname.strictBackchannel": [
+          46,
+          47
+        ],
+        "spec.httpManagement": [
+          null,
+          48
+        ],
+        "spec.proxy": [
+          null,
+          49
+        ],
+        "spec.resources": [
+          null,
+          50
+        ],
+        "spec.startOptimized": [
+          null,
+          51
+        ],
+        "spec.truststores": [
+          null,
+          52
+        ]
+      }
+    },
+    "25.0.3": {
+      "descriptionChanged": [
+        "spec.hostname.hostname",
+        "spec.hostname.strict",
+        "spec.hostname.strictBackchannel",
+        "spec.hostname.admin",
+        "spec.hostname.adminUrl"
+      ],
+      "added": {
+        "spec.unsupported.podTemplate.spec.volumes.ephemeral.volumeClaimTemplate.spec.resources.claims": "object[]"
+      },
+      "removed": {
+        "spec.cache": "object",
+        "spec.hostname.backchannelDynamic": "boolean",
+        "spec.httpManagement": "object",
+        "spec.proxy": "object",
+        "spec.resources": "object",
+        "spec.startOptimized": "boolean",
+        "spec.truststores": "map[string]object",
+        "spec.unsupported.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.containers.lifecycle.postStart.sleep": "object",
+        "spec.unsupported.podTemplate.spec.containers.lifecycle.preStop.sleep": "object",
+        "spec.unsupported.podTemplate.spec.containers.resizePolicy": "object[]",
+        "spec.unsupported.podTemplate.spec.containers.restartPolicy": "string",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.lifecycle.postStart.sleep": "object",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.lifecycle.preStop.sleep": "object",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.resizePolicy": "object[]",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.restartPolicy": "string",
+        "spec.unsupported.podTemplate.spec.initContainers.lifecycle.postStart.sleep": "object",
+        "spec.unsupported.podTemplate.spec.initContainers.lifecycle.preStop.sleep": "object",
+        "spec.unsupported.podTemplate.spec.initContainers.resizePolicy": "object[]",
+        "spec.unsupported.podTemplate.spec.initContainers.restartPolicy": "string",
+        "spec.unsupported.podTemplate.spec.volumes.ephemeral.volumeClaimTemplate.spec.volumeAttributesClassName": "string",
+        "spec.unsupported.podTemplate.spec.volumes.projected.sources.clusterTrustBundle": "object"
+      },
+      "descriptions": {
+        "spec.hostname.hostname": [
+          43,
+          42
+        ],
+        "spec.hostname.strict": [
+          45,
+          44
+        ],
+        "spec.hostname.strictBackchannel": [
+          47,
+          46
+        ],
+        "spec.hostname.admin": [
+          38,
+          37
+        ],
+        "spec.hostname.adminUrl": [
+          40,
+          39
+        ],
+        "spec.cache": [
+          36,
+          null
+        ],
+        "spec.hostname.backchannelDynamic": [
+          41,
+          null
+        ],
+        "spec.httpManagement": [
+          48,
+          null
+        ],
+        "spec.proxy": [
+          49,
+          null
+        ],
+        "spec.resources": [
+          50,
+          null
+        ],
+        "spec.startOptimized": [
+          51,
+          null
+        ],
+        "spec.truststores": [
+          52,
+          null
+        ]
+      }
+    },
+    "25.0.0": {
+      "descriptionChanged": [
+        "spec.hostname.admin",
+        "spec.hostname.adminUrl",
+        "spec.hostname.hostname",
+        "spec.hostname.strict",
+        "spec.hostname.strictBackchannel"
+      ],
+      "added": {
+        "spec.hostname.backchannelDynamic": "boolean",
+        "spec.httpManagement": "object"
+      },
+      "descriptions": {
+        "spec.hostname.admin": [
+          37,
+          38
+        ],
+        "spec.hostname.adminUrl": [
+          39,
+          40
+        ],
+        "spec.hostname.backchannelDynamic": [
+          null,
+          41
+        ],
+        "spec.hostname.hostname": [
+          42,
+          43
+        ],
+        "spec.hostname.strict": [
+          44,
+          45
+        ],
+        "spec.hostname.strictBackchannel": [
+          46,
+          47
+        ],
+        "spec.httpManagement": [
+          null,
+          48
+        ]
+      }
+    },
+    "24.0.2": {
+      "optional": [
+        "spec.truststores.name"
+      ],
+      "descriptionChanged": [
+        "spec.truststores.name"
+      ],
+      "descriptions": {
+        "spec.truststores.name": [
+          null,
+          53
+        ]
+      }
+    },
+    "24.0.0": {
+      "added": {
+        "spec.cache": "object",
+        "spec.proxy": "object",
+        "spec.resources": "object",
+        "spec.startOptimized": "boolean",
+        "spec.truststores": "map[string]object",
+        "spec.unsupported.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.matchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.mismatchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.matchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.mismatchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.containers.lifecycle.postStart.sleep": "object",
+        "spec.unsupported.podTemplate.spec.containers.lifecycle.preStop.sleep": "object",
+        "spec.unsupported.podTemplate.spec.containers.resizePolicy": "object[]",
+        "spec.unsupported.podTemplate.spec.containers.restartPolicy": "string",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.lifecycle.postStart.sleep": "object",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.lifecycle.preStop.sleep": "object",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.resizePolicy": "object[]",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.restartPolicy": "string",
+        "spec.unsupported.podTemplate.spec.initContainers.lifecycle.postStart.sleep": "object",
+        "spec.unsupported.podTemplate.spec.initContainers.lifecycle.preStop.sleep": "object",
+        "spec.unsupported.podTemplate.spec.initContainers.resizePolicy": "object[]",
+        "spec.unsupported.podTemplate.spec.initContainers.restartPolicy": "string",
+        "spec.unsupported.podTemplate.spec.volumes.ephemeral.volumeClaimTemplate.spec.volumeAttributesClassName": "string",
+        "spec.unsupported.podTemplate.spec.volumes.projected.sources.clusterTrustBundle": "object"
+      },
+      "removed": {
+        "spec.unsupported.podTemplate.spec.volumes.ephemeral.volumeClaimTemplate.spec.resources.claims": "object[]"
+      },
+      "descriptions": {
+        "spec.cache": [
+          null,
+          36
+        ],
+        "spec.proxy": [
+          null,
+          49
+        ],
+        "spec.resources": [
+          null,
+          50
+        ],
+        "spec.startOptimized": [
+          null,
+          51
+        ],
+        "spec.truststores": [
+          null,
+          52
+        ]
+      }
+    },
+    "23.0.0": {
+      "typeChanged": {
+        "status.conditions.status": [
+          "object",
+          "string"
+        ]
+      }
+    },
+    "22.0.2": {
+      "removed": {
+        "status.conditions.status.value": "object"
+      }
+    },
+    "22.0.0": {
+      "added": {
+        "spec.unsupported.podTemplate.spec.volumes.ephemeral.volumeClaimTemplate.spec.dataSourceRef.namespace": "string",
+        "spec.unsupported.podTemplate.spec.volumes.ephemeral.volumeClaimTemplate.spec.resources.claims": "object[]",
+        "spec.unsupported.podTemplate.spec.ephemeralContainers.resources.claims": "object[]",
+        "spec.unsupported.podTemplate.spec.resourceClaims": "object[]",
+        "spec.unsupported.podTemplate.spec.containers.resources.claims": "object[]",
+        "spec.unsupported.podTemplate.spec.initContainers.resources.claims": "object[]",
+        "spec.unsupported.podTemplate.spec.topologySpreadConstraints.nodeTaintsPolicy": "string",
+        "spec.unsupported.podTemplate.spec.topologySpreadConstraints.nodeAffinityPolicy": "string",
+        "spec.unsupported.podTemplate.spec.topologySpreadConstraints.matchLabelKeys": "string[]",
+        "spec.unsupported.podTemplate.spec.topologySpreadConstraints.minDomains": "integer",
+        "spec.unsupported.podTemplate.spec.schedulingGates": "object[]",
+        "spec.unsupported.podTemplate.spec.hostUsers": "boolean",
+        "spec.ingress.annotations": "map[string]string",
+        "spec.ingress.className": "string",
+        "status.conditions.status.value": "object",
+        "status.conditions.lastTransitionTime": "string",
+        "status.conditions.observedGeneration": "integer",
+        "status.observedGeneration": "integer",
+        "status.instances": "integer",
+        "status.selector": "string"
+      },
+      "typeChanged": {
+        "status.conditions.status": [
+          "boolean",
+          "object"
+        ]
+      },
+      "removed": {
+        "spec.unsupported.podTemplate.metadata.clusterName": "string",
+        "spec.unsupported.podTemplate.spec.volumes.ephemeral.volumeClaimTemplate.metadata.clusterName": "string"
+      },
+      "descriptions": {
+        "spec.ingress.annotations": [
+          null,
+          54
+        ]
+      }
+    },
+    "20.0.0": {
+      "added": {
+        "spec.transaction": "object",
+        "spec.http": "object",
+        "spec.hostname.hostname": "string",
+        "spec.hostname.strict": "boolean",
+        "spec.hostname.strictBackchannel": "boolean",
+        "spec.hostname.admin": "string",
+        "spec.hostname.adminUrl": "string",
+        "spec.ingress": "object",
+        "spec.imagePullSecrets": "object[]",
+        "spec.additionalOptions": "object[]",
+        "spec.db": "object",
+        "spec.features": "object"
+      },
+      "typeChanged": {
+        "spec.hostname": [
+          "string",
+          "object"
+        ]
+      },
+      "optional": [
+        "spec.hostname"
+      ],
+      "descriptionChanged": [
+        "spec.hostname"
+      ],
+      "removed": {
+        "spec.serverConfiguration": "object[]",
+        "spec.tlsSecret": "string",
+        "spec.disableDefaultIngress": "boolean"
+      },
+      "descriptions": {
+        "spec.transaction": [
+          null,
+          55
+        ],
+        "spec.http": [
+          null,
+          56
+        ],
+        "spec.hostname": [
+          57,
+          58
+        ],
+        "spec.hostname.hostname": [
+          null,
+          42
+        ],
+        "spec.hostname.strict": [
+          null,
+          44
+        ],
+        "spec.hostname.strictBackchannel": [
+          null,
+          46
+        ],
+        "spec.hostname.admin": [
+          null,
+          37
+        ],
+        "spec.hostname.adminUrl": [
+          null,
+          39
+        ],
+        "spec.ingress": [
+          null,
+          59
+        ],
+        "spec.imagePullSecrets": [
+          null,
+          60
+        ],
+        "spec.additionalOptions": [
+          null,
+          61
+        ],
+        "spec.db": [
+          null,
+          62
+        ],
+        "spec.features": [
+          null,
+          63
+        ],
+        "spec.serverConfiguration": [
+          61,
+          null
+        ],
+        "spec.tlsSecret": [
+          64,
+          null
+        ],
+        "spec.disableDefaultIngress": [
+          65,
+          null
+        ]
+      }
+    }
+  },
+  "texts": [
+    "In this section you can find all properties related to making admin connections from the operator to the server. These settings are not used by the server.",
+    "The HTTP port exposed on the Kubernetes Service. When set, the Service will use this port while the pod still listens on httpPort.",
+    "The HTTPS port exposed on the Kubernetes Service. When set, the Service will use this port while the pod still listens on httpsPort.",
+    "The name of the Kubernetes Service. When not set, the name defaults to the Keycloak CR name with a \"-service\" suffix.",
+    "Annotations to be appended to the Service object",
+    "Labels to be appended to the Service object",
+    "In this section you can configure general shared OpenTelemetry settings for Keycloak.",
+    "OpenTelemetry resource attributes present in the exported trace to characterize the telemetry producer.",
+    "DEPRECATED - use the 'telemetry.resourceAttributes' instead. OpenTelemetry resource attributes present in the exported trace to characterize the telemetry producer.",
+    "OpenTelemetry service name. Takes precedence over 'service.name' defined in the 'resourceAttributes' map.",
+    "DEPRECATED - use the 'telemetry.serviceName' instead. OpenTelemetry service name. Takes precedence over 'service.name' defined in the 'resourceAttributes' map.",
+    "Set this to to false to disable automounting the default ServiceAccount Token and Service CA. This is enabled by default.",
+    "Optionally set to add additional labels to the Job created for the update.",
+    "In this section you can configure Keycloak's bootstrap admin - will be used only for inital cluster creation.",
+    "In this section you can configure Keycloak's bootstrap admin - will be used only for initial cluster creation.",
+    "Environment variables for the Keycloak server.\nValues can be either direct values or references to secrets. Use additionalOptions for first-class options rather than KC_ values here.",
+    "In this section you can configure import Jobs",
+    "Additional labels to be appended to the Ingress object",
+    "A secret containing the TLS configuration for re-encrypt or TLS termination scenarios. Reference: https://kubernetes.io/docs/concepts/configuration/secret/#tls-secrets.",
+    "Configuration related to the generated ServiceMonitor",
+    "The ConfigMap containing the trust material - only set one of the other secret or configMap",
+    "The Secret containing the trust material - only set one of the other secret or configMap",
+    "In this section you can configure the update job's scheduling",
+    "Configuration for liveness probe, by default it is 10 for periodSeconds and 3 for failureThreshold",
+    "Configuration for readiness probe, by default it is 10 for periodSeconds and 3 for failureThreshold",
+    "Configuration for startup probe, by default it is 1 for periodSeconds and 600 for failureThreshold",
+    "Enables or disable the ingress traffic control.",
+    "Enables or disables the ingress traffic control.",
+    "Configuration related to Keycloak deployment updates.",
+    "OpenTelemetry sampler ratio. Probability that a span will be sampled. Expected double value in interval <0,1).",
+    "OpenTelemetry sampler ratio. Probability that a span will be sampled. Expected double value in interval [0,1].",
+    "Controls the ingress traffic flow into Keycloak pods.",
+    "In this section you can configure OpenTelemetry Tracing for Keycloak.",
+    "Number of Keycloak instances in HA mode. Default is 1.",
+    "Number of Keycloak instances. Default is 1.",
+    "In this section you can configure Keycloak's scheduling",
+    "In this section you can configure Keycloak's cache",
+    "The hostname for accessing the administration console.",
+    "The hostname for accessing the administration console. Applicable for Hostname v1 and v2.",
+    "Set the base URL for accessing the administration console, including scheme, host, port and path",
+    "DEPRECATED. Sets the base URL for accessing the administration console, including scheme, host, port and path. Applicable for Hostname v1.",
+    "Enables dynamic resolving of backchannel URLs, including hostname, scheme, port and context path. Set to true if your application accesses Keycloak via a private network. Applicable for Hostname v2.",
+    "Hostname for the Keycloak server.",
+    "Hostname for the Keycloak server. Applicable for Hostname v1 and v2.",
+    "Disables dynamically resolving the hostname from request headers.",
+    "Disables dynamically resolving the hostname from request headers. Applicable for Hostname v1 and v2.",
+    "By default backchannel URLs are dynamically resolved from request headers to allow internal and external applications.",
+    "DEPRECATED. By default backchannel URLs are dynamically resolved from request headers to allow internal and external applications. Applicable for Hostname v1.",
+    "In this section you can configure Keycloak's management interface setting.",
+    "In this section you can configure Keycloak's reverse proxy setting",
+    "Compute Resources required by Keycloak container",
+    "Set to force the behavior of the --optimized flag for the start command. If left unspecified the operator will assume custom images have already been augmented.",
+    "In this section you can configure Keycloak truststores.",
+    "Not used. To be removed in later versions.",
+    "Additional annotations to be appended to the Ingress object",
+    "In this section you can find all properties related to the settings of transaction behavior.",
+    "In this section you can configure Keycloak features related to HTTP and HTTPS",
+    "Hostname for the Keycloak server.\nThe special value `INSECURE-DISABLE` disables the hostname strict resolution.",
+    "In this section you can configure Keycloak hostname and related properties.",
+    "The deployment is, by default, exposed through a basic ingress.\nYou can change this behaviour by setting the enabled property to false.",
+    "Secret(s) that might be used when pulling an image from a private container image registry or repository.",
+    "Configuration of the Keycloak server.\nexpressed as a keys (reference: https://www.keycloak.org/server/all-config) and values that can be either direct values or references to secrets.",
+    "In this section you can find all properties related to connect to a database.",
+    "In this section you can configure Keycloak features, which should be enabled/disabled.",
+    "A secret containing the TLS configuration for HTTPS. Reference: https://kubernetes.io/docs/concepts/configuration/secret/#tls-secrets.\nThe special value `INSECURE-DISABLE` disables https.",
+    "Disable the default ingress."
+  ]
+}

@@ -241,4 +241,12 @@ export const projects: ProjectDef[] = [
     pathToManifests: ["deploy/helm/grafana-operator/files/crds"],
     filterTag: vSemver,
   },
+  {
+    name: "Keycloak Operator",
+    slug: "keycloak-operator",
+    logo: "https://avatars.githubusercontent.com/u/4921466?s=200&v=4",
+    repo: "keycloak/keycloak-k8s-resources",
+    pathToManifests: ["kubernetes"],
+    filterTag: semver,
+  },
 ];

@@ -1,0 +1,306 @@
+{
+  "versions": {
+    "26.8.0": {
+      "added": {
+        "spec.realm.identityProviders.organizationLinks": "object[]",
+        "spec.realm.organizations.domains.autoRedirect": "boolean",
+        "spec.realm.organizations.domains.identityProviderAlias": "string",
+        "spec.realm.organizations.identityProviders.organizationLinks": "object[]"
+      },
+      "removed": {
+        "spec.realm.identityProviders.organizationId": "string",
+        "spec.realm.organizations.identityProviders.organizationId": "string"
+      }
+    },
+    "26.7.0": {
+      "added": {
+        "spec.realm.federatedUsers.issuedVerifiableCredentials": "object[]",
+        "spec.realm.federatedUsers.verifiableCredentials": "object[]",
+        "spec.realm.organizations.members.issuedVerifiableCredentials": "object[]",
+        "spec.realm.organizations.members.verifiableCredentials": "object[]",
+        "spec.realm.users.issuedVerifiableCredentials": "object[]",
+        "spec.realm.users.verifiableCredentials": "object[]",
+        "spec.realm.webAuthnPolicyPasswordlessMediation": "string",
+        "spec.realm.webAuthnPolicyPasswordlessResidentKey": "string",
+        "spec.realm.webAuthnPolicyResidentKey": "string"
+      }
+    },
+    "26.6.0": {
+      "added": {
+        "spec.realm.maxSecondaryAuthFailures": "integer",
+        "spec.realm.organizations.groups": "object[]",
+        "spec.realm.scimApiEnabled": "boolean"
+      }
+    },
+    "26.5.0": {
+      "added": {
+        "spec.labels": "map[string]string",
+        "spec.realm.identityProviders.types": "string[]",
+        "spec.realm.organizations.identityProviders.types": "string[]"
+      },
+      "descriptions": {
+        "spec.labels": [
+          null,
+          0
+        ]
+      }
+    },
+    "26.4.0": {
+      "added": {
+        "spec.realm.federatedUsers.userProfileMetadata.attributes.defaultValue": "string",
+        "spec.realm.organizations.members.userProfileMetadata.attributes.defaultValue": "string",
+        "spec.realm.users.userProfileMetadata.attributes.defaultValue": "string"
+      }
+    },
+    "26.3.0": {
+      "added": {
+        "spec.realm.groups.description": "string",
+        "spec.realm.groups.subGroups.description": "string",
+        "spec.realm.groups.subGroups.subGroups.description": "string",
+        "spec.realm.groups.subGroups.subGroups.subGroups.description": "string",
+        "spec.realm.groups.subGroups.subGroups.subGroups.subGroups.description": "string",
+        "spec.realm.groups.subGroups.subGroups.subGroups.subGroups.subGroups.description": "string",
+        "spec.realm.groups.subGroups.subGroups.subGroups.subGroups.subGroups.subGroups.description": "string",
+        "spec.realm.groups.subGroups.subGroups.subGroups.subGroups.subGroups.subGroups.subGroups.description": "string",
+        "spec.realm.groups.subGroups.subGroups.subGroups.subGroups.subGroups.subGroups.subGroups.subGroups.description": "string",
+        "spec.realm.groups.subGroups.subGroups.subGroups.subGroups.subGroups.subGroups.subGroups.subGroups.subGroups.description": "string",
+        "spec.realm.groups.subGroups.subGroups.subGroups.subGroups.subGroups.subGroups.subGroups.subGroups.subGroups.subGroups.description": "string",
+        "spec.realm.webAuthnPolicyPasswordlessPasskeysEnabled": "boolean"
+      }
+    },
+    "26.2.0": {
+      "added": {
+        "spec.realm.adminPermissionsClient.authorizationSettings.authorizationSchema.resourceTypes.groupType": "string",
+        "spec.realm.adminPermissionsClient.authorizationSettings.authorizationSchema.resourceTypes.scopeAliases": "map[string]string[]",
+        "spec.realm.applications.authorizationSettings.authorizationSchema.resourceTypes.groupType": "string",
+        "spec.realm.applications.authorizationSettings.authorizationSchema.resourceTypes.scopeAliases": "map[string]string[]",
+        "spec.realm.clients.authorizationSettings.authorizationSchema.resourceTypes.groupType": "string",
+        "spec.realm.clients.authorizationSettings.authorizationSchema.resourceTypes.scopeAliases": "map[string]string[]",
+        "spec.realm.federatedUsers.credentials.federationLink": "string",
+        "spec.realm.oauthClients.authorizationSettings.authorizationSchema.resourceTypes.groupType": "string",
+        "spec.realm.oauthClients.authorizationSettings.authorizationSchema.resourceTypes.scopeAliases": "map[string]string[]",
+        "spec.realm.organizations.members.credentials.federationLink": "string",
+        "spec.realm.users.credentials.federationLink": "string",
+        "spec.resources.claims.request": "string"
+      }
+    },
+    "26.1.0": {
+      "added": {
+        "spec.realm.adminPermissionsClient": "object",
+        "spec.realm.adminPermissionsEnabled": "boolean",
+        "spec.realm.applications.authorizationSettings.authorizationSchema": "object",
+        "spec.realm.applications.authorizationSettings.policies.resourceType": "string",
+        "spec.realm.clients.authorizationSettings.authorizationSchema": "object",
+        "spec.realm.clients.authorizationSettings.policies.resourceType": "string",
+        "spec.realm.oauthClients.authorizationSettings.authorizationSchema": "object",
+        "spec.realm.oauthClients.authorizationSettings.policies.resourceType": "string",
+        "spec.realm.verifiableCredentialsEnabled": "boolean"
+      }
+    },
+    "26.0.4": {
+      "added": {
+        "spec.realm.bruteForceStrategy": "string"
+      }
+    },
+    "26.0.0": {
+      "added": {
+        "spec.placeholders": "map[string]object",
+        "spec.realm.identityProviders.hideOnLogin": "boolean",
+        "spec.realm.identityProviders.organizationId": "string",
+        "spec.realm.organizations.alias": "string",
+        "spec.realm.organizations.identityProviders.hideOnLogin": "boolean",
+        "spec.realm.organizations.identityProviders.organizationId": "string",
+        "spec.realm.organizations.members.membershipType": "string",
+        "spec.realm.organizations.redirectUrl": "string"
+      },
+      "removed": {
+        "spec.realm.realmCacheEnabled": "boolean",
+        "spec.realm.userCacheEnabled": "boolean"
+      },
+      "descriptions": {
+        "spec.placeholders": [
+          null,
+          1
+        ]
+      }
+    },
+    "25.0.4": {
+      "added": {
+        "spec.realm.applications.type": "string",
+        "spec.realm.clients.type": "string",
+        "spec.realm.components.subComponents.subComponents": "map[string]object[]",
+        "spec.realm.federatedUsers.userProfileMetadata.attributes.multivalued": "boolean",
+        "spec.realm.firstBrokerLoginFlow": "string",
+        "spec.realm.groups.subGroups.parentId": "string",
+        "spec.realm.groups.subGroups.subGroupCount": "integer",
+        "spec.realm.groups.subGroups.subGroups": "object[]",
+        "spec.realm.maxTemporaryLockouts": "integer",
+        "spec.realm.oauthClients.type": "string",
+        "spec.realm.organizations": "object[]",
+        "spec.realm.organizationsEnabled": "boolean",
+        "spec.realm.users.userProfileMetadata.attributes.multivalued": "boolean",
+        "spec.resources": "object"
+      },
+      "removed": {
+        "spec.realm.applications.oauth2DeviceAuthorizationGrantEnabled": "boolean",
+        "spec.realm.oauthClients.oauth2DeviceAuthorizationGrantEnabled": "boolean",
+        "spec.realm.clients.oauth2DeviceAuthorizationGrantEnabled": "boolean"
+      },
+      "descriptions": {
+        "spec.resources": [
+          null,
+          2
+        ]
+      }
+    },
+    "25.0.3": {
+      "added": {
+        "spec.realm.applications.oauth2DeviceAuthorizationGrantEnabled": "boolean",
+        "spec.realm.oauthClients.oauth2DeviceAuthorizationGrantEnabled": "boolean",
+        "spec.realm.clients.oauth2DeviceAuthorizationGrantEnabled": "boolean"
+      },
+      "removed": {
+        "spec.realm.applications.type": "string",
+        "spec.realm.clients.type": "string",
+        "spec.realm.components.subComponents.subComponents": "map[string]object[]",
+        "spec.realm.federatedUsers.userProfileMetadata.attributes.multivalued": "boolean",
+        "spec.realm.firstBrokerLoginFlow": "string",
+        "spec.realm.groups.subGroups.parentId": "string",
+        "spec.realm.groups.subGroups.subGroupCount": "integer",
+        "spec.realm.groups.subGroups.subGroups": "object[]",
+        "spec.realm.maxTemporaryLockouts": "integer",
+        "spec.realm.oauthClients.type": "string",
+        "spec.realm.organizations": "object[]",
+        "spec.realm.organizationsEnabled": "boolean",
+        "spec.realm.users.userProfileMetadata.attributes.multivalued": "boolean",
+        "spec.resources": "object"
+      },
+      "descriptions": {
+        "spec.resources": [
+          2,
+          null
+        ]
+      }
+    },
+    "25.0.0": {
+      "added": {
+        "spec.realm.applications.type": "string",
+        "spec.realm.clients.type": "string",
+        "spec.realm.oauthClients.type": "string",
+        "spec.realm.organizations": "object[]",
+        "spec.realm.organizationsEnabled": "boolean"
+      }
+    },
+    "24.0.0": {
+      "added": {
+        "spec.realm.components.subComponents.subComponents": "map[string]object[]",
+        "spec.realm.federatedUsers.userProfileMetadata.attributes.multivalued": "boolean",
+        "spec.realm.firstBrokerLoginFlow": "string",
+        "spec.realm.groups.subGroups.parentId": "string",
+        "spec.realm.groups.subGroups.subGroupCount": "integer",
+        "spec.realm.groups.subGroups.subGroups": "object[]",
+        "spec.realm.maxTemporaryLockouts": "integer",
+        "spec.realm.users.userProfileMetadata.attributes.multivalued": "boolean",
+        "spec.resources": "object"
+      },
+      "removed": {
+        "spec.realm.applications.oauth2DeviceAuthorizationGrantEnabled": "boolean",
+        "spec.realm.oauthClients.oauth2DeviceAuthorizationGrantEnabled": "boolean",
+        "spec.realm.clients.oauth2DeviceAuthorizationGrantEnabled": "boolean"
+      },
+      "descriptions": {
+        "spec.resources": [
+          null,
+          2
+        ]
+      }
+    },
+    "23.0.0": {
+      "added": {
+        "spec.realm.webAuthnPolicyPasswordlessExtraOrigins": "string[]",
+        "spec.realm.groups.parentId": "string",
+        "spec.realm.groups.subGroupCount": "integer",
+        "spec.realm.webAuthnPolicyExtraOrigins": "string[]",
+        "spec.realm.localizationTexts": "map[string]map[string]string"
+      },
+      "typeChanged": {
+        "status.conditions.status": [
+          "object",
+          "string"
+        ]
+      }
+    },
+    "22.0.5": {
+      "added": {
+        "spec.realm.federatedUsers.userProfileMetadata.attributes.group": "string",
+        "spec.realm.federatedUsers.userProfileMetadata.groups": "object[]",
+        "spec.realm.users.userProfileMetadata.attributes.group": "string",
+        "spec.realm.users.userProfileMetadata.groups": "object[]"
+      }
+    },
+    "22.0.2": {
+      "added": {
+        "spec.realm.federatedUsers.userProfileMetadata": "object",
+        "spec.realm.users.userProfileMetadata": "object"
+      },
+      "removed": {
+        "status.conditions.status.value": "object"
+      }
+    },
+    "22.0.1": {
+      "required": [
+        "spec.keycloakCRName",
+        "spec.realm"
+      ],
+      "descriptions": {
+        "spec.keycloakCRName": [
+          null,
+          3
+        ],
+        "spec.realm": [
+          null,
+          4
+        ]
+      }
+    },
+    "22.0.0": {
+      "optional": [
+        "spec.keycloakCRName",
+        "spec.realm"
+      ],
+      "typeChanged": {
+        "status.conditions.status": [
+          "boolean",
+          "object"
+        ]
+      },
+      "added": {
+        "status.conditions.status.value": "object",
+        "status.conditions.lastTransitionTime": "string",
+        "status.conditions.observedGeneration": "integer"
+      },
+      "descriptions": {
+        "spec.keycloakCRName": [
+          null,
+          3
+        ],
+        "spec.realm": [
+          null,
+          4
+        ]
+      }
+    },
+    "20.0.0": {
+      "added": {
+        "spec.realm.otpPolicyCodeReusable": "boolean"
+      }
+    }
+  },
+  "texts": [
+    "Optionally set to add additional labels to the Job created for the import.",
+    "Optionally set to replace ENV variable placeholders in the realm import.",
+    "Compute Resources required by Keycloak container. If not specified, the value is inherited from the Keycloak CR.",
+    "The name of the Keycloak CR to reference, in the same namespace.",
+    "The RealmRepresentation to import into Keycloak."
+  ]
+}
