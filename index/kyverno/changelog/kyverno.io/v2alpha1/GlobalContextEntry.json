@@ -1,5 +1,31 @@
 {
   "versions": {
+    "v1.20.0": {
+      "descriptionChanged": [
+        "spec.projections",
+        "spec.projections.jmesPath"
+      ],
+      "added": {
+        "spec.projections.expression": "string"
+      },
+      "optional": [
+        "spec.projections.jmesPath"
+      ],
+      "descriptions": {
+        "spec.projections": [
+          0,
+          1
+        ],
+        "spec.projections.expression": [
+          null,
+          2
+        ],
+        "spec.projections.jmesPath": [
+          3,
+          4
+        ]
+      }
+    },
     "v1.14.0": {
       "added": {
         "spec.projections": "object[]"
@@ -29,32 +55,32 @@
       ],
       "descriptions": {
         "spec.apiCall.method": [
-          1,
-          2
+          5,
+          6
         ],
         "spec.apiCall.retryLimit": [
           null,
-          3
+          7
         ],
         "spec.apiCall.service.headers": [
           null,
-          4
+          8
         ],
         "spec.kubernetesResource.resource": [
           null,
-          5
+          9
         ],
         "spec.kubernetesResource.version": [
           null,
-          6
+          10
         ],
         "status.conditions.type": [
-          7,
-          8
+          11,
+          12
         ],
         "status.ready": [
           null,
-          9
+          13
         ]
       }
     },
@@ -80,78 +106,82 @@
       ],
       "descriptions": {
         "apiVersion": [
-          10,
-          11
-        ],
-        "kind": [
-          12,
-          13
-        ],
-        "spec.apiCall": [
           14,
           15
         ],
-        "spec.apiCall.data": [
+        "kind": [
           16,
           17
         ],
-        "spec.apiCall.refreshInterval": [
+        "spec.apiCall": [
           18,
           19
         ],
-        "spec.apiCall.service": [
+        "spec.apiCall.data": [
           20,
           21
         ],
-        "spec.apiCall.service.caBundle": [
+        "spec.apiCall.refreshInterval": [
           22,
           23
         ],
-        "spec.apiCall.service.url": [
+        "spec.apiCall.service": [
           24,
           25
         ],
-        "spec.apiCall.urlPath": [
+        "spec.apiCall.service.caBundle": [
           26,
           27
         ],
-        "spec.kubernetesResource": [
+        "spec.apiCall.service.url": [
           28,
           29
         ],
-        "spec.kubernetesResource.namespace": [
+        "spec.apiCall.urlPath": [
           30,
           31
         ],
-        "spec.kubernetesResource.resource": [
+        "spec.kubernetesResource": [
           32,
-          5
+          33
+        ],
+        "spec.kubernetesResource.namespace": [
+          34,
+          35
+        ],
+        "spec.kubernetesResource.resource": [
+          36,
+          9
         ],
         "status.conditions.lastTransitionTime": [
-          33,
-          34
-        ],
-        "status.conditions.message": [
-          35,
-          36
-        ],
-        "status.conditions.observedGeneration": [
           37,
           38
         ],
-        "status.conditions.reason": [
+        "status.conditions.message": [
           39,
           40
         ],
-        "status.conditions.type": [
+        "status.conditions.observedGeneration": [
           41,
-          7
+          42
+        ],
+        "status.conditions.reason": [
+          43,
+          44
+        ],
+        "status.conditions.type": [
+          45,
+          11
         ]
       }
     }
   },
   "texts": [
     "Projections defines the list of JMESPath expressions to extract values from the cached resource.",
+    "Projections defines the list of projections to extract values from the cached resource.",
+    "Expression is the CEL expression to extract the value from the cached resource.\nMutually exclusive with JMESPath.",
+    "JMESPath is the JMESPath expression to extract the value from the cached resource.",
+    "JMESPath is the JMESPath expression to extract the value from the cached resource.\nMutually exclusive with Expression.",
     "Method is the HTTP request type (GET or POST).",
     "Method is the HTTP request type (GET or POST). Defaults to GET.",
     "RetryLimit defines the number of times the APICall should be retried in case of failure.",

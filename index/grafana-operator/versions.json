@@ -5,6 +5,35 @@
   "logo": "https://avatars.githubusercontent.com/u/7195757?s=48&v=4",
   "versions": [
     {
+      "version": "v5.26.0",
+      "tag": "v5.26.0",
+      "date": "2026-11-16",
+      "urls": [
+        "https://raw.githubusercontent.com/grafana/grafana-operator/v5.26.0/deploy/helm/grafana-operator/files/crds/grafana.integreatly.org_grafanaalertrulegroups.yaml",
+        "https://raw.githubusercontent.com/grafana/grafana-operator/v5.26.0/deploy/helm/grafana-operator/files/crds/grafana.integreatly.org_grafanacontactpoints.yaml",
+        "https://raw.githubusercontent.com/grafana/grafana-operator/v5.26.0/deploy/helm/grafana-operator/files/crds/grafana.integreatly.org_grafanadashboards.yaml",
+        "https://raw.githubusercontent.com/grafana/grafana-operator/v5.26.0/deploy/helm/grafana-operator/files/crds/grafana.integreatly.org_grafanadatasources.yaml",
+        "https://raw.githubusercontent.com/grafana/grafana-operator/v5.26.0/deploy/helm/grafana-operator/files/crds/grafana.integreatly.org_grafanafolders.yaml",
+        "https://raw.githubusercontent.com/grafana/grafana-operator/v5.26.0/deploy/helm/grafana-operator/files/crds/grafana.integreatly.org_grafanalibrarypanels.yaml",
+        "https://raw.githubusercontent.com/grafana/grafana-operator/v5.26.0/deploy/helm/grafana-operator/files/crds/grafana.integreatly.org_grafanamanifests.yaml",
+        "https://raw.githubusercontent.com/grafana/grafana-operator/v5.26.0/deploy/helm/grafana-operator/files/crds/grafana.integreatly.org_grafanamutetimings.yaml",
+        "https://raw.githubusercontent.com/grafana/grafana-operator/v5.26.0/deploy/helm/grafana-operator/files/crds/grafana.integreatly.org_grafananotificationpolicies.yaml",
+        "https://raw.githubusercontent.com/grafana/grafana-operator/v5.26.0/deploy/helm/grafana-operator/files/crds/grafana.integreatly.org_grafananotificationpolicyroutes.yaml",
+        "https://raw.githubusercontent.com/grafana/grafana-operator/v5.26.0/deploy/helm/grafana-operator/files/crds/grafana.integreatly.org_grafananotificationtemplates.yaml",
+        "https://raw.githubusercontent.com/grafana/grafana-operator/v5.26.0/deploy/helm/grafana-operator/files/crds/grafana.integreatly.org_grafanas.yaml",
+        "https://raw.githubusercontent.com/grafana/grafana-operator/v5.26.0/deploy/helm/grafana-operator/files/crds/grafana.integreatly.org_grafanaserviceaccounts.yaml",
+        "https://raw.githubusercontent.com/grafana/grafana-operator/v5.26.0/deploy/helm/grafana-operator/files/crds/grafana.integreatly.org_grafanasilences.yaml"
+      ],
+      "changelogBase": "v5.25.0",
+      "added": [
+        {
+          "apiVersion": "grafana.integreatly.org/v1beta1",
+          "kind": "GrafanaSilence",
+          "scope": "Namespaced"
+        }
+      ]
+    },
+    {
       "version": "v5.25.0",
       "tag": "v5.25.0",
       "date": "2026-08-24",

@@ -1,5 +1,16 @@
 {
   "versions": {
+    "v1.20.0": {
+      "added": {
+        "spec.validations": "object[]"
+      },
+      "descriptions": {
+        "spec.validations": [
+          null,
+          0
+        ]
+      }
+    },
     "v1.19.0": {
       "added": {
         "spec.evaluationMode": "string",
@@ -13,23 +24,23 @@
       "descriptions": {
         "spec.evaluationMode": [
           null,
-          0
+          1
         ],
         "spec.expiresAt": [
           null,
-          1
+          2
         ],
         "spec.matchConditions.expression": [
-          2,
-          3
+          3,
+          4
         ],
         "spec.matchConditions.name": [
-          4,
-          5
+          5,
+          6
         ],
         "spec.properties": [
           null,
-          6
+          7
         ]
       }
     },
@@ -42,20 +53,21 @@
       "descriptions": {
         "spec.allowedValues": [
           null,
-          7
+          8
         ],
         "spec.images": [
           null,
-          8
+          9
         ],
         "spec.reportResult": [
           null,
-          9
+          10
         ]
       }
     }
   },
   "texts": [
+    "Validations are compensating controls that must be satisfied for this exception to be\ngranted. They are evaluated only for resources that already matched MatchConditions.\nIf any expression evaluates to false, the exception is not granted and the resource is\nrejected with that validation's message.\nOnly honored for exceptions referencing a ValidatingPolicy.",
     "Evaluation mode denotes which controller is in charge of compiling and handling this exception.",
     "ExpiresAt specifies the time when the policy exception expires.\nOnce expired, the exception will no longer be applied to incoming requests.\nThe expected format is RFC3339 date-time (for example \"2026-05-01T00:00:00Z\").",
     "Expression represents the expression which will be evaluated by CEL. Must evaluate to bool.\nCEL expressions have access to the contents of the AdmissionRequest and Authorizer, organized into CEL variables:\n\n'object' - The object from the incoming request. The value is null for DELETE requests.\n'oldObject' - The existing object. The value is null for CREATE requests.\n'request' - Attributes of the admission request(/pkg/apis/admission/types.go#AdmissionRequest).\n'authorizer' - A CEL Authorizer. May be used to perform authorization checks for the principal (user or service account) of the request.\n  See https://pkg.go.dev/k8s.io/apiserver/pkg/cel/library#Authz\n'authorizer.requestResource' - A CEL ResourceCheck constructed from the 'authorizer' and configured with the\n  request resource.\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/\n\nRequired.",

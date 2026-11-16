@@ -1,5 +1,21 @@
 {
   "versions": {
+    "v2.4.8": {
+      "descriptionChanged": [
+        "spec.http2ProtocolOptions.initialConnectionWindowSize",
+        "spec.http2ProtocolOptions.initialStreamWindowSize"
+      ],
+      "descriptions": {
+        "spec.http2ProtocolOptions.initialConnectionWindowSize": [
+          0,
+          1
+        ],
+        "spec.http2ProtocolOptions.initialStreamWindowSize": [
+          2,
+          3
+        ]
+      }
+    },
     "v2.4.5": {
       "added": {
         "spec.mergeSlashes": "boolean",
@@ -8,11 +24,11 @@
       "descriptions": {
         "spec.mergeSlashes": [
           null,
-          0
+          4
         ],
         "spec.normalizePath": [
           null,
-          1
+          5
         ]
       }
     },
@@ -30,27 +46,27 @@
       "descriptions": {
         "spec.forwardClientCertDetails": [
           null,
-          2
+          6
         ],
         "spec.http2ProtocolOptions.allowConnect": [
           null,
-          3
+          7
         ],
         "spec.idleTimeout": [
-          4,
-          5
+          8,
+          9
         ],
         "spec.localReplies": [
           null,
-          6
+          10
         ],
         "spec.maxRequestsPerConnection": [
           null,
-          7
+          11
         ],
         "spec.serverName": [
           null,
-          8
+          12
         ]
       }
     },
@@ -61,7 +77,7 @@
       "descriptions": {
         "spec.maxHeadersCount": [
           null,
-          9
+          13
         ]
       }
     },
@@ -72,7 +88,7 @@
       "descriptions": {
         "spec.stripHostPortMode": [
           null,
-          10
+          14
         ]
       }
     },
@@ -102,71 +118,71 @@
       },
       "descriptions": {
         "spec.accessLog.filter.andFilter.headerFilter.header.value": [
-          11,
-          12
+          15,
+          16
         ],
         "spec.accessLog.filter.andFilter.runtimeFilter": [
           null,
-          13
+          17
         ],
         "spec.accessLog.filter.headerFilter.header.value": [
-          11,
-          12
+          15,
+          16
         ],
         "spec.accessLog.filter.orFilter.headerFilter.header.value": [
-          11,
-          12
+          15,
+          16
         ],
         "spec.accessLog.filter.orFilter.runtimeFilter": [
           null,
-          13
+          17
         ],
         "spec.accessLog.filter.runtimeFilter": [
           null,
-          13
+          17
         ],
         "spec.earlyRequestHeaderModifier.add.value": [
-          11,
-          12
+          15,
+          16
         ],
         "spec.earlyRequestHeaderModifier.set.value": [
-          11,
-          12
+          15,
+          16
         ],
         "spec.http2ProtocolOptions": [
           null,
-          14
+          18
         ],
         "spec.skipXFFAppend": [
           null,
-          15
+          19
         ],
         "spec.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector": [
-          16,
-          17
+          20,
+          21
         ],
         "spec.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector.enable": [
           null,
-          18
+          22
         ],
         "spec.useRemoteAddress": [
-          19,
-          20
+          23,
+          24
         ],
         "spec.uuidRequestIdConfig": [
           null,
-          21
+          25
         ],
         "spec.xffNumTrustedHops": [
-          22,
-          23
+          26,
+          27
         ],
         "spec.xffTrustedCIDRs": [
           null,
-          24
+          28
         ],
         "spec.maxHeadersCount": [
-          9,
+          13,
           null
         ]
       }
@@ -178,7 +194,7 @@
       "descriptions": {
         "spec.maxHeadersCount": [
           null,
-          9
+          13
         ]
       }
     },
@@ -410,847 +426,847 @@
       "descriptions": {
         "apiVersion": [
           null,
-          25
+          29
         ],
         "kind": [
           null,
-          26
+          30
         ],
         "spec": [
           null,
-          27
+          31
         ],
         "spec.acceptHttp10": [
           null,
-          28
+          32
         ],
         "spec.accessLog": [
           null,
-          29
+          33
         ],
         "spec.accessLog.fileSink": [
           null,
-          30
+          34
         ],
         "spec.accessLog.fileSink.jsonFormat": [
           null,
-          31
+          35
         ],
         "spec.accessLog.fileSink.path": [
           null,
-          32
+          36
         ],
         "spec.accessLog.fileSink.stringFormat": [
           null,
-          33
+          37
         ],
         "spec.accessLog.filter": [
           null,
-          34
+          38
         ],
         "spec.accessLog.filter.andFilter": [
           null,
-          35
+          39
         ],
         "spec.accessLog.filter.andFilter.celFilter": [
           null,
-          36
+          40
         ],
         "spec.accessLog.filter.andFilter.celFilter.match": [
           null,
-          37
+          41
         ],
         "spec.accessLog.filter.andFilter.durationFilter": [
           null,
-          38
+          42
         ],
         "spec.accessLog.filter.andFilter.durationFilter.op": [
           null,
-          39
+          43
         ],
         "spec.accessLog.filter.andFilter.durationFilter.value": [
           null,
-          40
+          44
         ],
         "spec.accessLog.filter.andFilter.grpcStatusFilter": [
           null,
-          41
+          45
         ],
         "spec.accessLog.filter.andFilter.headerFilter": [
           null,
-          42
+          46
         ],
         "spec.accessLog.filter.andFilter.headerFilter.header": [
           null,
-          43
+          47
         ],
         "spec.accessLog.filter.andFilter.headerFilter.header.name": [
           null,
-          44
+          48
         ],
         "spec.accessLog.filter.andFilter.headerFilter.header.type": [
           null,
-          45
+          49
         ],
         "spec.accessLog.filter.andFilter.headerFilter.header.value": [
           null,
-          11
+          15
         ],
         "spec.accessLog.filter.andFilter.notHealthCheckFilter": [
           null,
-          46
+          50
         ],
         "spec.accessLog.filter.andFilter.responseFlagFilter": [
           null,
-          47
+          51
         ],
         "spec.accessLog.filter.andFilter.statusCodeFilter": [
           null,
-          48
+          52
         ],
         "spec.accessLog.filter.andFilter.statusCodeFilter.op": [
           null,
-          39
+          43
         ],
         "spec.accessLog.filter.andFilter.statusCodeFilter.value": [
           null,
-          40
+          44
         ],
         "spec.accessLog.filter.andFilter.traceableFilter": [
           null,
-          49
+          53
         ],
         "spec.accessLog.filter.celFilter": [
           null,
-          36
+          40
         ],
         "spec.accessLog.filter.celFilter.match": [
           null,
-          37
+          41
         ],
         "spec.accessLog.filter.durationFilter": [
           null,
-          38
+          42
         ],
         "spec.accessLog.filter.durationFilter.op": [
           null,
-          39
+          43
         ],
         "spec.accessLog.filter.durationFilter.value": [
           null,
-          40
+          44
         ],
         "spec.accessLog.filter.grpcStatusFilter": [
           null,
-          41
+          45
         ],
         "spec.accessLog.filter.headerFilter": [
           null,
-          42
+          46
         ],
         "spec.accessLog.filter.headerFilter.header": [
           null,
-          43
+          47
         ],
         "spec.accessLog.filter.headerFilter.header.name": [
           null,
-          44
+          48
         ],
         "spec.accessLog.filter.headerFilter.header.type": [
           null,
-          45
+          49
         ],
         "spec.accessLog.filter.headerFilter.header.value": [
           null,
-          11
+          15
         ],
         "spec.accessLog.filter.notHealthCheckFilter": [
           null,
-          46
+          50
         ],
         "spec.accessLog.filter.orFilter": [
           null,
-          50
+          54
         ],
         "spec.accessLog.filter.orFilter.celFilter": [
           null,
-          36
+          40
         ],
         "spec.accessLog.filter.orFilter.celFilter.match": [
           null,
-          37
+          41
         ],
         "spec.accessLog.filter.orFilter.durationFilter": [
           null,
-          38
+          42
         ],
         "spec.accessLog.filter.orFilter.durationFilter.op": [
           null,
-          39
+          43
         ],
         "spec.accessLog.filter.orFilter.durationFilter.value": [
           null,
-          40
+          44
         ],
         "spec.accessLog.filter.orFilter.grpcStatusFilter": [
           null,
-          41
+          45
         ],
         "spec.accessLog.filter.orFilter.headerFilter": [
           null,
-          42
+          46
         ],
         "spec.accessLog.filter.orFilter.headerFilter.header": [
           null,
-          43
+          47
         ],
         "spec.accessLog.filter.orFilter.headerFilter.header.name": [
           null,
-          44
+          48
         ],
         "spec.accessLog.filter.orFilter.headerFilter.header.type": [
           null,
-          45
+          49
         ],
         "spec.accessLog.filter.orFilter.headerFilter.header.value": [
           null,
-          11
+          15
         ],
         "spec.accessLog.filter.orFilter.notHealthCheckFilter": [
           null,
-          46
+          50
         ],
         "spec.accessLog.filter.orFilter.responseFlagFilter": [
           null,
-          47
+          51
         ],
         "spec.accessLog.filter.orFilter.statusCodeFilter": [
           null,
-          48
+          52
         ],
         "spec.accessLog.filter.orFilter.statusCodeFilter.op": [
           null,
-          39
+          43
         ],
         "spec.accessLog.filter.orFilter.statusCodeFilter.value": [
           null,
-          40
+          44
         ],
         "spec.accessLog.filter.orFilter.traceableFilter": [
           null,
-          49
+          53
         ],
         "spec.accessLog.filter.responseFlagFilter": [
           null,
-          47
+          51
         ],
         "spec.accessLog.filter.statusCodeFilter": [
           null,
-          48
+          52
         ],
         "spec.accessLog.filter.statusCodeFilter.op": [
           null,
-          39
+          43
         ],
         "spec.accessLog.filter.statusCodeFilter.value": [
           null,
-          40
+          44
         ],
         "spec.accessLog.filter.traceableFilter": [
           null,
-          49
+          53
         ],
         "spec.accessLog.grpcService": [
           null,
-          51
+          55
         ],
         "spec.accessLog.grpcService.additionalRequestHeadersToLog": [
           null,
-          52
+          56
         ],
         "spec.accessLog.grpcService.additionalResponseHeadersToLog": [
           null,
-          53
+          57
         ],
         "spec.accessLog.grpcService.additionalResponseTrailersToLog": [
           null,
-          54
+          58
         ],
         "spec.accessLog.grpcService.authority": [
           null,
-          55
+          59
         ],
         "spec.accessLog.grpcService.backendRef": [
           null,
-          56
+          60
         ],
         "spec.accessLog.grpcService.backendRef.group": [
           null,
-          57
+          61
         ],
         "spec.accessLog.grpcService.backendRef.kind": [
           null,
-          58
+          62
         ],
         "spec.accessLog.grpcService.backendRef.name": [
           null,
-          59
+          63
         ],
         "spec.accessLog.grpcService.backendRef.namespace": [
           null,
-          60
+          64
         ],
         "spec.accessLog.grpcService.backendRef.port": [
           null,
-          61
+          65
         ],
         "spec.accessLog.grpcService.backendRef.weight": [
           null,
-          62
+          66
         ],
         "spec.accessLog.grpcService.initialMetadata": [
           null,
-          63
+          67
         ],
         "spec.accessLog.grpcService.initialMetadata.key": [
           null,
-          64
+          68
         ],
         "spec.accessLog.grpcService.initialMetadata.value": [
           null,
-          65
+          69
         ],
         "spec.accessLog.grpcService.logName": [
           null,
-          66
+          70
         ],
         "spec.accessLog.grpcService.maxReceiveMessageLength": [
           null,
-          67
+          71
         ],
         "spec.accessLog.grpcService.retryPolicy": [
           null,
-          68
+          72
         ],
         "spec.accessLog.grpcService.retryPolicy.numRetries": [
           null,
-          69
+          73
         ],
         "spec.accessLog.grpcService.retryPolicy.retryBackOff": [
           null,
-          70
+          74
         ],
         "spec.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval": [
           null,
-          71
+          75
         ],
         "spec.accessLog.grpcService.retryPolicy.retryBackOff.maxInterval": [
           null,
-          72
+          76
         ],
         "spec.accessLog.grpcService.skipEnvoyHeaders": [
           null,
-          73
+          77
         ],
         "spec.accessLog.grpcService.timeout": [
           null,
-          74
+          78
         ],
         "spec.accessLog.openTelemetry": [
           null,
-          75
+          79
         ],
         "spec.accessLog.openTelemetry.attributes": [
           null,
-          76
+          80
         ],
         "spec.accessLog.openTelemetry.attributes.values": [
           null,
-          77
+          81
         ],
         "spec.accessLog.openTelemetry.attributes.values.key": [
           null,
-          78
+          82
         ],
         "spec.accessLog.openTelemetry.attributes.values.value": [
           null,
-          79
+          83
         ],
         "spec.accessLog.openTelemetry.body": [
           null,
-          80
+          84
         ],
         "spec.accessLog.openTelemetry.disableBuiltinLabels": [
           null,
-          81
+          85
         ],
         "spec.accessLog.openTelemetry.grpcService": [
           null,
-          51
+          55
         ],
         "spec.accessLog.openTelemetry.grpcService.authority": [
           null,
-          55
+          59
         ],
         "spec.accessLog.openTelemetry.grpcService.backendRef": [
           null,
-          56
+          60
         ],
         "spec.accessLog.openTelemetry.grpcService.backendRef.group": [
           null,
-          57
+          61
         ],
         "spec.accessLog.openTelemetry.grpcService.backendRef.kind": [
           null,
-          58
+          62
         ],
         "spec.accessLog.openTelemetry.grpcService.backendRef.name": [
           null,
-          59
+          63
         ],
         "spec.accessLog.openTelemetry.grpcService.backendRef.namespace": [
           null,
-          60
+          64
         ],
         "spec.accessLog.openTelemetry.grpcService.backendRef.port": [
           null,
-          61
+          65
         ],
         "spec.accessLog.openTelemetry.grpcService.backendRef.weight": [
           null,
-          62
+          66
         ],
         "spec.accessLog.openTelemetry.grpcService.initialMetadata": [
           null,
-          63
+          67
         ],
         "spec.accessLog.openTelemetry.grpcService.initialMetadata.key": [
           null,
-          64
+          68
         ],
         "spec.accessLog.openTelemetry.grpcService.initialMetadata.value": [
           null,
-          65
+          69
         ],
         "spec.accessLog.openTelemetry.grpcService.logName": [
           null,
-          66
+          70
         ],
         "spec.accessLog.openTelemetry.grpcService.maxReceiveMessageLength": [
           null,
-          67
+          71
         ],
         "spec.accessLog.openTelemetry.grpcService.retryPolicy": [
           null,
-          68
+          72
         ],
         "spec.accessLog.openTelemetry.grpcService.retryPolicy.numRetries": [
           null,
-          69
+          73
         ],
         "spec.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff": [
           null,
-          70
+          74
         ],
         "spec.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
           null,
-          71
+          75
         ],
         "spec.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.maxInterval": [
           null,
-          72
+          76
         ],
         "spec.accessLog.openTelemetry.grpcService.skipEnvoyHeaders": [
           null,
-          73
+          77
         ],
         "spec.accessLog.openTelemetry.grpcService.timeout": [
           null,
-          74
+          78
         ],
         "spec.accessLog.openTelemetry.resourceAttributes": [
           null,
-          82
+          86
         ],
         "spec.accessLog.openTelemetry.resourceAttributes.values": [
           null,
-          77
+          81
         ],
         "spec.accessLog.openTelemetry.resourceAttributes.values.key": [
           null,
-          78
+          82
         ],
         "spec.accessLog.openTelemetry.resourceAttributes.values.value": [
           null,
-          79
+          83
         ],
         "spec.defaultHostForHttp10": [
           null,
-          83
+          87
         ],
         "spec.earlyRequestHeaderModifier": [
           null,
-          84
+          88
         ],
         "spec.generateRequestId": [
           null,
-          85
+          89
         ],
         "spec.healthCheck": [
           null,
-          86
+          90
         ],
         "spec.healthCheck.path": [
           null,
-          87
+          91
         ],
         "spec.idleTimeout": [
           null,
-          4
+          8
         ],
         "spec.maxRequestHeadersKb": [
           null,
-          88
+          92
         ],
         "spec.preserveExternalRequestId": [
           null,
-          89
+          93
         ],
         "spec.preserveHttp1HeaderCase": [
           null,
-          90
+          94
         ],
         "spec.serverHeaderTransformation": [
           null,
-          91
+          95
         ],
         "spec.streamIdleTimeout": [
           null,
-          92
+          96
         ],
         "spec.targetRefs": [
           null,
-          93
+          97
         ],
         "spec.targetRefs.group": [
           null,
-          94
+          98
         ],
         "spec.targetRefs.kind": [
           null,
-          95
+          99
         ],
         "spec.targetRefs.name": [
           null,
-          96
+          100
         ],
         "spec.targetSelectors": [
           null,
-          97
+          101
         ],
         "spec.targetSelectors.group": [
           null,
-          94
+          98
         ],
         "spec.targetSelectors.kind": [
           null,
-          95
+          99
         ],
         "spec.targetSelectors.matchLabels": [
           null,
-          98
+          102
         ],
         "spec.tracing": [
           null,
-          99
+          103
         ],
         "spec.tracing.attributes": [
           null,
-          100
+          104
         ],
         "spec.tracing.attributes.environment": [
           null,
-          101
+          105
         ],
         "spec.tracing.attributes.environment.defaultValue": [
           null,
-          102
+          106
         ],
         "spec.tracing.attributes.environment.name": [
           null,
-          103
+          107
         ],
         "spec.tracing.attributes.literal": [
           null,
-          104
+          108
         ],
         "spec.tracing.attributes.literal.value": [
           null,
-          105
+          109
         ],
         "spec.tracing.attributes.metadata": [
           null,
-          106
+          110
         ],
         "spec.tracing.attributes.metadata.defaultValue": [
           null,
-          107
+          111
         ],
         "spec.tracing.attributes.metadata.kind": [
           null,
-          108
+          112
         ],
         "spec.tracing.attributes.metadata.metadataKey": [
           null,
-          109
+          113
         ],
         "spec.tracing.attributes.metadata.metadataKey.key": [
           null,
-          110
+          114
         ],
         "spec.tracing.attributes.metadata.metadataKey.path": [
           null,
-          111
+          115
         ],
         "spec.tracing.attributes.metadata.metadataKey.path.key": [
           null,
-          112
+          116
         ],
         "spec.tracing.attributes.name": [
           null,
-          113
+          117
         ],
         "spec.tracing.attributes.requestHeader": [
           null,
-          114
+          118
         ],
         "spec.tracing.attributes.requestHeader.defaultValue": [
           null,
-          115
+          119
         ],
         "spec.tracing.attributes.requestHeader.name": [
           null,
-          116
+          120
         ],
         "spec.tracing.clientSampling": [
           null,
-          117
+          121
         ],
         "spec.tracing.maxPathTagLength": [
           null,
-          118
+          122
         ],
         "spec.tracing.overallSampling": [
           null,
-          119
+          123
         ],
         "spec.tracing.provider": [
           null,
-          120
+          124
         ],
         "spec.tracing.provider.openTelemetry": [
           null,
-          121
+          125
         ],
         "spec.tracing.provider.openTelemetry.grpcService": [
           null,
-          122
+          126
         ],
         "spec.tracing.provider.openTelemetry.grpcService.authority": [
           null,
-          55
+          59
         ],
         "spec.tracing.provider.openTelemetry.grpcService.backendRef": [
           null,
-          56
+          60
         ],
         "spec.tracing.provider.openTelemetry.grpcService.backendRef.group": [
           null,
-          57
+          61
         ],
         "spec.tracing.provider.openTelemetry.grpcService.backendRef.kind": [
           null,
-          58
+          62
         ],
         "spec.tracing.provider.openTelemetry.grpcService.backendRef.name": [
           null,
-          59
+          63
         ],
         "spec.tracing.provider.openTelemetry.grpcService.backendRef.namespace": [
           null,
-          60
+          64
         ],
         "spec.tracing.provider.openTelemetry.grpcService.backendRef.port": [
           null,
-          61
+          65
         ],
         "spec.tracing.provider.openTelemetry.grpcService.backendRef.weight": [
           null,
-          62
+          66
         ],
         "spec.tracing.provider.openTelemetry.grpcService.initialMetadata": [
           null,
-          63
+          67
         ],
         "spec.tracing.provider.openTelemetry.grpcService.initialMetadata.key": [
           null,
-          64
+          68
         ],
         "spec.tracing.provider.openTelemetry.grpcService.initialMetadata.value": [
           null,
-          65
+          69
         ],
         "spec.tracing.provider.openTelemetry.grpcService.maxReceiveMessageLength": [
           null,
-          67
+          71
         ],
         "spec.tracing.provider.openTelemetry.grpcService.retryPolicy": [
           null,
-          68
+          72
         ],
         "spec.tracing.provider.openTelemetry.grpcService.retryPolicy.numRetries": [
           null,
-          69
+          73
         ],
         "spec.tracing.provider.openTelemetry.grpcService.retryPolicy.retryBackOff": [
           null,
-          70
+          74
         ],
         "spec.tracing.provider.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
           null,
-          71
+          75
         ],
         "spec.tracing.provider.openTelemetry.grpcService.retryPolicy.retryBackOff.maxInterval": [
           null,
-          72
+          76
         ],
         "spec.tracing.provider.openTelemetry.grpcService.skipEnvoyHeaders": [
           null,
-          73
+          77
         ],
         "spec.tracing.provider.openTelemetry.grpcService.timeout": [
           null,
-          74
+          78
         ],
         "spec.tracing.provider.openTelemetry.resourceDetectors": [
           null,
-          123
+          127
         ],
         "spec.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector": [
           null,
-          16
+          20
         ],
         "spec.tracing.provider.openTelemetry.sampler": [
           null,
-          124
+          128
         ],
         "spec.tracing.provider.openTelemetry.sampler.alwaysOnConfig": [
           null,
-          125
+          129
         ],
         "spec.tracing.provider.openTelemetry.serviceName": [
           null,
-          126
+          130
         ],
         "spec.tracing.randomSampling": [
           null,
-          127
+          131
         ],
         "spec.tracing.spawnUpstreamSpan": [
           null,
-          128
+          132
         ],
         "spec.tracing.verbose": [
           null,
-          129
+          133
         ],
         "spec.upgradeConfig": [
           null,
-          130
+          134
         ],
         "spec.upgradeConfig.enabledUpgrades": [
           null,
-          131
+          135
         ],
         "spec.useRemoteAddress": [
           null,
-          19
+          23
         ],
         "spec.xffNumTrustedHops": [
           null,
-          22
+          26
         ],
         "status": [
           null,
-          132
+          136
         ],
         "status.ancestors": [
           null,
-          133
+          137
         ],
         "status.ancestors.ancestorRef": [
           null,
-          134
+          138
         ],
         "status.ancestors.ancestorRef.group": [
           null,
-          135
+          139
         ],
         "status.ancestors.ancestorRef.kind": [
           null,
-          136
+          140
         ],
         "status.ancestors.ancestorRef.name": [
           null,
-          137
+          141
         ],
         "status.ancestors.ancestorRef.namespace": [
           null,
-          138
+          142
         ],
         "status.ancestors.ancestorRef.port": [
           null,
-          139
+          143
         ],
         "status.ancestors.ancestorRef.sectionName": [
           null,
-          140
+          144
         ],
         "status.ancestors.conditions": [
           null,
-          141
+          145
         ],
         "status.ancestors.conditions.lastTransitionTime": [
           null,
-          142
+          146
         ],
         "status.ancestors.conditions.message": [
           null,
-          143
+          147
         ],
         "status.ancestors.conditions.observedGeneration": [
           null,
-          144
+          148
         ],
         "status.ancestors.conditions.reason": [
           null,
-          145
+          149
         ],
         "status.ancestors.conditions.status": [
           null,
-          146
+          150
         ],
         "status.ancestors.conditions.type": [
           null,
-          147
+          151
         ],
         "status.ancestors.controllerName": [
           null,
-          148
+          152
         ],
         "": [
           null,
-          149
+          153
         ]
       }
     },
@@ -1283,6 +1299,10 @@
     }
   },
   "texts": [
+    "InitialConnectionWindowSize is similar to InitialStreamWindowSize, but for the connection level.\nSame range and default value as InitialStreamWindowSize.\nValues can be specified with units like \"64Ki\".",
+    "InitialConnectionWindowSize is similar to InitialStreamWindowSize, but for the connection level.\nSame range as InitialStreamWindowSize. Defaults to 25165824 (24 * 1024 * 1024).\nValues can be specified with units like \"64Ki\".",
+    "InitialStreamWindowSize is the initial window size for the stream.\nValid values range from 65535 (2^16 - 1, HTTP/2 default) to 2147483647 (2^31 - 1, HTTP/2 maximum).\nDefaults to 268435456 (256 * 1024 * 1024).\nValues can be specified with units like \"64Ki\".",
+    "InitialStreamWindowSize is the initial window size for the stream.\nValid values range from 65535 (2^16 - 1, HTTP/2 default) to 2147483647 (2^31 - 1, HTTP/2 maximum).\nDefaults to 16777216 (16 * 1024 * 1024).\nValues can be specified with units like \"64Ki\".",
     "MergeSlashes determines whether the connection manager merges adjacent slashes in the request\npath before routing. This defaults to true. Disable this if a backend (e.g. an S3-compatible\nobject store) relies on repeated slashes in the path having meaning, such as object keys that\ncontain \"//\".\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-merge-slashes",
     "NormalizePath determines whether the connection manager normalizes the path per RFC 3986 before\nrouting, e.g. collapsing `.` and `..` segments and decoding percent-encoded characters. This\ndefaults to true. Disable this if a backend (e.g. an S3-compatible object store) needs to see\nthe original, unnormalized request path.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-normalize-path",
     "ForwardClientCertDetails configures how Envoy handles the x-forwarded-client-cert (XFCC)\nheader and which parts of the downstream client certificate are forwarded to upstream\nbackends. Most modes only have effect on listeners where mTLS is configured. The exceptions\nare Sanitize, which strips XFCC unconditionally, and AlwaysForwardOnly, which forwards XFCC\nunconditionally; on a non-mTLS listener under any other mode the setting is a no-op.\nSee: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/http_connection_manager/v3/http_connection_manager.proto#envoy-v3-api-field-extensions-filters-network-http-connection-manager-v3-httpconnectionmanager-forward-client-cert-details",

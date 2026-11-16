@@ -1,5 +1,33 @@
 {
   "versions": {
+    "v5.26.0": {
+      "descriptionChanged": [
+        "spec.configMapRef.key",
+        "spec.envFrom.configMapKeyRef.key",
+        "spec.envs.valueFrom.configMapKeyRef.key"
+      ],
+      "added": {
+        "spec.patch": "object"
+      },
+      "descriptions": {
+        "spec.configMapRef.key": [
+          0,
+          1
+        ],
+        "spec.envFrom.configMapKeyRef.key": [
+          0,
+          1
+        ],
+        "spec.envs.valueFrom.configMapKeyRef.key": [
+          0,
+          1
+        ],
+        "spec.patch": [
+          null,
+          2
+        ]
+      }
+    },
     "v5.25.0": {
       "added": {
         "spec.publicSharing": "object",
@@ -9,15 +37,15 @@
       "descriptions": {
         "spec.publicSharing": [
           null,
-          0
+          3
         ],
         "spec.variables": [
           null,
-          1
+          4
         ],
         "status.publicSharingPath": [
           null,
-          2
+          5
         ]
       }
     },
@@ -28,7 +56,7 @@
       "descriptions": {
         "spec.oci": [
           null,
-          3
+          6
         ]
       }
     },
@@ -38,13 +66,16 @@
       ],
       "descriptions": {
         "status.conditions": [
-          4,
-          5
+          7,
+          8
         ]
       }
     }
   },
   "texts": [
+    "The key to select.",
+    "The key to select from the ConfigMap's Data field.\nKeys in the BinaryData field are not currently propagated to container env vars.",
+    "Patch the contents of the dashboard JSON using jq scripts.\nThis is applied to a resolved dashboard, after variable substitution.",
     "Allows configuration of sharing the dashboard publicly",
     "overrides the default (current) value of named template variables in the dashboard model.\nVariables that are not present in the model are ignored.",
     "The resulting path where a public sharing config is available",

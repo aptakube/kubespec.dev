@@ -1,5 +1,33 @@
 {
   "versions": {
+    "v1.20.0": {
+      "descriptionChanged": [
+        "spec.autogen.podControllers.controllers",
+        "status.autogen.configs.spec.autogen.podControllers.controllers"
+      ],
+      "added": {
+        "spec.autogen.podControllers.enabled": "boolean",
+        "status.autogen.configs.spec.autogen.podControllers.enabled": "boolean"
+      },
+      "descriptions": {
+        "spec.autogen.podControllers.controllers": [
+          null,
+          0
+        ],
+        "spec.autogen.podControllers.enabled": [
+          null,
+          1
+        ],
+        "status.autogen.configs.spec.autogen.podControllers.controllers": [
+          null,
+          0
+        ],
+        "status.autogen.configs.spec.autogen.podControllers.enabled": [
+          null,
+          1
+        ]
+      }
+    },
     "v1.19.0": {
       "added": {
         "spec.auditAnnotations": "object[]",
@@ -88,328 +116,330 @@
       "descriptions": {
         "spec.auditAnnotations": [
           null,
-          0
+          2
         ],
         "spec.evaluation.skipBackgroundRequests": [
           null,
-          1
+          3
         ],
         "spec.evaluation.useServerSideApply": [
           null,
-          2
-        ],
-        "spec.matchConditions.expression": [
-          3,
           4
         ],
-        "spec.matchConditions.name": [
+        "spec.matchConditions.expression": [
           5,
           6
         ],
-        "spec.matchConstraints": [
+        "spec.matchConditions.name": [
           7,
           8
         ],
-        "spec.matchConstraints.excludeResourceRules": [
+        "spec.matchConstraints": [
           9,
           10
         ],
-        "spec.matchConstraints.excludeResourceRules.apiGroups": [
+        "spec.matchConstraints.excludeResourceRules": [
           11,
           12
         ],
-        "spec.matchConstraints.excludeResourceRules.apiVersions": [
+        "spec.matchConstraints.excludeResourceRules.apiGroups": [
           13,
           14
         ],
-        "spec.matchConstraints.excludeResourceRules.operations": [
+        "spec.matchConstraints.excludeResourceRules.apiVersions": [
           15,
           16
         ],
-        "spec.matchConstraints.excludeResourceRules.resourceNames": [
+        "spec.matchConstraints.excludeResourceRules.operations": [
           17,
           18
         ],
-        "spec.matchConstraints.excludeResourceRules.resources": [
+        "spec.matchConstraints.excludeResourceRules.resourceNames": [
           19,
           20
         ],
-        "spec.matchConstraints.namespaceSelector": [
+        "spec.matchConstraints.excludeResourceRules.resources": [
           21,
           22
         ],
-        "spec.matchConstraints.objectSelector": [
+        "spec.matchConstraints.namespaceSelector": [
           23,
           24
         ],
-        "spec.matchConstraints.resourceRules": [
+        "spec.matchConstraints.objectSelector": [
           25,
           26
         ],
-        "spec.matchConstraints.resourceRules.apiGroups": [
-          11,
-          12
+        "spec.matchConstraints.resourceRules": [
+          27,
+          28
         ],
-        "spec.matchConstraints.resourceRules.apiVersions": [
+        "spec.matchConstraints.resourceRules.apiGroups": [
           13,
           14
         ],
-        "spec.matchConstraints.resourceRules.operations": [
+        "spec.matchConstraints.resourceRules.apiVersions": [
           15,
           16
         ],
-        "spec.matchConstraints.resourceRules.resourceNames": [
+        "spec.matchConstraints.resourceRules.operations": [
           17,
           18
         ],
-        "spec.matchConstraints.resourceRules.resources": [
+        "spec.matchConstraints.resourceRules.resourceNames": [
           19,
           20
+        ],
+        "spec.matchConstraints.resourceRules.resources": [
+          21,
+          22
         ],
         "spec.targetMatchConditions": [
           null,
-          27
-        ],
-        "spec.targetMatchConstraints": [
-          28,
           29
         ],
-        "spec.targetMatchConstraints.excludeResourceRules": [
-          9,
-          10
+        "spec.targetMatchConstraints": [
+          30,
+          31
         ],
-        "spec.targetMatchConstraints.excludeResourceRules.apiGroups": [
+        "spec.targetMatchConstraints.excludeResourceRules": [
           11,
           12
         ],
-        "spec.targetMatchConstraints.excludeResourceRules.apiVersions": [
+        "spec.targetMatchConstraints.excludeResourceRules.apiGroups": [
           13,
           14
         ],
-        "spec.targetMatchConstraints.excludeResourceRules.operations": [
+        "spec.targetMatchConstraints.excludeResourceRules.apiVersions": [
           15,
           16
         ],
-        "spec.targetMatchConstraints.excludeResourceRules.resourceNames": [
+        "spec.targetMatchConstraints.excludeResourceRules.operations": [
           17,
           18
         ],
-        "spec.targetMatchConstraints.excludeResourceRules.resources": [
+        "spec.targetMatchConstraints.excludeResourceRules.resourceNames": [
           19,
           20
+        ],
+        "spec.targetMatchConstraints.excludeResourceRules.resources": [
+          21,
+          22
         ],
         "spec.targetMatchConstraints.expression": [
           null,
-          30
+          32
         ],
         "spec.targetMatchConstraints.namespaceSelector": [
-          21,
-          22
-        ],
-        "spec.targetMatchConstraints.objectSelector": [
           23,
           24
         ],
-        "spec.targetMatchConstraints.resourceRules": [
+        "spec.targetMatchConstraints.objectSelector": [
           25,
           26
         ],
-        "spec.targetMatchConstraints.resourceRules.apiGroups": [
-          11,
-          12
+        "spec.targetMatchConstraints.resourceRules": [
+          27,
+          28
         ],
-        "spec.targetMatchConstraints.resourceRules.apiVersions": [
+        "spec.targetMatchConstraints.resourceRules.apiGroups": [
           13,
           14
         ],
-        "spec.targetMatchConstraints.resourceRules.operations": [
+        "spec.targetMatchConstraints.resourceRules.apiVersions": [
           15,
           16
         ],
-        "spec.targetMatchConstraints.resourceRules.resourceNames": [
+        "spec.targetMatchConstraints.resourceRules.operations": [
           17,
           18
         ],
-        "spec.targetMatchConstraints.resourceRules.resources": [
+        "spec.targetMatchConstraints.resourceRules.resourceNames": [
           19,
           20
         ],
-        "spec.variables": [
-          31,
-          32
+        "spec.targetMatchConstraints.resourceRules.resources": [
+          21,
+          22
         ],
-        "spec.variables.expression": [
+        "spec.variables": [
           33,
           34
         ],
-        "spec.variables.name": [
+        "spec.variables.expression": [
           35,
           36
+        ],
+        "spec.variables.name": [
+          37,
+          38
         ],
         "status.autogen.configs.spec.auditAnnotations": [
           null,
-          0
+          2
         ],
         "status.autogen.configs.spec.evaluation.skipBackgroundRequests": [
           null,
-          1
+          3
         ],
         "status.autogen.configs.spec.evaluation.useServerSideApply": [
           null,
-          2
-        ],
-        "status.autogen.configs.spec.matchConditions.expression": [
-          3,
           4
         ],
-        "status.autogen.configs.spec.matchConditions.name": [
+        "status.autogen.configs.spec.matchConditions.expression": [
           5,
           6
         ],
-        "status.autogen.configs.spec.matchConstraints": [
+        "status.autogen.configs.spec.matchConditions.name": [
           7,
           8
         ],
-        "status.autogen.configs.spec.matchConstraints.excludeResourceRules": [
+        "status.autogen.configs.spec.matchConstraints": [
           9,
           10
         ],
-        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.apiGroups": [
+        "status.autogen.configs.spec.matchConstraints.excludeResourceRules": [
           11,
           12
         ],
-        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.apiVersions": [
+        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.apiGroups": [
           13,
           14
         ],
-        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.operations": [
+        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.apiVersions": [
           15,
           16
         ],
-        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.resourceNames": [
+        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.operations": [
           17,
           18
         ],
-        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.resources": [
+        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.resourceNames": [
           19,
           20
         ],
-        "status.autogen.configs.spec.matchConstraints.namespaceSelector": [
+        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.resources": [
           21,
           22
         ],
-        "status.autogen.configs.spec.matchConstraints.objectSelector": [
+        "status.autogen.configs.spec.matchConstraints.namespaceSelector": [
           23,
           24
         ],
-        "status.autogen.configs.spec.matchConstraints.resourceRules": [
+        "status.autogen.configs.spec.matchConstraints.objectSelector": [
           25,
           26
         ],
-        "status.autogen.configs.spec.matchConstraints.resourceRules.apiGroups": [
-          11,
-          12
+        "status.autogen.configs.spec.matchConstraints.resourceRules": [
+          27,
+          28
         ],
-        "status.autogen.configs.spec.matchConstraints.resourceRules.apiVersions": [
+        "status.autogen.configs.spec.matchConstraints.resourceRules.apiGroups": [
           13,
           14
         ],
-        "status.autogen.configs.spec.matchConstraints.resourceRules.operations": [
+        "status.autogen.configs.spec.matchConstraints.resourceRules.apiVersions": [
           15,
           16
         ],
-        "status.autogen.configs.spec.matchConstraints.resourceRules.resourceNames": [
+        "status.autogen.configs.spec.matchConstraints.resourceRules.operations": [
           17,
           18
         ],
-        "status.autogen.configs.spec.matchConstraints.resourceRules.resources": [
+        "status.autogen.configs.spec.matchConstraints.resourceRules.resourceNames": [
           19,
           20
+        ],
+        "status.autogen.configs.spec.matchConstraints.resourceRules.resources": [
+          21,
+          22
         ],
         "status.autogen.configs.spec.targetMatchConditions": [
           null,
-          27
-        ],
-        "status.autogen.configs.spec.targetMatchConstraints": [
-          28,
           29
         ],
-        "status.autogen.configs.spec.targetMatchConstraints.excludeResourceRules": [
-          9,
-          10
+        "status.autogen.configs.spec.targetMatchConstraints": [
+          30,
+          31
         ],
-        "status.autogen.configs.spec.targetMatchConstraints.excludeResourceRules.apiGroups": [
+        "status.autogen.configs.spec.targetMatchConstraints.excludeResourceRules": [
           11,
           12
         ],
-        "status.autogen.configs.spec.targetMatchConstraints.excludeResourceRules.apiVersions": [
+        "status.autogen.configs.spec.targetMatchConstraints.excludeResourceRules.apiGroups": [
           13,
           14
         ],
-        "status.autogen.configs.spec.targetMatchConstraints.excludeResourceRules.operations": [
+        "status.autogen.configs.spec.targetMatchConstraints.excludeResourceRules.apiVersions": [
           15,
           16
         ],
-        "status.autogen.configs.spec.targetMatchConstraints.excludeResourceRules.resourceNames": [
+        "status.autogen.configs.spec.targetMatchConstraints.excludeResourceRules.operations": [
           17,
           18
         ],
-        "status.autogen.configs.spec.targetMatchConstraints.excludeResourceRules.resources": [
+        "status.autogen.configs.spec.targetMatchConstraints.excludeResourceRules.resourceNames": [
           19,
           20
         ],
-        "status.autogen.configs.spec.targetMatchConstraints.expression": [
-          null,
-          30
-        ],
-        "status.autogen.configs.spec.targetMatchConstraints.namespaceSelector": [
+        "status.autogen.configs.spec.targetMatchConstraints.excludeResourceRules.resources": [
           21,
           22
         ],
-        "status.autogen.configs.spec.targetMatchConstraints.objectSelector": [
+        "status.autogen.configs.spec.targetMatchConstraints.expression": [
+          null,
+          32
+        ],
+        "status.autogen.configs.spec.targetMatchConstraints.namespaceSelector": [
           23,
           24
         ],
-        "status.autogen.configs.spec.targetMatchConstraints.resourceRules": [
+        "status.autogen.configs.spec.targetMatchConstraints.objectSelector": [
           25,
           26
         ],
-        "status.autogen.configs.spec.targetMatchConstraints.resourceRules.apiGroups": [
-          11,
-          12
+        "status.autogen.configs.spec.targetMatchConstraints.resourceRules": [
+          27,
+          28
         ],
-        "status.autogen.configs.spec.targetMatchConstraints.resourceRules.apiVersions": [
+        "status.autogen.configs.spec.targetMatchConstraints.resourceRules.apiGroups": [
           13,
           14
         ],
-        "status.autogen.configs.spec.targetMatchConstraints.resourceRules.operations": [
+        "status.autogen.configs.spec.targetMatchConstraints.resourceRules.apiVersions": [
           15,
           16
         ],
-        "status.autogen.configs.spec.targetMatchConstraints.resourceRules.resourceNames": [
+        "status.autogen.configs.spec.targetMatchConstraints.resourceRules.operations": [
           17,
           18
         ],
-        "status.autogen.configs.spec.targetMatchConstraints.resourceRules.resources": [
+        "status.autogen.configs.spec.targetMatchConstraints.resourceRules.resourceNames": [
           19,
           20
         ],
-        "status.autogen.configs.spec.variables": [
-          31,
-          32
+        "status.autogen.configs.spec.targetMatchConstraints.resourceRules.resources": [
+          21,
+          22
         ],
-        "status.autogen.configs.spec.variables.expression": [
+        "status.autogen.configs.spec.variables": [
           33,
           34
         ],
-        "status.autogen.configs.spec.variables.name": [
+        "status.autogen.configs.spec.variables.expression": [
           35,
           36
+        ],
+        "status.autogen.configs.spec.variables.name": [
+          37,
+          38
         ]
       }
     }
   },
   "texts": [
+    "Controllers specifies the list of pod controllers to generate rules for,\nfor example DaemonSet, Deployment, Job, StatefulSet, ReplicaSet, ReplicationController, CronJob.\nOptional. Defaults to all supported pod controllers if not specified.",
+    "Enabled specifies whether to generate pod controller rules.\nOptional. Defaults to \"true\" if not specified.",
     "AuditAnnotations contains CEL expressions which are used to produce audit annotations that are surfaced\nas properties in policy report results. auditAnnotations are evaluated after the mutations have been\napplied successfully. The results of evaluating the expressions are attached to the report result as\nproperties with the annotation key.\nIf the expression evaluates to an empty string or null the annotation will not be included.",
     "SkipBackgroundRequests bypasses admission requests that are sent by the background controller.\nThe default value is set to \"true\", it must be set to \"false\" to apply mutateExisting rules to those requests.",
     "UseServerSideApply applies ApplyConfiguration patches with Server-Side Apply semantics,\nwhich allows setting atomic fields (for example a container's args or a projected volume)\nthat the default MutatingAdmissionPolicy behaviour rejects. When true, an atomic value is\nreplaced as a whole, so any field the object owner set but the patch does not is dropped.\nThe default is false, which keeps parity with a native MutatingAdmissionPolicy.",

@@ -1,0 +1,37 @@
+{
+  "versions": {
+    "v1.20.0": {
+      "descriptionChanged": [
+        "spec.projections",
+        "spec.projections.jmesPath"
+      ],
+      "added": {
+        "spec.projections.expression": "string"
+      },
+      "optional": [
+        "spec.projections.jmesPath"
+      ],
+      "descriptions": {
+        "spec.projections": [
+          0,
+          1
+        ],
+        "spec.projections.expression": [
+          null,
+          2
+        ],
+        "spec.projections.jmesPath": [
+          3,
+          4
+        ]
+      }
+    }
+  },
+  "texts": [
+    "Projections defines the list of JMESPath expressions to extract values from the cached resource.",
+    "Projections defines the list of projections to extract values from the cached resource.",
+    "Expression is the CEL expression to extract the value from the cached resource.\nMutually exclusive with JMESPath.",
+    "JMESPath is the JMESPath expression to extract the value from the cached resource.",
+    "JMESPath is the JMESPath expression to extract the value from the cached resource.\nMutually exclusive with Expression."
+  ]
+}

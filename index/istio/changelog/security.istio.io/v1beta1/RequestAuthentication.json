@@ -1,5 +1,16 @@
 {
   "versions": {
+    "1.32.0": {
+      "added": {
+        "spec.jwtRules.presence": "string"
+      },
+      "descriptions": {
+        "spec.jwtRules.presence": [
+          null,
+          0
+        ]
+      }
+    },
     "1.28.0": {
       "added": {
         "spec.jwtRules.spaceDelimitedClaims": "string[]"
@@ -7,7 +18,7 @@
       "descriptions": {
         "spec.jwtRules.spaceDelimitedClaims": [
           null,
-          0
+          1
         ]
       }
     },
@@ -18,7 +29,7 @@
       "descriptions": {
         "spec.jwtRules.issuer": [
           null,
-          1
+          2
         ]
       }
     },
@@ -32,10 +43,10 @@
       "descriptions": {
         "status.conditions.observedGeneration": [
           null,
-          2
+          3
         ],
         "status.observedGeneration": [
-          3,
+          4,
           null
         ]
       }
@@ -49,15 +60,15 @@
       "descriptions": {
         "status.conditions": [
           null,
-          4
+          5
         ],
         "status.observedGeneration": [
           null,
-          3
+          4
         ],
         "status.validationMessages": [
           null,
-          5
+          6
         ]
       }
     },
@@ -73,27 +84,27 @@
       "descriptions": {
         "spec.jwtRules.outputClaimToHeaders.claim": [
           null,
-          6
+          7
         ],
         "spec.jwtRules.outputClaimToHeaders.header": [
           null,
-          7
+          8
         ],
         "spec.targetRef.kind": [
           null,
-          8
+          9
         ],
         "spec.targetRef.name": [
           null,
-          9
+          10
         ],
         "spec.targetRefs.kind": [
           null,
-          8
+          9
         ],
         "spec.targetRefs.name": [
           null,
-          9
+          10
         ]
       }
     },
@@ -108,15 +119,15 @@
       "descriptions": {
         "spec.jwtRules.timeout": [
           null,
-          10
+          11
         ],
         "spec.targetRef": [
-          11,
+          12,
           null
         ],
         "spec.targetRefs": [
           null,
-          11
+          12
         ]
       }
     },
@@ -127,7 +138,7 @@
       "descriptions": {
         "spec.jwtRules.fromCookies": [
           null,
-          12
+          13
         ]
       }
     },
@@ -138,7 +149,7 @@
       "descriptions": {
         "spec.targetRef": [
           null,
-          11
+          12
         ]
       }
     },
@@ -152,19 +163,19 @@
       "descriptions": {
         "spec.targetRef.group": [
           null,
-          13
+          14
         ],
         "spec.targetRef.kind": [
           null,
-          8
+          9
         ],
         "spec.targetRef.name": [
           null,
-          9
+          10
         ],
         "spec.targetRef.namespace": [
           null,
-          14
+          15
         ]
       }
     },
@@ -186,36 +197,36 @@
       },
       "descriptions": {
         "spec": [
-          15,
-          16
+          16,
+          17
         ],
         "spec.jwtRules.audiences": [
           null,
-          17
+          18
         ],
         "spec.jwtRules.fromHeaders.name": [
           null,
-          18
+          19
         ],
         "spec.jwtRules.issuer": [
           null,
-          1
+          2
         ],
         "spec.jwtRules.jwks_uri": [
           null,
-          19
+          20
         ],
         "spec.jwtRules.jwksUri": [
           null,
-          19
+          20
         ],
         "spec.jwtRules.outputPayloadToHeader": [
           null,
-          20
+          21
         ],
         "spec.selector.matchLabels": [
           null,
-          21
+          22
         ]
       }
     },
@@ -226,7 +237,7 @@
       "descriptions": {
         "spec.jwtRules.outputClaimToHeaders": [
           null,
-          22
+          23
         ]
       }
     },
@@ -236,8 +247,8 @@
       ],
       "descriptions": {
         "spec.selector": [
-          23,
-          11
+          24,
+          12
         ]
       }
     },
@@ -247,13 +258,14 @@
       ],
       "descriptions": {
         "spec.jwtRules.forwardOriginalToken": [
-          24,
-          25
+          25,
+          26
         ]
       }
     }
   },
   "texts": [
+    "Configures whether the JWT token must be present in the request.\n\nValid Options: OPTIONAL, REQUIRED",
     "List of JWT claim names that should be treated as space-delimited strings.",
     "Identifies the issuer that issued the JWT.",
     "Resource Generation to which the Condition refers.",

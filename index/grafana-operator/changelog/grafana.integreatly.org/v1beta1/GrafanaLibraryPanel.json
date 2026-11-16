@@ -1,5 +1,26 @@
 {
   "versions": {
+    "v5.26.0": {
+      "descriptionChanged": [
+        "spec.configMapRef.key",
+        "spec.envFrom.configMapKeyRef.key",
+        "spec.envs.valueFrom.configMapKeyRef.key"
+      ],
+      "descriptions": {
+        "spec.configMapRef.key": [
+          0,
+          1
+        ],
+        "spec.envFrom.configMapKeyRef.key": [
+          0,
+          1
+        ],
+        "spec.envs.valueFrom.configMapKeyRef.key": [
+          0,
+          1
+        ]
+      }
+    },
     "v5.24.0": {
       "added": {
         "spec.oci": "object"
@@ -7,7 +28,7 @@
       "descriptions": {
         "spec.oci": [
           null,
-          0
+          2
         ]
       }
     },
@@ -17,13 +38,15 @@
       ],
       "descriptions": {
         "status.conditions": [
-          1,
-          2
+          3,
+          4
         ]
       }
     }
   },
   "texts": [
+    "The key to select.",
+    "The key to select from the ConfigMap's Data field.\nKeys in the BinaryData field are not currently propagated to container env vars.",
     "model from an OCI artifact (e.g. ghcr.io/team/dashboards:v1)",
     "Results when synchonizing resource with Grafana instances",
     "Results when synchronizing resource with Grafana instances"

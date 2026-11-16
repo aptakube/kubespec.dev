@@ -1,5 +1,31 @@
 {
   "versions": {
+    "v2.5.2": {
+      "descriptionChanged": [
+        "spec.default.httpSettings.http2ProtocolOptions.initialConnectionWindowSize",
+        "spec.default.httpSettings.http2ProtocolOptions.initialStreamWindowSize",
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions.initialConnectionWindowSize",
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions.initialStreamWindowSize"
+      ],
+      "descriptions": {
+        "spec.default.httpSettings.http2ProtocolOptions.initialConnectionWindowSize": [
+          0,
+          1
+        ],
+        "spec.default.httpSettings.http2ProtocolOptions.initialStreamWindowSize": [
+          2,
+          3
+        ],
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions.initialConnectionWindowSize": [
+          0,
+          1
+        ],
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions.initialStreamWindowSize": [
+          2,
+          3
+        ]
+      }
+    },
     "v2.5.1": {
       "descriptionChanged": [
         "spec.default.httpSettings.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval",
@@ -17,52 +43,52 @@
       ],
       "descriptions": {
         "spec.default.httpSettings.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval": [
-          0,
-          1
+          4,
+          5
         ],
         "spec.default.httpSettings.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
-          0,
-          1
+          4,
+          5
         ],
         "spec.default.httpSettings.localReplies.mappers.statusCode": [
-          2,
-          3
+          6,
+          7
         ],
         "spec.default.httpSettings.tracing.provider.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
-          0,
-          1
+          4,
+          5
         ],
         "spec.default.tcpSettings.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval": [
-          0,
-          1
+          4,
+          5
         ],
         "spec.default.tcpSettings.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
-          0,
-          1
+          4,
+          5
         ],
         "spec.perPort.listener.httpSettings.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval": [
-          0,
-          1
+          4,
+          5
         ],
         "spec.perPort.listener.httpSettings.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
-          0,
-          1
+          4,
+          5
         ],
         "spec.perPort.listener.httpSettings.localReplies.mappers.statusCode": [
-          2,
-          3
+          6,
+          7
         ],
         "spec.perPort.listener.httpSettings.tracing.provider.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
-          0,
-          1
+          4,
+          5
         ],
         "spec.perPort.listener.tcpSettings.accessLog.grpcService.retryPolicy.retryBackOff.baseInterval": [
-          0,
-          1
+          4,
+          5
         ],
         "spec.perPort.listener.tcpSettings.accessLog.openTelemetry.grpcService.retryPolicy.retryBackOff.baseInterval": [
-          0,
-          1
+          4,
+          5
         ]
       }
     },
@@ -71,6 +97,8 @@
         "spec.default.httpSettings.accessLog.filter.andFilter.runtimeFilter.runtimeKey",
         "spec.default.httpSettings.accessLog.filter.orFilter.runtimeFilter.runtimeKey",
         "spec.default.httpSettings.accessLog.filter.runtimeFilter.runtimeKey",
+        "spec.default.httpSettings.http2ProtocolOptions.initialConnectionWindowSize",
+        "spec.default.httpSettings.http2ProtocolOptions.initialStreamWindowSize",
         "spec.default.httpSettings.localReplies.mappers.filter.andFilter.runtimeFilter.runtimeKey",
         "spec.default.httpSettings.localReplies.mappers.filter.orFilter.runtimeFilter.runtimeKey",
         "spec.default.httpSettings.localReplies.mappers.filter.runtimeFilter.runtimeKey",
@@ -79,6 +107,8 @@
         "spec.perPort.listener.httpSettings.accessLog.filter.andFilter.runtimeFilter.runtimeKey",
         "spec.perPort.listener.httpSettings.accessLog.filter.orFilter.runtimeFilter.runtimeKey",
         "spec.perPort.listener.httpSettings.accessLog.filter.runtimeFilter.runtimeKey",
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions.initialConnectionWindowSize",
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions.initialStreamWindowSize",
         "spec.perPort.listener.httpSettings.localReplies.mappers.filter.andFilter.runtimeFilter.runtimeKey",
         "spec.perPort.listener.httpSettings.localReplies.mappers.filter.orFilter.runtimeFilter.runtimeKey",
         "spec.perPort.listener.httpSettings.localReplies.mappers.filter.runtimeFilter.runtimeKey",
@@ -101,116 +131,158 @@
       },
       "descriptions": {
         "spec.default.httpSettings.accessLog.filter.andFilter.runtimeFilter.runtimeKey": [
-          4,
-          5
+          8,
+          9
         ],
         "spec.default.httpSettings.accessLog.filter.orFilter.runtimeFilter.runtimeKey": [
-          4,
-          5
+          8,
+          9
         ],
         "spec.default.httpSettings.accessLog.filter.runtimeFilter.runtimeKey": [
-          4,
-          5
+          8,
+          9
         ],
         "spec.default.httpSettings.grpcStats": [
           null,
-          6
+          10
+        ],
+        "spec.default.httpSettings.http2ProtocolOptions.initialConnectionWindowSize": [
+          1,
+          0
+        ],
+        "spec.default.httpSettings.http2ProtocolOptions.initialStreamWindowSize": [
+          3,
+          2
         ],
         "spec.default.httpSettings.localReplies.mappers.filter.andFilter.runtimeFilter.runtimeKey": [
-          4,
-          5
+          8,
+          9
         ],
         "spec.default.httpSettings.localReplies.mappers.filter.orFilter.runtimeFilter.runtimeKey": [
-          4,
-          5
+          8,
+          9
         ],
         "spec.default.httpSettings.localReplies.mappers.filter.runtimeFilter.runtimeKey": [
-          4,
-          5
+          8,
+          9
         ],
         "spec.default.httpSettings.maxConnectionDuration": [
           null,
-          7
+          11
         ],
         "spec.default.httpSettings.pathWithEscapedSlashesAction": [
           null,
-          8
+          12
         ],
         "spec.default.httpSettings.proxy100Continue": [
           null,
-          9
+          13
         ],
         "spec.default.httpSettings.stripTrailingHostDot": [
           null,
-          10
+          14
         ],
         "spec.default.httpSettings.upgradeConfig": [
-          11,
-          12
+          15,
+          16
         ],
         "spec.default.httpSettings.upgradeConfig.enabledUpgrades": [
-          13,
-          14
+          17,
+          18
         ],
         "spec.default.tcpSettings": [
           null,
-          15
+          19
         ],
         "spec.perPort.listener.httpSettings.accessLog.filter.andFilter.runtimeFilter.runtimeKey": [
-          4,
-          5
+          8,
+          9
         ],
         "spec.perPort.listener.httpSettings.accessLog.filter.orFilter.runtimeFilter.runtimeKey": [
-          4,
-          5
+          8,
+          9
         ],
         "spec.perPort.listener.httpSettings.accessLog.filter.runtimeFilter.runtimeKey": [
-          4,
-          5
+          8,
+          9
         ],
         "spec.perPort.listener.httpSettings.grpcStats": [
           null,
-          6
+          10
+        ],
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions.initialConnectionWindowSize": [
+          1,
+          0
+        ],
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions.initialStreamWindowSize": [
+          3,
+          2
         ],
         "spec.perPort.listener.httpSettings.localReplies.mappers.filter.andFilter.runtimeFilter.runtimeKey": [
-          4,
-          5
+          8,
+          9
         ],
         "spec.perPort.listener.httpSettings.localReplies.mappers.filter.orFilter.runtimeFilter.runtimeKey": [
-          4,
-          5
+          8,
+          9
         ],
         "spec.perPort.listener.httpSettings.localReplies.mappers.filter.runtimeFilter.runtimeKey": [
-          4,
-          5
+          8,
+          9
         ],
         "spec.perPort.listener.httpSettings.maxConnectionDuration": [
           null,
-          7
+          11
         ],
         "spec.perPort.listener.httpSettings.pathWithEscapedSlashesAction": [
           null,
-          8
+          12
         ],
         "spec.perPort.listener.httpSettings.proxy100Continue": [
           null,
-          9
+          13
         ],
         "spec.perPort.listener.httpSettings.stripTrailingHostDot": [
           null,
-          10
+          14
         ],
         "spec.perPort.listener.httpSettings.upgradeConfig": [
-          11,
-          12
+          15,
+          16
         ],
         "spec.perPort.listener.httpSettings.upgradeConfig.enabledUpgrades": [
-          13,
-          14
+          17,
+          18
         ],
         "spec.perPort.listener.tcpSettings": [
           null,
-          15
+          19
+        ]
+      }
+    },
+    "v2.4.8": {
+      "descriptionChanged": [
+        "spec.default.httpSettings.http2ProtocolOptions.initialConnectionWindowSize",
+        "spec.default.httpSettings.http2ProtocolOptions.initialStreamWindowSize",
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions.initialConnectionWindowSize",
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions.initialStreamWindowSize"
+      ],
+      "descriptions": {
+        "spec.default.httpSettings.http2ProtocolOptions.initialConnectionWindowSize": [
+          0,
+          1
+        ],
+        "spec.default.httpSettings.http2ProtocolOptions.initialStreamWindowSize": [
+          2,
+          3
+        ],
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions.initialConnectionWindowSize": [
+          0,
+          1
+        ],
+        "spec.perPort.listener.httpSettings.http2ProtocolOptions.initialStreamWindowSize": [
+          2,
+          3
         ]
       }
     },
@@ -224,19 +296,19 @@
       "descriptions": {
         "spec.default.httpSettings.mergeSlashes": [
           null,
-          16
+          20
         ],
         "spec.default.httpSettings.normalizePath": [
           null,
-          17
+          21
         ],
         "spec.perPort.listener.httpSettings.mergeSlashes": [
           null,
-          16
+          20
         ],
         "spec.perPort.listener.httpSettings.normalizePath": [
           null,
-          17
+          21
         ]
       }
     },
@@ -262,59 +334,59 @@
       "descriptions": {
         "spec.default.httpSettings.forwardClientCertDetails": [
           null,
-          18
+          22
         ],
         "spec.default.httpSettings.http2ProtocolOptions.allowConnect": [
           null,
-          19
+          23
         ],
         "spec.default.httpSettings.idleTimeout": [
-          20,
-          21
+          24,
+          25
         ],
         "spec.default.httpSettings.localReplies": [
           null,
-          22
+          26
         ],
         "spec.default.httpSettings.maxRequestsPerConnection": [
           null,
-          23
+          27
         ],
         "spec.default.httpSettings.serverName": [
           null,
-          24
+          28
         ],
         "spec.default.transportSocketConnectTimeout": [
           null,
-          25
+          29
         ],
         "spec.perPort.listener.httpSettings.forwardClientCertDetails": [
           null,
-          18
+          22
         ],
         "spec.perPort.listener.httpSettings.http2ProtocolOptions.allowConnect": [
           null,
-          19
+          23
         ],
         "spec.perPort.listener.httpSettings.idleTimeout": [
-          20,
-          21
+          24,
+          25
         ],
         "spec.perPort.listener.httpSettings.localReplies": [
           null,
-          22
+          26
         ],
         "spec.perPort.listener.httpSettings.maxRequestsPerConnection": [
           null,
-          23
+          27
         ],
         "spec.perPort.listener.httpSettings.serverName": [
           null,
-          24
+          28
         ],
         "spec.perPort.listener.transportSocketConnectTimeout": [
           null,
-          25
+          29
         ]
       }
     },
@@ -326,11 +398,11 @@
       "descriptions": {
         "spec.default.httpSettings.maxHeadersCount": [
           null,
-          26
+          30
         ],
         "spec.perPort.listener.httpSettings.maxHeadersCount": [
           null,
-          26
+          30
         ]
       }
     },
@@ -342,11 +414,11 @@
       "descriptions": {
         "spec.default.httpSettings.stripHostPortMode": [
           null,
-          27
+          31
         ],
         "spec.perPort.listener.httpSettings.stripHostPortMode": [
           null,
-          27
+          31
         ]
       }
     },
@@ -405,182 +477,182 @@
       "descriptions": {
         "spec.default.clientCertificateValidation": [
           null,
-          28
+          32
         ],
         "spec.default.httpSettings": [
-          29,
-          30
+          33,
+          34
         ],
         "spec.default.httpSettings.accessLog.filter.andFilter.headerFilter.header.value": [
-          31,
-          32
+          35,
+          36
         ],
         "spec.default.httpSettings.accessLog.filter.andFilter.runtimeFilter": [
           null,
-          33
+          37
         ],
         "spec.default.httpSettings.accessLog.filter.headerFilter.header.value": [
-          31,
-          32
+          35,
+          36
         ],
         "spec.default.httpSettings.accessLog.filter.orFilter.headerFilter.header.value": [
-          31,
-          32
+          35,
+          36
         ],
         "spec.default.httpSettings.accessLog.filter.orFilter.runtimeFilter": [
           null,
-          33
+          37
         ],
         "spec.default.httpSettings.accessLog.filter.runtimeFilter": [
           null,
-          33
+          37
         ],
         "spec.default.httpSettings.earlyRequestHeaderModifier.add.value": [
-          31,
-          32
+          35,
+          36
         ],
         "spec.default.httpSettings.earlyRequestHeaderModifier.set.value": [
-          31,
-          32
+          35,
+          36
         ],
         "spec.default.httpSettings.http2ProtocolOptions": [
           null,
-          34
+          38
         ],
         "spec.default.httpSettings.skipXFFAppend": [
           null,
-          35
+          39
         ],
         "spec.default.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector": [
-          36,
-          37
+          40,
+          41
         ],
         "spec.default.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector.enable": [
           null,
-          38
+          42
         ],
         "spec.default.httpSettings.useRemoteAddress": [
-          39,
-          40
+          43,
+          44
         ],
         "spec.default.httpSettings.uuidRequestIdConfig": [
           null,
-          41
+          45
         ],
         "spec.default.httpSettings.xffNumTrustedHops": [
-          42,
-          43
+          46,
+          47
         ],
         "spec.default.httpSettings.xffTrustedCIDRs": [
           null,
-          44
+          48
         ],
         "spec.default.proxyProtocol": [
-          45,
-          46
+          49,
+          50
         ],
         "spec.default.proxyProtocol.allowRequestsWithoutProxyProtocol": [
           null,
-          47
+          51
         ],
         "spec.default.tcpKeepalive": [
           null,
-          48
+          52
         ],
         "spec.perPort.listener.httpSettings": [
-          29,
-          30
+          33,
+          34
         ],
         "spec.perPort.listener.httpSettings.accessLog.filter.andFilter.headerFilter.header.value": [
-          31,
-          32
+          35,
+          36
         ],
         "spec.perPort.listener.httpSettings.accessLog.filter.andFilter.runtimeFilter": [
           null,
-          33
+          37
         ],
         "spec.perPort.listener.httpSettings.accessLog.filter.headerFilter.header.value": [
-          31,
-          32
+          35,
+          36
         ],
         "spec.perPort.listener.httpSettings.accessLog.filter.orFilter.headerFilter.header.value": [
-          31,
-          32
+          35,
+          36
         ],
         "spec.perPort.listener.httpSettings.accessLog.filter.orFilter.runtimeFilter": [
           null,
-          33
+          37
         ],
         "spec.perPort.listener.httpSettings.accessLog.filter.runtimeFilter": [
           null,
-          33
+          37
         ],
         "spec.perPort.listener.httpSettings.earlyRequestHeaderModifier.add.value": [
-          31,
-          32
+          35,
+          36
         ],
         "spec.perPort.listener.httpSettings.earlyRequestHeaderModifier.set.value": [
-          31,
-          32
+          35,
+          36
         ],
         "spec.perPort.listener.httpSettings.http2ProtocolOptions": [
           null,
-          34
+          38
         ],
         "spec.perPort.listener.httpSettings.skipXFFAppend": [
           null,
-          35
+          39
         ],
         "spec.perPort.listener.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector": [
-          36,
-          37
+          40,
+          41
         ],
         "spec.perPort.listener.httpSettings.tracing.provider.openTelemetry.resourceDetectors.environmentResourceDetector.enable": [
           null,
-          38
+          42
         ],
         "spec.perPort.listener.httpSettings.useRemoteAddress": [
-          39,
-          40
+          43,
+          44
         ],
         "spec.perPort.listener.httpSettings.uuidRequestIdConfig": [
           null,
-          41
+          45
         ],
         "spec.perPort.listener.httpSettings.xffNumTrustedHops": [
-          42,
-          43
+          46,
+          47
         ],
         "spec.perPort.listener.httpSettings.xffTrustedCIDRs": [
           null,
-          44
+          48
         ],
         "spec.perPort.listener.proxyProtocol": [
-          45,
-          46
+          49,
+          50
         ],
         "spec.perPort.listener.proxyProtocol.allowRequestsWithoutProxyProtocol": [
           null,
-          47
+          51
         ],
         "spec.perPort.listener.tcpKeepalive": [
           null,
-          48
+          52
         ],
         "spec.targetRefs.sectionName": [
           null,
-          49
+          53
         ],
         "spec.targetSelectors.sectionName": [
           null,
-          49
+          53
         ],
         "spec.default.httpSettings.maxHeadersCount": [
-          26,
+          30,
           null
         ],
         "spec.perPort.listener.httpSettings.maxHeadersCount": [
-          26,
+          30,
           null
         ]
       }
@@ -593,16 +665,20 @@
       "descriptions": {
         "spec.default.httpSettings.maxHeadersCount": [
           null,
-          26
+          30
         ],
         "spec.perPort.listener.httpSettings.maxHeadersCount": [
           null,
-          26
+          30
         ]
       }
     }
   },
   "texts": [
+    "InitialConnectionWindowSize is similar to InitialStreamWindowSize, but for the connection level.\nSame range and default value as InitialStreamWindowSize.\nValues can be specified with units like \"64Ki\".",
+    "InitialConnectionWindowSize is similar to InitialStreamWindowSize, but for the connection level.\nSame range as InitialStreamWindowSize. Defaults to 25165824 (24 * 1024 * 1024).\nValues can be specified with units like \"64Ki\".",
+    "InitialStreamWindowSize is the initial window size for the stream.\nValid values range from 65535 (2^16 - 1, HTTP/2 default) to 2147483647 (2^31 - 1, HTTP/2 maximum).\nDefaults to 268435456 (256 * 1024 * 1024).\nValues can be specified with units like \"64Ki\".",
+    "InitialStreamWindowSize is the initial window size for the stream.\nValid values range from 65535 (2^16 - 1, HTTP/2 default) to 2147483647 (2^31 - 1, HTTP/2 maximum).\nDefaults to 16777216 (16 * 1024 * 1024).\nValues can be specified with units like \"64Ki\".",
     "The base interval to be used for the next back off computation. It should be greater than zero and less than or equal to max_interval.",
     "The base interval to be used for the next back off computation. Must be at least 1ms and less than or equal to max_interval.",
     "New response status code for the reply if specified.",

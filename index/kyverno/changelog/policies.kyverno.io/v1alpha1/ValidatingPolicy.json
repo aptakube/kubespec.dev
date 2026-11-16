@@ -1,5 +1,33 @@
 {
   "versions": {
+    "v1.20.0": {
+      "descriptionChanged": [
+        "spec.autogen.podControllers.controllers",
+        "status.autogen.configs.spec.autogen.podControllers.controllers"
+      ],
+      "added": {
+        "spec.autogen.podControllers.enabled": "boolean",
+        "status.autogen.configs.spec.autogen.podControllers.enabled": "boolean"
+      },
+      "descriptions": {
+        "spec.autogen.podControllers.controllers": [
+          null,
+          0
+        ],
+        "spec.autogen.podControllers.enabled": [
+          null,
+          1
+        ],
+        "status.autogen.configs.spec.autogen.podControllers.controllers": [
+          null,
+          0
+        ],
+        "status.autogen.configs.spec.autogen.podControllers.enabled": [
+          null,
+          1
+        ]
+      }
+    },
     "v1.19.0": {
       "descriptionChanged": [
         "spec.evaluation.mode",
@@ -49,180 +77,180 @@
       ],
       "descriptions": {
         "spec.evaluation.mode": [
-          0,
-          1
+          2,
+          3
         ],
         "spec.matchConditions.expression": [
-          2,
-          3
+          4,
+          5
         ],
         "spec.matchConditions.name": [
-          4,
-          5
-        ],
-        "spec.matchConstraints.excludeResourceRules": [
           6,
           7
         ],
-        "spec.matchConstraints.excludeResourceRules.apiGroups": [
+        "spec.matchConstraints.excludeResourceRules": [
           8,
           9
         ],
-        "spec.matchConstraints.excludeResourceRules.apiVersions": [
+        "spec.matchConstraints.excludeResourceRules.apiGroups": [
           10,
           11
         ],
-        "spec.matchConstraints.excludeResourceRules.operations": [
+        "spec.matchConstraints.excludeResourceRules.apiVersions": [
           12,
           13
         ],
-        "spec.matchConstraints.excludeResourceRules.resourceNames": [
+        "spec.matchConstraints.excludeResourceRules.operations": [
           14,
           15
         ],
-        "spec.matchConstraints.excludeResourceRules.resources": [
+        "spec.matchConstraints.excludeResourceRules.resourceNames": [
           16,
           17
         ],
-        "spec.matchConstraints.namespaceSelector": [
+        "spec.matchConstraints.excludeResourceRules.resources": [
           18,
           19
         ],
-        "spec.matchConstraints.objectSelector": [
+        "spec.matchConstraints.namespaceSelector": [
           20,
           21
         ],
-        "spec.matchConstraints.resourceRules": [
+        "spec.matchConstraints.objectSelector": [
           22,
           23
         ],
-        "spec.matchConstraints.resourceRules.apiGroups": [
-          8,
-          9
-        ],
-        "spec.matchConstraints.resourceRules.apiVersions": [
-          10,
-          11
-        ],
-        "spec.matchConstraints.resourceRules.operations": [
-          12,
-          13
-        ],
-        "spec.matchConstraints.resourceRules.resourceNames": [
-          14,
-          15
-        ],
-        "spec.matchConstraints.resourceRules.resources": [
-          16,
-          17
-        ],
-        "spec.validations.expression": [
+        "spec.matchConstraints.resourceRules": [
           24,
           25
         ],
-        "spec.validations.message": [
+        "spec.matchConstraints.resourceRules.apiGroups": [
+          10,
+          11
+        ],
+        "spec.matchConstraints.resourceRules.apiVersions": [
+          12,
+          13
+        ],
+        "spec.matchConstraints.resourceRules.operations": [
+          14,
+          15
+        ],
+        "spec.matchConstraints.resourceRules.resourceNames": [
+          16,
+          17
+        ],
+        "spec.matchConstraints.resourceRules.resources": [
+          18,
+          19
+        ],
+        "spec.validations.expression": [
           26,
           27
         ],
-        "spec.validations.reason": [
+        "spec.validations.message": [
           28,
           29
         ],
-        "spec.variables.expression": [
+        "spec.validations.reason": [
           30,
           31
         ],
-        "spec.variables.name": [
+        "spec.variables.expression": [
           32,
           33
         ],
-        "status.autogen.configs.spec.evaluation.mode": [
-          0,
-          1
+        "spec.variables.name": [
+          34,
+          35
         ],
-        "status.autogen.configs.spec.matchConditions.expression": [
+        "status.autogen.configs.spec.evaluation.mode": [
           2,
           3
         ],
-        "status.autogen.configs.spec.matchConditions.name": [
+        "status.autogen.configs.spec.matchConditions.expression": [
           4,
           5
         ],
-        "status.autogen.configs.spec.matchConstraints.excludeResourceRules": [
+        "status.autogen.configs.spec.matchConditions.name": [
           6,
           7
         ],
-        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.apiGroups": [
+        "status.autogen.configs.spec.matchConstraints.excludeResourceRules": [
           8,
           9
         ],
-        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.apiVersions": [
+        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.apiGroups": [
           10,
           11
         ],
-        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.operations": [
+        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.apiVersions": [
           12,
           13
         ],
-        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.resourceNames": [
+        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.operations": [
           14,
           15
         ],
-        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.resources": [
+        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.resourceNames": [
           16,
           17
         ],
-        "status.autogen.configs.spec.matchConstraints.namespaceSelector": [
+        "status.autogen.configs.spec.matchConstraints.excludeResourceRules.resources": [
           18,
           19
         ],
-        "status.autogen.configs.spec.matchConstraints.objectSelector": [
+        "status.autogen.configs.spec.matchConstraints.namespaceSelector": [
           20,
           21
         ],
-        "status.autogen.configs.spec.matchConstraints.resourceRules": [
+        "status.autogen.configs.spec.matchConstraints.objectSelector": [
           22,
           23
         ],
-        "status.autogen.configs.spec.matchConstraints.resourceRules.apiGroups": [
-          8,
-          9
-        ],
-        "status.autogen.configs.spec.matchConstraints.resourceRules.apiVersions": [
-          10,
-          11
-        ],
-        "status.autogen.configs.spec.matchConstraints.resourceRules.operations": [
-          12,
-          13
-        ],
-        "status.autogen.configs.spec.matchConstraints.resourceRules.resourceNames": [
-          14,
-          15
-        ],
-        "status.autogen.configs.spec.matchConstraints.resourceRules.resources": [
-          16,
-          17
-        ],
-        "status.autogen.configs.spec.validations.expression": [
+        "status.autogen.configs.spec.matchConstraints.resourceRules": [
           24,
           25
         ],
-        "status.autogen.configs.spec.validations.message": [
+        "status.autogen.configs.spec.matchConstraints.resourceRules.apiGroups": [
+          10,
+          11
+        ],
+        "status.autogen.configs.spec.matchConstraints.resourceRules.apiVersions": [
+          12,
+          13
+        ],
+        "status.autogen.configs.spec.matchConstraints.resourceRules.operations": [
+          14,
+          15
+        ],
+        "status.autogen.configs.spec.matchConstraints.resourceRules.resourceNames": [
+          16,
+          17
+        ],
+        "status.autogen.configs.spec.matchConstraints.resourceRules.resources": [
+          18,
+          19
+        ],
+        "status.autogen.configs.spec.validations.expression": [
           26,
           27
         ],
-        "status.autogen.configs.spec.validations.reason": [
+        "status.autogen.configs.spec.validations.message": [
           28,
           29
         ],
-        "status.autogen.configs.spec.variables.expression": [
+        "status.autogen.configs.spec.validations.reason": [
           30,
           31
         ],
-        "status.autogen.configs.spec.variables.name": [
+        "status.autogen.configs.spec.variables.expression": [
           32,
           33
+        ],
+        "status.autogen.configs.spec.variables.name": [
+          34,
+          35
         ]
       }
     },
@@ -235,20 +263,20 @@
       ],
       "descriptions": {
         "spec.matchConditions": [
-          34,
-          35
+          36,
+          37
         ],
         "spec.validationActions": [
-          36,
-          37
+          38,
+          39
         ],
         "status.autogen.configs.spec.matchConditions": [
-          34,
-          35
-        ],
-        "status.autogen.configs.spec.validationActions": [
           36,
           37
+        ],
+        "status.autogen.configs.spec.validationActions": [
+          38,
+          39
         ]
       }
     },
@@ -259,6 +287,8 @@
     }
   },
   "texts": [
+    "Controllers specifies the list of pod controllers to generate rules for,\nfor example DaemonSet, Deployment, Job, StatefulSet, ReplicaSet, ReplicationController, CronJob.\nOptional. Defaults to all supported pod controllers if not specified.",
+    "Enabled specifies whether to generate pod controller rules.\nOptional. Defaults to \"true\" if not specified.",
     "Mode is the mode of policy evaluation.\nAllowed values are \"Kubernetes\" or \"JSON\".\nOptional. Default value is \"Kubernetes\".",
     "Mode is the mode of policy evaluation.\nAllowed values are \"Kubernetes\", \"HTTP\" or \"Envoy\".\nOptional. Default value is \"Kubernetes\".",
     "Expression represents the expression which will be evaluated by CEL. Must evaluate to bool.\nCEL expressions have access to the contents of the AdmissionRequest and Authorizer, organized into CEL variables:\n\n'object' - The object from the incoming request. The value is null for DELETE requests.\n'oldObject' - The existing object. The value is null for CREATE requests.\n'request' - Attributes of the admission request(/pkg/apis/admission/types.go#AdmissionRequest).\n'authorizer' - A CEL Authorizer. May be used to perform authorization checks for the principal (user or service account) of the request.\n  See https://pkg.go.dev/k8s.io/apiserver/pkg/cel/library#Authz\n'authorizer.requestResource' - A CEL ResourceCheck constructed from the 'authorizer' and configured with the\n  request resource.\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/\n\nRequired.",

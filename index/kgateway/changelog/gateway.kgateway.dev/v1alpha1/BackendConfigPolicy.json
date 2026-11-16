@@ -1,5 +1,21 @@
 {
   "versions": {
+    "v2.5.2": {
+      "descriptionChanged": [
+        "spec.http2ProtocolOptions.initialConnectionWindowSize",
+        "spec.http2ProtocolOptions.initialStreamWindowSize"
+      ],
+      "descriptions": {
+        "spec.http2ProtocolOptions.initialConnectionWindowSize": [
+          0,
+          1
+        ],
+        "spec.http2ProtocolOptions.initialStreamWindowSize": [
+          2,
+          3
+        ]
+      }
+    },
     "v2.5.1": {
       "descriptionChanged": [
         "spec.commonHttpProtocolOptions.maxHeadersCount",
@@ -13,36 +29,36 @@
       ],
       "descriptions": {
         "spec.commonHttpProtocolOptions.maxHeadersCount": [
-          0,
-          1
-        ],
-        "spec.connectTimeout": [
-          2,
-          3
-        ],
-        "spec.dns.refreshRate": [
           4,
           5
         ],
-        "spec.healthCheck.interval": [
+        "spec.connectTimeout": [
           6,
           7
         ],
-        "spec.healthCheck.timeout": [
+        "spec.dns.refreshRate": [
           8,
           9
         ],
-        "spec.loadBalancer.leastRequest.choiceCount": [
+        "spec.healthCheck.interval": [
           10,
           11
         ],
-        "spec.loadBalancer.ringHash.maximumRingSize": [
+        "spec.healthCheck.timeout": [
           12,
           13
         ],
-        "spec.loadBalancer.ringHash.minimumRingSize": [
+        "spec.loadBalancer.leastRequest.choiceCount": [
           14,
           15
+        ],
+        "spec.loadBalancer.ringHash.maximumRingSize": [
+          16,
+          17
+        ],
+        "spec.loadBalancer.ringHash.minimumRingSize": [
+          18,
+          19
         ]
       }
     },
@@ -63,64 +79,90 @@
         "spec.commonHttpProtocolOptions.maxHeadersCount",
         "spec.healthCheck.interval",
         "spec.http2ProtocolOptions",
+        "spec.http2ProtocolOptions.initialConnectionWindowSize",
+        "spec.http2ProtocolOptions.initialStreamWindowSize",
         "spec.tls"
       ],
       "descriptions": {
         "spec.commonHttpProtocolOptions.maxConnectionDuration": [
           null,
-          16
+          20
         ],
         "spec.commonHttpProtocolOptions.maxHeadersCount": [
-          17,
-          0
+          21,
+          4
         ],
         "spec.dns.lookupFamily": [
           null,
-          18
+          22
         ],
         "spec.healthCheck.interval": [
-          19,
-          6
+          23,
+          10
         ],
         "spec.healthCheck.noTrafficInterval": [
           null,
-          20
+          24
         ],
         "spec.http2ProtocolOptions": [
-          21,
-          22
+          25,
+          26
+        ],
+        "spec.http2ProtocolOptions.initialConnectionWindowSize": [
+          1,
+          0
+        ],
+        "spec.http2ProtocolOptions.initialStreamWindowSize": [
+          3,
+          2
         ],
         "spec.outlierDetection.consecutiveGatewayFailure": [
           null,
-          23
+          27
         ],
         "spec.outlierDetection.consecutiveLocalOriginFailure": [
           null,
-          24
+          28
         ],
         "spec.outlierDetection.enforcingConsecutive5xx": [
           null,
-          25
+          29
         ],
         "spec.outlierDetection.enforcingConsecutiveLocalOriginFailure": [
           null,
-          26
+          30
         ],
         "spec.outlierDetection.splitExternalLocalOriginErrors": [
           null,
-          27
+          31
         ],
         "spec.sessionPersistence": [
           null,
-          28
+          32
         ],
         "spec.tls": [
-          29,
-          30
+          33,
+          34
         ],
         "spec.tunnel": [
           null,
-          31
+          35
+        ]
+      }
+    },
+    "v2.4.8": {
+      "descriptionChanged": [
+        "spec.http2ProtocolOptions.initialConnectionWindowSize",
+        "spec.http2ProtocolOptions.initialStreamWindowSize"
+      ],
+      "descriptions": {
+        "spec.http2ProtocolOptions.initialConnectionWindowSize": [
+          0,
+          1
+        ],
+        "spec.http2ProtocolOptions.initialStreamWindowSize": [
+          2,
+          3
         ]
       }
     },
@@ -133,11 +175,11 @@
       "descriptions": {
         "spec.http2ProtocolOptions.connectionKeepalive": [
           null,
-          32
+          36
         ],
         "spec.loadBalancer.zoneAware": [
           null,
-          33
+          37
         ]
       }
     },
@@ -153,19 +195,19 @@
       "descriptions": {
         "spec.circuitBreakers.trackRemaining": [
           null,
-          34
+          38
         ],
         "spec.dns": [
           null,
-          35
+          39
         ],
         "spec.http2ProtocolOptions.maxConcurrentStreams": [
-          36,
-          37
+          40,
+          41
         ],
         "spec.upstreamProxyProtocol": [
           null,
-          38
+          42
         ]
       }
     },
@@ -307,516 +349,520 @@
       "descriptions": {
         "apiVersion": [
           null,
-          39
+          43
         ],
         "kind": [
           null,
-          40
+          44
         ],
         "spec": [
           null,
-          41
+          45
         ],
         "spec.circuitBreakers": [
           null,
-          42
+          46
         ],
         "spec.commonHttpProtocolOptions": [
           null,
-          43
+          47
         ],
         "spec.commonHttpProtocolOptions.idleTimeout": [
           null,
-          44
+          48
         ],
         "spec.commonHttpProtocolOptions.maxHeadersCount": [
           null,
-          17
+          21
         ],
         "spec.commonHttpProtocolOptions.maxRequestsPerConnection": [
           null,
-          45
+          49
         ],
         "spec.commonHttpProtocolOptions.maxStreamDuration": [
           null,
-          46
+          50
         ],
         "spec.connectTimeout": [
           null,
-          2
+          6
         ],
         "spec.healthCheck": [
           null,
-          47
+          51
         ],
         "spec.healthCheck.grpc": [
           null,
-          48
+          52
         ],
         "spec.healthCheck.grpc.authority": [
           null,
-          49
+          53
         ],
         "spec.healthCheck.grpc.serviceName": [
           null,
-          50
+          54
         ],
         "spec.healthCheck.healthyThreshold": [
           null,
-          51
+          55
         ],
         "spec.healthCheck.http": [
           null,
-          52
+          56
         ],
         "spec.healthCheck.http.host": [
           null,
-          53
+          57
         ],
         "spec.healthCheck.http.method": [
           null,
-          54
+          58
         ],
         "spec.healthCheck.http.path": [
           null,
-          55
+          59
         ],
         "spec.healthCheck.interval": [
           null,
-          19
+          23
         ],
         "spec.healthCheck.timeout": [
           null,
-          8
+          12
         ],
         "spec.healthCheck.unhealthyThreshold": [
           null,
-          56
+          60
         ],
         "spec.http1ProtocolOptions": [
           null,
-          57
+          61
         ],
         "spec.http1ProtocolOptions.enableTrailers": [
           null,
-          58
+          62
         ],
         "spec.http1ProtocolOptions.overrideStreamErrorOnInvalidHttpMessage": [
           null,
-          59
+          63
         ],
         "spec.http1ProtocolOptions.preserveHttp1HeaderCase": [
           null,
-          60
+          64
         ],
         "spec.http2ProtocolOptions": [
           null,
-          21
+          25
         ],
         "spec.http2ProtocolOptions.initialConnectionWindowSize": [
           null,
-          61
+          0
         ],
         "spec.http2ProtocolOptions.initialStreamWindowSize": [
           null,
-          62
+          2
         ],
         "spec.http2ProtocolOptions.maxConcurrentStreams": [
           null,
-          36
+          40
         ],
         "spec.http2ProtocolOptions.overrideStreamErrorOnInvalidHttpMessage": [
           null,
-          63
+          65
         ],
         "spec.loadBalancer": [
           null,
-          64
+          66
         ],
         "spec.loadBalancer.closeConnectionsOnHostSetChange": [
           null,
-          65
+          67
         ],
         "spec.loadBalancer.healthyPanicThreshold": [
           null,
-          66
+          68
         ],
         "spec.loadBalancer.leastRequest": [
           null,
-          67
+          69
         ],
         "spec.loadBalancer.leastRequest.choiceCount": [
           null,
-          10
+          14
         ],
         "spec.loadBalancer.leastRequest.slowStart": [
           null,
-          68
+          70
         ],
         "spec.loadBalancer.leastRequest.slowStart.aggression": [
           null,
-          69
+          71
         ],
         "spec.loadBalancer.leastRequest.slowStart.minWeightPercent": [
           null,
-          70
+          72
         ],
         "spec.loadBalancer.leastRequest.slowStart.window": [
           null,
-          71
+          73
         ],
         "spec.loadBalancer.localityType": [
           null,
-          72
+          74
         ],
         "spec.loadBalancer.maglev": [
           null,
-          73
+          75
         ],
         "spec.loadBalancer.maglev.hashPolicies": [
           null,
-          74
+          76
         ],
         "spec.loadBalancer.maglev.hashPolicies.cookie": [
           null,
-          75
+          77
         ],
         "spec.loadBalancer.maglev.hashPolicies.cookie.httpOnly": [
           null,
-          76
+          78
         ],
         "spec.loadBalancer.maglev.hashPolicies.cookie.name": [
           null,
-          77
+          79
         ],
         "spec.loadBalancer.maglev.hashPolicies.cookie.path": [
           null,
-          78
+          80
         ],
         "spec.loadBalancer.maglev.hashPolicies.cookie.sameSite": [
           null,
-          79
+          81
         ],
         "spec.loadBalancer.maglev.hashPolicies.cookie.secure": [
           null,
-          80
+          82
         ],
         "spec.loadBalancer.maglev.hashPolicies.cookie.ttl": [
           null,
-          81
+          83
         ],
         "spec.loadBalancer.maglev.hashPolicies.header": [
           null,
-          82
+          84
         ],
         "spec.loadBalancer.maglev.hashPolicies.header.name": [
           null,
-          83
+          85
         ],
         "spec.loadBalancer.maglev.hashPolicies.sourceIP": [
           null,
-          84
+          86
         ],
         "spec.loadBalancer.maglev.hashPolicies.terminal": [
           null,
-          85
+          87
         ],
         "spec.loadBalancer.maglev.useHostnameForHashing": [
           null,
-          86
+          88
         ],
         "spec.loadBalancer.random": [
           null,
-          87
+          89
         ],
         "spec.loadBalancer.ringHash": [
           null,
-          88
+          90
         ],
         "spec.loadBalancer.ringHash.hashPolicies": [
           null,
-          74
+          76
         ],
         "spec.loadBalancer.ringHash.hashPolicies.cookie": [
           null,
-          75
+          77
         ],
         "spec.loadBalancer.ringHash.hashPolicies.cookie.httpOnly": [
           null,
-          76
+          78
         ],
         "spec.loadBalancer.ringHash.hashPolicies.cookie.name": [
           null,
-          77
+          79
         ],
         "spec.loadBalancer.ringHash.hashPolicies.cookie.path": [
           null,
-          78
+          80
         ],
         "spec.loadBalancer.ringHash.hashPolicies.cookie.sameSite": [
           null,
-          79
+          81
         ],
         "spec.loadBalancer.ringHash.hashPolicies.cookie.secure": [
           null,
-          80
+          82
         ],
         "spec.loadBalancer.ringHash.hashPolicies.cookie.ttl": [
           null,
-          81
+          83
         ],
         "spec.loadBalancer.ringHash.hashPolicies.header": [
           null,
-          82
+          84
         ],
         "spec.loadBalancer.ringHash.hashPolicies.header.name": [
           null,
-          83
+          85
         ],
         "spec.loadBalancer.ringHash.hashPolicies.sourceIP": [
           null,
-          84
+          86
         ],
         "spec.loadBalancer.ringHash.hashPolicies.terminal": [
           null,
-          85
+          87
         ],
         "spec.loadBalancer.ringHash.maximumRingSize": [
           null,
-          12
+          16
         ],
         "spec.loadBalancer.ringHash.minimumRingSize": [
           null,
-          14
+          18
         ],
         "spec.loadBalancer.ringHash.useHostnameForHashing": [
           null,
-          86
+          88
         ],
         "spec.loadBalancer.roundRobin": [
           null,
-          89
+          91
         ],
         "spec.loadBalancer.roundRobin.slowStart": [
           null,
-          68
+          70
         ],
         "spec.loadBalancer.roundRobin.slowStart.aggression": [
           null,
-          69
+          71
         ],
         "spec.loadBalancer.roundRobin.slowStart.minWeightPercent": [
           null,
-          70
+          72
         ],
         "spec.loadBalancer.roundRobin.slowStart.window": [
           null,
-          71
+          73
         ],
         "spec.loadBalancer.updateMergeWindow": [
           null,
-          90
+          92
         ],
         "spec.outlierDetection": [
           null,
-          91
+          93
         ],
         "spec.outlierDetection.baseEjectionTime": [
           null,
-          92
+          94
         ],
         "spec.outlierDetection.consecutive5xx": [
           null,
-          93
+          95
         ],
         "spec.outlierDetection.interval": [
           null,
-          94
+          96
         ],
         "spec.outlierDetection.maxEjectionPercent": [
           null,
-          95
+          97
         ],
         "spec.perConnectionBufferLimitBytes": [
           null,
-          96
+          98
         ],
         "spec.targetRefs": [
           null,
-          97
+          99
         ],
         "spec.targetRefs.group": [
           null,
-          98
+          100
         ],
         "spec.targetRefs.kind": [
           null,
-          99
+          101
         ],
         "spec.targetRefs.name": [
           null,
-          100
+          102
         ],
         "spec.targetSelectors": [
           null,
-          101
+          103
         ],
         "spec.targetSelectors.group": [
           null,
-          98
+          100
         ],
         "spec.targetSelectors.kind": [
           null,
-          99
+          101
         ],
         "spec.targetSelectors.matchLabels": [
           null,
-          102
+          104
         ],
         "spec.tcpKeepalive": [
           null,
-          103
+          105
         ],
         "spec.tcpKeepalive.keepAliveInterval": [
           null,
-          104
+          106
         ],
         "spec.tcpKeepalive.keepAliveProbes": [
           null,
-          105
+          107
         ],
         "spec.tcpKeepalive.keepAliveTime": [
           null,
-          106
+          108
         ],
         "spec.tls": [
           null,
-          29
+          33
         ],
         "spec.tls.allowRenegotiation": [
           null,
-          107
+          109
         ],
         "spec.tls.alpnProtocols": [
           null,
-          108
+          110
         ],
         "spec.tls.files": [
           null,
-          109
+          111
         ],
         "spec.tls.insecureSkipVerify": [
           null,
-          110
+          112
         ],
         "spec.tls.parameters": [
           null,
-          111
+          113
         ],
         "spec.tls.parameters.maxVersion": [
           null,
-          112
+          114
         ],
         "spec.tls.parameters.minVersion": [
           null,
-          113
+          115
         ],
         "spec.tls.secretRef": [
           null,
-          114
+          116
         ],
         "spec.tls.secretRef.name": [
           null,
-          115
+          117
         ],
         "spec.tls.simpleTLS": [
           null,
-          116
+          118
         ],
         "spec.tls.sni": [
           null,
-          117
+          119
         ],
         "spec.tls.verifySubjectAltNames": [
           null,
-          118
+          120
         ],
         "spec.tls.wellKnownCACertificates": [
           null,
-          119
+          121
         ],
         "status": [
           null,
-          120
+          122
         ],
         "status.ancestors": [
           null,
-          121
+          123
         ],
         "status.ancestors.ancestorRef": [
           null,
-          122
+          124
         ],
         "status.ancestors.ancestorRef.group": [
           null,
-          123
+          125
         ],
         "status.ancestors.ancestorRef.kind": [
           null,
-          124
+          126
         ],
         "status.ancestors.ancestorRef.name": [
           null,
-          125
+          127
         ],
         "status.ancestors.ancestorRef.namespace": [
           null,
-          126
+          128
         ],
         "status.ancestors.ancestorRef.port": [
           null,
-          127
+          129
         ],
         "status.ancestors.ancestorRef.sectionName": [
           null,
-          128
+          130
         ],
         "status.ancestors.conditions": [
           null,
-          129
+          131
         ],
         "status.ancestors.conditions.lastTransitionTime": [
           null,
-          130
+          132
         ],
         "status.ancestors.conditions.message": [
           null,
-          131
+          133
         ],
         "status.ancestors.conditions.observedGeneration": [
           null,
-          132
+          134
         ],
         "status.ancestors.conditions.reason": [
           null,
-          133
+          135
         ],
         "status.ancestors.conditions.status": [
           null,
-          134
+          136
         ],
         "status.ancestors.conditions.type": [
           null,
-          135
+          137
         ],
         "status.ancestors.controllerName": [
           null,
-          136
+          138
         ]
       }
     }
   },
   "texts": [
+    "InitialConnectionWindowSize is similar to InitialStreamWindowSize, but for the connection level.\nSame range and default value as InitialStreamWindowSize.\nValues can be specified with units like \"64Ki\".",
+    "InitialConnectionWindowSize is similar to InitialStreamWindowSize, but for the connection level.\nSame range as InitialStreamWindowSize. Defaults to 25165824 (24 * 1024 * 1024).\nValues can be specified with units like \"64Ki\".",
+    "InitialStreamWindowSize is the initial window size for the stream.\nValid values range from 65535 (2^16 - 1, HTTP/2 default) to 2147483647 (2^31 - 1, HTTP/2 maximum).\nDefaults to 268435456 (256 * 1024 * 1024).\nValues can be specified with units like \"64Ki\".",
+    "InitialStreamWindowSize is the initial window size for the stream.\nValid values range from 65535 (2^16 - 1, HTTP/2 default) to 2147483647 (2^31 - 1, HTTP/2 maximum).\nDefaults to 16777216 (16 * 1024 * 1024).\nValues can be specified with units like \"64Ki\".",
     "Specifies the maximum number of response headers that the upstream connection will accept\nfrom the backend. If not specified, the default of 100 is used.\nTo configure the maximum number of headers accepted in downstream requests, use\nListenerPolicy.spec.default.httpSettings.maxHeadersCount.",
     "Specifies the maximum number of response headers that the upstream connection will accept\nfrom the backend. Must be at least 1. If not specified, the default of 100 is used.\nTo configure the maximum number of headers accepted in downstream requests, use\nListenerPolicy.spec.default.httpSettings.maxHeadersCount.",
     "The timeout for new network connections to hosts in the cluster.",
@@ -878,8 +924,6 @@
     "Enables trailers for HTTP/1. By default the HTTP/1 codec drops proxied trailers.\nNote: Trailers must also be enabled at the gateway level in order for this option to take effect",
     "Allows invalid HTTP messaging. When this option is false, then Envoy will terminate\nHTTP/1.1 connections upon receiving an invalid HTTP message. However,\nwhen this option is true, then Envoy will leave the HTTP/1.1 connection\nopen where possible.",
     "PreserveHttp1HeaderCase determines whether to preserve the case of HTTP1 response headers.\nSee here for more information: https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_conn_man/header_casing",
-    "InitialConnectionWindowSize is similar to InitialStreamWindowSize, but for the connection level.\nSame range and default value as InitialStreamWindowSize.\nValues can be specified with units like \"64Ki\".",
-    "InitialStreamWindowSize is the initial window size for the stream.\nValid values range from 65535 (2^16 - 1, HTTP/2 default) to 2147483647 (2^31 - 1, HTTP/2 maximum).\nDefaults to 268435456 (256 * 1024 * 1024).\nValues can be specified with units like \"64Ki\".",
     "Allows invalid HTTP messaging and headers. When disabled (default), then\nthe whole HTTP/2 connection is terminated upon receiving invalid HEADERS frame.\nWhen enabled, only the offending stream is terminated.",
     "LoadBalancer contains the options necessary to configure the load balancer.",
     "If set to true, the load balancer will drain connections when the host set changes.\n\nRing Hash or Maglev can be used to ensure that clients with the same key\nare routed to the same upstream host.\nDistruptions can cause new connections with the same key as existing connections\nto be routed to different hosts.\nEnabling this feature will cause the load balancer to drain existing connections\nwhen the host set changes, ensuring that new connections with the same key are\nconsistently routed to the same host.\nConnections are not immediately closed, but are allowed to drain\nbefore being closed.",

@@ -1,5 +1,71 @@
 {
   "versions": {
+    "1.32.0": {
+      "added": {
+        "spec.subsets.trafficPolicy.loadBalancer.backendUtilization": "object",
+        "spec.subsets.trafficPolicy.outlierDetection.failurePercentageThreshold": "integer",
+        "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.backendUtilization": "object",
+        "spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.failurePercentageThreshold": "integer",
+        "spec.subsets.trafficPolicy.portLevelSettings.tls.caCertCredentialName": "string",
+        "spec.subsets.trafficPolicy.tls.caCertCredentialName": "string",
+        "spec.trafficPolicy.loadBalancer.backendUtilization": "object",
+        "spec.trafficPolicy.outlierDetection.failurePercentageThreshold": "integer",
+        "spec.trafficPolicy.portLevelSettings.loadBalancer.backendUtilization": "object",
+        "spec.trafficPolicy.portLevelSettings.outlierDetection.failurePercentageThreshold": "integer",
+        "spec.trafficPolicy.portLevelSettings.tls.caCertCredentialName": "string",
+        "spec.trafficPolicy.tls.caCertCredentialName": "string"
+      },
+      "descriptions": {
+        "spec.subsets.trafficPolicy.loadBalancer.backendUtilization": [
+          null,
+          0
+        ],
+        "spec.subsets.trafficPolicy.outlierDetection.failurePercentageThreshold": [
+          null,
+          1
+        ],
+        "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.backendUtilization": [
+          null,
+          0
+        ],
+        "spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.failurePercentageThreshold": [
+          null,
+          1
+        ],
+        "spec.subsets.trafficPolicy.portLevelSettings.tls.caCertCredentialName": [
+          null,
+          2
+        ],
+        "spec.subsets.trafficPolicy.tls.caCertCredentialName": [
+          null,
+          2
+        ],
+        "spec.trafficPolicy.loadBalancer.backendUtilization": [
+          null,
+          0
+        ],
+        "spec.trafficPolicy.outlierDetection.failurePercentageThreshold": [
+          null,
+          1
+        ],
+        "spec.trafficPolicy.portLevelSettings.loadBalancer.backendUtilization": [
+          null,
+          0
+        ],
+        "spec.trafficPolicy.portLevelSettings.outlierDetection.failurePercentageThreshold": [
+          null,
+          1
+        ],
+        "spec.trafficPolicy.portLevelSettings.tls.caCertCredentialName": [
+          null,
+          2
+        ],
+        "spec.trafficPolicy.tls.caCertCredentialName": [
+          null,
+          2
+        ]
+      }
+    },
     "1.31.0": {
       "added": {
         "spec.subsets.trafficPolicy.connectionPool.http.http2KeepAlive": "object",
@@ -34,107 +100,107 @@
       "descriptions": {
         "spec.subsets.trafficPolicy.connectionPool.http.http2KeepAlive": [
           null,
-          0
+          3
         ],
         "spec.subsets.trafficPolicy.loadBalancer.consistentHash": [
           null,
-          1
+          4
         ],
         "spec.subsets.trafficPolicy.loadBalancer.localityLbSetting": [
           null,
-          2
+          5
         ],
         "spec.subsets.trafficPolicy.loadBalancer.simple": [
-          3,
-          4
+          6,
+          7
         ],
         "spec.subsets.trafficPolicy.loadBalancer.zoneAwareLbSetting": [
           null,
-          5
+          8
         ],
         "spec.subsets.trafficPolicy.outlierDetection.outlierDetectionHttpErrorCodes": [
           null,
-          6
+          9
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http.http2KeepAlive": [
           null,
-          0
+          3
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash": [
           null,
-          1
+          4
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting": [
           null,
-          2
+          5
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.simple": [
-          3,
-          4
+          6,
+          7
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.zoneAwareLbSetting": [
           null,
-          5
+          8
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.outlierDetectionHttpErrorCodes": [
           null,
-          6
+          9
         ],
         "spec.subsets.trafficPolicy.retryBudget.budgetInterval": [
           null,
-          7
+          10
         ],
         "spec.trafficPolicy.connectionPool.http.http2KeepAlive": [
           null,
-          0
+          3
         ],
         "spec.trafficPolicy.loadBalancer.consistentHash": [
           null,
-          1
+          4
         ],
         "spec.trafficPolicy.loadBalancer.localityLbSetting": [
           null,
-          2
+          5
         ],
         "spec.trafficPolicy.loadBalancer.simple": [
-          3,
-          4
+          6,
+          7
         ],
         "spec.trafficPolicy.loadBalancer.zoneAwareLbSetting": [
           null,
-          5
+          8
         ],
         "spec.trafficPolicy.outlierDetection.outlierDetectionHttpErrorCodes": [
           null,
-          6
+          9
         ],
         "spec.trafficPolicy.portLevelSettings.connectionPool.http.http2KeepAlive": [
           null,
-          0
+          3
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash": [
           null,
-          1
+          4
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting": [
           null,
-          2
+          5
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.simple": [
-          3,
-          4
+          6,
+          7
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.zoneAwareLbSetting": [
           null,
-          5
+          8
         ],
         "spec.trafficPolicy.portLevelSettings.outlierDetection.outlierDetectionHttpErrorCodes": [
           null,
-          6
+          9
         ],
         "spec.trafficPolicy.retryBudget.budgetInterval": [
           null,
-          7
+          10
         ]
       }
     },
@@ -148,19 +214,19 @@
       "descriptions": {
         "spec.subsets.trafficPolicy.loadBalancer.consistentHash.httpCookie.attributes": [
           null,
-          8
+          11
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.httpCookie.attributes": [
           null,
-          8
+          11
         ],
         "spec.trafficPolicy.loadBalancer.consistentHash.httpCookie.attributes": [
           null,
-          8
+          11
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.httpCookie.attributes": [
           null,
-          8
+          11
         ]
       }
     },
@@ -172,11 +238,11 @@
       "descriptions": {
         "spec.subsets.trafficPolicy.retryBudget": [
           null,
-          9
+          12
         ],
         "spec.trafficPolicy.retryBudget": [
           null,
-          9
+          12
         ]
       }
     },
@@ -190,10 +256,10 @@
       "descriptions": {
         "status.conditions.observedGeneration": [
           null,
-          10
+          13
         ],
         "status.observedGeneration": [
-          11,
+          14,
           null
         ]
       }
@@ -211,36 +277,36 @@
       ],
       "descriptions": {
         "spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.enabled": [
-          12,
-          13
+          15,
+          16
         ],
         "spec.subsets.trafficPolicy.outlierDetection.minHealthPercent": [
-          14,
-          15
+          17,
+          18
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.enabled": [
-          12,
-          13
+          15,
+          16
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.minHealthPercent": [
-          14,
-          15
+          17,
+          18
         ],
         "spec.trafficPolicy.loadBalancer.localityLbSetting.enabled": [
-          12,
-          13
+          15,
+          16
         ],
         "spec.trafficPolicy.outlierDetection.minHealthPercent": [
-          14,
-          15
+          17,
+          18
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.enabled": [
-          12,
-          13
+          15,
+          16
         ],
         "spec.trafficPolicy.portLevelSettings.outlierDetection.minHealthPercent": [
-          14,
-          15
+          17,
+          18
         ]
       }
     },
@@ -263,47 +329,47 @@
       "descriptions": {
         "spec.subsets.trafficPolicy.loadBalancer.warmup": [
           null,
-          16
+          19
         ],
         "spec.subsets.trafficPolicy.loadBalancer.warmupDurationSecs": [
-          17,
-          18
+          20,
+          21
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.warmup": [
           null,
-          16
+          19
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.warmupDurationSecs": [
-          17,
-          18
+          20,
+          21
         ],
         "spec.trafficPolicy.loadBalancer.warmup": [
           null,
-          16
+          19
         ],
         "spec.trafficPolicy.loadBalancer.warmupDurationSecs": [
-          17,
-          18
+          20,
+          21
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.warmup": [
           null,
-          16
+          19
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.warmupDurationSecs": [
-          17,
-          18
+          20,
+          21
         ],
         "status.conditions": [
           null,
-          19
+          22
         ],
         "status.observedGeneration": [
           null,
-          11
+          14
         ],
         "status.validationMessages": [
           null,
-          20
+          23
         ]
       }
     },
@@ -332,76 +398,76 @@
       },
       "descriptions": {
         "spec.subsets.trafficPolicy.connectionPool.http.h2UpgradePolicy": [
-          21,
-          22
+          24,
+          25
         ],
         "spec.subsets.trafficPolicy.loadBalancer.simple": [
           null,
-          3
+          6
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http.h2UpgradePolicy": [
-          21,
-          22
+          24,
+          25
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.simple": [
           null,
-          3
+          6
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.tls.caCrl": [
           null,
-          23
+          26
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.tls.mode": [
-          24,
-          25
+          27,
+          28
         ],
         "spec.subsets.trafficPolicy.proxyProtocol.version": [
-          26,
-          27
+          29,
+          30
         ],
         "spec.subsets.trafficPolicy.tls.caCrl": [
           null,
-          23
+          26
         ],
         "spec.subsets.trafficPolicy.tls.mode": [
-          24,
-          25
+          27,
+          28
         ],
         "spec.trafficPolicy.connectionPool.http.h2UpgradePolicy": [
-          21,
-          22
+          24,
+          25
         ],
         "spec.trafficPolicy.loadBalancer.simple": [
           null,
-          3
+          6
         ],
         "spec.trafficPolicy.portLevelSettings.connectionPool.http.h2UpgradePolicy": [
-          21,
-          22
+          24,
+          25
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.simple": [
           null,
-          3
+          6
         ],
         "spec.trafficPolicy.portLevelSettings.tls.caCrl": [
           null,
-          23
+          26
         ],
         "spec.trafficPolicy.portLevelSettings.tls.mode": [
-          24,
-          25
+          27,
+          28
         ],
         "spec.trafficPolicy.proxyProtocol.version": [
-          26,
-          27
+          29,
+          30
         ],
         "spec.trafficPolicy.tls.caCrl": [
           null,
-          23
+          26
         ],
         "spec.trafficPolicy.tls.mode": [
-          24,
-          25
+          27,
+          28
         ]
       }
     },
@@ -421,43 +487,43 @@
       "descriptions": {
         "spec.subsets.trafficPolicy.connectionPool.http.maxConcurrentStreams": [
           null,
-          28
+          31
         ],
         "spec.subsets.trafficPolicy.connectionPool.tcp.idleTimeout": [
           null,
-          29
+          32
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http.maxConcurrentStreams": [
           null,
-          28
+          31
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.connectionPool.tcp.idleTimeout": [
           null,
-          29
+          32
         ],
         "spec.subsets.trafficPolicy.proxyProtocol": [
           null,
-          30
+          33
         ],
         "spec.trafficPolicy.connectionPool.http.maxConcurrentStreams": [
           null,
-          28
+          31
         ],
         "spec.trafficPolicy.connectionPool.tcp.idleTimeout": [
           null,
-          29
+          32
         ],
         "spec.trafficPolicy.portLevelSettings.connectionPool.http.maxConcurrentStreams": [
           null,
-          28
+          31
         ],
         "spec.trafficPolicy.portLevelSettings.connectionPool.tcp.idleTimeout": [
           null,
-          29
+          32
         ],
         "spec.trafficPolicy.proxyProtocol": [
           null,
-          30
+          33
         ]
       }
     },
@@ -470,20 +536,20 @@
       ],
       "descriptions": {
         "spec.subsets.trafficPolicy.portLevelSettings.tls.insecureSkipVerify": [
-          31,
-          32
+          34,
+          35
         ],
         "spec.subsets.trafficPolicy.tls.insecureSkipVerify": [
-          31,
-          32
+          34,
+          35
         ],
         "spec.trafficPolicy.portLevelSettings.tls.insecureSkipVerify": [
-          31,
-          32
+          34,
+          35
         ],
         "spec.trafficPolicy.tls.insecureSkipVerify": [
-          31,
-          32
+          34,
+          35
         ]
       }
     },
@@ -570,303 +636,303 @@
       "descriptions": {
         "spec.host": [
           null,
-          33
+          36
         ],
         "spec.subsets": [
           null,
-          34
+          37
         ],
         "spec.subsets.labels": [
           null,
-          35
+          38
         ],
         "spec.subsets.name": [
           null,
-          36
+          39
         ],
         "spec.subsets.trafficPolicy.connectionPool.http.http1MaxPendingRequests": [
           null,
-          37
+          40
         ],
         "spec.subsets.trafficPolicy.connectionPool.http.maxRetries": [
           null,
-          38
+          41
         ],
         "spec.subsets.trafficPolicy.connectionPool.tcp.tcpKeepalive.probes": [
           null,
-          39
+          42
         ],
         "spec.subsets.trafficPolicy.connectionPool.tcp.tcpKeepalive.time": [
           null,
-          40
+          43
         ],
         "spec.subsets.trafficPolicy.loadBalancer.consistentHash.httpCookie.name": [
           null,
-          41
+          44
         ],
         "spec.subsets.trafficPolicy.loadBalancer.consistentHash.ringHash.minimumRingSize": [
           null,
-          42
+          45
         ],
         "spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.failover.to": [
           null,
-          43
+          46
         ],
         "spec.subsets.trafficPolicy.outlierDetection.consecutiveLocalOriginFailures": [
           null,
-          44
+          47
         ],
         "spec.subsets.trafficPolicy.outlierDetection.maxEjectionPercent": [
           null,
-          45
+          48
         ],
         "spec.subsets.trafficPolicy.outlierDetection.minHealthPercent": [
           null,
-          14
+          17
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http.http1MaxPendingRequests": [
           null,
-          37
+          40
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http.maxRetries": [
           null,
-          38
+          41
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.connectionPool.tcp.tcpKeepalive.probes": [
           null,
-          39
+          42
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.connectionPool.tcp.tcpKeepalive.time": [
           null,
-          40
+          43
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.httpCookie.name": [
           null,
-          41
+          44
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.ringHash.minimumRingSize": [
           null,
-          42
+          45
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.failover.to": [
           null,
-          43
+          46
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.consecutiveLocalOriginFailures": [
           null,
-          44
+          47
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.maxEjectionPercent": [
           null,
-          45
+          48
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.minHealthPercent": [
           null,
-          14
+          17
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.port": [
           null,
-          46
+          49
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.tls.caCertificates": [
           null,
-          47
+          50
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.tls.credentialName": [
           null,
-          48
+          51
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.tls.insecureSkipVerify": [
           null,
-          31
+          34
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.tls.mode": [
           null,
-          24
+          27
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.tls.subjectAltNames": [
           null,
-          49
+          52
         ],
         "spec.subsets.trafficPolicy.tls.caCertificates": [
           null,
-          47
+          50
         ],
         "spec.subsets.trafficPolicy.tls.credentialName": [
           null,
-          48
+          51
         ],
         "spec.subsets.trafficPolicy.tls.insecureSkipVerify": [
           null,
-          31
+          34
         ],
         "spec.subsets.trafficPolicy.tls.mode": [
           null,
-          24
+          27
         ],
         "spec.subsets.trafficPolicy.tls.subjectAltNames": [
           null,
-          49
+          52
         ],
         "spec.subsets.trafficPolicy.tunnel": [
           null,
-          50
+          53
         ],
         "spec.subsets.trafficPolicy.tunnel.targetHost": [
           null,
-          51
+          54
         ],
         "spec.subsets.trafficPolicy.tunnel.targetPort": [
           null,
-          52
+          55
         ],
         "spec.trafficPolicy": [
           null,
-          53
+          56
         ],
         "spec.trafficPolicy.connectionPool.http.http1MaxPendingRequests": [
           null,
-          37
+          40
         ],
         "spec.trafficPolicy.connectionPool.http.maxRetries": [
           null,
-          38
+          41
         ],
         "spec.trafficPolicy.connectionPool.tcp.tcpKeepalive.probes": [
           null,
-          39
+          42
         ],
         "spec.trafficPolicy.connectionPool.tcp.tcpKeepalive.time": [
           null,
-          40
+          43
         ],
         "spec.trafficPolicy.loadBalancer.consistentHash.httpCookie.name": [
           null,
-          41
+          44
         ],
         "spec.trafficPolicy.loadBalancer.consistentHash.ringHash.minimumRingSize": [
           null,
-          42
+          45
         ],
         "spec.trafficPolicy.loadBalancer.localityLbSetting.failover.to": [
           null,
-          43
+          46
         ],
         "spec.trafficPolicy.outlierDetection.consecutiveLocalOriginFailures": [
           null,
-          44
+          47
         ],
         "spec.trafficPolicy.outlierDetection.maxEjectionPercent": [
           null,
-          45
+          48
         ],
         "spec.trafficPolicy.outlierDetection.minHealthPercent": [
           null,
-          14
+          17
         ],
         "spec.trafficPolicy.portLevelSettings.connectionPool.http.http1MaxPendingRequests": [
           null,
-          37
+          40
         ],
         "spec.trafficPolicy.portLevelSettings.connectionPool.http.maxRetries": [
           null,
-          38
+          41
         ],
         "spec.trafficPolicy.portLevelSettings.connectionPool.tcp.tcpKeepalive.probes": [
           null,
-          39
+          42
         ],
         "spec.trafficPolicy.portLevelSettings.connectionPool.tcp.tcpKeepalive.time": [
           null,
-          40
+          43
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.httpCookie.name": [
           null,
-          41
+          44
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.ringHash.minimumRingSize": [
           null,
-          42
+          45
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.failover.to": [
           null,
-          43
+          46
         ],
         "spec.trafficPolicy.portLevelSettings.outlierDetection.consecutiveLocalOriginFailures": [
           null,
-          44
+          47
         ],
         "spec.trafficPolicy.portLevelSettings.outlierDetection.maxEjectionPercent": [
           null,
-          45
+          48
         ],
         "spec.trafficPolicy.portLevelSettings.outlierDetection.minHealthPercent": [
           null,
-          14
+          17
         ],
         "spec.trafficPolicy.portLevelSettings.port": [
           null,
-          46
+          49
         ],
         "spec.trafficPolicy.portLevelSettings.tls.caCertificates": [
           null,
-          47
+          50
         ],
         "spec.trafficPolicy.portLevelSettings.tls.credentialName": [
           null,
-          48
+          51
         ],
         "spec.trafficPolicy.portLevelSettings.tls.insecureSkipVerify": [
           null,
-          31
+          34
         ],
         "spec.trafficPolicy.portLevelSettings.tls.mode": [
           null,
-          24
+          27
         ],
         "spec.trafficPolicy.portLevelSettings.tls.subjectAltNames": [
           null,
-          49
+          52
         ],
         "spec.trafficPolicy.tls.caCertificates": [
           null,
-          47
+          50
         ],
         "spec.trafficPolicy.tls.credentialName": [
           null,
-          48
+          51
         ],
         "spec.trafficPolicy.tls.insecureSkipVerify": [
           null,
-          31
+          34
         ],
         "spec.trafficPolicy.tls.mode": [
           null,
-          24
+          27
         ],
         "spec.trafficPolicy.tls.subjectAltNames": [
           null,
-          49
+          52
         ],
         "spec.trafficPolicy.tunnel": [
           null,
-          50
+          53
         ],
         "spec.trafficPolicy.tunnel.targetHost": [
           null,
-          51
+          54
         ],
         "spec.trafficPolicy.tunnel.targetPort": [
           null,
-          52
+          55
         ],
         "spec.workloadSelector": [
           null,
-          54
+          57
         ],
         "spec.workloadSelector.matchLabels": [
           null,
-          55
+          58
         ]
       }
     },
@@ -890,51 +956,51 @@
       "descriptions": {
         "spec.subsets.trafficPolicy.loadBalancer.consistentHash.maglev": [
           null,
-          56
+          59
         ],
         "spec.subsets.trafficPolicy.loadBalancer.consistentHash.minimumRingSize": [
           null,
-          57
+          60
         ],
         "spec.subsets.trafficPolicy.loadBalancer.consistentHash.ringHash": [
           null,
-          58
+          61
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.maglev": [
           null,
-          56
+          59
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.minimumRingSize": [
           null,
-          57
+          60
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.ringHash": [
           null,
-          58
+          61
         ],
         "spec.trafficPolicy.loadBalancer.consistentHash.maglev": [
           null,
-          56
+          59
         ],
         "spec.trafficPolicy.loadBalancer.consistentHash.minimumRingSize": [
           null,
-          57
+          60
         ],
         "spec.trafficPolicy.loadBalancer.consistentHash.ringHash": [
           null,
-          58
+          61
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.maglev": [
           null,
-          56
+          59
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.minimumRingSize": [
           null,
-          57
+          60
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.ringHash": [
           null,
-          58
+          61
         ]
       }
     },
@@ -957,52 +1023,52 @@
       },
       "descriptions": {
         "spec.subsets.trafficPolicy.connectionPool.http.http1MaxPendingRequests": [
-          59,
+          62,
           null
         ],
         "spec.subsets.trafficPolicy.connectionPool.http.http2MaxRequests": [
-          60,
-          61
+          63,
+          64
         ],
         "spec.subsets.trafficPolicy.connectionPool.tcp.maxConnectionDuration": [
           null,
-          62
+          65
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http.http1MaxPendingRequests": [
-          59,
+          62,
           null
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http.http2MaxRequests": [
-          60,
-          61
+          63,
+          64
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.connectionPool.tcp.maxConnectionDuration": [
           null,
-          62
+          65
         ],
         "spec.trafficPolicy.connectionPool.http.http1MaxPendingRequests": [
-          59,
+          62,
           null
         ],
         "spec.trafficPolicy.connectionPool.http.http2MaxRequests": [
-          60,
-          61
+          63,
+          64
         ],
         "spec.trafficPolicy.connectionPool.tcp.maxConnectionDuration": [
           null,
-          62
+          65
         ],
         "spec.trafficPolicy.portLevelSettings.connectionPool.http.http1MaxPendingRequests": [
-          59,
+          62,
           null
         ],
         "spec.trafficPolicy.portLevelSettings.connectionPool.http.http2MaxRequests": [
-          60,
-          61
+          63,
+          64
         ],
         "spec.trafficPolicy.portLevelSettings.connectionPool.tcp.maxConnectionDuration": [
           null,
-          62
+          65
         ]
       }
     },
@@ -1019,19 +1085,19 @@
       "descriptions": {
         "spec.subsets.trafficPolicy.loadBalancer.warmupDurationSecs": [
           null,
-          17
+          20
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.warmupDurationSecs": [
           null,
-          17
+          20
         ],
         "spec.trafficPolicy.loadBalancer.warmupDurationSecs": [
           null,
-          17
+          20
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.warmupDurationSecs": [
           null,
-          17
+          20
         ]
       }
     },
@@ -1058,52 +1124,52 @@
       },
       "descriptions": {
         "spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.distribute": [
-          63,
-          64
+          66,
+          67
         ],
         "spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.failover": [
-          65,
-          64
+          68,
+          67
         ],
         "spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.failoverPriority": [
           null,
-          66
+          69
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.distribute": [
-          63,
-          64
+          66,
+          67
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.failover": [
-          65,
-          64
+          68,
+          67
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.failoverPriority": [
           null,
-          66
+          69
         ],
         "spec.trafficPolicy.loadBalancer.localityLbSetting.distribute": [
-          63,
-          64
+          66,
+          67
         ],
         "spec.trafficPolicy.loadBalancer.localityLbSetting.failover": [
-          65,
-          64
+          68,
+          67
         ],
         "spec.trafficPolicy.loadBalancer.localityLbSetting.failoverPriority": [
           null,
-          66
+          69
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.distribute": [
-          63,
-          64
+          66,
+          67
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.failover": [
-          65,
-          64
+          68,
+          67
         ],
         "spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.failoverPriority": [
           null,
-          66
+          69
         ]
       }
     },
@@ -1121,19 +1187,19 @@
       "descriptions": {
         "spec.subsets.trafficPolicy.outlierDetection.splitExternalLocalOriginErrors": [
           null,
-          67
+          70
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.splitExternalLocalOriginErrors": [
           null,
-          67
+          70
         ],
         "spec.trafficPolicy.outlierDetection.splitExternalLocalOriginErrors": [
           null,
-          67
+          70
         ],
         "spec.trafficPolicy.portLevelSettings.outlierDetection.splitExternalLocalOriginErrors": [
           null,
-          67
+          70
         ]
       }
     },
@@ -1147,19 +1213,19 @@
       "descriptions": {
         "spec.subsets.trafficPolicy.connectionPool.http.useClientProtocol": [
           null,
-          68
+          71
         ],
         "spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http.useClientProtocol": [
           null,
-          68
+          71
         ],
         "spec.trafficPolicy.connectionPool.http.useClientProtocol": [
           null,
-          68
+          71
         ],
         "spec.trafficPolicy.portLevelSettings.connectionPool.http.useClientProtocol": [
           null,
-          68
+          71
         ]
       }
     },
@@ -1173,6 +1239,9 @@
     }
   },
   "texts": [
+    "Utilization-based load balancing that uses backend-reported ORCA metrics to weight endpoints by their current load.",
+    "The failure percentage to use when determining failure percentage-based outlier detection.",
+    "The name of the secret or the configmap that holds CA certificates used to verify the server's certificate.",
     "Configure HTTP/2 PING frames for upstream connections.",
     "Consistent Hash-based load balancing can be used to provide soft session affinity based on HTTP headers, cookies or other properties.",
     "Locality load balancer settings.",
