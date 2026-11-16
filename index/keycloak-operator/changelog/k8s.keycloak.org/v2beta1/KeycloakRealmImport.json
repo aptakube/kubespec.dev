@@ -1,0 +1,30 @@
+{
+  "versions": {
+    "26.8.0": {
+      "added": {
+        "spec.realm.identityProviders.organizationLinks": "object[]",
+        "spec.realm.organizations.domains.autoRedirect": "boolean",
+        "spec.realm.organizations.domains.identityProviderAlias": "string",
+        "spec.realm.organizations.identityProviders.organizationLinks": "object[]"
+      },
+      "removed": {
+        "spec.realm.identityProviders.organizationId": "string",
+        "spec.realm.organizations.identityProviders.organizationId": "string"
+      }
+    },
+    "26.7.0": {
+      "added": {
+        "spec.realm.federatedUsers.issuedVerifiableCredentials": "object[]",
+        "spec.realm.federatedUsers.verifiableCredentials": "object[]",
+        "spec.realm.organizations.members.issuedVerifiableCredentials": "object[]",
+        "spec.realm.organizations.members.verifiableCredentials": "object[]",
+        "spec.realm.users.issuedVerifiableCredentials": "object[]",
+        "spec.realm.users.verifiableCredentials": "object[]",
+        "spec.realm.webAuthnPolicyPasswordlessMediation": "string",
+        "spec.realm.webAuthnPolicyPasswordlessResidentKey": "string",
+        "spec.realm.webAuthnPolicyResidentKey": "string"
+      }
+    }
+  },
+  "texts": []
+}
